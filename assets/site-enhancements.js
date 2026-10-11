@@ -6,13 +6,14 @@
     const root = document.documentElement;
     // One approved brand asset for headers and browser tabs across all pages.
     // Do not replace the research portrait or illustrative/content images.
-    const approvedLogo = "https://cdn.creativeclaw.co/u/8a002dd8/images/f20e9006-e1e3-4976-9c07-fcf36b1c9e43.png";
+    const approvedLogo = "/assets/ruwaidix-approved.webp";
+    const approvedFavicon = "/assets/ruwaidix-tab-2026.svg";
     const favicons = document.querySelectorAll('head link[rel~="icon"]');
     if (favicons.length) {
-      favicons.forEach(link => { link.href = approvedLogo; link.type = "image/png"; });
+      favicons.forEach(link => { link.href = approvedFavicon; link.type = "image/svg+xml"; });
     } else {
       const icon = document.createElement("link");
-      icon.rel = "icon"; icon.type = "image/png"; icon.href = approvedLogo;
+      icon.rel = "icon"; icon.type = "image/svg+xml"; icon.href = approvedFavicon;
       document.head.appendChild(icon);
     }
     document.querySelectorAll('header a.logo > img:first-child, header a.brand > img:first-child, header a.wordmark > img:first-child, header .cv-branding > img:not(.cv-portrait)').forEach(img => {
@@ -215,4 +216,12 @@
   script.src="/assets/illness-evidence-home.js?v=20261011a";
   script.defer=true;
   document.head.appendChild(script);
+})();
+
+/* Editorial repair: preserve all existing research and personal material.
+   Later separate assets allow safe rollback without replacing the large homepage. */
+(function(){
+ if(document.documentElement.getAttribute("data-rx-page")!=="home")return;
+ var sheet=document.createElement("link");sheet.rel="stylesheet";sheet.href="/assets/editorial-audit-2026.css?v=20261011b";document.head.appendChild(sheet);
+ var script=document.createElement("script");script.src="/assets/editorial-audit-2026.js?v=20261011b";script.defer=true;document.head.appendChild(script);
 })();
