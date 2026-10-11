@@ -1,0 +1,18 @@
+/* Unaltered home layout + small documentary photo feature for QUACS and science outreach. */
+.rx-home-science{border-top:1px solid #cbd6cc;margin-top:38px;padding-top:34px}
+.rx-home-science .rx-home-science-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:end;margin-bottom:20px}
+.rx-home-science .rx-science-eyebrow{font:11px/1.6 "DM Mono",monospace;letter-spacing:.11em;text-transform:uppercase;color:#ad654c}
+.rx-home-science h3{font:400 clamp(30px,4vw,45px)/1.13 Newsreader,Georgia,serif;margin:8px 0}
+.rx-home-science .rx-science-body{font:14px/1.8 "DM Sans",Arial,sans-serif;color:#485f61;margin:0}
+.rx-home-science-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.rx-home-science-photos figure{margin:0;min-width:0}
+.rx-home-science-photos a{display:block;overflow:hidden;background:#d9e3dc;aspect-ratio:1.18}
+.rx-home-science-photos img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}
+.rx-home-science-photos a:hover img{transform:scale(1.04)}
+.rx-home-science-photos figcaption{font:11px/1.65 "DM Sans",Arial,sans-serif;color:#506568;padding:10px 0 2px}
+.rx-home-science-photos figcaption strong{display:block;font:400 19px/1.2 Newsreader,Georgia,serif;color:#1d3a3e;margin-bottom:3px}
+.rx-home-science-links{display:flex;gap:22px;flex-wrap:wrap;margin-top:21px}
+.rx-home-science-links a{font:600 12px "DM Sans",Arial,sans-serif;color:#9c5e47!important;text-decoration:underline!important;text-underline-offset:5px}
+.rx-home-science .rx-provenance{font:11px/1.65 "DM Sans",Arial,sans-serif;color:#647878;margin-top:14px}
+@media(max-width:750px){.rx-home-science .rx-home-science-head{grid-template-columns:1fr;gap:8px}.rx-home-science-photos{grid-template-columns:1fr 1fr}.rx-home-science-photos figure:nth-child(3){grid-column:span 2}.rx-home-science-photos a{aspect-ratio:1.6}}
+@media(prefers-reduced-motion:reduce){.rx-home-science-photos img{transition:none}}
