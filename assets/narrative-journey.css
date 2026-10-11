@@ -57,3 +57,83 @@ html[data-rx-page="home"] .editorial-story{background:#f8f6ef;color:#1e393d;padd
 @media(max-width:380px){.editorial-story .photo-opening{grid-template-columns:1fr}.editorial-story .photo-opening figure:nth-child(3){grid-column:1;display:flex}.editorial-story .photo-opening figure:nth-child(3) img{height:230px;width:100%}}
 html[lang="ar"] .editorial-story .story-research-trail,html[lang="ar"] .editorial-story .story-childhood,html[lang="ar"] .editorial-story .story-anatomy,html[lang="ar"] .editorial-story .arrival-inner{direction:rtl}
 @media(prefers-reduced-motion:reduce){.editorial-story *{scroll-behavior:auto}}
+
+
+/* 2026-10-11 | Live-site contrast repair.
+   Older .story rules and the photographic narrative were using opposite
+   foreground/background assumptions. Explicitly pair every dark surface
+   with legible warm type, and preserve the light photographic cards. */
+html[data-rx-page="home"] section.story.editorial-story,
+section.story.editorial-story {
+  background:#17363B;
+  color:#F7F4EC;
+}
+section.story.editorial-story .story-prologue h2,
+section.story.editorial-story .story-rewind h3,
+section.story.editorial-story .story-bridge h3,
+section.story.editorial-story .story-prose h3,
+section.story.editorial-story .trail-scene h4 {
+  color:#F7F4EC;
+}
+section.story.editorial-story .eyebrow,
+section.story.editorial-story .story-rewind span,
+section.story.editorial-story .trail-scene .chapter-num {
+  color:#F1BA99;
+}
+section.story.editorial-story .story-prologue p:not(.eyebrow),
+section.story.editorial-story .story-rewind p,
+section.story.editorial-story .story-bridge p {
+  color:#E3EAE5;
+}
+section.story.editorial-story .story-prose p,
+section.story.editorial-story .trail-scene p,
+section.story.editorial-story .story-photo figcaption {
+  color:#D5E2DD;
+}
+section.story.editorial-story .story-prose a,
+section.story.editorial-story .trail-scene a {
+  color:#F0BE9C;
+  text-decoration-color:currentColor;
+}
+section.story.editorial-story .story-anatomy {
+  border-color:#55767A;
+}
+section.story.editorial-story .trail-scene {
+  border-top-color:#9BB6AD;
+}
+section.story.editorial-story .photo-opening figure {
+  background:#F5F2E9;
+  color:#17363B;
+}
+section.story.editorial-story .photo-opening h3 {color:#17363B;}
+section.story.editorial-story .photo-opening p {color:#4A6062;}
+section.story.editorial-story .anatomy-marker {
+  background:#E8EDE6;
+  color:#17363B;
+}
+section.story.editorial-story .anatomy-marker p {color:#274649;}
+section.story.editorial-story .anatomy-marker small {color:#405E5D;}
+section.story.editorial-story .story-arrival {
+  background:#102C33;
+  color:#F7F4EC;
+}
+section.story.editorial-story .story-arrival .eyebrow {color:#F1BA99;}
+section.story.editorial-story .story-arrival p {color:#E1E9E4;}
+
+/* Mobile masthead: keep secondary identity and navigation readable. */
+@media(max-width:760px) {
+  html[data-rx-page="home"] .header {
+    background:#F6F4ED;
+    color:#17343B;
+  }
+  html[data-rx-page="home"] .header .brandline {color:#385459;}
+  html[data-rx-page="home"] .header .menu {
+    color:#17343B;
+    background:#FFFCF6;
+    border-color:#B8CBC4;
+  }
+  html[data-rx-page="home"] .header .navlinks.open {
+    background:#FFFCF6;
+    color:#17343B;
+  }
+}
