@@ -21,3 +21,14 @@ html[lang="ar"][data-rx-page="home"] .rx-illness-prose>p{font-family:"Noto Sans 
 html[lang="ar"][data-rx-page="home"] .rx-illness-overline{font-family:"Noto Sans Arabic",sans-serif;letter-spacing:0;}
 html[lang="ar"][data-rx-page="home"] .rx-illness-quote{border-left:0;border-right:2px solid #a45b40;padding:0 25px 0 0;}
 @media(max-width:790px){html[data-rx-page="home"] .rx-illness-wrap{grid-template-columns:1fr;row-gap:31px;width:calc(100% - 36px);}html[data-rx-page="home"] .rx-illness-aside{max-width:700px;}html[data-rx-page="home"] .rx-illness-prose h2{max-width:none;}}
+
+/* Original June 2017 exam-break photograph, woven into the medical history rather than displayed as a hero image. */
+html[data-rx-page="home"] .rx-exam-photo{display:grid;grid-template-columns:minmax(165px,250px) 1fr;align-items:center;gap:clamp(18px,3.3vw,36px);margin:30px 0 34px;padding:17px 0;border-top:1px solid #c6d5ca;border-bottom:1px solid #c6d5ca;}
+html[data-rx-page="home"] .rx-exam-photo>a{display:block;overflow:hidden;}
+html[data-rx-page="home"] .rx-exam-photo img{width:100%;height:220px;display:block;object-fit:cover;object-position:center 43%;filter:saturate(.8);}
+html[data-rx-page="home"] .rx-exam-photo figcaption{max-width:43ch;}
+html[data-rx-page="home"] .rx-exam-photo strong{display:block;font:400 clamp(23px,2.6vw,33px)/1.2 "Newsreader",Georgia,serif;color:#17363b;margin-bottom:11px;}
+html[data-rx-page="home"] .rx-exam-photo span{display:block;font:400 13px/1.8 "DM Sans",Arial,sans-serif;color:#526b66;}
+html[lang="ar"][data-rx-page="home"] .rx-exam-photo strong{font-family:"Noto Naskh Arabic",serif;}
+html[lang="ar"][data-rx-page="home"] .rx-exam-photo span{font-family:"Noto Sans Arabic",sans-serif;line-height:2;}
+@media(max-width:600px){html[data-rx-page="home"] .rx-exam-photo{grid-template-columns:1fr;}html[data-rx-page="home"] .rx-exam-photo img{height:240px;object-position:center 38%;}html[data-rx-page="home"] .rx-exam-photo figcaption{max-width:none;}}
