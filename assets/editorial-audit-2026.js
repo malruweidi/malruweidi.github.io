@@ -102,6 +102,48 @@
    var heroParent=hero.parentElement;
    if(heroParent){var anchor=heroParent.classList.contains("wrap")?heroParent:hero;anchor.insertAdjacentElement("afterend",guide);}
   }
+
+  /* A small, sourced record of the first at-home chemistry experiments.
+     Keep it inside the existing personal story, not as a promotional hero. */
+  var story=$("#story");
+  if(story && !document.getElementById("rx-home-elephant-toothpaste")){
+    var place=story.querySelector(":scope > .wrap")||story.querySelector(".wrap")||story;
+    var scene=document.createElement("figure");
+    scene.id="rx-home-elephant-toothpaste";
+    scene.className="rx-at-home-science";
+    scene.dataset.i18nIgnore="";
+    var imageLink=document.createElement("a");
+    imageLink.href="/archive/archive-7868.jpg";
+    imageLink.setAttribute("aria-label","View the original elephant-toothpaste photograph");
+    var photo=document.createElement("img");
+    photo.src="/archive/archive-7868.jpg";
+    photo.alt="Household table with chemistry glassware and the green foam mixture from an elephant-toothpaste experiment";
+    photo.loading="lazy";
+    photo.decoding="async";
+    imageLink.appendChild(photo);
+    var cap=document.createElement("figcaption");
+    var label=document.createElement("small");
+    var heading=document.createElement("strong");
+    var paragraph=document.createElement("p");
+    var date=document.createElement("span");
+    var archive=document.createElement("a");archive.href="/archive.html#rxRecoveredGallery";
+    cap.append(label,heading,paragraph,date,archive);
+    scene.append(imageLink,cap);
+    place.appendChild(scene);
+    var translateExperiment=function(){
+      var ar=document.documentElement.lang==="ar";
+      label.textContent=ar?"تجربة في المنزل / من السنوات الجامعية الأولى":"AT HOME / EARLY UNIVERSITY YEARS";
+      heading.textContent=ar?"الكيمياء لم تكن محصورة في المختبر.":"Chemistry was not confined to the laboratory.";
+      paragraph.textContent=ar?
+        "في سنتي الجامعية الأولى جرّبت في المنزل عرض «معجون أسنان الفيل». كان المكان طاولة منزلية لا مختبراً، والتجربة عرضاً كيميائياً بسيطاً لا مشروعاً بحثياً. أحتفظ بهذه الصورة لأن الفضول لم يكن شيئاً أمارسه عند وجود تكليف أكاديمي فحسب.":
+        "In my freshman year, I tried the elephant-toothpaste demonstration at home. The setting was an ordinary table, not a laboratory, and the experiment was a chemistry demonstration rather than a research result. I keep the photograph because curiosity was never confined to assigned coursework.";
+      date.textContent=ar?"تعريف التجربة من صاحب الصورة؛ يعرض سجل الصور تاريخ ٢٢ يونيو ٢٠١٩.":"Identified by the author; photo-library display date: 22 June 2019.";
+      archive.textContent=ar?"الصورة ضمن الأرشيف ←":"See the archival record ↗";
+    };
+    translateExperiment();
+    new MutationObserver(translateExperiment).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
+  }
+
  }
  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",function(){requestAnimationFrame(onReady);});
  else requestAnimationFrame(onReady);
