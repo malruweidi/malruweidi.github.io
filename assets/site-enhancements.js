@@ -68,6 +68,16 @@
             if (link) column.appendChild(link);
           }
           if (group.heading === "People & ideas") {
+            // Keep the first-person story discoverable without removing existing routes.
+            const personal = document.createElement("a");
+            personal.href = "illness-and-evidence.html";
+            personal.setAttribute("data-i18n-ignore", "");
+            const translatePersonal = () => {
+              personal.textContent = document.documentElement.lang === "ar" ? "المرض والدليل" : "Illness & evidence";
+            };
+            translatePersonal();
+            new MutationObserver(translatePersonal).observe(document.documentElement, {attributes:true, attributeFilter:["lang"]});
+            column.appendChild(personal);
             const cv = document.createElement("a");
             cv.href = "cv.html";
             cv.textContent = "Academic CV";
