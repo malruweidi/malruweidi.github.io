@@ -209,3 +209,80 @@ html[data-rx-page="home"] section.story.editorial-story .photo-opening figure fi
     font-size:clamp(21px,5.3vw,27px);
   }
 }
+
+
+/* 2026-10-12 | Early photographic triptych: restore desktop proportions.
+   Legacy .archiveitem:nth-child(3) placed the final photo across the
+   entire row; the narrative grid had intended three equal editorial cards.
+   Scope to tablet/desktop, leaving the approved mobile layout untouched. */
+@media (min-width:651px) {
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:clamp(12px,1.5vw,18px);
+    align-items:stretch;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem {
+    min-width:0;
+    width:100%;
+    margin:0!important;
+    padding:0;
+    overflow:hidden;
+    border:1px solid #d7d9cf;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem > img {
+    display:block;
+    width:100%;
+    height:clamp(255px,28vw,345px);
+    flex:0 0 auto;
+    object-fit:cover;
+  }
+  /* On intermediate widths, treat the last photograph as a deliberate
+     horizontal feature rather than an oversized uncropped banner. */
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(3) {
+    grid-column:1/-1;
+    display:grid;
+    grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+    grid-template-rows:auto;
+    align-items:center;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(3) > img {
+    grid-column:1;
+    grid-row:1;
+    width:100%;
+    height:clamp(255px,28vw,330px);
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(3) > div {
+    grid-column:2;
+    grid-row:1;
+    width:100%;
+    padding:24px clamp(22px,3vw,44px);
+  }
+}
+@media (min-width:1000px) {
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(3) {
+    grid-column:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem > img,
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(3) > img {
+    grid-column:auto;
+    grid-row:auto;
+    width:100%;
+    height:clamp(255px,23vw,345px);
+    object-fit:cover;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(3) > div {
+    grid-column:auto;
+    grid-row:auto;
+    padding:0;
+    width:auto;
+  }
+}
