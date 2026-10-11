@@ -120,3 +120,34 @@ html[data-rx-page="home"] .rx-at-home-science figcaption>a{display:inline-block;
 html[lang="ar"][data-rx-page="home"] .rx-at-home-science strong{font-family:"Noto Naskh Arabic",serif;letter-spacing:0;}
 html[lang="ar"][data-rx-page="home"] .rx-at-home-science :is(p,small,figcaption>span){font-family:"Noto Sans Arabic",sans-serif;letter-spacing:0;}
 @media(max-width:690px){html[data-rx-page="home"] .rx-at-home-science{grid-template-columns:1fr;width:100%;gap:23px}html[data-rx-page="home"] .rx-at-home-science img{height:260px;object-position:center 44%;}}
+
+
+/* Story contrast accessibility repair — 2026-10-11 */
+/* The chapter has a dark mineral background. Reassert LIGHT foregrounds
+   explicitly so the global dark-ink palette cannot override story copy.
+   WCAG contrast against #17363b: heading 12:1, body 10.5:1, meta 8.2:1. */
+html[data-rx-page="home"] .story {
+  --rx-story-heading: #f6f7f3;
+  --rx-story-copy: #e0eae5;
+  --rx-story-meta: #bed3cc;
+  background: #17363b;
+  color: var(--rx-story-copy);
+}
+html[data-rx-page="home"] .story :is(h1, h2, h3, h4) {
+  color: var(--rx-story-heading) !important;
+}
+html[data-rx-page="home"] .story :is(p, li, blockquote) {
+  color: var(--rx-story-copy) !important;
+}
+html[data-rx-page="home"] .story :is(.eyebrow, .overline, .kicker, time, figcaption) {
+  color: var(--rx-story-meta) !important;
+}
+html[data-rx-page="home"] .story .storygrid a:not(.button) {
+  color: #f4c09f;
+  text-decoration-color: currentColor;
+  text-underline-offset: 4px;
+}
+html[data-rx-page="home"] .story .storygrid a:not(.button):hover,
+html[data-rx-page="home"] .story .storygrid a:not(.button):focus-visible {
+  color: #fffdf7;
+}
