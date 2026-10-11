@@ -265,7 +265,7 @@
   css.href="/assets/firsthand-photo-stories-2026.css?v=20261011-a";
   document.head.appendChild(css);
   var script=document.createElement("script");
-  script.src="/assets/firsthand-photo-stories-2026.js?v=20261011-a";
+  script.src="/assets/firsthand-photo-stories-2026.js?v=20261011-b";
   script.defer=true;
   document.head.appendChild(script);
 })();
