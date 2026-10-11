@@ -11,9 +11,9 @@ const run=()=>{
   section.innerHTML=ar?'<div class="rx-home-science-head"><div><p class="rx-science-eyebrow">من أرشيف الفصل الطلابي</p><h3>العلم في حياة الناس.</h3></div><p class="rx-science-body">امتد نشاط فصل الجمعية الكيميائية الأمريكية إلى العروض العلمية في مقهى الكيميائي ولقاءات الطلاب والفعاليات العامة. شاركت أيضًا في تقديم مهرجان للكيمياء بصفتي مقدّمًا للفعالية. ترد صور المقهى داخل ملصقَي الفصل العلمي لعامي ٢٠١٧ و٢٠١٨؛ أما الصور المعروضة هنا فهي من الأرشيف الطلابي الأصلي مع الاحتفاظ بوصفها التاريخي دون نسبتها إلى فعالية لم تُتحقق هويتها.</p></div>':'<div class="rx-home-science-head"><div><p class="rx-science-eyebrow">From the original chapter record</p><h3>Science among people.</h3></div><p class="rx-science-body">Our ACS chapter took chemistry into public demonstrations and meetings at The Chemist Café. My work also included hosting a Chemistry Festival as MC. The chapter’s 2017 and 2018 research posters preserve photographs of The Chemist Café; the photographs below come from the original student archive and are not labeled as those particular events without verification.</p></div>';
   const gallery=document.createElement("div");gallery.className="rx-home-science-photos";
   const records=[
-    {src:"/archive/archive-7887.jpg",name:"Chemistry demonstration",ar:"عرض عملي للكيمياء",label:"Archive label · 22 May 2017",arl:"وصف الأرشيف · ٢٢ مايو ٢٠١٧"},
-    {src:"/archive/archive-7886.jpg",name:"Chemistry outreach with a colleague",ar:"نشاط توعوي مع زميل",label:"Archive label · 23 May 2017",arl:"وصف الأرشيف · ٢٣ مايو ٢٠١٧"},
-    {src:"/archive/archive-7881.jpg",name:"Research poster in Washington",ar:"ملصق بحثي في واشنطن",label:"Archive label · 20 August 2017",arl:"وصف الأرشيف · ٢٠ أغسطس ٢٠١٧"}
+    {src:"/archive/archive-7887.jpg",name:"Chemistry chapter plaque and periodic-table scarf",ar:"لوحة تذكارية ووشاح الجدول الدوري في فعالية كيميائية",label:"Photo-library display · 22 May 2017",arl:"سجل مكتبة الصور · ٢٢ مايو ٢٠١٧"},
+    {src:"/archive/archive-7886.jpg",name:"Colleagues at an outdoor science gathering",ar:"زملاء في فعالية علمية خارجية",label:"Photo-library display · 23 May 2017",arl:"سجل مكتبة الصور · ٢٣ مايو ٢٠١٧"},
+    {src:"/archive/archive-7881.jpg",name:"Research poster presentation in Washington",ar:"عرض ملصق بحثي في واشنطن",label:"Archive display · 20 August 2017",arl:"سجل الأرشيف · ٢٠ أغسطس ٢٠١٧"}
   ];
   for(const rec of records){
     const figure=document.createElement("figure"),a=document.createElement("a"),img=document.createElement("img"),cap=document.createElement("figcaption"),strong=document.createElement("strong");
@@ -30,7 +30,7 @@ const run=()=>{
     ["/archive.html#rxRecoveredGallery",ar?"الأرشيف المصور الكامل":"Complete photograph archive"]
   ];
   for(const [href,label] of recordsLinks){const a=document.createElement("a");a.href=href;a.textContent=label;if(href.startsWith("https:")){a.target="_blank";a.rel="noopener noreferrer"}links.append(a);}
-  const foot=document.createElement("p");foot.className="rx-provenance";foot.textContent=ar?"تواريخ الصور معروضة كما وردت في الأرشيف الأصلي، وليست تواريخ تصوير موثقة بصورة مستقلة.":"Photo dates reflect original archive display labels; exact event identification and camera metadata remain subject to verification.";
+  const foot=document.createElement("p");foot.className="rx-provenance";foot.textContent=ar?"تواريخ الصور معروضة كما وردت في الأرشيف الأصلي، وليست تواريخ تصوير موثقة بصورة مستقلة.":"Photo dates reproduce the photo-library display labels. These images illustrate chemistry activities, but none is independently identified as The Chemist Café or the Chemistry Festival.";
   section.append(gallery,links,foot);target.insertAdjacentElement("afterend",section);
 };
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});else run();
