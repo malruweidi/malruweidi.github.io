@@ -85,3 +85,14 @@ html[dir=rtl] .hero-steps a:hover{padding-left:1px;padding-right:7px}
   .hero-steps strong{font-size:13px}
   .hero-steps small{font-size:11px}
 }
+
+/* Restored authentic 2026 portrait to first-screen biography. */
+.hero-photo{position:relative;align-self:stretch;margin:0;width:100%;min-width:0;min-height:510px;overflow:hidden;background:#c6d4c4;isolation:isolate}
+.hero-photo::after{content:"";position:absolute;inset:auto 0 0;height:30%;background:linear-gradient(0deg,rgba(13,38,44,.75),transparent);pointer-events:none;z-index:1}
+.hero-photo-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
+.hero-photo-caption{position:absolute;bottom:0;left:0;right:0;z-index:2;display:flex;justify-content:space-between;gap:20px;align-items:end;padding:24px 27px;color:#fff8ee;font:600 10px/1.5 var(--mono);letter-spacing:.065em;text-shadow:0 1px 4px #122b2b66}
+.hero-photo-caption span:last-child{white-space:nowrap}
+html[lang=ar] .hero-photo-caption{font-family:"Noto Sans Arabic",Tahoma,sans-serif;letter-spacing:0;font-size:11px}
+@media(min-width:761px){.hero-photo{max-height:650px;aspect-ratio:4/5;min-height:510px}}
+@media(max-width:760px){.hero-photo{width:100%;height:clamp(390px,110vw,610px);min-height:0}.hero-photo-image{object-position:center 42%}.hero-photo-caption{padding:19px 21px}}
+@media(max-width:440px){.hero-photo-caption{flex-wrap:wrap;gap:8px;font-size:9px}}
