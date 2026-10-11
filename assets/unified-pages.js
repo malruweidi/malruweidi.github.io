@@ -51,11 +51,33 @@ const ready=()=>{
   if(directNav){directNav.classList.add("rx-legacy-nav");directNav.setAttribute("aria-hidden","true");directNav.querySelectorAll("a,button").forEach(el=>el.setAttribute("tabindex","-1"))}
   const main=document.querySelector("main");
   if(main&&!main.id)main.id="rx-content";
-  else if(!document.getElementById("rx-content")){const content=document.createElement("span");content.id="rx-content";content.tabIndex=-1;document.body.prepend(content)}
+  else if(!document.getElementById("rx-content")){const content=document.createElement("span");content.id="rx-content";content.tabIndex=-1;if(main)main.before(content);else document.body.prepend(content)}
   document.body.prepend(header);
   const context=document.createElement("div");context.className="rx-context";
   context.innerHTML='<div class="rx-context-inner"><a href="/index.html" data-en="Home" data-ar="الرئيسية">'+h(label("Home","الرئيسية"))+'</a><span class="rx-delimiter">/</span><span data-en="'+h(current[0])+'" data-ar="'+h(current[1])+'">'+h(label(current[0],current[1]))+'</span></div>';
   header.insertAdjacentElement("afterend",context);
+  /* Retain the original page's in-page navigation without duplicating the old masthead. */
+  const originalJumps=currentHeader?Array.from(currentHeader.querySelectorAll('a[href^="#"]')):[];
+  const uniqueJumps=new Set();
+  const jumpLinks=originalJumps.filter(a=>{
+    const target=a.getAttribute("href").slice(1);
+    if(!target||!document.getElementById(target)||uniqueJumps.has(target))return false;
+    uniqueJumps.add(target);return true;
+  }).slice(0,25);
+  if(jumpLinks.length>1){
+    const details=document.createElement("details");
+    details.className="rx-local-jumps";
+    const summary=document.createElement("summary");
+    summary.dataset.en="On this page";summary.dataset.ar="في هذه الصفحة";
+    summary.textContent=label("On this page","في هذه الصفحة");
+    details.appendChild(summary);
+    const links=document.createElement("div");links.className="rx-jump-panel";
+    jumpLinks.forEach(a=>{const link=document.createElement("a");link.href=a.getAttribute("href");link.textContent=a.textContent.trim().replace(/\\s+/g," ").slice(0,80);links.appendChild(link)});
+    details.appendChild(links);context.querySelector(".rx-context-inner").appendChild(details);
+    links.addEventListener("click",()=>{details.open=false});
+    document.addEventListener("click",e=>{if(!details.contains(e.target))details.open=false});
+  }
+
   document.documentElement.classList.add("rx-site-theme");
   function refresh(){header.querySelectorAll("[data-en][data-ar]").forEach(el=>{el.textContent=el.dataset[locale()]});header.querySelectorAll("button[data-language]").forEach(el=>el.setAttribute("aria-pressed",String(el.dataset.language===locale())));context.querySelectorAll("[data-en][data-ar]").forEach(el=>{el.textContent=el.dataset[locale()]})}
   header.querySelectorAll("button[data-language]").forEach(button=>button.addEventListener("click",()=>{const l=button.dataset.language;try{localStorage.setItem("ruwaidix-language",l)}catch(e){}const u=new URL(location.href);u.searchParams.set("lang",l);location.assign(u.toString())}));
