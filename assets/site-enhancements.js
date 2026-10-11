@@ -187,9 +187,22 @@
   if(document.documentElement.getAttribute("data-rx-page")!=="home")return;
   var stylesheet=document.createElement("link");
   stylesheet.rel="stylesheet";
-  stylesheet.href="/assets/restored-home-media.css?v=20261011a";
+  stylesheet.href="/assets/restored-home-media.css?v=20261011c";
   document.head.appendChild(stylesheet);
   var script=document.createElement("script");
-  script.src="/assets/restored-home-media.js?v=20261011a";
+  script.src="/assets/restored-home-media.js?v=20261011c";
+  document.head.appendChild(script);
+})();
+
+/* Load a self-contained, additive research-and-illness narrative. */
+(function(){
+  if(document.documentElement.getAttribute("data-rx-page")!=="home")return;
+  var css=document.createElement("link");
+  css.rel="stylesheet";
+  css.href="/assets/illness-evidence-home.css?v=20261011a";
+  document.head.appendChild(css);
+  var script=document.createElement("script");
+  script.src="/assets/illness-evidence-home.js?v=20261011a";
+  script.defer=true;
   document.head.appendChild(script);
 })();
