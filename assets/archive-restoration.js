@@ -54,13 +54,14 @@ ready(async function(){
   const dialog=el("dialog","rx-archive-dialog");dialog.id="rxRecoveredDialog";dialog.setAttribute("aria-label","Expanded archive photograph");
   const zoom=el("img");zoom.alt="";const foot=el("div","rx-dialog-caption"),footTxt=el("div"),bigTitle=el("strong"),detail=el("span");
   footTxt.append(bigTitle,detail);const close=el("button",null,words.close+" ×");close.type="button";foot.append(footTxt,close);dialog.append(zoom,foot);
-  const showImage=(item,event)=>{if(typeof dialog.showModal!=="function")return;event.preventDefault();zoom.src="/"+item.file;zoom.alt=item.title;bigTitle.textContent=item.title;detail.textContent=item.date_label+" · "+words.source+": "+item.source;dialog.showModal();};
+  const displayPhotoMeta=item=>[item.archive_display_location,item.date_label,item.archive_display_time].filter(Boolean).join(" · ");
+  const showImage=(item,event)=>{if(typeof dialog.showModal!=="function")return;event.preventDefault();zoom.src="/"+item.file;zoom.alt=item.title;bigTitle.textContent=item.title;detail.textContent=displayPhotoMeta(item)+" · "+words.source+": "+item.source;dialog.showModal();};
   for(const item of data.photos){
     const figure=el("figure","rx-restored-card");figure.dataset.category=item.category;
     const link=el("a");link.href="/"+item.file;link.setAttribute("aria-label","Open: "+item.title);
     const pic=el("img");pic.src="/"+item.file;pic.alt=item.title;pic.loading="lazy";pic.decoding="async";pic.width=400;pic.height=435;link.append(pic);
     link.addEventListener("click",event=>showImage(item,event));
-    const cap=el("figcaption");cap.append(el("span","rx-category",item.category),el("strong",null,item.title),el("span","rx-date",item.date_label));
+    const cap=el("figcaption");cap.append(el("span","rx-category",item.category),el("strong",null,item.title),el("span","rx-date",displayPhotoMeta(item)));
     figure.append(link,cap);gallery.append(figure);cards.push(figure);
   }
   for(const button of buttons){button.addEventListener("click",()=>{
