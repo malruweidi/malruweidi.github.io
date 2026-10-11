@@ -180,3 +180,16 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", onReady);
   else onReady();
 })();
+
+/* Restored long-form homepage only: authentic media and a personal introduction.
+   No other page receives these assets. */
+(function(){
+  if(document.documentElement.getAttribute("data-rx-page")!=="home")return;
+  var stylesheet=document.createElement("link");
+  stylesheet.rel="stylesheet";
+  stylesheet.href="/assets/restored-home-media.css?v=20261011a";
+  document.head.appendChild(stylesheet);
+  var script=document.createElement("script");
+  script.src="/assets/restored-home-media.js?v=20261011a";
+  document.head.appendChild(script);
+})();
