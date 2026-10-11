@@ -49,14 +49,25 @@ Repository currently contains **42 raster/video assets** (including 32 in `archi
 - `assets/zebrafish-embryo-microscopy.webp` (1306 bytes)
 - `assets/zebrafish-larva-microscopy.webp` (2050 bytes)
 
-## Source recovery and verification queue
+## Restoration completed and verified on 11 October 2026
 
-- [ ] Identify and recover original **Chemist Café** photographs from prior uploads, papers, presentations, or authorized sources; verify identity before labeling.
-- [ ] Identify and recover photographs of **Mahmoud hosting the Chemistry Festival as MC**; verify event and captions.
-- [ ] Cross-check original ACS, Chem Squad, laboratory and outreach photographs against published images.
-- [ ] Recover eligible original experimental zebrafish and chick embryo videos, with provenance and identification.
-- [ ] Review thesis, publications, presentations and posters for authored figures; check permissions, DOI and captions.
-- [ ] Confirm that every verified asset appears in the right context and in the archive, without duplicates.
-- [ ] Check image loading, accessible alt text, mobile layout and lightbox behavior on published pages.
+**Published deployment:** GitHub Pages workflow run [38140679512](https://github.com/malruweidi/malruweidi.github.io/actions/runs/38140679512) completed successfully.
 
-**Important:** File names such as `archive-7880.jpg` do not establish the photograph's subject. Do not assign Chemist Café or Chemistry Festival labels without visual verification.
+- [x] Recovered **all 30 photo records**, complete with their inherited categories, dates and source notes, from historic commit `426d3d703dee`. They are now indexed at `assets/archive-photo-manifest.json`.
+- [x] Reintroduced the **30-image filterable gallery** on `/archive.html` with large-image viewing and a mobile-responsive layout, without removing the five previously featured images. Two of the featured personal photographs also occur in the complete archival set; intentional reuse in the introductory selection should not be mistaken for two new source photographs.
+- [x] Restored the **original short archival film** below the collection, with clear caution about its unidentified specimen and recording date.
+- [x] Featured three original archived outreach images alongside QUACS on the homepage and on `/engagement.html`. Existing research, illness, historical writing, publication and scientific-computing content was not removed.
+- [x] Connected The Chemist Café activities to **two primary-source conference posters**: 2017 ACS chapter poster Figure 2 and 2018 ACS chapter poster Figure 20. Their images are visible in the original poster records; standalone cropped source photographs are **not** claimed as recovered.
+- [x] Embedded **two original zebrafish microscopy recordings** on `/engagement.html`. `/techniques.html` already contains three zebrafish recordings plus the avian preparation film.
+- [x] Confirmed via live rendered-page inspection that the restored photo section appears in both mobile and desktop versions, and the homepage displays the new archival-photo section.
+- [x] Confirmed every image filename referenced by the restored 30-photo manifest exists in the GitHub repository, and the current archive deployment succeeds.
+
+## Remaining source limitations
+
+- [ ] The **standalone original Chemist Café event photographs** have not yet been recovered from the 2017 and 2018 posters. The posters and figure numbers are linked; do not substitute unrelated café photographs.
+- [ ] The original photographs documenting **MC hosting at the Chemistry Festival** have not yet been identified with reliable event metadata. Festival participation is mentioned in biography text based on the researcher's account, but unrelated science-event photographs are not mislabeled.
+- [ ] Three AVI zebrafish recordings were found among earlier Library files; the Library did not authorize copying their raw bytes. The website currently uses already-hosted MP4 recordings.
+- [ ] Source figure reproduction rights and laboratory specimen details need case-by-case review, particularly prior to external syndication.
+- [ ] Full interactive image-opening and mobile visual QA across diverse devices remains advisable. Successful build and rendered-page extraction do not guarantee every user's image/network performance.
+
+**Editorial rule:** Never infer a particular festival, café or named person from an anonymous archival filename. Date labels reflect the photo viewer metadata, not independently verified capture dates.
