@@ -240,3 +240,10 @@
   script.dataset.rxArchiveRestoration="true";
   document.head.appendChild(script);
 })();
+
+/* Show original chapter archive photographs where the main story introduces QUACS. */
+(function(){
+  if(document.documentElement.dataset.rxPage!=="home")return;
+  var css=document.createElement("link");css.rel="stylesheet";css.href="/assets/public-science-home.css?v=20261011";document.head.appendChild(css);
+  var js=document.createElement("script");js.src="/assets/public-science-home.js?v=20261011";js.defer=true;document.head.appendChild(js);
+})();
