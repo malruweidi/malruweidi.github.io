@@ -222,6 +222,6 @@
    Later separate assets allow safe rollback without replacing the large homepage. */
 (function(){
  if(document.documentElement.getAttribute("data-rx-page")!=="home")return;
- var sheet=document.createElement("link");sheet.rel="stylesheet";sheet.href="/assets/editorial-audit-2026.css?v=20261011c";document.head.appendChild(sheet);
+ var sheet=document.createElement("link");sheet.rel="stylesheet";sheet.href="/assets/editorial-audit-2026.css?v=20261011d";document.head.appendChild(sheet);
  var script=document.createElement("script");script.src="/assets/editorial-audit-2026.js?v=20261011b";script.defer=true;document.head.appendChild(script);
 })();
