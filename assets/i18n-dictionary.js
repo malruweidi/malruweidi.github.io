@@ -787,3 +787,15 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "RESEARCH / HISTORY / WRITING / COMMUNITY": "البحث / التاريخ / الكتابة / المجتمع العلمي",
   "Research / Evidence file": "ملف البحث والأدلة"
 });
+
+/* 2026-10: translations for the simplified editorial navigation. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "Mahmoud Al-Ruweidi": "محمود الرويدي",
+  "Research · Drug delivery · Living systems": "البحث العلمي · توصيل الدواء · الأنظمة الحية",
+  "Explore": "استكشف",
+  "Explore all research and community sections": "استكشف جميع أقسام البحث والمجتمع العلمي",
+  "Research library": "مكتبة الأبحاث",
+  "People & ideas": "الناس والأفكار",
+  "Academic CV": "السيرة الأكاديمية",
+  "More": "المزيد"
+});
