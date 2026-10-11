@@ -35,7 +35,7 @@
   function translateText(node) {
     var holder = node.parentElement;
     if (!holder || holder.closest("script,style,noscript,code,pre,kbd,samp,svg,textarea,[contenteditable],[translate='no'],[data-i18n-ignore],.site-lang-switch")) return;
-    if (holder.closest("[lang='ar']") && locale === "ar") return;
+    // Preserve intentionally Arabic fragments, but never treat the document root as an already-translated subtree.\n    if (locale === "ar" && holder.closest("[lang='ar']:not(html)")) return;
     var current = node.nodeValue;
     var record = textCache.get(node);
     if (!record || (current !== record.rendered && current !== record.original)) {
