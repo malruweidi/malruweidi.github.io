@@ -1,6 +1,6 @@
 {
   "origin": "Git revision 426d3d703dee",
-  "notice": "The dates are labels from the supplied photo archive and do not independently establish original capture dates.",
+  "notice": "The 30 photo entries were recovered from the site's 2017–2021 archive. Ten captions were visually checked against the user-supplied photo-library screenshots on 11 October 2026; date, time and location labels are as displayed by the photo app, not authenticated camera EXIF or proof of a particular event.",
   "photos": [
     {
       "file": "archive/portrait-2014.jpg",
@@ -11,59 +11,99 @@
     },
     {
       "file": "archive/archive-7890.jpg",
-      "title": "Conversation at a science event",
+      "title": "Conversation at a public science gathering",
       "category": "Public engagement",
       "date_label": "25 March 2017",
-      "source": "Photo archive viewer"
+      "source": "User-supplied photo-library screenshot, IMG_7890.jpeg; archive viewer display label; original EXIF not independently checked",
+      "archive_display_time": "17:03",
+      "archive_display_location": null,
+      "source_screenshot": "IMG_7890.jpeg",
+      "visual_identification_note": "Two attendees in conversation at an indoor event; no event name verified.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/archive-7889.jpg",
-      "title": "Laboratory bench and incubation samples",
+      "title": "Labeled eggs on a laboratory bench",
       "category": "Laboratory",
       "date_label": "29 April 2017",
-      "source": "Photo archive viewer"
+      "source": "User-supplied photo-library screenshot, IMG_7889.jpeg; archive viewer display label; original EXIF not independently checked",
+      "archive_display_time": "10:59",
+      "archive_display_location": "Qatar University",
+      "source_screenshot": "IMG_7889.jpeg",
+      "visual_identification_note": "Numbered eggs arranged in a blue tray among laboratory equipment; specimen use not established.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/archive-7887.jpg",
-      "title": "Chemistry demonstration in a classroom",
+      "title": "Chemistry chapter plaque and periodic-table scarf",
       "category": "Public engagement",
       "date_label": "22 May 2017",
-      "source": "Photo archive viewer"
+      "source": "User-supplied photo-library screenshot, IMG_7887.jpeg; archive viewer display label; original EXIF not independently checked",
+      "archive_display_time": "18:13",
+      "archive_display_location": null,
+      "source_screenshot": "IMG_7887.jpeg",
+      "visual_identification_note": "Person wearing a periodic-table scarf and holding a plaque in a university room; plaque inscription unverified.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/archive-7888.jpg",
-      "title": "Chemistry club student participation",
+      "title": "Chemistry society scarf at Qatar University",
       "category": "Public engagement",
       "date_label": "22 May 2017",
-      "source": "Photo archive viewer"
+      "source": "User-supplied photo-library screenshot, IMG_7888.jpeg; archive viewer display label; original EXIF not independently checked",
+      "archive_display_time": "16:55",
+      "archive_display_location": "Qatar University",
+      "source_screenshot": "IMG_7888.jpeg",
+      "visual_identification_note": "Chemistry society periodic-table scarf shown during an indoor student gathering.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/archive-7886.jpg",
-      "title": "Chemistry outreach with a colleague",
+      "title": "Chemistry colleagues at an outdoor gathering",
       "category": "Public engagement",
       "date_label": "23 May 2017",
-      "source": "Photo archive viewer"
+      "source": "User-supplied photo-library screenshot, IMG_7886.jpeg; archive viewer display label; original EXIF not independently checked",
+      "archive_display_time": "20:53",
+      "archive_display_location": null,
+      "source_screenshot": "IMG_7886.jpeg",
+      "visual_identification_note": "Two individuals in chemistry department laboratory coats at an outdoor public gathering.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/archive-7885.jpg",
-      "title": "Student laboratory learning environment",
-      "category": "Academic life",
+      "title": "A quiet moment in Al Rayyan",
+      "category": "Personal",
       "date_label": "15 June 2017",
-      "source": "Photo archive viewer"
+      "source": "User-supplied photo-library screenshot, IMG_7885.jpeg; archive viewer display label; original EXIF not independently checked",
+      "archive_display_time": "07:14",
+      "archive_display_location": "Al Rayyan",
+      "source_screenshot": "IMG_7885.jpeg",
+      "visual_identification_note": "Seated person, bags and waiting-area furnishings; not identifiable as a laboratory.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/archive-7883.jpg",
-      "title": "Demonstrating scientific phenomena",
+      "title": "Glove demonstration in the chemistry laboratory",
       "category": "Laboratory",
       "date_label": "16 July 2017",
-      "source": "Photo archive viewer"
+      "source": "User-supplied photo-library screenshot, IMG_7883.jpeg; archive viewer display label; original EXIF not independently checked",
+      "archive_display_time": "11:58",
+      "archive_display_location": "Qatar University",
+      "source_screenshot": "IMG_7883.jpeg",
+      "visual_identification_note": "Close-up of an orange protective glove in a laboratory setting; no procedure inferred.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/archive-7884.jpg",
-      "title": "Instrumentation and laboratory setup",
+      "title": "Rotary evaporator in the chemistry laboratory",
       "category": "Laboratory",
       "date_label": "16 July 2017",
-      "source": "Photo archive viewer"
+      "source": "User-supplied photo-library screenshot, IMG_7884.jpeg; archive viewer display label; original EXIF not independently checked",
+      "archive_display_time": "11:32",
+      "archive_display_location": "Qatar University",
+      "source_screenshot": "IMG_7884.jpeg",
+      "visual_identification_note": "Rotary evaporator glassware and water bath; no experiment or sample assigned.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/archive-7881.jpg",
@@ -186,10 +226,15 @@
     },
     {
       "file": "archive/archive-7879.jpg",
-      "title": "Photograph with a fellow conference attendee",
+      "title": "Photograph at a scientific conference",
       "category": "Public engagement",
       "date_label": "Date unverified",
-      "source": "Original date not visible"
+      "source": "User-supplied photo-library screenshot, IMG_7879.png; archive viewer display label; original EXIF not independently checked",
+      "archive_display_time": null,
+      "archive_display_location": null,
+      "source_screenshot": "IMG_7879.png",
+      "visual_identification_note": "Conference photo with delegate badges; name of other attendee and event date not verified.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/archive-7880.jpg",
@@ -200,10 +245,15 @@
     },
     {
       "file": "archive/archive-7882.jpg",
-      "title": "Childhood family-archive photograph",
+      "title": "Childhood portrait with a small figurine",
       "category": "Personal",
       "date_label": "Date unverified",
-      "source": "Historical image; capture date unknown"
+      "source": "User-supplied photo-library screenshot, IMG_7882.png; archive viewer display label; original EXIF not independently checked",
+      "archive_display_time": null,
+      "archive_display_location": null,
+      "source_screenshot": "IMG_7882.png",
+      "visual_identification_note": "Child holding a figurine; no source date shown.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/childhood-computer.jpg",
