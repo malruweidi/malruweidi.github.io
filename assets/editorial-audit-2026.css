@@ -93,3 +93,15 @@ html[dir="rtl"][data-rx-page="home"] .sr {
 html[dir="rtl"][data-rx-page="home"] .moving-gallery {
  overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;
 }
+
+/* Portrait-first mobile composition. Keep the approved mark in the header;
+   show the actual researcher photograph as photography, not a nested logo tile. */
+@media(max-width:600px){
+html[data-rx-page="home"] .hero-art .profile-photo-frame{width:100%!important;max-width:100%!important;height:385px!important;position:relative!important;display:block!important;overflow:hidden!important;background:#18383d!important;}
+html[data-rx-page="home"] .hero-art .profile-photo-frame>.current-portrait{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 21%!important;max-height:none!important;}
+html[data-rx-page="home"] .hero-art .portrait-heading{position:absolute!important;top:0!important;left:0!important;right:0!important;color:#fff!important;background:linear-gradient(#102e39bb,transparent)!important;padding:14px 17px 35px!important;border:0!important;box-shadow:none!important;}
+html[data-rx-page="home"] .hero-art .portrait-overlay{position:absolute!important;bottom:0!important;left:0!important;right:0!important;color:#fff!important;background:linear-gradient(transparent,#102e39d9)!important;padding:38px 17px 14px!important;min-height:0!important;display:block!important;border:0!important;box-shadow:none!important;}
+html[data-rx-page="home"] .hero-art .portrait-overlay img{display:none!important;}
+html[data-rx-page="home"] .hero-art .portrait-overlay strong{color:#fff!important;font-size:12px!important;letter-spacing:.06em!important;}
+html[data-rx-page="home"] .hero-art .portrait-overlay small{color:#e5f0e9!important;font-size:10px!important;line-height:1.5!important;}
+}
