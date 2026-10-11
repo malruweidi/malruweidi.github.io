@@ -150,7 +150,29 @@
     "@media(max-width:600px){.site-lang-switch{bottom:12px;inset-inline-end:12px}.site-lang-switch button{min-height:42px}}"+
     "@media print{.site-lang-switch{display:none!important}}";
   document.head.appendChild(styles);
+  /* Keep the approved periodic-table mark consistent on legacy pages.
+     These pages use different templates, so normalise only the known old asset. */
+  function canonicalizeBrandAssets() {
+    var oldAsset = "f20e9006-e1e3-4976-9c07-fcf36b1c9e43.png";
+    var approved = "/assets/favicon.svg";
+    document.querySelectorAll("header img, .cv-branding img, .now-brand img").forEach(function (img) {
+      if (img.getAttribute("src") && img.getAttribute("src").indexOf(oldAsset) !== -1) {
+        img.setAttribute("src", approved);
+        img.style.objectFit = "contain";
+      }
+    });
+    document.querySelectorAll('link[rel="icon"],link[rel="shortcut icon"]').forEach(function (icon) {
+      if (icon.getAttribute("href") && icon.getAttribute("href").indexOf(oldAsset) !== -1) {
+        icon.setAttribute("href", approved);
+        icon.setAttribute("type", "image/svg+xml");
+      }
+    });
+    document.querySelectorAll('link[rel="apple-touch-icon"]').forEach(function (icon) {
+      if (icon.getAttribute("href") && icon.getAttribute("href").indexOf(oldAsset) !== -1) icon.remove();
+    });
+  }
   function initialize() {
+    canonicalizeBrandAssets();
     addControls();
     setLanguage(readStoredLanguage(), false);
     var observer = new MutationObserver(function (changes) {
