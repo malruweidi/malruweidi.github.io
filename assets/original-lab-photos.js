@@ -43,6 +43,25 @@ const run=()=>{
    const tags=mol.querySelector(".method-tags");
    if(tags)tags.insertAdjacentElement("afterend",photo);else mol.append(photo);
  }
+
+ // The operator identified this exact device photograph as the pump used for shear-stress experiments.
+ // Flow in mL/min is not, by itself, a wall-shear-stress measurement.
+ if(!document.getElementById("rxShearPumpPhoto")){
+   const targetHeading=Array.from(document.querySelectorAll("h2,h3,h4")).find(h=>/shear stress|fluid mechanics|hemodynamic|mechanobiolog|airway reopening|biophysical flow|parallel.plate/i.test(h.textContent));
+   const targetSection=targetHeading&&targetHeading.closest("section");
+   const bio=document.querySelector("#biological .wrap.cols > div:first-child");
+   const dest=(targetSection&&targetSection.querySelector(".wrap.cols > div:first-child, .wrap.columns > div:first-child"))||bio;
+   const pump=make({id:"rxShearPumpPhoto",src:"/archive/archive-7873.jpg",
+     alt:"Syringe pump multi-step mode showing a 0.1 millilitre volume and two programmed flow rates",
+     title:"Controlling flow during shear-stress experiments",titleAr:"التحكم بالتدفق في تجارب إجهاد القص",
+     text:"A syringe pump used in a shear-stress experiment. The archived screen shows a 0.1 mL volume and programmed rates of 4 and 9 mL/min. These are flow settings; wall shear stress must be calculated from channel geometry, medium rheology and flow conditions rather than read directly from the pump.",
+     textAr:"مضخة محقنة استُخدمت في تجربة لإجهاد القص. تُظهر شاشة الجهاز حجماً مقداره ٠٫١ مل ومعدلي تدفق ٤ و٩ مل/دقيقة. هذه إعدادات للتدفق وليست قياساً مباشراً لإجهاد القص على الجدار، الذي يتطلب معرفة هندسة القناة وخواص السائل وظروف الجريان.",
+     date:"Original laboratory photograph · experimental date not verified",
+     dateAr:"صورة مختبرية أصلية · تاريخ التجربة غير موثق"});
+   if(dest)dest.append(pump);
+   else if(targetSection)targetSection.append(pump);
+ }
+
 };
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});else run();
 })();
