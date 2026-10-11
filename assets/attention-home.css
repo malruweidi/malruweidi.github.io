@@ -259,3 +259,26 @@ html[lang="ar"][data-rx-page="editorial-home"] .evidence-grid { direction:rtl; }
   html[data-rx-page="editorial-home"] .hero-portrait-caption { padding:13px 15px; }
   html[data-rx-page="editorial-home"] .evidence-head { padding-top:18px; }
 }
+
+/* Evidence-first micro-navigation: credibility before credentials. */
+html[data-rx-page="editorial-home"] .hero-evidence-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 20px;
+  align-items:center;
+  justify-content:flex-start;
+  margin-top:10px;
+  padding-top:18px;
+}
+html[data-rx-page="editorial-home"] .hero-evidence-links a {
+  font:600 11px/1.6 var(--sans);
+  color:var(--home-sub);
+  text-decoration:underline;
+  text-decoration-color:var(--home-copper);
+  text-underline-offset:5px;
+}
+html[data-rx-page="editorial-home"] .hero-evidence-links a:hover { color:var(--home-copper); }
+@media(max-width:480px) {
+  html[data-rx-page="editorial-home"] .hero-evidence-links { gap:7px 16px; }
+  html[data-rx-page="editorial-home"] .hero-evidence-links a { font-size:11px; }
+}
