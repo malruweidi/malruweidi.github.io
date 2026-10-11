@@ -269,3 +269,15 @@
   script.defer=true;
   document.head.appendChild(script);
 })();
+
+/* Final website QA: one late-loading stylesheet and a narrowly scoped copy cleanup. */
+(function(){
+  const sheet=document.createElement("link");
+  sheet.rel="stylesheet";
+  sheet.href="/assets/final-polish-2026.css?v=20261011-qafinal1";
+  document.head.appendChild(sheet);
+  const script=document.createElement("script");
+  script.src="/assets/editorial-integrity-2026.js?v=20261011-qafinal1";
+  script.defer=true;
+  document.head.appendChild(script);
+})();
