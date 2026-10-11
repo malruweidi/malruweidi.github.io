@@ -5,39 +5,115 @@
   const onReady = () => {
     const root = document.documentElement;
     const homeNav = document.getElementById("navlinks");
-    // Surface verified outreach and scientific judging evidence in the public navigation.
-    if (homeNav && !homeNav.querySelector('a[href="engagement.html"]')) {
-      const l = document.createElement("a");
-      l.href = "engagement.html";
-      l.textContent = "Science & Society";
-      const contact = homeNav.querySelector(".contactbutton");
-      homeNav.insertBefore(l, contact || null);
-    }
-    if (homeNav && root.dataset.rxPage === "home" && !homeNav.querySelector(".rx-more")) {
-      const extras = [
-        "archive.html","computing.html","figures.html","grants.html","engagement.html",
-        "#press","#initiatives"
-      ];
-      const links = Array.from(homeNav.querySelectorAll(":scope > a"));
-      const moved = links.filter(a => extras.includes(a.getAttribute("href")));
-      if (moved.length) {
+
+    // Homepage: navigation is an index, not a second CV.
+    // Keep every original destination while exposing only the essential routes.
+    if (homeNav && root.dataset.rxPage === "home") {
+      const header = homeNav.closest(".header");
+      const navRow = header?.querySelector(".nav");
+      const brandName = header?.querySelector(".brandname");
+      const brandLine = header?.querySelector(".brandline");
+      if (brandName) brandName.textContent = "Mahmoud Al-Ruweidi";
+      if (brandLine) brandLine.textContent = "Research · Drug delivery · Living systems";
+
+      const initialLinks = Array.from(homeNav.querySelectorAll(":scope > a"));
+      const byHref = new Map(initialLinks.map(link => [link.getAttribute("href"), link]));
+      const used = new Set();
+      const take = href => {
+        const link = byHref.get(href);
+        if (link) used.add(link);
+        return link || null;
+      };
+
+      if (!homeNav.querySelector(".rx-more")) {
+        const primary = ["#research", "techniques.html", "#publications", "#writing", "#story"]
+          .map(take).filter(Boolean);
+        // Keep the wording familiar to returning visitors and the Arabic dictionary.
+        const methods = byHref.get("techniques.html");
+        if (methods) methods.textContent = "Methods";
         const details = document.createElement("details");
         details.className = "rx-more";
         const summary = document.createElement("summary");
-        summary.textContent = "Explore more";
-        summary.setAttribute("aria-label", "Explore additional pages");
+        summary.textContent = "Explore";
+        summary.setAttribute("aria-label", "Explore all research and community sections");
         const panel = document.createElement("div");
         panel.className = "rx-more-panel";
-        moved.forEach(link => panel.appendChild(link));
+        const groups = [
+          { heading:"Research library", hrefs:["computing.html","figures.html","grants.html","archive.html"] },
+          { heading:"People & ideas", hrefs:["engagement.html","chem-squad.html","#press","#initiatives"] }
+        ];
+        for (const group of groups) {
+          const column = document.createElement("div");
+          column.className = "rx-more-group";
+          const title = document.createElement("span");
+          title.className = "rx-more-group-label";
+          title.textContent = group.heading;
+          column.appendChild(title);
+          for (const href of group.hrefs) {
+            const link = take(href);
+            if (link) column.appendChild(link);
+          }
+          if (group.heading === "People & ideas") {
+            const cv = document.createElement("a");
+            cv.href = "cv.html";
+            cv.textContent = "Academic CV";
+            column.appendChild(cv);
+          }
+          panel.appendChild(column);
+        }
+        // Future sections must never disappear because of a hard-coded shortlist.
+        const remaining = initialLinks.filter(a => !used.has(a) && !a.classList.contains("contactbutton"));
+        if (remaining.length) {
+          const column = document.createElement("div");
+          column.className = "rx-more-group";
+          const title = document.createElement("span");
+          title.className = "rx-more-group-label";
+          title.textContent = "More";
+          column.append(title, ...remaining);
+          panel.appendChild(column);
+        }
         details.append(summary, panel);
-        const contact = homeNav.querySelector(".contactbutton");
-        homeNav.insertBefore(details, contact || null);
-        document.addEventListener("pointerdown", event => {
-          if (details.open && !details.contains(event.target)) details.open = false;
-        });
+        const contact = initialLinks.find(a => a.classList.contains("contactbutton"));
+        homeNav.replaceChildren(...primary, details, ...(contact ? [contact] : []));
         details.addEventListener("click", event => {
           if (event.target.closest("a")) details.open = false;
         });
+        document.addEventListener("pointerdown", event => {
+          if (details.open && !details.contains(event.target)) details.open = false;
+        });
+      }
+
+      const mobileToggle = header?.querySelector("#menu");
+      const closeMobile = () => {
+        homeNav.classList.remove("open");
+        if (mobileToggle) {
+          mobileToggle.setAttribute("aria-expanded", "false");
+          mobileToggle.textContent = "Menu +";
+        }
+      };
+      homeNav.querySelectorAll("a").forEach(link => link.addEventListener("click", closeMobile));
+      document.addEventListener("pointerdown", event => {
+        if (header && homeNav.classList.contains("open") && !header.contains(event.target)) closeMobile();
+      });
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && homeNav.classList.contains("open")) {
+          closeMobile();
+          mobileToggle?.focus();
+        }
+      });
+
+      // The bilingual control becomes part of the desktop header instead of
+      // floating over the scientific portrait. On small screens it stays fixed.
+      const languageSwitch = document.querySelector(".site-lang-switch");
+      if (languageSwitch && navRow && window.matchMedia) {
+        const desktop = window.matchMedia("(min-width:1101px)");
+        const positionLanguage = () => {
+          const destination = desktop.matches ? navRow : document.body;
+          if (languageSwitch.parentElement !== destination) destination.appendChild(languageSwitch);
+        };
+        positionLanguage();
+        if (desktop.addEventListener) desktop.addEventListener("change", positionLanguage);
+        else if (desktop.addListener) desktop.addListener(positionLanguage);
       }
     }
 
