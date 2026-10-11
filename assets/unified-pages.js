@@ -6,7 +6,7 @@ const ready=()=>{
   const page=location.pathname.split("/").pop()||"index.html";
   const inGrants=location.pathname.includes("/grants/");
   const root="/";
-  const logo="https://cdn.creativeclaw.co/u/8a002dd8/images/f20e9006-e1e3-4976-9c07-fcf36b1c9e43.png";
+  const logo="/assets/ruwaidix-approved.webp";
   const pages={
     "full-record.html":["Complete research record","السجل العلمي الكامل"],
     "techniques.html":["Methods atlas","أطلس التقنيات"],
@@ -72,7 +72,7 @@ const ready=()=>{
     summary.textContent=label("On this page","في هذه الصفحة");
     details.appendChild(summary);
     const links=document.createElement("div");links.className="rx-jump-panel";
-    jumpLinks.forEach(a=>{const link=document.createElement("a");link.href=a.getAttribute("href");link.textContent=a.textContent.trim().replace(/\\s+/g," ").slice(0,80);links.appendChild(link)});
+    jumpLinks.forEach(a=>{const link=document.createElement("a");link.href=a.getAttribute("href");link.textContent=a.textContent.trim().replace(/\s+/g," ").slice(0,80);links.appendChild(link)});
     details.appendChild(links);context.querySelector(".rx-context-inner").appendChild(details);
     links.addEventListener("click",()=>{details.open=false});
     document.addEventListener("click",e=>{if(!details.contains(e.target))details.open=false});
