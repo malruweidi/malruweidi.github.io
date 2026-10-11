@@ -11,6 +11,9 @@
   --rx-line:#D2DCD5;
   --rx-mist:#E9EFEB;
   --rx-copper-light:#E6B7A1;
+  --bg:var(--rx-parchment);
+  --dark:var(--rx-midnight);
+  --rust:var(--rx-copper);
   --ink:var(--rx-midnight);
   --night:var(--rx-midnight);
   --night2:#254750;
@@ -104,3 +107,13 @@ html[data-rx-page="chem-squad"] .hero .intro { color:#D1DEDA; }
   :root { --rx-muted:#30474C; --rx-line:#8DA5A0; }
 }
 @media print { body { background:white; color:#111; } }
+
+/* Redesigned editorial homepage: separate stylesheet, same Ruwaidix palette. */
+html[data-rx-page="editorial-home"] .header { background:rgba(245,243,236,.97); border-bottom-color:var(--rx-line); }
+html[data-rx-page="editorial-home"] .strap,
+html[data-rx-page="editorial-home"] .statement { background:var(--rx-midnight); }
+html[data-rx-page="editorial-home"] .lead { color:var(--rx-mineral); }
+html[data-rx-page="editorial-home"] .primary-btn { background:var(--rx-midnight); color:var(--rx-paper); }
+html[data-rx-page="editorial-home"] .primary-btn:hover { background:var(--rx-mineral); color:var(--rx-paper); }
+html[data-rx-page="editorial-home"] .rx { border-color:var(--rx-midnight); }
+html[data-rx-page="editorial-home"] .stages li:hover { background:var(--rx-paper); }
