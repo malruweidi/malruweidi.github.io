@@ -115,3 +115,126 @@ html[data-rx-page="home"] .rx-hero-primary:focus-visible,html[data-rx-page="home
 }
 html[lang="ar"][data-rx-page="home"] .rx-hero-title,html[lang="ar"][data-rx-page="home"] .rx-chapters-heading h2{font-family:Georgia,"Times New Roman",serif;letter-spacing:0}
 html[lang="ar"][data-rx-page="home"] .rx-portrait-detail{left:auto;right:-12px;border-left:0;border-right:3px solid #995b43}
+
+
+/* RX-DESKTOP-LAYOUT-2026-10-12
+   Desktop-only correction. Mobile layout (<=760px) is deliberately untouched.
+   Keep the portrait, text, photographs, links and all subpages unchanged.
+   Former desktop H1 reached 103px in a ~half-width column, while four
+   portrait-format story cards were compressed across a single row. */
+@media (min-width:1061px) {
+  html[data-rx-page="home"] .rx-editorial-hero {
+    padding-top:clamp(32px,3.4vw,50px);
+    padding-bottom:clamp(62px,5.8vw,88px);
+  }
+  html[data-rx-page="home"] .rx-hero-topline {
+    margin-bottom:clamp(37px,4.2vw,60px);
+  }
+  html[data-rx-page="home"] .rx-hero-grid {
+    grid-template-columns:minmax(0,1.16fr) minmax(0,.84fr);
+    align-items:center;
+    gap:clamp(44px,4.6vw,76px);
+  }
+  html[data-rx-page="home"] .rx-hero-title {
+    font-size:clamp(58px,4.75vw,73px);
+    line-height:1.055;
+    letter-spacing:-.048em;
+    max-width:100%;
+    margin-bottom:25px;
+    text-wrap:balance;
+  }
+  html[data-rx-page="home"] .rx-hero-kicker {margin-bottom:19px;}
+  html[data-rx-page="home"] .rx-hero-lead {
+    font-size:clamp(19px,1.6vw,23px);
+    line-height:1.43;
+    max-width:48ch;
+    margin-bottom:15px;
+  }
+  html[data-rx-page="home"] .rx-hero-detail {
+    font-size:15px;
+    line-height:1.78;
+    max-width:65ch;
+  }
+  html[data-rx-page="home"] .rx-hero-links {margin:25px 0 23px;}
+  html[data-rx-page="home"] .rx-portrait-mat img {
+    height:clamp(535px,44vw,630px);
+    object-position:center 33%;
+  }
+  html[data-rx-page="home"] .rx-portrait-detail {
+    left:13px;
+    bottom:60px;
+    max-width:220px;
+    padding:15px 18px;
+    box-shadow:0 9px 28px rgba(20,46,52,.10);
+  }
+  html[data-rx-page="home"] .rx-chapters-heading {
+    grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
+    column-gap:60px;
+    margin-bottom:31px;
+  }
+  html[data-rx-page="home"] .rx-chapters-heading h2 {max-width:18ch;}
+  html[data-rx-page="home"] .rx-chapter-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:19px;
+  }
+  html[data-rx-page="home"] .rx-chapter-card {
+    display:grid;
+    grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+    align-items:stretch;
+    min-height:286px;
+  }
+  html[data-rx-page="home"] .rx-chapter-image {
+    height:100%;
+    min-height:286px;
+  }
+  html[data-rx-page="home"] .rx-chapter-info {
+    min-width:0;
+    padding:25px 23px 23px;
+    gap:11px;
+  }
+  html[data-rx-page="home"] .rx-chapter-card h3 {
+    font-size:clamp(25px,2.15vw,30px);
+    line-height:1.14;
+    overflow-wrap:normal;
+  }
+  html[data-rx-page="home"] .rx-chapter-card p {font-size:13.5px;line-height:1.72;}
+  html[data-rx-page="home"] .rx-bridge {gap:35px;}
+}
+/* Small laptops: avoid a narrow 50/50 split with the former oversized headline. */
+@media (min-width:901px) and (max-width:1060px) {
+  html[data-rx-page="home"] .rx-hero-grid {
+    grid-template-columns:minmax(0,1.13fr) minmax(0,.87fr);
+    gap:30px;
+  }
+  html[data-rx-page="home"] .rx-hero-title {
+    font-size:clamp(48px,4.9vw,55px);
+    line-height:1.055;
+    max-width:100%;
+    margin-bottom:23px;
+  }
+  html[data-rx-page="home"] .rx-hero-lead {font-size:20px;max-width:48ch;}
+  html[data-rx-page="home"] .rx-hero-detail {font-size:14px;line-height:1.75;}
+  html[data-rx-page="home"] .rx-portrait-mat img {height:520px;}
+  html[data-rx-page="home"] .rx-portrait-detail {left:8px;bottom:55px;}
+}
+/* Tablet portrait and compact notebooks: a considered single-column composition. */
+@media (min-width:761px) and (max-width:900px) {
+  html[data-rx-page="home"] .rx-hero-grid {
+    grid-template-columns:minmax(0,1fr);
+    gap:38px;
+  }
+  html[data-rx-page="home"] .rx-hero-copy {max-width:750px;}
+  html[data-rx-page="home"] .rx-hero-title {
+    font-size:clamp(52px,6.2vw,61px);
+    max-width:100%;
+    line-height:1.06;
+  }
+  html[data-rx-page="home"] .rx-hero-lead {max-width:60ch;}
+  html[data-rx-page="home"] .rx-hero-detail {max-width:70ch;}
+  html[data-rx-page="home"] .rx-hero-portrait {
+    width:min(100%,670px);
+    margin-inline:auto;
+  }
+  html[data-rx-page="home"] .rx-portrait-mat img {height:560px;}
+  html[data-rx-page="home"] .rx-portrait-detail {left:13px;}
+}
