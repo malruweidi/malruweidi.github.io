@@ -137,3 +137,75 @@ section.story.editorial-story .story-arrival p {color:#E1E9E4;}
     color:#17343B;
   }
 }
+
+
+/* 2026-10-11 | Correct the pale 2011 anatomy inset and its adjacent image cards.
+   A global `.story p, .story h3` !important rule was rendering pale text
+   on pale cards. Scope light type to dark surfaces, and deliberately override
+   it only within the light panels. Do not alter source photographs. */
+html[data-rx-page="home"] section.story.editorial-story .story-anatomy .anatomy-marker {
+  background:#F2F1E9 !important;
+  color:#1C3A3E !important;
+  border-left:4px solid #B56F52;
+  box-shadow:0 12px 35px rgba(4,21,24,.14);
+  padding:clamp(28px,3.1vw,44px);
+  min-height:340px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+  gap:0;
+}
+html[data-rx-page="home"] section.story.editorial-story .story-anatomy .anatomy-marker small {
+  order:-1;
+  display:block;
+  position:static;
+  z-index:1;
+  color:#385A5D !important;
+  font:600 11px/1.5 var(--mono,"DM Mono",monospace);
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  margin:0 0 clamp(21px,2.5vw,35px);
+}
+html[data-rx-page="home"] section.story.editorial-story .story-anatomy .anatomy-marker strong {
+  display:block;
+  position:static;
+  color:#365F60 !important;
+  font:400 clamp(78px,8.7vw,136px)/.89 var(--serif,"Newsreader",Georgia,serif);
+  letter-spacing:-.055em;
+  margin:0 0 clamp(17px,2.1vw,28px);
+  opacity:1;
+}
+html[data-rx-page="home"] section.story.editorial-story .story-anatomy .anatomy-marker p {
+  color:#234245 !important;
+  font:400 clamp(22px,2.0vw,29px)/1.32 var(--serif,"Newsreader",Georgia,serif);
+  letter-spacing:-.012em;
+  margin:0;
+  max-width:27ch;
+  opacity:1;
+}
+html[data-rx-page="home"] section.story.editorial-story .photo-opening figure {
+  background:#F5F2E9 !important;
+  color:#19383C !important;
+}
+html[data-rx-page="home"] section.story.editorial-story .photo-opening figure h3 {
+  color:#19383C !important;
+}
+html[data-rx-page="home"] section.story.editorial-story .photo-opening figure p {
+  color:#39595B !important;
+}
+html[data-rx-page="home"] section.story.editorial-story .photo-opening figure figcaption {
+  color:#39595B !important;
+}
+@media(max-width:650px) {
+  html[data-rx-page="home"] section.story.editorial-story .story-anatomy .anatomy-marker {
+    min-height:0;
+    padding:28px 25px 31px;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .story-anatomy .anatomy-marker strong {
+    font-size:clamp(75px,19vw,110px);
+  }
+  html[data-rx-page="home"] section.story.editorial-story .story-anatomy .anatomy-marker p {
+    font-size:clamp(21px,5.3vw,27px);
+  }
+}
