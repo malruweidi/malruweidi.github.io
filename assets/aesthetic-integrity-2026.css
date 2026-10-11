@@ -1,0 +1,149 @@
+/* Ruwaidix visual integrity pass — 11 October 2026.
+   Explicit foreground/background pairs protect against historical stylesheet
+   collisions. No content, photo, graph, video, or source record is hidden. */
+:root{
+  --rx-readable-ink:#17353a;
+  --rx-readable-copy:#365356;
+  --rx-readable-muted:#465e60;
+  --rx-readable-paper:#f7f5ee;
+  --rx-readable-card:#fffdf8;
+  --rx-readable-dark:#15363c;
+  --rx-readable-light:#f6f4ec;
+  --rx-readable-dim:#dce8e1;
+  --rx-readable-link:#8a422e;
+  --rx-readable-warm:#f3bb99;
+  --rx-readable-stroke:#c6d6cf;
+  --rx-readable-sans:"DM Sans",Arial,system-ui,sans-serif;
+  --rx-readable-serif:"Newsreader",Georgia,serif;
+  --rx-readable-mono:"DM Mono",ui-monospace,monospace;
+}
+html{scroll-padding-top:105px}
+body{overflow-wrap:break-word;-webkit-text-size-adjust:100%}
+:where(main,section,article,figure,.wrap,.container,.rx-inner){min-width:0}
+:where(img,video,svg){max-width:100%}
+:where(p,li,figcaption){text-wrap:pretty}
+:where(h1,h2,h3,h4){text-wrap:balance;overflow-wrap:break-word}
+:where(button,a,summary):focus-visible{outline:3px solid #b66b4d;outline-offset:3px}
+:where(a){text-underline-offset:3px}
+:where(a[href^="http"]){overflow-wrap:anywhere}
+:where(figcaption){line-height:1.7}
+::selection{background:#d1e3d8;color:#132e35}
+/* Type hierarchy: text must remain legible on small screens and high-density displays. */
+html:not([lang="ar"]) body{font-family:var(--rx-readable-sans)}
+html:not([lang="ar"]) :where(h1,h2,h3,h4,.display){font-family:var(--rx-readable-serif)}
+html:not([lang="ar"]) :where(.mono,.eyebrow,.brow,.fig-kicker,.work-meta,.rx-brand small){font-family:var(--rx-readable-mono)}
+html[data-rx-page="home"] .hero-copy .subtitle{font-size:clamp(14.5px,1.08vw,16px);line-height:1.82;color:var(--rx-readable-copy)}
+html[data-rx-page="home"] .hero-copy .lead{color:#294d52;line-height:1.56}
+html[data-rx-page="home"] .hero-copy .identityline small{font-size:12px;color:#38595a;line-height:1.7}
+html[data-rx-page="home"] .numbers p{font-size:13px;line-height:1.7;color:#425c5f}
+html[data-rx-page="home"] .framework-grid p{font-size:13.5px;line-height:1.78;color:#405a5d}
+html[data-rx-page="home"] .framework-head>p{font-size:15px;line-height:1.82;color:#3c5859}
+html[data-rx-page="home"] .quality-copy p{font-size:15px;line-height:1.8;color:#365354}
+html[data-rx-page="home"] .quality-flow p{font-size:13px;line-height:1.75;color:#e3eee9}
+html[data-rx-page="home"] .quality-credential p{font-size:13px;line-height:1.76;color:#415d5d}
+html[data-rx-page="home"] .quality-credentials .q-kind{font-size:11px;color:#455c5a}
+html[data-rx-page="home"] .quality-notes p{font-size:12.5px;color:#475e5a}
+html[data-rx-page="home"] .grant-teaser p{font-size:14px;color:#3c5653}
+html[data-rx-page="home"] .portrait-heading,
+html[data-rx-page="home"] .portrait-overlay small{font-size:11px;letter-spacing:.035em;color:#3e5656}
+html[data-rx-page="home"] .plate-below{font-size:11px;line-height:1.6;color:#445c5d}
+html[data-rx-page="home"] .hero-note{color:#3f5b5d}
+html[data-rx-page="home"] .header .brandline{font-size:10.5px;color:#456165}
+html[data-rx-page="home"] .header .navlinks>a,
+html[data-rx-page="home"] .header .rx-more>summary{font-size:13px}
+html[data-rx-page="home"] .buttonrow :is(a,summary){line-height:1.45}
+html[data-rx-page="home"] .buttonrow .textlink{color:#7e402d}
+html[data-rx-page="home"] .hero-copy .buttonrow>.button{background:#193a40;color:#fffdf8}
+html[data-rx-page="home"] .hero-copy .buttonrow>.button:hover{background:#2b5960;color:#fffdf8}
+/* Photographic story has a dark canvas with intentional paper-colored photo cards. */
+html[data-rx-page="home"] .story.editorial-story{background:var(--rx-readable-dark);color:var(--rx-readable-light)}
+html[data-rx-page="home"] .story.editorial-story :is(.story-prologue h2,.story-rewind h3,.story-bridge h3,.story-prose h3,.trail-scene h4){color:#fbf8f0}
+html[data-rx-page="home"] .story.editorial-story :is(.story-prologue p:not(.eyebrow),.story-rewind p,.story-bridge p,.story-prose p,.trail-scene p){color:#e2ebe6}
+html[data-rx-page="home"] .story.editorial-story :is(.story-photo figcaption,.story-prose small,.trail-scene small){color:#d5e4dc;font-size:12px;line-height:1.7}
+html[data-rx-page="home"] .story.editorial-story :is(.eyebrow,.story-rewind span,.trail-scene .chapter-num){color:var(--rx-readable-warm)}
+html[data-rx-page="home"] .story.editorial-story :is(.story-prose a,.trail-scene a,.arrival-links a){color:#f3c3a5}
+html[data-rx-page="home"] .story.editorial-story .photo-opening figure{background:#faf7ed;color:#17363b}
+html[data-rx-page="home"] .story.editorial-story .photo-opening h3{color:#17363b}
+html[data-rx-page="home"] .story.editorial-story .photo-opening p{font-size:11.5px;color:#405b5d;line-height:1.55}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker{background:#e6ede5;color:#18393d}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker p{color:#26484b}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker small{color:#405c5a}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker strong{color:#a1b6ac}
+html[data-rx-page="home"] .story.editorial-story .story-arrival{background:#102c34;color:#faf7ed}
+html[data-rx-page="home"] .story.editorial-story .story-arrival p{color:#e4eee7}
+/* Dark documentary sections must not inherit the dark text of generic cards. */
+html[data-rx-page="home"] :is(.technique-footage-preview,.infrastructure-feature,.quality-figure){color:#f5f5ed}
+html[data-rx-page="home"] .technique-footage-preview :is(h2,h3){color:#f5f5ed}
+html[data-rx-page="home"] .technique-footage-preview :is(p,.technique-footage-grid>a>span){color:#e0ebe5}
+html[data-rx-page="home"] .technique-footage-preview .technique-footage-grid>a{background:#24474b;color:#f3f7f0;border-color:#678982}
+html[data-rx-page="home"] .quality-figure h3{color:#fffdf8}
+html[data-rx-page="home"] .infrastructure-feature :is(h2,h3,p){color:#e5ede7}
+html[data-rx-page="home"] .infrastructure-feature a{color:#f3c3a5}
+/* Secondary pages: don't recolor the research objects; repair the reading surfaces. */
+html.rx-site-theme .rx-universal{background:#faf9f4;color:#18383d}
+html.rx-site-theme .rx-universal .rx-brand strong{font-size:15px;color:#18383d}
+html.rx-site-theme .rx-universal .rx-brand small{font-size:10.5px;line-height:1.45;color:#455d60}
+html.rx-site-theme .rx-universal .rx-primary>a{font-size:12.5px;color:#29494d}
+html.rx-site-theme .rx-universal .rx-primary>a[aria-current="page"]{color:#195d55;border-bottom-color:#195d55}
+html.rx-site-theme .rx-universal .rx-menu-panel{background:#fffdf8;color:#18383d}
+html.rx-site-theme .rx-universal .rx-menu-panel a{color:#25474a;font-size:13px}
+html.rx-site-theme .rx-universal .rx-menu-panel :is(a:hover,a[aria-current="page"]){color:#86432f}
+html.rx-site-theme .rx-context{background:#edf3ef;color:#3c5558;font-size:11.5px}
+html.rx-site-theme .rx-context a{color:#185b53}
+html.rx-site-theme :is(.card,.figure-card,.photo-card,.field,.era,.resource,.panel):not(.dark){color:var(--rx-readable-ink)}
+html.rx-site-theme :is(.card,.figure-card,.photo-card,.field,.era,.resource,.panel):not(.dark) :is(p,li,figcaption,small){color:var(--rx-readable-copy)}
+html.rx-site-theme :is(.card,.figure-card,.photo-card,.field,.era,.resource,.panel):not(.dark) a{color:#84412f}
+html.rx-site-theme :is(.dark,.hero):is(.dark) :is(p,li,small,figcaption){color:#e0ebe4}
+html[data-rx-page="chem-squad"] :is(.hero,.dark,.bridge){color:#f8f6ee}
+html[data-rx-page="chem-squad"] :is(.hero,.dark,.bridge) :is(.brow,.arrowlink,.hero h1 span){color:#f3bd9b}
+html[data-rx-page="chem-squad"] .labnote{color:#193a3c;background:#f1e7d4}
+html[data-rx-page="chem-squad"] .labnote :is(p,small,li){color:#385357}
+html[data-rx-page="engagement"] header:not(.rx-universal){background:#15363c;color:#f7f5ed}
+html[data-rx-page="engagement"] header:not(.rx-universal) a{color:#f7f5ed}
+html[data-rx-page="engagement"] .story p{color:#365356}
+html[data-rx-page="engagement"] .photo figcaption{font-size:13px;color:#3c575a}
+html[data-rx-page="illness-evidence"] .prose{color:#315257;font-size:16px;line-height:1.9}
+html[data-rx-page="illness-evidence"] .hero{color:#f9f6ee}
+html[data-rx-page="illness-evidence"] .hero :is(.intro,aside){color:#dce9e1}
+html[data-rx-page="illness-evidence"] .sequence p{font-size:14px;color:#425b5d}
+/* Figures, diagrams, movies and source photographs must keep their own colors. */
+:where(figure,video,img,picture){filter:none}
+:where(.rx-universal .rx-mark,.header .monogram img){object-fit:contain}
+/* Arabic copy needs room: do not impose tight Latin tracking or line-height. */
+html[lang="ar"] :where(p,li,figcaption){line-height:2}
+html[lang="ar"] :where(h1,h2,h3,h4){line-height:1.4;letter-spacing:0}
+html[lang="ar"] .rx-universal .rx-brand small{letter-spacing:0;line-height:1.6}
+html[dir="rtl"] .rx-universal .rx-primary{margin-left:0;margin-right:auto}
+html[dir="rtl"] .rx-universal .rx-menu-panel{right:auto;left:0}
+/* All touch-screen controls should remain operable at common mobile widths. */
+@media(max-width:850px){
+  :where(main .grid,main .sectiontop,main .hero-grid){min-width:0}
+  html[data-rx-page="home"] .hero-copy .subtitle{font-size:15px}
+  html[data-rx-page="home"] .story.editorial-story .story-prose p{font-size:15.5px}
+  html[data-rx-page="home"] .quality-flow h3{font-size:24px}
+}
+@media(max-width:600px){
+  html{scroll-padding-top:80px}
+  html[data-rx-page="home"] .hero-copy h1{font-size:clamp(45px,12vw,66px);line-height:1.05}
+  html[data-rx-page="home"] .hero-copy .buttonrow{gap:12px}
+  html[data-rx-page="home"] .hero-copy .buttonrow>a,
+  html[data-rx-page="home"] .hero-copy .buttonrow>details{max-width:100%}
+  html[data-rx-page="home"] .photo-opening h3{font-size:21px}
+  html[data-rx-page="home"] .quality-credential p{font-size:13px}
+  html.rx-site-theme .rx-universal .rx-brand strong{font-size:clamp(12px,3.4vw,15px)}
+  html.rx-site-theme .rx-universal details.rx-more>summary{min-height:44px}
+  html.rx-site-theme .rx-menu-panel a{min-height:39px;display:flex;align-items:center}
+}
+@media(max-width:380px){
+  html[data-rx-page="home"] .hero-copy h1{font-size:44px}
+  html.rx-site-theme .rx-universal .rx-brand small{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+@media print{
+  body{background:#fff;color:#111}
+  a{text-decoration:underline}
+  .site-lang-switch{display:none!important}
+}
