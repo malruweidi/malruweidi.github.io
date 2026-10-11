@@ -106,3 +106,17 @@ html[data-rx-page="home"] .hero-art .portrait-overlay img{display:none!important
 html[data-rx-page="home"] .hero-art .portrait-overlay strong{color:#fff!important;font-size:12px!important;letter-spacing:.06em!important;}
 html[data-rx-page="home"] .hero-art .portrait-overlay small{color:#e5f0e9!important;font-size:10px!important;line-height:1.5!important;}
 }
+
+/* Documentary inset in the existing story: chemical curiosity at home, not a research credential. */
+html[data-rx-page="home"] .rx-at-home-science{width:min(940px,100%);display:grid;grid-template-columns:minmax(170px,300px) 1fr;gap:clamp(23px,4vw,55px);align-items:center;margin:clamp(30px,5vw,64px) 0 24px;padding:clamp(22px,3vw,38px) 0;border-top:1px solid #567673;border-bottom:1px solid #567673;color:#edf2ea;}
+html[data-rx-page="home"] .rx-at-home-science>a{display:block;overflow:hidden;background:#294749;}
+html[data-rx-page="home"] .rx-at-home-science img{width:100%;height:300px;display:block;object-fit:cover;object-position:center 39%;filter:saturate(.9);}
+html[data-rx-page="home"] .rx-at-home-science figcaption{max-width:58ch;text-align:start;}
+html[data-rx-page="home"] .rx-at-home-science small{display:block;color:#d6a68d;font:500 10px/1.5 "DM Mono",monospace;letter-spacing:.07em;margin-bottom:13px;}
+html[data-rx-page="home"] .rx-at-home-science strong{display:block;color:#f3f4ee;font:400 clamp(29px,3vw,43px)/1.14 "Newsreader",Georgia,serif;margin-bottom:14px;letter-spacing:-.02em;}
+html[data-rx-page="home"] .rx-at-home-science p{font:400 14px/1.84 "DM Sans",Arial,sans-serif;color:#d7e3dd;margin:0 0 17px;}
+html[data-rx-page="home"] .rx-at-home-science figcaption>span{display:block;color:#bdcdc7;font:10px/1.6 "DM Mono",monospace;}
+html[data-rx-page="home"] .rx-at-home-science figcaption>a{display:inline-block;margin-top:16px;color:#edb296;font:600 12px/1.5 "DM Sans",sans-serif;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px;}
+html[lang="ar"][data-rx-page="home"] .rx-at-home-science strong{font-family:"Noto Naskh Arabic",serif;letter-spacing:0;}
+html[lang="ar"][data-rx-page="home"] .rx-at-home-science :is(p,small,figcaption>span){font-family:"Noto Sans Arabic",sans-serif;letter-spacing:0;}
+@media(max-width:690px){html[data-rx-page="home"] .rx-at-home-science{grid-template-columns:1fr;width:100%;gap:23px}html[data-rx-page="home"] .rx-at-home-science img{height:260px;object-position:center 44%;}}
