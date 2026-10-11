@@ -4,6 +4,20 @@
   "use strict";
   const onReady = () => {
     const root = document.documentElement;
+    // One approved brand asset for headers and browser tabs across all pages.
+    // Do not replace the research portrait or illustrative/content images.
+    const approvedLogo = "https://cdn.creativeclaw.co/u/8a002dd8/images/f20e9006-e1e3-4976-9c07-fcf36b1c9e43.png";
+    const favicons = document.querySelectorAll('head link[rel~="icon"]');
+    if (favicons.length) {
+      favicons.forEach(link => { link.href = approvedLogo; link.type = "image/png"; });
+    } else {
+      const icon = document.createElement("link");
+      icon.rel = "icon"; icon.type = "image/png"; icon.href = approvedLogo;
+      document.head.appendChild(icon);
+    }
+    document.querySelectorAll('header a.logo > img:first-child, header a.brand > img:first-child, header a.wordmark > img:first-child, header .cv-branding > img:not(.cv-portrait)').forEach(img => {
+      if (img.src !== approvedLogo) img.src = approvedLogo;
+    });
     const homeNav = document.getElementById("navlinks");
 
     // Homepage: navigation is an index, not a second CV.
