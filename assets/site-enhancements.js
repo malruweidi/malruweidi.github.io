@@ -247,3 +247,10 @@
   var css=document.createElement("link");css.rel="stylesheet";css.href="/assets/public-science-home.css?v=20261011";document.head.appendChild(css);
   var js=document.createElement("script");js.src="/assets/public-science-home.js?v=20261011";js.defer=true;document.head.appendChild(js);
 })();
+
+/* Original university-laboratory photographs in methods, not stock pictures. */
+(function(){
+ if(document.documentElement.getAttribute("data-rx-page")!=="techniques")return;
+ var css=document.createElement("link");css.rel="stylesheet";css.href="/assets/original-lab-photos.css?v=20261011b";document.head.appendChild(css);
+ var js=document.createElement("script");js.src="/assets/original-lab-photos.js?v=20261011b";js.defer=true;document.head.appendChild(js);
+})();
