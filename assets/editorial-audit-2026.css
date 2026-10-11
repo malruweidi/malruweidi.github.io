@@ -35,7 +35,8 @@ html[data-rx-page="home"] .technique-footage-preview .technique-footage-intro{ma
 html[data-rx-page="home"] .technique-footage-preview .rx-film figcaption{min-height:190px;}
 html[data-rx-page="home"] .rx-audit-full-account{display:inline-flex;margin:4px 0 25px;border-bottom:1px solid #ad684c;color:#914a34;font:600 13px/1.5 "DM Sans",sans-serif;text-decoration:none;padding:7px 0;}
 html[data-rx-page="home"] .quality-section{border-top:1px solid #cbd7d0;border-bottom:1px solid #cbd7d0;}
-html[data-rx-page="home"] .story{background:#f9f7f1;}
+/* Story uses pale copy, white literary quotation, and warm links: keep the original dark reading surface. */
+html[data-rx-page="home"] .story{background:#17363b;color:#edf2ea;}
 html[data-rx-page="home"] .rx-illness-bridge{background:#e9eee8;}
 html[data-rx-page="home"] :where(.work-card,.secondary-card,.patient-donate-card){box-shadow:0 8px 26px rgba(14,43,47,.04);transition:box-shadow .2s ease,border-color .2s ease;}
 html[data-rx-page="home"] :where(.work-card,.secondary-card,.patient-donate-card):hover{box-shadow:0 14px 36px rgba(14,43,47,.075);border-color:#afc4ba;}
