@@ -5,9 +5,17 @@
   const onReady = () => {
     const root = document.documentElement;
     const homeNav = document.getElementById("navlinks");
+    // Surface verified outreach and scientific judging evidence in the public navigation.
+    if (homeNav && !homeNav.querySelector('a[href="engagement.html"]')) {
+      const l = document.createElement("a");
+      l.href = "engagement.html";
+      l.textContent = "Science & Society";
+      const contact = homeNav.querySelector(".contactbutton");
+      homeNav.insertBefore(l, contact || null);
+    }
     if (homeNav && root.dataset.rxPage === "home" && !homeNav.querySelector(".rx-more")) {
       const extras = [
-        "archive.html","computing.html","figures.html","grants.html",
+        "archive.html","computing.html","figures.html","grants.html","engagement.html",
         "#press","#initiatives"
       ];
       const links = Array.from(homeNav.querySelectorAll(":scope > a"));
