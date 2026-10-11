@@ -28,7 +28,7 @@
 .patient-donation .eyebrow{color:#ebae94}
 .patient-donation h3{font:400 clamp(32px,3.7vw,48px)/1.14 var(--serif);margin:17px 0 20px;letter-spacing:-.02em}
 .patient-donation>p:not(.eyebrow){font-size:13px;line-height:1.9;color:#d6e1db;margin:0 0 24px}
-.patient-donate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:30px 0 23px}
+.patient-donate-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:30px 0 23px}
 .patient-donate-card{display:flex;flex-direction:column;min-width:0;background:#f5f2e9;color:var(--ink);padding:20px}
 .patient-donate-number{font:10px/1.6 var(--mono);letter-spacing:.04em;color:var(--terra);min-height:35px}
 .patient-donate-card h4{font:400 30px/1.15 var(--serif);margin:7px 0 8px}
@@ -51,6 +51,12 @@
 .patient-resources>p:not(.eyebrow){font-size:12px;line-height:1.9;color:#4a5852;margin:0 0 15px}
 .patient-resources>p a{color:var(--terra);text-decoration:underline;text-underline-offset:4px}
 .patient-resources .patient-resource-note{font:11px/1.75 var(--sans);color:var(--muted)}
+.patient-related-cause{background:#f6f4ec;border:1px solid var(--line);padding:24px;margin:20px 0 14px}
+.patient-related-cause>.mono{font:10px/1.6 var(--mono);color:var(--terra);margin:0 0 12px}
+.patient-related-cause h4{font:400 27px/1.2 var(--serif);margin:0 0 12px}
+.patient-related-cause>p:not(.mono){font:12px/1.8 var(--sans);color:#4a5852;margin:0 0 16px}
+.patient-related-actions{display:flex;gap:12px 22px;flex-wrap:wrap}
+.patient-related-actions a{font:700 11px/1.5 var(--sans);color:var(--terra);text-decoration:underline;text-underline-offset:4px}
 @media(max-width:1120px){.patient-donate-grid{grid-template-columns:1fr}.patient-donate-card .patient-donate-full{min-height:0}.patient-donate-number{min-height:0}}
 @media(max-width:850px){.patient-grid{grid-template-columns:1fr;gap:27px}.patient-aside h2{margin-bottom:25px}.patient-quote{margin:24px 0}.patient-chapters{grid-template-columns:1fr}}
 @media(max-width:520px){.patient-donation{margin-left:-8px;margin-right:-8px}.patient-donate-card{padding:18px}}
@@ -87,7 +93,7 @@
 <div class="patient-donation" id="give-eosinophilic" aria-labelledby="giving-heading">
 <p class="eyebrow mono">Independent charities / Official giving links</p>
 <h3 id="giving-heading">Help make the next patient's journey less uncertain.</h3>
-<p>My story is one among many. Families affected by eosinophilic diseases need reliable information, specialist care and continued research. For readers who wish to help, I am sharing official donation pages for three established, independently verifiable patient charities. These are their own websites and donation programs, not a personal fundraising account.</p>
+<p>My story is one among many. Families affected by eosinophilic diseases need reliable information, specialist care and continued research. For readers who wish to help, I am sharing official donation pages for four established, independently verifiable organizations focused on eosinophilic conditions. These are their own websites and donation programs, not a personal fundraising account.</p>
 <div class="patient-donate-grid">
 <article class="patient-donate-card">
 <div class="patient-donate-number">01 / EGID RESEARCH</div>
@@ -113,8 +119,17 @@
 <a href="https://www.eosnetwork.org/donate-or-set-up-a-regular-gift" target="_blank" rel="noopener noreferrer">Give directly to EOS Network <span aria-hidden="true">↗</span></a>
 <a class="patient-donate-evidence" href="https://www.eosnetwork.org/" target="_blank" rel="noopener noreferrer">Read about its work ↗</a><a class="patient-donate-evidence" href="https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5196557" target="_blank" rel="noopener noreferrer">Verify UK Charity Commission registration ↗</a>
 </article>
+<article class="patient-donate-card">
+<div class="patient-donate-number">04 / FAMILIES &amp; COMMUNITY</div>
+<h4>Eosinophilic Family Coalition</h4>
+<p class="patient-donate-full">US 501(c)(3) · EIN 45-2406486 · Not rated by Charity Navigator</p>
+<p>Started as a Cincinnati family support group in 2008. Today it supports families living with eosinophilic disorders through community connections, education and advocacy.</p>
+<a href="https://eoscoalition.org/donation/" target="_blank" rel="noopener noreferrer">Give directly to EFC <span aria-hidden="true">↗</span></a>
+<a class="patient-donate-evidence" href="https://eoscoalition.org/who-we-are/" target="_blank" rel="noopener noreferrer">Read its mission ↗</a>
+<a class="patient-donate-evidence" href="https://www.charitynavigator.org/ein/452406486" target="_blank" rel="noopener noreferrer">Verify 501(c)(3) listing ↗</a>
+</article>
 </div>
-<p class="patient-giving-transparency"><strong>Independent, verified organizations.</strong> APFED and CURED are US 501(c)(3) charities recognized as advocacy partners in NIH-supported CEGIR research; EOS Network is registered with the UK Charity Commission. All three links go directly to the organizations' official giving pages. I do not collect, receive, or process donations and have no financial relationship with these organizations. Linking them does not imply a formal affiliation or endorsement.</p>
+<p class="patient-giving-transparency"><strong>Independent, verified organizations.</strong> APFED and CURED are US 501(c)(3) charities associated with CEGIR patient advocacy; EFC is a separately registered US 501(c)(3) that Charity Navigator lists but does not rate; EOS Network is registered with the UK Charity Commission. All four giving links go directly to the organizations' official websites. I do not collect, receive, or process donations and have no financial relationship with these organizations. Linking them does not imply a formal affiliation or endorsement.</p>
 <p class="patient-giving-else"><strong>Not in a position to donate?</strong> Sharing these official resources, learning about the diseases, or participating in legitimate patient and research communities can also make a difference.</p>
 </div>
 <div class="patient-commitment">
@@ -126,8 +141,14 @@
 <div class="patient-resources">
 <p class="eyebrow mono">Research and clinical information</p>
 <h3>Learn about the science.</h3>
-<p>For those interested in the research landscape, the <a href="https://cegir.rarediseasesnetwork.org/" target="_blank" rel="noopener noreferrer">Consortium of Eosinophilic Gastrointestinal Disease Researchers (CEGIR) ↗</a> brings together clinical and basic research on eosinophilic gastrointestinal conditions. This is an information link, not a separate donation request.</p>
-<p class="patient-resource-note">My account reflects personal experience and is not medical advice. Eosinophilic gastrointestinal diseases are not necessarily autoimmune disorders.</p>
+<p>For those interested in the research landscape, the <a href="https://cegir.rarediseasesnetwork.org/" target="_blank" rel="noopener noreferrer">Consortium of Eosinophilic Gastrointestinal Disease Researchers (CEGIR) ↗</a> brings together clinical and basic research on eosinophilic gastrointestinal conditions. This is a research-information link, not a separate donation destination.</p>
+<div class="patient-related-cause">
+<p class="mono">RELATED CAUSE / A DISTINCT DISEASE CATEGORY</p>
+<h4>Autoimmune Association</h4>
+<p>This established US 501(c)(3) supports people affected by autoimmune diseases through education, research and patient advocacy. I am sharing it as a broader, related resource, not because eosinophilic gastrointestinal disease is inherently autoimmune.</p>
+<div class="patient-related-actions"><a href="https://autoimmune.org/ways-to-give/" target="_blank" rel="noopener noreferrer">Official giving options ↗</a><a href="https://www.charitynavigator.org/ein/383027574" target="_blank" rel="noopener noreferrer">Verify nonprofit (EIN 38-3027574) ↗</a></div>
+</div>
+<p class="patient-resource-note">My account reflects personal experience and is not medical advice. Eosinophilic gastrointestinal diseases are not necessarily autoimmune disorders. None of the organizations listed here sponsors or endorses this personal website.</p>
 </div>
 </div>
 </div>
