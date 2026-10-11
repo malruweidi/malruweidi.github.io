@@ -1041,3 +1041,13 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Chem Squad · An informal group of chemistry graduates connected through research and conversation since 2016.": "فريق الكيمياء · مجموعة غير رسمية من خريجي الكيمياء تجمعهم الأبحاث والحوار منذ عام 2016.",
   "© 2026 Mahmoud K. Al-Ruweidi · Chem Squad · Collective history and equal recognition · Original illustrative artwork; no historical laboratory photo is implied": "© 2026 محمود الرويدي · فريق الكيمياء · تاريخ جماعي وتقدير متساوٍ للأعضاء · رسومات توضيحية أصلية ولا يُفترض أنها صور تاريخية للمختبر"
 });
+
+/* Arabic equivalents for October editorial amendments. */
+Object.assign(window.RuwaidixArabicDictionary,{
+  "Chemistry gave me a way to ask questions, but those questions did not stay in chemistry.": "منحتني الكيمياء طريقة لطرح الأسئلة، لكن تلك الأسئلة لم تبقَ داخل حدود الكيمياء.",
+  "I study how molecules and materials behave in living systems, particularly when tissue is injured and a therapy must reach the right place.": "أدرس سلوك الجزيئات والمواد في الأنظمة الحية، لا سيما عند إصابة الأنسجة وعندما تحتاج المعالجة إلى الوصول إلى موضعها المناسب.",
+  "I studied chemistry at Qatar University and later moved into pharmaceutical sciences. My research has taken me through chemical synthesis, biomaterials, pulmonary epithelial injury, developmental imaging, inhaled drug delivery, and biomedical computing. I also write about the history of medicine because I am interested in how explanations become accepted, and in what evidence eventually persuades us to change them.": "درست الكيمياء في جامعة قطر ثم انتقلت إلى العلوم الصيدلانية. وقد شمل عملي التخليق الكيميائي والمواد الحيوية وإصابة الظهارة الرئوية والتصوير النمائي وتوصيل الأدوية بالاستنشاق والحوسبة الطبية الحيوية. وأكتب أيضًا عن تاريخ الطب لأنني أهتم بكيفية قبول التفسيرات العلمية، وبنوع الأدلة التي تدفعنا في النهاية إلى مراجعتها.",
+  "Choosing methods": "اختيار المنهج",
+  "according to the problem.": "بحسب طبيعة المشكلة.",
+  "My research is not organized around a single material or animal model. I begin by understanding the system under study, examining the mechanisms that might explain an observation, and deciding what experiment could overturn my interpretation. The methods change because the problems change.": "لا يتمحور بحثي حول مادة واحدة أو نموذج حيواني واحد. أبدأ بفهم النظام الذي أدرسه، ثم أبحث في الآليات التي قد تفسر الملاحظة، وأحدد التجربة التي يمكن أن تثبت خطأ تفسيري. تتغير المناهج لأن المشكلات نفسها تتغير."
+});
