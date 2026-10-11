@@ -254,3 +254,18 @@
  var css=document.createElement("link");css.rel="stylesheet";css.href="/assets/original-lab-photos.css?v=20261011b";document.head.appendChild(css);
  var js=document.createElement("script");js.src="/assets/original-lab-photos.js?v=20261011-personal-photos";js.defer=true;document.head.appendChild(js);
 })();
+
+
+/* Firsthand photographic moments supplied on 11 October 2026.
+   Show on existing relevant chapters without changing or deleting original material. */
+(function(){
+  if(!["home","archive","techniques","engagement"].includes(document.documentElement.dataset.rxPage))return;
+  var css=document.createElement("link");
+  css.rel="stylesheet";
+  css.href="/assets/firsthand-photo-stories-2026.css?v=20261011-a";
+  document.head.appendChild(css);
+  var script=document.createElement("script");
+  script.src="/assets/firsthand-photo-stories-2026.js?v=20261011-a";
+  script.defer=true;
+  document.head.appendChild(script);
+})();
