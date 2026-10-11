@@ -225,3 +225,18 @@
  var sheet=document.createElement("link");sheet.rel="stylesheet";sheet.href="/assets/editorial-audit-2026.css?v=20261011d";document.head.appendChild(sheet);
  var script=document.createElement("script");script.src="/assets/editorial-audit-2026.js?v=20261011b";script.defer=true;document.head.appendChild(script);
 })();
+
+/* Recover the original photo archive without replacing or modifying the oversized archive.html. */
+(function(){
+  if(document.documentElement.getAttribute("data-rx-page")!=="archive")return;
+  if(document.querySelector('script[data-rx-archive-restoration]'))return;
+  var stylesheet=document.createElement("link");
+  stylesheet.rel="stylesheet";
+  stylesheet.href="/assets/archive-restoration.css?v=20261011-restored";
+  document.head.appendChild(stylesheet);
+  var script=document.createElement("script");
+  script.src="/assets/archive-restoration.js?v=20261011-restored";
+  script.defer=true;
+  script.dataset.rxArchiveRestoration="true";
+  document.head.appendChild(script);
+})();
