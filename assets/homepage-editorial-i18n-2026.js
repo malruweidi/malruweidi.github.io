@@ -4,6 +4,16 @@
   "use strict";
   var d = window.RuwaidixArabicDictionary || (window.RuwaidixArabicDictionary = {});
   Object.assign(d, {
+
+    "Scientific and personal record":"السجل العلمي والشخصي",
+    "Qatar University / Scientific archive":"جامعة قطر / الأرشيف العلمي",
+    "Read my story ↗":"اقرأ حكايتي ↗",
+    "Enter the story ↗":"ادخل إلى الحكاية ↗",
+    "See the research ↗":"شاهد الأبحاث ↗",
+    "Watch the experiments ↗":"شاهد التجارب ↗",
+    "Investigate the science ↗":"استكشف البحث ↗",
+    "Read the patient perspective ↗":"اقرأ تجربة المريض ↗",
+    "Or browse essays and ideas ↗":"أو تصفح المقالات والأفكار ↗",
     "A research journal / a personal archive":"دفتر بحثي / أرشيف شخصي",
     "A life spent asking questions":"حياة تمضي في طرح الأسئلة",
     "Mahmoud Khatib A. A. Al-Ruweidi":"محمود خطيب علي عبدالرسول الرويدي",
