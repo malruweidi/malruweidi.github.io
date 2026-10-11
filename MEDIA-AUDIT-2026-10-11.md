@@ -62,6 +62,14 @@ Repository currently contains **42 raster/video assets** (including 32 in `archi
 - [x] Confirmed via live rendered-page inspection that the restored photo section appears in both mobile and desktop versions, and the homepage displays the new archival-photo section.
 - [x] Confirmed every image filename referenced by the restored 30-photo manifest exists in the GitHub repository, and the current archive deployment succeeds.
 
+### Live site and internal link QA
+
+- **30 of 30 archival photo titles** were found in the live JavaScript-rendered archive after deployment, on desktop and mobile.
+- **Three of three homepage outreach image captions** were present in the rendered homepage.
+- A static local-asset reference audit across **17 HTML pages** found no missing referenced repository asset paths. Two occurrences of a dynamic JavaScript template expression are not literal broken links.
+- The methods atlas presents four animal-model videos, while the Engagement page embeds two existing, researcher-provided zebrafish video streams.
+- These checks verify page content and local paths; network/CDN reliability, permissions, and identification of unnamed photographs remain separate concerns.
+
 ## Remaining source limitations
 
 - [ ] The **standalone original Chemist Café event photographs** have not yet been recovered from the 2017 and 2018 posters. The posters and figure numbers are linked; do not substitute unrelated café photographs.
