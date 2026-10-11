@@ -1,0 +1,216 @@
+{
+  "origin": "Git revision 426d3d703dee",
+  "notice": "The dates are labels from the supplied photo archive and do not independently establish original capture dates.",
+  "photos": [
+    {
+      "file": "archive/portrait-2014.jpg",
+      "title": "Early university-era portrait",
+      "category": "Personal",
+      "date_label": "5 November 2014 (filename date)",
+      "source": "Filename suggests November 2014; original capture metadata absent"
+    },
+    {
+      "file": "archive/archive-7890.jpg",
+      "title": "Conversation at a science event",
+      "category": "Public engagement",
+      "date_label": "25 March 2017",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7889.jpg",
+      "title": "Laboratory bench and incubation samples",
+      "category": "Laboratory",
+      "date_label": "29 April 2017",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7887.jpg",
+      "title": "Chemistry demonstration in a classroom",
+      "category": "Public engagement",
+      "date_label": "22 May 2017",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7888.jpg",
+      "title": "Chemistry club student participation",
+      "category": "Public engagement",
+      "date_label": "22 May 2017",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7886.jpg",
+      "title": "Chemistry outreach with a colleague",
+      "category": "Public engagement",
+      "date_label": "23 May 2017",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7885.jpg",
+      "title": "Student laboratory learning environment",
+      "category": "Academic life",
+      "date_label": "15 June 2017",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7883.jpg",
+      "title": "Demonstrating scientific phenomena",
+      "category": "Laboratory",
+      "date_label": "16 July 2017",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7884.jpg",
+      "title": "Instrumentation and laboratory setup",
+      "category": "Laboratory",
+      "date_label": "16 July 2017",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7881.jpg",
+      "title": "Research poster presentation in Washington",
+      "category": "Public engagement",
+      "date_label": "20 August 2017",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7861.jpg",
+      "title": "University library and study break",
+      "category": "Academic life",
+      "date_label": "6 October 2018",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7863.jpg",
+      "title": "Notes and equipment in the laboratory",
+      "category": "Laboratory",
+      "date_label": "7 October 2018",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7864.jpg",
+      "title": "Laboratory colleagues in white coats",
+      "category": "Laboratory",
+      "date_label": "1 January 2019",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7865.jpg",
+      "title": "University colleagues, informal moment",
+      "category": "Academic life",
+      "date_label": "14 April 2019",
+      "source": "Photo archive viewer; video-frame screenshot"
+    },
+    {
+      "file": "archive/archive-7866.jpg",
+      "title": "A moment with colleagues",
+      "category": "Academic life",
+      "date_label": "17 April 2019",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7867.jpg",
+      "title": "Scientific demonstration with colleagues",
+      "category": "Laboratory",
+      "date_label": "22 June 2019",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7868.jpg",
+      "title": "A research demonstration setup",
+      "category": "Laboratory",
+      "date_label": "22 June 2019",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7869.jpg",
+      "title": "Online record of an academic activity",
+      "category": "Public engagement",
+      "date_label": "9 July 2019",
+      "source": "Photo archive viewer; webpage screenshot"
+    },
+    {
+      "file": "archive/archive-7870.jpg",
+      "title": "Qatar University event display",
+      "category": "Academic life",
+      "date_label": "23 September 2019",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7871.jpg",
+      "title": "Labeled laboratory samples",
+      "category": "Laboratory",
+      "date_label": "12 November 2020",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7872.jpg",
+      "title": "Laboratory instruments and bench setup",
+      "category": "Laboratory",
+      "date_label": "12 November 2020",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7874.jpg",
+      "title": "Prepared laboratory materials",
+      "category": "Laboratory",
+      "date_label": "12 November 2020",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7877.jpg",
+      "title": "Research event with colleagues",
+      "category": "Public engagement",
+      "date_label": "11 June 2021",
+      "source": "Photo archive viewer"
+    },
+    {
+      "file": "archive/archive-7873.jpg",
+      "title": "Instrument controls during experimentation",
+      "category": "Laboratory",
+      "date_label": "Date unverified",
+      "source": "No original date visible"
+    },
+    {
+      "file": "archive/archive-7876.jpg",
+      "title": "Personal photograph with books",
+      "category": "Personal",
+      "date_label": "Date unverified",
+      "source": "Date not legible in supplied view"
+    },
+    {
+      "file": "archive/archive-7878.jpg",
+      "title": "Childhood photograph outdoors",
+      "category": "Personal",
+      "date_label": "Date unverified",
+      "source": "Historical image; capture date unknown"
+    },
+    {
+      "file": "archive/archive-7879.jpg",
+      "title": "Photograph with a fellow conference attendee",
+      "category": "Public engagement",
+      "date_label": "Date unverified",
+      "source": "Original date not visible"
+    },
+    {
+      "file": "archive/archive-7880.jpg",
+      "title": "Discussion with fellow students and colleagues",
+      "category": "Academic life",
+      "date_label": "Date unverified",
+      "source": "Original date not visible"
+    },
+    {
+      "file": "archive/archive-7882.jpg",
+      "title": "Childhood family-archive photograph",
+      "category": "Personal",
+      "date_label": "Date unverified",
+      "source": "Historical image; capture date unknown"
+    },
+    {
+      "file": "archive/childhood-computer.jpg",
+      "title": "A childhood photograph beside a computer",
+      "category": "Personal",
+      "date_label": "Date unverified",
+      "source": "The file is named April 2015 but the original photograph predates the file date"
+    }
+  ]
+}
