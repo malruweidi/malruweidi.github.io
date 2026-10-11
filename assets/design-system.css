@@ -597,3 +597,125 @@ html[data-rx-page="home"] .header .menu { display:none; }
 @media print {
   html[data-rx-page="home"] .header .rx-more-panel { display:none; }
 }
+
+
+/* RX SCIENTIFIC PALETTE MIRROR — keep synchronized with scientific-palette.css */
+/* Ruwaidix | Scientific Editorial palette | 11 October 2026
+   A color-only identity layer. Original microscopy, photos, figures, logos and layout stay intact. */
+:root {
+  color-scheme:light;
+  --rx-midnight:#112F3A;
+  --rx-mineral:#315D61;
+  --rx-copper:#995039;
+  --rx-parchment:#F5F3EC;
+  --rx-paper:#FFFDF8;
+  --rx-muted:#50686B;
+  --rx-line:#D2DCD5;
+  --rx-mist:#E9EFEB;
+  --rx-copper-light:#E6B7A1;
+  --bg:var(--rx-parchment);
+  --dark:var(--rx-midnight);
+  --rust:var(--rx-copper);
+  --ink:var(--rx-midnight);
+  --night:var(--rx-midnight);
+  --night2:#254750;
+  --cream:var(--rx-parchment);
+  --paper:var(--rx-paper);
+  --white:var(--rx-paper);
+  --light:var(--rx-paper);
+  --muted:var(--rx-muted);
+  --line:var(--rx-line);
+  --stroke:var(--rx-line);
+  --terra:var(--rx-copper);
+  --warm:var(--rx-copper);
+  --rust:var(--rx-copper);
+  --accent:var(--rx-copper);
+  --pine:var(--rx-mineral);
+  --mist:var(--rx-mist);
+  --cloud:var(--rx-mist);
+  --sage:#DCE6DF;
+  --peach:var(--rx-copper-light);
+}
+html { accent-color:var(--rx-copper); }
+body { background:var(--rx-parchment); color:var(--rx-midnight); }
+::selection { background:#C9DDD3; color:var(--rx-midnight); }
+:where(a,button,input,select,textarea,summary):focus-visible {
+  outline:3px solid var(--rx-copper); outline-offset:3px;
+}
+:where(.eyebrow,.brow,.kicker,.smallcaps,.fig-kicker,.work-meta) { color:var(--rx-copper); }
+:where(.card,.panel,.event,.figure-card,.atlas-tile,.field,.era,.work-card,.secondary-card,.photo-card,.person) {
+  border-color:var(--rx-line);
+}
+:where(.card,.panel,.event,.figure-card,.atlas-tile,.field,.era,.secondary-card,.photo-card):not(.dark):not(.primary-card) {
+  box-shadow:0 9px 28px rgba(17,47,58,.055);
+}
+:where(.card,.figure-card,.panel,.atlas-tile,.photo-card):not(.dark):not(.primary-card) {
+  background-color:var(--rx-paper);
+}
+:where(.pill,.tags span,.pills span) { border-color:var(--rx-line); }
+/* The header reads like an academic journal masthead, not a banner ad. */
+html[data-rx-page="home"] .header {
+  background:rgba(245,243,236,.97);
+  border-bottom-color:var(--rx-line);
+}
+html[data-rx-page="home"] .header .navlinks > a,
+html[data-rx-page="home"] .header .rx-more > summary { color:var(--rx-midnight); }
+html[data-rx-page="home"] .header .navlinks > a:hover,
+html[data-rx-page="home"] .header .rx-more > summary:hover { color:var(--rx-copper); }
+html[data-rx-page="home"] .header .navlinks > .contactbutton,
+html[data-rx-page="home"] .header .site-lang-switch button.active {
+  background:var(--rx-midnight); color:var(--rx-paper);
+}
+html[data-rx-page="home"] .header .navlinks > .contactbutton:hover {
+  background:var(--rx-mineral); color:var(--rx-paper);
+}
+html[data-rx-page="home"] .header .rx-more-panel,
+html[data-rx-page="home"] .header .navlinks.open { background:var(--rx-paper); border-color:var(--rx-line); }
+html[data-rx-page="home"] .timeline { background:#ECEDE6; }
+html[data-rx-page="home"] .hero-copy .lead { color:var(--rx-mineral); }
+html:not([data-rx-page="home"]) .nav { background:rgba(245,243,236,.97); border-bottom-color:var(--rx-line); }
+html[data-rx-page="archive"] header { background:rgba(245,243,236,.97); border-bottom-color:var(--rx-line); }
+html[data-rx-page="engagement"] header { background:var(--rx-midnight); color:var(--rx-paper); }
+html[data-rx-page="engagement"] header a,
+html[data-rx-page="engagement"] nav a { color:var(--rx-paper); }
+html[data-rx-page="engagement"] .eyebrow { color:var(--rx-copper); }
+html[data-rx-page="computing"] .card,
+html[data-rx-page="grants"] .card,
+html[data-rx-page^="grants-"] .card,
+html[data-rx-page="imaging"] .card,
+html[data-rx-page="techniques"] .card { background:var(--rx-paper); border-color:var(--rx-line); }
+/* Dark exhibition-style chapters get one consistent mineral-ink tone. */
+html[data-rx-page="chem-squad"] .hero,
+html[data-rx-page="archive"] .hero,
+html[data-rx-page="figures"] .hero,
+html[data-rx-page="computing"] .dark,
+html[data-rx-page="techniques"] .dark,
+html[data-rx-page="imaging"] .dark,
+html[data-rx-page="grants"] .dark,
+html[data-rx-page^="grants-"] .dark { background:var(--rx-midnight); color:var(--rx-paper); }
+html[data-rx-page="archive"] .hero h1 em,
+html[data-rx-page="figures"] .hero h1 em,
+html[data-rx-page="chem-squad"] .hero h1 span { color:var(--rx-copper-light); }
+html[data-rx-page="archive"] .hero p,
+html[data-rx-page="figures"] .hero p,
+html[data-rx-page="chem-squad"] .hero .intro { color:#D1DEDA; }
+:where(.footer):not(.light) { background:var(--rx-midnight); color:#E7F0EB; }
+:where(.footer):not(.light) a { color:var(--rx-copper-light); }
+@media(max-width:1100px) {
+  header.rx-has-menu nav.rx-submenu { background:var(--rx-paper); border-color:var(--rx-line); }
+  .rx-submenu-toggle { background:var(--rx-paper); color:var(--rx-midnight); border-color:var(--rx-line); }
+}
+@media(prefers-contrast:more) {
+  :root { --rx-muted:#30474C; --rx-line:#8DA5A0; }
+}
+@media print { body { background:white; color:#111; } }
+
+/* Redesigned editorial homepage: separate stylesheet, same Ruwaidix palette. */
+html[data-rx-page="editorial-home"] .header { background:rgba(245,243,236,.97); border-bottom-color:var(--rx-line); }
+html[data-rx-page="editorial-home"] .strap,
+html[data-rx-page="editorial-home"] .statement { background:var(--rx-midnight); }
+html[data-rx-page="editorial-home"] .lead { color:var(--rx-mineral); }
+html[data-rx-page="editorial-home"] .primary-btn { background:var(--rx-midnight); color:var(--rx-paper); }
+html[data-rx-page="editorial-home"] .primary-btn:hover { background:var(--rx-mineral); color:var(--rx-paper); }
+html[data-rx-page="editorial-home"] .rx { border-color:var(--rx-midnight); }
+html[data-rx-page="editorial-home"] .stages li:hover { background:var(--rx-paper); }
