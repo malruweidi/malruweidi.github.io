@@ -210,10 +210,10 @@
   if(document.documentElement.getAttribute("data-rx-page")!=="home")return;
   var css=document.createElement("link");
   css.rel="stylesheet";
-  css.href="/assets/illness-evidence-home.css?v=20261011a";
+  css.href="/assets/illness-evidence-home.css?v=20261011-personal-photos";
   document.head.appendChild(css);
   var script=document.createElement("script");
-  script.src="/assets/illness-evidence-home.js?v=20261011a";
+  script.src="/assets/illness-evidence-home.js?v=20261011-personal-photos";
   script.defer=true;
   document.head.appendChild(script);
 })();
@@ -222,8 +222,8 @@
    Later separate assets allow safe rollback without replacing the large homepage. */
 (function(){
  if(document.documentElement.getAttribute("data-rx-page")!=="home")return;
- var sheet=document.createElement("link");sheet.rel="stylesheet";sheet.href="/assets/editorial-audit-2026.css?v=20261011d";document.head.appendChild(sheet);
- var script=document.createElement("script");script.src="/assets/editorial-audit-2026.js?v=20261011b";script.defer=true;document.head.appendChild(script);
+ var sheet=document.createElement("link");sheet.rel="stylesheet";sheet.href="/assets/editorial-audit-2026.css?v=20261011-personal-photos";document.head.appendChild(sheet);
+ var script=document.createElement("script");script.src="/assets/editorial-audit-2026.js?v=20261011-personal-photos";script.defer=true;document.head.appendChild(script);
 })();
 
 /* Recover the original photo archive without replacing or modifying the oversized archive.html. */
@@ -252,5 +252,5 @@
 (function(){
  if(document.documentElement.getAttribute("data-rx-page")!=="techniques")return;
  var css=document.createElement("link");css.rel="stylesheet";css.href="/assets/original-lab-photos.css?v=20261011b";document.head.appendChild(css);
- var js=document.createElement("script");js.src="/assets/original-lab-photos.js?v=20261011b";js.defer=true;document.head.appendChild(js);
+ var js=document.createElement("script");js.src="/assets/original-lab-photos.js?v=20261011-personal-photos";js.defer=true;document.head.appendChild(js);
 })();
