@@ -28,9 +28,13 @@
       return stored === "ar" ? "ar" : "en";
     } catch (err) { return "en"; }
   }
+  var translationIndex = Object.create(null);
+  Object.keys(dictionary).forEach(function (key) {
+    translationIndex[normalized(key)] = dictionary[key];
+  });
   function lookup(value) {
     var key = normalized(value);
-    return Object.prototype.hasOwnProperty.call(dictionary, key) ? dictionary[key] : null;
+    return Object.prototype.hasOwnProperty.call(translationIndex, key) ? translationIndex[key] : null;
   }
   function translateText(node) {
     var holder = node.parentElement;
