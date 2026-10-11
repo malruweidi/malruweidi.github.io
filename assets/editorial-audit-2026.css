@@ -80,3 +80,16 @@ html[dir="rtl"][data-rx-page="home"] .rx-reading-guide-label{margin-right:0;marg
  html[data-rx-page="home"] .secondary-card{min-width:0;max-width:100%;box-sizing:border-box;}
 }
 @media(prefers-reduced-motion:reduce){html[data-rx-page="home"] *{scroll-behavior:auto!important;animation:none!important;transition:none!important;}}
+
+/* RTL accessibility fix: historic off-screen .sr labels used left:-9999px and
+   enlarged the Arabic document's scrollable width to over 10,000px.
+   Use modern clipped, accessible visually-hidden labels instead. */
+html[dir="rtl"][data-rx-page="home"] .sr {
+ position:absolute!important;left:auto!important;right:auto!important;
+ width:1px!important;height:1px!important;padding:0!important;
+ margin:-1px!important;overflow:hidden!important;
+ clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important;
+}
+html[dir="rtl"][data-rx-page="home"] .moving-gallery {
+ overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;
+}
