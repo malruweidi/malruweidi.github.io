@@ -1,6 +1,6 @@
 {
   "origin": "Git revision 426d3d703dee",
-  "notice": "The 30 photo entries were recovered from the site's 2017–2021 archive. Ten captions were visually checked against the user-supplied photo-library screenshots on 11 October 2026; date, time and location labels are as displayed by the photo app, not authenticated camera EXIF or proof of a particular event.",
+  "notice": "The 30 photo entries were recovered from the original site archive. Historical photo-app date, time and location labels are recorded as displayed and are not independently authenticated EXIF. On 11 October 2026, the photographer/subject provided direct identifications of the shear-stress pump, exam-break photograph and freshman-year elephant-toothpaste experiment. User-provided context is distinguished from visual identification.",
   "photos": [
     {
       "file": "archive/portrait-2014.jpg",
@@ -71,14 +71,14 @@
     },
     {
       "file": "archive/archive-7885.jpg",
-      "title": "A quiet moment in Al Rayyan",
+      "title": "Sleeping between examinations during illness",
       "category": "Personal",
       "date_label": "15 June 2017",
-      "source": "User-supplied photo-library screenshot, IMG_7885.jpeg; archive viewer display label; original EXIF not independently checked",
+      "source": "User-supplied photo-library screenshot, IMG_7885(1).jpeg; author identifies himself sleeping between exams during eosinophilic gastrointestinal illness; date/time/location from photo viewer, not authenticated EXIF",
       "archive_display_time": "07:14",
       "archive_display_location": "Al Rayyan",
       "source_screenshot": "IMG_7885.jpeg",
-      "visual_identification_note": "Seated person, bags and waiting-area furnishings; not identifiable as a laboratory.",
+      "visual_identification_note": "Author-identified photograph of resting in a waiting area between examinations while experiencing eosinophilic gastrointestinal illness. No exam venue or medical treatment inferred.",
       "caption_reviewed": "2026-10-11"
     },
     {
@@ -156,10 +156,14 @@
     },
     {
       "file": "archive/archive-7868.jpg",
-      "title": "A research demonstration setup",
+      "title": "Elephant toothpaste: an experiment at home",
       "category": "Laboratory",
-      "date_label": "22 June 2019",
-      "source": "Photo archive viewer"
+      "date_label": "22 June 2019 (photo-library display)",
+      "source": "User-supplied photo-library screenshot IMG_7868.jpeg; author identifies it as an elephant-toothpaste home experiment during freshman year; year in photo library not independently confirmed as experiment date",
+      "archive_display_time": "13:00",
+      "source_screenshot": "IMG_7868.jpeg",
+      "visual_identification_note": "Household vessel containing green foaming mixture, with beakers and bottles on a domestic table; described by the author as an elephant-toothpaste experiment, not a formal research result.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/archive-7869.jpg",
@@ -205,10 +209,13 @@
     },
     {
       "file": "archive/archive-7873.jpg",
-      "title": "Instrument controls during experimentation",
+      "title": "Syringe pump used in a shear-stress experiment",
       "category": "Laboratory",
       "date_label": "Date unverified",
-      "source": "No original date visible"
+      "source": "User-supplied IMG_7873.jpeg; identified by the researcher on 11 October 2026 as a shear-stress pump; recording date not verified",
+      "source_screenshot": "IMG_7873.jpeg",
+      "visual_identification_note": "Syringe-pump multi-step-mode screen showing 0.1 mL, 4 and 9 mL/min. Screenshot alone does not establish channel dimensions, resulting wall shear stress or experimental outcome.",
+      "caption_reviewed": "2026-10-11"
     },
     {
       "file": "archive/archive-7876.jpg",
