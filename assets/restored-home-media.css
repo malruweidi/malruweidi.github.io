@@ -1,0 +1,22 @@
+/* Original long-form Ruwaidix homepage: precise, non-destructive media restoration.
+   This stylesheet is intentionally scoped to the restored original homepage. */
+html[data-rx-page="home"] .technique-footage-grid {grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start;}
+html[data-rx-page="home"] .technique-footage-grid .rx-film {margin:0;background:#20464c;border:1px solid #60817f;overflow:hidden;color:#edf3ee;min-width:0;}
+html[data-rx-page="home"] .technique-footage-grid .rx-film video {display:block;width:100%;aspect-ratio:16/10;object-fit:contain;background:#081e23;max-height:340px;}
+html[data-rx-page="home"] .technique-footage-grid .rx-film figcaption {padding:18px 18px 20px;}
+html[data-rx-page="home"] .technique-footage-grid .rx-film strong {font:500 clamp(18px,2vw,25px)/1.18 var(--serif);display:block;margin-bottom:7px;}
+html[data-rx-page="home"] .technique-footage-grid .rx-film p {font:13px/1.7 var(--sans);color:#d1e1dd;margin:0 0 12px;}
+html[data-rx-page="home"] .technique-footage-grid .rx-film .rx-kind {display:block;font:500 10px/1.6 var(--mono);letter-spacing:.08em;color:#eab99c;margin-bottom:10px;}
+html[data-rx-page="home"] .technique-footage-grid .rx-film a {display:inline-block;color:#f1c1a1;font:600 12px/1.6 var(--sans);text-underline-offset:4px;}
+html[data-rx-page="home"] .technique-footage-grid .rx-film a:hover {color:white;}
+html[data-rx-page="home"] .technique-footage-intro>p {max-width:62ch;}
+html[data-rx-page="home"] .rx-source-note {margin-top:13px;padding-top:14px;border-top:1px solid #54726f;color:#c2d5d0;font:11px/1.8 var(--sans);}
+html[data-rx-page="home"] .hero .lead {font-size:clamp(17px,1.65vw,21px);line-height:1.57;max-width:580px;}
+html[data-rx-page="home"] .hero-copy .subtitle {font-size:14px;line-height:1.78;max-width:590px;}
+html[data-rx-page="home"] .moving-gallery {overflow-x:auto;mask-image:none;scrollbar-width:thin;}
+html[data-rx-page="home"] .moving-track {animation:none!important;}
+html[data-rx-page="home"] .moving-gallery:focus-within {outline:2px solid #b9684c;outline-offset:2px;}
+html[data-rx-page="home"] .hero-art .portrait-overlay img {object-fit:contain;}
+@media(max-width:1060px) {html[data-rx-page="home"] .technique-footage-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:680px) {html[data-rx-page="home"] .technique-footage-grid {grid-template-columns:1fr;}html[data-rx-page="home"] .technique-footage-grid .rx-film video {max-height:none;}html[data-rx-page="home"] .hero .lead {font-size:18px;}}
+@media(prefers-reduced-motion:reduce) {html[data-rx-page="home"] .moving-track {animation:none!important;}}
