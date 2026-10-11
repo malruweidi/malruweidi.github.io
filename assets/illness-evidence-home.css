@@ -1,0 +1,23 @@
+/* First-person disease and scientific-evidence bridge; scoped to the existing homepage. */
+html[data-rx-page="home"] .rx-illness-bridge{background:#e6ede6;color:#17363b;border-block:1px solid #bed0c4;padding:clamp(66px,8vw,112px) 0;}
+html[data-rx-page="home"] .rx-illness-wrap{width:min(1180px,calc(100% - 74px));margin-inline:auto;display:grid;grid-template-columns:minmax(220px,.42fr) minmax(0,1fr);column-gap:clamp(42px,7vw,110px);align-items:start;}
+html[data-rx-page="home"] .rx-illness-margin{padding-top:10px;border-top:1px solid #b4c9bd;}
+html[data-rx-page="home"] .rx-illness-overline{font:600 11px/1.65 "DM Mono",monospace;color:#a45b40;letter-spacing:.08em;display:block;margin-bottom:19px;}
+html[data-rx-page="home"] .rx-illness-aside{font:400 clamp(21px,2.25vw,30px)/1.37 "Newsreader",Georgia,serif;color:#526c65;margin:0;max-width:290px;}
+html[data-rx-page="home"] .rx-illness-prose{max-width:765px;}
+html[data-rx-page="home"] .rx-illness-prose h2{font:400 clamp(39px,4.5vw,65px)/1.13 "Newsreader",Georgia,serif;letter-spacing:-.03em;color:#17363b;margin:0 0 29px;max-width:15ch;}
+html[data-rx-page="home"] .rx-illness-prose>p{font:400 15px/1.92 "DM Sans",Arial,sans-serif;color:#425e59;margin:0 0 22px;max-width:75ch;}
+html[data-rx-page="home"] .rx-illness-quote{border-left:2px solid #a45b40;padding:0 0 0 25px;margin:30px 0 30px;}
+html[data-rx-page="home"] .rx-illness-quote p{font:italic 400 clamp(24px,2.7vw,36px)/1.35 "Newsreader",Georgia,serif;color:#244d50;margin:0;}
+html[data-rx-page="home"] .rx-illness-actions{display:flex;flex-wrap:wrap;gap:20px;align-items:center;}
+html[data-rx-page="home"] .rx-illness-actions a{font:600 13px/1.5 "DM Sans",Arial,sans-serif;text-decoration:none;display:inline-flex;align-items:center;padding:12px 0;color:#1d4145;border-bottom:1px solid #b46d50;}
+html[data-rx-page="home"] .rx-illness-actions a:hover{color:#9d4e35;}
+html[data-rx-page="home"] .rx-illness-hero-link{margin:0 0 22px!important;font:600 12px/1.55 "DM Sans",Arial,sans-serif!important;}
+html[data-rx-page="home"] .rx-illness-hero-link a{color:#b35c3d;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px;}
+html[data-rx-page="home"] .rx-illness-hero-link a:hover{color:#214448;}
+html[lang="ar"][data-rx-page="home"] .rx-illness-bridge{font-family:"Noto Sans Arabic",Tahoma,sans-serif;}
+html[lang="ar"][data-rx-page="home"] .rx-illness-prose h2,html[lang="ar"][data-rx-page="home"] .rx-illness-aside,html[lang="ar"][data-rx-page="home"] .rx-illness-quote p{font-family:"Noto Naskh Arabic","Noto Sans Arabic",serif;letter-spacing:0;}
+html[lang="ar"][data-rx-page="home"] .rx-illness-prose>p{font-family:"Noto Sans Arabic",Tahoma,sans-serif;line-height:2.1;}
+html[lang="ar"][data-rx-page="home"] .rx-illness-overline{font-family:"Noto Sans Arabic",sans-serif;letter-spacing:0;}
+html[lang="ar"][data-rx-page="home"] .rx-illness-quote{border-left:0;border-right:2px solid #a45b40;padding:0 25px 0 0;}
+@media(max-width:790px){html[data-rx-page="home"] .rx-illness-wrap{grid-template-columns:1fr;row-gap:31px;width:calc(100% - 36px);}html[data-rx-page="home"] .rx-illness-aside{max-width:700px;}html[data-rx-page="home"] .rx-illness-prose h2{max-width:none;}}
