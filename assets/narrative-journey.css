@@ -286,3 +286,77 @@ html[data-rx-page="home"] section.story.editorial-story .photo-opening figure fi
     width:auto;
   }
 }
+
+
+/* 2026-10-12 · Microphone photograph, desktop editorial mosaic.
+   Keep the full original 2015 photograph visible at its natural proportion.
+   The two supporting archive photos sit alongside it; phones <=760px
+   retain the existing approved layout. */
+@media (min-width:761px) {
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening {
+    display:grid;
+    grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);
+    grid-template-rows:repeat(2,minmax(0,1fr));
+    gap:clamp(13px,1.5vw,20px);
+    align-items:stretch;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(1) {
+    grid-column:1;grid-row:1;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(2) {
+    grid-column:1;grid-row:2;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(-n+2) {
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+    min-height:0;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(-n+2) > img {
+    width:100%;
+    height:clamp(138px,18vw,265px);
+    flex:0 0 auto;
+    object-fit:cover;
+    object-position:center 34%;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(2) > img {
+    object-position:center 26%;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(3) {
+    grid-column:2;
+    grid-row:1 / span 2;
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    min-width:0;
+    min-height:0;
+    align-items:stretch;
+    justify-content:flex-start;
+    background:#f5f2e9;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(3) > img {
+    grid-column:auto;
+    grid-row:auto;
+    width:100%;
+    height:auto;
+    max-height:none;
+    aspect-ratio:771 / 713;
+    object-fit:contain;
+    object-position:center;
+    flex:0 0 auto;
+    background:#183339;
+    filter:none;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(3) > div {
+    grid-column:auto;
+    grid-row:auto;
+    display:block;
+    flex:0 0 auto;
+    align-self:stretch;
+    width:auto;
+    padding:0;
+  }
+  html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(3) h3 {
+    margin-top:19px;
+  }
+}
