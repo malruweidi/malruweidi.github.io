@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#132e32">
+<meta name="description" content="Chem Squad: an independent circle of seven chemistry graduates collaborating and meeting weekly to discuss science for the love of it since their first organic chemistry experiments in 2016.">
+<link rel="canonical" href="https://malruweidi.github.io/chem-squad.html">
+<title>Chem Squad | Seven Chemists. One Continuing Conversation.</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chem Squad — The experiment never really ended.">
+<meta property="og:description" content="Seven chemistry graduates. A weekly scientific conversation. Independent collaboration rooted in a 2016 organic chemistry laboratory.">
+<meta property="og:url" content="https://malruweidi.github.io/chem-squad.html">
+<meta property="og:image" content="https://malruweidi.github.io/assets/chem-squad-social.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://malruweidi.github.io/assets/chem-squad-social.svg">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{--night:#132e32;--night2:#203f41;--cream:#f5f2e8;--paper:#fffdf7;--ink:#19373b;--muted:#5a6d6b;--warm:#b05e43;--peach:#e9b190;--sage:#d8e2d7;--stroke:#cbd6cb;--serif:"Newsreader",Georgia,serif;--sans:"DM Sans",Arial,sans-serif;--mono:"DM Mono",monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:15px/1.82 var(--sans)}
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration-color:currentColor}
+a:focus-visible{outline:3px solid var(--warm);outline-offset:4px}
+::selection{background:#edd3b9;color:#122b2e}
+.wrap{width:min(1170px,calc(100% - 78px));margin:auto}
+.brow{font:500 11px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.16em;color:var(--warm);display:block}
+.nav{z-index:50;position:sticky;top:0;background:#f5f2e8f5;border-bottom:1px solid var(--stroke);backdrop-filter:blur(16px)}
+.nav .wrap{display:flex;gap:30px;justify-content:space-between;align-items:center;min-height:77px}
+.wordmark{font:500 23px/1 var(--serif);display:flex;align-items:center;gap:12px;flex-shrink:0}
+.wordmark img{width:43px;height:43px;object-fit:contain}
+.menu{display:flex;flex-wrap:wrap;gap:22px;align-items:center;font-size:12px;font-weight:700}
+.menu a:hover{color:var(--warm)}
+.menu .return{border:1px solid #95b0a3;padding:9px 14px;color:#25484b}
+.hero{background:var(--night);color:#f2f0e7;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-25%;top:-50%;width:70%;height:140%;background:radial-gradient(circle,#34565399 0,transparent 65%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;align-items:stretch;gap:60px;padding:94px 0 103px}
+.hero .brow{color:var(--peach)}
+.hero h1{font:400 clamp(74px,10vw,166px)/.82 var(--serif);letter-spacing:-.07em;margin:30px 0 19px}
+.hero h1 span{display:block;color:var(--peach)}
+.hero .motto{font:400 clamp(25px,2.8vw,39px)/1.25 var(--serif);max-width:690px;margin:28px 0 24px}
+.hero .intro{max-width:570px;color:#bdcfca;font-size:14px;line-height:1.95}
+.arrowlink{display:inline-flex;gap:17px;align-items:center;color:var(--peach);font:700 12px var(--sans);border-bottom:1px solid currentColor;padding:0 0 7px;margin-top:27px}
+.arrowlink:hover{gap:24px}
+.labnote{background:#f1e7d4;color:#1b383c;border:1px solid #dbcdaf;padding:25px 26px 24px;align-self:center;position:relative;transform:rotate(1deg);box-shadow:16px 18px 0 #081f2366}
+.labnote:before{content:"";position:absolute;top:14px;bottom:14px;left:16px;border-left:1px solid #d6c2a8}
+.labnote .notehead{border-bottom:1px solid #c5b59e;padding-bottom:14px;display:flex;justify-content:space-between;gap:10px;color:#8f5b45;font:10px var(--mono)}
+.labnote h2{font:400 40px/1.03 var(--serif);margin:21px 0 12px}
+.labnote .sketch{background:#e7eadf;border:1px solid #c7c7b3;display:flex;justify-content:center;padding:12px 0;margin:18px 0}
+.labnote svg{width:100%;max-height:180px}
+.labnote ol{list-style:none;margin:0;padding:0}
+.labnote li{display:flex;justify-content:space-between;border-top:1px solid #d5cbb8;padding:10px 0;font:11px/1.4 var(--mono)}
+.labnote li span:last-child{color:#865641;text-align:right}
+.labnote .annotation{font:italic 20px/1.3 var(--serif);color:#755a4c;margin:18px 0 0}
+.factstrip{background:#dce5da;border-bottom:1px solid #bfd0c0}
+.factstrip .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.fact{padding:27px 28px 27px 0;display:flex;flex-direction:column;gap:7px;border-right:1px solid #c1d0c0;margin-right:25px}
+.fact:last-child{border:0;margin-right:0}
+.fact strong{font:400 37px/1 var(--serif)}
+.fact small{font:10px/1.65 var(--mono);color:#58726c;text-transform:uppercase;letter-spacing:.08em}
+.section{padding:100px 0;border-bottom:1px solid var(--stroke)}
+.sectiontop{display:grid;grid-template-columns:.88fr 1.12fr;gap:90px;align-items:start}
+h2{font:400 clamp(43px,5.3vw,75px)/1.08 var(--serif);letter-spacing:-.035em;margin:14px 0 30px}
+h2 em{font-weight:400;color:var(--warm)}
+.copy{font-size:16px;line-height:1.92;color:#425c5f}
+.copy p{margin:0 0 22px}
+.capletter:first-letter{font:400 64px/.8 var(--serif);float:left;padding:7px 9px 0 0;color:var(--warm)}
+.linequote{max-width:870px;border-left:2px solid var(--warm);padding-left:30px;margin:45px 0 0;font:italic 29px/1.44 var(--serif);color:#41605d}
+.timeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:57px 0 0}
+.era{background:var(--paper);border:1px solid var(--stroke);padding:31px;min-height:260px}
+.era .era-no{font:500 11px var(--mono);color:var(--warm)}
+.era h3{font:400 31px/1.18 var(--serif);margin:16px 0}
+.era p{color:var(--muted);font-size:13px;line-height:1.85}
+.dark{background:var(--night);color:#edf3ed}
+.dark h2 em{color:var(--peach)}
+.dark .brow{color:var(--peach)}
+.dark .copy{color:#bacfc8}
+.people-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:43px}
+.people-head p{color:#c1d0c8;margin:0 0 22px;max-width:550px}
+.people{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.person{min-height:200px;background:#204248;border:1px solid #45625e;padding:24px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.person:after{content:"";position:absolute;right:-45px;bottom:-60px;width:120px;height:120px;border:1px solid #8bab9544;border-radius:50%}
+.person .number{font:12px var(--mono);color:#a4bdb5}
+.person h3{font:400 26px/1.2 var(--serif);margin:25px 0 7px;letter-spacing:-.015em;position:relative;z-index:1}
+.person .role{font:10px/1.6 var(--mono);color:#b0c5bb;text-transform:uppercase;letter-spacing:.07em}
+.person.featured{background:#304d4c}
+.members-note{font:11px/1.8 var(--mono);color:#a5beb4;margin-top:25px}
+.ritual{background:#e8ece4}
+.ritual-grid{display:grid;grid-template-columns:1.0fr 1.0fr;gap:70px}
+.week{border-left:1px solid #b6cab9;padding:0 0 0 30px}
+.week article{padding:18px 0 25px;border-bottom:1px solid #c4d5c7;display:grid;grid-template-columns:75px 1fr;gap:22px}
+.week article:first-child{padding-top:0}
+.week article:last-child{border:0}
+.week .n{font:13px var(--mono);color:var(--warm)}
+.week h3{font:400 28px var(--serif);margin:0 0 4px}
+.week p{margin:0;color:#516967;font-size:13px}
+.fieldgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:40px 0 0}
+.field{padding:29px;background:#fafaf3;border:1px solid var(--stroke);min-height:180px}
+.field .idx{font:11px var(--mono);color:var(--warm)}
+.field h3{font:400 28px var(--serif);margin:12px 0}
+.field p{margin:0;color:#5d6d6a;font-size:12px;line-height:1.8}
+.bridge{background:#203f42;color:#eef0e7}
+.bridge .bridge-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:85px;align-items:start}
+.bridge h2 em{color:var(--peach)}
+.bridge .brow{color:var(--peach)}
+.bridge .copy{color:#c3d3cb}
+.outcome{padding:35px;border:1px solid #56706a;background:#294b4d}
+.outcome .brow{margin-bottom:18px}
+.outcome h3{font:400 41px/1.12 var(--serif);margin:0 0 18px}
+.outcome p{font-size:14px;color:#cadaD0;line-height:1.9}
+.outcome small{font:11px/1.7 var(--mono);color:#c2cfc2;display:block;margin-top:30px}
+.note{background:#e4e8df}
+.notegrid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.note h2{font-size:clamp(40px,4vw,55px)}
+.note p{color:#49635e}
+.footer{background:#10292d;color:#c9d8d0;padding:51px 0}
+.footergrid{display:flex;align-items:start;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.footer .title{font:400 38px/1.2 var(--serif);color:#fff6e8}
+.footer p{max-width:490px;font-size:12px}
+.footerlinks{display:flex;flex-wrap:wrap;gap:22px;margin-top:14px;font-size:12px;font-weight:700}
+.footerlinks a:hover{color:var(--peach)}
+.footer .legal{font:10px var(--mono);opacity:.72;margin-top:30px}
+@media(max-width:1040px){.hero .wrap{grid-template-columns:1fr .9fr;gap:35px}.menu{gap:13px}.people{grid-template-columns:repeat(2,1fr)}.person{min-height:168px}.sectiontop{gap:40px}}
+@media(max-width:770px){.wrap{width:calc(100% - 36px)}.nav .wrap{align-items:flex-start;flex-direction:column;gap:7px;padding:13px 0}.menu{gap:12px}.hero .wrap{grid-template-columns:1fr;gap:47px;padding:59px 0 64px}.hero h1{font-size:clamp(80px,18vw,132px)}.labnote{max-width:520px;transform:none}.factstrip .wrap{grid-template-columns:1fr 1fr}.fact{margin:0;padding:19px 12px 19px 0}.fact:nth-child(2){border-right:none}.fact:last-child{grid-column:1/-1;border-top:1px solid #bacab8}.section{padding:64px 0}.sectiontop,.people-head,.ritual-grid,.bridge .bridge-grid,.notegrid{grid-template-columns:1fr;gap:25px}.timeline{grid-template-columns:1fr;gap:11px}.era{min-height:0}.fieldgrid{grid-template-columns:repeat(2,1fr)}.linequote{font-size:25px}.people-head{margin-bottom:30px}}
+@media(max-width:470px){.people,.fieldgrid{grid-template-columns:1fr}.person{min-height:145px}.hero h1{font-size:79px}.week article{grid-template-columns:45px 1fr;gap:12px}.menu .return{padding:7px 9px}.fact strong{font-size:30px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.arrowlink{transition:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AboutPage","name":"Chem Squad — Independent Chemistry Circle","url":"https://malruweidi.github.io/chem-squad.html","description":"An informal group of seven chemistry graduates whose independent scientific collaborations and conversations began in an organic chemistry laboratory in 2016.","isPartOf":{"@type":"WebSite","url":"https://malruweidi.github.io/"}}
+</script>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<a href="index.html" class="wordmark" aria-label="Return to Mahmoud Al-Ruweidi's research homepage"><img src="assets/favicon.svg" alt="" aria-hidden="true"><span>Mahmoud K. Al-Ruweidi</span></a>
+<nav class="menu" aria-label="Chem Squad navigation"><a href="#origin">Our beginnings</a><a href="#people">The seven</a><a href="#weekly">Weekly meetings</a><a href="#journey">Our journey</a><a href="index.html#initiatives" class="return">Back to portfolio ↗</a></nav>
+</div></header>
+<main>
+<section class="hero" aria-labelledby="hero-title"><div class="wrap">
+<div>
+<span class="brow">Independent scientific circle · Origins in 2016</span>
+<h1 id="hero-title">CHEM<br><span>SQUAD.</span></h1>
+<p class="motto">The experiment never really ended.</p>
+<p class="intro">Seven chemistry graduates who began asking questions together at an organic chemistry lab bench in 2016 and kept the conversation going. Today, we still meet weekly to read, question, disagree, exchange research ideas and enjoy science for its own sake.</p>
+<a class="arrowlink" href="#origin">Read how it began <span aria-hidden="true">↘</span></a>
+</div>
+<aside class="labnote" aria-label="An illustrated note about the group's earliest organic chemistry interests">
+<div class="notehead"><span>CHEM SQUAD / FIELD NOTE 001</span><span>2016</span></div>
+<h2>It began with<br>what was inside.</h2>
+<div class="sketch">
+<svg viewBox="0 0 360 188" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Conceptual illustration of plant material, extraction vessel and sample vial, not a historical photograph">
+<g stroke="#36635d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M38 131c9-39 24-62 57-87M48 94c-20-17-29-17-36-10 0 14 18 24 37 24M70 72c3-23 12-33 27-35 9 16 4 30-13 46M77 105c15-17 34-15 44-3-9 17-29 22-47 17"/><path d="M184 31v42l-48 74q-9 17 13 18h99q23-1 12-19l-48-73V31M176 30h43M159 120h80" stroke="#2b5956"/><path d="M279 80h48v72q0 16-16 16h-16q-16 0-16-16V80M275 80h57M285 131h37" stroke="#ae7050"/><path d="M241 50h28l15 12" stroke="#ae7050" stroke-dasharray="4 8"/></g>
+<path d="M152 128h90l12 22q5 8-7 8h-95q-8 0-4-8z" fill="#d29c74" opacity=".9"/>
+<path d="M284 135h38v18q0 8-10 8h-20q-8 0-8-8z" fill="#cca580"/>
+<g fill="#d29c74"><circle cx="181" cy="134" r="5"/><circle cx="205" cy="147" r="3"/><circle cx="230" cy="139" r="4"/></g>
+<text x="14" y="176" fill="#64776b" font-size="9" font-family="monospace">BOTANICAL MATERIAL</text>
+<text x="154" y="183" fill="#64776b" font-size="9" font-family="monospace">EXTRACTION</text>
+<text x="286" y="183" fill="#64776b" font-size="9" font-family="monospace">STUDY</text>
+</svg>
+</div>
+<ol><li><span>01 / MATERIAL</span><span>Myrrh · Nutmeg</span></li><li><span>02 / THE QUESTION</span><span>Oils &amp; constituents</span></li><li><span>03 / THE NEXT QUESTION</span><span>Possible medicinal relevance?</span></li></ol>
+<p class="annotation">First curiosity. Then chemistry. Then better questions.</p>
+</aside>
+</div></section>
+<div class="factstrip"><div class="wrap"><div class="fact"><strong>2016</strong><small>Where our shared research story began</small></div><div class="fact"><strong>Seven</strong><small>Chemistry graduates in the circle</small></div><div class="fact"><strong>Weekly</strong><small>Conversations that keep science alive</small></div></div></div>
+
+<section id="origin" class="section"><div class="wrap">
+<div class="sectiontop"><div><span class="brow">01 / The beginning</span><h2>Before the publications,<br><em>there was a laboratory.</em></h2></div>
+<div class="copy"><p class="capletter">In 2016, we found each other through organic chemistry. The laboratory gave us methods to learn, unfamiliar materials to investigate and reasons to stay curious long after the assigned work was finished. We were particularly interested in the extraction of botanical oils and constituents from materials such as myrrh and nutmeg, and in examining what their chemical composition might mean for possible medicinal uses.</p><p>Those questions required more than enthusiasm. Extracting something is not the same as identifying its active constituents, and traditional use is not proof of pharmacological benefit. Part of what made the conversations enjoyable was learning how chemistry, analytical evidence and biological testing could connect a promising idea to a defensible scientific conclusion.</p><p>What endured was not a single experiment or research topic. It was the habit of returning to the literature, imagining what could be tested, and calling one another when a better question appeared.</p></div></div>
+<p class="linequote">We did not keep meeting because a supervisor assigned another project. We kept meeting because we wanted to understand more.</p>
+<div class="timeline">
+<article class="era"><span class="era-no">01 / 2016</span><h3>Organic chemistry lab</h3><p>Early conversations around extracting and studying natural products, including myrrh and nutmeg, and questioning their potential medicinal significance.</p></article>
+<article class="era"><span class="era-no">02 / The years that followed</span><h3>Beyond one laboratory</h3><p>As our careers and research activities expanded into different settings, we continued exchanging ideas and collaborating independently rather than limiting our discussions to a single department.</p></article>
+<article class="era"><span class="era-no">03 / Today</span><h3>The weekly conversation</h3><p>We continue to gather to discuss papers, research questions and developing ideas for the pleasure of learning together. Some friendships remain scientific long after graduation.</p></article>
+</div></div></section>
+
+<section id="people" class="section dark"><div class="wrap">
+<div class="people-head"><div><span class="brow">02 / The people</span><h2>Seven chemists.<br><em>Still curious.</em></h2></div><div class="copy"><p>Different professional paths, a common starting point in chemistry and a shared appetite for scientific debate. Chem Squad is made by its people, not its logo or a formal institutional title.</p><p>Every member belongs to this continuing circle. Professional affiliations and individual publication credits remain their own.</p></div></div>
+<div class="people" aria-label="Chem Squad members">
+<article class="person featured"><span class="number">CS / 01</span><div><h3>Mahmoud K.<br>Al-Ruweidi</h3><span class="role">Chem Squad · Member</span></div></article>
+<article class="person"><span class="number">CS / 02</span><div><h3>Mohamed G.<br>Nassr</h3><span class="role">Chem Squad · Member</span></div></article>
+<article class="person"><span class="number">CS / 03</span><div><h3>Abdelrahman Adel<br>Mahmoud</h3><span class="role">Chem Squad · Member</span></div></article>
+<article class="person"><span class="number">CS / 04</span><div><h3>Khaled Jama<br>Mohamoud</h3><span class="role">Chem Squad · Member</span></div></article>
+<article class="person"><span class="number">CS / 05</span><div><h3>Rakan<br>Al-Z'Bi</h3><span class="role">Chem Squad · Member</span></div></article>
+<article class="person"><span class="number">CS / 06</span><div><h3>Abdelgalil Khalaf<br>Ahmed</h3><span class="role">Chem Squad · Member</span></div></article>
+<article class="person"><span class="number">CS / 07</span><div><h3>Ahmed<br>Elgendy</h3><span class="role">Chem Squad · Member</span></div></article>
+</div>
+<p class="members-note">Members are listed by name without assumed job titles, academic appointments, formal offices or invented individual responsibilities.</p>
+</div></section>
+
+<section id="weekly" class="section ritual"><div class="wrap ritual-grid">
+<div><span class="brow">03 / A standing conversation</span><h2>Once a week,<br><em>science has a seat.</em></h2><p class="copy">The weekly gatherings are not conferences, compulsory seminars or a commercial programme. They are a place where scientists can talk without needing a deliverable before the conversation is worth having. A paper, a synthetic route, a strange result, or a speculative hypothesis can all be reasons to bring everyone together.</p><p class="copy">Independent thought benefits from company. The questions become sharper when someone else is willing to disagree, suggest an experiment, or expose an assumption that seemed obvious.</p></div>
+<div class="week">
+<article><span class="n">01</span><div><h3>Bring a question.</h3><p>Anything from reaction chemistry and natural products to a biomedical or pharmaceutical puzzle.</p></div></article>
+<article><span class="n">02</span><div><h3>Follow the evidence.</h3><p>Talk through mechanisms, methods, contradictory findings and the literature behind a claim.</p></div></article>
+<article><span class="n">03</span><div><h3>Think beyond your own field.</h3><p>One person's chemistry problem may connect to another's interest in biology, materials or therapeutic design.</p></div></article>
+<article><span class="n">04</span><div><h3>Keep the conversation alive.</h3><p>Not every discussion needs to become a publication. Sometimes the reward is a better understanding.</p></div></article>
+</div></div></section>
+
+<section class="section" id="interests"><div class="wrap">
+<span class="brow">04 / From one subject to many</span><h2>Our interests have<br><em>grown with us.</em></h2>
+<p class="copy" style="max-width:800px">Our common training is chemistry. Across our individual work, independent collaborations and discussions, that foundation has led us toward several kinds of research questions. The areas below describe the intellectual range of the circle, not a claim that all seven members jointly conducted every project.</p>
+<div class="fieldgrid">
+<article class="field"><span class="idx">01 / Roots</span><h3>Organic chemistry &amp; natural products</h3><p>Extraction, chemical identity, molecular transformation and the evaluation of proposed biological activity.</p></article>
+<article class="field"><span class="idx">02 / Molecules</span><h3>Medicinal &amp; pharmaceutical chemistry</h3><p>Structure–activity reasoning, therapeutic hypotheses, drug properties and design questions.</p></article>
+<article class="field"><span class="idx">03 / Materials</span><h3>Formulations &amp; biomaterials</h3><p>Carrier systems, polymer-based technologies and the relationship between material properties and performance.</p></article>
+<article class="field"><span class="idx">04 / Evidence</span><h3>Research papers &amp; scientific writing</h3><p>Literature evaluation, collaboration across projects and turning methods and ideas into carefully argued scholarship.</p></article>
+<article class="field"><span class="idx">05 / Methods</span><h3>Quantitative &amp; computational thinking</h3><p>How data analysis, modelling and experimental design can improve the interpretation of chemical and biomedical questions.</p></article>
+<article class="field"><span class="idx">06 / People</span><h3>Education &amp; scientific exchange</h3><p>Sharing knowledge, mentoring, communicating difficult ideas and making science a continuing conversation.</p></article>
+</div></div></section>
+
+<section id="journey" class="section bridge"><div class="wrap bridge-grid">
+<div><span class="brow">05 / Where the paths led</span><h2>Separate careers.<br><em>A shared beginning.</em></h2><div class="copy"><p>Since those first years, members of Chem Squad have worked and collaborated in different professional and research environments. We have remained connected by our chemistry training, our independent intellectual work and the willingness to exchange ideas without waiting for permission to be curious.</p><p>Some members of the circle are also among the founding members of <strong>Majales Education</strong>. That connection reflects how a long friendship in science can extend into educational entrepreneurship, while Chem Squad remains its own informal community.</p></div><a class="arrowlink" href="index.html#initiatives">Explore Mahmoud's educational initiatives <span aria-hidden="true">↗</span></a></div>
+<div class="outcome"><span class="brow">What ten years taught us</span><h3>A scientific community can begin with nothing more than people who care about the questions.</h3><p>There is value in institutions, laboratories and funding. There is also value in the discussions that happen between them: where a paper is challenged, an experiment is imagined and somebody says, “Have you thought about this another way?”</p><p>Chem Squad has stayed close to that original impulse. The careers develop. The subjects change. The reason to meet remains.</p><small>CHEM SQUAD · CONTINUING INDEPENDENT SCIENTIFIC CONVERSATION</small></div>
+</div></section>
+
+<section class="section note"><div class="wrap notegrid"><div><span class="brow">An important distinction</span><h2>Independent in spirit.<br><em>Rigorous in method.</em></h2></div><div><p>Chem Squad is an informal peer circle, not a registered laboratory, institutional research centre, degree programme or clinical testing service. Research contributions and publications are attributed to their actual authors and institutions. Exploring natural products or discussing potential medicinal uses does not establish safety, efficacy or clinical benefit.</p><p>The group's history and member list here are recorded from its members' account. The original laboratory interests are documented as beginnings, not presented as proven medical discoveries.</p></div></div></section>
+</main>
+<footer class="footer"><div class="wrap">
+<div class="footergrid"><div><div class="title">For the love of science.</div><p>Chem Squad · An informal group of chemistry graduates connected through research and conversation since 2016.</p></div><div class="footerlinks"><a href="index.html">Mahmoud's website ↗</a><a href="index.html#research">Research ↗</a><a href="index.html#initiatives">Majales &amp; initiatives ↗</a><a href="mailto:mahmoudabdelrasool@gmail.com">Contact Mahmoud ↗</a></div></div>
+<div class="legal">© 2026 Mahmoud K. Al-Ruweidi · Chem Squad · Collective history and equal recognition · Original illustrative artwork; no historical laboratory photo is implied</div>
+</div></footer>
+</body></html>
