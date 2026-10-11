@@ -1,0 +1,12 @@
+/* Ruwaidix original 2017 laboratory snapshots: research methods context, not decorative stock. */
+.rx-lab-provenance {display:grid;grid-template-columns:180px minmax(0,1fr);gap:20px;align-items:center;margin:25px 0 16px;padding:12px;background:#fffdf7;border:1px solid #cdd6ca;}
+.rx-lab-provenance a{display:block;overflow:hidden;background:#d6ded7;}
+.rx-lab-provenance img{display:block;width:100%;aspect-ratio:5/4;object-fit:cover;transition:transform .2s;}
+.rx-lab-provenance a:hover img{transform:scale(1.035);}
+.rx-lab-provenance h3{font:400 25px/1.15 Newsreader,Georgia,serif;color:#18363a;margin:7px 0;}
+.rx-lab-provenance .rx-archive-kicker{font:10px/1.4 "DM Mono",monospace;color:#a65c45;letter-spacing:.06em;text-transform:uppercase;}
+.rx-lab-provenance p{font:13px/1.7 "DM Sans",Arial,sans-serif;color:#546765;margin:6px 0 9px;}
+.rx-lab-provenance .rx-photo-meta{font:10px/1.5 "DM Mono",monospace;color:#60756d;}
+.rx-lab-provenance .rx-provenance-link{font:600 12px/1.5 "DM Sans",Arial,sans-serif;color:#985642;text-decoration:underline;text-underline-offset:4px;}
+@media(max-width:650px){.rx-lab-provenance{grid-template-columns:1fr;gap:13px}.rx-lab-provenance img{aspect-ratio:1.6;object-position:center 56%}}
+@media(prefers-reduced-motion:reduce){.rx-lab-provenance img{transition:none}}
