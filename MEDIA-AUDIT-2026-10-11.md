@@ -79,3 +79,25 @@ Repository currently contains **42 raster/video assets** (including 32 in `archi
 - [ ] Full interactive image-opening and mobile visual QA across diverse devices remains advisable. Successful build and rendered-page extraction do not guarantee every user's image/network performance.
 
 **Editorial rule:** Never infer a particular festival, café or named person from an anonymous archival filename. Date labels reflect the photo viewer metadata, not independently verified capture dates.
+
+
+## User photo-library screenshot audit — 11 October 2026
+
+Ten original photo-library screenshots have been visually reconciled with the pre-existing website archive. They are **not ten newly discovered subjects**: image files already existed in `archive/`, but older descriptions needed correction. The recovered archive now tracks the source screenshot, visible photo-app date, time, location when supplied, and corrected caption. Dates are display labels, not independent EXIF verification.
+
+| Archive file | Corrected visual subject | Date and time shown in photo app |
+|---|---|---|
+| `archive-7890.jpg` | Indoor conversation at science gathering | 25 Mar 2017, 17:03 |
+| `archive-7889.jpg` | Marked eggs on a bench in a university laboratory | 29 Apr 2017, 10:59; Qatar University |
+| `archive-7888.jpg` | Chemistry society periodic-table scarf in university setting | 22 May 2017, 16:55; Qatar University |
+| `archive-7887.jpg` | Chemistry-themed scarf and held plaque | 22 May 2017, 18:13 |
+| `archive-7886.jpg` | Two colleagues in lab coats at outdoor gathering | 23 May 2017, 20:53 |
+| `archive-7885.jpg` | Informal waiting-area moment in Al Rayyan | 15 Jun 2017, 07:14; Al Rayyan |
+| `archive-7883.jpg` | Protective glove in laboratory | 16 Jul 2017, 11:58; Qatar University |
+| `archive-7884.jpg` | Rotary evaporator, condenser and water bath | 16 Jul 2017, 11:32; Qatar University |
+| `archive-7882.jpg` | Child holding a small figurine | Undated |
+| `archive-7879.jpg` | Photograph at a scientific conference | Undated |
+
+These photographs have been integrated into the home scientific-outreach section, public engagement and experimental-methods context where appropriate. No image is presented as proof of a particular event or scientific result without supporting documentation. In particular, an image of marked eggs is not by itself evidence of a chick embryo procedure, and a conference portrait does not establish a named attendee's identity.
+
+Source screenshot identifiers: `IMG_7890.jpeg`, `IMG_7889.jpeg`, `IMG_7888.jpeg`, `IMG_7887.jpeg`, `IMG_7886.jpeg`, `IMG_7885.jpeg`, `IMG_7883.jpeg`, `IMG_7884.jpeg`, `IMG_7882.png`, `IMG_7879.png`. The website retains the optimized original photos and does not display iOS photo-management controls.
