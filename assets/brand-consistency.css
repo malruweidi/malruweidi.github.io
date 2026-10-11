@@ -1,0 +1,47 @@
+/* Cross-page Ruwaidix coherence. Does not remove any research content. */
+html[data-rx-page]:not([data-rx-page="editorial-home"]){
+ --ink:#173a3d;--muted:#456164;--line:#ccd7d0;
+ --accent:#98543b;--terra:#98543b;--rust:#98543b;
+}
+html[data-rx-page]{scroll-padding-top:90px}
+html[data-rx-page] :where(a,button,summary,input,select):focus-visible{outline:3px solid #98543b;outline-offset:3px}
+html[data-rx-page] :where(img,video){max-width:100%}
+html[data-rx-page] :where(h1,h2,h3){text-wrap:balance}
+html[data-rx-page] :where(p,li){overflow-wrap:break-word}
+html[data-rx-page] header :where(.brand,.wordmark,.logo){display:inline-flex;align-items:center;gap:12px;min-width:0}
+html[data-rx-page] header :where(.brand,.wordmark,.logo)>img[src$="favicon.svg"]{
+ width:44px!important;height:47px!important;max-width:44px!important;
+ object-fit:contain!important;object-position:center!important;flex:none;
+ border:0!important;border-radius:0!important;background:transparent!important;
+}
+html[data-rx-page="cv"] .cv-branding img[src$="favicon.svg"]{
+ width:76px!important;height:79px!important;object-fit:contain!important;
+ border:0!important;background:transparent!important;
+}
+html[data-rx-page="archive"] .now-brand img[src$="favicon.svg"]{width:55px;height:57px;object-fit:contain}
+html[data-rx-page] header.nav .wrap{max-width:1200px}
+html[data-rx-page] header.nav :where(.brand,.wordmark) {letter-spacing:-.01em}
+html[data-rx-page] header.nav nav a{line-height:1.4}
+html[data-rx-page] header.nav nav a:hover,html[data-rx-page] header.nav nav a:focus-visible{text-decoration:underline;text-underline-offset:5px}
+@media(max-width:1140px){
+ html[data-rx-page] header.nav .wrap{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center}
+ html[data-rx-page] header.nav nav.links{
+  display:flex;flex:1 0 100%;width:100%;max-width:100%;
+  overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:thin;
+  white-space:nowrap;flex-wrap:nowrap;padding:5px 0 12px;
+ }
+ html[data-rx-page] header.nav nav.links a{flex-shrink:0}
+ html[data-rx-page="chem-squad"] header.nav nav.menu{
+  display:flex;max-width:100%;overflow-x:auto;white-space:nowrap;
+  scrollbar-width:thin;gap:16px;padding-bottom:8px
+ }
+}
+@media(max-width:640px){
+ html[data-rx-page] header.nav .wrap{padding-block:10px}
+ html[data-rx-page] header.nav :where(.brand,.wordmark){font-size:13px}
+ html[data-rx-page] header.nav :where(.brand,.wordmark,.logo)>img[src$="favicon.svg"]{
+  width:38px!important;height:41px!important;max-width:38px!important
+ }
+ html[data-rx-page="cv"] .cv-branding{max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){html[data-rx-page]{scroll-behavior:auto}}
