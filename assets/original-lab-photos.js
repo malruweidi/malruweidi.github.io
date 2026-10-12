@@ -62,6 +62,38 @@ const run=()=>{
    else if(targetSection)targetSection.append(pump);
  }
 
+
+ // Two owner-identified photographs from 2017, presented as personal records
+ // rather than analytical evidence or microscopy results.
+ if(biological && !document.getElementById("rxOct12MicroscopyMorning")){
+   const morning=make({
+     id:"rxOct12MicroscopyMorning",
+     src:"/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+     alt:"Microscope, books, ACS mug and writing materials on Mahmoud's desk",
+     title:"A vacation morning with a microscope",
+     titleAr:"صباح عطلة مع المجهر",
+     text:"A microscope stood among books and notes in my room. This personal photograph captures the everyday place of scientific curiosity, not an acquired microscopy image or an experimental result.",
+     textAr:"مجهر وكتب وملاحظات على مكتبي في المنزل. صورة شخصية عن حضور الفضول العلمي في الحياة اليومية، وليست صورة مجهرية لعينة أو دليلاً على نتيجة تجريبية.",
+     date:"Original Instagram post · 1 July 2017; camera date unverified",
+     dateAr:"منشور إنستغرام · ١ يوليو ٢٠١٧؛ تاريخ التصوير غير موثق"
+   });
+   biological.append(morning);
+ }
+ if(mol && !document.getElementById("rxOct12CopolymerStory")){
+   const notebook=make({
+     id:"rxOct12CopolymerStory",
+     src:"/assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+     alt:"Blue laboratory notebook labeled A Series of Unfortunate Trials",
+     title:"A Series of Unfortunate Trials",
+     titleAr:"سلسلة من التجارب غير الموفقة",
+     text:"My name for a frustrating diblock-copolymer synthesis: the material cross-linked and would not dissolve as intended. The notebook cover recalls an experimental setback, not a confirmed structural assignment or measured polymer properties.",
+     textAr:"العنوان الذي أطلقته على تجربة صعبة لتحضير بوليمر مشترك ثنائي الكتل، إذ تشابكت السلاسل وتعذّب إذابة المادة كما كان مخططاً. توثق صورة الدفتر ذكرى تجربة لم تنجح، لا توصيفاً بنيوياً مؤكداً أو قياسات لخواص البوليمر.",
+     date:"Original Instagram post · 8 October 2017; experimental date unverified",
+     dateAr:"منشور إنستغرام · ٨ أكتوبر ٢٠١٧؛ تاريخ التجربة غير موثق"
+   });
+   mol.append(notebook);
+ }
+
 };
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});else run();
 })();
