@@ -274,3 +274,21 @@ html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child str
   .rx-field-photo,.rx-restored-card,.rx-research26-card,
   html[data-rx-page="home"] .work-card{break-inside:avoid}
 }
+
+/* Provenance-safe final refinements: uncropped featured records and Arabic type. */
+html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a{
+  background:#e5ebe4;
+}
+html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a img,
+.rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-frame img{
+  object-fit:contain;
+  background:#e5ebe4;
+}
+html[lang="ar"][data-rx-page="home"] .hero-copy h1{
+  letter-spacing:0;
+  line-height:1.35;
+}
+html[lang="ar"] .rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-title{
+  letter-spacing:0;
+  line-height:1.5;
+}
