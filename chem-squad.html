@@ -88,6 +88,16 @@ h2 em{font-weight:400;color:var(--warm)}
 .person h3{font:400 26px/1.2 var(--serif);margin:25px 0 7px;letter-spacing:-.015em;position:relative;z-index:1}
 .person .role{font:10px/1.6 var(--mono);color:#b0c5bb;text-transform:uppercase;letter-spacing:.07em}
 .person.featured{background:#304d4c}
+.person.with-photo{min-height:238px;background:#1a383c;isolation:isolate}
+.person.with-photo:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(6,25,29,.33) 0%,rgba(6,25,29,.04) 37%,rgba(6,25,29,.96) 93%);pointer-events:none}
+.person.with-photo:after{display:none}
+.person.with-photo .member-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 37%}
+.person.with-photo .number,.person.with-photo .member-info{position:relative;z-index:2;text-shadow:0 1px 7px rgba(0,0,0,.5)}
+.person.with-photo h3{color:#fff9f0}
+.person.with-photo .role{color:#e1ebe2}
+.person.with-photo .member-photo-alt{position:absolute;top:17px;right:13px;z-index:3;background:#102c30d9;color:#fff3df;border:1px solid #bfd0c5;padding:5px 8px;font:500 9px/1.5 var(--mono);text-shadow:none}
+.person.with-photo .member-photo-alt:hover{background:#a45d42;color:#fff}
+
 .members-note{font:11px/1.8 var(--mono);color:#a5beb4;margin-top:25px}
 .ritual{background:#e8ece4}
 .ritual-grid{display:grid;grid-template-columns:1.0fr 1.0fr;gap:70px}
@@ -182,7 +192,7 @@ h2 em{font-weight:400;color:var(--warm)}
 <div class="people" aria-label="Chem Squad members">
 <article class="person featured"><span class="number">CS / 01</span><div><h3>Mahmoud K.<br>Al-Ruweidi</h3><span class="role">Chem Squad · Member</span></div></article>
 <article class="person"><span class="number">CS / 02</span><div><h3>Mohamed G.<br>Nassr</h3><span class="role">Chem Squad · Member</span></div></article>
-<article class="person"><span class="number">CS / 03</span><div><h3>Abdelrahman Adel<br>Mahmoud</h3><span class="role">Chem Squad · Member</span></div></article>
+<article class="person with-photo"><img class="member-photo" src="/assets/chem-squad-abdelrahman-adel-mahmoud-01.webp" alt="Abdelrahman Adel Mahmoud with Mahmoud Al-Ruweidi in matching chemistry-themed shirts" width="450" height="450" loading="lazy" decoding="async"><span class="number">CS / 03</span><a class="member-photo-alt" href="/assets/chem-squad-abdelrahman-adel-mahmoud-02.webp" target="_blank" rel="noopener noreferrer" aria-label="Open a second photo of Abdelrahman Adel Mahmoud and Mahmoud Al-Ruweidi">Second photo ↗</a><div class="member-info"><h3>Abdelrahman Adel<br>Mahmoud</h3><span class="role">Chem Squad · Member</span></div></article>
 <article class="person"><span class="number">CS / 04</span><div><h3>Khaled Jama<br>Mohamoud</h3><span class="role">Chem Squad · Member</span></div></article>
 <article class="person"><span class="number">CS / 05</span><div><h3>Rakan<br>Al-Zu'Bi</h3><span class="role">Chem Squad · Member</span></div></article>
 <article class="person"><span class="number">CS / 06</span><div><h3>Abdelgalil Khalaf<br>Ahmed</h3><span class="role">Chem Squad · Member</span></div></article>
