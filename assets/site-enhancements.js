@@ -281,3 +281,16 @@
   script.defer=true;
   document.head.appendChild(script);
 })();
+
+
+/* Photo batch supplied 12 October 2026. Additive; loads only on relevant pages. */
+(function(){
+  const page=document.documentElement.dataset.rxPage;
+  if(!["home","archive","chem-squad","techniques","engagement"].includes(page))return;
+  if(document.querySelector('script[data-rx-october-photos]'))return;
+  const script=document.createElement("script");
+  script.src="/assets/photos-2017-2019.js?v=20261012-a";
+  script.defer=true;
+  script.dataset.rxOctoberPhotos="true";
+  document.head.append(script);
+})();

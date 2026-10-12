@@ -1,0 +1,22 @@
+/* Additive nine-photograph history gallery, coordinated with the site's teal/cream visual system. */
+.rx-oct-section{box-sizing:border-box;padding:64px 0;background:#f6f4ed;color:#17343b;border-top:1px solid #d6ded7;border-bottom:1px solid #d6ded7;font-family:"DM Sans",Arial,sans-serif;direction:inherit}
+.rx-oct-section *{box-sizing:border-box}.rx-oct-wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+.rx-oct-label{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#a65a43;font-weight:700;margin-bottom:10px}
+.rx-oct-heading{font-family:"Newsreader",Georgia,serif;font-size:clamp(31px,4vw,49px);line-height:1.16;margin:0 0 18px;font-weight:400;color:#17343b}
+.rx-oct-intro{font-size:16px;line-height:1.75;max-width:70ch;margin:0 0 28px;color:#426268}
+.rx-oct-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:18px}
+.rx-oct-card{min-width:0;margin:0;border:1px solid #d0dad3;background:#fffefa;padding:9px}
+.rx-oct-photo{display:block;overflow:hidden;background:#e2e9e3;aspect-ratio:1}
+.rx-oct-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .24s}
+.rx-oct-photo:hover img{transform:scale(1.03)}
+.rx-oct-card figcaption{padding:13px 10px 8px}
+.rx-oct-kicker{display:block;font-size:11px;line-height:1.5;color:#966347;margin-bottom:8px}
+.rx-oct-card-title{display:block;font:500 21px/1.2 "Newsreader",Georgia,serif;color:#17343b}
+.rx-oct-desc{font-size:13px;line-height:1.68;color:#53696b;margin:8px 0 0}
+.rx-oct-source{font-size:12px;line-height:1.7;color:#657476;margin:20px 0 0}
+#rxOctoberPortrait .rx-oct-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+#rxOctoberChemSquad{background:#19383d;color:#e9f1ed;border-color:#35545a}
+#rxOctoberChemSquad .rx-oct-heading{color:#f5f4ec}
+#rxOctoberChemSquad .rx-oct-intro,#rxOctoberChemSquad .rx-oct-source{color:#c2d2d0}
+@media(max-width:640px){.rx-oct-section{padding:42px 0}.rx-oct-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.rx-oct-wrap{width:calc(100% - 28px)}.rx-oct-card{padding:5px}.rx-oct-card figcaption{padding:9px 6px}.rx-oct-desc{font-size:12px}.rx-oct-card-title{font-size:18px}}
+@media(max-width:420px){.rx-oct-grid{grid-template-columns:1fr}.rx-oct-photo{aspect-ratio:5/4}}
