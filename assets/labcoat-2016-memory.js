@@ -1,7 +1,7 @@
 /* Author-described archival photograph, 2016; Instagram post date not authenticated as capture date. */
 (function websiteModule(){
 "use strict";
-const imageURL="https://videocdn.pollo.ai/web-cdn/pollo/production/cmc17cmjy1f0ob29adcyrx0ks/image/1791823533495-395e7c9a-7a2e-4869-86dc-9463c8490d78.jpg";
+const imageURL="https://videocdn.pollo.ai/web-cdn/pollo/production/cmc17cmjy1f0ob29adcyrx0ks/image/1791823763942-aeb88fd6-4cd4-47c0-bcd4-6c3e998f3889.webp";
 const title="A title I had not yet earned";
 const titleAr="لقب لم أكن قد حصلت عليه بعد";
 const alt="A white lab coat embroidered 'Prof. Mahmoud El-Ruweidi' beside a quantitative chemical analysis textbook, glasses and a case";
