@@ -106,3 +106,171 @@ html[dir="rtl"] :where(.rx-field-caption,.rx-field-heading,.story-prose){text-al
 }
 @media(prefers-reduced-motion:reduce){.rx-field-frame img{transition:none}.rx-field-photo:hover img{transform:none}}
 @media print{body{overflow:visible}}
+
+
+/* Cinematic editorial refinement — 13 October 2026.
+   Inspired by art-directed web design, not imitating a movie trailer.
+   Additive only: existing content, dates, citations, media and navigation stay intact.
+   No scroll-triggered hiding, forced autoplay, parallax, or motion-dependent content. */
+
+/* First impression: a photographed scientist, not a startup landing page. */
+html[data-rx-page="home"] .hero{
+  background:linear-gradient(122deg,#f7f5ee 0%,#f4f2eb 58%,#e8ede8 100%);
+}
+html[data-rx-page="home"] .hero-copy h1{
+  letter-spacing:-.042em;
+  text-wrap:balance;
+}
+html[data-rx-page="home"] .hero-art .profile-photo-frame{
+  border-color:#b8cac2;
+  box-shadow:0 22px 68px rgba(22,48,47,.16);
+  isolation:isolate;
+}
+html[data-rx-page="home"] .hero-art .profile-photo-frame img.current-portrait{
+  transform-origin:50% 32%;
+}
+html[data-rx-page="home"] .portrait-heading,
+html[data-rx-page="home"] .portrait-overlay{
+  position:relative;
+  z-index:1;
+}
+html[data-rx-page="home"] .hero-note{
+  border-top-color:#b8c9c1;
+}
+
+/* Clear editorial pacing: large photographs, shorter reading measures,
+   and continuity between visual evidence and its source caption. */
+html[data-rx-page="home"] .story.editorial-story :is(.story-prose,.story-bridge,.story-rewind) p{
+  max-width:72ch;
+}
+html[data-rx-page="home"] .story.editorial-story :is(.story-photo,.photo-opening) img,
+html[data-rx-page="home"] .rx-at-home-science img{
+  display:block;
+}
+html[data-rx-page="home"] :is(.work-card,.secondary-card,.methodcol){
+  border-color:#c7d4cb;
+}
+html[data-rx-page="home"] .work-card .work-img{
+  overflow:hidden;
+  background:#dce5de;
+}
+html[data-rx-page="home"] .work-card .work-img img{
+  transition:transform .55s cubic-bezier(.22,1,.36,1);
+}
+html[data-rx-page="home"] .work-body h3{
+  text-wrap:balance;
+}
+
+/* Real archival images act as a photographic essay, not uniform thumbnails.
+   Nothing is reordered or concealed: only the opening frame receives emphasis. */
+html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child{
+  grid-column:span 2;
+}
+html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a{
+  aspect-ratio:1.64;
+}
+html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child strong{
+  font-size:clamp(24px,2.5vw,34px);
+}
+.rx-restored-card a,
+.rx-field-photo .rx-field-frame{
+  outline-offset:3px;
+}
+.rx-restored-card figcaption,
+.rx-field-photo .rx-field-caption{
+  text-wrap:pretty;
+}
+
+/* A featured first photograph gives each original-personal-archive section
+   a visual entry point while keeping the remaining cards in source order. */
+.rx-field-section .rx-field-grid>.rx-field-photo:first-child{
+  grid-column:span 2;
+}
+.rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-frame{
+  aspect-ratio:1.9;
+}
+.rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-title{
+  font-size:clamp(24px,2.5vw,33px)!important;
+}
+.rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-desc{
+  max-width:65ch!important;
+}
+.rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-caption{
+  padding:clamp(17px,2vw,25px);
+}
+
+/* Scientific image fidelity takes precedence over spectacle.
+   Do not crop Doppler screenshots, traces or their labeling. */
+#rx-research26-cardio .rx-research26-photo{
+  background:#dce6e0;
+  padding:7px;
+}
+#rx-research26-cardio .rx-research26-photo img{
+  object-fit:contain;
+}
+.rx-research26-section h2{
+  font-family:var(--rx-readable-serif,Newsreader,Georgia,serif);
+  font-weight:400;
+  letter-spacing:-.025em;
+}
+.rx-research26-card strong{
+  font-family:var(--rx-readable-serif,Newsreader,Georgia,serif);
+  font-weight:400;
+}
+.rx-research26-card :is(p,figcaption){
+  overflow-wrap:break-word;
+}
+
+/* Genuine polish: interaction acknowledges intent, without obscuring content. */
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  html[data-rx-page="home"] .work-card:hover .work-img img,
+  html[data-rx-page="home"] .work-card:focus-within .work-img img{
+    transform:scale(1.035);
+  }
+  .rx-restored-card a:hover img,
+  .rx-restored-card a:focus-visible img,
+  .rx-field-photo:hover .rx-field-frame img{
+    transform:scale(1.025);
+  }
+}
+@media(max-width:760px){
+  html[data-rx-page="home"] .hero{background:#f7f5ee}
+  html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a{
+    aspect-ratio:1.35;
+  }
+  .rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-frame{
+    aspect-ratio:1.5;
+  }
+}
+@media(max-width:560px){
+  .rx-field-section .rx-field-grid>.rx-field-photo:first-child{
+    grid-column:auto;
+    display:block!important;
+  }
+  .rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-frame{
+    aspect-ratio:1.4;
+  }
+  html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child{
+    grid-column:span 2;
+  }
+  html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a{
+    aspect-ratio:1.42;
+  }
+  .rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-title{
+    font-size:24px!important;
+  }
+  #rx-research26-cardio .rx-research26-photo{
+    aspect-ratio:1.2;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  html[data-rx-page="home"] .work-card .work-img img{transition:none}
+  html[data-rx-page="home"] .work-card .work-img img,
+  .rx-restored-card img,.rx-field-photo .rx-field-frame img{
+    transform:none!important;
+  }
+}
+@media print{
+  .rx-field-photo,.rx-restored-card,.rx-research26-card,
+  html[data-rx-page="home"] .work-card{break-inside:avoid}
+}
