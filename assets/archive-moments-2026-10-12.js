@@ -39,3 +39,5 @@ function ready(){const page=document.documentElement.dataset.rxPage;if(!page||do
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",ready,{once:true});else ready();
 })();
+/* Load the additional owner-identified October 2026 photo cards where their media exists. */
+(function(){const tag=document.createElement("script");tag.defer=true;tag.src="/assets/oct12-owner-photo-stories.js?v=20261012";document.head.append(tag);})();
