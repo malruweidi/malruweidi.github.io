@@ -74,4 +74,6 @@ footer{background:#102b30;color:#c3d1c8;padding:34px 0}footer .wrap{display:flex
 <script>
 (function(){'use strict';var buttons=document.querySelectorAll('[data-language]');function setLang(v){var next=v==='ar'?'ar':'en';document.documentElement.lang=next;document.documentElement.dir=next==='ar'?'rtl':'ltr';buttons.forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-language')===next))});document.title=next==='ar'?'المرض والدليل ومسيرة باحث | محمود الرويدي':'Illness, Evidence & the Making of a Scientist | Mahmoud Al-Ruweidi';try{localStorage.setItem('ruwaidix-language',next)}catch(e){}}var query;try{query=new URLSearchParams(location.search).get('lang')}catch(e){}var stored;try{stored=localStorage.getItem('ruwaidix-language')}catch(e){}setLang(query==='ar'||query==='en'?query:stored);buttons.forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-language'))})})})();
 </script>
+
+<script src="assets/labcoat-2016-memory.js?v=20261012" defer></script>
 </body></html>
