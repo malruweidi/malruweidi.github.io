@@ -1,0 +1,158 @@
+{
+  "title": "Photographic identifications supplied 12 October 2026",
+  "status": "Provenance and editorial captions; media assets 2–10 not yet published",
+  "source": "Ten original files shared with ChatGPT by the archive owner; identities and circumstances are self-reported, not inferred from visual recognition",
+  "editorial_policy": "Publish only images whose bytes are actually hosted; preserve original images, attach alt text and captions, do not imply method validation or discovery from laboratory photos",
+  "photos": [
+    {
+      "order": 1,
+      "id": "washington-eclipse-2017-elgendy",
+      "source_filename": "74AB9C78-640A-455A-B431-182E6405662D(2).png",
+      "subjects": [
+        "Mahmoud K. Al-Ruweidi",
+        "Ahmed Elgendy"
+      ],
+      "caption": "Mahmoud K. Al-Ruweidi and Ahmed Elgendy watching the 2017 solar eclipse outside the Walter E. Washington Convention Center during an ACS visit in Washington, DC.",
+      "section": [
+        "Chem Squad",
+        "ACS and public engagement"
+      ],
+      "date_label": "2017",
+      "public_photo_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/1ca69d9c-8914-41e0-985f-d6e208aa9a3a.png",
+      "publishing_status": "published",
+      "source_note": "Screenshot of an ACS Qatar University Instagram post; participant identities and event context supplied by archive owner"
+    },
+    {
+      "order": 2,
+      "id": "nassr-formal-white-dress",
+      "source_filename": "IMG_5601.jpeg",
+      "subjects": [
+        "Mahmoud K. Al-Ruweidi",
+        "Mohamed G. Nassr"
+      ],
+      "caption": "Mahmoud K. Al-Ruweidi and Mohamed G. Nassr together in white formal attire.",
+      "section": [
+        "Chem Squad"
+      ],
+      "publishing_status": "awaiting_source_media_upload"
+    },
+    {
+      "order": 3,
+      "id": "elgendy-formal-portrait",
+      "source_filename": "16A07658-85B1-4CD0-A4C0-86760F0A0F60.jpeg",
+      "subjects": [
+        "Mahmoud K. Al-Ruweidi",
+        "Ahmed Elgendy"
+      ],
+      "caption": "Mahmoud K. Al-Ruweidi and Ahmed Elgendy in formal suits.",
+      "section": [
+        "Chem Squad"
+      ],
+      "publishing_status": "awaiting_source_media_upload"
+    },
+    {
+      "order": 4,
+      "id": "elgendy-abdelrahman-three-person-selfie",
+      "source_filename": "f7b48dce-1ed9-4686-bdb8-c83b914195c3.jpeg",
+      "subjects": [
+        "Mahmoud K. Al-Ruweidi",
+        "Ahmed Elgendy",
+        "Abdelrahman Adel Mahmoud"
+      ],
+      "caption": "Mahmoud K. Al-Ruweidi, Ahmed Elgendy and Abdelrahman Adel Mahmoud together at a formal gathering.",
+      "section": [
+        "Chem Squad",
+        "Academic life"
+      ],
+      "publishing_status": "awaiting_source_media_upload"
+    },
+    {
+      "order": 5,
+      "id": "khaled-jama-nitrogen-laboratory",
+      "source_filename": "IMG_0136.jpeg",
+      "subjects": [
+        "Khaled Jama Mohamoud"
+      ],
+      "caption": "Khaled Jama Mohamoud working at a laboratory bench beside a nitrogen gas cylinder.",
+      "section": [
+        "Chem Squad",
+        "Research / laboratory"
+      ],
+      "publishing_status": "awaiting_source_media_upload",
+      "source_note": "Do not infer experimental procedure, gas delivery protocol, or research outcome from the image alone"
+    },
+    {
+      "order": 6,
+      "id": "abdelrahman-casual-selfie",
+      "source_filename": "D05279D7-D2CE-4D04-BC48-2789064BC771.jpeg",
+      "subjects": [
+        "Mahmoud K. Al-Ruweidi",
+        "Abdelrahman Adel Mahmoud"
+      ],
+      "caption": "Mahmoud K. Al-Ruweidi and Abdelrahman Adel Mahmoud in an informal photograph.",
+      "section": [
+        "Chem Squad"
+      ],
+      "publishing_status": "awaiting_source_media_upload"
+    },
+    {
+      "order": 7,
+      "id": "qu-chemistry-department-ramadan-iftar",
+      "source_filename": "ee20c8d1-958d-4980-a065-276857aeffdd.jpeg",
+      "subjects": [
+        "Qatar University Chemistry Department students and alumni across cohorts"
+      ],
+      "caption": "A Ramadan iftar gathering bringing together different batches of the Chemistry Department at Qatar University.",
+      "section": [
+        "Academic community",
+        "Qatar University"
+      ],
+      "publishing_status": "awaiting_source_media_upload",
+      "source_note": "Participants are not individually named; group context was supplied by the archive owner"
+    },
+    {
+      "order": 8,
+      "id": "rakan-cultural-gathering",
+      "source_filename": "18333c7b-d1af-4708-89f9-42c35e3213fb.jpeg",
+      "subjects": [
+        "Mahmoud K. Al-Ruweidi",
+        "Rakan Al-Zu'Bi"
+      ],
+      "caption": "Mahmoud K. Al-Ruweidi and Rakan Al-Zu'Bi together in traditional attire at an informal gathering.",
+      "section": [
+        "Chem Squad",
+        "Academic life"
+      ],
+      "publishing_status": "awaiting_source_media_upload"
+    },
+    {
+      "order": 9,
+      "id": "elgendy-abdelrahman-university-room",
+      "source_filename": "IMG_7018.jpeg",
+      "subjects": [
+        "Mahmoud K. Al-Ruweidi",
+        "Ahmed Elgendy",
+        "Abdelrahman Adel Mahmoud"
+      ],
+      "caption": "Mahmoud K. Al-Ruweidi, Ahmed Elgendy and Abdelrahman Adel Mahmoud together in a university room.",
+      "section": [
+        "Chem Squad",
+        "Academic life"
+      ],
+      "publishing_status": "awaiting_source_media_upload"
+    },
+    {
+      "order": 10,
+      "id": "microscopy-after-ramadan-iftar-atvb-cilia",
+      "source_filename": "IMG_4241.jpeg",
+      "subjects": [],
+      "caption": "The microscopy room after Ramadan iftar: a stereo microscope associated with Mahmoud's cilia-related ATVB research work, which he recalls continuing immediately after breaking his fast.",
+      "section": [
+        "Research",
+        "Microscopy / cilia"
+      ],
+      "publishing_status": "awaiting_source_media_upload",
+      "source_note": "Photograph shows microscopy equipment, not a person or an independently verified experimental result; ATVB retained exactly as described by the owner"
+    }
+  ]
+}
