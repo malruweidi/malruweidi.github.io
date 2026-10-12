@@ -51,11 +51,47 @@ ready(async function(){
   const count=el("span","rx-photo-count",data.photos.length+" "+words.count);count.setAttribute("aria-live","polite");wrap.append(count);
   const gallery=el("div","rx-restored-grid");gallery.id="rxRecoveredGrid";
   const cards=[];
-  const dialog=el("dialog","rx-archive-dialog");dialog.id="rxRecoveredDialog";dialog.setAttribute("aria-label","Expanded archive photograph");
-  const zoom=el("img");zoom.alt="";const foot=el("div","rx-dialog-caption"),footTxt=el("div"),bigTitle=el("strong"),detail=el("span");
-  footTxt.append(bigTitle,detail);const close=el("button",null,words.close+" ×");close.type="button";foot.append(footTxt,close);dialog.append(zoom,foot);
+  const dialog=el("dialog","rx-archive-dialog");dialog.id="rxRecoveredDialog";
+  dialog.setAttribute("aria-labelledby","rxRecoveredPhotoTitle");
+  const zoom=el("img");zoom.alt="";
+  const foot=el("div","rx-dialog-caption"),footTxt=el("div"),bigTitle=el("strong"),detail=el("span");
+  bigTitle.id="rxRecoveredPhotoTitle";
+  const actions=el("div","rx-dialog-actions");
+  const previous=el("button",null,ar?"← السابق":"← Previous"),next=el("button",null,ar?"التالي →":"Next →");
+  const position=el("span","rx-dialog-position");
+  position.setAttribute("aria-live","polite");
+  previous.type="button";next.type="button";
+  previous.setAttribute("aria-label",ar?"الصورة السابقة":"Previous photograph");
+  next.setAttribute("aria-label",ar?"الصورة التالية":"Next photograph");
+  const close=el("button",null,words.close+" ×");close.type="button";
+  footTxt.append(bigTitle,detail);actions.append(previous,position,next,close);foot.append(footTxt,actions);dialog.append(zoom,foot);
   const displayPhotoMeta=item=>[item.archive_display_location,item.date_label,item.archive_display_time].filter(Boolean).join(" · ");
-  const showImage=(item,event)=>{if(typeof dialog.showModal!=="function")return;event.preventDefault();zoom.src="/"+item.file;zoom.alt=item.title;bigTitle.textContent=item.title;detail.textContent=displayPhotoMeta(item)+" · "+words.source+": "+item.source;dialog.showModal();};
+  let activeItems=data.photos.slice(),activeIndex=0,lastTrigger=null;
+  const renderPhoto=()=>{
+    const item=activeItems[activeIndex];
+    if(!item)return;
+    zoom.src="/"+item.file;zoom.alt=item.title;
+    bigTitle.textContent=item.title;
+    detail.textContent=displayPhotoMeta(item)+" · "+words.source+": "+item.source;
+    position.textContent=(activeIndex+1)+" / "+activeItems.length;
+    previous.disabled=activeIndex===0;
+    next.disabled=activeIndex===activeItems.length-1;
+  };
+  const movePhoto=delta=>{
+    const proposed=activeIndex+delta;
+    if(proposed<0||proposed>=activeItems.length)return;
+    activeIndex=proposed;renderPhoto();
+  };
+  const showImage=(item,event)=>{
+    if(typeof dialog.showModal!=="function")return;
+    event.preventDefault();
+    lastTrigger=event.currentTarget;
+    const n=activeItems.findIndex(p=>p.file===item.file);
+    activeIndex=n>=0?n:0;
+    renderPhoto();
+    if(!dialog.open)dialog.showModal();
+    close.focus();
+  };
   for(const item of data.photos){
     const figure=el("figure","rx-restored-card");figure.dataset.category=item.category;
     const link=el("a");link.href="/"+item.file;link.setAttribute("aria-label","Open: "+item.title);
@@ -66,6 +102,7 @@ ready(async function(){
   }
   for(const button of buttons){button.addEventListener("click",()=>{
     const key=button.dataset.filter;
+    activeItems=data.photos.filter(item=>key==="All"||item.category===key);
     let n=0;for(const card of cards){const visible=key==="All"||card.dataset.category===key;card.hidden=!visible;if(visible)n++;}
     count.textContent=n+" "+words.count;
     for(const control of buttons)control.setAttribute("aria-pressed",String(control===button));
@@ -77,9 +114,23 @@ ready(async function(){
   const source=el("source");source.src="/archive/archive-video-2016.mp4";source.type="video/mp4";video.append(source);
   recording.append(rtext,video);wrap.append(recording);section.append(wrap,dialog);
   anchor.insertAdjacentElement("afterend",section);
+  previous.addEventListener("click",()=>movePhoto(-1));
+  next.addEventListener("click",()=>movePhoto(1));
   close.addEventListener("click",()=>dialog.close());
+  dialog.addEventListener("keydown",event=>{
+    if(event.altKey||event.ctrlKey||event.metaKey)return;
+    if(event.key==="ArrowRight"||event.key==="ArrowLeft"){
+      event.preventDefault();
+      const forward=event.key===(document.documentElement.dir==="rtl"?"ArrowLeft":"ArrowRight");
+      movePhoto(forward?1:-1);
+    }
+  });
   dialog.addEventListener("click",event=>{if(event.target===dialog)dialog.close();});
-  dialog.addEventListener("close",()=>{zoom.removeAttribute("src");});
+  dialog.addEventListener("close",()=>{
+    zoom.removeAttribute("src");
+    if(lastTrigger&&lastTrigger.isConnected)lastTrigger.focus();
+    lastTrigger=null;
+  });
   const firstLink=document.querySelector(".hero .mini");
   if(firstLink&&!document.getElementById("rxJumpArchive")){
     const jump=el("a",null,ar?"عرض الأرشيف المصور الكامل ↓":"See all 30 restored photographs ↓");
