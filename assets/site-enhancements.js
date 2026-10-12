@@ -287,3 +287,12 @@
 
 /* Owner-supplied 2017 photo archive: all uploaded images included. */
 (()=>{if(document.querySelector('script[src*="2017-photo-completion.js"]'))return;const s=document.createElement("script");s.src="/assets/2017-photo-completion.js?v=20261012-complete";s.defer=true;document.head.appendChild(s);})();
+
+
+/* October 2026 laboratory, microscopy, embryo and Doppler image archive.
+   Media-load marker prevents broken photographs while files are staged. */
+(()=>{if(!["archive","techniques"].includes(document.documentElement.dataset.rxPage))return;
+ if(document.querySelector('script[src*="/assets/research-media-2026.js"]'))return;
+ const css=document.createElement("link");css.rel="stylesheet";css.href="/assets/research-media-2026.css?v=20261012";document.head.append(css);
+ const js=document.createElement("script");js.src="/assets/research-media-2026.js?v=20261012";js.defer=true;document.head.append(js);
+})();
