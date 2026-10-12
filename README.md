@@ -34,3 +34,6 @@ Hosted on GitHub Pages using the public `main` branch and the repository root. N
 ## Restoration verification (11 October 2026)
 
 The original 30-photo gallery was recovered from a historical repository revision and reinstated as a separate enhancement, leaving the existing archive layout and five featured photographs intact. The [latest GitHub Pages deployment](https://github.com/malruweidi/malruweidi.github.io/actions/runs/38140679512) succeeded. Both desktop and mobile rendered-page checks found the restored collection. See [the media audit](MEDIA-AUDIT-2026-10-11.md) for confirmed files and the remaining source limitations. In particular, Chemist Café and Chemistry Festival MC-specific photographs must not be assigned to generic images without verified provenance.
+
+## October 2026 editorial and performance audit
+The research timeline distinguishes founding of the ACS chapter in 2015, pre-2021 undergraduate research publications, MSc enrollment in 2022, resumption of graduate study in 2025, and expected (not completed) graduation in 2027. Photo captions and scientific contributions retain individual provenance. The homepage's embedded JPEGs have been moved into `assets/home-archive/`, retaining their bytes while reducing the HTML document size for faster initial loading.
