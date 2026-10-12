@@ -72,3 +72,6 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 
 /* Owner-supplied 2017 photo archive: all uploaded images included. */
 (()=>{if(document.querySelector('script[src*="2017-photo-completion.js"]'))return;const s=document.createElement("script");s.src="/assets/2017-photo-completion.js?v=20261012-complete";s.defer=true;document.head.appendChild(s);})();
+
+/* 2016 aspirational lab-coat memory, loaded once on the archival page. */
+(function(){if(document.querySelector('script[src*="labcoat-2016-memory.js"]'))return;const n=document.createElement('script');n.src='/assets/labcoat-2016-memory.js?v=20261012';n.defer=true;document.head.append(n);})();
