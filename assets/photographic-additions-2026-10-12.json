@@ -1,0 +1,49 @@
+{
+  "title": "Owner-identified additions to the personal website photo archive",
+  "received": "2026-10-12",
+  "notice": "All six images are cropped from their supplied screenshot sources to remove black letterboxing and, where applicable, phone and social-media interface. Original capture dates are not independently authenticated. The 2013 dates reflect social-post labels. No definitive chemical structure is inferred from the sixth photo.",
+  "images": [
+    {
+      "path": "assets/archival-2026-10-12/cairo-mokattam-sunset-2026.webp",
+      "source": "IMG_7919.png",
+      "caption": "Mahmoud above Cairo on Mokattam at sunset",
+      "category": "personal",
+      "date": "unverified"
+    },
+    {
+      "path": "assets/archival-2026-10-12/laboratory-coat-portrait-monochrome-2026.webp",
+      "source": "IMG_7918.png",
+      "caption": "Black-and-white personal laboratory-coat portrait",
+      "category": "portrait",
+      "date": "unverified"
+    },
+    {
+      "path": "assets/archival-2026-10-12/youth-company-breast-cancer-outreach-2013.webp",
+      "source": "IMG_7917.png",
+      "caption": "The Youth Company breast-cancer-awareness volunteering",
+      "category": "community service",
+      "social_post_date": "2013-04-06"
+    },
+    {
+      "path": "assets/archival-2026-10-12/youth-change-everything-conference-recognition-2013.webp",
+      "source": "IMG_7916.png",
+      "caption": "Recognition for Youth Change Everything conference help",
+      "category": "early leadership",
+      "social_post_date": "2013-05-01"
+    },
+    {
+      "path": "assets/archival-2026-10-12/fifth-chemistry-festival-host-2026.webp",
+      "source": "IMG_7915.png",
+      "caption": "Hosting the fifth Chemistry Festival",
+      "category": "science outreach",
+      "date": "unverified"
+    },
+    {
+      "path": "assets/archival-2026-10-12/six-membered-molecular-model-age-19-2026.webp",
+      "source": "IMG_7914.png",
+      "caption": "At approximately age 19 holding a six-membered molecular model; bond type undetermined",
+      "category": "early chemistry",
+      "date": "age based on owner's recollection"
+    }
+  ]
+}

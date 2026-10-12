@@ -21,3 +21,14 @@
 @media (max-width:850px){.rx-heritage-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.rx-heritage-frame{height:230px}}
 @media (max-width:540px){.rx-heritage-inner{width:calc(100% - 34px)}.rx-heritage-grid{grid-template-columns:1fr}.rx-heritage-card{display:grid;grid-template-columns:43% minmax(0,1fr)}.rx-heritage-frame{height:100%;min-height:195px}.rx-heritage-caption{padding:14px 13px}.rx-heritage-title{font-size:22px}.rx-heritage-desc{font-size:12px}.rx-heritage-section{padding:44px 0}}
 @media(prefers-reduced-motion:reduce){.rx-heritage-frame img{transition:none}.rx-heritage-frame:hover img{transform:none}}
+
+/* The supplied PNGs are photo-library screenshots. Center-crop in the public card and lightbox to avoid black letterboxing and social-media interface. */
+.rx-heritage-frame img.rx-heritage-screen{object-fit:cover;object-position:center center}
+.rx-heritage-lightbox{max-width:96vw;max-height:96vh;padding:14px 14px 12px;border:1px solid #cad6cf;border-radius:8px;background:#fffdf8;box-shadow:0 24px 90px #112b2d80}
+.rx-heritage-lightbox::backdrop{background:#071d20d9}
+.rx-heritage-screen-full{display:block;width:min(83vw,76vh,760px);height:min(83vw,76vh,760px);object-fit:cover;object-position:center center;background:#162c31}
+.rx-heritage-close{display:block;margin:0 0 12px auto;border:0;background:#203e42;color:#fff;padding:9px 15px;cursor:pointer;font:12px "DM Sans",sans-serif}
+.rx-heritage-festival-highlight{max-width:500px;margin:30px 0}.rx-heritage-festival-highlight h3{font:400 27px Newsreader,Georgia,serif;color:#17343b;margin:0 0 12px}
+.rx-heritage-home-festival{width:min(1000px,calc(100% - 36px));margin:32px auto 54px;padding:20px;background:#f0f3ed;border:1px solid #d0d9d2;color:#17343b}
+.rx-heritage-home-festival h3{font:400 clamp(25px,3vw,38px) Newsreader,Georgia,serif;margin:0 0 16px}
+.rx-heritage-home-festival .rx-heritage-card{max-width:510px}
