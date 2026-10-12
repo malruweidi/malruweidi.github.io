@@ -10,64 +10,65 @@
       "section": "People & ACS",
       "date": "2017-08-21",
       "status": "published"
-    }
-  ],
-  "pending": [
+    },
     {
       "source": "IMG_7905.jpeg",
-      "file": "2017-chemistry-record-attempt.webp",
+      "file": "assets/2017-chemistry-record-attempt.webp",
       "caption": "The Qatar University group attempting the world’s largest chemistry lesson",
       "section": "People & ACS",
       "date": "2017-08-21",
-      "status": "source-prepared-not-yet-hosted"
+      "status": "published"
     },
     {
       "source": "IMG_7906.jpeg",
-      "file": "2017-tatar-lab-internship.webp",
+      "file": "assets/2017-tatar-lab-internship.webp",
       "caption": "Laboratory internship in Professor Zubair Tatar’s laboratory",
       "section": "Laboratory",
       "date": "2017-07-16",
-      "status": "source-prepared-not-yet-hosted"
+      "status": "published"
     },
     {
       "source": "IMG_7908.jpeg",
-      "file": "2017-acs-chapter-appreciation.webp",
+      "file": "assets/2017-acs-chapter-appreciation.webp",
       "caption": "Recognition presented by Professor Khaled Al-Saad Al-Kuwari for contributing to the establishment of the ACS student chapter",
       "section": "People & ACS",
       "date": "2017",
-      "status": "source-prepared-not-yet-hosted"
+      "status": "published"
     },
     {
       "source": "IMG_7909.jpeg",
-      "file": "2017-chick-embryo-incubator.webp",
+      "file": "assets/2017-chick-embryo-incubator.webp",
       "caption": "Egg incubator associated with chick-embryo laboratory work",
       "section": "Laboratory",
       "date": "2017-04-29",
-      "status": "source-prepared-not-yet-hosted"
+      "status": "published"
     },
     {
       "source": "IMG_7910.jpeg",
-      "file": "2017-acs-chem-talks-workshop.webp",
+      "file": "assets/2017-acs-chem-talks-workshop.webp",
       "caption": "ACS Chem Talks workshop on literature searching and scientific training",
       "section": "People & ACS",
       "date": "2017-03-27",
-      "status": "source-prepared-not-yet-hosted"
+      "status": "published"
     },
     {
       "source": "IMG_7911.jpeg",
-      "file": "2017-acs-astrochemistry-hijji.webp",
+      "file": "assets/2017-acs-astrochemistry-hijji.webp",
       "caption": "Professor Yousef Hijji at an ACS chapter astrochemistry event",
       "section": "People & ACS",
       "date": "2017-03-23",
-      "status": "source-prepared-not-yet-hosted"
+      "status": "published"
     },
     {
       "source": "IMG_7912.png",
-      "file": "2017-elgendy-rest-day.webp",
+      "file": "assets/2017-elgendy-rest-day.webp",
       "caption": "Ahmed Elgendy photographing Mahmoud sleeping after a demanding day, as identified by the archive owner",
       "section": "Personal",
       "date": "date unverified",
-      "status": "source-prepared-not-yet-hosted"
+      "status": "published"
     }
-  ]
+  ],
+  "pending": [],
+  "last_updated": "2026-10-12",
+  "status": "eight_of_eight_photos_uploaded_and_published"
 }

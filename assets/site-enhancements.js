@@ -284,3 +284,6 @@
 
 /* Show the verified, owner-described Chemistry Festival photograph near the QUACS homepage history. */
 (()=>{if(document.documentElement.dataset.rxPage!=="home")return;const load=()=>{if(document.querySelector('script[src*="archive-moments-2026-10-12.js"]'))return;const s=document.createElement("script");s.src="/assets/archive-moments-2026-10-12.js?v=20261012b";s.defer=true;document.head.append(s);};if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",load,{once:true});else load();})();
+
+/* Owner-supplied 2017 photo archive: all uploaded images included. */
+(()=>{if(document.querySelector('script[src*="2017-photo-completion.js"]'))return;const s=document.createElement("script");s.src="/assets/2017-photo-completion.js?v=20261012-complete";s.defer=true;document.head.appendChild(s);})();

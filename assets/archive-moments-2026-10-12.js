@@ -69,3 +69,6 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 })();
 /* Load the additional owner-identified October 2026 photo cards where their media exists. */
 (function(){const tag=document.createElement("script");tag.defer=true;tag.src="/assets/oct12-owner-photo-stories.js?v=20261012";document.head.append(tag);})();
+
+/* Owner-supplied 2017 photo archive: all uploaded images included. */
+(()=>{if(document.querySelector('script[src*="2017-photo-completion.js"]'))return;const s=document.createElement("script");s.src="/assets/2017-photo-completion.js?v=20261012-complete";s.defer=true;document.head.appendChild(s);})();
