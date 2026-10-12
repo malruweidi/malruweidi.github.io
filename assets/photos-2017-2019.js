@@ -41,4 +41,4 @@ function render(){if(document.getElementById("rxOctober2026Done"))return;const d
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",render,{once:true});else render();
 })();
 /* Supplement the techniques page with the accurately identified September 2019 microwave synthesizer. */
-(()=>{if(document.documentElement.dataset.rxPage!=="techniques"||document.querySelector('script[src*="archival-2019-2020.js"]'))return;const script=document.createElement('script');script.src='/assets/archival-2019-2020.js?v=20261012-b';script.defer=true;document.head.append(script);})();
+(()=>{if(document.documentElement.dataset.rxPage!=="techniques"||document.querySelector('script[src*="archival-2019-2020.js"]'))return;const script=document.createElement('script');script.src='/assets/archival-2019-2020.js?v=20261012-clinical-research';script.defer=true;document.head.append(script);})();
