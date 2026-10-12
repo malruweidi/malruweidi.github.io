@@ -88,3 +88,6 @@ const ready=()=>{
 };
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",ready);else ready();
 })();
+
+/* Optional owner-identified photographic archive: only loads on relevant pages. */
+(()=>{const rx=document.documentElement.dataset.rxPage;if(rx==='archive'||rx==='engagement'){const s=document.createElement('script');s.src='/assets/archival-photos-oct-2026.js?v=20261012';s.defer=true;document.head.append(s)}})();
