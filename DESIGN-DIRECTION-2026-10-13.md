@@ -30,3 +30,19 @@ The website is a documentary research archive, literary biography, and academic 
 ## Verification still required
 
 Source-level edits and successful GitHub commits are **not** equivalent to published cross-browser sign-off. Check the deployed GitHub Pages build, desktop and mobile layouts at 320, 375, 768, 1024 and 1440 px, Arabic text, menu focus, image captions and archival-photo uncropped presentation. Recheck media paths and permissions before describing the live site as fully validated.
+
+
+## Follow-up implementation and validation (13 October 2026)
+
+The following work builds on the first CSS-only cinematic refinement. It is intentionally additive.
+
+- `index.html`: inserted a compact, accessible research-evidence index after the introductory portrait. Direct destinations are the research CV, original figures and evidence, techniques atlas, and the existing public Google Scholar profile. The former introductory story and every research section remain intact.
+- `assets/final-polish-2026.css`: styled the new index at desktop and mobile widths, corrected selectors to the site's actual `.rx-editorial-hero` / `.rx-hero-title` markup, and repaired inherited light-on-light text in the pulmonary-research primary card.
+- `assets/homepage-editorial-i18n-2026.js`: translated the new index and the current homepage introductory paragraphs instead of relying on translation entries for superseded copy.
+- `assets/archive-restoration.js` and `.css`: upgraded the 30-image dialog with previous/next navigation, keyboard arrows, range limits, localized controls, a live photo counter, and focus return to the triggering link. The existing 30 photographs, categories, source statements and recording are unchanged.
+
+### Source checks completed
+
+Fourteen static checks passed: presence of the one-and-only academic index, its four target URLs, required CSS and JS inclusion, JavaScript parsing, archive viewer navigation and focus-return hooks, 30 unique archival records, nine described research photographs and one described research video. All eleven referenced research-media binaries (nine WEBP images, one MP4 and its WEBP poster) were individually found in GitHub.
+
+These are source and repository-object checks, **not** evidence of completed mobile visual QA, successful current GitHub Pages deployment, WCAG conformance, or verified photographic provenance. The direct website and referenced X post could not be loaded through the available web reader; retain the design brief as editorial interpretation rather than a line-by-line derivation from that post.
