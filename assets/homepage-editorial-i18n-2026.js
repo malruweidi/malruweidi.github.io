@@ -4,6 +4,21 @@
   "use strict";
   var d = window.RuwaidixArabicDictionary || (window.RuwaidixArabicDictionary = {});
   Object.assign(d, {
+    "For researchers & collaborators":"للباحثين والمتعاونين",
+    "Go straight to the record.":"اذهب مباشرة إلى السجل العلمي.",
+    "Academic evidence and research resources":"الأدلة العلمية ومصادر البحث",
+    "Explore research documentation":"استكشف الوثائق البحثية",
+    "Academic background":"الخلفية الأكاديمية",
+    "Research CV":"السيرة البحثية",
+    "Original work & sources":"الأعمال الأصلية والمصادر",
+    "Figures & evidence":"الأشكال والأدلة",
+    "Practical experience":"الخبرة العملية",
+    "Methods atlas":"أطلس التقنيات",
+    "External bibliography":"سجل المنشورات الخارجي",
+    "Google Scholar":"الباحث العلمي من جوجل",
+    "I started with extracts, synthetic chemistry and imine sensors. Zebrafish microscopy and experiments on mechanically injured lung cells later taught me how quickly a convincing chemical explanation can fail when it meets physiology. That is what drew me towards pharmaceutical science.":"بدأت بالاستخلاص والتخليق الكيميائي ومستشعرات الإيمين. ثم علّمني التصوير المجهري لأسماك الزرد والتجارب على خلايا الرئة المصابة ميكانيكياً كيف يمكن لتفسير كيميائي يبدو مقنعاً أن ينهار حين يواجه علم وظائف الأعضاء. ومن هناك اتجهت إلى العلوم الصيدلانية.",
+    "My current MSc research examines dexamethasone niosomes and proniosomes intended for inhalation, including the practical demands of nebulization and aerosol delivery. I am interested in the route from molecular design to the exposure a living system actually receives, and in the experiments that reveal where the proposed route breaks down.":"يدرس بحثي الحالي للماجستير حويصلات النيوسوم والبرونيوسوم المحمّلة بالديكساميثازون والمخصصة للاستنشاق، بما في ذلك التحديات العملية للتبخير الرذاذي وتوصيل الهباء الدوائي. أهتم بالمسار من التصميم الجزيئي إلى مقدار التعرض الفعلي داخل النظام الحي، وبالتجارب التي تكشف أين قد يتعثر هذا المسار.",
+    "I did not plan to move from organic chemistry to zebrafish, pulmonary cell injury and inhalable formulations. The work moved when the questions did. Some of the most useful lessons came from experiments that refused to behave.":"لم أخطط مسبقاً للانتقال من الكيمياء العضوية إلى أسماك الزرد وإصابة الخلايا الرئوية والمستحضرات القابلة للاستنشاق. تغيّر العمل حين تغيّرت الأسئلة، وجاءت بعض أكثر الدروس فائدة من تجارب لم تسر كما توقعنا.",
 
     "Scientific and personal record":"السجل العلمي والشخصي",
     "Qatar University / Scientific archive":"جامعة قطر / الأرشيف العلمي",
