@@ -43,7 +43,7 @@ ready(async function(){
   function el(tag,cls,txt){const node=document.createElement(tag);if(cls)node.className=cls;if(txt!==undefined)node.textContent=txt;return node;}
   wrap.append(el("p","rx-kicker",words.kicker));
   const title=el("h2",null,words.title);title.id="rxRecoveredTitle";wrap.append(title,el("p","rx-intro",words.intro));
-  const filters=el("div","rx-filter-bar");filters.setAttribute("role","group");filters.setAttribute("aria-label","Filter archive photographs");
+  const filters=el("div","rx-filter-bar");filters.setAttribute("role","group");filters.setAttribute("aria-label",ar?"تصفية صور الأرشيف":"Filter archive photographs");
   const options=[["All",words.all],["Public engagement",words.outreach],["Laboratory",words.lab],["Academic life",words.academic],["Personal",words.personal]];
   const buttons=[];
   for(const [value,label] of options){const button=el("button",null,label);button.type="button";button.dataset.filter=value;button.setAttribute("aria-pressed",String(value==="All"));filters.append(button);buttons.push(button);}
@@ -94,7 +94,7 @@ ready(async function(){
   };
   for(const item of data.photos){
     const figure=el("figure","rx-restored-card");figure.dataset.category=item.category;
-    const link=el("a");link.href="/"+item.file;link.setAttribute("aria-label","Open: "+item.title);
+    const link=el("a");link.href="/"+item.file;link.setAttribute("aria-label",(ar?"فتح الصورة: ":"Open photograph: ")+item.title);
     const pic=el("img");pic.src="/"+item.file;pic.alt=item.title;pic.loading="lazy";pic.decoding="async";pic.width=400;pic.height=435;link.append(pic);
     link.addEventListener("click",event=>showImage(item,event));
     const cap=el("figcaption");cap.append(el("span","rx-category",item.category),el("strong",null,item.title),el("span","rx-date",displayPhotoMeta(item)));
@@ -109,7 +109,7 @@ ready(async function(){
   });}
   wrap.append(gallery,el("p","rx-disclaimer",words.note));
   const recording=el("div","rx-recording");recording.id="archival-recording";
-  const rtext=el("div");rtext.append(el("p","rx-kicker","Video / 2016 file record"),el("h3",null,words.video),el("p","rx-intro",words.videoText));
+  const rtext=el("div");rtext.append(el("p","rx-kicker",ar?"فيديو / ملف أرشيفي لعام ٢٠١٦":"Video / 2016 file record"),el("h3",null,words.video),el("p","rx-intro",words.videoText));
   const video=el("video");video.controls=true;video.preload="metadata";video.playsInline=true;video.poster="/archive/archive-video-poster.jpg";
   const source=el("source");source.src="/archive/archive-video-2016.mp4";source.type="video/mp4";video.append(source);
   recording.append(rtext,video);wrap.append(recording);section.append(wrap,dialog);
