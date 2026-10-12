@@ -1,7 +1,7 @@
 {
   "schema": "website-photo-identifications-v1",
   "reviewed": "2026-10-12",
-  "status": "source crop assets prepared outside repository; images must be uploaded before use",
+  "status": "Published: all six cropped WebP photos committed to main; dynamically displayed on archive and engagement pages after asset availability checks.",
   "notice": "Owner-supplied archive identifications; sources are user attachments. Screenshot labels are not verified capture times. No inferred chemical identity.",
   "photos": [
     {
@@ -59,5 +59,6 @@
       "date_basis": "Age author-supplied; exact date unknown",
       "chemical_identification_note": "Cannot differentiate benzene from cyclohexane on visible bond information"
     }
-  ]
+  ],
+  "image_commit": "3cb980f2db758904d27d90ba95e83a492c9bee63"
 }
