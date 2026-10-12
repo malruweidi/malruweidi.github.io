@@ -1,0 +1,111 @@
+{
+  "origin": "Owner-supplied uploaded originals on 12 October 2026",
+  "privacy": "EXIF stripped. Email contents obscured in workstation photograph; potentially identifying text blurred in clinical display. No patient outcome or precise experiment is inferred.",
+  "photos": [
+    {
+      "file": "laboratory-gas-discharge-safety-door.webp",
+      "tag": "Laboratory safety",
+      "title": "The laboratory doorway",
+      "arTitle": "مدخل المختبر وإشعار السلامة",
+      "description": "A laboratory entrance with a gas-discharge evacuation warning. This records safety infrastructure, not a gas-release incident.",
+      "alt": "Laboratory doorway with a sign instructing evacuation during gas discharge",
+      "topic": "archive",
+      "date": "Original capture date unverified",
+      "source": "Owner-supplied photograph, 12 October 2026"
+    },
+    {
+      "file": "molecular-biology-pipette-workbench.webp",
+      "tag": "Laboratory methods",
+      "title": "Sample preparation at the bench",
+      "arTitle": "تحضير العينات على طاولة المختبر",
+      "description": "Micropipettes, racks and laboratory consumables. The photograph does not identify any specimen or assay result.",
+      "alt": "Research bench with pipettes, racks and laboratory bottles",
+      "topic": "molecular",
+      "date": "Original capture date unverified",
+      "source": "Owner-supplied photograph, 12 October 2026"
+    },
+    {
+      "file": "laboratory-samples-luminescence-literature.webp",
+      "tag": "Chemistry and reading",
+      "title": "The literature travels with the samples",
+      "arTitle": "الأبحاث العلمية بجانب العينات",
+      "description": "Glass laboratory containers beside a printed article discussing luminescent complexes. Neither the compound identities nor a specific experiment can be inferred.",
+      "alt": "Laboratory sample containers beside printed research literature on luminescence",
+      "topic": "molecular",
+      "date": "Original capture date unverified",
+      "source": "Owner-supplied photograph, 12 October 2026"
+    },
+    {
+      "file": "qatar-university-research-workstation.webp",
+      "tag": "Research life",
+      "title": "A work session at Qatar University",
+      "arTitle": "جلسة عمل بحثي في جامعة قطر",
+      "description": "Research laptops during a work session at Qatar University. On-screen email content has been obscured for privacy.",
+      "alt": "University desk with two laptops and privacy-obscured screen",
+      "topic": "archive",
+      "date": "Original capture date unverified",
+      "source": "Owner-supplied photograph, 12 October 2026"
+    },
+    {
+      "file": "echocardiography-spectral-doppler-workstation.webp",
+      "tag": "Cardiovascular imaging",
+      "title": "Echocardiography and spectral Doppler",
+      "arTitle": "تخطيط صدى القلب ودوبلر الطيفي",
+      "description": "An echocardiography workstation displaying a spectral Doppler waveform. This documents clinical-imaging exposure, not a diagnosis or verified measurement.",
+      "alt": "Clinical workstation displaying echocardiography spectral Doppler trace",
+      "topic": "cardio",
+      "date": "Original capture date unverified",
+      "source": "Owner-supplied photograph, 12 October 2026"
+    },
+    {
+      "file": "biological-safety-cabinet-workspace.webp",
+      "tag": "Biological methods",
+      "title": "The biological safety cabinet",
+      "arTitle": "خزانة السلامة الحيوية",
+      "description": "Biological safety cabinet and nearby regulated-waste equipment. The photo does not establish a particular cell line, protocol or experimental outcome.",
+      "alt": "Biological safety cabinet and biohazard-waste collection equipment",
+      "topic": "biological",
+      "date": "Original capture date unverified",
+      "source": "Owner-supplied photograph, 12 October 2026"
+    },
+    {
+      "file": "chick-embryo-incubation-eggs.webp",
+      "tag": "Developmental models",
+      "title": "An incubator for chick-embryo work",
+      "arTitle": "حاضنة لبحوث أجنة الدجاج",
+      "description": "Eggs arranged on trays in an incubator used for chick-embryo work. No embryo stage or viability is inferred.",
+      "alt": "Tray of eggs inside a cabinet-style laboratory incubator",
+      "topic": "biological",
+      "date": "Original capture date unverified",
+      "source": "Owner-supplied photograph, 12 October 2026"
+    },
+    {
+      "file": "stereo-microscope-micromanipulator-setup.webp",
+      "tag": "Microscopy",
+      "title": "Stereomicroscope and positioning apparatus",
+      "arTitle": "مجهر مجسم وتجهيزات لتحديد موضع العينات",
+      "description": "A stereomicroscope and associated positioning hardware in a laboratory. The photographed specimen and application are unverified.",
+      "alt": "Stereomicroscope with brightly lit stage and positioning fixtures",
+      "topic": "biological",
+      "date": "Original capture date unverified",
+      "source": "Owner-supplied photograph, 12 October 2026"
+    },
+    {
+      "file": "compressed-gas-microscopy-instrumentation.webp",
+      "tag": "Instrumentation",
+      "title": "Compressed-gas supply beside microscopy equipment",
+      "arTitle": "أسطوانة غاز مضغوط بجوار أجهزة الفحص المجهري",
+      "description": "A cylinder labeled non-flammable gas mixture beside microscopy instruments. Its exact gas composition and role in the apparatus are unverified.",
+      "alt": "Compressed-gas cylinder with non-flammable gas-mixture label beside laboratory instruments",
+      "topic": "archive",
+      "date": "Original capture date unverified",
+      "source": "Owner-supplied photograph, 12 October 2026"
+    }
+  ],
+  "video": {
+    "file": "laboratory-vacuum-pump-archival-clip.mp4",
+    "poster": "laboratory-vacuum-pump-clip-poster.webp",
+    "title": "A brief laboratory-apparatus recording",
+    "description": "Short original video showing a pump-like assembly and nearby instruments; apparatus model, experimental function, and recording date unverified."
+  }
+}
