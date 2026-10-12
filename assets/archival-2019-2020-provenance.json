@@ -48,8 +48,7 @@
       "posted": "2020-11-03",
       "identification": "Mahmoud wearing medical face mask and laboratory coat; health text intentionally cropped",
       "placement": [
-        "archive",
-        "illness-and-evidence"
+        "archive"
       ]
     },
     {
@@ -66,12 +65,13 @@
       "source": "40DF2A94-C869-4CAF-A893-C302F4F34FE5.jpeg",
       "path": "assets/archival-2019-2020/2020-clinic-day-corridor.webp",
       "posted": null,
-      "identification": "Clinic-day corridor; facility/date not verified. Do not label Heart Hospital without confirmation of exact image.",
+      "identification": "Hospital corridor photo marked 'Clinic day'; owner clarified this material concerns cardiovascular clinical research, including TAVI and machine-learning work, rather than personal disease. Photograph does not show a TAVI procedure or demonstrate ML model results; exact facility/date remain unverified.",
       "placement": [
         "archive",
-        "illness-and-evidence"
+        "computing"
       ]
     }
   ],
-  "privacy": "Crop social-media story UI; remove personal-health text from masked portrait; blur readable email/screen contents before publication; retain the original image as separate owner archive."
+  "privacy": "Crop social-media story UI; remove personal-health text from masked portrait; blur readable email/screen contents before publication; retain the original image as separate owner archive.",
+  "context_correction_2026_10_12": "Do not conflate hospital-based clinical research with personal health care. Owner identified some clinic photographs as relating to TAVI and machine-learning research. Assign images individually by provenance, not merely by visible clinical environment."
 }
