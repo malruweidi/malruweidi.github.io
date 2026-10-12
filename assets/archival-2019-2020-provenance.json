@@ -1,0 +1,77 @@
+{
+  "archive_intake": "12 October 2026",
+  "publication_state": "Photograph assets prepared outside repository; code suppresses cards until binary assets are present",
+  "provenance_note": "Dates in screenshots identify original story posting timestamps; not independently verified EXIF.",
+  "assets": [
+    {
+      "source": "IMG_7949.png",
+      "path": "assets/archival-2019-2020/2019-philosophy-of-science-seminar.webp",
+      "posted": "2019-09-10",
+      "identification": "Philosophy-of-science seminar; speaker not independently identified",
+      "placement": [
+        "archive",
+        "engagement"
+      ]
+    },
+    {
+      "source": "IMG_7948.png",
+      "path": "assets/archival-2019-2020/2019-biotage-initiator-microwave-synthesis.webp",
+      "posted": "2019-09-05",
+      "identification": "Biotage Initiator+ microwave synthesizer, equipment photograph, not evidence of operation/training",
+      "placement": [
+        "archive",
+        "techniques"
+      ]
+    },
+    {
+      "source": "IMG_7947.png",
+      "path": "assets/archival-2019-2020/2020-covid-era-biosafety-facility.webp",
+      "posted": "2020-06-28",
+      "identification": "PPE-clad person beside a BSL-3 display at Biomedical Research Center; subject and authorized access unverified",
+      "placement": [
+        "archive"
+      ]
+    },
+    {
+      "source": "IMG_7946.png",
+      "path": "assets/archival-2019-2020/2020-laboratory-benches.webp",
+      "posted": "2020-11-19",
+      "identification": "Laboratory benches and stored materials in black-and-white",
+      "placement": [
+        "archive",
+        "techniques"
+      ]
+    },
+    {
+      "source": "IMG_7945.png",
+      "path": "assets/archival-2019-2020/2020-laboratory-coat-pandemic.webp",
+      "posted": "2020-11-03",
+      "identification": "Mahmoud wearing medical face mask and laboratory coat; health text intentionally cropped",
+      "placement": [
+        "archive",
+        "illness-and-evidence"
+      ]
+    },
+    {
+      "source": "DACF761E-1A0C-4BE2-945D-33E997651645(1).jpeg",
+      "path": "assets/archival-2019-2020/2020-two-laptops-qu-working-day.webp",
+      "posted": null,
+      "identification": "Two laptops at Qatar University workstation; screen text blurred",
+      "placement": [
+        "archive",
+        "computing"
+      ]
+    },
+    {
+      "source": "40DF2A94-C869-4CAF-A893-C302F4F34FE5.jpeg",
+      "path": "assets/archival-2019-2020/2020-clinic-day-corridor.webp",
+      "posted": null,
+      "identification": "Clinic-day corridor; facility/date not verified. Do not label Heart Hospital without confirmation of exact image.",
+      "placement": [
+        "archive",
+        "illness-and-evidence"
+      ]
+    }
+  ],
+  "privacy": "Crop social-media story UI; remove personal-health text from masked portrait; blur readable email/screen contents before publication; retain the original image as separate owner archive."
+}
