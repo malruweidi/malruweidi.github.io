@@ -1,0 +1,23 @@
+/* Responsive archive additions, 12 October 2026 */
+.rx-heritage-section{background:#f0f3ed;color:#183d41;padding:clamp(50px,6vw,86px) 0;border-top:1px solid #d0d9d2;font-family:"DM Sans",system-ui,sans-serif}
+.rx-heritage-inner{width:min(1170px,calc(100% - 48px));margin:0 auto}
+.rx-heritage-head{max-width:740px;margin-bottom:28px}
+.rx-heritage-kicker,.rx-heritage-meta,.rx-heritage-disclaimer{color:#7c6458;font:500 11px/1.6 "DM Mono",monospace;letter-spacing:.055em}
+.rx-heritage-kicker{letter-spacing:.12em;text-transform:uppercase}
+.rx-heritage-head h2{font:400 clamp(30px,4.2vw,52px)/1.17 Newsreader,Georgia,serif;margin:10px 0 13px;color:#17363a}
+.rx-heritage-head p{font:15px/1.8 "DM Sans",Arial,sans-serif;color:#4c6261;margin:0;max-width:64ch}
+.rx-heritage-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.rx-heritage-card{margin:0;min-width:0;background:#fffdf8;border:1px solid #d1d8d1;overflow:hidden}
+.rx-heritage-frame{height:270px;display:block;overflow:hidden;background:#dce4de}
+.rx-heritage-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 42%;transition:transform .25s ease}
+.rx-heritage-frame img.rx-heritage-contain{object-fit:contain;background:#e1e6e3}
+.rx-heritage-frame:hover img{transform:scale(1.022)}
+.rx-heritage-caption{padding:18px 18px 20px}
+.rx-heritage-meta{display:block;text-transform:none}
+.rx-heritage-title{display:block;font:400 clamp(21px,2.1vw,27px)/1.22 Newsreader,Georgia,serif;color:#17363a;margin:11px 0 10px}
+.rx-heritage-desc{font:13px/1.75 "DM Sans",Arial,sans-serif;color:#526665;margin:0}
+.rx-heritage-disclaimer{margin:22px 0 0;letter-spacing:0;color:#637575}
+.rx-heritage-member{object-fit:cover;object-position:center 42%}
+@media (max-width:850px){.rx-heritage-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.rx-heritage-frame{height:230px}}
+@media (max-width:540px){.rx-heritage-inner{width:calc(100% - 34px)}.rx-heritage-grid{grid-template-columns:1fr}.rx-heritage-card{display:grid;grid-template-columns:43% minmax(0,1fr)}.rx-heritage-frame{height:100%;min-height:195px}.rx-heritage-caption{padding:14px 13px}.rx-heritage-title{font-size:22px}.rx-heritage-desc{font-size:12px}.rx-heritage-section{padding:44px 0}}
+@media(prefers-reduced-motion:reduce){.rx-heritage-frame img{transition:none}.rx-heritage-frame:hover img{transform:none}}
