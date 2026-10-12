@@ -1,0 +1,21 @@
+{
+  "status": "ready",
+  "date": "2026-10-12",
+  "images": 9,
+  "videos": 1,
+  "poster": 1,
+  "verified_asset_paths": [
+    "assets/research-archive-2026/laboratory-gas-discharge-safety-door.webp",
+    "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+    "assets/research-archive-2026/laboratory-samples-luminescence-literature.webp",
+    "assets/research-archive-2026/qatar-university-research-workstation.webp",
+    "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+    "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+    "assets/research-archive-2026/chick-embryo-incubation-eggs.webp",
+    "assets/research-archive-2026/stereo-microscope-micromanipulator-setup.webp",
+    "assets/research-archive-2026/compressed-gas-microscopy-instrumentation.webp",
+    "assets/research-archive-2026/laboratory-vacuum-pump-archival-clip.mp4",
+    "assets/research-archive-2026/laboratory-vacuum-pump-clip-poster.webp"
+  ],
+  "privacy": "Images optimized, EXIF stripped; personal email and clinical screen text obscured; original recording audio removed."
+}
