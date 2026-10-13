@@ -46,3 +46,12 @@ The following work builds on the first CSS-only cinematic refinement. It is inte
 Fourteen static checks passed: presence of the one-and-only academic index, its four target URLs, required CSS and JS inclusion, JavaScript parsing, archive viewer navigation and focus-return hooks, 30 unique archival records, nine described research photographs and one described research video. All eleven referenced research-media binaries (nine WEBP images, one MP4 and its WEBP poster) were individually found in GitHub.
 
 These are source and repository-object checks, **not** evidence of completed mobile visual QA, successful current GitHub Pages deployment, WCAG conformance, or verified photographic provenance. The direct website and referenced X post could not be loaded through the available web reader; retain the design brief as editorial interpretation rather than a line-by-line derivation from that post.
+
+
+## Approved visual direction: preservation priority (owner instruction, 13 October 2026)
+
+The owner explicitly approved the site's current overall appearance. **Treat the existing visual language as settled.** Future work should be editorial and corrective by default: check scientific accuracy, media placement and provenance, chronology, link destinations, accessibility, contrast, multilingual behavior and responsive rendering. Do not introduce a wholesale redesign, new typographic personality, new animation vocabulary, replacement hero, alternative layout system, or stylistic rebranding without a subsequent explicit instruction.
+
+The complimentary `stories.html` route was added under this principle: it shares the Newsreader / DM Sans / DM Mono system, dark pine / warm paper / terracotta palette and authentic archive media, retains the homepage's original narrative, and includes bilingual copy plus source notes. The new page does not replace the scientific archive, research figures or publications.
+
+Source-level static checks passed after this addition; GitHub Pages published the new main-branch commit successfully on 13 October 2026. These facts do not substitute for visual checks on real browsers and devices.
