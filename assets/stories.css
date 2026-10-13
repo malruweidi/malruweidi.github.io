@@ -96,3 +96,22 @@ html[dir="rtl"][data-rx-page="stories"] .stories-memory-bridge p{
   font-size:clamp(20px,2vw,24px);
   line-height:1.9;
 }
+
+/* Owner-authenticated October 2026 field notes; additive, following approved palette and typography. */
+html[data-rx-page="stories"] .rx-story-ar{display:none!important}
+html[lang="ar"][data-rx-page="stories"] .rx-story-en{display:none!important}
+html[lang="ar"][data-rx-page="stories"] .rx-story-ar{display:block!important}
+html[data-rx-page="stories"] .rx25-photo-grid{display:grid;gap:15px;margin:36px 0 30px;align-items:start}
+html[data-rx-page="stories"] .rx25-photo-grid-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+html[data-rx-page="stories"] .rx25-photo-grid-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+html[data-rx-page="stories"] .rx25-photo-grid figure{margin:0;border:1px solid #d8d7ca;background:#fffdf8;padding:9px;min-width:0}
+html[data-rx-page="stories"] .rx25-photo-grid img{width:100%;height:260px;object-fit:contain;background:#e8ece7}
+html[data-rx-page="stories"] .rx25-photo-grid figcaption{padding:11px 6px 5px;font:12px/1.68 "DM Sans",Arial,sans-serif;color:#4b6463}
+html[dir="rtl"][data-rx-page="stories"] .rx25-photo-grid figcaption{font-family:"Noto Naskh Arabic",serif;font-size:17px;line-height:1.8}
+html[data-rx-page="stories"] .stories-chapter-text>div.rx-story-en>p,html[data-rx-page="stories"] .stories-chapter-text>div.rx-story-ar>p{font:15px/1.9 "DM Sans",Arial,sans-serif;color:#26474a;margin:14px 0}
+html[data-rx-page="stories"] .stories-chapter-text>div.rx-story-en>p.stories-opening{font:400 clamp(19px,2vw,24px)/1.65 Newsreader,Georgia,serif}
+html[dir="rtl"][data-rx-page="stories"] .stories-chapter-text>div.rx-story-ar>p{font:19px/1.9 "Noto Naskh Arabic",serif}
+html[dir="rtl"][data-rx-page="stories"] .stories-chapter-text>div.rx-story-ar>p.stories-opening{font-size:23px}
+html[data-rx-page="stories"] .stories-chapter-text>p.rx-story-ar{font-family:"Noto Naskh Arabic",serif;font-size:19px;line-height:1.9}
+@media(max-width:820px){html[data-rx-page="stories"] .rx25-photo-grid-three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:570px){html[data-rx-page="stories"] .rx25-photo-grid,html[data-rx-page="stories"] .rx25-photo-grid-three,html[data-rx-page="stories"] .rx25-photo-grid-two{grid-template-columns:1fr}html[data-rx-page="stories"] .rx25-photo-grid img{height:auto;max-height:430px}}
