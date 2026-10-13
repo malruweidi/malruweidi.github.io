@@ -81,20 +81,6 @@ const run=()=>{
    morning.querySelector("figcaption").append(storyLink);
    biological.append(morning);
  }
- if(mol && !document.getElementById("rxOct12CopolymerStory")){
-   const notebook=make({
-     id:"rxOct12CopolymerStory",
-     src:"/assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
-     alt:"Blue laboratory notebook labeled A Series of Unfortunate Trials",
-     title:"A Series of Unfortunate Trials",
-     titleAr:"سلسلة من التجارب غير الموفقة",
-     text:"My name for a frustrating diblock-copolymer synthesis: the material cross-linked and would not dissolve as intended. The notebook cover recalls an experimental setback, not a confirmed structural assignment or measured polymer properties.",
-     textAr:"العنوان الذي أطلقته على تجربة صعبة لتحضير بوليمر مشترك ثنائي الكتل، إذ تشابكت السلاسل وتعذّب إذابة المادة كما كان مخططاً. توثق صورة الدفتر ذكرى تجربة لم تنجح، لا توصيفاً بنيوياً مؤكداً أو قياسات لخواص البوليمر.",
-     date:"Original Instagram post · 8 October 2017; experimental date unverified",
-     dateAr:"منشور إنستغرام · ٨ أكتوبر ٢٠١٧؛ تاريخ التجربة غير موثق"
-   });
-   mol.append(notebook);
- }
 
 };
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});else run();
