@@ -1,0 +1,46 @@
+{
+  "title": "Owner-identified laboratory photographs, 13 October 2026",
+  "publication_status": "media files prepared locally; code wired; images appear after binary assets are hosted at the declared paths",
+  "editorial_rule": "No hairstyles in captions; distinguish Mahmoud from Abdelgalil and do not assign unknown experiment names or results",
+  "entries": [
+    {
+      "source": "Screenshot_2014-12-13-15-56-41~2.jpg",
+      "source_file_id": "file_000000008e988208b33f71ec8811a959",
+      "subject": "Mahmoud K. Al-Ruweidi",
+      "target": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
+      "sha256": "7b5c9f9f05bbe2ad93a78a36c7723eb24c0d8246ee51573c630b95968311817c",
+      "contexts": [
+        "stories.html#molecular-models",
+        "archive.html#rxFreshmanChemistryArchive"
+      ],
+      "date": "circa 2014, based on owner description and source filename; camera metadata not verified",
+      "caption": "Mahmoud holding a flask in an early university chemistry laboratory. Solution identity unknown."
+    },
+    {
+      "source": "IMG_20141026_110359.jpg",
+      "source_file_id": "file_00000000b7648208be5c95ddcfd3fb62",
+      "subject": "Mahmoud K. Al-Ruweidi",
+      "target": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+      "sha256": "fa3bd1f69de44e44330d93b797e78d57561932ffac78102b62cd4be726bfb4d8",
+      "contexts": [
+        "stories.html#molecular-models",
+        "archive.html#rxFreshmanChemistryArchive"
+      ],
+      "date": "circa 2014, based on owner description and source filename; camera metadata not verified",
+      "caption": "Mahmoud holding a laboratory test tube in a monochrome photograph from his freshman years. Contents unknown."
+    },
+    {
+      "source": "DSC_0030.JPG",
+      "source_file_id": "file_000000002a408208a2ce0a4bf04417fa",
+      "subject": "Abdelgalil Khalaf Ahmed",
+      "target": "assets/archival-2026-10-13/abdelgalil-chemistry-lab-tablet.webp",
+      "sha256": "9704d65efe3c571d1b1c834b6b7df92c444bd030cacf23f426b6561299e74f8f",
+      "contexts": [
+        "chem-squad.html#people",
+        "archive.html#rxFreshmanChemistryArchive"
+      ],
+      "date": "unverified",
+      "caption": "Abdelgalil seated in a chemistry laboratory wearing a white coat and gloves, holding a tablet."
+    }
+  ]
+}
