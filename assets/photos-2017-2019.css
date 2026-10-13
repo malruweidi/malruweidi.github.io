@@ -20,3 +20,6 @@
 #rxOctoberChemSquad .rx-oct-intro,#rxOctoberChemSquad .rx-oct-source{color:#c2d2d0}
 @media(max-width:640px){.rx-oct-section{padding:42px 0}.rx-oct-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.rx-oct-wrap{width:calc(100% - 28px)}.rx-oct-card{padding:5px}.rx-oct-card figcaption{padding:9px 6px}.rx-oct-desc{font-size:12px}.rx-oct-card-title{font-size:18px}}
 @media(max-width:420px){.rx-oct-grid{grid-template-columns:1fr}.rx-oct-photo{aspect-ratio:5/4}}
+/* Cross-reference: the scientific-methods and photographic archive now link to the personal microscope story. */
+.rx-oct-storylink{display:inline-block;margin-top:13px;color:#95543e;font-size:13px;font-weight:700;line-height:1.6;text-decoration:underline;text-underline-offset:4px}
+.rx-oct-storylink:focus-visible{outline:3px solid #b56b4f;outline-offset:3px}
