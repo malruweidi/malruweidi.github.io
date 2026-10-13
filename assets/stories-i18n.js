@@ -162,6 +162,8 @@
     "09 / History of chemistry": "٠٩ / تاريخ الكيمياء",
     "10 / Material surfaces": "١٠ / سطوح المواد",
     "11 / Research apparatus": "١١ / الأجهزة البحثية",
-    "The opening five chapters follow the main arc of the research and the experiences around it. These remaining episodes move between earlier years and different disciplines. They belong here because a life in science is not a tidy chronology: some of its most consequential lessons occur to the side of the planned experiment.": "تتبع الفصول الخمسة الأولى مسار البحث العام وما أحاط به من تجارب إنسانية. أما المشاهد التالية فتتنقل بين سنوات أسبق وتخصصات مختلفة؛ لأنها تروي ما لا تحتفظ به السيرة المرتبة دائمًا. فالحياة في العلم ليست خطًّا زمنيًّا مستقيمًا، وبعض دروسها المهمة يقع بعيدًا عن التجربة التي خططنا لها."
+    "The opening five chapters follow the main arc of the research and the experiences around it. These remaining episodes move between earlier years and different disciplines. They belong here because a life in science is not a tidy chronology: some of its most consequential lessons occur to the side of the planned experiment.": "تتبع الفصول الخمسة الأولى مسار البحث العام وما أحاط به من تجارب إنسانية. أما المشاهد التالية فتتنقل بين سنوات أسبق وتخصصات مختلفة؛ لأنها تروي ما لا تحتفظ به السيرة المرتبة دائمًا. فالحياة في العلم ليست خطًّا زمنيًّا مستقيمًا، وبعض دروسها المهمة يقع بعيدًا عن التجربة التي خططنا لها.",
+    "Separate developmental-model archive: chick-embryo incubation equipment, not part of the zebrafish endothelial-cilia experiments or the ATVB study.": "صورة مستقلة من أرشيف العمل على أجنة الدجاج، وليست جزءًا من تجارب الأهداب البطانية في سمك الزرد أو دراسة ATVB.",
+    "Chick-embryo incubator · Separate developmental model, unrelated to the zebrafish ATVB experiment": "حاضنة أجنة الدجاج · نموذج نمائي مستقل لا يتصل بتجارب سمك الزرد المنشورة في ATVB"
   });
 })();
