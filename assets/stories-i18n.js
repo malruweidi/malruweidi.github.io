@@ -121,6 +121,20 @@
     "06 / Community": "٠٦ / العمل المجتمعي",
     "07 / Trials and error": "٠٧ / المحاولات والإخفاقات",
     "08 / History of chemistry": "٠٨ / تاريخ الكيمياء",
-    "09 / Material surfaces": "٠٩ / سطوح المواد"
+    "09 / Material surfaces": "٠٩ / سطوح المواد",
+    "2016–2026 / APPARATUS": "٢٠١٦–٢٠٢٦ / الأجهزة",
+    "Reading what a photograph proves": "كيف نقرأ ما تثبته الصورة",
+    "A machine is not an experiment.": "الجهاز ليس التجربة.",
+    "I have worked in laboratories where nearly every surface seemed to hold a different question: a pipette at the molecular bench, a stereomicroscope beside positioning hardware, a biological safety cabinet ready for cell work. Later, cardiovascular imaging brought me into another world of instrumentation. These settings all reward technical care, but possession of an instrument does not establish mastery of it, and its photograph does not tell us which protocol was running that day.": "عملت في مختبرات بدت فيها كل طاولة حاملةً لسؤال مختلف: ماصة دقيقة عند طاولة التحضير الجزيئي، ومجهر مجسم بجانب أجهزة تثبيت العينات، وخزانة سلامة حيوية مهيأة للعمل الخلوي. ثم أتاح لي التصوير القلبي التعرف إلى عالم آخر من الأجهزة. وتتطلب هذه البيئات عناية تقنية، لكن وجود الجهاز لا يثبت إتقان استخدامه، كما أن تصويره لا يكشف بالضرورة عن البروتوكول الذي كان يُجرى في ذلك اليوم.",
+    "That is why I prefer to preserve a photograph with a careful caption over turning it into a heroic scene. The image of a spectral Doppler waveform documents the presence of a clinical imaging display, not a diagnosis. A short clip of a pump-like assembly documents apparatus in motion, not its exact model or function. If an instrument is to support a scientific claim, the acquisition conditions, calibration, analysis and surrounding record must do the heavier work.": "ولهذا أفضّل الاحتفاظ بالصورة مع تعليق دقيق على تحويلها إلى مشهد بطولي. تُظهر صورة دوبلر الطيفي شاشة تصوير سريري، لكنها لا تثبت تشخيصًا. ويوثق مقطع قصير جهازًا شبيهًا بالمضخة أثناء التشغيل، دون أن يحسم طرازه أو وظيفته المحددة. وإذا أُريد للجهاز أن يسند ادعاءً علميًّا، فلا بد أن تنهض ظروف القياس والمعايرة والتحليل والسجلات المصاحبة بالعبء الأكبر من الإثبات.",
+    "These ordinary laboratory images might be among the most revealing things in an archive. They remind me that a scientific result rests on hours of preparation that seldom survive the final manuscript. The apparatus is present in the story, but the evidence still has to be earned.": "ربما كانت هذه الصور اليومية من أكثر ما يكشفه الأرشيف؛ فهي تذكّرني بساعات التحضير التي يقوم عليها البحث ثم لا يظهر معظمها في المخطوط النهائي. تحضر الأجهزة في الحكاية، لكن الدليل العلمي يظل شيئًا ينبغي اكتسابه.",
+    "Pipette workbench · Sample identities and assays unverified": "طاولة تحضير بالماصات الدقيقة · لم تُتحقق هوية العينات أو نوع الاختبارات",
+    "Stereomicroscope and positioning apparatus · Sample and protocol unverified": "مجهر مجسم وتجهيزات تثبيت · العينة والبروتوكول غير محددين",
+    "Biological safety cabinet · A workspace photograph, not a cell-culture result": "خزانة السلامة الحيوية · صورة لمكان العمل وليست نتيجة لزراعة الخلايا",
+    "Spectral Doppler workstation · Patient details obscured; no clinical finding inferred": "جهاز دوبلر طيفي · حُجبت بيانات قد تدل على المريض، دون استنتاج سريري",
+    "Archival recording of a pump-like laboratory assembly · Exact device and application unverified": "مقطع أرشيفي لجهاز مختبري شبيه بالمضخة · لم يُتحقق من نوع الجهاز أو تطبيقه",
+    "All four images and the short original clip were supplied by the archive owner in October 2026. Capture dates and experiment identifiers remain unverified; potentially identifying information was obscured before archiving. The images are not offered as evidence of experimental or patient outcomes.": "قدّم صاحب الأرشيف الصور الأربع والمقطع الأصلي في أكتوبر ٢٠٢٦. ولم تُتحقق تواريخ التصوير أو أرقام التجارب، وحُجبت المعلومات التي قد تكشف هوية أشخاص قبل الأرشفة. ولا تُقدَّم هذه الوسائط دليلًا على نتائج تجريبية أو نتائج تخص المرضى.",
+    "Explore the technical methods and recordings": "استعرض التقنيات والمقاطع المصورة",
+    "10 / Research apparatus": "١٠ / الأجهزة البحثية"
   });
 })();
