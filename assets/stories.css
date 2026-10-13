@@ -73,10 +73,9 @@ html[data-rx-page="stories"] .stories-contents-inner>a{white-space:nowrap}
 /* Ramadan field-note bridge: typographic emphasis in the existing editorial palette. */
 html[data-rx-page="stories"] .stories-memory-bridge{
   margin:34px 0 24px;
-  padding:10px 0 10px clamp(16px,2.2vw,26px);
+  padding:10px 0;
   border-inline-start:2px solid #b56b4f;
   padding-inline-start:clamp(16px,2.2vw,26px);
-  padding-left:unset;
 }
 html[data-rx-page="stories"] .stories-memory-bridge p{
   max-width:65ch;
