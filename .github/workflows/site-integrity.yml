@@ -1,0 +1,15 @@
+name: Website integrity audit
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links, media, JavaScript and scientific attribution
+        run: node scripts/site-integrity.cjs
