@@ -1,6 +1,6 @@
 {
   "title": "Owner-identified laboratory photographs, 13 October 2026",
-  "publication_status": "media files prepared locally; code wired; images appear after binary assets are hosted at the declared paths",
+  "publication_status": "published in GitHub main branch, 13 October 2026; live site reflects GitHub Pages build after deployment",
   "editorial_rule": "No hairstyles in captions; distinguish Mahmoud from Abdelgalil and do not assign unknown experiment names or results",
   "entries": [
     {
@@ -42,5 +42,7 @@
       "date": "unverified",
       "caption": "Abdelgalil seated in a chemistry laboratory wearing a white coat and gloves, holding a tablet."
     }
-  ]
+  ],
+  "publishing_commit": "77107e2de7b44a67a5d6c980bbd6df83deaef115",
+  "original_note": "Source JPG files remain available in the ChatGPT conversation; the public site uses lightweight WebP derivatives with validated Git blob hashes. No source-file camera dates have been independently authenticated."
 }
