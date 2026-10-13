@@ -26,3 +26,9 @@ The current October 2026 site appearance is approved; retain it. This update add
 
 ## Future audit and editorial care
 Prioritize: (1) real device and browser visual review, especially Arabic RTL navigation and images; (2) external media availability and local asset ownership; (3) cross-check of individual scientific figures against DOI/manuscript/source captions; (4) optional evidence-based story additions only when a sufficiently identified photographic or research source exists.
+
+## Ramadan/ATVB editorial addition — 13 October 2026
+- New dedicated first-person chapter `#ramadan-atvb`, placed immediately after the living-systems research narrative. Covers breaking the Ramadan fast at Qatar University, returning to experiments and missing Taraweeh prayers, and guests waiting at the owner's house while the final experimental day was still underway.
+- Scientific anchor: Eisa-Beygi et al., 2018, *Arteriosclerosis, Thrombosis, and Vascular Biology*, DOI `10.1161/ATVBAHA.118.311231`. Distinguishes the study's published findings from the owner's unverified diary-level recollection and does not claim any one night's experiment yielded the paper's central discovery.
+- Uses previously archived zebrafish microscopy figure with explicit contextual caption. The owner-identified Ramadan microscopy photograph (`IMG_4241.jpeg`) remains pending source image availability and is NOT misrepresented as uploaded.
+- Reordered chapter numbering and anchor links to keep all eleven stories readable; added a direct link from the existing living-systems narrative, full corresponding Arabic prose, and preserved original design and other research archive routes.
