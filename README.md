@@ -7,6 +7,7 @@ Public academic profile: **https://malruweidi.github.io/cv.html**
 ## What is included
 
 - `index.html`: research portfolio, first-person narrative about curiosity and the origins of things, selected publications, scientific methods, writing, public record, and initiatives
+- `stories.html`: new complementary long-form Stories collection (2011 anatomy, chemistry society and public engagement, biological systems, ongoing pulmonary drug-delivery research), with linked source notes; styled via `assets/stories.css` and fully translated using `assets/stories-i18n.js` without changing the existing homepage narrative
 - `archive.html`: current editorial archive, five introductory featured photographs, and a restored 30-photo category-filterable gallery loaded by `assets/archive-restoration.js` from the original documented photo index
 - `archive/*.jpg`: web-optimized photographs cropped from supplied personal files and archived Google Photos screenshots (interfaces removed)
 - `archive/archive-video-2016.mp4`: web-optimized silent copy of the supplied 5.5-second MOV file (displayed in the recovered archive and methods atlas)
