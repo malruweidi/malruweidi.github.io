@@ -1,0 +1,36 @@
+{
+  "schema": "ruwaidix-owner-media-intake-2026-v1",
+  "date": "2026-10-13",
+  "website_media_status": "Source provenance and conditional site integration are committed; image/video binaries require separate upload into assets/owner-archive-2026-10-13/; never claim media are live before that.",
+  "source_files": [
+    "IMG_5700.jpeg",
+    "IMG_5692.jpeg",
+    "IMG_5705.jpeg",
+    "26107bd0-c4f6-4b66-8d72-f3ddabebd4b6.jpeg",
+    "IMG_5023.jpeg",
+    "IMG_4466.jpeg",
+    "IMG_30D354C2-F55F-4422-AD33-349D5B7BA5C2.jpeg",
+    "941df66636ad466db5ecdb3ecf919c46.mov"
+  ],
+  "expected_public_paths": [
+    "assets/owner-archive-2026-10-13/library-lab-coat-cold.webp",
+    "assets/owner-archive-2026-10-13/first-chem101-lab-visit.webp",
+    "assets/owner-archive-2026-10-13/high-school-graduation.webp",
+    "assets/owner-archive-2026-10-13/return-to-early-school.webp",
+    "assets/owner-archive-2026-10-13/al-thakhira-research-judging.webp",
+    "assets/owner-archive-2026-10-13/hbku-research-visit.webp",
+    "assets/owner-archive-2026-10-13/sterlitech-ro-nf-membrane-setup.webp",
+    "assets/owner-archive-2026-10-13/khaled-jama-thesis-reaction.mp4",
+    "assets/owner-archive-2026-10-13/khaled-jama-thesis-reaction-poster.webp"
+  ],
+  "provenance": [
+    "Owner identifies library coat as protection from cold air conditioning, not worn over shorts in a laboratory.",
+    "Owner identifies glove portrait as later visit to first Chemistry 101 laboratory.",
+    "Owner identifies graduate group as high-school graduation without dates or companion names.",
+    "School group is a later visit to kindergarten/primary/preparatory school. Public derivative blurs a child's face.",
+    "Al Thakhira crowd image relates to event where owner judged student research; no judging portrayed.",
+    "HBKU photo records a research visit rather than employment or authorship.",
+    "Sterlitech equipment relates to reverse osmosis and nanofiltration; performance data are not inferred.",
+    "Video shows Khaled Jama Mohamoud explaining a chemistry reaction related to his thesis; mechanism unverified."
+  ]
+}
