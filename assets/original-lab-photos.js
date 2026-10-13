@@ -72,11 +72,13 @@ const run=()=>{
      alt:"Microscope, books, ACS mug and writing materials on Mahmoud's desk",
      title:"A vacation morning with a microscope",
      titleAr:"صباح عطلة مع المجهر",
-     text:"A microscope stood among books and notes in my room. This personal photograph captures the everyday place of scientific curiosity, not an acquired microscopy image or an experimental result.",
-     textAr:"مجهر وكتب وملاحظات على مكتبي في المنزل. صورة شخصية عن حضور الفضول العلمي في الحياة اليومية، وليست صورة مجهرية لعينة أو دليلاً على نتيجة تجريبية.",
+     text:"I bought this microscope in the Qasr El Einy area of Cairo and brought it to Qatar. It became part of how I pursued my own questions beyond scheduled university laboratory work. The full account now belongs in Stories; the photograph is not a microscopy result.",
+     textAr:"اشتريت هذا المجهر من منطقة القصر العيني في القاهرة وجئت به إلى قطر. صار وسيلتي إلى متابعة الأسئلة التي تثير فضولي خارج مواعيد مختبر الجامعة. أما الحكاية كاملة فمكانها الآن في قسم الحكايات؛ وهذه صورة للمجهر، لا نتيجة تصوير مجهري.",
      date:"Original Instagram post · 1 July 2017; camera date unverified",
      dateAr:"منشور إنستغرام · ١ يوليو ٢٠١٧؛ تاريخ التصوير غير موثق"
    });
+   const storyLink=document.createElement("a");storyLink.href="/stories.html#personal-microscope";storyLink.className="rx-provenance-link";storyLink.textContent=ar?"اقرأ حكاية المجهر: من القاهرة إلى قطر ↗":"Read the microscope's journey from Cairo to Qatar ↗";
+   morning.querySelector("figcaption").append(storyLink);
    biological.append(morning);
  }
  if(mol && !document.getElementById("rxOct12CopolymerStory")){
