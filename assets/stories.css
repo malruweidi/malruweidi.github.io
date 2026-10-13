@@ -69,3 +69,31 @@ html[dir="rtl"][data-rx-page="stories"] .stories-hero-intro,html[dir="rtl"][data
 /* Source video is opt-in, contained and visually faithful to the approved Stories design. */
 html[data-rx-page="stories"] .stories-original-video video{display:block;width:100%;max-height:390px;object-fit:contain;background:#17343b}
 html[data-rx-page="stories"] .stories-contents-inner>a{white-space:nowrap}
+
+/* Ramadan field-note bridge: typographic emphasis in the existing editorial palette. */
+html[data-rx-page="stories"] .stories-memory-bridge{
+  margin:34px 0 24px;
+  padding:10px 0 10px clamp(16px,2.2vw,26px);
+  border-inline-start:2px solid #b56b4f;
+  padding-inline-start:clamp(16px,2.2vw,26px);
+  padding-left:unset;
+}
+html[data-rx-page="stories"] .stories-memory-bridge p{
+  max-width:65ch;
+  margin:0 0 14px;
+  color:#274b4d;
+  font:400 clamp(19px,2vw,24px)/1.55 "Newsreader",Georgia,serif;
+}
+html[data-rx-page="stories"] .stories-memory-bridge a{
+  display:inline-block;
+  color:#95543e;
+  font-weight:700;
+  font-size:13px;
+  text-decoration-thickness:1px;
+  text-underline-offset:5px;
+}
+html[dir="rtl"][data-rx-page="stories"] .stories-memory-bridge p{
+  font-family:"Noto Naskh Arabic",serif;
+  font-size:clamp(20px,2vw,24px);
+  line-height:1.9;
+}
