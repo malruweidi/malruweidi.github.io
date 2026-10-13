@@ -23,6 +23,7 @@
     "Scientific and personal record":"السجل العلمي والشخصي",
     "Qatar University / Scientific archive":"جامعة قطر / الأرشيف العلمي",
     "Read my story ↗":"اقرأ حكايتي ↗",
+    "Read the expanded anatomy story and other research memories ↗":"اقرأ حكاية التشريح الموسّعة وسائر الذكريات البحثية ↗",
     "Enter the story ↗":"ادخل إلى الحكاية ↗",
     "See the research ↗":"شاهد الأبحاث ↗",
     "Watch the experiments ↗":"شاهد التجارب ↗",
