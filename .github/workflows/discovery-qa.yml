@@ -1,0 +1,34 @@
+name: Ruwaidix discovery integrity
+on:
+  push:
+    paths:
+      - search.html
+      - assets/discovery-*.js
+      - assets/discovery-*.css
+      - assets/discovery-index.json
+      - tests/discovery-index.test.mjs
+      - .github/workflows/discovery-qa.yml
+  pull_request:
+    paths:
+      - search.html
+      - assets/discovery-*.js
+      - assets/discovery-*.css
+      - assets/discovery-index.json
+      - tests/discovery-index.test.mjs
+      - .github/workflows/discovery-qa.yml
+jobs:
+  check-search:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Syntax check
+        run: |
+          node --check assets/discovery-search.js
+          node --check assets/discovery-global.js
+          node --check assets/site-enhancements.js
+          node --check assets/unified-pages.js
+      - name: Index and anchor integrity
+        run: node --test tests/discovery-index.test.mjs
