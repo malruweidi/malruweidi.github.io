@@ -6,6 +6,7 @@
   Object.assign(d, {
     "Stories Between the Experiments | Mahmoud K. Al-Ruweidi": "حكايات من وراء التجارب | محمود الرويدي",
     "Home": "الرئيسية",
+    "Reader’s map": "خريطة القراءة",
     "Archive": "الأرشيف",
     "Methods": "التقنيات",
     "Academic CV": "السيرة الأكاديمية",
