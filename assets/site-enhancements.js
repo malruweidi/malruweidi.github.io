@@ -296,3 +296,17 @@
  const css=document.createElement("link");css.rel="stylesheet";css.href="/assets/research-media-2026.css?v=20261012";document.head.append(css);
  const js=document.createElement("script");js.src="/assets/research-media-2026.js?v=20261012";js.defer=true;document.head.append(js);
 })();
+
+
+/* Additive cross-site discovery; existing navigation and editorial pages remain unchanged. */
+(() => {
+  if (document.querySelector('script[src*="/assets/discovery-global.js"]')) return;
+  const css = document.createElement("link");
+  css.rel = "stylesheet";
+  css.href = "/assets/discovery-global.css?v=20261014";
+  document.head.appendChild(css);
+  const script = document.createElement("script");
+  script.src = "/assets/discovery-global.js?v=20261014";
+  script.defer = true;
+  document.head.appendChild(script);
+})();
