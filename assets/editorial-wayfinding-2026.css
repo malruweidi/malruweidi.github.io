@@ -1,0 +1,38 @@
+/* Ruwaidix: editorial wayfinding, 15 October 2026.
+   Scoped, additive. Existing scientific evidence and historic media stay unmodified. */
+#research .rx-dossier-links{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 14px;margin-top:16px;padding-top:13px;border-top:1px solid #d7dfd9}
+#research .rx-dossier-links>span{flex-basis:100%;font:500 10px/1.7 "DM Mono",monospace;letter-spacing:.09em;text-transform:uppercase;color:#6a776f}
+#research .rx-dossier-links a{font:600 12px/1.65 "DM Sans",sans-serif;color:#205d57;text-decoration:underline;text-decoration-color:#8faf9e;text-underline-offset:4px}
+#research .rx-dossier-links a:hover{color:#95543e}
+#research .rx-research-connection{margin-top:clamp(32px,5vw,68px);padding:clamp(25px,4.5vw,48px);display:grid;grid-template-columns:minmax(0,1.5fr) minmax(200px,.65fr);align-items:end;gap:24px;background:#e7ede7;border-inline-start:4px solid #a96e52;color:#17343b}
+#research .rx-research-connection h3{font:400 clamp(27px,3vw,41px)/1.13 "Newsreader",Georgia,serif;margin:8px 0 15px;letter-spacing:-.025em;color:#17343b}
+#research .rx-research-connection p{font:400 15px/1.9 "DM Sans",sans-serif;max-width:70ch;margin:0;color:#385951}
+#research .rx-connection-kicker{font:500 10px/1.6 "DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:#915942}
+#research .rx-research-connection nav{display:flex;flex-direction:column;gap:11px;border-inline-start:1px solid #baccc0;padding-inline-start:20px}
+#research .rx-research-connection nav a{color:#205d57;text-decoration:none;font:650 13px/1.5 "DM Sans",sans-serif}
+#research .rx-research-connection nav a:hover{text-decoration:underline;text-underline-offset:4px}
+html[data-rx-page="stories"] .rx-story-pathways{background:#f7f5ee;color:#17343b;padding:clamp(48px,7vw,96px) 0 clamp(54px,7vw,96px);border-bottom:1px solid #d0dcd2}
+html[data-rx-page="stories"] .rx-pathways-heading{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.85fr);gap:clamp(20px,4vw,64px);align-items:end;margin-bottom:35px}
+html[data-rx-page="stories"] .rx-pathways-kicker{font:500 10px/1.7 "DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:#915942;margin:0 0 12px}
+html[data-rx-page="stories"] .rx-pathways-heading h2{font:400 clamp(36px,4.1vw,59px)/1.06 "Newsreader",Georgia,serif;max-width:18ch;margin:0;color:#17343b}
+html[data-rx-page="stories"] .rx-pathways-heading>p{font:400 15px/1.9 "DM Sans",sans-serif;color:#45605c;max-width:50ch;margin:0}
+html[data-rx-page="stories"] .rx-story-route-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+html[data-rx-page="stories"] .rx-story-route{display:grid;grid-template-columns:minmax(115px,.7fr) minmax(0,1.3fr);min-width:0;background:#fffdf7;border:1px solid #cbd8cc}
+html[data-rx-page="stories"] .rx-story-route-image{display:block;min-width:0;background:#e5ece5;align-self:stretch;overflow:hidden}
+html[data-rx-page="stories"] .rx-story-route-image img{display:block;width:100%;height:100%;min-height:235px;object-fit:contain}
+html[data-rx-page="stories"] .rx-story-route-body{padding:clamp(16px,2vw,25px);min-width:0}
+html[data-rx-page="stories"] .rx-story-route-number{font:500 10px/1.65 "DM Mono",monospace;letter-spacing:.10em;color:#935942}
+html[data-rx-page="stories"] .rx-story-route h3{font:400 clamp(23px,2.2vw,33px)/1.14 "Newsreader",Georgia,serif;letter-spacing:-.025em;color:#17343b;margin:11px 0 10px}
+html[data-rx-page="stories"] .rx-story-route p{font:400 13px/1.72 "DM Sans",sans-serif;color:#48635a;margin:0 0 14px}
+html[data-rx-page="stories"] .rx-story-route nav{display:flex;flex-wrap:wrap;gap:8px 12px}
+html[data-rx-page="stories"] .rx-story-route nav a{font:600 12px/1.5 "DM Sans",sans-serif;color:#205d57;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#a3bdb1}
+html[data-rx-page="stories"] .rx-story-pathways-footnote{font:400 12px/1.7 "DM Sans",sans-serif;color:#607369;max-width:74ch;margin:19px 0 0}
+html[data-rx-page="stories"] .rx-story-route a:hover{color:#95543e}
+#research .rx-dossier-links a:focus-visible,#research .rx-research-connection a:focus-visible,html[data-rx-page="stories"] .rx-story-pathways a:focus-visible{outline:3px solid #b7704e;outline-offset:4px;border-radius:2px}
+html[dir="rtl"][data-rx-page="stories"] .rx-pathways-heading h2,html[dir="rtl"][data-rx-page="stories"] .rx-story-route h3{font-family:"Noto Naskh Arabic",serif;letter-spacing:0}
+html[dir="rtl"][data-rx-page="stories"] .rx-story-route p,html[dir="rtl"][data-rx-page="stories"] .rx-pathways-heading>p,html[dir="rtl"][data-rx-page="stories"] .rx-story-route nav a{font-family:"Noto Naskh Arabic",serif;font-size:17px;line-height:1.75}
+html[dir="rtl"] #research .rx-research-connection h3{font-family:"Noto Naskh Arabic",serif;letter-spacing:0}
+html[dir="rtl"] #research .rx-research-connection p,html[dir="rtl"] #research .rx-dossier-links a,html[dir="rtl"] #research .rx-research-connection nav a{font-family:"Noto Naskh Arabic",serif;font-size:17px}
+@media(max-width:860px){#research .rx-research-connection{grid-template-columns:1fr}#research .rx-research-connection nav{border-inline-start:0;border-top:1px solid #baccc0;padding-inline-start:0;padding-top:18px;flex-direction:row;flex-wrap:wrap;gap:10px 19px}html[data-rx-page="stories"] .rx-pathways-heading{grid-template-columns:1fr}html[data-rx-page="stories"] .rx-story-route-grid{grid-template-columns:1fr}}
+@media(max-width:560px){#research .rx-research-connection{padding:23px}html[data-rx-page="stories"] .rx-story-route{grid-template-columns:1fr}html[data-rx-page="stories"] .rx-story-route-image img{height:185px;min-height:0}html[data-rx-page="stories"] .rx-story-route-body{padding:20px}}
+@media(prefers-reduced-motion:reduce){html[data-rx-page="stories"] .rx-story-pathways *,#research .rx-dossier-links *,#research .rx-research-connection *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}

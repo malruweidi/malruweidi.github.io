@@ -66,4 +66,34 @@
     "Read the patient perspective":"اقرأ تجربة المريض",
     "Or browse essays and ideas":"أو تصفح المقالات والأفكار"
   });
+  Object.assign(d, {
+  "Supporting records": "السجلات والأدلة المرتبطة",
+  "Research figures": "الأشكال البحثية",
+  "Figures": "الأشكال",
+  "Methods": "الطرق البحثية",
+  "Research story": "الحكاية البحثية",
+  "Recordings": "التسجيلات",
+  "Field memory": "ذكرى من التجربة",
+  "Lab story": "حكاية من المختبر",
+  "Delivery methods": "طرق توصيل الدواء",
+  "Bibliography": "قائمة المنشورات",
+  "Full research record": "السجل البحثي الكامل",
+  "Computational study": "الدراسة الحاسوبية",
+  "Research trajectory": "مسار الأسئلة البحثية",
+  "Where the questions connect": "حيث تتصل الأسئلة",
+  "The transition from chemical sensors and materials research to vascular imaging and pulmonary mechanobiology changed the questions I could ask. My current work with inhalable formulations brings the same concern to aerosol performance and biological exposure. Each project demands evidence appropriate to the system under study, rather than a convenient explanation imposed on it.": "غيّر انتقالي من المجسات الكيميائية وأبحاث المواد إلى تصوير الأوعية والميكانيكا الحيوية للرئة طبيعة الأسئلة التي أستطيع طرحها. وفي عملي الحالي على المستحضرات المستنشقة تمتد المسألة إلى أداء الرذاذ والتعرّض الحيوي. لكل مشروع أدلته التي تناسب النظام المدروس، لا تفسير مريح نفرضه عليه.",
+  "Continue across the research record": "تابع القراءة في السجل البحثي",
+  "Molecular design": "التصميم الجزيئي",
+  "Living systems": "الأنظمة الحية",
+  "Therapeutic delivery": "توصيل العلاجات",
+  "03 / Bibliography": "٠٣ / المنشورات",
+  "04 / Research methods": "٠٤ / مناهج البحث",
+  "Research / Bibliography": "البحث / المنشورات",
+  "Supporting records for pulmonary mechanobiology": "الأدلة المرتبطة بميكانيكا الرئة الخلوية",
+  "Supporting records for developing vessels": "الأدلة المرتبطة بتطور الأوعية",
+  "Supporting records for biomaterial surfaces": "الأدلة المرتبطة بأسطح المواد الحيوية",
+  "Supporting records for ongoing inhalable formulation work": "الأدلة المرتبطة بأبحاث المستحضرات المستنشقة الجارية",
+  "Supporting records for SLIT2–ROBO therapeutic review": "الأدلة المرتبطة بمراجعة علاجات SLIT2–ROBO",
+  "Supporting records for fetal echocardiography research": "الأدلة المرتبطة بأبحاث تخطيط صدى قلب الجنين"
+});
 })();
