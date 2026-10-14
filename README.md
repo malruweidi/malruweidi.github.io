@@ -48,8 +48,8 @@ The research timeline distinguishes founding of the ACS chapter in 2015, pre-202
 
 ## Search the complete archive (14 October 2026)
 
-The new [Find the Thread](https://malruweidi.github.io/search.html) entry point indexes 42 source-grounded routes into the existing research record, methods, figures, public archives, grant histories, and individual Stories chapters. English and Arabic subject terms, keyboard search (\`/\` or \`Ctrl/⌘ K\`), subject filters, no-JavaScript fallback links, and a standalone bilingual interface are provided without an external search service, telemetry, or tracking. The existing [Reader's Map](https://malruweidi.github.io/reading-map.html) remains a complementary, editorial reading experience.
+The new [Find the Thread](https://malruweidi.github.io/search.html) entry point indexes 42 source-grounded routes into the existing research record, methods, figures, public archives, grant histories, and individual Stories chapters. English and Arabic subject terms, keyboard search (`/` or `Ctrl/⌘ K`), subject filters, no-JavaScript fallback links, and a standalone bilingual interface are provided without an external search service, telemetry, or tracking. The existing [Reader's Map](https://malruweidi.github.io/reading-map.html) remains a complementary, editorial reading experience.
 
 **Preservation:** This work adds one public route and standalone styles/scripts, with unobtrusive navigation entry points. It does not delete, truncate, rewrite, re-compress or relocate the existing scientific papers, media, stories, original images, documents, figures, menus or destinations. Search entries describe existing public pages, and the underlying primary record remains accessible in full.
 
-**Quality check:** Run \`node --test tests/discovery-index.test.mjs\` and \`node --check assets/discovery-search.js\` from the repository root.
+**Quality check:** Run `node --test tests/discovery-index.test.mjs` and `node --check assets/discovery-search.js` from the repository root.
