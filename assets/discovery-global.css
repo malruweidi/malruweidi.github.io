@@ -1,0 +1,27 @@
+/* One restrained "Find" entry point; all existing navigation remains visible. */
+#rx-global-search-link.rx-discovery-link{
+  display:inline-flex;align-items:center;justify-content:center;gap:5px;
+  min-height:37px;white-space:nowrap;flex:0 0 auto;
+  padding:7px 10px;border:1px solid rgba(126,154,147,.46);border-radius:1px;
+  font:600 12px/1.3 "DM Sans",Arial,sans-serif;
+  letter-spacing:.015em;text-transform:none;text-decoration:none;
+  color:inherit;background:transparent;transition:border-color .16s,background .16s
+}
+#rx-global-search-link.rx-discovery-link::before{
+  content:"⌕";font:400 19px/.7 Georgia,serif;color:#ac6a50
+}
+#rx-global-search-link.rx-discovery-link:hover{
+  border-color:#ac6a50;background:rgba(173,101,76,.065)
+}
+#rx-global-search-link.rx-discovery-link:focus-visible{
+  outline:3px solid #b96e4a;outline-offset:3px
+}
+.rx-universal #rx-global-search-link.rx-discovery-link{
+  color:#17343b;background:#f9f7f0
+}
+@media(max-width:720px){
+  #rx-global-search-link.rx-discovery-link{padding:6px 9px;font-size:11px;min-height:35px}
+}
+@media(prefers-reduced-motion:reduce){
+  #rx-global-search-link.rx-discovery-link{transition:none}
+}
