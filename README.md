@@ -53,3 +53,12 @@ The new [Find the Thread](https://malruweidi.github.io/search.html) entry point 
 **Preservation:** This work adds one public route and standalone styles/scripts, with unobtrusive navigation entry points. It does not delete, truncate, rewrite, re-compress or relocate the existing scientific papers, media, stories, original images, documents, figures, menus or destinations. Search entries describe existing public pages, and the underlying primary record remains accessible in full.
 
 **Quality check:** Run `node --test tests/discovery-index.test.mjs` and `node --check assets/discovery-search.js` from the repository root.
+
+
+## Lossless, reversible archival-media optimization (14 October 2026)
+
+The early archive photographs, a published MicroZebraLab figure, and two Chem Squad image assets have been moved from inline base64 strings into eight separately served original-byte files under `assets/archival-inline/`. No photographic pixels, JPEG/WebP compression data, captions, research claims, dates, provenance notices, image order, media routes or access to the record have been altered. This is a **relocation, not removal, cropping or recompression**. The source-byte Git blob SHA-1 for every asset is fixed in `tests/media-preservation.test.mjs` and checked in CI.
+
+The HTML payloads now measure approximately **15 KB** for `archive.html` (previously 473 KB), **15 KB** for `imaging.html` (previously 431 KB), and **36 KB** for `chem-squad.html` (previously 57 KB). Lazy-loaded photographs can be fetched and cached independently instead of being embedded inside the initial document. The original historical content is unchanged, and every archived image remains public at its original location in the page.
+
+Run `node --test tests/media-preservation.test.mjs` to verify the exact preserved binary payloads and original captions.
