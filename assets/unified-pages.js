@@ -92,3 +92,17 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 
 /* Optional owner-identified photographic archive: only loads on relevant pages. */
 (()=>{const rx=document.documentElement.dataset.rxPage;if(rx==='archive'||rx==='engagement'){const s=document.createElement('script');s.src='/assets/archival-photos-oct-2026.js?v=20261012';s.defer=true;document.head.append(s)}})();
+
+
+/* Additive cross-site discovery; existing navigation and editorial pages remain unchanged. */
+(() => {
+  if (document.querySelector('script[src*="/assets/discovery-global.js"]')) return;
+  const css = document.createElement("link");
+  css.rel = "stylesheet";
+  css.href = "/assets/discovery-global.css?v=20261014";
+  document.head.appendChild(css);
+  const script = document.createElement("script");
+  script.src = "/assets/discovery-global.js?v=20261014";
+  script.defer = true;
+  document.head.appendChild(script);
+})();
