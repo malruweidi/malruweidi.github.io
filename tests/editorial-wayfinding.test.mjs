@@ -42,3 +42,14 @@ test("original homepage sections and hero remain intact",()=>{
  for(const id of ["patient-perspective","visual-archive","framework","methods","imaging","wisconsin-collaboration","quality","history","writing","press","initiatives","community","quacs","about","contact"]) assert.ok(home.includes('id="'+id+'"'),id);
  for(const k of ["I learned to make molecules","rx-evidence-index","rx-chapters"]) assert.ok(home.includes(k),k);
 });
+
+test("archival object routes retain the existing chronology and photo collection",()=>{
+ const ar=read("archive.html");
+ assert.ok(ar.includes('id="archive-objects"'));
+ assert.equal((ar.match(/class="rx-archive-object"/g)||[]).length,4);
+ for(const p of ["stories.html#personal-microscope","stories.html#molecular-models","stories.html#zebrafish-histology-materials","stories.html#community"])
+   assert.ok(ar.includes('href="'+p+'"'),p);
+ for(const cls of ['class="timeline"','class="photo-section"','class="filmstrip"']) assert.ok(ar.includes(cls),cls);
+ assert.match(ar,/editorial-wayfinding-2026\.css/);
+ assert.match(ar,/archive-wayfinding-i18n-2026.js/);
+});
