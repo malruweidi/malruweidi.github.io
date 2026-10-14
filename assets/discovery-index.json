@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-14",
+  "version": "2026-10-15",
   "description": "Additive, source-grounded site discovery; links only to existing Ruwaidix public pages and headings.",
   "categories": [
     "Orientation",
@@ -345,6 +345,14 @@
       "url": "/stories.html#chapter-zewail-visit-and-portrait",
       "summary": "A research visit and discussion of future collaboration, superparamagnetic iron oxide nanoparticles and nitric oxide-releasing particles.",
       "keywords": "Zewail City Ibrahim El Sherbiny SPION nitric oxide NO nanoparticle collaboration مدينة زويل جسيمات نانوية أكسيد الحديد أكسيد النتريك"
+    },
+    {
+      "id": 43,
+      "title": "Instruments and objects in the photographic archive",
+      "category": "Archive & people",
+      "url": "/archive.html#archive-objects",
+      "summary": "Four documented entrances into the original archive: a microscope brought from Cairo, an early molecular model, an unsuccessful histology attempt, and chemistry outreach.",
+      "keywords": "scientific instruments objects archive microscope Cairo molecular model microtome chemistry festival photographic catalogue أجهزة مجهر القاهرة نموذج جزيئي أرشيف كيمياء"
     }
   ]
 }
