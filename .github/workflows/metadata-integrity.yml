@@ -1,0 +1,41 @@
+name: Ruwaidix metadata integrity
+on:
+  push:
+    paths:
+      - stories.html
+      - computing.html
+      - grants.html
+      - imaging.html
+      - archive.html
+      - cv.html
+      - engagement.html
+      - grants/**
+      - illness-and-evidence.html
+      - tests/metadata-integrity.test.mjs
+      - .github/workflows/metadata-integrity.yml
+  pull_request:
+    paths:
+      - stories.html
+      - computing.html
+      - grants.html
+      - imaging.html
+      - archive.html
+      - cv.html
+      - engagement.html
+      - grants/**
+      - illness-and-evidence.html
+      - tests/metadata-integrity.test.mjs
+      - .github/workflows/metadata-integrity.yml
+jobs:
+  verify-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check source-derived canonical and social metadata
+        run: |
+          node --test tests/metadata-integrity.test.mjs
+          node --test tests/discovery-index.test.mjs
+          node --test tests/media-preservation.test.mjs
