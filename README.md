@@ -62,3 +62,7 @@ The early archive photographs, a published MicroZebraLab figure, and two Chem Sq
 The HTML payloads now measure approximately **15 KB** for `archive.html` (previously 473 KB), **15 KB** for `imaging.html` (previously 431 KB), and **36 KB** for `chem-squad.html` (previously 57 KB). Lazy-loaded photographs can be fetched and cached independently instead of being embedded inside the initial document. The original historical content is unchanged, and every archived image remains public at its original location in the page.
 
 Run `node --test tests/media-preservation.test.mjs` to verify the exact preserved binary payloads and original captions.
+
+## Findability and share-preview integrity (14 October 2026)
+
+Twelve additional publicly accessible editorial, research, grants, CV and Stories pages now carry self-canonical URLs and consistent Open Graph/Twitter metadata, adding only fields that were previously absent. Titles and descriptions are derived from the already published page metadata; existing images and source text are not replaced. The current approved research portrait is the fallback share image where no image was configured. `tests/metadata-integrity.test.mjs` enforces these fields alongside preservation of the original research sections. Oversized primary research pages not addressable through the connected text interface were deliberately left untouched rather than rewritten from incomplete content.
