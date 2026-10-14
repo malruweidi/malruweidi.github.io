@@ -1,0 +1,350 @@
+{
+  "version": "2026-10-14",
+  "description": "Additive, source-grounded site discovery; links only to existing Ruwaidix public pages and headings.",
+  "categories": [
+    "Orientation",
+    "Research",
+    "Methods & evidence",
+    "Archive & people",
+    "Stories",
+    "Writing & society"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Home · Research and scholarship",
+      "category": "Orientation",
+      "url": "/",
+      "summary": "The complete first-person introduction to chemical science, bioengineering, the history of ideas and an evolving research life.",
+      "keywords": "home overview Ruwaidix Mahmoud scientific biography chemistry pharmaceutical sciences"
+    },
+    {
+      "id": 2,
+      "title": "A Reader’s Map",
+      "category": "Orientation",
+      "url": "/reading-map.html",
+      "summary": "Four guided routes through molecular design, living systems, pulmonary delivery and the stories behind the experiments.",
+      "keywords": "guided reading paths start here index"
+    },
+    {
+      "id": 3,
+      "title": "Complete research record",
+      "category": "Research",
+      "url": "/full-record.html",
+      "summary": "The extended research record and its underlying scientific, historical and professional context.",
+      "keywords": "research complete papers publications scientific archive projects CV"
+    },
+    {
+      "id": 4,
+      "title": "Selected research projects",
+      "category": "Research",
+      "url": "/#research",
+      "summary": "Investigations across cellular mechanics, zebrafish, pharmaceutical delivery, molecular materials and computational science.",
+      "keywords": "research projects airways niosomes flow tissue cell"
+    },
+    {
+      "id": 5,
+      "title": "Publications",
+      "category": "Research",
+      "url": "/#publications",
+      "summary": "Published research and scholarship with links to the underlying record.",
+      "keywords": "articles papers journal manuscript bibliography DOI publications"
+    },
+    {
+      "id": 6,
+      "title": "Methods atlas",
+      "category": "Methods & evidence",
+      "url": "/techniques.html",
+      "summary": "Laboratory methods, biological models and technical evidence from the research.",
+      "keywords": "methods microscopy zebrafish nebulization characterization"
+    },
+    {
+      "id": 7,
+      "title": "Original figures & evidence",
+      "category": "Methods & evidence",
+      "url": "/figures.html",
+      "summary": "Research figures and source-aware presentation of scientific evidence.",
+      "keywords": "figures charts graphs experimental images results visual evidence"
+    },
+    {
+      "id": 8,
+      "title": "Biomedical imaging & infrastructure",
+      "category": "Methods & evidence",
+      "url": "/imaging.html",
+      "summary": "Biological imaging, specimen preparation, quantification and research infrastructure.",
+      "keywords": "microscopy histology imaging image analysis DICOM specimen"
+    },
+    {
+      "id": 9,
+      "title": "AI and scientific computing",
+      "category": "Research",
+      "url": "/computing.html",
+      "summary": "Scientific computing, fetal echocardiography and transparent formulation-design tools.",
+      "keywords": "AI machine learning bioimage cardiac ultrasound NanoFormulationDesigner programming"
+    },
+    {
+      "id": 10,
+      "title": "Research grants",
+      "category": "Research",
+      "url": "/grants.html",
+      "summary": "Four grant-supported research projects spanning physical chemistry, cell mechanics, materials and medicinal chemistry.",
+      "keywords": "UREP grants funding experimental scientific projects"
+    },
+    {
+      "id": 11,
+      "title": "Photographic & film archive",
+      "category": "Archive & people",
+      "url": "/archive.html",
+      "summary": "The photographic record of experiments, scientific collaborations, community events and formative years.",
+      "keywords": "photos video film personal archive portraits university Qatar Cairo"
+    },
+    {
+      "id": 12,
+      "title": "Stories between the experiments",
+      "category": "Stories",
+      "url": "/stories.html",
+      "summary": "First-person chapters about the human and experimental circumstances that shaped scientific questions.",
+      "keywords": "stories narrative laboratory fieldnotes failure memory"
+    },
+    {
+      "id": 13,
+      "title": "Scientific engagement",
+      "category": "Archive & people",
+      "url": "/engagement.html",
+      "summary": "Chemistry outreach, student chapter history, festivals, judging and public scientific participation.",
+      "keywords": "ACS Qatar University outreach chemistry festival science education"
+    },
+    {
+      "id": 14,
+      "title": "Chem Squad",
+      "category": "Archive & people",
+      "url": "/chem-squad.html",
+      "summary": "A continuing conversation among chemistry colleagues that began at university.",
+      "keywords": "friends chemistry chem squad teaching research classmates"
+    },
+    {
+      "id": 15,
+      "title": "Academic CV",
+      "category": "Orientation",
+      "url": "/cv.html",
+      "summary": "A public-facing academic profile and career record.",
+      "keywords": "CV resume education scientific experience academic background"
+    },
+    {
+      "id": 16,
+      "title": "Illness, evidence and scientific practice",
+      "category": "Stories",
+      "url": "/illness-and-evidence.html",
+      "summary": "A first-person reflection on measurement, uncertainty and the experience of studying biological evidence.",
+      "keywords": "illness evidence uncertainty health personal scientific history"
+    },
+    {
+      "id": 17,
+      "title": "Polymeric micelles and PAHs",
+      "category": "Research",
+      "url": "/grants/urep19.html",
+      "summary": "Grant-supported investigation of polymeric micelles for polycyclic aromatic hydrocarbons.",
+      "keywords": "UREP19 micelles PAH polycyclic aromatic hydrocarbons remediation copolymer crosslinked"
+    },
+    {
+      "id": 18,
+      "title": "Lung epithelial cell mechanics",
+      "category": "Research",
+      "url": "/grants/urep21.html",
+      "summary": "Grant-supported inquiry into cell mechanical properties and survival in the pulmonary epithelium.",
+      "keywords": "UREP21 lung epithelial mechanics cell stress"
+    },
+    {
+      "id": 19,
+      "title": "Antimicrobial medical scaffolds",
+      "category": "Research",
+      "url": "/grants/urep22.html",
+      "summary": "Grant-supported scaffold development using electrospinning and surface technologies.",
+      "keywords": "UREP22 electrospinning biomaterials scaffolds polymer plasma"
+    },
+    {
+      "id": 20,
+      "title": "Imidazopyridine anticancer chemistry",
+      "category": "Research",
+      "url": "/grants/urep23.html",
+      "summary": "Synthesis and biological evaluation of imidazopyridines as anticancer agents.",
+      "keywords": "UREP23 imidazopyridine organic chemistry heterocyclic anticancer"
+    },
+    {
+      "id": 21,
+      "title": "The pulmonary experimental system",
+      "category": "Methods & evidence",
+      "url": "/techniques.html#pulmonary",
+      "summary": "Epithelial cell responses and injury during airway reopening.",
+      "keywords": "airway reopening alveolar epithelial injury shear flow"
+    },
+    {
+      "id": 22,
+      "title": "Zebrafish and vascular development",
+      "category": "Methods & evidence",
+      "url": "/techniques.html",
+      "summary": "Developmental vascular models, microscopy and primary-cilia research.",
+      "keywords": "zebrafish cilia vascular embryo microscopy ATVB"
+    },
+    {
+      "id": 23,
+      "title": "Engineered material surfaces",
+      "category": "Methods & evidence",
+      "url": "/techniques.html#materials",
+      "summary": "Methods for polymeric surfaces, scaffolds and material–biological interfaces.",
+      "keywords": "surface engineering electrospinning plasma coating scaffold"
+    },
+    {
+      "id": 24,
+      "title": "Inhalable drug carriers",
+      "category": "Methods & evidence",
+      "url": "/techniques.html#delivery",
+      "summary": "Aerosol delivery and formulation science, including vesicular therapeutics.",
+      "keywords": "dexamethasone niosomes proniosomes nebulization pulmonary drug delivery inhalation"
+    },
+    {
+      "id": 25,
+      "title": "History of pharmacy",
+      "category": "Writing & society",
+      "url": "/full-record.html#history",
+      "summary": "Historical inquiry into pharmacy, medicine and the circulation of scientific ideas.",
+      "keywords": "history history of medicine pharmacy ancient modern"
+    },
+    {
+      "id": 26,
+      "title": "Scientific writing",
+      "category": "Writing & society",
+      "url": "/full-record.html#writing",
+      "summary": "Essays, editorial work and scientific communication.",
+      "keywords": "writing essays Substack articles history science communication"
+    },
+    {
+      "id": 27,
+      "title": "Quality & process",
+      "category": "Writing & society",
+      "url": "/full-record.html#quality",
+      "summary": "Professional practice across quality systems and process improvement.",
+      "keywords": "quality operations business process"
+    },
+    {
+      "id": 28,
+      "title": "Patient advocacy",
+      "category": "Writing & society",
+      "url": "/full-record.html#give-eosinophilic",
+      "summary": "Public-facing efforts concerned with patient perspectives and evidence.",
+      "keywords": "advocacy patient education eosinophilic"
+    },
+    {
+      "id": 29,
+      "title": "2011 anatomy lesson",
+      "category": "Stories",
+      "url": "/stories.html#chapter-anatomy",
+      "summary": "An early anatomy encounter and how it changed the way living structures were understood.",
+      "keywords": "school anatomy biological sciences specimen"
+    },
+    {
+      "id": 30,
+      "title": "Building a chemistry society",
+      "category": "Stories",
+      "url": "/stories.html#chapter-community",
+      "summary": "The beginnings of a student chemistry community and the work of building it.",
+      "keywords": "American Chemical Society ACS chemistry chapter founders outreach"
+    },
+    {
+      "id": 31,
+      "title": "A living system is not a flask",
+      "category": "Stories",
+      "url": "/stories.html#chapter-living",
+      "summary": "The practical distance between chemical models and developing organisms.",
+      "keywords": "zebrafish living system embryo experiment"
+    },
+    {
+      "id": 32,
+      "title": "The Ramadan microscope",
+      "category": "Stories",
+      "url": "/stories.html#chapter-ramadan-atvb",
+      "summary": "A zebrafish experiment during Ramadan and an iftar gathering waiting at home.",
+      "keywords": "Ramadan iftar taraweeh ATVB microscopy zebrafish late experiment"
+    },
+    {
+      "id": 33,
+      "title": "The journey to the lung",
+      "category": "Stories",
+      "url": "/stories.html#chapter-delivery",
+      "summary": "Why a pharmaceutical formulation must be understood in the context of physiology.",
+      "keywords": "pulmonary nanocarrier deposition aerosol formulation"
+    },
+    {
+      "id": 34,
+      "title": "Molecular models in my hands",
+      "category": "Stories",
+      "url": "/stories.html#chapter-molecular-models",
+      "summary": "The distinction between a molecular teaching model and a molecule.",
+      "keywords": "benzene cyclohexane molecular model organic chemistry"
+    },
+    {
+      "id": 35,
+      "title": "Lessons outside the laboratory",
+      "category": "Stories",
+      "url": "/stories.html#chapter-community-before-lab",
+      "summary": "Community service, curiosity and scientific beginnings outside formal research.",
+      "keywords": "volunteer youth outreach school science"
+    },
+    {
+      "id": 36,
+      "title": "The microscope brought from Cairo",
+      "category": "Stories",
+      "url": "/stories.html#chapter-personal-microscope",
+      "summary": "An independently purchased microscope carried from the Qasr El Einy area of Cairo to Qatar.",
+      "keywords": "Egypt Cairo Qasr El Einy home microscope independent experiments"
+    },
+    {
+      "id": 37,
+      "title": "A series of unfortunate trials",
+      "category": "Stories",
+      "url": "/stories.html#chapter-unfortunate-trials",
+      "summary": "A candid account of the experimental attempts that did not work as expected.",
+      "keywords": "unsuccessful experiments failure laboratory methods"
+    },
+    {
+      "id": 38,
+      "title": "The history of the periodic table",
+      "category": "Stories",
+      "url": "/stories.html#chapter-historical-chemistry",
+      "summary": "How scientific classification and history changed the interpretation of familiar chemistry.",
+      "keywords": "history chemistry periodic table chemical elements"
+    },
+    {
+      "id": 39,
+      "title": "Surface science and its limits",
+      "category": "Stories",
+      "url": "/stories.html#chapter-surface-science",
+      "summary": "What experiments on engineered surfaces can establish and what they cannot.",
+      "keywords": "surfaces polymers thin films biomaterials"
+    },
+    {
+      "id": 40,
+      "title": "Research apparatus and inference",
+      "category": "Stories",
+      "url": "/stories.html#chapter-research-apparatus",
+      "summary": "On the distinction between obtaining a machine and carrying out a defensible experiment.",
+      "keywords": "instrumentation microscope devices scientific measurement"
+    },
+    {
+      "id": 41,
+      "title": "A histology embedding failure",
+      "category": "Stories",
+      "url": "/stories.html#chapter-zebrafish-histology-materials",
+      "summary": "A zebrafish histopathology attempt defeated by incompatibility between agarose pre-embedding and paraffin sectioning.",
+      "keywords": "zebrafish histology agarose paraffin embedding microtome sectioning materials"
+    },
+    {
+      "id": 42,
+      "title": "At Zewail City",
+      "category": "Stories",
+      "url": "/stories.html#chapter-zewail-visit-and-portrait",
+      "summary": "A research visit and discussion of future collaboration, superparamagnetic iron oxide nanoparticles and nitric oxide-releasing particles.",
+      "keywords": "Zewail City Ibrahim El Sherbiny SPION nitric oxide NO nanoparticle collaboration"
+    }
+  ]
+}
