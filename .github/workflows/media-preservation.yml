@@ -1,0 +1,30 @@
+name: Ruwaidix lossless archival media
+on:
+  push:
+    paths:
+      - archive.html
+      - imaging.html
+      - chem-squad.html
+      - assets/archival-inline/**
+      - tests/media-preservation.test.mjs
+      - .github/workflows/media-preservation.yml
+  pull_request:
+    paths:
+      - archive.html
+      - imaging.html
+      - chem-squad.html
+      - assets/archival-inline/**
+      - tests/media-preservation.test.mjs
+      - .github/workflows/media-preservation.yml
+jobs:
+  verify-original-media:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Confirm original bytes, captions and routes
+        run: |
+          node --test tests/media-preservation.test.mjs
+          node --test tests/discovery-index.test.mjs
