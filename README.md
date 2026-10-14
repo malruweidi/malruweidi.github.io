@@ -38,3 +38,9 @@ The original 30-photo gallery was recovered from a historical repository revisio
 
 ## October 2026 editorial and performance audit
 The research timeline distinguishes founding of the ACS chapter in 2015, pre-2021 undergraduate research publications, MSc enrollment in 2022, resumption of graduate study in 2025, and expected (not completed) graduation in 2027. Photo captions and scientific contributions retain individual provenance. The homepage's embedded JPEGs have been moved into `assets/home-archive/`, retaining their bytes while reducing the HTML document size for faster initial loading.
+
+## A Reader's Map (14 October 2026)
+
+`reading-map.html` is an added editorial entry point with its own `assets/reading-map.css`. Four carefully sourced paths connect the current scientific research, laboratory methods, existing stories and verified media. The reader's map does **not** replace the CV, full research record, original pictures, video archive, methods, figures, grants, or any previous page. All original navigation targets are retained, and the new route is available from the homepage and Stories navigation.
+
+**Editorial preservation rule:** Changes must never discard existing material for convenience, brevity or aesthetic fashion. Improve legibility, provenance, accessibility, performance and discoverability without flattening or deleting original work. Where evidence is incomplete, label the uncertainty rather than inventing results or erasing the record. The approved Ruwaidix visual identity and original media are preserved. Any future redesign should keep full routes and primary material accessible and provide auditable, reversible changes.

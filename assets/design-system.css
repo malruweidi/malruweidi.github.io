@@ -719,3 +719,7 @@ html[data-rx-page="editorial-home"] .primary-btn { background:var(--rx-midnight)
 html[data-rx-page="editorial-home"] .primary-btn:hover { background:var(--rx-mineral); color:var(--rx-paper); }
 html[data-rx-page="editorial-home"] .rx { border-color:var(--rx-midnight); }
 html[data-rx-page="editorial-home"] .stages li:hover { background:var(--rx-paper); }
+
+/* Universal keyboard skip-link, invisible until focused; additive. */
+.rx-skip-link{position:fixed;z-index:2000;inset-block-start:-100px;inset-inline-start:16px;display:inline-block;background:#fffdf8;color:#17343b;padding:12px 17px;border:2px solid #99543f;font:700 14px/1.35 "DM Sans",sans-serif;text-decoration:none;box-shadow:0 8px 22px rgba(14,45,48,.15)}
+.rx-skip-link:focus,.rx-skip-link:focus-visible{inset-block-start:13px;outline:3px solid #99543f;outline-offset:3px}
