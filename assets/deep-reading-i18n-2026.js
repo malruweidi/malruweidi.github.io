@@ -106,5 +106,31 @@
   "The insoluble copolymer, a notebook title, and the difference between observing insolubility and proving covalent crosslinking.": "The insoluble copolymer, a notebook title, and the difference between observing insolubility and proving covalent crosslinking.",
   "A firsthand Ramadan memory of zebrafish microscopy, iftar at Qatar University, and the personal time around a collaborative vascular-biology study.": "A firsthand Ramadan memory of zebrafish microscopy, iftar at Qatar University, and the personal time around a collaborative vascular-biology study."
   ,"Read this chapter as a standalone article":"اقرأ الفصل بوصفه مقالة مستقلة"
+  ,"Research dossier section navigation":"أقسام الملف البحثي",
+"Jump to section":"انتقل إلى القسم",
+"Question":"السؤال",
+"Methods":"الطرق",
+"Readouts":"القياسات",
+"Contribution":"المساهمة",
+"Evidence limits":"حدود الأدلة",
+"Primary source":"المصدر الأساسي",
+"MEASUREMENT / INTERPRETATION":"القياس / تفسير الأدلة",
+"How the evidence is read":"كيف تُقرأ الأدلة",
+"What the measurement can establish":"ما الذي يمكن للقياس إثباته",
+"What it does not establish":"ما الذي لا يثبته",
+"Original research overview ↗":"العرض البحثي الأصلي ↗",
+"Read the peer-reviewed publication · DOI 10.1152/japplphysiol.00574.2020 ↗":"اقرأ البحث العلمي المنشور والمحكّم · DOI 10.1152/japplphysiol.00574.2020 ↗",
+"Read the peer-reviewed publication · DOI 10.1161/ATVBAHA.118.311231 ↗":"اقرأ البحث العلمي المنشور والمحكّم · DOI 10.1161/ATVBAHA.118.311231 ↗",
+"Return to selected research ↗":"العودة إلى البحوث المختارة ↗",
+"Research question, methods and contribution":"السؤال البحثي والمنهج والمساهمة",
+"Viability staining and cytoskeletal microscopy":"التلوين لتقييم حيوية الخلايا والتصوير المجهري للهيكل الخلوي",
+"Fluorescent live/dead readouts can quantify staining-defined epithelial injury after controlled air–liquid interface exposure. Cytoskeletal microscopy adds spatial and morphological context under the experimental conditions; control exposures and consistent quantification remain essential.":"يمكن لقراءات التلوين الفلوري للخلايا الحية والميتة قياس الإصابة الظهارية بحسب تعريف طريقة التلوين بعد التعرض المضبوط للواجهة بين الهواء والسائل. ويضيف تصوير الهيكل الخلوي معلومات عن البنية والموقع ضمن شروط التجربة، وتبقى المعاملات الضابطة واتساق التحليل الكمي ضروريين.",
+"An altered fluorescence signal does not identify a unique molecular mechanism. A mechanically exposed L2-cell monolayer does not reproduce a complete human lung, and an in vitro reduction in injury cannot establish clinical protection.":"لا يحدد تغير الإشارة الفلورية آلية جزيئية واحدة بعينها. كما أن الطبقة الخلوية من خلايا L2 المعرضة للقوى الميكانيكية لا تمثل الرئة البشرية كاملة، ولا يكفي انخفاض الإصابة في المختبر لإثبات الحماية السريرية.",
+"Embryonic vessel imaging and flow-dependent phenotypes":"تصوير أوعية الأجنة والأنماط الظاهرية المرتبطة بالتدفق",
+"Developmental imaging makes vascular anatomy and endothelial-cilia distribution observable in staged zebrafish embryos. Perturbation experiments and flow measurements can help relate the observed vascular phenotypes to the conditions reported in the published study.":"يتيح التصوير أثناء النمو ملاحظة بنية الأوعية وتوزيع الأهداب البطانية في أجنة سمك الزرد بمراحل نمو محددة. وقد تساعد تجارب تغيير الظروف وقياسات التدفق على ربط الأنماط الوعائية المرصودة بظروف الدراسة المنشورة.",
+"A developmental phenotype cannot simply be extrapolated to adult human vascular disease. The published microscopy record also cannot date or independently verify the separate Ramadan recollection associated with the work.":"لا يجوز تعميم النمط الظاهري في مرحلة النمو مباشرة على أمراض الأوعية لدى الإنسان البالغ. ولا يمكن لسجل التصوير المجهري المنشور أن يؤرخ بصورة مستقلة الذكرى الشخصية المتعلقة بليالي رمضان أو أن يثبت تفاصيلها.",
+"Particle properties, drug assay and aerosol deposition":"خصائص الجسيمات وتحليل الدواء وترسيب الرذاذ",
+"The planned analytical endpoints include DLS measurements of dispersed vesicle size and polydispersity, chromatographic drug assay, and post-nebulization evaluation. NGI testing would characterize aerodynamic deposition under specified in vitro device conditions, if and when those measurements are obtained.":"تشمل نقاط القياس المخطط لها استخدام تشتت الضوء الديناميكي DLS لتحديد حجم الحويصلات المشتتة وتعدد أحجامها، والتحليل الكروماتوغرافي للدواء، والتقييم بعد التذرية. ويمكن أن يصف اختبار NGI الترسيب الهوائي في ظروف مختبرية محددة للجهاز إذا أُجريت هذه القياسات بالفعل.",
+"DLS particle size is not aerodynamic deposition, and in vitro NGI deposition is not clinical delivery or efficacy. Encapsulation efficiency, post-nebulization stability and pulmonary performance are not established findings for this ongoing thesis; these remain planned or unverified endpoints.":"حجم الجسيمات المقاس بتشتت الضوء الديناميكي ليس مرادفًا للترسيب الهوائي، كما أن الترسيب داخل جهاز NGI لا يثبت التوصيل السريري أو الفاعلية العلاجية. ولا تعد كفاءة الاحتواء أو الثبات بعد التذرية أو الأداء الرئوي نتائج مثبتة لهذه الرسالة الجارية؛ فهي قياسات مخطط لها أو لم تُتحقق بعد."
 });
 })();
