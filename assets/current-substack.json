@@ -1,7 +1,7 @@
 {
   "source_archive": "https://malruweidi.substack.com/archive",
   "verified_on": "2026-10-15",
-  "verification_note": "Live public Substack archive and each article page confirmed HTTP 200 on 15 October 2026. Removed/deleted slugs return HTTP 404 and are excluded from all current public article lists.",
+  "verification_note": "Live public Substack archive and each article page confirmed HTTP 200 on 15 October 2026. Removed/deleted slugs return HTTP 404 and are excluded from all current public article lists. Live publication RSS matched all five articles as a separate read-only source check.",
   "entries": [
     {
       "id": "the-life-between-diagnoses",
@@ -63,5 +63,7 @@
       "group": "history",
       "url": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
     }
-  ]
+  ],
+  "source_feed": "https://malruweidi.substack.com/feed",
+  "feed_verified_on": "2026-10-15"
 }

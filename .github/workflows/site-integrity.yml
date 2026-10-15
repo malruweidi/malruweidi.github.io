@@ -23,3 +23,5 @@ jobs:
         run: node --test tests/research-reading-qa.test.mjs
       - name: Validate source-verified Substack publication collection
         run: node --test tests/substack-publications.test.mjs
+      - name: Test Substack public-feed comparison and writing routes
+        run: node --test tests/substack-feed-verify.test.mjs
