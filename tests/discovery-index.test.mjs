@@ -31,7 +31,7 @@ test("no existing material has to move for discovery to work", () => {
 
 test("the index is substantive, structurally valid and locally scoped", () => {
   assert.ok(index.items.length >= 40);
-  assert.equal(index.items.length, 43);
+  assert.equal(index.items.length, 50);
   assert.equal(new Set(index.items.map(x => x.id)).size, index.items.length);
   assert.ok(index.categories.includes("Stories"));
   for (const item of index.items) {

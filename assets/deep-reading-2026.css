@@ -61,3 +61,6 @@ html[data-rx-page="stories"] .rx-story-article-link a:focus-visible{outline:3px 
 @media(max-width:820px){html[data-rx-page="research-detail"] .rx-research-main{grid-template-columns:1fr}html[data-rx-detail="true"] .rx-deep-story .stories-chapter-meta{position:static}}
 @media(max-width:630px){.rx-deep-header>.rx-deep-shell{align-items:flex-start;flex-direction:column;padding:15px 0}.rx-deep-header nav{gap:11px 18px}.rx-deep-shell{width:min(1120px,calc(100% - 36px))}.rx-deep-hero{padding:56px 0}.rx-deep-hero h1{font-size:clamp(42px,10vw,59px)}}
 @media(prefers-reduced-motion:reduce){html[data-rx-detail="true"],html[data-rx-page="research-detail"]{scroll-behavior:auto!important}html[data-rx-detail="true"] *,html[data-rx-page="research-detail"] *{animation:none!important;transition:none!important}}
+
+/* Progressive cross-links for existing cards and archival records. */
+#research .rx-dossier-links .rx-dossier-primary{font-weight:750;color:#93553d}html[data-rx-page="archive"] .rx-object-article-link{display:inline-block;margin-inline-start:12px;font:700 12px/1.7 "DM Sans",sans-serif;color:#205d57;text-underline-offset:4px}html[data-rx-page="archive"] .rx-object-article-link:focus-visible{outline:3px solid #bb7856;outline-offset:3px}html[dir="rtl"][data-rx-page="archive"] .rx-object-article-link{font-family:"Noto Naskh Arabic",serif;font-size:16px}

@@ -105,4 +105,6 @@
   "First-person account of an unsuccessful zebrafish embryo histopathology preparation: 2% agarose pre-embedding and paraffin failed to form a sectionable block.": "First-person account of an unsuccessful zebrafish embryo histopathology preparation: 2% agarose pre-embedding and paraffin failed to form a sectionable block.",
   "The insoluble copolymer, a notebook title, and the difference between observing insolubility and proving covalent crosslinking.": "The insoluble copolymer, a notebook title, and the difference between observing insolubility and proving covalent crosslinking.",
   "A firsthand Ramadan memory of zebrafish microscopy, iftar at Qatar University, and the personal time around a collaborative vascular-biology study.": "A firsthand Ramadan memory of zebrafish microscopy, iftar at Qatar University, and the personal time around a collaborative vascular-biology study."
-});})();
+  ,"Read this chapter as a standalone article":"اقرأ الفصل بوصفه مقالة مستقلة"
+});
+})();

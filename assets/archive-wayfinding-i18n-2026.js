@@ -24,4 +24,6 @@
   "Archival photograph of a molecular structure model": "صورة أرشيفية لنموذج تركيب جزيئي",
   "Archival image from an unsuccessful zebrafish paraffin-sectioning attempt": "صورة أرشيفية من محاولة لم تنجح لتقطيع عينات الزرد المطمورة في البرافين",
   "Archival photograph of an event associated with the fifth Chemistry Festival": "صورة أرشيفية من فعالية مرتبطة بمهرجان الكيمياء الخامس"
-});})();
+  ,"Read the standalone account":"اقرأ الحكاية المستقلة"
+});
+})();
