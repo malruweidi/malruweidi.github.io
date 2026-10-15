@@ -96,5 +96,18 @@
   "Supporting records for SLIT2–ROBO therapeutic review": "الأدلة المرتبطة بمراجعة علاجات SLIT2–ROBO",
   "Supporting records for fetal echocardiography research": "الأدلة المرتبطة بأبحاث تخطيط صدى قلب الجنين"
   ,"Full research dossier":"الملف البحثي الكامل"
+  ,"Read the complete essay collection":"اقرأ جميع المقالات المنشورة",
+"Visit the current Substack archive":"زيارة أرشيف سابستاك الحالي",
+"The Life Between Diagnoses":"الحياة بين التشخيصات",
+"Sorry, My First Email to You Was Probably Polished by AI":"عذرًا، ربما صُقلت رسالتي الأولى إليك بالذكاء الاصطناعي",
+"We Taught People to Sound Like Machines. Now We’re Surprised They Use Them.":"علمنا الناس أن يكتبوا كالآلات، ثم تفاجأنا بأنهم يستخدمونها",
+"Fifteen Things I Wish Young Academics Were Told About Mental Health":"خمسة عشر أمرًا تمنيت أن يُقال للباحثين الشباب عن الصحة النفسية",
+"The Nobel Prize Has Room for Three. Science Never Did.":"جائزة نوبل تتسع لثلاثة. العلم لم يكن كذلك",
+"15 OCT 2026 ↗":"١٥ أكتوبر ٢٠٢٦ ↗",
+"13 OCT 2026 ↗":"١٣ أكتوبر ٢٠٢٦ ↗",
+"7 OCT 2026 ↗":"٧ أكتوبر ٢٠٢٦ ↗",
+"11 / ESSAYS & ARGUMENTS":"١١ / مقالات وأفكار",
+"Independent writing":"كتابة مستقلة",
+"Current Substack essays and invited scientific columns ↗":"المقالات المنشورة حاليًا على سابستاك والمقالات العلمية بدعوة تحريرية ↗"
 });
 })();
