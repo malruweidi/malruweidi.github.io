@@ -64,3 +64,19 @@ html[dir="rtl"][data-rx-page="writing"] .rxw-hero-intro,html[dir="rtl"][data-rx-
 @media(max-width:640px){.rxw-shell{width:min(1140px,calc(100% - 32px))}.rxw-header .rxw-shell{flex-direction:column;align-items:flex-start;padding:17px 0}.rxw-essay-grid,.rxw-ddo-grid{grid-template-columns:1fr}.rxw-hero{padding:58px 0}.rxw-hero h1{font-size:clamp(46px,12vw,67px)}.rxw-feature{padding:25px}.rxw-feature h3{font-size:clamp(35px,9vw,49px)}}
 @media(prefers-reduced-motion:reduce){html[data-rx-page="writing"]{scroll-behavior:auto!important}html[data-rx-page="writing"] *{transition:none!important;animation:none!important}}
 @media print{.rxw-header,.rxw-topic-links,.rxw-site-footer,.site-lang-switch,.rxw-skip{display:none!important}.rxw-hero{padding:20px 0;background:white!important;color:#17343b!important}.rxw-hero h1,.rxw-hero-intro{color:#17343b!important}.rxw-essay,.rxw-feature{break-inside:avoid}}
+
+/* Read-along routes: distinct from published-article evidence and invited columns. */
+.rxw-archive-actions{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:12px 22px}
+.rxw-reading-section{padding:clamp(49px,6vw,82px) 0;background:#f4f1e9}
+.rxw-reading-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.rxw-reading-paths article{min-width:0;background:#fffdf7;border:1px solid #cbd8cc;padding:clamp(20px,2.5vw,29px);display:flex;flex-direction:column;align-items:flex-start}
+.rxw-reading-paths h3{font:400 clamp(27px,2.7vw,38px)/1.16 "Newsreader",Georgia,serif;letter-spacing:-.015em;margin:12px 0;color:#17343b}
+.rxw-reading-paths p{font:400 14px/1.9 "DM Sans",sans-serif;color:#46675d;margin:0 0 18px;max-width:50ch}
+.rxw-reading-paths a{display:inline-block;margin-top:10px;font:650 12px/1.6 "DM Sans",sans-serif;color:#20564c;text-underline-offset:4px;overflow-wrap:anywhere}
+.rxw-reading-paths a:first-of-type{margin-top:auto}
+html[data-rx-page="writing"] .rxw-reading-paths a:focus-visible,html[data-rx-page="writing"] .rxw-archive-actions a:focus-visible{outline:3px solid #b7704e;outline-offset:4px}
+html[dir="rtl"][data-rx-page="writing"] .rxw-reading-paths h3{font-family:"Noto Naskh Arabic",serif;letter-spacing:0}
+html[dir="rtl"][data-rx-page="writing"] .rxw-reading-paths p,html[dir="rtl"][data-rx-page="writing"] .rxw-reading-paths a{font-family:"Noto Naskh Arabic",serif;font-size:18px;line-height:1.8}
+@media(max-width:900px){.rxw-reading-paths{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.rxw-reading-paths{grid-template-columns:1fr}.rxw-archive-actions{justify-content:flex-start}.rxw-reading-paths article{padding:25px}}
+@media print{.rxw-reading-section{break-before:page}.rxw-reading-paths{display:block}.rxw-reading-paths article{break-inside:avoid;margin:0 0 14px}}

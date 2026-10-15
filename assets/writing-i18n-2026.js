@@ -54,4 +54,24 @@
   "7 OCT 2026": "٧ أكتوبر ٢٠٢٦",
   "13 OCT 2026": "١٣ أكتوبر ٢٠٢٦",
   "15 OCT 2026": "١٥ أكتوبر ٢٠٢٦"
-});})();
+  ,"RELATED READING / ON THIS SITE":"قراءات مرتبطة / من هذا الموقع",
+"Read across the record.":"اقرأ عبر السجل الكامل.",
+"These are related reading routes, not supporting evidence for the essays. The original articles remain on Substack.":"هذه مسارات للقراءة ذات صلة، وليست أدلة لإثبات ما ورد في المقالات. وتبقى المقالات الأصلية منشورة على سابستاك.",
+"Publication feed · RSS":"خلاصة المقالات · RSS",
+"Substack publication sources":"مصادر مقالات سابستاك",
+"01 / LIVED EXPERIENCE":"٠١ / التجربة الشخصية",
+"Beyond the laboratory count":"ما وراء رقم التحليل",
+"The essay about eosinophilic illness is a personal account. The separate patient-perspective page offers medical context and its own sources.":"مقال المرض الحمضي شهادة شخصية. أما صفحة منظور المريض المستقلة فتقدم سياقًا طبيًا ومصادر خاصة بها.",
+"Patient perspective and evidence":"منظور المريض والأدلة",
+"02 / THE LANGUAGE WE LEARN":"٠٢ / اللغة التي نتعلمها",
+"Two essays about writing and AI":"مقالان عن الكتابة والذكاء الاصطناعي",
+"One examines the ease of accusing someone of using a machine. The other looks at how institutional writing became so formulaic in the first place.":"يناقش أحد المقالين سهولة اتهام الكاتب بالاستعانة بالآلة، ويبحث الآخر كيف أصبحت الكتابة المؤسسية نمطية إلى هذا الحد.",
+"The first email":"الرسالة الأولى",
+"The institutional language":"اللغة المؤسسية",
+"03 / SCIENTIFIC MEMORY":"٠٣ / الذاكرة العلمية",
+"Whose work is remembered?":"من نتذكر من العلماء؟",
+"The Nobel essay raises a question of scientific credit. Explore the separate history and laboratory narratives on this site alongside it.":"يطرح مقال نوبل سؤالًا عن الفضل العلمي. ويمكن قراءة المرويات التاريخية والمخبرية المستقلة في هذا الموقع إلى جانبه.",
+"History of science and medicine":"تاريخ العلم والطب",
+"Laboratory stories":"حكايات المختبر"
+});
+})();

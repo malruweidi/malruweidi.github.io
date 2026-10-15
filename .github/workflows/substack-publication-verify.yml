@@ -1,0 +1,12 @@
+name: Verify live Substack publications
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Compare the curated writing manifest with live public Substack RSS
+        run: node scripts/substack-feed-verify.cjs --live
