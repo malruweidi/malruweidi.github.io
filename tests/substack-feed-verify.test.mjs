@@ -37,7 +37,7 @@ test("public writing page presents source feed and distinct non-duplicating read
  for(const path of ["/illness-and-evidence.html","/#history","/stories.html"])assert.ok(html.includes('href="'+path+'"'),path);
  assert.ok(css.includes(".rxw-reading-paths"));
  assert.ok(css.includes("prefers-reduced-motion")&&css.includes('dir="rtl"')&&css.includes("@media print"));
- for(const key of ["Read across the record.","Publication feed · RSS","These are related reading routes, not supporting evidence for the essays."]){
+ for(const key of ["Read across the record.","Publication feed · RSS","These are related reading routes, not supporting evidence for the essays. The original articles remain on Substack."]){
   assert.ok(lang.includes(JSON.stringify(key)+":"),key+" needs Arabic translation");
  }
 });
