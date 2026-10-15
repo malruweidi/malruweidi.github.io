@@ -1,0 +1,60 @@
+{
+  "title": "Archive owner-identified laboratory photographs, 15 October 2026",
+  "policy": "Preserve every existing photograph and narrative. New media are cropped from user-supplied photo-library screenshots and stored as optimized WebP files. Date labels are application display dates, not independently verified camera metadata. Do not infer experimental results from labels or laboratory apparatus.",
+  "received": "2026-10-15",
+  "entries": [
+    {
+      "original": "IMG_7973.jpeg",
+      "image_id": "file_000000008d38820a97977bb0f545503a",
+      "target": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp",
+      "original_sha256": "bc6d9f04b42a25fe6d4ca63c237e9f8a1d4e0c8601faad771fee3446f5a8014e",
+      "webp_sha256": "627b1a8576e7a4287b51303212d862844330e79be87cf5f4f5a3c33c53bb92a8",
+      "date_label": "2018-05-19 21:31",
+      "context": "BSc thesis chemical, reverse of pyridine-4-carboxaldehyde bottle; supplier specifications not independent assay",
+      "published_at": [
+        "stories.html#undergraduate-imines",
+        "archive.html#archive-objects"
+      ]
+    },
+    {
+      "original": "IMG_7972.jpeg",
+      "image_id": "file_000000008d1882109aa718dfe61367d6",
+      "target": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "original_sha256": "259d58e74d9cf3cfa2fe431e1063f59e73c778bf96c88250aec929bf3c0578a7",
+      "webp_sha256": "8ecb82c839034a72406d60b1ebb61641af5e1858a04ccb5cf7aa6a92c348576b",
+      "date_label": "2018-05-19 21:31",
+      "context": "BSc thesis chemical, front label: Fluka pyridine-4-carboxaldehyde, CAS 872-85-5, 100 mL; same bottle as preceding image",
+      "published_at": [
+        "stories.html#undergraduate-imines",
+        "archive.html#archive-objects"
+      ]
+    },
+    {
+      "original": "IMG_7971.jpeg",
+      "image_id": "file_00000000a18482109ad00f2fc522f2df",
+      "target": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+      "original_sha256": "ede34e06f0b168d6e6727819aea10db430914b166e48d768f8fa407e5ddf16ba",
+      "webp_sha256": "c924e2c0f950f9f9b006dba9a8709f353f0f91d86283d5d6e1be81f6ead41ca9",
+      "date_label": "2017-07-17 17:47",
+      "location_label": "Qatar University",
+      "context": "User associated sample with his difficult copolymer experiment. Visible container does not establish chemical identity or crosslinking.",
+      "published_at": [
+        "stories.html#unfortunate-trials",
+        "archive.html#archive-objects"
+      ]
+    },
+    {
+      "original": "IMG_7974.jpeg",
+      "image_id": "file_000000005c9481f4a78424b2bb821224",
+      "target": "assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp",
+      "original_sha256": "84123b209476847dabb469c4e18dba4c982f0de9388b37dabbfc76e504f4eff9",
+      "webp_sha256": "8d2e98faa6122636bd61130ac25164b2a17ced1053c99397aada56f09eb69db6",
+      "date_label": null,
+      "context": "Owner-identified cell-culture hood workspace with pipettes and centrifuge. Date, equipment classification and specific protocol unverified.",
+      "published_at": [
+        "stories.html#research-apparatus",
+        "archive.html#archive-objects"
+      ]
+    }
+  ]
+}

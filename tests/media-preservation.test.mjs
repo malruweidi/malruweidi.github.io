@@ -65,10 +65,25 @@ test("captions, methods and scientific provenance remain intact", () => {
 });
 
 test("HTML is lighter without decreasing the total public research archive", () => {
-  assert.ok(statSync(join(root,"archive.html")).size < 20000);
+  // Allow a modest increase for carefully captioned, owner-provided photographs while keeping HTML lightweight.
+  assert.ok(statSync(join(root,"archive.html")).size < 26000);
   assert.ok(statSync(join(root,"imaging.html")).size < 20000);
   assert.ok(statSync(join(root,"chem-squad.html")).size < 45000);
   assert.ok(existsSync(join(root,"stories.html")));
   assert.ok(existsSync(join(root,"figures.html")));
   assert.ok(existsSync(join(root,"archive/archive-video-2016.mp4")));
+});
+
+test("new archival photographs are small standalone WebP assets, not inlined images",()=>{
+ const manifest=JSON.parse(read("assets/owner-archive-2026-10-15-manifest.json"));
+ assert.equal(manifest.entries.length,4);
+ for(const entry of manifest.entries){
+  const path=join(root,entry.target);
+  assert.ok(existsSync(path),entry.target);
+  const data=readFileSync(path);
+  assert.ok(data.length<90000,"Oversized WebP: "+entry.target);
+  assert.equal(data.subarray(0,4).toString("ascii"),"RIFF");
+  assert.equal(data.subarray(8,12).toString("ascii"),"WEBP");
+ }
+ assert.equal(read("stories.html").includes("data:image/webp;base64"),false);
 });

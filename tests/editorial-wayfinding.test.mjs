@@ -21,7 +21,7 @@ test("six original study dialogs and direct supporting-record links coexist",()=
 test("themed story journeys retain all fourteen original chapters and index",()=>{
  assert.ok(stories.includes('id="story-pathways"'));
  assert.equal((stories.match(/class="rx-story-route"/g)||[]).length,4);
- assert.equal((stories.match(/class="stories-chapter(?: stories-chapter-tinted)?"/g)||[]).length,14);
+ assert.ok((stories.match(/class="stories-chapter(?: stories-chapter-tinted)?"/g)||[]).length>=14, "Original chapters must survive additions");
  for(const anchor of chapters){assert.ok(stories.includes('id="'+anchor+'"'),anchor);assert.ok(stories.includes('href="#'+anchor+'"'),anchor);}
  for(const name of ["stories-contents","stories-afterword"]) assert.ok(stories.includes('class="'+name+'"'));
 });
@@ -46,10 +46,24 @@ test("original homepage sections and hero remain intact",()=>{
 test("archival object routes retain the existing chronology and photo collection",()=>{
  const ar=read("archive.html");
  assert.ok(ar.includes('id="archive-objects"'));
- assert.equal((ar.match(/class="rx-archive-object"/g)||[]).length,4);
+ assert.ok((ar.match(/class="rx-archive-object"/g)||[]).length>=4, "Original archive objects must survive additions");
  for(const p of ["stories.html#personal-microscope","stories.html#molecular-models","stories.html#zebrafish-histology-materials","stories.html#community"])
    assert.ok(ar.includes('href="'+p+'"'),p);
  for(const cls of ['class="timeline"','class="photo-section"','class="filmstrip"']) assert.ok(ar.includes(cls),cls);
  assert.match(ar,/editorial-wayfinding-2026\.css/);
  assert.match(ar,/archive-wayfinding-i18n-2026.js/);
+});
+
+test("15 October photographs remain published, traceable and linked to their chapters",()=>{
+ const ar=read("archive.html"), provenance=JSON.parse(read("assets/owner-archive-2026-10-15-manifest.json"));
+ assert.equal(provenance.entries.length,4);
+ const chapterTargets=["undergraduate-imines","unfortunate-trials","research-apparatus"];
+ for(const anchor of chapterTargets) assert.ok(stories.includes('id="'+anchor+'"'),anchor);
+ for(const entry of provenance.entries){
+  assert.ok(existsSync(join(root,entry.target)),entry.target);
+  assert.ok(stories.includes('/'+entry.target),entry.target+' in stories');
+  assert.ok(ar.includes('/'+entry.target),entry.target+' in archive');
+ }
+ for(const link of ["stories.html#undergraduate-imines","stories.html#unfortunate-trials","stories.html#research-apparatus"])
+  assert.ok(ar.includes('href="'+link+'"'),link);
 });

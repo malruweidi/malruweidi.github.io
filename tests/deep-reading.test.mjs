@@ -67,5 +67,5 @@ test("new pages appear in sitemap and the existing bilingual search",()=>{
 test("original site remains intact, including the six project dialogs and fourteen stories",()=>{
  for(const id of ["research","story","publications","patient-perspective","framework","quality","history","writing","quacs"])assert.ok(home.includes('id="'+id+'"'));
  for(const key of ["lung","zebrafish","polymer","niosomes","echo","robo"])assert.ok(home.includes('data-project="'+key+'"'));
- for(const id of ["anatomy","community","living-systems","ramadan-atvb","delivery","molecular-models","community-before-lab","personal-microscope","unfortunate-trials","historical-chemistry","surface-science","research-apparatus","zebrafish-histology-materials","zewail-visit-and-portrait"])assert.ok(story.includes('id="'+id+'"'),id);
+ for(const id of ["anatomy","community","living-systems","ramadan-atvb","delivery","molecular-models","community-before-lab","personal-microscope","unfortunate-trials","undergraduate-imines","historical-chemistry","surface-science","research-apparatus","zebrafish-histology-materials","zewail-visit-and-portrait"])assert.ok(story.includes('id="'+id+'"'),id);
 });
