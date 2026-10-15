@@ -353,6 +353,70 @@
       "url": "/archive.html#archive-objects",
       "summary": "Four documented entrances into the original archive: a microscope brought from Cairo, an early molecular model, an unsuccessful histology attempt, and chemistry outreach.",
       "keywords": "scientific instruments objects archive microscope Cairo molecular model microtome chemistry festival photographic catalogue أجهزة مجهر القاهرة نموذج جزيئي أرشيف كيمياء"
+    },
+    {
+      "id": 44,
+      "title": "The Cairo microscope · Complete story",
+      "category": "Stories",
+      "url": "/stories/cairo-microscope.html",
+      "summary": "A firsthand account of buying a microscope near Qasr El Einy in Cairo, bringing it to Qatar, and observing independently.",
+      "keywords": "microscope Cairo Qasr El Einy 2017 مجهر القاهرة القصر العيني ملاحظات"
+    },
+    {
+      "id": 45,
+      "title": "Two materials. No section. · Complete story",
+      "category": "Stories",
+      "url": "/stories/failed-zebrafish-histology.html",
+      "summary": "The failed zebrafish histology attempt: 2% agarose pre-embedding, paraffin sectioning and its material interface.",
+      "keywords": "zebrafish histology agarose paraffin microtome failure نسيج أجاروز برافين سمك الزرد"
+    },
+    {
+      "id": 46,
+      "title": "A Series of Unfortunate Trials · Complete story",
+      "category": "Stories",
+      "url": "/stories/unfortunate-copolymer-trials.html",
+      "summary": "The original 2017 copolymer notebook and the distinction between observed insolubility and unverified crosslinking.",
+      "keywords": "copolymer crosslinking solubility notebook polymer بوليمرات تشابك كيمياء محاولات"
+    },
+    {
+      "id": 47,
+      "title": "The Ramadan microscope · Complete story",
+      "category": "Stories",
+      "url": "/stories/ramadan-microscope.html",
+      "summary": "The full firsthand account of Ramadan evenings at a zebrafish microscope beside a separately published vascular study.",
+      "keywords": "Ramadan zebrafish microscope iftar Taraweeh vascular رمضان افطار تراويح سمك الزرد"
+    },
+    {
+      "id": 48,
+      "title": "Pulmonary epithelial injury · Research dossier",
+      "category": "Research",
+      "url": "/research/pulmonary-epithelial-injury.html",
+      "summary": "Published first-author 2021 study of mechanically injured epithelial monolayers using a parallel-plate flow chamber.",
+      "keywords": "L2 airway reopening flow chamber dexamethasone J Appl Physiol pulmonary إصابة ظهارة الرئة"
+    },
+    {
+      "id": 49,
+      "title": "Zebrafish endothelial cilia · Research dossier",
+      "category": "Research",
+      "url": "/research/zebrafish-vascular-cilia.html",
+      "summary": "The collaborative 2018 published investigation of endothelial cilia, flow and developing zebrafish cerebral vessels.",
+      "keywords": "ATVB cilia zebrafish cerebral vessels flow primary cilia زرد أهداب الأوعية الدموية"
+    },
+    {
+      "id": 50,
+      "title": "Inhalable vesicles · MSc dossier in progress",
+      "category": "Research",
+      "url": "/research/inhalable-vesicles.html",
+      "summary": "Ongoing dexamethasone niosome and proniosome MSc research, formulation plans and evidence boundaries.",
+      "keywords": "niosomes proniosomes dexamethasone nebulization aerosol NGI thesis استنشاق نيوسومات برونيوسومات"
+    },
+    {
+      "id": 51,
+      "title": "An imine thesis reagent · Original Stories chapter",
+      "category": "Stories",
+      "url": "/stories.html#undergraduate-imines",
+      "summary": "Pyridine-4-carboxaldehyde documented from two photographs of the same reagent bottle during undergraduate imine-sensor work; photographs do not establish reaction yield.",
+      "keywords": "pyridine-4-carboxaldehyde undergraduate chemistry imines sensor reagent photographs بيريدين كربوكسالدهيد إيمين مستشعر كيميائي"
     }
   ]
 }

@@ -95,5 +95,6 @@
   "Supporting records for ongoing inhalable formulation work": "الأدلة المرتبطة بأبحاث المستحضرات المستنشقة الجارية",
   "Supporting records for SLIT2–ROBO therapeutic review": "الأدلة المرتبطة بمراجعة علاجات SLIT2–ROBO",
   "Supporting records for fetal echocardiography research": "الأدلة المرتبطة بأبحاث تخطيط صدى قلب الجنين"
+  ,"Full research dossier":"الملف البحثي الكامل"
 });
 })();
