@@ -1,0 +1,67 @@
+{
+  "source_archive": "https://malruweidi.substack.com/archive",
+  "verified_on": "2026-10-15",
+  "verification_note": "Live public Substack archive and each article page confirmed HTTP 200 on 15 October 2026. Removed/deleted slugs return HTTP 404 and are excluded from all current public article lists.",
+  "entries": [
+    {
+      "id": "the-life-between-diagnoses",
+      "slug": "the-life-between-diagnoses",
+      "title": "The Life Between Diagnoses",
+      "date": "2026-10-15",
+      "display_date": "15 OCT 2026",
+      "topic": "Illness & evidence",
+      "description": "On being one in a million, losing medical school to an illness I barely understood, and spending fifteen years learning more about eosinophils than I ever intended.",
+      "summary": "A firsthand account of attacks, interrupted schooling, the medical-school path that was lost, and the uneasy distance between a laboratory count and what a patient experiences.",
+      "group": "personal",
+      "url": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+    },
+    {
+      "id": "sorry-my-first-email-to-you-was-probably",
+      "slug": "sorry-my-first-email-to-you-was-probably",
+      "title": "Sorry, My First Email to You Was Probably Polished by AI",
+      "date": "2026-10-13",
+      "display_date": "13 OCT 2026",
+      "topic": "Language, judgment & AI",
+      "description": "On the strange etiquette of strangers, the industrialization of professional language, and the curious prestige of detecting the obvious.",
+      "summary": "A pointed essay about what recipients think they learn by accusing unfamiliar writers of using AI, and whose language is subjected to that scrutiny.",
+      "group": "language",
+      "url": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+    },
+    {
+      "id": "we-taught-people-to-sound-like-machines",
+      "slug": "we-taught-people-to-sound-like-machines",
+      "title": "We Taught People to Sound Like Machines. Now We’re Surprised They Use Them.",
+      "date": "2026-10-13",
+      "display_date": "13 OCT 2026",
+      "topic": "Academic language & AI",
+      "description": "On the industrialization of human expression, academic conformity, and our sudden nostalgia for originality in the age of artificial intelligence.",
+      "summary": "Why the standardized prose institutions taught us to produce now looks suspiciously like the output of the machines they condemn.",
+      "group": "language",
+      "url": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines"
+    },
+    {
+      "id": "fifteen-things-i-wish-young-academics",
+      "slug": "fifteen-things-i-wish-young-academics",
+      "title": "Fifteen Things I Wish Young Academics Were Told About Mental Health",
+      "date": "2026-10-13",
+      "display_date": "13 OCT 2026",
+      "topic": "Academic life",
+      "description": "On the peculiar psychology of academic ambition, the things we sacrifice in pursuit of knowledge, and why becoming a good scientist should never require becoming a miserable human being.",
+      "summary": "Notes on institutional expectations, ambition, and psychological wellbeing in a profession that prides itself on questioning assumptions.",
+      "group": "academic",
+      "url": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+    },
+    {
+      "id": "the-nobel-prize-has-room-for-three",
+      "slug": "the-nobel-prize-has-room-for-three",
+      "title": "The Nobel Prize Has Room for Three. Science Never Did.",
+      "date": "2026-10-07",
+      "display_date": "7 OCT 2026",
+      "topic": "Scientific credit & history",
+      "description": "On the 2026 Nobel Prize in Medicine, the forgotten experiments behind optogenetics, and the peculiar way scientific history decides whom to remember.",
+      "summary": "A historical argument about how scientific discoveries accumulate through many hands while awards preserve a much shorter list of names.",
+      "group": "history",
+      "url": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+    }
+  ]
+}

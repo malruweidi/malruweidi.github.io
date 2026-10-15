@@ -21,3 +21,5 @@ jobs:
         run: node scripts/check-cross-page-anchors.cjs
       - name: Test research readout hierarchy and responsive language support
         run: node --test tests/research-reading-qa.test.mjs
+      - name: Validate source-verified Substack publication collection
+        run: node --test tests/substack-publications.test.mjs

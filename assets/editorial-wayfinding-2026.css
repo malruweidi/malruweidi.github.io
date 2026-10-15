@@ -62,3 +62,11 @@ html[dir="rtl"][data-rx-page="archive"] .rx-archive-objects-intro>p,html[dir="rt
 
 /* Backward-compatible anchors for previously shared archive/gallery URLs. */
 html[data-rx-page="archive"] #rxOctoberPhotoArchive,html[data-rx-page="archive"] #rxRecoveredGallery{scroll-margin-top:96px}
+
+/* Writing index: retain existing evidence-led cards, make the current Substack archive discoverable. */
+#writing .rx-writing-browse{display:flex;flex-direction:column;align-items:flex-start;gap:9px;padding-top:10px}
+#writing .rx-writing-browse a{display:inline-flex;line-height:1.7}
+#writing .essayrow .name{min-width:0;overflow-wrap:anywhere}
+#writing .essayrow .date{white-space:nowrap}
+#writing .essayrow:focus-visible,#writing .rx-writing-browse a:focus-visible{outline:3px solid #b7704e;outline-offset:3px}
+html[dir="rtl"] #writing .essayrow .name{font-family:"Noto Naskh Arabic",serif;font-size:17px;line-height:1.75}
