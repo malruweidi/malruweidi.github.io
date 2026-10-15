@@ -44,3 +44,11 @@ test("cross-page anchors are checked in the website workflow",()=>{
  assert.ok(existsSync(join(root,"scripts/check-cross-page-anchors.cjs")));
  assert.match(read(".github/workflows/site-integrity.yml"),/check-cross-page-anchors\.cjs/);
 });
+
+test("previously shared archive section URLs remain meaningful",()=>{
+ const html=read("archive.html");
+ assert.match(html,/id="rxRecoveredGallery"/);
+ assert.match(html,/id="rxOctoberPhotoArchive"/);
+ assert.match(read("engagement.html"),/href="\/archive\.html#rxRecoveredGallery"/);
+ assert.match(read("stories.html"),/href="\/archive\.html#rxOctoberPhotoArchive"/);
+});
