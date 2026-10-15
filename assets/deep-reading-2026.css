@@ -64,3 +64,22 @@ html[data-rx-page="stories"] .rx-story-article-link a:focus-visible{outline:3px 
 
 /* Progressive cross-links for existing cards and archival records. */
 #research .rx-dossier-links .rx-dossier-primary{font-weight:750;color:#93553d}html[data-rx-page="archive"] .rx-object-article-link{display:inline-block;margin-inline-start:12px;font:700 12px/1.7 "DM Sans",sans-serif;color:#205d57;text-underline-offset:4px}html[data-rx-page="archive"] .rx-object-article-link:focus-visible{outline:3px solid #bb7856;outline-offset:3px}html[dir="rtl"][data-rx-page="archive"] .rx-object-article-link{font-family:"Noto Naskh Arabic",serif;font-size:16px}
+
+/* Bounded research evidence navigation and analytically specific method interpretation. */
+html[data-rx-page="research-detail"] .rx-research-toc{display:flex;gap:8px 11px;flex-wrap:wrap;align-items:center;padding:16px 0 20px;border-bottom:1px solid #b9cbbc}
+html[data-rx-page="research-detail"] .rx-research-toc>span{width:100%;font:500 10px/1.5 "DM Mono",monospace;color:#8b573f;letter-spacing:.12em;text-transform:uppercase}
+html[data-rx-page="research-detail"] .rx-research-toc a{display:inline-flex;align-items:center;min-height:35px;padding:6px 11px;border:1px solid #c9d6c8;background:#eef2eb;color:#20584e;font:650 12px/1.5 "DM Sans",sans-serif;text-decoration:none}
+html[data-rx-page="research-detail"] .rx-research-toc a:hover{background:#dde8dc}
+html[data-rx-page="research-detail"] .rx-measurements h3{font:400 clamp(24px,2.45vw,32px)/1.2 "Newsreader",Georgia,serif;color:#17343b;margin:12px 0 19px}
+html[data-rx-page="research-detail"] .rx-readout-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+html[data-rx-page="research-detail"] .rx-readout-list>div{padding:20px;border:1px solid #cad9cd;background:#edf2ec;min-width:0}
+html[data-rx-page="research-detail"] .rx-readout-list .rx-readout-limits{border-color:#dccdc0;background:#f2ece5}
+html[data-rx-page="research-detail"] .rx-readout-list strong{display:block;font:650 13px/1.6 "DM Sans",sans-serif;color:#1a4f45;margin-bottom:9px}
+html[data-rx-page="research-detail"] .rx-readout-list .rx-readout-limits strong{color:#87543e}
+html[data-rx-page="research-detail"] .rx-readout-list p{font:400 13px/1.85 "DM Sans",sans-serif;color:#405b54;margin:0;overflow-wrap:anywhere}
+html[data-rx-page="research-detail"] .rx-research-toc a:focus-visible{outline:3px solid #b7704e;outline-offset:3px}
+html[dir="rtl"][data-rx-page="research-detail"] .rx-measurements h3{font-family:"Noto Naskh Arabic",serif;letter-spacing:0}
+html[dir="rtl"][data-rx-page="research-detail"] .rx-readout-list p,html[dir="rtl"][data-rx-page="research-detail"] .rx-readout-list strong,html[dir="rtl"][data-rx-page="research-detail"] .rx-research-toc a{font-family:"Noto Naskh Arabic",serif;font-size:17px;line-height:1.9}
+html[data-rx-page="research-detail"] .rx-research-section a,html[data-rx-page="research-detail"] .rx-research-links a{overflow-wrap:anywhere}
+@media(max-width:700px){html[data-rx-page="research-detail"] .rx-readout-list{grid-template-columns:1fr}html[data-rx-page="research-detail"] .rx-research-toc a{min-height:42px}}
+@media print{html[data-rx-detail="true"] body,html[data-rx-page="research-detail"] body{background:white!important;color:#111!important}html[data-rx-page="research-detail"] .rx-research-main{display:block!important}html[data-rx-page="research-detail"] .rx-research-toc,.rx-deep-header,.rx-deep-skip,.rx-deep-footer,.rx-deep-related,.site-lang-switch{display:none!important}html[data-rx-page="research-detail"] .rx-deep-hero,html[data-rx-detail="true"] .rx-deep-hero{padding:15px 0;background:white!important;color:#111!important}html[data-rx-page="research-detail"] .rx-deep-hero h1,html[data-rx-page="research-detail"] .rx-deep-lead,html[data-rx-detail="true"] .rx-deep-hero h1,html[data-rx-detail="true"] .rx-deep-lead{color:#111!important}html[data-rx-page="research-detail"] .rx-readout-list{break-inside:avoid}html[data-rx-page="research-detail"] .rx-readout-list>div{background:white!important}html[data-rx-page="research-detail"] .rx-research-section{break-inside:avoid}html[data-rx-detail="true"] .stories-single-figure,html[data-rx-detail="true"] .stories-media-duo figure{break-inside:avoid}}

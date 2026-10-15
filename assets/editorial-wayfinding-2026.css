@@ -59,3 +59,6 @@ html[dir="rtl"][data-rx-page="archive"] .rx-archive-objects-intro>p,html[dir="rt
 @media(max-width:820px){html[data-rx-page="archive"] .rx-archive-objects-intro{grid-template-columns:1fr}html[data-rx-page="archive"] .rx-archive-object-grid{grid-template-columns:1fr}}
 @media(max-width:560px){html[data-rx-page="archive"] .rx-archive-object{grid-template-columns:1fr}html[data-rx-page="archive"] .rx-archive-object img{height:190px;min-height:0}}
 @media(prefers-reduced-motion:reduce){html[data-rx-page="archive"] .rx-archive-objects *{transition:none!important;animation:none!important}}
+
+/* Backward-compatible anchors for previously shared archive/gallery URLs. */
+html[data-rx-page="archive"] #rxOctoberPhotoArchive,html[data-rx-page="archive"] #rxRecoveredGallery{scroll-margin-top:96px}
