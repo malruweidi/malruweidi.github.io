@@ -17,9 +17,11 @@ const researchRoutes=[
 test("standalone articles contain all original story chapters without abbreviation",()=>{
  for(const [file,id] of storyRoutes){
   assert.ok(existsSync(join(root,file)),file);
-  const body=read(file),begin=story.indexOf('<section class="stories-chapter',story.indexOf('id="'+id+'"')-60);
-  const next=story.indexOf('<section class="stories-chapter',story.indexOf('id="'+id+'"')+30);
-  const original=story.slice(begin,next<0?story.length:next).split("</section>")[0]+"</section>";
+  const body=read(file);
+  const chapterMatch=new RegExp('<section class="stories-chapter(?: stories-chapter-tinted)?" id="'+id+'"').exec(story);
+  assert.ok(chapterMatch,"original story section missing: "+id);
+  const begin=chapterMatch.index, closing=story.indexOf("</section>",begin);
+  const original=story.slice(begin,closing+"</section>".length);
   assert.ok(body.includes(original),"original story changed or omitted: "+id);
   assert.ok(body.includes('href="/stories.html#'+id+'"'),"missing original chapter route: "+file);
   assert.ok(story.includes('href="/'+file+'"'),"collection lacks article: "+file);
