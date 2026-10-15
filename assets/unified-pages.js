@@ -17,6 +17,7 @@ const ready=()=>{
     "stories.html":["Stories","حكايات البحث والحياة"],
     "imaging.html":["Biomedical imaging","التصوير الحيوي"],
     "cv.html":["Academic CV","السيرة الأكاديمية"],
+    "research-horizon.html":["Research horizon","آفاق البحث"],
     "chem-squad.html":["Chem Squad","فريق الكيمياء"],
     "engagement.html":["Science & society","العلم والمجتمع"],
     "urep19.html":["UREP 19 case study","دراسة منحة ١٩"],
@@ -26,7 +27,7 @@ const ready=()=>{
   };
   const current=pages[page]||["Research page","صفحة بحثية"];
   const items=[
-    ["/index.html","Home","الرئيسية"],["/full-record.html#research","Research","الأبحاث"],
+    ["/index.html","Home","الرئيسية"],["/full-record.html#research","Research","الأبحاث"],["/research-horizon.html","Research horizon","آفاق البحث"],
     ["/techniques.html","Methods","التقنيات"],["/full-record.html#publications","Publications","المنشورات"],
     ["/figures.html","Figures","الأشكال"],["/computing.html","Computing","الحوسبة"],
     ["/grants.html","Grants","المنح"],["/imaging.html","Imaging","التصوير"],
