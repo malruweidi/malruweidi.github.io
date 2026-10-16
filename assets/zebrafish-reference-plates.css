@@ -1,0 +1,14 @@
+/* Literature figures accompanying the zebrafish research dossier; additive, scoped styles. */
+.rx-zref{scroll-margin-top:6rem}.rx-zref>p{max-width:68ch}
+.rx-zref-plates{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(24px,3vw,38px);margin:30px 0}
+.rx-zref-figure{margin:0;padding:0 0 24px;border-bottom:1px solid rgba(23,52,59,.2)}
+.rx-zref-image{display:block;padding:clamp(8px,2vw,18px);background:#f0efec;border:1px solid #dadbd5;overflow:hidden;outline-offset:4px}
+.rx-zref-image img{width:100%;height:auto;max-height:660px;object-fit:contain;display:block;margin:auto;filter:contrast(1.025)}
+.rx-zref-figure figcaption{margin-top:14px;line-height:1.7;font-size:15px;color:inherit}
+.rx-zref-figure figcaption strong{display:block;font-size:18px;font-weight:600;line-height:1.4;margin:3px 0 5px}
+.rx-zref-eyebrow{display:block;font:500 11px/1.4 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.09em;color:#47706d}
+.rx-zref-figure figcaption a,.rx-zref-footer a{color:#235861;text-decoration:underline;text-underline-offset:3px}
+.rx-zref-figure figcaption a{display:block;margin-top:8px;overflow-wrap:anywhere}
+.rx-zref-footer{border-left:3px solid #7c9991;padding:11px 0 11px 16px;margin-top:10px}
+@media (max-width:600px){.rx-zref-image{padding:6px}.rx-zref-figure figcaption{font-size:14px}.rx-zref-figure figcaption strong{font-size:16px}}
+@media (prefers-color-scheme:dark){.rx-zref-figure{border-color:rgba(227,232,223,.25)}.rx-zref-image{background:#e3e1da;border-color:#82918e}.rx-zref-figure figcaption a,.rx-zref-footer a{color:inherit}}

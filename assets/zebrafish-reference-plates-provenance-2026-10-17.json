@@ -1,0 +1,46 @@
+{
+  "title": "Published reference images: zebrafish development and chorion handling",
+  "date_received": "2026-10-17",
+  "context": "Research dossier and histology story cross-link",
+  "status": "embedded on personal research website with cited third-party sources",
+  "editorial_note": "All 3 plates are literature reference figures, not photographs or results of Mahmoud K. Al-Ruweidi's own zebrafish experiments. Three 320px JPGs are identical derivatives of the Schiwy figure and are omitted from the site.",
+  "copyright_note": "Reuse rights have not been independently established; attribution is not a substitute for licence/permission. Re-check the publisher's figure rights if the images are to remain publicly hosted.",
+  "items": [
+    {
+      "source": "Zebrafish-embryos-at-different-developmental-stages-Pipette-angle-in-the-loading.png",
+      "webp": "assets/zebrafish-references/zebrafish-embryo-stages-chorion-mechanics.webp",
+      "source_sha256": "f0d00c8dbc7eedf7a19a315e860ecd6d21e07c1342a4292063167b0a3b9fb6c7",
+      "webp_sha256": "2f676ec43f7588894c868717f978875391809e331bffa8f89dac7dd55bad656d",
+      "authors": "Kim, Hwang, Sun, Lee, Kim and Nelson",
+      "published": 2006,
+      "doi": "10.1109/TNB.2006.875054",
+      "figure": 1,
+      "width": 850,
+      "height": 757
+    },
+    {
+      "source": "Zebrafish-embryos-after-24-48-72-and-96-hpf-exposed-to-artificial-water-negative.png",
+      "webp": "assets/zebrafish-references/zebrafish-normal-development-24-96hpf.webp",
+      "source_sha256": "a229aa8b75bf13584ae13fc278e5190e935f4a3b7425ee1bf7fb134741ab40c8",
+      "webp_sha256": "62de419b7718008e70b2ca1605a383f5c7815b9831087e3f77d7f71c618fb024",
+      "authors": "Schiwy, Bräunig, Alert, Hollert and Keiter",
+      "published": 2015,
+      "doi": "10.1007/s11356-014-3185-0",
+      "figure": 1,
+      "width": 732,
+      "height": 586
+    },
+    {
+      "source": "Zebrafish-embryos-at-48-h-post-fertilisation-hpf-with-a-and-after-manual-removal-of.png",
+      "webp": "assets/zebrafish-references/zebrafish-chorion-removal-48hpf.webp",
+      "source_sha256": "d1cea548eb47ce61cd5d03fb9f6cba12b8a6550bda998261db39a6610c43881e",
+      "webp_sha256": "4af1fa51a6c7c1591b871d0ff30e2278f054c00cefc61a44fb35eee48477db1e",
+      "authors": "Scholz, Fischer, Gündel, Küster, Luckenbach and Voelker",
+      "published": 2008,
+      "doi": "10.1007/s11356-008-0018-z",
+      "figure": 1,
+      "width": 850,
+      "height": 189
+    }
+  ]
+}
