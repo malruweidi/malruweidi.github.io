@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_lewis",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "d8e17161cde308ce1dd686ce93bd9d21ddfa5b1b8c12d4f2a01293d5ae24954c",
+  "sha256": "8e7d8199675ff3a1ea251994556fc3a121be20dd0509ceac11b569a8457d9498",
   "shots": [
     {
       "title": "A scaffold meets its environment",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "cec8ade816ae005568dc7609c25ad2487c67335d81dc49983d7d492885a3362a"
+  "motion_shots": [],
+  "input_sha256": "c4731430ebc1907ffacc74cae517f1e3c8fb27caf4c8753bd43c3c5c214f84df"
 }

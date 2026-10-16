@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bf_emma",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "e787ef0b5c7767be3a5318dc81a7e056847b4854f42df5d05734b15299083ff1",
+  "sha256": "e61248e8d25f8b3f35aefe761c60202ead38775963828db4e914acb0814ae5d7",
   "shots": [
     {
       "title": "Can an algorithm read a moving heart?",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "36358e26e960bb60141f2f5feede95d60cedef057165c5a85d325a0501973a67"
+  "motion_shots": [],
+  "input_sha256": "8004d2ca2d7b4fb7c2f4d173fef8311ff28bf35f1c6ac1ab8bec8a4598032f0c"
 }

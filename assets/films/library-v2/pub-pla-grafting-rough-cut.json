@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "127c454da82001f999373220c7b37bcc56420c8e9d3b585577546114d6420446",
+  "sha256": "5882833d0c64a9de479197b0fe1d01f3b3fac6751c117ee683f46507debb4aa7",
   "shots": [
     {
       "title": "The surface is not the material",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "81c225936ccaee9496ae497f82ad6b5fd4c0d02a971cd5e3237a7e8012d2a9bc"
+  "motion_shots": [],
+  "input_sha256": "c00eb0294ff07202a8f7f9c8b56f61d39563c6d02d18405a644d7c929bd53dfa"
 }
