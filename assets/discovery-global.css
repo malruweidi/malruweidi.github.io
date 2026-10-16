@@ -131,3 +131,56 @@ html[data-rx-page="home"] .navlinks>a[aria-current="location"]{
 @media print{
   .rx-reading-progress{display:none!important}
 }
+
+
+/* Bilingual navigation placement: language choices remain discoverable
+   without a fixed overlay over scientific writing or archived images. */
+html[data-rx-page="home"] #navlinks > .site-lang-switch{
+  position:static!important;
+  inset:auto!important;
+  width:100%;
+  z-index:auto;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  margin:5px 0 0;
+  padding:3px;
+  border:1px solid #d6dfd7;
+  border-radius:6px;
+  box-shadow:none;
+  background:#f1f2eb;
+  backdrop-filter:none;
+}
+html[data-rx-page="home"] #navlinks > .site-lang-switch button{
+  min-height:42px;
+  min-width:44px;
+  border-radius:4px;
+}
+.rx-universal .rx-langs.rx-langs-integrated{
+  flex-wrap:wrap;
+}
+.rx-universal .rx-langs.rx-langs-integrated > button[data-language]{
+  display:none;
+}
+.rx-universal .rx-langs.rx-langs-integrated > .site-lang-switch{
+  position:static!important;
+  inset:auto!important;
+  z-index:auto;
+  display:flex;
+  margin:0;
+  padding:2px;
+  border:1px solid #d6dfd7;
+  border-radius:6px;
+  box-shadow:none;
+  background:#f1f2eb;
+  backdrop-filter:none;
+}
+.rx-universal .rx-langs.rx-langs-integrated > .site-lang-switch button{
+  min-height:42px;
+  min-width:44px;
+  border-radius:4px;
+}
+@media print{
+  html[data-rx-page="home"] #navlinks > .site-lang-switch,
+  .rx-universal .rx-langs.rx-langs-integrated > .site-lang-switch{display:none!important}
+}
