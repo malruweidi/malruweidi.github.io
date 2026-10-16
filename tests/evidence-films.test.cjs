@@ -85,9 +85,9 @@ test("historical substitution and market-oversight captions keep clear of diagra
   assert.doesNotMatch(renderer,/write_label\(d,\(170,166\),"WEIGHT, TRUST/, "remove prior balance beam and title overlap");
 });
 
-test("five context photos have explicit credit, rights and actual source links",()=>{
+test("sourced context photos have explicit credit, rights and actual source links",()=>{
   const data=JSON.parse(load("assets/films/evidence-in-motion.json"));
-  assert.equal(data.visual_sources.length,5);
+  assert.ok(data.visual_sources.length>=6);
   const ids=new Set(data.visual_sources.map(v=>v.id));
   assert.equal(ids.size,5);
   for(const asset of data.visual_sources){
@@ -99,12 +99,13 @@ test("five context photos have explicit credit, rights and actual source links",
     assert.ok(asset.caption.toUpperCase().includes("NOT")||asset.caption.toUpperCase().includes("CONTEXT")||asset.caption.toUpperCase().includes("ILLUSTRATION"));
   }
   const uses=data.films.flatMap(f=>f.scenes.filter(s=>s.context_visual).map(s=>({f,s})));
-  assert.equal(uses.length,5);
+  assert.equal(uses.length,6);
   assert.deepEqual(uses.map(x=>x.f.slug+":"+x.s.id),[
     "what-a-bubble-can-do:01",
     "two-materials-no-section:07",
     "making-medicines-keep:01",
     "making-medicines-keep:02",
+    "making-medicines-keep:03",
     "making-medicines-keep:07"
   ]);
   for(const {f,s} of uses){
