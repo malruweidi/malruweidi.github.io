@@ -1,0 +1,29 @@
+{
+  "collection": "School science and high-school graduation",
+  "intake_date": "2026-10-17",
+  "source": "Owner-supplied photographs and descriptions in conversation",
+  "editorial_placement": ["stories.html#school-chemistry-and-graduation", "archive.html#school-chemistry-archive"],
+  "records": [
+    {
+      "original_filename": "0312.jpg",
+      "source_sha256": "3db813dc4d64d834d4577bd407dbafdc0dccfb55df463569f9a24cc521a1f536",
+      "published_filename": "grade10-chemistry-festival-aref-elahmad.webp",
+      "published_sha256": "df6f945d777550debb3a4db80b6e151802a21061ca1e6ec2b9fe726210055283",
+      "subject_identified_by_owner": "Mahmoud with Mr. Aref Elahmad, his first chemistry teacher",
+      "event_identified_by_owner": "After participating with his research in the Grade 10 chemistry festival, Doha Independent School",
+      "camera_capture_date": null,
+      "notes": "Certificate visible. School, event, relationship and teacher identity come from the owner, not independent image-only inference."
+    },
+    {
+      "original_filename": "0212.jpg",
+      "source_sha256": "21d11bd67b1cd1d59f603b63ea428872fb4fd3fde61901cc94f7c4f016c5f1ed",
+      "published_filename": "high-school-graduation-jameel-al-shamarri.webp",
+      "published_sha256": "97cb4a1e410a344234df36042d58fc0fe032799a718f802fbae8a71cb696831a",
+      "subject_identified_by_owner": "Mahmoud with Mr. Jameel Al-Shamarri",
+      "event_identified_by_owner": "High-school graduation at age sixteen",
+      "camera_capture_date": null,
+      "notes": "Age and companion identity supplied by the owner. No exact graduation year inferred from filename."
+    }
+  ],
+  "publishing_rule": "Non-destructive addition. Originals retained with owner; WebP derivatives used publicly. Prior media and stories preserved."
+}
