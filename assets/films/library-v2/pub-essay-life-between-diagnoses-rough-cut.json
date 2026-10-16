@@ -1,0 +1,78 @@
+{
+  "slug": "pub-essay-life-between-diagnoses",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "2f0e0e46e036f0bda6b2f0428e45d601f971f2a5ca460eaa39749349e4020919",
+  "shots": [
+    {
+      "title": "When the Count Could Not Describe the Pain",
+      "kind": "Personal 2025 medical archive; not an image of every earlier attack",
+      "image": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+      "museum": null,
+      "credit": "Personal 2025 medical archive; not an image of every earlier attack"
+    },
+    {
+      "title": "Before the degree",
+      "kind": "Archival childhood portrait, not a photograph of the later school examinations",
+      "image": "assets/home-archive/childhood-portrait.jpg",
+      "museum": null,
+      "credit": "Archival childhood portrait, not a photograph of the later school examinations"
+    },
+    {
+      "title": "What the numbers cannot contain",
+      "kind": "Personal 2025 medical archive; not an image of every earlier attack",
+      "image": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+      "museum": null,
+      "credit": "Personal 2025 medical archive; not an image of every earlier attack"
+    },
+    {
+      "title": "The week before America",
+      "kind": "Personal clinical history portrait; not a dated record of the specific pre-travel event",
+      "image": "assets/owner-archive-2026-10-16/eosinophilic-diagnosis-dr-elsheikh-abdelrahim.webp",
+      "museum": null,
+      "credit": "Personal clinical history portrait; not a dated record of the specific pre-travel event"
+    },
+    {
+      "title": "Years become an archive",
+      "kind": "Personal 2025 illness archive; not a substitute for medical records",
+      "image": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+      "museum": null,
+      "credit": "Personal 2025 illness archive; not a substitute for medical records"
+    },
+    {
+      "title": "The difficulty: Research did not erase illness",
+      "kind": "Original freshman chemistry photograph, not clinical data",
+      "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+      "museum": null,
+      "credit": "Original freshman chemistry photograph, not clinical data"
+    },
+    {
+      "title": "Research did not erase illness",
+      "kind": "Original freshman chemistry photograph, not clinical data",
+      "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+      "museum": null,
+      "credit": "Original freshman chemistry photograph, not clinical data"
+    },
+    {
+      "title": "Read the person, not the diagnosis",
+      "kind": "Contemporary author's portrait",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "museum": null,
+      "credit": "Contemporary author's portrait"
+    }
+  ],
+  "film_title": "When the Count Could Not Describe the Pain",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "b0a4341af4bff9126bb2477291cae2fd69bbf3800fffb789023444e5aa5f930f"
+}
