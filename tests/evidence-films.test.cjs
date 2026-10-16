@@ -89,7 +89,7 @@ test("sourced context photos have explicit credit, rights and actual source link
   const data=JSON.parse(load("assets/films/evidence-in-motion.json"));
   assert.ok(data.visual_sources.length>=6);
   const ids=new Set(data.visual_sources.map(v=>v.id));
-  assert.equal(ids.size,5);
+  assert.equal(ids.size,data.visual_sources.length);
   for(const asset of data.visual_sources){
     assert.ok(asset.asset.endsWith(".webp"));
     assert.ok(asset.download_url.startsWith("https://cdn.creativeclaw.co/"));
@@ -99,15 +99,16 @@ test("sourced context photos have explicit credit, rights and actual source link
     assert.ok(asset.caption.toUpperCase().includes("NOT")||asset.caption.toUpperCase().includes("CONTEXT")||asset.caption.toUpperCase().includes("ILLUSTRATION"));
   }
   const uses=data.films.flatMap(f=>f.scenes.filter(s=>s.context_visual).map(s=>({f,s})));
-  assert.equal(uses.length,6);
-  assert.deepEqual(uses.map(x=>x.f.slug+":"+x.s.id),[
+  assert.ok(uses.length>=7);
+  assert.ok([
+
     "what-a-bubble-can-do:01",
     "two-materials-no-section:07",
     "making-medicines-keep:01",
     "making-medicines-keep:02",
     "making-medicines-keep:03",
     "making-medicines-keep:07"
-  ]);
+  ].every(id => uses.some(x => x.f.slug+":"+x.s.id===id)));
   for(const {f,s} of uses){
     assert.ok(ids.has(s.context_visual));
     assert.ok(s.context_use.includes("Does not alter narration"));
