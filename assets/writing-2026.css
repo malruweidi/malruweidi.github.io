@@ -14,7 +14,7 @@ html[data-rx-page="writing"] *{box-sizing:border-box}
 .rxw-header nav a{font:650 12px/1.5 "DM Sans",sans-serif;color:#325951;text-decoration:none}
 .rxw-hero{background:#17343b;color:#f7f5ee;padding:clamp(65px,8vw,112px) 0 clamp(52px,7vw,90px)}
 .rxw-hero-inner{display:grid;grid-template-columns:minmax(0,1.28fr) minmax(0,.72fr);align-items:end;gap:clamp(28px,5vw,70px)}
-.rxw-kicker{font:500 10px/1.7 "DM Mono",monospace;letter-spacing:.15em;color:#b16d52;text-transform:uppercase;margin:0 0 19px}
+.rxw-kicker{font:500 11px/1.7 "DM Mono",monospace;letter-spacing:.15em;color:#994c36;text-transform:uppercase;margin:0 0 19px}
 .rxw-hero .rxw-kicker{color:#eab89b}
 .rxw-hero h1{font:400 clamp(52px,6.3vw,86px)/1.01 "Newsreader",Georgia,serif;letter-spacing:-.036em;color:#fcfaf3;max-width:14ch;margin:0}
 .rxw-hero-intro{font:400 clamp(18px,1.9vw,23px)/1.65 "Newsreader",Georgia,serif;color:#d9e4dd;margin:0;max-width:43ch}
