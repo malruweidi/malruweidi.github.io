@@ -1,8 +1,8 @@
 {
   "status": "TECHNICAL AUDIT ONLY, NOT ARTISTIC APPROVAL",
   "films_expected": 44,
-  "exports_examined": 36,
-  "exports_remaining": 8,
+  "exports_examined": 40,
+  "exports_remaining": 4,
   "films": [
     {
       "slug": "making-medicines-keep",
@@ -359,6 +359,46 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-essay-trna-rough-cut.mp4",
+      "issues": [],
+      "technical_check": "pass",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-proximity",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-proximity-rough-cut.mp4",
+      "issues": [],
+      "technical_check": "pass",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-adc",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-adc-rough-cut.mp4",
+      "issues": [],
+      "technical_check": "pass",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "feature-the-laboratory-we-carried-with-us",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/feature-the-laboratory-we-carried-with-us-rough-cut.mp4",
+      "issues": [],
+      "technical_check": "pass",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "feature-cairo-microscope",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/feature-cairo-microscope-rough-cut.mp4",
       "issues": [],
       "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
