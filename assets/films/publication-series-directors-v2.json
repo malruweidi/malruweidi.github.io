@@ -2471,7 +2471,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "materials animation",
-          "narration": "A printer can follow a perfect toolpath while the deposited material collapses. The rheology of the ink sets the rules.",
+          "narration": "The printer completes its programmed path. A moment later the edible structure sags. The code was correct; the material did something else.",
           "image": "assets/films/art/edible-printing.svg",
           "contain": true,
           "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
@@ -2480,7 +2480,7 @@
           "source_title": "Flow first, shape second",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 16
+          "sec": 17
         },
         {
           "id": "02",
@@ -2546,7 +2546,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "materials animation",
-          "narration": "Time-responsive and higher-dimensional labels describe proposed capabilities; they do not establish that every structure has been practically demonstrated.",
+          "narration": "Rheology sets the boundary between possible shapes and imagined ones. Different dimensional labels must correspond to demonstrable functional behaviour.",
           "image": "assets/films/art/edible-printing.svg",
           "contain": true,
           "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
@@ -2555,7 +2555,7 @@
           "source_title": "Do not mistake possibility for validation",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "07",
@@ -2576,7 +2576,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "materials animation",
-          "narration": "This accepted chapter explores the design constraints for programmable edible materials. It remains forthcoming, not a completed laboratory result.",
+          "narration": "Programmable edible structures start with a material that can survive deposition, not with an impressive rendering.",
           "image": "assets/films/art/edible-printing.svg",
           "contain": true,
           "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
@@ -2587,7 +2587,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "id": "pub-ceramics-printing",
@@ -2606,7 +2607,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "biomaterials editorial",
-          "narration": "Biomedical ceramic design starts with a difficult demand: a manufactured structure must remain useful in a biological environment.",
+          "narration": "A ceramic lattice can be printed with exquisite symmetry. That does not mean it will carry load or cooperate with living tissue.",
           "image": "assets/films/art/bioceramic-lattice.svg",
           "contain": true,
           "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
@@ -2615,7 +2616,7 @@
           "source_title": "Geometry is only the beginning",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 17
         },
         {
           "id": "02",
@@ -2681,7 +2682,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "biomaterials editorial",
-          "narration": "Clinical application also depends on repeatability, sterilisation and regulatory pathways; each requires evidence distinct from printability.",
+          "narration": "Porosity, defects, thermal processing and biological context constrain performance. None can be inferred from an immaculate CAD model.",
           "image": "assets/films/art/bioceramic-lattice.svg",
           "contain": true,
           "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
@@ -2690,7 +2691,7 @@
           "source_title": "From bench to clinic",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "07",
@@ -2711,7 +2712,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "biomaterials editorial",
-          "narration": "The accepted chapter reviews biomedical ceramic applications and translational constraints. It is an editorial explanation, not a new implantation trial.",
+          "narration": "The accepted chapter examines translational possibilities; it is not a report of a new human implantation.",
           "image": "assets/films/art/bioceramic-lattice.svg",
           "contain": true,
           "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
@@ -2720,9 +2721,10 @@
           "source_title": "More than a shape",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "id": "pub-cubosome-theranostics",
@@ -2741,7 +2743,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "nanocarrier explanatory",
-          "narration": "Cubosomes contain structured internal lipid domains. Their morphology is intriguing, but drug delivery is not secured by geometry alone.",
+          "narration": "A cubic lipid structure is almost irresistible on screen. But internal order is not a substitute for successful drug delivery.",
           "image": "assets/evidence-biomaterials.webp",
           "contain": false,
           "kind": "Nanomedicine context image, not cubosome micrograph",
@@ -2750,7 +2752,7 @@
           "source_title": "Two tasks in one carrier",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "02",
@@ -2816,7 +2818,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "nanocarrier explanatory",
-          "narration": "Stability, biodistribution, safety and reproducibility determine whether a promising system can move toward clinical evaluation.",
+          "narration": "A convincing theranostic system needs demonstrated loading, stability, biological fate and an imaging or therapeutic endpoint.",
           "image": "assets/evidence-biomaterials.webp",
           "contain": false,
           "kind": "General biomaterials research imagery",
@@ -2846,7 +2848,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "nanocarrier explanatory",
-          "narration": "The forthcoming accepted chapter critically discusses cancer-targeted cubosome design and the difficult path to clinical translation.",
+          "narration": "The film distinguishes elegant nanostructure from the difficult steps required before a clinical claim.",
           "image": "assets/films/art/cubosome-topology.svg",
           "contain": true,
           "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
@@ -2855,9 +2857,10 @@
           "source_title": "The promise is conditional",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "id": "pub-micelles-pahs",
@@ -2876,7 +2879,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "materials investigation",
-          "narration": "Polycyclic aromatic hydrocarbons resist easy dispersion in aqueous environments. Polymer assemblies offer one route to changing exposure.",
+          "narration": "A pollutant does not dissolve just because a polymer assembly is drawn around it. Chemical affinity still has to be established.",
           "image": "assets/polymer-concept.svg",
           "contain": true,
           "kind": "Generic conceptual polymer assembly",
@@ -2885,7 +2888,7 @@
           "source_title": "The theory looked reasonable",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "02",
@@ -2951,7 +2954,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "materials investigation",
-          "narration": "The difference between an ideal formulation and a workable one can be a physical materials problem, not a failure to know the theory.",
+          "narration": "The original materials trials include failures. They stay in this story, because phase behaviour is not obliged to follow our calculations.",
           "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
           "contain": false,
           "kind": "Original failed-materials archive",
@@ -2960,7 +2963,7 @@
           "source_title": "What an unsuccessful trial teaches",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 15
         },
         {
           "id": "07",
@@ -2981,7 +2984,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "materials investigation",
-          "narration": "The grant-supported investigation and its trials belong in the scientific account without manufacturing a successful solubilisation result.",
+          "narration": "The hypothesis is that polymeric micelles may alter PAH partitioning; the laboratory must decide which formulations do so.",
           "image": "assets/polymer-concept.svg",
           "contain": true,
           "kind": "Conceptual concluding image",
@@ -2992,7 +2995,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "id": "pub-heterocycle-cancer",
@@ -3011,7 +3015,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "organic chemistry",
-          "narration": "Organic synthesis begins with an intended structure. A spectrum and an isolated sample decide what the reaction actually yielded.",
+          "narration": "It is easy to draw an imidazopyridine with an elegant substituent. Making and identifying the compound is the first real examination.",
           "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
           "contain": false,
           "kind": "Original archival chemistry photograph, not a recording of microwave synthesis",
@@ -3020,7 +3024,7 @@
           "source_title": "Microwave chemistry accelerates the problem",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "02",
@@ -3086,7 +3090,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "organic chemistry",
-          "narration": "The project record should preserve which compounds were made, what assays were performed, and which conclusions remain untested.",
+          "narration": "Microwave synthesis, spectroscopy and a cell assay answer different questions. Activity in a screen is not proof of anticancer efficacy.",
           "image": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
           "contain": false,
           "kind": "Author's early laboratory photograph; illustrative context",
@@ -3095,7 +3099,7 @@
           "source_title": "Separate intent, result and interpretation",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "07",
@@ -3110,13 +3114,13 @@
           "source_title": "Separate intent, result and interpretation",
           "narrative_role": "limits",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "08",
           "title": "The claim",
           "subtitle": "organic chemistry",
-          "narration": "The grant-supported heterocycle work follows the distance between designing a molecule, identifying it, and knowing whether it matters.",
+          "narration": "A useful medicinal-chemistry story follows each evidentiary step without jumping from structure to treatment.",
           "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
           "contain": false,
           "kind": "Original research-context chemical photograph",
@@ -3125,9 +3129,10 @@
           "source_title": "The chemistry has the final word",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "id": "pub-histology-failure",
@@ -3146,7 +3151,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "materials failure film",
-          "narration": "To cut a useful section of a zebrafish specimen, orientation and compatible embedding materials must work together.",
+          "narration": "At the microtome, a useful zebrafish section never emerged. The photographed fragments are the actual outcome.",
           "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
           "contain": false,
           "kind": "Original laboratory processing evidence of unsuccessful attempt",
@@ -3221,7 +3226,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "materials failure film",
-          "narration": "The images identify an upstream materials bottleneck. A changed processing protocol needs its own experimental verification.",
+          "narration": "Agarose oriented the specimen; paraffin was intended to support cutting. Their separation suggests a materials problem but does not prove its mechanism.",
           "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
           "contain": false,
           "kind": "Original laboratory record, not a corrected protocol validation",
@@ -3230,7 +3235,7 @@
           "source_title": "A failed section is a usable finding",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "07",
@@ -3251,7 +3256,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "materials failure film",
-          "narration": "This is not a success story about histopathology. It is the story of what an incompatible preparation taught us to investigate.",
+          "narration": "A failed preparation deserves an accurate record and a redesigned experiment, not an animated happy ending.",
           "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
           "contain": false,
           "kind": "Documented orientation specimen image",
@@ -3260,9 +3265,10 @@
           "source_title": "Keep the record honest",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "id": "pub-cairo-microscope",
@@ -3281,7 +3287,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "personal object portrait",
-          "narration": "I purchased a microscope near Qasr El Einy in Cairo. It was not laboratory equipment assigned to me by a university.",
+          "narration": "The microscope began as a purchase near Qasr El Einy in Cairo. Bringing it back to Qatar was harder than carrying a box.",
           "image": "assets/archival-2026-10-12/cairo-mokattam-sunset-2026.webp",
           "contain": false,
           "kind": "Personal Cairo archival photograph, not a photograph of the microscope transport",
@@ -3290,7 +3296,7 @@
           "source_title": "It had to travel",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 16
+          "sec": 17
         },
         {
           "id": "02",
@@ -3320,7 +3326,7 @@
           "source_title": "It had to travel",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 15
         },
         {
           "id": "04",
@@ -3335,7 +3341,7 @@
           "source_title": "The point was time",
           "narrative_role": "evidence",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "05",
@@ -3356,7 +3362,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "personal object portrait",
-          "narration": "Ownership did not confer a scientific result; it made curiosity more practical by providing repeated access.",
+          "narration": "There were things I wanted to inspect without waiting for a university timetable. The instrument made those investigations possible.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
           "contain": false,
           "kind": "Original archival university context photo",
@@ -3386,7 +3392,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "personal object portrait",
-          "narration": "Years later, across developmental biology and materials science, I still recognise the value of being able to look for myself.",
+          "narration": "The value of owning a microscope was not prestige. It was the freedom to return to a question when I had the time.",
           "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
           "contain": false,
           "kind": "Original personal microscope-era archive",
@@ -3395,9 +3401,10 @@
           "source_title": "The habit stayed with me",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 16
         }
-      ]
+      ],
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "id": "pub-essay-life-between-diagnoses",
@@ -3416,7 +3423,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "personal documentary",
-          "narration": "I finished school at sixteen. The disease had already interrupted my last year, and my examination results closed the medical school path I had expected.",
+          "narration": "I finished high school at sixteen after illness repeatedly interrupted the year. My examination results cost me the medical-school path I had expected.",
           "image": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
           "contain": false,
           "kind": "Personal 2025 medical archive; not an image of every earlier attack",
@@ -3425,7 +3432,7 @@
           "source_title": "What the numbers cannot contain",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 17
+          "sec": 16
         },
         {
           "id": "02",
@@ -3491,7 +3498,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "personal documentary",
-          "narration": "I learned to investigate cells and materials while living with a disease whose symptoms could overwhelm even an ordinary day.",
+          "narration": "Years later I could sometimes anticipate an eosinophil count from the severity of a flare, but no number captured vomiting even water.",
           "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
           "contain": false,
           "kind": "Original freshman chemistry photograph, not clinical data",
@@ -3500,7 +3507,7 @@
           "source_title": "Research did not erase illness",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "07",
@@ -3521,7 +3528,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "personal documentary",
-          "narration": "The essay asks what disappears when a patient's life is reduced to a diagnostic label or a test result.",
+          "narration": "The essay is a first-person account of what happened, not a dramatic reenactment of a medical record.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "contain": false,
           "kind": "Contemporary author's portrait",
@@ -3532,7 +3539,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 13
         }
-      ]
+      ],
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "id": "pub-essay-ai-email",
@@ -3551,7 +3559,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "kinetic typography / editorial",
-          "narration": "A stranger receives a professional message. Instead of answering what it says, he becomes interested in whether software touched its grammar.",
+          "narration": "An academic receives an email from a second-language writer and answers not its argument but an accusation about the writing tool.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
           "contain": false,
           "kind": "Author's archival university library photo, not the recipient",
@@ -3626,7 +3634,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "kinetic typography / editorial",
-          "narration": "Software assistance does not automatically certify a bad argument; nor does an unedited mistake certify originality.",
+          "narration": "The same professional register appears in messages from native speakers and people with greater authority. Notice who gets challenged.",
           "image": "assets/home-archive/chemistry-chalkboard.jpg",
           "contain": true,
           "kind": "Original chemistry chalkboard archive, metaphorical context",
@@ -3656,7 +3664,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "kinetic typography / editorial",
-          "narration": "The essay challenges an etiquette where suspicion is directed disproportionately at people without the status to answer back.",
+          "narration": "Criticise ideas when they deserve criticism. A polished sentence is not proof that its writer has no mind.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "contain": false,
           "kind": "Actual editorial portrait of the author",
@@ -3667,7 +3675,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "id": "pub-essay-machine-language",
