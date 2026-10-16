@@ -1,0 +1,84 @@
+{
+  "slug": "what-a-bubble-can-do",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "da8474c183ddcdb846a8940fc78352bbc078c97b0d119945bb99124b436423b5",
+  "shots": [
+    {
+      "title": "Opening is not always gentle",
+      "kind": "original_diagram",
+      "image": "assets/films/plates/what-a-bubble-can-do-01.webp",
+      "museum": null,
+      "credit": "Conceptual drawing, not pulmonary patient footage"
+    },
+    {
+      "title": "Bringing the problem to a chamber",
+      "kind": "study_figure",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Published research figure; experimental geometry"
+    },
+    {
+      "title": "An advancing boundary",
+      "kind": "original_diagram",
+      "image": "assets/films/plates/what-a-bubble-can-do-02.webp",
+      "museum": null,
+      "credit": "Mechanistic illustration without fabricated parameters"
+    },
+    {
+      "title": "What we counted",
+      "kind": "original_diagram",
+      "image": "assets/films/plates/what-a-bubble-can-do-04.webp",
+      "museum": null,
+      "credit": "Illustrated readout; original data in linked paper"
+    },
+    {
+      "title": "Before the bubble arrives",
+      "kind": "study_figure",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Research context from primary publication"
+    },
+    {
+      "title": "A pharmacological question",
+      "kind": "original_diagram",
+      "image": "assets/films/plates/what-a-bubble-can-do-05.webp",
+      "museum": null,
+      "credit": "Conceptual comparison; consult paper for results and controls"
+    },
+    {
+      "title": "How far does the conclusion travel?",
+      "kind": "original_diagram",
+      "image": "assets/films/plates/what-a-bubble-can-do-06.webp",
+      "museum": null,
+      "credit": "Conceptual interpretation of scientific inference limits; no therapeutic recommendation"
+    },
+    {
+      "title": "The apparatus matters",
+      "kind": "owner_photo",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "museum": null,
+      "credit": "Archival laboratory workspace; not necessarily a recording of this specific experiment"
+    },
+    {
+      "title": "The hidden event",
+      "kind": "study_figure",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Published study context; doi:10.1152/japplphysiol.00574.2020"
+    }
+  ],
+  "film_title": "The Moment an Airway Reopens",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/directors-cuts-v2.json",
+  "primary_reference": "Journal of Applied Physiology primary paper doi:10.1152/japplphysiol.00574.2020",
+  "source_collection": "feature",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true
+}
