@@ -9,8 +9,10 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/making-medicines-keep-rough-cut.mp4",
-      "issues": [],
-      "technical_check": "pass",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -39,10 +41,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-airway-reopening-rough-cut.mp4",
-      "issues": [
-        "Export is stale relative to revised storyboard; rerender required"
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -81,8 +81,10 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-making-medicines-keep-rough-cut.mp4",
-      "issues": [],
-      "technical_check": "pass",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -91,8 +93,10 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-niosomes-rough-cut.mp4",
-      "issues": [],
-      "technical_check": "pass",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -191,10 +195,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-ace2-forms-rough-cut.mp4",
-      "issues": [
-        "Export is stale relative to revised storyboard; rerender required"
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -203,10 +205,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-microfluidic-virus-rough-cut.mp4",
-      "issues": [
-        "Export is stale relative to revised storyboard; rerender required"
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -225,10 +225,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-food-printing-rough-cut.mp4",
-      "issues": [
-        "Export is stale relative to revised storyboard; rerender required"
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -237,10 +235,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-ceramics-printing-rough-cut.mp4",
-      "issues": [
-        "Export is stale relative to revised storyboard; rerender required"
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -279,8 +275,10 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-histology-failure-rough-cut.mp4",
-      "issues": [],
-      "technical_check": "pass",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -406,11 +404,10 @@
     },
     {
       "slug": "feature-what-survives-the-experiment",
-      "seconds": 168.0,
+      "seconds": 156.0,
       "expected": 156,
       "source": "assets/films/library-v2/feature-what-survives-the-experiment-rough-cut.mp4",
       "issues": [
-        "Timeline duration differs from source storyboard",
         "Export is stale relative to revised storyboard; rerender required"
       ],
       "technical_check": "needs attention",
