@@ -526,3 +526,12 @@ html[data-rx-page="archive"] .rx-labcoat2016-link,
 html[data-rx-page="archive"] .current-era .now-grid a {
   color:#87412f;
 }
+
+/* Final homepage contrast sweep, 16 October 2026: specific document links
+   and research-horizon label only. No layout, media, or content changes. */
+html[data-rx-page="home"] .rx-home-science-links a {
+  color:#87412f;
+}
+html[data-rx-page="home"] .rh-home-entry .rh-home-kicker {
+  color:#87412f;
+}
