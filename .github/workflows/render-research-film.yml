@@ -55,5 +55,7 @@ jobs:
           git add assets/films/what-survives-the-experiment.mp4 assets/films/what-survives-the-experiment.vtt assets/films/what-survives-build.json
           if ! git diff --cached --quiet; then
             git commit -m "Render open-source archival documentary [film-output]"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase FETCH_HEAD
             git push origin HEAD:${{ github.ref_name }}
           fi
