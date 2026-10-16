@@ -1,0 +1,362 @@
+{
+  "edition": "October 2026",
+  "collection": "Ruwaidix | Evidence in Motion",
+  "running_seconds": 120,
+  "rights_note": "Owner-supplied archival media or original editorial drawings only. Reconstructed historical and scientific illustrations never represent documentary photography, experimental results, or actual manuscript folios. Historical article accepted 15 October 2026; not labeled published.",
+  "films": [
+    {
+      "slug": "what-a-bubble-can-do",
+      "number": "02",
+      "title": "What a Bubble Can Do",
+      "topic": "Pulmonary mechanobiology",
+      "tone": "forensic",
+      "placement": "/research/pulmonary-epithelial-injury.html",
+      "source": "/research/pulmonary-epithelial-injury.html",
+      "publication": "https://doi.org/10.1152/japplphysiol.00574.2020",
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A moving interface",
+          "kind": "ANIMATED EXPLANATION",
+          "visual": "bubble",
+          "narration": "An airway can reopen and still be injured. As an air bubble advances through liquid, it leaves a moving boundary that the epithelial cells cannot simply ignore.",
+          "credit": "Conceptual drawing. Not experimental or clinical footage.",
+          "link": "/research/pulmonary-epithelial-injury.html"
+        },
+        {
+          "id": "02",
+          "title": "A controlled question",
+          "kind": "PUBLISHED SCIENTIFIC FIGURE",
+          "visual": "figure",
+          "narration": "The question in our experiments was physical before it was pharmacological. Could the passage of that interface damage a cultured monolayer, even without the full complexity of a lung?",
+          "credit": "Published flow-chamber figure: research context only.",
+          "image": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "link": "/research/pulmonary-epithelial-injury.html"
+        },
+        {
+          "id": "03",
+          "title": "Parallel-plate flow chamber",
+          "kind": "ANIMATED EXPLANATION",
+          "visual": "chamber",
+          "narration": "We worked with L2 alveolar epithelial cells in a parallel-plate flow chamber. The chamber let us expose cells to a controlled advancing air–liquid interface.",
+          "credit": "Diagram of chamber geometry. Schematic, not measured dimensions.",
+          "link": "/research/pulmonary-epithelial-injury.html"
+        },
+        {
+          "id": "04",
+          "title": "Cells after exposure",
+          "kind": "SCIENTIFIC METHOD",
+          "visual": "figure",
+          "narration": "After exposure, fluorescent viability staining helped us count damaged cells. Images of the cytoskeleton gave another view of how cells responded to the mechanical event.",
+          "credit": "Actual fluorescence panels not available for verification here; retained publication illustration only, not invented cell imagery.",
+          "image": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "link": "/research/pulmonary-epithelial-injury.html"
+        },
+        {
+          "id": "05",
+          "title": "What the assay sees",
+          "kind": "ANIMATED EXPLANATION",
+          "visual": "assay",
+          "narration": "Those colored fields were measurements, not illustrations of an entire organ. A signal could document injury without telling us, on its own, which molecular mechanism caused it.",
+          "credit": "Illustrative assay logic; no invented readings.",
+          "link": "/research/pulmonary-epithelial-injury.html"
+        },
+        {
+          "id": "06",
+          "title": "Before the moving interface",
+          "kind": "SCIENTIFIC METHOD",
+          "visual": "figure",
+          "narration": "We also investigated whether changing the cells before exposure could alter their susceptibility. That was a test of response under specified conditions, not a claim that a treatment protects patients.",
+          "credit": "Publication figure, not patient-treatment evidence.",
+          "image": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "link": "/research/pulmonary-epithelial-injury.html"
+        },
+        {
+          "id": "07",
+          "title": "The measure and its limits",
+          "kind": "ANIMATED EXPLANATION",
+          "visual": "chamber",
+          "narration": "Making a result reproducible meant keeping the chamber, timing, controls, and image analysis intelligible. The harder part came afterward: deciding what those measurements actually allowed us to say.",
+          "credit": "Explanatory geometry only.",
+          "link": "/research/pulmonary-epithelial-injury.html"
+        },
+        {
+          "id": "08",
+          "title": "An invisible injury",
+          "kind": "RESEARCH DOCUMENT",
+          "visual": "publication",
+          "narration": "An airway reopening looks like recovery from a distance. At cell scale, it can be another mechanical challenge. Our experiment gives that hidden event a way to be studied.",
+          "credit": "Original 2021 peer-reviewed paper credited in end card.",
+          "link": "/research/pulmonary-epithelial-injury.html"
+        }
+      ]
+    },
+    {
+      "slug": "two-materials-no-section",
+      "number": "03",
+      "title": "Two Materials. No Section.",
+      "topic": "Zebrafish histopathology / experimental failure",
+      "tone": "tactile",
+      "placement": "/stories/failed-zebrafish-histology.html",
+      "source": "/stories/failed-zebrafish-histology.html",
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The angle matters",
+          "kind": "ORIGINAL SPECIMEN PHOTOGRAPH",
+          "visual": "photo",
+          "narration": "Under a microscope, a zebrafish embryo can look remarkably clear. Cutting a useful series of sections is another matter. A small turn can change which anatomy a blade will reach.",
+          "credit": "Actual owner-supplied specimen photograph; image does not depict histological sections.",
+          "image": "/assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+          "link": "/stories/failed-zebrafish-histology.html"
+        },
+        {
+          "id": "02",
+          "title": "The orientation problem",
+          "kind": "ANIMATED EXPLANATION",
+          "visual": "agarose",
+          "narration": "I wanted to hold each specimen at the right angle before embedding it for histology. Two-percent agarose offered a way to keep that orientation fixed.",
+          "credit": "Illustrative diagram of 2% agarose pre-embedding. Not actual footage.",
+          "link": "/stories/failed-zebrafish-histology.html"
+        },
+        {
+          "id": "03",
+          "title": "Before the blade",
+          "kind": "ORIGINAL LABORATORY PHOTOGRAPH",
+          "visual": "photo",
+          "narration": "After processing, paraffin was supposed to support the block through the microtome. The workflow looked reasonable because each material solved a different practical problem.",
+          "credit": "Photograph from the actual attempted histology preparation.",
+          "image": "/assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+          "link": "/stories/failed-zebrafish-histology.html"
+        },
+        {
+          "id": "04",
+          "title": "The section that never formed",
+          "kind": "ORIGINAL FAILED EXPERIMENT",
+          "visual": "photo",
+          "narration": "But when the blade met the block, it did not produce the ribbon I needed. Two layers separated, and fragments collected where interpretable sections should have been.",
+          "credit": "Actual owner-supplied image of an unsuccessful paraffin/agarose attempt; no usable section resulted.",
+          "image": "/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+          "link": "/stories/failed-zebrafish-histology.html"
+        },
+        {
+          "id": "05",
+          "title": "Not a machine failure",
+          "kind": "MATERIAL INTERFACE",
+          "visual": "photo",
+          "narration": "The problem was not a dramatic malfunction of the microtome. What failed was the material assembly that the machine had been given to cut.",
+          "credit": "Original image documents the visibly separated specimen block.",
+          "image": "/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+          "link": "/stories/failed-zebrafish-histology.html"
+        },
+        {
+          "id": "06",
+          "title": "A question of materials",
+          "kind": "ANIMATED HYPOTHESIS",
+          "visual": "agarose",
+          "narration": "Agarose is water-loving; paraffin is not. Their different behavior offers a plausible explanation for the interface, but my photographs alone cannot prove the exact failure mechanism.",
+          "credit": "Material-interface explanation is a hypothesis, not an established causal analysis.",
+          "link": "/stories/failed-zebrafish-histology.html"
+        },
+        {
+          "id": "07",
+          "title": "No corrected protocol claimed",
+          "kind": "RESEARCH METHODS",
+          "visual": "agarose",
+          "narration": "Changing the agarose grade, processing conditions, or embedding strategy might have answered it. I did not establish which correction would work, and I will not call the attempt successful.",
+          "credit": "Alternatives are untested possibilities, not recommendations or successful results.",
+          "link": "/stories/failed-zebrafish-histology.html"
+        },
+        {
+          "id": "08",
+          "title": "The experimental record",
+          "kind": "ORIGINAL ARCHIVE",
+          "visual": "photo",
+          "narration": "I kept the photographs because they describe a real outcome: the specimen never became a usable section. An experiment can end before the measurement it was designed to produce.",
+          "credit": "Original failed attempt, unaltered.",
+          "image": "/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+          "link": "/stories/failed-zebrafish-histology.html"
+        }
+      ],
+      "media_stem": "two-materials-no-section-evidence-cut",
+      "variant_note": "Additional two-minute evidence cut. The previously published 150-second film and its captions remain available unmodified under the original filename."
+    },
+    {
+      "slug": "the-laboratory-we-carried-with-us",
+      "number": "04",
+      "title": "The Laboratory We Carried With Us",
+      "topic": "Chem Squad / QUACS / the scientific community",
+      "tone": "human",
+      "placement": "/chem-squad.html",
+      "source": "/chem-squad.html",
+      "secondary_placement": "/engagement.html",
+      "scenes": [
+        {
+          "id": "01",
+          "title": "An organic chemistry bench",
+          "kind": "OWNER-SUPPLIED ARCHIVE",
+          "visual": "photo",
+          "narration": "In 2016, we met around an organic chemistry bench. Myrrh, nutmeg, extraction questions, and the suspicion that a traditional medicinal claim needed more than an interesting smell.",
+          "credit": "Owner-supplied Chem Squad laboratory photograph; does not prove a particular extraction outcome.",
+          "image": "/assets/owner-archive-2026-10-16/chem-squad-lab-medicinal-plant-extracts.webp",
+          "link": "/chem-squad.html"
+        },
+        {
+          "id": "02",
+          "title": "From extract to evidence",
+          "kind": "EDITORIAL EXPLANATION",
+          "visual": "extract",
+          "narration": "It was easy to obtain an extract and much harder to say what it contained. Identifying a constituent would still be different from proving a useful biological effect.",
+          "credit": "Illustrative chemical interpretation. No drug efficacy implied.",
+          "link": "/chem-squad.html"
+        },
+        {
+          "id": "03",
+          "title": "Seven chemists",
+          "kind": "COLLECTIVE ARCHIVE",
+          "visual": "photo",
+          "narration": "The group that became Chem Squad included seven chemistry graduates. There was no grand institution behind us. We kept bringing papers, arguments, and new questions back to the conversation.",
+          "credit": "Verified Chem Squad member photo archive; group is independent, not an institutional laboratory.",
+          "image": "/assets/chem-squad-khaled-jama-mohamoud.webp",
+          "link": "/chem-squad.html"
+        },
+        {
+          "id": "04",
+          "title": "An ACS chapter of our own",
+          "kind": "ARCHIVAL PHOTOGRAPH",
+          "visual": "photo",
+          "narration": "Around that period, our student chapter of the American Chemical Society at Qatar University was creating a different kind of laboratory: one open to more students and the public.",
+          "credit": "Qatar University ACS chapter archive; Chem Squad and ACS are distinct initiatives.",
+          "image": "/archive/archive-7887.jpg",
+          "link": "/chem-squad.html"
+        },
+        {
+          "id": "05",
+          "title": "Other people learning",
+          "kind": "COMMUNITY DOCUMENTATION",
+          "visual": "photo",
+          "narration": "We organized demonstrations and scientific discussions. Through chapter activities, twenty-nine students had opportunities to train on instruments. The work was collective; the photographs deserve collective credit.",
+          "credit": "Collective ACS activity; no photograph is attributed to a specific 29-student training session without evidence.",
+          "image": "/archive/archive-7888.jpg",
+          "link": "/chem-squad.html"
+        },
+        {
+          "id": "06",
+          "title": "The chemistry festival",
+          "kind": "PERSONAL ARCHIVE",
+          "visual": "photo",
+          "narration": "Chemistry festivals taught me another form of precision: speaking clearly when the audience has every reason to question you, and resisting the urge to make a demonstration seem conclusive.",
+          "credit": "Original photograph of Mahmoud hosting the fifth Chemistry Festival.",
+          "image": "/archive/fifth-chemistry-festival-host.webp",
+          "link": "/chem-squad.html"
+        },
+        {
+          "id": "07",
+          "title": "The conversations continue",
+          "kind": "CHEM SQUAD MEMBER ARCHIVE",
+          "visual": "photo",
+          "narration": "As years passed, we moved into different specialties. Some conversations continued through weekly meetings, and some through disagreements sent across a phone long after a class had ended.",
+          "credit": "Member photograph is a personal archive, not footage of the weekly meetings.",
+          "image": "/assets/chem-squad-abdelrahman-adel-mahmoud-01.webp",
+          "link": "/chem-squad.html"
+        },
+        {
+          "id": "08",
+          "title": "A shared beginning",
+          "kind": "COLLECTIVE ARCHIVE",
+          "visual": "photo",
+          "narration": "There is no final group photograph that explains all of it. What the archive shows is simpler: people kept making time for scientific curiosity, even when nobody assigned it.",
+          "credit": "Chemistry gathering archive; respect equal credit and distinct scientific roles.",
+          "image": "/archive/archive-7886.jpg",
+          "link": "/chem-squad.html"
+        }
+      ]
+    },
+    {
+      "slug": "making-medicines-keep",
+      "number": "05",
+      "title": "Making Medicines Keep",
+      "topic": "Syrups, substitution and pharmaceutical reliability in Ayyubid-Mamluk Cairo",
+      "tone": "history",
+      "placement": "/index.html#writing",
+      "source_document": "Making_Medicines_Keep_HoPP_FINAL_SUBMISSION.docx",
+      "journal": "History of Pharmacy and Pharmaceuticals",
+      "status": "Accepted 15 October 2026; not yet reported as formally published",
+      "scenes": [
+        {
+          "id": "01",
+          "title": "When syrup changes",
+          "kind": "ORIGINAL EDITORIAL ILLUSTRATION",
+          "visual": "syrup",
+          "narration": "A syrup can fail quietly. It can sour, crystallize, thicken too far, or disguise an inferior ingredient. In a Cairo apothecary shop, that made preparation a question of judgment.",
+          "credit": "Reconstruction based on the author's historical research; not period footage or a primary source.",
+          "link": "/index.html#writing"
+        },
+        {
+          "id": "02",
+          "title": "The base and the form",
+          "kind": "ORIGINAL EDITORIAL ILLUSTRATION",
+          "visual": "syrup",
+          "narration": "A thirteenth-century manual, Minhāj al-dukkān, begins its syrup chapter with julāb: a base of sugar and rose water. Fruit or medicinal material gave the syrup its particular form.",
+          "credit": "Conceptual illustration; period text attributed to al-Kūhīn al-ʿAṭṭār. Avoid invented script.",
+          "link": "/index.html#writing"
+        },
+        {
+          "id": "03",
+          "title": "Qiwām",
+          "kind": "ORIGINAL EDITORIAL DIAGRAM",
+          "visual": "syrup",
+          "narration": "The work involved heating, removing foam, straining, and recognizing when the liquid had reached qiwām: an achieved consistency. This was a practical endpoint, not a number on a laboratory instrument.",
+          "credit": "Explanatory interpretation of the historical described process; not a laboratory measurement.",
+          "link": "/index.html#writing"
+        },
+        {
+          "id": "04",
+          "title": "After the fire is out",
+          "kind": "ORIGINAL EDITORIAL ILLUSTRATION",
+          "visual": "crystal",
+          "narration": "The manual also describes what to do when sugar crystallized or a preparation went wrong. A recipe had to account for failure after the fire was extinguished.",
+          "credit": "Historical possibility illustrated without claiming that this is an authentic medieval vessel.",
+          "link": "/index.html#writing"
+        },
+        {
+          "id": "05",
+          "title": "A prescription survives",
+          "kind": "EDITORIAL SOURCE INTERPRETATION",
+          "visual": "prescription",
+          "narration": "Another document, preserved among the Cairo Genizah papers, orders powdered ingredients to be kneaded with rose syrup. It records a therapeutic instruction, not proof that every ingredient reached the patient.",
+          "credit": "Source: Cambridge Genizah Or.1081 J39. Typeset editorial depiction; original manuscript scan deliberately not reproduced without permission.",
+          "link": "/index.html#writing"
+        },
+        {
+          "id": "06",
+          "title": "Substitute or adulteration?",
+          "kind": "SOURCE-GROUNDED CONCEPTUAL DIAGRAM",
+          "visual": "substitution",
+          "narration": "What if an ingredient was missing? The shop manual discussed substitutes under necessity, with rules tied to intended action and proportion. Replacement was not the same thing as concealed adulteration.",
+          "credit": "Conceptual text diagram; historically framed substitution not modern chemical/bioequivalence.",
+          "link": "/index.html#writing"
+        },
+        {
+          "id": "07",
+          "title": "Can a finished medicine be trusted?",
+          "kind": "ORIGINAL EDITORIAL ILLUSTRATION",
+          "visual": "scales",
+          "narration": "Market-oversight texts worried about false measures and deception. They also remind us of a patient’s difficult position: the finished liquid could conceal much of what happened during its preparation.",
+          "credit": "Interpretation of hisba literature; not a historical photograph or modern state regulation.",
+          "link": "/index.html#writing"
+        },
+        {
+          "id": "08",
+          "title": "The article",
+          "kind": "ACCEPTED SCHOLARLY MANUSCRIPT",
+          "visual": "publication",
+          "narration": "My article calls this pharmaceutical reliability, not an early version of modern manufacturing regulation. The craft, its limits, and its safeguards deserve to be understood on their own terms.",
+          "credit": "Manuscript accepted by History of Pharmacy and Pharmaceuticals on 15 October 2026. Typeset bibliographic title, not a fabricated journal cover.",
+          "link": "/index.html#writing"
+        }
+      ]
+    }
+  ],
+  "production_status": "Final screenplay and website integration verified; output produced automatically by GitHub Actions. Preserve all pre-existing film notebooks and original source records."
+}

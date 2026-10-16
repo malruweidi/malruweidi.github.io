@@ -25,6 +25,8 @@ jobs:
         run: node --test tests/cairo-microscope-film.test.cjs
       - name: Verify evidence figure preservation and expandable interpretation notes
         run: node --test tests/evidence-viewer.test.cjs
+      - name: Validate four new documentary films and their documented eight-chapter source pages
+        run: node --test tests/evidence-films.test.cjs
       - name: Check editorial wayfinding and chapter preservation
         run: node --test tests/editorial-wayfinding.test.mjs
       - name: Test lossless standalone stories and research dossiers
