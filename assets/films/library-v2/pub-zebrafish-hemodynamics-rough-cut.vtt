@@ -45,13 +45,13 @@ constrain an estimated velocity or physiological
 00:01:09.175 --> 00:01:09.727
 parameter.
 
-00:01:15.450 --> 00:01:19.161
+00:01:15.450 --> 00:01:19.168
 A frame sequence becomes a flow estimate only after
 
-00:01:19.161 --> 00:01:23.284
+00:01:19.168 --> 00:01:23.298
 timing and image analysis are explicit. Do not show a
 
-00:01:23.284 --> 00:01:26.170
+00:01:23.298 --> 00:01:26.190
 simulated velocity field as a measured one.
 
 00:01:32.450 --> 00:01:35.626

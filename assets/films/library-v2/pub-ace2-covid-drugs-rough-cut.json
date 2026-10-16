@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bf_emma",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "1873f53b188ecda98c77219a5b2886c0fd8a3082bc5d32893432ccf060d8db3b",
+  "sha256": "fd9fe54150b7a4b1e8a28da540cf13407d380744978a98807848f8a13e4aeb19",
   "shots": [
     {
       "title": "An enzyme, a receptor, a clinical question",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "d231e574d9ff5a661a3c8cfc59e4b6bb33e27d7b46775e82d7864089c3b8fa53"
+  "motion_shots": [],
+  "input_sha256": "67f475976320b8fcdbd7a6e9ca80dcf1a988067d27de515d088b445e575b54a6"
 }

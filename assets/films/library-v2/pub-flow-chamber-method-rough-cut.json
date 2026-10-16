@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "83967dea76bdabc0524f81e71b2d747e2ca998ea33d53f57cab968b8d2e8b6ef",
+  "sha256": "00d863ad96b467a5302466c143e1b697e412a86ac9d17b630914e2b13e9e20c4",
   "shots": [
     {
       "title": "How to make a reproducible injury",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "b833dec11d82918561e3e5fe5879aa51d7e8e344880acdde231de28faa73f248"
+  "motion_shots": [],
+  "input_sha256": "2b40230654ff2fa5335dd769facd479669a5e79bc9fce2f9d8ffe16369292007"
 }

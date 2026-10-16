@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_george",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "c4291c280a732a00b5418e8c6509d6b34a4e9070e66b6a779a7c28033bf3909a",
+  "sha256": "4580b260599a8a57eccc7042c580e16b65f57c656364e28594fd3f2ef1b7db96",
   "shots": [
     {
       "title": "A heartbeat in high-speed frames",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "d8a9859bc0f2f1adba5e86587ba3092e913ada9b4f903d674a64ba5c288fd73b"
+  "motion_shots": [],
+  "input_sha256": "628916bd075caaca8b9f38f35f1e0e5a685398d52f2d5ada93f4b9c049fe9367"
 }
