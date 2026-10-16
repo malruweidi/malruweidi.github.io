@@ -99,14 +99,15 @@
           "narration": "In the untreated bubble-exposed group, 54.7 percent of cells were dead. With dexamethasone pretreatment, it was 15.1 percent.",
           "image": "assets/films/art-v2/airway-injury-measured.svg",
           "contain": true,
-          "kind": "Redrawn summary of published in-vitro measurements; percent dead cells, means with SEM",
-          "credit": "Research data from Al-Ruweidi et al., Journal of Applied Physiology 130 (2021), DOI 10.1152/japplphysiol.00574.2020; author-created chart of reported means and SEM, not an original published figure",
+          "kind": "Author-created chart showing published in-vitro mean cell-death percentages; no uncertainty type inferred",
+          "credit": "Al-Ruweidi et al., J Appl Physiol 130 (2021), DOI 10.1152/japplphysiol.00574.2020. Only reported means redrawn; the original source's variability is not assigned an unverified error-bar type.",
           "link": "/research/pulmonary-epithelial-injury.html",
           "source_title": "What the experiment found",
           "narrative_role": "turning_point",
           "shot_treatment": "full_figure",
           "sec": 17,
-          "source_url": "https://doi.org/10.1152/japplphysiol.00574.2020"
+          "source_url": "https://doi.org/10.1152/japplphysiol.00574.2020",
+          "figure_standard": "reported_means_only_no_SEM_or_SD_assumption"
         },
         {
           "id": "07",
@@ -115,13 +116,14 @@
           "narration": "With transdehydroandrosterone, cell death was 16.1 percent. These were rat L2 cultures, exposed to a simulated airway-reopening event.",
           "image": "assets/films/art-v2/airway-injury-measured.svg",
           "contain": true,
-          "kind": "Redrawn summary of published in-vitro measurements; conceptual visual context",
-          "credit": "Research data from Al-Ruweidi et al., Journal of Applied Physiology 130 (2021), DOI 10.1152/japplphysiol.00574.2020; author-created chart of reported means and SEM, not an original published figure",
+          "kind": "Author-created chart showing published in-vitro mean cell-death percentages; no uncertainty type inferred",
+          "credit": "Al-Ruweidi et al., J Appl Physiol 130 (2021), DOI 10.1152/japplphysiol.00574.2020. Only reported means redrawn; the original source's variability is not assigned an unverified error-bar type.",
           "link": "/research/pulmonary-epithelial-injury.html",
           "source_title": "What the experiment found",
           "narrative_role": "limits",
           "shot_treatment": "full_figure",
-          "sec": 15
+          "sec": 15,
+          "figure_standard": "reported_means_only_no_SEM_or_SD_assumption"
         },
         {
           "id": "08",
