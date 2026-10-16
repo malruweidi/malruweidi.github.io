@@ -195,14 +195,14 @@ def recorded_speech(film, voice_dir):
 def render(film, args):
     OUTPUT.mkdir(parents=True,exist_ok=True)
     engine.FILM=OUTPUT
-    engine.TOTAL_SECONDS=120
+    engine.TOTAL_SECONDS=sum(int(s["sec"]) for s in film["shots"])
     # Overrides affect only this isolated process, never public film scripts.
     engine.fit_image=fit_image
     engine.overlay=overlay
     shots=[]
     for n, shot in enumerate(film["shots"],1):
-        shots.append(dict(shot,id=f"{n:02d}",subtitle="",contain=shot["kind"] in (
-            "study_figure","museum_public_domain","original_diagram","original_illustration")))
+        scientific = bool(re.search(r"figure|diagram|schematic|microscopy|published|manuscript|illustrat|model|concept", shot["kind"], re.I))
+        shots.append(dict(shot,id=f"{n:02d}",subtitle="",contain=scientific))
     with tempfile.TemporaryDirectory(prefix="ruwaidix-v2-") as tmp:
         work=Path(tmp)
         if args.voice_mode=="human":
@@ -223,8 +223,18 @@ def render(film, args):
         for shot,count in zip(shots,frames):
             image,meta=source_image(shot,work)
             frame,ov=engine.make_frame(shot,image,work)
+            video=engine.source_path(shot,"video",work) if shot.get("video") else None
+            if shot.get("required_video") and not video and not shot.get("videos"):
+                raise RuntimeError("Required original experimental footage unavailable")
+            if shot.get("videos"):
+                files=[]
+                for idx,url in enumerate(shot["videos"]):
+                    f=engine.source_path({"id":shot["id"]+str(idx),"video":url},"video",work)
+                    if not f:raise RuntimeError("Original microscopy montage unavailable")
+                    files.append(f)
+                video=engine.make_motion_montage(files,count/FPS,work,shot["id"])
             target=work/f"clip-{shot['id']}.mp4"
-            engine.make_clip(shot,image,None,frame,ov,count/FPS,target)
+            engine.make_clip(shot,image,video,frame,ov,count/FPS,target)
             images.append(target)
             sources.append({"title":shot["title"],"kind":shot["kind"],"image":shot.get("image"),
                             "museum":meta,"credit":shot["credit"]})
@@ -238,10 +248,10 @@ def render(film, args):
         run(["ffmpeg","-hide_banner","-loglevel","error","-y","-i",str(picture),
              "-i",str(audio),"-map","0:v","-map","1:a","-c:v","copy",
              "-af","loudnorm=I=-18:TP=-2:LRA=9","-c:a","aac","-b:a","192k",
-             "-t","120","-movflags","+faststart",str(destination)])
+             "-t",str(engine.TOTAL_SECONDS),"-movflags","+faststart",str(destination)])
         seconds=float(json.loads(run(["ffprobe","-v","error","-show_entries",
            "format=duration","-of","json",str(destination)]))["format"]["duration"])
-        if abs(seconds-120)>.3:raise AssertionError(f"Duration {seconds}")
+        if abs(seconds-engine.TOTAL_SECONDS)>.3:raise AssertionError(f"Duration {seconds}, expected {engine.TOTAL_SECONDS}")
         (OUTPUT/(film["slug"]+"-rough-cut.vtt")).write_text(
            captions(film,[len(v)/sr for v in voice]),encoding="utf-8")
         record={"slug":film["slug"],"status":"UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
