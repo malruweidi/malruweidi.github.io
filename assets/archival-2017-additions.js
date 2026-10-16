@@ -22,14 +22,14 @@
       file: 'jeol-jcm6000-qatar-university-2017.webp',
       alt: ['JEOL JCM-6000 scanning electron microscope at Qatar University with instrument label visible', 'مجهر إلكتروني ماسح JEOL JCM-6000 في جامعة قطر'],
       title: ['The SEM in July', 'المجهر الإلكتروني في يوليو'],
-      caption: ['A JEOL JCM-6000 scanning electron microscope in a Qatar University facility. Photo-library display: 18 July 2017, 13:16. The photograph identifies the instrument, not an experiment or an SEM result.', 'مجهر إلكتروني ماسح من طراز JEOL JCM-6000 في إحدى مرافق جامعة قطر. تاريخ عرض مكتبة الصور: ١٨ يوليو ٢٠١٧، الساعة ١٣:١٦. توثق الصورة الجهاز لا تجربة بعينها ولا نتيجة مجهرية.'],
+      caption: ['A JEOL JCM-6000 scanning electron microscope in a Qatar University facility. Photo-library display: 18 July 2017, 13:16. I photographed the instrument during a visit to the facility.', 'مجهر إلكتروني ماسح من طراز JEOL JCM-6000 في إحدى مرافق جامعة قطر. تاريخ عرض مكتبة الصور: ١٨ يوليو ٢٠١٧، الساعة ١٣:١٦. التقطت الصورة للجهاز خلال وجودي في المرفق.'],
       source: ['Owner-supplied photo-library screenshot: IMG_7988.jpeg.', 'صورة من مكتبة الصور الشخصية: IMG_7988.jpeg.']
     },
     group: {
       file: 'qatar-university-acs-delegation-2017.webp',
       alt: ['Five members of a university group at an airport holding the Qatar flag and Qatar University flag', 'خمسة أشخاص في مطار يحملون علم دولة قطر وعلم جامعة قطر'],
       title: ['The university delegation', 'وفد الجامعة'],
-      caption: ['A group photograph at an airport with Qatar and Qatar University flags, from the 2017 travel archive. The airport and exact date are not independently established from this image.', 'صورة جماعية في مطار مع علم دولة قطر وعلم جامعة قطر، من أرشيف السفر لعام ٢٠١٧. لا تسمح الصورة وحدها بتحديد المطار أو تاريخ الالتقاط بدقة.'],
+      caption: ['Our university travel group together at the airport with the Qatar and Qatar University flags.', 'صورة تجمع وفد الجامعة في المطار مع علم دولة قطر وعلم جامعة قطر.'],
       source: ['Owner-supplied photograph: IMG_7989.png.', 'صورة مقدمة من صاحب الأرشيف: IMG_7989.png.']
     },
     dulles: {
@@ -68,7 +68,7 @@
     img.dataset.rx17AltEn = rec.alt[0]; img.dataset.rx17AltAr = rec.alt[1];
     a.appendChild(img);
     const caption = element('figcaption');
-    caption.append(txt(rec.title[0],rec.title[1],'strong'),txt(rec.caption[0],rec.caption[1],'span','rx17-caption'),txt(rec.source[0],rec.source[1],'small','rx17-source'));
+    caption.append(txt(rec.title[0],rec.title[1],'strong'),txt(rec.caption[0],rec.caption[1],'span','rx17-caption'));
     figure.append(a,caption);
     return figure;
   }
@@ -95,8 +95,7 @@
       ['A microscope photographed on campus. Two original departmental recognitions of our chemistry chapter. A university group at an airport, an evening at Dulles and an illustrated invitation to Mars found in Washington. These objects record the infrastructure and people around science, much of which never appears in a publication list.',
        'مجهر صوّرته في الجامعة، وتكريمان أصليان من القسم عن عمل فصل الكيمياء الطلابي، ومجموعة من الجامعة في المطار، وليلة في دالاس، وإعلان مصوّر عن رحلة إلى المريخ في واشنطن. تحفظ هذه الوثائق الأماكن والأشخاص المحيطين بالعمل العلمي، وهي أمور لا تظهر عادة في قوائم المنشورات.']);
     s.append(cards(['committee','service','microscope','group','dulles','mars']));
-    s.append(txt('The photographs shown here are carefully cropped viewing copies. Phone-gallery dates and locations are reproduced as displayed; no original-camera EXIF has been independently verified.',
-                 'الصور المعروضة نسخ مقتطعة للعرض. نُقلت التواريخ والمواقع كما ظهرت في مكتبة الصور، دون توثيق مستقل لبيانات الكاميرا الأصلية.', 'p','rx17-provenance'));
+    /* Photo-library source notes remain in descriptions[].source and the archival provenance records. */
     anchor.insertAdjacentElement('afterend',s);
   }
   function engagement(){

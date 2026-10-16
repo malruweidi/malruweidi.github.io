@@ -53,8 +53,8 @@
     phrase('Three participants photographed together in front of the Qatar University Chemistry Festival backdrop. The printed photograph was supplied from my personal archive. The exact edition and capture date have not been independently established.','صورة تجمع ثلاثة مشاركين أمام خلفية مهرجان الكيمياء بجامعة قطر. الصورة الورقية من الأرشيف الشخصي، ولم يُتحقق بصورة مستقلة من دورة المهرجان أو تاريخ التقاطها.'));
     const media=el('div','rx26-figures');media.append(photo('qatar-university-chemistry-festival-colleagues.webp',
       phrase('Three people standing together in front of a Qatar University Chemistry Festival backdrop','ثلاثة أشخاص أمام خلفية مهرجان الكيمياء بجامعة قطر'),
-      phrase('Chemistry Festival · original printed photograph photographed by the archive owner · date unverified','مهرجان الكيمياء · صورة ورقية من الأرشيف الشخصي · التاريخ غير موثق')));
-    section.append(media,el('p','rx26-source',phrase('Source: owner-supplied photograph IMG_2068.jpeg, 16 October 2026. Individual identities are not inferred from the image.','المصدر: الصورة IMG_2068.jpeg المقدمة بتاريخ ١٦ أكتوبر ٢٠٢٦. لا تُستنتج هوية الأشخاص من الصورة.')));
+      phrase('Chemistry Festival · photograph from the original print','مهرجان الكيمياء · صورة من النسخة الورقية الأصلية')));
+    section.append(media);
     return section;
   }
   function acs(compact=false){const section=shell(compact?'rx26-acs-2019-history':'rx26-acs-2019-evidence',

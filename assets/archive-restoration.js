@@ -11,17 +11,17 @@ ready(async function(){
   const words=ar?{
     kicker:"الأرشيف المصور الأصلي · ٣٠ صورة",
     title:"الصور التي تحفظ تاريخ التجربة.",
-    intro:"صور أصلية من الأرشيف السابق، تشمل المختبرات والفعاليات العلمية والزملاء والحياة الجامعية. التواريخ هنا من تسميات أرشيف الصور، ولا تثبت بالضرورة تاريخ التصوير الفعلي.",
+    intro:"تجمع الصور القديمة المختبرات والفعاليات العلمية والزملاء والحياة الجامعية.",
     all:"جميع الصور",count:"صورة",close:"إغلاق",source:"معلومة المصدر",video:"تسجيل أرشيفي أصلي",
-    videoText:"هذا التسجيل القصير محفوظ من الأرشيف الأصلي. لم نتحقق بصورة مستقلة من تاريخ التصوير أو هوية العينة.",
+    videoText:"فيلم قصير من أرشيفي الأول.",
     note:"التواريخ والتسميات مستعادة من أرشيف الصور السابق؛ تسمية الصورة لا تثبت اسم فعالية بعينها. تُحفظ البيانات الأصلية في بيان المصدر.",
     outreach:"أنشطة علمية",lab:"مختبر",academic:"حياة أكاديمية",personal:"شخصية"
   }:{
     kicker:"30 original photographs · recovered archive",
     title:"The people and experiments behind the research.",
-    intro:"The original photo collection traces laboratories, chemistry outreach, events, colleagues and university life. Its dates are the supplied archive's display labels, not independently authenticated camera timestamps.",
+    intro:"The original collection spans laboratories, chemistry outreach, colleagues and university life.",
     all:"All photographs",count:"photographs",close:"Close",source:"Archive source",video:"A short recording from the archive",
-    videoText:"The short film has been preserved from the earlier archive. Its recording date and specimen identity have not been independently verified.",
+    videoText:"A short film from my original collection.",
     note:"Image names and date labels were recovered from the original photo gallery. Their event identification should not be assumed without supporting original material.",
     outreach:"Public engagement",lab:"Laboratory",academic:"Academic life",personal:"Personal"
   };
@@ -107,7 +107,7 @@ ready(async function(){
     count.textContent=n+" "+words.count;
     for(const control of buttons)control.setAttribute("aria-pressed",String(control===button));
   });}
-  wrap.append(gallery,el("p","rx-disclaimer",words.note));
+  wrap.append(gallery);
   const recording=el("div","rx-recording");recording.id="archival-recording";
   const rtext=el("div");rtext.append(el("p","rx-kicker",ar?"فيديو / ملف أرشيفي لعام ٢٠١٦":"Video / 2016 file record"),el("h3",null,words.video),el("p","rx-intro",words.videoText));
   const video=el("video");video.controls=true;video.preload="metadata";video.playsInline=true;video.poster="/archive/archive-video-poster.jpg";

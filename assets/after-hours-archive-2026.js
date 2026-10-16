@@ -78,7 +78,7 @@
       const more=el('a','rxHours-more');more.href='/archive.html#rx-hours-archive';
       trans(more,caption('Explore the complete contact sheet ↗','شاهد جميع اللقطات ↗'));wrap.append(more);
     }else{
-      const aside=el('p','rxHours-provenance');trans(aside,caption('Source: owner-supplied photographic and video archive. No date, location, personal identity or experiment is inferred solely from these images. Laboratory footage is documentary context, not published analytical data.','المصدر: الأرشيف الشخصي من الصور والمقاطع. لا يُستنتج تاريخ أو مكان أو هوية أو تجربة من الصور وحدها. لقطات المختبر توثيق للمشهد، وليست بيانات تحليلية منشورة.'));wrap.append(aside);
+      /* Recording provenance is kept in assets/after-hours-provenance-2026-10-16.json. */
     }
     sec.append(wrap);
     if(page==='stories'){
