@@ -113,8 +113,8 @@ def draw_card(photo,t1,t2,kind,index):
     canvas.paste(picture,(330,0))
     d=ImageDraw.Draw(canvas)
     d.line((60,270,155,270),fill=ACCENT,width=4)
-    d.text((55,315),"IT DID NOT",font=font(42,True),fill=COLOR)
-    d.text((55,383),"CUT AS ONE.",font=font(42,True),fill=COLOR)
+    d.text((55,315),"THE LAYERS",font=font(33,True),fill=COLOR)
+    d.text((55,383),"SEPARATED.",font=font(33,True),fill=COLOR)
     d.text((61,645),"Original experiment · detail crop",
            font=font(12),fill=(215,205,184))
     return canvas
