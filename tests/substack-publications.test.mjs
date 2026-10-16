@@ -53,7 +53,7 @@ test("the writing collection has stable metadata, RTL and accessible navigation"
 });
 test("each article is discoverable locally without introducing offsite search routes",()=>{
  const index=JSON.parse(read("assets/discovery-index.json"));
- assert.equal(index.items.length,57);
+ assert.equal(index.items.length,58);
  assert.ok(index.items.some(x=>x.url==="/writing.html"));
  for(const p of posts.entries)assert.ok(index.items.some(x=>x.url==="/writing.html#essay-"+p.id),p.id);
 });
