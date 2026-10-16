@@ -13,6 +13,8 @@ jobs:
       - uses: actions/checkout@v5
       - name: Check links, media, JavaScript and scientific attribution
         run: node scripts/site-integrity.cjs
+      - name: Verify restored archival binary bytes and photo/video provenance
+        run: node --test tests/owner-media-restoration.test.cjs
       - name: Verify film sources, captions and non-destructive discovery
         run: node --test tests/moving-evidence.test.cjs
       - name: Verify filmed research provenance, media checksum and bilingual transcript

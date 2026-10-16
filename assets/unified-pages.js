@@ -119,7 +119,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
   style.href = '/assets/after-hours-archive-2026.css?v=20261016';
   document.head.appendChild(style);
   const script = document.createElement('script');
-  script.src = '/assets/after-hours-archive-2026.js?v=20261016';
+  script.src = '/assets/after-hours-archive-2026.js?v=20261016b';
   script.defer = true;
   script.dataset.rxHours2026 = '';
   document.head.appendChild(script);

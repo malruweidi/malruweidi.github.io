@@ -1,7 +1,7 @@
 {
   "schema": "ruwaidix-owner-media-intake-2026-v1",
   "date": "2026-10-13",
-  "website_media_status": "Source provenance and conditional site integration are committed; image/video binaries require separate upload into assets/owner-archive-2026-10-13/; never claim media are live before that.",
+  "website_media_status": "All 10 publication-ready media binaries committed to main via pull request #30 on 2026-10-16. Existing conditional website galleries can render the assets; browser playback and colleague publication clearance should be separately reviewed.",
   "source_files": [
     "IMG_5700.jpeg",
     "IMG_5692.jpeg",
@@ -10,7 +10,8 @@
     "IMG_5023.jpeg",
     "IMG_4466.jpeg",
     "IMG_30D354C2-F55F-4422-AD33-349D5B7BA5C2.jpeg",
-    "941df66636ad466db5ecdb3ecf919c46.mov"
+    "941df66636ad466db5ecdb3ecf919c46.mov",
+    "IMG_4241.jpeg"
   ],
   "expected_public_paths": [
     "assets/owner-archive-2026-10-13/library-lab-coat-cold.webp",
@@ -21,7 +22,8 @@
     "assets/owner-archive-2026-10-13/hbku-research-visit.webp",
     "assets/owner-archive-2026-10-13/sterlitech-ro-nf-membrane-setup.webp",
     "assets/owner-archive-2026-10-13/khaled-jama-thesis-reaction.mp4",
-    "assets/owner-archive-2026-10-13/khaled-jama-thesis-reaction-poster.webp"
+    "assets/owner-archive-2026-10-13/khaled-jama-thesis-reaction-poster.webp",
+    "assets/owner-archive-2026-10-13/ramadan-microscopy-room.webp"
   ],
   "provenance": [
     "Owner identifies library coat as protection from cold air conditioning, not worn over shorts in a laboratory.",
@@ -31,6 +33,19 @@
     "Al Thakhira crowd image relates to event where owner judged student research; no judging portrayed.",
     "HBKU photo records a research visit rather than employment or authorship.",
     "Sterlitech equipment relates to reverse osmosis and nanofiltration; performance data are not inferred.",
-    "Video shows Khaled Jama Mohamoud explaining a chemistry reaction related to his thesis; mechanism unverified."
-  ]
+    "Video shows Khaled Jama Mohamoud explaining a chemistry reaction related to his thesis; mechanism unverified.",
+    "IMG_4241.jpeg is the owner's photograph of the Ramadan microscopy room; it is not a published scientific figure or proof of the experiment's outcome."
+  ],
+  "restoration": {
+    "date": "2026-10-16",
+    "pull_request": 30,
+    "merge_commit": "f4868cdf9a3332844f66b93c91cef44af78f8097",
+    "assets_committed": 10,
+    "derivative_encoding": "WebP photographs, H.264/AAC MP4 video and WebP poster",
+    "publication_notes": [
+      "Faces of minors obscured in school revisit image",
+      "Capture dates are not inferred",
+      "Colleague is explicitly attributed"
+    ]
+  }
 }
