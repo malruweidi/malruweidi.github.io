@@ -204,7 +204,7 @@ def build_vtt(film,starts,spoken_seconds):
             first=start+.52+length*i/2
             last=start+.52+length*(i+1)/2
             cues.extend((old.vtt_time(first)+" --> "+old.vtt_time(last),chunk,""))
-    (FILMS/(film["slug"]+".vtt")).write_text("\n".join(cues)+"\n",encoding="utf-8")
+    (FILMS/(film.get("media_stem",film["slug"])+".vtt")).write_text("\n".join(cues)+"\n",encoding="utf-8")
 
 def voice_mix(film,speech,sr,frames,workspace):
     n=int(SECONDS*sr)
@@ -299,7 +299,7 @@ def render_one(film,tts):
         joined=work/"joined.mp4"
         cmd(["ffmpeg","-hide_banner","-loglevel","error","-y","-f","concat","-safe","0","-i",str(playlist),"-c","copy",str(joined)])
         soundtrack=voice_mix(film,speech,sr,frames,work)
-        final=FILMS/(film["slug"]+".mp4")
+        final=FILMS/(film.get("media_stem",film["slug"])+".mp4")
         cmd(["ffmpeg","-hide_banner","-loglevel","error","-y","-i",str(joined),"-i",str(soundtrack),
             "-map","0:v:0","-map","1:a:0","-c:v","copy","-af","loudnorm=I=-18:TP=-2:LRA=11",
             "-c:a","aac","-b:a","160k","-t","120","-movflags","+faststart",str(final)])
