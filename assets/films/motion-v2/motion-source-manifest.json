@@ -1,0 +1,50 @@
+{
+  "status": "MOTION INSERTS ARE UNAPPROVED CONCEPTUAL ANIMATIONS",
+  "generator": "Pillow 2D renderer + FFmpeg H.264; no paid models, voices or stock assets",
+  "clips": [
+    {
+      "id": "airway-interface",
+      "title": "Airway reopening: a moving liquid boundary",
+      "source": "Al-Ruweidi et al., J Appl Physiol 130, 1143–1151 (2021), doi:10.1152/japplphysiol.00574.2020",
+      "disclosure": "Original mechanistic illustration of the moving air–liquid boundary; not the experiment's recorded video, geometry, scale, or measurements",
+      "seconds": 12.0,
+      "sha256": "2582e9da81f8755234c7c50a241f37425d2a97a7bb00159056cc9cd35f8bd986",
+      "filename": "airway-interface.mp4",
+      "rights": "Original computer-generated editor illustration; scientifically conceptual, not observed footage",
+      "public_release_approved": false
+    },
+    {
+      "id": "niosomes-nebulization",
+      "title": "The nebulization challenge",
+      "source": "Author's ongoing master's research into inhalable dexamethasone-containing niosomal vesicles",
+      "disclosure": "Original process explanation; does not assert that any vesicle survived or failed nebulization; no measured size or deposition data",
+      "seconds": 12.0,
+      "sha256": "0c53ec3765b8ad3ddbf480dc370844c384c00efc21217d461c007742bf38b123",
+      "filename": "niosomes-nebulization.mp4",
+      "rights": "Original computer-generated editor illustration; scientifically conceptual, not observed footage",
+      "public_release_approved": false
+    },
+    {
+      "id": "histology-interface",
+      "title": "When agarose and paraffin separate",
+      "source": "Owner-supplied photographs of unsuccessful zebrafish specimen embedding and microtomy",
+      "disclosure": "Original mechanism hypothesis based on observed block separation; does not claim that polymer interface chemistry or failure mechanism was proven",
+      "seconds": 12.0,
+      "sha256": "7bcd5e42cdc73e1eb46cb9a268af562274cd1478be41b7e602cc3f5b82d402af",
+      "filename": "histology-interface.mp4",
+      "rights": "Original computer-generated editor illustration; scientifically conceptual, not observed footage",
+      "public_release_approved": false
+    },
+    {
+      "id": "historical-syrup",
+      "title": "Consistency, storage, crystallization",
+      "source": "Making Medicines Keep: Syrups, Substitution, and Pharmaceutical Reliability in Ayyubid-Mamluk Cairo (accepted 15 October 2026)",
+      "disclosure": "Illustrative material sequence, not period footage, a recipe reconstruction, chemical time-lapse, or evidence of a particular Cairo shop",
+      "seconds": 12.0,
+      "sha256": "57032be164c16a530b5da72e51eab9e99cef44b6a571688422a175d398627ad4",
+      "filename": "historical-syrup.mp4",
+      "rights": "Original computer-generated editor illustration; scientifically conceptual, not observed footage",
+      "public_release_approved": false
+    }
+  ]
+}
