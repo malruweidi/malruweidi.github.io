@@ -2732,15 +2732,16 @@
           "title": "The furnace has a vote",
           "subtitle": "biomaterials editorial",
           "narration": "Ceramic processing and densification impose constraints beyond the original digital model. The final properties must be measured.",
-          "image": "assets/films/art/bioceramic-lattice.svg",
+          "image": "assets/films/art-v2/ceramics-sintering-constraints.svg",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original conceptual scientific illustration, not a published experimental figure",
+          "credit": "Ruwaidix original interpretive visual about material processing and translation; no measured test outcomes or clinical results depicted",
           "link": "/#publications",
           "source_title": "The furnace has a vote",
           "narrative_role": "evidence",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/films/art/bioceramic-lattice.svg"
         },
         {
           "id": "05",
@@ -2779,15 +2780,16 @@
           "title": "From bench to clinic",
           "subtitle": "biomaterials editorial",
           "narration": "Clinical application also depends on repeatability, sterilisation and regulatory pathways; each requires evidence distinct from printability.",
-          "image": "assets/films/art/bioceramic-lattice.svg",
+          "image": "assets/films/art-v2/ceramics-translational-gates.svg",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original conceptual scientific illustration, not a published experimental figure",
+          "credit": "Ruwaidix original interpretive visual about material processing and translation; no measured test outcomes or clinical results depicted",
           "link": "/#publications",
           "source_title": "From bench to clinic",
           "narrative_role": "limits",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 14,
+          "original_image": "assets/films/art/bioceramic-lattice.svg"
         },
         {
           "id": "08",
