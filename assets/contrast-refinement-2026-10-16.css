@@ -1,0 +1,27 @@
+/* Ruwaidix contrast corrections, 16 October 2026. Scoped, additive, no layout or content changes. */
+html[data-rx-page="home"] .rx-field-caption,
+html[data-rx-page="home"] .quacs-foot,
+html[data-rx-page="home"] .quacs-foot a,
+html[data-rx-page="home"] .rx-provenance,
+html[data-rx-page="home"] .methodlegend { color:#435B55; }
+html[data-rx-page="home"] .quacs-feature .rx-science-eyebrow,
+html[data-rx-page="home"] .quacs-feature a,
+html[data-rx-page="home"] .chem-squad-teaser-link { color:#88452F; }
+html[data-rx-page="home"] .archive-callout figcaption { color:#435B55; }
+html[data-rx-page="home"] figcaption:not([class]) { color:#435B55; }
+html[data-rx-page="stories"] .stories-chapter-tinted p,
+html[data-rx-page="stories"] .stories-chapter p { color:#435B55; }
+html[data-rx-page="stories"] .stories-kicker { color:#88452F; }
+html[data-rx-page="archive"] .filmstrip .eyebrow { color:#F3EDE1; }
+html[data-rx-page="archive"] .rx-field-source,
+html[data-rx-page="archive"] .current-era figcaption,
+html[data-rx-page="archive"] .footnote,
+html[data-rx-page="archive"] .rx-heritage-disclaimer { color:#435B55; }
+html[data-rx-page="archive"] .rx-labcoat2016-eyebrow,
+html[data-rx-page="archive"] .rx-labcoat2016-link,
+html[data-rx-page="archive"] .current-era a { color:#88452F; }
+html[data-rx-page="writing"] .rxw-kicker { color:#88452F; }
+html[data-rx-page="writing"] .rxw-book-announcement a { color:#88452F; }
+html[data-rx-page="research-detail"] .rx-deep-kicker { color:#88452F; }
+html[data-rx-page="reading-map"] .map-hero a { color:#F3D0B6; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
