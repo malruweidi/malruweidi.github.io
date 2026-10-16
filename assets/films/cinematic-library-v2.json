@@ -4893,7 +4893,7 @@
         {
           "id": "01",
           "title": "An organic chemistry bench",
-          "narration": "In 2016, we met around an organic chemistry bench. Myrrh, nutmeg, extraction questions, and the suspicion that a traditional medicinal claim needed more than an interesting smell.",
+          "narration": "There were days when a reaction had more observers than glassware. In Chem Squad, a bench was also a place to argue through the chemistry together.",
           "image": "assets/owner-archive-2026-10-16/chem-squad-lab-medicinal-plant-extracts.webp",
           "kind": "OWNER-SUPPLIED ARCHIVE",
           "credit": "Owner-supplied Chem Squad laboratory photograph; does not prove a particular extraction outcome.",
@@ -4910,7 +4910,7 @@
           "credit": "Illustrative chemical interpretation. No drug efficacy implied.",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "03",
@@ -4926,13 +4926,13 @@
         {
           "id": "04",
           "title": "An ACS chapter of our own",
-          "narration": "Around that period, our student chapter of the American Chemical Society at Qatar University was creating a different kind of laboratory: one open to more students and the public.",
+          "narration": "Building the ACS student chapter demanded work invisible in a spectrum: persuading people to join, finding instruments and keeping questions moving.",
           "image": "archive/archive-7887.jpg",
           "kind": "ARCHIVAL PHOTOGRAPH",
           "credit": "Qatar University ACS chapter archive; Chem Squad and ACS are distinct initiatives.",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 16
+          "sec": 13
         },
         {
           "id": "05",
@@ -4943,7 +4943,7 @@
           "credit": "Collective ACS activity; no photograph is attributed to a specific 29-student training session without evidence.",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "06",
@@ -4954,7 +4954,7 @@
           "credit": "Original photograph of Mahmoud hosting the fifth Chemistry Festival.",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "07",
@@ -4965,20 +4965,21 @@
           "credit": "Member photograph is a personal archive, not footage of the weekly meetings.",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 16
         },
         {
           "id": "08",
           "title": "A shared beginning",
-          "narration": "There is no final group photograph that explains all of it. What the archive shows is simpler: people kept making time for scientific curiosity, even when nobody assigned it.",
+          "narration": "What survived was not one experiment or a photograph with familiar faces. It was the habit of calling each other back to the chemistry.",
           "image": "archive/archive-7886.jpg",
           "kind": "COLLECTIVE ARCHIVE",
           "credit": "Chemistry gathering archive; respect equal credit and distinct scientific roles.",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 15
+          "sec": 13
         }
-      ]
+      ],
+      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
     },
     {
       "id": "feature-what-survives-the-experiment",
@@ -4994,7 +4995,7 @@
         {
           "id": "01",
           "title": "The anatomy room",
-          "narration": "My first anatomy lesson was not a drawing. A fox lay on the table. I wanted to understand how its parts worked together.",
+          "narration": "The animal on our anatomy table was a fox. I was still in school, wanting to know how a real body was arranged.",
           "image": "assets/home-archive/early-science-talk.jpg",
           "kind": "photograph",
           "credit": "Personal photographic archive; school anatomy lesson, 2011",
@@ -5050,7 +5051,7 @@
         {
           "id": "06",
           "title": "When the polymer resisted",
-          "narration": "A polymer would not behave as planned. I learned how little a plausible structure tells us about a real material.",
+          "narration": "A polymer preparation refused to behave. The photograph belongs here because the material was not obliged to obey my proposal.",
           "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
           "kind": "photograph",
           "credit": "Original record of unsuccessful polymer trials; no successful dissolution is claimed",
@@ -5067,7 +5068,7 @@
           "credit": "Original zebrafish cardiovascular microscopy; not direct evidence of every claim in the narration",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 9
         },
         {
           "id": "08",
@@ -5078,7 +5079,7 @@
           "credit": "Original unsuccessful zebrafish histology attempt",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 10
         },
         {
           "id": "09",
@@ -5116,15 +5117,16 @@
         {
           "id": "12",
           "title": "What can be relied upon?",
-          "narration": "I also study how earlier pharmacists made medicines dependable. Across centuries and disciplines, I keep returning to what the evidence can actually bear.",
+          "narration": "The Cairo pharmacists in my historical research confronted a different question: what made medicine dependable? My subjects changed; the obligation to examine evidence did not.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "kind": "photograph",
           "credit": "Contemporary portrait and editorial typography; not a historical manuscript facsimile",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 12
         }
-      ]
+      ],
+      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
     },
     {
       "id": "feature-cairo-microscope",
@@ -5140,24 +5142,24 @@
         {
           "id": "01",
           "title": "An ordinary morning",
-          "narration": "This is my microscope at home in Qatar. The photograph was posted on 1 July 2017; the original camera date is not verified.",
+          "narration": "On the morning this picture was posted, my microscope stood at home in Qatar. There is nothing spectacular about the room. That was the point.",
           "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
           "kind": "archive",
           "credit": "Original personal photograph · full image",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "02",
           "title": "Qasr El Einy → Qatar",
-          "narration": "I bought the instrument in the Qasr El Einy area of Cairo. Getting it to Qatar took considerable effort. This journey is remembered, not photographed.",
+          "narration": "I bought it near Qasr El Einy in Cairo. Transporting it to Qatar was a nuisance, but I could now examine specimens beyond scheduled laboratory hours.",
           "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
           "kind": "route",
           "credit": "First-person recollection · typographic representation, not travel footage",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "03",
@@ -5179,7 +5181,7 @@
           "credit": "Separate laboratory internship photograph · contextual only",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 13
         },
         {
           "id": "05",
@@ -5228,15 +5230,16 @@
         {
           "id": "09",
           "title": "The microscope from Cairo",
-          "narration": "The instrument came from Cairo. The photograph is from Qatar. What I remember most is having the time to ask questions that belonged to me.",
+          "narration": "An instrument at home cannot replace a research laboratory. Mine let me begin questions before anybody assigned an experiment.",
           "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
           "kind": "archive",
           "credit": "Original personal photograph · no experiment claimed",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 11
         }
-      ]
+      ],
+      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
     },
     {
       "id": "feature-ring-that-never-closed",
@@ -5252,13 +5255,13 @@
         {
           "id": "01",
           "title": "An unfinished drawing",
-          "narration": "On the proposal, the final structure was an imidazopyridine. The scheme had a destination before we had made the molecule.",
+          "narration": "Our 2018 proposal drew a molecule we wanted to make. Its ring was closed on paper. In the laboratory, that was another matter.",
           "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
           "kind": "RESEARCH PROPOSAL / 2018",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 12
         },
         {
           "id": "02",
@@ -5269,18 +5272,18 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 12
         },
         {
           "id": "03",
           "title": "The closure did not happen",
-          "narration": "By the final report, we could not claim the intended heterocycles. The proposed ring closure had not delivered those compounds. Whatever we wrote next had to begin there.",
+          "narration": "We could not claim the intended imidazopyridines. A proposed synthetic pathway is not an isolated compound, however persuasive its arrows look.",
           "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp",
           "kind": "OBSERVED PROJECT OUTCOME / 2021",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13
+          "sec": 10
         },
         {
           "id": "04",
@@ -5346,20 +5349,21 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 11
         },
         {
           "id": "10",
           "title": "What the report could say",
-          "narration": "COVID restrictions interrupted later protein-level follow-up. Our final report contained characterized imines, chemical observations, and unfinished biological questions. It did not contain the ring we had planned.",
+          "narration": "What remained were characterized imines, a colour response and exploratory biological work with unresolved mechanisms. The missing ring belongs nowhere in the final frame.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
           "kind": "FINAL REPORT / 2021 / ACCESS RESTRICTIONS",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 11
         }
-      ]
+      ],
+      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
     },
     {
       "id": "feature-airway-reopening-evidence-cut",
@@ -5375,13 +5379,13 @@
         {
           "id": "01",
           "title": "Reopening is not always gentle",
-          "narration": "A narrowed, fluid-filled airway can reopen as air moves through it. Yet the advancing air–liquid boundary may impose forces on the very epithelial cells it passes.",
+          "narration": "Watch the advancing edge of an air bubble. In the lung it can mark reopening. In a chamber it can be a controlled mechanical insult.",
           "image": "assets/films/plates/what-a-bubble-can-do-01.webp",
           "kind": "AIRWAY / CONCEPTUAL",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 13
         },
         {
           "id": "02",
@@ -5392,7 +5396,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "03",
@@ -5425,18 +5429,18 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 11
         },
         {
           "id": "06",
           "title": "The unprotected group",
-          "narration": "Following bubble propagation, the untreated group showed 54.7 percent cell death in this model. The reported comparison is about cultured cells, not a patient survival rate.",
+          "narration": "Untreated cells exposed to the bubble showed 54.7 percent death in the reported conditions. That is a monolayer assay, not a ventilated patient's prognosis.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
           "kind": "PUBLISHED IN-VITRO RESULT",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 11
         },
         {
           "id": "07",
@@ -5458,7 +5462,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 12
         },
         {
           "id": "09",
@@ -5480,20 +5484,21 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 12
         },
         {
           "id": "11",
           "title": "What the experiment can say",
-          "narration": "These are results from a single-bubble, cultured-cell model. They justify further questions about injury prevention. They do not show that pretreatment prevents injury in mechanically ventilated patients.",
+          "narration": "Pretreatment altered injury within this experimental system. The clinical question remains open, and the geometry of a chamber explains why.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
           "kind": "EVIDENCE LIMIT / 2021 PUBLICATION",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 10
         }
-      ]
+      ],
+      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
     },
     {
       "id": "feature-two-materials-no-section-evidence-cut",
@@ -5509,13 +5514,13 @@
         {
           "id": "01",
           "title": "The section that never existed",
-          "narration": "I wanted to see inside a developing zebrafish. These photographs are from an experiment that did not work.",
+          "narration": "This is the photograph I kept after trying to section a zebrafish specimen. The block fragmented. There was no slide to interpret.",
           "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
           "kind": "archival photograph",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 12
         },
         {
           "id": "02",
@@ -5526,7 +5531,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 13
         },
         {
           "id": "03",
@@ -5553,13 +5558,13 @@
         {
           "id": "05",
           "title": "The material boundary",
-          "narration": "But a hydrophilic gel and a hydrophobic embedding medium do not automatically form a mechanically coherent block. Their interface was the vulnerable point.",
+          "narration": "The agarose–paraffin interface deserves scrutiny, but a photograph of separating layers does not identify the molecular cause.",
           "image": "assets/films/plates/two-materials-no-section-05.webp",
           "kind": "explanatory schematic",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 10
         },
         {
           "id": "06",
@@ -5592,7 +5597,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 13
         },
         {
           "id": "09",
@@ -5608,15 +5613,16 @@
         {
           "id": "10",
           "title": "No section. An intact record.",
-          "narration": "No interpretable section came from this attempt. I kept the photographs anyway. The failed block was the evidence I had.",
+          "narration": "No section came off the blade. What survives is an accurate account of the failure and the process a future experiment must change.",
           "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
           "kind": "archival photograph",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 12
         }
-      ]
+      ],
+      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
     }
   ]
 }
