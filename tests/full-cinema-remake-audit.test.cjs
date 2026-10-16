@@ -58,3 +58,16 @@ test("the three new pilot screenplays are source-bounded, with photographic evid
   assert.ok(report.includes("annotated version history"));
   assert.ok(report.includes("not automatically re-rendering 44"));
 });
+
+test("screening audit page presents all 44 true image sequences with accessible film links and filtering",()=>{
+  const html=read("cinema-workshop.html");
+  assert.equal((html.match(/<article class="film-study"/g)||[]).length,44);
+  assert.equal((html.match(/class="sheet"/g)||[]).length,44);
+  for(const x of board.films){
+    assert.ok(html.includes('href="/'+x.contact_sheet+'"'),x.id+" contact sheet missing");
+    assert.ok(html.includes('href="/'+x.film+'"'),x.id+" live original film link missing");
+  }
+  assert.ok(html.includes('id="film-search"'));
+  assert.ok(html.includes('aria-live="polite"'));
+  assert.ok(html.includes("No original film, Story, scientific figure or archive has been replaced by this audit."));
+});
