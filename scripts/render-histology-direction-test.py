@@ -161,7 +161,7 @@ def main():
             videos.append(movie)
             docs.append({"index":i+1,"start":sum(s[1] for s in SHOTS[:i]),
                          "seconds":sec,"archival_source":str(PHOTOS[key].relative_to(ROOT)) if key else None,
-                         "label":title+" — "+body,"editorial_crop":kind=="archival detail"})
+                         "label":title+" — "+body,"editorial_crop":key is not None})
         playlist=w/"input.txt"
         playlist.write_text("".join("file '"+str(m)+"'\n" for m in videos),encoding="utf-8")
         picture=w/"picture.mp4"
