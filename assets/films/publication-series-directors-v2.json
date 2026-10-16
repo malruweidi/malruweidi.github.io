@@ -3695,7 +3695,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "editorial type documentary",
-          "narration": "Read an old institutional email or academic abstract. You may find the immaculate, depersonalized language we now accuse machines of inventing.",
+          "narration": "The style now called suspiciously artificial was often taught to students as good professional writing years before generative AI.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
           "contain": false,
           "kind": "Author's university library archive, not an institutional policy document",
@@ -3704,7 +3704,7 @@
           "source_title": "Train a person to sound acceptable",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 16
+          "sec": 15
         },
         {
           "id": "02",
@@ -3770,7 +3770,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "editorial type documentary",
-          "narration": "What does this author know? Are the sources real? Can the argument survive direct examination? Those questions require judgment.",
+          "narration": "Institutions rewarded an impersonal register and now treat its imitation as intellectual laziness. That contradiction deserves examination.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
           "contain": false,
           "kind": "Original laboratory image; methodological metaphor rather than evidence of AI authorship",
@@ -3794,13 +3794,13 @@
           "source_title": "Ask a more difficult question",
           "narrative_role": "limits",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "08",
           "title": "The claim",
           "subtitle": "editorial type documentary",
-          "narration": "The essay is about intellectual responsibility, not an entitlement to publish inaccuracies in a distinctive style.",
+          "narration": "The argument is about who set linguistic rules and who gets punished for obeying them.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "contain": false,
           "kind": "Author's editorial portrait",
@@ -3811,7 +3811,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "id": "pub-essay-academic-mental-health",
@@ -3830,7 +3831,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "observational academic essay",
-          "narration": "A curriculum vitae organizes years into posts and publications. It rarely records uncertainty, strain or the cost of being constantly evaluated.",
+          "narration": "A curriculum vitae can account for each appointment yet leave out the months a researcher spent merely trying to remain functional.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
           "contain": false,
           "kind": "Original late research workspace, no asserted capture hour",
@@ -3854,7 +3855,7 @@
           "source_title": "A CV tells the wrong kind of time",
           "narrative_role": "observation",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "03",
@@ -3905,7 +3906,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "observational academic essay",
-          "narration": "Scientific institutions should ask which parts of their incentives make research needlessly cruel, not only whether students can tolerate them.",
+          "narration": "The pressure to appear perpetually productive is built into academic routines. Trace it without reducing people to inspirational examples.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
           "contain": false,
           "kind": "Archival university photo used as general context",
@@ -3914,7 +3915,7 @@
           "source_title": "Mental health is not a footnote",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "07",
@@ -3935,7 +3936,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "observational academic essay",
-          "narration": "The essay asks how young researchers can pursue ambitious work without having their personal lives treated as disposable inputs.",
+          "narration": "Good science benefits when institutional expectations can be questioned as carefully as experimental assumptions.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "contain": false,
           "kind": "Personal editorial portrait",
@@ -3946,7 +3947,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "id": "pub-essay-scientific-credit",
@@ -3965,7 +3967,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "history of scientific credit",
-          "narration": "The prize ceremony produces a clear picture of discovery, with a handful of faces attached to a complicated scientific history.",
+          "narration": "The prize photograph records a few names. The publications behind it often record many hands, instruments and years.",
           "image": "assets/home-archive/early-science-talk.jpg",
           "contain": true,
           "kind": "Original early science presentation photo, not an image of the discovery discussed",
@@ -3974,7 +3976,7 @@
           "source_title": "A discovery has a longer genealogy",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 16
+          "sec": 15
         },
         {
           "id": "02",
@@ -3989,7 +3991,7 @@
           "source_title": "An award fits a few names",
           "narrative_role": "observation",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "03",
@@ -4004,7 +4006,7 @@
           "source_title": "A discovery has a longer genealogy",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "04",
@@ -4040,7 +4042,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "history of scientific credit",
-          "narration": "An inclusive account cannot simply invent forgotten heroes. It must return to papers, notebooks, patents and who actually did the work.",
+          "narration": "Recognising overlooked labour does not erase a decisive insight; it asks us to document how that insight became possible.",
           "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
           "contain": true,
           "kind": "Research figure illustrating traceable published contribution, not a Nobel-related experiment",
@@ -4049,7 +4051,7 @@
           "source_title": "Credit still needs proof",
           "narrative_role": "turning_point",
           "shot_treatment": "full_figure",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "07",
@@ -4070,7 +4072,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "history of scientific credit",
-          "narration": "The essay asks for better histories of discovery without denying that major scientific contributions deserve recognition.",
+          "narration": "Discovery can be celebrated without making its history smaller than it actually was.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "contain": false,
           "kind": "Author's editorial portrait",
@@ -4081,7 +4083,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "id": "pub-essay-tf-states",
@@ -4100,7 +4103,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "pharmacology / science cinema",
-          "narration": "A purified protein fragment can look druggable, while the living regulatory complex occupies many shapes and partnerships that a crystal cannot freeze.",
+          "narration": "A transcription factor seen in a static structure seems to invite a drug. In the cell, it inhabits shifting regulatory assemblies.",
           "image": "assets/home-archive/chemistry-chalkboard.jpg",
           "contain": true,
           "kind": "Original chalkboard archive, not structural model",
@@ -4109,7 +4112,7 @@
           "source_title": "Think in states",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 17
+          "sec": 16
         },
         {
           "id": "02",
@@ -4175,7 +4178,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "pharmacology / science cinema",
-          "narration": "Belzutifan, TEAD inhibitors and mutant-p53 reactivation illustrate distinct modes of controlling regulatory state rather than a universal method.",
+          "narration": "The intervention must specify which state is altered and which readout establishes the change. A promising pocket is a starting hypothesis.",
           "image": "assets/robo-concept.svg",
           "contain": true,
           "kind": "Generic concept pathway, not specific drug's atomic model",
@@ -4184,7 +4187,7 @@
           "source_title": "Real precedents, different mechanisms",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "07",
@@ -4205,7 +4208,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "pharmacology / science cinema",
-          "narration": "The article argues for designing chemical programmes around regulatory states, measured biomarkers and exposure, not pocket discovery alone.",
+          "narration": "Drug design should interrogate the living regulatory state instead of falling in love with an isolated conformation.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "contain": false,
           "kind": "Author's editorial portrait",
@@ -4216,7 +4219,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "id": "pub-essay-potency-exposure",
@@ -4235,7 +4239,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "pharmacology / science cinema",
-          "narration": "A compound works at nanomolar concentration in a protected assay. The number is seductive, but a patient never receives an assay plate.",
+          "narration": "A nanomolar potency value can win a meeting before anyone asks whether the compound reaches the relevant tissue unbound.",
           "image": "assets/niosomes-concept.svg",
           "contain": true,
           "kind": "Generic drug-delivery visual, not pharmacokinetic data",
@@ -4244,7 +4248,7 @@
           "source_title": "The journey is a different experiment",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 17
+          "sec": 15
         },
         {
           "id": "02",
@@ -4289,7 +4293,7 @@
           "source_title": "Total is not free",
           "narrative_role": "evidence",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "05",
@@ -4304,13 +4308,13 @@
           "source_title": "Turn the comparison around",
           "narrative_role": "interpretation",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "06",
           "title": "Turning point",
           "subtitle": "pharmacology / science cinema",
-          "narration": "Potency cannot compensate indefinitely for permeability barriers, toxicity or infeasible pharmacokinetics.",
+          "narration": "Target affinity, binding in biological matrices and pharmacokinetics must be reconciled with the exposure needed for an effect.",
           "image": "assets/niosomes-concept.svg",
           "contain": true,
           "kind": "Illustration of delivery principle, no measured exposure",
@@ -4340,7 +4344,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "pharmacology / science cinema",
-          "narration": "The argument is about choosing compounds that can deliver an effective unbound concentration, not applauding the smallest assay number.",
+          "narration": "The assay number matters only if it can be translated into a defensible exposure strategy.",
           "image": "assets/home-archive/chemistry-chalkboard.jpg",
           "contain": true,
           "kind": "Original chemistry archive",
@@ -4351,7 +4355,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "id": "pub-essay-trna",
@@ -4370,7 +4375,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "pharmacology / science cinema",
-          "narration": "Before a protein takes shape, transfer RNA helps turn genetic instructions into an amino-acid sequence. It is not passive cellular plumbing.",
+          "narration": "Each cell repeatedly interprets RNA instructions through transfer RNA. Those small adapters constitute a complicated regulatory system.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
           "contain": false,
           "kind": "Original laboratory research photo, not a tRNA manipulation",
@@ -4379,7 +4384,7 @@
           "source_title": "The system is not one target",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 16
+          "sec": 15
         },
         {
           "id": "02",
@@ -4445,7 +4450,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "pharmacology / science cinema",
-          "narration": "An enzyme pocket, disease-associated RNA fragment or extracellular synthetase domain requires different chemistry, assays and delivery.",
+          "narration": "Charging, modification and recognition can be context dependent. A drug programme needs a specific dependency, not a general declaration about tRNA.",
           "image": "assets/niosomes-concept.svg",
           "contain": true,
           "kind": "Drug-carrier concept unrelated to any validated tRNA therapeutic",
@@ -4454,7 +4459,7 @@
           "source_title": "Match the modality to the biology",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 16
         },
         {
           "id": "07",
@@ -4475,7 +4480,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "pharmacology / science cinema",
-          "narration": "The column argues for testing the exact molecular dependency rather than declaring the entire tRNA system either undruggable or safe.",
+          "narration": "Translation machinery is not automatically undruggable, and it is certainly not automatically safe to perturb.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "contain": false,
           "kind": "Author's editorial portrait",
@@ -4484,9 +4489,10 @@
           "source_title": "The translation apparatus is dynamic",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "id": "pub-essay-proximity",
@@ -4505,7 +4511,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "pharmacology / science cinema",
-          "narration": "For years drug action was pictured as occupancy. Induced proximity instead asks whether a molecule can bring two biological partners together.",
+          "narration": "A drug molecule is often imagined occupying a protein pocket. Another possibility is that it persuades two proteins to meet.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
           "contain": false,
           "kind": "Original laboratory apparatus photo; not proteasomal data",
@@ -4580,7 +4586,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "pharmacology / science cinema",
-          "narration": "Induced proximity can also relocalise or stabilize a protein, revealing that the real modality is the event the molecule causes.",
+          "narration": "Induced proximity makes an event the pharmacological objective. Its success depends on complexes that form and the selectivity of their biology.",
           "image": "assets/niosomes-concept.svg",
           "contain": true,
           "kind": "Generic therapeutic concept graphic, not evidence of a published degrader",
@@ -4589,7 +4595,7 @@
           "source_title": "Not every match destroys",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "07",
@@ -4604,13 +4610,13 @@
           "source_title": "Not every match destroys",
           "narrative_role": "limits",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "08",
           "title": "The claim",
           "subtitle": "pharmacology / science cinema",
-          "narration": "The column follows the move from simply blocking function to engineering a testable cellular event with selectivity, exposure and resistance in view.",
+          "narration": "What matters is the cellular event a molecule produces, and whether exposure sustains it where needed.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "contain": false,
           "kind": "Author's editorial portrait",
@@ -4619,9 +4625,10 @@
           "source_title": "A different design discipline",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 13
         }
-      ]
+      ],
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "id": "pub-essay-adc",
@@ -4640,7 +4647,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "pharmacology / science cinema",
-          "narration": "An antibody-drug conjugate is a chemical system. Tumour binding is only one step in an exposure and release problem.",
+          "narration": "The antibody reaches the tumour. In an advertisement that would be the triumphant final shot. In an ADC, chemistry is just getting started.",
           "image": "assets/niosomes-concept.svg",
           "contain": true,
           "kind": "General carrier visual, not an ADC structure",
@@ -4649,7 +4656,7 @@
           "source_title": "Linker chemistry decides where",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 17
         },
         {
           "id": "02",
@@ -4715,7 +4722,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "pharmacology / science cinema",
-          "narration": "Permeable payloads may help reach heterogeneous tumours, but surrounding normal tissue and exposure constrain the apparent advantage.",
+          "narration": "Internalisation, linker behaviour and payload transport determine where exposure occurs. Binding alone does not settle safety or efficacy.",
           "image": "assets/evidence-biomaterials.webp",
           "contain": false,
           "kind": "Generic materials context visual",
@@ -4724,7 +4731,7 @@
           "source_title": "Bystander effects are conditional",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "07",
@@ -4739,13 +4746,13 @@
           "source_title": "Bystander effects are conditional",
           "narrative_role": "limits",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "08",
           "title": "The claim",
           "subtitle": "pharmacology / science cinema",
-          "narration": "The article argues that conjugation chemistry, payload choice and predictive toxicology belong together from the start of development.",
+          "narration": "An antibody–drug conjugate is an engineered pharmacological system whose components must succeed together.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "contain": false,
           "kind": "Author's editorial portrait",
@@ -4756,7 +4763,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     }
   ]
 }
