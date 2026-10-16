@@ -1087,3 +1087,9 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Our research took us into different institutions and specialties. The conversations continued after we left the same department.": "أخذتنا أبحاثنا إلى مؤسسات وتخصصات مختلفة. لكن أحاديثنا العلمية استمرت بعد مغادرتنا القسم الواحد.",
   "Someone might bring a chemistry problem to the table while another is thinking about biology or engineering. We still meet to exchange papers and challenge interpretations, drawing on the work each of us has pursued.": "قد يأتي أحدنا بسؤال في الكيمياء بينما ينشغل آخر بمشكلة في الأحياء أو الهندسة. وما زلنا نلتقي لتبادل الأوراق العلمية ومناقشة تفسير النتائج، مستفيدين من الخبرات التي اكتسبها كل منا."
 });
+
+/* Additional Arabic wording from the 17 October source-and-voice audit. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "My microscope, laboratory notebooks and early photographs are gathered here with the stories of where they came from and how I used them.": "جمعت هنا مجهري ودفاتر المختبر والصور المبكرة، ومع كل منها حكاية المكان الذي جاءت منه وكيف استخدمتها.",
+  "Original microscopy photograph; developmental stage and magnification were not recorded in the archive.": "صورة مجهرية أصلية؛ لم تُسجّل في الأرشيف المرحلة الجنينية أو درجة التكبير."
+});
