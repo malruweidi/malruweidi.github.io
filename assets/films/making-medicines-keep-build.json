@@ -1,0 +1,59 @@
+{
+  "title": "Making Medicines Keep",
+  "seconds": 120.0,
+  "bytes": 3142229,
+  "sha256": "cdcb0715e24a24c2e3c943e8cde014aeaf5361c7b50148bf095cca34fc16ee62",
+  "source": "assets/films/evidence-in-motion.json",
+  "chapters": 8,
+  "media": [
+    {
+      "chapter": "01",
+      "type": "ORIGINAL EDITORIAL ILLUSTRATION",
+      "credit": "Reconstruction based on the author's historical research; not period footage or a primary source.",
+      "source": null
+    },
+    {
+      "chapter": "02",
+      "type": "ORIGINAL EDITORIAL ILLUSTRATION",
+      "credit": "Conceptual illustration; period text attributed to al-Kūhīn al-ʿAṭṭār. Avoid invented script.",
+      "source": null
+    },
+    {
+      "chapter": "03",
+      "type": "ORIGINAL EDITORIAL DIAGRAM",
+      "credit": "Explanatory interpretation of the historical described process; not a laboratory measurement.",
+      "source": null
+    },
+    {
+      "chapter": "04",
+      "type": "ORIGINAL EDITORIAL ILLUSTRATION",
+      "credit": "Historical possibility illustrated without claiming that this is an authentic medieval vessel.",
+      "source": null
+    },
+    {
+      "chapter": "05",
+      "type": "EDITORIAL SOURCE INTERPRETATION",
+      "credit": "Source: Cambridge Genizah Or.1081 J39. Typeset editorial depiction; original manuscript scan deliberately not reproduced without permission.",
+      "source": null
+    },
+    {
+      "chapter": "06",
+      "type": "SOURCE-GROUNDED CONCEPTUAL DIAGRAM",
+      "credit": "Conceptual text diagram; historically framed substitution not modern chemical/bioequivalence.",
+      "source": null
+    },
+    {
+      "chapter": "07",
+      "type": "ORIGINAL EDITORIAL ILLUSTRATION",
+      "credit": "Interpretation of hisba literature; not a historical photograph or modern state regulation.",
+      "source": null
+    },
+    {
+      "chapter": "08",
+      "type": "ACCEPTED SCHOLARLY MANUSCRIPT",
+      "credit": "Manuscript accepted by History of Pharmacy and Pharmaceuticals on 15 October 2026. Typeset bibliographic title, not a fabricated journal cover.",
+      "source": null
+    }
+  ],
+  "editorial_method": "Real owner archive retained uncropped in frames; explicitly non-documentary original illustrations; audio Kokoro-ONNX + self-generated original score."
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Two Materials. No Section.",
+  "seconds": 120.0,
+  "bytes": 3278731,
+  "sha256": "11bfa7f743f0a2b3899f9709cf6729de805abeb595d034b86ac97e456cfd12ab",
+  "source": "assets/films/evidence-in-motion.json",
+  "chapters": 8,
+  "media": [
+    {
+      "chapter": "01",
+      "type": "ORIGINAL SPECIMEN PHOTOGRAPH",
+      "credit": "Actual owner-supplied specimen photograph; image does not depict histological sections.",
+      "source": "/assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp"
+    },
+    {
+      "chapter": "02",
+      "type": "ANIMATED EXPLANATION",
+      "credit": "Illustrative diagram of 2% agarose pre-embedding. Not actual footage.",
+      "source": null
+    },
+    {
+      "chapter": "03",
+      "type": "ORIGINAL LABORATORY PHOTOGRAPH",
+      "credit": "Photograph from the actual attempted histology preparation.",
+      "source": "/assets/2026-10-13-new-photos/zebrafish-histology-processing.webp"
+    },
+    {
+      "chapter": "04",
+      "type": "ORIGINAL FAILED EXPERIMENT",
+      "credit": "Actual owner-supplied image of an unsuccessful paraffin/agarose attempt; no usable section resulted.",
+      "source": "/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp"
+    },
+    {
+      "chapter": "05",
+      "type": "MATERIAL INTERFACE",
+      "credit": "Original image documents the visibly separated specimen block.",
+      "source": "/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp"
+    },
+    {
+      "chapter": "06",
+      "type": "ANIMATED HYPOTHESIS",
+      "credit": "Material-interface explanation is a hypothesis, not an established causal analysis.",
+      "source": null
+    },
+    {
+      "chapter": "07",
+      "type": "RESEARCH METHODS",
+      "credit": "Alternatives are untested possibilities, not recommendations or successful results.",
+      "source": null
+    },
+    {
+      "chapter": "08",
+      "type": "ORIGINAL ARCHIVE",
+      "credit": "Original failed attempt, unaltered.",
+      "source": "/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp"
+    }
+  ],
+  "editorial_method": "Real owner archive retained uncropped in frames; explicitly non-documentary original illustrations; audio Kokoro-ONNX + self-generated original score."
+}

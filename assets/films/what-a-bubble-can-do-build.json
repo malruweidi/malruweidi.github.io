@@ -1,0 +1,59 @@
+{
+  "title": "What a Bubble Can Do",
+  "seconds": 120.0,
+  "bytes": 3251777,
+  "sha256": "0a72f6c2b74974ef428d17980850387cc5549686b58a030cb21c4efa3a32332e",
+  "source": "assets/films/evidence-in-motion.json",
+  "chapters": 8,
+  "media": [
+    {
+      "chapter": "01",
+      "type": "ANIMATED EXPLANATION",
+      "credit": "Conceptual drawing. Not experimental or clinical footage.",
+      "source": null
+    },
+    {
+      "chapter": "02",
+      "type": "PUBLISHED SCIENTIFIC FIGURE",
+      "credit": "Published flow-chamber figure: research context only.",
+      "source": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg"
+    },
+    {
+      "chapter": "03",
+      "type": "ANIMATED EXPLANATION",
+      "credit": "Diagram of chamber geometry. Schematic, not measured dimensions.",
+      "source": null
+    },
+    {
+      "chapter": "04",
+      "type": "SCIENTIFIC METHOD",
+      "credit": "Actual fluorescence panels not available for verification here; retained publication illustration only, not invented cell imagery.",
+      "source": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg"
+    },
+    {
+      "chapter": "05",
+      "type": "ANIMATED EXPLANATION",
+      "credit": "Illustrative assay logic; no invented readings.",
+      "source": null
+    },
+    {
+      "chapter": "06",
+      "type": "SCIENTIFIC METHOD",
+      "credit": "Publication figure, not patient-treatment evidence.",
+      "source": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg"
+    },
+    {
+      "chapter": "07",
+      "type": "ANIMATED EXPLANATION",
+      "credit": "Explanatory geometry only.",
+      "source": null
+    },
+    {
+      "chapter": "08",
+      "type": "RESEARCH DOCUMENT",
+      "credit": "Original 2021 peer-reviewed paper credited in end card.",
+      "source": null
+    }
+  ],
+  "editorial_method": "Real owner archive retained uncropped in frames; explicitly non-documentary original illustrations; audio Kokoro-ONNX + self-generated original score."
+}

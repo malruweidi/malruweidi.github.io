@@ -1,0 +1,59 @@
+{
+  "title": "The Laboratory We Carried With Us",
+  "seconds": 120.0,
+  "bytes": 3449354,
+  "sha256": "1998425e2d1d41f71b63e0536afc0bb9746620e327a43f75814bdd570c829adc",
+  "source": "assets/films/evidence-in-motion.json",
+  "chapters": 8,
+  "media": [
+    {
+      "chapter": "01",
+      "type": "OWNER-SUPPLIED ARCHIVE",
+      "credit": "Owner-supplied Chem Squad laboratory photograph; does not prove a particular extraction outcome.",
+      "source": "/assets/owner-archive-2026-10-16/chem-squad-lab-medicinal-plant-extracts.webp"
+    },
+    {
+      "chapter": "02",
+      "type": "EDITORIAL EXPLANATION",
+      "credit": "Illustrative chemical interpretation. No drug efficacy implied.",
+      "source": null
+    },
+    {
+      "chapter": "03",
+      "type": "COLLECTIVE ARCHIVE",
+      "credit": "Verified Chem Squad member photo archive; group is independent, not an institutional laboratory.",
+      "source": "/assets/chem-squad-khaled-jama-mohamoud.webp"
+    },
+    {
+      "chapter": "04",
+      "type": "ARCHIVAL PHOTOGRAPH",
+      "credit": "Qatar University ACS chapter archive; Chem Squad and ACS are distinct initiatives.",
+      "source": "/archive/archive-7887.jpg"
+    },
+    {
+      "chapter": "05",
+      "type": "COMMUNITY DOCUMENTATION",
+      "credit": "Collective ACS activity; no photograph is attributed to a specific 29-student training session without evidence.",
+      "source": "/archive/archive-7888.jpg"
+    },
+    {
+      "chapter": "06",
+      "type": "PERSONAL ARCHIVE",
+      "credit": "Original photograph of Mahmoud hosting the fifth Chemistry Festival.",
+      "source": "/archive/fifth-chemistry-festival-host.webp"
+    },
+    {
+      "chapter": "07",
+      "type": "CHEM SQUAD MEMBER ARCHIVE",
+      "credit": "Member photograph is a personal archive, not footage of the weekly meetings.",
+      "source": "/assets/chem-squad-abdelrahman-adel-mahmoud-01.webp"
+    },
+    {
+      "chapter": "08",
+      "type": "COLLECTIVE ARCHIVE",
+      "credit": "Chemistry gathering archive; respect equal credit and distinct scientific roles.",
+      "source": "/archive/archive-7886.jpg"
+    }
+  ],
+  "editorial_method": "Real owner archive retained uncropped in frames; explicitly non-documentary original illustrations; audio Kokoro-ONNX + self-generated original score."
+}
