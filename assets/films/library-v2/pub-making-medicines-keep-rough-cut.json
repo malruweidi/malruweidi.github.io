@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "d7304feb48a04492866f3ebcbdaed828ad4299ad2660d4623e0efa092d38b57a",
+  "sha256": "0bd7a8e9936273522a4407c6d97d5f152905ac25e807e723336b2c00bd54a84b",
   "shots": [
     {
       "title": "How did medieval medicines keep?",
@@ -32,10 +32,10 @@
     },
     {
       "title": "Why syrup matters",
-      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
       "image": "assets/films/plates/making-medicines-keep-04.webp",
       "museum": null,
-      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography. Animation: Illustrative material sequence, not period footage, a recipe reconstruction, chemical time-lapse, or evidence of a particular Cairo shop. Historical preparation logic; not filmed medieval compounding."
     },
     {
       "title": "Substitution is a serious decision",
@@ -74,5 +74,14 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "408d3020be9177ed53888ceb5b5653eb0d06b8053e87d921ce49e08cae03b889"
+  "motion_shots": [
+    {
+      "scene": 4,
+      "video": "assets/films/motion-v2/historical-syrup.mp4",
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography. Animation: Illustrative material sequence, not period footage, a recipe reconstruction, chemical time-lapse, or evidence of a particular Cairo shop. Historical preparation logic; not filmed medieval compounding.",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "source_sha256": "edbe1104307f771fbb3bb38ba66f41f888af7fc3bf71d3b10b299046679a8367"
+    }
+  ],
+  "input_sha256": "3c4795313c38b8d78f1b293776fcda6a3eef94b7818c9816ef4f27000b805a3c"
 }

@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "f263c874022e6b98709976cefb4458b47902c740b73f237fc41fa7e8dddda718",
+  "sha256": "6b5a420b4883b2f9c33447000999fb4d6250b82ba4ff32fb2c2ef5658569c0b7",
   "shots": [
     {
       "title": "The jar",
@@ -53,10 +53,10 @@
     },
     {
       "title": "What changes later",
-      "kind": "original_illustration",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
       "image": "assets/films/plates/making-medicines-keep-04.webp",
       "museum": null,
-      "credit": "Modern illustrative interpretation; crystallization is not a laboratory measurement from medieval Cairo"
+      "credit": "Modern illustrative interpretation; crystallization is not a laboratory measurement from medieval Cairo. Animation: Illustrative material sequence, not period footage, a recipe reconstruction, chemical time-lapse, or evidence of a particular Cairo shop. Crystallization is illustrative, not evidence that a particular medieval syrup spoiled."
     },
     {
       "title": "The prescription",
@@ -95,5 +95,14 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "205dd5a3c7b1e1115dcf41432bf86ce53db0ce7b1e0489d9bb7c7e07dbe06ac2"
+  "motion_shots": [
+    {
+      "scene": 5,
+      "video": "assets/films/motion-v2/historical-syrup.mp4",
+      "credit": "Modern illustrative interpretation; crystallization is not a laboratory measurement from medieval Cairo. Animation: Illustrative material sequence, not period footage, a recipe reconstruction, chemical time-lapse, or evidence of a particular Cairo shop. Crystallization is illustrative, not evidence that a particular medieval syrup spoiled.",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "source_sha256": "edbe1104307f771fbb3bb38ba66f41f888af7fc3bf71d3b10b299046679a8367"
+    }
+  ],
+  "input_sha256": "24b9b4758086f35ec5b5d17d6e8c0e5ee8132d041bf3c54e531363637551ed31"
 }

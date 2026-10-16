@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "21b98a9e239e5eb5b8a6e2e877803f66e7c450b0fb5cae65ff2fe0c87d9a0656",
+  "sha256": "dff8bca7f33df26ebc59920253fd16655cf1197f5bf1234b1511fd1ed21d228c",
   "shots": [
     {
       "title": "Will the medicine survive the nebulizer?",
@@ -39,10 +39,10 @@
     },
     {
       "title": "The nebulizer is a stress test",
-      "kind": "Pulmonary research-context illustration",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
       "image": "assets/evidence-pulmonary.webp",
       "museum": null,
-      "credit": "Pulmonary research-context illustration"
+      "credit": "Pulmonary research-context illustration. Animation: Original process explanation; does not assert that any vesicle survived or failed nebulization; no measured size or deposition data. Explains aerosol generation; no measured vesicle integrity or deposition implied."
     },
     {
       "title": "The difficulty: From droplet to dose",
@@ -74,5 +74,14 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "63896735a6f1825f0c21c284a320e737f13b3b548c8622a4efd5a44556915df7"
+  "motion_shots": [
+    {
+      "scene": 5,
+      "video": "assets/films/motion-v2/niosomes-nebulization.mp4",
+      "credit": "Pulmonary research-context illustration. Animation: Original process explanation; does not assert that any vesicle survived or failed nebulization; no measured size or deposition data. Explains aerosol generation; no measured vesicle integrity or deposition implied.",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "source_sha256": "a6bc4c82af12cc7706ef291902b3bc3495218fb9d33b3666ee0fe141940b3508"
+    }
+  ],
+  "input_sha256": "37c4517cf056c0e165c7770e343487c0b645164dab962f32e09d76dcfda19842"
 }
