@@ -47,3 +47,26 @@ test('documentary scientific cautions remain discoverable without duplicating ow
   assert.ok((stories.match(/<details class="stories-source rx-source-fold">/g) || []).length >= 15,
     'source documentation disclosures must remain accessible');
 });
+
+test('avoid mirrored defensive biography across homepage and complete archive', () => {
+  const home = read('index.html');
+  const complete = read('full-record.html');
+  const horizon = read('research-horizon.html');
+  for (const text of [home, complete, horizon]) {
+    assert.doesNotMatch(text, /The aim was never to collect disciplines/);
+    assert.doesNotMatch(text, /These are not just subject areas/);
+    assert.doesNotMatch(text, /not another line on our CVs/);
+  }
+  assert.match(home, /I have worked on molecular sensors, polymers, vascular imaging and pulmonary drug delivery/);
+  assert.match(complete, /My work moved through chemistry, materials, imaging and pharmaceutics/);
+  assert.match(horizon, /I intend to concentrate my doctoral work in therapeutic discovery and pharmaceutical engineering/);
+});
+
+test('illness and historical photographs avoid invented editorial defenses', () => {
+  const illness = read('illness-and-evidence.html');
+  const photos = read('assets/2017-photo-completion.js');
+  assert.doesNotMatch(illness, /It does not turn missed examinations into achievements/);
+  assert.doesNotMatch(photos, /The eggs are visible through the incubator window/);
+  assert.match(illness, /I fell asleep between university examinations in June 2017/);
+  assert.match(photos, /The incubator we used for chick-embryo work/);
+});
