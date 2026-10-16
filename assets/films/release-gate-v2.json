@@ -1,0 +1,608 @@
+{
+  "status": "RELEASE BLOCKED UNTIL HUMAN AND SOURCE SIGN-OFF",
+  "films_total": 44,
+  "counts": {
+    "current_technical_preview": 34,
+    "stale_or_renderer_changed": 2,
+    "missing": 8
+  },
+  "items": [
+    {
+      "film": "making-medicines-keep",
+      "title": "The Medicine in the Jar",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "two-materials-no-section",
+      "title": "No Section Came Off the Blade",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "what-a-bubble-can-do",
+      "title": "The Moment an Airway Reopens",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-airway-reopening",
+      "title": "A breath can injure",
+      "status": "stale_or_renderer_changed",
+      "ready_for_publication": false,
+      "reason": "Source script or render engine differs from export record",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-cerebral-cilia",
+      "title": "How does a vessel know the blood is moving?",
+      "status": "stale_or_renderer_changed",
+      "ready_for_publication": false,
+      "reason": "Source script or render engine differs from export record",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-slit2-robo",
+      "title": "The target that can change sides",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-curcumin-cyanide",
+      "title": "When a molecule becomes a question",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-making-medicines-keep",
+      "title": "How did medieval medicines keep?",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-niosomes",
+      "title": "Will the medicine survive the nebulizer?",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-echo-cnn-lstm",
+      "title": "Can an algorithm read a moving heart?",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-pla-grafting",
+      "title": "The surface is not the material",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-pla-scaffolds",
+      "title": "A scaffold meets its environment",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-flow-chamber-method",
+      "title": "How to make a reproducible injury",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-zebrafish-hemodynamics",
+      "title": "A heartbeat in high-speed frames",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-ace2-covid-drugs",
+      "title": "An enzyme, a receptor, a clinical question",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-gi-autoimmunity-1",
+      "title": "What happens when immunity turns on the gut?",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-gi-autoimmunity-2",
+      "title": "The diagnostic problem",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-heart-failure-sensors",
+      "title": "Listening for a failing heart",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-ace2-forms",
+      "title": "Two lives of ACE2",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-microfluidic-virus",
+      "title": "A laboratory shrunk into a channel",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-drug-release-twins",
+      "title": "What can a digital twin predict?",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-food-printing",
+      "title": "When food becomes a printable material",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-ceramics-printing",
+      "title": "A structure the body must tolerate",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-cubosome-theranostics",
+      "title": "The difficult promise of a cubic carrier",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-micelles-pahs",
+      "title": "A polymer meets an insoluble problem",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-heterocycle-cancer",
+      "title": "Build the heterocycle, then challenge the hypothesis",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-histology-failure",
+      "title": "Two materials. No section.",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-cairo-microscope",
+      "title": "The microscope that made curiosity independent",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-essay-life-between-diagnoses",
+      "title": "When the Count Could Not Describe the Pain",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-essay-ai-email",
+      "title": "The Email That Became an Accusation",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-essay-machine-language",
+      "title": "Who Taught Humans to Write Like Machines?",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-essay-academic-mental-health",
+      "title": "The Things an Academic CV Cannot Hold",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-essay-scientific-credit",
+      "title": "Three Names on the Medal, Hundreds in the Record",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-essay-tf-states",
+      "title": "The Target Has More Than One Shape",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-essay-potency-exposure",
+      "title": "The Nanomolar Mirage",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-essay-trna",
+      "title": "The Molecule Behind Every Protein",
+      "status": "current_technical_preview",
+      "ready_for_publication": false,
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
+    },
+    {
+      "film": "pub-essay-proximity",
+      "title": "When a Drug Makes Two Proteins Meet",
+      "status": "missing",
+      "ready_for_publication": false,
+      "reason": "No complete MP4 + WebVTT + manifest trio"
+    },
+    {
+      "film": "pub-essay-adc",
+      "title": "The Antibody Is Only the Beginning",
+      "status": "missing",
+      "ready_for_publication": false,
+      "reason": "No complete MP4 + WebVTT + manifest trio"
+    },
+    {
+      "film": "feature-the-laboratory-we-carried-with-us",
+      "title": "The Laboratory We Carried With Us",
+      "status": "missing",
+      "ready_for_publication": false,
+      "reason": "No complete MP4 + WebVTT + manifest trio"
+    },
+    {
+      "film": "feature-what-survives-the-experiment",
+      "title": "What Survives the Experiment",
+      "status": "missing",
+      "ready_for_publication": false,
+      "reason": "No complete MP4 + WebVTT + manifest trio"
+    },
+    {
+      "film": "feature-cairo-microscope",
+      "title": "The Microscope I Brought From Cairo",
+      "status": "missing",
+      "ready_for_publication": false,
+      "reason": "No complete MP4 + WebVTT + manifest trio"
+    },
+    {
+      "film": "feature-ring-that-never-closed",
+      "title": "The Ring That Never Closed",
+      "status": "missing",
+      "ready_for_publication": false,
+      "reason": "No complete MP4 + WebVTT + manifest trio"
+    },
+    {
+      "film": "feature-airway-reopening-evidence-cut",
+      "title": "A Bubble Against an Epithelium: What the Numbers Show",
+      "status": "missing",
+      "ready_for_publication": false,
+      "reason": "No complete MP4 + WebVTT + manifest trio"
+    },
+    {
+      "film": "feature-two-materials-no-section-evidence-cut",
+      "title": "The Material Boundary: An Unsuccessful Histology Attempt",
+      "status": "missing",
+      "ready_for_publication": false,
+      "reason": "No complete MP4 + WebVTT + manifest trio"
+    }
+  ],
+  "preservation_rule": "Original website movies remain untouched. A passing technical preview alone is insufficient for publishing."
+}

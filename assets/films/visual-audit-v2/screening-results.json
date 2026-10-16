@@ -1,8 +1,8 @@
 {
   "status": "TECHNICAL AUDIT ONLY, NOT ARTISTIC APPROVAL",
   "films_expected": 44,
-  "exports_examined": 33,
-  "exports_remaining": 11,
+  "exports_examined": 36,
+  "exports_remaining": 8,
   "films": [
     {
       "slug": "making-medicines-keep",
@@ -329,6 +329,36 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-essay-scientific-credit-rough-cut.mp4",
+      "issues": [],
+      "technical_check": "pass",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-tf-states",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-tf-states-rough-cut.mp4",
+      "issues": [],
+      "technical_check": "pass",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-potency-exposure",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-potency-exposure-rough-cut.mp4",
+      "issues": [],
+      "technical_check": "pass",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-trna",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-trna-rough-cut.mp4",
       "issues": [],
       "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
