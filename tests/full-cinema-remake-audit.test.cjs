@@ -50,11 +50,11 @@ test("the audit's numeric conclusions match the underlying unchanged source cata
 });
 test("the three new pilot screenplays are source-bounded, with photographic evidence and no overwritten releases",()=>{
   const doc=read("assets/films/audit/THREE_PILOT_DIRECTORS_CUTS.md");
-  for(const line of ["TWO MATERIALS. NO SECTION.","MAKING MEDICINES KEEP","THE LABORATORY WE CARRIED WITH US","NOT rendered replacements","Cairo Genizah","khaled-jama-thesis-reaction.mp4"]){
+  for(const line of ["TWO MATERIALS. NO SECTION.","MAKING MEDICINES KEEP","THE LABORATORY WE CARRIED WITH US","not rendered replacements","Cairo Genizah","khaled-jama-thesis-reaction.mp4"]){
     assert.ok(doc.includes(line),line);
   }
   const report=read("assets/films/audit/EDITORIAL_AUDIT_AND_REMAKE_PLAN.md");
   assert.ok(report.includes("44 videos decoded"));
-  assert.ok(report.includes("The older"));
+  assert.ok(report.includes("annotated version history"));
   assert.ok(report.includes("not automatically re-rendering 44"));
 });
