@@ -6,10 +6,12 @@ on:
       - film-editorial-qa-20261016
       - film-final-visual-polish-20261016
       - visual-storytelling-photography-20261016
+      - visual-storytelling-photography-20261016
     paths:
       - assets/films/evidence-in-motion.json
       - scripts/render-evidence-series.py
       - scripts/audit-evidence-series.py
+      - scripts/fetch-documentary-stills.py
       - scripts/snapshot-evidence-visuals.py
       - .github/workflows/render-evidence-series.yml
   workflow_dispatch:
@@ -40,10 +42,12 @@ jobs:
           python -m pip install pillow numpy soundfile kokoro-onnx
       - name: Snapshot verified public-domain, CC BY and original images with rights ledger
         run: python scripts/snapshot-evidence-visuals.py
+      - name: Retrieve historically credited and generated cinema photography
+        run: python scripts/fetch-documentary-stills.py
       - name: Validate full film provenance, screenplay, pages, and existing content
         run: |
           node --test tests/evidence-films.test.cjs tests/research-film.test.cjs tests/film-cinematic-v2.test.cjs
-          python -m py_compile scripts/render-evidence-series.py scripts/render-documentary.py scripts/audit-evidence-series.py scripts/snapshot-evidence-visuals.py
+          python -m py_compile scripts/render-evidence-series.py scripts/render-documentary.py scripts/audit-evidence-series.py scripts/fetch-documentary-stills.py scripts/snapshot-evidence-visuals.py
           python scripts/render-evidence-series.py --validate-only
       - name: Download open-source local British voice model
         run: |
