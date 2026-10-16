@@ -123,3 +123,7 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "I welcome collaborations on patient-facing scientific writing, literature reviews and research communication concerning eosinophilic and related inflammatory conditions. The organizations linked above are independent resources; I am inviting conversations about new work, not speaking on their behalf.": "أرحّب بالتعاون في الكتابة العلمية الموجّهة للمرضى والمراجعات البحثية والتواصل العلمي حول الاضطرابات اليوزينية وغيرها من الأمراض الالتهابية ذات الصلة. الجهات المذكورة أعلاه مصادر مستقلة؛ ودعوتي هنا للحوار بشأن أعمال جديدة، لا للتحدث باسمها.",
   "Our conversations continue even when there is no grant, manuscript or experiment attached to them.": "وتستمر نقاشاتنا حتى حين لا ترتبط بمنحة أو مخطوطة بحثية أو تجربة."
 });
+
+Object.assign(window.RuwaidixArabicDictionary, {
+  "We still meet to think aloud about questions that may never become formal projects.": "وما زلنا نلتقي لنتبادل الأفكار حول أسئلة قد لا تتحول إلى مشروعات بحثية رسمية."
+});
