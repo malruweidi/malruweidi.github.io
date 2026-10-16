@@ -30,10 +30,10 @@
     techniques: ['waters','cold']
   };
   const headings = {
-    archive: [caption('FROM THE PERSONAL ARCHIVE','من الأرشيف الشخصي'),caption('Ten fragments, in their own light','عشر لقطات كما هي'),caption('Four photographs and six brief recordings. The visible clock overlays are kept as photographed.','أربع صور وستة مقاطع قصيرة. تظل الأوقات الظاهرة ضمن اللقطات كما وردت في الأصل.')],
-    stories: [caption('IN BETWEEN CHAPTERS','بين الفصول'),caption('04:11, the table, the board','٠٤:١١، الطاولة، السبورة'),caption('','')],
-    'chem-squad': [caption('THE PEOPLE AROUND THE CHEMISTRY','الناس حول الكيمياء'),caption('The other photographs','صور أخرى'),caption('','')],
-    techniques: [caption('INSTRUMENT ARCHIVE','أرشيف الأجهزة'),caption('An instrument. A plume of vapour.','جهاز وبخار متصاعد'),caption('','')]
+    archive: [caption('FROM THE PERSONAL ARCHIVE','من الأرشيف الشخصي'),caption('Not in the papers','ما لا يظهر في الأبحاث'),caption('Four photographs and six brief recordings. The visible clock overlays are kept as photographed.','أربع صور وستة مقاطع قصيرة. تظل الأوقات الظاهرة ضمن اللقطات كما وردت في الأصل.')],
+    stories: [caption('IN BETWEEN CHAPTERS','بين الفصول'),caption('04:11','٠٤:١١'),caption('','')],
+    'chem-squad': [caption('THE PEOPLE AROUND THE CHEMISTRY','الناس حول الكيمياء'),caption('Outside the experiments','خارج التجارب'),caption('','')],
+    techniques: [caption('INSTRUMENT ARCHIVE','أرشيف الأجهزة'),caption('The apparatus','الأجهزة'),caption('','')]
   };
   function trans(el,obj){
     el.dataset.rxHoursEn=obj.en;
