@@ -137,6 +137,10 @@ def main():
             "needs_human_narration_review":True,
             "needs_visual_composition_review":True,
             "never_auto_publish":True,
+            "motion_shots":[{"scene":n+1,"video":s["video"],"credit":s["credit"],"kind":s["kind"],
+                "source_sha256":(hashlib.sha256((ROOT/s["video"]).read_bytes()).hexdigest()
+                  if not s["video"].startswith("https://") else None)}
+                for n,s in enumerate(film["shots"]) if s.get("video")],
             "input_sha256":input_digest(film)
         })
         result.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
