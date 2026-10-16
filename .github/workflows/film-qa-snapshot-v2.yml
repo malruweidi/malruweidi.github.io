@@ -1,0 +1,66 @@
+name: Ruwaidix cinematic rough-cut visual screening
+on:
+  push:
+    branches:
+      - cinematic-remake-20261017
+    paths:
+      - .github/workflows/film-qa-snapshot-v2.yml
+      - scripts/render-contact-sheet-v2.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+concurrency:
+  group: ruwaidix-visual-screening-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  inspect-real-export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install frame inspector
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check pillow
+      - name: Inspect actual export frames, audio stream, captions and checksum
+        run: |
+          python scripts/render-contact-sheet-v2.py
+          test -s assets/films/visual-audit-v2/screening-results.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('assets/films/visual-audit-v2/screening-results.json').read_text())
+          print("Completed exports inspected:",d["exports_examined"])
+          print("Technical warnings:",sum(bool(x["issues"]) for x in d["films"]))
+          print("NOT an approval for narrative, music, sources or synthetic speech")
+          PY
+      - name: Save checkable contact sheets to editorial branch only
+        run: |
+          git config user.name "Ruwaidix Frame Inspector"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/visual-audit-v2/
+          if ! git diff --cached --quiet; then
+            git commit -m "Source-linked real-frame screening snapshot [visual-screening-output]"
+            pushed=false
+            for retry in 1 2 3 4 5 6 7 8; do
+              git fetch origin cinematic-remake-20261017
+              git rebase FETCH_HEAD
+              if git push origin HEAD:cinematic-remake-20261017; then
+                pushed=true
+                break
+              fi
+              sleep "$((retry * 2))"
+            done
+            if [ "$pushed" != true ]; then
+              echo "Concurrent commit conflict: screening images retained in job workspace" >&2
+              exit 1
+            fi
+          fi
