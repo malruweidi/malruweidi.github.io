@@ -1,0 +1,45 @@
+"use strict";
+const test=require("node:test"),assert=require("node:assert/strict");
+const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
+const root=path.resolve(__dirname,"..");
+const read=x=>fs.readFileSync(path.join(root,x),"utf8");
+const m=JSON.parse(read("assets/films/airway-reopening-evidence-scenes.json"));
+test("extended film has eleven traceable 180-second scenes and preserves the 2021 published evidence",()=>{
+ assert.equal(m.running_seconds,180);assert.equal(m.scenes.length,11);
+ let n=0;for(const s of m.scenes){assert.equal(s.start,n);assert.ok(s.narration.length>40);n+=s.duration;}assert.equal(n,180);
+ assert.equal(m.publication,"https://doi.org/10.1152/japplphysiol.00574.2020");
+ assert.deepEqual(m.reported_mean_cell_death_percent,{bubble_control:54.7,dexamethasone:15.1,transdehydroandrosterone:16.1,latrunculin_A:20.9});
+ assert.ok(fs.existsSync(path.join(root,m.source_figure)));
+ assert.match(m.note,/not clinical treatment effects/);
+ assert.match(m.note,/shows means only/);
+});
+test("separate MP4 documentary is a real verified video with English subtitles",()=>{
+ const file="assets/films/airway-reopening-evidence-cut.mp4";
+ const raw=fs.readFileSync(path.join(root,file));
+ assert.ok(raw.length>1000000);
+ assert.equal(raw.subarray(4,8).toString(),"ftyp");
+ const build=JSON.parse(read("assets/films/airway-reopening-evidence-build.json"));
+ assert.equal(build.video_sha256,crypto.createHash("sha256").update(raw).digest("hex"));
+ assert.ok(Math.abs(build.seconds-180)<0.20);
+ assert.equal(build.scene_count,11);
+ assert.match(read("assets/films/airway-reopening-evidence-cut.vtt"),/^WEBVTT/);
+ assert.ok((read("assets/films/airway-reopening-evidence-cut.vtt").match(/-->/g)||[]).length>=20);
+});
+test("companion is published alongside the original film, never replacing it",()=>{
+ const old=read("films/what-a-bubble-can-do.html");
+ const page=read("films/airway-reopening-evidence.html");
+ const index=read("films.html");
+ const dossier=read("research/pulmonary-epithelial-injury.html");
+ assert.ok(old.includes("/assets/films/what-a-bubble-can-do.mp4"));
+ assert.ok(page.includes("/assets/films/airway-reopening-evidence-cut.mp4"));
+ assert.ok(page.includes("/assets/films/airway-reopening-evidence-cut.vtt"));
+ assert.ok(page.includes("54.7%")&&page.includes("15.1%")&&page.includes("16.1%")&&page.includes("20.9%"));
+ assert.ok(page.includes("Single-bubble in-vitro model"));
+ assert.ok(page.includes('href="/films/what-a-bubble-can-do.html"'));
+ assert.ok(page.includes("https://doi.org/10.1152/japplphysiol.00574.2020"));
+ assert.ok(index.includes('href="/films/airway-reopening-evidence.html"'));
+ assert.ok(dossier.includes('href="/films/airway-reopening-evidence.html"'));
+ assert.ok(read("sitemap.xml").includes("https://malruweidi.github.io/films/airway-reopening-evidence.html"));
+ const items=JSON.parse(read("assets/discovery-index.json")).items;
+ assert.ok(items.some(x=>x.url==="/films/airway-reopening-evidence.html"));
+});
