@@ -1,13 +1,13 @@
 {
   "slug": "feature-ring-that-never-closed",
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
-  "duration": 131.0,
+  "duration": 150.0,
   "voice_mode": "kokoro-preview",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "a27e115cdb4489f2877d07cf95b200059e7567f1bad538f0a07b4ddb2f0ad76c",
+  "sha256": "dfa795b3b8712faf43592145e89378e59914ac5c444e70ae3f04f0763cb41e71",
   "shots": [
     {
       "title": "An unfinished drawing",
@@ -88,5 +88,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "fd26c69e990364bf6efe7321f7491f15e83bf150ee9d4d87c394c3a97355282e"
+  "motion_shots": [],
+  "input_sha256": "5039cf476595ab49658c9354e93c9efe10aaf6140e01527ad6aa1e5192be621c"
 }

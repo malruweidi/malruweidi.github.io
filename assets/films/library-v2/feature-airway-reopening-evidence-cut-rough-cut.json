@@ -1,13 +1,13 @@
 {
   "slug": "feature-airway-reopening-evidence-cut",
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
-  "duration": 138.0,
+  "duration": 153.0,
   "voice_mode": "kokoro-preview",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "1103fd1c0c0c83b7253a78f439b9e04949633033bff50fe68fa02aa018e14a07",
+  "sha256": "ffad9bc7624eb976ab36370d9b99e09b166a84e0aee143d9183edcbcb063a505",
   "shots": [
     {
       "title": "Reopening is not always gentle",
@@ -95,5 +95,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "29304aaca8adbb50985220de940c32a518ccfa331e7a84397be7dfb1bed9b847"
+  "motion_shots": [],
+  "input_sha256": "8333947b89398608a8bf92b828494b2b3f9f10ac25f65f44ffeef6a50028b285"
 }

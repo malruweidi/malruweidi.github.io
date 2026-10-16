@@ -1,13 +1,13 @@
 {
   "slug": "feature-two-materials-no-section-evidence-cut",
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
-  "duration": 120.0,
+  "duration": 150.0,
   "voice_mode": "kokoro-preview",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "8f50c5fe102e381970f056f6430330c38e405c01de2b3612ef6cb7181853085d",
+  "sha256": "20b29ca370d0c66f1a6b1bf61075a720388eab38baef0ccd65a855034d28a599",
   "shots": [
     {
       "title": "The section that never existed",
@@ -88,5 +88,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "3fc0fabb810c8adf0b15080a635fd9d9e870370b15fbd26387e771d08c31cf7c"
+  "motion_shots": [],
+  "input_sha256": "dbad2f77bca0b8facecabcfe3e671f75e87043119292e51dedbaa4e9ba54cddb"
 }
