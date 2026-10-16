@@ -98,3 +98,26 @@ test('all ten independently published essays and columns retain source links and
   assert.ok(engine.includes('entry.get("source_url", entry["page"])'));
   assert.ok(engine.includes('--missing-only'));
 });
+
+
+test('documentary checkpointing is restartable and keeps existing source releases', () => {
+  const script = fs.readFileSync(file('scripts/render-publication-series.py'), 'utf8');
+  const workflow = fs.readFileSync(file('.github/workflows/render-publication-series.yml'), 'utf8');
+  assert.ok(script.includes('p.add_argument("--limit",type=int'), 'bounded rendering flag');
+  assert.ok(script.includes('p.add_argument("--remaining-count",action="store_true"'), 'remaining count flag');
+  assert.ok(script.includes('items = items[:opts.limit]'), 'restrict each batch without removing catalogue entries');
+  assert.ok(script.includes('if opts.missing_only or opts.remaining_count:'), 'existing releases checked before rendering');
+  assert.ok(workflow.includes('--missing-only --limit 3'), 'three-film checkpoint');
+  assert.ok(workflow.includes('git rebase FETCH_HEAD'), 'keep concurrent site edits');
+  assert.ok(workflow.includes('gh workflow run render-publication-series.yml --ref main'), 'continue remaining renders');
+  assert.ok(workflow.includes('actions: write'), 'workflow may schedule its next batch');
+  assert.ok(workflow.includes('actions/cache@v4'), 'reuse narrator model downloads');
+});
+
+test('film players require actual MP4 responses and expose a standalone caption link', () => {
+  const page = fs.readFileSync(file('publication-cinema.html'), 'utf8');
+  assert.ok(page.includes('r.headers.get("content-type")'), 'HTML fallbacks do not masquerade as films');
+  assert.ok(page.includes('Read captions ↗'), 'captions separately readable');
+  assert.ok(page.includes('target.isConnected'), 'check visual still exists when asynchronous video probe completes');
+  assert.ok(page.includes('method:"HEAD"'), 'do not download large MP4 files merely to check availability');
+});

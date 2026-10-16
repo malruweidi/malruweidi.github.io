@@ -93,11 +93,13 @@
    if(!target)continue;
    const url="/assets/films/series/"+x.id+".mp4";
    let request=fetch(url,{method:"HEAD",cache:"no-store"}).then(r=>{
-    if(!r.ok)return;
+    if(!r.ok || !/^video\/mp4\b/i.test(r.headers.get("content-type")||""))return;
     if(!target.isConnected)return;
     let visual=target.querySelector(".piece-visual");
     visual.innerHTML='<video controls playsinline preload="none" poster="'+esc(x.poster)+'" aria-label="'+esc(x.film_title)+'"><source src="'+esc(url)+'" type="video/mp4"><track kind="captions" src="/assets/films/series/'+esc(x.id)+'.vtt" srclang="en" label="English captions" default></video>';
     target.querySelector("[data-status]").textContent="Film available · "+x.duration_seconds+" seconds · English captions";
+    const actions=target.querySelector(".actions");
+    if(actions){const link=document.createElement("a");link.href="/assets/films/series/"+encodeURIComponent(x.id)+".vtt";link.textContent="Read captions ↗";link.setAttribute("aria-label","Read English captions for "+x.film_title);actions.appendChild(link);}
    }).catch(()=>{});
    playerPromises.add(request);request.finally(()=>playerPromises.delete(request));
   }

@@ -166,6 +166,8 @@ def main():
     p.add_argument("--models",default="film-models")
     p.add_argument("--film",action="append",help="Specific slug; otherwise renders all currently selected films")
     p.add_argument("--missing-only",action="store_true",help="Keep verified existing MP4/VTT/JSON releases; render only absent titles")
+    p.add_argument("--limit",type=int,help="Maximum number of missing films to render per job, so completed films can be published in batches")
+    p.add_argument("--remaining-count",action="store_true",help="Print how many releases lack a complete MP4, VTT and JSON manifest")
     opts=p.parse_args()
     data=json.loads(CATALOG.read_text(encoding="utf-8"))
     items=verify_catalog(data["items"])
@@ -176,12 +178,20 @@ def main():
         items=[x for x in items if x["id"] in wanted]
     print("Films validated:", ", ".join(x["id"] for x in items))
     if opts.validate_only: return
-    if opts.missing_only:
+    if opts.missing_only or opts.remaining_count:
         absent = [e for e in items if not all((OUTPUT / (e["id"] + ext)).is_file() and
                   (OUTPUT / (e["id"] + ext)).stat().st_size > 100
                   for ext in (".mp4", ".vtt", ".json"))]
         print("Existing source-preserving releases:", len(items)-len(absent))
         items = absent
+    if opts.remaining_count:
+        print(len(items))
+        return
+    if opts.limit is not None:
+        if opts.limit < 1:
+            raise ValueError("--limit must be a positive integer")
+        print("Releases in this checkpoint batch:", min(opts.limit, len(items)))
+        items = items[:opts.limit]
     models=(ROOT/opts.models).resolve()
     for entry in items:
         render(entry,models)
