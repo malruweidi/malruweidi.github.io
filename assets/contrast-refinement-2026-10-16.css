@@ -25,3 +25,13 @@ html[data-rx-page="writing"] .rxw-book-announcement a { color:#88452F; }
 html[data-rx-page="research-detail"] .rx-deep-kicker { color:#88452F; }
 html[data-rx-page="reading-map"] .map-hero a { color:#F3D0B6; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
+
+/* Second-pass fixes from live desktop/mobile computed contrast audit. */
+html[data-rx-page="home"] .quality-figure figcaption { color:#E7EDE7; }
+html[data-rx-page="home"] .rx-home-science-links a { color:#88452F; }
+html[data-rx-page="stories"] .stories-hero .stories-kicker,
+html[data-rx-page="stories"] .stories-kicker:first-child { color:#F1B995; }
+html[data-rx-page="writing"] .rxw-hero .rxw-kicker,
+html[data-rx-page="writing"] header .rxw-kicker { color:#F1B995; }
+html[data-rx-page="research-detail"] .rx-deep-hero .rx-deep-kicker,
+html[data-rx-page="research-detail"] header .rx-deep-kicker { color:#F1B995; }
