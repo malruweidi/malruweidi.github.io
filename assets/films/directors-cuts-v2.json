@@ -1,0 +1,257 @@
+{
+  "version": "director-cuts-v2-2026-10-17",
+  "status": "EDITORIAL PROTOTYPE — not published",
+  "purpose": "Separate, reversible original directorial remakes. Source films remain preserved.",
+  "frame": "16:9",
+  "duration_seconds": 120,
+  "script_status": "editorial candidates; scientific and pronunciation review before release",
+  "speech": "Voice not approved. No automated voice is called final without human audition.",
+  "films": [
+    {
+      "slug": "making-medicines-keep",
+      "title": "The Medicine in the Jar",
+      "minutes": 2,
+      "voiceDirection": "Quiet, precise historical inquiry; not ominous trailer narration. Correct Arabic terms from a native-speaker pronunciation pass.",
+      "narrativeQuestion": "How could a customer trust medicine whose preparation they had not witnessed?",
+      "primary": "Accepted article 15 October 2026, Making Medicines Keep",
+      "shots": [
+        {
+          "sec": 12,
+          "kind": "original_illustration",
+          "image": "assets/films/plates/making-medicines-keep-01.webp",
+          "title": "The jar",
+          "narration": "A syrup might look perfectly sound and change before it was used. Sugar could crystallize. Its consistency could shift. The finished jar offered few clues about the work that produced it.",
+          "credit": "Editorial reconstruction; not a photographed historical preparation"
+        },
+        {
+          "sec": 14,
+          "kind": "museum_public_domain",
+          "object_id": 451400,
+          "title": "The preparation",
+          "narration": "I found that problem in thirteenth-century pharmaceutical writing. Recipes were not simply inventories of ingredients. They also described what to do to the materials, and when to stop.",
+          "credit": "The Metropolitan Museum of Art, Baghdad, 1224; comparative manuscript, not a Cairo document"
+        },
+        {
+          "sec": 15,
+          "kind": "original_illustration",
+          "image": "assets/films/plates/making-medicines-keep-02.webp",
+          "title": "Julāb",
+          "narration": "In Minhāj al-dukkān, the discussion of syrups begins with julāb, sugar and rose water. The base was familiar; producing a dependable preparation was another matter.",
+          "credit": "Editorial reconstruction of textual description; not a period manuscript"
+        },
+        {
+          "sec": 13,
+          "kind": "museum_public_domain",
+          "object_id": 446288,
+          "title": "Under heat",
+          "narration": "Heat, skimming, and straining belong to the procedure. Qiwām, the right consistency, required judgment by the maker rather than a numerical display.",
+          "credit": "The Metropolitan Museum of Art, Baghdad, 1224; illustrative contemporary comparison, not a depiction of qiwām"
+        },
+        {
+          "sec": 15,
+          "kind": "original_illustration",
+          "image": "assets/films/plates/making-medicines-keep-04.webp",
+          "title": "What changes later",
+          "narration": "The text even discusses remedies when a syrup crystallizes. A preparation does not become reliable merely because the fire has been extinguished.",
+          "credit": "Modern illustrative interpretation; crystallization is not a laboratory measurement from medieval Cairo"
+        },
+        {
+          "sec": 14,
+          "kind": "original_illustration",
+          "image": "assets/films/plates/making-medicines-keep-05.webp",
+          "title": "The prescription",
+          "narration": "A Cairo Genizah prescription names powdered ingredients to be worked with rose syrup. It records what was requested. It cannot show us what a patient eventually received.",
+          "credit": "Typeset interpretation of Cairo Genizah Or.1081 J39; not a manuscript scan"
+        },
+        {
+          "sec": 14,
+          "kind": "original_illustration",
+          "image": "assets/films/plates/making-medicines-keep-06.webp",
+          "title": "Substitution",
+          "narration": "A missing ingredient introduced a second decision. Some manuals permitted substitution under conditions. That was a practical response to scarcity, not permission to deceive.",
+          "credit": "Editorial conceptual diagram; historical substitution is not modern bioequivalence"
+        },
+        {
+          "sec": 13,
+          "kind": "original_illustration",
+          "image": "assets/films/plates/making-medicines-keep-07.webp",
+          "title": "What the customer cannot see",
+          "narration": "Market inspectors worried about false measures and concealed practices. Trust could not rest entirely on the buyer's ability to examine a jar.",
+          "credit": "Editorial interpretation of hisba discussions; not a contemporary depiction of inspections"
+        },
+        {
+          "sec": 10,
+          "kind": "original_illustration",
+          "image": "assets/films/plates/making-medicines-keep-08.webp",
+          "title": "The record",
+          "narration": "The surviving texts preserve this work of making medicine dependable, and the limits of what we can know about it.",
+          "credit": "Article accepted by History of Pharmacy and Pharmaceuticals, 15 October 2026; no fabricated journal cover"
+        }
+      ]
+    },
+    {
+      "slug": "two-materials-no-section",
+      "title": "No Section Came Off the Blade",
+      "minutes": 2,
+      "voiceDirection": "First person, unembellished and tactile; let the silent image of the failed block do substantial narrative work.",
+      "narrativeQuestion": "Why did a plausible embedding method fail at the moment of sectioning?",
+      "primary": "Personal original failed zebrafish histology attempt; source photographs in Stories archive",
+      "shots": [
+        {
+          "sec": 13,
+          "kind": "owner_photo",
+          "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+          "title": "The result",
+          "narration": "The blade passed through the block, but no useful section formed. What fell away was fragmented material. I photographed it because that was the result.",
+          "credit": "Owner's actual unsuccessful attempt"
+        },
+        {
+          "sec": 13,
+          "kind": "owner_photo",
+          "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+          "title": "The problem before cutting",
+          "narration": "Zebrafish specimens are small enough that a slight change in orientation changes which anatomical structures the knife reaches.",
+          "credit": "Owner-supplied original zebrafish specimens"
+        },
+        {
+          "sec": 14,
+          "kind": "owner_photo",
+          "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+          "title": "A reasonable idea",
+          "narration": "I used two-percent agarose to hold the specimen's position, intending to support the preparation afterward in paraffin.",
+          "credit": "Owner-supplied original histology-processing photograph"
+        },
+        {
+          "sec": 13,
+          "kind": "original_diagram",
+          "image": "assets/films/plates/two-materials-no-section-03.webp",
+          "title": "Two materials",
+          "narration": "Agarose helped with orientation. Paraffin was supposed to make sectioning possible. Their jobs appeared complementary on paper.",
+          "credit": "Explanatory schematic, not an image of the actual interface"
+        },
+        {
+          "sec": 15,
+          "kind": "owner_photo",
+          "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+          "title": "Where it broke",
+          "narration": "At the microtome, the assembly separated rather than producing an intact ribbon. The instrument encountered a block whose materials did not hold together.",
+          "credit": "Actual failed section attempt"
+        },
+        {
+          "sec": 13,
+          "kind": "original_diagram",
+          "image": "assets/films/plates/two-materials-no-section-06.webp",
+          "title": "A hypothesis, not a diagnosis",
+          "narration": "Their different affinities for water offer a plausible explanation, but the photograph alone cannot establish the precise mechanism of failure.",
+          "credit": "Material-behavior hypothesis; not proof of molecular mechanism"
+        },
+        {
+          "sec": 13,
+          "kind": "owner_photo",
+          "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+          "title": "The questions left",
+          "narration": "A different embedding sequence, better dehydration, or a compatible support system might change the outcome. That would need a new experiment.",
+          "credit": "Original preparation photograph; proposed remedies untested here"
+        },
+        {
+          "sec": 15,
+          "kind": "owner_photo",
+          "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+          "title": "The record remains",
+          "narration": "There is no final histological section in this story. The images show exactly where the procedure ended. They also tell the next person what must be redesigned.",
+          "credit": "Photographic record of unsuccessful attempt"
+        },
+        {
+          "sec": 11,
+          "kind": "owner_photo",
+          "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+          "title": "Not a successful slide",
+          "narration": "An attractive diagram could hide that. The actual failed block cannot.",
+          "credit": "Authentic specimen photograph; no successful histological outcome claimed"
+        }
+      ]
+    },
+    {
+      "slug": "what-a-bubble-can-do",
+      "title": "The Moment an Airway Reopens",
+      "minutes": 2,
+      "voiceDirection": "Measured scientific curiosity, crisp emphasis on observations and experimental limitations. Minimal music when numerical or experimental images appear.",
+      "narrativeQuestion": "How can reopening a lung airway itself impose a mechanical injury?",
+      "primary": "Journal of Applied Physiology primary paper doi:10.1152/japplphysiol.00574.2020",
+      "shots": [
+        {
+          "sec": 13,
+          "kind": "original_diagram",
+          "image": "assets/films/plates/what-a-bubble-can-do-01.webp",
+          "title": "Opening is not always gentle",
+          "narration": "An airway can reopen and still be injured. A moving air–liquid boundary passes across epithelial cells as the liquid is displaced.",
+          "credit": "Conceptual drawing, not pulmonary patient footage"
+        },
+        {
+          "sec": 15,
+          "kind": "study_figure",
+          "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "title": "Bringing the problem to a chamber",
+          "narration": "In a laboratory, we could isolate part of that event in a parallel-plate flow chamber. The arrangement simplifies the lung, but makes the passing interface measurable.",
+          "credit": "Published research figure; experimental geometry"
+        },
+        {
+          "sec": 15,
+          "kind": "original_diagram",
+          "image": "assets/films/plates/what-a-bubble-can-do-02.webp",
+          "title": "An advancing boundary",
+          "narration": "An interface moves over a cultured monolayer. The cells experience the passage of the boundary, not merely the presence of air or fluid.",
+          "credit": "Mechanistic illustration without fabricated parameters"
+        },
+        {
+          "sec": 15,
+          "kind": "original_diagram",
+          "image": "assets/films/plates/what-a-bubble-can-do-04.webp",
+          "title": "What we counted",
+          "narration": "Cell injury was assessed after exposure. The viability measurements describe injury in this controlled system, not damage in an entire human lung.",
+          "credit": "Illustrated readout; original data in linked paper"
+        },
+        {
+          "sec": 13,
+          "kind": "study_figure",
+          "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "title": "Before the bubble arrives",
+          "narration": "We also asked whether changing the cellular response in advance would alter susceptibility to the mechanical insult.",
+          "credit": "Research context from primary publication"
+        },
+        {
+          "sec": 15,
+          "kind": "original_diagram",
+          "image": "assets/films/plates/what-a-bubble-can-do-05.webp",
+          "title": "A pharmacological question",
+          "narration": "The study investigated dexamethasone and transdehydroandrosterone. In the experiment, pretreatment reduced measured injury under the reported conditions.",
+          "credit": "Conceptual comparison; consult paper for results and controls"
+        },
+        {
+          "sec": 13,
+          "kind": "original_diagram",
+          "image": "assets/films/plates/what-a-bubble-can-do-06.webp",
+          "title": "How far does the conclusion travel?",
+          "narration": "Cell culture is not clinical ventilation. Delivery, dose, tissue context and patient outcomes cannot be inferred from a chamber alone.",
+          "credit": "Scientific inference limits; no therapeutic recommendation"
+        },
+        {
+          "sec": 12,
+          "kind": "owner_photo",
+          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "title": "The apparatus matters",
+          "narration": "The design is useful precisely because the exposure can be specified and compared, experiment after experiment.",
+          "credit": "Archival laboratory workspace; not necessarily a recording of this specific experiment"
+        },
+        {
+          "sec": 9,
+          "kind": "study_figure",
+          "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "title": "The hidden event",
+          "narration": "A bubble becomes a physical challenge with a biological readout. That is where the next question begins.",
+          "credit": "Published study context; doi:10.1152/japplphysiol.00574.2020"
+        }
+      ]
+    }
+  ]
+}
