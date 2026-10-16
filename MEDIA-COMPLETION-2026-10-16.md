@@ -2,6 +2,16 @@
 
 This is a non-destructive recovery register. It does not assert that missing binaries have been uploaded.
 
+## 16 October recovery progress (follow-up)
+- [x] Added `moving-evidence.html`, an annotated index of six already-published recordings, linked from the homepage, Archive, Stories, Science & Society, secondary navigation, site search and the sitemap. No original videos or pages were replaced.
+- [x] Automated source/provenance regression testing added to the main website integrity workflow; latest verified passing run is tracked in GitHub Actions.
+- [x] Located `941df66636ad466db5ecdb3ecf919c46.mov` in the user's file library and converted it to H.264/AAC MP4 with a WebP poster in a separate local upload-ready restoration package.
+- [x] Located seven owner-identified 13 October photographs and `IMG_4241.jpeg` in the user's file library. Optimized staged WebP files, removed screenshot controls from the library photo, and blurred the child's face in the school photograph.
+- [x] Prepared an exact-path upload kit with a recoverable manifest for all eight images and the video plus poster.
+- [ ] Transfer those **binary files** into GitHub. The available GitHub text-file connector does not accept binary file bytes via local paths; do not mark them published until actual GitHub blobs are committed and deployed.
+- [ ] Review/publication consent for the identifiable spoken chemistry clip, and run a playback check once the binary is hosted.
+- [ ] Separate restoration batches for the remaining 2019–2020 and Chem Squad source photographs stay pending.
+
 ## Priority 1: video
 - [ ] Restore `941df66636ad466db5ecdb3ecf919c46.mov` as `assets/owner-archive-2026-10-13/khaled-jama-thesis-reaction.mp4` and create `khaled-jama-thesis-reaction-poster.webp`. The recording depicts Khaled Jama Mohamoud explaining a chemistry reaction associated with his thesis. Do not infer validation of the mechanism. Existing conditional rendering in `assets/owner-archive-2026-10-13.js` must be preserved.
 - [ ] Locate the three earlier AVI zebrafish recordings and determine whether they duplicate the currently hosted MP4 recordings before publishing.
