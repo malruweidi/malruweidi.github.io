@@ -1,0 +1,16 @@
+{
+  "id": "curcumin-cyanide",
+  "seconds": 84.0,
+  "sha256": "47ad3bd0cfa7cef52db2ebea89c81e67dde8dcd28d539a7a8e032588cee6abcb",
+  "primary_source": "https://doi.org/10.1039/C9AY01557D",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "airway-reopening",
+  "seconds": 84.0,
+  "sha256": "b50ea491ec818927424fd4fee6975ab9d17c753f3d7d6882ea4e25437cf71884",
+  "primary_source": "https://doi.org/10.1152/japplphysiol.00574.2020",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

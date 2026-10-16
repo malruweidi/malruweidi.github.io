@@ -1,0 +1,16 @@
+{
+  "id": "niosomes",
+  "seconds": 84.0,
+  "sha256": "7784b57c6271f472936c58315329a92a77d2ed5233733d7dcbdf906e0ecfb78f",
+  "primary_source": "/research/inhalable-vesicles.html",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

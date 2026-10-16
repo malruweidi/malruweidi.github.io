@@ -1,0 +1,16 @@
+{
+  "id": "cerebral-cilia",
+  "seconds": 84.0,
+  "sha256": "5f608b0be5ef37071d39e32ec4deb1be8cae6ebb340f9bcfa5507ff444bce842",
+  "primary_source": "https://doi.org/10.1161/ATVBAHA.118.311231",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "motion footage",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
