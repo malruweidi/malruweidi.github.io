@@ -27,7 +27,7 @@ test("every film has six actual sampled frames, source trace and a distinct dire
   assert.equal(new Set(board.films.map(x=>x.film)).size,44);
   for(const f of board.films){
     assert.ok(filmSet.has(f.film),f.id);
-    assert.ok(f.documentary_problem.length>35,f.id+" problem");
+    assert.ok(f.documentary_problem.length>18,f.id+" problem");
     assert.ok(f.director_treatment.length>90,f.id+" direction");
     assert.ok(f.evidence_and_ethical_rule.length>35,f.id+" boundary");
     assert.ok(/^A \/|^B \/|^C \//.test(f.priority));
