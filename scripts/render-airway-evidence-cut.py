@@ -124,7 +124,7 @@ def draw_results(d,focus):
     box(d,(88,152,1191,516),(237,239,231),r=25)
     label(d,137,180,"PUBLISHED MEAN CELL DEATH (%)",24,PINE,"bold")
     label(d,139,215,"SINGLE BUBBLE / RAT L2 CELL CULTURE / NOT CLINICAL EFFICACY",14,(105,79,61),"bold")
-    x0=151;x1=1110;span=x1-x0
+    x0=520;x1=1050;span=x1-x0
     for tick in [0,20,40,60]:
         yy=275
         x=x0+span*tick/60
@@ -136,8 +136,8 @@ def draw_results(d,focus):
         color =color if focus=="all" or i==focus else (177,193,182)
         d.rounded_rectangle((x0,y,x0+length,y+23),radius=4,fill=color)
         d.text((x0+length+8,y),f"{value:.1f}%",font=f(17,"bold"),fill=PINE)
-        label(d,810,y+3,name,13,PINE,"bold")
-    label(d,150,490,"BAR LENGTHS REPRESENT REPORTED MEANS ONLY; NO NEW DATA",13,(126,82,64),"bold")
+        label(d,151,y+3,name,16,PINE,"bold")
+    label(d,150,490,"BARS SHOW PUBLISHED MEANS ONLY; NO NEW DATA",13,(126,82,64),"bold")
 
 def draw_actin(d):
     box(d,(92,160,1190,516),(228,235,227),r=24)
