@@ -1128,3 +1128,9 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "The case studies below describe the research question, methods, available evidence and my contribution to each project.": "تشرح دراسات الحالة أدناه السؤال البحثي والمنهجيات والأدلة المتاحة ومساهمتي في كل مشروع.",
   "I helped establish Qatar University's American Chemical Society student chapter in 2015. We organized lectures, laboratory training and public chemistry events, and worked to help students participate in international scientific meetings. The chapter gave us a place to learn from each other and bring other students into chemistry.": "ساهمت في تأسيس الفرع الطلابي للجمعية الكيميائية الأمريكية في جامعة قطر عام ٢٠١٥. نظمنا محاضرات وتدريبًا مختبريًا وفعاليات للكيمياء للجمهور، وعملنا على إتاحة المشاركة للطلاب في اللقاءات العلمية الدولية. أتاح لنا الفرع التعلم معًا وإشراك طلاب آخرين في الكيمياء."
 });
+
+/* Direct research narrative: revised home page, October 2026. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "I have worked on molecular sensors, polymers, vascular imaging and pulmonary drug delivery. Each project required me to learn techniques suited to its particular questions, from spectral characterization to experiments on living cells.": "عملتُ على المستشعرات الجزيئية والبوليمرات وتصوير الأوعية الدموية وإيصال الدواء إلى الرئة. احتاج كل مشروع إلى تقنيات تناسب أسئلته، من التوصيف الطيفي إلى التجارب على الخلايا الحية.",
+  "My interests lie where molecular pharmacology meets pharmaceutical delivery. A target hypothesis raises questions about dose, tissue exposure and the response of living cells. I want those measurements to influence molecular and formulation design from the beginning.": "أهتم بالمنطقة التي تلتقي فيها الفارماكولوجيا الجزيئية مع توصيل الأدوية. تقود فرضية الهدف الدوائي إلى أسئلة عن الجرعة والتعرض داخل الأنسجة واستجابة الخلايا الحية، وأريد أن تؤثر هذه القياسات في تصميم الجزيء والمستحضر منذ البداية."
+});
