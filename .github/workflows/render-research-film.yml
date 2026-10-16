@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - film-documentary-2026-10-16
+      - film-cinematic-v2-20261016
     paths:
       - assets/films/what-survives-scenes.json
       - scripts/render-documentary.py
@@ -36,7 +37,7 @@ jobs:
           python -m pip install pillow numpy soundfile kokoro-onnx
       - name: Check source provenance, film story and preserved homepage
         run: |
-          node --test tests/research-film.test.cjs
+          node --test tests/research-film.test.cjs tests/film-cinematic-v2.test.cjs
           python -m py_compile scripts/render-documentary.py
           python scripts/render-documentary.py --validate-only
       - name: Obtain freely licensed local TTS model and voice
