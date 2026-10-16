@@ -1,0 +1,159 @@
+{
+  "updated": "2026-10-16",
+  "policy": "Preserve all existing Ruwaidix content and photographic provenance. New photos are cropped screenshot-derived WebP, independently positioned near their relevant existing narratives. No EXIF-based original capture dates are claimed.",
+  "entries": [
+    {
+      "original": "IMG_2062.jpeg",
+      "crop": [
+        0,
+        165,
+        710,
+        1292
+      ],
+      "bytes": 28136,
+      "path": "assets/owner-archive-2026-10-16/chem-squad-lab-medicinal-plant-extracts.webp",
+      "destinations": [
+        "chem-squad.html#rx16-chem-extraction"
+      ],
+      "provenance": "Identified by owner on 16 October 2026; source is an iPhone Photos screenshot. Display dates must not be presented as camera capture dates.",
+      "caveat": "Chem Squad / medicinal extracts workbench context from owner; exact procedure not confirmed."
+    },
+    {
+      "original": "IMG_2059.jpeg",
+      "crop": [
+        0,
+        410,
+        710,
+        1124
+      ],
+      "bytes": 32212,
+      "path": "assets/owner-archive-2026-10-16/chem-squad-elgendy-asleep-selfie.webp",
+      "destinations": [
+        "chem-squad.html#rx16-chem-life"
+      ],
+      "provenance": "Identified by owner on 16 October 2026; source is an iPhone Photos screenshot. Display dates must not be presented as camera capture dates."
+    },
+    {
+      "original": "IMG_2060.jpeg",
+      "crop": [
+        0,
+        535,
+        710,
+        1034
+      ],
+      "bytes": 29148,
+      "path": "assets/owner-archive-2026-10-16/chem-squad-rakan-winter-fifa.webp",
+      "destinations": [
+        "chem-squad.html#rx16-chem-life"
+      ],
+      "provenance": "Identified by owner on 16 October 2026; source is an iPhone Photos screenshot. Display dates must not be presented as camera capture dates."
+    },
+    {
+      "original": "IMG_2061.jpeg",
+      "crop": [
+        0,
+        502,
+        710,
+        1068
+      ],
+      "bytes": 20894,
+      "path": "assets/owner-archive-2026-10-16/acs-orange-balloon-portrait.webp",
+      "destinations": [
+        "engagement.html#rx16-acs-balloon"
+      ],
+      "provenance": "Identified by owner on 16 October 2026; source is an iPhone Photos screenshot. Display dates must not be presented as camera capture dates."
+    },
+    {
+      "original": "IMG_2058.jpeg",
+      "crop": [
+        0,
+        295,
+        710,
+        1240
+      ],
+      "bytes": 24714,
+      "path": "assets/owner-archive-2026-10-16/chick-embryo-heart-observation.webp",
+      "destinations": [
+        "stories.html#rx16-chick-heart"
+      ],
+      "provenance": "Identified by owner on 16 October 2026; source is an iPhone Photos screenshot. Display dates must not be presented as camera capture dates.",
+      "caveat": "Chick embryo heart: anatomical interpretation from owner; developmental stage not documented."
+    },
+    {
+      "original": "IMG_2057.jpeg",
+      "crop": [
+        52,
+        387,
+        659,
+        1013
+      ],
+      "bytes": 25042,
+      "path": "assets/owner-archive-2026-10-16/yce-youth-event-podium-2013.webp",
+      "destinations": [
+        "engagement.html#rx16-youth-2013"
+      ],
+      "provenance": "Identified by owner on 16 October 2026; source is an iPhone Photos screenshot. Display dates must not be presented as camera capture dates."
+    },
+    {
+      "original": "IMG_2056.jpeg",
+      "crop": [
+        0,
+        594,
+        710,
+        955
+      ],
+      "bytes": 32130,
+      "path": "assets/owner-archive-2026-10-16/chemistry-ramadan-group-gathering.webp",
+      "destinations": [
+        "chem-squad.html#rx16-chem-life"
+      ],
+      "provenance": "Identified by owner on 16 October 2026; source is an iPhone Photos screenshot. Display dates must not be presented as camera capture dates."
+    },
+    {
+      "original": "IMG_2055.jpeg",
+      "crop": [
+        0,
+        594,
+        710,
+        1008
+      ],
+      "bytes": 36302,
+      "path": "assets/owner-archive-2026-10-16/run-the-world-youth-festival-2013.webp",
+      "destinations": [
+        "engagement.html#rx16-youth-2013"
+      ],
+      "provenance": "Identified by owner on 16 October 2026; source is an iPhone Photos screenshot. Display dates must not be presented as camera capture dates."
+    },
+    {
+      "original": "IMG_2054.jpeg",
+      "crop": [
+        0,
+        295,
+        710,
+        1241
+      ],
+      "bytes": 34756,
+      "path": "assets/owner-archive-2026-10-16/eosinophilic-diagnosis-dr-elsheikh-abdelrahim.webp",
+      "destinations": [
+        "illness-and-evidence.html#rx16-diagnosis-photo"
+      ],
+      "provenance": "Identified by owner on 16 October 2026; source is an iPhone Photos screenshot. Display dates must not be presented as camera capture dates.",
+      "context": "Dr. Elsheikh Abdelrahim, resident physician at first eosinophilic gastroenteritis identification; later cardiology; professional profile https://www.linkedin.com/in/elsheikh-abdelrahim-54327322a"
+    },
+    {
+      "original": "IMG_2053.jpeg",
+      "crop": [
+        0,
+        512,
+        710,
+        1272
+      ],
+      "bytes": 21906,
+      "path": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "destinations": [
+        "stories.html#rx16-cultured-cells"
+      ],
+      "provenance": "Identified by owner on 16 October 2026; source is an iPhone Photos screenshot. Display dates must not be presented as camera capture dates."
+    }
+  ]
+}
