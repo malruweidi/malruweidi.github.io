@@ -1,16 +1,17 @@
-name: Recover three cinematic feature films without clipping narration
+name: Reconcile all four source-timed feature documentaries
 on:
   push:
     branches:
       - cinematic-remake-20261017
     paths:
       - .github/workflows/recover-feature-cuts-v2.yml
+      - assets/films/cinematic-library-v2.json
   workflow_dispatch:
 permissions:
   contents: write
 concurrency:
-  group: ruwaidix-recovery-three-films
-  cancel-in-progress: false
+  group: ruwaidix-recovery-current-features
+  cancel-in-progress: true
 jobs:
   rescue:
     runs-on: ubuntu-latest
@@ -41,7 +42,7 @@ jobs:
           python - <<'PY'
           import json
           d=json.load(open('assets/films/cinematic-library-v2.json'))
-          wanted=['feature-what-survives-the-experiment','feature-ring-that-never-closed','feature-airway-reopening-evidence-cut']
+          wanted=['feature-what-survives-the-experiment','feature-ring-that-never-closed','feature-airway-reopening-evidence-cut','feature-two-materials-no-section-evidence-cut']
           for slug in wanted:
               f=next(x for x in d['films'] if x['slug']==slug)
               total=sum(x['sec'] for x in f['shots'])
@@ -52,7 +53,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          for film in feature-what-survives-the-experiment feature-ring-that-never-closed feature-airway-reopening-evidence-cut; do
+          for film in feature-what-survives-the-experiment feature-ring-that-never-closed feature-airway-reopening-evidence-cut feature-two-materials-no-section-evidence-cut; do
             echo "Feature recovery: $film"
             python scripts/render-cinematic-library.py --film "$film" --limit 1 --voice-mode kokoro-preview --models film-models
             test -s "assets/films/library-v2/$film-rough-cut.mp4"
