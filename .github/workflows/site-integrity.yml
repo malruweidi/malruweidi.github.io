@@ -13,6 +13,8 @@ jobs:
       - uses: actions/checkout@v5
       - name: Check links, media, JavaScript and scientific attribution
         run: node scripts/site-integrity.cjs
+      - name: Verify film sources, captions and non-destructive discovery
+        run: node --test tests/moving-evidence.test.cjs
       - name: Check editorial wayfinding and chapter preservation
         run: node --test tests/editorial-wayfinding.test.mjs
       - name: Test lossless standalone stories and research dossiers
