@@ -270,10 +270,22 @@ def photograph_context_frame(source):
         backdrop=Image.blend(backdrop.filter(ImageFilter.GaussianBlur(35)),
                              Image.new("RGB",(W,H),DARK),.50)
         kept=original.copy()
-        kept.thumbnail((940,550),Image.Resampling.LANCZOS)
-        backdrop.paste(kept,((W-kept.width)//2,145+(440-kept.height)//2))
+        kept.thumbnail((585,540),Image.Resampling.LANCZOS)
+        # Place portrait comparators to the right of the Ruwaidix masthead and title.
+        # Keep the full document/instrument image rather than cropping it to a cinematic slit.
+        backdrop.paste(kept,(W-52-kept.width,145))
+    # Maintain one consistent readable masthead over variable archival and AI image exposures.
+    mast=Image.new("RGBA",(W,H),(0,0,0,0))
+    md=ImageDraw.Draw(mast)
+    md.rounded_rectangle((45,39,638,139),radius=8,fill=(8,29,32,180))
+    backdrop=Image.alpha_composite(backdrop.convert("RGBA"),mast).convert("RGB")
     d=ImageDraw.Draw(backdrop)
-    label=source["caption"].upper()
+    labels={
+        "wellcome-arabic-manuscript":"15TH-C. MEDICAL MANUSCRIPT · CONTEXT ONLY",
+        "nih-alveoli":"NIH ANATOMY · NOT EXPERIMENTAL DATA",
+        "generic-microtome":"GENERIC MICROTOME · NOT THIS EXPERIMENT"
+    }
+    label=labels.get(source["id"],"EDITORIAL RECONSTRUCTION · NOT HISTORICAL FOOTAGE")
     size=17
     while d.textbbox((0,0),label,font=ft(size,True))[2]>1080 and size>12:
         size-=1
