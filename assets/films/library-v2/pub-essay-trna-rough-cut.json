@@ -1,0 +1,78 @@
+{
+  "slug": "pub-essay-trna",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "9d7d221e2b8b3a354e09ce9febcbc7ef6d29d2609acd4bf31d46f8917ed8cbd0",
+  "shots": [
+    {
+      "title": "The Molecule Behind Every Protein",
+      "kind": "Original laboratory research photo, not a tRNA manipulation",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Original laboratory research photo, not a tRNA manipulation"
+    },
+    {
+      "title": "A translator inside every cell",
+      "kind": "Original chemistry chalkboard, not a tRNA molecular structure",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "museum": null,
+      "credit": "Original chemistry chalkboard, not a tRNA molecular structure"
+    },
+    {
+      "title": "The system is not one target",
+      "kind": "Original laboratory research photo, not a tRNA manipulation",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Original laboratory research photo, not a tRNA manipulation"
+    },
+    {
+      "title": "Synthetases can do more",
+      "kind": "General pathway illustration; not a synthetase structure",
+      "image": "assets/robo-concept.svg",
+      "museum": null,
+      "credit": "General pathway illustration; not a synthetase structure"
+    },
+    {
+      "title": "Specificity will decide the risk",
+      "kind": "Original lab flask, not cytotoxicity data",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "museum": null,
+      "credit": "Original lab flask, not cytotoxicity data"
+    },
+    {
+      "title": "The difficulty: Match the modality to the biology",
+      "kind": "Drug-carrier concept unrelated to any validated tRNA therapeutic",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Drug-carrier concept unrelated to any validated tRNA therapeutic"
+    },
+    {
+      "title": "Match the modality to the biology",
+      "kind": "Drug-carrier concept unrelated to any validated tRNA therapeutic",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Drug-carrier concept unrelated to any validated tRNA therapeutic"
+    },
+    {
+      "title": "The translation apparatus is dynamic",
+      "kind": "Author's editorial portrait",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "museum": null,
+      "credit": "Author's editorial portrait"
+    }
+  ],
+  "film_title": "The Molecule Behind Every Protein",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "f2dc909773f04b94c2250b05b4ba544edfb691334fe00bf1b03487d19d0a0e02"
+}
