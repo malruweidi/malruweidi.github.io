@@ -34,7 +34,7 @@ nav button:focus-visible{outline:3px solid #e3bd87}
 <figure><label for="preview">Revised director's cut · audition export</label><video id="preview" controls playsinline preload="metadata" aria-label="Unapproved director's cut video"></video><figcaption id="player-note" aria-live="polite"></figcaption></figure>
 <details><summary>Compare the original archived film</summary><figure><label for="original">Previous released edition · preserved in full</label><video id="original" controls playsinline preload="none" aria-label="Original archived video"></video><figcaption class="review-note">These are original preserved exports. The two players are not synchronized; pause one before playing the other for a fair comparison.</figcaption></figure></details>
 <details id="voice-auditions"><summary>Compare four open-source narration auditions</summary><p class="review-note">Only available for the history and pulmonary audition passages. Different voices do not imply approval; check all scientific and Arabic terms aloud.</p><div id="voice-samples" class="auditions"></div></details>
-</div><article><span class="stat" id="availability">Verifying preview</span><h2 id="title">Select a film</h2><p id="source"></p><div id="review-links"></div>
+</div><article><span class="stat" id="availability">Verifying preview</span><h2 id="title">Select a film</h2><p id="source"></p><p id="direction" class="review-note"></p><p id="casting" class="review-note"></p><div id="review-links"></div>
 <details open><summary>Timed storyboard and scene provenance</summary><ol id="shots"></ol></details></article></section>
 <p>Review standards: verify visual source identity, inspect full figure axes, listen continuously at normal volume, check scientific terminology, and compare captions against actual speech. Do not approve by automation alone.</p>
 <p><a href="https://github.com/malruweidi/malruweidi.github.io/pull/47">View the protected editorial pull request</a></p>
@@ -48,6 +48,8 @@ function present(f){
 state.selected=f;
 q("#title").textContent=f.title;
 q("#source").textContent="Evidence source: "+(f.primary||f.source_path||"See source register");
+q("#direction").textContent="Director’s argument: "+(f.editorial_argument||"Preserve and review original source evidence")+" | Visual treatment: "+(f.visual_motif||"Original evidence first");
+q("#casting").textContent="Audition cast (not final): "+(f.voice_preview||"unassigned")+" | Review: "+(f.review_question||"Full film viewing required");
 const total=f.shots.reduce((a,b)=>a+Number(b.sec||0),0);
 q("#shots").innerHTML=f.shots.map(s=>'<li><b>'+safe(s.title)+'</b> · '+Number(s.sec)+'s<p>'+safe(s.narration)+'</p><small>'+safe(s.credit)+'</small></li>').join("");
 // Every one of the 44 film cuts has a dedicated library-v2 export.
@@ -93,8 +95,12 @@ const candidates=state.items.filter(x=>(!kind||x.output_collection===kind)&&(x.t
 const nav=q("#films");nav.replaceChildren();
 for(const f of candidates){const b=document.createElement("button");b.type="button";b.textContent=f.title;b.addEventListener("click",()=>present(f));nav.appendChild(b);}
 }
-fetch("/assets/films/cinematic-library-v2.json").then(r=>r.json()).then(library=>{
-state.items=library.films;
+Promise.all([
+fetch("/assets/films/cinematic-library-v2.json").then(r=>{if(!r.ok)throw Error("film source unavailable");return r.json();}),
+fetch("/assets/films/directors-ledger-v3.json").then(r=>{if(!r.ok)throw Error("director ledger unavailable");return r.json();})
+]).then(([library,direction])=>{
+const edits=new Map(direction.films.map(f=>[f.slug,f]));
+state.items=library.films.map(f=>Object.assign({},f,edits.get(f.slug)||{}));
 draw();
 if(state.items.length)present(state.items.find(f=>f.slug==="two-materials-no-section")||state.items[0]);
 }).catch(e=>q("#availability").textContent="Source catalogue could not be loaded: "+e.message);
