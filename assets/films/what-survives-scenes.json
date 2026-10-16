@@ -45,7 +45,7 @@
       "subtitle": "Imine chemistry / Molecular sensing",
       "narration": "Imine synthesis and molecular sensing taught me to distrust a beautiful explanation until I could interrogate the spectrum.",
       "image": "assets/home-archive/figure-cyanide-sensor.jpg",
-      "link": "research.html",
+      "link": "figures.html",
       "credit": "Published scientific figure from the research record; attribution in the Figures archive",
       "kind": "research figure",
       "contain": true
@@ -108,7 +108,7 @@
       "subtitle": "Biomaterials / Surfaces",
       "narration": "Biomaterials and engineered surfaces added another constraint: a substance can be chemically interesting yet behave very differently at an interface.",
       "image": "assets/home-archive/figure-pla-surface.jpg",
-      "link": "research.html",
+      "link": "figures.html",
       "credit": "Published materials-research imagery; source and figure context in the research record",
       "kind": "research figure",
       "contain": true
@@ -129,7 +129,7 @@
       "subtitle": "Pharmaceutical history / Continuing research",
       "narration": "I also study how earlier pharmacists made medicines dependable. Across centuries and disciplines, I keep returning to what the evidence can actually bear.",
       "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
-      "link": "writing.html",
+      "link": "index.html#writing",
       "credit": "Contemporary portrait and editorial typography; not a historical manuscript facsimile",
       "kind": "photograph"
     }
