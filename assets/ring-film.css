@@ -1,0 +1,64 @@
+/* Ring That Never Closed — source-grounded archival chemistry editorial film. */
+:root{--rc-paper:#f7f5ee;--rc-ink:#17343b;--rc-sienna:#994c36;--rc-rule:#d2d5ca;--rc-muted:#4a625b;--rc-wash:#e9eddf}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}
+body.rc-body{margin:0;background:var(--rc-paper);color:var(--rc-ink);font:16px/1.77 "DM Sans",system-ui,sans-serif}
+.rc-body a{color:inherit;text-underline-offset:5px}.rc-body a:hover{color:var(--rc-sienna)}
+.rc-body img,.rc-body video{display:block;max-width:100%}
+.rc-body :is(a,button,video):focus-visible{outline:3px solid #a05b40;outline-offset:4px}
+.rc-wrap{width:min(1130px,calc(100% - 42px));margin-inline:auto}
+.rc-header{background:var(--rc-ink);color:var(--rc-paper)}
+.rc-header .rc-wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:23px 0}
+.rc-header nav{display:flex;flex-wrap:wrap;gap:12px 22px}
+.rc-header a{text-decoration:none;font-size:13px}.rc-header a:hover{color:#f4c4a0}
+.rc-brand{font:400 29px/1.1 "Newsreader",Georgia,serif!important}
+.rc-hero{background:#e9ede5;padding:clamp(60px,8vw,112px) 0 70px;border-bottom:1px solid #c3cec5}
+.rc-kicker{font:500 12px/1.5 "DM Mono",monospace;color:var(--rc-sienna);letter-spacing:.09em;text-transform:uppercase}
+.rc-hero h1{font:400 clamp(56px,8vw,111px)/1.02 "Newsreader",Georgia,serif;letter-spacing:-.047em;max-width:960px;margin:17px 0}
+.rc-hero h1 em{color:var(--rc-sienna);font-weight:400}
+.rc-lead{font:400 clamp(19px,2.4vw,28px)/1.56 "Newsreader",Georgia,serif;max-width:870px;margin:23px 0}
+.rc-intro-note{max-width:770px;font-size:14px;color:var(--rc-muted);line-height:1.85}
+.rc-nav-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.rc-nav-links a{border:1px solid #98aea2;padding:10px 15px;min-height:43px;display:inline-flex;align-items:center;text-decoration:none;font-size:13px;font-weight:600}
+.rc-nav-links a:hover{color:white;background:var(--rc-ink)}
+.rc-film{background:var(--rc-ink);color:var(--rc-paper);padding:clamp(46px,7vw,85px) 0}
+.rc-film video{width:100%;aspect-ratio:16/9;background:#0c2024;object-fit:contain;border:1px solid #7b8d81}
+.rc-film a{color:#f5c4a8}
+.rc-caption-note{font-size:13px;line-height:1.8;color:#d2dfd6;max-width:970px}
+.rc-section{padding:clamp(60px,8vw,98px) 0;border-bottom:1px solid var(--rc-rule)}
+.rc-section h2{font:400 clamp(41px,5vw,72px)/1.08 "Newsreader",Georgia,serif;letter-spacing:-.033em;margin:12px 0 24px}
+.rc-section > .rc-wrap > p{max-width:820px}
+.rc-section p{line-height:1.82}
+.rc-archival{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.76fr);gap:37px;align-items:center}
+.rc-archival figure{margin:0;border:1px solid var(--rc-rule);background:#e1e9dd}
+.rc-archival figure img{width:100%;height:auto;max-height:530px;object-fit:contain}
+.rc-archival figcaption{padding:16px 19px;font-size:12px;line-height:1.7;color:var(--rc-muted);background:white}
+.rc-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:35px 0}
+.rc-mini article{background:#fffdf8;border:1px solid var(--rc-rule);padding:22px}
+.rc-mini strong{display:block;font:400 45px/1.1 "Newsreader",Georgia,serif}
+.rc-mini span{font-size:12px;color:var(--rc-muted);line-height:1.6}
+.rc-colour-row{display:grid;grid-template-columns:1fr 75px 1fr;gap:25px;align-items:center;padding:27px;background:#fffdf8;border:1px solid var(--rc-rule)}
+.rc-swatch{padding:29px 20px;text-align:center;border-radius:3px;font:700 14px/1.5 "DM Mono",monospace;letter-spacing:.06em}
+.rc-swatch.yellow{background:#ebc946;color:#334a40}.rc-swatch.orange{background:#dd883f;color:#253f39}.rc-colour-arrow{text-align:center;font-size:27px}
+.rc-spectral{display:grid;grid-template-columns:1fr 50px 1fr;align-items:center;gap:13px;background:#e5ebe0;padding:21px;border:1px solid #c4d1c5;margin-top:17px}
+.rc-spectral div{text-align:center;padding:18px}
+.rc-spectral strong{font:400 clamp(36px,5vw,59px) "Newsreader",Georgia,serif}
+.rc-spectral span{display:block;font-size:13px;color:var(--rc-muted)}
+.rc-annotation{font-size:13px;color:var(--rc-muted);margin-top:13px;max-width:810px}
+.rc-scene-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.rc-scene{background:#fffdf8;border:1px solid var(--rc-rule);padding:23px}
+.rc-scene-head{display:flex;gap:13px;align-items:center}
+.rc-scene h3{font:400 clamp(25px,2.6vw,33px)/1.14 "Newsreader",Georgia,serif;margin:0}
+.rc-seek{cursor:pointer;min-height:42px;padding:8px 10px;background:transparent;color:var(--rc-ink);border:1px solid #a4b8ad;font:500 13px/1.4 "DM Mono",monospace;white-space:nowrap}
+.rc-seek:hover{background:var(--rc-ink);color:white}
+.rc-scene p{color:#385953;font-size:14px}
+.rc-scene small{font:500 11px/1.6 "DM Mono",monospace;color:#8e513d}
+.rc-provenance{background:#e8ede5}
+.rc-provenance p{max-width:890px;line-height:1.92}
+.rc-source-links{display:flex;flex-wrap:wrap;gap:12px 23px;margin-top:24px}
+.rc-source-links a{color:var(--rc-sienna);font-size:14px;font-weight:600}
+.rc-footer{background:var(--rc-ink);color:var(--rc-paper);padding:36px 0}
+.rc-footer .rc-wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
+.rc-footer a{font-size:13px}
+@media(max-width:850px){.rc-archival{grid-template-columns:1fr}.rc-mini{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.rc-wrap{width:calc(100% - 34px)}.rc-scene-grid,.rc-mini{grid-template-columns:1fr}.rc-colour-row{grid-template-columns:1fr 28px 1fr;gap:7px;padding:10px}.rc-swatch{padding:27px 8px;font-size:11px}.rc-spectral{grid-template-columns:1fr 25px 1fr;gap:3px;padding:5px}.rc-spectral strong{font-size:31px}.rc-hero h1{font-size:clamp(50px,12vw,71px)}.rc-header .rc-wrap{flex-direction:column;align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
