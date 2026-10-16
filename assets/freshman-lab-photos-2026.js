@@ -34,7 +34,7 @@
         const inner=document.createElement("div");inner.className="rx-freshman-archive-inner";
         const kicker=document.createElement("span");kicker.className="mini";kicker.textContent="FROM THE PERSONAL ARCHIVE / UNIVERSITY LABORATORIES";
         const title=document.createElement("h2");title.id="rxFreshmanChemistryTitle";title.textContent="The chemistry bench, before the research papers.";
-        const intro=document.createElement("p");intro.textContent="Two owner-identified photographs of Mahmoud during his freshman chemistry training, alongside a separate laboratory portrait of Abdelgalil Khalaf Ahmed. Approximate dates do not establish the experiment, substances or outcome.";
+        const intro=document.createElement("p");intro.textContent=document.documentElement.lang==='ar'?"صورتان لي في مختبر الكيمياء خلال السنة الجامعية الأولى، إلى جانب صورة مستقلة لعبدالجليل خلف أحمد في المختبر.":"Two photographs of me at the chemistry bench in my freshman year, alongside a separate laboratory portrait of Abdelgalil Khalaf Ahmed.";
         const group=document.createElement("div");group.className="rx-freshman-gallery";
         photos.forEach((p,i)=>{if(ready[i])group.append(figure(p));});
         inner.append(kicker,title,intro,group);section.append(inner);anchor.insertAdjacentElement("afterend",section);
