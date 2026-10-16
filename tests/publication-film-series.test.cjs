@@ -79,3 +79,22 @@ test('all 35 films are discoverable from a source-preserving public route', () =
   assert.ok(cinema.includes('method:"HEAD"'));
   assert.ok(cinema.includes('English captions'));
 });
+
+
+test('all ten independently published essays and columns retain source links and distinct films', () => {
+  const writing = fs.readFileSync(file('writing.html'), 'utf8');
+  const essays = catalog.items.filter(x => x.category === 'Public essay' || x.category === 'Drug discovery column');
+  assert.equal(essays.length, 10);
+  assert.equal(essays.filter(x => x.source_url.startsWith('https://')).length, essays.length);
+  for (const entry of essays) {
+    assert.ok(writing.includes('/publication-cinema.html#film-' + entry.id), entry.id);
+    assert.ok(writing.includes(entry.source_url.replaceAll('&', '&amp;')) || writing.includes(entry.source_url), entry.id);
+    assert.equal(entry.production, 'render_requested');
+  }
+  const page = fs.readFileSync(file('publication-cinema.html'), 'utf8');
+  assert.ok(page.includes('x.source_url||x.page'));
+  assert.ok(page.includes('Essays &amp; columns'));
+  const engine = fs.readFileSync(file('scripts/render-publication-series.py'), 'utf8');
+  assert.ok(engine.includes('entry.get("source_url", entry["page"])'));
+  assert.ok(engine.includes('--missing-only'));
+});
