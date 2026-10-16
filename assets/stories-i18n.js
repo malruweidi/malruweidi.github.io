@@ -247,3 +247,8 @@
   "Read People and scientific exchange": "اقرأ عن الناس والتبادل العلمي"
 });
 })();
+/* Storytelling revisions, 16 October 2026. Original translations retained for legacy pages. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "The first scene is a school anatomy lesson with a fox specimen on the table. Other chapters begin with a microscope I brought from Cairo, evenings spent recording zebrafish, or an embedding block that came apart before I could obtain a useful histological section. These are the parts of scientific work that rarely fit into a paper.": "تبدأ الحكاية الأولى بدرس تشريح في المدرسة وعينة ثعلب على الطاولة. وتبدأ فصول أخرى بمجهر أحضرته من القاهرة، أو أمسيات أمضيتها في تسجيل صور لأسماك الزرد، أو قالب تضمين تفكك قبل أن أستطيع الحصول منه على مقطع نسيجي صالح للفحص. هذه جوانب من الحياة العلمية لا تتسع لها الأوراق البحثية عادةً.",
+  "That instrument gave me practice I could choose for myself: looking carefully, coming back to the same observation, and learning how much more work lay between seeing something and explaining it. Proper research would still demand controls, reproducible methods and explanations that survived criticism. When I look at the photograph now, I see a piece of Cairo that travelled with me to Qatar, and an ordinary morning on which science belonged to my own time.": "منحني ذلك الجهاز فرصة للتدرب بإرادتي: أن أتأمل بدقة، وأعود إلى الملاحظة نفسها، وأتعلم كم من العمل يفصل بين رؤية شيء وتفسيره. أما البحث المنهجي فظل يتطلب ضوابط تجريبية وطرقًا قابلة للتكرار وتفسيرات تصمد أمام النقد. وحين أنظر إلى الصورة الآن، أرى قطعة من القاهرة رافقتني إلى قطر، وصباحًا عاديًا كان العلم فيه جزءًا من وقتي الخاص."
+});
