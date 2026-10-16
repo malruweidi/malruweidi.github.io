@@ -94,8 +94,16 @@ jobs:
           git add assets/films/the-laboratory-we-carried-with-us.mp4 assets/films/the-laboratory-we-carried-with-us.vtt assets/films/the-laboratory-we-carried-with-us-build.json
           git add assets/films/making-medicines-keep.mp4 assets/films/making-medicines-keep.vtt assets/films/making-medicines-keep-build.json
           if ! git diff --cached --quiet; then
-            git commit -m "Render four evidence-based two-minute documentaries [series-output]"
             git fetch origin "${{ github.ref_name }}"
-            git rebase FETCH_HEAD
-            git push origin HEAD:${{ github.ref_name }}
+            # Only derived media and QA artifacts are modified by this workflow.
+            # A concurrent previous render may change binary MP4/WebP files: avoid
+            # rebasing a binary-only commit. Move HEAD to the latest remote commit
+            # while retaining the freshly rendered working tree, then commit it.
+            git reset --soft FETCH_HEAD
+            git add assets/films/plates/ assets/films/visual-sources/ assets/films/*-poster.webp assets/films/evidence-series-technical-qa.json
+            git add assets/films/*.mp4 assets/films/*.vtt assets/films/*-build.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Render four evidence-based two-minute documentaries [series-output]"
+              git push origin HEAD:${{ github.ref_name }}
+            fi
           fi
