@@ -2053,6 +2053,836 @@
           "link": "/stories/cairo-microscope.html"
         }
       ]
+    },
+    {
+      "id": "essay-life-between-diagnoses",
+      "year": "2026",
+      "category": "Public essay",
+      "publication_title": "The Life Between Diagnoses",
+      "film_title": "When the Count Could Not Describe the Pain",
+      "premise": "A firsthand account of attacks, interrupted schooling, the medical-school path that was lost, and the uneasy distance between a laboratory count and what a patient experiences.",
+      "source_url": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+      "doi": null,
+      "poster": "/assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+      "page": "/writing.html",
+      "visual_language": "personal documentary",
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "Before the degree",
+          "subtitle": "personal documentary",
+          "narration": "I finished school at sixteen. The disease had already interrupted my last year, and my examination results closed the medical school path I had expected.",
+          "image": "assets/home-archive/childhood-portrait.jpg",
+          "contain": true,
+          "kind": "Archival childhood portrait, not a photograph of the later school examinations",
+          "credit": "Archival childhood portrait, not a photograph of the later school examinations",
+          "link": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+        },
+        {
+          "id": "02",
+          "title": "What the numbers cannot contain",
+          "subtitle": "personal documentary",
+          "narration": "During severe attacks I could not always keep down even water. Laboratory eosinophil counts became numbers I learned to anticipate from the pain.",
+          "image": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+          "contain": false,
+          "kind": "Personal 2025 medical archive; not an image of every earlier attack",
+          "credit": "Personal 2025 medical archive; not an image of every earlier attack",
+          "link": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+        },
+        {
+          "id": "03",
+          "title": "The week before America",
+          "subtitle": "personal documentary",
+          "narration": "One week before a trip to the United States, an actual flare led to an endoscopy and a course of glucocorticoids. It was not preventive treatment.",
+          "image": "assets/owner-archive-2026-10-16/eosinophilic-diagnosis-dr-elsheikh-abdelrahim.webp",
+          "contain": false,
+          "kind": "Personal clinical history portrait; not a dated record of the specific pre-travel event",
+          "credit": "Personal clinical history portrait; not a dated record of the specific pre-travel event",
+          "link": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+        },
+        {
+          "id": "04",
+          "title": "Years become an archive",
+          "subtitle": "personal documentary",
+          "narration": "Clinical uncertainty turned into an accumulation of medications, tests, missed days and attempts to understand what my own body was doing.",
+          "image": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+          "contain": false,
+          "kind": "Personal 2025 illness archive; not a substitute for medical records",
+          "credit": "Personal 2025 illness archive; not a substitute for medical records",
+          "link": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+        },
+        {
+          "id": "05",
+          "title": "Research did not erase illness",
+          "subtitle": "personal documentary",
+          "narration": "I learned to investigate cells and materials while living with a disease whose symptoms could overwhelm even an ordinary day.",
+          "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+          "contain": false,
+          "kind": "Original freshman chemistry photograph, not clinical data",
+          "credit": "Original freshman chemistry photograph, not clinical data",
+          "link": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+        },
+        {
+          "id": "06",
+          "title": "Read the person, not the diagnosis",
+          "subtitle": "personal documentary",
+          "narration": "The essay asks what disappears when a patient's life is reduced to a diagnostic label or a test result.",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "contain": false,
+          "kind": "Contemporary author's portrait",
+          "credit": "Contemporary author's portrait",
+          "link": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+        }
+      ]
+    },
+    {
+      "id": "essay-ai-email",
+      "year": "2026",
+      "category": "Public essay",
+      "publication_title": "Sorry, My First Email to You Was Probably Polished by AI",
+      "film_title": "The Email That Became an Accusation",
+      "premise": "A pointed essay about what recipients think they learn by accusing unfamiliar writers of using AI, and whose language is subjected to that scrutiny.",
+      "source_url": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+      "doi": null,
+      "poster": "/assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "page": "/writing.html",
+      "visual_language": "kinetic typography / editorial",
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The crime was a polished email",
+          "subtitle": "kinetic typography / editorial",
+          "narration": "A stranger receives a professional message. Instead of answering what it says, he becomes interested in whether software touched its grammar.",
+          "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "contain": false,
+          "kind": "Original research workstation, not the correspondence being discussed",
+          "credit": "Original research workstation, not the correspondence being discussed",
+          "link": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+        },
+        {
+          "id": "02",
+          "title": "A peculiar new etiquette",
+          "subtitle": "kinetic typography / editorial",
+          "narration": "Someone may write in a second language, seek clarity and still be treated as if the improvement itself discredits the speaker.",
+          "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "contain": false,
+          "kind": "Author's archival university library photo, not the recipient",
+          "credit": "Author's archival university library photo, not the recipient",
+          "link": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+        },
+        {
+          "id": "03",
+          "title": "Aim the accusation upward",
+          "subtitle": "kinetic typography / editorial",
+          "narration": "Before mocking a junior colleague, imagine announcing to your boss or an established native speaker that their polished prose makes them a bot.",
+          "image": "assets/archival-2026-10-12/university-podium-talk-2017.webp",
+          "contain": false,
+          "kind": "Original author presentation image, not a reenactment of the anecdote",
+          "credit": "Original author presentation image, not a reenactment of the anecdote",
+          "link": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+        },
+        {
+          "id": "04",
+          "title": "The old industry had a different name",
+          "subtitle": "kinetic typography / editorial",
+          "narration": "For years academics were instructed, and sometimes charged, to have manuscripts professionally edited. The expectation of standardized language did not originate with AI.",
+          "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "contain": false,
+          "kind": "Archival author research workspace, no actual editor invoices implied",
+          "credit": "Archival author research workspace, no actual editor invoices implied",
+          "link": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+        },
+        {
+          "id": "05",
+          "title": "Ideas are not grammar templates",
+          "subtitle": "kinetic typography / editorial",
+          "narration": "Software assistance does not automatically certify a bad argument; nor does an unedited mistake certify originality.",
+          "image": "assets/home-archive/chemistry-chalkboard.jpg",
+          "contain": true,
+          "kind": "Original chemistry chalkboard archive, metaphorical context",
+          "credit": "Original chemistry chalkboard archive, metaphorical context",
+          "link": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+        },
+        {
+          "id": "06",
+          "title": "Judge the argument",
+          "subtitle": "kinetic typography / editorial",
+          "narration": "The essay challenges an etiquette where suspicion is directed disproportionately at people without the status to answer back.",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "contain": false,
+          "kind": "Actual editorial portrait of the author",
+          "credit": "Actual editorial portrait of the author",
+          "link": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+        }
+      ]
+    },
+    {
+      "id": "essay-machine-language",
+      "year": "2026",
+      "category": "Public essay",
+      "publication_title": "We Taught People to Sound Like Machines. Now We’re Surprised They Use Them.",
+      "film_title": "Who Taught Humans to Write Like Machines?",
+      "premise": "Why the standardized prose institutions taught us to produce now looks suspiciously like the output of the machines they condemn.",
+      "source_url": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+      "doi": null,
+      "poster": "/assets/home-archive/chemistry-chalkboard.jpg",
+      "page": "/writing.html",
+      "visual_language": "editorial type documentary",
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The style existed before the chatbot",
+          "subtitle": "editorial type documentary",
+          "narration": "Read an old institutional email or academic abstract. You may find the immaculate, depersonalized language we now accuse machines of inventing.",
+          "image": "assets/home-archive/chemistry-chalkboard.jpg",
+          "contain": true,
+          "kind": "Archival chalkboard photograph, not text of an identified academic abstract",
+          "credit": "Archival chalkboard photograph, not text of an identified academic abstract",
+          "link": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines"
+        },
+        {
+          "id": "02",
+          "title": "Train a person to sound acceptable",
+          "subtitle": "editorial type documentary",
+          "narration": "Universities demand standard structure, impeccable polish and phrases approved by gatekeepers. Writers learn to hide any particular voice.",
+          "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "contain": false,
+          "kind": "Author's university library archive, not an institutional policy document",
+          "credit": "Author's university library archive, not an institutional policy document",
+          "link": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines"
+        },
+        {
+          "id": "03",
+          "title": "Then punish the imitation",
+          "subtitle": "editorial type documentary",
+          "narration": "When software produces the very language institutions rewarded, people suddenly decide that the sound itself is incriminating.",
+          "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "contain": false,
+          "kind": "Research computer workspace used as editorial context",
+          "credit": "Research computer workspace used as editorial context",
+          "link": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines"
+        },
+        {
+          "id": "04",
+          "title": "A detector cannot read a mind",
+          "subtitle": "editorial type documentary",
+          "narration": "A sentence pattern is not evidence of who conceived an idea, performed an experiment or understood a conclusion.",
+          "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "contain": true,
+          "kind": "Scientific figure used to evoke actual measurable evidence, not an AI-detection assay",
+          "credit": "Scientific figure used to evoke actual measurable evidence, not an AI-detection assay",
+          "link": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines"
+        },
+        {
+          "id": "05",
+          "title": "Ask a more difficult question",
+          "subtitle": "editorial type documentary",
+          "narration": "What does this author know? Are the sources real? Can the argument survive direct examination? Those questions require judgment.",
+          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "contain": false,
+          "kind": "Original laboratory image; methodological metaphor rather than evidence of AI authorship",
+          "credit": "Original laboratory image; methodological metaphor rather than evidence of AI authorship",
+          "link": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines"
+        },
+        {
+          "id": "06",
+          "title": "Restore the right standard",
+          "subtitle": "editorial type documentary",
+          "narration": "The essay is about intellectual responsibility, not an entitlement to publish inaccuracies in a distinctive style.",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "contain": false,
+          "kind": "Author's editorial portrait",
+          "credit": "Author's editorial portrait",
+          "link": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines"
+        }
+      ]
+    },
+    {
+      "id": "essay-academic-mental-health",
+      "year": "2026",
+      "category": "Public essay",
+      "publication_title": "Fifteen Things I Wish Young Academics Were Told About Mental Health",
+      "film_title": "The Things an Academic CV Cannot Hold",
+      "premise": "Notes on institutional expectations, ambition, and psychological wellbeing in a profession that prides itself on questioning assumptions.",
+      "source_url": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+      "doi": null,
+      "poster": "/assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "page": "/writing.html",
+      "visual_language": "observational academic essay",
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A CV tells the wrong kind of time",
+          "subtitle": "observational academic essay",
+          "narration": "A curriculum vitae organizes years into posts and publications. It rarely records uncertainty, strain or the cost of being constantly evaluated.",
+          "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "contain": false,
+          "kind": "Original academic archive, not a clinical record",
+          "credit": "Original academic archive, not a clinical record",
+          "link": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+        },
+        {
+          "id": "02",
+          "title": "There is always one more condition",
+          "subtitle": "observational academic essay",
+          "narration": "Finish the experiment, submit the draft, apply for the next award. A system can keep moving the point at which its members are allowed to rest.",
+          "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "contain": false,
+          "kind": "Original late research workspace, no asserted capture hour",
+          "credit": "Original late research workspace, no asserted capture hour",
+          "link": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+        },
+        {
+          "id": "03",
+          "title": "Mentorship changes the experience",
+          "subtitle": "observational academic essay",
+          "narration": "Good supervision offers criticism that improves the science without confusing professional standards with personal humiliation.",
+          "image": "assets/oct12-owner-photos/acs-chapter-recognition-2017.webp",
+          "contain": false,
+          "kind": "Archived recognition photo, not proof of any specific mentorship interaction",
+          "credit": "Archived recognition photo, not proof of any specific mentorship interaction",
+          "link": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+        },
+        {
+          "id": "04",
+          "title": "Exhaustion does not prove dedication",
+          "subtitle": "observational academic essay",
+          "narration": "Academic work asks for persistence, but turning every sacrifice into a badge of commitment produces incentives worth examining.",
+          "image": "assets/home-archive/university-lab-coat.jpg",
+          "contain": true,
+          "kind": "Original author's university laboratory-coat photograph",
+          "credit": "Original author's university laboratory-coat photograph",
+          "link": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+        },
+        {
+          "id": "05",
+          "title": "Mental health is not a footnote",
+          "subtitle": "observational academic essay",
+          "narration": "Scientific institutions should ask which parts of their incentives make research needlessly cruel, not only whether students can tolerate them.",
+          "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "contain": false,
+          "kind": "Archival university photo used as general context",
+          "credit": "Archival university photo used as general context",
+          "link": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+        },
+        {
+          "id": "06",
+          "title": "Keep the scientist alive",
+          "subtitle": "observational academic essay",
+          "narration": "The essay asks how young researchers can pursue ambitious work without having their personal lives treated as disposable inputs.",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "contain": false,
+          "kind": "Personal editorial portrait",
+          "credit": "Personal editorial portrait",
+          "link": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+        }
+      ]
+    },
+    {
+      "id": "essay-scientific-credit",
+      "year": "2026",
+      "category": "Public essay",
+      "publication_title": "The Nobel Prize Has Room for Three. Science Never Did.",
+      "film_title": "Three Names on the Medal, Hundreds in the Record",
+      "premise": "A historical argument about how scientific discoveries accumulate through many hands while awards preserve a much shorter list of names.",
+      "source_url": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+      "doi": null,
+      "poster": "/assets/2017-acs-el-sayed-group.webp",
+      "page": "/writing.html",
+      "visual_language": "history of scientific credit",
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "An award fits a few names",
+          "subtitle": "history of scientific credit",
+          "narration": "The prize ceremony produces a clear picture of discovery, with a handful of faces attached to a complicated scientific history.",
+          "image": "assets/2017-acs-el-sayed-group.webp",
+          "contain": false,
+          "kind": "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+          "credit": "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+          "link": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+        },
+        {
+          "id": "02",
+          "title": "A discovery has a longer genealogy",
+          "subtitle": "history of scientific credit",
+          "narration": "Experiments accumulate through earlier questions, technical adaptations, overlooked collaborators and results that sometimes become useful years later.",
+          "image": "assets/home-archive/early-science-talk.jpg",
+          "contain": true,
+          "kind": "Original early science presentation photo, not an image of the discovery discussed",
+          "credit": "Original early science presentation photo, not an image of the discovery discussed",
+          "link": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+        },
+        {
+          "id": "03",
+          "title": "The laboratory is not a single author",
+          "subtitle": "history of scientific credit",
+          "narration": "A manuscript records coauthors, while a method may depend on technicians, students and predecessor teams who never enter the headline.",
+          "image": "assets/photos-2017-2019/chem-squad-abdelgalil-colleagues-2019.webp",
+          "contain": false,
+          "kind": "Personal scientific colleagues photograph, general context not Nobel provenance",
+          "credit": "Personal scientific colleagues photograph, general context not Nobel provenance",
+          "link": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+        },
+        {
+          "id": "04",
+          "title": "Commemoration edits the past",
+          "subtitle": "history of scientific credit",
+          "narration": "Every selection tells us whom an institution has chosen to remember. Historical recognition is never identical to an exhaustive chain of contribution.",
+          "image": "assets/2017-acs-el-sayed-group.webp",
+          "contain": false,
+          "kind": "Archival encounter with Professor Elmostafa El-Sayed, unrelated to prize claim",
+          "credit": "Archival encounter with Professor Elmostafa El-Sayed, unrelated to prize claim",
+          "link": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+        },
+        {
+          "id": "05",
+          "title": "Credit still needs proof",
+          "subtitle": "history of scientific credit",
+          "narration": "An inclusive account cannot simply invent forgotten heroes. It must return to papers, notebooks, patents and who actually did the work.",
+          "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+          "contain": true,
+          "kind": "Research figure illustrating traceable published contribution, not a Nobel-related experiment",
+          "credit": "Research figure illustrating traceable published contribution, not a Nobel-related experiment",
+          "link": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+        },
+        {
+          "id": "06",
+          "title": "Do justice to the record",
+          "subtitle": "history of scientific credit",
+          "narration": "The essay asks for better histories of discovery without denying that major scientific contributions deserve recognition.",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "contain": false,
+          "kind": "Author's editorial portrait",
+          "credit": "Author's editorial portrait",
+          "link": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+        }
+      ]
+    },
+    {
+      "id": "essay-tf-states",
+      "year": "2025–2026",
+      "category": "Drug discovery column",
+      "publication_title": "Target Transcription Factor States, Not Pockets",
+      "film_title": "The Target Has More Than One Shape",
+      "premise": "An evidence-driven film adaptation of the published column, following its central scientific argument rather than listing the article.",
+      "source_url": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+      "doi": null,
+      "poster": "/assets/robo-concept.svg",
+      "page": "/writing.html",
+      "visual_language": "pharmacology / science cinema",
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The pocket is not the protein",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "A purified protein fragment can look druggable, while the living regulatory complex occupies many shapes and partnerships that a crystal cannot freeze.",
+          "image": "assets/robo-concept.svg",
+          "contain": true,
+          "kind": "Generic molecular signaling editorial illustration, not a TF structure",
+          "credit": "Generic molecular signaling editorial illustration, not a TF structure",
+          "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+        },
+        {
+          "id": "02",
+          "title": "Think in states",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "The therapeutic hypothesis should identify the disease-sustaining transcription-factor state and what biological transition a ligand is supposed to cause.",
+          "image": "assets/home-archive/chemistry-chalkboard.jpg",
+          "contain": true,
+          "kind": "Original chalkboard archive, not structural model",
+          "credit": "Original chalkboard archive, not structural model",
+          "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+        },
+        {
+          "id": "03",
+          "title": "Binding is just an entrance",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "A thermal-shift curve or impressive affinity does not establish a change in transcriptional function or a therapeutic phenotype.",
+          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "contain": false,
+          "kind": "Author laboratory archive, not data from article",
+          "credit": "Author laboratory archive, not data from article",
+          "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+        },
+        {
+          "id": "04",
+          "title": "A chain of experiments",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Engagement, conformation, chromatin occupancy and cellular response must be linked through experiments that can also disprove the claim.",
+          "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "contain": true,
+          "kind": "Published chemical figure from unrelated author's work; method analogy only",
+          "credit": "Published chemical figure from unrelated author's work; method analogy only",
+          "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+        },
+        {
+          "id": "05",
+          "title": "Real precedents, different mechanisms",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Belzutifan, TEAD inhibitors and mutant-p53 reactivation illustrate distinct modes of controlling regulatory state rather than a universal method.",
+          "image": "assets/robo-concept.svg",
+          "contain": true,
+          "kind": "Generic concept pathway, not specific drug's atomic model",
+          "credit": "Generic concept pathway, not specific drug's atomic model",
+          "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+        },
+        {
+          "id": "06",
+          "title": "Drug discovery needs a better unit",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "The article argues for designing chemical programmes around regulatory states, measured biomarkers and exposure, not pocket discovery alone.",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "contain": false,
+          "kind": "Author's editorial portrait",
+          "credit": "Author's editorial portrait",
+          "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+        }
+      ]
+    },
+    {
+      "id": "essay-potency-exposure",
+      "year": "2025–2026",
+      "category": "Drug discovery column",
+      "publication_title": "Potency Is Not an Exposure Strategy",
+      "film_title": "The Nanomolar Mirage",
+      "premise": "An evidence-driven film adaptation of the published column, following its central scientific argument rather than listing the article.",
+      "source_url": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+      "doi": null,
+      "poster": "/assets/niosomes-concept.svg",
+      "page": "/writing.html",
+      "visual_language": "pharmacology / science cinema",
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The perfect number",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "A compound works at nanomolar concentration in a protected assay. The number is seductive, but a patient never receives an assay plate.",
+          "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "contain": true,
+          "kind": "Published independent chemistry study figure, not the DMPK compound",
+          "credit": "Published independent chemistry study figure, not the DMPK compound",
+          "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+        },
+        {
+          "id": "02",
+          "title": "The journey is a different experiment",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Solubility, absorption, distribution, metabolism and clearance decide whether the required free concentration reaches the tissue.",
+          "image": "assets/niosomes-concept.svg",
+          "contain": true,
+          "kind": "Generic drug-delivery visual, not pharmacokinetic data",
+          "credit": "Generic drug-delivery visual, not pharmacokinetic data",
+          "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+        },
+        {
+          "id": "03",
+          "title": "Total is not free",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "A high tissue or plasma concentration can conceal extensive binding. Free exposure at the site of action is the relevant question.",
+          "image": "assets/evidence-pulmonary.webp",
+          "contain": false,
+          "kind": "Generic pulmonary evidence image; not a measured concentration profile",
+          "credit": "Generic pulmonary evidence image; not a measured concentration profile",
+          "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+        },
+        {
+          "id": "04",
+          "title": "Turn the comparison around",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Ask what dose achieves occupancy for long enough, and what happens elsewhere in the body at that same exposure.",
+          "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "contain": false,
+          "kind": "Original analysis workspace, not a clinical dosing model",
+          "credit": "Original analysis workspace, not a clinical dosing model",
+          "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+        },
+        {
+          "id": "05",
+          "title": "An impressive hit may still fail",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Potency cannot compensate indefinitely for permeability barriers, toxicity or infeasible pharmacokinetics.",
+          "image": "assets/niosomes-concept.svg",
+          "contain": true,
+          "kind": "Illustration of delivery principle, no measured exposure",
+          "credit": "Illustration of delivery principle, no measured exposure",
+          "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+        },
+        {
+          "id": "06",
+          "title": "Measure the achievable",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "The argument is about choosing compounds that can deliver an effective unbound concentration, not applauding the smallest assay number.",
+          "image": "assets/home-archive/chemistry-chalkboard.jpg",
+          "contain": true,
+          "kind": "Original chemistry archive",
+          "credit": "Original chemistry archive",
+          "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+        }
+      ]
+    },
+    {
+      "id": "essay-trna",
+      "year": "2025–2026",
+      "category": "Drug discovery column",
+      "publication_title": "Drugging the tRNA Control System",
+      "film_title": "The Molecule Behind Every Protein",
+      "premise": "An evidence-driven film adaptation of the published column, following its central scientific argument rather than listing the article.",
+      "source_url": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+      "doi": null,
+      "poster": "/assets/home-archive/chemistry-chalkboard.jpg",
+      "page": "/writing.html",
+      "visual_language": "pharmacology / science cinema",
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A translator inside every cell",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Before a protein takes shape, transfer RNA helps turn genetic instructions into an amino-acid sequence. It is not passive cellular plumbing.",
+          "image": "assets/home-archive/chemistry-chalkboard.jpg",
+          "contain": true,
+          "kind": "Original chemistry chalkboard, not a tRNA molecular structure",
+          "credit": "Original chemistry chalkboard, not a tRNA molecular structure",
+          "link": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+        },
+        {
+          "id": "02",
+          "title": "The system is not one target",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "tRNA charging, chemical modification, cleavage and localisation create several different biological functions and possible intervention points.",
+          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "contain": false,
+          "kind": "Original laboratory research photo, not a tRNA manipulation",
+          "credit": "Original laboratory research photo, not a tRNA manipulation",
+          "link": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+        },
+        {
+          "id": "03",
+          "title": "Synthetases can do more",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Aminoacyl-tRNA synthetases have catalytic charging functions, and some have additional signalling roles beyond translation.",
+          "image": "assets/robo-concept.svg",
+          "contain": true,
+          "kind": "General pathway illustration; not a synthetase structure",
+          "credit": "General pathway illustration; not a synthetase structure",
+          "link": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+        },
+        {
+          "id": "04",
+          "title": "Specificity will decide the risk",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Disrupting universally needed translation can injure healthy cells. A drug programme must demonstrate a disease-specific vulnerability.",
+          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "contain": false,
+          "kind": "Original lab flask, not cytotoxicity data",
+          "credit": "Original lab flask, not cytotoxicity data",
+          "link": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+        },
+        {
+          "id": "05",
+          "title": "Match the modality to the biology",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "An enzyme pocket, disease-associated RNA fragment or extracellular synthetase domain requires different chemistry, assays and delivery.",
+          "image": "assets/niosomes-concept.svg",
+          "contain": true,
+          "kind": "Drug-carrier concept unrelated to any validated tRNA therapeutic",
+          "credit": "Drug-carrier concept unrelated to any validated tRNA therapeutic",
+          "link": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+        },
+        {
+          "id": "06",
+          "title": "The translation apparatus is dynamic",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "The column argues for testing the exact molecular dependency rather than declaring the entire tRNA system either undruggable or safe.",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "contain": false,
+          "kind": "Author's editorial portrait",
+          "credit": "Author's editorial portrait",
+          "link": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+        }
+      ]
+    },
+    {
+      "id": "essay-proximity",
+      "year": "2025–2026",
+      "category": "Drug discovery column",
+      "publication_title": "The Matchmaker Modality: Engineering Event-Driven Pharmacology With Induced Proximity",
+      "film_title": "When a Drug Makes Two Proteins Meet",
+      "premise": "An evidence-driven film adaptation of the published column, following its central scientific argument rather than listing the article.",
+      "source_url": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+      "doi": null,
+      "poster": "/assets/robo-concept.svg",
+      "page": "/writing.html",
+      "visual_language": "pharmacology / science cinema",
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The drug is not a cork in a hole",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "For years drug action was pictured as occupancy. Induced proximity instead asks whether a molecule can bring two biological partners together.",
+          "image": "assets/robo-concept.svg",
+          "contain": true,
+          "kind": "Illustrative pathway sketch, not a PROTAC ternary structure",
+          "credit": "Illustrative pathway sketch, not a PROTAC ternary structure",
+          "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+        },
+        {
+          "id": "02",
+          "title": "Recruit an effector",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "A bifunctional agent can link a target protein to an E3 ligase and initiate ubiquitination, redirecting the cell's own disposal machinery.",
+          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "contain": false,
+          "kind": "Original laboratory apparatus photo; not proteasomal data",
+          "credit": "Original laboratory apparatus photo; not proteasomal data",
+          "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+        },
+        {
+          "id": "03",
+          "title": "Geometry controls the event",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "The two proteins must form a productive complex. Linker length, orientation and cooperativity matter in ways simple binary affinity does not describe.",
+          "image": "assets/home-archive/chemistry-chalkboard.jpg",
+          "contain": true,
+          "kind": "Generic chemistry laboratory context",
+          "credit": "Generic chemistry laboratory context",
+          "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+        },
+        {
+          "id": "04",
+          "title": "The complex cannot last forever",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "A bridge that dissociates too fast fails to act, while one that never releases may fail to turn over. Residence time becomes functional.",
+          "image": "assets/robo-concept.svg",
+          "contain": true,
+          "kind": "Concept diagram, not a kinetic trace",
+          "credit": "Concept diagram, not a kinetic trace",
+          "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+        },
+        {
+          "id": "05",
+          "title": "Not every match destroys",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Induced proximity can also relocalise or stabilize a protein, revealing that the real modality is the event the molecule causes.",
+          "image": "assets/niosomes-concept.svg",
+          "contain": true,
+          "kind": "Generic therapeutic concept graphic, not evidence of a published degrader",
+          "credit": "Generic therapeutic concept graphic, not evidence of a published degrader",
+          "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+        },
+        {
+          "id": "06",
+          "title": "A different design discipline",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "The column follows the move from simply blocking function to engineering a testable cellular event with selectivity, exposure and resistance in view.",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "contain": false,
+          "kind": "Author's editorial portrait",
+          "credit": "Author's editorial portrait",
+          "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+        }
+      ]
+    },
+    {
+      "id": "essay-adc",
+      "year": "2025–2026",
+      "category": "Drug discovery column",
+      "publication_title": "Antibody–Drug Conjugates 3.0: A New Era Of Precision Engineering In Oncology",
+      "film_title": "The Antibody Is Only the Beginning",
+      "premise": "An evidence-driven film adaptation of the published column, following its central scientific argument rather than listing the article.",
+      "source_url": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+      "doi": null,
+      "poster": "/assets/evidence-biomaterials.webp",
+      "page": "/writing.html",
+      "visual_language": "pharmacology / science cinema",
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A guided payload still travels through a body",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "An antibody-drug conjugate is a chemical system. Tumour binding is only one step in an exposure and release problem.",
+          "image": "assets/evidence-biomaterials.webp",
+          "contain": false,
+          "kind": "Generic scientific visual; not an antibody-drug conjugate micrograph",
+          "credit": "Generic scientific visual; not an antibody-drug conjugate micrograph",
+          "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+        },
+        {
+          "id": "02",
+          "title": "Linker chemistry decides where",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Stable, cleavable and non-cleavable linkers change what escapes the carrier, how much reaches other tissues and how a tumour is exposed.",
+          "image": "assets/niosomes-concept.svg",
+          "contain": true,
+          "kind": "General carrier visual, not an ADC structure",
+          "credit": "General carrier visual, not an ADC structure",
+          "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+        },
+        {
+          "id": "03",
+          "title": "A ratio reshapes a drug",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Drug-to-antibody ratio influences distribution, heterogeneity and pharmacokinetics. Higher loading is not automatically more precise.",
+          "image": "assets/robo-concept.svg",
+          "contain": true,
+          "kind": "General molecular graphic, not a conjugated antibody",
+          "credit": "General molecular graphic, not a conjugated antibody",
+          "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+        },
+        {
+          "id": "04",
+          "title": "The payload brings its own risks",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Even a stable linker may deliver a drug class associated with specific toxicities, including serious complications outside the tumour.",
+          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "contain": false,
+          "kind": "Original lab flask context, not clinical adverse-event footage",
+          "credit": "Original lab flask context, not clinical adverse-event footage",
+          "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+        },
+        {
+          "id": "05",
+          "title": "Bystander effects are conditional",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "Permeable payloads may help reach heterogeneous tumours, but surrounding normal tissue and exposure constrain the apparent advantage.",
+          "image": "assets/evidence-biomaterials.webp",
+          "contain": false,
+          "kind": "Generic materials context visual",
+          "credit": "Generic materials context visual",
+          "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+        },
+        {
+          "id": "06",
+          "title": "Safety begins in molecular design",
+          "subtitle": "pharmacology / science cinema",
+          "narration": "The article argues that conjugation chemistry, payload choice and predictive toxicology belong together from the start of development.",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "contain": false,
+          "kind": "Author's editorial portrait",
+          "credit": "Author's editorial portrait",
+          "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+        }
+      ]
     }
   ]
 }

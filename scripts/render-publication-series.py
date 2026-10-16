@@ -154,7 +154,7 @@ def render(entry, models):
         if abs(duration-entry["duration_seconds"])>.3: raise AssertionError("Unexpected film length")
         if out.stat().st_size>90000000: raise ValueError("Video too large for normal GitHub content")
         record={"id":slug,"seconds":round(duration,2),"sha256":hashlib.sha256(out.read_bytes()).hexdigest(),
-                "primary_source":("https://doi.org/"+entry["doi"]) if entry.get("doi") else entry["page"],
+                "primary_source":("https://doi.org/"+entry["doi"]) if entry.get("doi") else entry.get("source_url", entry["page"]),
                 "voice":"Open Kokoro ONNX, synthetic actor-free narrator","image_classes":classes,
                 "disclosure":"Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."}
         (OUTPUT/(slug+".json")).write_text(json.dumps(record,indent=2)+"\n")
@@ -165,6 +165,7 @@ def main():
     p.add_argument("--validate-only",action="store_true")
     p.add_argument("--models",default="film-models")
     p.add_argument("--film",action="append",help="Specific slug; otherwise renders all currently selected films")
+    p.add_argument("--missing-only",action="store_true",help="Keep verified existing MP4/VTT/JSON releases; render only absent titles")
     opts=p.parse_args()
     data=json.loads(CATALOG.read_text(encoding="utf-8"))
     items=verify_catalog(data["items"])
@@ -175,6 +176,12 @@ def main():
         items=[x for x in items if x["id"] in wanted]
     print("Films validated:", ", ".join(x["id"] for x in items))
     if opts.validate_only: return
+    if opts.missing_only:
+        absent = [e for e in items if not all((OUTPUT / (e["id"] + ext)).is_file() and
+                  (OUTPUT / (e["id"] + ext)).stat().st_size > 100
+                  for ext in (".mp4", ".vtt", ".json"))]
+        print("Existing source-preserving releases:", len(items)-len(absent))
+        items = absent
     models=(ROOT/opts.models).resolve()
     for entry in items:
         render(entry,models)

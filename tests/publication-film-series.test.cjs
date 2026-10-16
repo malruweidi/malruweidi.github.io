@@ -10,9 +10,9 @@ const cinema = fs.readFileSync(path.join(root, 'publication-cinema.html'), 'utf8
 const films = fs.readFileSync(path.join(root, 'films.html'), 'utf8');
 const file = src => path.resolve(root, src.replace(/^\//, ''));
 
-test('the original films, every publication, and all source material remain intact', () => {
-  assert.equal(catalog.items.length, 25);
-  assert.equal(new Set(catalog.items.map(x => x.id)).size, 25);
+test('the original films, every publication and essay, and all source material remain intact', () => {
+  assert.equal(catalog.items.length, 35);
+  assert.equal(new Set(catalog.items.map(x => x.id)).size, 35);
   assert.ok(html.includes('const publications='));
   assert.ok(html.includes('publicationFilmId'));
   assert.ok(html.includes('publication-cinema.html'));
@@ -23,7 +23,7 @@ test('the original films, every publication, and all source material remain inta
   assert.ok(fs.existsSync(file('assets/films/what-survives-the-experiment.vtt')));
 });
 
-test('all 25 have individually written, attributable six-scene editorial scripts', () => {
+test('all 35 have individually written, attributable six-scene editorial scripts', () => {
   for (const item of catalog.items) {
     assert.equal(item.production, 'render_requested', item.id);
     assert.equal(item.duration_seconds, 84, item.id);
@@ -71,11 +71,30 @@ test('concept imagery explicitly declines false claims of historical or scientif
   }
 });
 
-test('all 25 films are discoverable from a source-preserving public route', () => {
+test('all 35 films are discoverable from a source-preserving public route', () => {
   const discovery = JSON.parse(fs.readFileSync(file('assets/discovery-index.json'), 'utf8'));
   const sitemap = fs.readFileSync(file('sitemap.xml'), 'utf8');
   assert.ok(discovery.items.find(x => x.url === '/publication-cinema.html'));
   assert.ok(sitemap.includes('https://malruweidi.github.io/publication-cinema.html'));
   assert.ok(cinema.includes('method:"HEAD"'));
   assert.ok(cinema.includes('English captions'));
+});
+
+
+test('all ten independently published essays and columns retain source links and distinct films', () => {
+  const writing = fs.readFileSync(file('writing.html'), 'utf8');
+  const essays = catalog.items.filter(x => x.category === 'Public essay' || x.category === 'Drug discovery column');
+  assert.equal(essays.length, 10);
+  assert.equal(essays.filter(x => x.source_url.startsWith('https://')).length, essays.length);
+  for (const entry of essays) {
+    assert.ok(writing.includes('/publication-cinema.html#film-' + entry.id), entry.id);
+    assert.ok(writing.includes(entry.source_url.replaceAll('&', '&amp;')) || writing.includes(entry.source_url), entry.id);
+    assert.equal(entry.production, 'render_requested');
+  }
+  const page = fs.readFileSync(file('publication-cinema.html'), 'utf8');
+  assert.ok(page.includes('x.source_url||x.page'));
+  assert.ok(page.includes('Essays &amp; columns'));
+  const engine = fs.readFileSync(file('scripts/render-publication-series.py'), 'utf8');
+  assert.ok(engine.includes('entry.get("source_url", entry["page"])'));
+  assert.ok(engine.includes('--missing-only'));
 });
