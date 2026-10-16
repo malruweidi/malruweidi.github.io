@@ -307,9 +307,7 @@
           "credit": "Original AI-assisted 2026 historical reconstruction. Not original photography, not evidence of this specific recipe or a medieval vessel. Conceptual illustration; period text attributed to al-Kūhīn al-ʿAṭṭār. Avoid invented script.",
           "link": "/index.html#writing",
           "context_visual": "syrup-still-life",
-          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence.",
-          "editorial_image": "/assets/films/illustrations/julep-pour.jpg",
-          "visual_source_id": "julep-pour"
+          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
         },
         {
           "id": "03",
@@ -319,8 +317,7 @@
           "narration": "The work involved heating, removing foam, straining, and recognizing when the liquid had reached qiwām: an achieved consistency. This was a practical endpoint, not a number on a laboratory instrument.",
           "credit": "Original AI-assisted 2026 reconstruction illustrating heating, skimming, and straining; not a recorded medieval experiment. Explanatory interpretation of the historical described process; not a laboratory measurement.",
           "link": "/index.html#writing",
-          "editorial_image": "/assets/films/illustrations/syrup-preparation.jpg",
-          "visual_source_id": "syrup-preparation"
+          "context_visual": "syrup-skimming"
         },
         {
           "id": "04",
@@ -358,9 +355,7 @@
           "credit": "Original AI-assisted 2026 reconstruction interpreting the material culture of market oversight. Not a verified historic Cairo shop. Interpretation of hisba literature; not a historical photograph or modern state regulation.",
           "link": "/index.html#writing",
           "context_visual": "balance-still-life",
-          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence.",
-          "editorial_image": "/assets/films/illustrations/apothecary-weights.jpg",
-          "visual_source_id": "apothecary-weights"
+          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
         },
         {
           "id": "08",
@@ -430,6 +425,17 @@
       "category": "third-party contemporary equipment photograph",
       "caption": "GENERIC MICROTOME • CONTEXT PHOTO, NOT THE EXPERIMENT",
       "show_seconds": 4
+    },
+    {
+      "id": "syrup-skimming",
+      "asset": "syrup-skimming-editorial-reconstruction.webp",
+      "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/21a0fdee-6e4f-42be-86c9-d86a346ba74d.jpg",
+      "source_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/21a0fdee-6e4f-42be-86c9-d86a346ba74d.jpg",
+      "credit": "Original AI-assisted explanatory reconstruction for Ruwaidix, October 2026; depicted process and materials are interpretations, not photographed historical evidence.",
+      "license": "Original AI-assisted editorial illustration",
+      "category": "AI-assisted process reconstruction",
+      "caption": "SKIMMING AND STRAINING • EDITORIAL RECONSTRUCTION, NOT PERIOD FOOTAGE",
+      "show_seconds": 9
     }
   ],
   "visual_sources_note": "Visual-source images are downloaded through an allowlisted source and locally snapshotted in assets/films/visual-sources as WebP. License and provenance travel with every film and image. Generated illustrative photographs are always labeled reconstructed. Public-domain historical comparators never masquerade as cited medieval folios or actual experiments.",
