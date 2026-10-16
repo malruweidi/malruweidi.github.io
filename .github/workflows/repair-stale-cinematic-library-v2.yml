@@ -5,6 +5,10 @@ on:
       - cinematic-remake-20261017
     paths:
       - .github/workflows/repair-stale-cinematic-library-v2.yml
+      - assets/films/directors-ledger-v3.json
+      - scripts/render-cinematic-library.py
+      - scripts/render-directors-cuts.py
+      - tests/all-films-direction-v3.test.cjs
   workflow_dispatch:
 
 permissions:
@@ -28,6 +32,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Install open source rendering tools
         run: |
           sudo apt-get update -qq
@@ -45,6 +52,7 @@ jobs:
           test "$(stat -c%s film-models/kokoro-v1.0.fp16.onnx)" -gt 90000000
       - name: Validate sources and preservation checks
         run: |
+          node --test tests/directors-cuts.test.cjs tests/cinematic-library-v2.test.cjs tests/all-films-direction-v3.test.cjs
           python scripts/render-cinematic-library.py --validate-only
           python -m py_compile scripts/render-cinematic-library.py scripts/render-directors-cuts.py scripts/render-contact-sheet-v2.py
       - name: Rebuild only out-of-date exports, safely recover from concurrent push conflicts
