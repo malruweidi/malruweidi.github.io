@@ -310,3 +310,17 @@
   script.defer = true;
   document.head.appendChild(script);
 })();
+
+/* Public 2017 owner-supplied research/ACS archive: additive, de-duplicated across loaders. */
+(() => {
+  if (document.querySelector('script[data-rx17-archive]')) return;
+  const css=document.createElement('link');
+  css.rel='stylesheet';
+  css.href='/assets/archival-2017-additions.css?v=20261016';
+  document.head.appendChild(css);
+  const script=document.createElement('script');
+  script.src='/assets/archival-2017-additions.js?v=20261016';
+  script.defer=true;
+  script.setAttribute('data-rx17-archive','');
+  document.head.appendChild(script);
+})();
