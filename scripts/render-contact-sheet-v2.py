@@ -27,9 +27,12 @@ def probe(p):
     return json.loads(shell(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(p)]))
 
 def frame(p,time):
+    # Force the scaled height below the padded 208 px canvas. FFmpeg rounds
+    # fractional scaled dimensions (16:9 -> 207/208 px) and otherwise can
+    # report "Padded dimensions cannot be smaller than input dimensions".
     data=shell(["ffmpeg","-hide_banner","-loglevel","error","-ss",str(time),"-i",str(p),
-                "-frames:v","1","-vf","scale=368:207:force_original_aspect_ratio=decrease,"
-                "pad=368:207:(ow-iw)/2:(oh-ih)/2:color=0x0b252b",
+                "-frames:v","1","-vf","scale=368:206:force_original_aspect_ratio=decrease,"
+                "pad=368:208:(ow-iw)/2:(oh-ih)/2:color=0x0b252b",
                 "-f","image2pipe","-vcodec","mjpeg","-"])
     return Image.open(io.BytesIO(data)).convert("RGB")
 
