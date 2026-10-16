@@ -21,7 +21,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "experimental documentary",
-          "narration": "The machine keeping a patient breathing can also expose delicate airway cells to damaging forces.",
+          "narration": "An airway reopening sounds like relief. On the scale of an epithelial monolayer, the arriving air–liquid interface can be an injury event.",
           "image": "assets/lung-concept.svg",
           "contain": true,
           "kind": "Original diagram, conceptual only",
@@ -30,7 +30,7 @@
           "source_title": "An airway reopens",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 17
         },
         {
           "id": "02",
@@ -75,7 +75,7 @@
           "source_title": "Making the injury measurable",
           "narrative_role": "evidence",
           "shot_treatment": "full_figure",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "05",
@@ -96,7 +96,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "experimental documentary",
-          "narration": "Under these in-vitro conditions, bubble flow injured cells. Pretreatment significantly reduced the measured cell death, alongside changes in cellular mechanics.",
+          "narration": "Pretreating a cell is not the same as delivering a drug to a patient. Follow the actual comparisons before making a therapeutic inference.",
           "image": "assets/evidence-pulmonary.webp",
           "contain": true,
           "kind": "Research-context figure; see primary paper for quantitative readouts",
@@ -105,7 +105,7 @@
           "source_title": "What the experiment found",
           "narrative_role": "turning_point",
           "shot_treatment": "full_figure",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "07",
@@ -126,7 +126,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "experimental documentary",
-          "narration": "A culture chamber is not a ventilated patient. The result is a mechanistic finding and a question for further translation, not a clinical prescription.",
+          "narration": "The paper answers a bounded question: what happened to cultured cells when a controlled interface passed over them.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
           "contain": true,
           "kind": "Published study context; DOI on film page",
@@ -135,9 +135,10 @@
           "source_title": "What it does not prove",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 16
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "id": "pub-cerebral-cilia",
@@ -156,7 +157,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "microscopy field notebook",
-          "narration": "A vessel develops under moving blood, while tiny endothelial projections meet the surrounding flow.",
+          "narration": "A zebrafish brain is building its vasculature while blood is already moving through it. Some endothelial cells carry slender projections into that flow.",
           "image": "assets/evidence-zebrafish.webp",
           "contain": true,
           "kind": "Original microscopy footage, model-context limitations apply",
@@ -166,7 +167,7 @@
           "source_title": "An organism in motion",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 17
         },
         {
           "id": "02",
@@ -233,7 +234,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "microscopy field notebook",
-          "narration": "My contribution was part of a wider collaborative research programme. No single clip proves every mechanism examined in the paper.",
+          "narration": "The striking image cannot prove that each cilium measures flow. Location, developmental time and perturbation need to be distinguished.",
           "image": "assets/evidence-zebrafish.webp",
           "contain": true,
           "kind": "Zebrafish context image; the original footage is linked separately",
@@ -242,7 +243,7 @@
           "source_title": "Observation needs context",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 14
         },
         {
           "id": "07",
@@ -263,7 +264,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "microscopy field notebook",
-          "narration": "Developmental biology begins with moving systems. A still image captures a moment, while flow changes the question being asked.",
+          "narration": "The useful question remains which endothelial cilia occur where, and how their distribution changes as cerebral vessels develop.",
           "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
           "contain": true,
           "kind": "Published research record",
@@ -274,7 +275,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "id": "pub-slit2-robo",
@@ -293,7 +295,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "molecular noir",
-          "narration": "In one cancer context a signalling pathway can favour tumour growth. In another it may help restrain it.",
+          "narration": "A drug target should not reverse its apparent biological meaning each time the tumour context changes. SLIT2 and ROBO make that assumption difficult.",
           "image": "assets/robo-concept.svg",
           "contain": true,
           "kind": "Simplified pathway illustration, not experimental structure",
@@ -302,7 +304,7 @@
           "source_title": "The receptor does not act alone",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 17
         },
         {
           "id": "02",
@@ -368,7 +370,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "molecular noir",
-          "narration": "A useful inhibitor must be matched to the tumour biology where the pathway is actually driving disease.",
+          "narration": "Patent filings reveal proposed interventions and commercial claims, not confirmed clinical benefit. The signalling context must be reconstructed separately.",
           "image": "assets/robo-concept.svg",
           "contain": true,
           "kind": "Conceptual scientific illustration",
@@ -377,7 +379,7 @@
           "source_title": "The missing condition",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "07",
@@ -392,13 +394,13 @@
           "source_title": "The missing condition",
           "narrative_role": "limits",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "08",
           "title": "The claim",
           "subtitle": "molecular noir",
-          "narration": "The question is not simply whether the axis can be blocked, but when blocking it will make biological sense.",
+          "narration": "A patent landscape becomes scientifically useful when its claims are tested against the different roles this pathway can play.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "contain": false,
           "kind": "Personal editorial portrait, not patent or molecular data",
@@ -409,7 +411,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "id": "pub-curcumin-cyanide",
@@ -428,7 +431,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "chemical colour essay",
-          "narration": "A chemical probe can turn a molecular interaction into light we can measure, without making chemistry disappear.",
+          "narration": "A solution changes colour. The immediate temptation is to announce a detector. But the chemistry behind an optical response has to be interrogated.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
           "contain": true,
           "kind": "Published study figure",
@@ -437,7 +440,7 @@
           "source_title": "A familiar natural chromophore",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 17
         },
         {
           "id": "02",
@@ -503,7 +506,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "chemical colour essay",
-          "narration": "Cell-based imaging tests biological utility under specific conditions; it does not automatically confer clinical validation.",
+          "narration": "Read the actual absorbance and fluorescence evidence alongside experimental conditions. A bright field alone cannot establish biological selectivity.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
           "contain": true,
           "kind": "Published sensing and cell figure",
@@ -512,7 +515,7 @@
           "source_title": "Cells are not a calibration vial",
           "narrative_role": "turning_point",
           "shot_treatment": "full_figure",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "07",
@@ -527,13 +530,13 @@
           "source_title": "Cells are not a calibration vial",
           "narrative_role": "limits",
           "shot_treatment": "full_figure",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "08",
           "title": "The claim",
           "subtitle": "chemical colour essay",
-          "narration": "This collaborative chemistry project taught how optical evidence can connect molecular design to the complexity of a living system.",
+          "narration": "The molecule becomes a useful probe only insofar as its signal withstands competing species and the complexity of a cell.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
           "contain": true,
           "kind": "Published research record",
@@ -544,7 +547,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 15
         }
-      ]
+      ],
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "id": "pub-making-medicines-keep",
@@ -563,7 +567,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "archival historical investigation",
-          "narration": "A prescription was not finished when its ingredients were combined. In medieval Cairo, a medicine still had to be made reliable.",
+          "narration": "A jar of syrup can look trustworthy while concealing an unstable preparation. That difficulty was familiar to pharmacists long before industrial manufacturing.",
           "image": "assets/films/art/medieval-pharmacy.svg",
           "contain": true,
           "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
@@ -572,7 +576,7 @@
           "source_title": "A handbook for a working pharmacy",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "02",
@@ -638,7 +642,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "archival historical investigation",
-          "narration": "Formulary instructions and documentary traces allow an investigation of pharmaceutical reliability, but they do not establish the clinical success of each recipe.",
+          "narration": "Recipes described heat, consistency and substitutions. The Cambridge Genizah prescription offers a separate documentary glimpse, not a full account of practice.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
           "contain": false,
           "kind": "Personal editorial portrait; not a historical document",
@@ -647,7 +651,7 @@
           "source_title": "Reading against the temptation to romanticise",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 15
         },
         {
           "id": "07",
@@ -668,7 +672,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "archival historical investigation",
-          "narration": "This forthcoming historical article asks how pharmaceutical dependability was achieved and described under the conditions of Ayyubid-Mamluk Cairo.",
+          "narration": "The historical evidence shows attempts to make medicine dependable. It does not justify calling medieval practice modern quality assurance.",
           "image": "assets/films/art/medieval-pharmacy.svg",
           "contain": true,
           "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
@@ -679,7 +683,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 13
         }
-      ]
+      ],
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "id": "pub-niosomes",
@@ -698,7 +703,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "formulation design notebook",
-          "narration": "An inhaled drug carrier may behave well during preparation yet fail at the first real delivery step.",
+          "narration": "A beautiful vesicle is not yet an inhaled medicine. The journey may fail as soon as it enters the nebulizer.",
           "image": "assets/niosomes-concept.svg",
           "contain": true,
           "kind": "Illustrative vesicle, not measured morphology",
@@ -707,7 +712,7 @@
           "source_title": "Design the membrane",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "02",
@@ -773,7 +778,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "formulation design notebook",
-          "narration": "Planned aerosol assessment asks about output, distribution and the fraction that reaches a target region, not just the vial formulation.",
+          "narration": "Particle size before aerosolisation is only a starting measurement. Compare vesicle integrity, delivery conditions and deposited fraction without assuming a result.",
           "image": "assets/niosomes-concept.svg",
           "contain": true,
           "kind": "Illustration of ongoing research questions",
@@ -803,7 +808,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "formulation design notebook",
-          "narration": "The thesis is ongoing. I am showing the research design and what must be measured, not claiming encapsulation or therapeutic success.",
+          "narration": "This is a research programme still being tested. Nothing here implies clinical validation of inhaled dexamethasone vesicles.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
           "contain": false,
           "kind": "Original research workspace photograph",
@@ -812,9 +817,10 @@
           "source_title": "No invented result",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "id": "pub-echo-cnn-lstm",
@@ -833,7 +839,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "diagnostic image essay",
-          "narration": "Inside fetal echocardiography, anatomy changes with each frame. Diagnosing congenital cardiac disease requires more than recognising a single still image.",
+          "narration": "A fetal heart refuses to remain still for a photograph. Its motion is part of the information a screening algorithm might need.",
           "image": "assets/echo-concept.svg",
           "contain": true,
           "kind": "Original explanatory diagram, not diagnostic clinical data",
@@ -842,7 +848,7 @@
           "source_title": "The data must be prepared",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "02",
@@ -908,7 +914,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "diagnostic image essay",
-          "narration": "Model accuracy alone cannot settle clinical utility. Dataset composition, validation design, and false positive or missed cases determine how results should be read.",
+          "narration": "A CNN–LSTM pipeline can represent space and time, but a pilot study requires separation of training performance from genuine generalisation.",
           "image": "assets/echo-concept.svg",
           "contain": true,
           "kind": "Editorial machine-learning interpretation; see original paper for actual metrics",
@@ -917,7 +923,7 @@
           "source_title": "What counts as success?",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 15
         },
         {
           "id": "07",
@@ -938,7 +944,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "diagnostic image essay",
-          "narration": "The 2023 publication is an exploratory contribution to congenital heart disease detection. The source paper retains the actual comparisons and limits.",
+          "narration": "The finding is a testable modelling approach, not the notion that a neural network has become a clinician.",
           "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
           "contain": false,
           "kind": "Archived imaging instrumentation; published paper linked separately",
@@ -949,7 +955,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "id": "pub-pla-grafting",
@@ -968,7 +975,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "materials macro-photography",
-          "narration": "Poly(lactic acid) may keep its familiar bulk chemistry while the interface that meets its environment changes.",
+          "narration": "Two pieces of poly(lactic acid) can look identical yet present different chemistries to the world. The difference may be only at the surface.",
           "image": "assets/polymer-concept.svg",
           "contain": true,
           "kind": "Original conceptual surface-treatment diagram",
@@ -977,7 +984,7 @@
           "source_title": "What plasma does",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 17
         },
         {
           "id": "02",
@@ -1007,7 +1014,7 @@
           "source_title": "What plasma does",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "04",
@@ -1022,7 +1029,7 @@
           "source_title": "Choose the groups",
           "narrative_role": "evidence",
           "shot_treatment": "full_figure",
-          "sec": 16
+          "sec": 15
         },
         {
           "id": "05",
@@ -1037,13 +1044,13 @@
           "source_title": "The instrument tests the story",
           "narrative_role": "interpretation",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "06",
           "title": "Turning point",
           "subtitle": "materials macro-photography",
-          "narration": "The biologically relevant encounter happens at an interface. A changed surface does not itself establish performance inside a patient.",
+          "narration": "Cold plasma prepares an interface for chemical modification. The question is what actual characterization can verify, rather than what the schematic promises.",
           "image": "assets/home-archive/figure-pla-surface.jpg",
           "contain": true,
           "kind": "Published surface characterization imagery",
@@ -1052,7 +1059,7 @@
           "source_title": "A surface is a boundary",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "07",
@@ -1067,13 +1074,13 @@
           "source_title": "A surface is a boundary",
           "narrative_role": "limits",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "08",
           "title": "The claim",
           "subtitle": "materials macro-photography",
-          "narration": "This study illustrates how targeted chemistry can change the questions a biodegradable polymer is able to answer.",
+          "narration": "There is no need to change the bulk polymer to change its outermost interactions. Measurements must establish how much changed.",
           "image": "assets/polymer-concept.svg",
           "contain": true,
           "kind": "Conceptual concluding illustration",
@@ -1082,9 +1089,10 @@
           "source_title": "Why the outside matters",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 14
+          "sec": 15
         }
-      ]
+      ],
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "id": "pub-pla-scaffolds",
@@ -1103,7 +1111,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "materials laboratory film",
-          "narration": "A porous polymer scaffold is not merely a shape. Its fibres and outer surfaces meet organisms, liquids and biological processes.",
+          "narration": "A scaffold's architecture is visible. Its chemistry at the contact surface is not. Both matter when biological material encounters a polymer.",
           "image": "assets/polymer-concept.svg",
           "contain": true,
           "kind": "Original explanatory polymer scaffold schematic",
@@ -1172,13 +1180,13 @@
           "source_title": "A chemical change needs evidence",
           "narrative_role": "interpretation",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "06",
           "title": "Turning point",
           "subtitle": "materials laboratory film",
-          "narration": "A laboratory antimicrobial endpoint cannot, by itself, establish long-term biocompatibility, manufacturing reliability or clinical efficacy.",
+          "narration": "An antimicrobial result depends on species, exposure and test conditions. A diagram of dead bacteria would not substitute for the reported assay.",
           "image": "assets/home-archive/figure-pla-surface.jpg",
           "contain": true,
           "kind": "Study-related scientific figure; source DOI holds exact endpoints",
@@ -1187,7 +1195,7 @@
           "source_title": "Antimicrobial does not mean implant ready",
           "narrative_role": "turning_point",
           "shot_treatment": "full_figure",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "07",
@@ -1208,7 +1216,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "materials laboratory film",
-          "narration": "By engineering the interface rather than abandoning the polymer, the work asks what a familiar material can become.",
+          "narration": "The paper is about engineering and testing a surface, not declaring every PLA scaffold clinically antimicrobial.",
           "image": "assets/polymer-concept.svg",
           "contain": true,
           "kind": "Original conceptual film closing",
@@ -1219,7 +1227,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "id": "pub-flow-chamber-method",
