@@ -343,9 +343,76 @@
       "poster": "/assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
       "page": "/#history",
       "visual_language": "archival historical investigation",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The medicine had to last",
+          "subtitle": "archival historical investigation",
+          "narration": "A prescription was not finished when its ingredients were combined. In medieval Cairo, a medicine still had to be made reliable.",
+          "image": "assets/history-0.webp",
+          "contain": false,
+          "kind": "Contemporary editorial Cairo illustration, not a period photograph or primary manuscript",
+          "credit": "Contemporary editorial Cairo illustration, not a period photograph or primary manuscript",
+          "link": "/#history"
+        },
+        {
+          "id": "02",
+          "title": "A handbook for a working pharmacy",
+          "subtitle": "archival historical investigation",
+          "narration": "The Minhaj al-dukkan associated with al-Kuhin al-Attar documents practical pharmaceutical choices. It is an historical text, not a modern clinical trial.",
+          "image": "assets/history-1.webp",
+          "contain": false,
+          "kind": "Editorial historical image; the referenced formulary must be verified separately",
+          "credit": "Editorial historical image; the referenced formulary must be verified separately",
+          "link": "/#history"
+        },
+        {
+          "id": "03",
+          "title": "Why syrup matters",
+          "subtitle": "archival historical investigation",
+          "narration": "Concentration, ingredients and preservation are questions of practice. A formula means little if the preparation changes before it reaches its user.",
+          "image": "assets/history-2.webp",
+          "contain": false,
+          "kind": "Editorial historical illustration, not a preserved syrup artifact",
+          "credit": "Editorial historical illustration, not a preserved syrup artifact",
+          "link": "/#history"
+        },
+        {
+          "id": "04",
+          "title": "Substitution is a serious decision",
+          "subtitle": "archival historical investigation",
+          "narration": "A pharmacist with an unavailable ingredient had to consider replacement. Similar names or therapeutic intentions did not guarantee material equivalence.",
+          "image": "assets/history-0.webp",
+          "contain": false,
+          "kind": "Historical-context illustration, not a manuscript transcription",
+          "credit": "Historical-context illustration, not a manuscript transcription",
+          "link": "/#history"
+        },
+        {
+          "id": "05",
+          "title": "Reading against the temptation to romanticise",
+          "subtitle": "archival historical investigation",
+          "narration": "Formulary instructions and documentary traces allow an investigation of pharmaceutical reliability, but they do not establish the clinical success of each recipe.",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "contain": false,
+          "kind": "Personal editorial portrait; not a historical document",
+          "credit": "Personal editorial portrait; not a historical document",
+          "link": "/#history"
+        },
+        {
+          "id": "06",
+          "title": "What a medicine could keep",
+          "subtitle": "archival historical investigation",
+          "narration": "This forthcoming historical article asks how pharmaceutical dependability was achieved and described under the conditions of Ayyubid-Mamluk Cairo.",
+          "image": "assets/history-1.webp",
+          "contain": false,
+          "kind": "Contemporary illustration; accepted scholarly work, awaiting final publication",
+          "credit": "Contemporary illustration; accepted scholarly work, awaiting final publication",
+          "link": "/#history"
+        }
+      ]
     },
     {
       "id": "niosomes",
@@ -440,9 +507,76 @@
       "poster": "/assets/echo-concept.svg",
       "page": "/computing.html",
       "visual_language": "diagnostic image essay",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A heart before birth",
+          "subtitle": "diagnostic image essay",
+          "narration": "Inside fetal echocardiography, anatomy changes with each frame. Diagnosing congenital cardiac disease requires more than recognising a single still image.",
+          "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "contain": false,
+          "kind": "Original echocardiography workspace archive, not an identified pilot-study fetal image",
+          "credit": "Original echocardiography workspace archive, not an identified pilot-study fetal image",
+          "link": "/computing.html"
+        },
+        {
+          "id": "02",
+          "title": "The data must be prepared",
+          "subtitle": "diagnostic image essay",
+          "narration": "Ultrasound images are sensitive to acquisition and annotation. Before modelling, their quality and the study's sampling conditions need careful attention.",
+          "image": "assets/echo-concept.svg",
+          "contain": true,
+          "kind": "Original explanatory diagram, not diagnostic clinical data",
+          "credit": "Original explanatory diagram, not diagnostic clinical data",
+          "link": "/computing.html"
+        },
+        {
+          "id": "03",
+          "title": "Space and time",
+          "subtitle": "diagnostic image essay",
+          "narration": "Convolutional neural networks can extract visual patterns. Long short-term memory models can process sequence information, when the input design preserves it.",
+          "image": "assets/echo-concept.svg",
+          "contain": true,
+          "kind": "Conceptual model architecture, not the exact published CNN-LSTM figure",
+          "credit": "Conceptual model architecture, not the exact published CNN-LSTM figure",
+          "link": "/computing.html"
+        },
+        {
+          "id": "04",
+          "title": "A pilot, not a hospital device",
+          "subtitle": "diagnostic image essay",
+          "narration": "Our paper studied stacking-based CNN-LSTM techniques for fetal echocardiogram interpretation. Evaluating them is different from establishing safe deployment.",
+          "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "contain": false,
+          "kind": "Original workspace photo; not the study performance data",
+          "credit": "Original workspace photo; not the study performance data",
+          "link": "/computing.html"
+        },
+        {
+          "id": "05",
+          "title": "What counts as success?",
+          "subtitle": "diagnostic image essay",
+          "narration": "Model accuracy alone cannot settle clinical utility. Dataset composition, validation design, and false positive or missed cases determine how results should be read.",
+          "image": "assets/echo-concept.svg",
+          "contain": true,
+          "kind": "Editorial machine-learning interpretation; see original paper for actual metrics",
+          "credit": "Editorial machine-learning interpretation; see original paper for actual metrics",
+          "link": "/computing.html"
+        },
+        {
+          "id": "06",
+          "title": "The clinician stays in the picture",
+          "subtitle": "diagnostic image essay",
+          "narration": "The 2023 publication is an exploratory contribution to congenital heart disease detection. The source paper retains the actual comparisons and limits.",
+          "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "contain": false,
+          "kind": "Archived imaging instrumentation; published paper linked separately",
+          "credit": "Archived imaging instrumentation; published paper linked separately",
+          "link": "/computing.html"
+        }
+      ]
     },
     {
       "id": "pla-grafting",
@@ -455,9 +589,76 @@
       "poster": "/assets/home-archive/figure-pla-surface.jpg",
       "page": "/techniques.html#materials",
       "visual_language": "materials macro-photography",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "One material, two surfaces",
+          "subtitle": "materials macro-photography",
+          "narration": "Poly(lactic acid) may keep its familiar bulk chemistry while the interface that meets its environment changes.",
+          "image": "assets/home-archive/figure-pla-surface.jpg",
+          "contain": true,
+          "kind": "Published polymer surface research imagery; see source DOI",
+          "credit": "Published polymer surface research imagery; see source DOI",
+          "link": "/techniques.html#materials"
+        },
+        {
+          "id": "02",
+          "title": "What plasma does",
+          "subtitle": "materials macro-photography",
+          "narration": "Cold plasma can activate a polymer surface, opening opportunities for grafting chemistry without replacing the entire underlying material.",
+          "image": "assets/polymer-concept.svg",
+          "contain": true,
+          "kind": "Original conceptual surface-treatment diagram",
+          "credit": "Original conceptual surface-treatment diagram",
+          "link": "/techniques.html#materials"
+        },
+        {
+          "id": "03",
+          "title": "Choose the groups",
+          "subtitle": "materials macro-photography",
+          "narration": "Our coauthored research examined grafting approaches involving fumaric and ascorbic acids on PLA films, connecting surface chemistry to material characterisation.",
+          "image": "assets/home-archive/figure-pla-surface.jpg",
+          "contain": true,
+          "kind": "Study-related scientific figure; not a movie of plasma treatment",
+          "credit": "Study-related scientific figure; not a movie of plasma treatment",
+          "link": "/techniques.html#materials"
+        },
+        {
+          "id": "04",
+          "title": "The instrument tests the story",
+          "subtitle": "materials macro-photography",
+          "narration": "Morphology and chemical characterisation can tell whether a proposed surface transformation is consistent with observed material properties.",
+          "image": "assets/evidence-biomaterials.webp",
+          "contain": false,
+          "kind": "Biomaterials research context, not a substitute for specific data",
+          "credit": "Biomaterials research context, not a substitute for specific data",
+          "link": "/techniques.html#materials"
+        },
+        {
+          "id": "05",
+          "title": "A surface is a boundary",
+          "subtitle": "materials macro-photography",
+          "narration": "The biologically relevant encounter happens at an interface. A changed surface does not itself establish performance inside a patient.",
+          "image": "assets/home-archive/figure-pla-surface.jpg",
+          "contain": true,
+          "kind": "Published surface characterization imagery",
+          "credit": "Published surface characterization imagery",
+          "link": "/techniques.html#materials"
+        },
+        {
+          "id": "06",
+          "title": "Why the outside matters",
+          "subtitle": "materials macro-photography",
+          "narration": "This study illustrates how targeted chemistry can change the questions a biodegradable polymer is able to answer.",
+          "image": "assets/polymer-concept.svg",
+          "contain": true,
+          "kind": "Conceptual concluding illustration",
+          "credit": "Conceptual concluding illustration",
+          "link": "/techniques.html#materials"
+        }
+      ]
     },
     {
       "id": "pla-scaffolds",
@@ -470,9 +671,76 @@
       "poster": "/assets/home-archive/figure-pla-surface.jpg",
       "page": "/grants/urep22.html",
       "visual_language": "materials laboratory film",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The scaffold is not inert",
+          "subtitle": "materials laboratory film",
+          "narration": "A porous polymer scaffold is not merely a shape. Its fibres and outer surfaces meet organisms, liquids and biological processes.",
+          "image": "assets/evidence-biomaterials.webp",
+          "contain": false,
+          "kind": "Existing scientific biomaterials research visual",
+          "credit": "Existing scientific biomaterials research visual",
+          "link": "/grants/urep22.html"
+        },
+        {
+          "id": "02",
+          "title": "First build the structure",
+          "subtitle": "materials laboratory film",
+          "narration": "Poly(lactic acid) scaffolds provide a material framework. Electrospinning and related processing choices influence their geometry.",
+          "image": "assets/polymer-concept.svg",
+          "contain": true,
+          "kind": "Original explanatory polymer scaffold schematic",
+          "credit": "Original explanatory polymer scaffold schematic",
+          "link": "/grants/urep22.html"
+        },
+        {
+          "id": "03",
+          "title": "Then rewrite the contact layer",
+          "subtitle": "materials laboratory film",
+          "narration": "Our research explored antimicrobial modification of PLA scaffolds using cold plasma together with ascorbic and fumaric acid chemistry.",
+          "image": "assets/home-archive/figure-pla-surface.jpg",
+          "contain": true,
+          "kind": "Published materials characterization context",
+          "credit": "Published materials characterization context",
+          "link": "/grants/urep22.html"
+        },
+        {
+          "id": "04",
+          "title": "A chemical change needs evidence",
+          "subtitle": "materials laboratory film",
+          "narration": "Characterisation must distinguish grafted surface changes from a convenient conceptual drawing. Assays and controls establish what can be claimed.",
+          "image": "assets/evidence-biomaterials.webp",
+          "contain": false,
+          "kind": "Research-context image, not a reproduced antimicrobial assay",
+          "credit": "Research-context image, not a reproduced antimicrobial assay",
+          "link": "/grants/urep22.html"
+        },
+        {
+          "id": "05",
+          "title": "Antimicrobial does not mean implant ready",
+          "subtitle": "materials laboratory film",
+          "narration": "A laboratory antimicrobial endpoint cannot, by itself, establish long-term biocompatibility, manufacturing reliability or clinical efficacy.",
+          "image": "assets/home-archive/figure-pla-surface.jpg",
+          "contain": true,
+          "kind": "Study-related scientific figure; source DOI holds exact endpoints",
+          "credit": "Study-related scientific figure; source DOI holds exact endpoints",
+          "link": "/grants/urep22.html"
+        },
+        {
+          "id": "06",
+          "title": "The decisive boundary",
+          "subtitle": "materials laboratory film",
+          "narration": "By engineering the interface rather than abandoning the polymer, the work asks what a familiar material can become.",
+          "image": "assets/polymer-concept.svg",
+          "contain": true,
+          "kind": "Original conceptual film closing",
+          "credit": "Original conceptual film closing",
+          "link": "/grants/urep22.html"
+        }
+      ]
     },
     {
       "id": "flow-chamber-method",
@@ -485,9 +753,76 @@
       "poster": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg",
       "page": "/grants/urep21.html",
       "visual_language": "instrument construction",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "How do you study an injury you cannot hold?",
+          "subtitle": "instrument construction",
+          "narration": "Small airway reopening can produce rapid fluid stresses. Direct observation inside a whole lung is difficult to standardise.",
+          "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "contain": true,
+          "kind": "Published experimental flow-chamber figure",
+          "credit": "Published experimental flow-chamber figure",
+          "link": "/grants/urep21.html"
+        },
+        {
+          "id": "02",
+          "title": "Build a smaller world",
+          "subtitle": "instrument construction",
+          "narration": "A parallel-plate flow chamber permits controlled fluid motion over a monolayer. This simplified geometry is a modelling decision.",
+          "image": "assets/lung-concept.svg",
+          "contain": true,
+          "kind": "Original conceptual diagram, not the paper's exact hardware",
+          "credit": "Original conceptual diagram, not the paper's exact hardware",
+          "link": "/grants/urep21.html"
+        },
+        {
+          "id": "03",
+          "title": "Make the disturbance repeatable",
+          "subtitle": "instrument construction",
+          "narration": "The published method uses a flow-induced stress event to study damage to cells under controlled exposure conditions.",
+          "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "contain": true,
+          "kind": "Published flow-chamber research figure",
+          "credit": "Published flow-chamber research figure",
+          "link": "/grants/urep21.html"
+        },
+        {
+          "id": "04",
+          "title": "Measure the aftermath",
+          "subtitle": "instrument construction",
+          "narration": "Fluorescence-based injury measurements must be timed, controlled and interpreted with care. A signal is not a complete injury mechanism.",
+          "image": "assets/evidence-pulmonary.webp",
+          "contain": false,
+          "kind": "Pulmonary research figure context; consult methods paper for exact protocols",
+          "credit": "Pulmonary research figure context; consult methods paper for exact protocols",
+          "link": "/grants/urep21.html"
+        },
+        {
+          "id": "05",
+          "title": "The model is useful because it is incomplete",
+          "subtitle": "instrument construction",
+          "narration": "The chamber isolates a mechanical challenge. It does not recreate airway anatomy, immune dynamics or every interaction in a human lung.",
+          "image": "assets/lung-concept.svg",
+          "contain": true,
+          "kind": "Explicitly simplified model illustration",
+          "credit": "Explicitly simplified model illustration",
+          "link": "/grants/urep21.html"
+        },
+        {
+          "id": "06",
+          "title": "Why methods deserve their own film",
+          "subtitle": "instrument construction",
+          "narration": "A reproducible instrument turns an invisible question into a measurable experiment. The paper records its operating logic and limits.",
+          "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "contain": true,
+          "kind": "Published methods figure",
+          "credit": "Published methods figure",
+          "link": "/grants/urep21.html"
+        }
+      ]
     },
     {
       "id": "zebrafish-hemodynamics",
@@ -500,9 +835,76 @@
       "poster": "/assets/home-archive/figure-zebrafish-microscopy.jpg",
       "page": "/moving-evidence.html#zebrafish-films",
       "visual_language": "microscopy field notebook",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The blood moves before we can count it",
+          "subtitle": "microscopy field notebook",
+          "narration": "Inside a developing zebrafish, the heart contracts and blood circulates across structures small enough to challenge ordinary observation.",
+          "image": "assets/zebrafish-embryo-microscopy.webp",
+          "contain": false,
+          "kind": "Zebrafish microscopy archive, specimen context must not be assigned to a specific figure",
+          "credit": "Zebrafish microscopy archive, specimen context must not be assigned to a specific figure",
+          "link": "/moving-evidence.html#zebrafish-films"
+        },
+        {
+          "id": "02",
+          "title": "High-speed observation",
+          "subtitle": "microscopy field notebook",
+          "narration": "Fast video microscopy captures change over time. The task becomes extracting meaningful cardiac and flow measurements from those frames.",
+          "image": "assets/zebrafish-larva-microscopy.webp",
+          "contain": false,
+          "kind": "Original zebrafish microscopy contextual still",
+          "credit": "Original zebrafish microscopy contextual still",
+          "link": "/moving-evidence.html#zebrafish-films"
+        },
+        {
+          "id": "03",
+          "title": "From frames to function",
+          "subtitle": "microscopy field notebook",
+          "narration": "The published work examines cardiac function and blood-flow hemodynamics, rather than treating a single attractive frame as quantitative physiology.",
+          "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+          "contain": true,
+          "kind": "Published high-speed zebrafish imaging context",
+          "credit": "Published high-speed zebrafish imaging context",
+          "link": "/moving-evidence.html#zebrafish-films"
+        },
+        {
+          "id": "04",
+          "title": "An instrument has a sampling limit",
+          "subtitle": "microscopy field notebook",
+          "narration": "Frame rate, optical scale and analysis assumptions can constrain an estimated velocity or physiological parameter.",
+          "image": "assets/evidence-zebrafish.webp",
+          "contain": false,
+          "kind": "Existing research-context image, not primary numerical data",
+          "credit": "Existing research-context image, not primary numerical data",
+          "link": "/moving-evidence.html#zebrafish-films"
+        },
+        {
+          "id": "05",
+          "title": "A living system resists simplification",
+          "subtitle": "microscopy field notebook",
+          "narration": "Vessels change shape while blood moves. Interpretation has to respect both the organism and the measurement technique.",
+          "image": "assets/zebrafish-concept.svg",
+          "contain": true,
+          "kind": "Original conceptual biological schematic",
+          "credit": "Original conceptual biological schematic",
+          "link": "/moving-evidence.html#zebrafish-films"
+        },
+        {
+          "id": "06",
+          "title": "Making the invisible measurable",
+          "subtitle": "microscopy field notebook",
+          "narration": "The 2020 Micron study explores the possibilities of high-speed video microscopy. Its original images and analytic details remain the evidence.",
+          "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+          "contain": true,
+          "kind": "Published microscopy figure",
+          "credit": "Published microscopy figure",
+          "link": "/moving-evidence.html#zebrafish-films"
+        }
+      ]
     },
     {
       "id": "ace2-covid-drugs",
@@ -515,9 +917,76 @@
       "poster": "/assets/evidence-pulmonary.webp",
       "page": "/#publications",
       "visual_language": "clinical evidence",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A therapy can change the system around it",
+          "subtitle": "clinical evidence",
+          "narration": "During COVID-19, clinicians were treating infection in patients who also lived with hypertension and chronic medication exposure.",
+          "image": "assets/evidence-pulmonary.webp",
+          "contain": false,
+          "kind": "Pulmonary clinical-context scientific illustration, no identifiable patient",
+          "credit": "Pulmonary clinical-context scientific illustration, no identifiable patient",
+          "link": "/#publications"
+        },
+        {
+          "id": "02",
+          "title": "Two signals in circulation",
+          "subtitle": "clinical evidence",
+          "narration": "Soluble ACE2 and angiotensin II are distinct measurements in the renin-angiotensin system. Their interpretation requires clinical context.",
+          "image": "assets/echo-concept.svg",
+          "contain": true,
+          "kind": "General physiological diagram, not a specific assay result",
+          "credit": "General physiological diagram, not a specific assay result",
+          "link": "/#publications"
+        },
+        {
+          "id": "03",
+          "title": "Treatments are not randomized by a chart",
+          "subtitle": "clinical evidence",
+          "narration": "Our 2022 publication investigated reported differences in those levels among hypertensive COVID-19 patients receiving different antihypertensive medications.",
+          "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "contain": false,
+          "kind": "Original healthcare-imaging workspace; no patient data from study",
+          "credit": "Original healthcare-imaging workspace; no patient data from study",
+          "link": "/#publications"
+        },
+        {
+          "id": "04",
+          "title": "Do not confuse association with mechanism",
+          "subtitle": "clinical evidence",
+          "narration": "Medication groups, disease severity and confounding factors matter. A measured level does not reveal the entire causal pathway.",
+          "image": "assets/evidence-pulmonary.webp",
+          "contain": false,
+          "kind": "Contextual pulmonary image, not the published patient dataset",
+          "credit": "Contextual pulmonary image, not the published patient dataset",
+          "link": "/#publications"
+        },
+        {
+          "id": "05",
+          "title": "The clinical question is conditional",
+          "subtitle": "clinical evidence",
+          "narration": "A signal in a patient cohort motivates mechanistic investigation. It should not become an unsupported instruction to stop or change medication.",
+          "image": "assets/echo-concept.svg",
+          "contain": true,
+          "kind": "Conceptual depiction, not treatment guidance",
+          "credit": "Conceptual depiction, not treatment guidance",
+          "link": "/#publications"
+        },
+        {
+          "id": "06",
+          "title": "Evidence before advice",
+          "subtitle": "clinical evidence",
+          "narration": "The source article contains the study design and results. This film explains the uncertainty around clinical association rather than prescribing care.",
+          "image": "assets/evidence-pulmonary.webp",
+          "contain": false,
+          "kind": "Editorial science illustration",
+          "credit": "Editorial science illustration",
+          "link": "/#publications"
+        }
+      ]
     },
     {
       "id": "gi-autoimmunity-1",
@@ -530,9 +999,76 @@
       "poster": "/assets/home-archive/university-lab-coat.jpg",
       "page": "/illness-and-evidence.html",
       "visual_language": "medical explanatory",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The intestine is not simply a tube",
+          "subtitle": "medical explanatory",
+          "narration": "The gastrointestinal wall is an immune interface, with specialised barriers and molecular signals operating beside digestion.",
+          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "contain": false,
+          "kind": "Original laboratory photograph, not tissue from this chapter",
+          "credit": "Original laboratory photograph, not tissue from this chapter",
+          "link": "/illness-and-evidence.html"
+        },
+        {
+          "id": "02",
+          "title": "What makes tolerance possible?",
+          "subtitle": "medical explanatory",
+          "narration": "The immune system must distinguish threats from food-associated and resident signals. Breakdown can produce complex pathology.",
+          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "contain": false,
+          "kind": "Original laboratory workspace, not intestinal pathology",
+          "credit": "Original laboratory workspace, not intestinal pathology",
+          "link": "/illness-and-evidence.html"
+        },
+        {
+          "id": "03",
+          "title": "Disease names conceal different mechanisms",
+          "subtitle": "medical explanatory",
+          "narration": "The chapter examines autoimmune gastrointestinal diseases and their aetiology, considering immunological mechanisms rather than treating all inflammation as one diagnosis.",
+          "image": "assets/evidence-pulmonary.webp",
+          "contain": false,
+          "kind": "General scientific research-context image, not GI histopathology",
+          "credit": "General scientific research-context image, not GI histopathology",
+          "link": "/illness-and-evidence.html"
+        },
+        {
+          "id": "04",
+          "title": "Tissue tells part of the story",
+          "subtitle": "medical explanatory",
+          "narration": "Histological patterns, molecular mechanisms and clinical presentation require careful reconciliation before attributing symptoms to a particular immune disorder.",
+          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "contain": false,
+          "kind": "Original laboratory image, not patient diagnostic specimen",
+          "credit": "Original laboratory image, not patient diagnostic specimen",
+          "link": "/illness-and-evidence.html"
+        },
+        {
+          "id": "05",
+          "title": "Complexity is not a license to guess",
+          "subtitle": "medical explanatory",
+          "narration": "Mechanistic plausibility should be weighed against measured evidence and disease-specific diagnostic criteria.",
+          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "contain": false,
+          "kind": "Laboratory context",
+          "credit": "Laboratory context",
+          "link": "/illness-and-evidence.html"
+        },
+        {
+          "id": "06",
+          "title": "Before treatment, understand the process",
+          "subtitle": "medical explanatory",
+          "narration": "Part One of the 2022 open-access chapter explores what researchers understand about disease origins and pathophysiology, not a universal diagnosis.",
+          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "contain": false,
+          "kind": "Editorial research context",
+          "credit": "Editorial research context",
+          "link": "/illness-and-evidence.html"
+        }
+      ]
     },
     {
       "id": "gi-autoimmunity-2",
@@ -545,9 +1081,76 @@
       "poster": "/assets/home-archive/university-lab-coat.jpg",
       "page": "/illness-and-evidence.html",
       "visual_language": "medical explanatory",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The symptoms do not name the disease",
+          "subtitle": "medical explanatory",
+          "narration": "Abdominal illness can look similar across immune, inflammatory and infectious processes. Clinical appearance alone may be insufficient.",
+          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "contain": false,
+          "kind": "Original laboratory workspace, not patient diagnosis",
+          "credit": "Original laboratory workspace, not patient diagnosis",
+          "link": "/illness-and-evidence.html"
+        },
+        {
+          "id": "02",
+          "title": "Choose the evidence to examine",
+          "subtitle": "medical explanatory",
+          "narration": "Diagnostic interpretation can involve biomarkers, endoscopy and tissue findings, with different roles and limitations in distinct diseases.",
+          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "contain": false,
+          "kind": "Laboratory photo, not endoscopy or pathology result",
+          "credit": "Laboratory photo, not endoscopy or pathology result",
+          "link": "/illness-and-evidence.html"
+        },
+        {
+          "id": "03",
+          "title": "The tools evolve",
+          "subtitle": "medical explanatory",
+          "narration": "Part Two surveys emerging diagnostic techniques and treatments for autoimmune gastrointestinal conditions in a changing evidence landscape.",
+          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "contain": false,
+          "kind": "Original biomedical research-context photo",
+          "credit": "Original biomedical research-context photo",
+          "link": "/illness-and-evidence.html"
+        },
+        {
+          "id": "04",
+          "title": "The intervention has a target",
+          "subtitle": "medical explanatory",
+          "narration": "Therapeutic approaches follow disease mechanisms, but treatment evidence differs by condition, study design and patient population.",
+          "image": "assets/echo-concept.svg",
+          "contain": true,
+          "kind": "Conceptual science graphic, not a clinical treatment device",
+          "credit": "Conceptual science graphic, not a clinical treatment device",
+          "link": "/illness-and-evidence.html"
+        },
+        {
+          "id": "05",
+          "title": "What remains uncertain",
+          "subtitle": "medical explanatory",
+          "narration": "A new assay or biologic may improve the available choices without solving every diagnostic or therapeutic question.",
+          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "contain": false,
+          "kind": "Archival research context",
+          "credit": "Archival research context",
+          "link": "/illness-and-evidence.html"
+        },
+        {
+          "id": "06",
+          "title": "An evolving map, not a prescription",
+          "subtitle": "medical explanatory",
+          "narration": "The 2022 chapter documents the literature available then. Current medical decisions require updated clinical evidence and professional evaluation.",
+          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "contain": false,
+          "kind": "Biomedical research archive",
+          "credit": "Biomedical research archive",
+          "link": "/illness-and-evidence.html"
+        }
+      ]
     },
     {
       "id": "heart-failure-sensors",
