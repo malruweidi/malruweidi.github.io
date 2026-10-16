@@ -121,3 +121,16 @@ test('film players require actual MP4 responses and expose a standalone caption 
   assert.ok(page.includes('target.isConnected'), 'check visual still exists when asynchronous video probe completes');
   assert.ok(page.includes('method:"HEAD"'), 'do not download large MP4 files merely to check availability');
 });
+
+
+test('release evidence manifests take scene descriptions from the source catalogue, not image codecs', () => {
+  const script = fs.readFileSync(file('scripts/render-publication-series.py'), 'utf8');
+  const workflow = fs.readFileSync(file('.github/workflows/render-publication-series.yml'), 'utf8');
+  assert.ok(script.includes('def scene_provenance(entry):'));
+  assert.ok(script.includes('"image_classes":classes,'));
+  assert.ok(script.includes('classes.append(scene["kind"])'), 'concept art is not called archival just because it is a still');
+  assert.ok(script.includes('"scene_provenance":scene_provenance(entry)'));
+  assert.ok(script.includes('actual_digest = hashlib.sha256(film.read_bytes()).hexdigest()'), 'metadata repair verifies unchanged original film');
+  assert.ok(script.includes('if old.get("sha256") != actual_digest:'), 'refuse to rewrite a mismatched film record');
+  assert.ok(workflow.includes('--reconcile-manifests'), 'repair existing releases incrementally');
+});
