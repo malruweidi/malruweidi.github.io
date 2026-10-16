@@ -1,0 +1,16 @@
+{
+  "id": "zebrafish-hemodynamics",
+  "seconds": 84.0,
+  "sha256": "b4f147bf23a3f71ec451c7a042e4e047c1cbd0ea36fa818e3ad8a9250dc93890",
+  "primary_source": "https://doi.org/10.1016/j.micron.2020.102876",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

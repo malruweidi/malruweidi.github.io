@@ -1,0 +1,183 @@
+#!/usr/bin/env python3
+"""Render the Ruwaidix publication film series from evidence-linked manuscripts.
+Uses the pre-existing open-source Kokoro/FFmpeg film functions, without avatars,
+external proprietary generation, fake historical documents or fake scientific footage.
+"""
+import argparse
+import hashlib
+import importlib.util
+import json
+import os
+import shutil
+import subprocess
+import tempfile
+from pathlib import Path
+
+from PIL import Image, ImageDraw
+
+ROOT = Path(__file__).resolve().parents[1]
+CATALOG = ROOT / "assets" / "films" / "publication-series.json"
+OUTPUT = ROOT / "assets" / "films" / "series"
+ENGINE = ROOT / "scripts" / "render-documentary.py"
+OUTPUT.mkdir(parents=True, exist_ok=True)
+
+spec = importlib.util.spec_from_file_location("ruwaidix_documentary_engine", ENGINE)
+engine = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(engine)
+engine.TOTAL_SECONDS = 84
+engine.FILM = OUTPUT
+
+def verify_catalog(items):
+    if len(items) < 20 or len({x["id"] for x in items}) != len(items):
+        raise AssertionError("The bibliography register must remain complete and unique.")
+    requested = [x for x in items if x.get("production") == "render_requested"]
+    if not requested:
+        raise AssertionError("No source-grounded films selected for production.")
+    for x in items:
+        if not x.get("publication_title") or not x.get("film_title") or not x.get("page"):
+            raise ValueError("Incomplete film register: " + x.get("id", "unknown"))
+        if x.get("doi") and not x["doi"].startswith("10."):
+            raise ValueError("Malformed DOI: " + x["id"])
+        for field in ("poster",):
+            p = (ROOT / x[field].lstrip("/")).resolve()
+            if not p.is_relative_to(ROOT) or not p.exists():
+                raise FileNotFoundError(str(p))
+    for x in requested:
+        if len(x["scenes"]) != 6 or x["duration_seconds"] != 84:
+            raise AssertionError("A requested film must have six timed scenes and 84 seconds: " + x["id"])
+        for i, scene in enumerate(x["scenes"], 1):
+            if scene["id"] != f"{i:02d}":
+                raise ValueError("Invalid scene order " + x["id"])
+            for field in ("narration", "image", "credit", "link", "kind"):
+                if not scene.get(field):
+                    raise ValueError("Missing scene provenance " + x["id"] + ":" + field)
+            p = (ROOT / scene["image"].lstrip("/")).resolve()
+            if not p.is_relative_to(ROOT) or not p.exists():
+                raise FileNotFoundError(str(p))
+            if scene.get("video") and not scene["video"].startswith("https://"):
+                p = (ROOT / scene["video"]).resolve()
+                if not p.is_relative_to(ROOT) or not p.exists():
+                    raise FileNotFoundError(str(p))
+    return requested
+
+def checked(*cmd):
+    r = subprocess.run(cmd, text=True, capture_output=True)
+    if r.returncode:
+        raise RuntimeError(" ".join(cmd) + "\n" + r.stderr[-3000:])
+    return r.stdout
+
+def resolve_image(scene, work):
+    p = ROOT / scene["image"].lstrip("/")
+    if p.suffix.lower() != ".svg":
+        return p
+    import cairosvg
+    path = work / ("drawing-" + scene["id"] + ".png")
+    cairosvg.svg2png(url=str(p), write_to=str(path), output_width=1280)
+    return path
+
+def custom_overlay(scene, total, label):
+    W, H = engine.W, engine.H
+    panel = Image.new("RGBA", (W,H), (0,0,0,0))
+    d = ImageDraw.Draw(panel)
+    kind = label.lower()
+    accent = (195,148,113) if "historic" in kind else (145,189,173) if "microscopy" in kind else (219,173,137)
+    for y in range(420,H):
+        shade = int(232 * ((y-420)/(H-420))**1.3)
+        d.line([(0,y),(W,y)], fill=(10,32,36,shade))
+    d.rectangle((58,50,112,54),fill=accent+(255,))
+    d.text((58,70),"RUWAIDIX  /  SCIENTIFIC DOCUMENTARY",font=engine.font(17,True),fill=(246,242,234))
+    d.text((58,105),label.upper()[:70],font=engine.font(15),fill=accent)
+    d.text((58,486),scene["id"] + "  /  " + str(total).zfill(2),font=engine.font(18),fill=accent)
+    title = scene["title"]
+    lines = engine.lines_to_fit(title,d,engine.font(47,True),1120)
+    for i,line in enumerate(lines[:2]):
+        d.text((58,515+i*60),line,font=engine.font(47,True),fill=(249,245,236),stroke_width=1,stroke_fill=(4,25,32))
+    evidence = "SOURCE / " + scene["kind"].upper()
+    evidence = evidence[:115]
+    d.text((58,677),evidence,font=engine.font(14),fill=(213,227,215))
+    return panel
+
+def write_vtt(items, starts, speech_lengths, path):
+    cues = ["WEBVTT",""]
+    for scene,start,length in zip(items,starts,speech_lengths):
+        words = scene["narration"].split()
+        mid = max(1,len(words)//2)
+        for j,part in enumerate((words[:mid],words[mid:])):
+            if not part: continue
+            begin = start + .55 + j*length*.495
+            end = min(start+.55+(j+1)*length*.495,start+length+.63)
+            cues.extend([f"{engine.vtt_time(begin)} --> {engine.vtt_time(end)}"," ".join(part),""])
+    path.write_text("\n".join(cues),encoding="utf-8")
+
+def render(entry, models):
+    slug = entry["id"]
+    engine.TOTAL_SECONDS = entry["duration_seconds"]
+    engine.overlay = lambda scene: custom_overlay(scene, len(entry["scenes"]), entry["visual_language"])
+    with tempfile.TemporaryDirectory(prefix="ruwaidix-"+slug+"-") as tmp:
+        w = Path(tmp)
+        for name in ("kokoro-v1.0.fp16.onnx", "voices-v1.0.bin"):
+            src = models / name
+            if not src.is_file(): raise FileNotFoundError(str(src))
+            (w/name).symlink_to(src)
+        scenes = entry["scenes"]
+        speech,sr = engine.synthesize(scenes,w)
+        counts = engine.allocate(speech,sr)
+        starts = []
+        frame_pointer = 0
+        for c in counts:
+            starts.append(frame_pointer/engine.FPS)
+            frame_pointer += c
+        write_vtt(scenes,starts,[len(s)/sr for s in speech],OUTPUT/(slug+".vtt"))
+        videos=[]
+        classes=[]
+        for scene,count in zip(scenes,counts):
+            duration = count/engine.FPS
+            picture = resolve_image(scene,w)
+            motion = engine.source_path(scene,"video",w) if scene.get("video") else None
+            if scene.get("video") and not motion:
+                raise RuntimeError("Primary footage unavailable; no silent substitution allowed")
+            frame,over = engine.make_frame(scene,picture,w)
+            out = w/("shot-"+scene["id"]+".mp4")
+            classes.append(engine.make_clip(scene,picture,motion,frame,over,duration,out))
+            videos.append(out)
+        playlist = w/"playlist.txt"
+        playlist.write_text("".join("file '"+str(x)+"'\n" for x in videos),encoding="utf-8")
+        combined = w/"picture.mp4"
+        checked("ffmpeg","-hide_banner","-loglevel","error","-y","-f","concat","-safe","0","-i",str(playlist),"-c","copy",str(combined))
+        audio = engine.soundtrack(speech,sr,counts,w)
+        out = OUTPUT/(slug+".mp4")
+        checked("ffmpeg","-hide_banner","-loglevel","error","-y","-i",str(combined),"-i",str(audio),
+              "-map","0:v:0","-map","1:a:0","-c:v","copy","-af","loudnorm=I=-18:TP=-2:LRA=11",
+              "-c:a","aac","-b:a","160k","-t",str(entry["duration_seconds"]),
+              "-movflags","+faststart",str(out))
+        duration=float(json.loads(checked("ffprobe","-v","error","-show_entries","format=duration","-of","json",str(out)))["format"]["duration"])
+        if abs(duration-entry["duration_seconds"])>.3: raise AssertionError("Unexpected film length")
+        if out.stat().st_size>90000000: raise ValueError("Video too large for normal GitHub content")
+        record={"id":slug,"seconds":round(duration,2),"sha256":hashlib.sha256(out.read_bytes()).hexdigest(),
+                "primary_source":("https://doi.org/"+entry["doi"]) if entry.get("doi") else entry["page"],
+                "voice":"Open Kokoro ONNX, synthetic actor-free narrator","image_classes":classes,
+                "disclosure":"Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."}
+        (OUTPUT/(slug+".json")).write_text(json.dumps(record,indent=2)+"\n")
+        print("RENDERED",slug,round(duration,2),"seconds",out.stat().st_size,"bytes")
+
+def main():
+    p=argparse.ArgumentParser()
+    p.add_argument("--validate-only",action="store_true")
+    p.add_argument("--models",default="film-models")
+    p.add_argument("--film",action="append",help="Specific slug; otherwise renders all currently selected films")
+    opts=p.parse_args()
+    data=json.loads(CATALOG.read_text(encoding="utf-8"))
+    items=verify_catalog(data["items"])
+    if opts.film:
+        wanted=set(opts.film)
+        missing = wanted - {x["id"] for x in items}
+        if missing: raise ValueError("Not selected for render: "+", ".join(sorted(missing)))
+        items=[x for x in items if x["id"] in wanted]
+    print("Films validated:", ", ".join(x["id"] for x in items))
+    if opts.validate_only: return
+    models=(ROOT/opts.models).resolve()
+    for entry in items:
+        render(entry,models)
+
+if __name__=="__main__":
+    main()

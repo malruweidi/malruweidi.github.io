@@ -1,0 +1,16 @@
+{
+  "id": "echo-cnn-lstm",
+  "seconds": 84.0,
+  "sha256": "cdedeebf65754ef72d98a5de56be5de601a8279e41169c39fb5d4de264084f52",
+  "primary_source": "https://doi.org/10.1109/ACCESS.2023.3316719",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

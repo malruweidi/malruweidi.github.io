@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.550 --> 00:00:05.069
+Inside a developing zebrafish, the heart contracts and blood
+
+00:00:05.069 --> 00:00:09.587
+circulates across structures small enough to challenge ordinary observation.
+
+00:00:14.342 --> 00:00:18.924
+Fast video microscopy captures change over time. The task
+
+00:00:18.924 --> 00:00:23.506
+becomes extracting meaningful cardiac and flow measurements from those frames.
+
+00:00:28.300 --> 00:00:33.194
+The published work examines cardiac function and blood-flow hemodynamics,
+
+00:00:33.194 --> 00:00:38.088
+rather than treating a single attractive frame as quantitative physiology.
+
+00:00:43.175 --> 00:00:47.272
+Frame rate, optical scale and analysis assumptions
+
+00:00:47.272 --> 00:00:51.369
+can constrain an estimated velocity or physiological parameter.
+
+00:00:55.758 --> 00:00:59.576
+Vessels change shape while blood moves. Interpretation has
+
+00:00:59.576 --> 00:01:03.393
+to respect both the organism and the measurement technique.
+
+00:01:07.508 --> 00:01:13.179
+The 2020 Micron study explores the possibilities of high-speed video
+
+00:01:13.179 --> 00:01:18.849
+microscopy. Its original images and analytic details remain the evidence.

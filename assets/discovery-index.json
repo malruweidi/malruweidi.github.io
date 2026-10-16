@@ -505,6 +505,14 @@
       "url": "/evidence-viewer.html",
       "summary": "Uncropped published experimental figures with expandable notes separating observation, experimental interpretation and unsupported inference.",
       "keywords": "microscopy scientific figures SEM spectroscopy pulmonary zebrafish evidence viewer scientific methods صور مجهر صور علمية دليل أطياف تفسير الأدلة"
+    },
+    {
+      "id": 63,
+      "title": "Films behind every publication · The moving bibliography",
+      "category": "Methods & evidence",
+      "url": "/publication-cinema.html",
+      "summary": "25 paper-specific scientific documentary scripts, primary-source links, original scientific figures, archival imagery, and playable short films when validated renders exist.",
+      "keywords": "film research bibliography publications video documentary experiments oncology SLIT2 ROBO zebrafish pulmonary history pharmacy chemistry artificial intelligence scientific communication أرشيف الأفلام المنشورات الأبحاث الصيدلة"
     }
   ]
 }

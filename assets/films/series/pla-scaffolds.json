@@ -1,0 +1,16 @@
+{
+  "id": "pla-scaffolds",
+  "seconds": 84.0,
+  "sha256": "23e31058403f66dbfd8b74399782f21762f970d313bed10aedaf8a8de2e420cd",
+  "primary_source": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
