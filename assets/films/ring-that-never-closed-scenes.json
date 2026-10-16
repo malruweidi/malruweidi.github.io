@@ -1,0 +1,111 @@
+{
+  "title": "The Ring That Never Closed",
+  "running_seconds": 180,
+  "archive": "/stories/the-ring-that-never-closed.html",
+  "project_record": "/grants/urep23.html",
+  "grant_id": "UREP23-133-1-028",
+  "years": "2018 proposal / 2021 final report",
+  "source_figure": "assets/home-archive/figure-cyanide-sensor.jpg",
+  "figure_use": "Website archival cyanide-sensing figure used only as research-context reference, not independently authenticated as the original imine or UV–Vis spectrum from the 2021 final report.",
+  "chemical_observations": {
+    "isolated_schiff_bases": 3,
+    "solution_before": "yellow",
+    "solution_after_cyanide": "orange",
+    "absorbance_band_decrease_nm_approx": 380,
+    "absorbance_band_increase_nm_approx": 450,
+    "detection_limit_molar": 0.0000142
+  },
+  "scientific_integrity": "Observed colored solution and reported peak changes are not proof of selectivity in environmental samples, successful imidazopyridine synthesis, PRMT5 inhibition or anticancer efficacy. Schematics are explanatory, not representations of an isolated verified molecular structure or measured spectrum.",
+  "scenes": [
+    {
+      "id": "01",
+      "start": 0,
+      "duration": 15,
+      "title": "An unfinished drawing",
+      "kind": "RESEARCH PROPOSAL / 2018",
+      "visual": "route",
+      "narration": "On the proposal, the final structure was an imidazopyridine. The scheme had a destination before we had made the molecule."
+    },
+    {
+      "id": "02",
+      "start": 15,
+      "duration": 18,
+      "title": "Two routes, one ambition",
+      "kind": "PLANNED HETEROCYCLIC SYNTHESIS",
+      "visual": "plan",
+      "narration": "Our team proposed two synthetic routes toward substituted imidazopyridines, with structural characterization to come before biological evaluation. That was the plan in 2018."
+    },
+    {
+      "id": "03",
+      "start": 33,
+      "duration": 20,
+      "title": "The closure did not happen",
+      "kind": "OBSERVED PROJECT OUTCOME / 2021",
+      "visual": "failed",
+      "narration": "By the final report, we could not claim the intended heterocycles. The proposed ring closure had not delivered those compounds. Whatever we wrote next had to begin there."
+    },
+    {
+      "id": "04",
+      "start": 53,
+      "duration": 18,
+      "title": "What we could isolate",
+      "kind": "SCHIFF BASES / RECORDED INTERMEDIATES",
+      "visual": "imines",
+      "narration": "We did isolate and characterize three imines, also called Schiff bases. They had entered the project as intermediates, not the endpoint we were originally pursuing."
+    },
+    {
+      "id": "05",
+      "start": 71,
+      "duration": 17,
+      "title": "A different question",
+      "kind": "ANION SENSING / LABORATORY REPORT",
+      "visual": "anion",
+      "narration": "Instead of treating those compounds only as unfinished starting materials, we examined their response to anions. Cyanide produced a particularly visible change in one sensor solution."
+    },
+    {
+      "id": "06",
+      "start": 88,
+      "duration": 18,
+      "title": "From yellow to orange",
+      "kind": "OBSERVED COLOUR RESPONSE / EXPLANATORY COLOURS",
+      "visual": "color",
+      "narration": "Under the reported test conditions, a yellow solution turned orange after cyanide was added. A colour change was observable. Its meaning still had to be checked spectroscopically."
+    },
+    {
+      "id": "07",
+      "start": 106,
+      "duration": 18,
+      "title": "Where the bands moved",
+      "kind": "REPORTED UV–VISIBLE FEATURES / NOT A DIGITIZED SPECTRUM",
+      "visual": "spectrum",
+      "narration": "The band near 380 nanometres declined as a new band near 450 grew. The report gave a detection limit of 1.42 times ten to the minus five molar for that sensor."
+    },
+    {
+      "id": "08",
+      "start": 124,
+      "duration": 20,
+      "title": "Beyond the flask",
+      "kind": "EXPLORATORY COLLABORATIVE CELL WORK",
+      "visual": "biology",
+      "narration": "Colleagues explored two compounds, CMP5 and CMPB, in triple-negative breast-cancer cell lines. Some proliferation and migration readouts differed, but that was not evidence of a validated treatment."
+    },
+    {
+      "id": "09",
+      "start": 144,
+      "duration": 18,
+      "title": "The unanswered mechanism",
+      "kind": "GENE EXPRESSION / INCOMPLETE FOLLOW-UP",
+      "visual": "uncertainty",
+      "narration": "Some c-MYC measurements rose where we had expected the opposite, and some comparisons were not significant. Direct PRMT5 target engagement was never established."
+    },
+    {
+      "id": "10",
+      "start": 162,
+      "duration": 18,
+      "title": "What the report could say",
+      "kind": "FINAL REPORT / 2021 / ACCESS RESTRICTIONS",
+      "visual": "archive",
+      "narration": "COVID restrictions interrupted later protein-level follow-up. Our final report contained characterized imines, chemical observations, and unfinished biological questions. It did not contain the ring we had planned."
+    }
+  ]
+}
