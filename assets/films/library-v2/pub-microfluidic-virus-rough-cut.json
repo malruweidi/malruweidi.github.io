@@ -1,0 +1,78 @@
+{
+  "slug": "pub-microfluidic-virus",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "fee9d70e04f42ea5fcd3c8095445361daf8783df92ccdff3cfccd30296ed3577",
+  "shots": [
+    {
+      "title": "A laboratory shrunk into a channel",
+      "kind": "Archival lab context, not an actual viral detection device",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "museum": null,
+      "credit": "Archival lab context, not an actual viral detection device"
+    },
+    {
+      "title": "A laboratory in a narrow channel",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/microfluidic-sensing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "The sample does not prepare itself",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/microfluidic-virus-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Fluid control becomes analytical control",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/microfluidic-sensing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "Detection is not diagnosis",
+      "kind": "Original research apparatus photograph",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Original research apparatus photograph"
+    },
+    {
+      "title": "The difficulty: The practical bottleneck",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/microfluidic-virus-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The practical bottleneck",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/microfluidic-sensing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "Smaller does not mean simpler",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/microfluidic-sensing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    }
+  ],
+  "film_title": "A laboratory shrunk into a channel",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1007/s42247-021-00169-7",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "82f31300d068472ff6378886f21dda85cbefb543d77ce72067403e381a2c87a5"
+}

@@ -1,0 +1,78 @@
+{
+  "slug": "pub-ace2-forms",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "a0b5121c286b9153cfeda29eb03f0e3cfc26eeb70d42f8a274b547b6d56c37d0",
+  "shots": [
+    {
+      "title": "Two lives of ACE2",
+      "kind": "Conceptual non-specific signalling image, not ACE2 molecular structure",
+      "image": "assets/echo-concept.svg",
+      "museum": null,
+      "credit": "Conceptual non-specific signalling image, not ACE2 molecular structure"
+    },
+    {
+      "title": "One protein, different places",
+      "kind": "Contextual pulmonary scientific illustration",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Contextual pulmonary scientific illustration"
+    },
+    {
+      "title": "A receptor in a larger pathway",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/ace2-forms-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The location changes the question",
+      "kind": "Pulmonary research-context illustration",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Pulmonary research-context illustration"
+    },
+    {
+      "title": "Expression is not the whole mechanism",
+      "kind": "Archival laboratory workspace, not ACE2 assay",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "museum": null,
+      "credit": "Archival laboratory workspace, not ACE2 assay"
+    },
+    {
+      "title": "The difficulty: Separate hypothesis from demonstration",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/ace2-forms-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Separate hypothesis from demonstration",
+      "kind": "Editorial image, not original coronavirus micrograph",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Editorial image, not original coronavirus micrograph"
+    },
+    {
+      "title": "Two forms, two questions",
+      "kind": "Conceptual visual, not study data",
+      "image": "assets/echo-concept.svg",
+      "museum": null,
+      "credit": "Conceptual visual, not study data"
+    }
+  ],
+  "film_title": "Two lives of ACE2",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.3390/ijms22136703",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "5c8e48ad85022eec16712f3f798c38986d4f65cc480a1c5747d5a139bffdbdd0"
+}
