@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_george",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "dff8bca7f33df26ebc59920253fd16655cf1197f5bf1234b1511fd1ed21d228c",
+  "sha256": "1b15d301d2930dfc5bea644dd5d4ca3f646c835450e6eea0cd5efd48854adc40",
   "shots": [
     {
       "title": "Will the medicine survive the nebulizer?",
@@ -83,5 +85,5 @@
       "source_sha256": "a6bc4c82af12cc7706ef291902b3bc3495218fb9d33b3666ee0fe141940b3508"
     }
   ],
-  "input_sha256": "37c4517cf056c0e165c7770e343487c0b645164dab962f32e09d76dcfda19842"
+  "input_sha256": "24c22a486f968d752954e63dfed0541dab8b11901e910a430b5cfac4e6c7e98a"
 }

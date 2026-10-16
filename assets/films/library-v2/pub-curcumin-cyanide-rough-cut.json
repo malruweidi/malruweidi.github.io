@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "32db4f8d5d50a6848f9d7df397a66fde3dc5ac315a36491c563567298a31c0eb",
+  "sha256": "5d0b439eb6d915745f6f56fbcaf8276327f9af947d1122b736eda50c2e7bde9c",
   "shots": [
     {
       "title": "When a molecule becomes a question",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "f931efe5ff05c7ef62c07086332cde8c661a5595aaeb31fa3147c95325f329a2"
+  "motion_shots": [],
+  "input_sha256": "f4fc3e38e86b28324c2344e43170c4d78667d23dde295675f2becbfe10204aa1"
 }
