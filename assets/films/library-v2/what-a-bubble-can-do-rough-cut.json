@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "da8474c183ddcdb846a8940fc78352bbc078c97b0d119945bb99124b436423b5",
+  "sha256": "c5e78b0e51bf6f5f94cabe1faf8e738969111461585920ffac381c6ccecf135a",
   "shots": [
     {
       "title": "Opening is not always gentle",
@@ -80,5 +80,6 @@
   "source_collection": "feature",
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
-  "never_auto_publish": true
+  "never_auto_publish": true,
+  "input_sha256": "f99a841ea69429867e4200d080d987f0c4279d7a74aef0b1142e11f39c72174c"
 }

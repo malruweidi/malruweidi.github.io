@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "f509999bc2873725d1df11e2644b045b21877ca3c5ed23cd8be6a39ef0df0b08",
+  "sha256": "f263c874022e6b98709976cefb4458b47902c740b73f237fc41fa7e8dddda718",
   "shots": [
     {
       "title": "The jar",
@@ -94,5 +94,6 @@
   "source_collection": "feature",
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
-  "never_auto_publish": true
+  "never_auto_publish": true,
+  "input_sha256": "205dd5a3c7b1e1115dcf41432bf86ce53db0ce7b1e0489d9bb7c7e07dbe06ac2"
 }

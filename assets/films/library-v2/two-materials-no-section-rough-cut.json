@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "28ea9ed6a473732105dae3659cb1c3bb366042e1596b48fa9786ef796cfea431",
+  "sha256": "b3abde265b13259700b494f8771e6043b6ed691a59963853444bf9c64e13f27c",
   "shots": [
     {
       "title": "The result",
@@ -80,5 +80,6 @@
   "source_collection": "feature",
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
-  "never_auto_publish": true
+  "never_auto_publish": true,
+  "input_sha256": "ea6b90a4ae8f3e0d0b13656d53b2f2c9c7e883ecc812526f9c0bfdcb72f475b1"
 }
