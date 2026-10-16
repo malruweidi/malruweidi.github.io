@@ -1104,3 +1104,14 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "These reports and interviews were published by universities and other organizations. Their original pages are linked below.": "نُشرت هذه التقارير والمقابلات عبر جامعات ومؤسسات أخرى، وتوجد أدناه روابط صفحاتها الأصلية.",
   "In 2015, I helped establish Qatar University's American Chemical Society student chapter with other students. We organized lectures and public demonstrations, introduced students to laboratory techniques and worked on opportunities to attend international chemistry meetings. I spent much of those years arranging events, contacting speakers and bringing students into the activities.": "في عام ٢٠١٥، شاركت مع زملاء في تأسيس الفرع الطلابي للجمعية الكيميائية الأمريكية في جامعة قطر. نظمنا محاضرات وعروضًا علمية للجمهور، وعرّفنا الطلاب بتقنيات المختبر، وسعينا إلى إتاحة المشاركة في المؤتمرات الدولية للكيمياء. أمضيت جانبًا كبيرًا من تلك السنوات في تنظيم الفعاليات والتواصل مع المتحدثين وإشراك الطلاب فيها."
 });
+
+/* Bilingual public captions and group history after the prose re-audit. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "How Chem Squad works": "كيف يعمل فريق الكيمياء",
+  "The group.": "المجموعة.",
+  "Its own terms.": "على طريقتها.",
+  "Chem Squad began as a circle of chemistry students who continued meeting as graduates and researchers. We discuss ideas independently; experiments and papers belong to the researchers and institutions that carry them out. Our early interest in medicinal plants led to questions about composition and biological testing that still require appropriate experimental evidence.": "بدأ فريق الكيمياء مجموعة من طلاب الكيمياء الذين استمروا في اللقاء بعد التخرج ودخول البحث العلمي. نتبادل الأفكار بصورة مستقلة، وتُنسب التجارب والأبحاث إلى أصحابها والمؤسسات التي أجرتها. وقد قاد اهتمامنا المبكر بالنباتات الطبية إلى أسئلة عن تركيبها الكيميائي واختبار نشاطها الحيوي، وهي مسائل لا تُحسم إلا بالتجربة المناسبة.",
+  "The photographs and accounts here follow the group's early laboratory discussions, friendships and later meetings. Where a member has published research, the individual paper and its authors provide the scientific record.": "تتابع الصور والحكايات نقاشاتنا المختبرية الأولى وصداقاتنا ولقاءاتنا اللاحقة. وعندما ينشر أحد الأعضاء بحثًا، يبقى البحث الأصلي وأسماء مؤلفيه مرجع العمل العلمي.",
+  "Pipettes and a benchtop centrifuge inside a laboratory hood.": "ماصات وجهاز طرد مركزي صغير داخل خزانة عمل مخبرية.",
+  "The older photo galleries and research recordings continue below, with their dates and source details.": "تستمر أدناه معارض الصور القديمة وتسجيلات البحث، مع التواريخ وتفاصيل المصادر."
+});
