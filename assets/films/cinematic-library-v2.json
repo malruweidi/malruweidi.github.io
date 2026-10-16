@@ -387,7 +387,8 @@
       "primary": "https://doi.org/10.1152/japplphysiol.00574.2020",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "slug": "pub-cerebral-cilia",
@@ -430,16 +431,18 @@
           "title": "An organism in motion",
           "subtitle": "microscopy field notebook",
           "narration": "Transparent zebrafish embryos let researchers observe cranial vessels developing within a living system.",
-          "image": "assets/evidence-zebrafish.webp",
+          "image": "assets/films/art-v2/cerebral-cilia-1.svg",
           "contain": true,
-          "kind": "Original microscopy footage, model-context limitations apply",
-          "credit": "Original hosted zebrafish microscopy recording; research context, not proof of every result",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/research/zebrafish-vascular-cilia.html",
           "video": "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4",
           "source_title": "An organism in motion",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/evidence-zebrafish.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -476,15 +479,17 @@
           "title": "The difficulty: Observation needs context",
           "subtitle": "microscopy field notebook",
           "narration": "The striking image cannot prove that each cilium measures flow. Location, developmental time and perturbation need to be distinguished.",
-          "image": "assets/evidence-zebrafish.webp",
+          "image": "assets/films/art-v2/cerebral-cilia-2.svg",
           "contain": true,
-          "kind": "Zebrafish context image; the original footage is linked separately",
-          "credit": "Zebrafish context image; the original footage is linked separately",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/research/zebrafish-vascular-cilia.html",
           "source_title": "Observation needs context",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 14,
+          "original_image": "assets/evidence-zebrafish.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -521,7 +526,8 @@
       "primary": "https://doi.org/10.1161/ATVBAHA.118.311231",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "slug": "pub-slit2-robo",
@@ -563,15 +569,17 @@
           "title": "The receptor does not act alone",
           "subtitle": "molecular noir",
           "narration": "SLIT2 binds ROBO receptors through a broad protein interface, shaped by cellular location and associated partners.",
-          "image": "assets/robo-concept.svg",
+          "image": "assets/films/art-v2/slit2-robo-1.svg",
           "contain": true,
-          "kind": "Simplified pathway illustration, not experimental structure",
-          "credit": "Simplified pathway illustration, not experimental structure",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "The receptor does not act alone",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/robo-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -608,15 +616,17 @@
           "title": "The difficulty: The missing condition",
           "subtitle": "molecular noir",
           "narration": "Patent filings reveal proposed interventions and commercial claims, not confirmed clinical benefit. The signalling context must be reconstructed separately.",
-          "image": "assets/robo-concept.svg",
+          "image": "assets/films/art-v2/slit2-robo-2.svg",
           "contain": true,
-          "kind": "Conceptual scientific illustration",
-          "credit": "Conceptual scientific illustration",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "The missing condition",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 14,
+          "original_image": "assets/robo-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -653,7 +663,8 @@
       "primary": "https://doi.org/10.1080/13543776.2026.2690118",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "slug": "pub-curcumin-cyanide",
@@ -695,15 +706,17 @@
           "title": "A familiar natural chromophore",
           "subtitle": "chemical colour essay",
           "narration": "Curcumin has a conjugated electronic system, which makes its optical response sensitive to chemical interactions.",
-          "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "image": "assets/films/art-v2/curcumin-cyanide-1.svg",
           "contain": true,
-          "kind": "Published study figure",
-          "credit": "Published study figure",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/stories/the-ring-that-never-closed.html",
           "source_title": "A familiar natural chromophore",
           "narrative_role": "method",
           "shot_treatment": "full_figure",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -740,15 +753,17 @@
           "title": "The difficulty: Cells are not a calibration vial",
           "subtitle": "chemical colour essay",
           "narration": "Read the actual absorbance and fluorescence evidence alongside experimental conditions. A bright field alone cannot establish biological selectivity.",
-          "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "image": "assets/films/art-v2/curcumin-cyanide-2.svg",
           "contain": true,
-          "kind": "Published sensing and cell figure",
-          "credit": "Published sensing and cell figure",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/stories/the-ring-that-never-closed.html",
           "source_title": "Cells are not a calibration vial",
           "narrative_role": "turning_point",
           "shot_treatment": "full_figure",
-          "sec": 14
+          "sec": 14,
+          "original_image": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -785,7 +800,8 @@
       "primary": "https://doi.org/10.1039/C9AY01557D",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "slug": "pub-making-medicines-keep",
@@ -797,127 +813,136 @@
           "title": "How did medieval medicines keep?",
           "subtitle": "archival historical investigation",
           "narration": "A jar of syrup can look trustworthy while concealing an unstable preparation. That difficulty was familiar to pharmacists long before industrial manufacturing.",
-          "image": "assets/films/art/medieval-pharmacy.svg",
+          "image": "assets/films/plates/making-medicines-keep-01.webp",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+          "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography",
           "link": "/#history",
           "source_title": "A handbook for a working pharmacy",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 16
+          "sec": 16,
+          "original_image": "assets/films/art/medieval-pharmacy.svg"
         },
         {
           "id": "02",
           "title": "The medicine had to last",
           "subtitle": "archival historical investigation",
           "narration": "A prescription was not finished when its ingredients were combined. In medieval Cairo, a medicine still had to be made reliable.",
-          "image": "assets/films/art/medieval-pharmacy.svg",
+          "image": "assets/films/plates/making-medicines-keep-02.webp",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+          "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography",
           "link": "/#history",
           "source_title": "The medicine had to last",
           "narrative_role": "observation",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/films/art/medieval-pharmacy.svg"
         },
         {
           "id": "03",
           "title": "A handbook for a working pharmacy",
           "subtitle": "archival historical investigation",
           "narration": "The Minhaj al-dukkan associated with al-Kuhin al-Attar documents practical pharmaceutical choices. It is an historical text, not a modern clinical trial.",
-          "image": "assets/films/art/medieval-pharmacy.svg",
+          "image": "assets/films/plates/making-medicines-keep-03.webp",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+          "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography",
           "link": "/#history",
           "source_title": "A handbook for a working pharmacy",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/films/art/medieval-pharmacy.svg"
         },
         {
           "id": "04",
           "title": "Why syrup matters",
           "subtitle": "archival historical investigation",
           "narration": "Concentration, ingredients and preservation are questions of practice. A formula means little if the preparation changes before it reaches its user.",
-          "image": "assets/films/art/medieval-pharmacy.svg",
+          "image": "assets/films/plates/making-medicines-keep-04.webp",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+          "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography",
           "link": "/#history",
           "source_title": "Why syrup matters",
           "narrative_role": "evidence",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/films/art/medieval-pharmacy.svg"
         },
         {
           "id": "05",
           "title": "Substitution is a serious decision",
           "subtitle": "archival historical investigation",
           "narration": "A pharmacist with an unavailable ingredient had to consider replacement. Similar names or therapeutic intentions did not guarantee material equivalence.",
-          "image": "assets/films/art/medieval-pharmacy.svg",
+          "image": "assets/films/plates/making-medicines-keep-05.webp",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+          "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography",
           "link": "/#history",
           "source_title": "Substitution is a serious decision",
           "narrative_role": "interpretation",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/films/art/medieval-pharmacy.svg"
         },
         {
           "id": "06",
           "title": "The difficulty: Reading against the temptation to romanticise",
           "subtitle": "archival historical investigation",
           "narration": "Recipes described heat, consistency and substitutions. The Cambridge Genizah prescription offers a separate documentary glimpse, not a full account of practice.",
-          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
-          "contain": false,
-          "kind": "Personal editorial portrait; not a historical document",
-          "credit": "Personal editorial portrait; not a historical document",
+          "image": "assets/films/plates/making-medicines-keep-06.webp",
+          "contain": true,
+          "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+          "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography",
           "link": "/#history",
           "source_title": "Reading against the temptation to romanticise",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
         },
         {
           "id": "07",
           "title": "Reading against the temptation to romanticise",
           "subtitle": "archival historical investigation",
           "narration": "Formulary instructions and documentary traces allow an investigation of pharmaceutical reliability, but they do not establish the clinical success of each recipe.",
-          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
-          "contain": false,
-          "kind": "Personal editorial portrait; not a historical document",
-          "credit": "Personal editorial portrait; not a historical document",
+          "image": "assets/films/plates/making-medicines-keep-07.webp",
+          "contain": true,
+          "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+          "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography",
           "link": "/#history",
           "source_title": "Reading against the temptation to romanticise",
           "narrative_role": "limits",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 16,
+          "original_image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
         },
         {
           "id": "08",
           "title": "What a medicine could keep",
           "subtitle": "archival historical investigation",
           "narration": "The historical evidence shows attempts to make medicine dependable. It does not justify calling medieval practice modern quality assurance.",
-          "image": "assets/films/art/medieval-pharmacy.svg",
+          "image": "assets/films/plates/making-medicines-keep-08.webp",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+          "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography",
           "link": "/#history",
           "source_title": "What a medicine could keep",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 13
+          "sec": 13,
+          "original_image": "assets/films/art/medieval-pharmacy.svg"
         }
       ],
       "mode": "archival historical investigation",
       "primary": "/#history",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "slug": "pub-niosomes",
@@ -959,15 +984,17 @@
           "title": "Design the membrane",
           "subtitle": "formulation design notebook",
           "narration": "My master's research explores dexamethasone-loaded niosomes and proniosomes, including surfactant and cholesterol composition.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art-v2/niosomes-1.svg",
           "contain": true,
-          "kind": "Illustrative vesicle, not measured morphology",
-          "credit": "Illustrative vesicle, not measured morphology",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/research/inhalable-vesicles.html",
           "source_title": "Design the membrane",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/niosomes-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -1004,15 +1031,17 @@
           "title": "The difficulty: From droplet to dose",
           "subtitle": "formulation design notebook",
           "narration": "Particle size before aerosolisation is only a starting measurement. Compare vesicle integrity, delivery conditions and deposited fraction without assuming a result.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art-v2/niosomes-2.svg",
           "contain": true,
-          "kind": "Illustration of ongoing research questions",
-          "credit": "Illustration of ongoing research questions",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/research/inhalable-vesicles.html",
           "source_title": "From droplet to dose",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/niosomes-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -1049,7 +1078,8 @@
       "primary": "/research/inhalable-vesicles.html",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "slug": "pub-echo-cnn-lstm",
@@ -1091,15 +1121,17 @@
           "title": "The data must be prepared",
           "subtitle": "diagnostic image essay",
           "narration": "Ultrasound images are sensitive to acquisition and annotation. Before modelling, their quality and the study's sampling conditions need careful attention.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art-v2/echo-cnn-lstm-1.svg",
           "contain": true,
-          "kind": "Original explanatory diagram, not diagnostic clinical data",
-          "credit": "Original explanatory diagram, not diagnostic clinical data",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/computing.html",
           "source_title": "The data must be prepared",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/echo-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -1136,15 +1168,17 @@
           "title": "The difficulty: What counts as success?",
           "subtitle": "diagnostic image essay",
           "narration": "A CNN–LSTM pipeline can represent space and time, but a pilot study requires separation of training performance from genuine generalisation.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art-v2/echo-cnn-lstm-2.svg",
           "contain": true,
-          "kind": "Editorial machine-learning interpretation; see original paper for actual metrics",
-          "credit": "Editorial machine-learning interpretation; see original paper for actual metrics",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/computing.html",
           "source_title": "What counts as success?",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/echo-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -1181,7 +1215,8 @@
       "primary": "https://doi.org/10.1109/ACCESS.2023.3316719",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "slug": "pub-pla-grafting",
@@ -1223,15 +1258,17 @@
           "title": "What plasma does",
           "subtitle": "materials macro-photography",
           "narration": "Cold plasma can activate a polymer surface, opening opportunities for grafting chemistry without replacing the entire underlying material.",
-          "image": "assets/polymer-concept.svg",
+          "image": "assets/films/art-v2/pla-grafting-1.svg",
           "contain": true,
-          "kind": "Original conceptual surface-treatment diagram",
-          "credit": "Original conceptual surface-treatment diagram",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/techniques.html#materials",
           "source_title": "What plasma does",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 14,
+          "original_image": "assets/polymer-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -1268,15 +1305,17 @@
           "title": "The difficulty: A surface is a boundary",
           "subtitle": "materials macro-photography",
           "narration": "Cold plasma prepares an interface for chemical modification. The question is what actual characterization can verify, rather than what the schematic promises.",
-          "image": "assets/home-archive/figure-pla-surface.jpg",
+          "image": "assets/films/art-v2/pla-grafting-2.svg",
           "contain": true,
-          "kind": "Published surface characterization imagery",
-          "credit": "Published surface characterization imagery",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/techniques.html#materials",
           "source_title": "A surface is a boundary",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 16,
+          "original_image": "assets/home-archive/figure-pla-surface.jpg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -1313,7 +1352,8 @@
       "primary": "https://doi.org/10.3390/polym13213717",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "slug": "pub-pla-scaffolds",
@@ -1355,15 +1395,17 @@
           "title": "First build the structure",
           "subtitle": "materials laboratory film",
           "narration": "Poly(lactic acid) scaffolds provide a material framework. Electrospinning and related processing choices influence their geometry.",
-          "image": "assets/polymer-concept.svg",
+          "image": "assets/films/art-v2/pla-scaffolds-1.svg",
           "contain": true,
-          "kind": "Original explanatory polymer scaffold schematic",
-          "credit": "Original explanatory polymer scaffold schematic",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/grants/urep22.html",
           "source_title": "First build the structure",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/polymer-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -1400,15 +1442,17 @@
           "title": "The difficulty: Antimicrobial does not mean implant ready",
           "subtitle": "materials laboratory film",
           "narration": "An antimicrobial result depends on species, exposure and test conditions. A diagram of dead bacteria would not substitute for the reported assay.",
-          "image": "assets/home-archive/figure-pla-surface.jpg",
+          "image": "assets/films/art-v2/pla-scaffolds-2.svg",
           "contain": true,
-          "kind": "Study-related scientific figure; source DOI holds exact endpoints",
-          "credit": "Study-related scientific figure; source DOI holds exact endpoints",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/grants/urep22.html",
           "source_title": "Antimicrobial does not mean implant ready",
           "narrative_role": "turning_point",
           "shot_treatment": "full_figure",
-          "sec": 16
+          "sec": 16,
+          "original_image": "assets/home-archive/figure-pla-surface.jpg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -1445,7 +1489,8 @@
       "primary": "https://doi.org/10.1016/j.surfcoat.2020.126216",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
     },
     {
       "slug": "pub-flow-chamber-method",
@@ -1487,15 +1532,17 @@
           "title": "Build a smaller world",
           "subtitle": "instrument construction",
           "narration": "A parallel-plate flow chamber permits controlled fluid motion over a monolayer. This simplified geometry is a modelling decision.",
-          "image": "assets/lung-concept.svg",
+          "image": "assets/films/art-v2/flow-chamber-method-1.svg",
           "contain": true,
-          "kind": "Original conceptual diagram, not the paper's exact hardware",
-          "credit": "Original conceptual diagram, not the paper's exact hardware",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/grants/urep21.html",
           "source_title": "Build a smaller world",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/lung-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -1532,15 +1579,17 @@
           "title": "The difficulty: The model is useful because it is incomplete",
           "subtitle": "instrument construction",
           "narration": "The chamber is both the experimental strength and the limitation: it controls exposure but removes much of the organ's complexity.",
-          "image": "assets/lung-concept.svg",
+          "image": "assets/films/art-v2/flow-chamber-method-2.svg",
           "contain": true,
-          "kind": "Explicitly simplified model illustration",
-          "credit": "Explicitly simplified model illustration",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/grants/urep21.html",
           "source_title": "The model is useful because it is incomplete",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/lung-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -1577,7 +1626,8 @@
       "primary": "https://doi.org/10.3390/mps3040065",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "slug": "pub-zebrafish-hemodynamics",
@@ -1619,15 +1669,17 @@
           "title": "High-speed observation",
           "subtitle": "microscopy field notebook",
           "narration": "Fast video microscopy captures change over time. The task becomes extracting meaningful cardiac and flow measurements from those frames.",
-          "image": "assets/zebrafish-larva-microscopy.webp",
-          "contain": false,
-          "kind": "Original zebrafish microscopy contextual still",
-          "credit": "Original zebrafish microscopy contextual still",
+          "image": "assets/films/art-v2/zebrafish-hemodynamics-1.svg",
+          "contain": true,
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/moving-evidence.html#zebrafish-films",
           "source_title": "High-speed observation",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 14,
+          "original_image": "assets/zebrafish-larva-microscopy.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -1664,15 +1716,17 @@
           "title": "The difficulty: A living system resists simplification",
           "subtitle": "microscopy field notebook",
           "narration": "A frame sequence becomes a flow estimate only after timing and image analysis are explicit. Do not show a simulated velocity field as a measured one.",
-          "image": "assets/zebrafish-concept.svg",
+          "image": "assets/films/art-v2/zebrafish-hemodynamics-2.svg",
           "contain": true,
-          "kind": "Original conceptual biological schematic",
-          "credit": "Original conceptual biological schematic",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/moving-evidence.html#zebrafish-films",
           "source_title": "A living system resists simplification",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 17
+          "sec": 17,
+          "original_image": "assets/zebrafish-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -1709,7 +1763,8 @@
       "primary": "https://doi.org/10.1016/j.micron.2020.102876",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "slug": "pub-ace2-covid-drugs",
@@ -1751,15 +1806,17 @@
           "title": "Two signals in circulation",
           "subtitle": "clinical evidence",
           "narration": "Soluble ACE2 and angiotensin II are distinct measurements in the renin-angiotensin system. Their interpretation requires clinical context.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art-v2/ace2-covid-drugs-1.svg",
           "contain": true,
-          "kind": "General physiological diagram, not a specific assay result",
-          "credit": "General physiological diagram, not a specific assay result",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "Two signals in circulation",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/echo-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -1796,15 +1853,17 @@
           "title": "The difficulty: The clinical question is conditional",
           "subtitle": "clinical evidence",
           "narration": "Soluble ACE2 and angiotensin II are biological measurements. Group differences alone cannot prove that an antihypertensive caused a clinical outcome.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art-v2/ace2-covid-drugs-2.svg",
           "contain": true,
-          "kind": "Conceptual depiction, not treatment guidance",
-          "credit": "Conceptual depiction, not treatment guidance",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "The clinical question is conditional",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 16,
+          "original_image": "assets/echo-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -1841,7 +1900,8 @@
       "primary": "https://doi.org/10.1080/08037051.2022.2055530",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "slug": "pub-gi-autoimmunity-1",
@@ -1883,15 +1943,17 @@
           "title": "What makes tolerance possible?",
           "subtitle": "medical explanatory",
           "narration": "The immune system must distinguish threats from food-associated and resident signals. Breakdown can produce complex pathology.",
-          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
-          "contain": false,
-          "kind": "Original laboratory workspace, not intestinal pathology",
-          "credit": "Original laboratory workspace, not intestinal pathology",
+          "image": "assets/films/art-v2/gi-autoimmunity-1-1.svg",
+          "contain": true,
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/illness-and-evidence.html",
           "source_title": "What makes tolerance possible?",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -1928,15 +1990,17 @@
           "title": "The difficulty: Complexity is not a license to guess",
           "subtitle": "medical explanatory",
           "narration": "Pathways discussed in a review vary across diseases. An autoimmune mechanism should not be presumed for every inflammatory or eosinophilic presentation.",
-          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
-          "contain": false,
-          "kind": "Laboratory context",
-          "credit": "Laboratory context",
+          "image": "assets/films/art-v2/gi-autoimmunity-1-2.svg",
+          "contain": true,
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/illness-and-evidence.html",
           "source_title": "Complexity is not a license to guess",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -1973,7 +2037,8 @@
       "primary": "https://doi.org/10.5772/intechopen.106184",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "slug": "pub-gi-autoimmunity-2",
@@ -2015,15 +2080,17 @@
           "title": "Choose the evidence to examine",
           "subtitle": "medical explanatory",
           "narration": "Diagnostic interpretation can involve biomarkers, endoscopy and tissue findings, with different roles and limitations in distinct diseases.",
-          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
-          "contain": false,
-          "kind": "Laboratory photo, not endoscopy or pathology result",
-          "credit": "Laboratory photo, not endoscopy or pathology result",
+          "image": "assets/films/art-v2/gi-autoimmunity-2-1.svg",
+          "contain": true,
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/illness-and-evidence.html",
           "source_title": "Choose the evidence to examine",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -2060,15 +2127,17 @@
           "title": "The difficulty: What remains uncertain",
           "subtitle": "medical explanatory",
           "narration": "Diagnostic tools are useful when interpreted together. An illustration of a microscope is not an image of a patient's diagnostic specimen.",
-          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
-          "contain": false,
-          "kind": "Archival research context",
-          "credit": "Archival research context",
+          "image": "assets/films/art-v2/gi-autoimmunity-2-2.svg",
+          "contain": true,
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/illness-and-evidence.html",
           "source_title": "What remains uncertain",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 16,
+          "original_image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -2105,7 +2174,8 @@
       "primary": "https://doi.org/10.5772/intechopen.106185",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "slug": "pub-heart-failure-sensors",
@@ -2147,15 +2217,17 @@
           "title": "Signals outside the operating room",
           "subtitle": "signal-processing documentary",
           "narration": "Non-invasive and minimally invasive sensors can produce information about cardiac and circulatory physiology without requiring identical clinical procedures.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art-v2/heart-failure-sensors-1.svg",
           "contain": true,
-          "kind": "Conceptual cardiac detection diagram",
-          "credit": "Conceptual cardiac detection diagram",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/computing.html",
           "source_title": "Signals outside the operating room",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/echo-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -2192,15 +2264,17 @@
           "title": "The difficulty: The validation question",
           "subtitle": "signal-processing documentary",
           "narration": "Performance depends on the patient population, reference standard and timing. Distinguish a physiological measurement from a validated prediction.",
-          "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
-          "contain": false,
-          "kind": "Imaging-context photograph",
-          "credit": "Imaging-context photograph",
+          "image": "assets/films/art-v2/heart-failure-sensors-2.svg",
+          "contain": true,
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/computing.html",
           "source_title": "The validation question",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -2237,7 +2311,8 @@
       "primary": "https://doi.org/10.1002/9781119813040.ch5",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "slug": "pub-ace2-forms",
@@ -2279,15 +2354,17 @@
           "title": "A receptor in a larger pathway",
           "subtitle": "molecular explanation",
           "narration": "ACE2 participates in the renin-angiotensin system. In SARS-CoV-2 infection, its receptor-related role introduces additional biological complexity.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art-v2/ace2-forms-1.svg",
           "contain": true,
-          "kind": "Conceptual non-specific signalling image, not ACE2 molecular structure",
-          "credit": "Conceptual non-specific signalling image, not ACE2 molecular structure",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "A receptor in a larger pathway",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/echo-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -2324,15 +2401,17 @@
           "title": "The difficulty: Separate hypothesis from demonstration",
           "subtitle": "molecular explanation",
           "narration": "The two forms occupy different physical contexts and have different interpretive problems, especially in discussions of viral entry and inflammation.",
-          "image": "assets/evidence-pulmonary.webp",
-          "contain": false,
-          "kind": "Editorial image, not original coronavirus micrograph",
-          "credit": "Editorial image, not original coronavirus micrograph",
+          "image": "assets/films/art-v2/ace2-forms-2.svg",
+          "contain": true,
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "Separate hypothesis from demonstration",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/evidence-pulmonary.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -2369,7 +2448,8 @@
       "primary": "https://doi.org/10.3390/ijms22136703",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "slug": "pub-microfluidic-virus",
@@ -2411,15 +2491,17 @@
           "title": "The sample does not prepare itself",
           "subtitle": "instrument animation",
           "narration": "Specimen collection, sample transport and preparation can determine whether a miniature diagnostic device is useful.",
-          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
-          "contain": false,
-          "kind": "Archival lab context, not an actual viral detection device",
-          "credit": "Archival lab context, not an actual viral detection device",
+          "image": "assets/films/art-v2/microfluidic-virus-1.svg",
+          "contain": true,
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/techniques.html",
           "source_title": "The sample does not prepare itself",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -2456,15 +2538,17 @@
           "title": "The difficulty: The practical bottleneck",
           "subtitle": "instrument animation",
           "narration": "Sample processing, target capture and analytical specificity do not disappear when a device becomes smaller. Miniaturisation can add constraints.",
-          "image": "assets/films/art/microfluidic-sensing.svg",
+          "image": "assets/films/art-v2/microfluidic-virus-2.svg",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/techniques.html",
           "source_title": "The practical bottleneck",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/films/art/microfluidic-sensing.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -2501,7 +2585,8 @@
       "primary": "https://doi.org/10.1007/s42247-021-00169-7",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "slug": "pub-drug-release-twins",
@@ -2543,15 +2628,17 @@
           "title": "Begin with the variables",
           "subtitle": "data-motion essay",
           "narration": "Formulation composition, geometry and transport assumptions affect simulated release. The selected equations embody choices that need scrutiny.",
-          "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
-          "contain": false,
-          "kind": "Original research workstation, not the book chapter's simulation screenshot",
-          "credit": "Original research workstation, not the book chapter's simulation screenshot",
+          "image": "assets/films/art-v2/drug-release-twins-1.svg",
+          "contain": true,
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/computing.html",
           "source_title": "Begin with the variables",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -2588,15 +2675,17 @@
           "title": "The difficulty: Ask where the prediction breaks",
           "subtitle": "data-motion essay",
           "narration": "Assumptions about transport or kinetics need experimental comparison. A convincing digital twin must expose residuals and uncertainty.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art-v2/drug-release-twins-2.svg",
           "contain": true,
-          "kind": "Editorial illustration, not measured release profile",
-          "credit": "Editorial illustration, not measured release profile",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/computing.html",
           "source_title": "Ask where the prediction breaks",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/niosomes-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -2633,7 +2722,8 @@
       "primary": "https://doi.org/10.70593/978-93-7185-824-3",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "slug": "pub-food-printing",
@@ -2675,15 +2765,17 @@
           "title": "Flow first, shape second",
           "subtitle": "materials animation",
           "narration": "The printing material must move through a nozzle, then retain enough structure after deposition to realise the intended form.",
-          "image": "assets/films/art/edible-printing.svg",
+          "image": "assets/films/art-v2/food-printing-1.svg",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "Flow first, shape second",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/films/art/edible-printing.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -2720,15 +2812,17 @@
           "title": "The difficulty: Do not mistake possibility for validation",
           "subtitle": "materials animation",
           "narration": "Rheology sets the boundary between possible shapes and imagined ones. Different dimensional labels must correspond to demonstrable functional behaviour.",
-          "image": "assets/films/art/edible-printing.svg",
+          "image": "assets/films/art-v2/food-printing-2.svg",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "Do not mistake possibility for validation",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 14,
+          "original_image": "assets/films/art/edible-printing.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -2765,7 +2859,8 @@
       "primary": "/#publications",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "slug": "pub-ceramics-printing",
@@ -2807,15 +2902,17 @@
           "title": "Geometry is only the beginning",
           "subtitle": "biomaterials editorial",
           "narration": "Additive manufacturing can produce complex ceramic forms. Processing, internal architecture and material properties shape what those forms can do.",
-          "image": "assets/films/art/bioceramic-lattice.svg",
+          "image": "assets/films/art-v2/ceramics-printing-1.svg",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "Geometry is only the beginning",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/films/art/bioceramic-lattice.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -2852,15 +2949,17 @@
           "title": "The difficulty: From bench to clinic",
           "subtitle": "biomaterials editorial",
           "narration": "Porosity, defects, thermal processing and biological context constrain performance. None can be inferred from an immaculate CAD model.",
-          "image": "assets/films/art/bioceramic-lattice.svg",
+          "image": "assets/films/art-v2/ceramics-printing-2.svg",
           "contain": true,
-          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "From bench to clinic",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 14,
+          "original_image": "assets/films/art/bioceramic-lattice.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -2897,7 +2996,8 @@
       "primary": "/#publications",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "slug": "pub-cubosome-theranostics",
@@ -2939,15 +3039,17 @@
           "title": "Two tasks in one carrier",
           "subtitle": "nanocarrier explanatory",
           "narration": "Theranostics links therapeutic and diagnostic ambitions. These are distinct performance claims with different measurement needs.",
-          "image": "assets/evidence-biomaterials.webp",
-          "contain": false,
-          "kind": "Nanomedicine context image, not cubosome micrograph",
-          "credit": "Nanomedicine context image, not cubosome micrograph",
+          "image": "assets/films/art-v2/cubosome-theranostics-1.svg",
+          "contain": true,
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "Two tasks in one carrier",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/evidence-biomaterials.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -2984,15 +3086,17 @@
           "title": "The difficulty: Between structure and treatment",
           "subtitle": "nanocarrier explanatory",
           "narration": "A convincing theranostic system needs demonstrated loading, stability, biological fate and an imaging or therapeutic endpoint.",
-          "image": "assets/evidence-biomaterials.webp",
-          "contain": false,
-          "kind": "General biomaterials research imagery",
-          "credit": "General biomaterials research imagery",
+          "image": "assets/films/art-v2/cubosome-theranostics-2.svg",
+          "contain": true,
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "/#publications",
           "source_title": "Between structure and treatment",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/evidence-biomaterials.webp",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -3029,7 +3133,8 @@
       "primary": "/#publications",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "slug": "pub-micelles-pahs",
@@ -3161,7 +3266,8 @@
       "primary": "/grants/urep19.html",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "slug": "pub-heterocycle-cancer",
@@ -3293,7 +3399,8 @@
       "primary": "/grants/urep23.html",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "slug": "pub-histology-failure",
@@ -3335,15 +3442,16 @@
           "title": "We chose two percent agarose",
           "subtitle": "materials failure film",
           "narration": "The specimen was oriented in an agarose pre-embedding support before subsequent paraffin processing. The hoped-for geometry depended on their compatibility.",
-          "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
-          "contain": false,
-          "kind": "Original laboratory processing evidence of unsuccessful attempt",
-          "credit": "Original laboratory processing evidence of unsuccessful attempt",
+          "image": "assets/films/plates/two-materials-no-section-03.webp",
+          "contain": true,
+          "kind": "Original explanatory reconstruction of unsuccessful histology procedure; not a research result",
+          "credit": "Source-bound editorial reconstruction, not an interpretable histological section",
           "link": "/films/two-materials-no-section.html",
           "source_title": "We chose two percent agarose",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 16,
+          "original_image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp"
         },
         {
           "id": "04",
@@ -3365,30 +3473,32 @@
           "title": "The blade exposed the interface",
           "subtitle": "materials failure film",
           "narration": "Material separation frustrated sectioning. There was no interpretable histological slice from that attempt.",
-          "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
-          "contain": false,
-          "kind": "Actual unsuccessful sectioning evidence; no successful histology is claimed",
-          "credit": "Actual unsuccessful sectioning evidence; no successful histology is claimed",
+          "image": "assets/films/plates/two-materials-no-section-05.webp",
+          "contain": true,
+          "kind": "Original explanatory reconstruction of unsuccessful histology procedure; not a research result",
+          "credit": "Source-bound editorial reconstruction, not an interpretable histological section",
           "link": "/films/two-materials-no-section.html",
           "source_title": "The blade exposed the interface",
           "narrative_role": "interpretation",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp"
         },
         {
           "id": "06",
           "title": "The difficulty: A failed section is a usable finding",
           "subtitle": "materials failure film",
           "narration": "Agarose oriented the specimen; paraffin was intended to support cutting. Their separation suggests a materials problem but does not prove its mechanism.",
-          "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
-          "contain": false,
-          "kind": "Original laboratory record, not a corrected protocol validation",
-          "credit": "Original laboratory record, not a corrected protocol validation",
+          "image": "assets/films/plates/two-materials-no-section-06.webp",
+          "contain": true,
+          "kind": "Original explanatory reconstruction of unsuccessful histology procedure; not a research result",
+          "credit": "Source-bound editorial reconstruction, not an interpretable histological section",
           "link": "/films/two-materials-no-section.html",
           "source_title": "A failed section is a usable finding",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 16,
+          "original_image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp"
         },
         {
           "id": "07",
@@ -3425,7 +3535,8 @@
       "primary": "/films/two-materials-no-section.html",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "slug": "pub-cairo-microscope",
@@ -3557,7 +3668,8 @@
       "primary": "/stories/cairo-microscope.html",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "slug": "pub-essay-life-between-diagnoses",
@@ -3689,7 +3801,8 @@
       "primary": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "slug": "pub-essay-ai-email",
@@ -3821,7 +3934,8 @@
       "primary": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "Specific visual hook, source-bounded physical or historical problem, non-generic ending"
     },
     {
       "slug": "pub-essay-machine-language",
@@ -3953,7 +4067,8 @@
       "primary": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "slug": "pub-essay-academic-mental-health",
@@ -4085,7 +4200,8 @@
       "primary": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "slug": "pub-essay-scientific-credit",
@@ -4217,7 +4333,8 @@
       "primary": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "slug": "pub-essay-tf-states",
@@ -4349,7 +4466,8 @@
       "primary": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "slug": "pub-essay-potency-exposure",
@@ -4391,15 +4509,17 @@
           "title": "The journey is a different experiment",
           "subtitle": "pharmacology / science cinema",
           "narration": "Solubility, absorption, distribution, metabolism and clearance decide whether the required free concentration reaches the tissue.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art-v2/essay-potency-exposure-1.svg",
           "contain": true,
-          "kind": "Generic drug-delivery visual, not pharmacokinetic data",
-          "credit": "Generic drug-delivery visual, not pharmacokinetic data",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
           "source_title": "The journey is a different experiment",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "original_image": "assets/niosomes-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "04",
@@ -4436,15 +4556,17 @@
           "title": "The difficulty: An impressive hit may still fail",
           "subtitle": "pharmacology / science cinema",
           "narration": "Target affinity, binding in biological matrices and pharmacokinetics must be reconciled with the exposure needed for an effect.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art-v2/essay-potency-exposure-2.svg",
           "contain": true,
-          "kind": "Illustration of delivery principle, no measured exposure",
-          "credit": "Illustration of delivery principle, no measured exposure",
+          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
           "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
           "source_title": "An impressive hit may still fail",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 14,
+          "original_image": "assets/niosomes-concept.svg",
+          "visual_edition": "cinematic-original-art"
         },
         {
           "id": "07",
@@ -4481,7 +4603,8 @@
       "primary": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "slug": "pub-essay-trna",
@@ -4613,7 +4736,8 @@
       "primary": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "slug": "pub-essay-proximity",
@@ -4745,7 +4869,8 @@
       "primary": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "slug": "pub-essay-adc",
@@ -4877,7 +5002,8 @@
       "primary": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
       "output_collection": "publication",
       "source_path": "assets/films/publication-series-directors-v2.json",
-      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening."
+      "voiceDirection": "A clear and precise narrator, with no influencer inflection. Scientific terms are only final after human listening.",
+      "story_spine": "A visual argument with specific problem, tested boundary and earned conclusion"
     },
     {
       "id": "feature-the-laboratory-we-carried-with-us",
