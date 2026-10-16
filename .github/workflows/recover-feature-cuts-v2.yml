@@ -10,8 +10,8 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: ruwaidix-recovery-current-features
-  cancel-in-progress: true
+  group: ruwaidix-cinema-library-v2
+  cancel-in-progress: false
 jobs:
   rescue:
     runs-on: ubuntu-latest

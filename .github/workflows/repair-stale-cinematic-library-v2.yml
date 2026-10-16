@@ -1,5 +1,4 @@
-name: Rebuild nine stale Ruwaidix documentary cuts and verify the complete archive
-
+name: Reconcile stale cinematic cuts safely
 on:
   push:
     branches:
@@ -11,12 +10,13 @@ on:
 permissions:
   contents: write
 
+# Only one workflow writing film MP4s may be active on the branch.
 concurrency:
-  group: ruwaidix-recovery-current-features
+  group: ruwaidix-cinema-library-v2
   cancel-in-progress: false
 
 jobs:
-  restore-current-storyboards:
+  reconcile:
     runs-on: ubuntu-latest
     timeout-minutes: 350
     steps:
@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install deterministic open film/voice/render dependencies
+      - name: Install open source rendering tools
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg fonts-dejavu-core
@@ -36,99 +36,109 @@ jobs:
         with:
           path: film-models
           key: ruwaidix-voice-audition-kokoro-20261017
-      - name: Prepare audition model for protected draft films
+      - name: Prepare offline Kokoro audition model
         run: |
           mkdir -p film-models
-          test -s film-models/kokoro-v1.0.fp16.onnx || curl --fail --location --retry 3 --silent --show-error -o film-models/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx
-          test -s film-models/voices-v1.0.bin || curl --fail --location --retry 3 --silent --show-error -o film-models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
+          test -s film-models/kokoro-v1.0.fp16.onnx || curl --fail --location --retry 3 -o film-models/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx
+          test -s film-models/voices-v1.0.bin || curl --fail --location --retry 3 -o film-models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
           test "$(stat -c%s film-models/kokoro-v1.0.fp16.onnx)" -gt 90000000
-      - name: Check storyboard validity without changing any original media
+      - name: Validate sources and preservation checks
         run: |
           python scripts/render-cinematic-library.py --validate-only
           python -m py_compile scripts/render-cinematic-library.py scripts/render-directors-cuts.py scripts/render-contact-sheet-v2.py
-      - name: Rebuild only stale candidates with durable checkpoints
+      - name: Rebuild only out-of-date exports, safely recover from concurrent push conflicts
         shell: bash
         run: |
           set -euo pipefail
-          git config user.name "Ruwaidix Source Film Repair"
+          git config user.name "Ruwaidix Film Repair"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          films=(
-            pub-airway-reopening
-            pub-ace2-forms
-            pub-microfluidic-virus
-            pub-food-printing
-            pub-ceramics-printing
-            feature-what-survives-the-experiment
-            feature-ring-that-never-closed
-            feature-airway-reopening-evidence-cut
-            feature-two-materials-no-section-evidence-cut
-          )
-          for film in "${films[@]}"; do
-            echo "::group::Rebuild and verify $film"
-            # Pull source-current exports before *each* subject. Concurrent workflows may
-            # have produced the same title, and rebasing binary MP4s is unsafe.
-            repaired=false
-            for attempt in 1 2 3 4 5 6; do
-              git fetch origin cinematic-remake-20261017
-              git reset --hard FETCH_HEAD
-              python scripts/render-cinematic-library.py --film "$film" --missing-only --limit 1 --models film-models --voice-mode kokoro-preview
-              FILM_SLUG="$film" python - <<'PY'
-          import json, hashlib, os, pathlib, subprocess
+          completed=0
+          # Every retry starts from the latest remote source and checksum ledger.
+          # On a competing same-file push, discard our outdated local version,
+          # reevaluate source hash, and re-render only if genuinely still stale.
+          for turn in $(seq 1 65); do
+            git fetch origin cinematic-remake-20261017
+            git reset --hard FETCH_HEAD
+            next_film="$(python - <<'PY'
+          import importlib.util
+          spec=importlib.util.spec_from_file_location("library","scripts/render-cinematic-library.py")
+          module=importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          print(next((f["slug"] for f in module.load() if not module.exists(f)), ""))
+          PY
+          )"
+            if [ -z "$next_film" ]; then
+              echo "All 44 film export hashes match the current storyboards."
+              completed=1
+              break
+            fi
+            echo "::group::Repair $next_film"
+            python scripts/render-cinematic-library.py --film "$next_film" --limit 1 --voice-mode kokoro-preview --models film-models
+            FILM_SLUG="$next_film" python - <<'PY'
+          import hashlib,importlib.util,json,os,pathlib,subprocess
           root=pathlib.Path.cwd()
           slug=os.environ["FILM_SLUG"]
-          src=json.load((root/"assets/films/cinematic-library-v2.json").open())
-          film=next(x for x in src["films"] if x["slug"]==slug)
-          b=root/"assets/films/library-v2"/(slug+"-rough-cut")
-          info=json.load((b.with_suffix(".json")).open())
-          movie=b.with_suffix(".mp4")
+          source=json.loads((root/"assets/films/cinematic-library-v2.json").read_text())
+          film=next(x for x in source["films"] if x["slug"]==slug)
+          folder=root/"assets/films/library-v2"
+          movie=folder/(slug+"-rough-cut.mp4")
+          record=folder/(slug+"-rough-cut.json")
+          subs=folder/(slug+"-rough-cut.vtt")
           assert movie.is_file() and movie.stat().st_size>10000
-          assert info["sha256"]==hashlib.sha256(movie.read_bytes()).hexdigest()
-          assert info["voice_approved"] is False
-          assert info["never_auto_publish"] is True
-          assert (b.with_suffix(".vtt")).read_text().startswith("WEBVTT")
-          h=hashlib.sha256()
-          h.update(json.dumps(film,ensure_ascii=False,sort_keys=True).encode("utf-8"))
-          h.update((root/"scripts/render-directors-cuts.py").read_bytes())
-          h.update((root/"scripts/render-documentary.py").read_bytes())
-          assert info["input_sha256"]==h.hexdigest(),(slug,"stale hash")
+          manifest=json.loads(record.read_text())
+          spec=importlib.util.spec_from_file_location("library","scripts/render-cinematic-library.py")
+          module=importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          assert manifest["input_sha256"]==module.input_digest(film)
+          assert manifest["sha256"]==hashlib.sha256(movie.read_bytes()).hexdigest()
+          assert manifest["voice_approved"] is False
+          assert manifest["never_auto_publish"] is True
+          assert subs.read_text().startswith("WEBVTT")
+          duration=float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","default=noprint_wrappers=1:nokey=1",str(movie)]))
           expected=sum(int(s["sec"]) for s in film["shots"])
-          secs=float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","default=noprint_wrappers=1:nokey=1",str(movie)]))
-          assert abs(expected-secs)<=.35,(slug,expected,secs)
-          print("Verified current MP4 and captions:",slug,secs)
+          assert abs(duration-expected)<.35,(slug,duration,expected)
+          print("Verified exact film:",slug,"seconds:",duration)
           PY
-              git add -A assets/films/library-v2/
-              if git diff --cached --quiet; then repaired=true; break; fi
-              git commit -m "Rebuild current source-timed cut $film [v2-output]"
-              if git push origin HEAD:cinematic-remake-20261017; then repaired=true; break; fi
-              echo "Remote changed during $film rendering; retrying against its newest source rather than rebasing MP4"
-              sleep "$((attempt * 2))"
-            done
-            test "$repaired" = true
+            git add "assets/films/library-v2/$next_film-rough-cut.mp4" "assets/films/library-v2/$next_film-rough-cut.json" "assets/films/library-v2/$next_film-rough-cut.vtt"
+            if git diff --cached --quiet; then
+              echo "Export already matches; advancing to next title"
+            else
+              git commit -m "Refresh current cinematic cut $next_film [v2-output]"
+              if git push origin HEAD:cinematic-remake-20261017; then
+                echo "Saved: $next_film"
+              else
+                # A second writer advanced the branch. Never force-push or
+                # auto-merge conflicting binary MP4 bytes.
+                echo "Concurrent update: will reevaluate this film from the next remote HEAD"
+              fi
+            fi
             echo "::endgroup::"
           done
-      - name: Check all 44 exact storyboard hashes and actual decoded frames
+          if [ "$completed" != 1 ]; then
+            echo "Not all current source cuts were reconciled within the allowed attempts" >&2
+            exit 1
+          fi
+      - name: Inspect every actual MP4 frame, duration, caption and source hash
         run: |
           python scripts/render-contact-sheet-v2.py
           python - <<'PY'
-          import json
-          from pathlib import Path
-          j=json.loads(Path("assets/films/visual-audit-v2/screening-results.json").read_text())
-          assert j["exports_examined"]==44 and j["exports_remaining"]==0, (j["exports_examined"],j["exports_remaining"])
-          flagged=[(f["slug"],f["issues"]) for f in j["films"] if f["issues"]]
-          assert not flagged,flagged
-          assert j["status"]=="TECHNICAL AUDIT ONLY, NOT ARTISTIC APPROVAL"
-          print("All 44 exports pass technical/freshness checks; artistic and narrator approval remain outstanding.")
+          import json,pathlib
+          j=json.loads(pathlib.Path("assets/films/visual-audit-v2/screening-results.json").read_text())
+          assert j["exports_examined"]==44 and j["exports_remaining"]==0
+          errors=[(r["slug"],r["issues"]) for r in j["films"] if r["issues"]]
+          assert not errors, errors
+          print("44 current technical movies verified. No artistic, narration or rights approval implied.")
           PY
-      - name: Commit technical film contact sheets on protected branch only
+      - name: Persist technical contact sheets in their own evidence commit
         run: |
           git add assets/films/visual-audit-v2/
           if ! git diff --cached --quiet; then
-            git commit -m "Verify all 44 current film exports without claiming artistic sign-off [v2-qa]"
-            for attempt in 1 2 3 4 5 6 7 8; do
+            git commit -m "Screen all 44 current technical previews without human approval [v2-qa]"
+            for retry in 1 2 3 4 5; do
               git fetch origin cinematic-remake-20261017
-              git rebase FETCH_HEAD
-              if git push origin HEAD:cinematic-remake-20261017; then exit 0; fi
-              sleep "$((attempt * 2))"
+              if git rebase FETCH_HEAD && git push origin HEAD:cinematic-remake-20261017; then exit 0; fi
+              git rebase --abort || true
+              sleep "$((retry * 2))"
             done
             exit 1
           fi
