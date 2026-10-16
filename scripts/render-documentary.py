@@ -26,6 +26,7 @@ FONT_BOLD = FONT_ROOT / "DejaVuSans-Bold.ttf"
 FONT_NORMAL = FONT_ROOT / "DejaVuSans.ttf"
 DARK = (14, 34, 40)
 WARM = (245, 242, 233)
+SCIENTIFIC_SAFE_AREA = (68, 140, 1212, 495)  # figures & movies: keep axes and specimen unobscured
 
 def command(args):
     result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
@@ -71,19 +72,35 @@ def lines_to_fit(text, draw, ft, max_width):
     if current: result.append(current)
     return result
 
+def scientific_image_frame(path):
+    """Preserve the entire figure, its axes, labels and scientific scale bars."""
+    with Image.open(path) as source:
+        image = ImageOps.exif_transpose(source).convert("RGB")
+    bg = Image.new("RGB", (W, H), (17, 40, 46))
+    x0, y0, x1, y1 = SCIENTIFIC_SAFE_AREA
+    margin = 10
+    image.thumbnail((x1 - x0 - 2*margin, y1 - y0 - 2*margin), Image.Resampling.LANCZOS)
+    x, y = (W - image.width)//2, y0 + (y1 - y0 - image.height)//2
+    bg.paste(image, (x, y))
+    d = ImageDraw.Draw(bg)
+    d.rectangle((x0, y0, x1, y1), outline=(86, 116, 112), width=2)
+    return bg
+
 def fit_image(path, contain):
+    if contain:
+        return scientific_image_frame(path)
     with Image.open(path) as original:
         image = ImageOps.exif_transpose(original).convert("RGB")
-    bg = ImageOps.fit(image, (W, H), method=Image.Resampling.LANCZOS)
-    bg = bg.filter(ImageFilter.GaussianBlur(35))
-    bg = Image.blend(bg, Image.new("RGB",(W,H),DARK), 0.38)
-    if contain:
-        main = image.copy()
-        main.thumbnail((W-115,H-110), Image.Resampling.LANCZOS)
-        bg.paste(main, ((W-main.width)//2,(H-main.height)//2))
-    else:
-        bg = ImageOps.fit(image, (W,H), method=Image.Resampling.LANCZOS, centering=(.5,.45))
-    return bg
+    # In portrait archive footage the full photograph is more important than the crop.
+    if image.height > image.width * 1.2:
+        matte = ImageOps.fit(image, (W,H), Image.Resampling.LANCZOS)
+        matte = matte.filter(ImageFilter.GaussianBlur(40))
+        matte = Image.blend(matte, Image.new("RGB",(W,H),DARK), .38)
+        main=image.copy()
+        main.thumbnail((W-135,H-40), Image.Resampling.LANCZOS)
+        matte.paste(main, ((W-main.width)//2,(H-main.height)//2))
+        return matte
+    return ImageOps.fit(image, (W,H), method=Image.Resampling.LANCZOS, centering=(.5,.47))
 
 def overlay(item):
     layer = Image.new("RGBA",(W,H),(0,0,0,0))
@@ -106,28 +123,70 @@ def overlay(item):
     d.text((62,678),item["kind"].upper(),font=font(14),fill=(214,226,219))
     return layer
 
-def make_frame(item,image_path,workspace):
+def make_frame(item, image_path, workspace):
+    """Export the image and its separate title layer: typography never zooms."""
     bg = fit_image(image_path, bool(item.get("contain")))
-    composite=Image.alpha_composite(bg.convert("RGBA"),overlay(item))
-    path=workspace/("frame-"+item["id"]+".png")
-    composite.convert("RGB").save(path, optimize=True)
-    layer=workspace/("overlay-"+item["id"]+".png")
-    overlay(item).save(layer)
-    return path,layer
+    path = workspace / ("frame-" + item["id"] + ".png")
+    bg.save(path, optimize=True)
+    over = workspace / ("overlay-" + item["id"] + ".png")
+    overlay(item).save(over)
+    return path, over
+
+def make_motion_montage(video_paths, duration, workspace, scene_id):
+    """A sequence of real footage, not AI interpolation or generic stock B-roll."""
+    if len(video_paths) < 2:
+        raise ValueError("Montage needs at least two original recordings")
+    part = duration / len(video_paths)
+    inputs = []
+    chains = []
+    for i, video in enumerate(video_paths):
+        inputs.extend(["-stream_loop", "-1", "-i", str(video)])
+        chains.append(
+            f"[{i}:v]fps={FPS},trim=duration={part:.4f},setpts=PTS-STARTPTS,"
+            "scale=1280:720:force_original_aspect_ratio=decrease,"
+            "pad=1280:720:(ow-iw)/2:(oh-ih)/2:color=0x10272e,setsar=1"
+            f"[v{i}]"
+        )
+    chains.append("".join(f"[v{i}]" for i in range(len(video_paths)))
+                  + f"concat=n={len(video_paths)}:v=1:a=0[out]")
+    output = workspace / ("montage-" + scene_id + ".mp4")
+    command(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y"] + inputs + [
+        "-filter_complex", ";".join(chains), "-map", "[out]", "-an", "-r", str(FPS),
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
+        "-pix_fmt", "yuv420p", "-t", str(duration), str(output)
+    ])
+    return output
 
 def make_clip(item, image, video, frame, over, duration, out):
-    frames=int(round(duration*FPS))
-    vf="zoompan=z='min(zoom+0.00016,1.042)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1280x720:fps=24,format=yuv420p"
-    common=["-r",str(FPS),"-frames:v",str(frames),"-an","-c:v","libx264","-preset","veryfast","-crf","23","-pix_fmt","yuv420p","-movflags","+faststart",str(out)]
+    frames = int(round(duration*FPS))
+    common = ["-r", str(FPS), "-frames:v", str(frames), "-an",
+              "-c:v", "libx264", "-preset", "veryfast", "-crf", "22",
+              "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(out)]
     if video:
-        try:
-            command(["ffmpeg","-hide_banner","-loglevel","error","-y","-stream_loop","-1","-i",str(video),"-loop","1","-framerate",str(FPS),"-i",str(over),"-filter_complex",
-            "[0:v]scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720,setsar=1,eq=brightness=-0.035:saturation=0.86[bg];[bg][1:v]overlay=shortest=1,format=yuv420p[v]",
-            "-map","[v]"]+common)
-            return "motion footage"
-        except Exception as err:
-            print("Video decode failed; keeping genuine still:",str(err))
-    command(["ffmpeg","-hide_banner","-loglevel","error","-y","-loop","1","-framerate",str(FPS),"-i",str(frame),"-vf",vf]+common)
+        # No zoom/crop of original animal microscopy; padded scientific window.
+        # Place recording below the masthead, above the permanent title band.
+        command(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
+                 "-stream_loop", "-1", "-i", str(video),
+                 "-loop", "1", "-framerate", str(FPS), "-i", str(over),
+                 "-filter_complex",
+                 "[0:v]fps=24,scale=1240:375:force_original_aspect_ratio=decrease,"
+                 "pad=1280:395:(ow-iw)/2:(oh-ih)/2:color=0x10272e,"
+                 "pad=1280:720:0:118:color=0x10272e,setsar=1[bg];"
+                 "[bg][1:v]overlay=shortest=1,format=yuv420p[v]",
+                 "-map", "[v]"] + common)
+        return "motion footage"
+    if item.get("contain"):
+        motion = "[0:v]scale=1280:720,format=yuv420p[bg];"
+    else:
+        # Motion is applied to the photograph alone, not to research captions.
+        motion = ("[0:v]zoompan=z='min(zoom+0.000075,1.018)':"
+                  "x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+                  "d=1:s=1280x720:fps=24,format=yuv420p[bg];")
+    command(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
+             "-loop", "1", "-framerate", str(FPS), "-i", str(frame),
+             "-loop", "1", "-framerate", str(FPS), "-i", str(over),
+             "-filter_complex", motion + "[bg][1:v]overlay=shortest=1,format=yuv420p[v]",
+             "-map", "[v]"] + common)
     return "archival still"
 
 def vtt_time(seconds):
@@ -182,25 +241,61 @@ def allocate(speech,sr):
     assert sum(frames)==total
     return frames
 
-def soundtrack(speech,sr,frames,workspace):
-    samples_total=int(round(TOTAL_SECONDS*sr))
-    arr=np.zeros(samples_total,dtype=np.float32)
-    cursor=0
-    for samples,count in zip(speech,frames):
-        start=cursor+int(.52*sr)
-        end=min(start+len(samples),samples_total)
-        arr[start:end]+=samples[:end-start]
-        cursor+=round(count/FPS*sr)
-    # Self-generated unobtrusive room-tone bed; no external music licensing.
-    t=np.arange(samples_total,dtype=np.float32)/sr
-    swell=np.minimum(1,t/3)*np.minimum(1,(TOTAL_SECONDS-t)/4)
-    bed=(np.sin(2*np.pi*110*t)*.0018+np.sin(2*np.pi*164.81*t)*.0015+np.sin(2*np.pi*220*t)*.0009)*swell
-    arr+=bed.astype(np.float32)
-    peak=np.max(np.abs(arr))
-    if peak>.92: arr=arr*(.92/peak)
-    path=workspace/"soundtrack.wav"
-    sf.write(str(path),arr,sr,subtype="PCM_16")
-    return path
+def film_score(t, voice_envelope):
+    """Original, understated four-movement score. No external music samples."""
+    # The harmonic progression follows the film's four chapters, rather than
+    # imposing a commercial motivational-music beat on experimental evidence.
+    harmonies = [
+        (110.00, 130.81, 164.81),   # A minor / early curiosity
+        (98.00, 146.83, 174.61),    # G / molecular matter
+        (87.31, 130.81, 196.00),    # F / experiments that resisted
+        (110.00, 164.81, 220.00),   # A / living systems and continuing work
+    ]
+    score = np.zeros_like(t, dtype=np.float32)
+    for i, (root, third, fifth) in enumerate(harmonies):
+        start = TOTAL_SECONDS * i / len(harmonies)
+        end = TOTAL_SECONDS * (i+1) / len(harmonies)
+        fade_in = np.clip((t-start)/3.0,0,1)
+        fade_out = np.clip((end-t)/3.0,0,1)
+        shape = fade_in * fade_out
+        pad = (
+            .58*np.sin(2*np.pi*root*t) +
+            .25*np.sin(2*np.pi*third*t+.6) +
+            .19*np.sin(2*np.pi*fifth*t+1.2) +
+            .06*np.sin(2*np.pi*(root*2.002)*t)
+        )
+        score += np.asarray(shape*pad, dtype=np.float32)
+    film_fade = np.minimum(1,t/3) * np.minimum(1,(TOTAL_SECONDS-t)/5)
+    ducking = 1 - .58*np.clip(voice_envelope,0,1)
+    return score * np.asarray(.019*film_fade*ducking,dtype=np.float32)
+
+def soundtrack(speech, sr, frames, workspace):
+    sample_count = int(round(TOTAL_SECONDS*sr))
+    arr = np.zeros(sample_count,dtype=np.float32)
+    voice_envelope = np.zeros(sample_count,dtype=np.float32)
+    cursor = 0
+    for samples, count in zip(speech,frames):
+        start = cursor+int(.52*sr)
+        end = min(start+len(samples),sample_count)
+        if end <= start:
+            raise ValueError("Narration timeline overflow")
+        # Equalize natural variation in synthesizer volume without clipping.
+        rms = float(np.sqrt(np.mean(samples**2)+1e-9))
+        gain = min(2.0, .087/max(.0001,rms))
+        spoken = np.tanh(samples[:end-start]*gain).astype(np.float32)
+        arr[start:end] += spoken
+        attack = max(0,start-int(.18*sr))
+        release = min(sample_count,end+int(.37*sr))
+        voice_envelope[attack:release] = 1.0
+        cursor += round(count/FPS*sr)
+    t = np.arange(sample_count,dtype=np.float32)/sr
+    arr += film_score(t,voice_envelope)
+    peak = float(np.max(np.abs(arr)))
+    if peak > .89:
+        arr *= .89/peak
+    output = workspace/"soundtrack.wav"
+    sf.write(str(output),arr,sr,subtype="PCM_16")
+    return output
 
 def main():
     parser=argparse.ArgumentParser()
@@ -219,6 +314,17 @@ def main():
                 p=(ROOT/scene[k]).resolve()
                 if not p.is_relative_to(ROOT) or not p.is_file():
                     raise FileNotFoundError(str(p))
+        videos = scene.get("videos", [])
+        if videos:
+            if len(videos) < 2 or len(set(videos)) != len(videos):
+                raise AssertionError("Required motion montage uses distinct original recordings")
+            if not scene.get("required_video", False):
+                raise AssertionError("Original microscopy montage must be required, not silently replaced")
+            for video in videos:
+                if not video.startswith("https://"):
+                    local = (ROOT/video).resolve()
+                    if not local.is_relative_to(ROOT) or not local.is_file():
+                        raise FileNotFoundError(video)
     if args.validate_only:
         print("12 scenes validated against source media; no synthetic figure data.")
         return
@@ -241,7 +347,18 @@ def main():
         for item,duration in zip(items,durations):
             pic=source_path(item,"image",workspace) or source_path(item,"fallback",workspace)
             if not pic: raise RuntimeError("No image for scene "+item["id"])
-            motion=source_path(item,"video",workspace)
+            if item.get("videos"):
+                shots = []
+                for n, url in enumerate(item["videos"]):
+                    shot = source_path({"id":item["id"]+"-"+str(n),"video":url}, "video", workspace)
+                    if not shot:
+                        raise RuntimeError("Required original microscopy shot unavailable: "+url)
+                    shots.append(shot)
+                motion = make_motion_montage(shots, duration, workspace, item["id"])
+            else:
+                motion = source_path(item, "video", workspace)
+                if item.get("required_video") and not motion:
+                    raise RuntimeError("Required archival video unavailable for "+item["id"])
             frame,over=make_frame(item,pic,workspace)
             out=workspace/("scene-"+item["id"]+".mp4")
             medium=make_clip(item,pic,motion,frame,over,duration,out)
@@ -255,7 +372,7 @@ def main():
         track=soundtrack(speech,sr,frame_counts,workspace)
         output=FILM/"what-survives-the-experiment.mp4"
         command(["ffmpeg","-hide_banner","-loglevel","error","-y","-i",str(video),"-i",str(track),
-            "-map","0:v:0","-map","1:a:0","-c:v","copy","-c:a","aac","-b:a","160k",
+            "-map","0:v:0","-map","1:a:0","-c:v","copy","-af","loudnorm=I=-18:TP=-2:LRA=11","-c:a","aac","-b:a","160k",
             "-t",str(TOTAL_SECONDS),"-movflags","+faststart",str(output)])
         p=json.loads(command(["ffprobe","-v","error","-show_entries","format=duration","-of","json",str(output)]))
         duration=float(p["format"]["duration"])
@@ -264,7 +381,7 @@ def main():
         digest=hashlib.sha256(output.read_bytes()).hexdigest()
         (FILM/"what-survives-build.json").write_text(json.dumps({
             "title":storyboard["title"],"seconds":duration,"video_sha256":digest,
-            "clip_sources":footage,"audio_engine":"kokoro-onnx bm_george; original generated ambient bed",
+            "clip_sources":footage,"motion_shots":len([s for s in items if s.get("video")])+sum(len(s.get("videos",[])) for s in items),"sound_design":"original four-movement harmonic score; speech-ducked; normalized to -18 LUFS target", "audio_engine":"kokoro-onnx bm_george; original synthesised score",
             "script_source":"assets/films/what-survives-scenes.json",
             "provenance":"Linked original media; no synthetic scientific evidence"},indent=2)+"\n")
         print("SUCCESS:",output,"seconds",duration,"size",output.stat().st_size)
