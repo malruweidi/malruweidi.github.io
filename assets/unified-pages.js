@@ -101,10 +101,10 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
   if (document.querySelector('script[src*="/assets/discovery-global.js"]')) return;
   const css = document.createElement("link");
   css.rel = "stylesheet";
-  css.href = "/assets/discovery-global.css?v=20261014";
+  css.href = "/assets/discovery-global.css?v=20261016-craft";
   document.head.appendChild(css);
   const script = document.createElement("script");
-  script.src = "/assets/discovery-global.js?v=20261014";
+  script.src = "/assets/discovery-global.js?v=20261016-craft";
   script.defer = true;
   document.head.appendChild(script);
 })();
