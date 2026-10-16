@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-17",
+  "note": "Media added non-destructively from owner-supplied originals. Dates in filename not authenticated capture dates; technical interpretations limited to visible labels. Original images retained in supplied conversation.",
+  "entries": [
+    {
+      "source_name": "Neutral TiO2 Trial 1 Humidity VS Capacitance.jpg",
+      "path": "assets/owner-archive-2026-10-17/neutral-tio2-trial-1-capacitance.webp",
+      "type": "ti02",
+      "sha256_original": "991141dae83a3ab8c9e30bda082a36986bddf11626b20a6a2b0e2dfb7b33684e",
+      "width": 1408,
+      "height": 1088,
+      "bytes": 26552
+    },
+    {
+      "source_name": "Neutral TiO2 Trial 1 Humidity VS Resistance.jpg",
+      "path": "assets/owner-archive-2026-10-17/neutral-tio2-trial-1-resistance.webp",
+      "type": "ti02",
+      "sha256_original": "efa76256c47f0b3ff57d83c14afce321140a081eece24d0cc9e3a9b6ead96e19",
+      "width": 1408,
+      "height": 1088,
+      "bytes": 27340
+    },
+    {
+      "source_name": "Neutral TiO2 Trial 2 Humidity VS Capacitance.jpg",
+      "path": "assets/owner-archive-2026-10-17/neutral-tio2-trial-2-capacitance.webp",
+      "type": "ti02",
+      "sha256_original": "2218125cb814f5d3f2e4ae58f1a7fe6de9ff962e219df244a1e06573d5260de5",
+      "width": 1408,
+      "height": 1088,
+      "bytes": 25916
+    },
+    {
+      "source_name": "Neutral TiO2 Trial 2 Humidity VS Resistance.jpg",
+      "path": "assets/owner-archive-2026-10-17/neutral-tio2-trial-2-resistance.webp",
+      "type": "ti02",
+      "sha256_original": "06f58f8f53f7f67c5c3fd170cacead2e4d1407f80fc23aecdf922545a671c84f",
+      "width": 1408,
+      "height": 1088,
+      "bytes": 27508
+    },
+    {
+      "source_name": "Thick TiO2 Trial 2 Humidity VS Capacitance.jpg",
+      "path": "assets/owner-archive-2026-10-17/thick-tio2-trial-2-capacitance.webp",
+      "type": "ti02",
+      "sha256_original": "ef2033aad597e4c6bcaa705b337beb2e12c359360fda9e781d40477b038c1806",
+      "width": 1408,
+      "height": 1088,
+      "bytes": 28468
+    },
+    {
+      "source_name": "Thick TiO2 Trial 2 Humidity VS Resistance.jpg",
+      "path": "assets/owner-archive-2026-10-17/thick-tio2-trial-2-resistance.webp",
+      "type": "ti02",
+      "sha256_original": "bce87cfc05bc61ea3e0d7501e3451efc8480168282d64d665aa57c9ec33c2315",
+      "width": 1408,
+      "height": 1088,
+      "bytes": 22658
+    },
+    {
+      "source_name": "Thick TiO2 Trial 3 Humidity VS Capacitance.jpg",
+      "path": "assets/owner-archive-2026-10-17/thick-tio2-trial-3-capacitance.webp",
+      "type": "ti02",
+      "sha256_original": "9e831cc6f3dc6540caf1dc1d4b85f91de1f61da64008f725a50dfd506bdd9074",
+      "width": 1408,
+      "height": 1088,
+      "bytes": 27196
+    },
+    {
+      "source_name": "Thick TiO2 Trial 3 Humidity VS Resistance.jpg",
+      "path": "assets/owner-archive-2026-10-17/thick-tio2-trial-3-resistance.webp",
+      "type": "ti02",
+      "sha256_original": "a30ccdb55ce04ac1571f257c891292005fe9775899d8b82696bb6bba008508c0",
+      "width": 1408,
+      "height": 1088,
+      "bytes": 23522
+    },
+    {
+      "source_name": "Drop1_FM2.bmp",
+      "path": "assets/owner-archive-2026-10-17/droplet-fm2.webp",
+      "type": "wetting",
+      "sha256_original": "783444a257f08687d8ce6c706123212ecd6cdf9b0c2cc4b4208d52c4899ca4b1",
+      "width": 752,
+      "height": 480,
+      "bytes": 4408
+    },
+    {
+      "source_name": "Drop1_W1.bmp",
+      "path": "assets/owner-archive-2026-10-17/droplet-w1.webp",
+      "type": "wetting",
+      "sha256_original": "08f1ca287e3957d548e1badd4bf1c931412bb166c68510d8c03789e0e65a1e3d",
+      "width": 752,
+      "height": 480,
+      "bytes": 3572
+    },
+    {
+      "source_name": "Drop1_W2.bmp",
+      "path": "assets/owner-archive-2026-10-17/droplet-w2.webp",
+      "type": "wetting",
+      "sha256_original": "20ea9a82eff80e113e3895530237c609956dac441ad30f4606e1b8f7c856e960",
+      "width": 752,
+      "height": 480,
+      "bytes": 3832
+    },
+    {
+      "source_name": "2017-08-20-PHOTO-00000805.jpg",
+      "path": "assets/owner-archive-2026-10-17/acs-2017-group-visit.webp",
+      "type": "conference",
+      "sha256_original": "932d98f511b5f918b510759215c5619dd399925f97862222a4727f157d3694e6",
+      "width": 1100,
+      "height": 825,
+      "bytes": 32484
+    },
+    {
+      "source_name": "2017-08-21-PHOTO-00000842.jpg",
+      "path": "assets/owner-archive-2026-10-17/acs-2017-natural-dyes-poster.webp",
+      "type": "conference",
+      "sha256_original": "e6f2fad17afd1c6031c7e14b35fed9d99e2ba1e6a92d0236fdcf220697561ca3",
+      "width": 720,
+      "height": 960,
+      "bytes": 48776
+    },
+    {
+      "source_name": "2017-08-21-PHOTO-00000859.jpg",
+      "path": "assets/owner-archive-2026-10-17/acs-2017-record-attempt.webp",
+      "type": "conference",
+      "sha256_original": "0e5b351b58d68de8062c8dec4e4555076b5a35982131c33dc3160228aa2b5401",
+      "width": 1100,
+      "height": 825,
+      "bytes": 74638
+    },
+    {
+      "source_name": "2017-08-21-PHOTO-00000873.jpg",
+      "path": "assets/owner-archive-2026-10-17/acs-2017-conference-meeting.webp",
+      "type": "conference",
+      "sha256_original": "bc78df7fc11909f56651c28f8a5be1c82b06d3a831ee99e7bc75e5d09c5fa593",
+      "width": 1024,
+      "height": 768,
+      "bytes": 58934
+    },
+    {
+      "source_name": "2017-08-21-PHOTO-00000904.jpg",
+      "path": "assets/owner-archive-2026-10-17/acs-2017-delegation-banner.webp",
+      "type": "conference",
+      "sha256_original": "831913dc48580d72c99f6b6d7a9affbef8e631c9455025a6ffd79b6a31a67627",
+      "width": 720,
+      "height": 960,
+      "bytes": 73608
+    },
+    {
+      "source_name": "2017-08-27-PHOTO-00000033.jpg",
+      "path": "assets/owner-archive-2026-10-17/acs-2017-micelles-research-poster.webp",
+      "type": "conference",
+      "sha256_original": "c9293cf44be486531fbf0a1cfd9fa0db73579cf7e4353fa6857471cff93c59dd",
+      "width": 1024,
+      "height": 768,
+      "bytes": 66756,
+      "owner_identification": "Owner identifies himself as present in the group photograph by the block-copolymer micelles poster (sixth conference photograph in the supplied sequence)."
+    },
+    {
+      "source_name": "IMG_4612.JPG",
+      "path": "assets/owner-archive-2026-10-17/scientific-student-group.webp",
+      "type": "conference",
+      "sha256_original": "d12780ef910521822e26f79f027657520e0651ab416fc36416dd744f96861350",
+      "width": 750,
+      "height": 309,
+      "bytes": 19022,
+      "owner_identification": "Owner identifies himself and Professor Jan Kwak at the astrochemistry event (seventh photograph in the supplied sequence)."
+    },
+    {
+      "source_name": "IMG_8206.mov",
+      "path": "assets/owner-archive-2026-10-17/laboratory-portrait-clip.mp4",
+      "type": "short_lab_video",
+      "sha256_original": "08b4498ed20867b8ef6316cb77f6655cf93934ece09185127769c863ed1e0362",
+      "bytes": 102621
+    },
+    {
+      "source_name": "IMG_8206.mov",
+      "path": "assets/owner-archive-2026-10-17/laboratory-portrait-poster.webp",
+      "type": "video_poster",
+      "sha256_original": "08b4498ed20867b8ef6316cb77f6655cf93934ece09185127769c863ed1e0362",
+      "bytes": 20028
+    }
+  ]
+}
