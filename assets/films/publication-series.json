@@ -340,7 +340,7 @@
       "film_title": "How did medieval medicines keep?",
       "premise": "A Cairo pharmacy, formulas that had to survive storage, and what a historical text can tell us about reliability.",
       "doi": null,
-      "poster": "/assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "poster": "/assets/films/art/medieval-pharmacy.svg",
       "page": "/#history",
       "visual_language": "archival historical investigation",
       "production": "render_requested",
@@ -351,10 +351,10 @@
           "title": "The medicine had to last",
           "subtitle": "archival historical investigation",
           "narration": "A prescription was not finished when its ingredients were combined. In medieval Cairo, a medicine still had to be made reliable.",
-          "image": "assets/history-0.webp",
-          "contain": false,
-          "kind": "Contemporary editorial Cairo illustration, not a period photograph or primary manuscript",
-          "credit": "Contemporary editorial Cairo illustration, not a period photograph or primary manuscript",
+          "image": "assets/films/art/medieval-pharmacy.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#history"
         },
         {
@@ -362,10 +362,10 @@
           "title": "A handbook for a working pharmacy",
           "subtitle": "archival historical investigation",
           "narration": "The Minhaj al-dukkan associated with al-Kuhin al-Attar documents practical pharmaceutical choices. It is an historical text, not a modern clinical trial.",
-          "image": "assets/history-1.webp",
-          "contain": false,
-          "kind": "Editorial historical image; the referenced formulary must be verified separately",
-          "credit": "Editorial historical image; the referenced formulary must be verified separately",
+          "image": "assets/films/art/medieval-pharmacy.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#history"
         },
         {
@@ -373,10 +373,10 @@
           "title": "Why syrup matters",
           "subtitle": "archival historical investigation",
           "narration": "Concentration, ingredients and preservation are questions of practice. A formula means little if the preparation changes before it reaches its user.",
-          "image": "assets/history-2.webp",
-          "contain": false,
-          "kind": "Editorial historical illustration, not a preserved syrup artifact",
-          "credit": "Editorial historical illustration, not a preserved syrup artifact",
+          "image": "assets/films/art/medieval-pharmacy.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#history"
         },
         {
@@ -384,10 +384,10 @@
           "title": "Substitution is a serious decision",
           "subtitle": "archival historical investigation",
           "narration": "A pharmacist with an unavailable ingredient had to consider replacement. Similar names or therapeutic intentions did not guarantee material equivalence.",
-          "image": "assets/history-0.webp",
-          "contain": false,
-          "kind": "Historical-context illustration, not a manuscript transcription",
-          "credit": "Historical-context illustration, not a manuscript transcription",
+          "image": "assets/films/art/medieval-pharmacy.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#history"
         },
         {
@@ -406,10 +406,10 @@
           "title": "What a medicine could keep",
           "subtitle": "archival historical investigation",
           "narration": "This forthcoming historical article asks how pharmaceutical dependability was achieved and described under the conditions of Ayyubid-Mamluk Cairo.",
-          "image": "assets/history-1.webp",
-          "contain": false,
-          "kind": "Contemporary illustration; accepted scholarly work, awaiting final publication",
-          "credit": "Contemporary illustration; accepted scholarly work, awaiting final publication",
+          "image": "assets/films/art/medieval-pharmacy.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#history"
         }
       ]
@@ -1324,7 +1324,7 @@
       "film_title": "A laboratory shrunk into a channel",
       "premise": "Fluid handling, analytical specificity, sample preparation and limits of miniaturisation.",
       "doi": "10.1007/s42247-021-00169-7",
-      "poster": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "poster": "/assets/films/art/microfluidic-sensing.svg",
       "page": "/techniques.html",
       "visual_language": "instrument animation",
       "production": "render_requested",
@@ -1335,10 +1335,10 @@
           "title": "A laboratory in a narrow channel",
           "subtitle": "instrument animation",
           "narration": "Imagine taking a complex testing workflow and moving parts of it into channels so small that fluid behaviour becomes a design constraint.",
-          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
-          "contain": false,
-          "kind": "Original pipetting laboratory context, not published microfluidic chip",
-          "credit": "Original pipetting laboratory context, not published microfluidic chip",
+          "image": "assets/films/art/microfluidic-sensing.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/techniques.html"
         },
         {
@@ -1357,10 +1357,10 @@
           "title": "Fluid control becomes analytical control",
           "subtitle": "instrument animation",
           "narration": "Microfluidic systems can organise small volumes and reactions, but sensitivity and specificity still depend on the biological assay.",
-          "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "image": "assets/films/art/microfluidic-sensing.svg",
           "contain": true,
-          "kind": "Fluid-flow scientific figure from separate research; used as context only",
-          "credit": "Fluid-flow scientific figure from separate research; used as context only",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/techniques.html"
         },
         {
@@ -1379,10 +1379,10 @@
           "title": "The practical bottleneck",
           "subtitle": "instrument animation",
           "narration": "Manufacturability, reliable reagents, operator burden and clinical validation decide whether a clever microsystem becomes useful.",
-          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
-          "contain": false,
-          "kind": "General laboratory environment, not a product demonstration",
-          "credit": "General laboratory environment, not a product demonstration",
+          "image": "assets/films/art/microfluidic-sensing.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/techniques.html"
         },
         {
@@ -1390,10 +1390,10 @@
           "title": "Smaller does not mean simpler",
           "subtitle": "instrument animation",
           "narration": "The 2021 review surveys microfluidic approaches to respiratory-virus detection and the evidence required beyond the chip itself.",
-          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
-          "contain": false,
-          "kind": "Original laboratory context",
-          "credit": "Original laboratory context",
+          "image": "assets/films/art/microfluidic-sensing.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/techniques.html"
         }
       ]
@@ -1488,7 +1488,7 @@
       "film_title": "When food becomes a printable material",
       "premise": "Rheology, shape retention and the difference between imaginative geometry and material proof.",
       "doi": null,
-      "poster": "/assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+      "poster": "/assets/films/art/edible-printing.svg",
       "page": "/#publications",
       "visual_language": "materials animation",
       "production": "render_requested",
@@ -1499,10 +1499,10 @@
           "title": "Edible material meets geometry",
           "subtitle": "materials animation",
           "narration": "A printer can follow a perfect toolpath while the deposited material collapses. The rheology of the ink sets the rules.",
-          "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
-          "contain": false,
-          "kind": "Archival non-food polymer specimen; a visual analogy only, not edible printing",
-          "credit": "Archival non-food polymer specimen; a visual analogy only, not edible printing",
+          "image": "assets/films/art/edible-printing.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         },
         {
@@ -1510,10 +1510,10 @@
           "title": "Flow first, shape second",
           "subtitle": "materials animation",
           "narration": "The printing material must move through a nozzle, then retain enough structure after deposition to realise the intended form.",
-          "image": "assets/polymer-concept.svg",
+          "image": "assets/films/art/edible-printing.svg",
           "contain": true,
-          "kind": "Generic conceptual polymer material image, not edible ink",
-          "credit": "Generic conceptual polymer material image, not edible ink",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         },
         {
@@ -1521,10 +1521,10 @@
           "title": "The design space expands",
           "subtitle": "materials animation",
           "narration": "The forthcoming chapter considers three-, four-, five- and six-dimensional food-printing concepts, including responsive structures and programmed behaviour.",
-          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
-          "contain": false,
-          "kind": "Original lab workspace, not food-printing equipment",
-          "credit": "Original lab workspace, not food-printing equipment",
+          "image": "assets/films/art/edible-printing.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         },
         {
@@ -1543,10 +1543,10 @@
           "title": "Do not mistake possibility for validation",
           "subtitle": "materials animation",
           "narration": "Time-responsive and higher-dimensional labels describe proposed capabilities; they do not establish that every structure has been practically demonstrated.",
-          "image": "assets/polymer-concept.svg",
+          "image": "assets/films/art/edible-printing.svg",
           "contain": true,
-          "kind": "Conceptual illustration, not experimental edible printing",
-          "credit": "Conceptual illustration, not experimental edible printing",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         },
         {
@@ -1554,10 +1554,10 @@
           "title": "An architecture has to survive deposition",
           "subtitle": "materials animation",
           "narration": "This accepted chapter explores the design constraints for programmable edible materials. It remains forthcoming, not a completed laboratory result.",
-          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
-          "contain": false,
-          "kind": "General original laboratory context",
-          "credit": "General original laboratory context",
+          "image": "assets/films/art/edible-printing.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         }
       ]
@@ -1570,7 +1570,7 @@
       "film_title": "A structure the body must tolerate",
       "premise": "The material and processing constraints behind printable implants.",
       "doi": null,
-      "poster": "/assets/polymer-concept.svg",
+      "poster": "/assets/films/art/bioceramic-lattice.svg",
       "page": "/#publications",
       "visual_language": "biomaterials editorial",
       "production": "render_requested",
@@ -1581,10 +1581,10 @@
           "title": "A patient will live with the material",
           "subtitle": "biomaterials editorial",
           "narration": "Biomedical ceramic design starts with a difficult demand: a manufactured structure must remain useful in a biological environment.",
-          "image": "assets/evidence-biomaterials.webp",
-          "contain": false,
-          "kind": "Generic biomaterial research imagery, not a ceramic implant",
-          "credit": "Generic biomaterial research imagery, not a ceramic implant",
+          "image": "assets/films/art/bioceramic-lattice.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         },
         {
@@ -1592,10 +1592,10 @@
           "title": "Geometry is only the beginning",
           "subtitle": "biomaterials editorial",
           "narration": "Additive manufacturing can produce complex ceramic forms. Processing, internal architecture and material properties shape what those forms can do.",
-          "image": "assets/polymer-concept.svg",
+          "image": "assets/films/art/bioceramic-lattice.svg",
           "contain": true,
-          "kind": "Generic materials concept, not an image of ceramic printing",
-          "credit": "Generic materials concept, not an image of ceramic printing",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         },
         {
@@ -1603,10 +1603,10 @@
           "title": "The furnace has a vote",
           "subtitle": "biomaterials editorial",
           "narration": "Ceramic processing and densification impose constraints beyond the original digital model. The final properties must be measured.",
-          "image": "assets/research-archive-2026/laboratory-gas-discharge-safety-door.webp",
-          "contain": false,
-          "kind": "Archival laboratory context, not a sintering furnace",
-          "credit": "Archival laboratory context, not a sintering furnace",
+          "image": "assets/films/art/bioceramic-lattice.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         },
         {
@@ -1614,10 +1614,10 @@
           "title": "Biology tests the promise",
           "subtitle": "biomaterials editorial",
           "narration": "Mechanical performance and biological response can pull design in different directions. An elegant lattice is not automatically a medical device.",
-          "image": "assets/evidence-biomaterials.webp",
-          "contain": false,
-          "kind": "Biomaterials context image, not clinical ceramic implant evidence",
-          "credit": "Biomaterials context image, not clinical ceramic implant evidence",
+          "image": "assets/films/art/bioceramic-lattice.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         },
         {
@@ -1625,10 +1625,10 @@
           "title": "From bench to clinic",
           "subtitle": "biomaterials editorial",
           "narration": "Clinical application also depends on repeatability, sterilisation and regulatory pathways; each requires evidence distinct from printability.",
-          "image": "assets/polymer-concept.svg",
+          "image": "assets/films/art/bioceramic-lattice.svg",
           "contain": true,
-          "kind": "Illustrative manufacturing-science visual",
-          "credit": "Illustrative manufacturing-science visual",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         },
         {
@@ -1636,10 +1636,10 @@
           "title": "More than a shape",
           "subtitle": "biomaterials editorial",
           "narration": "The accepted chapter reviews biomedical ceramic applications and translational constraints. It is an editorial explanation, not a new implantation trial.",
-          "image": "assets/evidence-biomaterials.webp",
-          "contain": false,
-          "kind": "General biocompatibility research image",
-          "credit": "General biocompatibility research image",
+          "image": "assets/films/art/bioceramic-lattice.svg",
+          "contain": true,
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         }
       ]
@@ -1652,7 +1652,7 @@
       "film_title": "The difficult promise of a cubic carrier",
       "premise": "Why beautiful nanostructures still need a defensible translational path.",
       "doi": null,
-      "poster": "/assets/niosomes-concept.svg",
+      "poster": "/assets/films/art/cubosome-topology.svg",
       "page": "/#publications",
       "visual_language": "nanocarrier explanatory",
       "production": "render_requested",
@@ -1663,10 +1663,10 @@
           "title": "A cube may hide a labyrinth",
           "subtitle": "nanocarrier explanatory",
           "narration": "Cubosomes contain structured internal lipid domains. Their morphology is intriguing, but drug delivery is not secured by geometry alone.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art/cubosome-topology.svg",
           "contain": true,
-          "kind": "Generic lipid carrier illustration; not a measured cubosome",
-          "credit": "Generic lipid carrier illustration; not a measured cubosome",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         },
         {
@@ -1685,10 +1685,10 @@
           "title": "Design at the interface",
           "subtitle": "nanocarrier explanatory",
           "narration": "Lipid composition, loading and surrounding biological fluids affect the practical behaviour of a nanoscale carrier.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art/cubosome-topology.svg",
           "contain": true,
-          "kind": "Generic conceptual vesicle, not a representation of cubosomal inverse cubic phase",
-          "credit": "Generic conceptual vesicle, not a representation of cubosomal inverse cubic phase",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         },
         {
@@ -1718,10 +1718,10 @@
           "title": "The promise is conditional",
           "subtitle": "nanocarrier explanatory",
           "narration": "The forthcoming accepted chapter critically discusses cancer-targeted cubosome design and the difficult path to clinical translation.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art/cubosome-topology.svg",
           "contain": true,
-          "kind": "Explicitly generic drug-carrier concept; consult chapter for actual cubosome diagrams",
-          "credit": "Explicitly generic drug-carrier concept; consult chapter for actual cubosome diagrams",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+          "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
           "link": "/#publications"
         }
       ]
