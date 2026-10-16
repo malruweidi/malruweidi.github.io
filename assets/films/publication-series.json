@@ -1163,9 +1163,76 @@
       "poster": "/assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
       "page": "/computing.html",
       "visual_language": "signal-processing documentary",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "Can the heart warn us early?",
+          "subtitle": "signal-processing documentary",
+          "narration": "Heart failure is not a single signal. Physiological changes appear through movements, rhythms and measurements interpreted in context.",
+          "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "contain": false,
+          "kind": "Original cardiac imaging workstation, not data used in the review",
+          "credit": "Original cardiac imaging workstation, not data used in the review",
+          "link": "/computing.html"
+        },
+        {
+          "id": "02",
+          "title": "Signals outside the operating room",
+          "subtitle": "signal-processing documentary",
+          "narration": "Non-invasive and minimally invasive sensors can produce information about cardiac and circulatory physiology without requiring identical clinical procedures.",
+          "image": "assets/echo-concept.svg",
+          "contain": true,
+          "kind": "Conceptual cardiac detection diagram",
+          "credit": "Conceptual cardiac detection diagram",
+          "link": "/computing.html"
+        },
+        {
+          "id": "03",
+          "title": "From measurement to prediction",
+          "subtitle": "signal-processing documentary",
+          "narration": "The chapter surveys sensor technologies intended to help identify or predict heart-failure trajectories, with different technological trade-offs.",
+          "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "contain": false,
+          "kind": "Archival Doppler apparatus, not heart-failure sensor comparison",
+          "credit": "Archival Doppler apparatus, not heart-failure sensor comparison",
+          "link": "/computing.html"
+        },
+        {
+          "id": "04",
+          "title": "A signal can mislead",
+          "subtitle": "signal-processing documentary",
+          "narration": "Motion, noise, timing and patient variability all influence interpretation. A useful measurement is not automatically a useful clinical decision.",
+          "image": "assets/echo-concept.svg",
+          "contain": true,
+          "kind": "Original explanatory depiction, not validated sensor output",
+          "credit": "Original explanatory depiction, not validated sensor output",
+          "link": "/computing.html"
+        },
+        {
+          "id": "05",
+          "title": "The validation question",
+          "subtitle": "signal-processing documentary",
+          "narration": "Predictive performance needs evidence from realistic populations and robust external testing; practical accessibility matters alongside technical sophistication.",
+          "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "contain": false,
+          "kind": "Imaging-context photograph",
+          "credit": "Imaging-context photograph",
+          "link": "/computing.html"
+        },
+        {
+          "id": "06",
+          "title": "A technology belongs to its use",
+          "subtitle": "signal-processing documentary",
+          "narration": "This 2022 book chapter maps the promise and constraints of measuring physiological warning signs. The chapter supplies the cited technologies.",
+          "image": "assets/echo-concept.svg",
+          "contain": true,
+          "kind": "Conceptual technology animation source",
+          "credit": "Conceptual technology animation source",
+          "link": "/computing.html"
+        }
+      ]
     },
     {
       "id": "ace2-forms",
@@ -1178,9 +1245,76 @@
       "poster": "/assets/evidence-pulmonary.webp",
       "page": "/#publications",
       "visual_language": "molecular explanation",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "One protein, different places",
+          "subtitle": "molecular explanation",
+          "narration": "ACE2 can be embedded in a cell membrane or exist in a soluble form. They should not be discussed as identical biological objects.",
+          "image": "assets/evidence-pulmonary.webp",
+          "contain": false,
+          "kind": "Contextual pulmonary scientific illustration",
+          "credit": "Contextual pulmonary scientific illustration",
+          "link": "/#publications"
+        },
+        {
+          "id": "02",
+          "title": "A receptor in a larger pathway",
+          "subtitle": "molecular explanation",
+          "narration": "ACE2 participates in the renin-angiotensin system. In SARS-CoV-2 infection, its receptor-related role introduces additional biological complexity.",
+          "image": "assets/echo-concept.svg",
+          "contain": true,
+          "kind": "Conceptual non-specific signalling image, not ACE2 molecular structure",
+          "credit": "Conceptual non-specific signalling image, not ACE2 molecular structure",
+          "link": "/#publications"
+        },
+        {
+          "id": "03",
+          "title": "The location changes the question",
+          "subtitle": "molecular explanation",
+          "narration": "The review examines how changes in membrane-bound and soluble ACE2 expression might influence interpretations of viral biology and complications.",
+          "image": "assets/evidence-pulmonary.webp",
+          "contain": false,
+          "kind": "Pulmonary research-context illustration",
+          "credit": "Pulmonary research-context illustration",
+          "link": "/#publications"
+        },
+        {
+          "id": "04",
+          "title": "Expression is not the whole mechanism",
+          "subtitle": "molecular explanation",
+          "narration": "A measured protein change does not, without suitable functional evidence, settle viral infectivity or clinical outcomes.",
+          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "contain": false,
+          "kind": "Archival laboratory workspace, not ACE2 assay",
+          "credit": "Archival laboratory workspace, not ACE2 assay",
+          "link": "/#publications"
+        },
+        {
+          "id": "05",
+          "title": "Separate hypothesis from demonstration",
+          "subtitle": "molecular explanation",
+          "narration": "The 2021 review weighs emerging research at a rapidly changing moment. The date of evidence matters for its interpretation.",
+          "image": "assets/evidence-pulmonary.webp",
+          "contain": false,
+          "kind": "Editorial image, not original coronavirus micrograph",
+          "credit": "Editorial image, not original coronavirus micrograph",
+          "link": "/#publications"
+        },
+        {
+          "id": "06",
+          "title": "Two forms, two questions",
+          "subtitle": "molecular explanation",
+          "narration": "A careful mechanistic discussion starts by saying which ACE2 form, which tissue and which endpoint is actually being investigated.",
+          "image": "assets/echo-concept.svg",
+          "contain": true,
+          "kind": "Conceptual visual, not study data",
+          "credit": "Conceptual visual, not study data",
+          "link": "/#publications"
+        }
+      ]
     },
     {
       "id": "microfluidic-virus",
@@ -1193,9 +1327,76 @@
       "poster": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg",
       "page": "/techniques.html",
       "visual_language": "instrument animation",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A laboratory in a narrow channel",
+          "subtitle": "instrument animation",
+          "narration": "Imagine taking a complex testing workflow and moving parts of it into channels so small that fluid behaviour becomes a design constraint.",
+          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "contain": false,
+          "kind": "Original pipetting laboratory context, not published microfluidic chip",
+          "credit": "Original pipetting laboratory context, not published microfluidic chip",
+          "link": "/techniques.html"
+        },
+        {
+          "id": "02",
+          "title": "The sample does not prepare itself",
+          "subtitle": "instrument animation",
+          "narration": "Specimen collection, sample transport and preparation can determine whether a miniature diagnostic device is useful.",
+          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "contain": false,
+          "kind": "Archival lab context, not an actual viral detection device",
+          "credit": "Archival lab context, not an actual viral detection device",
+          "link": "/techniques.html"
+        },
+        {
+          "id": "03",
+          "title": "Fluid control becomes analytical control",
+          "subtitle": "instrument animation",
+          "narration": "Microfluidic systems can organise small volumes and reactions, but sensitivity and specificity still depend on the biological assay.",
+          "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "contain": true,
+          "kind": "Fluid-flow scientific figure from separate research; used as context only",
+          "credit": "Fluid-flow scientific figure from separate research; used as context only",
+          "link": "/techniques.html"
+        },
+        {
+          "id": "04",
+          "title": "Detection is not diagnosis",
+          "subtitle": "instrument animation",
+          "narration": "Finding an analytical signal requires distinguishing target detection, contamination, false results and the clinical situation.",
+          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "contain": false,
+          "kind": "Original research apparatus photograph",
+          "credit": "Original research apparatus photograph",
+          "link": "/techniques.html"
+        },
+        {
+          "id": "05",
+          "title": "The practical bottleneck",
+          "subtitle": "instrument animation",
+          "narration": "Manufacturability, reliable reagents, operator burden and clinical validation decide whether a clever microsystem becomes useful.",
+          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "contain": false,
+          "kind": "General laboratory environment, not a product demonstration",
+          "credit": "General laboratory environment, not a product demonstration",
+          "link": "/techniques.html"
+        },
+        {
+          "id": "06",
+          "title": "Smaller does not mean simpler",
+          "subtitle": "instrument animation",
+          "narration": "The 2021 review surveys microfluidic approaches to respiratory-virus detection and the evidence required beyond the chip itself.",
+          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "contain": false,
+          "kind": "Original laboratory context",
+          "credit": "Original laboratory context",
+          "link": "/techniques.html"
+        }
+      ]
     },
     {
       "id": "drug-release-twins",
@@ -1208,9 +1409,76 @@
       "poster": "/assets/niosomes-concept.svg",
       "page": "/computing.html",
       "visual_language": "data-motion essay",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A medicine can have a second life in a model",
+          "subtitle": "data-motion essay",
+          "narration": "A physical dosage form releases medicine over time. A mathematical model tries to describe that changing process.",
+          "image": "assets/niosomes-concept.svg",
+          "contain": true,
+          "kind": "Original conceptual drug-carrier drawing",
+          "credit": "Original conceptual drug-carrier drawing",
+          "link": "/computing.html"
+        },
+        {
+          "id": "02",
+          "title": "Begin with the variables",
+          "subtitle": "data-motion essay",
+          "narration": "Formulation composition, geometry and transport assumptions affect simulated release. The selected equations embody choices that need scrutiny.",
+          "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "contain": false,
+          "kind": "Original research workstation, not the book chapter's simulation screenshot",
+          "credit": "Original research workstation, not the book chapter's simulation screenshot",
+          "link": "/computing.html"
+        },
+        {
+          "id": "03",
+          "title": "What is being predicted?",
+          "subtitle": "data-motion essay",
+          "narration": "The book chapter examines simulation of drug release and performance prediction using virtual models within pharmaceutical development.",
+          "image": "assets/niosomes-concept.svg",
+          "contain": true,
+          "kind": "Conceptual carrier visual, not computed simulation output",
+          "credit": "Conceptual carrier visual, not computed simulation output",
+          "link": "/computing.html"
+        },
+        {
+          "id": "04",
+          "title": "A digital twin is accountable to reality",
+          "subtitle": "data-motion essay",
+          "narration": "Without calibration and suitable validation, a model can produce elegant curves and still make poor predictions.",
+          "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "contain": false,
+          "kind": "Actual computer/research workspace; no claims of model-validation success",
+          "credit": "Actual computer/research workspace; no claims of model-validation success",
+          "link": "/computing.html"
+        },
+        {
+          "id": "05",
+          "title": "Ask where the prediction breaks",
+          "subtitle": "data-motion essay",
+          "narration": "Mechanistic assumptions, parameter uncertainty and extrapolation beyond known experiments all limit credible digital performance forecasts.",
+          "image": "assets/niosomes-concept.svg",
+          "contain": true,
+          "kind": "Editorial illustration, not measured release profile",
+          "credit": "Editorial illustration, not measured release profile",
+          "link": "/computing.html"
+        },
+        {
+          "id": "06",
+          "title": "The point is better experiments",
+          "subtitle": "data-motion essay",
+          "narration": "A defensible virtual model can guide test design, but the laboratory decides what survives.",
+          "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "contain": false,
+          "kind": "Archival computational research context",
+          "credit": "Archival computational research context",
+          "link": "/computing.html"
+        }
+      ]
     },
     {
       "id": "food-printing",
@@ -1223,9 +1491,76 @@
       "poster": "/assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
       "page": "/#publications",
       "visual_language": "materials animation",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "Edible material meets geometry",
+          "subtitle": "materials animation",
+          "narration": "A printer can follow a perfect toolpath while the deposited material collapses. The rheology of the ink sets the rules.",
+          "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+          "contain": false,
+          "kind": "Archival non-food polymer specimen; a visual analogy only, not edible printing",
+          "credit": "Archival non-food polymer specimen; a visual analogy only, not edible printing",
+          "link": "/#publications"
+        },
+        {
+          "id": "02",
+          "title": "Flow first, shape second",
+          "subtitle": "materials animation",
+          "narration": "The printing material must move through a nozzle, then retain enough structure after deposition to realise the intended form.",
+          "image": "assets/polymer-concept.svg",
+          "contain": true,
+          "kind": "Generic conceptual polymer material image, not edible ink",
+          "credit": "Generic conceptual polymer material image, not edible ink",
+          "link": "/#publications"
+        },
+        {
+          "id": "03",
+          "title": "The design space expands",
+          "subtitle": "materials animation",
+          "narration": "The forthcoming chapter considers three-, four-, five- and six-dimensional food-printing concepts, including responsive structures and programmed behaviour.",
+          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "contain": false,
+          "kind": "Original lab workspace, not food-printing equipment",
+          "credit": "Original lab workspace, not food-printing equipment",
+          "link": "/#publications"
+        },
+        {
+          "id": "04",
+          "title": "Microstructure is invisible to the recipe",
+          "subtitle": "materials animation",
+          "narration": "Composition, texture and printing conditions interact. A promising design requires material-specific testing before its properties are asserted.",
+          "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+          "contain": false,
+          "kind": "Unrelated polymer material photograph, labelled as analogy",
+          "credit": "Unrelated polymer material photograph, labelled as analogy",
+          "link": "/#publications"
+        },
+        {
+          "id": "05",
+          "title": "Do not mistake possibility for validation",
+          "subtitle": "materials animation",
+          "narration": "Time-responsive and higher-dimensional labels describe proposed capabilities; they do not establish that every structure has been practically demonstrated.",
+          "image": "assets/polymer-concept.svg",
+          "contain": true,
+          "kind": "Conceptual illustration, not experimental edible printing",
+          "credit": "Conceptual illustration, not experimental edible printing",
+          "link": "/#publications"
+        },
+        {
+          "id": "06",
+          "title": "An architecture has to survive deposition",
+          "subtitle": "materials animation",
+          "narration": "This accepted chapter explores the design constraints for programmable edible materials. It remains forthcoming, not a completed laboratory result.",
+          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "contain": false,
+          "kind": "General original laboratory context",
+          "credit": "General original laboratory context",
+          "link": "/#publications"
+        }
+      ]
     },
     {
       "id": "ceramics-printing",
@@ -1238,9 +1573,76 @@
       "poster": "/assets/polymer-concept.svg",
       "page": "/#publications",
       "visual_language": "biomaterials editorial",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A patient will live with the material",
+          "subtitle": "biomaterials editorial",
+          "narration": "Biomedical ceramic design starts with a difficult demand: a manufactured structure must remain useful in a biological environment.",
+          "image": "assets/evidence-biomaterials.webp",
+          "contain": false,
+          "kind": "Generic biomaterial research imagery, not a ceramic implant",
+          "credit": "Generic biomaterial research imagery, not a ceramic implant",
+          "link": "/#publications"
+        },
+        {
+          "id": "02",
+          "title": "Geometry is only the beginning",
+          "subtitle": "biomaterials editorial",
+          "narration": "Additive manufacturing can produce complex ceramic forms. Processing, internal architecture and material properties shape what those forms can do.",
+          "image": "assets/polymer-concept.svg",
+          "contain": true,
+          "kind": "Generic materials concept, not an image of ceramic printing",
+          "credit": "Generic materials concept, not an image of ceramic printing",
+          "link": "/#publications"
+        },
+        {
+          "id": "03",
+          "title": "The furnace has a vote",
+          "subtitle": "biomaterials editorial",
+          "narration": "Ceramic processing and densification impose constraints beyond the original digital model. The final properties must be measured.",
+          "image": "assets/research-archive-2026/laboratory-gas-discharge-safety-door.webp",
+          "contain": false,
+          "kind": "Archival laboratory context, not a sintering furnace",
+          "credit": "Archival laboratory context, not a sintering furnace",
+          "link": "/#publications"
+        },
+        {
+          "id": "04",
+          "title": "Biology tests the promise",
+          "subtitle": "biomaterials editorial",
+          "narration": "Mechanical performance and biological response can pull design in different directions. An elegant lattice is not automatically a medical device.",
+          "image": "assets/evidence-biomaterials.webp",
+          "contain": false,
+          "kind": "Biomaterials context image, not clinical ceramic implant evidence",
+          "credit": "Biomaterials context image, not clinical ceramic implant evidence",
+          "link": "/#publications"
+        },
+        {
+          "id": "05",
+          "title": "From bench to clinic",
+          "subtitle": "biomaterials editorial",
+          "narration": "Clinical application also depends on repeatability, sterilisation and regulatory pathways; each requires evidence distinct from printability.",
+          "image": "assets/polymer-concept.svg",
+          "contain": true,
+          "kind": "Illustrative manufacturing-science visual",
+          "credit": "Illustrative manufacturing-science visual",
+          "link": "/#publications"
+        },
+        {
+          "id": "06",
+          "title": "More than a shape",
+          "subtitle": "biomaterials editorial",
+          "narration": "The accepted chapter reviews biomedical ceramic applications and translational constraints. It is an editorial explanation, not a new implantation trial.",
+          "image": "assets/evidence-biomaterials.webp",
+          "contain": false,
+          "kind": "General biocompatibility research image",
+          "credit": "General biocompatibility research image",
+          "link": "/#publications"
+        }
+      ]
     },
     {
       "id": "cubosome-theranostics",
@@ -1253,9 +1655,76 @@
       "poster": "/assets/niosomes-concept.svg",
       "page": "/#publications",
       "visual_language": "nanocarrier explanatory",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A cube may hide a labyrinth",
+          "subtitle": "nanocarrier explanatory",
+          "narration": "Cubosomes contain structured internal lipid domains. Their morphology is intriguing, but drug delivery is not secured by geometry alone.",
+          "image": "assets/niosomes-concept.svg",
+          "contain": true,
+          "kind": "Generic lipid carrier illustration; not a measured cubosome",
+          "credit": "Generic lipid carrier illustration; not a measured cubosome",
+          "link": "/#publications"
+        },
+        {
+          "id": "02",
+          "title": "Two tasks in one carrier",
+          "subtitle": "nanocarrier explanatory",
+          "narration": "Theranostics links therapeutic and diagnostic ambitions. These are distinct performance claims with different measurement needs.",
+          "image": "assets/evidence-biomaterials.webp",
+          "contain": false,
+          "kind": "Nanomedicine context image, not cubosome micrograph",
+          "credit": "Nanomedicine context image, not cubosome micrograph",
+          "link": "/#publications"
+        },
+        {
+          "id": "03",
+          "title": "Design at the interface",
+          "subtitle": "nanocarrier explanatory",
+          "narration": "Lipid composition, loading and surrounding biological fluids affect the practical behaviour of a nanoscale carrier.",
+          "image": "assets/niosomes-concept.svg",
+          "contain": true,
+          "kind": "Generic conceptual vesicle, not a representation of cubosomal inverse cubic phase",
+          "credit": "Generic conceptual vesicle, not a representation of cubosomal inverse cubic phase",
+          "link": "/#publications"
+        },
+        {
+          "id": "04",
+          "title": "Targeting is an experimental claim",
+          "subtitle": "nanocarrier explanatory",
+          "narration": "A ligand or proposed uptake mechanism does not alone demonstrate selective tumour delivery in vivo.",
+          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "contain": false,
+          "kind": "Original cell culture laboratory context, not data from this chapter",
+          "credit": "Original cell culture laboratory context, not data from this chapter",
+          "link": "/#publications"
+        },
+        {
+          "id": "05",
+          "title": "Between structure and treatment",
+          "subtitle": "nanocarrier explanatory",
+          "narration": "Stability, biodistribution, safety and reproducibility determine whether a promising system can move toward clinical evaluation.",
+          "image": "assets/evidence-biomaterials.webp",
+          "contain": false,
+          "kind": "General biomaterials research imagery",
+          "credit": "General biomaterials research imagery",
+          "link": "/#publications"
+        },
+        {
+          "id": "06",
+          "title": "The promise is conditional",
+          "subtitle": "nanocarrier explanatory",
+          "narration": "The forthcoming accepted chapter critically discusses cancer-targeted cubosome design and the difficult path to clinical translation.",
+          "image": "assets/niosomes-concept.svg",
+          "contain": true,
+          "kind": "Explicitly generic drug-carrier concept; consult chapter for actual cubosome diagrams",
+          "credit": "Explicitly generic drug-carrier concept; consult chapter for actual cubosome diagrams",
+          "link": "/#publications"
+        }
+      ]
     },
     {
       "id": "micelles-pahs",
@@ -1268,9 +1737,76 @@
       "poster": "/assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
       "page": "/grants/urep19.html",
       "visual_language": "materials investigation",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "Some molecules refuse the water",
+          "subtitle": "materials investigation",
+          "narration": "Polycyclic aromatic hydrocarbons resist easy dispersion in aqueous environments. Polymer assemblies offer one route to changing exposure.",
+          "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+          "contain": false,
+          "kind": "Documented unsuccessful original polymer trial photo",
+          "credit": "Documented unsuccessful original polymer trial photo",
+          "link": "/grants/urep19.html"
+        },
+        {
+          "id": "02",
+          "title": "The theory looked reasonable",
+          "subtitle": "materials investigation",
+          "narration": "Amphiphilic polymer micelles can provide compartments for hydrophobic compounds. The thermodynamic argument begins before the mixture is made.",
+          "image": "assets/polymer-concept.svg",
+          "contain": true,
+          "kind": "Generic conceptual polymer assembly",
+          "credit": "Generic conceptual polymer assembly",
+          "link": "/grants/urep19.html"
+        },
+        {
+          "id": "03",
+          "title": "Then the material answered",
+          "subtitle": "materials investigation",
+          "narration": "Actual diblock-copolymer handling and dissolution did not always match our expectations. This archive retains an unsuccessful experiment.",
+          "image": "assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp",
+          "contain": false,
+          "kind": "Original documented unsuccessful trials, not a successful micelle synthesis",
+          "credit": "Original documented unsuccessful trials, not a successful micelle synthesis",
+          "link": "/grants/urep19.html"
+        },
+        {
+          "id": "04",
+          "title": "Concentration is not a magic word",
+          "subtitle": "materials investigation",
+          "narration": "Micellisation depends on solvent, composition and real processing. No neat drawing replaces measurements on the system actually prepared.",
+          "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+          "contain": false,
+          "kind": "Original documented copolymer specimen, not proof of PAH loading",
+          "credit": "Original documented copolymer specimen, not proof of PAH loading",
+          "link": "/grants/urep19.html"
+        },
+        {
+          "id": "05",
+          "title": "What an unsuccessful trial teaches",
+          "subtitle": "materials investigation",
+          "narration": "The difference between an ideal formulation and a workable one can be a physical materials problem, not a failure to know the theory.",
+          "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+          "contain": false,
+          "kind": "Original failed-materials archive",
+          "credit": "Original failed-materials archive",
+          "link": "/grants/urep19.html"
+        },
+        {
+          "id": "06",
+          "title": "The record is more valuable intact",
+          "subtitle": "materials investigation",
+          "narration": "The grant-supported investigation and its trials belong in the scientific account without manufacturing a successful solubilisation result.",
+          "image": "assets/polymer-concept.svg",
+          "contain": true,
+          "kind": "Conceptual concluding image",
+          "credit": "Conceptual concluding image",
+          "link": "/grants/urep19.html"
+        }
+      ]
     },
     {
       "id": "heterocycle-cancer",
@@ -1283,9 +1819,76 @@
       "poster": "/assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
       "page": "/grants/urep23.html",
       "visual_language": "organic chemistry",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A ring is an intention until it exists",
+          "subtitle": "organic chemistry",
+          "narration": "Organic synthesis begins with an intended structure. A spectrum and an isolated sample decide what the reaction actually yielded.",
+          "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+          "contain": false,
+          "kind": "Actual archived organic chemistry reagent photo; not proof of the project product",
+          "credit": "Actual archived organic chemistry reagent photo; not proof of the project product",
+          "link": "/grants/urep23.html"
+        },
+        {
+          "id": "02",
+          "title": "Microwave chemistry accelerates the problem",
+          "subtitle": "organic chemistry",
+          "narration": "The UREP research investigated imidazopyridine chemistry, using synthetic strategies and characterization to develop candidate heterocycles.",
+          "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+          "contain": false,
+          "kind": "Original archival chemistry photograph, not a recording of microwave synthesis",
+          "credit": "Original archival chemistry photograph, not a recording of microwave synthesis",
+          "link": "/grants/urep23.html"
+        },
+        {
+          "id": "03",
+          "title": "Identity before biological activity",
+          "subtitle": "organic chemistry",
+          "narration": "Chemical purity and structural assignment must precede confidence in a biological screening result.",
+          "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp",
+          "contain": false,
+          "kind": "Original reagent photo, not NMR spectral evidence",
+          "credit": "Original reagent photo, not NMR spectral evidence",
+          "link": "/grants/urep23.html"
+        },
+        {
+          "id": "04",
+          "title": "A screen is a question, not a treatment",
+          "subtitle": "organic chemistry",
+          "narration": "Cytotoxicity readouts are starting points for investigating molecular activity; they cannot demonstrate anticancer efficacy in a patient.",
+          "image": "assets/oct12-owner-photos/yousef-hijji-anticancer-group-2019.webp",
+          "contain": false,
+          "kind": "Original laboratory-group photo related to medicinal chemistry programme",
+          "credit": "Original laboratory-group photo related to medicinal chemistry programme",
+          "link": "/grants/urep23.html"
+        },
+        {
+          "id": "05",
+          "title": "Separate intent, result and interpretation",
+          "subtitle": "organic chemistry",
+          "narration": "The project record should preserve which compounds were made, what assays were performed, and which conclusions remain untested.",
+          "image": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
+          "contain": false,
+          "kind": "Author's early laboratory photograph; illustrative context",
+          "credit": "Author's early laboratory photograph; illustrative context",
+          "link": "/grants/urep23.html"
+        },
+        {
+          "id": "06",
+          "title": "The chemistry has the final word",
+          "subtitle": "organic chemistry",
+          "narration": "The grant-supported heterocycle work follows the distance between designing a molecule, identifying it, and knowing whether it matters.",
+          "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+          "contain": false,
+          "kind": "Original research-context chemical photograph",
+          "credit": "Original research-context chemical photograph",
+          "link": "/grants/urep23.html"
+        }
+      ]
     },
     {
       "id": "histology-failure",
@@ -1298,9 +1901,76 @@
       "poster": "/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
       "page": "/films/two-materials-no-section.html",
       "visual_language": "materials failure film",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "A section begins before the blade",
+          "subtitle": "materials failure film",
+          "narration": "To cut a useful section of a zebrafish specimen, orientation and compatible embedding materials must work together.",
+          "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+          "contain": false,
+          "kind": "Original firsthand photographs of zebrafish orientation procedure",
+          "credit": "Original firsthand photographs of zebrafish orientation procedure",
+          "link": "/films/two-materials-no-section.html"
+        },
+        {
+          "id": "02",
+          "title": "We chose two percent agarose",
+          "subtitle": "materials failure film",
+          "narration": "The specimen was oriented in an agarose pre-embedding support before subsequent paraffin processing. The hoped-for geometry depended on their compatibility.",
+          "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+          "contain": false,
+          "kind": "Original laboratory processing evidence of unsuccessful attempt",
+          "credit": "Original laboratory processing evidence of unsuccessful attempt",
+          "link": "/films/two-materials-no-section.html"
+        },
+        {
+          "id": "03",
+          "title": "The block did not behave as one",
+          "subtitle": "materials failure film",
+          "narration": "Agarose and paraffin did not form the coherent embedding system the microtome needed.",
+          "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+          "contain": false,
+          "kind": "Original photographed failed embedding and microtomy record",
+          "credit": "Original photographed failed embedding and microtomy record",
+          "link": "/films/two-materials-no-section.html"
+        },
+        {
+          "id": "04",
+          "title": "The blade exposed the interface",
+          "subtitle": "materials failure film",
+          "narration": "Material separation frustrated sectioning. There was no interpretable histological slice from that attempt.",
+          "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+          "contain": false,
+          "kind": "Actual unsuccessful sectioning evidence; no successful histology is claimed",
+          "credit": "Actual unsuccessful sectioning evidence; no successful histology is claimed",
+          "link": "/films/two-materials-no-section.html"
+        },
+        {
+          "id": "05",
+          "title": "A failed section is a usable finding",
+          "subtitle": "materials failure film",
+          "narration": "The images identify an upstream materials bottleneck. A changed processing protocol needs its own experimental verification.",
+          "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+          "contain": false,
+          "kind": "Original laboratory record, not a corrected protocol validation",
+          "credit": "Original laboratory record, not a corrected protocol validation",
+          "link": "/films/two-materials-no-section.html"
+        },
+        {
+          "id": "06",
+          "title": "Keep the record honest",
+          "subtitle": "materials failure film",
+          "narration": "This is not a success story about histopathology. It is the story of what an incompatible preparation taught us to investigate.",
+          "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+          "contain": false,
+          "kind": "Documented orientation specimen image",
+          "credit": "Documented orientation specimen image",
+          "link": "/films/two-materials-no-section.html"
+        }
+      ]
     },
     {
       "id": "cairo-microscope",
@@ -1313,9 +1983,76 @@
       "poster": "/assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
       "page": "/stories/cairo-microscope.html",
       "visual_language": "personal object portrait",
-      "production": "treatment",
-      "duration_seconds": null,
-      "scenes": []
+      "production": "render_requested",
+      "duration_seconds": 84,
+      "scenes": [
+        {
+          "id": "01",
+          "title": "The instrument was mine",
+          "subtitle": "personal object portrait",
+          "narration": "I purchased a microscope near Qasr El Einy in Cairo. It was not laboratory equipment assigned to me by a university.",
+          "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+          "contain": false,
+          "kind": "Original archival photograph of the user's own microscope",
+          "credit": "Original archival photograph of the user's own microscope",
+          "link": "/stories/cairo-microscope.html"
+        },
+        {
+          "id": "02",
+          "title": "It had to travel",
+          "subtitle": "personal object portrait",
+          "narration": "Bringing it with me to Qatar was a considerable hassle. The difficulty did not end when I had paid for it.",
+          "image": "assets/archival-2026-10-12/cairo-mokattam-sunset-2026.webp",
+          "contain": false,
+          "kind": "Personal Cairo archival photograph, not a photograph of the microscope transport",
+          "credit": "Personal Cairo archival photograph, not a photograph of the microscope transport",
+          "link": "/stories/cairo-microscope.html"
+        },
+        {
+          "id": "03",
+          "title": "The point was time",
+          "subtitle": "personal object portrait",
+          "narration": "With a microscope at home, observation no longer depended entirely on laboratory booking hours or a scheduled class.",
+          "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+          "contain": false,
+          "kind": "Original photograph of personal microscopy context",
+          "credit": "Original photograph of personal microscopy context",
+          "link": "/stories/cairo-microscope.html"
+        },
+        {
+          "id": "04",
+          "title": "A question could begin in the evening",
+          "subtitle": "personal object portrait",
+          "narration": "The instrument let me pursue small independent observations simply because I wanted to understand something.",
+          "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+          "contain": false,
+          "kind": "Original personal microscope photograph",
+          "credit": "Original personal microscope photograph",
+          "link": "/stories/cairo-microscope.html"
+        },
+        {
+          "id": "05",
+          "title": "The microscope was not the discovery",
+          "subtitle": "personal object portrait",
+          "narration": "Ownership did not confer a scientific result; it made curiosity more practical by providing repeated access.",
+          "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "contain": false,
+          "kind": "Original archival university context photo",
+          "credit": "Original archival university context photo",
+          "link": "/stories/cairo-microscope.html"
+        },
+        {
+          "id": "06",
+          "title": "The habit stayed with me",
+          "subtitle": "personal object portrait",
+          "narration": "Years later, across developmental biology and materials science, I still recognise the value of being able to look for myself.",
+          "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+          "contain": false,
+          "kind": "Original personal microscope-era archive",
+          "credit": "Original personal microscope-era archive",
+          "link": "/stories/cairo-microscope.html"
+        }
+      ]
     }
   ]
 }
