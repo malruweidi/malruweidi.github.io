@@ -487,7 +487,7 @@
       "title": "Ruwaidix scientific film collection",
       "category": "Methods & evidence",
       "url": "/films.html",
-      "summary": "Two published scientific documentaries with captions, original laboratory recordings, and other developing film treatments linked to evidence.",
+      "summary": "Three released scientific and personal documentaries with original archival footage, accessible captions, and other films still in development, all linked to scientific or firsthand source records.",
       "keywords": "scientific films documentary released originals footage filmmaking scientific film collection وثائقي أفلام علمية أصلية تجارب مختبر histology documentary released short film"
     },
     {
@@ -513,6 +513,14 @@
       "url": "/publication-cinema.html",
       "summary": "25 paper-specific scientific documentary scripts, primary-source links, original scientific figures, archival imagery, and playable short films when validated renders exist.",
       "keywords": "film research bibliography publications video documentary experiments oncology SLIT2 ROBO zebrafish pulmonary history pharmacy chemistry artificial intelligence scientific communication أرشيف الأفلام المنشورات الأبحاث الصيدلة"
+    },
+    {
+      "id": 64,
+      "title": "The Microscope I Brought from Cairo · personal archival film",
+      "category": "Stories",
+      "url": "/films/cairo-microscope.html",
+      "summary": "Completed 120-second text-led film about an independently owned microscope brought from Cairo to Qatar. Personal 2017 photographs, first-person story, English and Arabic subtitles and original music without synthetic speech.",
+      "keywords": "Cairo Qasr El Einy microscope Qatar self taught scientific curiosity independence independent instrument 2017 archive personal film documentary القصر العيني القاهرة قطر مجهر ميكروسكوب فيلم مصور شخصي"
     }
   ]
 }
