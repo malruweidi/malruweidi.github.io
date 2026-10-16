@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: ruwaidix-nine-film-repair-v2
+  group: ruwaidix-recovery-current-features
   cancel-in-progress: false
 
 jobs:
@@ -65,10 +65,15 @@ jobs:
           )
           for film in "${films[@]}"; do
             echo "::group::Rebuild and verify $film"
-            # Current storyboard/renderer SHA decides freshness, never a filename alone.
-            python scripts/render-cinematic-library.py --film "$film" --missing-only --limit 1 --models film-models --voice-mode kokoro-preview
-            FILM_SLUG="$film" python - <<'PY'
-          import importlib.util, json, hashlib, os, pathlib, subprocess
+            # Pull source-current exports before *each* subject. Concurrent workflows may
+            # have produced the same title, and rebasing binary MP4s is unsafe.
+            repaired=false
+            for attempt in 1 2 3 4 5 6; do
+              git fetch origin cinematic-remake-20261017
+              git reset --hard FETCH_HEAD
+              python scripts/render-cinematic-library.py --film "$film" --missing-only --limit 1 --models film-models --voice-mode kokoro-preview
+              FILM_SLUG="$film" python - <<'PY'
+          import json, hashlib, os, pathlib, subprocess
           root=pathlib.Path.cwd()
           slug=os.environ["FILM_SLUG"]
           src=json.load((root/"assets/films/cinematic-library-v2.json").open())
@@ -81,23 +86,24 @@ jobs:
           assert info["voice_approved"] is False
           assert info["never_auto_publish"] is True
           assert (b.with_suffix(".vtt")).read_text().startswith("WEBVTT")
+          h=hashlib.sha256()
+          h.update(json.dumps(film,ensure_ascii=False,sort_keys=True).encode("utf-8"))
+          h.update((root/"scripts/render-directors-cuts.py").read_bytes())
+          h.update((root/"scripts/render-documentary.py").read_bytes())
+          assert info["input_sha256"]==h.hexdigest(),(slug,"stale hash")
           expected=sum(int(s["sec"]) for s in film["shots"])
           secs=float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","default=noprint_wrappers=1:nokey=1",str(movie)]))
           assert abs(expected-secs)<=.35,(slug,expected,secs)
-          print("Verified refreshed MP4 and caption:",slug,secs)
+          print("Verified current MP4 and captions:",slug,secs)
           PY
-            git add -A assets/films/library-v2/
-            if ! git diff --cached --quiet; then
+              git add -A assets/films/library-v2/
+              if git diff --cached --quiet; then repaired=true; break; fi
               git commit -m "Rebuild current source-timed cut $film [v2-output]"
-              pushed=false
-              for attempt in 1 2 3 4 5 6 7 8; do
-                git fetch origin cinematic-remake-20261017
-                git rebase FETCH_HEAD
-                if git push origin HEAD:cinematic-remake-20261017; then pushed=true; break; fi
-                sleep "$((attempt * 2))"
-              done
-              test "$pushed" = true
-            fi
+              if git push origin HEAD:cinematic-remake-20261017; then repaired=true; break; fi
+              echo "Remote changed during $film rendering; retrying against its newest source rather than rebasing MP4"
+              sleep "$((attempt * 2))"
+            done
+            test "$repaired" = true
             echo "::endgroup::"
           done
       - name: Check all 44 exact storyboard hashes and actual decoded frames
