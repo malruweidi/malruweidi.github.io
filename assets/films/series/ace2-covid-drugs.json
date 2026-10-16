@@ -1,7 +1,7 @@
 {
   "id": "ace2-covid-drugs",
   "seconds": 84.0,
-  "sha256": "187f2b272e06209cdeb1b19a4fbce7caf86c4de33bca7216a2310c5b814283fa",
+  "sha256": "3d67aa6410542a81c6e26bca7da4f071d4f5f2df78f36ee13a0664be34432486",
   "primary_source": "https://doi.org/10.1080/08037051.2022.2055530",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [

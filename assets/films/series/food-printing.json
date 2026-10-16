@@ -1,0 +1,16 @@
+{
+  "id": "food-printing",
+  "seconds": 84.0,
+  "sha256": "89009e24d6cc76d3594457071aff49d35dd21c0ecedee8dd2b286636fc7c24d2",
+  "primary_source": "/#publications",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

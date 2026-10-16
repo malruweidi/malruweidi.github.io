@@ -1,0 +1,16 @@
+{
+  "id": "ace2-forms",
+  "seconds": 84.0,
+  "sha256": "f9faa7436f89c7998fca3b235e5b9c8f88e84e1a89964a10e27a4fa2ab521be4",
+  "primary_source": "https://doi.org/10.3390/ijms22136703",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

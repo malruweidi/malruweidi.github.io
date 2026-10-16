@@ -1,0 +1,16 @@
+{
+  "id": "ceramics-printing",
+  "seconds": 84.0,
+  "sha256": "45673eabdf1787f1e7c88fc27adeb012b6e8d6da0c459572deb9c489e0d951bf",
+  "primary_source": "/#publications",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

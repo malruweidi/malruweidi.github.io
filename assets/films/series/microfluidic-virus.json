@@ -1,0 +1,16 @@
+{
+  "id": "microfluidic-virus",
+  "seconds": 84.0,
+  "sha256": "1cb7505e3743b280cc2c4bcb11481cc95f927edd8ef783e23fba02837bc4a649",
+  "primary_source": "https://doi.org/10.1007/s42247-021-00169-7",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

@@ -12,10 +12,10 @@ Ultrasound images are sensitive to acquisition and annotation. Before modelling,
 00:00:19.988 --> 00:00:25.051
 their quality and the study's sampling conditions need careful attention.
 
-00:00:27.842 --> 00:00:33.152
+00:00:27.842 --> 00:00:33.147
 Convolutional neural networks can extract visual patterns. Long short-term memory
 
-00:00:33.152 --> 00:00:38.463
+00:00:33.147 --> 00:00:38.453
 models can process sequence information, when the input design preserves it.
 
 00:00:41.342 --> 00:00:46.891

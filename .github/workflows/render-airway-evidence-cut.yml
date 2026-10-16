@@ -1,0 +1,72 @@
+name: Render airway-reopening evidence cut
+on:
+  push:
+    branches: [main]
+    paths:
+      - assets/films/airway-reopening-evidence-scenes.json
+      - scripts/render-airway-evidence-cut.py
+      - .github/workflows/render-airway-evidence-cut.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: airway-evidence-cut-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  film:
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[airway-output]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - name: Preserve the complete source repository
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Prepare Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install reproducible open-source film tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install pillow numpy soundfile kokoro-onnx
+      - name: Validate timecodes, published measurements, source image and Python syntax
+        run: |
+          python -m py_compile scripts/render-airway-evidence-cut.py
+          python scripts/render-airway-evidence-cut.py --validate-only
+      - name: Obtain the open-source Kokoro speech model
+        run: |
+          mkdir -p film-models
+          curl --fail --location --retry 3 --silent --show-error -o film-models/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx
+          curl --fail --location --retry 3 --silent --show-error -o film-models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
+          test "$(stat -c%s film-models/kokoro-v1.0.fp16.onnx)" -gt 90000000
+          test "$(stat -c%s film-models/voices-v1.0.bin)" -gt 1000000
+      - name: Render 180-second research documentary and English captions
+        run: python scripts/render-airway-evidence-cut.py --workspace film-models
+      - name: Verify rendered scientific movie and source-linked metadata
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          f=Path("assets/films/airway-reopening-evidence-cut.mp4")
+          j=json.loads(Path("assets/films/airway-reopening-evidence-build.json").read_text())
+          assert f.stat().st_size>1000000
+          assert f.open("rb").read(8)[4:8]==b"ftyp"
+          assert hashlib.sha256(f.read_bytes()).hexdigest()==j["video_sha256"]
+          assert abs(j["seconds"]-180)<.2
+          assert j["scene_count"]==11
+          assert Path("assets/films/airway-reopening-evidence-cut.vtt").read_text().count("-->")>=20
+          print("Certified scientific MP4",f.stat().st_size,"bytes",j["seconds"],"seconds")
+          PY
+      - name: Commit only the new film, captions, poster and reproducibility record
+        run: |
+          git config user.name "Ruwaidix Scientific Film Builder"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/airway-reopening-evidence-cut.mp4 assets/films/airway-reopening-evidence-cut.vtt assets/films/airway-reopening-evidence-poster.webp assets/films/airway-reopening-evidence-build.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish verified three-minute airway reopening evidence cut [airway-output]"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase FETCH_HEAD
+            git push origin HEAD:${{ github.ref_name }}
+          fi

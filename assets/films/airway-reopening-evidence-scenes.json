@@ -1,0 +1,118 @@
+{
+  "title": "What Happens When an Airway Reopens? — Evidence Cut",
+  "running_seconds": 180,
+  "format": "1920? no: 1280x720, 24fps, real published figure + labeled original schematics and reported in-vitro values",
+  "published_original": "/films/what-a-bubble-can-do.html",
+  "publication": "https://doi.org/10.1152/japplphysiol.00574.2020",
+  "pmid": "33600286",
+  "paper": "Dexamethasone and transdehydroandrosterone significantly reduce pulmonary epithelial cell injuries associated with mechanical ventilation",
+  "source_figure": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+  "reported_mean_cell_death_percent": {
+    "bubble_control": 54.7,
+    "dexamethasone": 15.1,
+    "transdehydroandrosterone": 16.1,
+    "latrunculin_A": 20.9
+  },
+  "note": "These are published mean percentage cell-death results for cell populations under a single-bubble in-vitro model, not clinical treatment effects or independent reproduction. Published article reports variability ±3.94, ±3.43, ±2.9 and ±12 respectively. The bar visualization shows means only and does not infer error-bar type or digitize new data.",
+  "scenes": [
+    {
+      "id": "01",
+      "start": 0,
+      "duration": 13,
+      "title": "Reopening is not always gentle",
+      "kind": "AIRWAY / CONCEPTUAL",
+      "visual": "airway",
+      "narration": "A narrowed, fluid-filled airway can reopen as air moves through it. Yet the advancing air–liquid boundary may impose forces on the very epithelial cells it passes."
+    },
+    {
+      "id": "02",
+      "start": 13,
+      "duration": 16,
+      "title": "A boundary that moves",
+      "kind": "INTERFACE / EXPLANATORY SCHEMATIC",
+      "visual": "interface",
+      "narration": "The experiment is not a miniature human lung. It is a controlled way to study what happens when one air bubble travels across a cell layer in a liquid-lined channel."
+    },
+    {
+      "id": "03",
+      "start": 29,
+      "duration": 18,
+      "title": "Inside the flow chamber",
+      "kind": "ORIGINAL PUBLISHED FIGURE",
+      "visual": "publication",
+      "narration": "In our 2021 study, rat L2 alveolar epithelial cells were grown in a parallel-plate flow chamber. A single advancing bubble simulated the mechanical event of airway reopening."
+    },
+    {
+      "id": "04",
+      "start": 47,
+      "duration": 17,
+      "title": "The comparison",
+      "kind": "EXPERIMENTAL DESIGN / NO SIMULATED CELLS",
+      "visual": "design",
+      "narration": "We compared cells kept under static conditions with cells exposed to bubble flow. We also tested cells pretreated with dexamethasone or transdehydroandrosterone before the bubble passed."
+    },
+    {
+      "id": "05",
+      "start": 64,
+      "duration": 16,
+      "title": "How cell injury was read",
+      "kind": "ASSAY METHOD / NO INVENTED MICROSCOPY",
+      "visual": "assay",
+      "narration": "Fluorescence staining distinguished live from dead cells. Cytoskeletal staining and atomic force microscopy added information about the cells' shape, actin structure, and mechanical response."
+    },
+    {
+      "id": "06",
+      "start": 80,
+      "duration": 16,
+      "title": "The unprotected group",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "visual": "result-control",
+      "narration": "Following bubble propagation, the untreated group showed 54.7 percent cell death in this model. The reported comparison is about cultured cells, not a patient survival rate."
+    },
+    {
+      "id": "07",
+      "start": 96,
+      "duration": 17,
+      "title": "Dexamethasone pretreatment",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "visual": "result-dex",
+      "narration": "With dexamethasone pretreatment, reported cell death after bubble exposure was 15.1 percent. That is a substantial reduction compared with the bubble-only control under these specific conditions."
+    },
+    {
+      "id": "08",
+      "start": 113,
+      "duration": 17,
+      "title": "Transdehydroandrosterone",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "visual": "result-dhea",
+      "narration": "Cells pretreated with transdehydroandrosterone showed 16.1 percent cell death after exposure. Both treatments were associated with protection in the laboratory setup; neither figure describes clinical efficacy."
+    },
+    {
+      "id": "09",
+      "start": 130,
+      "duration": 17,
+      "title": "Another mechanical comparison",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "visual": "result-lat",
+      "narration": "The study also included latrunculin A, an experimental cytoskeletal agent. Its bubble-exposed group showed 20.9 percent cell death, helping relate susceptibility to cell mechanics."
+    },
+    {
+      "id": "10",
+      "start": 147,
+      "duration": 17,
+      "title": "The cytoskeleton matters",
+      "kind": "MECHANISTIC INTERPRETATION / NOT PROOF OF A SINGLE PATHWAY",
+      "visual": "actin",
+      "narration": "Actin organization and mechanical properties were examined alongside viability. The study supports investigating cell mechanics as part of protection, while leaving complex molecular causality open."
+    },
+    {
+      "id": "11",
+      "start": 164,
+      "duration": 16,
+      "title": "What the experiment can say",
+      "kind": "EVIDENCE LIMIT / 2021 PUBLICATION",
+      "visual": "limits",
+      "narration": "These are results from a single-bubble, cultured-cell model. They justify further questions about injury prevention. They do not show that pretreatment prevents injury in mechanically ventilated patients."
+    }
+  ]
+}

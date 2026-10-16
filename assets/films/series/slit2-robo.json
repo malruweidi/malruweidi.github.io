@@ -1,7 +1,7 @@
 {
   "id": "slit2-robo",
   "seconds": 84.0,
-  "sha256": "903c5a64bdf5c9bff06eb42d387ab7b47be1090a733fd8ad2c2543be514e9216",
+  "sha256": "cd157e2306e897a5bd6afc79759d64bd4a6dd4a91836c09b84bc264eb33c673e",
   "primary_source": "https://doi.org/10.1080/13543776.2026.2690118",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [

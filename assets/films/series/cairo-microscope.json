@@ -1,0 +1,16 @@
+{
+  "id": "cairo-microscope",
+  "seconds": 84.0,
+  "sha256": "b1cfba6c4dba66c0cd62d9dc8ab9bca0db7840ce2f6a38803767d4cd4d8b8085",
+  "primary_source": "/stories/cairo-microscope.html",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

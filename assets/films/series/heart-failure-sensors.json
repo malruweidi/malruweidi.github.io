@@ -1,0 +1,16 @@
+{
+  "id": "heart-failure-sensors",
+  "seconds": 84.0,
+  "sha256": "95fcc7eba6bf9fe6a2560de32befa97ac1c2d7a07692c2307e4748a256491866",
+  "primary_source": "https://doi.org/10.1002/9781119813040.ch5",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
