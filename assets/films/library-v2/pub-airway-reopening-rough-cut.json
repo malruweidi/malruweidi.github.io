@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "4ab9f32ba0ede36b9088c181d2cdcfff0401834ff0e7c2b154e88c2a56136061",
+  "sha256": "a8ff9dc437430889339ac8f36300deb1d0cf966f51998f5183740ce460d0d407",
   "shots": [
     {
       "title": "When an airway reopens",
@@ -25,10 +25,10 @@
     },
     {
       "title": "An airway reopens",
-      "kind": "Original diagram, conceptual only",
+      "kind": "Original scientific concept animation (not experimental data)",
       "image": "assets/lung-concept.svg",
       "museum": null,
-      "credit": "Original diagram, conceptual only"
+      "credit": "Original concept animation of advancing air-liquid interface; not actual cell culture or paper microscopy"
     },
     {
       "title": "Making the injury measurable",
@@ -74,5 +74,5 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "892a4527b084fb39f9803f3b71780e2353edf9d9ace354031eae1ff598ae906b"
+  "input_sha256": "b33966f0116d9e99cfef53da2ae77e71dcd9b6500a3df732af4fb0535415294e"
 }

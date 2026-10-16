@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "00e30921cedc54802672268b32ece1bb7bdb6206da78e3632145e0ac1aec191d",
+  "sha256": "a048c075cf44188e31e745327ab87f9b9640a4e20793d40097eeadc533e5012e",
   "shots": [
     {
       "title": "Two lives of ACE2",
@@ -32,10 +32,10 @@
     },
     {
       "title": "The location changes the question",
-      "kind": "Pulmonary research-context illustration",
+      "kind": "Original scientific concept animation (not experimental data)",
       "image": "assets/evidence-pulmonary.webp",
       "museum": null,
-      "credit": "Pulmonary research-context illustration"
+      "credit": "Conceptual animation of membrane ectodomain shedding and soluble ACE2 context; no study measurements"
     },
     {
       "title": "Expression is not the whole mechanism",
@@ -74,5 +74,5 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "28e7bba15ffd34d5eba64b0bc533e34acd6bacc928c6b31805ba10bdaf0bde7b"
+  "input_sha256": "ee21f0836b2a794694d0036ab26dfc5620a4082f5aca277e2cdb79aef854120b"
 }

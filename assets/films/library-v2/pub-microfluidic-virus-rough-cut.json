@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "df77c79141524a6ce5922d689653740b6ffa0ea23b23633d182934d47c844a9a",
+  "sha256": "a3143017034b8c30cb9c44522466c742d5f1244d8051f3053f7be88b46352745",
   "shots": [
     {
       "title": "A laboratory shrunk into a channel",
@@ -32,10 +32,10 @@
     },
     {
       "title": "Fluid control becomes analytical control",
-      "kind": "Original scientific illustration, conceptual only",
+      "kind": "Original scientific concept animation (not experimental data)",
       "image": "assets/films/art/v2-microfluid-capture.svg",
       "museum": null,
-      "credit": "Conceptual target capture/assay logic without invented sensitivity or specificity"
+      "credit": "Original schematic microfluidic sample movement; not actual virological assay footage"
     },
     {
       "title": "Detection is not diagnosis",
@@ -74,5 +74,5 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "abbfa3801973961e15e429f4a6e8cba4b0ae7766c567891ce15df61c640fefc3"
+  "input_sha256": "8be0c08cd2c7d4f789a055b70d4a1fb7424dcc7a9cf60ddc2c63e27156c5542c"
 }
