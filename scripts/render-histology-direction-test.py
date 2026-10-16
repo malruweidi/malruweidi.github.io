@@ -54,40 +54,69 @@ def wrap(text,draw,ft,maxw):
     return out
 
 def draw_card(photo,t1,t2,kind,index):
-    canvas=Image.new("RGB",(W,H),PINE);d=ImageDraw.Draw(canvas)
-    d.line((64,72,122,72),fill=ACCENT,width=3)
-    d.text((64,91),"RUWAIDIX   /   ORIGINAL EXPERIMENT",font=font(17),fill=(216,209,192))
-    if photo is None:
-        d.text((85,257),t1,font=font(65,True),fill=COLOR)
-        for j,line in enumerate(wrap(t2,d,font(31,True),1080)):
-            d.text((88,372+j*46),line,font=font(31,True),fill=(208,196,177))
-        d.text((84,627),"THE DOCUMENTED OUTCOME • NOT A HYPOTHETICAL SUCCESS",font=font(13),fill=ACCENT)
+    """A film sequence, not six interchangeable labelled chapter slides.
+
+    Source photos dominate the screen. Intentional editorial crops reveal where
+    materials failed. The untouched archive remains directly linked by manifest.
+    """
+    canvas=Image.new("RGB",(W,H),PINE)
+    d=ImageDraw.Draw(canvas)
+    if index==5:
+        d.line((92,209,190,209),fill=ACCENT,width=3)
+        d.text((87,265),"TWO MATERIALS.",font=font(60,True),fill=COLOR)
+        d.text((87,348),"NO SECTION.",font=font(66,True),fill=COLOR)
+        d.text((93,495),"The documented outcome. No interpretable section obtained.",
+               font=font(18),fill=(205,209,198))
+        d.text((93,648),"RUWAIDIX  /  ORIGINAL EXPERIMENT",
+               font=font(12),fill=ACCENT)
         return canvas
     with Image.open(photo) as raw:src=ImageOps.exif_transpose(raw).convert("RGB")
-    # The source remains available at full size; cuts here are labeled 'archival detail'.
-    if kind=="archival detail":
-        if index==1:
-            crop=(int(src.width*.30),int(src.height*.19),int(src.width*.91),int(src.height*.74))
-        else:
-            crop=(int(src.width*.11),int(src.height*.22),int(src.width*.97),int(src.height*.89))
-        src=src.crop(crop)
-    photo_box=(485,118,1216,590) if index!=3 else (404,143,1216,600)
-    bw=photo_box[2]-photo_box[0];bh=photo_box[3]-photo_box[1]
-    contained=ImageOps.contain(src,(bw,bh),method=Image.Resampling.LANCZOS)
-    px=photo_box[0]+(bw-contained.width)//2
-    py=photo_box[1]+(bh-contained.height)//2
-    # Soft photo matte prevents tiny portrait pictures sitting inside empty blur.
-    matte=ImageOps.fit(src,(bw,bh),method=Image.Resampling.LANCZOS).filter(ImageFilter.GaussianBlur(24))
-    matte=Image.blend(matte,Image.new("RGB",matte.size,PINE),.72)
-    canvas.paste(matte,(photo_box[0],photo_box[1]))
-    canvas.paste(contained,(px,py))
-    d.rectangle(photo_box,outline=(109,128,123),width=1)
-    d.text((63,263),t1,font=font(21),fill=ACCENT)
-    title_font=font(34,True)
-    for j,line in enumerate(wrap(t2,d,title_font,370)):
-        d.text((63,309+j*55),line,font=title_font,fill=COLOR)
-    d.text((64,609),"OWNER PHOTOGRAPH · "+kind.upper(),font=font(12),fill=(209,213,205))
-    d.text((64,641),f"{index+1:02d} / {len(SHOTS):02d}",font=font(15),fill=ACCENT)
+    if index in (0,2,3):
+        # Full-bleed EDITORIAL DETAIL: intentional real-picture crop, not a fake scene.
+        centers={0:(.50,.44),2:(.5,.48),3:(.5,.53)}
+        canvas=ImageOps.fit(src,(W,H),method=Image.Resampling.LANCZOS,centering=centers[index])
+        d=ImageDraw.Draw(canvas,"RGBA")
+        # A bottom-only restrained shadow protects occasional source labels.
+        for y in range(470,H):
+            alpha=int(163*((y-470)/(H-470))**1.2)
+            d.line((0,y,W,y),fill=(8,25,29,alpha),width=1)
+        small={
+           0:("THE FAILED CUT","Original microtome photograph / editorial crop"),
+           2:("BEFORE THE BLADE","Zebrafish orientation specimens / editorial crop"),
+           3:("THE PREPARATION","Original processing equipment / editorial crop")
+        }
+        head,note=small[index]
+        d.text((58,590),head,font=font(35,True),fill=(251,245,233,255))
+        d.text((60,656),note,font=font(17),fill=(233,231,219,255))
+        return canvas.convert("RGB")
+    if index==1:
+        # Double view: original photograph beside a deliberately enlarged
+        # material-failure detail, not the same postage stamp repeated.
+        full=ImageOps.contain(src,(520,654),method=Image.Resampling.LANCZOS)
+        canvas.paste(full,(50+(535-full.width)//2,33+(654-full.height)//2))
+        crop=src.crop((int(src.width*.34),int(src.height*.18),
+                       int(src.width*.94),int(src.height*.74)))
+        detail=ImageOps.fit(crop,(612,654),method=Image.Resampling.LANCZOS)
+        canvas.paste(detail,(618,33))
+        d=ImageDraw.Draw(canvas,"RGBA")
+        d.rectangle((0,580,W,H),fill=(8,25,28,186))
+        d.text((61,601),"This is what reached the microtome.",
+               font=font(34,True),fill=COLOR)
+        d.text((62,669),"Full original at left · archival detail at right",
+               font=font(13),fill=(211,207,189))
+        return canvas
+    # Scene 5 (index 4): the actual equipment and separated fragments fill
+    # the screen, with only the original experimental outcome as typography.
+    center=src.crop((int(src.width*.16),int(src.height*.23),
+                     int(src.width*.98),int(src.height*.79)))
+    picture=ImageOps.fit(center,(950,H),method=Image.Resampling.LANCZOS)
+    canvas.paste(picture,(330,0))
+    d=ImageDraw.Draw(canvas)
+    d.line((60,270,155,270),fill=ACCENT,width=4)
+    d.text((55,315),"IT DID NOT",font=font(42,True),fill=COLOR)
+    d.text((55,383),"CUT AS ONE.",font=font(42,True),fill=COLOR)
+    d.text((61,645),"Original experiment · detail crop",
+           font=font(12),fill=(215,205,184))
     return canvas
 
 def score():
@@ -127,6 +156,7 @@ def main():
             # No zoom on text; the authored shot is a still with editorial jump cuts.
             ff(["ffmpeg","-hide_banner","-loglevel","error","-y","-loop","1",
                 "-framerate",str(FPS),"-i",str(name),"-t",str(sec),"-r",str(FPS),
+                "-vf","zoompan=z=min(zoom+0.0002\\,1.038):d=1:fps=24:s=1280x720",
                 "-c:v","libx264","-crf","20","-preset","fast","-pix_fmt","yuv420p","-an",str(movie)])
             videos.append(movie)
             docs.append({"index":i+1,"start":sum(s[1] for s in SHOTS[:i]),
