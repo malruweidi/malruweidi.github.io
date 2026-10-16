@@ -48,7 +48,7 @@ test("new collection is additive and searchable without removing published foota
   assert.ok(home.includes('href="/films.html"'));
   assert.ok(legacyFilm.includes('href="/films.html"'));
   assert.ok(story.includes('href="/films/two-materials-no-section.html"'));
-  assert.equal((oldFilms.match(/<figure class="film-card/g) || []).length, 6);
+  assert.ok((oldFilms.match(/<figure class="film-card/g) || []).length >= 7, "preserve six historic recordings and the original colleague recording");
   assert.ok(home.includes("id=\"rx-feature-film\""));
   assert.ok(index.items.some(x => x.url === "/films.html"));
   assert.ok(index.items.some(x => x.url === "/films/two-materials-no-section.html"));
