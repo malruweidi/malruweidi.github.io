@@ -135,8 +135,8 @@
       label.textContent=ar?"تجربة في المنزل / من السنوات الجامعية الأولى":"AT HOME / EARLY UNIVERSITY YEARS";
       heading.textContent=ar?"الكيمياء لم تكن محصورة في المختبر.":"Chemistry was not confined to the laboratory.";
       paragraph.textContent=ar?
-        "في سنتي الجامعية الأولى جرّبت في المنزل عرض «معجون أسنان الفيل». كان المكان طاولة منزلية لا مختبراً، والتجربة عرضاً كيميائياً بسيطاً لا مشروعاً بحثياً. أحتفظ بهذه الصورة لأن الفضول لم يكن شيئاً أمارسه عند وجود تكليف أكاديمي فحسب.":
-        "In my freshman year, I tried the elephant-toothpaste demonstration at home. The setting was an ordinary table, not a laboratory, and the experiment was a chemistry demonstration rather than a research result. I keep the photograph because curiosity was never confined to assigned coursework.";
+        "في سنتي الجامعية الأولى جرّبت تفاعل «معجون أسنان الفيل» على طاولة في البيت. أردت أن أرى التفاعل بنفسي خارج التجارب المقررة في المحاضرات.":
+        "In my freshman year, I set up an elephant-toothpaste demonstration on a table at home. I wanted to try the reaction for myself, outside the experiments assigned in class.";
       date.textContent=ar?"تعريف التجربة من صاحب الصورة؛ يعرض سجل الصور تاريخ ٢٢ يونيو ٢٠١٩.":"Identified by the author; photo-library display date: 22 June 2019.";
       archive.textContent=ar?"الصورة ضمن الأرشيف ←":"See the archival record ↗";
     };
