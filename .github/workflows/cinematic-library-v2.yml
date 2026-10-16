@@ -79,9 +79,14 @@ jobs:
             git add assets/films/library-v2/
             if ! git diff --cached --quiet; then
               git commit -m "Checkpoint cinematic film rough cuts $batch [v2-output]"
-              git fetch origin cinematic-remake-20261017
-              git rebase FETCH_HEAD
-              git push origin HEAD:cinematic-remake-20261017
+              pushed=false
+              for retry in 1 2 3 4 5 6 7 8; do
+                git fetch origin cinematic-remake-20261017
+                git rebase FETCH_HEAD
+                if git push origin HEAD:cinematic-remake-20261017; then pushed=true; break; fi
+                sleep "$((retry * 2))"
+              done
+              if [ "$pushed" != true ]; then echo "Failed to reconcile concurrent output commits" >&2; exit 1; fi
             fi
           done
       - name: Make true-frame contact sheets for technical visual review
