@@ -60,7 +60,7 @@
     examLink.appendChild(examImg);
     const examCaption = document.createElement("figcaption");
     examCaption.appendChild(node("strong", "", "Between examinations, June 2017.", "بين الامتحانات، يونيو ٢٠١٧."));
-    examCaption.appendChild(node("span", "", "I was living with eosinophilic gastrointestinal illness at the time. The photograph is neither a diagnosis nor a claim to exceptional endurance. It records an ordinary moment in an education repeatedly interrupted by illness.", "كنت آنذاك أعيش مع مرض يوزيني يصيب الجهاز الهضمي. لا تمثل الصورة تشخيصاً، ولا ادعاءً بالبطولة؛ إنها لحظة عادية من دراسة انقطعت مراراً بسبب المرض."));
+    examCaption.appendChild(node("span", "", "During that June 2017 examination period, I was also coping with eosinophilic gastrointestinal illness. I kept this photograph from years in which illness repeatedly interrupted my studies.", "خلال امتحانات يونيو ٢٠١٧، كنت أعاني أيضًا من مرض يوزيني يصيب الجهاز الهضمي. احتفظت بهذه الصورة من سنوات تكررت فيها انقطاعات الدراسة بسبب المرض."));
     examFigure.append(examLink,examCaption);
     right.appendChild(examFigure);
     const quote = document.createElement("blockquote");
