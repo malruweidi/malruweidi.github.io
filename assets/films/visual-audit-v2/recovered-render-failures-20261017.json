@@ -1,0 +1,63 @@
+{
+  "title": "Preserved blocked-render diagnostic history",
+  "date": "2026-10-17",
+  "note": "Previous failure-marker filenames are retired only after their diagnostic data is preserved here and replacement MP4 + metadata are verified. No original film was deleted.",
+  "records": [
+    {
+      "slug": "feature-what-survives-the-experiment",
+      "original_failure": {
+        "film": "feature-what-survives-the-experiment",
+        "status": "RENDER BLOCKED; NOT A COMPLETED VIDEO",
+        "error": "feature-what-survives-the-experiment shot 8: voice exceeds 10s. Rewrite or rerecord; never clip.",
+        "source": "assets/films/cinematic-library-v2.json",
+        "input_sha256": "0c9c92fa264282cb62caae6d21c8ab9007ed2c0b58b80059426b4725e06a1f0f"
+      },
+      "recovered_runtime_seconds": 168,
+      "recovered_sha256": "0a1541e3eb3416bc217fc749977b40005704213e3a13960cbc4939c7f728f81d",
+      "voice_status": "NOT HUMAN-AUDITIONED",
+      "failure_log_sha": "6cf26b53b6868de32143ffed9c60e91d58fb1814"
+    },
+    {
+      "slug": "feature-ring-that-never-closed",
+      "original_failure": {
+        "film": "feature-ring-that-never-closed",
+        "status": "RENDER BLOCKED; NOT A COMPLETED VIDEO",
+        "error": "feature-ring-that-never-closed shot 9: voice exceeds 11s. Rewrite or rerecord; never clip.",
+        "source": "assets/films/cinematic-library-v2.json",
+        "input_sha256": "912bf897db6ce95152097d7afd84639976a2bc85eec50434b2673907fd63dc51"
+      },
+      "recovered_runtime_seconds": 131,
+      "recovered_sha256": "a27e115cdb4489f2877d07cf95b200059e7567f1bad538f0a07b4ddb2f0ad76c",
+      "voice_status": "NOT HUMAN-AUDITIONED",
+      "failure_log_sha": "a774ad0ccde3c7affb12d33779b12d3bd4bb3cf9"
+    },
+    {
+      "slug": "feature-airway-reopening-evidence-cut",
+      "original_failure": {
+        "film": "feature-airway-reopening-evidence-cut",
+        "status": "RENDER BLOCKED; NOT A COMPLETED VIDEO",
+        "error": "feature-airway-reopening-evidence-cut shot 11: voice exceeds 10s. Rewrite or rerecord; never clip.",
+        "source": "assets/films/cinematic-library-v2.json",
+        "input_sha256": "d9958016ddb8a040ef780645fe6b853aa39b8c57bfb88dc63827d639ee4d60f5"
+      },
+      "recovered_runtime_seconds": 138,
+      "recovered_sha256": "1103fd1c0c0c83b7253a78f439b9e04949633033bff50fe68fa02aa018e14a07",
+      "voice_status": "NOT HUMAN-AUDITIONED",
+      "failure_log_sha": "4e74977e99348345dd6d1324f5b37d56e2420a39"
+    },
+    {
+      "slug": "feature-two-materials-no-section-evidence-cut",
+      "original_failure": {
+        "film": "feature-two-materials-no-section-evidence-cut",
+        "status": "RENDER BLOCKED; NOT A COMPLETED VIDEO",
+        "error": "feature-two-materials-no-section-evidence-cut shot 9: voice exceeds 12s. Rewrite or rerecord; never clip.",
+        "source": "assets/films/cinematic-library-v2.json",
+        "input_sha256": "8a51ef9c723ea7150c1e7801b6416dbfa054cc7fac5dffeee2a0cb560dec8d10"
+      },
+      "recovered_runtime_seconds": 120,
+      "recovered_sha256": "8f50c5fe102e381970f056f6430330c38e405c01de2b3612ef6cb7181853085d",
+      "voice_status": "NOT HUMAN-AUDITIONED",
+      "failure_log_sha": "7dd760d69a2f7331288f3fe464b16d98b9eefead"
+    }
+  ]
+}
