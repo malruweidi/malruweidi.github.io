@@ -75,6 +75,14 @@ def load():
         f["visual_motif"]=d["visual_motif"]
         f["review_question"]=d["review_question"]
         f["voice_preview"]=d["voice_preview"]
+        overrides=d.get("narration_overrides",{})
+        for index,value in overrides.items():
+            offset=int(index)-1
+            if not (0 <= offset < len(f["shots"])) or not value.strip():
+                raise ValueError("Invalid source-bounded dialogue correction: "+f["slug"])
+            if len(value.split())/int(f["shots"][offset]["sec"])>2.80:
+                raise ValueError("Revised scene narration is too dense: "+f["slug"])
+            f["shots"][offset]["narration"]=value
         for shot,move in zip(f["shots"],moves):
             if move not in ("lock","slow-push","slow-pull","pan-left","pan-right","rise","settle"):
                 raise ValueError("Unknown motion plan "+f["slug"])
