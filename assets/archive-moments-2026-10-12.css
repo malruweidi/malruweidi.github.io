@@ -16,7 +16,7 @@
 .rx-heritage-meta{display:block;text-transform:none}
 .rx-heritage-title{display:block;font:400 clamp(21px,2.1vw,27px)/1.22 Newsreader,Georgia,serif;color:#17363a;margin:11px 0 10px}
 .rx-heritage-desc{font:13px/1.75 "DM Sans",Arial,sans-serif;color:#526665;margin:0}
-.rx-heritage-disclaimer{margin:22px 0 0;letter-spacing:0;color:#637575}
+.rx-heritage-disclaimer{margin:22px 0 0;letter-spacing:0;color:#526b65;font-size:12px}
 .rx-heritage-member{object-fit:cover;object-position:center 42%}
 @media (max-width:850px){.rx-heritage-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.rx-heritage-frame{height:230px}}
 @media (max-width:540px){.rx-heritage-inner{width:calc(100% - 34px)}.rx-heritage-grid{grid-template-columns:1fr}.rx-heritage-card{display:grid;grid-template-columns:43% minmax(0,1fr)}.rx-heritage-frame{height:100%;min-height:195px}.rx-heritage-caption{padding:14px 13px}.rx-heritage-title{font-size:22px}.rx-heritage-desc{font-size:12px}.rx-heritage-section{padding:44px 0}}
