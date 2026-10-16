@@ -1,8 +1,8 @@
 {
   "status": "TECHNICAL AUDIT ONLY, NOT ARTISTIC APPROVAL",
   "films_expected": 44,
-  "exports_examined": 40,
-  "exports_remaining": 4,
+  "exports_examined": 41,
+  "exports_remaining": 3,
   "films": [
     {
       "slug": "making-medicines-keep",
@@ -399,6 +399,16 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/feature-cairo-microscope-rough-cut.mp4",
+      "issues": [],
+      "technical_check": "pass",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "feature-two-materials-no-section-evidence-cut",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/feature-two-materials-no-section-evidence-cut-rough-cut.mp4",
       "issues": [],
       "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
