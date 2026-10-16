@@ -7,10 +7,10 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "e0ce749fd9abf5ae9203404c2c52c90fff41bb4f6d059b70eb2c438ceb96b1bc",
+  "sha256": "b25e09d4d29d447102a5eb1177dc96b2ff19fa30b40698a1b576cd82a6db3599",
   "shots": [
     {
-      "title": "A breath can injure",
+      "title": "When an airway reopens",
       "kind": "Original diagram, conceptual only",
       "image": "assets/lung-concept.svg",
       "museum": null,
@@ -38,28 +38,28 @@
       "credit": "Study figure reproduced in the author's research archive"
     },
     {
-      "title": "Change the cell first",
+      "title": "Before exposure",
       "kind": "Archival laboratory workspace, not a recording of the drug exposure",
       "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
       "museum": null,
       "credit": "Archival laboratory workspace, not a recording of the drug exposure"
     },
     {
-      "title": "The difficulty: What the experiment found",
-      "kind": "Research-context figure; see primary paper for quantitative readouts",
-      "image": "assets/evidence-pulmonary.webp",
+      "title": "When the bubble passed",
+      "kind": "Redrawn summary of published in-vitro measurements; percent dead cells, means with SEM",
+      "image": "assets/films/art-v2/airway-injury-measured.svg",
       "museum": null,
-      "credit": "Research-context figure; see primary paper for quantitative readouts"
+      "credit": "Research data from Al-Ruweidi et al., Journal of Applied Physiology 130 (2021), DOI 10.1152/japplphysiol.00574.2020; author-created chart of reported means and SEM, not an original published figure"
     },
     {
-      "title": "What the experiment found",
-      "kind": "Research-context figure; see primary paper for quantitative readouts",
-      "image": "assets/evidence-pulmonary.webp",
+      "title": "Another pretreatment, same model",
+      "kind": "Redrawn summary of published in-vitro measurements; conceptual visual context",
+      "image": "assets/films/art-v2/airway-injury-measured.svg",
       "museum": null,
-      "credit": "Research-context figure; see primary paper for quantitative readouts"
+      "credit": "Research data from Al-Ruweidi et al., Journal of Applied Physiology 130 (2021), DOI 10.1152/japplphysiol.00574.2020; author-created chart of reported means and SEM, not an original published figure"
     },
     {
-      "title": "What it does not prove",
+      "title": "A boundary around the result",
       "kind": "Published study context; DOI on film page",
       "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
       "museum": null,
@@ -73,5 +73,6 @@
   "source_collection": "publication",
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
-  "never_auto_publish": true
+  "never_auto_publish": true,
+  "input_sha256": "f1430d8e1c77f9e42793440955f1824da2157f71c15b49868706c482622802b0"
 }

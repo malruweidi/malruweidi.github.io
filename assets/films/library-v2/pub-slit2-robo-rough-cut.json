@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "46919b86c09bf133fc58dacc8def2f004368cb21ea9eb03a51179bd87281a24a",
+  "sha256": "f9acc6c9364a55ff9b23b71347be3e60721645aeefca53605e62caba5f6580bd",
   "shots": [
     {
       "title": "The target that can change sides",
@@ -25,10 +25,10 @@
     },
     {
       "title": "The receptor does not act alone",
-      "kind": "Simplified pathway illustration, not experimental structure",
-      "image": "assets/robo-concept.svg",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/slit2-robo-1.svg",
       "museum": null,
-      "credit": "Simplified pathway illustration, not experimental structure"
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
     },
     {
       "title": "The patent question",
@@ -46,10 +46,10 @@
     },
     {
       "title": "The difficulty: The missing condition",
-      "kind": "Conceptual scientific illustration",
-      "image": "assets/robo-concept.svg",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/slit2-robo-2.svg",
       "museum": null,
-      "credit": "Conceptual scientific illustration"
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
     },
     {
       "title": "The missing condition",
@@ -73,5 +73,6 @@
   "source_collection": "publication",
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
-  "never_auto_publish": true
+  "never_auto_publish": true,
+  "input_sha256": "2ffe9738dd457a779ca9746656f1f5e0e23867e951491d0e30151112a4d7f233"
 }

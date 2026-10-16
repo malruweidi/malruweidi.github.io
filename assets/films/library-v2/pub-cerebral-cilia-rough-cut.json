@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "476969e85d828a4da1ddc2e0169b5d7b5439d4b51289da9b9b1f63e5300c11d4",
+  "sha256": "1772c67a0b96653a93915b0194d55bdca2d2800e69da7e75c749bd9efed6bc71",
   "shots": [
     {
       "title": "How does a vessel know the blood is moving?",
@@ -25,10 +25,10 @@
     },
     {
       "title": "An organism in motion",
-      "kind": "Original microscopy footage, model-context limitations apply",
-      "image": "assets/evidence-zebrafish.webp",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/cerebral-cilia-1.svg",
       "museum": null,
-      "credit": "Original hosted zebrafish microscopy recording; research context, not proof of every result"
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
     },
     {
       "title": "The cilium",
@@ -46,10 +46,10 @@
     },
     {
       "title": "The difficulty: Observation needs context",
-      "kind": "Zebrafish context image; the original footage is linked separately",
-      "image": "assets/evidence-zebrafish.webp",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/cerebral-cilia-2.svg",
       "museum": null,
-      "credit": "Zebrafish context image; the original footage is linked separately"
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
     },
     {
       "title": "Observation needs context",
@@ -73,5 +73,6 @@
   "source_collection": "publication",
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
-  "never_auto_publish": true
+  "never_auto_publish": true,
+  "input_sha256": "f0f385f58e09c0fd7a7967e50ab22be9f485931b135bcd6b00a9a787c42ea700"
 }
