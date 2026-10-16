@@ -32,5 +32,5 @@ test("Film page provides accessible script, scientific source links, and gracefu
  assert.match(film,/id="film-fallback"/);
  assert.match(film,/kind="captions"/);
  for(const s of plan.scenes)assert.ok(film.includes(s.narration),s.id);
- assert.match(film,/Original scientific/);
+ assert.match(film,/original scientific/i);
 });
