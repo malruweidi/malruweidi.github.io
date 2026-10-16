@@ -5400,112 +5400,122 @@
         {
           "id": "01",
           "title": "An unfinished drawing",
-          "narration": "Our 2018 proposal drew a molecule we wanted to make. Its ring was closed on paper. In the laboratory, that was another matter.",
+          "narration": "Our 2018 proposal ended with an imidazopyridine drawn on paper. The laboratory had yet to close that ring.",
           "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
           "kind": "RESEARCH PROPOSAL / 2018",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "02",
           "title": "Two routes, one ambition",
-          "narration": "Our team proposed two synthetic routes toward substituted imidazopyridines, with structural characterization to come before biological evaluation. That was the plan in 2018.",
+          "narration": "We proposed two synthesis routes. Structural characterization and biological testing would follow if the intended molecules were isolated.",
           "image": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
           "kind": "PLANNED HETEROCYCLIC SYNTHESIS",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "03",
           "title": "The closure did not happen",
-          "narration": "We could not claim the intended imidazopyridines. A proposed synthetic pathway is not an isolated compound, however persuasive its arrows look.",
+          "narration": "The planned ring closure did not succeed. We could not claim the target heterocycles.",
           "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp",
           "kind": "OBSERVED PROJECT OUTCOME / 2021",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 10,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "04",
           "title": "What we could isolate",
-          "narration": "We did isolate and characterize three imines, also called Schiff bases. They had entered the project as intermediates, not the endpoint we were originally pursuing.",
+          "narration": "What we isolated were three characterized imines, the Schiff bases originally meant to serve as intermediates.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
           "kind": "SCHIFF BASES / RECORDED INTERMEDIATES",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "05",
           "title": "A different question",
-          "narration": "Instead of treating those compounds only as unfinished starting materials, we examined their response to anions. Cyanide produced a particularly visible change in one sensor solution.",
+          "narration": "We tested their response to anions. One sensor solution changed visibly after the addition of cyanide.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
           "kind": "ANION SENSING / LABORATORY REPORT",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "06",
           "title": "From yellow to orange",
-          "narration": "Under the reported test conditions, a yellow solution turned orange after cyanide was added. A colour change was observable. Its meaning still had to be checked spectroscopically.",
+          "narration": "Under the reported conditions, its colour shifted from yellow to orange. Spectroscopy then tested what that visible change meant.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
           "kind": "OBSERVED COLOUR RESPONSE / EXPLANATORY COLOURS",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13
+          "sec": 13,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "07",
           "title": "Where the bands moved",
-          "narration": "The band near 380 nanometres declined as a new band near 450 grew. The report gave a detection limit of 1.42 times ten to the minus five molar for that sensor.",
+          "narration": "The 380-nanometre band declined as the 450-nanometre band grew. The detection limit was 1.42 times ten to the minus five molar.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
           "kind": "REPORTED UV–VISIBLE FEATURES / NOT A DIGITIZED SPECTRUM",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 14,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "08",
           "title": "Beyond the flask",
-          "narration": "Colleagues explored two compounds, CMP5 and CMPB, in triple-negative breast-cancer cell lines. Some proliferation and migration readouts differed, but that was not evidence of a validated treatment.",
+          "narration": "Two imines, CMP5 and CMPB, were explored in triple-negative breast-cancer cell lines. The assays did not establish therapeutic efficacy.",
           "image": "assets/oct12-owner-photos/yousef-hijji-anticancer-group-2019.webp",
           "kind": "EXPLORATORY COLLABORATIVE CELL WORK",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13
+          "sec": 13,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "09",
           "title": "The unanswered mechanism",
-          "narration": "Some c-MYC measurements rose where we had expected the opposite, and some comparisons were not significant. Direct PRMT5 target engagement was never established.",
+          "narration": "Some c-MYC responses contradicted our expectations. Direct PRMT5 engagement was never shown, and comparisons remained inconclusive.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
           "kind": "GENE EXPRESSION / INCOMPLETE FOLLOW-UP",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 11,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "10",
           "title": "What the report could say",
-          "narration": "What remained were characterized imines, a colour response and exploratory biological work with unresolved mechanisms. The missing ring belongs nowhere in the final frame.",
+          "narration": "The final report contained characterized imines and unanswered biology. The imidazopyridines we had originally drawn were never isolated.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
           "kind": "FINAL REPORT / 2021 / ACCESS RESTRICTIONS",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 11,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         }
       ],
       "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
@@ -5524,123 +5534,134 @@
         {
           "id": "01",
           "title": "Reopening is not always gentle",
-          "narration": "Watch the advancing edge of an air bubble. In the lung it can mark reopening. In a chamber it can be a controlled mechanical insult.",
+          "narration": "An air bubble opens a fluid-lined channel. Its advancing boundary reaches the epithelial layer before the space has cleared.",
           "image": "assets/films/plates/what-a-bubble-can-do-01.webp",
           "kind": "AIRWAY / CONCEPTUAL",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 13
+          "sec": 13,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "02",
           "title": "A boundary that moves",
-          "narration": "The experiment is not a miniature human lung. It is a controlled way to study what happens when one air bubble travels across a cell layer in a liquid-lined channel.",
+          "narration": "A parallel-plate chamber isolates this moving boundary. It reproduces one mechanical event, without reproducing an entire lung.",
           "image": "assets/films/plates/what-a-bubble-can-do-02.webp",
           "kind": "INTERFACE / EXPLANATORY SCHEMATIC",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 15
+          "sec": 15,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "03",
           "title": "Inside the flow chamber",
-          "narration": "In our 2021 study, rat L2 alveolar epithelial cells were grown in a parallel-plate flow chamber. A single advancing bubble simulated the mechanical event of airway reopening.",
+          "narration": "Our 2021 experiment exposed cultured rat L2 epithelial cells to a single advancing bubble in that chamber.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
           "kind": "ORIGINAL PUBLISHED FIGURE",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13
+          "sec": 13,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "04",
           "title": "The comparison",
-          "narration": "We compared cells kept under static conditions with cells exposed to bubble flow. We also tested cells pretreated with dexamethasone or transdehydroandrosterone before the bubble passed.",
+          "narration": "We compared static cultures with bubble-exposed cells, including cells pretreated with dexamethasone or transdehydroandrosterone.",
           "image": "assets/films/plates/what-a-bubble-can-do-03.webp",
           "kind": "EXPERIMENTAL DESIGN / NO SIMULATED CELLS",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "05",
           "title": "How cell injury was read",
-          "narration": "Fluorescence staining distinguished live from dead cells. Cytoskeletal staining and atomic force microscopy added information about the cells' shape, actin structure, and mechanical response.",
+          "narration": "Live–dead fluorescence staining measured injury. Actin staining and atomic force microscopy examined cellular structure and mechanics.",
           "image": "assets/films/plates/what-a-bubble-can-do-04.webp",
           "kind": "ASSAY METHOD / NO INVENTED MICROSCOPY",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 11,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "06",
           "title": "The unprotected group",
-          "narration": "Untreated cells exposed to the bubble showed 54.7 percent death in the reported conditions. That is a monolayer assay, not a ventilated patient's prognosis.",
+          "narration": "In the untreated bubble-exposed group, mean cell death reached 54.7 percent. The test involved cultured cells.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
           "kind": "PUBLISHED IN-VITRO RESULT",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 11,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "07",
           "title": "Dexamethasone pretreatment",
-          "narration": "With dexamethasone pretreatment, reported cell death after bubble exposure was 15.1 percent. That is a substantial reduction compared with the bubble-only control under these specific conditions.",
+          "narration": "Dexamethasone pretreatment reduced mean cell death to 15.1 percent under the same experimental exposure.",
           "image": "assets/films/plates/what-a-bubble-can-do-05.webp",
           "kind": "PUBLISHED IN-VITRO RESULT",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "08",
           "title": "Transdehydroandrosterone",
-          "narration": "Cells pretreated with transdehydroandrosterone showed 16.1 percent cell death after exposure. Both treatments were associated with protection in the laboratory setup; neither figure describes clinical efficacy.",
+          "narration": "With transdehydroandrosterone pretreatment, mean cell death was 16.1 percent. Neither measurement represents clinical efficacy.",
           "image": "assets/films/plates/what-a-bubble-can-do-06.webp",
           "kind": "PUBLISHED IN-VITRO RESULT",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "09",
           "title": "Another mechanical comparison",
-          "narration": "The study also included latrunculin A, an experimental cytoskeletal agent. Its bubble-exposed group showed 20.9 percent cell death, helping relate susceptibility to cell mechanics.",
+          "narration": "Latrunculin A, a cytoskeletal comparator, yielded 20.9 percent mean cell death after bubble exposure.",
           "image": "assets/films/plates/what-a-bubble-can-do-07.webp",
           "kind": "PUBLISHED IN-VITRO RESULT",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 11,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "10",
           "title": "The cytoskeleton matters",
-          "narration": "Actin organization and mechanical properties were examined alongside viability. The study supports investigating cell mechanics as part of protection, while leaving complex molecular causality open.",
+          "narration": "We examined actin organization and cellular mechanics alongside viability. Their relationship still needs further mechanistic investigation.",
           "image": "assets/films/plates/what-a-bubble-can-do-08.webp",
           "kind": "MECHANISTIC INTERPRETATION / NOT PROOF OF A SINGLE PATHWAY",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
           "id": "11",
           "title": "What the experiment can say",
-          "narration": "Pretreatment altered injury within this experimental system. The clinical question remains open, and the geometry of a chamber explains why.",
+          "narration": "The chamber supplied controlled evidence about a physical injury. Prevention in ventilated patients remains untested by this experiment.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
           "kind": "EVIDENCE LIMIT / 2021 PUBLICATION",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 10,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         }
       ],
       "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
