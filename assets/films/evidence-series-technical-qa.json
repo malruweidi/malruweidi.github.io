@@ -1,0 +1,87 @@
+{
+  "title": "Ruwaidix Evidence in Motion — technical QA",
+  "method": "FFprobe streams; FFmpeg EBU R128 scan; WebVTT cue lengths; Pillow picture integrity. Human viewing and audio listening still required.",
+  "films": [
+    {
+      "film": "what-a-bubble-can-do",
+      "duration_seconds": 120.0,
+      "video": "h264",
+      "audio": "aac",
+      "resolution": [
+        1280,
+        720
+      ],
+      "frame_rate": 24,
+      "loudness_lufs": -18.1,
+      "true_peak_dBFS": -2.0,
+      "captions": {
+        "cue_count": 25,
+        "longest_cue_characters": 71,
+        "last_end_seconds": 117.45400000000001
+      },
+      "bytes": 3251296,
+      "sha256": "59cfcc4e4f79d5a2b92257488dfcb3978c98d3d9d95fee9fba2b7febf6304af8"
+    },
+    {
+      "film": "two-materials-no-section",
+      "duration_seconds": 120.0,
+      "video": "h264",
+      "audio": "aac",
+      "resolution": [
+        1280,
+        720
+      ],
+      "frame_rate": 24,
+      "loudness_lufs": -18.1,
+      "true_peak_dBFS": -2.0,
+      "captions": {
+        "cue_count": 24,
+        "longest_cue_characters": 66,
+        "last_end_seconds": 116.168
+      },
+      "bytes": 3270324,
+      "sha256": "4158dabc2312d48ae04f27eea4380c49a75c8f3826a2db93dac844bc8a5b7243"
+    },
+    {
+      "film": "the-laboratory-we-carried-with-us",
+      "duration_seconds": 120.0,
+      "video": "h264",
+      "audio": "aac",
+      "resolution": [
+        1280,
+        720
+      ],
+      "frame_rate": 24,
+      "loudness_lufs": -18.0,
+      "true_peak_dBFS": -2.0,
+      "captions": {
+        "cue_count": 25,
+        "longest_cue_characters": 71,
+        "last_end_seconds": 117.759
+      },
+      "bytes": 3444201,
+      "sha256": "a04e69585ae2146679b014833a69721b687961194d19d8abf417a148c2138ba0"
+    },
+    {
+      "film": "making-medicines-keep",
+      "duration_seconds": 120.0,
+      "video": "h264",
+      "audio": "aac",
+      "resolution": [
+        1280,
+        720
+      ],
+      "frame_rate": 24,
+      "loudness_lufs": -18.0,
+      "true_peak_dBFS": -1.8,
+      "captions": {
+        "cue_count": 28,
+        "longest_cue_characters": 71,
+        "last_end_seconds": 118.11699999999999
+      },
+      "bytes": 3062300,
+      "sha256": "66f7559256b5a68206ac8dd74516fc5994bf3b998d9a22d1d0b3c422e1097990",
+      "historical_illustrations_difference": 0.0568
+    }
+  ]
+}
