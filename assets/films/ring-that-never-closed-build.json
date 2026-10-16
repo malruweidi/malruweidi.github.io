@@ -1,0 +1,17 @@
+{
+  "title": "The Ring That Never Closed",
+  "seconds": 180.0,
+  "scene_count": 10,
+  "video_sha256": "96c9e3c8cab5c0b617f09f6630b3053ffb26be66affb3f4f247d7b7d49b51353",
+  "source_figure_sha256": "a0dc1964459068d93e1afd2135f11b331e70a8e66d5a26898611ae4662de2c70",
+  "source_manifest": "assets/films/ring-that-never-closed-scenes.json",
+  "source_records": [
+    "/stories/the-ring-that-never-closed.html",
+    "/grants/urep23.html"
+  ],
+  "figure_policy": "Website archival cyanide-sensing figure used only as research-context reference, not independently authenticated as the original imine or UV\u2013Vis spectrum from the 2021 final report.",
+  "scientific_integrity": "Observed colored solution and reported peak changes are not proof of selectivity in environmental samples, successful imidazopyridine synthesis, PRMT5 inhibition or anticancer efficacy. Schematics are explanatory, not representations of an isolated verified molecular structure or measured spectrum.",
+  "render_script": "scripts/render-ring-that-never-closed.py",
+  "voice": "Kokoro ONNX bm_george generated speech; not the researcher's actual voice",
+  "sound": "Original generated harmonic score without field recordings or borrowed music"
+}
