@@ -36,7 +36,7 @@ test("every original film links to an already-published media source", () => {
     } else {
       assert.ok(src.startsWith("https://"), "untrusted remote media scheme " + src);
     }
-    assert.ok(techniques.includes(src) || stories.includes(src) || ownerArchive.includes(src.slice(1)), "untraced original recording " + src);
+    assert.ok(techniques.includes(src) || stories.includes(src) || ownerArchive.includes(src.split("/").pop()), "untraced original recording " + src);
   }
   assert.ok(films.includes("https://www.youtube-nocookie.com/embed/62hbr51K3GE"));
   assert.ok(homepage.includes("https://www.youtube-nocookie.com/embed/62hbr51K3GE"));
