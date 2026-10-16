@@ -44,3 +44,52 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", addDiscovery);
   else addDiscovery();
 })();
+
+
+/* Reading continuity for the long-form archive, progressively enhanced.
+   Visual-only progress uses no hidden content, scroll lock or external library. */
+(() => {
+  "use strict";
+  function setUpReadingContinuity() {
+    if (!document.querySelector("main") || document.querySelector(".rx-reading-progress")) return;
+    const progress = document.createElement("div");
+    progress.className = "rx-reading-progress";
+    progress.setAttribute("aria-hidden", "true");
+    document.body.appendChild(progress);
+    let pending = false;
+    function update() {
+      pending = false;
+      const doc = document.documentElement;
+      const distance = Math.max(0, doc.scrollHeight - window.innerHeight);
+      const ratio = distance ? Math.max(0, Math.min(1, window.scrollY / distance)) : 0;
+      progress.style.transform = "scaleX(" + ratio.toFixed(4) + ")";
+    }
+    function requestUpdate() {
+      if (pending) return;
+      pending = true;
+      window.requestAnimationFrame(update);
+    }
+    window.addEventListener("scroll", requestUpdate, {passive:true});
+    window.addEventListener("resize", requestUpdate, {passive:true});
+    window.addEventListener("load", requestUpdate, {once:true});
+    requestUpdate();
+
+    if (document.documentElement.dataset.rxPage !== "home" ||
+        !("IntersectionObserver" in window)) return;
+    const links = Array.from(document.querySelectorAll(".navlinks a[href^='#']"))
+      .filter(a => a.hash.length > 1 && document.getElementById(decodeURIComponent(a.hash.slice(1))));
+    if (!links.length) return;
+    const byId = new Map(links.map(a => [decodeURIComponent(a.hash.slice(1)), a]));
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        for (const a of links) a.removeAttribute("aria-current");
+        byId.get(entry.target.id)?.setAttribute("aria-current", "location");
+      }
+    }, {rootMargin:"-24% 0px -62% 0px",threshold:0});
+    byId.forEach((_a,id) => observer.observe(document.getElementById(id)));
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", setUpReadingContinuity, {once:true});
+  } else setUpReadingContinuity();
+})();
