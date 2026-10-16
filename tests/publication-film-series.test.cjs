@@ -134,3 +134,19 @@ test('release evidence manifests take scene descriptions from the source catalog
   assert.ok(script.includes('if old.get("sha256") != actual_digest:'), 'refuse to rewrite a mismatched film record');
   assert.ok(workflow.includes('--reconcile-manifests'), 'repair existing releases incrementally');
 });
+
+
+test('all documentary scene credits are inspectable on the film collection', () => {
+  const page = fs.readFileSync(file('publication-cinema.html'), 'utf8');
+  assert.ok(page.includes('Read the six scenes and visual credits'));
+  assert.ok(page.includes('Visual record: '));
+  assert.ok(page.includes('Credit: '));
+  assert.ok(page.includes('Related source or context'));
+  assert.ok(page.includes('rel="noopener noreferrer"'));
+  for (const item of catalog.items) {
+    for (const scene of item.scenes) {
+      assert.ok(scene.link.startsWith('/') || scene.link.startsWith('https://'), item.id + ' invalid visual provenance URL');
+      assert.ok(scene.credit.length > 5, item.id + ' missing visual evidence credit');
+    }
+  }
+});
