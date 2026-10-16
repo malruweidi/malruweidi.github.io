@@ -58,6 +58,29 @@ def load():
                 shot["video"].startswith("https://") or (ROOT/shot["video"]).is_file()
             ):
                 raise FileNotFoundError(shot["video"])
+    # Every movie has a separate, reversible director's ledger. This becomes
+    # part of the authoritative preview SHA without editing original sources.
+    direction=json.loads((ROOT/"assets/films/directors-ledger-v3.json").read_text(encoding="utf-8"))
+    if direction.get("status")!="UNAPPROVED_DIRECTORIAL_WORKPRINTS":
+        raise ValueError("Unapproved directorial ledger is required")
+    notes={x["slug"]:x for x in direction["films"]}
+    if len(notes)!=44 or set(notes)!={f["slug"] for f in films}:
+        raise ValueError("Directorial ledger must cover all 44 films exactly")
+    for f in films:
+        d=notes[f["slug"]]
+        moves=d["camera_moves"]
+        if len(moves)!=len(f["shots"]) or d["voice_preview"] not in ("bm_george","bm_lewis","am_michael","bf_emma"):
+            raise ValueError("Bad camera or narrator plan: "+f["slug"])
+        f["editorial_argument"]=d["editorial_argument"]
+        f["visual_motif"]=d["visual_motif"]
+        f["review_question"]=d["review_question"]
+        f["voice_preview"]=d["voice_preview"]
+        for shot,move in zip(f["shots"],moves):
+            if move not in ("lock","slow-push","slow-pull","pan-left","pan-right","rise","settle"):
+                raise ValueError("Unknown motion plan "+f["slug"])
+            if (shot.get("object_id") or re.search(r"figure|microscopy|published|chart|experimental|measurement|historical object",shot["kind"],re.I)) and move!="lock":
+                raise ValueError("Actual evidence must not be cropped: "+f["slug"])
+            shot["camera_move"]=move
     return films
 
 def input_digest(f):
