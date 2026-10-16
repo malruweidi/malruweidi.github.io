@@ -285,11 +285,11 @@ def photograph_context_frame(source):
     # anatomy and microtome photograph unobstructed.
     labels={
         "nih-alveoli":"NIH / NCI · ALVEOLAR ANATOMY · CONTEXT ONLY",
-        "wellcome-manuscript":"WELLCOME · HISTORICAL MANUSCRIPT · NOT PRIMARY FOLIO",
-        "cairo-architecture":"CAIRO ARCHITECTURE · HISTORICAL CONTEXT ONLY",
-        "apothecary-syrup":"2026 AI RECONSTRUCTION · NOT HISTORICAL PHOTO",
-        "apothecary-weights":"2026 AI RECONSTRUCTION · NOT HISTORICAL PHOTO",
-        "histology-reference":"MICROTOMY REFERENCE · NOT ORIGINAL EXPERIMENT"
+        "wellcome-arabic-manuscript":"WELLCOME · HISTORICAL MANUSCRIPT · NOT PRIMARY FOLIO",
+        "syrup-skimming":"CAIRO ARCHITECTURE · HISTORICAL CONTEXT ONLY",
+        "syrup-still-life":"2026 AI RECONSTRUCTION · NOT HISTORICAL PHOTO",
+        "balance-still-life":"2026 AI RECONSTRUCTION · NOT HISTORICAL PHOTO",
+        "generic-microtome":"MICROTOMY REFERENCE · NOT ORIGINAL EXPERIMENT"
     }
     label=labels.get(source["id"],source["caption"].upper())
     if original.width/original.height<1.35 and source.get("on_frame_lines"):
