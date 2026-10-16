@@ -1,7 +1,7 @@
 {
   "film": "feature-airway-reopening-evidence-cut",
   "status": "RENDER BLOCKED; NOT A COMPLETED VIDEO",
-  "error": "feature-airway-reopening-evidence-cut shot 3: voice exceeds 13s. Rewrite or rerecord; never clip.",
+  "error": "feature-airway-reopening-evidence-cut shot 11: voice exceeds 10s. Rewrite or rerecord; never clip.",
   "source": "assets/films/cinematic-library-v2.json",
-  "input_sha256": "e7fe7742f79518ebb1efcee5a9fe92110ca54e17b98a3f8a3bb599679c89cad7"
+  "input_sha256": "d9958016ddb8a040ef780645fe6b853aa39b8c57bfb88dc63827d639ee4d60f5"
 }

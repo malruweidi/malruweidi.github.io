@@ -1,0 +1,92 @@
+{
+  "slug": "feature-two-materials-no-section-evidence-cut",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "8f50c5fe102e381970f056f6430330c38e405c01de2b3612ef6cb7181853085d",
+  "shots": [
+    {
+      "title": "The section that never existed",
+      "kind": "archival photograph",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "Orientation mattered",
+      "kind": "archival photograph",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "A temporary support",
+      "kind": "explanatory schematic",
+      "image": "assets/films/plates/two-materials-no-section-02.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "The paraffin stage",
+      "kind": "archival photograph",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "The material boundary",
+      "kind": "explanatory schematic",
+      "image": "assets/films/plates/two-materials-no-section-05.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "The block came apart",
+      "kind": "archival photograph",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "What I could actually conclude",
+      "kind": "explanatory schematic",
+      "image": "assets/films/plates/two-materials-no-section-06.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "A hypothesis, not a diagnosis",
+      "kind": "explanatory schematic",
+      "image": "assets/films/plates/two-materials-no-section-07.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "What a future test might ask",
+      "kind": "explanatory schematic",
+      "image": "assets/films/plates/two-materials-no-section-08.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "No section. An intact record.",
+      "kind": "archival photograph",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    }
+  ],
+  "film_title": "The Material Boundary: An Unsuccessful Histology Attempt",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/two-materials-scenes.json",
+  "primary_reference": "/stories/failed-zebrafish-histology.html",
+  "source_collection": "feature",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "3fc0fabb810c8adf0b15080a635fd9d9e870370b15fbd26387e771d08c31cf7c"
+}
