@@ -1,0 +1,78 @@
+{
+  "slug": "pub-making-medicines-keep",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "d7304feb48a04492866f3ebcbdaed828ad4299ad2660d4623e0efa092d38b57a",
+  "shots": [
+    {
+      "title": "How did medieval medicines keep?",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-01.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "The medicine had to last",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-02.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "A handbook for a working pharmacy",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-03.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "Why syrup matters",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-04.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "Substitution is a serious decision",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-05.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "The difficulty: Reading against the temptation to romanticise",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-06.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "Reading against the temptation to romanticise",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-07.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "What a medicine could keep",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-08.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    }
+  ],
+  "film_title": "How did medieval medicines keep?",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/#history",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "408d3020be9177ed53888ceb5b5653eb0d06b8053e87d921ce49e08cae03b889"
+}

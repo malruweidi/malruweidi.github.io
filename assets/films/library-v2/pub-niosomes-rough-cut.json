@@ -1,0 +1,78 @@
+{
+  "slug": "pub-niosomes",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "21b98a9e239e5eb5b8a6e2e877803f66e7c450b0fb5cae65ff2fe0c87d9a0656",
+  "shots": [
+    {
+      "title": "Will the medicine survive the nebulizer?",
+      "kind": "Illustrative vesicle, not measured morphology",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Illustrative vesicle, not measured morphology"
+    },
+    {
+      "title": "The vial is not the lung",
+      "kind": "Conceptual vesicular carrier, no measured data",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Conceptual vesicular carrier, no measured data"
+    },
+    {
+      "title": "Design the membrane",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/niosomes-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Characterise what was built",
+      "kind": "Original laboratory workspace photograph, not an assay result",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Original laboratory workspace photograph, not an assay result"
+    },
+    {
+      "title": "The nebulizer is a stress test",
+      "kind": "Pulmonary research-context illustration",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Pulmonary research-context illustration"
+    },
+    {
+      "title": "The difficulty: From droplet to dose",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/niosomes-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "From droplet to dose",
+      "kind": "Illustration of ongoing research questions",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Illustration of ongoing research questions"
+    },
+    {
+      "title": "No invented result",
+      "kind": "Original research workspace photograph",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "museum": null,
+      "credit": "Original research workspace photograph"
+    }
+  ],
+  "film_title": "Will the medicine survive the nebulizer?",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/research/inhalable-vesicles.html",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "63896735a6f1825f0c21c284a320e737f13b3b548c8622a4efd5a44556915df7"
+}

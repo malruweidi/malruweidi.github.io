@@ -1,0 +1,78 @@
+{
+  "slug": "pub-curcumin-cyanide",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "32db4f8d5d50a6848f9d7df397a66fde3dc5ac315a36491c563567298a31c0eb",
+  "shots": [
+    {
+      "title": "When a molecule becomes a question",
+      "kind": "Published study figure",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Published study figure"
+    },
+    {
+      "title": "Colour is evidence, but of what?",
+      "kind": "Published cyanide sensor figure",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Published cyanide sensor figure"
+    },
+    {
+      "title": "A familiar natural chromophore",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/curcumin-cyanide-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "A challenge in water",
+      "kind": "Contemporary laboratory chemical photograph; not curcumin sample",
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "museum": null,
+      "credit": "Contemporary laboratory chemical photograph; not curcumin sample"
+    },
+    {
+      "title": "The readout",
+      "kind": "Published sensor optical readouts",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Published sensor optical readouts"
+    },
+    {
+      "title": "The difficulty: Cells are not a calibration vial",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/curcumin-cyanide-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Cells are not a calibration vial",
+      "kind": "Published sensing and cell figure",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Published sensing and cell figure"
+    },
+    {
+      "title": "A different kind of question",
+      "kind": "Published research record",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Published research record"
+    }
+  ],
+  "film_title": "When a molecule becomes a question",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1039/C9AY01557D",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "f931efe5ff05c7ef62c07086332cde8c661a5595aaeb31fa3147c95325f329a2"
+}
