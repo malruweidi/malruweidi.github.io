@@ -1,0 +1,49 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join, resolve } from 'node:path';
+
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const read = (path) => readFileSync(join(root, path), 'utf8');
+
+test('publication stories have distinct scientific premises, not duplicated film-maker placeholders', () => {
+  const cinema = read('publication-cinema.html');
+  assert.doesNotMatch(cinema, /An evidence-driven film adaptation of the published column/);
+  for (const phrase of [
+    'A transcription factor rarely offers a permanent pocket.',
+    'A nanomolar assay result says little about unbound drug exposure',
+    'Every protein depends on charged and modified tRNAs.',
+    'An induced-proximity drug recruits two proteins',
+    'An antibody delivers the payload only as far as the delivery system allows.'
+  ]) assert.ok(cinema.includes(phrase), 'missing distinctive scientific premise: ' + phrase);
+});
+
+test('personal photo captions stay factual, without curator boilerplate', () => {
+  const photos = read('assets/owner-photo-placements-2026-10-16.js');
+  assert.match(photos, /Ahmed catches some sleep/);
+  assert.doesNotMatch(photos, /Not every photograph in a chemist/);
+  assert.doesNotMatch(photos, /Image supplied and identified by the archive owner/);
+  const research = read('assets/research-media-2026.js');
+  assert.doesNotMatch(research, /documentary views, not proof of experiment results/);
+});
+
+test('Ramadan first-person narrative matches its available archive and Arabic source', () => {
+  const stories = read('stories.html');
+  const archive = read('assets/owner-archive-2026-10-13.js');
+  const dictionary = read('assets/stories-i18n.js');
+  assert.doesNotMatch(stories, /is not yet hosted here/);
+  assert.match(stories, /photograph of the microscopy room now appears in the accompanying archive/);
+  assert.match(archive, /ramadan-microscopy-room\.webp/);
+  assert.match(dictionary, /أصبحت صورة غرفة المجهر معروضة في الأرشيف المرافق/);
+});
+
+test('documentary scientific cautions remain discoverable without duplicating owner notes in every scene', () => {
+  const film = read('films/two-materials-no-section.html');
+  assert.doesNotMatch(film, /Source designation: archival photograph; original owner-supplied photograph/);
+  assert.match(film, /Source designation: explanatory schematic/);
+  assert.match(film, /No usable section|No interpretable section|usable ribbon of histological sections/i);
+  const stories = read('stories.html');
+  assert.ok((stories.match(/<details class="stories-source rx-source-fold">/g) || []).length >= 15,
+    'source documentation disclosures must remain accessible');
+});
