@@ -8,7 +8,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
-from PIL import Image, ImageChops
+from PIL import Image, ImageChops, ImageStat
 
 ROOT=Path(__file__).resolve().parents[1]
 ASSETS=ROOT/"assets"/"films"
@@ -62,7 +62,7 @@ def visual_chapters(film):
             a=im2.convert("RGB").crop((78,165,1200,445))
             b=im3.convert("RGB").crop((78,165,1200,445))
             diff=ImageChops.difference(a,b)
-            return sum(v*n for n,v in enumerate(diff.histogram()))/max(1,a.width*a.height*3*255)
+            return sum(ImageStat.Stat(diff).mean)/(3*255)
     return None
 
 def main():
