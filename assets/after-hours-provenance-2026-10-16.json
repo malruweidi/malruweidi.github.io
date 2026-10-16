@@ -1,0 +1,230 @@
+{
+  "intake_date": "2026-10-16",
+  "curatorial_principle": "Document visible objects and actions only; no inferred identities, study results, institutions, calendar dates, operators, technical procedures or clock accuracy. The site preserves earlier content without deletion.",
+  "originals": "Original four JPEG files archived in the repository; original six MOV/MP4 recordings remain available in the owner-supplied chat upload archive. Public web versions are re-encoded H.264 MP4 with audio when present, plus WebP poster frames.",
+  "repo_directory": "assets/owner-archive-2026-10-16-hours/",
+  "records": [
+    {
+      "id": "waters",
+      "type": "photograph",
+      "source": "D0B13525-4966-4EC3-A97C-15B5BA48FB39.jpeg",
+      "description": "Waters ACQUITY UPLC liquid-chromatography system; sample manager visible; lower front assembly open with flow hardware exposed. No result or operator established.",
+      "placement": [
+        "techniques.html",
+        "archive.html"
+      ]
+    },
+    {
+      "id": "friends",
+      "type": "photograph",
+      "source": "87B786B1-727B-4899-97D8-F7B42C1EBB9D.jpeg",
+      "description": "Large indoor social group. Original overlay reads Arabic الربع (friends/the group). Participants and original date not confirmed.",
+      "placement": [
+        "chem-squad.html",
+        "archive.html"
+      ]
+    },
+    {
+      "id": "table",
+      "type": "photograph",
+      "source": "36D6C62B-0CD8-44E8-8935-FF9A512ADF72.jpeg",
+      "description": "Black-and-white crowded room-table scene with laptops, phones and notebooks; particular activity unconfirmed.",
+      "placement": [
+        "chem-squad.html",
+        "stories.html",
+        "archive.html"
+      ]
+    },
+    {
+      "id": "0411",
+      "type": "photograph",
+      "source": "D79519FF-149C-46D9-89F0-CBEF25B65FCE.jpeg",
+      "description": "Dark exterior with building, trees, illuminated windows and 04:11 overlay. The visible clock is not verified original capture time.",
+      "placement": [
+        "stories.html",
+        "archive.html"
+      ]
+    },
+    {
+      "id": "cold",
+      "type": "video",
+      "source": "5bb5c2a824c945bd910bff5511bd01ea.mov",
+      "description": "Cryogenic-looking laboratory apparatus and white vapour around a container. Vessel medium, operator, and experimental purpose not confirmed.",
+      "placement": [
+        "techniques.html",
+        "archive.html"
+      ]
+    },
+    {
+      "id": "board",
+      "type": "video",
+      "source": "d259e852f6ed41c0aa5b23ea6c72001e.mov",
+      "description": "Two people at a blackboard with chemical markings, overlay Midnight organic thoughts, time overlay visible; no instructional result inferred.",
+      "placement": [
+        "chem-squad.html",
+        "stories.html",
+        "archive.html"
+      ]
+    },
+    {
+      "id": "0321",
+      "type": "video",
+      "source": "33e00ef0f74b48f0a62e878f593d1005.mov",
+      "description": "Informal gathering in a room with multiple people; clip carries a 03:21 overlay, not independently verified as recording time.",
+      "placement": [
+        "chem-squad.html",
+        "archive.html"
+      ]
+    },
+    {
+      "id": "conversation",
+      "type": "video",
+      "source": "e4f0ad2eff5c4ddd9cfdab6a2ad0727f.mov",
+      "description": "Person in a striped shirt speaking in an indoor informal setting; topic and identities unverified.",
+      "placement": [
+        "chem-squad.html",
+        "archive.html"
+      ]
+    },
+    {
+      "id": "football",
+      "type": "video",
+      "source": "8589b15ff8e54da69d0d3a10e3a202da.mov",
+      "description": "Informal exchange featuring AC Milan football shirt and hand-held object near face. Not presented as scientific footage.",
+      "placement": [
+        "archive.html"
+      ]
+    },
+    {
+      "id": "screen",
+      "type": "video",
+      "source": "818a094a56a24a36a69039118bb90df8.mp4",
+      "description": "Casual desk scene, a person watching a humorous video on a screen. Not presented as study or research activity.",
+      "placement": [
+        "archive.html"
+      ]
+    }
+  ],
+  "published_files": [
+    {
+      "src": "D0B13525-4966-4EC3-A97C-15B5BA48FB39.jpeg",
+      "name": "waters-acquity-instrument.webp",
+      "bytes": 53938,
+      "sha256": "6e8834b5e6690f3d6e4943bbf72afd9da00ac44e4ab252f3cf83d8148a8ededf"
+    },
+    {
+      "src": "D0B13525-4966-4EC3-A97C-15B5BA48FB39.jpeg",
+      "name": "original-D0B13525-4966-4EC3-A97C-15B5BA48FB39.jpeg",
+      "bytes": 172521,
+      "sha256": "58af0654c69227808eb19ee1a60e91369e7923a96006f114c2a888f7180dd5d9"
+    },
+    {
+      "src": "87B786B1-727B-4899-97D8-F7B42C1EBB9D.jpeg",
+      "name": "friends-group-al-rub.webp",
+      "bytes": 43490,
+      "sha256": "b5d2081a3d7fd529c73e4e3150f1a1e1a72639e10cb7640f826ce2ae8604c118"
+    },
+    {
+      "src": "87B786B1-727B-4899-97D8-F7B42C1EBB9D.jpeg",
+      "name": "original-87B786B1-727B-4899-97D8-F7B42C1EBB9D.jpeg",
+      "bytes": 140793,
+      "sha256": "85d9c48808cf2cc42da1dc3e40dd7fad71ce611b50821da6076b44a7d3fff4bb"
+    },
+    {
+      "src": "36D6C62B-0CD8-44E8-8935-FF9A512ADF72.jpeg",
+      "name": "table-room-laptops.webp",
+      "bytes": 58146,
+      "sha256": "fb4c127ce9cc10e70f3a61aecf96d5f6be999729fe5c2254b4f33f1054d42337"
+    },
+    {
+      "src": "36D6C62B-0CD8-44E8-8935-FF9A512ADF72.jpeg",
+      "name": "original-36D6C62B-0CD8-44E8-8935-FF9A512ADF72.jpeg",
+      "bytes": 212670,
+      "sha256": "5876eeeff97da56636492e089a611bc5e2f235c6275fd6566d962179c7383e8c"
+    },
+    {
+      "src": "D79519FF-149C-46D9-89F0-CBEF25B65FCE.jpeg",
+      "name": "exterior-at-0411.webp",
+      "bytes": 56018,
+      "sha256": "4d2053512fec47dff18cd8bf97574e84af745ee8364c681fe44f201cc04288e2"
+    },
+    {
+      "src": "D79519FF-149C-46D9-89F0-CBEF25B65FCE.jpeg",
+      "name": "original-D79519FF-149C-46D9-89F0-CBEF25B65FCE.jpeg",
+      "bytes": 177125,
+      "sha256": "82f8fd905d6123e6559d1c6c7283b06343a0cfd0ef876a8296cf2126e06a5725"
+    },
+    {
+      "src": "5bb5c2a824c945bd910bff5511bd01ea.mov",
+      "name": "cold-vapour-laboratory.mp4",
+      "bytes": 229042,
+      "sha256": "bda7dbcc38f9c580a28cece5e58759fd292ef3bbac711ae8b4b16d1d18efd348"
+    },
+    {
+      "src": "5bb5c2a824c945bd910bff5511bd01ea.mov",
+      "name": "cold-vapour-laboratory-poster.webp",
+      "bytes": 13324,
+      "sha256": "af98f6a372cc0755b9eb0affef3ed872e0fb37ba021bd6016e764111eae7af71"
+    },
+    {
+      "src": "d259e852f6ed41c0aa5b23ea6c72001e.mov",
+      "name": "midnight-organic-board.mp4",
+      "bytes": 605504,
+      "sha256": "34f619371ac3d22461748c0f2a6dc4c1f58fd3b83f47c16f95ca0d0af6f5616a"
+    },
+    {
+      "src": "d259e852f6ed41c0aa5b23ea6c72001e.mov",
+      "name": "midnight-organic-board-poster.webp",
+      "bytes": 14154,
+      "sha256": "f5e3f74661a3d5274879e57d213d8f9487b2af6c9334abb5c3ccdf60931704d2"
+    },
+    {
+      "src": "33e00ef0f74b48f0a62e878f593d1005.mov",
+      "name": "room-0321.mp4",
+      "bytes": 410669,
+      "sha256": "60059f87fab2b7b01e981053ed667a580d6b97fcde9c82ecdb37f23852b3147e"
+    },
+    {
+      "src": "33e00ef0f74b48f0a62e878f593d1005.mov",
+      "name": "room-0321-poster.webp",
+      "bytes": 8604,
+      "sha256": "be2f3702da20ae279b745ab2a0d116fed528b296a7438c2a3d5243ff818674ae"
+    },
+    {
+      "src": "e4f0ad2eff5c4ddd9cfdab6a2ad0727f.mov",
+      "name": "informal-conversation.mp4",
+      "bytes": 722584,
+      "sha256": "50d77c397c8aa15fcc93f035859fccc67add75b59eb1e5ad0445fe950d07d2f8"
+    },
+    {
+      "src": "e4f0ad2eff5c4ddd9cfdab6a2ad0727f.mov",
+      "name": "informal-conversation-poster.webp",
+      "bytes": 9964,
+      "sha256": "0de624a80ed15f48826e45a9cd559927f7303d1dda8cd2aa9ca316e759251d72"
+    },
+    {
+      "src": "8589b15ff8e54da69d0d3a10e3a202da.mov",
+      "name": "football-jersey-moment.mp4",
+      "bytes": 372445,
+      "sha256": "4425befd6f8b1c97a11d35e13bcad2bf1f7a4a7b4dc50d532f85bd5702e73e79"
+    },
+    {
+      "src": "8589b15ff8e54da69d0d3a10e3a202da.mov",
+      "name": "football-jersey-moment-poster.webp",
+      "bytes": 13274,
+      "sha256": "3b27568170a6c6dd68ab2f47540b9ef92d0e4c214dcc3746ec9cb6f178fabcef"
+    },
+    {
+      "src": "818a094a56a24a36a69039118bb90df8.mp4",
+      "name": "desk-screen-break.mp4",
+      "bytes": 805983,
+      "sha256": "38d054e8daa2a4a9d0993387296d9d0d40778d8fdf028af325cfaeb98bbe4200"
+    },
+    {
+      "src": "818a094a56a24a36a69039118bb90df8.mp4",
+      "name": "desk-screen-break-poster.webp",
+      "bytes": 13542,
+      "sha256": "24f28c7562e2f16d9183ad20829ceaec6a1757007445cb5d7bbb0e3d2ee91d54"
+    }
+  ]
+}

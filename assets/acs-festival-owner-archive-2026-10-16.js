@@ -17,6 +17,9 @@
   .rx26-figures img{width:100%;height:auto;max-height:620px;object-fit:contain;display:block;background:color-mix(in srgb,currentColor 8%,transparent)}
   .rx26-figures figcaption{font:400 12px/1.55 system-ui,sans-serif;opacity:.78;padding:11px 2px 3px}
   .rx26-source{font:400 11px/1.6 system-ui,sans-serif;opacity:.75}
+  .rx26-media-pending{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:9px;min-height:190px;padding:22px 20px;border:1px dashed color-mix(in srgb,currentColor 38%,transparent);background:color-mix(in srgb,currentColor 3%,transparent);text-align:center;color:inherit}
+  .rx26-media-pending strong{font:500 clamp(19px,2vw,24px)/1.22 Georgia,"Times New Roman",serif}
+  .rx26-media-pending span{font:400 13px/1.65 system-ui,sans-serif;max-width:46ch}
   .rx26-document .rx26-link{display:inline-block;text-decoration:underline;text-underline-offset:3px;margin-top:8px}
   @media(max-width:660px){.rx26-document{padding:15px 0}.rx26-figures{grid-template-columns:1fr}}
   `;
@@ -25,8 +28,21 @@
     const figure=el('figure');const a=el('a');
     a.href=ROOT+file;a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label',alt);
     const img=el('img');img.src=a.href;img.alt=alt;img.loading='lazy';img.decoding='async';
-    // No misleading replacement with an unrelated archive image.
-    img.addEventListener('error',()=>figure.remove(),{once:true});
+    // The source file has not yet been published: retain the archival slot,
+    // accurate caption, and source pointer rather than deleting the record.
+    figure.dataset.expectedAsset=ROOT+file;
+    img.addEventListener('error',()=>{
+      const pending=el('div','rx26-media-pending');
+      pending.setAttribute('role','note');
+      pending.append(
+        el('strong',null,phrase('Original image pending','الصورة الأصلية قيد الإضافة')),
+        el('span',null,phrase(
+          'The original image file is not yet available on this website. Its caption and archival source are preserved below.',
+          'ملف الصورة الأصلية غير متاح بعد على الموقع. حُفظ التعليق والمصدر الأرشيفي أدناه.'
+        ))
+      );
+      a.replaceWith(pending);
+    },{once:true});
     a.append(img);figure.append(a,el('figcaption',null,caption));return figure;
   }
   function shell(id,kicker,title,prose){const s=el('section','rx26-document');s.id=id;s.setAttribute('aria-label',title);
