@@ -275,3 +275,21 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Then laboratory access became another experimental constraint. COVID-19 restrictions interrupted the later work, and the planned protein-level follow-up, including comparison with Western blot measurements, was not completed. The final document therefore contains something more complicated than an unsuccessful reaction scheme followed by a new success: it contains measurable chemical behaviour, exploratory cellular effects and mechanistic questions that were still unanswered when the project ended.": "ثم أصبح الوصول إلى المختبر نفسه قيدًا آخر. عطّلت قيود جائحة كوفيد-١٩ العمل اللاحق، فلم تُستكمل المتابعة المخططة على مستوى البروتين، ومنها المقارنة بنتائج لطخة ويسترن. ولذلك يحوي التقرير النهائي قصة أعقد من تفاعل فاشل تلاه نجاح جديد؛ ففيه سلوك كيميائي قابل للقياس، وملاحظات خلوية استكشافية، وأسئلة آلية بقيت بلا إجابة عند انتهاء المشروع.",
   "I still return to the distinction between an intermediate and a destination. In the original proposal, the Schiff bases were a stage along a route to an imidazopyridine. In the final report, their spectra became the most concrete chemical evidence we could discuss. That change did not make the missing imidazopyridine appear, and it did not make an in vitro finding into a drug. It did teach me to pay attention when the experiment offers a different question from the one written in the proposal.": "ما زلت أعود إلى الفرق بين المركب الوسيط والغاية المقصودة. ففي المقترح الأصلي كانت قواعد شيف محطة في طريق الإيميدازوبيريدين. أما في التقرير النهائي فأصبحت أطيافها أوضح الأدلة الكيميائية التي استطعنا مناقشتها. هذا التغيير لم يصنع المركب الذي غاب عنا، ولم يحوّل نتيجة خلوية مخبرية إلى دواء. لكنه علّمني أن أصغي جيدًا حين تقترح التجربة سؤالًا غير الذي كتبناه في المقترح."
 });
+
+/* Final live QA: supporting Arabic text in the complete UREP23 chapter. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "LABORATORY FIELD NOTE / SYNTHETIC CHEMISTRY": "مذكرة مختبرية / الكيمياء التخليقية",
+  "QNRF UREP23-133-1-028 · undergraduate research": "مشروع UREP23-133-1-028 المموّل من الصندوق القطري لرعاية البحث العلمي · بحث جامعي",
+  "QNRF undergraduate project UREP23-133-1-028. The 2018 research plan proposed imidazopyridine synthesis; the 2021 final report documents that this route was not completed, followed by Schiff-base characterization, anion-sensing experiments and exploratory cell-line work by the collaborative team. The report records COVID-19 access restrictions and an unfinished protein-level investigation. The preliminary cell assays do not verify direct PRMT5 inhibition or a therapeutic candidate. The full unpublished final report is not reproduced here.": "مشروع البحث الجامعي UREP23-133-1-028 المموّل من الصندوق القطري لرعاية البحث العلمي. اقترحت خطة عام ٢٠١٨ تخليق مركبات الإيميدازوبيريدين، لكن التقرير النهائي لعام ٢٠٢١ يوثّق عدم اكتمال ذلك المسار، وما تلاه من توصيف قواعد شيف وتجارب استشعار الأنيونات ودراسات خلوية استكشافية أجراها الفريق البحثي بالتعاون. كما يسجّل التقرير قيود دخول المختبر خلال جائحة كوفيد-١٩ وعدم استكمال دراسة على مستوى البروتين. ولا تثبت التجارب الخلوية الأولية تثبيط إنزيم PRMT5 مباشرةً أو وجود دواء علاجي صالح. ولا يُعاد نشر التقرير النهائي غير المنشور كاملًا هنا.",
+  "Browse the undergraduate research grants ↗": "تصفّح مشروعات البحث الجامعي ↗",
+  "Read the documented project record ↗": "اقرأ سجل المشروع الموثق ↗",
+  "Find this chapter in Stories ↗": "اعثر على هذا الفصل ضمن الحكايات ↗",
+  "Where the chemistry went.": "إلى أين اتجهت الكيمياء؟",
+  "The project dossier separates the original proposal, the final report and the work that followed. The stories around it include another unsuccessful polymer experiment and the beginning of my undergraduate chemical-sensing work.": "يميّز ملف المشروع بين المقترح الأصلي والتقرير النهائي والعمل الذي تلاه. وتوجد بجواره حكايات عن تجربة أخرى لم تنجح مع البوليمرات وعن بدايات عملي الجامعي في الاستشعار الكيميائي.",
+  "Original UREP23 project and contribution ↗": "مشروع UREP23 الأصلي ومساهمتي فيه ↗",
+  "Another experiment that refused to cooperate ↗": "تجربة أخرى لم تسر كما توقعنا ↗",
+  "The undergraduate imine story ↗": "حكاية الإيمينات في مرحلة البكالوريوس ↗",
+  "Return to all Stories ↗": "العودة إلى جميع الحكايات ↗",
+  "2018–2021": "٢٠١٨–٢٠٢١",
+  "Project record ↗": "سجل المشروع ↗"
+});
