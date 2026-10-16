@@ -54,13 +54,16 @@
           "narration": "We modelled one mechanical event in cultured rat alveolar epithelial cells: a single air bubble passing over a monolayer.",
           "image": "assets/lung-concept.svg",
           "contain": true,
-          "kind": "Original diagram, conceptual only",
-          "credit": "Original diagram, conceptual only",
+          "kind": "Original scientific concept animation (not experimental data)",
+          "credit": "Original concept animation of advancing air-liquid interface; not actual cell culture or paper microscopy",
           "link": "/research/pulmonary-epithelial-injury.html",
           "source_title": "An airway reopens",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "video": "assets/films/animations-v2/airway-interface.mp4",
+          "motion_source": "assets/films/animations-v2/",
+          "rationale": "The moving schematic illustrates the stated physical phenomenon; it does not invent measurements, patient footage or experimental outcomes."
         },
         {
           "id": "04",
@@ -2178,13 +2181,16 @@
           "narration": "The review examines how changes in membrane-bound and soluble ACE2 expression might influence interpretations of viral biology and complications.",
           "image": "assets/evidence-pulmonary.webp",
           "contain": false,
-          "kind": "Pulmonary research-context illustration",
-          "credit": "Pulmonary research-context illustration",
+          "kind": "Original scientific concept animation (not experimental data)",
+          "credit": "Conceptual animation of membrane ectodomain shedding and soluble ACE2 context; no study measurements",
           "link": "/#publications",
           "source_title": "The location changes the question",
           "narrative_role": "evidence",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 15,
+          "video": "assets/films/animations-v2/ace2-shedding.mp4",
+          "motion_source": "assets/films/animations-v2/",
+          "rationale": "The moving schematic illustrates the stated physical phenomenon; it does not invent measurements, patient footage or experimental outcomes."
         },
         {
           "id": "05",
@@ -2320,14 +2326,17 @@
           "narration": "Microfluidic systems can organise small volumes and reactions, but sensitivity and specificity still depend on the biological assay.",
           "image": "assets/films/art/v2-microfluid-capture.svg",
           "contain": true,
-          "kind": "Original scientific illustration, conceptual only",
-          "credit": "Conceptual target capture/assay logic without invented sensitivity or specificity",
+          "kind": "Original scientific concept animation (not experimental data)",
+          "credit": "Original schematic microfluidic sample movement; not actual virological assay footage",
           "link": "/techniques.html",
           "source_title": "Fluid control becomes analytical control",
           "narrative_role": "evidence",
           "shot_treatment": "documentary",
           "sec": 15,
-          "source_detail": "Editorial mechanism illustration; not experimental, historical or clinical evidence"
+          "source_detail": "Editorial mechanism illustration; not experimental, historical or clinical evidence",
+          "video": "assets/films/animations-v2/microfluidic-transport.mp4",
+          "motion_source": "assets/films/animations-v2/",
+          "rationale": "The moving schematic illustrates the stated physical phenomenon; it does not invent measurements, patient footage or experimental outcomes."
         },
         {
           "id": "05",
@@ -2586,15 +2595,18 @@
           "narration": "The printing material must move through a nozzle, then retain enough structure after deposition to realise the intended form.",
           "image": "assets/films/art-v2/food-printing-1.svg",
           "contain": true,
-          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
-          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
+          "kind": "Original scientific concept animation (not experimental data)",
+          "credit": "Qualitative edible material extrusion and sagging animation; no actual filmed printing experiment",
           "link": "/#publications",
           "source_title": "Flow first, shape second",
           "narrative_role": "method",
           "shot_treatment": "documentary",
           "sec": 15,
           "original_image": "assets/films/art/edible-printing.svg",
-          "visual_edition": "cinematic-original-art"
+          "visual_edition": "cinematic-original-art",
+          "video": "assets/films/animations-v2/edible-extrusion.mp4",
+          "motion_source": "assets/films/animations-v2/",
+          "rationale": "The moving schematic illustrates the stated physical phenomenon; it does not invent measurements, patient footage or experimental outcomes."
         },
         {
           "id": "04",
