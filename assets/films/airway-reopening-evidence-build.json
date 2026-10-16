@@ -1,0 +1,19 @@
+{
+  "title": "What Happens When an Airway Reopens? \u2014 Evidence Cut",
+  "seconds": 180.0,
+  "scene_count": 11,
+  "video_sha256": "5ac4c484dbc549e405dea07c5a177a685eff7c5ff292daa0fdb77c6fe4b2876b",
+  "source_figure_sha256": "6e8e1de3139851129166eede71f8fa4bee2e4cb255519d54eabd61be3648a222",
+  "numerical_data": {
+    "bubble_control": 54.7,
+    "dexamethasone": 15.1,
+    "transdehydroandrosterone": 16.1,
+    "latrunculin_A": 20.9
+  },
+  "doi": "https://doi.org/10.1152/japplphysiol.00574.2020",
+  "drawings": "Original annotated explanatory plates, not observed data; proportional bars display published means only",
+  "voice": "Open-source Kokoro bm_george; generated voice, not original scientist's recorded voice",
+  "audio": "Original synthesized quiet harmonic score; no borrowed music or field recordings",
+  "source_manifest": "assets/films/airway-reopening-evidence-scenes.json",
+  "renderer": "scripts/render-airway-evidence-cut.py"
+}
