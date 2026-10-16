@@ -1247,7 +1247,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "instrument construction",
-          "narration": "Small airway reopening can produce rapid fluid stresses. Direct observation inside a whole lung is difficult to standardise.",
+          "narration": "How do you study a violent, fast-moving event in a microscopic airway without pretending to reconstruct an entire lung?",
           "image": "assets/lung-concept.svg",
           "contain": true,
           "kind": "Original conceptual diagram, not the paper's exact hardware",
@@ -1322,7 +1322,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "instrument construction",
-          "narration": "The chamber isolates a mechanical challenge. It does not recreate airway anatomy, immune dynamics or every interaction in a human lung.",
+          "narration": "The chamber is both the experimental strength and the limitation: it controls exposure but removes much of the organ's complexity.",
           "image": "assets/lung-concept.svg",
           "contain": true,
           "kind": "Explicitly simplified model illustration",
@@ -1331,7 +1331,7 @@
           "source_title": "The model is useful because it is incomplete",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 16
+          "sec": 15
         },
         {
           "id": "07",
@@ -1352,7 +1352,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "instrument construction",
-          "narration": "A reproducible instrument turns an invisible question into a measurable experiment. The paper records its operating logic and limits.",
+          "narration": "The methods paper belongs to anyone who needs a reproducible injury model and wants to know exactly what it leaves out.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
           "contain": true,
           "kind": "Published methods figure",
@@ -1361,9 +1361,10 @@
           "source_title": "Why methods deserve their own film",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 14
+          "sec": 15
         }
-      ]
+      ],
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "id": "pub-zebrafish-hemodynamics",
@@ -1382,7 +1383,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "microscopy field notebook",
-          "narration": "Inside a developing zebrafish, the heart contracts and blood circulates across structures small enough to challenge ordinary observation.",
+          "narration": "The beating heart of a zebrafish embryo can be watched, but measurement demands more than watching. The camera must catch events faster than the eye.",
           "image": "assets/zebrafish-larva-microscopy.webp",
           "contain": false,
           "kind": "Original zebrafish microscopy contextual still",
@@ -1391,7 +1392,7 @@
           "source_title": "High-speed observation",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 18
         },
         {
           "id": "02",
@@ -1421,7 +1422,7 @@
           "source_title": "High-speed observation",
           "narrative_role": "method",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "04",
@@ -1436,7 +1437,7 @@
           "source_title": "From frames to function",
           "narrative_role": "evidence",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "05",
@@ -1451,13 +1452,13 @@
           "source_title": "An instrument has a sampling limit",
           "narrative_role": "interpretation",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "06",
           "title": "Turning point",
           "subtitle": "microscopy field notebook",
-          "narration": "Vessels change shape while blood moves. Interpretation has to respect both the organism and the measurement technique.",
+          "narration": "A frame sequence becomes a flow estimate only after timing and image analysis are explicit. Do not show a simulated velocity field as a measured one.",
           "image": "assets/zebrafish-concept.svg",
           "contain": true,
           "kind": "Original conceptual biological schematic",
@@ -1466,7 +1467,7 @@
           "source_title": "A living system resists simplification",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 17
         },
         {
           "id": "07",
@@ -1481,13 +1482,13 @@
           "source_title": "A living system resists simplification",
           "narrative_role": "limits",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "08",
           "title": "The claim",
           "subtitle": "microscopy field notebook",
-          "narration": "The 2020 Micron study explores the possibilities of high-speed video microscopy. Its original images and analytic details remain the evidence.",
+          "narration": "High-speed microscopy is valuable because movement becomes quantifiable, with its uncertainties visible rather than hidden.",
           "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
           "contain": true,
           "kind": "Published microscopy figure",
@@ -1496,9 +1497,10 @@
           "source_title": "Making the invisible measurable",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "id": "pub-ace2-covid-drugs",
@@ -1517,7 +1519,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "clinical evidence",
-          "narration": "During COVID-19, clinicians were treating infection in patients who also lived with hypertension and chronic medication exposure.",
+          "narration": "During the pandemic, a molecular receptor and ordinary hypertension prescriptions became entangled in clinical speculation.",
           "image": "assets/echo-concept.svg",
           "contain": true,
           "kind": "General physiological diagram, not a specific assay result",
@@ -1592,7 +1594,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "clinical evidence",
-          "narration": "A signal in a patient cohort motivates mechanistic investigation. It should not become an unsupported instruction to stop or change medication.",
+          "narration": "Soluble ACE2 and angiotensin II are biological measurements. Group differences alone cannot prove that an antihypertensive caused a clinical outcome.",
           "image": "assets/echo-concept.svg",
           "contain": true,
           "kind": "Conceptual depiction, not treatment guidance",
@@ -1601,7 +1603,7 @@
           "source_title": "The clinical question is conditional",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "07",
@@ -1622,7 +1624,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "clinical evidence",
-          "narration": "The source article contains the study design and results. This film explains the uncertainty around clinical association rather than prescribing care.",
+          "narration": "Here the disciplined question concerns association under specified treatment groups, not advice to stop or start medication.",
           "image": "assets/evidence-pulmonary.webp",
           "contain": false,
           "kind": "Editorial science illustration",
@@ -1631,9 +1633,10 @@
           "source_title": "Evidence before advice",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "id": "pub-gi-autoimmunity-1",
@@ -1652,7 +1655,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "medical explanatory",
-          "narration": "The gastrointestinal wall is an immune interface, with specialised barriers and molecular signals operating beside digestion.",
+          "narration": "The intestine is never merely a digestive tube. Its immune interface is continually deciding what to tolerate and what to confront.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
           "contain": false,
           "kind": "Original laboratory workspace, not intestinal pathology",
@@ -1661,7 +1664,7 @@
           "source_title": "What makes tolerance possible?",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "02",
@@ -1727,7 +1730,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "medical explanatory",
-          "narration": "Mechanistic plausibility should be weighed against measured evidence and disease-specific diagnostic criteria.",
+          "narration": "Pathways discussed in a review vary across diseases. An autoimmune mechanism should not be presumed for every inflammatory or eosinophilic presentation.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
           "contain": false,
           "kind": "Laboratory context",
@@ -1757,7 +1760,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "medical explanatory",
-          "narration": "Part One of the 2022 open-access chapter explores what researchers understand about disease origins and pathophysiology, not a universal diagnosis.",
+          "narration": "Part One assembles mechanistic evidence, keeping the boundaries between distinct disorders visible.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
           "contain": false,
           "kind": "Editorial research context",
@@ -1766,9 +1769,10 @@
           "source_title": "Before treatment, understand the process",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "id": "pub-gi-autoimmunity-2",
@@ -1787,7 +1791,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "medical explanatory",
-          "narration": "Abdominal illness can look similar across immune, inflammatory and infectious processes. Clinical appearance alone may be insufficient.",
+          "narration": "A symptom cannot tell a clinician which immune mechanism produced it. Tissue, timing and clinical context complicate the answer.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
           "contain": false,
           "kind": "Laboratory photo, not endoscopy or pathology result",
@@ -1862,7 +1866,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "medical explanatory",
-          "narration": "A new assay or biologic may improve the available choices without solving every diagnostic or therapeutic question.",
+          "narration": "Diagnostic tools are useful when interpreted together. An illustration of a microscope is not an image of a patient's diagnostic specimen.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
           "contain": false,
           "kind": "Archival research context",
@@ -1871,7 +1875,7 @@
           "source_title": "What remains uncertain",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 16
         },
         {
           "id": "07",
@@ -1892,7 +1896,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "medical explanatory",
-          "narration": "The 2022 chapter documents the literature available then. Current medical decisions require updated clinical evidence and professional evaluation.",
+          "narration": "The literature review maps available approaches; it is not a replacement for updated guidelines or an individual diagnosis.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
           "contain": false,
           "kind": "Biomedical research archive",
@@ -1901,9 +1905,10 @@
           "source_title": "An evolving map, not a prescription",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "id": "pub-heart-failure-sensors",
@@ -1922,7 +1927,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "signal-processing documentary",
-          "narration": "Heart failure is not a single signal. Physiological changes appear through movements, rhythms and measurements interpreted in context.",
+          "narration": "A sensor records a signal. Calling that signal an early warning of heart failure is a much larger claim.",
           "image": "assets/echo-concept.svg",
           "contain": true,
           "kind": "Conceptual cardiac detection diagram",
@@ -1997,7 +2002,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "signal-processing documentary",
-          "narration": "Predictive performance needs evidence from realistic populations and robust external testing; practical accessibility matters alongside technical sophistication.",
+          "narration": "Performance depends on the patient population, reference standard and timing. Distinguish a physiological measurement from a validated prediction.",
           "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
           "contain": false,
           "kind": "Imaging-context photograph",
@@ -2027,7 +2032,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "signal-processing documentary",
-          "narration": "This 2022 book chapter maps the promise and constraints of measuring physiological warning signs. The chapter supplies the cited technologies.",
+          "narration": "A device becomes clinically useful through evidence, not through the elegance of its dashboard.",
           "image": "assets/echo-concept.svg",
           "contain": true,
           "kind": "Conceptual technology animation source",
@@ -2038,7 +2043,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 15
         }
-      ]
+      ],
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "id": "pub-ace2-forms",
@@ -2057,7 +2063,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "molecular explanation",
-          "narration": "ACE2 can be embedded in a cell membrane or exist in a soluble form. They should not be discussed as identical biological objects.",
+          "narration": "One protein name conceals two biological situations. ACE2 attached to a membrane is not interchangeable with circulating soluble ACE2.",
           "image": "assets/echo-concept.svg",
           "contain": true,
           "kind": "Conceptual non-specific signalling image, not ACE2 molecular structure",
@@ -2066,7 +2072,7 @@
           "source_title": "A receptor in a larger pathway",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 17
+          "sec": 15
         },
         {
           "id": "02",
@@ -2126,13 +2132,13 @@
           "source_title": "Expression is not the whole mechanism",
           "narrative_role": "interpretation",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "06",
           "title": "Turning point",
           "subtitle": "molecular explanation",
-          "narration": "The 2021 review weighs emerging research at a rapidly changing moment. The date of evidence matters for its interpretation.",
+          "narration": "The two forms occupy different physical contexts and have different interpretive problems, especially in discussions of viral entry and inflammation.",
           "image": "assets/evidence-pulmonary.webp",
           "contain": false,
           "kind": "Editorial image, not original coronavirus micrograph",
@@ -2141,7 +2147,7 @@
           "source_title": "Separate hypothesis from demonstration",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "07",
@@ -2162,7 +2168,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "molecular explanation",
-          "narration": "A careful mechanistic discussion starts by saying which ACE2 form, which tissue and which endpoint is actually being investigated.",
+          "narration": "Before asking what ACE2 does, say which ACE2, in which compartment, and what was actually measured.",
           "image": "assets/echo-concept.svg",
           "contain": true,
           "kind": "Conceptual visual, not study data",
@@ -2173,7 +2179,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "id": "pub-microfluidic-virus",
@@ -2192,7 +2199,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "instrument animation",
-          "narration": "Imagine taking a complex testing workflow and moving parts of it into channels so small that fluid behaviour becomes a design constraint.",
+          "narration": "A droplet entering a microchannel looks like progress toward a small diagnostic laboratory. The hard questions begin downstream.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
           "contain": false,
           "kind": "Archival lab context, not an actual viral detection device",
@@ -2201,7 +2208,7 @@
           "source_title": "The sample does not prepare itself",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 17
+          "sec": 15
         },
         {
           "id": "02",
@@ -2261,13 +2268,13 @@
           "source_title": "Detection is not diagnosis",
           "narrative_role": "interpretation",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "06",
           "title": "Turning point",
           "subtitle": "instrument animation",
-          "narration": "Manufacturability, reliable reagents, operator burden and clinical validation decide whether a clever microsystem becomes useful.",
+          "narration": "Sample processing, target capture and analytical specificity do not disappear when a device becomes smaller. Miniaturisation can add constraints.",
           "image": "assets/films/art/microfluidic-sensing.svg",
           "contain": true,
           "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
@@ -2276,7 +2283,7 @@
           "source_title": "The practical bottleneck",
           "narrative_role": "turning_point",
           "shot_treatment": "documentary",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "07",
@@ -2297,7 +2304,7 @@
           "id": "08",
           "title": "The claim",
           "subtitle": "instrument animation",
-          "narration": "The 2021 review surveys microfluidic approaches to respiratory-virus detection and the evidence required beyond the chip itself.",
+          "narration": "The purpose of a chip is reliable detection in a real sample, not merely an attractive miniature flow path.",
           "image": "assets/films/art/microfluidic-sensing.svg",
           "contain": true,
           "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
@@ -2308,7 +2315,8 @@
           "shot_treatment": "slow_end_frame",
           "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "id": "pub-drug-release-twins",
@@ -2327,7 +2335,7 @@
           "id": "01",
           "title": "What is at stake?",
           "subtitle": "data-motion essay",
-          "narration": "A physical dosage form releases medicine over time. A mathematical model tries to describe that changing process.",
+          "narration": "A smooth drug-release curve on a computer can be produced before a single tablet or vesicle is tested. Its smoothness proves nothing.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
           "contain": false,
           "kind": "Original research workstation, not the book chapter's simulation screenshot",
@@ -2336,7 +2344,7 @@
           "source_title": "Begin with the variables",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 15
+          "sec": 17
         },
         {
           "id": "02",
@@ -2402,7 +2410,7 @@
           "id": "06",
           "title": "Turning point",
           "subtitle": "data-motion essay",
-          "narration": "Mechanistic assumptions, parameter uncertainty and extrapolation beyond known experiments all limit credible digital performance forecasts.",
+          "narration": "Assumptions about transport or kinetics need experimental comparison. A convincing digital twin must expose residuals and uncertainty.",
           "image": "assets/niosomes-concept.svg",
           "contain": true,
           "kind": "Editorial illustration, not measured release profile",
@@ -2426,13 +2434,13 @@
           "source_title": "Ask where the prediction breaks",
           "narrative_role": "limits",
           "shot_treatment": "documentary",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "08",
           "title": "The claim",
           "subtitle": "data-motion essay",
-          "narration": "A defensible virtual model can guide test design, but the laboratory decides what survives.",
+          "narration": "Models earn their place in formulation science when they guide better tests and can fail against observations.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
           "contain": false,
           "kind": "Archival computational research context",
@@ -2441,9 +2449,10 @@
           "source_title": "The point is better experiments",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 15
+          "sec": 14
         }
-      ]
+      ],
+      "story_spine": "Individual source-based question, experimental complication, bounded conclusion"
     },
     {
       "id": "pub-food-printing",
