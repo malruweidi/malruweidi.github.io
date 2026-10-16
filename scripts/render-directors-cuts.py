@@ -103,43 +103,75 @@ def met_public_domain_source(object_id, workspace):
                           "public_domain":True,"url":record.get("objectURL")}
 
 def fit_image(path, contained):
-    """Never crop manuscript, published figure, scale bar, or failed section evidence."""
+    """Documentary frame: source material never clipped or used as decorative wallpaper."""
     with Image.open(path) as src:
-        img = ImageOps.exif_transpose(src).convert("RGB")
-    bg = Image.new("RGB", (W,H), (12,24,27))
+        img=ImageOps.exif_transpose(src).convert("RGB")
+    matte=Image.new("RGB",(W,H),(13,26,29))
+    soft=ImageOps.fit(img,(W,H),method=Image.Resampling.LANCZOS)
     if contained:
-        blurred = ImageOps.fit(img,(W,H),method=Image.Resampling.LANCZOS)
-        bg = Image.blend(blurred.filter(ImageFilter.GaussianBlur(56)), bg, .82)
-        img.thumbnail((W-90,H-130), Image.Resampling.LANCZOS)
-        bg.paste(img,((W-img.width)//2,(H-55-img.height)//2))
-        return bg
-    if img.height > img.width * 1.17:
-        blurred = ImageOps.fit(img,(W,H),method=Image.Resampling.LANCZOS)
-        bg = Image.blend(blurred.filter(ImageFilter.GaussianBlur(54)),bg,.66)
-        img.thumbnail((W-155,H-80),Image.Resampling.LANCZOS)
-        bg.paste(img,((W-img.width)//2,(H-img.height)//2))
-        return bg
-    return ImageOps.fit(img,(W,H),Image.Resampling.LANCZOS,centering=(.5,.5))
+        matte=Image.blend(soft.filter(ImageFilter.GaussianBlur(56)),matte,.87)
+        img.thumbnail((W-116,H-245),Image.Resampling.LANCZOS)
+        # Protected scientific area 92px-555px; full axes and historical pages.
+        matte.paste(img,((W-img.width)//2,95+(H-255-img.height)//2))
+        return matte
+    if img.height>img.width*1.17:
+        matte=Image.blend(soft.filter(ImageFilter.GaussianBlur(50)),matte,.68)
+        img.thumbnail((W-135,H-120),Image.Resampling.LANCZOS)
+        matte.paste(img,((W-img.width)//2,(H-img.height)//2))
+        return matte
+    return ImageOps.fit(img,(W,H),Image.Resampling.LANCZOS,centering=(.50,.48))
 
 def overlay(shot):
-    """Small, anchored typography; captions are separate WebVTT tracks."""
+    """Purpose-driven layouts with separate treatment for records, mechanisms and testimony.
+
+    Titles occupy a dedicated footer. Film subtitles live in the .vtt track rather
+    than obscuring the primary photograph, manuscript or experimental plot.
+    """
     frame=Image.new("RGBA",(W,H),(0,0,0,0))
     d=ImageDraw.Draw(frame)
-    for y in range(502,H):
-        a=int(189*((y-502)/(H-502))**1.25)
-        d.line([(0,y),(W,y)],fill=(11,22,26,a))
-    regular=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",15)
-    titlefont=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",37)
-    micro=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",11)
-    d.text((57,42),"RUWAIDIX   /   A RESEARCH FILM",font=regular,fill=(244,230,209))
-    d.line([(57,77),(113,77)],fill=(204,149,107),width=3)
-    # Restrict title overlay to one coherent line, preserve the image itself.
-    title=shot["title"]
-    while titlefont.getlength(title)>W-124 and titlefont.size>23:
+    mode=shot.get("film_mode","mechanism").lower()
+    role=shot.get("narrative_role","")
+    mode_colors={
+        "witness":((208,154,113),(13,30,34)),
+        "material":((205,176,122),(19,30,29)),
+        "document":((221,184,133),(38,29,28)),
+        "argument":((185,197,205),(21,29,35)),
+        "mechanism":((142,190,177),(10,32,35))
+    }
+    if "historic" in mode or "pharma" in mode:mode="document"
+    if "clinical" in mode or "instrument" in mode or "microscop" in mode:mode="mechanism"
+    if "chem" in mode or "materials" in mode or "formulation" in mode:mode="material"
+    if "ess" in mode:mode="argument"
+    if mode not in mode_colors:mode="mechanism"
+    accent,ink=mode_colors[mode]
+    regular=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",14)
+    small=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",12)
+    titlefont=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",35)
+    contained=shot.get("contain",False)
+    footer_start=556 if contained else 545
+    for y in range(footer_start,H):
+        t=(y-footer_start)/(H-footer_start)
+        alpha=int(246*t**.48)
+        d.line([(0,y),(W,y)],fill=(*ink,alpha))
+    # Only a thin archival tracking label above the picture.
+    d.text((58,40),"RUWAIDIX    /    "+mode.upper(),font=regular,fill=(247,237,222))
+    d.line([(58,70),(120,70)],fill=accent,width=3)
+    if role in ("cold_open","ending","closing"):
+        d.rectangle((58,586,64,634),fill=accent)
+        left=86
+    else:
+        left=58
+    heading=shot.get("title","").strip()
+    while titlefont.getlength(heading)>W-left-55 and titlefont.size>20:
         titlefont=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",titlefont.size-1)
-    d.text((57,572),title,font=titlefont,fill=(251,241,220))
-    kind=shot["kind"].replace("_"," ").upper()
-    d.text((57,675),kind+"  ·  SOURCE AND TRANSCRIPT IN FILM RECORD",font=micro,fill=(226,210,187))
+    d.text((left,584),heading,font=titlefont,fill=(248,242,229))
+    kind=shot.get("kind","").lower()
+    if "figure" in kind or "published" in kind:label="PUBLISHED FIGURE · OPEN ORIGINAL FOR DETAIL"
+    elif "museum" in kind:label="COMPARATIVE HISTORICAL OBJECT · MUSEUM SOURCE"
+    elif "concept" in kind or "diagram" in kind or "schematic" in kind or "illustrat" in kind:label="EDITORIAL EXPLANATION · NOT EXPERIMENTAL FOOTAGE"
+    elif "owner" in kind or "photo" in kind or "archiv" in kind:label="SOURCE ARCHIVE · PROVENANCE IN FILM RECORD"
+    else:label="RESEARCH CONTEXT · PROVENANCE IN FILM RECORD"
+    d.text((58,682),label,font=small,fill=accent)
     return frame
 
 def split_caption_words(text, max_len=55):
@@ -208,7 +240,7 @@ def render(film, args):
     shots=[]
     for n, shot in enumerate(film["shots"],1):
         scientific = bool(re.search(r"figure|diagram|schematic|microscopy|published|manuscript|illustrat|model|concept", shot["kind"], re.I))
-        shots.append(dict(shot,id=f"{n:02d}",subtitle="",contain=scientific))
+        shots.append(dict(shot,id=f"{n:02d}",subtitle="",film_mode=film.get("mode","mechanism"),contain=scientific))
     with tempfile.TemporaryDirectory(prefix="ruwaidix-v2-") as tmp:
         work=Path(tmp)
         if args.voice_mode=="human":
