@@ -35,3 +35,10 @@ html[data-rx-page="writing"] .rxw-hero .rxw-kicker,
 html[data-rx-page="writing"] header .rxw-kicker { color:#F1B995; }
 html[data-rx-page="research-detail"] .rx-deep-hero .rx-deep-kicker,
 html[data-rx-page="research-detail"] header .rx-deep-kicker { color:#F1B995; }
+
+/* Third pass: scope warm accent to dark surfaces, not every kicker. */
+html[data-rx-page="stories"] .stories-kicker:first-child { color:#88452F; }
+html[data-rx-page="stories"] .stories-hero .stories-kicker { color:#F1B995; }
+html[data-rx-page="research-detail"] .rx-deep-kicker { color:#88452F; }
+html[data-rx-page="research-detail"] .rx-deep-hero .rx-deep-kicker { color:#F1B995; }
+html[data-rx-page="home"] .rx-home-science-links a { color:#88452F !important; }
