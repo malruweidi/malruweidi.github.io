@@ -1,0 +1,77 @@
+{
+  "slug": "pub-airway-reopening",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "e0ce749fd9abf5ae9203404c2c52c90fff41bb4f6d059b70eb2c438ceb96b1bc",
+  "shots": [
+    {
+      "title": "A breath can injure",
+      "kind": "Original diagram, conceptual only",
+      "image": "assets/lung-concept.svg",
+      "museum": null,
+      "credit": "Original diagram, conceptual only"
+    },
+    {
+      "title": "The violence inside a breath",
+      "kind": "Published research figure: parallel-plate experimental geometry",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Published research figure: parallel-plate experimental geometry"
+    },
+    {
+      "title": "An airway reopens",
+      "kind": "Original diagram, conceptual only",
+      "image": "assets/lung-concept.svg",
+      "museum": null,
+      "credit": "Original diagram, conceptual only"
+    },
+    {
+      "title": "Making the injury measurable",
+      "kind": "Study figure reproduced in the author's research archive",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Study figure reproduced in the author's research archive"
+    },
+    {
+      "title": "Change the cell first",
+      "kind": "Archival laboratory workspace, not a recording of the drug exposure",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "museum": null,
+      "credit": "Archival laboratory workspace, not a recording of the drug exposure"
+    },
+    {
+      "title": "The difficulty: What the experiment found",
+      "kind": "Research-context figure; see primary paper for quantitative readouts",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Research-context figure; see primary paper for quantitative readouts"
+    },
+    {
+      "title": "What the experiment found",
+      "kind": "Research-context figure; see primary paper for quantitative readouts",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Research-context figure; see primary paper for quantitative readouts"
+    },
+    {
+      "title": "What it does not prove",
+      "kind": "Published study context; DOI on film page",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Published study context; DOI on film page"
+    }
+  ],
+  "film_title": "A breath can injure",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1152/japplphysiol.00574.2020",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true
+}

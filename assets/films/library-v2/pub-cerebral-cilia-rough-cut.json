@@ -1,0 +1,77 @@
+{
+  "slug": "pub-cerebral-cilia",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "476969e85d828a4da1ddc2e0169b5d7b5439d4b51289da9b9b1f63e5300c11d4",
+  "shots": [
+    {
+      "title": "How does a vessel know the blood is moving?",
+      "kind": "Original microscopy footage, model-context limitations apply",
+      "image": "assets/evidence-zebrafish.webp",
+      "museum": null,
+      "credit": "Original hosted zebrafish microscopy recording; research context, not proof of every result"
+    },
+    {
+      "title": "What tells a vessel where to grow?",
+      "kind": "Published zebrafish research imagery",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "museum": null,
+      "credit": "Published zebrafish research imagery"
+    },
+    {
+      "title": "An organism in motion",
+      "kind": "Original microscopy footage, model-context limitations apply",
+      "image": "assets/evidence-zebrafish.webp",
+      "museum": null,
+      "credit": "Original hosted zebrafish microscopy recording; research context, not proof of every result"
+    },
+    {
+      "title": "The cilium",
+      "kind": "Original editorial concept diagram",
+      "image": "assets/zebrafish-concept.svg",
+      "museum": null,
+      "credit": "Original editorial concept diagram"
+    },
+    {
+      "title": "Make observation quantitative",
+      "kind": "Published figure in research archive",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "museum": null,
+      "credit": "Published figure in research archive"
+    },
+    {
+      "title": "The difficulty: Observation needs context",
+      "kind": "Zebrafish context image; the original footage is linked separately",
+      "image": "assets/evidence-zebrafish.webp",
+      "museum": null,
+      "credit": "Zebrafish context image; the original footage is linked separately"
+    },
+    {
+      "title": "Observation needs context",
+      "kind": "Zebrafish context image; the original footage is linked separately",
+      "image": "assets/evidence-zebrafish.webp",
+      "museum": null,
+      "credit": "Zebrafish context image; the original footage is linked separately"
+    },
+    {
+      "title": "The question remains alive",
+      "kind": "Published research record",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "museum": null,
+      "credit": "Published research record"
+    }
+  ],
+  "film_title": "How does a vessel know the blood is moving?",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1161/ATVBAHA.118.311231",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true
+}
