@@ -283,7 +283,15 @@ def photograph_context_frame(source):
     # The full source caption is preserved in each landscape photo; portrait
     # images use equivalent two-line captions to keep the original manuscript,
     # anatomy and microtome photograph unobstructed.
-    label=source["caption"].upper()
+    labels={
+        "nih-alveoli":"NIH / NCI · ALVEOLAR ANATOMY · CONTEXT ONLY",
+        "wellcome-manuscript":"WELLCOME · HISTORICAL MANUSCRIPT · NOT PRIMARY FOLIO",
+        "cairo-architecture":"CAIRO ARCHITECTURE · HISTORICAL CONTEXT ONLY",
+        "apothecary-syrup":"2026 AI RECONSTRUCTION · NOT HISTORICAL PHOTO",
+        "apothecary-weights":"2026 AI RECONSTRUCTION · NOT HISTORICAL PHOTO",
+        "histology-reference":"MICROTOMY REFERENCE · NOT ORIGINAL EXPERIMENT"
+    }
+    label=labels.get(source["id"],source["caption"].upper())
     if original.width/original.height<1.35 and source.get("on_frame_lines"):
         lines=source["on_frame_lines"]
         if len(lines)!=2 or any(len(line)>48 for line in lines):
