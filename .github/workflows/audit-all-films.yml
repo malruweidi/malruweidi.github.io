@@ -4,6 +4,11 @@ on:
     branches: [cinema-rebuild-audit-20261017]
     paths:
       - scripts/audit-all-films.py
+      - tests/full-cinema-remake-audit.test.cjs
+      - cinema-workshop.html
+      - assets/films/audit/directors-board.json
+      - assets/films/audit/THREE_PILOT_DIRECTORS_CUTS.md
+      - assets/films/audit/EDITORIAL_AUDIT_AND_REMAKE_PLAN.md
       - .github/workflows/audit-all-films.yml
   workflow_dispatch:
 permissions:
