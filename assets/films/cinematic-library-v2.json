@@ -264,7 +264,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "A breath can injure",
           "subtitle": "experimental documentary",
           "narration": "An airway reopening sounds like relief. On the scale of an epithelial monolayer, the arriving air–liquid interface can be an injury event.",
           "image": "assets/lung-concept.svg",
@@ -279,7 +279,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The violence inside a breath",
           "subtitle": "experimental documentary",
           "narration": "The machine keeping a patient breathing can also expose delicate airway cells to damaging forces.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
@@ -294,7 +294,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "An airway reopens",
           "subtitle": "experimental documentary",
           "narration": "We modelled one mechanical event in cultured rat alveolar epithelial cells: a single air bubble passing over a monolayer.",
           "image": "assets/lung-concept.svg",
@@ -309,7 +309,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Making the injury measurable",
           "subtitle": "experimental documentary",
           "narration": "We used a parallel-plate chamber, fluorescence live-dead staining, and microscopy to examine what happened after bubble propagation.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
@@ -324,7 +324,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Change the cell first",
           "subtitle": "experimental documentary",
           "narration": "Our experiment tested whether pretreatment with dexamethasone or trans-dehydroandrosterone could change the cells' susceptibility before exposure.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
@@ -339,7 +339,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: What the experiment found",
           "subtitle": "experimental documentary",
           "narration": "Pretreating a cell is not the same as delivering a drug to a patient. Follow the actual comparisons before making a therapeutic inference.",
           "image": "assets/evidence-pulmonary.webp",
@@ -354,7 +354,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "What the experiment found",
           "subtitle": "experimental documentary",
           "narration": "Under these in-vitro conditions, bubble flow injured cells. Pretreatment significantly reduced the measured cell death, alongside changes in cellular mechanics.",
           "image": "assets/evidence-pulmonary.webp",
@@ -369,7 +369,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "What it does not prove",
           "subtitle": "experimental documentary",
           "narration": "The paper answers a bounded question: what happened to cultured cells when a controlled interface passed over them.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
@@ -396,7 +396,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "How does a vessel know the blood is moving?",
           "subtitle": "microscopy field notebook",
           "narration": "A zebrafish brain is building its vasculature while blood is already moving through it. Some endothelial cells carry slender projections into that flow.",
           "image": "assets/evidence-zebrafish.webp",
@@ -412,7 +412,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "What tells a vessel where to grow?",
           "subtitle": "microscopy field notebook",
           "narration": "A vessel develops under moving blood, while tiny endothelial projections meet the surrounding flow.",
           "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
@@ -427,7 +427,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "An organism in motion",
           "subtitle": "microscopy field notebook",
           "narration": "Transparent zebrafish embryos let researchers observe cranial vessels developing within a living system.",
           "image": "assets/evidence-zebrafish.webp",
@@ -443,7 +443,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "The cilium",
           "subtitle": "microscopy field notebook",
           "narration": "Primary cilia can act as biological structures relevant to mechanosensing. Their distribution changes during vascular development.",
           "image": "assets/zebrafish-concept.svg",
@@ -458,7 +458,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Make observation quantitative",
           "subtitle": "microscopy field notebook",
           "narration": "The research combined vascular imaging with systematic assessment of endothelial cilia and hemodynamic conditions.",
           "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
@@ -473,7 +473,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Observation needs context",
           "subtitle": "microscopy field notebook",
           "narration": "The striking image cannot prove that each cilium measures flow. Location, developmental time and perturbation need to be distinguished.",
           "image": "assets/evidence-zebrafish.webp",
@@ -488,7 +488,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Observation needs context",
           "subtitle": "microscopy field notebook",
           "narration": "My contribution was part of a wider collaborative research programme. No single clip proves every mechanism examined in the paper.",
           "image": "assets/evidence-zebrafish.webp",
@@ -503,7 +503,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "The question remains alive",
           "subtitle": "microscopy field notebook",
           "narration": "The useful question remains which endothelial cilia occur where, and how their distribution changes as cerebral vessels develop.",
           "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
@@ -530,7 +530,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "The target that can change sides",
           "subtitle": "molecular noir",
           "narration": "A drug target should not reverse its apparent biological meaning each time the tumour context changes. SLIT2 and ROBO make that assumption difficult.",
           "image": "assets/robo-concept.svg",
@@ -545,7 +545,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A promising target can change sides",
           "subtitle": "molecular noir",
           "narration": "In one cancer context a signalling pathway can favour tumour growth. In another it may help restrain it.",
           "image": "assets/robo-concept.svg",
@@ -560,7 +560,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "The receptor does not act alone",
           "subtitle": "molecular noir",
           "narration": "SLIT2 binds ROBO receptors through a broad protein interface, shaped by cellular location and associated partners.",
           "image": "assets/robo-concept.svg",
@@ -575,7 +575,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "The patent question",
           "subtitle": "molecular noir",
           "narration": "We surveyed patent families from twenty twenty through twenty twenty-six, examining the proposed intervention and experimental support.",
           "image": "assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp",
@@ -590,7 +590,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Many modalities, uneven evidence",
           "subtitle": "molecular noir",
           "narration": "Antibodies, ligand traps and other strategies promise different forms of pathway disruption. Not all claims demonstrate the same level of enablement.",
           "image": "assets/robo-concept.svg",
@@ -605,7 +605,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: The missing condition",
           "subtitle": "molecular noir",
           "narration": "Patent filings reveal proposed interventions and commercial claims, not confirmed clinical benefit. The signalling context must be reconstructed separately.",
           "image": "assets/robo-concept.svg",
@@ -620,7 +620,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "The missing condition",
           "subtitle": "molecular noir",
           "narration": "A useful inhibitor must be matched to the tumour biology where the pathway is actually driving disease.",
           "image": "assets/robo-concept.svg",
@@ -635,7 +635,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "The real invention",
           "subtitle": "molecular noir",
           "narration": "A patent landscape becomes scientifically useful when its claims are tested against the different roles this pathway can play.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
@@ -662,7 +662,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "When a molecule becomes a question",
           "subtitle": "chemical colour essay",
           "narration": "A solution changes colour. The immediate temptation is to announce a detector. But the chemistry behind an optical response has to be interrogated.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
@@ -677,7 +677,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "Colour is evidence, but of what?",
           "subtitle": "chemical colour essay",
           "narration": "A chemical probe can turn a molecular interaction into light we can measure, without making chemistry disappear.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
@@ -692,7 +692,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "A familiar natural chromophore",
           "subtitle": "chemical colour essay",
           "narration": "Curcumin has a conjugated electronic system, which makes its optical response sensitive to chemical interactions.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
@@ -707,7 +707,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "A challenge in water",
           "subtitle": "chemical colour essay",
           "narration": "The paper investigated curcumin as a colorimetric and fluorescent cyanide probe in aqueous conditions and living cells.",
           "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
@@ -722,7 +722,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "The readout",
           "subtitle": "chemical colour essay",
           "narration": "Changes in absorption or fluorescence create an analytical signal, but its interpretation depends on conditions and controls.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
@@ -737,7 +737,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Cells are not a calibration vial",
           "subtitle": "chemical colour essay",
           "narration": "Read the actual absorbance and fluorescence evidence alongside experimental conditions. A bright field alone cannot establish biological selectivity.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
@@ -752,7 +752,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Cells are not a calibration vial",
           "subtitle": "chemical colour essay",
           "narration": "Cell-based imaging tests biological utility under specific conditions; it does not automatically confer clinical validation.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
@@ -767,7 +767,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "A different kind of question",
           "subtitle": "chemical colour essay",
           "narration": "The molecule becomes a useful probe only insofar as its signal withstands competing species and the complexity of a cell.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
@@ -794,7 +794,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "How did medieval medicines keep?",
           "subtitle": "archival historical investigation",
           "narration": "A jar of syrup can look trustworthy while concealing an unstable preparation. That difficulty was familiar to pharmacists long before industrial manufacturing.",
           "image": "assets/films/art/medieval-pharmacy.svg",
@@ -809,7 +809,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The medicine had to last",
           "subtitle": "archival historical investigation",
           "narration": "A prescription was not finished when its ingredients were combined. In medieval Cairo, a medicine still had to be made reliable.",
           "image": "assets/films/art/medieval-pharmacy.svg",
@@ -824,7 +824,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "A handbook for a working pharmacy",
           "subtitle": "archival historical investigation",
           "narration": "The Minhaj al-dukkan associated with al-Kuhin al-Attar documents practical pharmaceutical choices. It is an historical text, not a modern clinical trial.",
           "image": "assets/films/art/medieval-pharmacy.svg",
@@ -839,7 +839,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Why syrup matters",
           "subtitle": "archival historical investigation",
           "narration": "Concentration, ingredients and preservation are questions of practice. A formula means little if the preparation changes before it reaches its user.",
           "image": "assets/films/art/medieval-pharmacy.svg",
@@ -854,7 +854,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Substitution is a serious decision",
           "subtitle": "archival historical investigation",
           "narration": "A pharmacist with an unavailable ingredient had to consider replacement. Similar names or therapeutic intentions did not guarantee material equivalence.",
           "image": "assets/films/art/medieval-pharmacy.svg",
@@ -869,7 +869,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Reading against the temptation to romanticise",
           "subtitle": "archival historical investigation",
           "narration": "Recipes described heat, consistency and substitutions. The Cambridge Genizah prescription offers a separate documentary glimpse, not a full account of practice.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
@@ -884,7 +884,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Reading against the temptation to romanticise",
           "subtitle": "archival historical investigation",
           "narration": "Formulary instructions and documentary traces allow an investigation of pharmaceutical reliability, but they do not establish the clinical success of each recipe.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
@@ -899,7 +899,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "What a medicine could keep",
           "subtitle": "archival historical investigation",
           "narration": "The historical evidence shows attempts to make medicine dependable. It does not justify calling medieval practice modern quality assurance.",
           "image": "assets/films/art/medieval-pharmacy.svg",
@@ -926,7 +926,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "Will the medicine survive the nebulizer?",
           "subtitle": "formulation design notebook",
           "narration": "A beautiful vesicle is not yet an inhaled medicine. The journey may fail as soon as it enters the nebulizer.",
           "image": "assets/niosomes-concept.svg",
@@ -941,7 +941,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The vial is not the lung",
           "subtitle": "formulation design notebook",
           "narration": "An inhaled drug carrier may behave well during preparation yet fail at the first real delivery step.",
           "image": "assets/niosomes-concept.svg",
@@ -956,7 +956,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Design the membrane",
           "subtitle": "formulation design notebook",
           "narration": "My master's research explores dexamethasone-loaded niosomes and proniosomes, including surfactant and cholesterol composition.",
           "image": "assets/niosomes-concept.svg",
@@ -971,7 +971,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Characterise what was built",
           "subtitle": "formulation design notebook",
           "narration": "Particle size, formulation chemistry and loading measurements belong to a reproducible analytical programme before aerosol testing.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
@@ -986,7 +986,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "The nebulizer is a stress test",
           "subtitle": "formulation design notebook",
           "narration": "A vesicle must withstand aerosol generation before deposition is even a meaningful question.",
           "image": "assets/evidence-pulmonary.webp",
@@ -1001,7 +1001,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: From droplet to dose",
           "subtitle": "formulation design notebook",
           "narration": "Particle size before aerosolisation is only a starting measurement. Compare vesicle integrity, delivery conditions and deposited fraction without assuming a result.",
           "image": "assets/niosomes-concept.svg",
@@ -1016,7 +1016,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "From droplet to dose",
           "subtitle": "formulation design notebook",
           "narration": "Planned aerosol assessment asks about output, distribution and the fraction that reaches a target region, not just the vial formulation.",
           "image": "assets/niosomes-concept.svg",
@@ -1031,7 +1031,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "No invented result",
           "subtitle": "formulation design notebook",
           "narration": "This is a research programme still being tested. Nothing here implies clinical validation of inhaled dexamethasone vesicles.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
@@ -1058,7 +1058,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "Can an algorithm read a moving heart?",
           "subtitle": "diagnostic image essay",
           "narration": "A fetal heart refuses to remain still for a photograph. Its motion is part of the information a screening algorithm might need.",
           "image": "assets/echo-concept.svg",
@@ -1073,7 +1073,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A heart before birth",
           "subtitle": "diagnostic image essay",
           "narration": "Inside fetal echocardiography, anatomy changes with each frame. Diagnosing congenital cardiac disease requires more than recognising a single still image.",
           "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
@@ -1088,7 +1088,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "The data must be prepared",
           "subtitle": "diagnostic image essay",
           "narration": "Ultrasound images are sensitive to acquisition and annotation. Before modelling, their quality and the study's sampling conditions need careful attention.",
           "image": "assets/echo-concept.svg",
@@ -1103,7 +1103,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Space and time",
           "subtitle": "diagnostic image essay",
           "narration": "Convolutional neural networks can extract visual patterns. Long short-term memory models can process sequence information, when the input design preserves it.",
           "image": "assets/echo-concept.svg",
@@ -1118,7 +1118,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "A pilot, not a hospital device",
           "subtitle": "diagnostic image essay",
           "narration": "Our paper studied stacking-based CNN-LSTM techniques for fetal echocardiogram interpretation. Evaluating them is different from establishing safe deployment.",
           "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
@@ -1133,7 +1133,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: What counts as success?",
           "subtitle": "diagnostic image essay",
           "narration": "A CNN–LSTM pipeline can represent space and time, but a pilot study requires separation of training performance from genuine generalisation.",
           "image": "assets/echo-concept.svg",
@@ -1148,7 +1148,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "What counts as success?",
           "subtitle": "diagnostic image essay",
           "narration": "Model accuracy alone cannot settle clinical utility. Dataset composition, validation design, and false positive or missed cases determine how results should be read.",
           "image": "assets/echo-concept.svg",
@@ -1163,7 +1163,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "The clinician stays in the picture",
           "subtitle": "diagnostic image essay",
           "narration": "The finding is a testable modelling approach, not the notion that a neural network has become a clinician.",
           "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
@@ -1190,7 +1190,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "The surface is not the material",
           "subtitle": "materials macro-photography",
           "narration": "Two pieces of poly(lactic acid) can look identical yet present different chemistries to the world. The difference may be only at the surface.",
           "image": "assets/polymer-concept.svg",
@@ -1205,7 +1205,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "One material, two surfaces",
           "subtitle": "materials macro-photography",
           "narration": "Poly(lactic acid) may keep its familiar bulk chemistry while the interface that meets its environment changes.",
           "image": "assets/home-archive/figure-pla-surface.jpg",
@@ -1220,7 +1220,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "What plasma does",
           "subtitle": "materials macro-photography",
           "narration": "Cold plasma can activate a polymer surface, opening opportunities for grafting chemistry without replacing the entire underlying material.",
           "image": "assets/polymer-concept.svg",
@@ -1235,7 +1235,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Choose the groups",
           "subtitle": "materials macro-photography",
           "narration": "Our coauthored research examined grafting approaches involving fumaric and ascorbic acids on PLA films, connecting surface chemistry to material characterisation.",
           "image": "assets/home-archive/figure-pla-surface.jpg",
@@ -1250,7 +1250,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "The instrument tests the story",
           "subtitle": "materials macro-photography",
           "narration": "Morphology and chemical characterisation can tell whether a proposed surface transformation is consistent with observed material properties.",
           "image": "assets/evidence-biomaterials.webp",
@@ -1265,7 +1265,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: A surface is a boundary",
           "subtitle": "materials macro-photography",
           "narration": "Cold plasma prepares an interface for chemical modification. The question is what actual characterization can verify, rather than what the schematic promises.",
           "image": "assets/home-archive/figure-pla-surface.jpg",
@@ -1280,7 +1280,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "A surface is a boundary",
           "subtitle": "materials macro-photography",
           "narration": "The biologically relevant encounter happens at an interface. A changed surface does not itself establish performance inside a patient.",
           "image": "assets/home-archive/figure-pla-surface.jpg",
@@ -1295,7 +1295,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Why the outside matters",
           "subtitle": "materials macro-photography",
           "narration": "There is no need to change the bulk polymer to change its outermost interactions. Measurements must establish how much changed.",
           "image": "assets/polymer-concept.svg",
@@ -1322,7 +1322,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "A scaffold meets its environment",
           "subtitle": "materials laboratory film",
           "narration": "A scaffold's architecture is visible. Its chemistry at the contact surface is not. Both matter when biological material encounters a polymer.",
           "image": "assets/polymer-concept.svg",
@@ -1337,7 +1337,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The scaffold is not inert",
           "subtitle": "materials laboratory film",
           "narration": "A porous polymer scaffold is not merely a shape. Its fibres and outer surfaces meet organisms, liquids and biological processes.",
           "image": "assets/evidence-biomaterials.webp",
@@ -1352,7 +1352,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "First build the structure",
           "subtitle": "materials laboratory film",
           "narration": "Poly(lactic acid) scaffolds provide a material framework. Electrospinning and related processing choices influence their geometry.",
           "image": "assets/polymer-concept.svg",
@@ -1367,7 +1367,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Then rewrite the contact layer",
           "subtitle": "materials laboratory film",
           "narration": "Our research explored antimicrobial modification of PLA scaffolds using cold plasma together with ascorbic and fumaric acid chemistry.",
           "image": "assets/home-archive/figure-pla-surface.jpg",
@@ -1382,7 +1382,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "A chemical change needs evidence",
           "subtitle": "materials laboratory film",
           "narration": "Characterisation must distinguish grafted surface changes from a convenient conceptual drawing. Assays and controls establish what can be claimed.",
           "image": "assets/evidence-biomaterials.webp",
@@ -1397,7 +1397,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Antimicrobial does not mean implant ready",
           "subtitle": "materials laboratory film",
           "narration": "An antimicrobial result depends on species, exposure and test conditions. A diagram of dead bacteria would not substitute for the reported assay.",
           "image": "assets/home-archive/figure-pla-surface.jpg",
@@ -1412,7 +1412,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Antimicrobial does not mean implant ready",
           "subtitle": "materials laboratory film",
           "narration": "A laboratory antimicrobial endpoint cannot, by itself, establish long-term biocompatibility, manufacturing reliability or clinical efficacy.",
           "image": "assets/home-archive/figure-pla-surface.jpg",
@@ -1427,7 +1427,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "The decisive boundary",
           "subtitle": "materials laboratory film",
           "narration": "The paper is about engineering and testing a surface, not declaring every PLA scaffold clinically antimicrobial.",
           "image": "assets/polymer-concept.svg",
@@ -1454,7 +1454,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "How to make a reproducible injury",
           "subtitle": "instrument construction",
           "narration": "How do you study a violent, fast-moving event in a microscopic airway without pretending to reconstruct an entire lung?",
           "image": "assets/lung-concept.svg",
@@ -1469,7 +1469,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "How do you study an injury you cannot hold?",
           "subtitle": "instrument construction",
           "narration": "Small airway reopening can produce rapid fluid stresses. Direct observation inside a whole lung is difficult to standardise.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
@@ -1484,7 +1484,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Build a smaller world",
           "subtitle": "instrument construction",
           "narration": "A parallel-plate flow chamber permits controlled fluid motion over a monolayer. This simplified geometry is a modelling decision.",
           "image": "assets/lung-concept.svg",
@@ -1499,7 +1499,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Make the disturbance repeatable",
           "subtitle": "instrument construction",
           "narration": "The published method uses a flow-induced stress event to study damage to cells under controlled exposure conditions.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
@@ -1514,7 +1514,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Measure the aftermath",
           "subtitle": "instrument construction",
           "narration": "Fluorescence-based injury measurements must be timed, controlled and interpreted with care. A signal is not a complete injury mechanism.",
           "image": "assets/evidence-pulmonary.webp",
@@ -1529,7 +1529,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: The model is useful because it is incomplete",
           "subtitle": "instrument construction",
           "narration": "The chamber is both the experimental strength and the limitation: it controls exposure but removes much of the organ's complexity.",
           "image": "assets/lung-concept.svg",
@@ -1544,7 +1544,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "The model is useful because it is incomplete",
           "subtitle": "instrument construction",
           "narration": "The chamber isolates a mechanical challenge. It does not recreate airway anatomy, immune dynamics or every interaction in a human lung.",
           "image": "assets/lung-concept.svg",
@@ -1559,7 +1559,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Why methods deserve their own film",
           "subtitle": "instrument construction",
           "narration": "The methods paper belongs to anyone who needs a reproducible injury model and wants to know exactly what it leaves out.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
@@ -1586,7 +1586,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "A heartbeat in high-speed frames",
           "subtitle": "microscopy field notebook",
           "narration": "The beating heart of a zebrafish embryo can be watched, but measurement demands more than watching. The camera must catch events faster than the eye.",
           "image": "assets/zebrafish-larva-microscopy.webp",
@@ -1601,7 +1601,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The blood moves before we can count it",
           "subtitle": "microscopy field notebook",
           "narration": "Inside a developing zebrafish, the heart contracts and blood circulates across structures small enough to challenge ordinary observation.",
           "image": "assets/zebrafish-embryo-microscopy.webp",
@@ -1616,7 +1616,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "High-speed observation",
           "subtitle": "microscopy field notebook",
           "narration": "Fast video microscopy captures change over time. The task becomes extracting meaningful cardiac and flow measurements from those frames.",
           "image": "assets/zebrafish-larva-microscopy.webp",
@@ -1631,7 +1631,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "From frames to function",
           "subtitle": "microscopy field notebook",
           "narration": "The published work examines cardiac function and blood-flow hemodynamics, rather than treating a single attractive frame as quantitative physiology.",
           "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
@@ -1646,7 +1646,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "An instrument has a sampling limit",
           "subtitle": "microscopy field notebook",
           "narration": "Frame rate, optical scale and analysis assumptions can constrain an estimated velocity or physiological parameter.",
           "image": "assets/evidence-zebrafish.webp",
@@ -1661,7 +1661,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: A living system resists simplification",
           "subtitle": "microscopy field notebook",
           "narration": "A frame sequence becomes a flow estimate only after timing and image analysis are explicit. Do not show a simulated velocity field as a measured one.",
           "image": "assets/zebrafish-concept.svg",
@@ -1676,7 +1676,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "A living system resists simplification",
           "subtitle": "microscopy field notebook",
           "narration": "Vessels change shape while blood moves. Interpretation has to respect both the organism and the measurement technique.",
           "image": "assets/zebrafish-concept.svg",
@@ -1691,7 +1691,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Making the invisible measurable",
           "subtitle": "microscopy field notebook",
           "narration": "High-speed microscopy is valuable because movement becomes quantifiable, with its uncertainties visible rather than hidden.",
           "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
@@ -1718,7 +1718,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "An enzyme, a receptor, a clinical question",
           "subtitle": "clinical evidence",
           "narration": "During the pandemic, a molecular receptor and ordinary hypertension prescriptions became entangled in clinical speculation.",
           "image": "assets/echo-concept.svg",
@@ -1733,7 +1733,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A therapy can change the system around it",
           "subtitle": "clinical evidence",
           "narration": "During COVID-19, clinicians were treating infection in patients who also lived with hypertension and chronic medication exposure.",
           "image": "assets/evidence-pulmonary.webp",
@@ -1748,7 +1748,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Two signals in circulation",
           "subtitle": "clinical evidence",
           "narration": "Soluble ACE2 and angiotensin II are distinct measurements in the renin-angiotensin system. Their interpretation requires clinical context.",
           "image": "assets/echo-concept.svg",
@@ -1763,7 +1763,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Treatments are not randomized by a chart",
           "subtitle": "clinical evidence",
           "narration": "Our 2022 publication investigated reported differences in those levels among hypertensive COVID-19 patients receiving different antihypertensive medications.",
           "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
@@ -1778,7 +1778,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Do not confuse association with mechanism",
           "subtitle": "clinical evidence",
           "narration": "Medication groups, disease severity and confounding factors matter. A measured level does not reveal the entire causal pathway.",
           "image": "assets/evidence-pulmonary.webp",
@@ -1793,7 +1793,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: The clinical question is conditional",
           "subtitle": "clinical evidence",
           "narration": "Soluble ACE2 and angiotensin II are biological measurements. Group differences alone cannot prove that an antihypertensive caused a clinical outcome.",
           "image": "assets/echo-concept.svg",
@@ -1808,7 +1808,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "The clinical question is conditional",
           "subtitle": "clinical evidence",
           "narration": "A signal in a patient cohort motivates mechanistic investigation. It should not become an unsupported instruction to stop or change medication.",
           "image": "assets/echo-concept.svg",
@@ -1823,7 +1823,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Evidence before advice",
           "subtitle": "clinical evidence",
           "narration": "Here the disciplined question concerns association under specified treatment groups, not advice to stop or start medication.",
           "image": "assets/evidence-pulmonary.webp",
@@ -1850,7 +1850,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "What happens when immunity turns on the gut?",
           "subtitle": "medical explanatory",
           "narration": "The intestine is never merely a digestive tube. Its immune interface is continually deciding what to tolerate and what to confront.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
@@ -1865,7 +1865,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The intestine is not simply a tube",
           "subtitle": "medical explanatory",
           "narration": "The gastrointestinal wall is an immune interface, with specialised barriers and molecular signals operating beside digestion.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
@@ -1880,7 +1880,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "What makes tolerance possible?",
           "subtitle": "medical explanatory",
           "narration": "The immune system must distinguish threats from food-associated and resident signals. Breakdown can produce complex pathology.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
@@ -1895,7 +1895,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Disease names conceal different mechanisms",
           "subtitle": "medical explanatory",
           "narration": "The chapter examines autoimmune gastrointestinal diseases and their aetiology, considering immunological mechanisms rather than treating all inflammation as one diagnosis.",
           "image": "assets/evidence-pulmonary.webp",
@@ -1910,7 +1910,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Tissue tells part of the story",
           "subtitle": "medical explanatory",
           "narration": "Histological patterns, molecular mechanisms and clinical presentation require careful reconciliation before attributing symptoms to a particular immune disorder.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
@@ -1925,7 +1925,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Complexity is not a license to guess",
           "subtitle": "medical explanatory",
           "narration": "Pathways discussed in a review vary across diseases. An autoimmune mechanism should not be presumed for every inflammatory or eosinophilic presentation.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
@@ -1940,7 +1940,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Complexity is not a license to guess",
           "subtitle": "medical explanatory",
           "narration": "Mechanistic plausibility should be weighed against measured evidence and disease-specific diagnostic criteria.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
@@ -1955,7 +1955,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Before treatment, understand the process",
           "subtitle": "medical explanatory",
           "narration": "Part One assembles mechanistic evidence, keeping the boundaries between distinct disorders visible.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
@@ -1982,7 +1982,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "The diagnostic problem",
           "subtitle": "medical explanatory",
           "narration": "A symptom cannot tell a clinician which immune mechanism produced it. Tissue, timing and clinical context complicate the answer.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
@@ -1997,7 +1997,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The symptoms do not name the disease",
           "subtitle": "medical explanatory",
           "narration": "Abdominal illness can look similar across immune, inflammatory and infectious processes. Clinical appearance alone may be insufficient.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
@@ -2012,7 +2012,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Choose the evidence to examine",
           "subtitle": "medical explanatory",
           "narration": "Diagnostic interpretation can involve biomarkers, endoscopy and tissue findings, with different roles and limitations in distinct diseases.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
@@ -2027,7 +2027,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "The tools evolve",
           "subtitle": "medical explanatory",
           "narration": "Part Two surveys emerging diagnostic techniques and treatments for autoimmune gastrointestinal conditions in a changing evidence landscape.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
@@ -2042,7 +2042,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "The intervention has a target",
           "subtitle": "medical explanatory",
           "narration": "Therapeutic approaches follow disease mechanisms, but treatment evidence differs by condition, study design and patient population.",
           "image": "assets/echo-concept.svg",
@@ -2057,7 +2057,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: What remains uncertain",
           "subtitle": "medical explanatory",
           "narration": "Diagnostic tools are useful when interpreted together. An illustration of a microscope is not an image of a patient's diagnostic specimen.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
@@ -2072,7 +2072,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "What remains uncertain",
           "subtitle": "medical explanatory",
           "narration": "A new assay or biologic may improve the available choices without solving every diagnostic or therapeutic question.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
@@ -2087,7 +2087,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "An evolving map, not a prescription",
           "subtitle": "medical explanatory",
           "narration": "The literature review maps available approaches; it is not a replacement for updated guidelines or an individual diagnosis.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
@@ -2114,7 +2114,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "Listening for a failing heart",
           "subtitle": "signal-processing documentary",
           "narration": "A sensor records a signal. Calling that signal an early warning of heart failure is a much larger claim.",
           "image": "assets/echo-concept.svg",
@@ -2129,7 +2129,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "Can the heart warn us early?",
           "subtitle": "signal-processing documentary",
           "narration": "Heart failure is not a single signal. Physiological changes appear through movements, rhythms and measurements interpreted in context.",
           "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
@@ -2144,7 +2144,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Signals outside the operating room",
           "subtitle": "signal-processing documentary",
           "narration": "Non-invasive and minimally invasive sensors can produce information about cardiac and circulatory physiology without requiring identical clinical procedures.",
           "image": "assets/echo-concept.svg",
@@ -2159,7 +2159,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "From measurement to prediction",
           "subtitle": "signal-processing documentary",
           "narration": "The chapter surveys sensor technologies intended to help identify or predict heart-failure trajectories, with different technological trade-offs.",
           "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
@@ -2174,7 +2174,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "A signal can mislead",
           "subtitle": "signal-processing documentary",
           "narration": "Motion, noise, timing and patient variability all influence interpretation. A useful measurement is not automatically a useful clinical decision.",
           "image": "assets/echo-concept.svg",
@@ -2189,7 +2189,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: The validation question",
           "subtitle": "signal-processing documentary",
           "narration": "Performance depends on the patient population, reference standard and timing. Distinguish a physiological measurement from a validated prediction.",
           "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
@@ -2204,7 +2204,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "The validation question",
           "subtitle": "signal-processing documentary",
           "narration": "Predictive performance needs evidence from realistic populations and robust external testing; practical accessibility matters alongside technical sophistication.",
           "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
@@ -2219,7 +2219,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "A technology belongs to its use",
           "subtitle": "signal-processing documentary",
           "narration": "A device becomes clinically useful through evidence, not through the elegance of its dashboard.",
           "image": "assets/echo-concept.svg",
@@ -2246,7 +2246,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "Two lives of ACE2",
           "subtitle": "molecular explanation",
           "narration": "One protein name conceals two biological situations. ACE2 attached to a membrane is not interchangeable with circulating soluble ACE2.",
           "image": "assets/echo-concept.svg",
@@ -2261,7 +2261,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "One protein, different places",
           "subtitle": "molecular explanation",
           "narration": "ACE2 can be embedded in a cell membrane or exist in a soluble form. They should not be discussed as identical biological objects.",
           "image": "assets/evidence-pulmonary.webp",
@@ -2276,7 +2276,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "A receptor in a larger pathway",
           "subtitle": "molecular explanation",
           "narration": "ACE2 participates in the renin-angiotensin system. In SARS-CoV-2 infection, its receptor-related role introduces additional biological complexity.",
           "image": "assets/echo-concept.svg",
@@ -2291,7 +2291,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "The location changes the question",
           "subtitle": "molecular explanation",
           "narration": "The review examines how changes in membrane-bound and soluble ACE2 expression might influence interpretations of viral biology and complications.",
           "image": "assets/evidence-pulmonary.webp",
@@ -2306,7 +2306,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Expression is not the whole mechanism",
           "subtitle": "molecular explanation",
           "narration": "A measured protein change does not, without suitable functional evidence, settle viral infectivity or clinical outcomes.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
@@ -2321,7 +2321,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Separate hypothesis from demonstration",
           "subtitle": "molecular explanation",
           "narration": "The two forms occupy different physical contexts and have different interpretive problems, especially in discussions of viral entry and inflammation.",
           "image": "assets/evidence-pulmonary.webp",
@@ -2336,7 +2336,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Separate hypothesis from demonstration",
           "subtitle": "molecular explanation",
           "narration": "The 2021 review weighs emerging research at a rapidly changing moment. The date of evidence matters for its interpretation.",
           "image": "assets/evidence-pulmonary.webp",
@@ -2351,7 +2351,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Two forms, two questions",
           "subtitle": "molecular explanation",
           "narration": "Before asking what ACE2 does, say which ACE2, in which compartment, and what was actually measured.",
           "image": "assets/echo-concept.svg",
@@ -2378,7 +2378,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "A laboratory shrunk into a channel",
           "subtitle": "instrument animation",
           "narration": "A droplet entering a microchannel looks like progress toward a small diagnostic laboratory. The hard questions begin downstream.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
@@ -2393,7 +2393,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A laboratory in a narrow channel",
           "subtitle": "instrument animation",
           "narration": "Imagine taking a complex testing workflow and moving parts of it into channels so small that fluid behaviour becomes a design constraint.",
           "image": "assets/films/art/microfluidic-sensing.svg",
@@ -2408,7 +2408,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "The sample does not prepare itself",
           "subtitle": "instrument animation",
           "narration": "Specimen collection, sample transport and preparation can determine whether a miniature diagnostic device is useful.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
@@ -2423,7 +2423,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Fluid control becomes analytical control",
           "subtitle": "instrument animation",
           "narration": "Microfluidic systems can organise small volumes and reactions, but sensitivity and specificity still depend on the biological assay.",
           "image": "assets/films/art/microfluidic-sensing.svg",
@@ -2438,7 +2438,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Detection is not diagnosis",
           "subtitle": "instrument animation",
           "narration": "Finding an analytical signal requires distinguishing target detection, contamination, false results and the clinical situation.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
@@ -2453,7 +2453,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: The practical bottleneck",
           "subtitle": "instrument animation",
           "narration": "Sample processing, target capture and analytical specificity do not disappear when a device becomes smaller. Miniaturisation can add constraints.",
           "image": "assets/films/art/microfluidic-sensing.svg",
@@ -2468,7 +2468,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "The practical bottleneck",
           "subtitle": "instrument animation",
           "narration": "Manufacturability, reliable reagents, operator burden and clinical validation decide whether a clever microsystem becomes useful.",
           "image": "assets/films/art/microfluidic-sensing.svg",
@@ -2483,7 +2483,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Smaller does not mean simpler",
           "subtitle": "instrument animation",
           "narration": "The purpose of a chip is reliable detection in a real sample, not merely an attractive miniature flow path.",
           "image": "assets/films/art/microfluidic-sensing.svg",
@@ -2510,7 +2510,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "What can a digital twin predict?",
           "subtitle": "data-motion essay",
           "narration": "A smooth drug-release curve on a computer can be produced before a single tablet or vesicle is tested. Its smoothness proves nothing.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
@@ -2525,7 +2525,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A medicine can have a second life in a model",
           "subtitle": "data-motion essay",
           "narration": "A physical dosage form releases medicine over time. A mathematical model tries to describe that changing process.",
           "image": "assets/niosomes-concept.svg",
@@ -2540,7 +2540,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Begin with the variables",
           "subtitle": "data-motion essay",
           "narration": "Formulation composition, geometry and transport assumptions affect simulated release. The selected equations embody choices that need scrutiny.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
@@ -2555,7 +2555,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "What is being predicted?",
           "subtitle": "data-motion essay",
           "narration": "The book chapter examines simulation of drug release and performance prediction using virtual models within pharmaceutical development.",
           "image": "assets/niosomes-concept.svg",
@@ -2570,7 +2570,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "A digital twin is accountable to reality",
           "subtitle": "data-motion essay",
           "narration": "Without calibration and suitable validation, a model can produce elegant curves and still make poor predictions.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
@@ -2585,7 +2585,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Ask where the prediction breaks",
           "subtitle": "data-motion essay",
           "narration": "Assumptions about transport or kinetics need experimental comparison. A convincing digital twin must expose residuals and uncertainty.",
           "image": "assets/niosomes-concept.svg",
@@ -2600,7 +2600,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Ask where the prediction breaks",
           "subtitle": "data-motion essay",
           "narration": "Mechanistic assumptions, parameter uncertainty and extrapolation beyond known experiments all limit credible digital performance forecasts.",
           "image": "assets/niosomes-concept.svg",
@@ -2615,7 +2615,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "The point is better experiments",
           "subtitle": "data-motion essay",
           "narration": "Models earn their place in formulation science when they guide better tests and can fail against observations.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
@@ -2642,7 +2642,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "When food becomes a printable material",
           "subtitle": "materials animation",
           "narration": "The printer completes its programmed path. A moment later the edible structure sags. The code was correct; the material did something else.",
           "image": "assets/films/art/edible-printing.svg",
@@ -2657,7 +2657,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "Edible material meets geometry",
           "subtitle": "materials animation",
           "narration": "A printer can follow a perfect toolpath while the deposited material collapses. The rheology of the ink sets the rules.",
           "image": "assets/films/art/edible-printing.svg",
@@ -2672,7 +2672,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Flow first, shape second",
           "subtitle": "materials animation",
           "narration": "The printing material must move through a nozzle, then retain enough structure after deposition to realise the intended form.",
           "image": "assets/films/art/edible-printing.svg",
@@ -2687,7 +2687,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "The design space expands",
           "subtitle": "materials animation",
           "narration": "The forthcoming chapter considers three-, four-, five- and six-dimensional food-printing concepts, including responsive structures and programmed behaviour.",
           "image": "assets/films/art/edible-printing.svg",
@@ -2702,7 +2702,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Microstructure is invisible to the recipe",
           "subtitle": "materials animation",
           "narration": "Composition, texture and printing conditions interact. A promising design requires material-specific testing before its properties are asserted.",
           "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
@@ -2717,7 +2717,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Do not mistake possibility for validation",
           "subtitle": "materials animation",
           "narration": "Rheology sets the boundary between possible shapes and imagined ones. Different dimensional labels must correspond to demonstrable functional behaviour.",
           "image": "assets/films/art/edible-printing.svg",
@@ -2732,7 +2732,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Do not mistake possibility for validation",
           "subtitle": "materials animation",
           "narration": "Time-responsive and higher-dimensional labels describe proposed capabilities; they do not establish that every structure has been practically demonstrated.",
           "image": "assets/films/art/edible-printing.svg",
@@ -2747,7 +2747,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "An architecture has to survive deposition",
           "subtitle": "materials animation",
           "narration": "Programmable edible structures start with a material that can survive deposition, not with an impressive rendering.",
           "image": "assets/films/art/edible-printing.svg",
@@ -2774,7 +2774,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "A structure the body must tolerate",
           "subtitle": "biomaterials editorial",
           "narration": "A ceramic lattice can be printed with exquisite symmetry. That does not mean it will carry load or cooperate with living tissue.",
           "image": "assets/films/art/bioceramic-lattice.svg",
@@ -2789,7 +2789,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A patient will live with the material",
           "subtitle": "biomaterials editorial",
           "narration": "Biomedical ceramic design starts with a difficult demand: a manufactured structure must remain useful in a biological environment.",
           "image": "assets/films/art/bioceramic-lattice.svg",
@@ -2804,7 +2804,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Geometry is only the beginning",
           "subtitle": "biomaterials editorial",
           "narration": "Additive manufacturing can produce complex ceramic forms. Processing, internal architecture and material properties shape what those forms can do.",
           "image": "assets/films/art/bioceramic-lattice.svg",
@@ -2819,7 +2819,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "The furnace has a vote",
           "subtitle": "biomaterials editorial",
           "narration": "Ceramic processing and densification impose constraints beyond the original digital model. The final properties must be measured.",
           "image": "assets/films/art/bioceramic-lattice.svg",
@@ -2834,7 +2834,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Biology tests the promise",
           "subtitle": "biomaterials editorial",
           "narration": "Mechanical performance and biological response can pull design in different directions. An elegant lattice is not automatically a medical device.",
           "image": "assets/films/art/bioceramic-lattice.svg",
@@ -2849,7 +2849,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: From bench to clinic",
           "subtitle": "biomaterials editorial",
           "narration": "Porosity, defects, thermal processing and biological context constrain performance. None can be inferred from an immaculate CAD model.",
           "image": "assets/films/art/bioceramic-lattice.svg",
@@ -2864,7 +2864,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "From bench to clinic",
           "subtitle": "biomaterials editorial",
           "narration": "Clinical application also depends on repeatability, sterilisation and regulatory pathways; each requires evidence distinct from printability.",
           "image": "assets/films/art/bioceramic-lattice.svg",
@@ -2879,7 +2879,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "More than a shape",
           "subtitle": "biomaterials editorial",
           "narration": "The accepted chapter examines translational possibilities; it is not a report of a new human implantation.",
           "image": "assets/films/art/bioceramic-lattice.svg",
@@ -2906,7 +2906,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "The difficult promise of a cubic carrier",
           "subtitle": "nanocarrier explanatory",
           "narration": "A cubic lipid structure is almost irresistible on screen. But internal order is not a substitute for successful drug delivery.",
           "image": "assets/evidence-biomaterials.webp",
@@ -2921,7 +2921,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A cube may hide a labyrinth",
           "subtitle": "nanocarrier explanatory",
           "narration": "Cubosomes contain structured internal lipid domains. Their morphology is intriguing, but drug delivery is not secured by geometry alone.",
           "image": "assets/films/art/cubosome-topology.svg",
@@ -2936,7 +2936,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Two tasks in one carrier",
           "subtitle": "nanocarrier explanatory",
           "narration": "Theranostics links therapeutic and diagnostic ambitions. These are distinct performance claims with different measurement needs.",
           "image": "assets/evidence-biomaterials.webp",
@@ -2951,7 +2951,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Design at the interface",
           "subtitle": "nanocarrier explanatory",
           "narration": "Lipid composition, loading and surrounding biological fluids affect the practical behaviour of a nanoscale carrier.",
           "image": "assets/films/art/cubosome-topology.svg",
@@ -2966,7 +2966,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Targeting is an experimental claim",
           "subtitle": "nanocarrier explanatory",
           "narration": "A ligand or proposed uptake mechanism does not alone demonstrate selective tumour delivery in vivo.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
@@ -2981,7 +2981,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Between structure and treatment",
           "subtitle": "nanocarrier explanatory",
           "narration": "A convincing theranostic system needs demonstrated loading, stability, biological fate and an imaging or therapeutic endpoint.",
           "image": "assets/evidence-biomaterials.webp",
@@ -2996,7 +2996,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Between structure and treatment",
           "subtitle": "nanocarrier explanatory",
           "narration": "Stability, biodistribution, safety and reproducibility determine whether a promising system can move toward clinical evaluation.",
           "image": "assets/evidence-biomaterials.webp",
@@ -3011,7 +3011,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "The promise is conditional",
           "subtitle": "nanocarrier explanatory",
           "narration": "The film distinguishes elegant nanostructure from the difficult steps required before a clinical claim.",
           "image": "assets/films/art/cubosome-topology.svg",
@@ -3038,7 +3038,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "A polymer meets an insoluble problem",
           "subtitle": "materials investigation",
           "narration": "A pollutant does not dissolve just because a polymer assembly is drawn around it. Chemical affinity still has to be established.",
           "image": "assets/polymer-concept.svg",
@@ -3053,7 +3053,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "Some molecules refuse the water",
           "subtitle": "materials investigation",
           "narration": "Polycyclic aromatic hydrocarbons resist easy dispersion in aqueous environments. Polymer assemblies offer one route to changing exposure.",
           "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
@@ -3068,7 +3068,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "The theory looked reasonable",
           "subtitle": "materials investigation",
           "narration": "Amphiphilic polymer micelles can provide compartments for hydrophobic compounds. The thermodynamic argument begins before the mixture is made.",
           "image": "assets/polymer-concept.svg",
@@ -3083,7 +3083,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Then the material answered",
           "subtitle": "materials investigation",
           "narration": "Actual diblock-copolymer handling and dissolution did not always match our expectations. This archive retains an unsuccessful experiment.",
           "image": "assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp",
@@ -3098,7 +3098,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Concentration is not a magic word",
           "subtitle": "materials investigation",
           "narration": "Micellisation depends on solvent, composition and real processing. No neat drawing replaces measurements on the system actually prepared.",
           "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
@@ -3113,7 +3113,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: What an unsuccessful trial teaches",
           "subtitle": "materials investigation",
           "narration": "The original materials trials include failures. They stay in this story, because phase behaviour is not obliged to follow our calculations.",
           "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
@@ -3128,7 +3128,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "What an unsuccessful trial teaches",
           "subtitle": "materials investigation",
           "narration": "The difference between an ideal formulation and a workable one can be a physical materials problem, not a failure to know the theory.",
           "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
@@ -3143,7 +3143,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "The record is more valuable intact",
           "subtitle": "materials investigation",
           "narration": "The hypothesis is that polymeric micelles may alter PAH partitioning; the laboratory must decide which formulations do so.",
           "image": "assets/polymer-concept.svg",
@@ -3170,7 +3170,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "Build the heterocycle, then challenge the hypothesis",
           "subtitle": "organic chemistry",
           "narration": "It is easy to draw an imidazopyridine with an elegant substituent. Making and identifying the compound is the first real examination.",
           "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
@@ -3185,7 +3185,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A ring is an intention until it exists",
           "subtitle": "organic chemistry",
           "narration": "Organic synthesis begins with an intended structure. A spectrum and an isolated sample decide what the reaction actually yielded.",
           "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
@@ -3200,7 +3200,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Microwave chemistry accelerates the problem",
           "subtitle": "organic chemistry",
           "narration": "The UREP research investigated imidazopyridine chemistry, using synthetic strategies and characterization to develop candidate heterocycles.",
           "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
@@ -3215,7 +3215,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Identity before biological activity",
           "subtitle": "organic chemistry",
           "narration": "Chemical purity and structural assignment must precede confidence in a biological screening result.",
           "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp",
@@ -3230,7 +3230,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "A screen is a question, not a treatment",
           "subtitle": "organic chemistry",
           "narration": "Cytotoxicity readouts are starting points for investigating molecular activity; they cannot demonstrate anticancer efficacy in a patient.",
           "image": "assets/oct12-owner-photos/yousef-hijji-anticancer-group-2019.webp",
@@ -3245,7 +3245,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Separate intent, result and interpretation",
           "subtitle": "organic chemistry",
           "narration": "Microwave synthesis, spectroscopy and a cell assay answer different questions. Activity in a screen is not proof of anticancer efficacy.",
           "image": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
@@ -3260,7 +3260,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Separate intent, result and interpretation",
           "subtitle": "organic chemistry",
           "narration": "The project record should preserve which compounds were made, what assays were performed, and which conclusions remain untested.",
           "image": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
@@ -3275,7 +3275,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "The chemistry has the final word",
           "subtitle": "organic chemistry",
           "narration": "A useful medicinal-chemistry story follows each evidentiary step without jumping from structure to treatment.",
           "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
@@ -3302,7 +3302,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "Two materials. No section.",
           "subtitle": "materials failure film",
           "narration": "At the microtome, a useful zebrafish section never emerged. The photographed fragments are the actual outcome.",
           "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
@@ -3317,7 +3317,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A section begins before the blade",
           "subtitle": "materials failure film",
           "narration": "To cut a useful section of a zebrafish specimen, orientation and compatible embedding materials must work together.",
           "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
@@ -3332,7 +3332,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "We chose two percent agarose",
           "subtitle": "materials failure film",
           "narration": "The specimen was oriented in an agarose pre-embedding support before subsequent paraffin processing. The hoped-for geometry depended on their compatibility.",
           "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
@@ -3347,7 +3347,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "The block did not behave as one",
           "subtitle": "materials failure film",
           "narration": "Agarose and paraffin did not form the coherent embedding system the microtome needed.",
           "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
@@ -3362,7 +3362,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "The blade exposed the interface",
           "subtitle": "materials failure film",
           "narration": "Material separation frustrated sectioning. There was no interpretable histological slice from that attempt.",
           "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
@@ -3377,7 +3377,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: A failed section is a usable finding",
           "subtitle": "materials failure film",
           "narration": "Agarose oriented the specimen; paraffin was intended to support cutting. Their separation suggests a materials problem but does not prove its mechanism.",
           "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
@@ -3392,7 +3392,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "A failed section is a usable finding",
           "subtitle": "materials failure film",
           "narration": "The images identify an upstream materials bottleneck. A changed processing protocol needs its own experimental verification.",
           "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
@@ -3407,7 +3407,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Keep the record honest",
           "subtitle": "materials failure film",
           "narration": "A failed preparation deserves an accurate record and a redesigned experiment, not an animated happy ending.",
           "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
@@ -3434,7 +3434,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "The microscope that made curiosity independent",
           "subtitle": "personal object portrait",
           "narration": "The microscope began as a purchase near Qasr El Einy in Cairo. Bringing it back to Qatar was harder than carrying a box.",
           "image": "assets/archival-2026-10-12/cairo-mokattam-sunset-2026.webp",
@@ -3449,7 +3449,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The instrument was mine",
           "subtitle": "personal object portrait",
           "narration": "I purchased a microscope near Qasr El Einy in Cairo. It was not laboratory equipment assigned to me by a university.",
           "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
@@ -3464,7 +3464,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "It had to travel",
           "subtitle": "personal object portrait",
           "narration": "Bringing it with me to Qatar was a considerable hassle. The difficulty did not end when I had paid for it.",
           "image": "assets/archival-2026-10-12/cairo-mokattam-sunset-2026.webp",
@@ -3479,7 +3479,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "The point was time",
           "subtitle": "personal object portrait",
           "narration": "With a microscope at home, observation no longer depended entirely on laboratory booking hours or a scheduled class.",
           "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
@@ -3494,7 +3494,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "A question could begin in the evening",
           "subtitle": "personal object portrait",
           "narration": "The instrument let me pursue small independent observations simply because I wanted to understand something.",
           "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
@@ -3509,7 +3509,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: The microscope was not the discovery",
           "subtitle": "personal object portrait",
           "narration": "There were things I wanted to inspect without waiting for a university timetable. The instrument made those investigations possible.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
@@ -3524,7 +3524,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "The microscope was not the discovery",
           "subtitle": "personal object portrait",
           "narration": "Ownership did not confer a scientific result; it made curiosity more practical by providing repeated access.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
@@ -3539,7 +3539,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "The habit stayed with me",
           "subtitle": "personal object portrait",
           "narration": "The value of owning a microscope was not prestige. It was the freedom to return to a question when I had the time.",
           "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
@@ -3566,7 +3566,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "When the Count Could Not Describe the Pain",
           "subtitle": "personal documentary",
           "narration": "I finished high school at sixteen after illness repeatedly interrupted the year. My examination results cost me the medical-school path I had expected.",
           "image": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
@@ -3581,7 +3581,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "Before the degree",
           "subtitle": "personal documentary",
           "narration": "I finished school at sixteen. The disease had already interrupted my last year, and my examination results closed the medical school path I had expected.",
           "image": "assets/home-archive/childhood-portrait.jpg",
@@ -3596,7 +3596,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "What the numbers cannot contain",
           "subtitle": "personal documentary",
           "narration": "During severe attacks I could not always keep down even water. Laboratory eosinophil counts became numbers I learned to anticipate from the pain.",
           "image": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
@@ -3611,7 +3611,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "The week before America",
           "subtitle": "personal documentary",
           "narration": "One week before a trip to the United States, an actual flare led to an endoscopy and a course of glucocorticoids. It was not preventive treatment.",
           "image": "assets/owner-archive-2026-10-16/eosinophilic-diagnosis-dr-elsheikh-abdelrahim.webp",
@@ -3626,7 +3626,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Years become an archive",
           "subtitle": "personal documentary",
           "narration": "Clinical uncertainty turned into an accumulation of medications, tests, missed days and attempts to understand what my own body was doing.",
           "image": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
@@ -3641,7 +3641,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Research did not erase illness",
           "subtitle": "personal documentary",
           "narration": "Years later I could sometimes anticipate an eosinophil count from the severity of a flare, but no number captured vomiting even water.",
           "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
@@ -3656,7 +3656,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Research did not erase illness",
           "subtitle": "personal documentary",
           "narration": "I learned to investigate cells and materials while living with a disease whose symptoms could overwhelm even an ordinary day.",
           "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
@@ -3671,7 +3671,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Read the person, not the diagnosis",
           "subtitle": "personal documentary",
           "narration": "The essay is a first-person account of what happened, not a dramatic reenactment of a medical record.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
@@ -3698,7 +3698,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "The Email That Became an Accusation",
           "subtitle": "kinetic typography / editorial",
           "narration": "An academic receives an email from a second-language writer and answers not its argument but an accusation about the writing tool.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
@@ -3713,7 +3713,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The crime was a polished email",
           "subtitle": "kinetic typography / editorial",
           "narration": "A stranger receives a professional message. Instead of answering what it says, he becomes interested in whether software touched its grammar.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
@@ -3728,7 +3728,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "A peculiar new etiquette",
           "subtitle": "kinetic typography / editorial",
           "narration": "Someone may write in a second language, seek clarity and still be treated as if the improvement itself discredits the speaker.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
@@ -3743,7 +3743,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Aim the accusation upward",
           "subtitle": "kinetic typography / editorial",
           "narration": "Before mocking a junior colleague, imagine announcing to your boss or an established native speaker that their polished prose makes them a bot.",
           "image": "assets/archival-2026-10-12/university-podium-talk-2017.webp",
@@ -3758,7 +3758,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "The old industry had a different name",
           "subtitle": "kinetic typography / editorial",
           "narration": "For years academics were instructed, and sometimes charged, to have manuscripts professionally edited. The expectation of standardized language did not originate with AI.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
@@ -3773,7 +3773,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Ideas are not grammar templates",
           "subtitle": "kinetic typography / editorial",
           "narration": "The same professional register appears in messages from native speakers and people with greater authority. Notice who gets challenged.",
           "image": "assets/home-archive/chemistry-chalkboard.jpg",
@@ -3788,7 +3788,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Ideas are not grammar templates",
           "subtitle": "kinetic typography / editorial",
           "narration": "Software assistance does not automatically certify a bad argument; nor does an unedited mistake certify originality.",
           "image": "assets/home-archive/chemistry-chalkboard.jpg",
@@ -3803,7 +3803,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Judge the argument",
           "subtitle": "kinetic typography / editorial",
           "narration": "Criticise ideas when they deserve criticism. A polished sentence is not proof that its writer has no mind.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
@@ -3830,7 +3830,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "Who Taught Humans to Write Like Machines?",
           "subtitle": "editorial type documentary",
           "narration": "The style now called suspiciously artificial was often taught to students as good professional writing years before generative AI.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
@@ -3845,7 +3845,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The style existed before the chatbot",
           "subtitle": "editorial type documentary",
           "narration": "Read an old institutional email or academic abstract. You may find the immaculate, depersonalized language we now accuse machines of inventing.",
           "image": "assets/home-archive/chemistry-chalkboard.jpg",
@@ -3860,7 +3860,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Train a person to sound acceptable",
           "subtitle": "editorial type documentary",
           "narration": "Universities demand standard structure, impeccable polish and phrases approved by gatekeepers. Writers learn to hide any particular voice.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
@@ -3875,7 +3875,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Then punish the imitation",
           "subtitle": "editorial type documentary",
           "narration": "When software produces the very language institutions rewarded, people suddenly decide that the sound itself is incriminating.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
@@ -3890,7 +3890,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "A detector cannot read a mind",
           "subtitle": "editorial type documentary",
           "narration": "A sentence pattern is not evidence of who conceived an idea, performed an experiment or understood a conclusion.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
@@ -3905,7 +3905,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Ask a more difficult question",
           "subtitle": "editorial type documentary",
           "narration": "Institutions rewarded an impersonal register and now treat its imitation as intellectual laziness. That contradiction deserves examination.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
@@ -3920,7 +3920,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Ask a more difficult question",
           "subtitle": "editorial type documentary",
           "narration": "What does this author know? Are the sources real? Can the argument survive direct examination? Those questions require judgment.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
@@ -3935,7 +3935,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Restore the right standard",
           "subtitle": "editorial type documentary",
           "narration": "The argument is about who set linguistic rules and who gets punished for obeying them.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
@@ -3962,7 +3962,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "The Things an Academic CV Cannot Hold",
           "subtitle": "observational academic essay",
           "narration": "A curriculum vitae can account for each appointment yet leave out the months a researcher spent merely trying to remain functional.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
@@ -3977,7 +3977,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A CV tells the wrong kind of time",
           "subtitle": "observational academic essay",
           "narration": "A curriculum vitae organizes years into posts and publications. It rarely records uncertainty, strain or the cost of being constantly evaluated.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
@@ -3992,7 +3992,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "There is always one more condition",
           "subtitle": "observational academic essay",
           "narration": "Finish the experiment, submit the draft, apply for the next award. A system can keep moving the point at which its members are allowed to rest.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
@@ -4007,7 +4007,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Mentorship changes the experience",
           "subtitle": "observational academic essay",
           "narration": "Good supervision offers criticism that improves the science without confusing professional standards with personal humiliation.",
           "image": "assets/oct12-owner-photos/acs-chapter-recognition-2017.webp",
@@ -4022,7 +4022,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Exhaustion does not prove dedication",
           "subtitle": "observational academic essay",
           "narration": "Academic work asks for persistence, but turning every sacrifice into a badge of commitment produces incentives worth examining.",
           "image": "assets/home-archive/university-lab-coat.jpg",
@@ -4037,7 +4037,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Mental health is not a footnote",
           "subtitle": "observational academic essay",
           "narration": "The pressure to appear perpetually productive is built into academic routines. Trace it without reducing people to inspirational examples.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
@@ -4052,7 +4052,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Mental health is not a footnote",
           "subtitle": "observational academic essay",
           "narration": "Scientific institutions should ask which parts of their incentives make research needlessly cruel, not only whether students can tolerate them.",
           "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
@@ -4067,7 +4067,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Keep the scientist alive",
           "subtitle": "observational academic essay",
           "narration": "Good science benefits when institutional expectations can be questioned as carefully as experimental assumptions.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
@@ -4094,7 +4094,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "Three Names on the Medal, Hundreds in the Record",
           "subtitle": "history of scientific credit",
           "narration": "The prize photograph records a few names. The publications behind it often record many hands, instruments and years.",
           "image": "assets/home-archive/early-science-talk.jpg",
@@ -4109,7 +4109,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "An award fits a few names",
           "subtitle": "history of scientific credit",
           "narration": "The prize ceremony produces a clear picture of discovery, with a handful of faces attached to a complicated scientific history.",
           "image": "assets/2017-acs-el-sayed-group.webp",
@@ -4124,7 +4124,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "A discovery has a longer genealogy",
           "subtitle": "history of scientific credit",
           "narration": "Experiments accumulate through earlier questions, technical adaptations, overlooked collaborators and results that sometimes become useful years later.",
           "image": "assets/home-archive/early-science-talk.jpg",
@@ -4139,7 +4139,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "The laboratory is not a single author",
           "subtitle": "history of scientific credit",
           "narration": "A manuscript records coauthors, while a method may depend on technicians, students and predecessor teams who never enter the headline.",
           "image": "assets/photos-2017-2019/chem-squad-abdelgalil-colleagues-2019.webp",
@@ -4154,7 +4154,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Commemoration edits the past",
           "subtitle": "history of scientific credit",
           "narration": "Every selection tells us whom an institution has chosen to remember. Historical recognition is never identical to an exhaustive chain of contribution.",
           "image": "assets/2017-acs-el-sayed-group.webp",
@@ -4169,7 +4169,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Credit still needs proof",
           "subtitle": "history of scientific credit",
           "narration": "Recognising overlooked labour does not erase a decisive insight; it asks us to document how that insight became possible.",
           "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
@@ -4184,7 +4184,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Credit still needs proof",
           "subtitle": "history of scientific credit",
           "narration": "An inclusive account cannot simply invent forgotten heroes. It must return to papers, notebooks, patents and who actually did the work.",
           "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
@@ -4199,7 +4199,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Do justice to the record",
           "subtitle": "history of scientific credit",
           "narration": "Discovery can be celebrated without making its history smaller than it actually was.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
@@ -4226,7 +4226,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "The Target Has More Than One Shape",
           "subtitle": "pharmacology / science cinema",
           "narration": "A transcription factor seen in a static structure seems to invite a drug. In the cell, it inhabits shifting regulatory assemblies.",
           "image": "assets/home-archive/chemistry-chalkboard.jpg",
@@ -4241,7 +4241,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The pocket is not the protein",
           "subtitle": "pharmacology / science cinema",
           "narration": "A purified protein fragment can look druggable, while the living regulatory complex occupies many shapes and partnerships that a crystal cannot freeze.",
           "image": "assets/robo-concept.svg",
@@ -4256,7 +4256,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Think in states",
           "subtitle": "pharmacology / science cinema",
           "narration": "The therapeutic hypothesis should identify the disease-sustaining transcription-factor state and what biological transition a ligand is supposed to cause.",
           "image": "assets/home-archive/chemistry-chalkboard.jpg",
@@ -4271,7 +4271,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Binding is just an entrance",
           "subtitle": "pharmacology / science cinema",
           "narration": "A thermal-shift curve or impressive affinity does not establish a change in transcriptional function or a therapeutic phenotype.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
@@ -4286,7 +4286,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "A chain of experiments",
           "subtitle": "pharmacology / science cinema",
           "narration": "Engagement, conformation, chromatin occupancy and cellular response must be linked through experiments that can also disprove the claim.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
@@ -4301,7 +4301,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Real precedents, different mechanisms",
           "subtitle": "pharmacology / science cinema",
           "narration": "The intervention must specify which state is altered and which readout establishes the change. A promising pocket is a starting hypothesis.",
           "image": "assets/robo-concept.svg",
@@ -4316,7 +4316,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Real precedents, different mechanisms",
           "subtitle": "pharmacology / science cinema",
           "narration": "Belzutifan, TEAD inhibitors and mutant-p53 reactivation illustrate distinct modes of controlling regulatory state rather than a universal method.",
           "image": "assets/robo-concept.svg",
@@ -4331,7 +4331,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Drug discovery needs a better unit",
           "subtitle": "pharmacology / science cinema",
           "narration": "Drug design should interrogate the living regulatory state instead of falling in love with an isolated conformation.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
@@ -4358,7 +4358,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "The Nanomolar Mirage",
           "subtitle": "pharmacology / science cinema",
           "narration": "A nanomolar potency value can win a meeting before anyone asks whether the compound reaches the relevant tissue unbound.",
           "image": "assets/niosomes-concept.svg",
@@ -4373,7 +4373,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The perfect number",
           "subtitle": "pharmacology / science cinema",
           "narration": "A compound works at nanomolar concentration in a protected assay. The number is seductive, but a patient never receives an assay plate.",
           "image": "assets/home-archive/figure-cyanide-sensor.jpg",
@@ -4388,7 +4388,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "The journey is a different experiment",
           "subtitle": "pharmacology / science cinema",
           "narration": "Solubility, absorption, distribution, metabolism and clearance decide whether the required free concentration reaches the tissue.",
           "image": "assets/niosomes-concept.svg",
@@ -4403,7 +4403,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Total is not free",
           "subtitle": "pharmacology / science cinema",
           "narration": "A high tissue or plasma concentration can conceal extensive binding. Free exposure at the site of action is the relevant question.",
           "image": "assets/evidence-pulmonary.webp",
@@ -4418,7 +4418,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Turn the comparison around",
           "subtitle": "pharmacology / science cinema",
           "narration": "Ask what dose achieves occupancy for long enough, and what happens elsewhere in the body at that same exposure.",
           "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
@@ -4433,7 +4433,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: An impressive hit may still fail",
           "subtitle": "pharmacology / science cinema",
           "narration": "Target affinity, binding in biological matrices and pharmacokinetics must be reconciled with the exposure needed for an effect.",
           "image": "assets/niosomes-concept.svg",
@@ -4448,7 +4448,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "An impressive hit may still fail",
           "subtitle": "pharmacology / science cinema",
           "narration": "Potency cannot compensate indefinitely for permeability barriers, toxicity or infeasible pharmacokinetics.",
           "image": "assets/niosomes-concept.svg",
@@ -4463,7 +4463,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Measure the achievable",
           "subtitle": "pharmacology / science cinema",
           "narration": "The assay number matters only if it can be translated into a defensible exposure strategy.",
           "image": "assets/home-archive/chemistry-chalkboard.jpg",
@@ -4490,7 +4490,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "The Molecule Behind Every Protein",
           "subtitle": "pharmacology / science cinema",
           "narration": "Each cell repeatedly interprets RNA instructions through transfer RNA. Those small adapters constitute a complicated regulatory system.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
@@ -4505,7 +4505,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A translator inside every cell",
           "subtitle": "pharmacology / science cinema",
           "narration": "Before a protein takes shape, transfer RNA helps turn genetic instructions into an amino-acid sequence. It is not passive cellular plumbing.",
           "image": "assets/home-archive/chemistry-chalkboard.jpg",
@@ -4520,7 +4520,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "The system is not one target",
           "subtitle": "pharmacology / science cinema",
           "narration": "tRNA charging, chemical modification, cleavage and localisation create several different biological functions and possible intervention points.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
@@ -4535,7 +4535,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Synthetases can do more",
           "subtitle": "pharmacology / science cinema",
           "narration": "Aminoacyl-tRNA synthetases have catalytic charging functions, and some have additional signalling roles beyond translation.",
           "image": "assets/robo-concept.svg",
@@ -4550,7 +4550,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "Specificity will decide the risk",
           "subtitle": "pharmacology / science cinema",
           "narration": "Disrupting universally needed translation can injure healthy cells. A drug programme must demonstrate a disease-specific vulnerability.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
@@ -4565,7 +4565,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Match the modality to the biology",
           "subtitle": "pharmacology / science cinema",
           "narration": "Charging, modification and recognition can be context dependent. A drug programme needs a specific dependency, not a general declaration about tRNA.",
           "image": "assets/niosomes-concept.svg",
@@ -4580,7 +4580,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Match the modality to the biology",
           "subtitle": "pharmacology / science cinema",
           "narration": "An enzyme pocket, disease-associated RNA fragment or extracellular synthetase domain requires different chemistry, assays and delivery.",
           "image": "assets/niosomes-concept.svg",
@@ -4595,7 +4595,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "The translation apparatus is dynamic",
           "subtitle": "pharmacology / science cinema",
           "narration": "Translation machinery is not automatically undruggable, and it is certainly not automatically safe to perturb.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
@@ -4622,7 +4622,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "When a Drug Makes Two Proteins Meet",
           "subtitle": "pharmacology / science cinema",
           "narration": "A drug molecule is often imagined occupying a protein pocket. Another possibility is that it persuades two proteins to meet.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
@@ -4637,7 +4637,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "The drug is not a cork in a hole",
           "subtitle": "pharmacology / science cinema",
           "narration": "For years drug action was pictured as occupancy. Induced proximity instead asks whether a molecule can bring two biological partners together.",
           "image": "assets/robo-concept.svg",
@@ -4652,7 +4652,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Recruit an effector",
           "subtitle": "pharmacology / science cinema",
           "narration": "A bifunctional agent can link a target protein to an E3 ligase and initiate ubiquitination, redirecting the cell's own disposal machinery.",
           "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
@@ -4667,7 +4667,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "Geometry controls the event",
           "subtitle": "pharmacology / science cinema",
           "narration": "The two proteins must form a productive complex. Linker length, orientation and cooperativity matter in ways simple binary affinity does not describe.",
           "image": "assets/home-archive/chemistry-chalkboard.jpg",
@@ -4682,7 +4682,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "The complex cannot last forever",
           "subtitle": "pharmacology / science cinema",
           "narration": "A bridge that dissociates too fast fails to act, while one that never releases may fail to turn over. Residence time becomes functional.",
           "image": "assets/robo-concept.svg",
@@ -4697,7 +4697,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Not every match destroys",
           "subtitle": "pharmacology / science cinema",
           "narration": "Induced proximity makes an event the pharmacological objective. Its success depends on complexes that form and the selectivity of their biology.",
           "image": "assets/niosomes-concept.svg",
@@ -4712,7 +4712,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Not every match destroys",
           "subtitle": "pharmacology / science cinema",
           "narration": "Induced proximity can also relocalise or stabilize a protein, revealing that the real modality is the event the molecule causes.",
           "image": "assets/niosomes-concept.svg",
@@ -4727,7 +4727,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "A different design discipline",
           "subtitle": "pharmacology / science cinema",
           "narration": "What matters is the cellular event a molecule produces, and whether exposure sustains it where needed.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
@@ -4754,7 +4754,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "What is at stake?",
+          "title": "The Antibody Is Only the Beginning",
           "subtitle": "pharmacology / science cinema",
           "narration": "The antibody reaches the tumour. In an advertisement that would be the triumphant final shot. In an ADC, chemistry is just getting started.",
           "image": "assets/niosomes-concept.svg",
@@ -4769,7 +4769,7 @@
         },
         {
           "id": "02",
-          "title": "The observation",
+          "title": "A guided payload still travels through a body",
           "subtitle": "pharmacology / science cinema",
           "narration": "An antibody-drug conjugate is a chemical system. Tumour binding is only one step in an exposure and release problem.",
           "image": "assets/evidence-biomaterials.webp",
@@ -4784,7 +4784,7 @@
         },
         {
           "id": "03",
-          "title": "How it works",
+          "title": "Linker chemistry decides where",
           "subtitle": "pharmacology / science cinema",
           "narration": "Stable, cleavable and non-cleavable linkers change what escapes the carrier, how much reaches other tissues and how a tumour is exposed.",
           "image": "assets/niosomes-concept.svg",
@@ -4799,7 +4799,7 @@
         },
         {
           "id": "04",
-          "title": "What we measured",
+          "title": "A ratio reshapes a drug",
           "subtitle": "pharmacology / science cinema",
           "narration": "Drug-to-antibody ratio influences distribution, heterogeneity and pharmacokinetics. Higher loading is not automatically more precise.",
           "image": "assets/robo-concept.svg",
@@ -4814,7 +4814,7 @@
         },
         {
           "id": "05",
-          "title": "Another piece",
+          "title": "The payload brings its own risks",
           "subtitle": "pharmacology / science cinema",
           "narration": "Even a stable linker may deliver a drug class associated with specific toxicities, including serious complications outside the tumour.",
           "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
@@ -4829,7 +4829,7 @@
         },
         {
           "id": "06",
-          "title": "Turning point",
+          "title": "The difficulty: Bystander effects are conditional",
           "subtitle": "pharmacology / science cinema",
           "narration": "Internalisation, linker behaviour and payload transport determine where exposure occurs. Binding alone does not settle safety or efficacy.",
           "image": "assets/evidence-biomaterials.webp",
@@ -4844,7 +4844,7 @@
         },
         {
           "id": "07",
-          "title": "What evidence permits",
+          "title": "Bystander effects are conditional",
           "subtitle": "pharmacology / science cinema",
           "narration": "Permeable payloads may help reach heterogeneous tumours, but surrounding normal tissue and exposure constrain the apparent advantage.",
           "image": "assets/evidence-biomaterials.webp",
@@ -4859,7 +4859,7 @@
         },
         {
           "id": "08",
-          "title": "The claim",
+          "title": "Safety begins in molecular design",
           "subtitle": "pharmacology / science cinema",
           "narration": "An antibody–drug conjugate is an engineered pharmacological system whose components must succeed together.",
           "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
