@@ -405,14 +405,16 @@
           "narration": "A zebrafish brain is building its vasculature while blood is already moving through it. Some endothelial cells carry slender projections into that flow.",
           "image": "assets/evidence-zebrafish.webp",
           "contain": true,
-          "kind": "Original microscopy footage, model-context limitations apply",
-          "credit": "Original hosted zebrafish microscopy recording; research context, not proof of every result",
+          "kind": "Hosted illustrative/context motion clip; provenance not yet verified as original microscopy",
+          "credit": "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed.",
           "link": "/research/zebrafish-vascular-cilia.html",
           "video": "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4",
           "source_title": "An organism in motion",
           "narrative_role": "cold_open",
           "shot_treatment": "full_image_silence",
-          "sec": 17
+          "sec": 17,
+          "required_footage_provenance_review": true,
+          "film_source_status": "unverified_context_footage"
         },
         {
           "id": "02",
@@ -436,8 +438,8 @@
           "narration": "Transparent zebrafish embryos let researchers observe cranial vessels developing within a living system.",
           "image": "assets/films/art-v2/cerebral-cilia-1.svg",
           "contain": true,
-          "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
-          "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment",
+          "kind": "Hosted illustrative/context motion clip; provenance not yet verified as original microscopy",
+          "credit": "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed.",
           "link": "/research/zebrafish-vascular-cilia.html",
           "video": "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4",
           "source_title": "An organism in motion",
@@ -445,7 +447,9 @@
           "shot_treatment": "documentary",
           "sec": 15,
           "original_image": "assets/evidence-zebrafish.webp",
-          "visual_edition": "cinematic-original-art"
+          "visual_edition": "cinematic-original-art",
+          "required_footage_provenance_review": true,
+          "film_source_status": "unverified_context_footage"
         },
         {
           "id": "04",
