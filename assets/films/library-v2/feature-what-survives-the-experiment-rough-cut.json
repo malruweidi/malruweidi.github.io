@@ -1,0 +1,106 @@
+{
+  "slug": "feature-what-survives-the-experiment",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 168.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "0a1541e3eb3416bc217fc749977b40005704213e3a13960cbc4939c7f728f81d",
+  "shots": [
+    {
+      "title": "The anatomy room",
+      "kind": "photograph",
+      "image": "assets/home-archive/early-science-talk.jpg",
+      "museum": null,
+      "credit": "Personal photographic archive; school anatomy lesson, 2011"
+    },
+    {
+      "title": "A microscope of my own",
+      "kind": "photograph",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "museum": null,
+      "credit": "Personal microscope and archival photograph"
+    },
+    {
+      "title": "Beginning with matter",
+      "kind": "photograph and apparatus film",
+      "image": "assets/owner-archive-2026-10-16/chem-squad-lab-medicinal-plant-extracts.webp",
+      "museum": null,
+      "credit": "Archived chemistry photograph and original apparatus recording; not a recording of the extracts experiment"
+    },
+    {
+      "title": "What a spectrum can say",
+      "kind": "research figure",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Published scientific figure from the research record; attribution in the Figures archive"
+    },
+    {
+      "title": "Learning in company",
+      "kind": "photograph",
+      "image": "assets/2017-acs-el-sayed-group.webp",
+      "museum": null,
+      "credit": "Photographic archive: encounter with Professor Elmostafa El-Sayed and colleagues, 2017"
+    },
+    {
+      "title": "When the polymer resisted",
+      "kind": "photograph",
+      "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+      "museum": null,
+      "credit": "Original record of unsuccessful polymer trials; no successful dissolution is claimed"
+    },
+    {
+      "title": "A living system moves",
+      "kind": "archival experimental footage",
+      "image": "assets/evidence-zebrafish.webp",
+      "museum": null,
+      "credit": "Original zebrafish cardiovascular microscopy; not direct evidence of every claim in the narration"
+    },
+    {
+      "title": "The section that failed",
+      "kind": "photograph",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "museum": null,
+      "credit": "Original unsuccessful zebrafish histology attempt"
+    },
+    {
+      "title": "An airway reopens",
+      "kind": "research figure",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Published flow-chamber research figure; controlled epithelial injury, not clinical evidence"
+    },
+    {
+      "title": "The interface matters",
+      "kind": "research figure",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "museum": null,
+      "credit": "Published materials-research imagery; source and figure context in the research record"
+    },
+    {
+      "title": "Reaching the lung",
+      "kind": "context illustration",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Pulmonary research-context illustration; ongoing thesis, not a claim of demonstrated clinical delivery"
+    },
+    {
+      "title": "What can be relied upon?",
+      "kind": "photograph",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "museum": null,
+      "credit": "Contemporary portrait and editorial typography; not a historical manuscript facsimile"
+    }
+  ],
+  "film_title": "What Survives the Experiment",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/what-survives-scenes.json",
+  "primary_reference": "/films.html",
+  "source_collection": "feature",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "40a6877bde6b35af2feb2d89141c5d4bcf3fb20a68b08846d98c15d15f4a119f"
+}

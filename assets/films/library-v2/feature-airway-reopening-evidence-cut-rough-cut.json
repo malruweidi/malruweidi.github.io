@@ -1,0 +1,99 @@
+{
+  "slug": "feature-airway-reopening-evidence-cut",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 138.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "1103fd1c0c0c83b7253a78f439b9e04949633033bff50fe68fa02aa018e14a07",
+  "shots": [
+    {
+      "title": "Reopening is not always gentle",
+      "kind": "AIRWAY / CONCEPTUAL",
+      "image": "assets/films/plates/what-a-bubble-can-do-01.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "A boundary that moves",
+      "kind": "INTERFACE / EXPLANATORY SCHEMATIC",
+      "image": "assets/films/plates/what-a-bubble-can-do-02.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "Inside the flow chamber",
+      "kind": "ORIGINAL PUBLISHED FIGURE",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "The comparison",
+      "kind": "EXPERIMENTAL DESIGN / NO SIMULATED CELLS",
+      "image": "assets/films/plates/what-a-bubble-can-do-03.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "How cell injury was read",
+      "kind": "ASSAY METHOD / NO INVENTED MICROSCOPY",
+      "image": "assets/films/plates/what-a-bubble-can-do-04.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "The unprotected group",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "Dexamethasone pretreatment",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "image": "assets/films/plates/what-a-bubble-can-do-05.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "Transdehydroandrosterone",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "image": "assets/films/plates/what-a-bubble-can-do-06.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "Another mechanical comparison",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "image": "assets/films/plates/what-a-bubble-can-do-07.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "The cytoskeleton matters",
+      "kind": "MECHANISTIC INTERPRETATION / NOT PROOF OF A SINGLE PATHWAY",
+      "image": "assets/films/plates/what-a-bubble-can-do-08.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "What the experiment can say",
+      "kind": "EVIDENCE LIMIT / 2021 PUBLICATION",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    }
+  ],
+  "film_title": "A Bubble Against an Epithelium: What the Numbers Show",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/airway-reopening-evidence-scenes.json",
+  "primary_reference": "https://doi.org/10.1152/japplphysiol.00574.2020",
+  "source_collection": "feature",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "29304aaca8adbb50985220de940c32a518ccfa331e7a84397be7dfb1bed9b847"
+}
