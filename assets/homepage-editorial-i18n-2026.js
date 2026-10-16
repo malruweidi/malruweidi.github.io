@@ -137,3 +137,20 @@ Object.assign(window.RuwaidixArabicDictionary, {
 Object.assign(window.RuwaidixArabicDictionary, {
   "We still meet to think aloud about questions that may never become formal projects.": "وما زلنا نلتقي لنتبادل الأفكار حول أسئلة قد لا تتحول إلى مشروعات بحثية رسمية."
 });
+
+/* Documentary editorial translations: preserve all earlier exact-key strings. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "The first system that truly puzzled me was a body, not a compound. In a school anatomy room, the organs of a fox specimen made more sense together than apart. Chemistry later gave me a way to intervene. I began with plant extracts, imines and molecular sensing, learning to distinguish a plausible explanation from what an experiment could establish.": "كان أول نظام حيّ أثار حيرتي حقًّا جسدًا لا مركبًا كيميائيًا. في غرفة التشريح المدرسية، بدت أعضاء عيّنة الثعلب أكثر قابلية للفهم حين نظرت إليها بوصفها أجزاءً مترابطة. ثم منحتني الكيمياء وسيلة للتدخل. بدأت بالمستخلصات النباتية والإيمينات والاستشعار الجزيئي، وتعلّمت أن أميّز بين تفسير محتمل وما تستطيع التجربة إثباته.",
+  "That habit followed me into developing zebrafish vessels, mechanically injured lung cells and experiments with materials that refused to behave as expected. My current MSc work examines dexamethasone niosomes and proniosomes intended for inhalation, where even a promising formulation must confront nebulization and aerosol transport. I want to understand what happens between the molecule we design and the biological system we hope to change.": "رافقني هذا النهج إلى دراسة الأوعية الدموية النامية في أسماك الزرد، والخلايا الرئوية المتضررة بفعل الإجهاد الميكانيكي، وتجارب مواد لم تتصرف كما توقعنا. يدرس بحثي الحالي للماجستير حويصلات النيوسوم والبرونيوسوم المحتوية على الديكساميثازون والمعدة للاستنشاق، حيث لا بد حتى للتركيبة الواعدة من اجتياز تحديات التبخير الرذاذي وانتقال الهباء. أريد أن أفهم ما يحدث بين الجزيء الذي نصممه والنظام البيولوجي الذي نرجو التأثير فيه.",
+  "A microscope brought from Cairo. A polymer that resisted the expected chemistry. A zebrafish section that fell apart during processing. An epithelial layer injured by a moving interface. These are not metaphors for research; they are things I worked with, and sometimes could not make work.": "مجهر أحضرته من القاهرة. بوليمر قاوم السلوك الكيميائي المتوقع. مقطع نسيجي لسمكة زرد تفكك أثناء التحضير. طبقة من الخلايا الظهارية أصابتها واجهة متحركة. هذه ليست استعارات عن البحث؛ إنها أشياء عملت عليها، وبعضها لم أستطع جعله يعمل كما أردت.",
+  "Featured documentary / 02:00": "فيلم وثائقي مختار / ٠٢:٠٠",
+  "What survives": "ما الذي يصمد",
+  "the experiment.": "أمام التجربة.",
+  "A research life told through the real archive: the fox anatomy lesson, a microscope carried from Cairo, stubborn polymers, developing vessels, failed embedding, mechanically injured lung cells and the pursuit of inhaled medicines. Twelve scenes. The figures and recordings lead back to their sources.": "حياة بحثية تُروى من الأرشيف الحقيقي: درس تشريح الثعلب، ومجهر جاء من القاهرة، وبوليمرات عصيّة، وأوعية دموية نامية، وتجربة تضمين نسيجي تعثّرت، وخلايا رئوية تأذت ميكانيكيًا، والسعي إلى تطوير أدوية مستنشقة. اثنا عشر مشهدًا، ولكل شكل وتسجيل طريق إلى مصدره.",
+  "Archival images & original research footage · Reproducible editing · 2026": "صور أرشيفية وتسجيلات بحثية أصلية · مونتاج قابل لإعادة الإنتاج · ٢٠٢٦",
+  "The film, full transcript and source record ↗": "الفيلم والنص الكامل وسجل المصادر ↗",
+  "02:00 / TWELVE CHAPTERS": "٠٢:٠٠ / اثنا عشر فصلًا",
+  "Explore the film and original research archive ↗": "استكشف الفيلم وأرشيف البحث الأصلي ↗",
+  "What Survives the Experiment · Two-minute documentary": "ما الذي يصمد أمام التجربة · فيلم وثائقي مدته دقيقتان",
+  "Full transcript, credits & source material ↗": "النص الكامل والاعتمادات والمصادر ↗"
+});
