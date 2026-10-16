@@ -1,0 +1,7 @@
+{
+  "film": "feature-ring-that-never-closed",
+  "status": "RENDER BLOCKED; NOT A COMPLETED VIDEO",
+  "error": "feature-ring-that-never-closed shot 2: voice exceeds 12s. Rewrite or rerecord; never clip.",
+  "source": "assets/films/cinematic-library-v2.json",
+  "input_sha256": "111e839f386adafdb07aed565c75f37649860354881df658d885e841dad046d7"
+}
