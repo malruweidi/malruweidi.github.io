@@ -1,0 +1,859 @@
+{
+  "version": "DIRECTORS_LEDGER_V3",
+  "status": "UNAPPROVED_DIRECTORIAL_WORKPRINTS",
+  "note": "Unique source-grounded direction for every current film; movement does not itself certify cinematic quality; no public replacement",
+  "published_media_must_remain_unchanged": true,
+  "films": [
+    {
+      "slug": "making-medicines-keep",
+      "editorial_argument": "A syrup can fail without appearing spoiled; read preparation as a craft of material judgement, not as proto-modern regulation.",
+      "visual_motif": "Ceramic jar, manuscript material, procedural gestures and close textual witness; historical comparison stays visibly labeled.",
+      "review_question": "Can viewers separate documented medieval practice from reconstructed illustration?",
+      "voice_preview": "bm_lewis",
+      "camera_moves": [
+        "slow-push",
+        "lock",
+        "lock",
+        "lock",
+        "pan-left",
+        "rise",
+        "lock",
+        "settle",
+        "slow-push"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "two-materials-no-section",
+      "editorial_argument": "Two materials meant to solve different problems produced no readable histological section; absence is the experimentally honest ending.",
+      "visual_motif": "Begin on fragments at the knife, return to orientation photographs, hold schematic interfaces motionless.",
+      "review_question": "Does the edit avoid presenting a reconstructed outcome as an observed one?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "pan-left",
+        "slow-push",
+        "lock",
+        "pan-right",
+        "slow-pull",
+        "rise",
+        "lock",
+        "settle",
+        "pan-left"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "what-a-bubble-can-do",
+      "editorial_argument": "An advancing air-liquid boundary can injure an epithelial monolayer even as an airway reopens.",
+      "visual_motif": "Bubble movement animation punctuated by original flow-chamber figures and restrained microscopy stills.",
+      "review_question": "Is every injury claim explicitly limited to the studied model?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "slow-pull",
+        "lock",
+        "lock",
+        "rise",
+        "lock",
+        "slow-push",
+        "lock",
+        "settle",
+        "lock"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-airway-reopening",
+      "editorial_argument": "Reopening an airway is a fluid-mechanics event whose cellular consequences can be measured.",
+      "visual_motif": "Advance across the actual chamber geometry rather than generic lungs; live-dead evidence stays intact.",
+      "review_question": "Are measured cell-death percentages attributed to the correct experimental conditions?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "rise",
+        "lock",
+        "lock",
+        "lock",
+        "slow-push",
+        "lock",
+        "lock",
+        "lock"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-cerebral-cilia",
+      "editorial_argument": "Cilia and cranial blood-flow questions can be asked using developing zebrafish, but distribution is not mechanistic proof.",
+      "visual_motif": "Microscope stage, developmental vessel map, authentic zebrafish footage and analytical diagram with protected axes.",
+      "review_question": "Are cilium localization, observation, and inferred flow sensing clearly distinguished?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "lock",
+        "lock",
+        "lock",
+        "slow-pull",
+        "lock",
+        "rise",
+        "lock",
+        "lock"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-slit2-robo",
+      "editorial_argument": "SLIT2–ROBO signaling cannot be assigned a single oncological role without tissue and cellular context.",
+      "visual_motif": "Two diverging biological routes and patent records; avoid generic glowing molecular icons.",
+      "review_question": "Does the film keep therapeutic and patent claims at their actual evidentiary level?",
+      "voice_preview": "bm_lewis",
+      "camera_moves": [
+        "lock",
+        "slow-push",
+        "lock",
+        "pan-right",
+        "slow-pull",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-curcumin-cyanide",
+      "editorial_argument": "Visible color change suggests sensing, but selectivity and a reproducible optical response determine usefulness.",
+      "visual_motif": "Real chemical glassware and authentic absorbance readouts; color should never be fabricated as measured data.",
+      "review_question": "Are sensor selectivity, interference and experiment distinct from illustration?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "lock",
+        "lock",
+        "lock",
+        "rise",
+        "lock",
+        "slow-push",
+        "lock",
+        "lock"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-making-medicines-keep",
+      "editorial_argument": "Historical instructions reveal process decisions about syrup stability, substitution and consistency; they do not supply modern clinical endpoints.",
+      "visual_motif": "Treat recipe text as evidence and jar imagery as staged historical interpretation, never period photography.",
+      "review_question": "Does every source claim locate its manuscript or formulary witness?",
+      "voice_preview": "bm_lewis",
+      "camera_moves": [
+        "rise",
+        "slow-pull",
+        "lock",
+        "pan-left",
+        "slow-push",
+        "settle",
+        "lock",
+        "pan-right"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-niosomes",
+      "editorial_argument": "An inhalable vesicle has to survive atomization, deposition and biological exposure before formulation deserves confidence.",
+      "visual_motif": "Carrier diagram to nebulizer to deposition geometry, returning to actual Masters experimental archive.",
+      "review_question": "Are all performance outcomes clearly identified as research questions until measured?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "slow-push",
+        "pan-right",
+        "lock",
+        "slow-pull",
+        "pan-left",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-echo-cnn-lstm",
+      "editorial_argument": "A fetal heart is moving information; a model reading it requires patient-level validation rather than attractive architecture.",
+      "visual_motif": "Genuine diagnostic workstation, controlled frame sequence, restrained architecture overlay; never invent a fetus scan.",
+      "review_question": "Does the film distinguish conceptual architecture from actual published validation?",
+      "voice_preview": "bf_emma",
+      "camera_moves": [
+        "pan-left",
+        "slow-push",
+        "lock",
+        "lock",
+        "slow-pull",
+        "rise",
+        "lock",
+        "lock"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-pla-grafting",
+      "editorial_argument": "The chemistry of a polymer surface can change interactions while the bulk material looks identical.",
+      "visual_motif": "Surface macro and plasma-treated study figure; use light and texture rather than invented antimicrobial visualisation.",
+      "review_question": "Are any claimed performance changes backed by the exact cited source?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "slow-pull",
+        "lock",
+        "lock",
+        "lock",
+        "pan-left",
+        "slow-push",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-pla-scaffolds",
+      "editorial_argument": "Cell contact with a scaffold depends on geometry and surface composition, with application limits.",
+      "visual_motif": "Show actual material and published characterization without cropping axes, then a clearly marked schematic.",
+      "review_question": "Does the edit avoid transferring scaffold claims across distinct studies?",
+      "voice_preview": "bm_lewis",
+      "camera_moves": [
+        "rise",
+        "slow-pull",
+        "lock",
+        "lock",
+        "slow-push",
+        "settle",
+        "lock",
+        "pan-right"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-flow-chamber-method",
+      "editorial_argument": "The challenge was to reproduce the moving interface in a controlled chamber that others could build.",
+      "visual_motif": "Chamber cutaway, apparatus photo, protocol diagram and data; make method visually legible.",
+      "review_question": "Does the chamber geometry shown match the published methods?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "slow-push",
+        "lock",
+        "lock",
+        "lock",
+        "lock",
+        "rise",
+        "lock",
+        "lock"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-zebrafish-hemodynamics",
+      "editorial_argument": "High-speed observation becomes a defensible result only after extracting quantified physiological motion.",
+      "visual_motif": "Real zebrafish footage where verified, frozen measurement frames and noncropped plots.",
+      "review_question": "Is the pictured specimen actually tied to the cited observation, or labeled context?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "lock",
+        "lock",
+        "lock",
+        "lock",
+        "slow-pull",
+        "rise",
+        "lock",
+        "lock"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-ace2-covid-drugs",
+      "editorial_argument": "Clinical questions about ACE2-affecting medication require distinguishing mechanism, association and causality.",
+      "visual_motif": "Treatment records, membrane cartoon and evidence charts with patient details excluded.",
+      "review_question": "Does narration avoid inferring clinical outcome from receptor biology alone?",
+      "voice_preview": "bf_emma",
+      "camera_moves": [
+        "slow-pull",
+        "pan-right",
+        "lock",
+        "rise",
+        "lock",
+        "slow-push",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-gi-autoimmunity-1",
+      "editorial_argument": "An inflammatory gut symptom can emerge from distinct immune pathways with different evidence.",
+      "visual_motif": "Immunological pathway art contrasted with research literature and genuine non-identifying laboratory context.",
+      "review_question": "Does the film avoid treating unlike eosinophilic and autoimmune conditions as synonyms?",
+      "voice_preview": "bf_emma",
+      "camera_moves": [
+        "rise",
+        "slow-pull",
+        "lock",
+        "pan-left",
+        "slow-push",
+        "settle",
+        "lock",
+        "pan-right"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-gi-autoimmunity-2",
+      "editorial_argument": "Diagnosis needs evidence from tissue, timing and clinical context rather than symptoms alone.",
+      "visual_motif": "Specimen-free ethical medical imagery, comparative evidence panels and explicit diagnostic uncertainty.",
+      "review_question": "Does the film distinguish literature review from personalized clinical guidance?",
+      "voice_preview": "bm_lewis",
+      "camera_moves": [
+        "slow-push",
+        "pan-right",
+        "lock",
+        "slow-pull",
+        "pan-left",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-heart-failure-sensors",
+      "editorial_argument": "An elegant signal is not an actionable heart-failure warning until clinical accuracy is demonstrated.",
+      "visual_motif": "Actual sensor hardware archive and source-specific signal processing rather than a fabricated warning dashboard.",
+      "review_question": "Are reported performance metrics from the cited work rather than a design mockup?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "pan-left",
+        "slow-push",
+        "lock",
+        "pan-right",
+        "slow-pull",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-ace2-forms",
+      "editorial_argument": "Membrane-bound and soluble ACE2 occupy different compartments and cannot simply substitute conceptually.",
+      "visual_motif": "Scientific two-compartment schematic, moving membrane boundary and static source references.",
+      "review_question": "Does the film name which ACE2 form each statement concerns?",
+      "voice_preview": "bf_emma",
+      "camera_moves": [
+        "slow-pull",
+        "pan-right",
+        "lock",
+        "lock",
+        "pan-left",
+        "slow-push",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-microfluidic-virus",
+      "editorial_argument": "Miniaturized virus testing succeeds when fluid control, selectivity and sensitivity all survive real samples.",
+      "visual_motif": "Channel micro-animation with scale bar, genuine apparatus photographs and static published validation charts.",
+      "review_question": "Is any visual falsely presented as microscopy of a virus or a tested chip?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "rise",
+        "slow-pull",
+        "lock",
+        "lock",
+        "slow-push",
+        "settle",
+        "lock",
+        "pan-right"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-drug-release-twins",
+      "editorial_argument": "A simulated drug-release curve is a hypothesis until compared against experimentally measured release.",
+      "visual_motif": "Model prediction versus experimental data as visibly distinct channels; no invented pharmacokinetics.",
+      "review_question": "Does the film establish model-validation limitations and source of its curves?",
+      "voice_preview": "bf_emma",
+      "camera_moves": [
+        "slow-push",
+        "pan-right",
+        "lock",
+        "slow-pull",
+        "pan-left",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-food-printing",
+      "editorial_argument": "Print shape is only as reliable as a material's flow, deposition and recovery from deformation.",
+      "visual_motif": "Original extrusion animation and real edible-material imagery with disclosed illustrative motion.",
+      "review_question": "Does the film describe rheology without fabricating viscosity results?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "pan-left",
+        "slow-push",
+        "lock",
+        "pan-right",
+        "slow-pull",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-ceramics-printing",
+      "editorial_argument": "Printability does not guarantee porosity control, mechanical reliability, sterilizability or tissue tolerance.",
+      "visual_motif": "Slow inspection of ceramic lattice structure, genuine materials textures and labeled explanatory cross-sections.",
+      "review_question": "Are concepts from a chapter kept distinct from actual human implantation results?",
+      "voice_preview": "bm_lewis",
+      "camera_moves": [
+        "slow-pull",
+        "pan-right",
+        "lock",
+        "lock",
+        "pan-left",
+        "slow-push",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-cubosome-theranostics",
+      "editorial_argument": "Ordered lipid architecture does not automatically become tumor-selective delivery or clinically useful diagnostics.",
+      "visual_motif": "Nonphotoreal structural sections moving only where clearly schematic; no fabricated micrographs.",
+      "review_question": "Are carrier morphology and clinical efficacy separated?",
+      "voice_preview": "bf_emma",
+      "camera_moves": [
+        "rise",
+        "slow-pull",
+        "lock",
+        "pan-left",
+        "slow-push",
+        "settle",
+        "lock",
+        "pan-right"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-micelles-pahs",
+      "editorial_argument": "A polymer micelle theory meets resistant real materials; the failed attempts are indispensable evidence.",
+      "visual_motif": "Owner's actual failed polymer trials, macro material handling and explicit thermodynamic concept panels.",
+      "review_question": "Is the unsuccessful trial shown as failure, not disguised as proof of encapsulation?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "slow-push",
+        "pan-right",
+        "lock",
+        "slow-pull",
+        "pan-left",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-heterocycle-cancer",
+      "editorial_argument": "Synthetic medicinal chemistry needs isolation and characterization before any biological promise can be claimed.",
+      "visual_motif": "Real aromatic reagents, notebook intermediates, authentic characterization and cautious bioassay interpretation.",
+      "review_question": "Are synthesized intermediates and hoped-for target heterocycles correctly distinguished?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "pan-left",
+        "slow-push",
+        "lock",
+        "pan-right",
+        "slow-pull",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-histology-failure",
+      "editorial_argument": "Agarose orientation and paraffin embedding did not cohere in this attempt, and the microtome told the truth.",
+      "visual_motif": "Real failed block and photographed interface with quiet, locked scientific frames; no fabricated success.",
+      "review_question": "Does the film state that no usable section was produced?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "slow-pull",
+        "pan-right",
+        "lock",
+        "rise",
+        "pan-left",
+        "slow-push",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-cairo-microscope",
+      "editorial_argument": "A privately purchased microscope changed the hours in which the author could pursue observation.",
+      "visual_motif": "Qasr El Einy context cut to actual personal 2017 microscope and bench objects; tactile instead of heroic imagery.",
+      "review_question": "Is the camera showing the actual instrument rather than generic stock?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "rise",
+        "slow-pull",
+        "lock",
+        "lock",
+        "slow-push",
+        "settle",
+        "lock",
+        "pan-right"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-essay-life-between-diagnoses",
+      "editorial_argument": "A difficult medical history intersects a completed secondary education, altered ambitions and scientific work.",
+      "visual_motif": "Dated personal portraits, spatial stillness and careful medical-document boundaries; no reenacted suffering.",
+      "review_question": "Does the travel-week flare remain a real episode, not prophylactic treatment?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "slow-push",
+        "pan-right",
+        "lock",
+        "slow-pull",
+        "pan-left",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-essay-ai-email",
+      "editorial_argument": "A criticism of machine-authored writing can become an insult aimed at a person rather than their argument.",
+      "visual_motif": "Correspondence as readable anonymized typography, not fake institutional email screenshots.",
+      "review_question": "Does the analysis address power and second-language bias without repeating one accusation?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "pan-left",
+        "slow-push",
+        "lock",
+        "pan-right",
+        "slow-pull",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-essay-machine-language",
+      "editorial_argument": "Institutions teach the same standardized style that they later call inauthentic.",
+      "visual_motif": "Typeset rulebooks, marginal corrections and evidence-led editorial forms rather than stock robots.",
+      "review_question": "Does the film support its claim with actual writing practices, not caricatures?",
+      "voice_preview": "bm_lewis",
+      "camera_moves": [
+        "slow-pull",
+        "pan-right",
+        "lock",
+        "rise",
+        "lock",
+        "slow-push",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-essay-academic-mental-health",
+      "editorial_argument": "A CV is a selective record, and research careers include obligations and experiences that it omits.",
+      "visual_motif": "Archival workspaces and institutional paperwork presented without implying a specific undocumented event.",
+      "review_question": "Is the first-person material accurate and respectful to clinical privacy?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "rise",
+        "slow-pull",
+        "lock",
+        "pan-left",
+        "slow-push",
+        "settle",
+        "lock",
+        "pan-right"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-essay-scientific-credit",
+      "editorial_argument": "Prizes concentrate recognition, but discoveries emerge from recorded collective labor.",
+      "visual_motif": "Documentary contributor graphs and actual research acknowledgments without forged prize-related imagery.",
+      "review_question": "Are the people and work credited correctly to the historical record?",
+      "voice_preview": "bm_lewis",
+      "camera_moves": [
+        "slow-push",
+        "pan-right",
+        "lock",
+        "slow-pull",
+        "pan-left",
+        "lock",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-essay-tf-states",
+      "editorial_argument": "Transcription factors are dynamic, regulated states rather than one permanently targetable static shape.",
+      "visual_motif": "Conformational-state editorial diagram, documented binding evidence and only hypothetical drug geometry.",
+      "review_question": "Are claimed mechanisms supported rather than extrapolated from static structures?",
+      "voice_preview": "bf_emma",
+      "camera_moves": [
+        "pan-left",
+        "slow-push",
+        "lock",
+        "pan-right",
+        "lock",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-essay-potency-exposure",
+      "editorial_argument": "A striking in-vitro potency number can be pharmacologically irrelevant without adequate exposure.",
+      "visual_motif": "Concentration-time reasoning drawn as schematic, with measured curves only when explicitly attributed.",
+      "review_question": "Is potency kept separate from unmeasured free drug and tissue exposure?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "slow-pull",
+        "lock",
+        "lock",
+        "rise",
+        "pan-left",
+        "slow-push",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-essay-trna",
+      "editorial_argument": "Transfer RNA is a central translation adapter and a complex potential drug target.",
+      "visual_motif": "Base pairing and ribosomal transport animation labeled as editorial interpretation, not structural reconstruction.",
+      "review_question": "Are therapeutic opportunities framed as proposals instead of clinical breakthroughs?",
+      "voice_preview": "bf_emma",
+      "camera_moves": [
+        "rise",
+        "slow-pull",
+        "lock",
+        "pan-left",
+        "slow-push",
+        "settle",
+        "lock",
+        "pan-right"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-essay-proximity",
+      "editorial_argument": "Some drugs act by bringing proteins together rather than simply blocking one active site.",
+      "visual_motif": "Binary binding versus induced ternary assembly staged as molecular choreography.",
+      "review_question": "Is induced proximity properly distinguished from clinically established degradation?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "slow-push",
+        "pan-right",
+        "lock",
+        "slow-pull",
+        "pan-left",
+        "lock",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "pub-essay-adc",
+      "editorial_argument": "Tumor antibody binding is a prelude to a pharmacokinetic, trafficking and payload-release problem.",
+      "visual_motif": "Sequential antibody-to-endosome mechanism, linker cleavage and exposure constraints; no invented patient response.",
+      "review_question": "Does each release and internalization step reflect a particular known mechanism?",
+      "voice_preview": "bf_emma",
+      "camera_moves": [
+        "pan-left",
+        "slow-push",
+        "lock",
+        "pan-right",
+        "slow-pull",
+        "rise",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "feature-the-laboratory-we-carried-with-us",
+      "editorial_argument": "Scientific friendship and argument emerge from a shared working bench rather than a branded institution.",
+      "visual_motif": "Real Chem Squad group photographs, chemistry reaction footage and distinct ACS archive; protect every person's identity.",
+      "review_question": "Does the film avoid implying Chem Squad and ACS chapter were identical initiatives?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "slow-pull",
+        "pan-right",
+        "lock",
+        "rise",
+        "pan-left",
+        "slow-push",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "feature-what-survives-the-experiment",
+      "editorial_argument": "A life in research is visible through material questions and failures rather than a heroic career montage.",
+      "visual_motif": "Chapter-led archival chronology from school anatomy to microscope, lab failures, chamber and history.",
+      "review_question": "Are distinct years and projects accurately ordered without inventing causal connections?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "rise",
+        "slow-pull",
+        "lock",
+        "lock",
+        "slow-push",
+        "settle",
+        "lock",
+        "pan-right",
+        "lock",
+        "lock",
+        "lock",
+        "settle"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "feature-cairo-microscope",
+      "editorial_argument": "The instrument bought in Cairo altered the practical independence of a young chemist in Qatar.",
+      "visual_motif": "Handheld object biography built only from actual home microscope archive and dated context photos.",
+      "review_question": "Does the film preserve the exact purchase and travel account?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "slow-push",
+        "pan-right",
+        "lock",
+        "slow-pull",
+        "pan-left",
+        "rise",
+        "lock",
+        "settle",
+        "slow-push"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "feature-ring-that-never-closed",
+      "editorial_argument": "The desired imidazopyridine did not form; the isolated imines became the scientifically honest record.",
+      "visual_motif": "Reagent macro, synthetic pathway blank where ring closure should be, authentic sensor evidence.",
+      "review_question": "Does narration refrain from claiming synthesis of the intended target?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "pan-left",
+        "slow-push",
+        "lock",
+        "pan-right",
+        "slow-pull",
+        "rise",
+        "lock",
+        "settle",
+        "pan-left",
+        "slow-push"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "feature-airway-reopening-evidence-cut",
+      "editorial_argument": "A controlled air-bubble passage permits analysis of cell injury without implying direct patient-level findings.",
+      "visual_motif": "Source-accurate chamber mechanics, held published graphs and a continuous original moving interface.",
+      "review_question": "Are the evidence numbers, biological model and limits kept accurate?",
+      "voice_preview": "am_michael",
+      "camera_moves": [
+        "slow-pull",
+        "pan-right",
+        "lock",
+        "lock",
+        "lock",
+        "lock",
+        "lock",
+        "lock",
+        "lock",
+        "slow-pull",
+        "lock"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    },
+    {
+      "slug": "feature-two-materials-no-section-evidence-cut",
+      "editorial_argument": "A visible failed paraffin/agarose boundary tells a compelling materials-science story.",
+      "visual_motif": "Owner's fragments at microtome, real agarose staging and schematic interface, never an invented successful section.",
+      "review_question": "Does the film expose its failed endpoint and keep reconstruction labeled?",
+      "voice_preview": "bm_george",
+      "camera_moves": [
+        "rise",
+        "slow-pull",
+        "lock",
+        "pan-left",
+        "slow-push",
+        "settle",
+        "lock",
+        "pan-right",
+        "rise",
+        "slow-pull"
+      ],
+      "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
+      "artistic_review_status": "UNREVIEWED"
+    }
+  ]
+}
