@@ -50,9 +50,9 @@ function ready(){
  const token=make("div");token.id="rxFieldNotes2026";token.hidden=true;document.body.append(token);
  const P=id=>photos.find(p=>p.id===id);
  if(page==="archive"){
-   const s=section("rxFirsthandArchive",ar()?"إحدى عشرة صورة من الأرشيف":"Eleven photographs / firsthand identifications",ar()?"تفاصيل أخرى من حياة علمية":"The life around the experiments",ar()?"اللقاءات، والتجارب الأولى، والكتابة، والمناظرات، والفضول خارج المختبر. وصف الصور مبني على تعريف صاحب الأرشيف، لا على تخمين من الصورة.":"These photographs are not a second CV. They are glimpses of what happened between experiments: the people who made science social, the practical work, and interests that never fitted neatly into a research title.",[P("el-sayed-washington-2017"),P("acs-year-end"),P("acs-254"),P("visiting-professor"),P("washington-eclipse"),P("copolymer-dialysis"),P("heart-models"),P("coffee-lab"),P("nature-seminar"),P("qu-debate"),P("natural-history")],"archive");
+   const s=section("rxFirsthandArchive",ar()?"إحدى عشرة صورة من الأرشيف":"Eleven photographs / firsthand identifications",ar()?"تفاصيل أخرى من حياة علمية":"The life around the experiments",ar()?"وجوه وأماكن من سنوات دراستي وعملي في الكيمياء: فعاليات طلابية وأصدقاء وعلماء زائرون وتجارب أولى ورحلات خارج المختبر.":"These photographs follow the people and places I encountered while studying and working in chemistry: student events, friends, visiting scientists, early experiments and journeys outside the laboratory.",[P("el-sayed-washington-2017"),P("acs-year-end"),P("acs-254"),P("visiting-professor"),P("washington-eclipse"),P("copolymer-dialysis"),P("heart-models"),P("coffee-lab"),P("nature-seminar"),P("qu-debate"),P("natural-history")],"archive");
    beforeFooter(s);
-   const note=make("p","rx-field-source",ar()?"مصدر الوصف: تعريف صاحب الصور بتاريخ ١١ أكتوبر ٢٠٢٦. التواريخ غير المؤكدة معرّفة بوضوح.":"Photo identifications supplied by the archive's owner on 11 October 2026. Unverified event dates and the visiting professor's name are not asserted as established facts.");
+   const note=make("p","rx-field-source",ar()?"تُحفظ التفاصيل الإضافية والتواريخ في أوصاف الصور المرافقة.":"Additional photographic details and dates are recorded in the accompanying archival descriptions.");
    s.querySelector(".rx-field-wrap").append(note);
  }
  if(page==="home"){
