@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "a8ff9dc437430889339ac8f36300deb1d0cf966f51998f5183740ce460d0d407",
+  "sha256": "7248c63b6607e51b2563e8cbf1f99eed623dfaa99c7e4e8a9250f2bb290f5b96",
   "shots": [
     {
       "title": "When an airway reopens",
@@ -74,5 +76,14 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "b33966f0116d9e99cfef53da2ae77e71dcd9b6500a3df732af4fb0535415294e"
+  "motion_shots": [
+    {
+      "scene": 3,
+      "video": "assets/films/animations-v2/airway-interface.mp4",
+      "credit": "Original concept animation of advancing air-liquid interface; not actual cell culture or paper microscopy",
+      "kind": "Original scientific concept animation (not experimental data)",
+      "source_sha256": "bc80c5efd0fc8b45e238346fcdbbf6320cdd039e2bf213efd10a46a234da453f"
+    }
+  ],
+  "input_sha256": "38625441fb06de93f30e7b3fda9ba9b829007cb4aaf667a09387518c8c8aa584"
 }

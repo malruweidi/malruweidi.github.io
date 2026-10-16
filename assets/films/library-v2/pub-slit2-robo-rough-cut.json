@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_lewis",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "f9acc6c9364a55ff9b23b71347be3e60721645aeefca53605e62caba5f6580bd",
+  "sha256": "b971f6bb890a6c2e4e601ad26098fd9290bd57fe225c0db6a20388b45f0feda1",
   "shots": [
     {
       "title": "The target that can change sides",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "2ffe9738dd457a779ca9746656f1f5e0e23867e951491d0e30151112a4d7f233"
+  "motion_shots": [],
+  "input_sha256": "e49d940fb6aee80d8cc739eb9d14642ae8df26c3f41a16395b470da554f9fa41"
 }
