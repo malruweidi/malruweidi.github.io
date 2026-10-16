@@ -1,7 +1,7 @@
 {
   "date_received": "2026-10-16",
   "source": "User-provided archive images in this conversation, filenames refer to original uploads",
-  "status": "Editorial placements published; binary image assets are still pending transfer into the repository. JS suppresses unloaded photographs instead of displaying broken links.",
+  "status": "All three archive images published on 2026-10-16 in pull request #33: one Chemistry Festival group photograph and two screenshots from one ACS acceptance email. The notice documents acceptance, not delivery of a presentation.",
   "records": [
     {
       "original": "IMG_2068.jpeg",
@@ -44,5 +44,7 @@
       "place": "San Diego, California",
       "notes": "Continuation of first screenshot; duplicate email but separate archive image."
     }
-  ]
+  ],
+  "publication_pr": 33,
+  "binary_asset_count": 3
 }
