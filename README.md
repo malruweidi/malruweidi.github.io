@@ -4,6 +4,7 @@ Live site: **https://malruweidi.github.io/**
 Photo & video archive: **https://malruweidi.github.io/archive.html**
 Scientific film index: **https://malruweidi.github.io/moving-evidence.html**
 Public academic profile: **https://malruweidi.github.io/cv.html**
+Editorial voice and source-placement requirements: **[Ruwaidix editorial standard](EDITORIAL-STANDARD.md)**.
 
 ## What is included
 
