@@ -64,6 +64,10 @@ def exists(f):
     return all((OUT/(stem+ext)).is_file() and (OUT/(stem+ext)).stat().st_size>120
                for ext in (".mp4",".json",".vtt"))
 
+def attempted(f):
+    """Blocked renders count as attempted for a batch, but NOT as completed movies."""
+    return exists(f) or (OUT/(f["slug"]+"-blocked.json")).is_file()
+
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--validate-only",action="store_true")
@@ -71,6 +75,7 @@ def main():
     p.add_argument("--film",action="append")
     p.add_argument("--collection",choices=("feature","publication"))
     p.add_argument("--missing-only",action="store_true")
+    p.add_argument("--keep-going",action="store_true",help="Record blocked titles and continue without false completion")
     p.add_argument("--limit",type=int,default=2)
     p.add_argument("--models",default="film-models")
     p.add_argument("--voice-mode",choices=("human","kokoro-preview"),default="kokoro-preview")
@@ -84,7 +89,7 @@ def main():
     if args.collection:
         films=[f for f in films if f["output_collection"]==args.collection]
     if args.missing_only or args.remaining_count:
-        remaining=[f for f in films if not exists(f)]
+        remaining=[f for f in films if not attempted(f)]
         print(f"Existing unapproved rough cuts: {len(films)-len(remaining)}; remaining: {len(remaining)}")
         films=remaining
     if args.remaining_count:
@@ -98,6 +103,7 @@ def main():
     studio.OUTPUT=OUT
     studio.engine.FILM=OUT
     for film in films[:args.limit]:
+      try:
         # A film-level primary source, precise genre and scene provenance
         # stay on the result JSON for human editorial checking.
         studio.render(film,args)
@@ -114,6 +120,11 @@ def main():
             "never_auto_publish":True
         })
         result.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+      except Exception as exc:
+        if not args.keep_going:raise
+        block=OUT/(film["slug"]+"-blocked.json")
+        block.write_text(json.dumps({"film":film["slug"],"status":"RENDER BLOCKED; NOT A COMPLETED VIDEO","error":str(exc)[:2000],"source":"assets/films/cinematic-library-v2.json"},indent=2)+"\n")
+        print("BLOCKED FILM",film["slug"],str(exc)[:400],file=sys.stderr)
 
 if __name__=="__main__":
     main()
