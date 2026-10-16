@@ -70,6 +70,10 @@
  search.addEventListener("input",render);
  document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.filter;document.querySelectorAll("[data-filter]").forEach(a=>a.setAttribute("aria-pressed",String(a===b)));render()}));
  render();
+ const requestedId=decodeURIComponent(location.hash.slice(1));
+ if(/^film-[a-z0-9-]+$/.test(requestedId)){
+   requestAnimationFrame(()=>document.getElementById(requestedId)?.scrollIntoView({block:"start"}));
+ }
 })();
 </script>
 </body></html>
