@@ -7,14 +7,14 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "fee9d70e04f42ea5fcd3c8095445361daf8783df92ccdff3cfccd30296ed3577",
+  "sha256": "df77c79141524a6ce5922d689653740b6ffa0ea23b23633d182934d47c844a9a",
   "shots": [
     {
       "title": "A laboratory shrunk into a channel",
-      "kind": "Archival lab context, not an actual viral detection device",
-      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-microfluid-channel.svg",
       "museum": null,
-      "credit": "Archival lab context, not an actual viral detection device"
+      "credit": "Illustrated sample transport through a microchannel; not filmed viral detection"
     },
     {
       "title": "A laboratory in a narrow channel",
@@ -32,10 +32,10 @@
     },
     {
       "title": "Fluid control becomes analytical control",
-      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-      "image": "assets/films/art/microfluidic-sensing.svg",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-microfluid-capture.svg",
       "museum": null,
-      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      "credit": "Conceptual target capture/assay logic without invented sensitivity or specificity"
     },
     {
       "title": "Detection is not diagnosis",
@@ -60,10 +60,10 @@
     },
     {
       "title": "Smaller does not mean simpler",
-      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-      "image": "assets/films/art/microfluidic-sensing.svg",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-microfluid-readout.svg",
       "museum": null,
-      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      "credit": "Conceptual assay signal and background, no invented values or clinical diagnostic performance"
     }
   ],
   "film_title": "A laboratory shrunk into a channel",
@@ -74,5 +74,5 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "82f31300d068472ff6378886f21dda85cbefb543d77ce72067403e381a2c87a5"
+  "input_sha256": "abbfa3801973961e15e429f4a6e8cba4b0ae7766c567891ce15df61c640fefc3"
 }

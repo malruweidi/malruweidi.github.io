@@ -7,14 +7,14 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "ef16b1121ce7521c064296825c82a52412f0070f53406a8ecc06728bcf93a891",
+  "sha256": "63a0e5abd1a288a69e021db04ab7e53bc21ebdad39674039833a6cbd278d344b",
   "shots": [
     {
       "title": "When food becomes a printable material",
-      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-      "image": "assets/films/art/edible-printing.svg",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-food-deposition.svg",
       "museum": null,
-      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      "credit": "Qualitative schematic of extrusion and sagging edible filament; not laboratory footage"
     },
     {
       "title": "Edible material meets geometry",
@@ -32,10 +32,10 @@
     },
     {
       "title": "The design space expands",
-      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-      "image": "assets/films/art/edible-printing.svg",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-food-rheology.svg",
       "museum": null,
-      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      "credit": "Generic schematic of a possible shear-thinning edible ink response; not experimental rheometry"
     },
     {
       "title": "Microstructure is invisible to the recipe",
@@ -60,10 +60,10 @@
     },
     {
       "title": "An architecture has to survive deposition",
-      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-      "image": "assets/films/art/edible-printing.svg",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-food-shape.svg",
       "museum": null,
-      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      "credit": "Conceptual comparison of printed shape retention and slumping; not study measurements"
     }
   ],
   "film_title": "When food becomes a printable material",
@@ -74,5 +74,5 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "a47308bd2b791886496bcf444e44b553409202102164e78ece589430f40ca575"
+  "input_sha256": "974c453f89bc18ef4c2b535f22492051eaffc5d746a3a452260a217c3a94a2ed"
 }

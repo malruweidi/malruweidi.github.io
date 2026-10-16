@@ -7,21 +7,21 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "a0b5121c286b9153cfeda29eb03f0e3cfc26eeb70d42f8a274b547b6d56c37d0",
+  "sha256": "00e30921cedc54802672268b32ece1bb7bdb6206da78e3632145e0ac1aec191d",
   "shots": [
     {
       "title": "Two lives of ACE2",
-      "kind": "Conceptual non-specific signalling image, not ACE2 molecular structure",
-      "image": "assets/echo-concept.svg",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ace2-membrane.svg",
       "museum": null,
-      "credit": "Conceptual non-specific signalling image, not ACE2 molecular structure"
+      "credit": "Membrane-bound ACE2 and lipid bilayer; simplified conceptual molecular illustration"
     },
     {
       "title": "One protein, different places",
-      "kind": "Contextual pulmonary scientific illustration",
-      "image": "assets/evidence-pulmonary.webp",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ace2-soluble.svg",
       "museum": null,
-      "credit": "Contextual pulmonary scientific illustration"
+      "credit": "Soluble ACE2 ectodomain; illustrative shedding mechanism, not a measurement"
     },
     {
       "title": "A receptor in a larger pathway",
@@ -60,10 +60,10 @@
     },
     {
       "title": "Two forms, two questions",
-      "kind": "Conceptual visual, not study data",
-      "image": "assets/echo-concept.svg",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ace2-context.svg",
       "museum": null,
-      "credit": "Conceptual visual, not study data"
+      "credit": "Conceptual comparison of membrane-bound and soluble ACE2 contexts; not assay data"
     }
   ],
   "film_title": "Two lives of ACE2",
@@ -74,5 +74,5 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "5c8e48ad85022eec16712f3f798c38986d4f65cc480a1c5747d5a139bffdbdd0"
+  "input_sha256": "28e7bba15ffd34d5eba64b0bc533e34acd6bacc928c6b31805ba10bdaf0bde7b"
 }
