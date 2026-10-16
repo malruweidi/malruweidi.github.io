@@ -1,0 +1,90 @@
+{
+  "slug": "making-medicines-keep",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "c4221ea01b3bd794278f8b64a6113cd795ca4e875a9a1012c039bb8064dd8abb",
+  "shots": [
+    {
+      "title": "The jar",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-01.webp",
+      "museum": null,
+      "credit": "Editorial reconstruction; not a photographed historical preparation"
+    },
+    {
+      "title": "The preparation",
+      "kind": "museum_public_domain",
+      "image": null,
+      "museum": {
+        "objectID": 451400,
+        "title": "\"Preparing Medicine from Honey\", from a Dispersed Manuscript of an Arabic Translation of De Materia Medica of Dioscorides",
+        "artist": "'Abdullah ibn al-Fadl",
+        "date": "dated 621 AH/1224 CE",
+        "public_domain": true,
+        "url": "https://www.metmuseum.org/art/collection/search/451400"
+      },
+      "credit": "The Metropolitan Museum of Art, Baghdad, 1224; comparative manuscript, not a Cairo document"
+    },
+    {
+      "title": "Jul\u0101b",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-02.webp",
+      "museum": null,
+      "credit": "Editorial reconstruction of textual description; not a period manuscript"
+    },
+    {
+      "title": "Under heat",
+      "kind": "museum_public_domain",
+      "image": null,
+      "museum": {
+        "objectID": 446288,
+        "title": "\"Physician Preparing an Elixir\", Folio from a Materia Medica of Dioscorides",
+        "artist": "'Abdullah ibn al-Fadl",
+        "date": "dated 621 AH/1224 CE",
+        "public_domain": true,
+        "url": "https://www.metmuseum.org/art/collection/search/446288"
+      },
+      "credit": "The Metropolitan Museum of Art, Baghdad, 1224; illustrative contemporary comparison, not a depiction of qiw\u0101m"
+    },
+    {
+      "title": "What changes later",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-04.webp",
+      "museum": null,
+      "credit": "Modern illustrative interpretation; crystallization is not a laboratory measurement from medieval Cairo"
+    },
+    {
+      "title": "The prescription",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-05.webp",
+      "museum": null,
+      "credit": "Typeset interpretation of Cairo Genizah Or.1081 J39; not a manuscript scan"
+    },
+    {
+      "title": "Substitution",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-06.webp",
+      "museum": null,
+      "credit": "Editorial conceptual diagram; historical substitution is not modern bioequivalence"
+    },
+    {
+      "title": "What the customer cannot see",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-07.webp",
+      "museum": null,
+      "credit": "Editorial interpretation of hisba discussions; not a contemporary depiction of inspections"
+    },
+    {
+      "title": "The record",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-08.webp",
+      "museum": null,
+      "credit": "Editorial acceptance card: article accepted by History of Pharmacy and Pharmaceuticals on 15 October 2026; not a fabricated journal cover"
+    }
+  ]
+}
