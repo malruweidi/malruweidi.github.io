@@ -81,7 +81,10 @@
         "lock"
       ],
       "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
-      "artistic_review_status": "UNREVIEWED"
+      "artistic_review_status": "UNREVIEWED",
+      "narration_overrides": {
+        "2": "The moving air–liquid boundary can impose forces on epithelial cells. We used an experimental flow chamber to study one such event under controlled conditions."
+      }
     },
     {
       "slug": "pub-cerebral-cilia",
@@ -157,7 +160,11 @@
         "pan-right"
       ],
       "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
-      "artistic_review_status": "UNREVIEWED"
+      "artistic_review_status": "UNREVIEWED",
+      "narration_overrides": {
+        "6": "A prescription from the Cairo Genizah is a different kind of source from a formulary. Its surviving words can reveal a particular documentary practice, without describing every pharmacy in Cairo.",
+        "7": "The historical question is how makers judged concentration, consistency and suitable substitution. Those are decisions visible in instructions, even when the preparation itself no longer survives for chemical testing."
+      }
     },
     {
       "slug": "pub-niosomes",
@@ -537,7 +544,11 @@
         "pan-right"
       ],
       "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
-      "artistic_review_status": "UNREVIEWED"
+      "artistic_review_status": "UNREVIEWED",
+      "narration_overrides": {
+        "1": "Near Qasr El Einy in Cairo, I bought a microscope for myself. Getting it home to Qatar became another problem altogether, and I was determined to bring it anyway.",
+        "2": "The instrument was mine. I could examine a slide without a laboratory booking, return to it another morning, and follow questions that had not yet become formal research projects."
+      }
     },
     {
       "slug": "pub-essay-life-between-diagnoses",
@@ -556,7 +567,12 @@
         "settle"
       ],
       "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
-      "artistic_review_status": "UNREVIEWED"
+      "artistic_review_status": "UNREVIEWED",
+      "narration_overrides": {
+        "1": "I finished high school at sixteen. Hospital admissions had interrupted much of my final year, and my examination results cost me the medical-school path I had been preparing for.",
+        "2": "Chemistry came next. I learned to observe materials under a microscope and ask questions that experiments could answer. The illness did not wait for a convenient time to return.",
+        "4": "A week before I was due to travel to the United States, another attack led to an endoscopy and a course of glucocorticoids. I was already ill when treatment began."
+      }
     },
     {
       "slug": "pub-essay-ai-email",
@@ -855,5 +871,6 @@
       "source_provenance": "Original archival sources and evidence credits stay inside the source film manifest; footage and synthetic art must be explicitly distinguished",
       "artistic_review_status": "UNREVIEWED"
     }
-  ]
+  ],
+  "source_manuscripts_remain_intact": true
 }
