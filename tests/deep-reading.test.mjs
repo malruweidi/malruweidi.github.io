@@ -58,7 +58,9 @@ test("article pages use one shared design system, canonical, accessible metadata
 });
 test("new pages appear in sitemap and the existing bilingual search",()=>{
  const sitemap=read("sitemap.xml");
- assert.equal(index.items.length,58);
+ assert.ok(index.items.length>=58,"preexisting discovery records must be preserved");
+ assert.equal(new Set(index.items.map(x=>x.id)).size,index.items.length,"discovery IDs must stay unique");
+ assert.ok(index.items.some(x=>x.url==='/moving-evidence.html'),"new film index must remain discoverable");
  for(const [file] of [...storyRoutes,...researchRoutes]){
   assert.ok(sitemap.includes('https://malruweidi.github.io/'+file),file);
   assert.ok(index.items.some(x=>x.url==='/'+file),file);
