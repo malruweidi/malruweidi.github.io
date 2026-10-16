@@ -1,6 +1,6 @@
 {
   "title": "Photographic identifications supplied 12 October 2026",
-  "status": "Provenance and editorial captions; media assets 2–10 not yet published",
+  "status": "All ten owner-identified archival items now have published representations: the 2017 eclipse via its existing image URL, eight Chem Squad WebP files, and the original Ramadan microscope photograph in Stories. These remain identified memories, not scientific result records.",
   "source": "Ten original files shared with ChatGPT by the archive owner; identities and circumstances are self-reported, not inferred from visual recognition",
   "editorial_policy": "Publish only images whose bytes are actually hosted; preserve original images, attach alt text and captions, do not imply method validation or discovery from laboratory photos",
   "photos": [
@@ -34,7 +34,9 @@
       "section": [
         "Chem Squad"
       ],
-      "publishing_status": "awaiting_source_media_upload"
+      "publishing_status": "published",
+      "public_derivative": "assets/chem-squad-owner-archive-2026-10-12/nassr-formal-white-dress.webp",
+      "date_note": "Capture date not independently verified"
     },
     {
       "order": 3,
@@ -48,7 +50,9 @@
       "section": [
         "Chem Squad"
       ],
-      "publishing_status": "awaiting_source_media_upload"
+      "publishing_status": "published",
+      "public_derivative": "assets/chem-squad-owner-archive-2026-10-12/elgendy-formal-portrait.webp",
+      "date_note": "Capture date not independently verified"
     },
     {
       "order": 4,
@@ -64,7 +68,9 @@
         "Chem Squad",
         "Academic life"
       ],
-      "publishing_status": "awaiting_source_media_upload"
+      "publishing_status": "published",
+      "public_derivative": "assets/chem-squad-owner-archive-2026-10-12/elgendy-abdelrahman-three-person-selfie.webp",
+      "date_note": "Capture date not independently verified"
     },
     {
       "order": 5,
@@ -78,8 +84,10 @@
         "Chem Squad",
         "Research / laboratory"
       ],
-      "publishing_status": "awaiting_source_media_upload",
-      "source_note": "Do not infer experimental procedure, gas delivery protocol, or research outcome from the image alone"
+      "publishing_status": "published",
+      "source_note": "Do not infer experimental procedure, gas delivery protocol, or research outcome from the image alone",
+      "public_derivative": "assets/chem-squad-owner-archive-2026-10-12/khaled-jama-nitrogen-laboratory.webp",
+      "date_note": "Capture date not independently verified"
     },
     {
       "order": 6,
@@ -93,7 +101,9 @@
       "section": [
         "Chem Squad"
       ],
-      "publishing_status": "awaiting_source_media_upload"
+      "publishing_status": "published",
+      "public_derivative": "assets/chem-squad-owner-archive-2026-10-12/abdelrahman-casual-selfie.webp",
+      "date_note": "Capture date not independently verified"
     },
     {
       "order": 7,
@@ -107,8 +117,10 @@
         "Academic community",
         "Qatar University"
       ],
-      "publishing_status": "awaiting_source_media_upload",
-      "source_note": "Participants are not individually named; group context was supplied by the archive owner"
+      "publishing_status": "published",
+      "source_note": "Participants are not individually named; group context was supplied by the archive owner",
+      "public_derivative": "assets/chem-squad-owner-archive-2026-10-12/qu-chemistry-department-ramadan-iftar.webp",
+      "date_note": "Capture date not independently verified"
     },
     {
       "order": 8,
@@ -123,7 +135,9 @@
         "Chem Squad",
         "Academic life"
       ],
-      "publishing_status": "awaiting_source_media_upload"
+      "publishing_status": "published",
+      "public_derivative": "assets/chem-squad-owner-archive-2026-10-12/rakan-gathering.webp",
+      "date_note": "Capture date not independently verified"
     },
     {
       "order": 9,
@@ -139,7 +153,9 @@
         "Chem Squad",
         "Academic life"
       ],
-      "publishing_status": "awaiting_source_media_upload"
+      "publishing_status": "published",
+      "public_derivative": "assets/chem-squad-owner-archive-2026-10-12/elgendy-abdelrahman-university-room.webp",
+      "date_note": "Capture date not independently verified"
     },
     {
       "order": 10,
@@ -151,8 +167,10 @@
         "Research",
         "Microscopy / cilia"
       ],
-      "publishing_status": "awaiting_source_media_upload",
-      "source_note": "Photograph shows microscopy equipment, not a person or an independently verified experimental result; ATVB retained exactly as described by the owner"
+      "publishing_status": "published",
+      "source_note": "Photograph shows microscopy equipment, not a person or an independently verified experimental result; ATVB retained exactly as described by the owner",
+      "public_derivative": "assets/owner-archive-2026-10-13/ramadan-microscopy-room.webp"
     }
-  ]
+  ],
+  "restoration_date": "2026-10-16"
 }
