@@ -66,6 +66,63 @@ def vessel(d, x, y, size=1, sugar=False):
             cx=x+28+i*26*size; cy=y+h-27-(i%3)*28*size
             d.polygon([(cx,cy-13),(cx+15,cy-5),(cx+11,cy+12),(cx-10,cy+8)],fill=(238,197,129))
 
+def brief_topic(film):
+    """A short typographic identity; no mid-word truncation on the film itself."""
+    return {
+        "forensic": "PULMONARY MECHANOBIOLOGY",
+        "tactile": "ZEBRAFISH HISTOLOGY / UNFINISHED EXPERIMENT",
+        "human": "CHEM SQUAD AND SCIENTIFIC COMMUNITY",
+        "history": "PHARMACY IN AYYUBID–MAMLUK CAIRO",
+    }[film["tone"]]
+
+def historic_process_plate(d, scene):
+    """Four visibly different editorial constructions; no false facsimiles."""
+    chapter = scene["id"]
+    if chapter == "01":
+        # Three distinct material failure states, not the later julep recipe.
+        labels = ("CONCENTRATION", "CRYSTALLIZATION", "SPOILAGE")
+        shades = ((184, 127, 72), (207, 174, 126), (119, 83, 54))
+        for idx, label in enumerate(labels):
+            x = 160 + idx*356
+            d.rounded_rectangle((x,206,x+268,398), radius=20,
+                                fill=(53,58,51),outline=(191,148,97),width=3)
+            d.ellipse((x+64,237,x+204,319),fill=shades[idx],
+                      outline=(239,200,134),width=4)
+            if idx==1:
+                for j in range(5):
+                    cx=x+84+j*23
+                    d.polygon([(cx,283),(cx+12,274),(cx+22,289),(cx+13,303)],
+                              fill=(240,216,169))
+            if idx==2:
+                for j in range(7):
+                    cx=x+84+(j%4)*31
+                    cy=280+(j//4)*22
+                    d.ellipse((cx,cy,cx+6,cy+6),fill=(231,215,162))
+            write_label(d,(x+13,352),label,16,(244,216,173),True)
+        write_label(d,(190,434),"ILLUSTRATIVE MATERIAL CHANGES · NOT SPECIMEN PHOTOGRAPHS",15,(226,187,136))
+    elif chapter == "02":
+        vessel(d,827,184,.99)
+        write_label(d,(111,211),"JULĀB",43,(240,208,154),True)
+        write_label(d,(112,280),"SUGAR  +  ROSE WATER",24,(241,226,201),True)
+        d.line((118,335,613,335),fill=(168,123,89),width=2)
+        write_label(d,(112,356),"A base that takes a particular form",21,(216,204,174))
+        write_label(d,(111,437),"EDITORIAL PHARMACEUTICAL RECONSTRUCTION",15,(222,180,129))
+    elif chapter == "03":
+        vessel(d,848,204,.88)
+        write_label(d,(113,189),"HEAT",21,(241,215,171),True)
+        d.line((118,231,582,231),fill=(175,132,91),width=3)
+        write_label(d,(113,252),"SKIM  →  STRAIN  →  JUDGE",25,(239,224,199),True)
+        write_label(d,(113,328),"QIWĀM",39,(244,207,145),True)
+        write_label(d,(113,393),"The achieved consistency",21,(223,210,185))
+        write_label(d,(113,455),"EXPLANATORY RECONSTRUCTION • NO MEASURED ENDPOINT",14,(224,184,136))
+    else:
+        vessel(d,814,199,.96,sugar=True)
+        write_label(d,(112,234),"CRYSTALLIZATION",32,(242,206,145),True)
+        write_label(d,(114,306),"When a preparation changes",22,(226,210,180))
+        d.line((117,351,642,351),fill=(164,124,86),width=3)
+        write_label(d,(114,387),"Repair was described, not universally validated",17,(211,191,161))
+        write_label(d,(113,448),"ILLUSTRATION • NOT AN ORIGINAL VESSEL",15,(223,187,142))
+
 def illustrate(film,scene):
     tone=film["tone"]
     historic=tone=="history"
@@ -75,7 +132,7 @@ def illustrate(film,scene):
         # Woven paper/pigment palette. Original editorial art; no facsimile text.
         for y in range(0,H,12):
             d.line((0,y,W,y),fill=(46+(y//12)%4,48+(y//12)%4,43+(y//12)%4),width=1)
-        d.rectangle((44,132,1236,506),outline=(140,109,77),width=2)
+        d.rectangle((44,142,1236,478),outline=(140,109,77),width=2)
     else:
         for x in range(65,W,78):
             d.line((x,153,x,496),fill=(26,56,59),width=1)
@@ -122,31 +179,22 @@ def illustrate(film,scene):
             d.line((x+63,228,x+130,228),fill=(229,202,142),width=7)
         write_label(d,(343,163),"EXTRACTION  ≠  IDENTIFICATION  ≠  EFFICACY",24,SAFFRON,True)
     elif kind in ("syrup","crystal"):
-        vessel(d,788,195,1.04,sugar=kind=="crystal")
-        for i in range(3):
-            d.ellipse((430+i*61,261+i*15,492+i*61,322+i*15),fill=(99,78,52),outline=(228,179,99),width=3)
-        if kind=="crystal":
-            write_label(d,(112,238),"CRYSTALLIZATION",33,(241,210,158),True)
-            write_label(d,(116,310),"A preparation can change",22,(220,194,153))
-        else:
-            write_label(d,(106,232),"JULĀB",39,(244,209,144),True)
-            write_label(d,(108,296),"A syrup base, not merely sweetness",22,(225,211,185))
-        write_label(d,(110,449),"EDITORIAL RECONSTRUCTION • NOT A HISTORICAL OBJECT",16,(229,188,139))
+        historic_process_plate(d,scene)
     elif kind=="prescription":
-        framed_paper(d,(355,155,913,488))
+        framed_paper(d,(355,155,913,465))
         write_label(d,(399,184),"CAIRO GENIZAH · OR.1081 J39",22,(76,66,55),True)
         d.rectangle((398,250,871,316),fill=(226,206,173))
         write_label(d,(410,266),"POWDERED INGREDIENTS",19,(67,64,58),True)
         d.rectangle((398,333,871,384),fill=(219,194,158))
         write_label(d,(413,342),"+ ROSE SYRUP: ELECTUARY",19,(67,64,58),True)
-        write_label(d,(391,452),"TYPESET EXPLANATION • NOT A SCANNED MANUSCRIPT",15,(83,67,53))
+        write_label(d,(392,437),"TYPESET EXPLANATION · NOT A SCAN",15,(83,67,53))
     elif kind=="substitution":
         d.rounded_rectangle((130,194,528,431),radius=16,fill=(72,70,56),outline=SAFFRON,width=3)
         d.rounded_rectangle((750,194,1145,431),radius=16,fill=(72,70,56),outline=SAFFRON,width=3)
         write_label(d,(164,254),"NAMED INGREDIENT",24,CREAM,True)
         write_label(d,(797,254),"POSSIBLE SUBSTITUTE",21,CREAM,True)
         arrow(d,[(547,294),(730,294)],SAFFRON,7)
-        write_label(d,(512,374),"NECESSITY  ·  FUNCTION  ·  PROPORTION",17,(230,203,153))
+        write_label(d,(488,382),"NECESSITY · FUNCTION · PROPORTION",17,(230,203,153))
         write_label(d,(221,465),"SUBSTITUTION IS NOT CONCEALED ADULTERATION",20,(229,187,140),True)
     elif kind=="scales":
         d.line((636,165,636,460),fill=(235,192,117),width=12)
@@ -181,12 +229,13 @@ def photo_frame(image_path):
 def film_overlay(film,scene):
     ov=Image.new("RGBA",(W,H),(0,0,0,0))
     d=ImageDraw.Draw(ov)
-    for y in range(425,H):
-        alpha=int(216*((y-425)/(H-425))**.8)
+    fade_start = 490 if film["tone"] == "history" else 425
+    for y in range(fade_start,H):
+        alpha=int(216*((y-fade_start)/(H-fade_start))**.8)
         d.line((0,y,W,y),fill=(13,31,37,alpha))
     d.rectangle((62,51,120,55),fill=TERRA)
     write_label(d,(62,73),"RUWAIDIX / EVIDENCE IN MOTION",18,CREAM,True)
-    write_label(d,(62,110),film["number"]+" / "+film["topic"].upper()[:59],17,(229,213,191))
+    write_label(d,(62,110),film["number"]+" / "+brief_topic(film),17,(229,213,191))
     write_label(d,(62,493),scene["id"]+" / 08",19,(241,180,135),True)
     title=scene["title"]
     size=46 if len(title)<34 else 40
@@ -195,14 +244,41 @@ def film_overlay(film,scene):
     write_label(d,(62,678),kind[:100].upper(),14,(219,211,194))
     return ov
 
+def caption_chunks(text, max_chars=64):
+    """Short, readable captions rather than two 140-character blocks per scene."""
+    words=text.split()
+    result=[]
+    current=[]
+    for word in words:
+        candidate=" ".join(current+[word])
+        if current and len(candidate)>max_chars:
+            result.append(" ".join(current))
+            current=[word]
+        else:
+            current.append(word)
+    if current: result.append(" ".join(current))
+    if len(result)>1 and len(result[-1])<18:
+        # Avoid an orphan two-word final cue when previous cue has room.
+        tail=result.pop()
+        if len(result[-1]) + 1 + len(tail) <= max_chars+8:
+            result[-1] += " "+tail
+        else:
+            old=result.pop()
+            together=(old+" "+tail).split()
+            split=max(1,len(together)//2)
+            result.extend((" ".join(together[:split])," ".join(together[split:])))
+    return result
+
 def build_vtt(film,starts,spoken_seconds):
     cues=["WEBVTT","","NOTE Ruwaidix source-grounded narration; original owner archive and labeled explanations.",""]
-    for s,start,length in zip(film["scenes"],starts,spoken_seconds):
-        words=s["narration"].split()
-        cut=len(words)//2
-        for i,chunk in enumerate((" ".join(words[:cut])," ".join(words[cut:]))):
-            first=start+.52+length*i/2
-            last=start+.52+length*(i+1)/2
+    for scene,start,length in zip(film["scenes"],starts,spoken_seconds):
+        chunks=caption_chunks(scene["narration"])
+        total=sum(len(s.split()) for s in chunks)
+        cursor=0
+        for chunk in chunks:
+            first=start+.52+length*(cursor/total)
+            cursor+=len(chunk.split())
+            last=start+.52+length*(cursor/total)
             cues.extend((old.vtt_time(first)+" --> "+old.vtt_time(last),chunk,""))
     (FILMS/(film.get("media_stem",film["slug"])+".vtt")).write_text("\n".join(cues)+"\n",encoding="utf-8")
 
