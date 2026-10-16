@@ -5,10 +5,12 @@ on:
       - four-documentaries-20261016
       - film-editorial-qa-20261016
       - film-final-visual-polish-20261016
+      - visual-storytelling-photography-20261016
     paths:
       - assets/films/evidence-in-motion.json
       - scripts/render-evidence-series.py
       - scripts/audit-evidence-series.py
+      - scripts/snapshot-evidence-visuals.py
       - .github/workflows/render-evidence-series.yml
   workflow_dispatch:
 permissions:
@@ -36,10 +38,12 @@ jobs:
           sudo apt-get install -y ffmpeg fonts-dejavu-core
           python -m pip install --upgrade pip
           python -m pip install pillow numpy soundfile kokoro-onnx
+      - name: Snapshot verified public-domain, CC BY and original images with rights ledger
+        run: python scripts/snapshot-evidence-visuals.py
       - name: Validate full film provenance, screenplay, pages, and existing content
         run: |
           node --test tests/evidence-films.test.cjs tests/research-film.test.cjs tests/film-cinematic-v2.test.cjs
-          python -m py_compile scripts/render-evidence-series.py scripts/render-documentary.py scripts/audit-evidence-series.py
+          python -m py_compile scripts/render-evidence-series.py scripts/render-documentary.py scripts/audit-evidence-series.py scripts/snapshot-evidence-visuals.py
           python scripts/render-evidence-series.py --validate-only
       - name: Download open-source local British voice model
         run: |
@@ -67,6 +71,7 @@ jobs:
               assert (root/(slug+"-poster.webp")).is_file()
               assert (root/(stem+".vtt")).read_text().startswith("WEBVTT")
               assert all((root/"plates"/(slug+"-"+s["id"]+".webp")).is_file() for s in f["scenes"])
+              assert all((root/"plates"/(slug+"-"+s["id"]+"-context.webp")).is_file() for s in f["scenes"] if s.get("context_visual"))
               manifest=json.loads((root/(slug+"-build.json")).read_text())
               assert manifest["sha256"]==hashlib.sha256(video.read_bytes()).hexdigest()
               print(slug,round(duration,2),video.stat().st_size,flush=True)
@@ -77,7 +82,7 @@ jobs:
         run: |
           git config user.name "Ruwaidix Documentary Builder"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/films/plates/ assets/films/*-poster.webp assets/films/evidence-series-technical-qa.json
+          git add assets/films/plates/ assets/films/visual-sources/ assets/films/*-poster.webp assets/films/evidence-series-technical-qa.json
           git add assets/films/what-a-bubble-can-do.mp4 assets/films/what-a-bubble-can-do.vtt assets/films/what-a-bubble-can-do-build.json
           git add assets/films/two-materials-no-section-evidence-cut.mp4 assets/films/two-materials-no-section-evidence-cut.vtt assets/films/two-materials-no-section-build.json
           git add assets/films/the-laboratory-we-carried-with-us.mp4 assets/films/the-laboratory-we-carried-with-us.vtt assets/films/the-laboratory-we-carried-with-us-build.json
