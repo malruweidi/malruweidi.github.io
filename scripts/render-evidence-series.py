@@ -280,12 +280,10 @@ def photograph_context_frame(source):
     md.rounded_rectangle((45,39,638,139),radius=8,fill=(8,29,32,180))
     backdrop=Image.alpha_composite(backdrop.convert("RGBA"),mast).convert("RGB")
     d=ImageDraw.Draw(backdrop)
-    labels={
-        "wellcome-arabic-manuscript":"15TH-C. MEDICAL MANUSCRIPT · CONTEXT ONLY",
-        "nih-alveoli":"NIH ANATOMY · NOT EXPERIMENTAL DATA",
-        "generic-microtome":"GENERIC MICROTOME · NOT THIS EXPERIMENT"
-    }
-    label=labels.get(source["id"],"EDITORIAL RECONSTRUCTION · NOT HISTORICAL FOOTAGE")
+    # The full source caption is preserved in each landscape photo; portrait
+    # images use equivalent two-line captions to keep the original manuscript,
+    # anatomy and microtome photograph unobstructed.
+    label=source["caption"].upper()
     if original.width/original.height<1.35 and source.get("on_frame_lines"):
         lines=source["on_frame_lines"]
         if len(lines)!=2 or any(len(line)>48 for line in lines):
