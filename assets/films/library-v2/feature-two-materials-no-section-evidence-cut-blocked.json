@@ -1,7 +1,0 @@
-{
-  "film": "feature-two-materials-no-section-evidence-cut",
-  "status": "RENDER BLOCKED; NOT A COMPLETED VIDEO",
-  "error": "feature-two-materials-no-section-evidence-cut shot 9: voice exceeds 12s. Rewrite or rerecord; never clip.",
-  "source": "assets/films/cinematic-library-v2.json",
-  "input_sha256": "8a51ef9c723ea7150c1e7801b6416dbfa054cc7fac5dffeee2a0cb560dec8d10"
-}
