@@ -1,6 +1,6 @@
 {
   "archive_intake": "12 October 2026",
-  "publication_state": "Photograph assets prepared outside repository; code suppresses cards until binary assets are present",
+  "publication_state": "All seven archived photographs published as optimized WebP images on 2026-10-16 in pull request #33. Source story interfaces cropped, personal-health caption excluded, and laptop inbox content blurred. The date fields are original story-post dates, not verified capture times.",
   "provenance_note": "Dates in screenshots identify original story posting timestamps; not independently verified EXIF.",
   "assets": [
     {
@@ -73,5 +73,7 @@
     }
   ],
   "privacy": "Crop social-media story UI; remove personal-health text from masked portrait; blur readable email/screen contents before publication; retain the original image as separate owner archive.",
-  "context_correction_2026_10_12": "Do not conflate hospital-based clinical research with personal health care. Owner identified some clinic photographs as relating to TAVI and machine-learning research. Assign images individually by provenance, not merely by visible clinical environment."
+  "context_correction_2026_10_12": "Do not conflate hospital-based clinical research with personal health care. Owner identified some clinic photographs as relating to TAVI and machine-learning research. Assign images individually by provenance, not merely by visible clinical environment.",
+  "publication_pr": 33,
+  "binary_asset_count": 7
 }
