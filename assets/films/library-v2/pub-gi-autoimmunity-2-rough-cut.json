@@ -1,0 +1,78 @@
+{
+  "slug": "pub-gi-autoimmunity-2",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "984f367f80b143d04a826e85f9ba79839980d5cb7a06313df13293db721459e8",
+  "shots": [
+    {
+      "title": "The diagnostic problem",
+      "kind": "Laboratory photo, not endoscopy or pathology result",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "museum": null,
+      "credit": "Laboratory photo, not endoscopy or pathology result"
+    },
+    {
+      "title": "The symptoms do not name the disease",
+      "kind": "Original laboratory workspace, not patient diagnosis",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "museum": null,
+      "credit": "Original laboratory workspace, not patient diagnosis"
+    },
+    {
+      "title": "Choose the evidence to examine",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/gi-autoimmunity-2-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The tools evolve",
+      "kind": "Original biomedical research-context photo",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Original biomedical research-context photo"
+    },
+    {
+      "title": "The intervention has a target",
+      "kind": "Conceptual science graphic, not a clinical treatment device",
+      "image": "assets/echo-concept.svg",
+      "museum": null,
+      "credit": "Conceptual science graphic, not a clinical treatment device"
+    },
+    {
+      "title": "The difficulty: What remains uncertain",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/gi-autoimmunity-2-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "What remains uncertain",
+      "kind": "Archival research context",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "museum": null,
+      "credit": "Archival research context"
+    },
+    {
+      "title": "An evolving map, not a prescription",
+      "kind": "Biomedical research archive",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "museum": null,
+      "credit": "Biomedical research archive"
+    }
+  ],
+  "film_title": "The diagnostic problem",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.5772/intechopen.106185",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "a06bbcc6fb887031c041bce6a0f8892a1b8094ed23697bd6d88409890fc5ae41"
+}
