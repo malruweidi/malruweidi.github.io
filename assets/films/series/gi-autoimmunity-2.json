@@ -1,0 +1,16 @@
+{
+  "id": "gi-autoimmunity-2",
+  "seconds": 84.0,
+  "sha256": "d0c4948223be96366e1d00d25ab2828b9fe01fb9a4121a7bac6555d8bec21c6c",
+  "primary_source": "https://doi.org/10.5772/intechopen.106185",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

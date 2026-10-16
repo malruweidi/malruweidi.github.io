@@ -1,0 +1,16 @@
+{
+  "id": "flow-chamber-method",
+  "seconds": 84.0,
+  "sha256": "aaeb7ffd36b5b2ac4add5e250a31bdb88feafe82f0efe75200a16381dd0af963",
+  "primary_source": "https://doi.org/10.3390/mps3040065",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
