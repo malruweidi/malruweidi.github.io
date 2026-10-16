@@ -40,3 +40,15 @@ body.rx-film-page{margin:0;background:var(--rx-sand);color:var(--rx-pine);font:1
 .rx-film-index-tile p{font-size:14px;margin:0}
 @media(max-width:760px){.rx-film-layout{grid-template-columns:1fr;gap:12px}.rx-film-cards,.rx-film-index-grid{grid-template-columns:1fr}.rx-series-hero{padding:48px 0}.rx-film-view{padding:22px 0}.rx-film-ledger{padding-top:33px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important}}
+
+/* Source-attributed photographs remain distinct from experimental evidence. */
+.rx-photo-sources{padding:70px 0 80px;background:#eceae1;color:var(--rx-pine);border-top:1px solid #cbd0c8}
+.rx-photo-sources h2{font:400 clamp(35px,4.6vw,54px)/1.1 "Newsreader",Georgia,serif;letter-spacing:-.02em;margin:14px 0 18px}
+.rx-photo-intro{max-width:860px;font-size:15px;line-height:1.75;margin:0 0 30px;color:#465958}
+.rx-photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px}
+.rx-source-photo{margin:0;background:#fffdf8;border:1px solid #d5d5c9;min-width:0}
+.rx-source-photo>img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#172b2f}
+.rx-source-photo figcaption{padding:18px 20px 25px}
+.rx-source-photo figcaption p{font-size:13px;line-height:1.7;margin:10px 0;color:#485a57}
+.rx-source-photo a{text-decoration:underline;text-underline-offset:4px;font-size:13px;overflow-wrap:anywhere}
+@media(max-width:650px){.rx-photo-sources{padding:43px 0 65px}.rx-photo-grid{gap:19px}}

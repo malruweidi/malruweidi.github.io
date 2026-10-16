@@ -17,10 +17,10 @@
       "captions": {
         "cue_count": 25,
         "longest_cue_characters": 71,
-        "last_end_seconds": 117.45400000000001
+        "last_end_seconds": 117.475
       },
-      "bytes": 3252666,
-      "sha256": "e372d5d2fb5d681bc8830f8aefaa4090502e9377d9dde55b2ad542b2a6c3b50d"
+      "bytes": 3272476,
+      "sha256": "87bdbc97eaf37527311e98607a3693c457f86eee8967b7e62626ba543a7790b6"
     },
     {
       "film": "two-materials-no-section",
@@ -32,15 +32,15 @@
         720
       ],
       "frame_rate": 24,
-      "loudness_lufs": -18.1,
-      "true_peak_dBFS": -2.0,
+      "loudness_lufs": -18.0,
+      "true_peak_dBFS": -1.9,
       "captions": {
         "cue_count": 24,
         "longest_cue_characters": 66,
         "last_end_seconds": 116.168
       },
-      "bytes": 3270263,
-      "sha256": "47dc101e1458c61c21766da77ab52d9ebe12118b11ed32f77acb80dd855fce47"
+      "bytes": 3331947,
+      "sha256": "6a77d2cad677008eb2aea1e756da4f147dd08e4d669f6bd99b137c64dcc0e757"
     },
     {
       "film": "the-laboratory-we-carried-with-us",
@@ -53,14 +53,14 @@
       ],
       "frame_rate": 24,
       "loudness_lufs": -18.0,
-      "true_peak_dBFS": -2.0,
+      "true_peak_dBFS": -1.9,
       "captions": {
         "cue_count": 25,
         "longest_cue_characters": 71,
         "last_end_seconds": 117.759
       },
-      "bytes": 3446691,
-      "sha256": "e8f6229924d928baacc90686c3271c45724c27d554eb4c106b18518b272801c0"
+      "bytes": 3443648,
+      "sha256": "7c3151114ed0aaacf7ded00e452dd25ef5a346ef759f1b59fd4aabf5201362b3"
     },
     {
       "film": "making-medicines-keep",
@@ -73,14 +73,14 @@
       ],
       "frame_rate": 24,
       "loudness_lufs": -18.0,
-      "true_peak_dBFS": -2.0,
+      "true_peak_dBFS": -1.7,
       "captions": {
         "cue_count": 28,
         "longest_cue_characters": 71,
         "last_end_seconds": 118.11699999999999
       },
-      "bytes": 3071565,
-      "sha256": "20b9be0af63a8b1d5622abe1e2e861a6f18cbf4d4a972c9d9f23cc9cb7f9e256",
+      "bytes": 3421052,
+      "sha256": "d99997a131a896f6a73ff9698f723fc6b1df74eb4113d18afc5320b9758869ff",
       "historical_illustrations_difference": 0.0568
     }
   ]

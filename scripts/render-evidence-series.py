@@ -257,6 +257,89 @@ def photo_frame(image_path):
     matte.paste(im,((W-im.width)//2,155+(350-im.height)//2))
     return matte
 
+def photograph_context_frame(source):
+    """Full-screen cinematic reference, never a forged image of the actual experiment."""
+    path=FILMS/"visual-sources"/source["asset"]
+    with Image.open(path) as original:
+        original=ImageOps.exif_transpose(original).convert("RGB")
+    if original.width/original.height>=1.35:
+        backdrop=ImageOps.fit(original,(W,H),method=Image.Resampling.LANCZOS)
+    else:
+        # Preserve manuscript/instrument portrait without deceptive cropping.
+        backdrop=ImageOps.fit(original,(W,H),method=Image.Resampling.LANCZOS)
+        backdrop=Image.blend(backdrop.filter(ImageFilter.GaussianBlur(35)),
+                             Image.new("RGB",(W,H),DARK),.50)
+        kept=original.copy()
+        kept.thumbnail((515,350),Image.Resampling.LANCZOS)
+        # Research comparators occupy the upper-right image field, not the title
+        # or masthead. A smaller complete portrait beats a cut-off scientific figure.
+        backdrop.paste(kept,(W-52-kept.width,151+(340-kept.height)//2))
+    # Maintain one consistent readable masthead over variable archival and AI image exposures.
+    mast=Image.new("RGBA",(W,H),(0,0,0,0))
+    md=ImageDraw.Draw(mast)
+    md.rounded_rectangle((45,39,638,139),radius=8,fill=(8,29,32,180))
+    backdrop=Image.alpha_composite(backdrop.convert("RGBA"),mast).convert("RGB")
+    d=ImageDraw.Draw(backdrop)
+    # The full source caption is preserved in each landscape photo; portrait
+    # images use equivalent two-line captions to keep the original manuscript,
+    # anatomy and microtome photograph unobstructed.
+    labels={
+        "nih-alveoli":"NIH / NCI · ALVEOLAR ANATOMY · CONTEXT ONLY",
+        "wellcome-arabic-manuscript":"WELLCOME · HISTORICAL MANUSCRIPT · NOT PRIMARY FOLIO",
+        "syrup-skimming":"CAIRO ARCHITECTURE · HISTORICAL CONTEXT ONLY",
+        "syrup-still-life":"2026 AI RECONSTRUCTION · NOT HISTORICAL PHOTO",
+        "balance-still-life":"2026 AI RECONSTRUCTION · NOT HISTORICAL PHOTO",
+        "generic-microtome":"MICROTOMY REFERENCE · NOT ORIGINAL EXPERIMENT"
+    }
+    label=labels.get(source["id"],source["caption"].upper())
+    if original.width/original.height<1.35 and source.get("on_frame_lines"):
+        lines=source["on_frame_lines"]
+        if len(lines)!=2 or any(len(line)>48 for line in lines):
+            raise ValueError("Portrait source credits need exactly two short verified lines")
+        d.rounded_rectangle((59,165,650,237),radius=5,fill=(11,34,38))
+        for i,line in enumerate(lines):
+            write_label(d,(74,176+30*i),line.upper(),17,(255,232,192),True)
+    else:
+        size=17
+        while d.textbbox((0,0),label,font=ft(size,True))[2]>1080 and size>12:
+            size-=1
+        length=d.textbbox((0,0),label,font=ft(size,True))[2]
+        d.rounded_rectangle((59,153,84+length,189),radius=4,fill=(11,34,38))
+        write_label(d,(70,160),label,size,(255,232,192),True)
+    return backdrop
+
+def render_context_scene(film,scene,count,work,source):
+    """Intercut real/public-domain context with original diagram without losing a frame."""
+    seconds=int(source["show_seconds"])
+    min_main=4*FPS
+    context_frames=min(seconds*FPS,count-min_main)
+    if context_frames<2*FPS:
+        raise ValueError("Insufficient breathing room for a credited contextual cutaway")
+    original_frames=count-context_frames
+    ctx=photograph_context_frame(source)
+    ctx_file=work/("context-source-"+scene["id"]+".png")
+    ctx.save(ctx_file)
+    context_kind={"kind":source["category"].upper(),**scene}
+    context_kind["kind"]=source["category"].upper()
+    overlay=film_overlay(film,context_kind)
+    overlay_file=work/("context-overlay-"+scene["id"]+".png")
+    overlay.save(overlay_file)
+    still=Image.alpha_composite(ctx.convert("RGBA"),overlay).convert("RGB")
+    still.save(PLATES/(film["slug"]+"-"+scene["id"]+"-context.webp"),"WEBP",quality=87,method=5)
+    if scene["id"]=="01":
+        still.save(FILMS/(film["slug"]+"-poster.webp"),"WEBP",quality=89,method=5)
+    clip_context=work/("context-"+scene["id"]+".mp4")
+    old.make_clip({"contain":False},None,None,ctx_file,overlay_file,context_frames/FPS,clip_context)
+    clip_main=work/("main-"+scene["id"]+".mp4")
+    old.make_clip({"contain":False},None,None,work/("source-"+scene["id"]+".png"),
+                  work/("overlay-"+scene["id"]+".png"),original_frames/FPS,clip_main)
+    itemlist=work/("context-pair-"+scene["id"]+".txt")
+    itemlist.write_text("file '"+str(clip_context)+"'\nfile '"+str(clip_main)+"'\n",encoding="utf-8")
+    assembled=work/("scene-"+scene["id"]+".mp4")
+    cmd(["ffmpeg","-hide_banner","-loglevel","error","-y","-f","concat",
+         "-safe","0","-i",str(itemlist),"-c","copy",str(assembled)])
+    return assembled
+
 def film_overlay(film,scene):
     ov=Image.new("RGBA",(W,H),(0,0,0,0))
     d=ImageDraw.Draw(ov)
@@ -362,7 +445,18 @@ def validate():
                     raise FileNotFoundError(str(img))
             if film["tone"]=="history" and s.get("image"):
                 raise ValueError("Historical reconstruction must not claim unidentified scan as original")
-    print("Source validation passed for all four films, eight scenes each")
+    used={scene["context_visual"] for f in films for scene in f["scenes"] if scene.get("context_visual")}
+    sources={item["id"]:item for item in data.get("visual_sources",[])}
+    if used-set(sources):raise ValueError("Context image missing from source ledger "+str(used-set(sources)))
+    if len(sources)!=len(data.get("visual_sources",[])):
+        raise ValueError("Duplicate visual source ID")
+    for key in used:
+        source=sources[key]
+        image=FILMS/"visual-sources"/source["asset"]
+        if not image.is_file():raise FileNotFoundError(str(image))
+        if not source.get("license") or not source.get("source_url"):
+            raise ValueError("Uncredited context visual "+key)
+    print("Source validation passed for all four films, eight scenes each; contextual photos:",len(used))
     return films
 
 def render_one(film,tts):
@@ -383,9 +477,21 @@ def render_one(film,tts):
         for f in frames: starts.append(cursor/FPS); cursor+=f
         build_vtt(film,starts,[len(a)/sr for a in speech])
         clips=[]
+        sources={item["id"]:item for item in json.loads(MANIFEST.read_text(encoding="utf-8")).get("visual_sources",[])}
         for s,count in zip(film["scenes"],frames):
             if s.get("image"):
                 bg=photo_frame(ROOT/s["image"].lstrip("/"))
+            elif s.get("image_url"):
+                from urllib.request import Request, urlopen
+                url=s["image_url"]
+                if not url.startswith("https://cdn.creativeclaw.co/"):
+                    raise ValueError("External image origin not approved: "+url)
+                with urlopen(Request(url,headers={"User-Agent":"RuwaidixFilm/1.0"}),timeout=35) as response:
+                    from io import BytesIO
+                    source=Image.open(BytesIO(response.read(12_000_000))).convert("RGB")
+                bg=Image.new("RGB",(W,H),(32,33,30))
+                source.thumbnail((W,H),Image.Resampling.LANCZOS)
+                bg.paste(source,((W-source.width)//2,(H-source.height)//2))
             else:
                 bg=illustrate(film,s)
             frame=work/("source-"+s["id"]+".png")
@@ -395,10 +501,13 @@ def render_one(film,tts):
             layer.save(mask)
             preview=Image.alpha_composite(bg.convert("RGBA"),layer).convert("RGB")
             preview.save(PLATES/(film["slug"]+"-"+s["id"]+".webp"),"WEBP",quality=82,method=5)
-            if s["id"]=="01":
+            if s["id"]=="01" and not s.get("context_visual"):
                 preview.save(FILMS/(film["slug"]+"-poster.webp"),"WEBP",quality=88,method=5)
-            clip=work/("scene-"+s["id"]+".mp4")
-            old.make_clip({"contain":False},None,None,frame,mask,count/FPS,clip)
+            if s.get("context_visual"):
+                clip=render_context_scene(film,s,count,work,sources[s["context_visual"]])
+            else:
+                clip=work/("scene-"+s["id"]+".mp4")
+                old.make_clip({"contain":False},None,None,frame,mask,count/FPS,clip)
             clips.append(clip)
             print(film["slug"],s["id"],"seconds",round(count/FPS,2),flush=True)
         playlist=work/"concat.txt"
@@ -417,7 +526,8 @@ def render_one(film,tts):
         record={"title":film["title"],"seconds":dur,"bytes":final.stat().st_size,
                 "sha256":hashlib.sha256(final.read_bytes()).hexdigest(),
                 "source":"assets/films/evidence-in-motion.json","chapters":8,
-                "media":[{"chapter":s["id"],"type":s["kind"],"credit":s["credit"],"source":s.get("image",None)} for s in film["scenes"]],
+                "media":[{"chapter":s["id"],"type":s["kind"],"credit":s["credit"],"source":s.get("image",None),
+                          "context_visual":s.get("context_visual"),"context_source":sources.get(s.get("context_visual"))} for s in film["scenes"]],
                 "editorial_method":"Real owner archive retained uncropped in frames; explicitly non-documentary original illustrations; audio Kokoro-ONNX + self-generated original score."}
         (FILMS/(film["slug"]+"-build.json")).write_text(json.dumps(record,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print("COMPLETE",film["slug"],round(dur,2),"s",final.stat().st_size,"bytes",flush=True)
