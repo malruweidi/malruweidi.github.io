@@ -76,3 +76,11 @@ test("all scientific and archive plates link back to a high resolution source",(
     }
   }
 });
+
+test("historical substitution and market-oversight captions keep clear of diagrams",()=>{
+  const renderer=load("scripts/render-evidence-series.py");
+  assert.match(renderer,/def historic_accountability_plates\(/, "historical layouts should be composed in dedicated bounded regions");
+  assert.match(renderer,/assert_labels_fit\(/, "drawn text should be measured and confined to safe panels");
+  assert.doesNotMatch(renderer,/write_label\(d,\(488,382\),"NECESSITY/, "remove prior text crossing the panels");
+  assert.doesNotMatch(renderer,/write_label\(d,\(170,166\),"WEIGHT, TRUST/, "remove prior balance beam and title overlap");
+});
