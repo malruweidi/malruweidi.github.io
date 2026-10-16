@@ -10,9 +10,9 @@ const cinema = fs.readFileSync(path.join(root, 'publication-cinema.html'), 'utf8
 const films = fs.readFileSync(path.join(root, 'films.html'), 'utf8');
 const file = src => path.resolve(root, src.replace(/^\//, ''));
 
-test('the original films, every publication, and all source material remain intact', () => {
-  assert.equal(catalog.items.length, 25);
-  assert.equal(new Set(catalog.items.map(x => x.id)).size, 25);
+test('the original films, every publication and essay, and all source material remain intact', () => {
+  assert.equal(catalog.items.length, 35);
+  assert.equal(new Set(catalog.items.map(x => x.id)).size, 35);
   assert.ok(html.includes('const publications='));
   assert.ok(html.includes('publicationFilmId'));
   assert.ok(html.includes('publication-cinema.html'));
@@ -23,7 +23,7 @@ test('the original films, every publication, and all source material remain inta
   assert.ok(fs.existsSync(file('assets/films/what-survives-the-experiment.vtt')));
 });
 
-test('all 25 have individually written, attributable six-scene editorial scripts', () => {
+test('all 35 have individually written, attributable six-scene editorial scripts', () => {
   for (const item of catalog.items) {
     assert.equal(item.production, 'render_requested', item.id);
     assert.equal(item.duration_seconds, 84, item.id);
@@ -71,7 +71,7 @@ test('concept imagery explicitly declines false claims of historical or scientif
   }
 });
 
-test('all 25 films are discoverable from a source-preserving public route', () => {
+test('all 35 films are discoverable from a source-preserving public route', () => {
   const discovery = JSON.parse(fs.readFileSync(file('assets/discovery-index.json'), 'utf8'));
   const sitemap = fs.readFileSync(file('sitemap.xml'), 'utf8');
   assert.ok(discovery.items.find(x => x.url === '/publication-cinema.html'));
