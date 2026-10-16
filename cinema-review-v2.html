@@ -17,14 +17,24 @@ a{color:#efc49b}.stat{display:block;font-size:.75rem;color:#d4ac8a;text-transfor
 ol{padding-left:20px}li{padding:8px 0;line-height:1.55;border-bottom:1px solid #2f4142}
 summary{cursor:pointer;margin:1rem 0}nav{display:flex;flex-wrap:wrap;gap:8px}nav button{cursor:pointer;border:1px solid #4a5e61;background:#23363a;color:#e2eee8;padding:10px;border-radius:4px;max-width:260px;text-align:left}
 nav button:focus-visible{outline:3px solid #e3bd87}
+.comparison{display:flex;flex-direction:column;gap:16px}.comparison details{border:1px solid #385357;background:#15282d;padding:12px 16px;border-radius:6px}
+.comparison summary{font-size:.9rem;color:#edc59e;cursor:pointer}.comparison label{display:block;font-size:.8rem;color:#c7d6cf;letter-spacing:.07em;text-transform:uppercase;margin-bottom:8px}
+.comparison .auditions{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.comparison .auditions article{padding:12px}.auditions audio{max-width:100%;width:100%}
+.comparison .auditions small{color:#d4b78d;font-size:.72rem}.comparison .auditions h3{font-weight:500;font-size:.94rem;margin:4px 0 12px}
+.review-note{font-size:.81rem;color:#a5bab4}.comparison video{max-height:75vh}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style></head>
 <body><main><div class="small">Editorial workroom / film evidence review / not published</div>
 <h1>Every film earns its cut.</h1>
 <p class="warning">These files are unapproved work-in-progress editions. An exported MP4 is not proof of artistic quality, correct pronunciation, image licensing, or scientific sign-off. The existing live website and original films remain unchanged.</p>
 <div class="controls"><input id="filter" aria-label="Search films" placeholder="Search 44 revised film projects..."><select id="category" aria-label="Filter film type"><option value="">All 44</option><option value="publication">Publications and essays</option><option value="feature">Feature and alternative cuts</option></select></div>
 <nav id="films" aria-label="Select film for review"></nav>
-<section><figure><video id="preview" controls playsinline preload="metadata" aria-label="Unapproved film preview"></video><figcaption id="player-note" aria-live="polite"></figcaption></figure>
-<article><span class="stat" id="availability">Verifying preview</span><h2 id="title">Select a film</h2><p id="source"></p><div id="review-links"></div>
+<section><div class="comparison">
+<figure><label for="preview">Revised director's cut · audition export</label><video id="preview" controls playsinline preload="metadata" aria-label="Unapproved director's cut video"></video><figcaption id="player-note" aria-live="polite"></figcaption></figure>
+<details><summary>Compare the original archived film</summary><figure><label for="original">Previous released edition · preserved in full</label><video id="original" controls playsinline preload="none" aria-label="Original archived video"></video><figcaption class="review-note">These are original preserved exports. The two players are not synchronized; pause one before playing the other for a fair comparison.</figcaption></figure></details>
+<details id="voice-auditions"><summary>Compare four open-source narration auditions</summary><p class="review-note">Only available for the history and pulmonary audition passages. Different voices do not imply approval; check all scientific and Arabic terms aloud.</p><div id="voice-samples" class="auditions"></div></details>
+</div><article><span class="stat" id="availability">Verifying preview</span><h2 id="title">Select a film</h2><p id="source"></p><div id="review-links"></div>
 <details open><summary>Timed storyboard and scene provenance</summary><ol id="shots"></ol></details></article></section>
 <p>Review standards: verify visual source identity, inspect full figure axes, listen continuously at normal volume, check scientific terminology, and compare captions against actual speech. Do not approve by automation alone.</p>
 <p><a href="https://github.com/malruweidi/malruweidi.github.io/pull/47">View the protected editorial pull request</a></p>
@@ -40,7 +50,26 @@ q("#title").textContent=f.title;
 q("#source").textContent="Evidence source: "+(f.primary||f.source_path||"See source register");
 const total=f.shots.reduce((a,b)=>a+Number(b.sec||0),0);
 q("#shots").innerHTML=f.shots.map(s=>'<li><b>'+safe(s.title)+'</b> · '+Number(s.sec)+'s<p>'+safe(s.narration)+'</p><small>'+safe(s.credit)+'</small></li>').join("");
-const root="/assets/films/"+(f.slug.startsWith("pub-")||f.slug.startsWith("feature-")?"library-v2/":"preview-v2/");
+// Every one of the 44 film cuts has a dedicated library-v2 export.
+const root="/assets/films/library-v2/";
+const originalSlug=f.slug.replace(/^pub-/,"").replace(/^feature-/,"");
+const oldMovie=f.slug.startsWith("pub-")?"/assets/films/series/"+encodeURIComponent(originalSlug)+".mp4":"/assets/films/"+encodeURIComponent(originalSlug)+".mp4";
+const original=q("#original");original.pause();original.innerHTML="";original.removeAttribute("src");
+original.innerHTML='<source src="'+safe(oldMovie)+'" type="video/mp4">';original.load();
+const samples=q("#voice-samples");samples.replaceChildren();
+const voices=["bm_lewis","am_michael","bm_george","bf_emma"];
+const sources= f.slug==="making-medicines-keep" ? ["making-medicines-keep-01","making-medicines-keep-03"] :
+ f.slug==="pub-airway-reopening" ? ["pub-airway-reopening-01","pub-airway-reopening-06"] : [];
+q("#voice-auditions").hidden=sources.length===0;
+for(const sample of sources){
+ for(const voice of voices){
+   const card=document.createElement("article");
+   const heading=document.createElement("h3");heading.textContent=sample+" / "+voice;
+   const audio=document.createElement("audio");audio.controls=true;audio.preload="none";
+   const source=document.createElement("source");source.src="/assets/films/voice-auditions-v2/"+encodeURIComponent(sample+"-"+voice)+".m4a";source.type="audio/mp4";audio.appendChild(source);
+   card.append(heading,audio);samples.appendChild(card);
+ }
+}
 const media=root+encodeURIComponent(f.slug)+"-rough-cut";
 q("#preview").pause();q("#preview").removeAttribute("src");q("#preview").innerHTML="";
 q("#preview").load();
@@ -64,7 +93,7 @@ const candidates=state.items.filter(x=>(!kind||x.output_collection===kind)&&(x.t
 const nav=q("#films");nav.replaceChildren();
 for(const f of candidates){const b=document.createElement("button");b.type="button";b.textContent=f.title;b.addEventListener("click",()=>present(f));nav.appendChild(b);}
 }
-Promise.all([fetch("/assets/films/cinematic-library-v2.json").then(r=>r.json()),fetch("/assets/films/directors-cuts-v2.json").then(r=>r.json())]).then(([library])=>{
+fetch("/assets/films/cinematic-library-v2.json").then(r=>r.json()).then(library=>{
 state.items=library.films;
 draw();
 if(state.items.length)present(state.items.find(f=>f.slug==="two-materials-no-section")||state.items[0]);
