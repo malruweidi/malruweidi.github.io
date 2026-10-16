@@ -75,3 +75,8 @@
 "Laboratory stories":"حكايات المختبر"
 });
 })();
+
+/* Storytelling revisions, 16 October 2026. Original translations retained for legacy pages. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "I have been taught to write passively, watched people cite papers that do not support their claims, and seen how easily scientific recognition can become detached from the work itself. Outside the journal, I can write about those experiences in my own voice. I also write about illness, academic life and what institutions can overlook while everyone is busy measuring success.": "تعلمت أن أكتب بصيغة المبني للمجهول، ورأيت كيف يستشهد البعض بأبحاث لا تدعم ما يقولونه، وكيف يمكن أن ينفصل الاعتراف العلمي عن العمل نفسه. وخارج المجلات المحكمة، أستطيع الكتابة عن هذه التجارب بصوتي أنا. وأكتب أيضًا عن المرض والحياة الأكاديمية وما قد تتجاهله المؤسسات بينما ينشغل الجميع بقياس النجاح."
+});

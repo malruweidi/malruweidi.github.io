@@ -58,7 +58,7 @@ test("article pages use one shared design system, canonical, accessible metadata
 });
 test("new pages appear in sitemap and the existing bilingual search",()=>{
  const sitemap=read("sitemap.xml");
- assert.equal(index.items.length,57);
+ assert.equal(index.items.length,58);
  for(const [file] of [...storyRoutes,...researchRoutes]){
   assert.ok(sitemap.includes('https://malruweidi.github.io/'+file),file);
   assert.ok(index.items.some(x=>x.url==='/'+file),file);

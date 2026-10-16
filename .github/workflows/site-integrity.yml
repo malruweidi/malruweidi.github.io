@@ -17,6 +17,8 @@ jobs:
         run: node --test tests/editorial-wayfinding.test.mjs
       - name: Test lossless standalone stories and research dossiers
         run: node --test tests/deep-reading.test.mjs
+      - name: Validate UREP23 research story, preserved chapters and bilingual discovery
+        run: node --test tests/urep23-story.test.mjs
       - name: Check all cross-page fragment destinations
         run: node scripts/check-cross-page-anchors.cjs
       - name: Test research readout hierarchy and responsive language support

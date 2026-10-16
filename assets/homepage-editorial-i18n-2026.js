@@ -111,3 +111,8 @@
 "Current Substack essays and invited scientific columns ↗":"المقالات المنشورة حاليًا على سابستاك والمقالات العلمية بدعوة تحريرية ↗"
 });
 })();
+
+/* Storytelling revisions, 16 October 2026. Original translations retained for legacy pages. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "I began with plant extracts, imines and chemical sensors, where a question could be investigated in a flask and followed through a spectrum. Later I was studying developing zebrafish vessels and exposing lung epithelial cells to the stresses of airway reopening. Chemistry remained the starting point, but those experiments made me think seriously about what happens to a molecule when it enters a living system.": "بدأت بالمستخلصات النباتية والإيمينات والمجسات الكيميائية، حيث يمكن بحث السؤال في دورق وتتبع إجابته عبر الطيف. ثم درست الأوعية الدموية النامية في أسماك الزرد وعرّضت خلايا الظهارة الرئوية للإجهاد المصاحب لإعادة فتح الممرات الهوائية. بقيت الكيمياء نقطة الانطلاق، لكن تلك التجارب دفعتني إلى التفكير بجدية فيما يحدث للجزيء حين يدخل نظامًا حيًا."
+});
