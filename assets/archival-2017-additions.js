@@ -103,8 +103,8 @@
     const s=section('rx17-acs-chapter-2017',
       ['QATAR UNIVERSITY / ACS STUDENT CHAPTER','جامعة قطر / الفصل الطلابي للجمعية الكيميائية الأمريكية'],
       ['The chapter was built by people. There are documents for that.','بنى الناس الفصل الطلابي، وتبقى الوثائق شاهدًا'],
-      ['By May 2017, my work with the Qatar University ACS student chapter had left a material record: a departmental certificate naming me to the 2016–17 executive committee and a service award recognizing initiatives that helped the chapter succeed. That summer, the archive follows the chemistry community to Washington. The airport photographs and a NASA-themed ACS flyer are fragments of the journey, rather than substitutes for the scientific program.',
-       'بحلول مايو ٢٠١٧ ترك عملي مع الفصل الطلابي للجمعية الكيميائية الأمريكية في جامعة قطر وثائق ملموسة: شهادة من القسم تثبت عضويتي في اللجنة التنفيذية لعام ٢٠١٦–٢٠١٧ ودرعًا يكرّم المبادرات التي أسهمت في نجاح الفصل. وفي صيف السنة نفسها ينتقل الأرشيف مع مجتمع الكيمياء إلى واشنطن، حيث تحفظ صور المطار وإعلان فعالية ذات طابع فضائي بعض تفاصيل الرحلة.']);
+      ['In May 2017, the chemistry department recognized my work on the American Chemical Society student chapter’s 2016–17 executive committee and presented a service award for initiatives supporting the chapter. In August, we travelled to Washington with Qatar University flags, and I kept the airport photographs and an ACS event flyer from the trip.',
+       'في مايو ٢٠١٧، كرّم قسم الكيمياء عملي في اللجنة التنفيذية للفرع الطلابي للجمعية الكيميائية الأمريكية لعام ٢٠١٦–٢٠١٧، وقدّم درعًا تقديرًا للمبادرات الداعمة للفرع. وفي أغسطس سافرنا إلى واشنطن حاملين أعلام جامعة قطر، واحتفظت بصور المطار وإعلان لإحدى فعاليات الجمعية من تلك الرحلة.']);
     s.append(cards(['committee','service','group','dulles','mars']));
     s.append(more('/archive.html#rx17-2017-evidence','View all six original-source records →','عرض السجلات الستة في الأرشيف ←'));
     anchor.insertAdjacentElement('beforebegin',s);
@@ -115,8 +115,8 @@
       const s=section('rx17-jcm6000-story',
         ['AN INSTRUMENT / 18 JULY 2017','جهاز علمي / ١٨ يوليو ٢٠١٧'],
         ['A scanning electron microscope, before the image','مجهر إلكتروني قبل الصورة'],
-        ['In July 2017, I photographed a JEOL JCM-6000 scanning electron microscope at Qatar University. The photograph has none of the drama of a finished micrograph. It shows the instrument itself, part of the physical world behind the images that eventually circulate in papers and presentations.',
-         'في يوليو ٢٠١٧ صوّرت مجهر JEOL JCM-6000 الإلكتروني الماسح في جامعة قطر. لا تحمل هذه الصورة الإبهار الذي تحمله صورة مجهرية منشورة، بل تعرض الجهاز نفسه، أحد الأشياء المادية التي تقف خلف الصور التي تصل لاحقًا إلى الأوراق العلمية والعروض.']);
+        ['I photographed the JEOL JCM-6000 scanning electron microscope at Qatar University in July 2017. I was interested in the instrument itself: the chamber, controls and the process by which a specimen becomes an image.',
+         'في يوليو ٢٠١٧ صوّرت المجهر الإلكتروني الماسح JEOL JCM-6000 في جامعة قطر. لفت اهتمامي الجهاز نفسه، وحجرة العينات وأدوات التحكم والطريقة التي تتحول بها العينة إلى صورة.']);
       s.append(cards(['microscope']));
       apparatus.insertAdjacentElement('afterend',s);
     }
@@ -125,8 +125,8 @@
       const s=section('rx17-acs-community-memory',
         ['THE STUDENT CHAPTER / MAY–AUGUST 2017','الفصل الطلابي / مايو–أغسطس ٢٠١٧'],
         ['A chapter travelled farther than its paperwork','رحلة فصل طلابي تتجاوز شهاداته'],
-        ['The two recognitions from May 2017 are useful because they put dates and responsibilities to an experience I remember through people. By August there were suitcases, university flags and a chemistry trip to Washington. A student chapter is not just its certificates; it is also the work and friendships required to make the trip happen.',
-         'تساعدني وثيقتا التكريم من مايو ٢٠١٧ على وضع تاريخ ومسؤوليات واضحة لتجربة أتذكرها أولًا من خلال الأشخاص. وفي أغسطس ظهرت الحقائب وأعلام الجامعة ورحلة الكيمياء إلى واشنطن. لم تكن الشهادات الفصل الطلابي كله؛ فقد سبقتها جهود وعلاقات أتاحت لهذه الرحلة أن تحدث.']);
+        ['The May 2017 certificates mark a busy period of organizing student-chapter activities. Three months later we were travelling to Washington. I remember planning the trip with colleagues, carrying university flags through the airport, and continuing the conversations we had begun in Qatar.',
+         'تعود شهادتا التكريم إلى مايو ٢٠١٧، حين كنا ننظّم أنشطة الفرع الطلابي. وبعد ثلاثة أشهر كنا في طريقنا إلى واشنطن. أتذكر التخطيط للرحلة مع الزملاء وحمل أعلام الجامعة في المطار ومواصلة الأحاديث العلمية التي بدأناها في قطر.']);
       s.append(cards(['service','group']));
       s.append(more('/engagement.html#rx17-acs-chapter-2017','Read the chapter’s documentary record →','اقرأ السجل الوثائقي للفصل ←'));
       community.insertAdjacentElement('afterend',s);
