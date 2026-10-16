@@ -1,8 +1,8 @@
 {
   "title": "What a Bubble Can Do",
   "seconds": 120.0,
-  "bytes": 3272476,
-  "sha256": "87bdbc97eaf37527311e98607a3693c457f86eee8967b7e62626ba543a7790b6",
+  "bytes": 3258504,
+  "sha256": "efa8325e1bc95e7f62e4e25a74c27a02c8e1104e32703faea97ae8a7d4bd67b2",
   "source": "assets/films/evidence-in-motion.json",
   "chapters": 8,
   "media": [
@@ -21,7 +21,11 @@
         "license": "Public domain, U.S. federal government work; source attribution NIAID/NIH",
         "category": "third-party anatomical reference",
         "caption": "NIH ANATOMICAL ILLUSTRATION • NOT EXPERIMENTAL DATA",
-        "show_seconds": 5
+        "show_seconds": 5,
+        "on_frame_lines": [
+          "NIH ANATOMY REFERENCE",
+          "NOT THE RESEARCH MICROGRAPH"
+        ]
       }
     },
     {

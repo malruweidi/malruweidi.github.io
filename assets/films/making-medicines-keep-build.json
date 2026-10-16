@@ -1,8 +1,8 @@
 {
   "title": "Making Medicines Keep",
   "seconds": 120.0,
-  "bytes": 3421052,
-  "sha256": "d99997a131a896f6a73ff9698f723fc6b1df74eb4113d18afc5320b9758869ff",
+  "bytes": 3559228,
+  "sha256": "4f9ab54845021f9a7c49d73409a38a8ee63c338da69c2d31f64fa7014a721a15",
   "source": "assets/films/evidence-in-motion.json",
   "chapters": 8,
   "media": [
@@ -21,13 +21,17 @@
         "license": "Public Domain Mark",
         "category": "contextual historical photograph",
         "caption": "15th-century Arabic medical manuscript • comparative context, not the cited source",
-        "show_seconds": 4
+        "show_seconds": 4,
+        "on_frame_lines": [
+          "COMPARATIVE MEDICAL MANUSCRIPT",
+          "NOT THE CAIRO GENIZAH SOURCE"
+        ]
       }
     },
     {
       "chapter": "02",
       "type": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
-      "credit": "Original AI-assisted 2026 historical reconstruction. Not original photography, not evidence of this specific recipe or a medieval vessel. Conceptual illustration; period text attributed to al-Kūhīn al-ʿAṭṭār. Avoid invented script.",
+      "credit": "Original AI-generated 2026 conceptual reconstruction; not historical photography, a verified medieval vessel, or evidence for a particular prescription.",
       "source": null,
       "context_visual": "syrup-still-life",
       "context_source": {
@@ -87,7 +91,7 @@
     {
       "chapter": "07",
       "type": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
-      "credit": "Original AI-assisted 2026 reconstruction interpreting the material culture of market oversight. Not a verified historic Cairo shop. Interpretation of hisba literature; not a historical photograph or modern state regulation.",
+      "credit": "Original AI-generated 2026 conceptual reconstruction; not historical photography, a verified medieval vessel, or evidence for a particular prescription.",
       "source": null,
       "context_visual": "balance-still-life",
       "context_source": {
