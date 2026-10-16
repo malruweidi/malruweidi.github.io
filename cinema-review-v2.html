@@ -100,7 +100,12 @@ fetch("/assets/films/cinematic-library-v2.json").then(r=>{if(!r.ok)throw Error("
 fetch("/assets/films/directors-ledger-v3.json").then(r=>{if(!r.ok)throw Error("director ledger unavailable");return r.json();})
 ]).then(([library,direction])=>{
 const edits=new Map(direction.films.map(f=>[f.slug,f]));
-state.items=library.films.map(f=>Object.assign({},f,edits.get(f.slug)||{}));
+state.items=library.films.map(f=>{
+ const note=edits.get(f.slug)||{}, overrides=note.narration_overrides||{};
+ const scenes=f.shots.map((shot,i)=>Object.assign({},shot,
+   Object.prototype.hasOwnProperty.call(overrides,String(i+1)) ? {narration:overrides[String(i+1)]} : {}));
+ return Object.assign({},f,note,{shots:scenes});
+});
 draw();
 if(state.items.length)present(state.items.find(f=>f.slug==="two-materials-no-section")||state.items[0]);
 }).catch(e=>q("#availability").textContent="Source catalogue could not be loaded: "+e.message);
