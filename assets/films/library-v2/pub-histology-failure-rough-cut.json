@@ -1,0 +1,78 @@
+{
+  "slug": "pub-histology-failure",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "3c32217a2ed8b15e074ab76335389f011a6703b2a4ccf2d4775cdc117e22e176",
+  "shots": [
+    {
+      "title": "Two materials. No section.",
+      "kind": "Original laboratory processing evidence of unsuccessful attempt",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "museum": null,
+      "credit": "Original laboratory processing evidence of unsuccessful attempt"
+    },
+    {
+      "title": "A section begins before the blade",
+      "kind": "Original firsthand photographs of zebrafish orientation procedure",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "museum": null,
+      "credit": "Original firsthand photographs of zebrafish orientation procedure"
+    },
+    {
+      "title": "We chose two percent agarose",
+      "kind": "Original explanatory reconstruction of unsuccessful histology procedure; not a research result",
+      "image": "assets/films/plates/two-materials-no-section-03.webp",
+      "museum": null,
+      "credit": "Source-bound editorial reconstruction, not an interpretable histological section"
+    },
+    {
+      "title": "The block did not behave as one",
+      "kind": "Original photographed failed embedding and microtomy record",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "museum": null,
+      "credit": "Original photographed failed embedding and microtomy record"
+    },
+    {
+      "title": "The blade exposed the interface",
+      "kind": "Original explanatory reconstruction of unsuccessful histology procedure; not a research result",
+      "image": "assets/films/plates/two-materials-no-section-05.webp",
+      "museum": null,
+      "credit": "Source-bound editorial reconstruction, not an interpretable histological section"
+    },
+    {
+      "title": "The difficulty: A failed section is a usable finding",
+      "kind": "Original explanatory reconstruction of unsuccessful histology procedure; not a research result",
+      "image": "assets/films/plates/two-materials-no-section-06.webp",
+      "museum": null,
+      "credit": "Source-bound editorial reconstruction, not an interpretable histological section"
+    },
+    {
+      "title": "A failed section is a usable finding",
+      "kind": "Original laboratory record, not a corrected protocol validation",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "museum": null,
+      "credit": "Original laboratory record, not a corrected protocol validation"
+    },
+    {
+      "title": "Keep the record honest",
+      "kind": "Documented orientation specimen image",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "museum": null,
+      "credit": "Documented orientation specimen image"
+    }
+  ],
+  "film_title": "Two materials. No section.",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/films/two-materials-no-section.html",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "6d217ee4e71f52b73e792b23ba52fe7d4d97445ee5d77b212d7824af91d7c50e"
+}
