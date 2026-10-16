@@ -9,33 +9,34 @@ const read = p => fs.readFileSync(path.join(root, p), "utf8");
 const films = read("moving-evidence.html");
 const techniques = read("techniques.html");
 const stories = read("stories.html");
+const ownerArchive = read("assets/owner-archive-2026-10-13.js");
 const homepage = read("index.html");
 const engagements = read("engagement.html");
 const archive = read("archive.html");
 const discovery = JSON.parse(read("assets/discovery-index.json"));
 
-test("Moving Evidence preserves six separately annotated recordings", () => {
-  assert.equal((films.match(/<figure class="film-card/g) || []).length, 6);
-  assert.equal((films.match(/<video\b/g) || []).length, 5);
+test("Moving Evidence preserves seven separately annotated recordings", () => {
+  assert.equal((films.match(/<figure class="film-card/g) || []).length, 7);
+  assert.equal((films.match(/<video\b/g) || []).length, 6);
   assert.equal((films.match(/<iframe\b/g) || []).length, 1);
-  assert.equal((films.match(/<figcaption\b/g) || []).length, 6);
+  assert.equal((films.match(/<figcaption\b/g) || []).length, 7);
   assert.equal((films.match(/<h1\b/g) || []).length, 1);
-  for (const anchor of ["zebrafish-films", "avian-film", "lab-film", "seminar-film"]) {
+  for (const anchor of ["zebrafish-films", "avian-film", "lab-film", "chem-squad-film", "seminar-film"]) {
     assert.ok(films.includes('id="' + anchor + '"'), "missing anchored chapter " + anchor);
   }
 });
 
 test("every original film links to an already-published media source", () => {
   const sources = [...films.matchAll(/<source\b[^>]*src="([^"]+)"[^>]*>/g)].map(m => m[1]);
-  assert.equal(sources.length, 5);
-  assert.equal(new Set(sources).size, 5, "duplicate footage shown as a new film");
+  assert.equal(sources.length, 6);
+  assert.equal(new Set(sources).size, 6, "duplicate footage shown as a new film");
   for (const src of sources) {
     if (src.startsWith("/")) {
       assert.ok(fs.existsSync(path.join(root, src.slice(1))), "missing local original " + src);
     } else {
       assert.ok(src.startsWith("https://"), "untrusted remote media scheme " + src);
     }
-    assert.ok(techniques.includes(src) || stories.includes(src), "untraced original recording " + src);
+    assert.ok(techniques.includes(src) || stories.includes(src) || ownerArchive.includes(src.slice(1)), "untraced original recording " + src);
   }
   assert.ok(films.includes("https://www.youtube-nocookie.com/embed/62hbr51K3GE"));
   assert.ok(homepage.includes("https://www.youtube-nocookie.com/embed/62hbr51K3GE"));
@@ -52,7 +53,7 @@ test("videos have control, accessible labels and metadata-first loading", () => 
     assert.match(attributes, /poster="[^"]+"/);
   }
   assert.match(films, /Exact model|model, experiment and function|source filenames|specimen details/i);
-  assert.ok(!/<source[^>]*khaled-jama-thesis-reaction\.mp4/i.test(films), "unpublished source exposed");
+  assert.ok(/<source[^>]*khaled-jama-thesis-reaction\.mp4/i.test(films), "restored colleague video not published");
 });
 
 test("film index is linked without replacing original archive entries", () => {
