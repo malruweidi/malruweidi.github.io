@@ -19,6 +19,8 @@ jobs:
         run: node --test tests/film-publication.test.cjs
       - name: Check scientific film collection, in-development statuses and archival source preservation
         run: node --test tests/documentary-collection.test.cjs
+      - name: Verify second released film video hash, exact running time, subtitles and scientific source integrity
+        run: node --test tests/two-materials-production.test.cjs
       - name: Verify evidence figure preservation and expandable interpretation notes
         run: node --test tests/evidence-viewer.test.cjs
       - name: Check editorial wayfinding and chapter preservation
