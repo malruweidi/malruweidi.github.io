@@ -21,7 +21,9 @@
           "visual": "bubble",
           "narration": "An airway can reopen and still be injured. As an air bubble advances through liquid, it leaves a moving boundary that the epithelial cells cannot simply ignore.",
           "credit": "Conceptual drawing. Not experimental or clinical footage.",
-          "link": "/research/pulmonary-epithelial-injury.html"
+          "link": "/research/pulmonary-epithelial-injury.html",
+          "context_visual": "nih-alveoli",
+          "context_use": "Supporting visual shown for 5 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
         },
         {
           "id": "02",
@@ -165,7 +167,9 @@
           "visual": "agarose",
           "narration": "Changing the agarose grade, processing conditions, or embedding strategy might have answered it. I did not establish which correction would work, and I will not call the attempt successful.",
           "credit": "Alternatives are untested possibilities, not recommendations or successful results.",
-          "link": "/stories/failed-zebrafish-histology.html"
+          "link": "/stories/failed-zebrafish-histology.html",
+          "context_visual": "generic-microtome",
+          "context_use": "Supporting visual shown for 4 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
         },
         {
           "id": "08",
@@ -290,7 +294,9 @@
           "visual": "syrup",
           "narration": "A syrup can fail quietly. It can sour, crystallize, thicken too far, or disguise an inferior ingredient. In a Cairo apothecary shop, that made preparation a question of judgment.",
           "credit": "Reconstruction based on the author's historical research; not period footage or a primary source.",
-          "link": "/index.html#writing"
+          "link": "/index.html#writing",
+          "context_visual": "wellcome-arabic-manuscript",
+          "context_use": "Supporting visual shown for 4 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
         },
         {
           "id": "02",
@@ -299,7 +305,9 @@
           "visual": "syrup",
           "narration": "A thirteenth-century manual, Minhāj al-dukkān, begins its syrup chapter with julāb: a base of sugar and rose water. Fruit or medicinal material gave the syrup its particular form.",
           "credit": "Conceptual illustration; period text attributed to al-Kūhīn al-ʿAṭṭār. Avoid invented script.",
-          "link": "/index.html#writing"
+          "link": "/index.html#writing",
+          "context_visual": "syrup-still-life",
+          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
         },
         {
           "id": "03",
@@ -344,7 +352,9 @@
           "visual": "scales",
           "narration": "Market-oversight texts worried about false measures and deception. They also remind us of a patient’s difficult position: the finished liquid could conceal much of what happened during its preparation.",
           "credit": "Interpretation of hisba literature; not a historical photograph or modern state regulation.",
-          "link": "/index.html#writing"
+          "link": "/index.html#writing",
+          "context_visual": "balance-still-life",
+          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
         },
         {
           "id": "08",
@@ -358,5 +368,63 @@
       ]
     }
   ],
-  "production_status": "Final screenplay and website integration verified; output produced automatically by GitHub Actions. Preserve all pre-existing film notebooks and original source records."
+  "production_status": "Final screenplay and website integration verified; output produced automatically by GitHub Actions. Preserve all pre-existing film notebooks and original source records.",
+  "visual_sources": [
+    {
+      "id": "wellcome-arabic-manuscript",
+      "asset": "wellcome-arabic-medical-manuscript-15c.webp",
+      "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/73a36a9b-26b7-4e39-926a-08e288d73d0b.jpg",
+      "source_url": "https://wellcomecollection.org/works/qgp6m763",
+      "credit": "Wellcome Collection, M0008126. 15th-century Arabic medical manuscript photograph; NOT a page of Minhāj al-dukkān or the Cairo Genizah prescription.",
+      "license": "Public Domain Mark",
+      "category": "contextual historical photograph",
+      "caption": "15th-century Arabic medical manuscript • comparative context, not the cited source",
+      "show_seconds": 4
+    },
+    {
+      "id": "syrup-still-life",
+      "asset": "syrup-editorial-reconstruction.webp",
+      "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/00617636-9415-4c53-868b-6060b4648bde.jpg",
+      "source_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/00617636-9415-4c53-868b-6060b4648bde.jpg",
+      "credit": "Original AI-assisted conceptual reconstruction commissioned for Ruwaidix. Syrup, vessels and shop setting are illustrative, not historical objects or verified practices.",
+      "license": "Original editorial AI-generated illustration",
+      "category": "AI-assisted editorial reconstruction",
+      "caption": "EDITORIAL RECONSTRUCTION • NOT A HISTORICAL PHOTOGRAPH",
+      "show_seconds": 9
+    },
+    {
+      "id": "balance-still-life",
+      "asset": "market-balance-editorial-reconstruction.webp",
+      "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/afe03214-9996-4017-8c1f-03c8c38ad838.jpg",
+      "source_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/afe03214-9996-4017-8c1f-03c8c38ad838.jpg",
+      "credit": "Original AI-assisted conceptual reconstruction commissioned for Ruwaidix; illustrated balance and botanicals are not identified medieval objects.",
+      "license": "Original editorial AI-generated illustration",
+      "category": "AI-assisted editorial reconstruction",
+      "caption": "EDITORIAL RECONSTRUCTION • NOT A HISTORICAL PHOTOGRAPH",
+      "show_seconds": 9
+    },
+    {
+      "id": "nih-alveoli",
+      "asset": "nih-niaid-alveoli-context.webp",
+      "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/d04eb043-de5d-454a-9e2f-46ae57eed9c1.png",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alveoli_(NIH_BioArt_14).png",
+      "credit": "NIAID / NIH BioArt #14 Alveoli. Public-domain anatomical illustration; unrelated to the experimental data of the pulmonary flow-chamber research.",
+      "license": "Public domain, U.S. federal government work; source attribution NIAID/NIH",
+      "category": "third-party anatomical reference",
+      "caption": "NIH ANATOMICAL ILLUSTRATION • NOT EXPERIMENTAL DATA",
+      "show_seconds": 5
+    },
+    {
+      "id": "generic-microtome",
+      "asset": "microtome-manas-context.webp",
+      "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/bcc98ec9-7ee3-499f-8835-f50223543e54.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Microtome-1.jpg",
+      "credit": "Photograph: Michal Maňas, Microtome-1.jpg, Wikimedia Commons, CC BY 4.0. Generic instrument photographed in 2005; NOT the microtome used in the user's failed zebrafish histology experiment. Cropped/resized for illustrative sequence.",
+      "license": "CC BY 4.0; attribution required",
+      "category": "third-party contemporary equipment photograph",
+      "caption": "GENERIC MICROTOME • CONTEXT PHOTO, NOT THE EXPERIMENT",
+      "show_seconds": 4
+    }
+  ],
+  "visual_sources_note": "Visual-source images are downloaded through an allowlisted source and locally snapshotted in assets/films/visual-sources as WebP. License and provenance travel with every film and image. Generated illustrative photographs are always labeled reconstructed. Public-domain historical comparators never masquerade as cited medieval folios or actual experiments."
 }
