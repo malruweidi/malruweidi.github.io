@@ -230,6 +230,79 @@ def recorded_speech(film, voice_dir):
         sounds.append(wav)
     return sounds,sr
 
+# The public/documentary renderer is not modified. All editorial techniques
+# here are confined to the reversible V2 film workroom.
+_original_make_clip=engine.make_clip
+
+def cinematic_photo_clip(item, image, video, frame, over, duration, out):
+    """Source-protective camera movement on genuine photographs only.
+
+    Figures, scientific plots, museum comparisons and microscope images never
+    receive a crop. Camera movement is explicitly directed for each film shot.
+    """
+    move=item.get("camera_move","lock")
+    if video or item.get("contain") or move=="lock":
+        return _original_make_clip(item,image,video,frame,over,duration,out)
+    if move not in {"slow-push","slow-pull","pan-left","pan-right","rise","settle"}:
+        raise ValueError("Unsupported editorial movement: "+str(move))
+    frames=int(round(duration*FPS))
+    if move=="slow-push":
+        zz="min(1.066,1.0+on*0.00017)"
+        xx="(iw-iw/zoom)*0.5"
+        yy="(ih-ih/zoom)*0.5"
+    elif move=="slow-pull":
+        zz="max(1.0,1.066-on*0.00017)"
+        xx="(iw-iw/zoom)*0.5"
+        yy="(ih-ih/zoom)*0.5"
+    else:
+        zz="1.052"
+        amount=f"on/{max(1,frames)}"
+        if move=="pan-left":
+            xx=f"(iw-iw/zoom)*(0.70-0.40*{amount})"
+            yy="(ih-ih/zoom)*0.5"
+        elif move=="pan-right":
+            xx=f"(iw-iw/zoom)*(0.30+0.40*{amount})"
+            yy="(ih-ih/zoom)*0.5"
+        elif move=="rise":
+            xx="(iw-iw/zoom)*0.5"
+            yy=f"(ih-ih/zoom)*(0.67-0.32*{amount})"
+        else:
+            xx="(iw-iw/zoom)*0.5"
+            yy=f"(ih-ih/zoom)*(0.34+0.32*{amount})"
+    motion=(f"[0:v]zoompan=z='{zz}':x='{xx}':y='{yy}':"
+            f"d=1:s={W}x{H}:fps={FPS},format=yuv420p[bg];"
+            "[bg][1:v]overlay=shortest=1,format=yuv420p[out]")
+    engine.command(["ffmpeg","-hide_banner","-loglevel","error","-y",
+        "-loop","1","-framerate",str(FPS),"-i",str(frame),
+        "-loop","1","-framerate",str(FPS),"-i",str(over),
+        "-filter_complex",motion,"-map","[out]",
+        "-r",str(FPS),"-frames:v",str(frames),"-an","-c:v","libx264",
+        "-preset","veryfast","-crf","22","-pix_fmt","yuv420p",
+        "-movflags","+faststart",str(out)])
+    return "directed archival photograph: "+move
+
+def synthesize_director_audition(items,workspace):
+    """Per-film audition casting, never a substitute for human voice direction."""
+    from kokoro_onnx import Kokoro
+    tts=Kokoro(str(workspace/"kokoro-v1.0.fp16.onnx"),
+               str(workspace/"voices-v1.0.bin"))
+    clips=[]
+    rate=None
+    for s in items:
+        voice=s.get("voice_preview","bm_george")
+        if voice not in ("bm_george","bm_lewis","am_michael","bf_emma"):
+            raise ValueError("Unknown review-only voice casting")
+        wave,sr=tts.create(s["narration"],voice=voice,speed=1.06,
+                           lang="en-us" if voice.startswith("am_") else "en-gb")
+        wave=np.asarray(wave,dtype=np.float32).flatten()
+        if not np.isfinite(wave).all():raise ValueError("Nonfinite audition speech")
+        if rate is not None and sr!=rate:raise ValueError("Voice sample rate mismatch")
+        rate=sr
+        clips.append(wave)
+        sf.write(str(workspace/("narration-"+s["id"]+".wav")),wave,sr)
+        print("Director audition",voice,"scene",s["id"],"seconds",round(len(wave)/sr,2))
+    return clips,rate
+
 def render(film, args):
     OUTPUT.mkdir(parents=True,exist_ok=True)
     engine.FILM=OUTPUT
@@ -237,10 +310,12 @@ def render(film, args):
     # Overrides affect only this isolated process, never public film scripts.
     engine.fit_image=fit_image
     engine.overlay=overlay
+    engine.make_clip=cinematic_photo_clip
+    engine.synthesize=synthesize_director_audition
     shots=[]
     for n, shot in enumerate(film["shots"],1):
         scientific = bool(re.search(r"figure|diagram|schematic|microscopy|published|manuscript|illustrat|model|concept", shot["kind"], re.I))
-        shots.append(dict(shot,id=f"{n:02d}",subtitle="",film_mode=film.get("mode","mechanism"),contain=scientific))
+        shots.append(dict(shot,id=f"{n:02d}",subtitle="",film_mode=film.get("mode","mechanism"),contain=scientific,voice_preview=film.get("voice_preview","bm_george")))
     with tempfile.TemporaryDirectory(prefix="ruwaidix-v2-") as tmp:
         work=Path(tmp)
         if args.voice_mode=="human":
@@ -294,6 +369,8 @@ def render(film, args):
            captions(film,[len(v)/sr for v in voice]),encoding="utf-8")
         record={"slug":film["slug"],"status":"UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
                 "duration":seconds,"voice_mode":args.voice_mode,
+                "director_audition_voice":film.get("voice_preview","bm_george"),
+                "director_ledger":"assets/films/directors-ledger-v3.json",
                 "voice_approved":False,"sound_mix_approved":False,
                 "source_rights_approved":False,"continuous_playback_approved":False,
                 "sha256":hashlib.sha256(destination.read_bytes()).hexdigest(),"shots":sources}
