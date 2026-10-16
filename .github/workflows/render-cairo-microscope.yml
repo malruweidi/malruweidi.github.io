@@ -1,0 +1,70 @@
+name: Render Cairo microscope archival film
+on:
+  push:
+    branches: [main]
+    paths:
+      - assets/films/cairo-microscope-scenes.json
+      - scripts/render-cairo-microscope.py
+      - .github/workflows/render-cairo-microscope.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ruwaidix-cairo-microscope-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  documentary:
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[cairo-film-output]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - name: Retain existing source archive
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - name: Set up rendering environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free open-source film tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install pillow numpy soundfile
+      - name: Validate all archive sources and exactly 120 seconds
+        run: |
+          python -m py_compile scripts/render-cairo-microscope.py
+          python scripts/render-cairo-microscope.py --validate-only
+      - name: Render editorial essay with instrumental score and subtitles
+        run: python scripts/render-cairo-microscope.py
+      - name: Confirm actual film binary and reproducible source hashes
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          f=Path("assets/films/cairo-microscope.mp4")
+          meta=json.loads(Path("assets/films/cairo-microscope-build.json").read_text())
+          assert f.stat().st_size > 1_000_000
+          assert f.open("rb").read(8)[4:8] == b"ftyp"
+          assert meta["video_sha256"]==hashlib.sha256(f.read_bytes()).hexdigest()
+          assert abs(float(meta["seconds"])-120)<.15
+          assert meta["scene_count"]==9
+          assert len(meta["source_photo_sha256"])>=2
+          for source,digest in meta["source_photo_sha256"].items():
+              assert hashlib.sha256(Path(source).read_bytes()).hexdigest()==digest
+          vtt=Path("assets/films/cairo-microscope.vtt").read_text()
+          assert vtt.startswith("WEBVTT")
+          assert vtt.count("-->")>=9
+          print("Validated 120-second film",f.stat().st_size,"bytes")
+          PY
+      - name: Publish new film and proof only
+        run: |
+          git config user.name "Ruwaidix Film Builder"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/cairo-microscope.mp4 assets/films/cairo-microscope.vtt assets/films/cairo-microscope-build.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish photographic Cairo microscope film [cairo-film-output]"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase FETCH_HEAD
+            git push origin HEAD:${{ github.ref_name }}
+          fi
