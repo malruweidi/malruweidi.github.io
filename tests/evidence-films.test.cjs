@@ -51,7 +51,7 @@ test("the production workflow and four original editorial pages actually exist",
   for(const film of films){
     const page=load("films/"+film.slug+".html");
     assert.ok(page.includes(film.title),film.slug);
-    assert.ok(page.includes("assets/films/"+film.slug+".mp4"),film.slug);
+    assert.ok(page.includes("assets/films/"+(film.media_stem||film.slug)+".mp4"),film.slug);
     for(const s of film.scenes)assert.ok(page.includes(s.narration),film.slug+" scene "+s.id);
   }
   for(const page of ["research/pulmonary-epithelial-injury.html","stories/failed-zebrafish-histology.html","chem-squad.html"]){
