@@ -150,3 +150,54 @@ test('all documentary scene credits are inspectable on the film collection', () 
     }
   }
 });
+
+
+test('completed documentary releases preserve video hashes, timed captions and scene provenance', () => {
+  const crypto = require('node:crypto');
+  const directory = file('assets/films/series');
+  const entries = fs.readdirSync(directory);
+  const stems = entries.filter(x => x.endsWith('.mp4')).map(x => x.slice(0, -4));
+  const catalogIds = new Set(catalog.items.map(x => x.id));
+  assert.ok(stems.length >= 14, 'keep existing completed films');
+  for (const stem of stems) {
+    assert.ok(catalogIds.has(stem), stem + ': orphan release');
+    const videoPath = path.join(directory, stem + '.mp4');
+    const captionPath = path.join(directory, stem + '.vtt');
+    const manifestPath = path.join(directory, stem + '.json');
+    assert.ok(fs.existsSync(captionPath), stem + ': captions missing');
+    assert.ok(fs.existsSync(manifestPath), stem + ': provenance manifest missing');
+    const buffer = fs.readFileSync(videoPath);
+    assert.ok(buffer.length > 100000, stem + ': incomplete MP4');
+    assert.equal(buffer.subarray(4, 8).toString(), 'ftyp', stem + ': MP4 container');
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+    assert.equal(manifest.id, stem);
+    assert.equal(manifest.sha256, crypto.createHash('sha256').update(buffer).digest('hex'), stem + ': altered film');
+    assert.ok(Math.abs(manifest.seconds - 84) < 0.3, stem + ': duration');
+    const record = catalog.items.find(x => x.id === stem);
+    assert.deepEqual(manifest.image_classes, record.scenes.map(x => x.kind), stem + ': scene classifications');
+    assert.equal(manifest.scene_provenance?.length, record.scenes.length, stem + ': visual evidence record');
+    for (let i = 0; i < record.scenes.length; i++) {
+      assert.equal(manifest.scene_provenance[i].image, record.scenes[i].image, stem + ': image provenance');
+      assert.equal(manifest.scene_provenance[i].source, record.scenes[i].link, stem + ': source provenance');
+    }
+    const subtitles = fs.readFileSync(captionPath, 'utf8');
+    assert.match(subtitles, /^WEBVTT\s*\n/, stem + ': subtitle header');
+    const stamps = [...subtitles.matchAll(/(\d\d):(\d\d):(\d\d)\.(\d{3}) --> (\d\d):(\d\d):(\d\d)\.(\d{3})/g)]
+      .map(m => {
+        const n = m.slice(1).map(Number);
+        return [n[0]*3600 + n[1]*60 + n[2] + n[3]/1000,
+                n[4]*3600 + n[5]*60 + n[6] + n[7]/1000];
+      });
+    assert.equal(stamps.length, record.scenes.length * 2, stem + ': subtitle coverage');
+    for (let i = 0; i < stamps.length; i++) {
+      assert.ok(stamps[i][0] < stamps[i][1], stem + ': negative subtitle interval');
+      assert.ok(stamps[i][1] <= 84.25, stem + ': subtitles exceed film');
+      if (i > 0) assert.ok(stamps[i][0] >= stamps[i-1][1] - .05, stem + ': captions overlap');
+    }
+  }
+  for (const suffix of ['.vtt', '.json']) {
+    for (const name of entries.filter(x => x.endsWith(suffix))) {
+      assert.ok(stems.includes(name.slice(0, -suffix.length)), name + ': orphan metadata');
+    }
+  }
+});
