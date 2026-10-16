@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "20b29ca370d0c66f1a6b1bf61075a720388eab38baef0ccd65a855034d28a599",
+  "sha256": "ac5517f581ed6577e90216643b01ca0bc3e6dc488f74dd8b06a16af4c852f4ce",
   "shots": [
     {
       "title": "The section that never existed",
@@ -39,10 +39,10 @@
     },
     {
       "title": "The material boundary",
-      "kind": "explanatory schematic",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
       "image": "assets/films/plates/two-materials-no-section-05.webp",
       "museum": null,
-      "credit": "Editorial explanation; original context archive"
+      "credit": "Editorial explanation; original context archive. Animation: Original mechanism hypothesis based on observed block separation; does not claim that polymer interface chemistry or failure mechanism was proven. Mechanism illustration, not recorded sectioning evidence."
     },
     {
       "title": "The block came apart",
@@ -88,6 +88,14 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "motion_shots": [],
-  "input_sha256": "dbad2f77bca0b8facecabcfe3e671f75e87043119292e51dedbaa4e9ba54cddb"
+  "motion_shots": [
+    {
+      "scene": 5,
+      "video": "assets/films/motion-v2/histology-interface.mp4",
+      "credit": "Editorial explanation; original context archive. Animation: Original mechanism hypothesis based on observed block separation; does not claim that polymer interface chemistry or failure mechanism was proven. Mechanism illustration, not recorded sectioning evidence.",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "source_sha256": "d691649b5e984fdfd8c72a811ce3e1ec178a412b9c1c89acf03eabbbd0139758"
+    }
+  ],
+  "input_sha256": "c5ecb7cf4dfff7e70da2b5a3dfd32f3a149a44d0d976fc8984f9eeac9bff66fd"
 }
