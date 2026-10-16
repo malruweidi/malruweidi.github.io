@@ -1,7 +1,7 @@
 {
   "title": "What Survives the Experiment",
   "seconds": 120.0,
-  "video_sha256": "8fb7cf273f46886e079e58e9a9a64bd849e247871021631cc3557b0c36a83929",
+  "video_sha256": "6b6550bb5fa3c514db4f1d0c224231b932675d4e7f9936d4d4ef8d0040203778",
   "clip_sources": [
     "archival still",
     "archival still",
@@ -16,7 +16,9 @@
     "archival still",
     "archival still"
   ],
-  "audio_engine": "kokoro-onnx bm_george; original generated ambient bed",
+  "motion_shots": 4,
+  "sound_design": "original four-movement harmonic score; speech-ducked; normalized to -18 LUFS target",
+  "audio_engine": "kokoro-onnx bm_george; original synthesised score",
   "script_source": "assets/films/what-survives-scenes.json",
   "provenance": "Linked original media; no synthetic scientific evidence"
 }
