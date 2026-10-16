@@ -1,0 +1,12 @@
+{
+  "name": "airway-interface",
+  "duration": 16,
+  "frame_rate": 24,
+  "size": [
+    1280,
+    720
+  ],
+  "evidence_status": "ORIGINAL CONCEPTUAL ANIMATION; NOT EXPERIMENTAL FOOTAGE",
+  "source": "scripts/render-science-motion-v2.py",
+  "sha256": "bc80c5efd0fc8b45e238346fcdbbf6320cdd039e2bf213efd10a46a234da453f"
+}
