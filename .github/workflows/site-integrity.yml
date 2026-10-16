@@ -33,6 +33,8 @@ jobs:
         run: node --test tests/airway-evidence-cut.test.cjs
       - name: Check editorial wayfinding and chapter preservation
         run: node --test tests/editorial-wayfinding.test.mjs
+      - name: Re-audit editorial prose and preserved scientific provenance
+        run: node --test tests/editorial-voice.test.mjs
       - name: Test lossless standalone stories and research dossiers
         run: node --test tests/deep-reading.test.mjs
       - name: Validate UREP23 research story, preserved chapters and bilingual discovery
