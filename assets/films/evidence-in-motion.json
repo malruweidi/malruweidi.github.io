@@ -301,22 +301,26 @@
         {
           "id": "02",
           "title": "The base and the form",
-          "kind": "ORIGINAL EDITORIAL ILLUSTRATION",
+          "kind": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
           "visual": "syrup",
           "narration": "A thirteenth-century manual, Minhāj al-dukkān, begins its syrup chapter with julāb: a base of sugar and rose water. Fruit or medicinal material gave the syrup its particular form.",
-          "credit": "Conceptual illustration; period text attributed to al-Kūhīn al-ʿAṭṭār. Avoid invented script.",
+          "credit": "Original AI-assisted 2026 historical reconstruction. Not original photography, not evidence of this specific recipe or a medieval vessel. Conceptual illustration; period text attributed to al-Kūhīn al-ʿAṭṭār. Avoid invented script.",
           "link": "/index.html#writing",
           "context_visual": "syrup-still-life",
-          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
+          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence.",
+          "editorial_image": "/assets/films/illustrations/julep-pour.jpg",
+          "visual_source_id": "julep-pour"
         },
         {
           "id": "03",
           "title": "Qiwām",
-          "kind": "ORIGINAL EDITORIAL DIAGRAM",
+          "kind": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
           "visual": "syrup",
           "narration": "The work involved heating, removing foam, straining, and recognizing when the liquid had reached qiwām: an achieved consistency. This was a practical endpoint, not a number on a laboratory instrument.",
-          "credit": "Explanatory interpretation of the historical described process; not a laboratory measurement.",
-          "link": "/index.html#writing"
+          "credit": "Original AI-assisted 2026 reconstruction illustrating heating, skimming, and straining; not a recorded medieval experiment. Explanatory interpretation of the historical described process; not a laboratory measurement.",
+          "link": "/index.html#writing",
+          "editorial_image": "/assets/films/illustrations/syrup-preparation.jpg",
+          "visual_source_id": "syrup-preparation"
         },
         {
           "id": "04",
@@ -348,13 +352,15 @@
         {
           "id": "07",
           "title": "Can a finished medicine be trusted?",
-          "kind": "ORIGINAL EDITORIAL ILLUSTRATION",
+          "kind": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
           "visual": "scales",
           "narration": "Market-oversight texts worried about false measures and deception. They also remind us of a patient’s difficult position: the finished liquid could conceal much of what happened during its preparation.",
-          "credit": "Interpretation of hisba literature; not a historical photograph or modern state regulation.",
+          "credit": "Original AI-assisted 2026 reconstruction interpreting the material culture of market oversight. Not a verified historic Cairo shop. Interpretation of hisba literature; not a historical photograph or modern state regulation.",
           "link": "/index.html#writing",
           "context_visual": "balance-still-life",
-          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
+          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence.",
+          "editorial_image": "/assets/films/illustrations/apothecary-weights.jpg",
+          "visual_source_id": "apothecary-weights"
         },
         {
           "id": "08",
@@ -426,5 +432,7 @@
       "show_seconds": 4
     }
   ],
-  "visual_sources_note": "Visual-source images are downloaded through an allowlisted source and locally snapshotted in assets/films/visual-sources as WebP. License and provenance travel with every film and image. Generated illustrative photographs are always labeled reconstructed. Public-domain historical comparators never masquerade as cited medieval folios or actual experiments."
+  "visual_sources_note": "Visual-source images are downloaded through an allowlisted source and locally snapshotted in assets/films/visual-sources as WebP. License and provenance travel with every film and image. Generated illustrative photographs are always labeled reconstructed. Public-domain historical comparators never masquerade as cited medieval folios or actual experiments.",
+  "visual_source_register": "assets/films/visual-source-register.json",
+  "visual_storytelling_note": "Photographic renderings are narrative illustration, not evidence. Bibliographic and real microscopy/owner archives remain visibly distinct. A comparative 15th-c manuscript appears only in contextual source gallery, not misrepresented as the cited Cairo Genizah folio."
 }
