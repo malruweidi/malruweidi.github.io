@@ -5148,7 +5148,8 @@
           "credit": "Personal photographic archive; school anatomy lesson, 2011",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 8,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "02",
@@ -5159,7 +5160,8 @@
           "credit": "Personal microscope and archival photograph",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 15
+          "sec": 9,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "03",
@@ -5171,7 +5173,8 @@
           "narrative_role": "source_interpretation",
           "video": "assets/research-archive-2026/laboratory-vacuum-pump-archival-clip.mp4",
           "source_audio": "authorised archive only",
-          "sec": 15
+          "sec": 11,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "04",
@@ -5182,7 +5185,8 @@
           "credit": "Published scientific figure from the research record; attribution in the Figures archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 9,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "05",
@@ -5193,8 +5197,9 @@
           "credit": "Photographic archive: encounter with Professor Elmostafa El-Sayed and colleagues, 2017",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 10,
-          "voice_timing_adjustment": "Shortened for audible breathing room; no original research chapter removed"
+          "sec": 8,
+          "voice_timing_adjustment": "Shortened for audible breathing room; no original research chapter removed",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "06",
@@ -5205,7 +5210,8 @@
           "credit": "Original record of unsuccessful polymer trials; no successful dissolution is claimed",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 16
+          "sec": 10,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "07",
@@ -5216,7 +5222,8 @@
           "credit": "Original zebrafish cardiovascular microscopy; not direct evidence of every claim in the narration",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 10,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "08",
@@ -5227,7 +5234,8 @@
           "credit": "Original unsuccessful zebrafish histology attempt",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14
+          "sec": 12,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "09",
@@ -5238,7 +5246,8 @@
           "credit": "Published flow-chamber research figure; controlled epithelial injury, not clinical evidence",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 15
+          "sec": 9,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "10",
@@ -5249,7 +5258,8 @@
           "credit": "Published materials-research imagery; source and figure context in the research record",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13
+          "sec": 11,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "11",
@@ -5260,8 +5270,9 @@
           "credit": "Pulmonary research-context illustration; ongoing thesis, not a claim of demonstrated clinical delivery",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11,
-          "voice_timing_adjustment": "Shortened for audible breathing room; no original research chapter removed"
+          "sec": 9,
+          "voice_timing_adjustment": "Shortened for audible breathing room; no original research chapter removed",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "12",
@@ -5272,7 +5283,8 @@
           "credit": "Contemporary portrait and editorial typography; not a historical manuscript facsimile",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 17
+          "sec": 14,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         }
       ],
       "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results.",
@@ -5419,8 +5431,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 13,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "02",
@@ -5431,8 +5444,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "03",
@@ -5443,8 +5457,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 10,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "04",
@@ -5456,7 +5471,8 @@
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
           "sec": 12,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "05",
@@ -5468,7 +5484,8 @@
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
           "sec": 12,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "06",
@@ -5479,8 +5496,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 13,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "07",
@@ -5491,8 +5509,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 15,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 14,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "08",
@@ -5503,8 +5522,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "09",
@@ -5515,8 +5535,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "10",
@@ -5527,8 +5548,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 13,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 11,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         }
       ],
       "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results.",
@@ -5554,8 +5576,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 14,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "02",
@@ -5566,8 +5589,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 15,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 12,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "03",
@@ -5578,8 +5602,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 11,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "04",
@@ -5590,8 +5615,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 11,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "05",
@@ -5602,8 +5628,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 10,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "06",
@@ -5614,8 +5641,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 11,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "07",
@@ -5626,8 +5654,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 10,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "08",
@@ -5638,8 +5667,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 11,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "09",
@@ -5650,8 +5680,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 9,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "10",
@@ -5663,7 +5694,8 @@
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
           "sec": 12,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "11",
@@ -5674,8 +5706,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 13,
-          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
+          "sec": 11,
+          "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         }
       ],
       "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results.",
@@ -5701,7 +5734,8 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 16
+          "sec": 11,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "02",
@@ -5712,7 +5746,8 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 17
+          "sec": 12,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "03",
@@ -5723,7 +5758,8 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 16
+          "sec": 12,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "04",
@@ -5734,7 +5770,8 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 16
+          "sec": 13,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "05",
@@ -5745,7 +5782,8 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13
+          "sec": 11,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "06",
@@ -5756,7 +5794,8 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 16
+          "sec": 15,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "07",
@@ -5767,7 +5806,8 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 16
+          "sec": 13,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "08",
@@ -5778,7 +5818,8 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 16
+          "sec": 12,
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "09",
@@ -5789,8 +5830,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13,
-          "voice_timing_adjustment": "Shortened to keep adequate human speaking pauses"
+          "sec": 10,
+          "voice_timing_adjustment": "Shortened to keep adequate human speaking pauses",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         },
         {
           "id": "10",
@@ -5801,8 +5843,9 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 13,
-          "voice_timing_adjustment": "Shortened without changing outcome"
+          "sec": 11,
+          "voice_timing_adjustment": "Shortened without changing outcome",
+          "timing_review": "Actual narrator waveform measured; scene retains at least 0.62 s after speech."
         }
       ],
       "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results.",
