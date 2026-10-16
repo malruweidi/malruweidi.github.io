@@ -54,6 +54,8 @@ jobs:
           test "$(stat -c%s film-models/voices-v1.0.bin)" -gt 1000000
       - name: Render factual scientific documentary chapters
         run: python scripts/render-publication-series.py --models film-models --missing-only --limit 3
+      - name: Reconcile scene-by-scene evidence labels in release manifests
+        run: python scripts/render-publication-series.py --reconcile-manifests
       - name: Check MP4 streams, subtitles and publication references
         run: |
           python scripts/render-publication-series.py --validate-only
