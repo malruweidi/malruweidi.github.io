@@ -1,0 +1,61 @@
+{
+  "version": "2026-10-17",
+  "ethics": "Visuals are contextual reconstructions or transparently credited historical comparators. Neither owner-supplied research data nor the Cairo Genizah Or.1081 J39 folio is replaced or falsely illustrated. Permission-restricted Genizah scans remain excluded.",
+  "assets": [
+    {
+      "id": "julep-pour",
+      "path": "assets/films/illustrations/julep-pour.jpg",
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/images/00617636-9415-4c53-868b-6060b4648bde.jpg",
+      "type": "AI-generated editorial reconstruction",
+      "topic": "Sugar and rose-water syrup in ceramic vessels",
+      "visual_description": "Amber syrup pouring onto a clay workbench as a visual interpretation of a syrup base, not an original historical artifact",
+      "license": "Created for the Ruwaidix historical documentary, 2026",
+      "credit": "Original AI-assisted editorial illustration for Ruwaidix. Conceptual scene; not period photography.",
+      "scene": [
+        "making-medicines-keep/02"
+      ]
+    },
+    {
+      "id": "syrup-preparation",
+      "path": "assets/films/illustrations/syrup-preparation.jpg",
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/images/21a0fdee-6e4f-42be-86c9-d86a346ba74d.jpg",
+      "type": "AI-generated editorial reconstruction",
+      "topic": "Skimming syrup and straining it over a worktable",
+      "visual_description": "Copper heating vessel, ladle, cloth, and rose petals to explain historical syrup-making actions; reconstruction, not primary evidence",
+      "license": "Created for the Ruwaidix historical documentary, 2026",
+      "credit": "Original AI-assisted editorial illustration for Ruwaidix. Historical process reconstruction, not actual medieval footage.",
+      "scene": [
+        "making-medicines-keep/03"
+      ]
+    },
+    {
+      "id": "apothecary-weights",
+      "path": "assets/films/illustrations/apothecary-weights.jpg",
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/images/afe03214-9996-4017-8c1f-03c8c38ad838.jpg",
+      "type": "AI-generated editorial reconstruction",
+      "topic": "Apothecary scales, botanicals, powders and sealed syrups",
+      "visual_description": "Conceptual still-life for the distinction between substitution and concealed adulteration; not a photographed Cairo shop",
+      "license": "Created for the Ruwaidix historical documentary, 2026",
+      "credit": "Original AI-assisted editorial illustration for Ruwaidix. Imagined material culture, not a surviving historical object.",
+      "scene": [
+        "making-medicines-keep/06",
+        "making-medicines-keep/07"
+      ]
+    },
+    {
+      "id": "comparative-wellcome-medical-ms",
+      "path": "assets/films/illustrations/wellcome-arabic-medicine-15c.jpg",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/15th_C_Arabic_Manuscript_on_Medicine_Wellcome_M0008126.jpg?width=960",
+      "type": "historical comparative image",
+      "topic": "Fifteenth-century Arabic medicine manuscript photo from Vienna, Wellcome M0008126",
+      "visual_description": "A photograph of a manuscript from Vienna, fifteenth-century, used as comparative visual context; NOT Minhaj al-dukkan, NOT Cairo Genizah Or.1081 J39, NOT provenance proof of the paper's claims.",
+      "license": "CC BY 4.0 per Wikimedia Commons file record; Wellcome Collection presents the same item with Public Domain Mark. Credit retained conservatively.",
+      "source_page": "https://wellcomecollection.org/works/qgp6m763",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "credit": "Wellcome Collection, M0008126, fifteenth-century Arabic medicine manuscript photographed in Vienna. Comparative example only. Wikimedia Commons: CC BY 4.0.",
+      "scene": [
+        "making-medicines-keep / companion source gallery"
+      ]
+    }
+  ]
+}
