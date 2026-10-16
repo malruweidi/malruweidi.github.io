@@ -108,3 +108,19 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
   script.defer = true;
   document.head.appendChild(script);
 })();
+
+/* Owner-archive 16 Oct 2026: add verified archival stills and film clips without replacing existing content. */
+(() => {
+  const page = document.documentElement.dataset.rxPage || (location.pathname.split('/').pop() || '').replace('.html','');
+  if (!['archive','stories','chem-squad','techniques'].includes(page)) return;
+  if (document.querySelector('script[data-rx-hours-2026]')) return;
+  const style = document.createElement('link');
+  style.rel = 'stylesheet';
+  style.href = '/assets/after-hours-archive-2026.css?v=20261016';
+  document.head.appendChild(style);
+  const script = document.createElement('script');
+  script.src = '/assets/after-hours-archive-2026.js?v=20261016';
+  script.defer = true;
+  script.dataset.rxHours2026 = '';
+  document.head.appendChild(script);
+})();
