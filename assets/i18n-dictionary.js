@@ -1117,3 +1117,14 @@ Object.assign(window.RuwaidixArabicDictionary, {
 });
 
 Object.assign(window.RuwaidixArabicDictionary, {"Chem Squad,":"فريق الكيمياء،","since 2016.":"منذ عام ٢٠١٦."});
+
+/* Full-record archival paragraphs revised after editorial read-through. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "My work moved through chemistry, materials, imaging and pharmaceutics as each set of experiments raised questions that the previous methods could not answer.": "انتقل عملي بين الكيمياء والمواد والتصوير العلمي والعلوم الصيدلانية، كلما قادتني التجارب إلى أسئلة تحتاج إلى أدوات لا توفرها المرحلة السابقة.",
+  "Families affected by eosinophilic diseases need reliable information, specialist care and continued research. The four organizations linked below work in this area, and their official pages provide ways to support that work directly.": "تحتاج الأسر المتأثرة بالأمراض اليوزينية إلى معلومات موثوقة ورعاية تخصصية وبحوث مستمرة. تعمل المؤسسات الأربع المرتبطة أدناه في هذا المجال، وتتيح مواقعها الرسمية سبلًا لدعم أنشطتها مباشرة.",
+  "I am interested in collaborating with researchers and patient organizations on evidence-based writing and research communication about eosinophilic and related inflammatory diseases.": "أرغب في التعاون مع الباحثين ومؤسسات المرضى في الكتابة المستندة إلى الأدلة والتواصل العلمي حول الأمراض اليوزينية والاضطرابات الالتهابية المرتبطة بها.",
+  "One network following these diseases is the": "من الشبكات البحثية التي تتابع هذه الأمراض",
+  ", which connects clinical and laboratory research on eosinophilic gastrointestinal diseases.": "، وهي تصل بين الأبحاث السريرية والمختبرية المتعلقة بأمراض الجهاز الهضمي اليوزينية.",
+  "The case studies below describe the research question, methods, available evidence and my contribution to each project.": "تشرح دراسات الحالة أدناه السؤال البحثي والمنهجيات والأدلة المتاحة ومساهمتي في كل مشروع.",
+  "I helped establish Qatar University's American Chemical Society student chapter in 2015. We organized lectures, laboratory training and public chemistry events, and worked to help students participate in international scientific meetings. The chapter gave us a place to learn from each other and bring other students into chemistry.": "ساهمت في تأسيس الفرع الطلابي للجمعية الكيميائية الأمريكية في جامعة قطر عام ٢٠١٥. نظمنا محاضرات وتدريبًا مختبريًا وفعاليات للكيمياء للجمهور، وعملنا على إتاحة المشاركة للطلاب في اللقاءات العلمية الدولية. أتاح لنا الفرع التعلم معًا وإشراك طلاب آخرين في الكيمياء."
+});
