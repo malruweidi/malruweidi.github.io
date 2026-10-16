@@ -140,6 +140,8 @@ def main():
             "input_sha256":input_digest(film)
         })
         result.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+        stale=OUT/(film["slug"]+"-blocked.json")
+        if stale.exists():stale.unlink()  # A verified export supersedes its earlier blocked attempt
         # A corrected render supersedes the previous failure marker.
         (OUT/(film["slug"]+"-blocked.json")).unlink(missing_ok=True)
       except Exception as exc:
