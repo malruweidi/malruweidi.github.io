@@ -37,6 +37,7 @@ jobs:
           node --test tests/directors-cuts.test.cjs tests/cinematic-library-v2.test.cjs
           python -m py_compile scripts/render-documentary.py scripts/render-directors-cuts.py scripts/render-cinematic-library.py
           python scripts/render-cinematic-library.py --validate-only
+          python scripts/audit-v2-science-art.py
 
   film-render:
     needs: source-validate
