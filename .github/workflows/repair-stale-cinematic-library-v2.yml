@@ -10,6 +10,7 @@ on:
 permissions:
   contents: write
 
+# Single automatic digest reconciler. Other bulk / feature renderers are manual-only.
 # Only one workflow writing film MP4s may be active on the branch.
 concurrency:
   group: ruwaidix-cinema-library-v2

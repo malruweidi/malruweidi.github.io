@@ -1,15 +1,5 @@
 name: Rebuild all Ruwaidix films — unapproved cinematic editions
 on:
-  push:
-    branches:
-      - cinematic-remake-20261017
-    paths:
-      - assets/films/cinematic-library-v2.json
-      - assets/films/publication-series-directors-v2.json
-      - scripts/render-cinematic-library.py
-      - scripts/render-directors-cuts.py
-      - tests/cinematic-library-v2.test.cjs
-      - .github/workflows/cinematic-library-v2.yml
   workflow_dispatch:
 
 permissions:

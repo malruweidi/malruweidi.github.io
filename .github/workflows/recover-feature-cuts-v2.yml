@@ -1,11 +1,5 @@
 name: Reconcile all four source-timed feature documentaries
 on:
-  push:
-    branches:
-      - cinematic-remake-20261017
-    paths:
-      - .github/workflows/recover-feature-cuts-v2.yml
-      - assets/films/cinematic-library-v2.json
   workflow_dispatch:
 permissions:
   contents: write
