@@ -5768,24 +5768,26 @@
         {
           "id": "09",
           "title": "What a future test might ask",
-          "narration": "A future comparison could examine agarose grade, concentration and processing conditions, then measure block integrity during sectioning. Those are proposals, not completed experiments.",
+          "narration": "A future test could vary the agarose grade and processing conditions, then check whether the block sections intact.",
           "image": "assets/films/plates/two-materials-no-section-08.webp",
           "kind": "explanatory schematic",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 12,
+          "voice_timing_adjustment": "Shortened to keep adequate human speaking pauses"
         },
         {
           "id": "10",
           "title": "No section. An intact record.",
-          "narration": "No section came off the blade. What survives is an accurate account of the failure and the process a future experiment must change.",
+          "narration": "No usable section emerged. I kept the fragments and photographs so the next experiment begins with what failed.",
           "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
           "kind": "archival photograph",
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 12,
+          "voice_timing_adjustment": "Shortened without changing outcome"
         }
       ],
       "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
