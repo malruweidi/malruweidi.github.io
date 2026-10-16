@@ -4,6 +4,16 @@
   "use strict";
   var d = window.RuwaidixArabicDictionary || (window.RuwaidixArabicDictionary = {});
   Object.assign(d, {
+    "Watch the film": "شاهد الفيلم",
+    "Featured film / 00:55": "فيلم مختار / ٠٠:٥٥",
+    "From molecules to": "من الجزيئات إلى",
+    "living systems.": "الأنظمة الحية.",
+    "A short film from my research archive: early chemistry, microscopy, developing vessels, laboratory setbacks and the questions that led me toward pharmaceutical science.": "فيلم قصير من أرشيفي البحثي: البدايات في الكيمياء، والتصوير المجهري، والأوعية الدموية النامية، والتجارب التي تعثرت، والأسئلة التي قادتني إلى العلوم الصيدلانية.",
+    "Original archive imagery · English narration · 2026": "صور أصلية من الأرشيف · تعليق صوتي بالإنجليزية · ٢٠٢٦",
+    "From Molecules to Living Systems · 54.8 seconds": "من الجزيئات إلى الأنظمة الحية · ٥٤٫٨ ثانية",
+    "Open the film on HeyGen ↗": "افتح الفيلم على HeyGen ↗",
+    "From Molecules to Living Systems, a 55-second documentary about Mahmoud Al-Ruweidi's research": "من الجزيئات إلى الأنظمة الحية، فيلم وثائقي مدته ٥٥ ثانية عن أبحاث محمود الرويدي",
+    "Your browser cannot play this video. You can watch it at HeyGen using the link below.": "المتصفح لا يدعم تشغيل هذا الفيديو. يمكنك مشاهدته عبر HeyGen من الرابط أدناه.",
     "For researchers & collaborators":"للباحثين والمتعاونين",
     "Go straight to the record.":"اذهب مباشرة إلى السجل العلمي.",
     "Academic evidence and research resources":"الأدلة العلمية ومصادر البحث",
