@@ -1115,3 +1115,5 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Pipettes and a benchtop centrifuge inside a laboratory hood.": "ماصات وجهاز طرد مركزي صغير داخل خزانة عمل مخبرية.",
   "The older photo galleries and research recordings continue below, with their dates and source details.": "تستمر أدناه معارض الصور القديمة وتسجيلات البحث، مع التواريخ وتفاصيل المصادر."
 });
+
+Object.assign(window.RuwaidixArabicDictionary, {"Chem Squad,":"فريق الكيمياء،","since 2016.":"منذ عام ٢٠١٦."});
