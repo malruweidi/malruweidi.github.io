@@ -5175,13 +5175,14 @@
         {
           "id": "05",
           "title": "Learning in company",
-          "narration": "We founded an ACS student chapter and arranged instrumentation training for twenty-nine students. Watching people brought unexpected questions.",
+          "narration": "We founded an ACS student chapter. Twenty-nine students trained on instruments through chapter activities.",
           "image": "assets/2017-acs-el-sayed-group.webp",
           "kind": "photograph",
           "credit": "Photographic archive: encounter with Professor Elmostafa El-Sayed and colleagues, 2017",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 10,
+          "voice_timing_adjustment": "Shortened for audible breathing room; no original research chapter removed"
         },
         {
           "id": "06",
@@ -5241,13 +5242,14 @@
         {
           "id": "11",
           "title": "Reaching the lung",
-          "narration": "With inhaled dexamethasone vesicles, the test begins before lung deposition. What does the carrier survive during nebulization?",
+          "narration": "My inhaled dexamethasone project asks whether vesicles can survive nebulization before reaching the lung.",
           "image": "assets/evidence-pulmonary.webp",
           "kind": "context illustration",
           "credit": "Pulmonary research-context illustration; ongoing thesis, not a claim of demonstrated clinical delivery",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 8
+          "sec": 8,
+          "voice_timing_adjustment": "Shortened for audible breathing room; no original research chapter removed"
         },
         {
           "id": "12",
