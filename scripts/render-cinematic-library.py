@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""Authoritative 44-film Ruwaidix V2 batch renderer. No production publication.
+
+This program reads source-preserving evidence manifests and writes exclusively to
+assets/films/library-v2/. No existing film route, MP4, caption or photograph is modified.
+Synthetic speech is only a listening audition; *never* auto-approve film quality.
+"""
+import argparse
+import importlib.util
+import json
+import re
+import sys
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+SOURCE=ROOT/"assets/films/cinematic-library-v2.json"
+OUT=ROOT/"assets/films/library-v2"
+STUDIO=ROOT/"scripts/render-directors-cuts.py"
+
+spec=importlib.util.spec_from_file_location("ruwaidix_directors_studio",STUDIO)
+studio=importlib.util.module_from_spec(spec)
+spec.loader.exec_module(studio)
+
+def load():
+    d=json.loads(SOURCE.read_text(encoding="utf-8"))
+    if d.get("version")!="CINEMATIC_LIBRARY_V2" or "UNAPPROVED" not in d.get("status",""):
+        raise ValueError("Only explicitly unapproved V2 source manifests can be rendered")
+    films=d["films"]
+    if len(films)!=44 or len({x["slug"] for x in films})!=44:
+        raise ValueError("Film archive must contain 44 unique previously made titles")
+    if sum(x["slug"].startswith("pub-") for x in films)!=35:
+        raise ValueError("Publication catalogue must retain all 35 revised movie scripts")
+    for f in films:
+        if f["output_collection"] not in ("feature","publication"):
+            raise ValueError("Unknown output collection")
+        if not re.fullmatch(r"[a-z0-9-]+",f["slug"]):raise ValueError("Invalid film slug")
+        shots=f["shots"]
+        if len(shots)<8 or len(shots)>12:
+            raise ValueError("Unexpected film scene count: "+f["slug"])
+        total=sum(int(s.get("sec",0)) for s in shots)
+        if total<120 or total>168:
+            raise ValueError("Every film must be 120–168 seconds: "+f["slug"])
+        for number,shot in enumerate(shots,1):
+            if int(shot.get("sec",0))<7 or not shot.get("narration") or not shot.get("credit"):
+                raise ValueError(f"{f['slug']} scene {number} lacks essential information")
+            if len(shot["narration"].split())/int(shot["sec"])>2.80:
+                raise ValueError(f"{f['slug']} scene {number} reads too fast")
+            if shot.get("object_id"):
+                if shot.get("kind")!="museum_public_domain" or shot["object_id"] not in {451400,446288}:
+                    raise ValueError("Unverified historical image reference")
+                continue
+            p=shot.get("image","")
+            local=(ROOT/p).resolve()
+            if not local.is_relative_to(ROOT) or not local.is_file():
+                raise FileNotFoundError(f"{f['slug']} scene {number}: {p}")
+            if shot.get("video") and not (
+                shot["video"].startswith("https://") or (ROOT/shot["video"]).is_file()
+            ):
+                raise FileNotFoundError(shot["video"])
+    return films
+
+def exists(f):
+    stem=f["slug"]+"-rough-cut"
+    return all((OUT/(stem+ext)).is_file() and (OUT/(stem+ext)).stat().st_size>120
+               for ext in (".mp4",".json",".vtt"))
+
+def main():
+    p=argparse.ArgumentParser()
+    p.add_argument("--validate-only",action="store_true")
+    p.add_argument("--remaining-count",action="store_true")
+    p.add_argument("--film",action="append")
+    p.add_argument("--collection",choices=("feature","publication"))
+    p.add_argument("--missing-only",action="store_true")
+    p.add_argument("--limit",type=int,default=2)
+    p.add_argument("--models",default="film-models")
+    p.add_argument("--voice-mode",choices=("human","kokoro-preview"),default="kokoro-preview")
+    p.add_argument("--voice-dir")
+    args=p.parse_args()
+    films=load()
+    if args.film:
+        unknown=set(args.film)-{f["slug"] for f in films}
+        if unknown:raise ValueError("Unknown film(s): "+", ".join(sorted(unknown)))
+        films=[f for f in films if f["slug"] in args.film]
+    if args.collection:
+        films=[f for f in films if f["output_collection"]==args.collection]
+    if args.missing_only or args.remaining_count:
+        remaining=[f for f in films if not exists(f)]
+        print(f"Existing unapproved rough cuts: {len(films)-len(remaining)}; remaining: {len(remaining)}")
+        films=remaining
+    if args.remaining_count:
+        print(len(films))
+        return
+    print("Films selected:",len(films),"; new renders capped at",args.limit)
+    if args.validate_only:return
+    if args.limit<1 or args.limit>6:raise ValueError("Batch limit must be 1–6")
+    # Create files in preview directory only. Public website pointers stay untouched.
+    OUT.mkdir(parents=True,exist_ok=True)
+    studio.OUTPUT=OUT
+    studio.engine.FILM=OUT
+    for film in films[:args.limit]:
+        # A film-level primary source, precise genre and scene provenance
+        # stay on the result JSON for human editorial checking.
+        studio.render(film,args)
+        result=OUT/(film["slug"]+"-rough-cut.json")
+        manifest=json.loads(result.read_text(encoding="utf-8"))
+        manifest.update({
+            "film_title":film["title"],
+            "source_manifest":"assets/films/cinematic-library-v2.json",
+            "source_script":film.get("source_path"),
+            "primary_reference":film.get("primary"),
+            "source_collection":film["output_collection"],
+            "needs_human_narration_review":True,
+            "needs_visual_composition_review":True,
+            "never_auto_publish":True
+        })
+        result.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+
+if __name__=="__main__":
+    main()
