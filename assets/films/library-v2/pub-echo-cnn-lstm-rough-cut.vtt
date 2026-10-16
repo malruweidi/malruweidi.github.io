@@ -1,0 +1,76 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.420
+A fetal heart refuses to remain still for a photograph.
+
+00:00:04.420 --> 00:00:07.994
+Its motion is part of the information a screening
+
+00:00:07.994 --> 00:00:09.185
+algorithm might need.
+
+00:00:16.450 --> 00:00:19.896
+Inside fetal echocardiography, anatomy changes with
+
+00:00:19.896 --> 00:00:23.342
+each frame. Diagnosing congenital cardiac disease
+
+00:00:23.342 --> 00:00:27.937
+requires more than recognising a single still image.
+
+00:00:31.450 --> 00:00:35.030
+Ultrasound images are sensitive to acquisition and
+
+00:00:35.030 --> 00:00:38.610
+annotation. Before modelling, their quality and the
+
+00:00:38.610 --> 00:00:41.678
+study's sampling conditions need careful attention.
+
+00:00:46.450 --> 00:00:49.515
+Convolutional neural networks can extract visual
+
+00:00:49.515 --> 00:00:53.092
+patterns. Long short-term memory models can process
+
+00:00:53.092 --> 00:00:56.668
+sequence information, when the input design preserves
+
+00:00:56.668 --> 00:00:57.179
+it.
+
+00:01:01.450 --> 00:01:05.187
+Our paper studied stacking-based CNN-LSTM techniques
+
+00:01:05.187 --> 00:01:08.301
+for fetal echocardiogram interpretation. Evaluating
+
+00:01:08.301 --> 00:01:12.661
+them is different from establishing safe deployment.
+
+00:01:15.450 --> 00:01:20.926
+A CNN–LSTM pipeline can represent space and time, but a
+
+00:01:20.926 --> 00:01:24.759
+pilot study requires separation of training performance
+
+00:01:24.759 --> 00:01:26.402
+from genuine generalisation.
+
+00:01:30.450 --> 00:01:34.008
+Model accuracy alone cannot settle clinical utility.
+
+00:01:34.008 --> 00:01:37.057
+Dataset composition, validation design, and false
+
+00:01:37.057 --> 00:01:41.123
+positive or missed cases determine how results should
+
+00:01:41.123 --> 00:01:42.140
+be read.
+
+00:01:46.450 --> 00:01:49.862
+The finding is a testable modelling approach, not the
+
+00:01:49.862 --> 00:01:53.275
+notion that a neural network has become a clinician.

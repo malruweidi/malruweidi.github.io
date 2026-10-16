@@ -1,0 +1,78 @@
+{
+  "slug": "pub-pla-scaffolds",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "d8e17161cde308ce1dd686ce93bd9d21ddfa5b1b8c12d4f2a01293d5ae24954c",
+  "shots": [
+    {
+      "title": "A scaffold meets its environment",
+      "kind": "Original explanatory polymer scaffold schematic",
+      "image": "assets/polymer-concept.svg",
+      "museum": null,
+      "credit": "Original explanatory polymer scaffold schematic"
+    },
+    {
+      "title": "The scaffold is not inert",
+      "kind": "Existing scientific biomaterials research visual",
+      "image": "assets/evidence-biomaterials.webp",
+      "museum": null,
+      "credit": "Existing scientific biomaterials research visual"
+    },
+    {
+      "title": "First build the structure",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/pla-scaffolds-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Then rewrite the contact layer",
+      "kind": "Published materials characterization context",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "museum": null,
+      "credit": "Published materials characterization context"
+    },
+    {
+      "title": "A chemical change needs evidence",
+      "kind": "Research-context image, not a reproduced antimicrobial assay",
+      "image": "assets/evidence-biomaterials.webp",
+      "museum": null,
+      "credit": "Research-context image, not a reproduced antimicrobial assay"
+    },
+    {
+      "title": "The difficulty: Antimicrobial does not mean implant ready",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/pla-scaffolds-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Antimicrobial does not mean implant ready",
+      "kind": "Study-related scientific figure; source DOI holds exact endpoints",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "museum": null,
+      "credit": "Study-related scientific figure; source DOI holds exact endpoints"
+    },
+    {
+      "title": "The decisive boundary",
+      "kind": "Original conceptual film closing",
+      "image": "assets/polymer-concept.svg",
+      "museum": null,
+      "credit": "Original conceptual film closing"
+    }
+  ],
+  "film_title": "A scaffold meets its environment",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "cec8ade816ae005568dc7609c25ad2487c67335d81dc49983d7d492885a3362a"
+}
