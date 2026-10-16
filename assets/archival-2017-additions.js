@@ -125,8 +125,8 @@
       const s=section('rx17-acs-community-memory',
         ['THE STUDENT CHAPTER / MAY–AUGUST 2017','الفصل الطلابي / مايو–أغسطس ٢٠١٧'],
         ['A chapter travelled farther than its paperwork','رحلة فصل طلابي تتجاوز شهاداته'],
-        ['The May 2017 certificates mark a busy period of organizing student-chapter activities. Three months later we were travelling to Washington. I remember planning the trip with colleagues, carrying university flags through the airport, and continuing the conversations we had begun in Qatar.',
-         'تعود شهادتا التكريم إلى مايو ٢٠١٧، حين كنا ننظّم أنشطة الفرع الطلابي. وبعد ثلاثة أشهر كنا في طريقنا إلى واشنطن. أتذكر التخطيط للرحلة مع الزملاء وحمل أعلام الجامعة في المطار ومواصلة الأحاديث العلمية التي بدأناها في قطر.']);
+        ['The May 2017 certificates mark a busy period of organizing student-chapter activities. Three months later we were travelling to Washington. I remember travelling with colleagues, carrying university flags through the airport and continuing the conversations we had begun in Qatar.',
+         'تعود شهادتا التكريم إلى مايو ٢٠١٧، حين كنا ننظّم أنشطة الفرع الطلابي. وبعد ثلاثة أشهر كنا في طريقنا إلى واشنطن. أتذكر السفر مع الزملاء وحمل أعلام الجامعة في المطار ومواصلة الأحاديث العلمية التي بدأناها في قطر.']);
       s.append(cards(['service','group']));
       s.append(more('/engagement.html#rx17-acs-chapter-2017','Read the chapter’s documentary record →','اقرأ السجل الوثائقي للفصل ←'));
       community.insertAdjacentElement('afterend',s);
