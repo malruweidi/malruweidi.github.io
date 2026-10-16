@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.093
+The beating heart of a zebrafish embryo can be watched,
+
+00:00:04.093 --> 00:00:07.007
+but measurement demands more than watching. The camera
+
+00:00:07.007 --> 00:00:09.557
+must catch events faster than the eye.
+
+00:00:18.450 --> 00:00:22.507
+Inside a developing zebrafish, the heart contracts and
+
+00:00:22.507 --> 00:00:26.057
+blood circulates across structures small enough to
+
+00:00:26.057 --> 00:00:27.579
+challenge ordinary observation.
+
+00:00:33.450 --> 00:00:37.348
+Fast video microscopy captures change over time. The
+
+00:00:37.348 --> 00:00:40.758
+task becomes extracting meaningful cardiac and flow
+
+00:00:40.758 --> 00:00:42.707
+measurements from those frames.
+
+00:00:47.450 --> 00:00:51.092
+The published work examines cardiac function and
+
+00:00:51.092 --> 00:00:54.735
+blood-flow hemodynamics, rather than treating a single
+
+00:00:54.735 --> 00:00:57.337
+attractive frame as quantitative physiology.
+
+00:01:01.450 --> 00:01:05.864
+Frame rate, optical scale and analysis assumptions can
+
+00:01:05.864 --> 00:01:09.175
+constrain an estimated velocity or physiological
+
+00:01:09.175 --> 00:01:09.727
+parameter.
+
+00:01:15.450 --> 00:01:19.161
+A frame sequence becomes a flow estimate only after
+
+00:01:19.161 --> 00:01:23.284
+timing and image analysis are explicit. Do not show a
+
+00:01:23.284 --> 00:01:26.170
+simulated velocity field as a measured one.
+
+00:01:32.450 --> 00:01:35.626
+Vessels change shape while blood moves. Interpretation
+
+00:01:35.626 --> 00:01:39.708
+has to respect both the organism and the measurement
+
+00:01:39.708 --> 00:01:40.162
+technique.
+
+00:01:46.450 --> 00:01:49.709
+High-speed microscopy is valuable because movement
+
+00:01:49.709 --> 00:01:52.968
+becomes quantifiable, with its uncertainties visible
+
+00:01:52.968 --> 00:01:54.597
+rather than hidden.

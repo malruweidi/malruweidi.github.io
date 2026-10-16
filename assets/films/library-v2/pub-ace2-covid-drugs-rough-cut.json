@@ -1,0 +1,78 @@
+{
+  "slug": "pub-ace2-covid-drugs",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "1873f53b188ecda98c77219a5b2886c0fd8a3082bc5d32893432ccf060d8db3b",
+  "shots": [
+    {
+      "title": "An enzyme, a receptor, a clinical question",
+      "kind": "General physiological diagram, not a specific assay result",
+      "image": "assets/echo-concept.svg",
+      "museum": null,
+      "credit": "General physiological diagram, not a specific assay result"
+    },
+    {
+      "title": "A therapy can change the system around it",
+      "kind": "Pulmonary clinical-context scientific illustration, no identifiable patient",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Pulmonary clinical-context scientific illustration, no identifiable patient"
+    },
+    {
+      "title": "Two signals in circulation",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/ace2-covid-drugs-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Treatments are not randomized by a chart",
+      "kind": "Original healthcare-imaging workspace; no patient data from study",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "museum": null,
+      "credit": "Original healthcare-imaging workspace; no patient data from study"
+    },
+    {
+      "title": "Do not confuse association with mechanism",
+      "kind": "Contextual pulmonary image, not the published patient dataset",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Contextual pulmonary image, not the published patient dataset"
+    },
+    {
+      "title": "The difficulty: The clinical question is conditional",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/ace2-covid-drugs-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The clinical question is conditional",
+      "kind": "Conceptual depiction, not treatment guidance",
+      "image": "assets/echo-concept.svg",
+      "museum": null,
+      "credit": "Conceptual depiction, not treatment guidance"
+    },
+    {
+      "title": "Evidence before advice",
+      "kind": "Editorial science illustration",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Editorial science illustration"
+    }
+  ],
+  "film_title": "An enzyme, a receptor, a clinical question",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1080/08037051.2022.2055530",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "d231e574d9ff5a661a3c8cfc59e4b6bb33e27d7b46775e82d7864089c3b8fa53"
+}

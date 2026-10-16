@@ -1,0 +1,78 @@
+{
+  "slug": "pub-flow-chamber-method",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "83967dea76bdabc0524f81e71b2d747e2ca998ea33d53f57cab968b8d2e8b6ef",
+  "shots": [
+    {
+      "title": "How to make a reproducible injury",
+      "kind": "Original conceptual diagram, not the paper's exact hardware",
+      "image": "assets/lung-concept.svg",
+      "museum": null,
+      "credit": "Original conceptual diagram, not the paper's exact hardware"
+    },
+    {
+      "title": "How do you study an injury you cannot hold?",
+      "kind": "Published experimental flow-chamber figure",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Published experimental flow-chamber figure"
+    },
+    {
+      "title": "Build a smaller world",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/flow-chamber-method-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Make the disturbance repeatable",
+      "kind": "Published flow-chamber research figure",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Published flow-chamber research figure"
+    },
+    {
+      "title": "Measure the aftermath",
+      "kind": "Pulmonary research figure context; consult methods paper for exact protocols",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Pulmonary research figure context; consult methods paper for exact protocols"
+    },
+    {
+      "title": "The difficulty: The model is useful because it is incomplete",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/flow-chamber-method-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The model is useful because it is incomplete",
+      "kind": "Explicitly simplified model illustration",
+      "image": "assets/lung-concept.svg",
+      "museum": null,
+      "credit": "Explicitly simplified model illustration"
+    },
+    {
+      "title": "Why methods deserve their own film",
+      "kind": "Published methods figure",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Published methods figure"
+    }
+  ],
+  "film_title": "How to make a reproducible injury",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.3390/mps3040065",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "b833dec11d82918561e3e5fe5879aa51d7e8e344880acdde231de28faa73f248"
+}
