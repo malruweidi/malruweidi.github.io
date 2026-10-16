@@ -19,7 +19,7 @@
       "shots": [
         {
           "id": "01",
-          "title": "A breath can injure",
+          "title": "When an airway reopens",
           "subtitle": "experimental documentary",
           "narration": "An airway reopening sounds like relief. On the scale of an epithelial monolayer, the arriving air–liquid interface can be an injury event.",
           "image": "assets/lung-concept.svg",
@@ -45,7 +45,7 @@
           "source_title": "The violence inside a breath",
           "narrative_role": "observation",
           "shot_treatment": "full_figure",
-          "sec": 15
+          "sec": 14
         },
         {
           "id": "03",
@@ -75,11 +75,11 @@
           "source_title": "Making the injury measurable",
           "narrative_role": "evidence",
           "shot_treatment": "full_figure",
-          "sec": 14
+          "sec": 15
         },
         {
           "id": "05",
-          "title": "Change the cell first",
+          "title": "Before exposure",
           "subtitle": "experimental documentary",
           "narration": "Our experiment tested whether pretreatment with dexamethasone or trans-dehydroandrosterone could change the cells' susceptibility before exposure.",
           "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
@@ -94,28 +94,29 @@
         },
         {
           "id": "06",
-          "title": "The difficulty: What the experiment found",
+          "title": "When the bubble passed",
           "subtitle": "experimental documentary",
-          "narration": "Pretreating a cell is not the same as delivering a drug to a patient. Follow the actual comparisons before making a therapeutic inference.",
-          "image": "assets/evidence-pulmonary.webp",
+          "narration": "In the untreated bubble-exposed group, 54.7 percent of cells were dead. With dexamethasone pretreatment, it was 15.1 percent.",
+          "image": "assets/films/art-v2/airway-injury-measured.svg",
           "contain": true,
-          "kind": "Research-context figure; see primary paper for quantitative readouts",
-          "credit": "Research-context figure; see primary paper for quantitative readouts",
+          "kind": "Redrawn summary of published in-vitro measurements; percent dead cells, means with SEM",
+          "credit": "Research data from Al-Ruweidi et al., Journal of Applied Physiology 130 (2021), DOI 10.1152/japplphysiol.00574.2020; author-created chart of reported means and SEM, not an original published figure",
           "link": "/research/pulmonary-epithelial-injury.html",
           "source_title": "What the experiment found",
           "narrative_role": "turning_point",
           "shot_treatment": "full_figure",
-          "sec": 16
+          "sec": 17,
+          "source_url": "https://doi.org/10.1152/japplphysiol.00574.2020"
         },
         {
           "id": "07",
-          "title": "What the experiment found",
+          "title": "Another pretreatment, same model",
           "subtitle": "experimental documentary",
-          "narration": "Under these in-vitro conditions, bubble flow injured cells. Pretreatment significantly reduced the measured cell death, alongside changes in cellular mechanics.",
-          "image": "assets/evidence-pulmonary.webp",
+          "narration": "With transdehydroandrosterone, cell death was 16.1 percent. These were rat L2 cultures, exposed to a simulated airway-reopening event.",
+          "image": "assets/films/art-v2/airway-injury-measured.svg",
           "contain": true,
-          "kind": "Research-context figure; see primary paper for quantitative readouts",
-          "credit": "Research-context figure; see primary paper for quantitative readouts",
+          "kind": "Redrawn summary of published in-vitro measurements; conceptual visual context",
+          "credit": "Research data from Al-Ruweidi et al., Journal of Applied Physiology 130 (2021), DOI 10.1152/japplphysiol.00574.2020; author-created chart of reported means and SEM, not an original published figure",
           "link": "/research/pulmonary-epithelial-injury.html",
           "source_title": "What the experiment found",
           "narrative_role": "limits",
@@ -124,9 +125,9 @@
         },
         {
           "id": "08",
-          "title": "What it does not prove",
+          "title": "A boundary around the result",
           "subtitle": "experimental documentary",
-          "narration": "The paper answers a bounded question: what happened to cultured cells when a controlled interface passed over them.",
+          "narration": "The comparison warrants investigating cellular mechanics and prevention. It does not establish a clinical treatment for mechanically ventilated patients.",
           "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
           "contain": true,
           "kind": "Published study context; DOI on film page",
@@ -135,7 +136,7 @@
           "source_title": "What it does not prove",
           "narrative_role": "outcome",
           "shot_treatment": "slow_end_frame",
-          "sec": 14
+          "sec": 13
         }
       ],
       "story_spine": "Original research-specific cold open, material turning point, source-bounded final claim"
