@@ -1,7 +1,11 @@
 # Owner-identified media intake — 13 October 2026
 
-This directory is intentionally initialized before its nine media files are uploaded. The site pages load a media item only after its URL returns a successful response; no broken-image placeholders appear while assets are missing.
+**Status: published on 16 October 2026.** The eight owner-identified photographic derivatives, Khaled Jama Mohamoud's 13.8-second spoken chemistry video, and its WebP poster are now committed as ten binary files under this directory. They were published in [pull request #30](https://github.com/malruweidi/malruweidi.github.io/pull/30) without changing or deleting previous archival content.
 
-Upload the nine optimized WebP/MP4 files from `ruwaidix_media_2026-10-13.zip` into **this directory**, preserving filenames. Do not upload a ZIP as if it were an HTML image, and do not replace the approved design or existing archive files.
+The source MOV was converted to H.264/AAC MP4 with the spoken explanation preserved. The public school-revisit derivative obscures a child's face. The original source files remain distinct from their web-ready copies.
 
-Provenance: see `../owner-archive-2026-10-13-manifest.json`. For the library image, the coat was used for warmth, not worn while conducting an experiment in shorts. The publicly prepared school-visit image obscures an infant's face. Experimental interpretations, instrument performance and dates are not inferred from photographs.
+The images appear conditionally in Stories, Archive and Science & Society, while the video is accessible via Chem Squad and the Moving Evidence index. The original Ramadan microscope-room photograph is included alongside the original seven photographs, and remains a photograph of the room rather than experimental proof.
+
+Provenance: see `../owner-archive-2026-10-13-manifest.json`. The white coat in the university library was worn for warmth, not as laboratory PPE during an experiment in shorts. The archive distinguishes Al Thakhira attendance from a photograph of judging, and HBKU as a research visit rather than employment. Dates and experimental conclusions are not inferred from images. Technical byte-integrity and cross-site placement checks are provided in `tests/owner-media-restoration.test.cjs`.
+
+Future archive additions should be additive, source-identified, rights-appropriate, and reviewed for accessibility, including the audio and any needed subtitles.
