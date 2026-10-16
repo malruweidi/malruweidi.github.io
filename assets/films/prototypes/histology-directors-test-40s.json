@@ -1,0 +1,57 @@
+{
+  "label": "NOT A REPLACEMENT / VISUAL DIRECTING TEST",
+  "runtime": 40.0,
+  "sha256": "212decb023d16f47cd7fb07d9ae9d560d6795510ce613452d569bfbe27e33615",
+  "shots": [
+    {
+      "index": 1,
+      "start": 0,
+      "seconds": 6,
+      "archival_source": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "label": "AT THE BLADE \u2014 The block came apart.",
+      "editorial_crop": false
+    },
+    {
+      "index": 2,
+      "start": 6,
+      "seconds": 7,
+      "archival_source": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "label": "LOOK CLOSELY \u2014 Not a usable histological section.",
+      "editorial_crop": true
+    },
+    {
+      "index": 3,
+      "start": 13,
+      "seconds": 6,
+      "archival_source": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "label": "BEFORE THE CUT \u2014 The difficulty began with orientation.",
+      "editorial_crop": false
+    },
+    {
+      "index": 4,
+      "start": 19,
+      "seconds": 6,
+      "archival_source": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "label": "THE INTENDED WORKFLOW \u2014 A specimen supported for processing.",
+      "editorial_crop": false
+    },
+    {
+      "index": 5,
+      "start": 25,
+      "seconds": 8,
+      "archival_source": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "label": "THE MATERIAL BOUNDARY \u2014 It did not cut as one.",
+      "editorial_crop": true
+    },
+    {
+      "index": 6,
+      "start": 33,
+      "seconds": 7,
+      "archival_source": null,
+      "label": "NO USABLE SECTION \u2014 An experiment that stopped before the measurement.",
+      "editorial_crop": false
+    }
+  ],
+  "rights": "Personal archived photographs by site owner; no simulated successful histology, no falsely authentic machine sound. Each still in the film is editorially derived from an unaltered existing owner image.",
+  "limitation": "Musical and photographic pacing needs human review before full director's cut."
+}
