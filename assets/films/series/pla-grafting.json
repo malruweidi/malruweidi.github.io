@@ -5,12 +5,56 @@
   "primary_source": "https://doi.org/10.3390/polym13213717",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still"
+    "Published polymer surface research imagery; see source DOI",
+    "Original conceptual surface-treatment diagram",
+    "Study-related scientific figure; not a movie of plasma treatment",
+    "Biomaterials research context, not a substitute for specific data",
+    "Published surface characterization imagery",
+    "Conceptual concluding illustration"
   ],
-  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "kind": "Published polymer surface research imagery; see source DOI",
+      "credit": "Published polymer surface research imagery; see source DOI",
+      "source": "/techniques.html#materials"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/polymer-concept.svg",
+      "kind": "Original conceptual surface-treatment diagram",
+      "credit": "Original conceptual surface-treatment diagram",
+      "source": "/techniques.html#materials"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "kind": "Study-related scientific figure; not a movie of plasma treatment",
+      "credit": "Study-related scientific figure; not a movie of plasma treatment",
+      "source": "/techniques.html#materials"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/evidence-biomaterials.webp",
+      "kind": "Biomaterials research context, not a substitute for specific data",
+      "credit": "Biomaterials research context, not a substitute for specific data",
+      "source": "/techniques.html#materials"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "kind": "Published surface characterization imagery",
+      "credit": "Published surface characterization imagery",
+      "source": "/techniques.html#materials"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/polymer-concept.svg",
+      "kind": "Conceptual concluding illustration",
+      "credit": "Conceptual concluding illustration",
+      "source": "/techniques.html#materials"
+    }
+  ]
 }

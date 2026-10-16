@@ -5,12 +5,56 @@
   "primary_source": "/#publications",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still"
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
   ],
-  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/films/art/bioceramic-lattice.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/films/art/bioceramic-lattice.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/films/art/bioceramic-lattice.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/films/art/bioceramic-lattice.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/films/art/bioceramic-lattice.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/films/art/bioceramic-lattice.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#publications"
+    }
+  ]
 }

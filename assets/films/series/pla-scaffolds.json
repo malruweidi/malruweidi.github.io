@@ -5,12 +5,56 @@
   "primary_source": "https://doi.org/10.1016/j.surfcoat.2020.126216",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still"
+    "Existing scientific biomaterials research visual",
+    "Original explanatory polymer scaffold schematic",
+    "Published materials characterization context",
+    "Research-context image, not a reproduced antimicrobial assay",
+    "Study-related scientific figure; source DOI holds exact endpoints",
+    "Original conceptual film closing"
   ],
-  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/evidence-biomaterials.webp",
+      "kind": "Existing scientific biomaterials research visual",
+      "credit": "Existing scientific biomaterials research visual",
+      "source": "/grants/urep22.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/polymer-concept.svg",
+      "kind": "Original explanatory polymer scaffold schematic",
+      "credit": "Original explanatory polymer scaffold schematic",
+      "source": "/grants/urep22.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "kind": "Published materials characterization context",
+      "credit": "Published materials characterization context",
+      "source": "/grants/urep22.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/evidence-biomaterials.webp",
+      "kind": "Research-context image, not a reproduced antimicrobial assay",
+      "credit": "Research-context image, not a reproduced antimicrobial assay",
+      "source": "/grants/urep22.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "kind": "Study-related scientific figure; source DOI holds exact endpoints",
+      "credit": "Study-related scientific figure; source DOI holds exact endpoints",
+      "source": "/grants/urep22.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/polymer-concept.svg",
+      "kind": "Original conceptual film closing",
+      "credit": "Original conceptual film closing",
+      "source": "/grants/urep22.html"
+    }
+  ]
 }

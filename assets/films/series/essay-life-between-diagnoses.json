@@ -1,0 +1,60 @@
+{
+  "id": "essay-life-between-diagnoses",
+  "seconds": 84.0,
+  "sha256": "f8672f0bfbd07d407e5384ee07290fa5719d9831093a08ea2c78f30caf06c1ef",
+  "primary_source": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Archival childhood portrait, not a photograph of the later school examinations",
+    "Personal 2025 medical archive; not an image of every earlier attack",
+    "Personal clinical history portrait; not a dated record of the specific pre-travel event",
+    "Personal 2025 illness archive; not a substitute for medical records",
+    "Original freshman chemistry photograph, not clinical data",
+    "Contemporary author's portrait"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/childhood-portrait.jpg",
+      "kind": "Archival childhood portrait, not a photograph of the later school examinations",
+      "credit": "Archival childhood portrait, not a photograph of the later school examinations",
+      "source": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+      "kind": "Personal 2025 medical archive; not an image of every earlier attack",
+      "credit": "Personal 2025 medical archive; not an image of every earlier attack",
+      "source": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/owner-archive-2026-10-16/eosinophilic-diagnosis-dr-elsheikh-abdelrahim.webp",
+      "kind": "Personal clinical history portrait; not a dated record of the specific pre-travel event",
+      "credit": "Personal clinical history portrait; not a dated record of the specific pre-travel event",
+      "source": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+      "kind": "Personal 2025 illness archive; not a substitute for medical records",
+      "credit": "Personal 2025 illness archive; not a substitute for medical records",
+      "source": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+      "kind": "Original freshman chemistry photograph, not clinical data",
+      "credit": "Original freshman chemistry photograph, not clinical data",
+      "source": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "kind": "Contemporary author's portrait",
+      "credit": "Contemporary author's portrait",
+      "source": "https://malruweidi.substack.com/p/the-life-between-diagnoses"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

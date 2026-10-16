@@ -5,12 +5,56 @@
   "primary_source": "/grants/urep19.html",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still"
+    "Documented unsuccessful original polymer trial photo",
+    "Generic conceptual polymer assembly",
+    "Original documented unsuccessful trials, not a successful micelle synthesis",
+    "Original documented copolymer specimen, not proof of PAH loading",
+    "Original failed-materials archive",
+    "Conceptual concluding image"
   ],
-  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+      "kind": "Documented unsuccessful original polymer trial photo",
+      "credit": "Documented unsuccessful original polymer trial photo",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/polymer-concept.svg",
+      "kind": "Generic conceptual polymer assembly",
+      "credit": "Generic conceptual polymer assembly",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp",
+      "kind": "Original documented unsuccessful trials, not a successful micelle synthesis",
+      "credit": "Original documented unsuccessful trials, not a successful micelle synthesis",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+      "kind": "Original documented copolymer specimen, not proof of PAH loading",
+      "credit": "Original documented copolymer specimen, not proof of PAH loading",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+      "kind": "Original failed-materials archive",
+      "credit": "Original failed-materials archive",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/polymer-concept.svg",
+      "kind": "Conceptual concluding image",
+      "credit": "Conceptual concluding image",
+      "source": "/grants/urep19.html"
+    }
+  ]
 }

@@ -5,12 +5,56 @@
   "primary_source": "/stories/cairo-microscope.html",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still"
+    "Original archival photograph of the user's own microscope",
+    "Personal Cairo archival photograph, not a photograph of the microscope transport",
+    "Original photograph of personal microscopy context",
+    "Original personal microscope photograph",
+    "Original archival university context photo",
+    "Original personal microscope-era archive"
   ],
-  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "kind": "Original archival photograph of the user's own microscope",
+      "credit": "Original archival photograph of the user's own microscope",
+      "source": "/stories/cairo-microscope.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/archival-2026-10-12/cairo-mokattam-sunset-2026.webp",
+      "kind": "Personal Cairo archival photograph, not a photograph of the microscope transport",
+      "credit": "Personal Cairo archival photograph, not a photograph of the microscope transport",
+      "source": "/stories/cairo-microscope.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "kind": "Original photograph of personal microscopy context",
+      "credit": "Original photograph of personal microscopy context",
+      "source": "/stories/cairo-microscope.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "kind": "Original personal microscope photograph",
+      "credit": "Original personal microscope photograph",
+      "source": "/stories/cairo-microscope.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "kind": "Original archival university context photo",
+      "credit": "Original archival university context photo",
+      "source": "/stories/cairo-microscope.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "kind": "Original personal microscope-era archive",
+      "credit": "Original personal microscope-era archive",
+      "source": "/stories/cairo-microscope.html"
+    }
+  ]
 }

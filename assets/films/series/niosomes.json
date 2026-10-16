@@ -5,12 +5,56 @@
   "primary_source": "/research/inhalable-vesicles.html",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still"
+    "Conceptual vesicular carrier, no measured data",
+    "Illustrative vesicle, not measured morphology",
+    "Original laboratory workspace photograph, not an assay result",
+    "Pulmonary research-context illustration",
+    "Illustration of ongoing research questions",
+    "Original research workspace photograph"
   ],
-  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/niosomes-concept.svg",
+      "kind": "Conceptual vesicular carrier, no measured data",
+      "credit": "Conceptual vesicular carrier, no measured data",
+      "source": "/research/inhalable-vesicles.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/niosomes-concept.svg",
+      "kind": "Illustrative vesicle, not measured morphology",
+      "credit": "Illustrative vesicle, not measured morphology",
+      "source": "/research/inhalable-vesicles.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "kind": "Original laboratory workspace photograph, not an assay result",
+      "credit": "Original laboratory workspace photograph, not an assay result",
+      "source": "/research/inhalable-vesicles.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/evidence-pulmonary.webp",
+      "kind": "Pulmonary research-context illustration",
+      "credit": "Pulmonary research-context illustration",
+      "source": "/research/inhalable-vesicles.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/niosomes-concept.svg",
+      "kind": "Illustration of ongoing research questions",
+      "credit": "Illustration of ongoing research questions",
+      "source": "/research/inhalable-vesicles.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "kind": "Original research workspace photograph",
+      "credit": "Original research workspace photograph",
+      "source": "/research/inhalable-vesicles.html"
+    }
+  ]
 }

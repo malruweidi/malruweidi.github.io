@@ -5,12 +5,56 @@
   "primary_source": "https://doi.org/10.1002/9781119813040.ch5",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still"
+    "Original cardiac imaging workstation, not data used in the review",
+    "Conceptual cardiac detection diagram",
+    "Archival Doppler apparatus, not heart-failure sensor comparison",
+    "Original explanatory depiction, not validated sensor output",
+    "Imaging-context photograph",
+    "Conceptual technology animation source"
   ],
-  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "kind": "Original cardiac imaging workstation, not data used in the review",
+      "credit": "Original cardiac imaging workstation, not data used in the review",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/echo-concept.svg",
+      "kind": "Conceptual cardiac detection diagram",
+      "credit": "Conceptual cardiac detection diagram",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "kind": "Archival Doppler apparatus, not heart-failure sensor comparison",
+      "credit": "Archival Doppler apparatus, not heart-failure sensor comparison",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/echo-concept.svg",
+      "kind": "Original explanatory depiction, not validated sensor output",
+      "credit": "Original explanatory depiction, not validated sensor output",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "kind": "Imaging-context photograph",
+      "credit": "Imaging-context photograph",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/echo-concept.svg",
+      "kind": "Conceptual technology animation source",
+      "credit": "Conceptual technology animation source",
+      "source": "/computing.html"
+    }
+  ]
 }

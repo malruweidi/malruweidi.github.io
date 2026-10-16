@@ -5,12 +5,56 @@
   "primary_source": "https://doi.org/10.5772/intechopen.106185",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still"
+    "Original laboratory workspace, not patient diagnosis",
+    "Laboratory photo, not endoscopy or pathology result",
+    "Original biomedical research-context photo",
+    "Conceptual science graphic, not a clinical treatment device",
+    "Archival research context",
+    "Biomedical research archive"
   ],
-  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "kind": "Original laboratory workspace, not patient diagnosis",
+      "credit": "Original laboratory workspace, not patient diagnosis",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "kind": "Laboratory photo, not endoscopy or pathology result",
+      "credit": "Laboratory photo, not endoscopy or pathology result",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "kind": "Original biomedical research-context photo",
+      "credit": "Original biomedical research-context photo",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/echo-concept.svg",
+      "kind": "Conceptual science graphic, not a clinical treatment device",
+      "credit": "Conceptual science graphic, not a clinical treatment device",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "kind": "Archival research context",
+      "credit": "Archival research context",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "kind": "Biomedical research archive",
+      "credit": "Biomedical research archive",
+      "source": "/illness-and-evidence.html"
+    }
+  ]
 }

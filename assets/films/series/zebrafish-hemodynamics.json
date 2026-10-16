@@ -5,12 +5,56 @@
   "primary_source": "https://doi.org/10.1016/j.micron.2020.102876",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still"
+    "Zebrafish microscopy archive, specimen context must not be assigned to a specific figure",
+    "Original zebrafish microscopy contextual still",
+    "Published high-speed zebrafish imaging context",
+    "Existing research-context image, not primary numerical data",
+    "Original conceptual biological schematic",
+    "Published microscopy figure"
   ],
-  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/zebrafish-embryo-microscopy.webp",
+      "kind": "Zebrafish microscopy archive, specimen context must not be assigned to a specific figure",
+      "credit": "Zebrafish microscopy archive, specimen context must not be assigned to a specific figure",
+      "source": "/moving-evidence.html#zebrafish-films"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/zebrafish-larva-microscopy.webp",
+      "kind": "Original zebrafish microscopy contextual still",
+      "credit": "Original zebrafish microscopy contextual still",
+      "source": "/moving-evidence.html#zebrafish-films"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "kind": "Published high-speed zebrafish imaging context",
+      "credit": "Published high-speed zebrafish imaging context",
+      "source": "/moving-evidence.html#zebrafish-films"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/evidence-zebrafish.webp",
+      "kind": "Existing research-context image, not primary numerical data",
+      "credit": "Existing research-context image, not primary numerical data",
+      "source": "/moving-evidence.html#zebrafish-films"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/zebrafish-concept.svg",
+      "kind": "Original conceptual biological schematic",
+      "credit": "Original conceptual biological schematic",
+      "source": "/moving-evidence.html#zebrafish-films"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "kind": "Published microscopy figure",
+      "credit": "Published microscopy figure",
+      "source": "/moving-evidence.html#zebrafish-films"
+    }
+  ]
 }

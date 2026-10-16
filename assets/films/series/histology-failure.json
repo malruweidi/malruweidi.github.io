@@ -5,12 +5,56 @@
   "primary_source": "/films/two-materials-no-section.html",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still",
-    "archival still"
+    "Original firsthand photographs of zebrafish orientation procedure",
+    "Original laboratory processing evidence of unsuccessful attempt",
+    "Original photographed failed embedding and microtomy record",
+    "Actual unsuccessful sectioning evidence; no successful histology is claimed",
+    "Original laboratory record, not a corrected protocol validation",
+    "Documented orientation specimen image"
   ],
-  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "kind": "Original firsthand photographs of zebrafish orientation procedure",
+      "credit": "Original firsthand photographs of zebrafish orientation procedure",
+      "source": "/films/two-materials-no-section.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "kind": "Original laboratory processing evidence of unsuccessful attempt",
+      "credit": "Original laboratory processing evidence of unsuccessful attempt",
+      "source": "/films/two-materials-no-section.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "kind": "Original photographed failed embedding and microtomy record",
+      "credit": "Original photographed failed embedding and microtomy record",
+      "source": "/films/two-materials-no-section.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "kind": "Actual unsuccessful sectioning evidence; no successful histology is claimed",
+      "credit": "Actual unsuccessful sectioning evidence; no successful histology is claimed",
+      "source": "/films/two-materials-no-section.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "kind": "Original laboratory record, not a corrected protocol validation",
+      "credit": "Original laboratory record, not a corrected protocol validation",
+      "source": "/films/two-materials-no-section.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "kind": "Documented orientation specimen image",
+      "credit": "Documented orientation specimen image",
+      "source": "/films/two-materials-no-section.html"
+    }
+  ]
 }
