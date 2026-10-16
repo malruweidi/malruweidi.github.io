@@ -44,7 +44,7 @@ test("every original film links to an already-published media source", () => {
 
 test("videos have control, accessible labels and metadata-first loading", () => {
   const players = [...films.matchAll(/<video\b([^>]+)>/g)].map(m => m[1]);
-  assert.equal(players.length, 5);
+  assert.equal(players.length, 6, "all six original embedded recordings should have accessible players");
   for (const attributes of players) {
     assert.match(attributes, /\bcontrols\b/);
     assert.match(attributes, /\bplaysinline\b/);
