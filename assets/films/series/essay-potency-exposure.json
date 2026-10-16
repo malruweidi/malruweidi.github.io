@@ -1,0 +1,60 @@
+{
+  "id": "essay-potency-exposure",
+  "seconds": 84.0,
+  "sha256": "1ff3bfc4657023d43e25e4cc5d31245c26078fb249e4109b961bb50888e04d0d",
+  "primary_source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Published independent chemistry study figure, not the DMPK compound",
+    "Generic drug-delivery visual, not pharmacokinetic data",
+    "Generic pulmonary evidence image; not a measured concentration profile",
+    "Original analysis workspace, not a clinical dosing model",
+    "Illustration of delivery principle, no measured exposure",
+    "Original chemistry archive"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published independent chemistry study figure, not the DMPK compound",
+      "credit": "Published independent chemistry study figure, not the DMPK compound",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/niosomes-concept.svg",
+      "kind": "Generic drug-delivery visual, not pharmacokinetic data",
+      "credit": "Generic drug-delivery visual, not pharmacokinetic data",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/evidence-pulmonary.webp",
+      "kind": "Generic pulmonary evidence image; not a measured concentration profile",
+      "credit": "Generic pulmonary evidence image; not a measured concentration profile",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "kind": "Original analysis workspace, not a clinical dosing model",
+      "credit": "Original analysis workspace, not a clinical dosing model",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/niosomes-concept.svg",
+      "kind": "Illustration of delivery principle, no measured exposure",
+      "credit": "Illustration of delivery principle, no measured exposure",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "kind": "Original chemistry archive",
+      "credit": "Original chemistry archive",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

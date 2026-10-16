@@ -1,0 +1,60 @@
+{
+  "id": "essay-trna",
+  "seconds": 84.0,
+  "sha256": "c9db5da8e033b7631c4e5f26cf25c6156a8a6ba2d2eb17ca6e22430075a9c724",
+  "primary_source": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original chemistry chalkboard, not a tRNA molecular structure",
+    "Original laboratory research photo, not a tRNA manipulation",
+    "General pathway illustration; not a synthetase structure",
+    "Original lab flask, not cytotoxicity data",
+    "Drug-carrier concept unrelated to any validated tRNA therapeutic",
+    "Author's editorial portrait"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "kind": "Original chemistry chalkboard, not a tRNA molecular structure",
+      "credit": "Original chemistry chalkboard, not a tRNA molecular structure",
+      "source": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "kind": "Original laboratory research photo, not a tRNA manipulation",
+      "credit": "Original laboratory research photo, not a tRNA manipulation",
+      "source": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/robo-concept.svg",
+      "kind": "General pathway illustration; not a synthetase structure",
+      "credit": "General pathway illustration; not a synthetase structure",
+      "source": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "kind": "Original lab flask, not cytotoxicity data",
+      "credit": "Original lab flask, not cytotoxicity data",
+      "source": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/niosomes-concept.svg",
+      "kind": "Drug-carrier concept unrelated to any validated tRNA therapeutic",
+      "credit": "Drug-carrier concept unrelated to any validated tRNA therapeutic",
+      "source": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "kind": "Author's editorial portrait",
+      "credit": "Author's editorial portrait",
+      "source": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

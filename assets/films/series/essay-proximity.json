@@ -1,0 +1,60 @@
+{
+  "id": "essay-proximity",
+  "seconds": 84.0,
+  "sha256": "c0f4b5f636b813ce400a5d9731cb1f912ca287d6e6b6131a35f66791f291e3a1",
+  "primary_source": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Illustrative pathway sketch, not a PROTAC ternary structure",
+    "Original laboratory apparatus photo; not proteasomal data",
+    "Generic chemistry laboratory context",
+    "Concept diagram, not a kinetic trace",
+    "Generic therapeutic concept graphic, not evidence of a published degrader",
+    "Author's editorial portrait"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/robo-concept.svg",
+      "kind": "Illustrative pathway sketch, not a PROTAC ternary structure",
+      "credit": "Illustrative pathway sketch, not a PROTAC ternary structure",
+      "source": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "kind": "Original laboratory apparatus photo; not proteasomal data",
+      "credit": "Original laboratory apparatus photo; not proteasomal data",
+      "source": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "kind": "Generic chemistry laboratory context",
+      "credit": "Generic chemistry laboratory context",
+      "source": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/robo-concept.svg",
+      "kind": "Concept diagram, not a kinetic trace",
+      "credit": "Concept diagram, not a kinetic trace",
+      "source": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/niosomes-concept.svg",
+      "kind": "Generic therapeutic concept graphic, not evidence of a published degrader",
+      "credit": "Generic therapeutic concept graphic, not evidence of a published degrader",
+      "source": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "kind": "Author's editorial portrait",
+      "credit": "Author's editorial portrait",
+      "source": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
