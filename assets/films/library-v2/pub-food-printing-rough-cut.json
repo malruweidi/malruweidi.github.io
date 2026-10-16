@@ -1,0 +1,78 @@
+{
+  "slug": "pub-food-printing",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "ef16b1121ce7521c064296825c82a52412f0070f53406a8ecc06728bcf93a891",
+  "shots": [
+    {
+      "title": "When food becomes a printable material",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/edible-printing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "Edible material meets geometry",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/edible-printing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "Flow first, shape second",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/food-printing-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The design space expands",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/edible-printing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "Microstructure is invisible to the recipe",
+      "kind": "Unrelated polymer material photograph, labelled as analogy",
+      "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+      "museum": null,
+      "credit": "Unrelated polymer material photograph, labelled as analogy"
+    },
+    {
+      "title": "The difficulty: Do not mistake possibility for validation",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/food-printing-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Do not mistake possibility for validation",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/edible-printing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "An architecture has to survive deposition",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/edible-printing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    }
+  ],
+  "film_title": "When food becomes a printable material",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/#publications",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "a47308bd2b791886496bcf444e44b553409202102164e78ece589430f40ca575"
+}
