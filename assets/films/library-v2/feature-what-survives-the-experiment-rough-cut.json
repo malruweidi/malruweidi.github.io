@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "9dcad3031d7cc8240dcf3570120b6c2557f4ac325238751a26808d25ca88ae66",
+  "sha256": "c984ebfa5a0849696ed31b05b7a8f41cac4fef9087a842cbbb2444e93bfeabf2",
   "shots": [
     {
       "title": "The anatomy room",
@@ -60,10 +60,10 @@
     },
     {
       "title": "The section that failed",
-      "kind": "photograph",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
       "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
       "museum": null,
-      "credit": "Original unsuccessful zebrafish histology attempt"
+      "credit": "Original unsuccessful zebrafish histology attempt. Animation: Original mechanism hypothesis based on observed block separation; does not claim that polymer interface chemistry or failure mechanism was proven. Mechanistic possibility distinguished from genuine failed histology photograph."
     },
     {
       "title": "An airway reopens",
@@ -109,7 +109,14 @@
       "credit": "Archived chemistry photograph and original apparatus recording; not a recording of the extracts experiment",
       "kind": "photograph and apparatus film",
       "source_sha256": "d190c1ec756a38404ac59e5985ed826ce516801e800adf4622d1ae91e15b0e8c"
+    },
+    {
+      "scene": 8,
+      "video": "assets/films/motion-v2/histology-interface.mp4",
+      "credit": "Original unsuccessful zebrafish histology attempt. Animation: Original mechanism hypothesis based on observed block separation; does not claim that polymer interface chemistry or failure mechanism was proven. Mechanistic possibility distinguished from genuine failed histology photograph.",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "source_sha256": "d691649b5e984fdfd8c72a811ce3e1ec178a412b9c1c89acf03eabbbd0139758"
     }
   ],
-  "input_sha256": "4cdb2da19a5242a0c20516dbe55e28752f93c7fa47058eb785ffeec214c29dc8"
+  "input_sha256": "16ca2ff750ef93c105e35cdc852a9e04dada3e775b33bdd9364bced9c3843a24"
 }

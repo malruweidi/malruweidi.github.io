@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "ffad9bc7624eb976ab36370d9b99e09b166a84e0aee143d9183edcbcb063a505",
+  "sha256": "792c2b9c1bb60735900613fbf32a98dd9fe7002f37424ad775b074ab0e6e45e8",
   "shots": [
     {
       "title": "Reopening is not always gentle",
@@ -18,10 +18,10 @@
     },
     {
       "title": "A boundary that moves",
-      "kind": "INTERFACE / EXPLANATORY SCHEMATIC",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
       "image": "assets/films/plates/what-a-bubble-can-do-02.webp",
       "museum": null,
-      "credit": "Editorial explanation; original context archive"
+      "credit": "Editorial explanation; original context archive. Animation: Original mechanistic illustration of the moving air–liquid boundary; not the experiment's recorded video, geometry, scale, or measurements. Simplified interface motion; clinical and cell data shown separately."
     },
     {
       "title": "Inside the flow chamber",
@@ -95,6 +95,14 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "motion_shots": [],
-  "input_sha256": "8333947b89398608a8bf92b828494b2b3f9f10ac25f65f44ffeef6a50028b285"
+  "motion_shots": [
+    {
+      "scene": 2,
+      "video": "assets/films/motion-v2/airway-interface.mp4",
+      "credit": "Editorial explanation; original context archive. Animation: Original mechanistic illustration of the moving air–liquid boundary; not the experiment's recorded video, geometry, scale, or measurements. Simplified interface motion; clinical and cell data shown separately.",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "source_sha256": "21e0ec38bb89851088b472f87ffa26f875affa48ad3ae0243d003af11aba58b9"
+    }
+  ],
+  "input_sha256": "cd8e38fc235b7ba76b035ef8db94dc9aad5a021fbd55ef15e5e91dc125df1f43"
 }
