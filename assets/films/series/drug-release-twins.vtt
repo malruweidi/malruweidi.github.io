@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.550 --> 00:00:04.652
+A physical dosage form releases medicine over time.
+
+00:00:04.652 --> 00:00:08.754
+A mathematical model tries to describe that changing process.
+
+00:00:14.342 --> 00:00:19.373
+Formulation composition, geometry and transport assumptions affect simulated
+
+00:00:19.373 --> 00:00:24.404
+release. The selected equations embody choices that need scrutiny.
+
+00:00:31.050 --> 00:00:35.490
+The book chapter examines simulation of drug release
+
+00:00:35.490 --> 00:00:39.931
+and performance prediction using virtual models within pharmaceutical development.
+
+00:00:45.925 --> 00:00:49.589
+Without calibration and suitable validation, a model can
+
+00:00:49.589 --> 00:00:53.253
+produce elegant curves and still make poor predictions.
+
+00:00:58.300 --> 00:01:02.946
+Mechanistic assumptions, parameter uncertainty and extrapolation beyond
+
+00:01:02.946 --> 00:01:07.592
+known experiments all limit credible digital performance forecasts.
+
+00:01:13.758 --> 00:01:16.915
+A defensible virtual model can guide test
+
+00:01:16.915 --> 00:01:20.073
+design, but the laboratory decides what survives.

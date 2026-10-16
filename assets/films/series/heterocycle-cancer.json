@@ -1,0 +1,16 @@
+{
+  "id": "heterocycle-cancer",
+  "seconds": 84.0,
+  "sha256": "dc96ce7efb7eaeaacc926c83f3c4a138c92fe802be88bf023fd85aade421561b",
+  "primary_source": "/grants/urep23.html",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

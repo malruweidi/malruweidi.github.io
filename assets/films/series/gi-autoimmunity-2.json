@@ -1,7 +1,7 @@
 {
   "id": "gi-autoimmunity-2",
   "seconds": 84.0,
-  "sha256": "d0c4948223be96366e1d00d25ab2828b9fe01fb9a4121a7bac6555d8bec21c6c",
+  "sha256": "2328de854fbf75d0534eb5ebc35079fc0020a23971647e25f87fa80d1d22d24d",
   "primary_source": "https://doi.org/10.5772/intechopen.106185",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [

@@ -1,7 +1,7 @@
 {
   "id": "curcumin-cyanide",
   "seconds": 84.0,
-  "sha256": "0ece25953cba8159523512e43d912b4576d61a4bfd08a3733108dedde676b673",
+  "sha256": "283127ac78789875b7f02f70c67475258c81431d2f75f5fdde1134acd1a4d358",
   "primary_source": "https://doi.org/10.1039/C9AY01557D",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [

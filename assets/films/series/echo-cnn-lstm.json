@@ -1,7 +1,7 @@
 {
   "id": "echo-cnn-lstm",
   "seconds": 84.0,
-  "sha256": "cdedeebf65754ef72d98a5de56be5de601a8279e41169c39fb5d4de264084f52",
+  "sha256": "f5a9e71ed715e92b3df32c03fece519a1df6e41bb2d965ed3e1fff83d240c523",
   "primary_source": "https://doi.org/10.1109/ACCESS.2023.3316719",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [

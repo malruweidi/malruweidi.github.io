@@ -1,0 +1,16 @@
+{
+  "id": "histology-failure",
+  "seconds": 84.0,
+  "sha256": "8368194d5105b6ffcdea94caa7713f4467183a3d5a7836ef551e61525beaa04c",
+  "primary_source": "/films/two-materials-no-section.html",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "drug-release-twins",
+  "seconds": 84.0,
+  "sha256": "0dab4749dc0d06ae84ee80fb36a1b276169d1d5d22cf4c4d86d5eed3c47f80bc",
+  "primary_source": "https://doi.org/10.70593/978-93-7185-824-3",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still",
+    "archival still"
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
