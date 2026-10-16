@@ -13,6 +13,8 @@ on:
       - scripts/audit-evidence-series.py
       - scripts/fetch-documentary-stills.py
       - scripts/snapshot-evidence-visuals.py
+      - tests/evidence-films.test.cjs
+      - films/making-medicines-keep.html
       - .github/workflows/render-evidence-series.yml
   workflow_dispatch:
 permissions:
