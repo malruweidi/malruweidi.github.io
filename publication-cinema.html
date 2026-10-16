@@ -20,7 +20,7 @@
 <main id="main">
 <section class="hero"><div class="wrap"><p class="kicker">The moving bibliography / A source-aware film library</p><h1>A paper is not<br><em>the whole experiment.</em></h1><p class="lead">Every publication begins with a question that the citation cannot contain. These short films follow the apparatus, the matter, the observations and the uncertainties that made the papers possible. They are made to be watched and then questioned, with the primary source one click away.</p><div class="heronotes"><span>Original research + reviews + historical scholarship</span><span>Short films and film treatments</span><span>Primary sources linked throughout</span></div></div></section>
 <section class="index" id="library"><div class="wrap"><div class="intro"><div><p class="kicker">The catalogue</p><h2>Every paper, its own story.</h2></div><p>Films become playable here when a verified MP4 and caption file are present. Treatments that have not been rendered remain visible as editorial notebooks, rather than appearing as films that do not exist.</p></div>
-<div class="toolbar"><label for="q" style="font-size:13px">Find a publication or question</label><input id="q" type="search" placeholder="Search by title, method, history, molecule..." autocomplete="off"><div class="filters" aria-label="Filter the films"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="Original research" aria-pressed="false">Experiments</button><button type="button" data-filter="Book chapters" aria-pressed="false">Chapters</button><button type="button" data-filter="Patent review" aria-pressed="false">Reviews &amp; patents</button><button type="button" data-filter="Research project" aria-pressed="false">Other work</button></div><span class="count" id="count"></span></div>
+<div class="toolbar"><label for="q" style="font-size:13px">Find a publication or question</label><input id="q" type="search" placeholder="Search by title, method, history, molecule..." autocomplete="off"><div class="filters" aria-label="Filter the films"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="Original research" aria-pressed="false">Experiments</button><button type="button" data-filter="Book chapters" aria-pressed="false">Chapters</button><button type="button" data-filter="Patent review" aria-pressed="false">Reviews &amp; patents</button><button type="button" data-filter="Public essay" aria-pressed="false">Essays &amp; columns</button><button type="button" data-filter="Research project" aria-pressed="false">Other work</button></div><span class="count" id="count"></span></div>
 <div id="collection" class="collection" aria-live="polite"><p>Loading the linked film library…</p></div>
 <noscript><p class="empty">Please enable JavaScript for the film catalogue. The full bibliography remains available at <a href="/#publications">the homepage</a>.</p></noscript>
 </div></section>
@@ -34,13 +34,14 @@
  let all=[],filter="all";
  try {let r=await fetch("/assets/films/publication-series.json",{cache:"no-cache"});if(!r.ok)throw Error("Catalogue not yet deployed");all=(await r.json()).items}
  catch(_){root.innerHTML='<p class="empty">The film register is not yet deployed. <a href="/#publications">Browse the existing research bibliography</a>.</p>';return}
- const source=x=>x.doi?"https://doi.org/"+encodeURIComponent(x.doi):x.page;
+ const source=x=>x.doi?"https://doi.org/"+encodeURIComponent(x.doi):(x.source_url||x.page);
  const categories=(x)=>{
   if(filter==="all")return true;
   if(filter==="Original research")return x.category==="Original research"||x.category==="Methods";
   if(filter==="Book chapters")return x.category==="Book chapters"||x.category==="Accepted chapter";
   if(filter==="Patent review")return /review/i.test(x.category)||x.category==="Reviews";
-  return !["Original research","Methods","Book chapters","Accepted chapter","Patent review","Reviews"].includes(x.category);
+  if(filter==="Public essay")return x.category==="Public essay"||x.category==="Drug discovery column";
+  return !["Original research","Methods","Book chapters","Accepted chapter","Patent review","Reviews","Public essay","Drug discovery column"].includes(x.category);
  };
  const playerPromises=new Set();
  function render(){
