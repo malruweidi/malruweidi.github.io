@@ -3,9 +3,11 @@ on:
   push:
     branches:
       - four-documentaries-20261016
+      - film-editorial-qa-20261016
     paths:
       - assets/films/evidence-in-motion.json
       - scripts/render-evidence-series.py
+      - scripts/audit-evidence-series.py
       - .github/workflows/render-evidence-series.yml
   workflow_dispatch:
 permissions:
@@ -36,7 +38,7 @@ jobs:
       - name: Validate full film provenance, screenplay, pages, and existing content
         run: |
           node --test tests/evidence-films.test.cjs tests/research-film.test.cjs tests/film-cinematic-v2.test.cjs
-          python -m py_compile scripts/render-evidence-series.py scripts/render-documentary.py
+          python -m py_compile scripts/render-evidence-series.py scripts/render-documentary.py scripts/audit-evidence-series.py
           python scripts/render-evidence-series.py --validate-only
       - name: Download open-source local British voice model
         run: |
@@ -68,11 +70,13 @@ jobs:
               assert manifest["sha256"]==hashlib.sha256(video.read_bytes()).hexdigest()
               print(slug,round(duration,2),video.stat().st_size,flush=True)
           PY
+      - name: Check EBU R128 loudness, true peak, mobile caption length and visual differentiation
+        run: python scripts/audit-evidence-series.py
       - name: Commit ONLY newly rendered source-grounded film artifacts
         run: |
           git config user.name "Ruwaidix Documentary Builder"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/films/plates/ assets/films/*-poster.webp
+          git add assets/films/plates/ assets/films/*-poster.webp assets/films/evidence-series-technical-qa.json
           git add assets/films/what-a-bubble-can-do.mp4 assets/films/what-a-bubble-can-do.vtt assets/films/what-a-bubble-can-do-build.json
           git add assets/films/two-materials-no-section-evidence-cut.mp4 assets/films/two-materials-no-section-evidence-cut.vtt assets/films/two-materials-no-section-build.json
           git add assets/films/the-laboratory-we-carried-with-us.mp4 assets/films/the-laboratory-we-carried-with-us.vtt assets/films/the-laboratory-we-carried-with-us-build.json
