@@ -1,0 +1,48 @@
+{
+  "date_received": "2026-10-16",
+  "source": "User-provided archive images in this conversation, filenames refer to original uploads",
+  "status": "Editorial placements published; binary image assets are still pending transfer into the repository. JS suppresses unloaded photographs instead of displaying broken links.",
+  "records": [
+    {
+      "original": "IMG_2068.jpeg",
+      "destination": "assets/2026-10-16-festival-and-acs/qatar-university-chemistry-festival-colleagues.webp",
+      "classification": "photograph of a printed photograph",
+      "placement": [
+        "engagement.html#rx26-festival-portrait",
+        "stories.html#rx26-festival-portrait",
+        "archive.html#rx26-festival-portrait"
+      ],
+      "caption": "Three participants in front of a Qatar University Chemistry Festival backdrop",
+      "date_of_capture": "unverified",
+      "notes": "Crop away black margins and outer print surroundings. Do not infer participant identities or specific festival year/edition."
+    },
+    {
+      "original": "IMG_2066.png",
+      "destination": "assets/2026-10-16-festival-and-acs/acs-fall-2019-acceptance-notice-first-view.png",
+      "classification": "email screenshot (official ACS acceptance notice)",
+      "placement": [
+        "engagement.html#rx26-acs-2019-evidence",
+        "archive.html#rx26-acs-2019-evidence"
+      ],
+      "document_date": "2019-05-22",
+      "abstract_title": "Role of early Arabs and Muslims in the foundation of chemistry science",
+      "control_id": "3211078",
+      "notes": "Contains original official acceptance and recipients. Acceptance is not evidence of delivery."
+    },
+    {
+      "original": "IMG_2067.png",
+      "destination": "assets/2026-10-16-festival-and-acs/acs-fall-2019-scimix-acceptance-details.png",
+      "classification": "continuation screenshot of the same email (not a second acceptance)",
+      "placement": [
+        "engagement.html#rx26-acs-2019-evidence",
+        "archive.html#rx26-acs-2019-evidence"
+      ],
+      "division": "[HIST] Division of the History of Chemistry",
+      "session_type": "Sci-Mix",
+      "event": "ACS Fall 2019 National Meeting & Exposition",
+      "dates": "2019-08-25 to 2019-08-29",
+      "place": "San Diego, California",
+      "notes": "Continuation of first screenshot; duplicate email but separate archive image."
+    }
+  ]
+}
