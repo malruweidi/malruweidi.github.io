@@ -381,7 +381,11 @@
       "license": "Public Domain Mark",
       "category": "contextual historical photograph",
       "caption": "15th-century Arabic medical manuscript • comparative context, not the cited source",
-      "show_seconds": 4
+      "show_seconds": 4,
+      "on_frame_lines": [
+        "COMPARATIVE MEDICAL MANUSCRIPT",
+        "NOT THE CAIRO GENIZAH SOURCE"
+      ]
     },
     {
       "id": "syrup-still-life",
@@ -414,7 +418,11 @@
       "license": "Public domain, U.S. federal government work; source attribution NIAID/NIH",
       "category": "third-party anatomical reference",
       "caption": "NIH ANATOMICAL ILLUSTRATION • NOT EXPERIMENTAL DATA",
-      "show_seconds": 5
+      "show_seconds": 5,
+      "on_frame_lines": [
+        "NIH ANATOMY REFERENCE",
+        "NOT THE RESEARCH MICROGRAPH"
+      ]
     },
     {
       "id": "generic-microtome",
@@ -425,7 +433,11 @@
       "license": "CC BY 4.0; attribution required",
       "category": "third-party contemporary equipment photograph",
       "caption": "GENERIC MICROTOME • CONTEXT PHOTO, NOT THE EXPERIMENT",
-      "show_seconds": 4
+      "show_seconds": 4,
+      "on_frame_lines": [
+        "GENERIC MICROTOME PHOTOGRAPH",
+        "NOT THE EXPERIMENT'S MACHINE"
+      ]
     },
     {
       "id": "syrup-skimming",
