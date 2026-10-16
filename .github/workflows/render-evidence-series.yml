@@ -6,13 +6,13 @@ on:
       - film-editorial-qa-20261016
       - film-final-visual-polish-20261016
       - visual-storytelling-photography-20261016
-      - visual-storytelling-photography-20261016
     paths:
       - assets/films/evidence-in-motion.json
       - scripts/render-evidence-series.py
       - scripts/audit-evidence-series.py
       - scripts/fetch-documentary-stills.py
       - scripts/snapshot-evidence-visuals.py
+      - tests/evidence-films.test.cjs
       - tests/evidence-films.test.cjs
       - films/making-medicines-keep.html
       - .github/workflows/render-evidence-series.yml
