@@ -1,0 +1,60 @@
+{
+  "id": "essay-scientific-credit",
+  "seconds": 84.0,
+  "sha256": "a50822a01037d08b28ba7b4ad31ce3b76e3d85552375eaaa28507d0e8acd293f",
+  "primary_source": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+    "Original early science presentation photo, not an image of the discovery discussed",
+    "Personal scientific colleagues photograph, general context not Nobel provenance",
+    "Archival encounter with Professor Elmostafa El-Sayed, unrelated to prize claim",
+    "Research figure illustrating traceable published contribution, not a Nobel-related experiment",
+    "Author's editorial portrait"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/2017-acs-el-sayed-group.webp",
+      "kind": "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+      "credit": "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+      "source": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/home-archive/early-science-talk.jpg",
+      "kind": "Original early science presentation photo, not an image of the discovery discussed",
+      "credit": "Original early science presentation photo, not an image of the discovery discussed",
+      "source": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/photos-2017-2019/chem-squad-abdelgalil-colleagues-2019.webp",
+      "kind": "Personal scientific colleagues photograph, general context not Nobel provenance",
+      "credit": "Personal scientific colleagues photograph, general context not Nobel provenance",
+      "source": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/2017-acs-el-sayed-group.webp",
+      "kind": "Archival encounter with Professor Elmostafa El-Sayed, unrelated to prize claim",
+      "credit": "Archival encounter with Professor Elmostafa El-Sayed, unrelated to prize claim",
+      "source": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "kind": "Research figure illustrating traceable published contribution, not a Nobel-related experiment",
+      "credit": "Research figure illustrating traceable published contribution, not a Nobel-related experiment",
+      "source": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "kind": "Author's editorial portrait",
+      "credit": "Author's editorial portrait",
+      "source": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

@@ -1,0 +1,60 @@
+{
+  "id": "essay-academic-mental-health",
+  "seconds": 84.0,
+  "sha256": "bac885b80cae99a4d462ed8d4c8c17c6ca7ef8c08b62a11a6abf80c7c4acbfdc",
+  "primary_source": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original academic archive, not a clinical record",
+    "Original late research workspace, no asserted capture hour",
+    "Archived recognition photo, not proof of any specific mentorship interaction",
+    "Original author's university laboratory-coat photograph",
+    "Archival university photo used as general context",
+    "Personal editorial portrait"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "kind": "Original academic archive, not a clinical record",
+      "credit": "Original academic archive, not a clinical record",
+      "source": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "kind": "Original late research workspace, no asserted capture hour",
+      "credit": "Original late research workspace, no asserted capture hour",
+      "source": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/oct12-owner-photos/acs-chapter-recognition-2017.webp",
+      "kind": "Archived recognition photo, not proof of any specific mentorship interaction",
+      "credit": "Archived recognition photo, not proof of any specific mentorship interaction",
+      "source": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/home-archive/university-lab-coat.jpg",
+      "kind": "Original author's university laboratory-coat photograph",
+      "credit": "Original author's university laboratory-coat photograph",
+      "source": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "kind": "Archival university photo used as general context",
+      "credit": "Archival university photo used as general context",
+      "source": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "kind": "Personal editorial portrait",
+      "credit": "Personal editorial portrait",
+      "source": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

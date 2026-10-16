@@ -1,0 +1,60 @@
+{
+  "id": "essay-tf-states",
+  "seconds": 84.0,
+  "sha256": "0d4bbab6e38514994c45240256f1edd020f6da0ed8250ecf44ac5c89599fb466",
+  "primary_source": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Generic molecular signaling editorial illustration, not a TF structure",
+    "Original chalkboard archive, not structural model",
+    "Author laboratory archive, not data from article",
+    "Published chemical figure from unrelated author's work; method analogy only",
+    "Generic concept pathway, not specific drug's atomic model",
+    "Author's editorial portrait"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/robo-concept.svg",
+      "kind": "Generic molecular signaling editorial illustration, not a TF structure",
+      "credit": "Generic molecular signaling editorial illustration, not a TF structure",
+      "source": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "kind": "Original chalkboard archive, not structural model",
+      "credit": "Original chalkboard archive, not structural model",
+      "source": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "kind": "Author laboratory archive, not data from article",
+      "credit": "Author laboratory archive, not data from article",
+      "source": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published chemical figure from unrelated author's work; method analogy only",
+      "credit": "Published chemical figure from unrelated author's work; method analogy only",
+      "source": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/robo-concept.svg",
+      "kind": "Generic concept pathway, not specific drug's atomic model",
+      "credit": "Generic concept pathway, not specific drug's atomic model",
+      "source": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "kind": "Author's editorial portrait",
+      "credit": "Author's editorial portrait",
+      "source": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
