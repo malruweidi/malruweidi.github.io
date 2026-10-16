@@ -63,6 +63,12 @@ def audit(film):
         issues.append("Unexpected artificial approval flag")
     if meta.get("sha256")!=hashlib.sha256(mp4.read_bytes()).hexdigest():
         issues.append("MP4 hash/provenance mismatch")
+    h=hashlib.sha256()
+    h.update(json.dumps(film,ensure_ascii=False,sort_keys=True).encode("utf-8"))
+    h.update((ROOT/"scripts/render-directors-cuts.py").read_bytes())
+    h.update((ROOT/"scripts/render-documentary.py").read_bytes())
+    if meta.get("input_sha256")!=h.hexdigest():
+        issues.append("Export is stale relative to revised storyboard; rerender required")
     frames=[]
     for point in (.12,.52,.87):
         try: frames.append(frame(mp4,duration*point))
