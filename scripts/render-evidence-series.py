@@ -270,10 +270,10 @@ def photograph_context_frame(source):
         backdrop=Image.blend(backdrop.filter(ImageFilter.GaussianBlur(35)),
                              Image.new("RGB",(W,H),DARK),.50)
         kept=original.copy()
-        kept.thumbnail((585,540),Image.Resampling.LANCZOS)
-        # Place portrait comparators to the right of the Ruwaidix masthead and title.
-        # Keep the full document/instrument image rather than cropping it to a cinematic slit.
-        backdrop.paste(kept,(W-52-kept.width,145))
+        kept.thumbnail((515,350),Image.Resampling.LANCZOS)
+        # Research comparators occupy the upper-right image field, not the title
+        # or masthead. A smaller complete portrait beats a cut-off scientific figure.
+        backdrop.paste(kept,(W-52-kept.width,151+(340-kept.height)//2))
     # Maintain one consistent readable masthead over variable archival and AI image exposures.
     mast=Image.new("RGBA",(W,H),(0,0,0,0))
     md=ImageDraw.Draw(mast)
@@ -286,12 +286,20 @@ def photograph_context_frame(source):
         "generic-microtome":"GENERIC MICROTOME · NOT THIS EXPERIMENT"
     }
     label=labels.get(source["id"],"EDITORIAL RECONSTRUCTION · NOT HISTORICAL FOOTAGE")
-    size=17
-    while d.textbbox((0,0),label,font=ft(size,True))[2]>1080 and size>12:
-        size-=1
-    length=d.textbbox((0,0),label,font=ft(size,True))[2]
-    d.rounded_rectangle((59,153,84+length,189),radius=4,fill=(11,34,38))
-    write_label(d,(70,160),label,size,(255,232,192),True)
+    if original.width/original.height<1.35 and source.get("on_frame_lines"):
+        lines=source["on_frame_lines"]
+        if len(lines)!=2 or any(len(line)>48 for line in lines):
+            raise ValueError("Portrait source credits need exactly two short verified lines")
+        d.rounded_rectangle((59,165,650,237),radius=5,fill=(11,34,38))
+        for i,line in enumerate(lines):
+            write_label(d,(74,176+30*i),line.upper(),17,(255,232,192),True)
+    else:
+        size=17
+        while d.textbbox((0,0),label,font=ft(size,True))[2]>1080 and size>12:
+            size-=1
+        length=d.textbbox((0,0),label,font=ft(size,True))[2]
+        d.rounded_rectangle((59,153,84+length,189),radius=4,fill=(11,34,38))
+        write_label(d,(70,160),label,size,(255,232,192),True)
     return backdrop
 
 def render_context_scene(film,scene,count,work,source):
