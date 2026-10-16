@@ -302,12 +302,13 @@
           "id": "02",
           "title": "The base and the form",
           "kind": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
-          "visual": "syrup",
+          "visual": "reconstruction-photo",
           "narration": "A thirteenth-century manual, Minhāj al-dukkān, begins its syrup chapter with julāb: a base of sugar and rose water. Fruit or medicinal material gave the syrup its particular form.",
-          "credit": "Original AI-assisted 2026 historical reconstruction. Not original photography, not evidence of this specific recipe or a medieval vessel. Conceptual illustration; period text attributed to al-Kūhīn al-ʿAṭṭār. Avoid invented script.",
+          "credit": "Original AI-generated 2026 conceptual reconstruction; not historical photography, a verified medieval vessel, or evidence for a particular prescription.",
           "link": "/index.html#writing",
           "context_visual": "syrup-still-life",
-          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
+          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence.",
+          "image_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/00617636-9415-4c53-868b-6060b4648bde.jpg"
         },
         {
           "id": "03",
@@ -351,12 +352,13 @@
           "id": "07",
           "title": "Can a finished medicine be trusted?",
           "kind": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
-          "visual": "scales",
+          "visual": "reconstruction-photo",
           "narration": "Market-oversight texts worried about false measures and deception. They also remind us of a patient’s difficult position: the finished liquid could conceal much of what happened during its preparation.",
-          "credit": "Original AI-assisted 2026 reconstruction interpreting the material culture of market oversight. Not a verified historic Cairo shop. Interpretation of hisba literature; not a historical photograph or modern state regulation.",
+          "credit": "Original AI-generated 2026 conceptual reconstruction; not historical photography, a verified medieval vessel, or evidence for a particular prescription.",
           "link": "/index.html#writing",
           "context_visual": "balance-still-life",
-          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
+          "context_use": "Supporting visual shown for 9 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence.",
+          "image_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/afe03214-9996-4017-8c1f-03c8c38ad838.jpg"
         },
         {
           "id": "08",
