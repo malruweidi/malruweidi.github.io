@@ -262,18 +262,25 @@ def photograph_context_frame(source):
     path=FILMS/"visual-sources"/source["asset"]
     with Image.open(path) as original:
         original=ImageOps.exif_transpose(original).convert("RGB")
-    if original.width/original.height>=1.35:
+    portrait=original.width/original.height<1.35
+    if not portrait:
         backdrop=ImageOps.fit(original,(W,H),method=Image.Resampling.LANCZOS)
     else:
-        # Preserve manuscript/instrument portrait without deceptive cropping.
+        # Film's left-hand title/credit column is reserved. The genuine portrait
+        # occupies only the right image field; no original figure is cropped.
         backdrop=ImageOps.fit(original,(W,H),method=Image.Resampling.LANCZOS)
-        backdrop=Image.blend(backdrop.filter(ImageFilter.GaussianBlur(35)),
-                             Image.new("RGB",(W,H),DARK),.50)
+        backdrop=Image.blend(backdrop.filter(ImageFilter.GaussianBlur(38)),
+                             Image.new("RGB",(W,H),DARK),.77)
+        darken=Image.new("RGBA",(W,H),(0,0,0,0))
+        ImageDraw.Draw(darken).rectangle((0,0,706,H),fill=(9,27,31,159))
+        backdrop=Image.alpha_composite(backdrop.convert("RGBA"),darken).convert("RGB")
         kept=original.copy()
-        kept.thumbnail((515,350),Image.Resampling.LANCZOS)
-        # Research comparators occupy the upper-right image field, not the title
-        # or masthead. A smaller complete portrait beats a cut-off scientific figure.
-        backdrop.paste(kept,(W-52-kept.width,151+(340-kept.height)//2))
+        kept.thumbnail((505,355),Image.Resampling.LANCZOS)
+        image_x=734+(500-kept.width)//2
+        image_y=143+(362-kept.height)//2
+        if image_x<721 or image_x+kept.width>1240 or image_y<140 or image_y+kept.height>510:
+            raise ValueError("Portrait would intrude into masthead or title safe area")
+        backdrop.paste(kept,(image_x,image_y))
     # Maintain one consistent readable masthead over variable archival and AI image exposures.
     mast=Image.new("RGBA",(W,H),(0,0,0,0))
     md=ImageDraw.Draw(mast)
@@ -284,21 +291,25 @@ def photograph_context_frame(source):
     # images use equivalent two-line captions to keep the original manuscript,
     # anatomy and microtome photograph unobstructed.
     labels={
-        "nih-alveoli":"NIH / NCI · ALVEOLAR ANATOMY · CONTEXT ONLY",
+        "nih-alveoli":"NIH / NIAID · ALVEOLAR ANATOMY · CONTEXT ONLY",
         "wellcome-arabic-manuscript":"WELLCOME · HISTORICAL MANUSCRIPT · NOT PRIMARY FOLIO",
-        "syrup-skimming":"CAIRO ARCHITECTURE · HISTORICAL CONTEXT ONLY",
+        "syrup-skimming":"2026 AI PROCESS RECONSTRUCTION · NOT PERIOD FOOTAGE",
         "syrup-still-life":"2026 AI RECONSTRUCTION · NOT HISTORICAL PHOTO",
         "balance-still-life":"2026 AI RECONSTRUCTION · NOT HISTORICAL PHOTO",
         "generic-microtome":"MICROTOMY REFERENCE · NOT ORIGINAL EXPERIMENT"
     }
     label=labels.get(source["id"],source["caption"].upper())
-    if original.width/original.height<1.35 and source.get("on_frame_lines"):
-        lines=source["on_frame_lines"]
-        if len(lines)!=2 or any(len(line)>48 for line in lines):
-            raise ValueError("Portrait source credits need exactly two short verified lines")
-        d.rounded_rectangle((59,165,650,237),radius=5,fill=(11,34,38))
+    if portrait:
+        lines=source.get("on_frame_lines")
+        if not lines or len(lines)!=2 or any(len(line)>48 for line in lines):
+            raise ValueError("Portrait sources require exactly two short and verified credit lines")
+        d.rounded_rectangle((59,190,668,277),radius=6,fill=(11,34,38))
         for i,line in enumerate(lines):
-            write_label(d,(74,176+30*i),line.upper(),17,(255,232,192),True)
+            upper=line.upper()
+            font=ft(17,True)
+            while d.textbbox((0,0),upper,font=font)[2]>563 and font.size>13:
+                font=ft(font.size-1,True)
+            d.text((77,203+35*i),upper,font=font,fill=(255,232,192))
     else:
         size=17
         while d.textbbox((0,0),label,font=ft(size,True))[2]>1080 and size>12:
