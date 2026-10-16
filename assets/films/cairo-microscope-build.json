@@ -1,0 +1,15 @@
+{
+  "title": "The Microscope I Brought from Cairo",
+  "seconds": 120.0,
+  "video_sha256": "7549b0716e3c3863ea617998d3f31d12eb14df3062cc5814ba6a5cf5906f7791",
+  "scene_count": 9,
+  "source_photo_sha256": {
+    "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp": "fc7b1d95ac02bee32461d5c89bad1ea0657786d843215ef81da04da7e30e2fac",
+    "assets/photos-2017-2019/microscope-morning-still-life-2017.webp": "31f6ca1ef07ef4d9bf7b843ca9511d2807c6ee79e151b62144f80ac4c62720e6",
+    "assets/2017-tatar-lab-internship.webp": "487ba365ab9f7fd35edf96b3be735e547fbdb75722ec58370d5aee6f051de5b7"
+  },
+  "script_source": "assets/films/cairo-microscope-scenes.json",
+  "render_script": "scripts/render-cairo-microscope.py",
+  "audio": "Quiet originally generated instrumental score; no speech; not ambient documentary field sound",
+  "evidence": "Actual personal microscope photograph from 2017 archive. Separate internship photograph clearly marked contextual only. No footage of purchase or travel claimed."
+}
