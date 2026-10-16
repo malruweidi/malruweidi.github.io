@@ -42,6 +42,8 @@ jobs:
               assert Path(x["contact_sheet"]).stat().st_size>3000
           print("Verified",a["completed_films"],"actual video contact sheets")
           PY
+      - name: Verify all 44 bespoke editorial treatments and non-destructive picture snapshots
+        run: node --test tests/full-cinema-remake-audit.test.cjs
       - name: Save contact sheets on audit-only branch without replacing films
         run: |
           git config user.name "Ruwaidix Film Audit"
