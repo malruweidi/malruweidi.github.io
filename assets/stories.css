@@ -117,3 +117,11 @@ html[dir="rtl"][data-rx-page="stories"] .stories-chapter-text>div.rx-story-ar>p.
 html[data-rx-page="stories"] .stories-chapter-text>p.rx-story-ar{font-family:"Noto Naskh Arabic",serif;font-size:19px;line-height:1.9}
 @media(max-width:820px){html[data-rx-page="stories"] .rx25-photo-grid-three{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:570px){html[data-rx-page="stories"] .rx25-photo-grid,html[data-rx-page="stories"] .rx25-photo-grid-three,html[data-rx-page="stories"] .rx25-photo-grid-two{grid-template-columns:1fr}html[data-rx-page="stories"] .rx25-photo-grid img{height:auto;max-height:430px}}
+
+/* Quiet documentation: full source notes remain readable on demand, outside the narrative flow. */
+html[data-rx-page="stories"] details.rx-source-fold{margin-top:25px;padding:0;background:transparent;border:0;border-top:1px solid color-mix(in srgb,currentColor 15%,transparent);box-shadow:none}
+html[data-rx-page="stories"] details.rx-source-fold>summary{list-style-position:inside;cursor:pointer;padding:13px 0;font:500 12px/1.5 "DM Sans",Arial,sans-serif;letter-spacing:.015em;opacity:.74}
+html[data-rx-page="stories"] details.rx-source-fold>summary:hover,html[data-rx-page="stories"] details.rx-source-fold>summary:focus-visible{opacity:1;text-decoration:underline;text-underline-offset:4px}
+html[data-rx-page="stories"] details.rx-source-fold>.rx-source-detail{padding:8px 0 18px}
+html[data-rx-page="stories"] details.rx-source-fold .rx-source-detail>strong{display:none}
+html[lang="ar"][data-rx-page="stories"] details.rx-source-fold>summary{font-family:"Noto Naskh Arabic",serif;font-size:17px}
