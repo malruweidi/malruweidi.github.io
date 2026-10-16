@@ -1,8 +1,8 @@
 {
   "title": "Making Medicines Keep",
   "seconds": 120.0,
-  "bytes": 3421052,
-  "sha256": "d99997a131a896f6a73ff9698f723fc6b1df74eb4113d18afc5320b9758869ff",
+  "bytes": 3382283,
+  "sha256": "bfc351212f97f2bd421be1fe480efde943d471140d5b19b49bb251857bccb5bf",
   "source": "assets/films/evidence-in-motion.json",
   "chapters": 8,
   "media": [
@@ -21,7 +21,11 @@
         "license": "Public Domain Mark",
         "category": "contextual historical photograph",
         "caption": "15th-century Arabic medical manuscript • comparative context, not the cited source",
-        "show_seconds": 4
+        "show_seconds": 4,
+        "on_frame_lines": [
+          "COMPARATIVE MEDICAL MANUSCRIPT",
+          "NOT THE CAIRO GENIZAH SOURCE"
+        ]
       }
     },
     {
