@@ -117,7 +117,7 @@ test("sourced context photos have explicit credit, rights and actual source link
   const runner=load("scripts/render-evidence-series.py");
   assert.match(runner,/def render_context_scene\(/);
   assert.match(runner,/def photograph_context_frame\(/);
-  assert.match(runner,/source\["caption"\]/, "the exact attributed context label is rendered on the image");
+  assert.match(runner,/labels\.get\(source\["id"\]/, "source-specific visibly credited short labels are rendered for each source");
   const snapshot=load("scripts/snapshot-evidence-visuals.py");
   assert.match(snapshot,/download_url/);
   assert.match(snapshot,/sha256/);
