@@ -1,7 +1,0 @@
-{
-  "film": "feature-what-survives-the-experiment",
-  "status": "RENDER BLOCKED; NOT A COMPLETED VIDEO",
-  "error": "feature-what-survives-the-experiment shot 8: voice exceeds 10s. Rewrite or rerecord; never clip.",
-  "source": "assets/films/cinematic-library-v2.json",
-  "input_sha256": "0c9c92fa264282cb62caae6d21c8ab9007ed2c0b58b80059426b4725e06a1f0f"
-}
