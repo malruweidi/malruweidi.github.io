@@ -24,3 +24,9 @@ Real footage is documentary texture, never invented evidence of a mechanism. A p
 **Voice:** Open-source, not voice cloning. Generated British English narration (Kokoro bm_george) at natural tempo. A subtle procedural synthesised ambience provides an original bed without copyright dependency. The score and timbre should be critically listened to before the film is considered final.
 
 **Rights:** Retain archive credit and confirm third-party photo and published-figure republication permission as needed before wider distribution. No original site routes or source photos are discarded.
+
+## Build verification (16 October 2026)
+
+The open-source GitHub Actions renderer has successfully produced an MP4 with verified duration **120.0 seconds** (12 scenes, two containing original motion recordings). The generated `what-survives-build.json` records the MP4 SHA-256, voice engine, source class for each chapter and script source. The self-hosted video file and timed English VTT are included in this feature branch; this is not a HeyGen-hosted film.
+
+Quality sign-off is distinct from automated rendering: a human audition of Kokoro's synthesized speech, final frame review, licenses and bilingual accessibility checks remain editorial judgments. The full research archive and existing website pages stay unchanged outside the targeted additive editing.
