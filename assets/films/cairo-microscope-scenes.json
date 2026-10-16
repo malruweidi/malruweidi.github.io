@@ -1,0 +1,98 @@
+{
+  "title": "The Microscope I Brought from Cairo",
+  "running_seconds": 120,
+  "film_language": "English; onscreen first-person text, no synthetic narrator",
+  "story": "/stories/cairo-microscope.html",
+  "archival_post": "1 July 2017 (post date, not verified camera date)",
+  "design": "An archival photograph explored as a quiet two-minute visual essay. Unmodified original shown at opening and closing. Detail crops are editorial, not new evidentiary photographs.",
+  "methodological_note": "Personal recollection documents the purchase and transport. The photographs show the microscope at home in Qatar, not the purchase, travel, or scientific measurements.",
+  "scenes": [
+    {
+      "id": "01",
+      "start": 0,
+      "duration": 11,
+      "mode": "archive",
+      "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "title": "An ordinary morning",
+      "text": "This is my microscope at home in Qatar. The photograph was posted on 1 July 2017; the original camera date is not verified.",
+      "note": "Original personal photograph · full image"
+    },
+    {
+      "id": "02",
+      "start": 11,
+      "duration": 14,
+      "mode": "route",
+      "title": "Qasr El Einy → Qatar",
+      "text": "I bought the instrument in the Qasr El Einy area of Cairo. Getting it to Qatar took considerable effort. This journey is remembered, not photographed.",
+      "note": "First-person recollection · typographic representation, not travel footage"
+    },
+    {
+      "id": "03",
+      "start": 25,
+      "duration": 14,
+      "mode": "archive",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "title": "A microscope of my own",
+      "text": "I wanted to be able to return to an observation when the question occurred to me, not only during scheduled laboratory hours.",
+      "note": "Personal microscope photograph · original archive"
+    },
+    {
+      "id": "04",
+      "start": 39,
+      "duration": 13,
+      "mode": "context",
+      "image": "assets/2017-tatar-lab-internship.webp",
+      "title": "Inside the scheduled laboratory",
+      "text": "University instruments came with protocols and calendars, for good reasons. I valued that training, but curiosity kept its own hours.",
+      "note": "Separate laboratory internship photograph · contextual only"
+    },
+    {
+      "id": "05",
+      "start": 52,
+      "duration": 14,
+      "mode": "archive",
+      "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "title": "No assigned experiment",
+      "text": "The photograph shows a vacation morning: books, notes and an American Chemical Society mug. No supervisor was waiting for a result.",
+      "note": "Original personal photograph · editorial detail composition"
+    },
+    {
+      "id": "06",
+      "start": 66,
+      "duration": 13,
+      "mode": "typography",
+      "title": "The freedom to return",
+      "text": "At home, I could come back to the same object another day. I could spend time looking, change my mind, and look again.",
+      "note": "First-person recollection · editorial typography"
+    },
+    {
+      "id": "07",
+      "start": 79,
+      "duration": 14,
+      "mode": "typography",
+      "title": "Seeing is not knowing",
+      "text": "A microscope lets you see. Explanation still needs controls, methods and evidence that other people can examine. I had a place to practice the first part.",
+      "note": "Scientific interpretation · no measurement implied"
+    },
+    {
+      "id": "08",
+      "start": 93,
+      "duration": 13,
+      "mode": "archive",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "title": "Among ordinary things",
+      "text": "It stood there on my desk, among the ordinary objects of a morning at home. Scientific attention had somewhere to live between classes.",
+      "note": "Personal microscope photograph · full source retained"
+    },
+    {
+      "id": "09",
+      "start": 106,
+      "duration": 14,
+      "mode": "archive",
+      "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "title": "The microscope from Cairo",
+      "text": "The instrument came from Cairo. The photograph is from Qatar. What I remember most is having the time to ask questions that belonged to me.",
+      "note": "Original personal photograph · no experiment claimed"
+    }
+  ]
+}
