@@ -109,6 +109,35 @@ def write_vtt(items, starts, speech_lengths, path):
             cues.extend([f"{engine.vtt_time(begin)} --> {engine.vtt_time(end)}"," ".join(part),""])
     path.write_text("\n".join(cues),encoding="utf-8")
 
+def scene_provenance(entry):
+    """Preserve visual evidence labels from the editorial source catalogue, not media encoding."""
+    return [
+        {"scene_id": scene["id"], "image": scene["image"], "kind": scene["kind"],
+         "credit": scene["credit"], "source": scene["link"]}
+        for scene in entry["scenes"]
+    ]
+
+def reconcile_manifests(items):
+    """Repair metadata without modifying a published MP4 or its narration/subtitles."""
+    updated = 0
+    for entry in items:
+        slug = entry["id"]
+        manifest = OUTPUT / (slug + ".json")
+        film = OUTPUT / (slug + ".mp4")
+        if not manifest.exists() or not film.exists():
+            continue
+        old = json.loads(manifest.read_text(encoding="utf-8"))
+        actual_digest = hashlib.sha256(film.read_bytes()).hexdigest()
+        if old.get("sha256") != actual_digest:
+            raise ValueError("Film digest differs from provenance manifest: " + slug)
+        revised = dict(old)
+        revised["image_classes"] = [scene["kind"] for scene in entry["scenes"]]
+        revised["scene_provenance"] = scene_provenance(entry)
+        if revised != old:
+            manifest.write_text(json.dumps(revised, indent=2, ensure_ascii=False) + "\\n", encoding="utf-8")
+            updated += 1
+    print("Evidence manifests reconciled:", updated)
+
 def render(entry, models):
     slug = entry["id"]
     engine.TOTAL_SECONDS = entry["duration_seconds"]
@@ -138,7 +167,8 @@ def render(entry, models):
                 raise RuntimeError("Primary footage unavailable; no silent substitution allowed")
             frame,over = engine.make_frame(scene,picture,w)
             out = w/("shot-"+scene["id"]+".mp4")
-            classes.append(engine.make_clip(scene,picture,motion,frame,over,duration,out))
+            engine.make_clip(scene,picture,motion,frame,over,duration,out)
+            classes.append(scene["kind"])
             videos.append(out)
         playlist = w/"playlist.txt"
         playlist.write_text("".join("file '"+str(x)+"'\n" for x in videos),encoding="utf-8")
@@ -156,6 +186,7 @@ def render(entry, models):
         record={"id":slug,"seconds":round(duration,2),"sha256":hashlib.sha256(out.read_bytes()).hexdigest(),
                 "primary_source":("https://doi.org/"+entry["doi"]) if entry.get("doi") else entry.get("source_url", entry["page"]),
                 "voice":"Open Kokoro ONNX, synthetic actor-free narrator","image_classes":classes,
+                "scene_provenance":scene_provenance(entry),
                 "disclosure":"Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."}
         (OUTPUT/(slug+".json")).write_text(json.dumps(record,indent=2)+"\n")
         print("RENDERED",slug,round(duration,2),"seconds",out.stat().st_size,"bytes")
@@ -168,6 +199,7 @@ def main():
     p.add_argument("--missing-only",action="store_true",help="Keep verified existing MP4/VTT/JSON releases; render only absent titles")
     p.add_argument("--limit",type=int,help="Maximum number of missing films to render per job, so completed films can be published in batches")
     p.add_argument("--remaining-count",action="store_true",help="Print how many releases lack a complete MP4, VTT and JSON manifest")
+    p.add_argument("--reconcile-manifests",action="store_true",help="Correct existing release evidence labels without re-rendering films")
     opts=p.parse_args()
     data=json.loads(CATALOG.read_text(encoding="utf-8"))
     items=verify_catalog(data["items"])
@@ -178,6 +210,9 @@ def main():
         items=[x for x in items if x["id"] in wanted]
     print("Films validated:", ", ".join(x["id"] for x in items))
     if opts.validate_only: return
+    if opts.reconcile_manifests:
+        reconcile_manifests(items)
+        return
     if opts.missing_only or opts.remaining_count:
         absent = [e for e in items if not all((OUTPUT / (e["id"] + ext)).is_file() and
                   (OUTPUT / (e["id"] + ext)).stat().st_size > 100
