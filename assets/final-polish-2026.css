@@ -462,3 +462,67 @@ html[lang="ar"][data-rx-page="home"] .rx-evidence-links>a>strong{
     transition:none;
   }
 }
+
+/* Contrast and metadata legibility corrections — 16 October 2026.
+   Scope to evidence plates and archival labels; leave the visual identity intact. */
+html[data-rx-page="home"] .story.editorial-story .anatomy-photo figcaption {
+  background:#e6ebe4;
+  color:#284b4d!important;
+  font-size:12px;
+}
+html[data-rx-page="home"] .story.editorial-story .anatomy-photo figcaption span {
+  color:#284b4d!important;
+}
+html[data-rx-page="home"] .rx-field-photo .rx-field-caption {
+  background:#fffdf8;
+  color:#284b4d!important;
+}
+html[data-rx-page="home"] .rx-field-photo .rx-field-caption :is(p,small,span,a) {
+  color:#284b4d!important;
+}
+html[data-rx-page="home"] .rx-field-photo .rx-field-caption .rx-field-meta {
+  font-size:12px;
+}
+html[data-rx-page="home"] .archive-photo-pair figcaption {
+  color:#526b65;
+  font-size:12px;
+  line-height:1.65;
+}
+html[data-rx-page="home"] .quacs-feature .quacs-foot {
+  color:#4b635d;
+  font-size:12px;
+}
+html[data-rx-page="home"] .quacs-feature .rx-science-eyebrow {
+  color:#91472f;
+}
+html[data-rx-page="home"] .quacs-feature .rx-provenance {
+  color:#4b6261;
+  font-size:12px;
+}
+html[data-rx-page="home"] .quacs-feature a:not(.button):not(.contactbutton) {
+  color:#87412f;
+}
+html[data-rx-page="home"] .methodlegend {
+  color:#4b635d;
+  font-size:12px;
+}
+html[data-rx-page="home"] .chem-squad-teaser-link {
+  color:#87412f;
+}
+html[data-rx-page="archive"] .filmstrip .eyebrow {
+  color:#f0b999;
+}
+html[data-rx-page="archive"] .rx-field-source {
+  color:#4b6562;
+  font-size:12px;
+}
+html[data-rx-page="archive"] .current-era figcaption,
+html[data-rx-page="archive"] .photo-section .footnote {
+  color:#4b6562;
+  font-size:12px;
+}
+html[data-rx-page="archive"] .rx-labcoat2016-eyebrow,
+html[data-rx-page="archive"] .rx-labcoat2016-link,
+html[data-rx-page="archive"] .current-era .now-grid a {
+  color:#87412f;
+}
