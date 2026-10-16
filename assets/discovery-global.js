@@ -93,3 +93,41 @@
     document.addEventListener("DOMContentLoaded", setUpReadingContinuity, {once:true});
   } else setUpReadingContinuity();
 })();
+
+
+/* Keep language selection inside navigation, rather than covering archival prose.
+   Home uses the existing mobile menu; other unified pages use Explore > Language.
+   This relocates existing controls; it does not remove either language. */
+(() => {
+  "use strict";
+  let mobileQuery;
+  function placeControls() {
+    const switcher = document.querySelector(".site-lang-switch");
+    if (!switcher) return;
+    const page = document.documentElement.dataset.rxPage;
+    if (page === "home") {
+      const mobile = window.matchMedia && window.matchMedia("(max-width:1100px)").matches;
+      const destination = mobile ?
+        document.querySelector("#navlinks") :
+        document.querySelector(".header .nav");
+      if (!destination) return;
+      if (switcher.parentElement !== destination) destination.appendChild(switcher);
+      switcher.classList.toggle("rx-lang-inside-mobile-nav", !!mobile);
+      return;
+    }
+    const languageGroup = document.querySelector(".rx-universal .rx-langs");
+    if (!languageGroup) return;
+    if (switcher.parentElement !== languageGroup) languageGroup.appendChild(switcher);
+    languageGroup.classList.add("rx-langs-integrated");
+  }
+  function ready() {
+    placeControls();
+    if (document.documentElement.dataset.rxPage !== "home" || !window.matchMedia) return;
+    mobileQuery = window.matchMedia("(max-width:1100px)");
+    if (mobileQuery.addEventListener) mobileQuery.addEventListener("change", placeControls);
+    else if (mobileQuery.addListener) mobileQuery.addListener(placeControls);
+  }
+  if (document.readyState === "loading")
+    document.addEventListener("DOMContentLoaded", ready, {once:true});
+  else ready();
+})();
