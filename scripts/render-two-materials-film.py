@@ -220,7 +220,7 @@ def assemble(scenes, workspace, soundtrack):
         vf=("zoompan=z='min(zoom+0.000015,1.006)':"
             "x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
             "d=1:s=1280x720:fps=24,"
-            f"fade=t=in:st=0:d=.45,fade=t=out:st={fadeout}:d=.55,"
+            f"fade=t=in:st=0:d=0.45,fade=t=out:st={fadeout}:d=0.55,"
             "format=yuv420p")
         command(["ffmpeg","-hide_banner","-loglevel","error","-y","-loop","1","-framerate","24",
                  "-i",str(src),"-vf",vf,"-frames:v",str(frames),"-an",
