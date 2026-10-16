@@ -15,6 +15,8 @@ jobs:
         run: node scripts/site-integrity.cjs
       - name: Verify film sources, captions and non-destructive discovery
         run: node --test tests/moving-evidence.test.cjs
+      - name: Verify filmed research provenance, media checksum and bilingual transcript
+        run: node --test tests/film-publication.test.cjs
       - name: Check editorial wayfinding and chapter preservation
         run: node --test tests/editorial-wayfinding.test.mjs
       - name: Test lossless standalone stories and research dossiers
