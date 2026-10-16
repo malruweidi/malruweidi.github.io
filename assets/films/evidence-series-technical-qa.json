@@ -19,8 +19,8 @@
         "longest_cue_characters": 71,
         "last_end_seconds": 117.413
       },
-      "bytes": 3260803,
-      "sha256": "0b61ee4093f4b821b975193f84141e370bbc7eede644b0103c848ac13dc998da"
+      "bytes": 3263451,
+      "sha256": "289de605430cd6618d8a272a1b43b7829d84cf09da345356e2b81d3b6194afcf"
     },
     {
       "film": "two-materials-no-section",
@@ -32,15 +32,15 @@
         720
       ],
       "frame_rate": 24,
-      "loudness_lufs": -18.1,
-      "true_peak_dBFS": -2.0,
+      "loudness_lufs": -18.0,
+      "true_peak_dBFS": -1.9,
       "captions": {
         "cue_count": 24,
         "longest_cue_characters": 66,
         "last_end_seconds": 116.168
       },
-      "bytes": 3320998,
-      "sha256": "085fe88af7815f99983c3098fb1000fc5d2a40687ac4d9fe36310b6e661f3ec2"
+      "bytes": 3321366,
+      "sha256": "19fd8d74fbf5322911ff27f597dba4baaba977220b3a3d13949b805dc409d251"
     },
     {
       "film": "the-laboratory-we-carried-with-us",
@@ -53,14 +53,14 @@
       ],
       "frame_rate": 24,
       "loudness_lufs": -18.0,
-      "true_peak_dBFS": -1.9,
+      "true_peak_dBFS": -2.0,
       "captions": {
         "cue_count": 25,
         "longest_cue_characters": 71,
         "last_end_seconds": 117.759
       },
-      "bytes": 3442826,
-      "sha256": "0450ee28447aecc3064a5ebad03034ad1e48c71def1a9df3741e824fc14da69c"
+      "bytes": 3444125,
+      "sha256": "2a2460d364f297d51c25dc4dec9bce35d6d8ed64e6b6b457a1ad94fc5342d335"
     },
     {
       "film": "making-medicines-keep",
@@ -79,9 +79,9 @@
         "longest_cue_characters": 71,
         "last_end_seconds": 118.11699999999999
       },
-      "bytes": 3382283,
-      "sha256": "bfc351212f97f2bd421be1fe480efde943d471140d5b19b49bb251857bccb5bf",
-      "historical_illustrations_difference": 0.0568
+      "bytes": 3561986,
+      "sha256": "54e10c71d7e11849f209625d62454e10fc6b0c83960583d78cb232825b3e7c12",
+      "historical_illustrations_difference": 0.1624
     }
   ]
 }

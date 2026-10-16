@@ -15,8 +15,8 @@
         "NOT THE CAIRO GENIZAH SOURCE"
       ],
       "local_path": "/assets/films/visual-sources/wellcome-arabic-medical-manuscript-15c.webp",
-      "sha256": "681205182bc044bef24a7b46ab4efc729508717bb62180b3f1366501e6e0e1de",
-      "bytes": 290666,
+      "sha256": "746b773397055a559ea2b7bb9d14a0b0a8fb73130beffcaec78b4131f76851ae",
+      "bytes": 289068,
       "dimensions": [
         760,
         928
@@ -33,8 +33,8 @@
       "caption": "EDITORIAL RECONSTRUCTION • NOT A HISTORICAL PHOTOGRAPH",
       "show_seconds": 9,
       "local_path": "/assets/films/visual-sources/syrup-editorial-reconstruction.webp",
-      "sha256": "3bda33eef3e9561e8b3ebe036ef24fc4b41826e9241024f5a80dc0018b2a3f43",
-      "bytes": 140806,
+      "sha256": "ec43548ac1af8c044f36395f19a5051982acd790b41f621f696c77bcb5c11dc5",
+      "bytes": 139766,
       "dimensions": [
         1376,
         768
@@ -51,8 +51,8 @@
       "caption": "EDITORIAL RECONSTRUCTION • NOT A HISTORICAL PHOTOGRAPH",
       "show_seconds": 9,
       "local_path": "/assets/films/visual-sources/market-balance-editorial-reconstruction.webp",
-      "sha256": "071d495fda3d5ffdfc57f5e248f8d8ba22f8f149fac4def82dbcb38ca5fd9fe6",
-      "bytes": 154964,
+      "sha256": "0e07187693b04a87731cba757d182bb0e74e6ffe63c906d23931c1d69ccf3164",
+      "bytes": 153024,
       "dimensions": [
         1376,
         768
@@ -73,8 +73,8 @@
         "NOT THE RESEARCH MICROGRAPH"
       ],
       "local_path": "/assets/films/visual-sources/nih-niaid-alveoli-context.webp",
-      "sha256": "c444043b862be3e9fc991f188506d90e4092559bb4ee846484ef93b75bed7424",
-      "bytes": 100288,
+      "sha256": "4ca797def4b7e006305e5688608298dc30702b34fdb419cbaf7cfa5ee29d7629",
+      "bytes": 99452,
       "dimensions": [
         1280,
         1272
@@ -95,8 +95,8 @@
         "NOT THE EXPERIMENT'S MACHINE"
       ],
       "local_path": "/assets/films/visual-sources/microtome-manas-context.webp",
-      "sha256": "ab46c083d76752f0a9fad592e7e5e518bb88b92b3d44e2e38755ff373d97c07e",
-      "bytes": 180326,
+      "sha256": "6147dbcc837e0dd1d8c731f5ab3183a791ef230eb70999d47d243e4dcbac9e66",
+      "bytes": 178838,
       "dimensions": [
         1146,
         1284
@@ -113,8 +113,8 @@
       "caption": "SKIMMING AND STRAINING • EDITORIAL RECONSTRUCTION, NOT PERIOD FOOTAGE",
       "show_seconds": 9,
       "local_path": "/assets/films/visual-sources/syrup-skimming-editorial-reconstruction.webp",
-      "sha256": "1d8382b556386cb3cc43a1ba29cf9d9308e5804b7571804cdd85ff95671c4744",
-      "bytes": 128814,
+      "sha256": "2f58307245719c0315df71c640e0e9c9ff49e6518a084983b34be663cee20c05",
+      "bytes": 127950,
       "dimensions": [
         1376,
         768

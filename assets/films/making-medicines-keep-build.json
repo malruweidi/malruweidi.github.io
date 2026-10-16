@@ -1,8 +1,8 @@
 {
   "title": "Making Medicines Keep",
   "seconds": 120.0,
-  "bytes": 3382283,
-  "sha256": "bfc351212f97f2bd421be1fe480efde943d471140d5b19b49bb251857bccb5bf",
+  "bytes": 3561986,
+  "sha256": "54e10c71d7e11849f209625d62454e10fc6b0c83960583d78cb232825b3e7c12",
   "source": "assets/films/evidence-in-motion.json",
   "chapters": 8,
   "media": [
@@ -31,7 +31,7 @@
     {
       "chapter": "02",
       "type": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
-      "credit": "Original AI-assisted 2026 historical reconstruction. Not original photography, not evidence of this specific recipe or a medieval vessel. Conceptual illustration; period text attributed to al-Kūhīn al-ʿAṭṭār. Avoid invented script.",
+      "credit": "Original AI-generated 2026 conceptual reconstruction; not historical photography, a verified medieval vessel, or evidence for a particular prescription.",
       "source": null,
       "context_visual": "syrup-still-life",
       "context_source": {
@@ -91,7 +91,7 @@
     {
       "chapter": "07",
       "type": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
-      "credit": "Original AI-assisted 2026 reconstruction interpreting the material culture of market oversight. Not a verified historic Cairo shop. Interpretation of hisba literature; not a historical photograph or modern state regulation.",
+      "credit": "Original AI-generated 2026 conceptual reconstruction; not historical photography, a verified medieval vessel, or evidence for a particular prescription.",
       "source": null,
       "context_visual": "balance-still-life",
       "context_source": {
