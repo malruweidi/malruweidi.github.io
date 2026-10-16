@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_lewis",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "6b5a420b4883b2f9c33447000999fb4d6250b82ba4ff32fb2c2ef5658569c0b7",
+  "sha256": "dfd6f7ba01e18e4658ead6a9f8ad08d33e44313a7e1ae058e929d93dc41c6ffa",
   "shots": [
     {
       "title": "The jar",
@@ -104,5 +106,5 @@
       "source_sha256": "edbe1104307f771fbb3bb38ba66f41f888af7fc3bf71d3b10b299046679a8367"
     }
   ],
-  "input_sha256": "24b9b4758086f35ec5b5d17d6e8c0e5ee8132d041bf3c54e531363637551ed31"
+  "input_sha256": "3017cbd00a88e1fd304a5b03cf83a7247d3129afa17d6ac37dc0847cac56fa2f"
 }

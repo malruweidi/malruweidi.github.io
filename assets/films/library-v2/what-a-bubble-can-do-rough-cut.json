@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "c5e78b0e51bf6f5f94cabe1faf8e738969111461585920ffac381c6ccecf135a",
+  "sha256": "a3119d7e00137c87517068b53028f881e20fd0e87ba15a7f907c2a3ac691662e",
   "shots": [
     {
       "title": "Opening is not always gentle",
@@ -81,5 +83,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "f99a841ea69429867e4200d080d987f0c4279d7a74aef0b1142e11f39c72174c"
+  "motion_shots": [],
+  "input_sha256": "2d4c43771767a3c3d0db49f08a56513f1419fa29e3422c32135703b7424430d9"
 }
