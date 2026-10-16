@@ -473,6 +473,17 @@ def render_one(film,tts):
         for s,count in zip(film["scenes"],frames):
             if s.get("image"):
                 bg=photo_frame(ROOT/s["image"].lstrip("/"))
+            elif s.get("image_url"):
+                from urllib.request import Request, urlopen
+                url=s["image_url"]
+                if not url.startswith("https://cdn.creativeclaw.co/"):
+                    raise ValueError("External image origin not approved: "+url)
+                with urlopen(Request(url,headers={"User-Agent":"RuwaidixFilm/1.0"}),timeout=35) as response:
+                    from io import BytesIO
+                    source=Image.open(BytesIO(response.read(12_000_000))).convert("RGB")
+                bg=Image.new("RGB",(W,H),(32,33,30))
+                source.thumbnail((W,H),Image.Resampling.LANCZOS)
+                bg.paste(source,((W-source.width)//2,(H-source.height)//2))
             else:
                 bg=illustrate(film,s)
             frame=work/("source-"+s["id"]+".png")
