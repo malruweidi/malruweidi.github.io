@@ -36,6 +36,7 @@ jobs:
           python -m pip install pillow numpy soundfile kokoro-onnx cairosvg
       - name: Check scene provenance and scientific source boundaries
         run: |
+          node --test tests/publication-film-series.test.cjs
           python -m py_compile scripts/render-documentary.py scripts/render-publication-series.py
           python scripts/render-publication-series.py --validate-only
       - name: Download public open-source Kokoro narrator models
