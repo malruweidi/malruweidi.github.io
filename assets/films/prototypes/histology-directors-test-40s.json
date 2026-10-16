@@ -9,7 +9,7 @@
       "seconds": 6,
       "archival_source": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
       "label": "AT THE BLADE \u2014 The block came apart.",
-      "editorial_crop": false
+      "editorial_crop": true
     },
     {
       "index": 2,
@@ -25,7 +25,7 @@
       "seconds": 6,
       "archival_source": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
       "label": "BEFORE THE CUT \u2014 The difficulty began with orientation.",
-      "editorial_crop": false
+      "editorial_crop": true
     },
     {
       "index": 4,
@@ -33,7 +33,7 @@
       "seconds": 6,
       "archival_source": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
       "label": "THE INTENDED WORKFLOW \u2014 A specimen supported for processing.",
-      "editorial_crop": false
+      "editorial_crop": true
     },
     {
       "index": 5,
