@@ -117,9 +117,10 @@
           "narration": "Transparent zebrafish embryos let researchers observe cranial vessels developing within a living system.",
           "image": "assets/evidence-zebrafish.webp",
           "contain": true,
-          "kind": "Research-context image, not a substitute for live microscopy",
-          "credit": "Research-context image, not a substitute for live microscopy",
-          "link": "/research/zebrafish-vascular-cilia.html"
+          "kind": "Original microscopy footage, model-context limitations apply",
+          "credit": "Original hosted zebrafish microscopy recording; research context, not proof of every result",
+          "link": "/research/zebrafish-vascular-cilia.html",
+          "video": "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4"
         },
         {
           "id": "03",
