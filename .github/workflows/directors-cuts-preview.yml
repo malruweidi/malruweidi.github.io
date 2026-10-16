@@ -13,7 +13,7 @@ on:
       film:
         description: Preview exactly one film
         required: true
-        default: two-materials-no-section
+        default: what-a-bubble-can-do
         type: choice
         options:
           - two-materials-no-section
@@ -69,7 +69,7 @@ jobs:
           test "$(stat -c%s film-models/kokoro-v1.0.fp16.onnx)" -gt 90000000
       - name: Render one unapproved cinematic film in the preview folder
         env:
-          CHOSEN_FILM: ${{ inputs.film || 'two-materials-no-section' }}
+          CHOSEN_FILM: ${{ inputs.film || 'what-a-bubble-can-do' }}
         run: |
           python scripts/render-directors-cuts.py --film "$CHOSEN_FILM" --voice-mode kokoro-preview --models film-models
           ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 "assets/films/preview-v2/$CHOSEN_FILM-rough-cut.mp4"
