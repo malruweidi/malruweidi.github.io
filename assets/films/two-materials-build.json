@@ -1,0 +1,16 @@
+{
+  "title": "Two Materials. No Section.",
+  "seconds": 150.0,
+  "video_sha256": "1b6333d6ab5d701d7058691562e4b5f0b29113bdc9150d4aa98e98bb2941ba33",
+  "scene_count": 10,
+  "source_photo_sha256": {
+    "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp": "5da3dccaa2f23217178e8bce47b9ea2342581d5a4e8b5467d4acb507b45a275a",
+    "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp": "99228a53c78727e3a3b5c917c98813c74b0b2e5338e9727256240e822ea924a7",
+    "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp": "38dfe5e525ad510403245e708462408b9c5de09170d973fa71d74e8418a445e7"
+  },
+  "voice": "kokoro-onnx, bm_george, generated locally; not the author's authentic voice",
+  "sound": "original restrained harmonic score, no recorded laboratory audio",
+  "render_script": "scripts/render-two-materials-film.py",
+  "scene_source": "assets/films/two-materials-scenes.json",
+  "scientific_note": "Explanatory diagrams are labeled and are not microscopy or experimental outcomes"
+}
