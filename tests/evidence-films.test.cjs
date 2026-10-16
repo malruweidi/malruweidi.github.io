@@ -60,3 +60,19 @@ test("the production workflow and four original editorial pages actually exist",
   assert.match(load("engagement.html"),/the-laboratory-we-carried-with-us/);
   assert.match(load("index.html"),/films\/making-medicines-keep\.html/);
 });
+
+test("artwork varies with its historical scene and film labels fit their safe areas",()=>{
+  const renderer=load("scripts/render-evidence-series.py");
+  assert.match(renderer,/def historic_process_plate\(/, "distinct historical process scenes are required");
+  assert.match(renderer,/film\["number"\]\+" \/ "\+brief_topic\(film\)/, "short legible film metadata");
+  assert.doesNotMatch(renderer,/film\["topic"\]\.upper\(\)\[:59\]/, "never truncate a word in the header");
+  assert.match(renderer,/def caption_chunks\(/, "captions must fit two mobile lines");
+});
+test("all scientific and archive plates link back to a high resolution source",()=>{
+  for(const film of films){
+    const page=load("films/"+film.slug+".html");
+    for(const s of film.scenes){
+      if(s.image) assert.ok(page.includes('href="'+s.image+'"'),film.slug+"/"+s.id+" cannot open its original image");
+    }
+  }
+});
