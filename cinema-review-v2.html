@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Ruwaidix | Unapproved Film Review</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,sans-serif;background:#101e22;color:#f1eee5}
+*{box-sizing:border-box}body{margin:0}main{max-width:1300px;margin:auto;padding:clamp(18px,4vw,48px)}h1{font-family:Georgia,serif;font-size:clamp(2rem,5vw,4rem);font-weight:400;letter-spacing:-.035em}p{line-height:1.7;color:#c0ccc7}
+.small{color:#9fb2ac;font-size:.82rem;text-transform:uppercase;letter-spacing:.14em}
+.warning{border-left:3px solid #cfa473;padding:12px 18px;background:#20282a;max-width:860px}
+.controls{display:flex;gap:1rem;flex-wrap:wrap;margin:2rem 0}input,select{background:#1a2c31;border:1px solid #496063;color:white;border-radius:4px;padding:12px;font:inherit}
+input{min-width:250px;flex:1}section{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(290px,1fr);gap:24px;margin:2rem 0}
+@media(max-width:860px){section{grid-template-columns:1fr}}
+figure{margin:0}video{width:100%;aspect-ratio:16/9;background:#000;border:1px solid #455b5a;border-radius:6px}
+figcaption{line-height:1.6;font-size:.9rem;color:#bccbc5}
+article{padding:22px;background:#15262b;border:1px solid #34484b;border-radius:7px}
+article h2{font-family:Georgia,serif;font-weight:400;font-size:2rem;margin:0 0 .4em}
+a{color:#efc49b}.stat{display:block;font-size:.75rem;color:#d4ac8a;text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px}
+ol{padding-left:20px}li{padding:8px 0;line-height:1.55;border-bottom:1px solid #2f4142}
+summary{cursor:pointer;margin:1rem 0}nav{display:flex;flex-wrap:wrap;gap:8px}nav button{cursor:pointer;border:1px solid #4a5e61;background:#23363a;color:#e2eee8;padding:10px;border-radius:4px;max-width:260px;text-align:left}
+nav button:focus-visible{outline:3px solid #e3bd87}
+</style></head>
+<body><main><div class="small">Editorial workroom / film evidence review / not published</div>
+<h1>Every film earns its cut.</h1>
+<p class="warning">These files are unapproved work-in-progress editions. An exported MP4 is not proof of artistic quality, correct pronunciation, image licensing, or scientific sign-off. The existing live website and original films remain unchanged.</p>
+<div class="controls"><input id="filter" aria-label="Search films" placeholder="Search 44 revised film projects..."><select id="category" aria-label="Filter film type"><option value="">All 44</option><option value="publication">Publications and essays</option><option value="feature">Feature and alternative cuts</option></select></div>
+<nav id="films" aria-label="Select film for review"></nav>
+<section><figure><video id="preview" controls playsinline preload="metadata" aria-label="Unapproved film preview"></video><figcaption id="player-note" aria-live="polite"></figcaption></figure>
+<article><span class="stat" id="availability">Verifying preview</span><h2 id="title">Select a film</h2><p id="source"></p><div id="review-links"></div>
+<details open><summary>Timed storyboard and scene provenance</summary><ol id="shots"></ol></details></article></section>
+<p>Review standards: verify visual source identity, inspect full figure axes, listen continuously at normal volume, check scientific terminology, and compare captions against actual speech. Do not approve by automation alone.</p>
+<p><a href="https://github.com/malruweidi/malruweidi.github.io/pull/47">View the protected editorial pull request</a></p>
+</main>
+<script>
+"use strict";
+const q=(s)=>document.querySelector(s);
+const safe=(s)=>String(s??"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const state={items:[],selected:null,hasPreview:false};
+function present(f){
+state.selected=f;
+q("#title").textContent=f.title;
+q("#source").textContent="Evidence source: "+(f.primary||f.source_path||"See source register");
+const total=f.shots.reduce((a,b)=>a+Number(b.sec||0),0);
+q("#shots").innerHTML=f.shots.map(s=>'<li><b>'+safe(s.title)+'</b> · '+Number(s.sec)+'s<p>'+safe(s.narration)+'</p><small>'+safe(s.credit)+'</small></li>').join("");
+const root="/assets/films/"+(f.slug.startsWith("pub-")||f.slug.startsWith("feature-")?"library-v2/":"preview-v2/");
+const media=root+encodeURIComponent(f.slug)+"-rough-cut";
+q("#preview").pause();q("#preview").removeAttribute("src");q("#preview").innerHTML="";
+q("#preview").load();
+q("#availability").textContent="Checking "+total+"-second storyboard";
+q("#review-links").innerHTML='<a href="'+safe(media)+'.vtt">Captions (only if rendered)</a>';
+q("#player-note").textContent="Checking whether a technical preview exists. An unavailable file is not a completed film.";
+fetch(media+".json",{method:"GET"}).then(async r=>{
+if(!r.ok)throw Error("Not rendered");
+const meta=await r.json();
+if(state.selected!==f)return;
+if(!String(meta.status).includes("UNAPPROVED"))throw Error("Unexpected approval metadata");
+q("#availability").textContent="Rough cut exists · not approved";
+const v=q("#preview");v.innerHTML='<source src="'+safe(media)+'.mp4" type="video/mp4"><track kind="captions" label="English" srclang="en" src="'+safe(media)+'.vtt">';
+v.load();
+q("#player-note").textContent="Available technical export. Voice approval: "+(meta.voice_approved?"yes":"NO")+". Continuous listening and image rights still require editorial review.";
+}).catch(()=>{if(state.selected!==f)return;q("#availability").textContent="Script ready · video not verified";});
+}
+function draw(){
+const text=q("#filter").value.toLowerCase(),kind=q("#category").value;
+const candidates=state.items.filter(x=>(!kind||x.output_collection===kind)&&(x.title.toLowerCase().includes(text)||x.slug.includes(text)));
+const nav=q("#films");nav.replaceChildren();
+for(const f of candidates){const b=document.createElement("button");b.type="button";b.textContent=f.title;b.addEventListener("click",()=>present(f));nav.appendChild(b);}
+}
+Promise.all([fetch("/assets/films/cinematic-library-v2.json").then(r=>r.json()),fetch("/assets/films/directors-cuts-v2.json").then(r=>r.json())]).then(([library])=>{
+state.items=library.films;
+draw();
+if(state.items.length)present(state.items.find(f=>f.slug==="two-materials-no-section")||state.items[0]);
+}).catch(e=>q("#availability").textContent="Source catalogue could not be loaded: "+e.message);
+q("#filter").addEventListener("input",draw);q("#category").addEventListener("change",draw);
+</script></body></html>
