@@ -6,6 +6,7 @@ assets/films/library-v2/. No existing film route, MP4, caption or photograph is 
 Synthetic speech is only a listening audition; *never* auto-approve film quality.
 """
 import argparse
+import hashlib
 import importlib.util
 import json
 import re
@@ -59,14 +60,32 @@ def load():
                 raise FileNotFoundError(shot["video"])
     return films
 
+def input_digest(f):
+    """Invalidate any audition export if its script, source, style or renderer changes."""
+    h=hashlib.sha256()
+    h.update(json.dumps(f,ensure_ascii=False,sort_keys=True).encode("utf-8"))
+    h.update(STUDIO.read_bytes())
+    h.update((ROOT/"scripts/render-documentary.py").read_bytes())
+    return h.hexdigest()
+
 def exists(f):
     stem=f["slug"]+"-rough-cut"
-    return all((OUT/(stem+ext)).is_file() and (OUT/(stem+ext)).stat().st_size>120
-               for ext in (".mp4",".json",".vtt"))
+    files=[OUT/(stem+ext) for ext in (".mp4",".json",".vtt")]
+    if not all(file.is_file() and file.stat().st_size>120 for file in files):
+        return False
+    try:
+        record=json.loads(files[1].read_text(encoding="utf-8"))
+        return record.get("input_sha256")==input_digest(f)
+    except (ValueError,OSError):return False
 
 def attempted(f):
     """Blocked renders count as attempted for a batch, but NOT as completed movies."""
-    return exists(f) or (OUT/(f["slug"]+"-blocked.json")).is_file()
+    if exists(f):return True
+    block=OUT/(f["slug"]+"-blocked.json")
+    if not block.is_file():return False
+    try:
+        return json.loads(block.read_text(encoding="utf-8")).get("input_sha256")==input_digest(f)
+    except (ValueError,OSError):return False
 
 def main():
     p=argparse.ArgumentParser()
@@ -117,13 +136,14 @@ def main():
             "source_collection":film["output_collection"],
             "needs_human_narration_review":True,
             "needs_visual_composition_review":True,
-            "never_auto_publish":True
+            "never_auto_publish":True,
+            "input_sha256":input_digest(film)
         })
         result.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
       except Exception as exc:
         if not args.keep_going:raise
         block=OUT/(film["slug"]+"-blocked.json")
-        block.write_text(json.dumps({"film":film["slug"],"status":"RENDER BLOCKED; NOT A COMPLETED VIDEO","error":str(exc)[:2000],"source":"assets/films/cinematic-library-v2.json"},indent=2)+"\n")
+        block.write_text(json.dumps({"film":film["slug"],"status":"RENDER BLOCKED; NOT A COMPLETED VIDEO","error":str(exc)[:2000],"source":"assets/films/cinematic-library-v2.json","input_sha256":input_digest(film)},indent=2)+"\n")
         print("BLOCKED FILM",film["slug"],str(exc)[:400],file=sys.stderr)
 
 if __name__=="__main__":
