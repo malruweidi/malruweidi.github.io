@@ -9,12 +9,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/making-medicines-keep-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x5586aceb4140] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x559859e6a140] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x564adc5f7140] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -23,12 +19,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/two-materials-no-section-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x563dee60ed80] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55a2b6df0d80] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55f1311c2d80] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -37,12 +29,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/what-a-bubble-can-do-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x5560fb1a0c40] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55b4dfc08c40] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55ece4447c40] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -51,12 +39,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-airway-reopening-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x5612fa5deb80] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x5627f98d6b80] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55b7d1412b80] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -65,12 +49,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-cerebral-cilia-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x558d37421500] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55792e9f2780] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x555f0aa95780] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -79,12 +59,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-slit2-robo-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x563095499840] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x564c2331e840] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55acf9295840] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -93,12 +69,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-curcumin-cyanide-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x55eb833bd580] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x556530e05580] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x5562481c5580] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -107,12 +79,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-making-medicines-keep-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x5582af143380] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x557bb3988380] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x555f31778380] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -121,12 +89,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-niosomes-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x5652c3f56440] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x5625f98b9440] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x563220d32440] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -135,12 +99,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-echo-cnn-lstm-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x5634743dc340] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x5608d6007340] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55b665ecd340] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -149,12 +109,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-pla-grafting-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x563fca2fb440] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x565240130440] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x558524eba440] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -163,12 +119,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-pla-scaffolds-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x55706894ef40] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x561261f3df40] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55b2db19ef40] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -177,12 +129,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-flow-chamber-method-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x563614853ec0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x557a5d270ec0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55b72ec1cec0] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -191,12 +139,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-zebrafish-hemodynamics-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x562da19e4180] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x56286a80c180] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x560c35a84180] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -205,12 +149,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-ace2-covid-drugs-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x55a25fe8b380] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x556c93b44380] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x556070cc8380] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -219,12 +159,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-gi-autoimmunity-1-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x555deba530c0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x5568a51d00c0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x556793e590c0] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -233,12 +169,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-gi-autoimmunity-2-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x562047b62dc0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x5580aa30fdc0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x5605beda4dc0] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -247,12 +179,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-heart-failure-sensors-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x55e06e6d1dc0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x563049051dc0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55a6d6ec2dc0] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -261,12 +189,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-ace2-forms-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x5604102b9580] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55791ee6d580] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x5624aacfa580] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -275,12 +199,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-microfluidic-virus-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x556c59b83140] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55c7a56eb140] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55d3faac5140] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -289,12 +209,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-drug-release-twins-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x55ec6dd3e400] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x5555c93c0400] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x558470768400] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -303,12 +219,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-food-printing-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x56170b47a540] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55f2ee978540] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55f253b2b540] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -317,12 +229,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-ceramics-printing-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x559a466560c0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55c5905d20c0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x562c86a190c0] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -331,12 +239,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-cubosome-theranostics-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x564a9fe1eb40] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x5598faff4b40] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x564d2959cb40] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -345,12 +249,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-micelles-pahs-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x557c6bb22f00] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55b472b8cf00] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55c72f534f00] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -359,12 +259,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-heterocycle-cancer-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x560255584fc0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x560e0bb84fc0] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x56219a505fc0] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -373,12 +269,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-histology-failure-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x55c348331500] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55e9fb0c9500] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x5577aea87500] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -387,12 +279,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-cairo-microscope-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x55b341bdd200] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55ad3a854200] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x5567fd197200] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -401,12 +289,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-essay-life-between-diagnoses-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x55e09d371000] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55890302a000] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x563938f60000] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -415,12 +299,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-essay-ai-email-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x56089ca2af00] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55d39ed05f00] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x5568b8914f00] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -429,12 +309,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-essay-machine-language-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x562ef30a6400] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55eab0feb400] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x55e2a66ba400] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -443,12 +319,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-essay-academic-mental-health-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x557c60a6d640] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55585a51c640] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x564d8f966640] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -457,12 +329,8 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-essay-scientific-credit-rough-cut.mp4",
-      "issues": [
-        "Cannot decode frame 0.12: [Parsed_pad_1 @ 0x563630970080] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.52: [Parsed_pad_1 @ 0x55cb8d4c0080] Padded dimensions cannot be smaller than input dimensions.",
-        "Cannot decode frame 0.87: [Parsed_pad_1 @ 0x56537a0a7080] Padded dimensions cannot be smaller than input dimensions."
-      ],
-      "technical_check": "needs attention",
+      "issues": [],
+      "technical_check": "pass",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     }
