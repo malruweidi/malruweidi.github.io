@@ -7,14 +7,14 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "1772c67a0b96653a93915b0194d55bdca2d2800e69da7e75c749bd9efed6bc71",
+  "sha256": "4ac8c67d344ff47d95087fb546e43e895ed2615615741b278bd75144fdaeec2a",
   "shots": [
     {
       "title": "How does a vessel know the blood is moving?",
-      "kind": "Original microscopy footage, model-context limitations apply",
+      "kind": "Hosted illustrative/context motion clip; provenance not yet verified as original microscopy",
       "image": "assets/evidence-zebrafish.webp",
       "museum": null,
-      "credit": "Original hosted zebrafish microscopy recording; research context, not proof of every result"
+      "credit": "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed."
     },
     {
       "title": "What tells a vessel where to grow?",
@@ -25,10 +25,10 @@
     },
     {
       "title": "An organism in motion",
-      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "kind": "Hosted illustrative/context motion clip; provenance not yet verified as original microscopy",
       "image": "assets/films/art-v2/cerebral-cilia-1.svg",
       "museum": null,
-      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      "credit": "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed."
     },
     {
       "title": "The cilium",
@@ -74,5 +74,5 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "f0f385f58e09c0fd7a7967e50ab22be9f485931b135bcd6b00a9a787c42ea700"
+  "input_sha256": "b654328dffe84e82ba14d764987dd615efe19053dabfc36fecd1664f1548eb1c"
 }

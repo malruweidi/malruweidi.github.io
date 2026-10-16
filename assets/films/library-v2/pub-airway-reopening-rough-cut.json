@@ -7,7 +7,7 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "b25e09d4d29d447102a5eb1177dc96b2ff19fa30b40698a1b576cd82a6db3599",
+  "sha256": "4ab9f32ba0ede36b9088c181d2cdcfff0401834ff0e7c2b154e88c2a56136061",
   "shots": [
     {
       "title": "When an airway reopens",
@@ -46,17 +46,17 @@
     },
     {
       "title": "When the bubble passed",
-      "kind": "Redrawn summary of published in-vitro measurements; percent dead cells, means with SEM",
+      "kind": "Author-created chart showing published in-vitro mean cell-death percentages; no uncertainty type inferred",
       "image": "assets/films/art-v2/airway-injury-measured.svg",
       "museum": null,
-      "credit": "Research data from Al-Ruweidi et al., Journal of Applied Physiology 130 (2021), DOI 10.1152/japplphysiol.00574.2020; author-created chart of reported means and SEM, not an original published figure"
+      "credit": "Al-Ruweidi et al., J Appl Physiol 130 (2021), DOI 10.1152/japplphysiol.00574.2020. Only reported means redrawn; the original source's variability is not assigned an unverified error-bar type."
     },
     {
       "title": "Another pretreatment, same model",
-      "kind": "Redrawn summary of published in-vitro measurements; conceptual visual context",
+      "kind": "Author-created chart showing published in-vitro mean cell-death percentages; no uncertainty type inferred",
       "image": "assets/films/art-v2/airway-injury-measured.svg",
       "museum": null,
-      "credit": "Research data from Al-Ruweidi et al., Journal of Applied Physiology 130 (2021), DOI 10.1152/japplphysiol.00574.2020; author-created chart of reported means and SEM, not an original published figure"
+      "credit": "Al-Ruweidi et al., J Appl Physiol 130 (2021), DOI 10.1152/japplphysiol.00574.2020. Only reported means redrawn; the original source's variability is not assigned an unverified error-bar type."
     },
     {
       "title": "A boundary around the result",
@@ -74,5 +74,5 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "f1430d8e1c77f9e42793440955f1824da2157f71c15b49868706c482622802b0"
+  "input_sha256": "892a4527b084fb39f9803f3b71780e2353edf9d9ace354031eae1ff598ae906b"
 }
