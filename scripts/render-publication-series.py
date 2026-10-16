@@ -134,7 +134,7 @@ def reconcile_manifests(items):
         revised["image_classes"] = [scene["kind"] for scene in entry["scenes"]]
         revised["scene_provenance"] = scene_provenance(entry)
         if revised != old:
-            manifest.write_text(json.dumps(revised, indent=2, ensure_ascii=False) + "\\n", encoding="utf-8")
+            manifest.write_text(json.dumps(revised, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
             updated += 1
     print("Evidence manifests reconciled:", updated)
 
