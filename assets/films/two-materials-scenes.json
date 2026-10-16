@@ -1,0 +1,109 @@
+{
+  "title": "Two Materials. No Section.",
+  "running_seconds": 150,
+  "format": "1280x720 / 24 fps / source photographs and plainly labeled scientific schematics",
+  "source_story": "/stories/failed-zebrafish-histology.html",
+  "evidentiary_rule": "No useful histological section was obtained. Do not depict hypothetical success or identifiable microscopic section results.",
+  "scenes": [
+    {
+      "id": "01",
+      "start": 0,
+      "duration": 12,
+      "title": "The section that never existed",
+      "subtitle": "A FAILED HISTOLOGY ATTEMPT",
+      "kind": "archival photograph",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "narration": "I wanted to see inside a developing zebrafish. These photographs are from an experiment that did not work."
+    },
+    {
+      "id": "02",
+      "start": 12,
+      "duration": 16,
+      "title": "Orientation mattered",
+      "subtitle": "WHOLE LARVAE, NOT SECTIONS",
+      "kind": "archival photograph",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "narration": "The specimens were tiny. A small change in orientation could decide whether a section passed through the anatomy I needed, or missed it entirely."
+    },
+    {
+      "id": "03",
+      "start": 28,
+      "duration": 16,
+      "title": "A temporary support",
+      "subtitle": "2% AGAROSE / CONCEPTUAL DIAGRAM",
+      "kind": "explanatory schematic",
+      "diagram": "agarose",
+      "narration": "My plan was to hold each specimen in a two percent agarose matrix. That support would establish orientation before subsequent tissue processing."
+    },
+    {
+      "id": "04",
+      "start": 44,
+      "duration": 17,
+      "title": "The paraffin stage",
+      "subtitle": "EMBEDDING APPARATUS / ARCHIVE",
+      "kind": "archival photograph",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "narration": "After dehydration and clearing, paraffin was meant to provide sufficient mechanical support for microtomy. On paper, each material had a reasonable job."
+    },
+    {
+      "id": "05",
+      "start": 61,
+      "duration": 15,
+      "title": "The material boundary",
+      "subtitle": "SCHEMATIC / NOT EXPERIMENTAL MICROSCOPY",
+      "kind": "explanatory schematic",
+      "diagram": "boundary",
+      "narration": "But a hydrophilic gel and a hydrophobic embedding medium do not automatically form a mechanically coherent block. Their interface was the vulnerable point."
+    },
+    {
+      "id": "06",
+      "start": 76,
+      "duration": 16,
+      "title": "The block came apart",
+      "subtitle": "OBSERVED FAILURE / ARCHIVAL PHOTO",
+      "kind": "archival photograph",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "narration": "The processed block formed distinguishable layers. At the microtome, they separated and broke apart. A usable ribbon of histological sections never appeared."
+    },
+    {
+      "id": "07",
+      "start": 92,
+      "duration": 16,
+      "title": "What I could actually conclude",
+      "subtitle": "OBSERVATION IS NOT MECHANISM",
+      "kind": "explanatory schematic",
+      "diagram": "observation",
+      "narration": "The failure involved the materials, not simply the machine. But what I could observe was separation. Its precise physical explanation remained unresolved."
+    },
+    {
+      "id": "08",
+      "start": 108,
+      "duration": 15,
+      "title": "A hypothesis, not a diagnosis",
+      "subtitle": "AGAROSE GRADE / NOT CONFIRMED",
+      "kind": "explanatory schematic",
+      "diagram": "hypothesis",
+      "narration": "The grade and thermal behaviour of agarose might have contributed. I did not establish that experimentally, and the photographs alone cannot prove it."
+    },
+    {
+      "id": "09",
+      "start": 123,
+      "duration": 16,
+      "title": "What a future test might ask",
+      "subtitle": "PROPOSED CONTROLS / NOT PERFORMED",
+      "kind": "explanatory schematic",
+      "diagram": "controls",
+      "narration": "A future comparison could examine agarose grade, concentration and processing conditions, then measure block integrity during sectioning. Those are proposals, not completed experiments."
+    },
+    {
+      "id": "10",
+      "start": 139,
+      "duration": 11,
+      "title": "No section. An intact record.",
+      "subtitle": "FAILED ATTEMPT / FIRST-PERSON ACCOUNT",
+      "kind": "archival photograph",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "narration": "No interpretable section came from this attempt. I kept the photographs anyway. The failed block was the evidence I had."
+    }
+  ]
+}

@@ -500,6 +500,14 @@
     },
     {
       "id": 62,
+      "title": "Reading the evidence · scientific figure viewer",
+      "category": "Methods & evidence",
+      "url": "/evidence-viewer.html",
+      "summary": "Uncropped published experimental figures with expandable notes separating observation, experimental interpretation and unsupported inference.",
+      "keywords": "microscopy scientific figures SEM spectroscopy pulmonary zebrafish evidence viewer scientific methods صور مجهر صور علمية دليل أطياف تفسير الأدلة"
+    },
+    {
+      "id": 63,
       "title": "Films behind every publication · The moving bibliography",
       "category": "Methods & evidence",
       "url": "/publication-cinema.html",

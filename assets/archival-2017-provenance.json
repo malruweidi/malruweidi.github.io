@@ -1,0 +1,99 @@
+{
+  "title": "Owner-supplied science and ACS archival photographs, May–August 2017",
+  "received_on": "2026-10-16",
+  "source_statement": "Six owner-supplied photos/screenshots. Screenshot UI and black margins cropped; no invented objects or retouching. Original screenshot attachments remain in the conversation, while optimized view copies are public in this repository.",
+  "date_policy": "Dates/times/location in Apple Photos are viewer labels, not independently verified EXIF. Engraved award dates are document dates, not photograph dates.",
+  "consent_note": "Group photos depict fellow travelers. Do not infer individual identities. Assess republication permissions before further syndication.",
+  "photos": [
+    {
+      "source_upload": "IMG_7988.jpeg",
+      "web_path": "assets/2017-owner-archive/jeol-jcm6000-qatar-university-2017.webp",
+      "full_screenshot_sha256": "fd673c818d9130977351797f45a9a7488e85bfd423dc64a45f8e167f6b9f756a",
+      "web_image_sha256": "7f18b6aba03ee9c05eec373b7c8f344eb7e664e17e0c298050ad2b4a4b6770f0",
+      "screenshot_crop_xyxy": [
+        0,
+        166,
+        750,
+        1062
+      ],
+      "web_format": "image/webp",
+      "archive_display_label": "Qatar University · 18 July 2017 13:16",
+      "source_interpretation": "JEOL JCM-6000 scanning electron microscope, identified by signage and branding. No experiment inferred."
+    },
+    {
+      "source_upload": "IMG_7991.jpeg",
+      "web_path": "assets/2017-owner-archive/acs-journey-to-mars-poster-2017.webp",
+      "full_screenshot_sha256": "2a3a8ad75b0a2ecf5e46016c7005aa4d3bb4e178e3c276d77961d04fdd7dd829",
+      "web_image_sha256": "c1a7150536f9c655e20381e7d5d8fa4181f84846df9f807512dd8b92b9fd6994",
+      "screenshot_crop_xyxy": [
+        35,
+        210,
+        648,
+        1043
+      ],
+      "web_format": "image/webp",
+      "archive_display_label": "Washington · 19 August 2017 16:59",
+      "source_interpretation": "Flyer advertises Journey to Mars / ACS National Meeting 22–23 August 2017; no claim of event attendance."
+    },
+    {
+      "source_upload": "IMG_7990.jpeg",
+      "web_path": "assets/2017-owner-archive/dulles-acs-travel-2017.webp",
+      "full_screenshot_sha256": "8faada0d386d106faea0222c2f4ce8edc833e6e6950718cb989dd60835945249",
+      "web_image_sha256": "3455844f41220515f5902b37638b95581b7c5ce4bf828a521fc7cbfbe6c10ab8",
+      "screenshot_crop_xyxy": [
+        0,
+        280,
+        750,
+        1000
+      ],
+      "web_format": "image/webp",
+      "archive_display_label": "Washington Dulles International Airport · 18 August 2017 21:45",
+      "source_interpretation": "Airport location from displayed photo-library label."
+    },
+    {
+      "source_upload": "IMG_7989.png",
+      "web_path": "assets/2017-owner-archive/qatar-university-acs-delegation-2017.webp",
+      "full_screenshot_sha256": "7e8f417f188fcf12c05505acfaf0051f4ab9d61dc2ca5474ecaa076bbcef3d3c",
+      "web_image_sha256": "eef0df9d3d85718567cb669dbf23593ff2a6d18cb81bcbed51fba6ab3e4087cc",
+      "screenshot_crop_xyxy": [
+        0,
+        390,
+        750,
+        951
+      ],
+      "web_format": "image/webp",
+      "archive_display_label": null,
+      "source_interpretation": "Five-person group with Qatar and Qatar University flags; airport and capture date unverified."
+    },
+    {
+      "source_upload": "IMG_7986.png",
+      "web_path": "assets/2017-owner-archive/acs-student-chapter-service-award-2017.webp",
+      "full_screenshot_sha256": "a6a01067196307b8cab1ba53862ec259cc2113721edc43bff18c07731d3ad040",
+      "web_image_sha256": "1699bc74165717e710f0ac8bdcce9a7c343798bb813629de29989c3ed2183696",
+      "screenshot_crop_xyxy": [
+        0,
+        198,
+        750,
+        1090
+      ],
+      "web_format": "image/webp",
+      "archive_display_label": null,
+      "source_interpretation": "Qatar University College of Arts and Sciences service award engraved May 2017; chapter leadership contribution."
+    },
+    {
+      "source_upload": "IMG_7985.jpeg",
+      "web_path": "assets/2017-owner-archive/acs-executive-committee-certificate-2017.webp",
+      "full_screenshot_sha256": "1eef42f0564c95c6d95ff42306bf7f13fc40c83de18f045864a2679a94051229",
+      "web_image_sha256": "0759029f4186a45f6f854722188529bbcd4b73283c8364a8e6add473cca6b4d4",
+      "screenshot_crop_xyxy": [
+        0,
+        165,
+        750,
+        1054
+      ],
+      "web_format": "image/webp",
+      "archive_display_label": "Qatar University · 22 May 2017 15:20",
+      "source_interpretation": "Certificate naming Mahmoud Khatib AbdelRasool as QUACS executive committee member for 2016–17."
+    }
+  ]
+}
