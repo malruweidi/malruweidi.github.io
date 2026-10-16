@@ -42,3 +42,9 @@ html[data-rx-page="stories"] .stories-hero .stories-kicker { color:#F1B995; }
 html[data-rx-page="research-detail"] .rx-deep-kicker { color:#88452F; }
 html[data-rx-page="research-detail"] .rx-deep-hero .rx-deep-kicker { color:#F1B995; }
 html[data-rx-page="home"] .rx-home-science-links a { color:#88452F !important; }
+
+/* Fourth pass: context-specific contrast, confirmed against actual DOM. */
+html[data-rx-page="stories"] .stories-afterword .stories-kicker { color:#F1B995; }
+html[data-rx-page="research-detail"] .rx-research-intro .rx-deep-kicker { color:#88452F; }
+html[data-rx-page="home"] .rh-home-entry .rh-home-kicker { color:#88452F; }
+html[data-rx-page="home"] .work-card .work-footer button { color:#88452F; }
