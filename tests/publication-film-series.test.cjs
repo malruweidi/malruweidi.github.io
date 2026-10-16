@@ -98,3 +98,11 @@ test('all ten independently published essays and columns retain source links and
   assert.ok(engine.includes('entry.get("source_url", entry["page"])'));
   assert.ok(engine.includes('--missing-only'));
 });
+
+test('video links only appear for actual MP4 responses and offer readable captions', () => {
+  const page = fs.readFileSync(file('publication-cinema.html'), 'utf8');
+  assert.ok(page.includes('r.headers.get("content-type")'));
+  assert.ok(page.includes('Read captions ↗'));
+  assert.ok(page.includes('target.isConnected'));
+  assert.ok(page.includes('method:"HEAD"'));
+});
