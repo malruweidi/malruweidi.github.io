@@ -123,6 +123,52 @@ def historic_process_plate(d, scene):
         write_label(d,(114,387),"Repair was described, not universally validated",17,(211,191,161))
         write_label(d,(113,448),"ILLUSTRATION • NOT AN ORIGINAL VESSEL",15,(223,187,142))
 
+def assert_labels_fit(d, text, location, size, region, fill=CREAM, bold=False):
+    """Measure title pixels and prevent collision with adjacent editorial objects."""
+    x,y=location
+    bounds=d.textbbox((x,y),text,font=ft(size,bold))
+    left,top,right,bottom=region
+    if bounds[0]<left or bounds[1]<top or bounds[2]>right or bounds[3]>bottom:
+        raise ValueError(
+            "Historical typography falls outside its safe area: "
+            +repr(text)+" bounds="+str(bounds)+" region="+str(region))
+    write_label(d,location,text,size,fill,bold)
+
+def historic_accountability_plates(d, kind):
+    """Chapter-specific layout with separate text, diagram and footer zones."""
+    ink=(231,198,145)
+    line=(236,188,105)
+    if kind=="substitution":
+        left=(130,190,520,370)
+        right=(755,190,1140,370)
+        for rect in (left,right):
+            d.rounded_rectangle(rect,radius=14,fill=(69,67,55),outline=line,width=3)
+        assert_labels_fit(d,"NAMED INGREDIENT",(162,241),24,(145,216,505,291),CREAM,True)
+        assert_labels_fit(d,"POSSIBLE SUBSTITUTE",(774,241),21,(760,216,1130,291),CREAM,True)
+        arrow(d,[(551,278),(730,278)],line,7)
+        # The two footer lines occupy their own full-width rows, below both cards.
+        assert_labels_fit(d,"NECESSITY  ·  FUNCTION  ·  PROPORTION",(404,391),18,
+                          (350,383,960,427),ink,True)
+        assert_labels_fit(d,"SUBSTITUTION IS NOT CONCEALED ADULTERATION",(300,444),19,
+                          (200,434,1090,477),ink,True)
+    elif kind=="scales":
+        # Language on the left, demonstration on the right: no beam through a heading.
+        assert_labels_fit(d,"FALSE MEASURES",(107,213),30,(100,192,565,260),ink,True)
+        assert_labels_fit(d,"HIDDEN PRACTICE",(107,277),28,(100,262,565,326),CREAM,True)
+        d.line((110,341,538,341),fill=(170,127,88),width=2)
+        assert_labels_fit(d,"HISBA · MARKET OVERSIGHT",(109,356),18,
+                          (100,342,565,391),(221,205,175))
+        assert_labels_fit(d,"The finished medicine hides its process",(109,418),17,
+                          (100,405,566,456),(211,198,176))
+        center=867
+        d.line((center,213,center,451),fill=line,width=10)
+        d.line((649,261,1080,261),fill=line,width=9)
+        for x in (697,1037):
+            d.line((x-9,264,x-58,388),fill=line,width=3)
+            d.line((x+9,264,x+58,388),fill=line,width=3)
+            d.arc((x-80,356,x+80,430),0,180,fill=(240,186,105),width=6)
+        d.polygon([(center,450),(center-75,468),(center+75,468)],fill=line)
+
 def illustrate(film,scene):
     tone=film["tone"]
     historic=tone=="history"
@@ -188,23 +234,8 @@ def illustrate(film,scene):
         d.rectangle((398,333,871,384),fill=(219,194,158))
         write_label(d,(413,342),"+ ROSE SYRUP: ELECTUARY",19,(67,64,58),True)
         write_label(d,(392,437),"TYPESET EXPLANATION · NOT A SCAN",15,(83,67,53))
-    elif kind=="substitution":
-        d.rounded_rectangle((130,194,528,431),radius=16,fill=(72,70,56),outline=SAFFRON,width=3)
-        d.rounded_rectangle((750,194,1145,431),radius=16,fill=(72,70,56),outline=SAFFRON,width=3)
-        write_label(d,(164,254),"NAMED INGREDIENT",24,CREAM,True)
-        write_label(d,(797,254),"POSSIBLE SUBSTITUTE",21,CREAM,True)
-        arrow(d,[(547,294),(730,294)],SAFFRON,7)
-        write_label(d,(488,382),"NECESSITY · FUNCTION · PROPORTION",17,(230,203,153))
-        write_label(d,(221,465),"SUBSTITUTION IS NOT CONCEALED ADULTERATION",20,(229,187,140),True)
-    elif kind=="scales":
-        d.line((636,165,636,460),fill=(235,192,117),width=12)
-        d.line((326,237,951,237),fill=(235,192,117),width=10)
-        for x in (370,904):
-            d.line((x,238,x-55,395),fill=(231,194,133),width=3)
-            d.line((x,238,x+55,395),fill=(231,194,133),width=3)
-            d.arc((x-75,368,x+75,431),0,180,fill=(246,194,112),width=7)
-        d.polygon([(636,454),(541,479),(731,479)],fill=(226,184,114))
-        write_label(d,(170,166),"WEIGHT, TRUST AND HIDDEN PROCESS",22,(235,201,151),True)
+    elif kind in ("substitution","scales"):
+        historic_accountability_plates(d,kind)
     elif kind=="publication":
         d.rounded_rectangle((168,165,1110,466),radius=8,fill=(225,211,183),outline=(240,200,132),width=4)
         write_label(d,(210,208),"MAKING MEDICINES KEEP",39,(49,60,53),True)

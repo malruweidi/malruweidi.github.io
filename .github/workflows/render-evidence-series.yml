@@ -4,6 +4,7 @@ on:
     branches:
       - four-documentaries-20261016
       - film-editorial-qa-20261016
+      - film-final-visual-polish-20261016
     paths:
       - assets/films/evidence-in-motion.json
       - scripts/render-evidence-series.py
