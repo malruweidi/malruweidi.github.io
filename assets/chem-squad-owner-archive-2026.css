@@ -1,0 +1,22 @@
+/* Additive Chem Squad owner archive; does not alter existing member cards or sections. */
+.csrx-section{background:#17343b;color:#eef0e9;border-top:1px solid #446861;border-bottom:1px solid #446861}
+.csrx-shell{padding-top:clamp(48px,6vw,82px);padding-bottom:clamp(48px,6vw,82px)}
+.csrx-kicker{font:500 10px/1.6 "DM Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:#d5ae94;margin:0 0 16px}
+.csrx-heading{font:400 clamp(38px,5vw,66px)/1.09 "Newsreader",Georgia,serif;letter-spacing:-.028em;margin:0 0 17px;color:#f8f2e6}
+.csrx-intro{color:#d1ddd6;max-width:790px;font:400 14px/1.9 "DM Sans",system-ui,sans-serif;margin:0 0 33px}
+.csrx-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.csrx-card{margin:0;min-width:0;border:1px solid #5d7972;background:#21464a;color:#eff5ef;overflow:hidden}
+.csrx-media{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#102a2f}
+.csrx-caption{padding:20px 23px 24px}
+.csrx-label{font:500 10px/1.55 "DM Mono",monospace;text-transform:uppercase;letter-spacing:.075em;color:#e7b99b}
+.csrx-caption strong{font:400 clamp(23px,2.8vw,32px)/1.15 "Newsreader",Georgia,serif;display:block;margin:10px 0 11px}
+.csrx-caption p{font:400 13px/1.8 "DM Sans",system-ui,sans-serif;color:#c8dad2;margin:0}
+.csrx-feature{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
+.csrx-feature .csrx-media{height:100%;max-height:465px;aspect-ratio:unset}
+.csrx-feature .csrx-caption{display:flex;flex-direction:column;justify-content:center;padding:clamp(25px,4vw,48px)}
+.csrx-source{font:11px/1.8 "DM Mono",monospace;color:#d6c3b2;border-top:1px solid #6a847c;margin-top:28px;padding-top:20px}
+.csrx-source a{color:#f7cfb3;text-underline-offset:4px}
+.csrx-card a{display:block}
+.csrx-card a:focus-visible{outline:3px solid #e4b58d;outline-offset:-3px}
+@media (max-width:720px){.csrx-grid{grid-template-columns:1fr}.csrx-feature{grid-column:auto;display:block}.csrx-feature .csrx-media{height:auto;max-height:420px;aspect-ratio:4/3}.csrx-caption,.csrx-feature .csrx-caption{padding:20px}.csrx-intro{margin-bottom:25px}}
+@media (prefers-reduced-motion:reduce){.csrx-card *{scroll-behavior:auto;transition:none}}
