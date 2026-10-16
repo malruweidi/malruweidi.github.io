@@ -84,6 +84,16 @@ jobs:
               git push origin HEAD:cinematic-remake-20261017
             fi
           done
+      - name: Make true-frame contact sheets for technical visual review
+        run: |
+          python scripts/render-contact-sheet-v2.py
+          git add assets/films/visual-audit-v2/
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive real preview frames and objective QA results [v2-output]"
+            git fetch origin cinematic-remake-20261017
+            git rebase FETCH_HEAD
+            git push origin HEAD:cinematic-remake-20261017
+          fi
       - name: Summarize completed drafts and blocked titles without claiming artistic approval
         run: |
           python scripts/render-cinematic-library.py --remaining-count
