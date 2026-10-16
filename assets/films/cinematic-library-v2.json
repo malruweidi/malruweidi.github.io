@@ -5136,7 +5136,7 @@
           "credit": "Personal photographic archive; school anatomy lesson, 2011",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 14
         },
         {
           "id": "02",
@@ -5147,7 +5147,7 @@
           "credit": "Personal microscope and archival photograph",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 15
         },
         {
           "id": "03",
@@ -5159,7 +5159,7 @@
           "narrative_role": "source_interpretation",
           "video": "assets/research-archive-2026/laboratory-vacuum-pump-archival-clip.mp4",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 15
         },
         {
           "id": "04",
@@ -5170,7 +5170,7 @@
           "credit": "Published scientific figure from the research record; attribution in the Figures archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 14
         },
         {
           "id": "05",
@@ -5193,7 +5193,7 @@
           "credit": "Original record of unsuccessful polymer trials; no successful dissolution is claimed",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 16
         },
         {
           "id": "07",
@@ -5204,7 +5204,7 @@
           "credit": "Original zebrafish cardiovascular microscopy; not direct evidence of every claim in the narration",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 14
         },
         {
           "id": "08",
@@ -5215,7 +5215,7 @@
           "credit": "Original unsuccessful zebrafish histology attempt",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 14
         },
         {
           "id": "09",
@@ -5226,7 +5226,7 @@
           "credit": "Published flow-chamber research figure; controlled epithelial injury, not clinical evidence",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 15
         },
         {
           "id": "10",
@@ -5237,7 +5237,7 @@
           "credit": "Published materials-research imagery; source and figure context in the research record",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 9
+          "sec": 13
         },
         {
           "id": "11",
@@ -5248,7 +5248,7 @@
           "credit": "Pulmonary research-context illustration; ongoing thesis, not a claim of demonstrated clinical delivery",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 8,
+          "sec": 11,
           "voice_timing_adjustment": "Shortened for audible breathing room; no original research chapter removed"
         },
         {
@@ -5260,7 +5260,7 @@
           "credit": "Contemporary portrait and editorial typography; not a historical manuscript facsimile",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 11
+          "sec": 17
         }
       ],
       "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results.",
@@ -5269,7 +5269,8 @@
         "act_II": "Spectra and material failures: polymer attempts, live zebrafish vessels, and an unsuccessful histological section",
         "act_III": "The lung experiment, surface chemistry, vesicles under nebulization, and pharmaceutical reliability in Cairo"
       },
-      "editorial_note": "A continuous autobiographical investigation, not a résumé slideshow. Every original archive frame and chapter is retained; unsuccessful experiments remain unsuccessful."
+      "editorial_note": "A continuous autobiographical investigation, not a résumé slideshow. Every original archive frame and chapter is retained; unsuccessful experiments remain unsuccessful.",
+      "production_note": "Retime shot to natural generated speech + head/tail room. No speech trimming, no scientific text deletion."
     },
     {
       "id": "feature-cairo-microscope",
@@ -5406,7 +5407,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 12,
+          "sec": 13,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
@@ -5418,7 +5419,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12,
+          "sec": 13,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
@@ -5430,7 +5431,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 10,
+          "sec": 11,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
@@ -5466,7 +5467,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13,
+          "sec": 14,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
@@ -5478,7 +5479,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 14,
+          "sec": 15,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
@@ -5490,7 +5491,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13,
+          "sec": 14,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
@@ -5502,7 +5503,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11,
+          "sec": 14,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
@@ -5514,11 +5515,12 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 11,
+          "sec": 13,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         }
       ],
-      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
+      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results.",
+      "production_note": "Retime shot to natural generated speech + head/tail room. No speech trimming, no scientific text deletion."
     },
     {
       "id": "feature-airway-reopening-evidence-cut",
@@ -5540,7 +5542,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 13,
+          "sec": 14,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
@@ -5588,7 +5590,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11,
+          "sec": 12,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
@@ -5600,7 +5602,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 11,
+          "sec": 12,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         },
         {
@@ -5660,11 +5662,12 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 10,
+          "sec": 13,
           "narration_edit": "Source-preserving revision for natural speaking rate; original film/source files unchanged"
         }
       ],
-      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
+      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results.",
+      "production_note": "Retime shot to natural generated speech + head/tail room. No speech trimming, no scientific text deletion."
     },
     {
       "id": "feature-two-materials-no-section-evidence-cut",
@@ -5686,7 +5689,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "cold_open",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 16
         },
         {
           "id": "02",
@@ -5697,7 +5700,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13
+          "sec": 17
         },
         {
           "id": "03",
@@ -5708,7 +5711,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 16
         },
         {
           "id": "04",
@@ -5719,7 +5722,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 16
         },
         {
           "id": "05",
@@ -5730,7 +5733,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 10
+          "sec": 13
         },
         {
           "id": "06",
@@ -5741,7 +5744,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 16
         },
         {
           "id": "07",
@@ -5752,7 +5755,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12
+          "sec": 16
         },
         {
           "id": "08",
@@ -5763,7 +5766,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 13
+          "sec": 16
         },
         {
           "id": "09",
@@ -5774,7 +5777,7 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "source_interpretation",
           "source_audio": "authorised archive only",
-          "sec": 12,
+          "sec": 13,
           "voice_timing_adjustment": "Shortened to keep adequate human speaking pauses"
         },
         {
@@ -5786,11 +5789,12 @@
           "credit": "Editorial explanation; original context archive",
           "narrative_role": "ending",
           "source_audio": "authorised archive only",
-          "sec": 12,
+          "sec": 13,
           "voice_timing_adjustment": "Shortened without changing outcome"
         }
       ],
-      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results."
+      "directors_note": "Original source chronology retained; spoken beginning, tension and ending revised without invented results.",
+      "production_note": "Retime shot to natural generated speech + head/tail room. No speech trimming, no scientific text deletion."
     }
   ]
 }
