@@ -4,7 +4,7 @@
   "running_seconds": 120,
   "aspect_ratio": "16:9",
   "voice": "kokoro-onnx; British English; no avatar",
-  "primary_style": "archival documentary",
+  "primary_style": "scientific documentary; authentic film; static labels and uncropped scientific evidence",
   "preservation_note": "Do not discard or relabel source assets. Research figures and recordings remain attributed in the linked source pages. No experimental outcomes invented.",
   "scenes": [
     {
@@ -37,7 +37,8 @@
       "video": "assets/research-archive-2026/laboratory-vacuum-pump-archival-clip.mp4",
       "link": "chem-squad.html",
       "credit": "Archived chemistry photograph and original apparatus recording; not a recording of the extracts experiment",
-      "kind": "photograph and apparatus film"
+      "kind": "photograph and apparatus film",
+      "required_video": true
     },
     {
       "id": "04",
@@ -76,10 +77,15 @@
       "subtitle": "Zebrafish / Microscopy",
       "narration": "Then I began following developing vessels in zebrafish. The organism moved, blood flowed, and measurement became a different problem.",
       "image": "assets/evidence-zebrafish.webp",
-      "video": "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4",
       "link": "moving-evidence.html#zebrafish-films",
       "credit": "Original zebrafish cardiovascular microscopy; not direct evidence of every claim in the narration",
-      "kind": "archival experimental footage"
+      "kind": "archival experimental footage",
+      "videos": [
+        "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4",
+        "https://cdn.creativeclaw.co/u/8a002dd8/videos/0b2fc0e1-5310-4f0a-a94a-94f3471960a2.mp4",
+        "https://cdn.creativeclaw.co/u/8a002dd8/videos/bbf2d9f7-8032-4eb1-a1ec-f669c155dc23.mp4"
+      ],
+      "required_video": true
     },
     {
       "id": "08",
@@ -133,5 +139,6 @@
       "credit": "Contemporary portrait and editorial typography; not a historical manuscript facsimile",
       "kind": "photograph"
     }
-  ]
+  ],
+  "production_note": "Version 2 uses a montage of three separate original zebrafish cardiovascular microscopy videos; a separate documented apparatus clip; a self-composed atmospheric score mixed below voice. Montage contains only recordings from the credited archive. Narration and other scientific claims unchanged."
 }
