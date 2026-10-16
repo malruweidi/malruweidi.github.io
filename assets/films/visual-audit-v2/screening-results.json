@@ -1,8 +1,8 @@
 {
   "status": "TECHNICAL AUDIT ONLY, NOT ARTISTIC APPROVAL",
   "films_expected": 44,
-  "exports_examined": 41,
-  "exports_remaining": 3,
+  "exports_examined": 44,
+  "exports_remaining": 0,
   "films": [
     {
       "slug": "making-medicines-keep",
@@ -39,8 +39,10 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-airway-reopening-rough-cut.mp4",
-      "issues": [],
-      "technical_check": "pass",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -189,8 +191,10 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-ace2-forms-rough-cut.mp4",
-      "issues": [],
-      "technical_check": "pass",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -199,8 +203,10 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-microfluidic-virus-rough-cut.mp4",
-      "issues": [],
-      "technical_check": "pass",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -219,8 +225,10 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-food-printing-rough-cut.mp4",
-      "issues": [],
-      "technical_check": "pass",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -229,8 +237,10 @@
       "seconds": 120.0,
       "expected": 120,
       "source": "assets/films/library-v2/pub-ceramics-printing-rough-cut.mp4",
-      "issues": [],
-      "technical_check": "pass",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     },
@@ -395,6 +405,19 @@
       "voice_check": "NOT HUMAN-REVIEWED"
     },
     {
+      "slug": "feature-what-survives-the-experiment",
+      "seconds": 168.0,
+      "expected": 156,
+      "source": "assets/films/library-v2/feature-what-survives-the-experiment-rough-cut.mp4",
+      "issues": [
+        "Timeline duration differs from source storyboard",
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
       "slug": "feature-cairo-microscope",
       "seconds": 120.0,
       "expected": 120,
@@ -405,12 +428,41 @@
       "voice_check": "NOT HUMAN-REVIEWED"
     },
     {
+      "slug": "feature-ring-that-never-closed",
+      "seconds": 131.0,
+      "expected": 150,
+      "source": "assets/films/library-v2/feature-ring-that-never-closed-rough-cut.mp4",
+      "issues": [
+        "Timeline duration differs from source storyboard",
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "feature-airway-reopening-evidence-cut",
+      "seconds": 138.0,
+      "expected": 153,
+      "source": "assets/films/library-v2/feature-airway-reopening-evidence-cut-rough-cut.mp4",
+      "issues": [
+        "Timeline duration differs from source storyboard",
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
       "slug": "feature-two-materials-no-section-evidence-cut",
       "seconds": 120.0,
-      "expected": 120,
+      "expected": 150,
       "source": "assets/films/library-v2/feature-two-materials-no-section-evidence-cut-rough-cut.mp4",
-      "issues": [],
-      "technical_check": "pass",
+      "issues": [
+        "Timeline duration differs from source storyboard",
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
       "aesthetic_check": "NOT HUMAN-REVIEWED",
       "voice_check": "NOT HUMAN-REVIEWED"
     }

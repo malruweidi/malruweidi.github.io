@@ -2,9 +2,8 @@
   "status": "RELEASE BLOCKED UNTIL HUMAN AND SOURCE SIGN-OFF",
   "films_total": 44,
   "counts": {
-    "current_technical_preview": 34,
-    "stale_or_renderer_changed": 2,
-    "missing": 8
+    "current_technical_preview": 35,
+    "stale_or_renderer_changed": 9
   },
   "items": [
     {
@@ -70,9 +69,9 @@
     {
       "film": "pub-cerebral-cilia",
       "title": "How does a vessel know the blood is moving?",
-      "status": "stale_or_renderer_changed",
+      "status": "current_technical_preview",
       "ready_for_publication": false,
-      "reason": "Source script or render engine differs from export record",
+      "reason": "Technical export built against current declared screenplay and render source",
       "audio_approved": false,
       "composition_approved": false,
       "rights_approved": false,
@@ -280,9 +279,9 @@
     {
       "film": "pub-ace2-forms",
       "title": "Two lives of ACE2",
-      "status": "current_technical_preview",
+      "status": "stale_or_renderer_changed",
       "ready_for_publication": false,
-      "reason": "Technical export built against current declared screenplay and render source",
+      "reason": "Source script or render engine differs from export record",
       "audio_approved": false,
       "composition_approved": false,
       "rights_approved": false,
@@ -295,9 +294,9 @@
     {
       "film": "pub-microfluidic-virus",
       "title": "A laboratory shrunk into a channel",
-      "status": "current_technical_preview",
+      "status": "stale_or_renderer_changed",
       "ready_for_publication": false,
-      "reason": "Technical export built against current declared screenplay and render source",
+      "reason": "Source script or render engine differs from export record",
       "audio_approved": false,
       "composition_approved": false,
       "rights_approved": false,
@@ -325,9 +324,9 @@
     {
       "film": "pub-food-printing",
       "title": "When food becomes a printable material",
-      "status": "current_technical_preview",
+      "status": "stale_or_renderer_changed",
       "ready_for_publication": false,
-      "reason": "Technical export built against current declared screenplay and render source",
+      "reason": "Source script or render engine differs from export record",
       "audio_approved": false,
       "composition_approved": false,
       "rights_approved": false,
@@ -340,9 +339,9 @@
     {
       "film": "pub-ceramics-printing",
       "title": "A structure the body must tolerate",
-      "status": "current_technical_preview",
+      "status": "stale_or_renderer_changed",
       "ready_for_publication": false,
-      "reason": "Technical export built against current declared screenplay and render source",
+      "reason": "Source script or render engine differs from export record",
       "audio_approved": false,
       "composition_approved": false,
       "rights_approved": false,
@@ -550,58 +549,122 @@
     {
       "film": "pub-essay-proximity",
       "title": "When a Drug Makes Two Proteins Meet",
-      "status": "missing",
+      "status": "current_technical_preview",
       "ready_for_publication": false,
-      "reason": "No complete MP4 + WebVTT + manifest trio"
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
     },
     {
       "film": "pub-essay-adc",
       "title": "The Antibody Is Only the Beginning",
-      "status": "missing",
+      "status": "current_technical_preview",
       "ready_for_publication": false,
-      "reason": "No complete MP4 + WebVTT + manifest trio"
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
     },
     {
       "film": "feature-the-laboratory-we-carried-with-us",
       "title": "The Laboratory We Carried With Us",
-      "status": "missing",
+      "status": "current_technical_preview",
       "ready_for_publication": false,
-      "reason": "No complete MP4 + WebVTT + manifest trio"
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
     },
     {
       "film": "feature-what-survives-the-experiment",
       "title": "What Survives the Experiment",
-      "status": "missing",
+      "status": "stale_or_renderer_changed",
       "ready_for_publication": false,
-      "reason": "No complete MP4 + WebVTT + manifest trio"
+      "reason": "Source script or render engine differs from export record",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
     },
     {
       "film": "feature-cairo-microscope",
       "title": "The Microscope I Brought From Cairo",
-      "status": "missing",
+      "status": "current_technical_preview",
       "ready_for_publication": false,
-      "reason": "No complete MP4 + WebVTT + manifest trio"
+      "reason": "Technical export built against current declared screenplay and render source",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
     },
     {
       "film": "feature-ring-that-never-closed",
       "title": "The Ring That Never Closed",
-      "status": "missing",
+      "status": "stale_or_renderer_changed",
       "ready_for_publication": false,
-      "reason": "No complete MP4 + WebVTT + manifest trio"
+      "reason": "Source script or render engine differs from export record",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
     },
     {
       "film": "feature-airway-reopening-evidence-cut",
       "title": "A Bubble Against an Epithelium: What the Numbers Show",
-      "status": "missing",
+      "status": "stale_or_renderer_changed",
       "ready_for_publication": false,
-      "reason": "No complete MP4 + WebVTT + manifest trio"
+      "reason": "Source script or render engine differs from export record",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
     },
     {
       "film": "feature-two-materials-no-section-evidence-cut",
       "title": "The Material Boundary: An Unsuccessful Histology Attempt",
-      "status": "missing",
+      "status": "stale_or_renderer_changed",
       "ready_for_publication": false,
-      "reason": "No complete MP4 + WebVTT + manifest trio"
+      "reason": "Source script or render engine differs from export record",
+      "audio_approved": false,
+      "composition_approved": false,
+      "rights_approved": false,
+      "release_blockers": [
+        "Human narration review",
+        "Continuous image and sound screening",
+        "Source and media licensing review"
+      ]
     }
   ],
   "preservation_rule": "Original website movies remain untouched. A passing technical preview alone is insufficient for publishing."
