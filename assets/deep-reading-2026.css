@@ -13,7 +13,7 @@ html[data-rx-detail="true"] *,html[data-rx-page="research-detail"] *{box-sizing:
 .rx-deep-header nav{display:flex;gap:clamp(10px,2vw,25px);align-items:center;flex-wrap:wrap}
 .rx-deep-header nav a{font:600 12px/1.5 "DM Sans",sans-serif;color:#265149;text-decoration:none}
 .rx-deep-hero{padding:clamp(55px,8vw,110px) 0 clamp(55px,7vw,88px);background:#17343b;color:#f7f5ee}
-.rx-deep-kicker{font:500 10px/1.75 "DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:#b77556;margin:0 0 17px}
+.rx-deep-kicker{font:500 11px/1.75 "DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:#994c36;margin:0 0 17px}
 .rx-deep-hero .rx-deep-kicker{color:#f0b898}
 .rx-deep-hero h1{font:400 clamp(46px,6.2vw,87px)/1.04 "Newsreader",Georgia,serif;letter-spacing:-.035em;color:#f7f5ee;max-width:16ch;margin:0 0 25px}
 .rx-deep-lead{font:400 clamp(18px,2vw,23px)/1.66 "Newsreader",Georgia,serif;color:#e1e7dd;max-width:70ch;margin:0 0 24px}
