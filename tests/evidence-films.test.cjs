@@ -124,3 +124,16 @@ test("sourced context photos have explicit credit, rights and actual source link
   assert.match(snapshot,/sha256/);
   assert.match(snapshot,/\.webp/);
 });
+
+test("portrait source photographs and manuscript scans stay clear of narration titles",()=>{
+  const renderer=load("scripts/render-evidence-series.py");
+  assert.match(renderer,/portrait=original\.width\/original\.height<1\.35/);
+  assert.match(renderer,/kept\.thumbnail\(\(505,355\)/);
+  assert.match(renderer,/image_x=734\+/);
+  assert.match(renderer,/image_y=143\+/);
+  assert.match(renderer,/image_y\+kept\.height>510/);
+  assert.match(renderer,/source\.get\("on_frame_lines"\)/);
+  assert.match(renderer,/d\.rounded_rectangle\(\(59,190,668,277\)/);
+  assert.doesNotMatch(renderer,/backdrop\.paste\(kept,\(W-52-kept\.width/, "portrait must not fill masthead or left title column");
+  assert.match(renderer,/NIH \/ NIAID/, "cite the correct NIH institute");
+});
