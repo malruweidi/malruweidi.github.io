@@ -1,0 +1,60 @@
+{
+  "id": "essay-adc",
+  "seconds": 84.0,
+  "sha256": "3c32efe7586fad865f91fe381fe1007a18597f70d82b57eb6206430fe1a87f04",
+  "primary_source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Generic scientific visual; not an antibody-drug conjugate micrograph",
+    "General carrier visual, not an ADC structure",
+    "General molecular graphic, not a conjugated antibody",
+    "Original lab flask context, not clinical adverse-event footage",
+    "Generic materials context visual",
+    "Author's editorial portrait"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/evidence-biomaterials.webp",
+      "kind": "Generic scientific visual; not an antibody-drug conjugate micrograph",
+      "credit": "Generic scientific visual; not an antibody-drug conjugate micrograph",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/niosomes-concept.svg",
+      "kind": "General carrier visual, not an ADC structure",
+      "credit": "General carrier visual, not an ADC structure",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/robo-concept.svg",
+      "kind": "General molecular graphic, not a conjugated antibody",
+      "credit": "General molecular graphic, not a conjugated antibody",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "kind": "Original lab flask context, not clinical adverse-event footage",
+      "credit": "Original lab flask context, not clinical adverse-event footage",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/evidence-biomaterials.webp",
+      "kind": "Generic materials context visual",
+      "credit": "Generic materials context visual",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "kind": "Author's editorial portrait",
+      "credit": "Author's editorial portrait",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
