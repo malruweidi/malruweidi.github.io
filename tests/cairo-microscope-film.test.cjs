@@ -50,3 +50,24 @@ test("film collection adds the microscope without removing or rewriting previous
  assert.ok(index.items.some(x=>x.url==="/films/cairo-microscope.html"));
  assert.ok(read("sitemap.xml").includes("https://malruweidi.github.io/films/cairo-microscope.html"));
 });
+
+test("the silent Cairo film has a complete Arabic text transcript accessible without playing video", () => {
+ const page=read("films/cairo-microscope.html");
+ const css=read("assets/cairo-film.css");
+ assert.ok(page.includes('id="arabic-transcript"'), "Arabic reading section is absent");
+ assert.ok(page.includes('href="#arabic-transcript"'), "Arabic text needs a visible entry point");
+ assert.ok(page.includes('lang="ar" dir="rtl"'), "the transcript must declare Arabic right-to-left");
+ const captions=read("assets/films/cairo-microscope.ar.vtt");
+ const cues=captions.trim().split(/\\n\\s*\\n/).slice(1);
+ assert.equal(cues.length,9,"nine original caption scenes must remain represented");
+ for(const cue of cues){
+   const phrase=cue.split("\\n").slice(1).join(" ").trim();
+   assert.ok(page.includes(phrase), "missing published Arabic subtitle passage: "+phrase.slice(0,45));
+ }
+ assert.equal((page.match(/class="cm-arabic-chapter"/g)||[]).length,9);
+ assert.ok(css.includes(".cm-arabic-chapter"),"Arabic film typography is missing");
+ assert.match(css,/font-family:[^;]*Noto Naskh Arabic/);
+ assert.match(page,/الصوت موسيقى فقط/);
+ const english=JSON.parse(read("assets/films/cairo-microscope-scenes.json"));
+ for(const scene of english.scenes) assert.ok(page.includes(scene.text),"Do not abridge the original English film text");
+});
