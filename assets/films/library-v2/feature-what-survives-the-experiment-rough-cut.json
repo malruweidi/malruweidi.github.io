@@ -1,13 +1,13 @@
 {
   "slug": "feature-what-survives-the-experiment",
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
-  "duration": 168.0,
+  "duration": 156.0,
   "voice_mode": "kokoro-preview",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "0a1541e3eb3416bc217fc749977b40005704213e3a13960cbc4939c7f728f81d",
+  "sha256": "9dcad3031d7cc8240dcf3570120b6c2557f4ac325238751a26808d25ca88ae66",
   "shots": [
     {
       "title": "The anatomy room",
@@ -102,5 +102,14 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "40a6877bde6b35af2feb2d89141c5d4bcf3fb20a68b08846d98c15d15f4a119f"
+  "motion_shots": [
+    {
+      "scene": 3,
+      "video": "assets/research-archive-2026/laboratory-vacuum-pump-archival-clip.mp4",
+      "credit": "Archived chemistry photograph and original apparatus recording; not a recording of the extracts experiment",
+      "kind": "photograph and apparatus film",
+      "source_sha256": "d190c1ec756a38404ac59e5985ed826ce516801e800adf4622d1ae91e15b0e8c"
+    }
+  ],
+  "input_sha256": "4cdb2da19a5242a0c20516dbe55e28752f93c7fa47058eb785ffeec214c29dc8"
 }

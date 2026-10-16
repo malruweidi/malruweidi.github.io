@@ -7,21 +7,21 @@
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "6864673f1871443c87caf23ab6adbb5853827b9e398c63fd25ccbbebcae6d231",
+  "sha256": "d9be6d90836702602c172d4c6e5dbc21f7688e0bc093a88e8c92cd1ff9ce840e",
   "shots": [
     {
       "title": "A structure the body must tolerate",
-      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-      "image": "assets/films/art/bioceramic-lattice.svg",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ceramic-lattice.svg",
       "museum": null,
-      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      "credit": "Original conceptual depiction of ceramic scaffold porosity; not a CT scan"
     },
     {
       "title": "A patient will live with the material",
-      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-      "image": "assets/films/art/bioceramic-lattice.svg",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ceramic-processing.svg",
       "museum": null,
-      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      "credit": "Illustrative thermal-processing geometry; no measured shrinkage or dimensions"
     },
     {
       "title": "Geometry is only the beginning",
@@ -39,10 +39,10 @@
     },
     {
       "title": "Biology tests the promise",
-      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
-      "image": "assets/films/art/bioceramic-lattice.svg",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ceramic-load.svg",
       "museum": null,
-      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      "credit": "Conceptual mechanical and biological evaluation of printed ceramic, not an implant result"
     },
     {
       "title": "The difficulty: From bench to clinic",
@@ -74,5 +74,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "105b6967915cfb1a1fe2bb230b6cdf54b4f361c029c91912a18e36c14f507a19"
+  "motion_shots": [],
+  "input_sha256": "cf721cd87ea82b721870a17a999fd3c84924f94479a992a6900facf6a1810868"
 }
