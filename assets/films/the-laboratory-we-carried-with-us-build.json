@@ -1,8 +1,8 @@
 {
   "title": "The Laboratory We Carried With Us",
   "seconds": 120.0,
-  "bytes": 3446691,
-  "sha256": "e8f6229924d928baacc90686c3271c45724c27d554eb4c106b18518b272801c0",
+  "bytes": 3443648,
+  "sha256": "7c3151114ed0aaacf7ded00e452dd25ef5a346ef759f1b59fd4aabf5201362b3",
   "source": "assets/films/evidence-in-motion.json",
   "chapters": 8,
   "media": [
@@ -10,49 +10,65 @@
       "chapter": "01",
       "type": "OWNER-SUPPLIED ARCHIVE",
       "credit": "Owner-supplied Chem Squad laboratory photograph; does not prove a particular extraction outcome.",
-      "source": "/assets/owner-archive-2026-10-16/chem-squad-lab-medicinal-plant-extracts.webp"
+      "source": "/assets/owner-archive-2026-10-16/chem-squad-lab-medicinal-plant-extracts.webp",
+      "context_visual": null,
+      "context_source": null
     },
     {
       "chapter": "02",
       "type": "EDITORIAL EXPLANATION",
       "credit": "Illustrative chemical interpretation. No drug efficacy implied.",
-      "source": null
+      "source": null,
+      "context_visual": null,
+      "context_source": null
     },
     {
       "chapter": "03",
       "type": "COLLECTIVE ARCHIVE",
       "credit": "Verified Chem Squad member photo archive; group is independent, not an institutional laboratory.",
-      "source": "/assets/chem-squad-khaled-jama-mohamoud.webp"
+      "source": "/assets/chem-squad-khaled-jama-mohamoud.webp",
+      "context_visual": null,
+      "context_source": null
     },
     {
       "chapter": "04",
       "type": "ARCHIVAL PHOTOGRAPH",
       "credit": "Qatar University ACS chapter archive; Chem Squad and ACS are distinct initiatives.",
-      "source": "/archive/archive-7887.jpg"
+      "source": "/archive/archive-7887.jpg",
+      "context_visual": null,
+      "context_source": null
     },
     {
       "chapter": "05",
       "type": "COMMUNITY DOCUMENTATION",
       "credit": "Collective ACS activity; no photograph is attributed to a specific 29-student training session without evidence.",
-      "source": "/archive/archive-7888.jpg"
+      "source": "/archive/archive-7888.jpg",
+      "context_visual": null,
+      "context_source": null
     },
     {
       "chapter": "06",
       "type": "PERSONAL ARCHIVE",
       "credit": "Original photograph of Mahmoud hosting the fifth Chemistry Festival.",
-      "source": "/archive/fifth-chemistry-festival-host.webp"
+      "source": "/archive/fifth-chemistry-festival-host.webp",
+      "context_visual": null,
+      "context_source": null
     },
     {
       "chapter": "07",
       "type": "CHEM SQUAD MEMBER ARCHIVE",
       "credit": "Member photograph is a personal archive, not footage of the weekly meetings.",
-      "source": "/assets/chem-squad-abdelrahman-adel-mahmoud-01.webp"
+      "source": "/assets/chem-squad-abdelrahman-adel-mahmoud-01.webp",
+      "context_visual": null,
+      "context_source": null
     },
     {
       "chapter": "08",
       "type": "COLLECTIVE ARCHIVE",
       "credit": "Chemistry gathering archive; respect equal credit and distinct scientific roles.",
-      "source": "/archive/archive-7886.jpg"
+      "source": "/archive/archive-7886.jpg",
+      "context_visual": null,
+      "context_source": null
     }
   ],
   "editorial_method": "Real owner archive retained uncropped in frames; explicitly non-documentary original illustrations; audio Kokoro-ONNX + self-generated original score."

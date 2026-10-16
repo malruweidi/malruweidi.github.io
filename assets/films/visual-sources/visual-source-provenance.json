@@ -1,0 +1,113 @@
+{
+  "method": "Each online image is snapshotted locally with original link and full license/credit. Context photos are visually labeled; original research records are retained.",
+  "images": [
+    {
+      "id": "wellcome-arabic-manuscript",
+      "asset": "wellcome-arabic-medical-manuscript-15c.webp",
+      "source_url": "https://wellcomecollection.org/works/qgp6m763",
+      "credit": "Wellcome Collection, M0008126. 15th-century Arabic medical manuscript photograph; NOT a page of Minhāj al-dukkān or the Cairo Genizah prescription.",
+      "license": "Public Domain Mark",
+      "category": "contextual historical photograph",
+      "caption": "15th-century Arabic medical manuscript • comparative context, not the cited source",
+      "show_seconds": 4,
+      "local_path": "/assets/films/visual-sources/wellcome-arabic-medical-manuscript-15c.webp",
+      "sha256": "8e0b505cde64d20f2628b007650e22824bd8743a27789aaafe9b9307d6f8e8cf",
+      "bytes": 292358,
+      "dimensions": [
+        760,
+        928
+      ],
+      "display_note": "This image provides context, not experimental results or primary evidence of the described event."
+    },
+    {
+      "id": "syrup-still-life",
+      "asset": "syrup-editorial-reconstruction.webp",
+      "source_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/00617636-9415-4c53-868b-6060b4648bde.jpg",
+      "credit": "Original AI-assisted conceptual reconstruction commissioned for Ruwaidix. Syrup, vessels and shop setting are illustrative, not historical objects or verified practices.",
+      "license": "Original editorial AI-generated illustration",
+      "category": "AI-assisted editorial reconstruction",
+      "caption": "EDITORIAL RECONSTRUCTION • NOT A HISTORICAL PHOTOGRAPH",
+      "show_seconds": 9,
+      "local_path": "/assets/films/visual-sources/syrup-editorial-reconstruction.webp",
+      "sha256": "66057773235e4296a4b129eeb878297ba315bcdc94ad3166af35670c6d0633be",
+      "bytes": 147204,
+      "dimensions": [
+        1376,
+        768
+      ],
+      "display_note": "This image provides context, not experimental results or primary evidence of the described event."
+    },
+    {
+      "id": "balance-still-life",
+      "asset": "market-balance-editorial-reconstruction.webp",
+      "source_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/afe03214-9996-4017-8c1f-03c8c38ad838.jpg",
+      "credit": "Original AI-assisted conceptual reconstruction commissioned for Ruwaidix; illustrated balance and botanicals are not identified medieval objects.",
+      "license": "Original editorial AI-generated illustration",
+      "category": "AI-assisted editorial reconstruction",
+      "caption": "EDITORIAL RECONSTRUCTION • NOT A HISTORICAL PHOTOGRAPH",
+      "show_seconds": 9,
+      "local_path": "/assets/films/visual-sources/market-balance-editorial-reconstruction.webp",
+      "sha256": "038fd5337f8e554ef667e17469f9db731f95f3c317a9d2b6c9c18c95edc143a3",
+      "bytes": 161834,
+      "dimensions": [
+        1376,
+        768
+      ],
+      "display_note": "This image provides context, not experimental results or primary evidence of the described event."
+    },
+    {
+      "id": "nih-alveoli",
+      "asset": "nih-niaid-alveoli-context.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alveoli_(NIH_BioArt_14).png",
+      "credit": "NIAID / NIH BioArt #14 Alveoli. Public-domain anatomical illustration; unrelated to the experimental data of the pulmonary flow-chamber research.",
+      "license": "Public domain, U.S. federal government work; source attribution NIAID/NIH",
+      "category": "third-party anatomical reference",
+      "caption": "NIH ANATOMICAL ILLUSTRATION • NOT EXPERIMENTAL DATA",
+      "show_seconds": 5,
+      "local_path": "/assets/films/visual-sources/nih-niaid-alveoli-context.webp",
+      "sha256": "7bb291649e8ab7854dd08eb3221b78d96dbcaaa2fe976f58ca89dfe0a9549759",
+      "bytes": 103790,
+      "dimensions": [
+        1280,
+        1272
+      ],
+      "display_note": "This image provides context, not experimental results or primary evidence of the described event."
+    },
+    {
+      "id": "generic-microtome",
+      "asset": "microtome-manas-context.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Microtome-1.jpg",
+      "credit": "Photograph: Michal Maňas, Microtome-1.jpg, Wikimedia Commons, CC BY 4.0. Generic instrument photographed in 2005; NOT the microtome used in the user's failed zebrafish histology experiment. Cropped/resized for illustrative sequence.",
+      "license": "CC BY 4.0; attribution required",
+      "category": "third-party contemporary equipment photograph",
+      "caption": "GENERIC MICROTOME • CONTEXT PHOTO, NOT THE EXPERIMENT",
+      "show_seconds": 4,
+      "local_path": "/assets/films/visual-sources/microtome-manas-context.webp",
+      "sha256": "2d788499abef93b4ba25bfdb2760853563549da9bbd279fb7aaa5683ffb93887",
+      "bytes": 186194,
+      "dimensions": [
+        1146,
+        1284
+      ],
+      "display_note": "This image provides context, not experimental results or primary evidence of the described event."
+    },
+    {
+      "id": "syrup-skimming",
+      "asset": "syrup-skimming-editorial-reconstruction.webp",
+      "source_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/21a0fdee-6e4f-42be-86c9-d86a346ba74d.jpg",
+      "credit": "Original AI-assisted explanatory reconstruction for Ruwaidix, October 2026; depicted process and materials are interpretations, not photographed historical evidence.",
+      "license": "Original AI-assisted editorial illustration",
+      "category": "AI-assisted process reconstruction",
+      "caption": "SKIMMING AND STRAINING • EDITORIAL RECONSTRUCTION, NOT PERIOD FOOTAGE",
+      "show_seconds": 9,
+      "local_path": "/assets/films/visual-sources/syrup-skimming-editorial-reconstruction.webp",
+      "sha256": "bdfcf7718d54f39d9a1dc1c033c62e884f6437f4f81e2d4953a051faf6c09cd9",
+      "bytes": 135514,
+      "dimensions": [
+        1376,
+        768
+      ],
+      "display_note": "This image provides context, not experimental results or primary evidence of the described event."
+    }
+  ]
+}
