@@ -58,10 +58,10 @@ test("the silent Cairo film has a complete Arabic text transcript accessible wit
  assert.ok(page.includes('href="#arabic-transcript"'), "Arabic text needs a visible entry point");
  assert.ok(page.includes('lang="ar" dir="rtl"'), "the transcript must declare Arabic right-to-left");
  const captions=read("assets/films/cairo-microscope.ar.vtt");
- const cues=captions.trim().split(/\\n\\s*\\n/).slice(1);
+ const cues=captions.trim().split(/\n\s*\n/).slice(1);
  assert.equal(cues.length,9,"nine original caption scenes must remain represented");
  for(const cue of cues){
-   const phrase=cue.split("\\n").slice(1).join(" ").trim();
+   const phrase=cue.split("\n").slice(1).join(" ").trim();
    assert.ok(page.includes(phrase), "missing published Arabic subtitle passage: "+phrase.slice(0,45));
  }
  assert.equal((page.match(/class="cm-arabic-chapter"/g)||[]).length,9);
