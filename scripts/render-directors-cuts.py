@@ -173,7 +173,13 @@ def captions(film, wav_lengths):
 def source_image(shot, workspace):
     if shot["kind"]=="museum_public_domain":
         return met_public_domain_source(shot["object_id"],workspace)
-    return ROOT / shot["image"], None
+    original = ROOT / shot["image"]
+    if original.suffix.lower() == ".svg":
+        import cairosvg
+        target = workspace / ("editorial-" + shot.get("id","cut") + ".png")
+        cairosvg.svg2png(url=str(original),write_to=str(target),output_width=1280,output_height=720)
+        return target, None
+    return original, None
 
 def recorded_speech(film, voice_dir):
     if not voice_dir:
