@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-15",
+  "version": "2026-10-16",
   "description": "Additive, source-grounded site discovery; links only to existing Ruwaidix public pages and headings.",
   "categories": [
     "Orientation",
@@ -473,6 +473,14 @@
       "url": "/stories/the-ring-that-never-closed.html",
       "summary": "An undergraduate imidazopyridine route that was not completed, the Schiff-base cyanide sensing it led to, and unresolved findings from collaborative breast-cancer cell assays.",
       "keywords": "UREP23 imidazopyridine Schiff bases failed synthesis imines cyanide colorimetric spectroscopy PRMT5 c-MYC cancer cells synthesis COVID الكيمياء الإيمين قواعد شيف التخليق الفاشل السيانيد"
+    },
+    {
+      "id": 59,
+      "title": "Moving Evidence · Scientific film archive",
+      "category": "Methods & evidence",
+      "url": "/moving-evidence.html",
+      "summary": "Six original or institutional recordings: three zebrafish microscopy streams, avian preparation, laboratory apparatus and an academic collaboration seminar, all with provenance-conscious captions.",
+      "keywords": "video archive original zebrafish microscope chick embryo laboratory footage movie research seminar evidence video recordings films تصوير علمي أفلام أبحاث مجهر أدلة متحركة"
     }
   ]
 }
