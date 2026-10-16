@@ -1,2 +1,82 @@
 /* The Microscope I Brought from Cairo: a quiet archival-essay treatment. */
 .cm-main{color:#17343b;background:#f7f5ee}.cm-hero{background:#e7eee8;padding:clamp(64px,8vw,110px) 0;border-bottom:1px solid #cdd7d1}.cm-hero-grid{display:grid;grid-template-columns:1fr minmax(270px,.53fr);align-items:end;gap:50px}.cm-hero h1{font:400 clamp(49px,7.9vw,105px)/1.04 Newsreader,Georgia,serif;letter-spacing:-.044em;max-width:800px;margin:18px 0 24px}.cm-hero h1 em{color:#994c36;font-weight:400}.cm-lead{font-size:clamp(18px,2vw,22px);line-height:1.7;max-width:680px}.cm-hero-figure{margin:0}.cm-hero-figure img{width:100%;aspect-ratio:4/5;object-fit:contain;background:#d4dfd5;display:block;border:1px solid #b6c5b8}.cm-hero-figure figcaption{font:12px/1.6 'DM Mono',monospace;margin:13px 0;color:#49605a}.cm-hero-anchors{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.cm-hero-anchors a{padding:11px 17px;text-decoration:none;border:1px solid #9bb1a3;font-weight:600;font-size:13px}.cm-hero-anchors a:hover{background:#17343b;color:white}.cm-screen-section{padding:clamp(60px,7vw,95px) 0}.cm-player{border:1px solid #b7c9bd;background:#17343b;max-width:1100px}.cm-player video{display:block;width:100%;aspect-ratio:16/9;background:#102b30}.cm-film-below{display:flex;flex-wrap:wrap;gap:12px 25px;align-items:center;margin-top:15px;color:#49605a;font-size:13px}.cm-film-below a{font-weight:650;color:#994c36}.cm-section-head{display:grid;grid-template-columns:1fr .75fr;gap:35px;align-items:end;max-width:1100px;margin-bottom:35px}.cm-section-head h2{font:400 clamp(38px,5vw,68px)/1.1 Newsreader,Georgia,serif;margin:14px 0 0;letter-spacing:-.035em}.cm-section-head p{color:#49605a;line-height:1.8}.cm-kicker{font:500 12px/1.5 'DM Mono',monospace;color:#994c36;text-transform:uppercase;letter-spacing:.1em}.cm-provenance{padding:clamp(62px,7vw,95px) 0;background:#ebefea;border-block:1px solid #cdd7d1}.cm-record{display:grid;grid-template-columns:1fr 1fr;gap:36px;max-width:1100px}.cm-record figure{margin:0;background:#fffdf8;border:1px solid #cdd7d1}.cm-record img{display:block;width:100%;height:460px;object-fit:contain;background:#e5eae2}.cm-record figcaption{font-size:13px;line-height:1.8;padding:18px 21px;color:#49605a}.cm-record figcaption strong{display:block;color:#17343b;margin-bottom:6px}.cm-record-copy{align-self:center}.cm-record-copy h3{font:400 40px/1.1 Newsreader,Georgia,serif;margin:6px 0 18px}.cm-record-copy p{line-height:1.85}.cm-chapters{padding:clamp(58px,7vw,95px) 0;border-bottom:1px solid #cdd7d1}.cm-chapter-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:1100px}.cm-chapter{background:#fffdf8;border:1px solid #cdd7d1;padding:20px 23px}.cm-chapter summary{cursor:pointer;font-size:17px;font-weight:600;list-style-position:inside}.cm-chapter summary::marker{color:#994c36}.cm-chapter time{font:12px 'DM Mono',monospace;color:#994c36;display:block;margin-bottom:10px}.cm-chapter p{color:#49605a;font-size:14px;line-height:1.85}.cm-chapter small{display:block;font:11px/1.7 'DM Mono',monospace;color:#55726a}.cm-note{background:#17343b;color:#f7f5ee;padding:clamp(55px,7vw,90px) 0}.cm-note h2{font:400 48px/1.1 Newsreader,Georgia,serif;margin:12px 0}.cm-note p{max-width:850px;line-height:1.85}.cm-note a{color:#ffcfb1}.cm-ar{font:19px/1.9 'Noto Naskh Arabic',serif;direction:rtl;max-width:800px;color:#49605a}@media(max-width:850px){.cm-hero-grid{grid-template-columns:1fr}.cm-hero-figure{max-width:470px}.cm-section-head,.cm-record{grid-template-columns:1fr}.cm-chapter-grid{grid-template-columns:1fr}.cm-record img{height:340px}}@media(max-width:550px){.cm-hero{padding:55px 0}.cm-hero h1{font-size:49px}.cm-screen-section{padding:54px 0}.cm-film-below{font-size:12px}}@media(prefers-reduced-motion:reduce){.cm-main *{scroll-behavior:auto!important}}
+
+/* Complete right-to-left companion text for the silent Cairo film.
+   The source film, captions and existing English edition remain unchanged. */
+.cm-arabic-section{
+  background:#f0eee7;
+  border-top:1px solid #cdd7d1;
+  padding:clamp(64px,8vw,104px) 0;
+}
+.cm-arabic-section .cm-arabic-heading{direction:rtl}
+.cm-arabic-section .cm-arabic-heading h2{
+  font-family:"Noto Naskh Arabic",serif;
+  font-size:clamp(35px,4vw,53px);
+  line-height:1.45;
+}
+.cm-arabic-section .cm-arabic-heading p{
+  font-family:"Noto Naskh Arabic",serif;
+  line-height:1.95;
+  font-size:19px;
+}
+.cm-arabic-section .cm-kicker{
+  font-family:"Noto Naskh Arabic",serif;
+  letter-spacing:0;
+  font-size:14px;
+}
+.cm-arabic-reading{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 40px;
+  max-width:1120px;
+}
+.cm-arabic-chapter{
+  padding:26px 0 29px;
+  border-top:1px solid #b9c8bc;
+  min-width:0;
+}
+.cm-arabic-chapter .cm-arabic-time{
+  font:500 12px/1.5 "DM Mono",monospace;
+  color:#8c4b36;
+  unicode-bidi:isolate;
+  display:inline-block;
+}
+.cm-arabic-chapter h3{
+  font-family:"Noto Naskh Arabic",serif;
+  font-weight:600;
+  font-size:clamp(23px,2.2vw,30px);
+  line-height:1.45;
+  margin:10px 0 8px;
+}
+.cm-arabic-chapter p{
+  font-family:"Noto Naskh Arabic",serif;
+  font-size:clamp(19px,1.55vw,22px);
+  line-height:2;
+  margin:0;
+  color:#32504d;
+}
+.cm-arabic-source{
+  max-width:990px;
+  font-family:"Noto Naskh Arabic",serif;
+  font-size:18px;
+  line-height:2;
+  border-top:1px solid #b9c8bc;
+  padding-top:22px;
+  margin-top:4px;
+}
+.cm-arabic-links{display:flex;flex-wrap:wrap;gap:8px 25px;margin-top:25px}
+.cm-arabic-links a{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  font-family:"Noto Naskh Arabic",serif;
+  font-size:18px;
+  color:#994c36;
+  font-weight:600;
+  text-underline-offset:6px;
+}
+@media(max-width:770px){
+  .cm-arabic-reading{grid-template-columns:1fr}
+  .cm-arabic-section .cm-arabic-heading h2{font-size:37px}
+  .cm-arabic-chapter{padding:23px 0}
+}
