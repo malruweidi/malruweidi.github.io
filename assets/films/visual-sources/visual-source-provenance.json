@@ -10,9 +10,13 @@
       "category": "contextual historical photograph",
       "caption": "15th-century Arabic medical manuscript • comparative context, not the cited source",
       "show_seconds": 4,
+      "on_frame_lines": [
+        "COMPARATIVE MEDICAL MANUSCRIPT",
+        "NOT THE CAIRO GENIZAH SOURCE"
+      ],
       "local_path": "/assets/films/visual-sources/wellcome-arabic-medical-manuscript-15c.webp",
-      "sha256": "8e0b505cde64d20f2628b007650e22824bd8743a27789aaafe9b9307d6f8e8cf",
-      "bytes": 292358,
+      "sha256": "681205182bc044bef24a7b46ab4efc729508717bb62180b3f1366501e6e0e1de",
+      "bytes": 290666,
       "dimensions": [
         760,
         928
@@ -29,8 +33,8 @@
       "caption": "EDITORIAL RECONSTRUCTION • NOT A HISTORICAL PHOTOGRAPH",
       "show_seconds": 9,
       "local_path": "/assets/films/visual-sources/syrup-editorial-reconstruction.webp",
-      "sha256": "66057773235e4296a4b129eeb878297ba315bcdc94ad3166af35670c6d0633be",
-      "bytes": 147204,
+      "sha256": "3bda33eef3e9561e8b3ebe036ef24fc4b41826e9241024f5a80dc0018b2a3f43",
+      "bytes": 140806,
       "dimensions": [
         1376,
         768
@@ -47,8 +51,8 @@
       "caption": "EDITORIAL RECONSTRUCTION • NOT A HISTORICAL PHOTOGRAPH",
       "show_seconds": 9,
       "local_path": "/assets/films/visual-sources/market-balance-editorial-reconstruction.webp",
-      "sha256": "038fd5337f8e554ef667e17469f9db731f95f3c317a9d2b6c9c18c95edc143a3",
-      "bytes": 161834,
+      "sha256": "071d495fda3d5ffdfc57f5e248f8d8ba22f8f149fac4def82dbcb38ca5fd9fe6",
+      "bytes": 154964,
       "dimensions": [
         1376,
         768
@@ -64,9 +68,13 @@
       "category": "third-party anatomical reference",
       "caption": "NIH ANATOMICAL ILLUSTRATION • NOT EXPERIMENTAL DATA",
       "show_seconds": 5,
+      "on_frame_lines": [
+        "NIH ANATOMY REFERENCE",
+        "NOT THE RESEARCH MICROGRAPH"
+      ],
       "local_path": "/assets/films/visual-sources/nih-niaid-alveoli-context.webp",
-      "sha256": "7bb291649e8ab7854dd08eb3221b78d96dbcaaa2fe976f58ca89dfe0a9549759",
-      "bytes": 103790,
+      "sha256": "c444043b862be3e9fc991f188506d90e4092559bb4ee846484ef93b75bed7424",
+      "bytes": 100288,
       "dimensions": [
         1280,
         1272
@@ -82,9 +90,13 @@
       "category": "third-party contemporary equipment photograph",
       "caption": "GENERIC MICROTOME • CONTEXT PHOTO, NOT THE EXPERIMENT",
       "show_seconds": 4,
+      "on_frame_lines": [
+        "GENERIC MICROTOME PHOTOGRAPH",
+        "NOT THE EXPERIMENT'S MACHINE"
+      ],
       "local_path": "/assets/films/visual-sources/microtome-manas-context.webp",
-      "sha256": "2d788499abef93b4ba25bfdb2760853563549da9bbd279fb7aaa5683ffb93887",
-      "bytes": 186194,
+      "sha256": "ab46c083d76752f0a9fad592e7e5e518bb88b92b3d44e2e38755ff373d97c07e",
+      "bytes": 180326,
       "dimensions": [
         1146,
         1284
@@ -101,8 +113,8 @@
       "caption": "SKIMMING AND STRAINING • EDITORIAL RECONSTRUCTION, NOT PERIOD FOOTAGE",
       "show_seconds": 9,
       "local_path": "/assets/films/visual-sources/syrup-skimming-editorial-reconstruction.webp",
-      "sha256": "bdfcf7718d54f39d9a1dc1c033c62e884f6437f4f81e2d4953a051faf6c09cd9",
-      "bytes": 135514,
+      "sha256": "1d8382b556386cb3cc43a1ba29cf9d9308e5804b7571804cdd85ff95671c4744",
+      "bytes": 128814,
       "dimensions": [
         1376,
         768
