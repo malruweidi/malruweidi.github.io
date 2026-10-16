@@ -56,12 +56,13 @@ jobs:
           data=json.loads((root/"evidence-in-motion.json").read_text())
           for f in data["films"]:
               slug=f["slug"]
-              video=root/(slug+".mp4")
+              stem=f.get("media_stem",slug)
+              video=root/(stem+".mp4")
               info=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","json",str(video)]))
               duration=float(info["format"]["duration"])
               assert abs(duration-120)<.16,(slug,duration)
               assert (root/(slug+"-poster.webp")).is_file()
-              assert (root/(slug+".vtt")).read_text().startswith("WEBVTT")
+              assert (root/(stem+".vtt")).read_text().startswith("WEBVTT")
               assert all((root/"plates"/(slug+"-"+s["id"]+".webp")).is_file() for s in f["scenes"])
               manifest=json.loads((root/(slug+"-build.json")).read_text())
               assert manifest["sha256"]==hashlib.sha256(video.read_bytes()).hexdigest()
@@ -73,7 +74,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/films/plates/ assets/films/*-poster.webp
           git add assets/films/what-a-bubble-can-do.mp4 assets/films/what-a-bubble-can-do.vtt assets/films/what-a-bubble-can-do-build.json
-          git add assets/films/two-materials-no-section.mp4 assets/films/two-materials-no-section.vtt assets/films/two-materials-no-section-build.json
+          git add assets/films/two-materials-no-section-evidence-cut.mp4 assets/films/two-materials-no-section-evidence-cut.vtt assets/films/two-materials-no-section-build.json
           git add assets/films/the-laboratory-we-carried-with-us.mp4 assets/films/the-laboratory-we-carried-with-us.vtt assets/films/the-laboratory-we-carried-with-us-build.json
           git add assets/films/making-medicines-keep.mp4 assets/films/making-medicines-keep.vtt assets/films/making-medicines-keep-build.json
           if ! git diff --cached --quiet; then
