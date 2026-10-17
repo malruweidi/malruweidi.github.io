@@ -136,7 +136,7 @@ def cairo_voice(scenes,source,workspace,models):
 
 def expected_release(slug):
     video=OUT/(slug+".mp4")
-    manifest=OUT/(slug+"-build.json")
+    manifest=OUT/(slug+"-feature-build.json")
     return video,manifest
 
 def is_ready(slug):
