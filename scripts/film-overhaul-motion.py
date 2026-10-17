@@ -207,6 +207,94 @@ def motif(d,kind,t,annotations):
         moving=pts[min(len(pts)-1,int(t*(len(pts)-1)))]
         d.ellipse((moving[0]-23,moving[1]-23,moving[0]+23,moving[1]+23),outline=(211,231,230),width=3)
         label(d,(710,409),"TOPOLOGY SYMBOL ONLY / NO ASSIGNED STRUCTURE",GOLD,12,True,57)
+    elif kind=="ace2-shedding":
+        # Membrane and soluble compartments in a symbolic pathway; no atomic model.
+        d.line((677,338,1173,338),fill=GOLD,width=13)
+        for k in range(11):
+            x=686+k*46
+            d.ellipse((x-9,334,x+9,342),fill=(238,199,148))
+        cy=265-68*ease
+        d.rounded_rectangle((834,280,889,380),radius=25,fill=(54,131,131),outline=GREEN,width=3)
+        d.ellipse((822,229,902,299),fill=(54,131,131),outline=CREAM,width=3)
+        # A *second* ectodomain is detached only as an illustrative hypothesis.
+        d.ellipse((1022-43,cy-33,1022+43,cy+33),outline=GREEN,fill=(37,88,91),width=4)
+        d.line((912,264,956,264),fill=GOLD,width=3)
+        d.polygon((952,257,964,264,952,271),fill=GOLD)
+        label(d,(740,397),"MEMBRANE-BOUND",GREEN,16,True)
+        label(d,(980,386),"SOLUBLE",GOLD,16,True)
+        label(d,(711,422),"SHEDDING IS CONTEXT-DEPENDENT",GOLD,12,True,55)
+    elif kind=="gut-barrier":
+        # No patients, biopsies, inflammatory counts, or inferred specific diagnosis.
+        for k in range(9):
+            x=681+k*56
+            d.rounded_rectangle((x,268,x+49,359),radius=14,outline=GREEN,width=3)
+            d.ellipse((x+17,314,x+32,330),fill=(61,120,114))
+            if k>0:
+                sep=(8+6*ease) if k==4 else 6
+                d.line((x-3-sep,296,x-3,296),fill=GOLD if k==4 else GREEN,width=3)
+        for k in range(6):
+            x=719+k*83+math.sin(t*8+k)*9
+            y=227+(k%2)*14+int(28*ease if k%3==0 else 0)
+            d.ellipse((x-12,y-12,x+12,y+12),fill=(215,147,118))
+            d.ellipse((x-4,y-5,x+3,y+4),fill=(101,62,69))
+        label(d,(728,405),"EPITHELIUM  /  IMMUNE CONTEXT",GOLD,15,True)
+        label(d,(737,427),"NO DIAGNOSTIC CELL COUNTS",GREEN,12,True)
+    elif kind=="target-proximity":
+        left=747+97*ease
+        right=1117-97*ease
+        d.ellipse((left-63,246,left+63,372),fill=(28,70,78),outline=GREEN,width=5)
+        d.ellipse((right-63,246,right+63,372),fill=(49,59,64),outline=GOLD,width=5)
+        d.rounded_rectangle((905,291,959,327),radius=15,fill=(216,171,125),outline=CREAM,width=2)
+        d.line((left+66,307,902,307),fill=GREEN,width=4)
+        d.line((963,307,right-66,307),fill=GOLD,width=4)
+        label(d,(683,406),"TARGET",GREEN,15,True)
+        label(d,(1051,406),"PARTNER",GOLD,15,True)
+        label(d,(728,430),"RECRUITMENT ≠ PRODUCTIVE RESPONSE",GOLD,12,True,60)
+    elif kind=="adc-linker":
+        # Y-shaped antibody icon with generic linker and drug warhead.
+        shift=13*math.sin(t*3.14)
+        points=[(903,373),(903,319),(837,246),(806,214)]
+        other=[(903,319),(972,247),(998,214)]
+        d.line(points,fill=GREEN,width=21,joint="curve")
+        d.line(other,fill=GREEN,width=21,joint="curve")
+        d.line((1006,211,1041+shift,211),fill=GOLD,width=5)
+        d.ellipse((1047+shift,195,1081+shift,229),fill=GOLD,outline=CREAM,width=2)
+        d.arc((805,238,1000,400),20,150,fill=(56,108,111),width=2)
+        label(d,(721,415),"ANTIBODY   LINKER   PAYLOAD",GOLD,15,True)
+        label(d,(713,439),"NO ASSUMED CLINICAL DELIVERY",GREEN,12,True)
+    elif kind=="trna-charging":
+        cx,cy=896,314
+        d.arc((cx-66,245,cx+66,378),0,355,fill=GREEN,width=5)
+        d.line((cx,257,cx,382),fill=GREEN,width=5)
+        d.line((cx-37,324,cx+37,324),fill=GREEN,width=5)
+        d.line((cx,257,cx,226),fill=GOLD,width=4)
+        x=cx+124*(1-ease)
+        y=210+8*math.sin(4*t)
+        d.ellipse((x-13,y-13,x+13,y+13),fill=GOLD,outline=CREAM,width=2)
+        d.line((cx+88,216,cx+22,225),fill=(84,141,138),width=2)
+        label(d,(820,402),"tRNA  +  AMINO ACID",GREEN,15,True)
+        label(d,(733,427),"NO TRANSLATION RATE IS DEPICTED",GOLD,12,True,59)
+    elif kind=="target-exposure":
+        # Two conceptual quantities; no fake concentration curve or patient dosing.
+        card(d,(697,253,893,364),fill=(21,64,69),outline=GREEN)
+        card(d,(968,253,1164,364),fill=(48,56,61),outline=GOLD)
+        label(d,(717,268),"ASSAY",GREEN,19,True)
+        label(d,(983,268),"TARGET SITE",GOLD,18,True)
+        label(d,(717,315),"POTENCY",CREAM,16,True)
+        label(d,(984,315),"FREE EXPOSURE",CREAM,14,True)
+        d.line((898,309,960,309),fill=GOLD,width=4)
+        d.polygon([(954,302),(967,309),(954,316)],fill=GOLD)
+        d.arc((916,292,941,324),190,340,fill=CREAM,width=3)
+        label(d,(730,413),"COMPARABILITY IS AN EXPERIMENTAL QUESTION",GOLD,12,True,60)
+    elif kind=="protein-ensemble":
+        for i in range(3):
+            cx=757+i*184
+            py=290+8*math.sin(t*5+i)
+            d.arc((cx-52,py-67,cx+53,py+63),20+i*35,325-i*20,fill=GREEN,width=5)
+            d.line((cx-12,py-36,cx+17+11*math.sin(4*t+i),py+41),fill=GOLD,width=4)
+            d.ellipse((cx-13,py-11,cx+13,py+11),fill=(54,117,110))
+            label(d,(cx-37,391),"STATE "+chr(65+i),GOLD,15,True)
+        label(d,(733,429),"NOT A RESOLVED STRUCTURAL ENSEMBLE",GREEN,12,True,56)
     elif kind=="editorial":
         for k,entry in enumerate(annotations):
             reveal=min(1,max(0,4*t-k*.9))
