@@ -25,21 +25,34 @@ test("separate MP4 documentary is a real verified video with English subtitles",
  assert.match(read("assets/films/airway-reopening-evidence-cut.vtt"),/^WEBVTT/);
  assert.ok((read("assets/films/airway-reopening-evidence-cut.vtt").match(/-->/g)||[]).length>=20);
 });
-test("companion is published alongside the original film, never replacing it",()=>{
- const old=read("films/what-a-bubble-can-do.html");
- const page=read("films/airway-reopening-evidence.html");
+test("both pulmonary documentary editions remain playable while their scientific measurements stay in the research record",()=>{
+ const original=read("films/what-a-bubble-can-do.html");
+ const companion=read("films/airway-reopening-evidence.html");
  const index=read("films.html");
  const dossier=read("research/pulmonary-epithelial-injury.html");
- assert.ok(old.includes("/assets/films/what-a-bubble-can-do.mp4"));
- assert.ok(page.includes("/assets/films/airway-reopening-evidence-cut.mp4"));
- assert.ok(page.includes("/assets/films/airway-reopening-evidence-cut.vtt"));
- assert.ok(page.includes("54.7%")&&page.includes("15.1%")&&page.includes("16.1%")&&page.includes("20.9%"));
- assert.ok(page.includes("Single-bubble in-vitro model"));
- assert.ok(page.includes('href="/films/what-a-bubble-can-do.html"'));
- assert.ok(page.includes("https://doi.org/10.1152/japplphysiol.00574.2020"));
+ const research=JSON.parse(read("assets/films/airway-reopening-evidence-scenes.json"));
+ // Keep both the original binary and its revised edition; the new cut is additive.
+ for(const file of [
+  "assets/films/what-a-bubble-can-do.mp4",
+  "assets/films/what-a-bubble-can-do-evidence-v2.mp4",
+  "assets/films/what-a-bubble-can-do-evidence-v2.vtt",
+  "assets/films/airway-reopening-evidence-cut.mp4"
+ ]) assert.ok(fs.existsSync(path.join(root,file)),file);
+ assert.match(original,/<video\\b[^>]*controls/);
+ assert.ok(original.includes("/assets/films/what-a-bubble-can-do-evidence-v2.mp4"));
+ assert.match(companion,/<video\\b[^>]*controls/);
+ assert.ok(companion.includes("/assets/films/airway-reopening-evidence-cut.mp4"));
+ assert.ok(companion.includes("/assets/films/airway-reopening-evidence-cut.vtt"));
+ // Published means and DOI remain in traceable supporting records, not artificially inserted in a film screening page.
+ assert.deepEqual(research.reported_mean_cell_death_percent,{
+  bubble_control:54.7,dexamethasone:15.1,transdehydroandrosterone:16.1,latrunculin_A:20.9
+ });
+ assert.ok(dossier.includes("https://doi.org/10.1152/japplphysiol.00574.2020"));
+ assert.ok(original.includes('href="/research/pulmonary-epithelial-injury.html"'));
+ assert.ok(companion.includes('href="/research/pulmonary-epithelial-injury.html"'));
+ assert.ok(companion.includes('href="/films/what-a-bubble-can-do.html"'));
  assert.ok(index.includes('href="/films/airway-reopening-evidence.html"'));
  assert.ok(dossier.includes('href="/films/airway-reopening-evidence.html"'));
  assert.ok(read("sitemap.xml").includes("https://malruweidi.github.io/films/airway-reopening-evidence.html"));
- const items=JSON.parse(read("assets/discovery-index.json")).items;
- assert.ok(items.some(x=>x.url==="/films/airway-reopening-evidence.html"));
+ assert.ok(JSON.parse(read("assets/discovery-index.json")).items.some(x=>x.url==="/films/airway-reopening-evidence.html"));
 });
