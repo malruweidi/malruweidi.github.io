@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 12,
+  "count": 13,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -43,8 +43,8 @@
       "captions": "/assets/films/series-v7-pilots/airway-reopening.vtt",
       "manifest": "/assets/films/series-v7-pilots/airway-reopening.json",
       "contact": "/assets/films/series-v7-pilots/airway-reopening.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific",
-      "sha256": "a8446f0392ecb3063f2c68ae2dbaa5f69dd7320d27440d94d0af3acd6789109b",
+      "visual_revision": "v7.8-clean-screen/film-specific/source-figure-fully-visible",
+      "sha256": "c8e443340e1cfcd1f6c58fa501e3653ad74cfe44a557014a9350afc487be685e",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
@@ -73,8 +73,23 @@
       "captions": "/assets/films/series-v7-pilots/curcumin-cyanide.vtt",
       "manifest": "/assets/films/series-v7-pilots/curcumin-cyanide.json",
       "contact": "/assets/films/series-v7-pilots/curcumin-cyanide.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific",
-      "sha256": "4e8bccc650f62eef283174406aac1d52e4164f764e06ca00ccb7fac7cd48cff9",
+      "visual_revision": "v7.8-clean-screen/film-specific/source-figure-fully-visible",
+      "sha256": "55e2be4e11c5c36f99e87d17a66010039dfe0b75116af5a9a1e1d7d33a994821",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "drug-release-twins",
+      "title": "What can a digital twin predict?",
+      "publication": "Simulation of Drug Release and Performance Prediction Using Virtual Models",
+      "poster": "/assets/films/series-v7-pilots/drug-release-twins.webp",
+      "file": "/assets/films/series-v7-pilots/drug-release-twins.mp4",
+      "captions": "/assets/films/series-v7-pilots/drug-release-twins.vtt",
+      "manifest": "/assets/films/series-v7-pilots/drug-release-twins.json",
+      "contact": "/assets/films/series-v7-pilots/drug-release-twins.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.9-release-model-labels",
+      "sha256": "67af79a50cd009c5931c448ae980d876a14e6412b57455cbce50d8f54cdacb35",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
@@ -178,8 +193,8 @@
       "captions": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.vtt",
       "manifest": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.json",
       "contact": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific",
-      "sha256": "e7a992c6e118cde6e13e5575e6c62e5dad5fc963745918e7d3c58ba5a4e763d8",
+      "visual_revision": "v7.8-clean-screen/film-specific/source-figure-fully-visible",
+      "sha256": "655953e269296b4aaf051f1f4a24cc4f25fb0b85ba17d654fe6f0a9e2ab7abd1",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
