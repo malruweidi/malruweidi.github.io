@@ -1,0 +1,92 @@
+{
+  "schema": "ruwaidix-cinema-v7-staging-v1",
+  "count": 7,
+  "total_eligible": 30,
+  "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
+  "films": [
+    {
+      "id": "ace2-forms",
+      "title": "Two lives of ACE2",
+      "publication": "Do changes in ACE-2 expression affect SARS-CoV-2 virulence and related complications: a closer look into membrane-bound and soluble forms",
+      "poster": "/assets/films/series-v7-pilots/ace2-forms.webp",
+      "file": "/assets/films/series-v7-pilots/ace2-forms.mp4",
+      "captions": "/assets/films/series-v7-pilots/ace2-forms.vtt",
+      "manifest": "/assets/films/series-v7-pilots/ace2-forms.json",
+      "sha256": "98fc9d201825be6288a94865ef96f04e5dcd89b8845e2a6f0684901c3b1c59e8",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "airway-reopening",
+      "title": "A breath can injure",
+      "publication": "Dexamethasone and transdehydroandrosterone significantly reduce pulmonary epithelial cell injuries associated with mechanical ventilation",
+      "poster": "/assets/films/series-v7-pilots/airway-reopening.webp",
+      "file": "/assets/films/series-v7-pilots/airway-reopening.mp4",
+      "captions": "/assets/films/series-v7-pilots/airway-reopening.vtt",
+      "manifest": "/assets/films/series-v7-pilots/airway-reopening.json",
+      "sha256": "97cc17e094b751e929eb50fa04fd7fc5e488b9307f6250cc56a26bdb64e15132",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "cerebral-cilia",
+      "title": "How does a vessel know the blood is moving?",
+      "publication": "Characterization of endothelial cilia distribution during cerebral-vascular development in zebrafish",
+      "poster": "/assets/films/series-v7-pilots/cerebral-cilia.webp",
+      "file": "/assets/films/series-v7-pilots/cerebral-cilia.mp4",
+      "captions": "/assets/films/series-v7-pilots/cerebral-cilia.vtt",
+      "manifest": "/assets/films/series-v7-pilots/cerebral-cilia.json",
+      "sha256": "88d2aa2dd032466a620f1ddc3816ddfc63a46c2f94d63bb6c77f836501ceee55",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "curcumin-cyanide",
+      "title": "When a molecule becomes a question",
+      "publication": "Curcumin: a colorimetric and fluorimetric cyanide probe in aqueous system and living cells",
+      "poster": "/assets/films/series-v7-pilots/curcumin-cyanide.webp",
+      "file": "/assets/films/series-v7-pilots/curcumin-cyanide.mp4",
+      "captions": "/assets/films/series-v7-pilots/curcumin-cyanide.vtt",
+      "manifest": "/assets/films/series-v7-pilots/curcumin-cyanide.json",
+      "sha256": "72f564f12079c40ca699f4354d6647c88995b2cc4b94f967d4afe191bdb507ee",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "essay-trna",
+      "title": "The Molecule Behind Every Protein",
+      "publication": "Drugging the tRNA Control System",
+      "poster": "/assets/films/series-v7-pilots/essay-trna.webp",
+      "file": "/assets/films/series-v7-pilots/essay-trna.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-trna.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-trna.json",
+      "sha256": "2eeffa9e2ffbe123a77e7e72839c8afc7806d26c93435dd36c27eac2b9254bda",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "niosomes",
+      "title": "Will the medicine survive the nebulizer?",
+      "publication": "Inhalable dexamethasone niosomes and proniosomes",
+      "poster": "/assets/films/series-v7-pilots/niosomes.webp",
+      "file": "/assets/films/series-v7-pilots/niosomes.mp4",
+      "captions": "/assets/films/series-v7-pilots/niosomes.vtt",
+      "manifest": "/assets/films/series-v7-pilots/niosomes.json",
+      "sha256": "dee0c329a2d9a07d95da3d5175d71ec38c80fc31148767b60209cb3c8594c294",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "slit2-robo",
+      "title": "The target that can change sides",
+      "publication": "SLIT2 and ROBO-axis inhibitors for the treatment of cancer: a patent review (2020–2026)",
+      "poster": "/assets/films/series-v7-pilots/slit2-robo.webp",
+      "file": "/assets/films/series-v7-pilots/slit2-robo.mp4",
+      "captions": "/assets/films/series-v7-pilots/slit2-robo.vtt",
+      "manifest": "/assets/films/series-v7-pilots/slit2-robo.json",
+      "sha256": "334250cb9b316690021300607eed97bf1a78de3554cb1c004d83d497f66dc8ae",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    }
+  ]
+}

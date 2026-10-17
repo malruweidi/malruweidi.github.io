@@ -1,0 +1,160 @@
+{
+  "slug": "curcumin-cyanide",
+  "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
+  "film_style": "24 individually directed visual beats across 6 narrated chapters",
+  "seconds": 84.0,
+  "fps": 24,
+  "source_audio_sha256": "8d8bf27dca4c03b5016ef09e1722fb6f38c6b70daa2f143cdc54bdc73293b67d",
+  "movie_sha256": "72f564f12079c40ca699f4354d6647c88995b2cc4b94f967d4afe191bdb507ee",
+  "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
+  "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
+  "scene_count": 6,
+  "visual_beat_count": 24,
+  "beats": [
+    {
+      "scene": "01",
+      "phase": 1,
+      "seconds": 3.125,
+      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-cyanide-sensor.jpg"
+    },
+    {
+      "scene": "01",
+      "phase": 2,
+      "seconds": 3.125,
+      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-cyanide-sensor.jpg"
+    },
+    {
+      "scene": "01",
+      "phase": 3,
+      "seconds": 3.125,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 4,
+      "seconds": 3.125,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 1,
+      "seconds": 3.333,
+      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-cyanide-sensor.jpg"
+    },
+    {
+      "scene": "02",
+      "phase": 2,
+      "seconds": 3.333,
+      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-cyanide-sensor.jpg"
+    },
+    {
+      "scene": "02",
+      "phase": 3,
+      "seconds": 3.292,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 4,
+      "seconds": 3.292,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 1,
+      "seconds": 3.667,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 2,
+      "seconds": 3.625,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 3,
+      "seconds": 3.625,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 4,
+      "seconds": 3.625,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 1,
+      "seconds": 3.667,
+      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-cyanide-sensor.jpg"
+    },
+    {
+      "scene": "04",
+      "phase": 2,
+      "seconds": 3.667,
+      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-cyanide-sensor.jpg"
+    },
+    {
+      "scene": "04",
+      "phase": 3,
+      "seconds": 3.667,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 4,
+      "seconds": 3.667,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 1,
+      "seconds": 3.708,
+      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-cyanide-sensor.jpg"
+    },
+    {
+      "scene": "05",
+      "phase": 2,
+      "seconds": 3.667,
+      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-cyanide-sensor.jpg"
+    },
+    {
+      "scene": "05",
+      "phase": 3,
+      "seconds": 3.667,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 4,
+      "seconds": 3.667,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 1,
+      "seconds": 3.583,
+      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-cyanide-sensor.jpg"
+    },
+    {
+      "scene": "06",
+      "phase": 2,
+      "seconds": 3.583,
+      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-cyanide-sensor.jpg"
+    },
+    {
+      "scene": "06",
+      "phase": 3,
+      "seconds": 3.583,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 4,
+      "seconds": 3.583,
+      "source": "original-nonquantitative-v7-schematic"
+    }
+  ],
+  "primary_source": "10.1039/C9AY01557D"
+}
