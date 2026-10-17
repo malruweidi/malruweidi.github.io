@@ -384,8 +384,8 @@
     {
       "name": "heart-failure-sensors",
       "seconds": 84.0,
-      "size_bytes": 2729038,
-      "sha256": "35a9db2e30db9ceccdf782298236a64dd5d3f866fffe3cf97a988c2a665bfff7",
+      "size_bytes": 2678273,
+      "sha256": "88db7c8b1bb5d31d4befad4a604afaf3b76550a1c914dd8524a039a71dc54030",
       "width": 1280,
       "height": 720,
       "codec": "h264",

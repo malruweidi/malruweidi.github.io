@@ -1,7 +1,7 @@
 {
   "id": "heart-failure-sensors",
   "seconds": 84.0,
-  "sha256": "35a9db2e30db9ceccdf782298236a64dd5d3f866fffe3cf97a988c2a665bfff7",
+  "sha256": "88db7c8b1bb5d31d4befad4a604afaf3b76550a1c914dd8524a039a71dc54030",
   "primary_source": "https://doi.org/10.1002/9781119813040.ch5",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
@@ -59,7 +59,7 @@
   "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
   "edition": "cinematic-v2",
   "remaster_signature": "story-motion-v2.2",
-  "source_visual_revision": "curated-2026-10-17-v2",
+  "source_visual_revision": "curated-2026-10-17-v3",
   "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
   "animated_scene_ids": [
     "02",
