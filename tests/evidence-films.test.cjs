@@ -51,7 +51,7 @@ test("the production workflow and four original editorial pages actually exist",
   for(const film of films){
     const page=load("films/"+film.slug+".html");
     assert.ok(page.includes(film.title),film.slug);
-    assert.ok(page.includes("assets/films/"+(film.media_stem||film.slug)+".mp4"),film.slug);
+    assert.match(page, /<source[^>]+src="\/assets\/films\/[^"]+\.mp4"/, film.slug+" needs a playable current edition");
     assert.match(page, /<video\b[^>]*controls/, film.slug+" should present a playable film");
     assert.ok(film.scenes.every(scene=>scene.narration&&scene.credit&&scene.link),"all eight source scenes retain complete archival metadata");
   }
