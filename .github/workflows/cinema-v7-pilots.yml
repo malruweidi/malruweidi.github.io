@@ -1,0 +1,71 @@
+name: Ruwaidix V7 motion-film pilot studio
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/render-cinema-v7-pilots.py
+      - .github/workflows/cinema-v7-pilots.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cinema-v7-pilots-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install reproducible open-source renderer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install pillow
+      - name: Render independent motion-scene pilot films
+        run: |
+          python -m py_compile scripts/film-art-direction-v7.py scripts/build-cinema-v7-previews.py scripts/render-cinema-v7-pilots.py
+          python scripts/render-cinema-v7-pilots.py --film niosomes --film ace2-forms --film essay-trna
+      - name: Validate real movies, captions, soundtrack preservation and shot diversity
+        run: |
+          python - <<'PY'
+          import hashlib,json,subprocess
+          from pathlib import Path
+          p=Path("assets/films/series-v7-pilots")
+          filenames=["niosomes","ace2-forms","essay-trna"]
+          for slug in filenames:
+              film=p/(slug+".mp4")
+              assert film.stat().st_size>1000000
+              vtt=(p/(slug+".vtt")).read_text()
+              assert vtt.startswith("WEBVTT") and vtt.count("-->")==12
+              info=json.loads((p/(slug+".json")).read_text())
+              assert info["visual_beat_count"]==24
+              assert info["scene_count"]==6
+              assert "STAGING ONLY" in info["status"]
+              assert info["movie_sha256"]==hashlib.sha256(film.read_bytes()).hexdigest()
+              source=Path("assets/films/series-v6")/(slug+".mp4")
+              assert info["source_audio_sha256"]==hashlib.sha256(source.read_bytes()).hexdigest()
+              tracks=json.loads(subprocess.check_output(
+                ["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(film)]))
+              assert {s["codec_type"] for s in tracks["streams"]}>={"video","audio"}
+              assert abs(float(tracks["format"]["duration"])-84)<.25
+              assert abs(float(tracks["streams"][0]["avg_frame_rate"].split("/")[0])-24)<=24
+              assert (p/(slug+".webp")).stat().st_size>5000
+              print("STAGING PILOT VERIFIED",slug,info["visual_beat_count"],"beats")
+          PY
+      - name: Commit reviewable V7 pilot films only, not overwrite live MP4s
+        run: |
+          git config user.name "Ruwaidix Film QC"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v7-pilots/*.mp4 assets/films/series-v7-pilots/*.vtt assets/films/series-v7-pilots/*.webp assets/films/series-v7-pilots/*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish staging-only V7 subject-specific motion pilots [v7-motion]"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase FETCH_HEAD
+            git push origin HEAD:"${{ github.ref_name }}"
+          fi
