@@ -32,8 +32,13 @@ def frame(entry,scene,phase,out,root=ROOT):
             im=im.convert("RGB")
             # Entire research figure or personal photograph is kept visible.
             image=Image.new("RGB",(art.W,art.H),BG)
-            im.thumbnail((1120,452),Image.Resampling.LANCZOS)
-            x=(art.W-im.width)//2;y=94+(440-im.height)//2
+            # A cited manuscript, experimental figure or personal photograph
+            # must remain *fully visible*, including panels and its original
+            # caption. The lower-third starts at y=533, so end image by y=515.
+            im.thumbnail((1120,410),Image.Resampling.LANCZOS)
+            x=(art.W-im.width)//2
+            y=105+(410-im.height)//2
+            assert 105<=y and y+im.height<=515, "Primary source would be cropped"
             image.paste(im,(x,y))
         media=f"ARCHIVAL OR PUBLISHED SOURCE / {scene['kind']}"
         provenance=scene["image"]
