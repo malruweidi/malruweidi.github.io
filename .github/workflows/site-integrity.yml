@@ -53,4 +53,5 @@ jobs:
         run: node --test tests/substack-feed-verify.test.mjs
       - name: Guard against missing teacher photographs, inaccessible illness stories and mistaken school chronology
         run: node --test tests/early-science-and-story-discoverability.test.mjs
-
+      - name: Verify archive dating and source-linked film social previews
+        run: node --test tests/second-pass-publication-discovery.test.mjs
