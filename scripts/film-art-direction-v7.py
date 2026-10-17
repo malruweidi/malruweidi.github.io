@@ -370,8 +370,8 @@ def scene_art(slug,idx,phase,output):
  for j in range(4):
   bx=985+j*45
   d.rectangle((bx,116,bx+31,120),fill=GOLD if j==phase else GRID)
- # Restrained proof strip; one title is added later by the actual video overlay.
- txt(d,(100,583),"EDITORIAL ANIMATION / NOT ORIGINAL MEASUREMENTS",15,(160,182,173))
+ # Evidence provenance belongs in the adjacent scene JSON, never stamped into
+ # the film image as self-referential editorial or AI-production commentary.
  canvas.save(output,optimize=True)
  return output
 
