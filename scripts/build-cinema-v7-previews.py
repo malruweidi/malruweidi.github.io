@@ -53,8 +53,12 @@ def frame(entry,scene,phase,out,root=ROOT):
     d.text((75,696),media[:90],font=art.font(11),fill=(179,201,192))
     d.text((1120,582),scene["id"]+" / 06",font=art.font(20,True),fill=GOLD)
     image.save(out,optimize=True)
+    try:
+        review_path=str(out.relative_to(ROOT))
+    except ValueError:
+        review_path=str(out)  # In a disposable render workspace, not a published file.
     return {"title":scene["title"],"phase":phase,"real_image":bool(real and phase in (0,1)),
-            "image_source":provenance,"caption":media,"file":str(out.relative_to(ROOT))}
+            "image_source":provenance,"caption":media,"file":review_path}
 
 def main():
     p=argparse.ArgumentParser()
