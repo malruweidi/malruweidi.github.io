@@ -1,0 +1,90 @@
+name: Rebuild clean Ruwaidix cinema masters
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/render-cinema-v7-pilots.py
+      - scripts/build-cinema-v7-previews.py
+      - scripts/film-art-direction-v7.py
+      - scripts/finalize-clean-cinema-v7.py
+      - .github/workflows/render-clean-cinema.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ruwaidix-clean-cinema-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  render-and-release:
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[clean-cinema-output]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - name: Check out all scientific film assets
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Python for open-source film rendering
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install free production tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check pillow
+
+      - name: Check page boundaries, source records and renderer
+        run: |
+          node --test tests/film-reader-boundary.test.mjs
+          python -m py_compile scripts/render-cinema-v7-pilots.py scripts/build-cinema-v7-previews.py scripts/film-art-direction-v7.py scripts/finalize-clean-cinema-v7.py
+          python scripts/build-cinema-v7-previews.py --film airway-reopening --scene 1 --phases 2
+          python scripts/build-cinema-v7-previews.py --film cairo-microscope --scene 2 --phases 2
+
+      - name: Re-render every one of the 30 protected-audio cinematic titles
+        shell: bash
+        run: |
+          set -euo pipefail
+          for batch in 1 2 3 4 5 6; do
+            remaining="$(python scripts/render-cinema-v7-pilots.py --remaining-count | tail -n 1)"
+            echo "Before batch ${batch}: ${remaining} films need clean screens"
+            if [ "${remaining}" = "0" ]; then break; fi
+            python scripts/render-cinema-v7-pilots.py --all-missing --batch-size 6
+          done
+          remaining="$(python scripts/render-cinema-v7-pilots.py --remaining-count | tail -n 1)"
+          test "${remaining}" = "0"
+
+      - name: Verify complete MP4 streams and update release register
+        run: |
+          python scripts/finalize-clean-cinema-v7.py
+          node --test tests/film-reader-boundary.test.mjs
+
+      - name: Commit only corrected film files and internal release metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Ruwaidix Clean Cinema Builder"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v7-pilots/
+          if git diff --cached --quiet; then
+            echo "No new video changes to publish"
+            exit 0
+          fi
+          git commit -m "Re-export 30 clean, source-grounded film masters [clean-cinema-output]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+
+      - name: Summary
+        run: |
+          echo "## 30-film clean screen release" >> "$GITHUB_STEP_SUMMARY"
+          echo "Each source MP4 was re-encoded without filmmaker annotations." >> "$GITHUB_STEP_SUMMARY"
+          echo "English VTT remains optional. Original source records and previous film versions remain in Git history." >> "$GITHUB_STEP_SUMMARY"
+          echo "Automated QA does not replace film-by-film human viewing." >> "$GITHUB_STEP_SUMMARY"
