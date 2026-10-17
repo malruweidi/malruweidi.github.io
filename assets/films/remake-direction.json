@@ -2,7 +2,7 @@
   "edition": "2026-10-17",
   "purpose": "A non-destructive alternate cut for all 35 source-linked Ruwaidix publication and essay films.",
   "status": "PRODUCTION_DRAFT_NOT_HUMAN_APPROVED",
-  "visual_policy": "Two original source/figure-heavy bookends per 84-second film, four distinct narrated animated analytical chapters where possible; original source images always retained unmodified. Animation is explicitly explanatory, not experimental data.",
+  "visual_policy": "Original source remains legible; ten mechanism-specific scientific motifs supplement the curated diagram atlas. Every representation is explanatory only. No measured curves, proteins, clinical imagery or outcomes are invented.",
   "audio_policy": "Open Kokoro ONNX narrator; spoken pronunciations require direct human audition, not automatic certification.",
   "films": {
     "airway-reopening": {
@@ -191,9 +191,9 @@
       "evidence_boundary": "No patient observations or causal estimate is depicted.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "network",
-        "03": "network",
-        "04": "signal",
+        "02": "target-exposure",
+        "03": "ace2-shedding",
+        "04": "network",
         "05": "translation"
       }
     },
@@ -207,10 +207,10 @@
       "evidence_boundary": "Generic immune schematic, not an individual's biopsy.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "organ",
-        "03": "network",
-        "04": "organ",
-        "05": "translation"
+        "02": "gut-barrier",
+        "03": "gut-barrier",
+        "04": "assay",
+        "05": "gut-barrier"
       }
     },
     "gi-autoimmunity-2": {
@@ -223,9 +223,9 @@
       "evidence_boundary": "No real patient tissue, imaging, or results are invented.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "organ",
-        "03": "signal",
-        "04": "organ",
+        "02": "gut-barrier",
+        "03": "assay",
+        "04": "gut-barrier",
         "05": "translation"
       }
     },
@@ -241,7 +241,7 @@
       "scene_motifs": {
         "02": "signal",
         "03": "signal",
-        "04": "network",
+        "04": "target-exposure",
         "05": "translation"
       }
     },
@@ -255,10 +255,10 @@
       "evidence_boundary": "An explanatory relationship, not a measured concentration.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "network",
-        "03": "molecule",
+        "02": "ace2-shedding",
+        "03": "ace2-shedding",
         "04": "network",
-        "05": "translation"
+        "05": "ace2-shedding"
       }
     },
     "microfluidic-virus": {
@@ -495,9 +495,9 @@
       "evidence_boundary": "No experimentally determined structural ensemble is implied.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "molecule",
-        "03": "network",
-        "04": "network",
+        "02": "protein-ensemble",
+        "03": "protein-ensemble",
+        "04": "target-proximity",
         "05": "translation"
       }
     },
@@ -511,10 +511,10 @@
       "evidence_boundary": "No simulated concentration curve shown as patient data.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "signal",
-        "03": "vesicle",
+        "02": "target-exposure",
+        "03": "target-exposure",
         "04": "signal",
-        "05": "translation"
+        "05": "target-exposure"
       }
     },
     "essay-trna": {
@@ -527,10 +527,10 @@
       "evidence_boundary": "Simplified pathway is not structural or kinetic evidence.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "molecule",
-        "03": "network",
-        "04": "molecule",
-        "05": "translation"
+        "02": "trna-charging",
+        "03": "trna-charging",
+        "04": "network",
+        "05": "trna-charging"
       }
     },
     "essay-proximity": {
@@ -543,9 +543,9 @@
       "evidence_boundary": "Proximity is conceptual, not a solved molecular structure.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "molecule",
-        "03": "network",
-        "04": "molecule",
+        "02": "target-proximity",
+        "03": "target-proximity",
+        "04": "target-proximity",
         "05": "translation"
       }
     },
@@ -559,12 +559,12 @@
       "evidence_boundary": "The molecular-linker-payload relationship is schematic. Antibody–drug conjugates are not lipid vesicles.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "molecule",
-        "03": "network",
-        "04": "molecule",
+        "02": "adc-linker",
+        "03": "adc-linker",
+        "04": "target-exposure",
         "05": "translation"
       }
     }
   },
-  "version": "2.2"
+  "version": "2.3"
 }
