@@ -1,0 +1,74 @@
+{
+  "id": "curcumin-cyanide",
+  "seconds": 84.0,
+  "sha256": "c787c5e97dabc194d1e9044f528f4191c58057b758bfcb00fe30e700d5341fa5",
+  "primary_source": "https://doi.org/10.1039/C9AY01557D",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Published cyanide sensor figure",
+    "Published study figure",
+    "Contemporary laboratory chemical photograph; not curcumin sample",
+    "Published sensor optical readouts",
+    "Published sensing and cell figure",
+    "Published research record"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published cyanide sensor figure",
+      "credit": "Published cyanide sensor figure",
+      "source": "/stories/the-ring-that-never-closed.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published study figure",
+      "credit": "Published study figure",
+      "source": "/stories/the-ring-that-never-closed.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "kind": "Contemporary laboratory chemical photograph; not curcumin sample",
+      "credit": "Contemporary laboratory chemical photograph; not curcumin sample",
+      "source": "/stories/the-ring-that-never-closed.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published sensor optical readouts",
+      "credit": "Published sensor optical readouts",
+      "source": "/stories/the-ring-that-never-closed.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published sensing and cell figure",
+      "credit": "Published sensing and cell figure",
+      "source": "/stories/the-ring-that-never-closed.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published research record",
+      "credit": "Published research record",
+      "source": "/stories/the-ring-that-never-closed.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "03"
+  ],
+  "motion_motif": "signal",
+  "motion_annotations": [
+    "Analyte–probe interaction",
+    "Optical response",
+    "Calibration and controls"
+  ],
+  "evidence_boundary": "Graphic shows assay logic, not an observed spectrum.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}
