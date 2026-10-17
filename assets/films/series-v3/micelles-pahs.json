@@ -1,0 +1,67 @@
+{
+  "film_id": "micelles-pahs",
+  "edition": "V3 owner-archive research documentary",
+  "duration_seconds": 120.0,
+  "sha256": "31ee1f5933cc3fdbcb9ad82f11a828631ae84e51486e0276fc3fe8c3ddda09e0",
+  "original_grant": "UREP19-110-1-014",
+  "archival_files": [
+    "assets/owner-archive-2026-10-17/acs-2017-micelles-research-poster.webp",
+    "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+    "assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp"
+  ],
+  "description": "Conference photo and notebook are authentic owner-context records. Polymer visualizations are physically motivated, unverified conceptual designs.",
+  "release_rights": "Owner archive photos still require confirmation of rights for individuals appearing in the group photograph.",
+  "scientific_limit": "No claim of measured micelle formation, CMC, PAH loading, solubilization improvement, or treatment/remediation success without primary reported measurements.",
+  "chapters": [
+    {
+      "id": "01",
+      "title": "THE QUESTION",
+      "speech": "Some aromatic pollutants barely dissolve in water. The project asked whether a polymer could give those molecules somewhere else to go.",
+      "source": "Project UREP19-110-1-014: hydrophobic PAH solubility, theoretical premise, no specific experimental outcome."
+    },
+    {
+      "id": "02",
+      "title": "THE PRESENTATION",
+      "speech": "At a research meeting in 2017, we presented the theoretical and experimental study. The poster records that question, not an unrestricted claim of environmental cleanup.",
+      "source": "Owner 2017 photo showing the actual micelle research poster and co-researchers; archival record, not quantitative assay."
+    },
+    {
+      "id": "03",
+      "title": "TWO OPPOSING BLOCKS",
+      "speech": "A diblock copolymer contains segments that respond differently to water. That contrast can make self-assembly favorable, but only under the right conditions.",
+      "source": "Block-copolymer self-assembly, idealized conceptual physical chemistry; project proposal."
+    },
+    {
+      "id": "04",
+      "title": "A POSSIBLE CORE",
+      "speech": "The proposed micelle places water-compatible segments outside and hydrophobic segments inward. Pollutant partitioning into a core is a hypothesis requiring measurement.",
+      "source": "Micelle hypothesis, illustrative arrangement; no DLS, CMC, or PAH uptake data implied."
+    },
+    {
+      "id": "05",
+      "title": "IT DEPENDS ON CONDITIONS",
+      "speech": "Composition, concentration and mixing can change what forms. A drawing of a neat micelle tells us nothing about what actually assembled in the vial.",
+      "source": "Flory-Huggins-type compatibility argument and concentration effects; no simulated numeric measurements."
+    },
+    {
+      "id": "06",
+      "title": "THE ACTUAL MATERIAL",
+      "speech": "I kept this specimen photograph from the project period. It documents a material in my hand; its appearance alone cannot establish size, loading or removal efficiency.",
+      "source": "Owner 2017 photo of bottle/copolymer sample; identity, composition and analytical results cannot be inferred from pixels."
+    },
+    {
+      "id": "07",
+      "title": "THE UNFORTUNATE TRIALS",
+      "speech": "And there was this notebook: a series of unfortunate trials. The archive records the struggle, without proving which experimental procedure failed from the photograph alone.",
+      "source": "Owner's photographed Maxi notebook with handwritten note 'A series of unfortunate trials'; no analytical results shown."
+    },
+    {
+      "id": "08",
+      "title": "WHAT REMAINS TO TEST",
+      "speech": "A research question can survive an unsuccessful attempt. The experiment still must answer whether the polymer assembled and whether the pollutant was actually recovered.",
+      "source": "Owner project aims, assessment requirements. No successful PAH recovery or pollutant-remediation claim."
+    }
+  ],
+  "voice": "Kokoro ONNX synthetic narrator",
+  "human_review": "NOT APPROVED: scientific, rights, visual and speech screening outstanding"
+}
