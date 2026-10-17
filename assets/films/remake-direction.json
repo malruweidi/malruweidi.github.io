@@ -195,7 +195,8 @@
         "03": "ace2-shedding",
         "04": "network",
         "05": "translation"
-      }
+      },
+      "review_poster": "/assets/films/art/source-specific/ace2-system.svg"
     },
     "gi-autoimmunity-1": {
       "motif": "organ",
@@ -211,7 +212,8 @@
         "03": "gut-barrier",
         "04": "assay",
         "05": "gut-barrier"
-      }
+      },
+      "review_poster": "/assets/films/art/source-specific/eosinophilic-gut.svg"
     },
     "gi-autoimmunity-2": {
       "motif": "organ",
@@ -227,7 +229,8 @@
         "03": "assay",
         "04": "gut-barrier",
         "05": "translation"
-      }
+      },
+      "review_poster": "/assets/films/art/source-specific/gi-diagnostic-evidence.svg"
     },
     "heart-failure-sensors": {
       "motif": "signal",
@@ -243,7 +246,8 @@
         "03": "signal",
         "04": "target-exposure",
         "05": "translation"
-      }
+      },
+      "review_poster": "/assets/films/art/source-specific/heart-sensing.svg"
     },
     "ace2-forms": {
       "motif": "network",
@@ -259,7 +263,8 @@
         "03": "ace2-shedding",
         "04": "network",
         "05": "ace2-shedding"
-      }
+      },
+      "review_poster": "/assets/films/art/source-specific/ace2-membrane-soluble.svg"
     },
     "microfluidic-virus": {
       "motif": "chip",
@@ -499,7 +504,8 @@
         "03": "protein-ensemble",
         "04": "target-proximity",
         "05": "translation"
-      }
+      },
+      "review_poster": "/assets/films/art/source-specific/protein-states.svg"
     },
     "essay-potency-exposure": {
       "motif": "signal",
@@ -515,7 +521,8 @@
         "03": "target-exposure",
         "04": "signal",
         "05": "target-exposure"
-      }
+      },
+      "review_poster": "/assets/films/art/source-specific/pk-potency.svg"
     },
     "essay-trna": {
       "motif": "network",
@@ -531,7 +538,8 @@
         "03": "trna-charging",
         "04": "network",
         "05": "trna-charging"
-      }
+      },
+      "review_poster": "/assets/films/art/source-specific/trna-translation.svg"
     },
     "essay-proximity": {
       "motif": "network",
@@ -547,7 +555,8 @@
         "03": "target-proximity",
         "04": "target-proximity",
         "05": "translation"
-      }
+      },
+      "review_poster": "/assets/films/art/source-specific/molecular-proximity.svg"
     },
     "essay-adc": {
       "motif": "network",
@@ -563,7 +572,8 @@
         "03": "adc-linker",
         "04": "target-exposure",
         "05": "translation"
-      }
+      },
+      "review_poster": "/assets/films/art/source-specific/adc-molecular.svg"
     }
   },
   "version": "2.3"
