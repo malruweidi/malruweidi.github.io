@@ -38,9 +38,9 @@ test("both pulmonary documentary editions remain playable while their scientific
   "assets/films/what-a-bubble-can-do-evidence-v2.vtt",
   "assets/films/airway-reopening-evidence-cut.mp4"
  ]) assert.ok(fs.existsSync(path.join(root,file)),file);
- assert.match(original,/<video\\b[^>]*controls/);
+ assert.match(original,/<video[^>]*controls/);
  assert.ok(original.includes("/assets/films/what-a-bubble-can-do-evidence-v2.mp4"));
- assert.match(companion,/<video\\b[^>]*controls/);
+ assert.match(companion,/<video[^>]*controls/);
  assert.ok(companion.includes("/assets/films/airway-reopening-evidence-cut.mp4"));
  assert.ok(companion.includes("/assets/films/airway-reopening-evidence-cut.vtt"));
  // Published means and DOI remain in traceable supporting records, not artificially inserted in a film screening page.
