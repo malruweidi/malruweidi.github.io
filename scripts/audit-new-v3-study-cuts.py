@@ -10,7 +10,7 @@ from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/"assets/films/series-v3"
-TARGET=["curcumin-cyanide","histology-failure","ace2-forms","micelles-pahs"]
+TARGET=["curcumin-cyanide","histology-failure","ace2-forms","micelles-pahs","pla-scaffolds"]
 CLOCK=[3,11,18,26,33,41,48,56,63,71,78,86,93,101,108,116]
 FACE="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -48,6 +48,14 @@ def source_gate(name,meta):
   assert set(meta["archival_files"])==set(expected)
   for file,blob_sha in expected.items():assert gitblob(ROOT/file)==blob_sha
   assert "No claim of measured" in meta["scientific_limit"]
+ elif name=="pla-scaffolds":
+  assert meta["doi"]=="10.1016/j.surfcoat.2020.126216"
+  assert len(meta["source_pages"])==5
+  assert "2021 PLA-film dataset is distinct" in meta["research_boundary"]
+  labels={p["label"] for p in meta["source_pages"]}
+  assert labels=={"Figure 1","Figure 5","Figure 6","Figure 7","Table 3"}
+  for p in meta["source_pages"]:
+   assert sha(ROOT/p["artifact"])==p["sha256"]
  else:raise ValueError("Unauthorized study requested")
 def inspect(name):
  m=SRC/(name+".mp4")
