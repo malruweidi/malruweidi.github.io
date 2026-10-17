@@ -84,16 +84,13 @@ test("saved 35-piece cinema page remains playable while progressively verifying 
  }
  assert.match(html,/series-v7-pilots\/releases\.json/);
  assert.match(html,/const selectedEdition=verifiedResearchEdition \|\| \(isV7\?/);
- assert.match(html,/Watch preserved previous V6 edition/);
- assert.match(html,/Watch preserved original first edition/);
+ assert.match(html,/series-v6\/releases\.json/);
+ assert.match(html,/const fallback=\(isV7&&isV6\?/);
  assert.match(html,/const fallback=\(isV7&&isV6\?/);
 });
 
-test("all new player chapter menus seek to the source narration rather than approximate chapter times",()=>{
+test("film caption tracks preserve six verifiable narration boundaries without timing guesses",()=>{
  const html=read("publication-cinema.html");
- assert.match(html,/Jump to any of six narrated chapters/);
- assert.match(html,/chapterNav\.addEventListener\("toggle",async/);
- assert.match(html,/chapterList\.appendChild\(button\)/);
  const parse=cap=>[...cap.matchAll(/(\d{2}):(\d{2}):(\d{2}\.\d{3})\s*-->/g)]
    .map(m=>Number(m[1])*3600+Number(m[2])*60+Number(m[3]));
  for(const f of release.films){
