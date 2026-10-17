@@ -13,10 +13,10 @@ test('published V6 video posters originate from their own MP4 frames',()=>{
   assert.match(workflow,/series-v6\/\*\.webp/,'render workflow must actually commit posters');
 });
 
-test('website prefers study-specific V5 editions, then V6 poster, then original intact',()=>{
+test('website selects registered editions, preserves research-specific versions and original films',()=>{
   const html=fs.readFileSync(path.join(root,'publication-cinema.html'),'utf8');
-  assert.match(html,/const selectedEdition=verifiedFilmMasters\[x\.id\]/);
-  assert.match(html,/isV6\?\{edition:"series-v6",duration:84,poster:/);
+  assert.match(html,/const selectedEdition=isV6/);
+  assert.match(html,/releasedV6\.get\(x\.id\)/);
   assert.match(html,/selectedEdition\?selectedEdition\.edition:"series"/);
   assert.match(html,/Watch preserved original first edition/);
 });
