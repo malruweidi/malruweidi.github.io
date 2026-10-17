@@ -1,0 +1,30 @@
+name: Miss Tasees Open Source Audio Fetch
+on:
+  push:
+    branches:
+      - video-production-miss-tasees-audio
+    paths:
+      - ".github/workflows/miss-tasees-open-source-audio.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fetch-approved-reem-segment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Fetch the approved 15.9-second Gulf Arabic narration
+        run: |
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 180 \
+            -o reem_new_15s.wav \
+            'https://cdn.creativeclaw.co/u/8a002dd8/audio/1f503ad0-dab0-4bc4-9c0f-df2fd1980d8b.wav'
+          test -s reem_new_15s.wav
+          file reem_new_15s.wav
+          ffprobe -hide_banner -v error -show_entries format=duration -of default=noprint_wrappers=1 reem_new_15s.wav
+      - name: Export WAV for free FFmpeg editing
+        uses: actions/upload-artifact@v4
+        with:
+          name: Miss-Tasees-Reem-Voice-Approved
+          path: reem_new_15s.wav
+          if-no-files-found: error
+          retention-days: 1
