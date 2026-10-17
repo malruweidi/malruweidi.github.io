@@ -1,0 +1,73 @@
+{
+  "edition": "V3 original-publication identity correction, 2026-10-17",
+  "film": "cerebral-cilia",
+  "title": "Characterization of Endothelial Cilia Distribution During Cerebral-Vascular Development in Zebrafish (Danio rerio)",
+  "article": {
+    "doi": "10.1161/ATVBAHA.118.311231",
+    "pmid": "30571172",
+    "pmcid": "PMC6309420",
+    "year": 2018,
+    "journal": "Arteriosclerosis, Thrombosis, and Vascular Biology",
+    "primary_fulltext": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6309420/",
+    "publisher": "https://www.ahajournals.org/doi/10.1161/ATVBAHA.118.311231"
+  },
+  "blocked_embeds": [
+    {
+      "path": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "also": "assets/evidence-zebrafish.webp",
+      "reason": "MicroZebraLab zebrafish blood-flow tracking image showing PCV/DA and velocity analysis software, not published primary-cilia microscopy in 2018 cerebral vascular cilia paper. Cannot be used as an experimental figure here.",
+      "allowed_alternate_context": "May remain in separate true MicroZebraLab blood-flow study archive when appropriate and attributed."
+    }
+  ],
+  "authentic_figures": [
+    {
+      "figure": 1,
+      "publication": "2018 specific cilia paper",
+      "panels": "24 hpf cranial primordial midbrain channel (PMBC); Arl13b:GFP endothelial cilia with kdrl:mCherry-CAAX and original scale bars",
+      "permission": "Publisher image reproduction not yet cleared",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6309420/#F1"
+    },
+    {
+      "figure": 2,
+      "publication": "2018 specific cilia paper",
+      "panels": "33–40 hpf hindbrain central artery sprouts (CtAs), PHBC and cilia in angiogenic vessel/lumen positions",
+      "permission": "Publisher image reproduction not yet cleared",
+      "url": "https://zfin.org/ZDB-FIG-190927-8"
+    },
+    {
+      "figure": 3,
+      "publication": "2018 specific cilia paper",
+      "panels": "Cilia in retinal vasculature, curved or bifurcating beds in later development; true original co-labeled structures",
+      "permission": "Publisher image reproduction not yet cleared",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6309420/#F3"
+    },
+    {
+      "figure": 5,
+      "publication": "2018 specific cilia paper",
+      "panels": "Actual blood-flow, pulse/shear comparisons and associated cilia loss under increased shear; paper's own recorded conditions",
+      "permission": "Publisher image reproduction not yet cleared",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6309420/#F5"
+    }
+  ],
+  "scientific_claims": [
+    "Early endothelial cranial ciliation precedes mature cardiac circulation in zebrafish; loss of cardiac contractility / flow (tnnt2a knockdown) does not abolish the early distribution.",
+    "Primary cilia are seen around early primary vascular lumens and angiogenic hindbrain capillaries during development.",
+    "Later detectable cilia occur especially in retinal vasculature, sites of high curvature and bifurcations, and during anastomosis.",
+    "Endothelial cell–autonomous impairment in ift172 and ift81 ciliary biology can induce cerebral hemorrhage.",
+    "Experimental increase in shear at a later stage associates with premature ciliary disassembly and hemorrhagic vascular instability.",
+    "Do not oversimplify early flow independence as a global lack of mechanical sensitivity; developmental stage and perturbation differ."
+  ],
+  "film_scenes": [
+    "Same published paper, correct specimen, 24 hours post-fertilization versus circulation onset.",
+    "Genuine embryo anatomy with labels PMBC, PHBC, CtA and reference scale bars.",
+    "Vascular primary cilia actually imaged in Arl13b:GFP and kdrl:mCherry-CAAX double-transgenic lines.",
+    "Flow-independent emergence demonstrated under tnnt2a cardiac-silencing experiment.",
+    "Angiogenic hindbrain vessel formation and early lumen-boundary cilia.",
+    "Later restricted ciliation in curved/bifurcating/retinal beds.",
+    "Genetic ift loss versus altered-shear experiments, differentiating perturbation classes.",
+    "Vascular stabilization as tested outcome, avoid transplanting the unrelated MicroZebraLab panel."
+  ],
+  "approved_for_public_embed": false,
+  "rights_gate": "The 2018 journal article includes American Heart Association copyright notice; appearing at PMC or ZFIN is NOT sufficient to establish reuse rights. Seek explicit permission or rights documentation for image redistribution on public website.",
+  "policy": "No new microscopy, readouts or figure panels invented by the editing pipeline. Simulated geometries must be labelled conceptual and never impersonate confocal data."
+}
