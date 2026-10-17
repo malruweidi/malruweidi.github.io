@@ -33,7 +33,7 @@ jobs:
           record=json.loads((folder/"source-provenance.json").read_text())
           original=folder/"microfluidic-virus-figure-01-source-page.jpg"
           assert record["doi"]=="10.1007/s42247-021-00169-7" and record["pmcid"]=="PMC7992628"
-          assert "Figure 1" in record["caption"]
+          assert record["original_figure"]=="Figure 1" and "Overview of microfluidic" in record["caption"]
           assert hashlib.sha256(original.read_bytes()).hexdigest()==record["sha256"]
           assert "review schematic" in record["editorial_note"]
           PY
