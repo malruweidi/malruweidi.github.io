@@ -292,6 +292,18 @@ def scene_art(slug,idx,phase,output):
  else:
   # Unrecognised mode must fail loudly, not silently substitute a node diagram.
   raise ValueError("No source-specific concept: "+slug)
+ # The attention marker moves between key areas of the *illustration*, not
+ # between fabricated scientific values. Its positions represent visual reading,
+ # never experimental time or a quantitative trajectory.
+ fx=(325,550,778,990)[phase]
+ fy=(246,365,269,381)[phase]
+ d.arc((fx-37,fy-37,fx+37,fy+37),20,310,fill=GOLD,width=5)
+ d.line((fx+32,fy-22,fx+69,fy-57),fill=GOLD,width=3)
+ # Four visual beats within a single voice-led scene, to guide attention without
+ # claims about biological or historical temporal sequences.
+ for j in range(4):
+  bx=985+j*45
+  d.rectangle((bx,116,bx+31,120),fill=GOLD if j==phase else GRID)
  # Restrained proof strip; one title is added later by the actual video overlay.
  txt(d,(100,583),"EDITORIAL ANIMATION / NOT ORIGINAL MEASUREMENTS",15,(160,182,173))
  canvas.save(output,optimize=True)
