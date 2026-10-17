@@ -1,12 +1,12 @@
 {
   "slug": "essay-machine-language",
-  "visual_revision": "v7.3-caption-safe/film-specific",
+  "visual_revision": "v7.3-caption-safe/v7.5-authentic-academic-archive",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
   "fps": 24,
   "source_audio_sha256": "94b93771a003f0803ffce9da8385938340391e24330b89eaff9b11d06969995c",
-  "movie_sha256": "5b47f2abf2a3143c13f8cac56613abc6b80c3687184507c710b073fe03de81c9",
+  "movie_sha256": "238b619c5300732b06c00241dc2cc6858bf44b408e992397beb78c24414d4234",
   "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
   "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
   "scene_count": 6,
@@ -16,13 +16,13 @@
       "scene": "01",
       "phase": 1,
       "seconds": 4.083,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/home-archive/chemistry-chalkboard.jpg"
     },
     {
       "scene": "01",
       "phase": 2,
       "seconds": 4.083,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/home-archive/chemistry-chalkboard.jpg"
     },
     {
       "scene": "01",
@@ -40,13 +40,13 @@
       "scene": "02",
       "phase": 1,
       "seconds": 3.875,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/archival-2026-10-12/chemistry-library-2016.webp"
     },
     {
       "scene": "02",
       "phase": 2,
       "seconds": 3.875,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/archival-2026-10-12/chemistry-library-2016.webp"
     },
     {
       "scene": "02",
@@ -64,13 +64,13 @@
       "scene": "03",
       "phase": 1,
       "seconds": 3.458,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/research-archive-2026/qatar-university-research-workstation.webp"
     },
     {
       "scene": "03",
       "phase": 2,
       "seconds": 3.458,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/research-archive-2026/qatar-university-research-workstation.webp"
     },
     {
       "scene": "03",
@@ -112,13 +112,13 @@
       "scene": "05",
       "phase": 1,
       "seconds": 3.458,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp"
     },
     {
       "scene": "05",
       "phase": 2,
       "seconds": 3.458,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp"
     },
     {
       "scene": "05",
@@ -136,13 +136,13 @@
       "scene": "06",
       "phase": 1,
       "seconds": 3.167,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
     },
     {
       "scene": "06",
       "phase": 2,
       "seconds": 3.125,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
     },
     {
       "scene": "06",

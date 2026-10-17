@@ -58,11 +58,11 @@
       "captions": "/assets/films/series-v7-pilots/cairo-microscope.vtt",
       "manifest": "/assets/films/series-v7-pilots/cairo-microscope.json",
       "contact": "/assets/films/series-v7-pilots/cairo-microscope.contact.webp",
-      "visual_revision": "v7.3-caption-safe/film-specific",
-      "sha256": "12205b3df15091e06208c6cb6d549a484e2fe680ad22a418620a67d0a43a1f57",
+      "visual_revision": "v7.3-caption-safe/v7.5-primary-owner-microscopy",
+      "sha256": "b3a7996c54cf9b82f5fdefe3dfbfa114c20a00b16881ac6774b047f3b03e1f7e",
       "seconds": 84.0,
-      "unique_mechanism_scenes": 4,
-      "creative_review": "needs_chapter_art_direction"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "ceramics-printing",
@@ -193,11 +193,11 @@
       "captions": "/assets/films/series-v7-pilots/essay-ai-email.vtt",
       "manifest": "/assets/films/series-v7-pilots/essay-ai-email.json",
       "contact": "/assets/films/series-v7-pilots/essay-ai-email.contact.webp",
-      "visual_revision": "v7.3-caption-safe/film-specific",
-      "sha256": "6be75ba3dbc23493d114e632861c348190116c3b5d34c708f43fb873f7f566c8",
+      "visual_revision": "v7.3-caption-safe/v7.5-archival-editorial-story",
+      "sha256": "5de1140f78587d953668365680c3fac8b5bc34ae0b69c593382feb1e72024910",
       "seconds": 84.0,
-      "unique_mechanism_scenes": 3,
-      "creative_review": "needs_chapter_art_direction"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "essay-life-between-diagnoses",
@@ -208,8 +208,8 @@
       "captions": "/assets/films/series-v7-pilots/essay-life-between-diagnoses.vtt",
       "manifest": "/assets/films/series-v7-pilots/essay-life-between-diagnoses.json",
       "contact": "/assets/films/series-v7-pilots/essay-life-between-diagnoses.contact.webp",
-      "visual_revision": "v7.3-caption-safe/film-specific",
-      "sha256": "2d5cda36b41f2f0c3521b241710c98aa590d62023ed68919c33535316cdd116f",
+      "visual_revision": "v7.3-caption-safe/v7.5-dated-autobiographical-source",
+      "sha256": "5380b2ea6c729f7161f79ff6368c874af5e9592607a8986958b03d131111f48f",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
@@ -223,11 +223,11 @@
       "captions": "/assets/films/series-v7-pilots/essay-machine-language.vtt",
       "manifest": "/assets/films/series-v7-pilots/essay-machine-language.json",
       "contact": "/assets/films/series-v7-pilots/essay-machine-language.contact.webp",
-      "visual_revision": "v7.3-caption-safe/film-specific",
-      "sha256": "5b47f2abf2a3143c13f8cac56613abc6b80c3687184507c710b073fe03de81c9",
+      "visual_revision": "v7.3-caption-safe/v7.5-authentic-academic-archive",
+      "sha256": "238b619c5300732b06c00241dc2cc6858bf44b408e992397beb78c24414d4234",
       "seconds": 84.0,
-      "unique_mechanism_scenes": 3,
-      "creative_review": "needs_chapter_art_direction"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "essay-potency-exposure",
