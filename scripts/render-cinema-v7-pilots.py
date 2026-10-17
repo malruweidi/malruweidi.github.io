@@ -11,6 +11,13 @@ ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/"assets/films/series-v6"
 OUT=ROOT/"assets/films/series-v7-pilots"
 CAT=ROOT/"assets/films/publication-series.json"
+# Rebuilt corrections require new source-derived images; unchanged films remain cached.
+ART_REVISIONS={
+ "cerebral-cilia":"v7.2-cilia-provenance",
+ "slit2-robo":"v7.2-robo-receptor",
+ "echo-cnn-lstm":"v7.2-ultrasound",
+ "cubosome-theranostics":"v7.2-bicontinuous"
+}
 ART=ROOT/"scripts/build-cinema-v7-previews.py"
 spec=importlib.util.spec_from_file_location("ruwaidix_v7_previews",ART)
 art=importlib.util.module_from_spec(spec);spec.loader.exec_module(art)
@@ -95,7 +102,7 @@ def render(entry):
       "-ss","1.0","-i",str(out),"-frames:v","1","-q:v","75",
       str(OUT/(slug+".webp")))
   metadata={
-   "slug":slug,"status":"STAGING ONLY — creative, legal and scientific human review outstanding",
+   "slug":slug,"visual_revision":ART_REVISIONS.get(slug,"v7.1"),"status":"STAGING ONLY — creative, legal and scientific human review outstanding",
    "film_style":"24 individually directed visual beats across 6 narrated chapters",
    "seconds":duration,"fps":24,"source_audio_sha256":hashlib.sha256(source.read_bytes()).hexdigest(),
    "movie_sha256":hashlib.sha256(out.read_bytes()).hexdigest(),
@@ -124,6 +131,7 @@ def complete(slug):
        all("figure-zebrafish-microscopy.jpg" not in str(b.get("source",""))
            for b in beats)))
   return (record["slug"]==slug and record["visual_beat_count"]==24 and
+          record.get("visual_revision")==ART_REVISIONS.get(slug,"v7.1") and
           record["movie_sha256"]==hashlib.sha256(paths[0].read_bytes()).hexdigest() and
           paths[1].read_text().startswith("WEBVTT") and valid_source)
  except (OSError,KeyError,ValueError,TypeError):
