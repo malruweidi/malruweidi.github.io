@@ -20,7 +20,13 @@ jobs:
             'https://cdn.creativeclaw.co/u/8a002dd8/audio/1f503ad0-dab0-4bc4-9c0f-df2fd1980d8b.wav'
           test -s reem_new_15s.wav
           file reem_new_15s.wav
-          ffprobe -hide_banner -v error -show_entries format=duration -of default=noprint_wrappers=1 reem_new_15s.wav
+          python3 - <<'PY'
+          import wave
+          with wave.open('reem_new_15s.wav','rb') as audio:
+              length=audio.getnframes()/audio.getframerate()
+              print(f'Approved Reem voice duration: {length:.2f} seconds')
+              assert 14 < length < 18
+          PY
       - name: Export WAV for free FFmpeg editing
         uses: actions/upload-artifact@v4
         with:
