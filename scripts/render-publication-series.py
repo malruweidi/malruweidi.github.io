@@ -207,9 +207,25 @@ def render(entry, models):
         (OUTPUT/(slug+".json")).write_text(json.dumps(record,indent=2)+"\n")
         print("RENDERED",slug,round(duration,2),"seconds",out.stat().st_size,"bytes")
 
+def backfill_video_posters():
+    """Use an actual frame from each published MP4, never an unrelated cover photograph."""
+    created = 0
+    for film in sorted(OUTPUT.glob("*.mp4")):
+        poster = film.with_suffix(".webp")
+        if poster.exists() and poster.stat().st_size > 1000:
+            continue
+        checked("ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
+                "-ss", "1.0", "-i", str(film), "-frames:v", "1",
+                "-vf", "scale=960:-2", "-q:v", "75", str(poster))
+        if not poster.exists() or poster.stat().st_size < 1000:
+            raise RuntimeError("Failed to extract original first-frame poster: " + str(film))
+        created += 1
+    print("MP4-sourced posters generated:", created)
+
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--validate-only",action="store_true")
+    p.add_argument("--posters-only",action="store_true",help="Extract original frames from all rendered MP4 files")
     p.add_argument("--edition-v6",action="store_true",help="Rebuild in a separate safe v6 directory")
     p.add_argument("--skip-v5",action="store_true",help="Preserve the five newer source-figure editions")
     p.add_argument("--models",default="film-models")
@@ -231,6 +247,9 @@ def main():
         items=[x for x in items if x["id"] in wanted]
     print("Films validated:", ", ".join(x["id"] for x in items))
     if opts.validate_only: return
+    if opts.posters_only:
+        backfill_video_posters()
+        return
     if opts.reconcile_manifests:
         if V6: raise ValueError("V6 is source-exact; do not replace its original records with old metadata")
         reconcile_manifests(items)
