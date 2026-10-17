@@ -1,11 +1,9 @@
 {
   "film": "curcumin-cyanide",
-  "master_sha256": "b2479eae14f8bf771fcbf10d32a260a2a4bedafb1c5a8cf61b608c96b52f0ec5",
-  "owner_primary_source": "assets/home-archive/figure-cyanide-sensor.jpg",
-  "owner_primary_git_sha": "05f658f81f63fe0811699dd686955a232be97e36",
-  "doi": "10.1039/C9AY01557D",
-  "provenance_boundary": "A four-panel author-archived study figure; hydroxide and organic co-solvent caveats.",
-  "sampled_seconds": [
+  "hash": "b2479eae14f8bf771fcbf10d32a260a2a4bedafb1c5a8cf61b608c96b52f0ec5",
+  "source_gate": "Verified actual on-repository original image/experimental coordinate hashes and source identity",
+  "runtime": 120.0,
+  "sample_seconds": [
     3,
     11,
     18,
@@ -23,6 +21,6 @@
     108,
     116
   ],
-  "full_original_frame_preserved": true,
-  "human_review": "NOT PERFORMED — listen and inspect source caption/permissions before live replacement"
+  "pictured_scientific_evidence": "Source-attributed; chapter-level scientific interpretation still needs human evaluation",
+  "note": "Full-frame inspection only. Does not approve pronunciation, art direction or publishing."
 }

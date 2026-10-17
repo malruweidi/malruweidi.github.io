@@ -1,11 +1,9 @@
 {
   "film": "histology-failure",
-  "master_sha256": "2928196411d951ada57a104f529879ce0940071eb3fd2b1fad787b4d10e3d7ca",
-  "owner_primary_source": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
-  "owner_primary_git_sha": "746a499ab1571a351a60bbacdcdb694560ea952f",
-  "doi": null,
-  "provenance_boundary": "First-person unsuccessful experiment; not a published successful histology figure.",
-  "sampled_seconds": [
+  "hash": "2928196411d951ada57a104f529879ce0940071eb3fd2b1fad787b4d10e3d7ca",
+  "source_gate": "Verified actual on-repository original image/experimental coordinate hashes and source identity",
+  "runtime": 120.0,
+  "sample_seconds": [
     3,
     11,
     18,
@@ -23,6 +21,6 @@
     108,
     116
   ],
-  "full_original_frame_preserved": true,
-  "human_review": "NOT PERFORMED — listen and inspect source caption/permissions before live replacement"
+  "pictured_scientific_evidence": "Source-attributed; chapter-level scientific interpretation still needs human evaluation",
+  "note": "Full-frame inspection only. Does not approve pronunciation, art direction or publishing."
 }
