@@ -6,6 +6,7 @@
   "films": [
     {
       "slug": "what-a-bubble-can-do",
+      "media_stem": "what-a-bubble-can-do-evidence-v2",
       "number": "02",
       "title": "What a Bubble Can Do",
       "topic": "Pulmonary mechanobiology",
