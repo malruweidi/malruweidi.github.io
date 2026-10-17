@@ -1,0 +1,148 @@
+{
+  "title": "Soluble ACE2 Is Not a Treatment Verdict",
+  "id": "ace2-covid-drugs",
+  "edition": "V4 study-figure-led documentary",
+  "doi": "10.1080/08037051.2022.2055530",
+  "source": "https://www.tandfonline.com/doi/full/10.1080/08037051.2022.2055530",
+  "license": "CC BY 4.0",
+  "source_visual_limits": "The exact 2022 observational hypertensive COVID-19 paper, with its published circulating ACE2/angiotensin-II figures. No third-party 2021 review graphics, patient photos, or causal claims.",
+  "source_figures": [
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/ace2-covid-drugs-figure-01.jpg",
+      "sha256": "e74d66bd578fda034711b607275867917d99c779462e65f30b897b73933fad54"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/ace2-covid-drugs-figure-01.jpg",
+      "sha256": "e74d66bd578fda034711b607275867917d99c779462e65f30b897b73933fad54"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/ace2-covid-drugs-figure-01.jpg",
+      "sha256": "e74d66bd578fda034711b607275867917d99c779462e65f30b897b73933fad54"
+    },
+    {
+      "figure": 2,
+      "path": "assets/films/source-figures/v3/ace2-covid-drugs-figure-02.jpg",
+      "sha256": "25c6ab2f4a570dbb81ab8f97c92349c5db8d08dfe09acffe6f9b598bbecd2e88"
+    },
+    {
+      "figure": 2,
+      "path": "assets/films/source-figures/v3/ace2-covid-drugs-figure-02.jpg",
+      "sha256": "25c6ab2f4a570dbb81ab8f97c92349c5db8d08dfe09acffe6f9b598bbecd2e88"
+    },
+    {
+      "figure": 3,
+      "path": "assets/films/source-figures/v3/ace2-covid-drugs-figure-03.jpg",
+      "sha256": "567c0516ef47164cc7d960ba4d4ca9ce0f53ab2bc14f4a8c2b65b81be32ebbab"
+    },
+    {
+      "figure": 3,
+      "path": "assets/films/source-figures/v3/ace2-covid-drugs-figure-03.jpg",
+      "sha256": "567c0516ef47164cc7d960ba4d4ca9ce0f53ab2bc14f4a8c2b65b81be32ebbab"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/ace2-covid-drugs-figure-01.jpg",
+      "sha256": "e74d66bd578fda034711b607275867917d99c779462e65f30b897b73933fad54"
+    }
+  ],
+  "original_figure_pixels_untouched": true,
+  "separate_explanatory_animation": true,
+  "new_science_fabricated": false,
+  "duration_seconds": 120.0,
+  "sha256": "89c17190a7da899825b11e16af7e7cf850a48dbad7cf83f73c522b5acc995df5",
+  "human_review": "NOT APPROVED — listen, watch, verify panel identities and licensing before live embed",
+  "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
+  "chapters": [
+    {
+      "mode": "opening",
+      "figure": 1,
+      "headline": [
+        "TWO BLOOD",
+        "MARKERS"
+      ],
+      "eyebrow": "HYPERTENSIVE COVID-19 COHORT",
+      "narration": "This clinical study measured circulating ACE two and angiotensin two in two hundred hypertensive patients with COVID nineteen. It is an observational analysis, not a treatment trial.",
+      "tts_seconds": 12.297
+    },
+    {
+      "mode": "source",
+      "figure": 1,
+      "headline": [
+        "SEVERITY",
+        "AND ACE TWO"
+      ],
+      "eyebrow": "FIGURE 1 · REAL DOT PLOTS",
+      "narration": "The original dot plots compare circulating ACE two and angiotensin two across mild, moderate, and severe illness, with the authors' reported confidence intervals.",
+      "tts_seconds": 10.868
+    },
+    {
+      "mode": "result",
+      "figure": 1,
+      "headline": [
+        "HIGHER IN",
+        "SEVERE CASES"
+      ],
+      "eyebrow": "OBSERVATIONAL ASSOCIATION · FIGURE 1",
+      "narration": "The reported soluble ACE two level was about one point nine times higher in severe disease than in mild cases. This does not establish the direction of causation.",
+      "tts_seconds": 11.275
+    },
+    {
+      "mode": "source",
+      "figure": 2,
+      "headline": [
+        "FOUR MEDICINE",
+        "CLASSES"
+      ],
+      "eyebrow": "FIGURE 2 · EXPOSURE GROUPS",
+      "narration": "The researchers compared patients taking ACE inhibitors, angiotensin receptor blockers, beta blockers, and calcium channel blockers. These were recorded exposures, not randomly assigned drugs.",
+      "tts_seconds": 12.565
+    },
+    {
+      "mode": "result",
+      "figure": 2,
+      "headline": [
+        "REAL ASSAY",
+        "DISTRIBUTIONS"
+      ],
+      "eyebrow": "FIGURE 2 · ORIGINAL GROUP RESULTS",
+      "narration": "The original figure shows variation between medication groups in circulating ACE two and angiotensin two. These are blood assays, not direct measurements of membrane receptor expression.",
+      "tts_seconds": 12.489
+    },
+    {
+      "mode": "source",
+      "figure": 3,
+      "headline": [
+        "GROUPS AND",
+        "ILLNESS SEVERITY"
+      ],
+      "eyebrow": "FIGURE 3 · ACTUAL PUBLISHED VIOLIN PLOTS",
+      "narration": "The third figure separates medication classes by disease severity. It reports treatment group associations within an already ill population, not clinical benefit from starting a drug.",
+      "tts_seconds": 11.603
+    },
+    {
+      "mode": "boundary",
+      "figure": 3,
+      "headline": [
+        "ASSOCIATION",
+        "IS NOT CAUSE"
+      ],
+      "eyebrow": "CONFOUNDING BY INDICATION AND SEVERITY",
+      "narration": "Medication choice, baseline cardiovascular disease, age, and illness severity can all shape the observed associations. The study cannot resolve all of those differences.",
+      "tts_seconds": 10.975
+    },
+    {
+      "mode": "closing",
+      "figure": 1,
+      "headline": [
+        "MEASURED",
+        "NOT PRESCRIBED"
+      ],
+      "eyebrow": "THE SCIENTIFIC LIMIT",
+      "narration": "The contribution is a clinical biochemical observation linking treatment context, soluble ACE two, and angiotensin two. It does not tell a patient to change medication.",
+      "tts_seconds": 11.285
+    }
+  ]
+}
