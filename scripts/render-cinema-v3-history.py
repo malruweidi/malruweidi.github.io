@@ -228,7 +228,22 @@ def voices(scenes,models,audio,vtt):
         # Sentence-level timestamps. Human listening and phoneme alignment still pending.
         begin=index*DURATION+.7
         end=begin+len(sound)/rate
-        captions.extend([timecode(begin)+" --> "+timecode(end),scene["narration"],""])
+        # Word-safe, mobile legible subtitle intervals. These are estimated
+        # from timing and need listening/forced-alignment review before public use.
+        words=scene["narration"].split()
+        parts=[];line=""
+        for word in words:
+            trial=(line+" "+word).strip()
+            if line and len(trial)>51:parts.append(line);line=word
+            else:line=trial
+        if line:parts.append(line)
+        total=sum(len(p) for p in parts)
+        used=0
+        for p in parts:
+            start=begin+(end-begin)*(used/total)
+            used+=len(p)
+            finish=begin+(end-begin)*(used/total)
+            captions.extend([timecode(start)+" --> "+timecode(finish),p,""])
     joined=np.concatenate(samples)
     sf.write(audio,joined,rate,subtype="PCM_16")
     vtt.write_text("\n".join(captions),encoding="utf8")
