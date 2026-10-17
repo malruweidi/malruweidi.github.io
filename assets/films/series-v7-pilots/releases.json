@@ -1,23 +1,9 @@
 {
   "schema": "ruwaidix-cinema-v7-registered-releases-v1",
   "version": "clean-editorial-release",
-  "count": 26,
+  "count": 22,
   "review_limit": "Further expert scientific and artistic review may improve these editions.",
   "films": [
-    {
-      "id": "ace2-covid-drugs",
-      "edition": "series-v7-pilots",
-      "poster": "/assets/films/series-v7-pilots/ace2-covid-drugs.webp",
-      "duration_seconds": 84,
-      "sha256": "c422f4ce61028eaaa79480c35d00fa673a9c6b9ae16a1ed5ff07e5e79ea39d77",
-      "video": "/assets/films/series-v7-pilots/ace2-covid-drugs.mp4",
-      "captions": "/assets/films/series-v7-pilots/ace2-covid-drugs.vtt",
-      "scene_manifest": "/assets/films/series-v7-pilots/ace2-covid-drugs.json",
-      "source_review": "/assets/films/series-v7-pilots/ace2-covid-drugs.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific",
-      "distinct_chapters": 6,
-      "version": "clean-editorial-release"
-    },
     {
       "id": "ace2-forms",
       "edition": "series-v7-pilots",
@@ -85,20 +71,6 @@
       "scene_manifest": "/assets/films/series-v7-pilots/drug-release-twins.json",
       "source_review": "/assets/films/series-v7-pilots/drug-release-twins.contact.webp",
       "visual_revision": "v7.8-clean-screen/v7.9-release-model-labels",
-      "distinct_chapters": 6,
-      "version": "clean-editorial-release"
-    },
-    {
-      "id": "echo-cnn-lstm",
-      "edition": "series-v7-pilots",
-      "poster": "/assets/films/series-v7-pilots/echo-cnn-lstm.webp",
-      "duration_seconds": 84,
-      "sha256": "caabab213012c1e803736029b5afcfffc205debe5fb25482d28affc83d0c2fc4",
-      "video": "/assets/films/series-v7-pilots/echo-cnn-lstm.mp4",
-      "captions": "/assets/films/series-v7-pilots/echo-cnn-lstm.vtt",
-      "scene_manifest": "/assets/films/series-v7-pilots/echo-cnn-lstm.json",
-      "source_review": "/assets/films/series-v7-pilots/echo-cnn-lstm.contact.webp",
-      "visual_revision": "v7.8-clean-screen/v7.2-ultrasound",
       "distinct_chapters": 6,
       "version": "clean-editorial-release"
     },
@@ -336,34 +308,6 @@
       "captions": "/assets/films/series-v7-pilots/micelles-pahs.vtt",
       "scene_manifest": "/assets/films/series-v7-pilots/micelles-pahs.json",
       "source_review": "/assets/films/series-v7-pilots/micelles-pahs.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific/source-figure-fully-visible",
-      "distinct_chapters": 6,
-      "version": "clean-editorial-release"
-    },
-    {
-      "id": "niosomes",
-      "edition": "series-v7-pilots",
-      "poster": "/assets/films/series-v7-pilots/niosomes.webp",
-      "duration_seconds": 84,
-      "sha256": "9a545eee804c106831e85c02496d668ee8ca2dbfa964b5e0d6b8d36813cdbf24",
-      "video": "/assets/films/series-v7-pilots/niosomes.mp4",
-      "captions": "/assets/films/series-v7-pilots/niosomes.vtt",
-      "scene_manifest": "/assets/films/series-v7-pilots/niosomes.json",
-      "source_review": "/assets/films/series-v7-pilots/niosomes.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific",
-      "distinct_chapters": 6,
-      "version": "clean-editorial-release"
-    },
-    {
-      "id": "zebrafish-hemodynamics",
-      "edition": "series-v7-pilots",
-      "poster": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.webp",
-      "duration_seconds": 84,
-      "sha256": "655953e269296b4aaf051f1f4a24cc4f25fb0b85ba17d654fe6f0a9e2ab7abd1",
-      "video": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.mp4",
-      "captions": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.vtt",
-      "scene_manifest": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.json",
-      "source_review": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.contact.webp",
       "visual_revision": "v7.8-clean-screen/film-specific/source-figure-fully-visible",
       "distinct_chapters": 6,
       "version": "clean-editorial-release"
