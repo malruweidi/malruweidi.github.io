@@ -54,7 +54,7 @@ def main():
             "mp4_rendered":bool(exists),
             "source_revision_required":revision,
             "source_revision_in_mp4":stamped,
-            "scientifically_current_artwork":bool(source_correct),
+            "source_visual_and_motion_current":bool(source_correct),
             "encoded_technical_qa":bool(has_qa),
             "original_archive_preserved":root_original.exists(),
             "human_screened":bool(human_ok),
@@ -64,7 +64,7 @@ def main():
     summary={
         "expected":35,
         "mp4_rendered":sum(x["mp4_rendered"] for x in results),
-        "latest_source_and_motion":sum(x["scientifically_current_artwork"] for x in results),
+        "latest_source_and_motion":sum(x["source_visual_and_motion_current"] for x in results),
         "encoded_technical_qa":sum(x["encoded_technical_qa"] for x in results),
         "human_screened":sum(x["human_screened"] for x in results),
         "approved_for_replacement":sum(x["ready_for_public_replacement"] for x in results),
