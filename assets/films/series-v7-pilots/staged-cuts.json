@@ -163,11 +163,11 @@
       "captions": "/assets/films/series-v7-pilots/essay-academic-mental-health.vtt",
       "manifest": "/assets/films/series-v7-pilots/essay-academic-mental-health.json",
       "contact": "/assets/films/series-v7-pilots/essay-academic-mental-health.contact.webp",
-      "visual_revision": "v7.3-caption-safe/film-specific",
-      "sha256": "632328be0e001058e997b1c212798047a22ceaabf5ef2a35341711b601b6fa8e",
+      "visual_revision": "v7.3-caption-safe/v7.5-original-research-life-archive",
+      "sha256": "7be9809d82295887733c7fe473f5a9699b0952c459d1bd0fa4379977e29336c4",
       "seconds": 84.0,
-      "unique_mechanism_scenes": 3,
-      "creative_review": "needs_chapter_art_direction"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "essay-adc",

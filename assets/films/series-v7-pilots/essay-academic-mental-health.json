@@ -1,12 +1,12 @@
 {
   "slug": "essay-academic-mental-health",
-  "visual_revision": "v7.3-caption-safe/film-specific",
+  "visual_revision": "v7.3-caption-safe/v7.5-original-research-life-archive",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
   "fps": 24,
   "source_audio_sha256": "56902a7e5f1b21e2986b98a22673d327f2c872f0e2883ccef8c3adfbdff718ad",
-  "movie_sha256": "632328be0e001058e997b1c212798047a22ceaabf5ef2a35341711b601b6fa8e",
+  "movie_sha256": "7be9809d82295887733c7fe473f5a9699b0952c459d1bd0fa4379977e29336c4",
   "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
   "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
   "scene_count": 6,
@@ -16,13 +16,13 @@
       "scene": "01",
       "phase": 1,
       "seconds": 3.958,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/archival-2026-10-12/chemistry-library-2016.webp"
     },
     {
       "scene": "01",
       "phase": 2,
       "seconds": 3.958,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/archival-2026-10-12/chemistry-library-2016.webp"
     },
     {
       "scene": "01",
@@ -40,13 +40,13 @@
       "scene": "02",
       "phase": 1,
       "seconds": 3.417,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/research-archive-2026/qatar-university-research-workstation.webp"
     },
     {
       "scene": "02",
       "phase": 2,
       "seconds": 3.417,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/research-archive-2026/qatar-university-research-workstation.webp"
     },
     {
       "scene": "02",
@@ -112,13 +112,13 @@
       "scene": "05",
       "phase": 1,
       "seconds": 3.542,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/archival-2026-10-12/chemistry-library-2016.webp"
     },
     {
       "scene": "05",
       "phase": 2,
       "seconds": 3.542,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/archival-2026-10-12/chemistry-library-2016.webp"
     },
     {
       "scene": "05",
@@ -136,13 +136,13 @@
       "scene": "06",
       "phase": 1,
       "seconds": 3.458,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
     },
     {
       "scene": "06",
       "phase": 2,
       "seconds": 3.417,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
     },
     {
       "scene": "06",
