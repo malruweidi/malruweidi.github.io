@@ -1,0 +1,166 @@
+{
+  "film_id": "making-medicines-keep",
+  "edition": "v3_critical_source_driven",
+  "status": "AUTHORED_PICTURE_AND_AUDIO_DRAFT_NEEDS_SCREENING",
+  "format": {
+    "fps": 24,
+    "width": 1280,
+    "height": 720,
+    "scene_seconds": 15,
+    "total_seconds": 120
+  },
+  "narration_source": "Making_Medicines_Keep_HoPP_FINAL_SUBMISSION.docx uploaded by author; narrative paraphrase only, not a quotation of unseen evidence",
+  "primary_source_register": [
+    {
+      "id": "Minhaj-al-dukkan",
+      "type": "medieval formulary",
+      "source_url": "https://www.qdl.qa/en/archive/81055/vdc_100023441781.0x000001",
+      "rights": "QDL lists primary folio images as Public Domain, but automated download was blocked. No original folio image is included.",
+      "usage": "Citation and source-type context only"
+    },
+    {
+      "id": "Minhaj-1870-print",
+      "type": "printed Arabic primary text quoted in author's submitted manuscript",
+      "source_url": null,
+      "rights": "Typeset short Arabic passages from author's manuscript only; source printing cited in paper",
+      "usage": "Source quotation rendered as TEXT, never a counterfeit facsimile"
+    },
+    {
+      "id": "Genizah-Or1081-J39",
+      "type": "Cairo Genizah specific prescription",
+      "source_url": "https://www.lib.cam.ac.uk/collections/departments/taylor-schechter-genizah-research-unit/fragment-month/rhubarb-and-dodder-and",
+      "rights": "Original manuscript imagery not cleared for website reuse, and is not used",
+      "usage": "Source-cited document identification and sequence only"
+    },
+    {
+      "id": "al-Dustur-al-bimaristani",
+      "type": "hospital formulary",
+      "source_url": null,
+      "rights": "No historical copy image cleared",
+      "usage": "Typographic genre label only"
+    },
+    {
+      "id": "hisba",
+      "type": "normative oversight texts",
+      "source_url": null,
+      "rights": "No image licensed",
+      "usage": "Typographic genre label only"
+    }
+  ],
+  "visual_rules": [
+    "NEVER claim a recreated page or generated apothecary photograph is historical evidence",
+    "No personal portrait in this historical film",
+    "No generic photograph of manuscripts from other works",
+    "Arabic quote is typeset from author's cited text, identified as such",
+    "Each of eight scenes uses a different animation geometry and sourced intellectual function",
+    "No experimental data, modern microbial counts or water-activity claims without primary measured evidence"
+  ],
+  "scenes": [
+    {
+      "key": "the-problem",
+      "eyebrow": "CAIRO · AYYUBID–MAMLUK ERA",
+      "heading": "A medicine had to survive its making.",
+      "narration": "In medieval Cairo, pharmaceutical work did not end when the ingredients met. A syrup still had to withstand heat, storage, and the possibility of failure.",
+      "visual": "temporal-friction",
+      "margin": "An interpretative opening, not a reconstruction of an observed thirteenth-century pharmacy.",
+      "sources": [
+        "author-submitted-HoPP-manuscript-p2-p4"
+      ]
+    },
+    {
+      "key": "four-witnesses",
+      "eyebrow": "FOUR VERY DIFFERENT RECORDS",
+      "heading": "A handbook cannot tell the whole story.",
+      "narration": "The evidence comes from different places: a druggist's handbook, a hospital formulary, prescriptions preserved in the Genizah, and writings about market misconduct. Each answers a different question.",
+      "visual": "documents",
+      "margin": "Textual genres are not equivalent documentary evidence; preserve the distinction between instructions and observed shop transactions.",
+      "sources": [
+        "Minhaj-al-dukkan",
+        "al-Dustur-al-bimaristani",
+        "Cairo-Genizah",
+        "hisba"
+      ]
+    },
+    {
+      "key": "julab",
+      "eyebrow": "MINHĀJ AL-DUKKĀN · SYRUP CHAPTER",
+      "heading": "Julāb was a material starting point.",
+      "narration": "Al-Kūhīn described julep as the common base for sweet syrups, using the language of matter and form. The fruit gave the base a particular character.",
+      "visual": "arabic-quote",
+      "arabic": "أصل جميع الأشربة السكرية المتعارفة الجلاب",
+      "translation": "The origin of the customary sweet syrups is julāb …",
+      "margin": "Arabic excerpt typeset from quoted printed passage in the accepted manuscript; this is NOT a manuscript-page photograph.",
+      "sources": [
+        "Minhaj-1870-print"
+      ]
+    },
+    {
+      "key": "process",
+      "eyebrow": "RECIPE AS PROCESS",
+      "heading": "Heat. Clarify. Skim. Strain. Judge.",
+      "narration": "The recipe moves through water and sugar, egg-white clarification, gentle heating, skimming, straining, and a carefully judged final consistency. These are practical instructions, not measured modern process controls.",
+      "visual": "process",
+      "steps": [
+        "Sugar and water",
+        "Gentle heating",
+        "Egg-white clarification",
+        "Skim and strain",
+        "Recognized qiwām"
+      ],
+      "margin": "Schematic based on primary-text instructions; not footage of an actual medieval preparation.",
+      "sources": [
+        "Minhaj-1870-print",
+        "author-submitted-HoPP-manuscript-p15-p17"
+      ]
+    },
+    {
+      "key": "failure-repair",
+      "eyebrow": "WHEN THE SYRUP FAILED",
+      "heading": "Crystallization required judgement.",
+      "narration": "Al-Kūhīn even described syrup that had crystallized or deteriorated. A measured addition of hot water, renewed dissolution, and fruit water could restore an acceptable state.",
+      "visual": "repair",
+      "arabic": "إذا تسكّر الشراب أو فسد",
+      "translation": "If the syrup crystallizes or becomes corrupted …",
+      "margin": "Schematic of the stated repair instruction. Not a historical experiment, validated stability method or modern pharmaceutical reprocessing.",
+      "sources": [
+        "Minhaj-1870-print",
+        "author-submitted-HoPP-manuscript-p18"
+      ]
+    },
+    {
+      "key": "substitution",
+      "eyebrow": "NOT ALL REPLACEMENTS ARE EQUIVALENT",
+      "heading": "Scarcity forced decisions.",
+      "narration": "Substitution addressed unavailable or doubtful ingredients through perceived therapeutic action, dose, material character, and suitability. It was not modern chemical equivalence, and it was not permission for fraud.",
+      "visual": "substitution",
+      "margin": "Conceptual decision diagram; no medieval ingredient approved as clinically bioequivalent.",
+      "sources": [
+        "author-submitted-HoPP-manuscript-p10-p11"
+      ]
+    },
+    {
+      "key": "genizah",
+      "eyebrow": "A PRESCRIPTION IS NOT AN INVENTORY",
+      "heading": "The page and the shelf could diverge.",
+      "narration": "The Genizah prescription Or.1081 J39 joins an early electuary with a later decoction. It shows therapeutic instructions, but cannot prove every ingredient was available in the shop.",
+      "visual": "two-documents",
+      "margin": "Document identifier and reported sequence from scholarly analysis; no original Genizah photograph is reproduced without Cambridge permission.",
+      "sources": [
+        "Genizah-Or1081-J39",
+        "author-submitted-HoPP-manuscript-p20-p21"
+      ]
+    },
+    {
+      "key": "conclusion",
+      "eyebrow": "HISTORY OF PHARMACY AND PHARMACEUTICALS",
+      "heading": "Reliability without modern standardization.",
+      "narration": "This history is not an early version of Good Manufacturing Practice. It describes how materials, instructions, repair, and trust helped make medicines recognizable and usable before modern analytical testing.",
+      "visual": "reliability",
+      "margin": "Modern concepts are used analytically; no historical genealogy to GMP claimed. Manuscript accepted 15 October 2026; not yet published.",
+      "sources": [
+        "author-submitted-HoPP-manuscript-abstract",
+        "ICH-Q8-contrast"
+      ]
+    }
+  ]
+}

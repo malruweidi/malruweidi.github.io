@@ -1,0 +1,174 @@
+{
+  "version": "2026-10-17",
+  "purpose": "Before re-render, distinguish verified study identity and source figure IDs from image-byte acquisition, reuse rights and editorial fit.",
+  "strict_rule": "No reuse of a scientific image from another paper even if it describes similar concepts; use a clearly designated original conceptual diagram instead.",
+  "assets": [
+    {
+      "slug": "airway-reopening",
+      "origin": "10.1152/japplphysiol.00574.2020",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8384562/",
+      "figure_ids": [
+        "Figure 1: study-specific flow chamber and bubble",
+        "Figure 2: live/dead cell microscopy under specific treatments",
+        "Figure 3: actual injury percentages",
+        "Figure 4: phalloidin/DAPI actin",
+        "Figure 5: treated-cell AFM morphology"
+      ],
+      "rights": "Open full text at PMC; inspect actual article licensing and reproduce figures with proper attribution only after checking reuse notices",
+      "caution": "Do not confuse this 2021 pharmacological-treatment paper with Shurbaji et al. 2020 methods paper; they use related setups but are distinct experiments.",
+      "status": "FIGURES 1–4 DIRECTLY VERIFIED AGAINST AUTHOR'S ACTUAL PDF PAGE IMAGES, BUT FIGS 2–4 NOT YET IMPORTED INTO CINEMATIC ASSETS",
+      "library_manuscript_inspection": {
+        "file": "al-ruweidi-et-al-2021-dexamethasone-and-transdehydroandrosterone-significantly-reduce-pulmonary-epithelial-cell.pdf",
+        "file_type": "Author's own scholarly full-paper PDF (9 pages) in connected source Library",
+        "source_inspection": "Confirmed with page images: PDF p4 contains exact Figure 1 A-D, PDF p5 contains Figure 2 treatment/control fluorescence image grid, PDF p6 contains Figure 3 %Death chart and Figure 4 actin immunostaining, later PDF page contains Figure 5 AFM.",
+        "rights_status": "Original APS copyright still applies despite author availability. No additional published figures have been imported into the public website or Git repository as unverified reproductions.",
+        "next_visual_replacement": "Source Figure 2 and Figure 4 should replace the schematic green/red circles and abstract actin drawings only after explicit rights review. Film remains a draft."
+      }
+    },
+    {
+      "slug": "flow-chamber-method",
+      "origin": "10.3390/mps3040065",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7712398/",
+      "figure_ids": [
+        "Figure 1: this methods paper's apparatus",
+        "Figure 4: study original calcein/ethidium",
+        "Figure 5: 149 L2 cells and injury comparison",
+        "Figure 6: actin cytoskeleton"
+      ],
+      "rights": "CC BY 4.0, original figure may be used with source and modifications attribution subject to third-party exceptions",
+      "caution": "Do not relabel its control/stressed cells as dexamethasone or DHEA treatment groups from the other 2021 paper.",
+      "status": "FIGURE DESCRIPTIONS AND CC BY VERIFIED; IMAGE BYTES NOT YET INGESTED"
+    },
+    {
+      "slug": "pla-grafting",
+      "origin": "10.3390/polym13213717",
+      "url": "https://www.mdpi.com/2073-4360/13/21/3717",
+      "figure_ids": [
+        "Figure 1: contact angles and surface free energy",
+        "Figure 2: hydroperoxides",
+        "Figure 3: FTIR",
+        "Figure 4: XPS",
+        "Figure 5: SEM",
+        "Figure 6: AFM",
+        "Figure 7: nanomechanical AM-FM",
+        "Figure 8: peel resistance"
+      ],
+      "rights": "Verify MDPI article-level CC BY 4.0 and original credits before ingesting panels",
+      "caution": "The SEM in this PLA film paper is not automatically evidence for the distinct antimicrobial PLA scaffold paper.",
+      "status": "FIGURE INDEX VERIFIED; IMAGE BYTES NOT YET INGESTED"
+    },
+    {
+      "slug": "curcumin-cyanide",
+      "origin": "10.1039/C9AY01557D",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2019/ay/c9ay01557d",
+      "figure_ids": [
+        "Verified RSC graphical abstract",
+        "Original UV–Vis evidence: decrease at 421 nm and band at 520 nm",
+        "Study fluorescence and actual living-cell assay from its original paper"
+      ],
+      "rights": "RSC's figure-reuse policy permits author reuse with correct acknowledgement; publication-specific licensing still to be checked",
+      "caution": "Assay medium is acetonitrile:water 90:10, not 100% aqueous buffer; hydroxide also caused changes. Do not use generic reagent pyridine-4-carboxaldehyde imagery.",
+      "status": "ABSTRACT/MECHANISTIC FACTS VERIFIED; FIGURE PANEL RIGHTS REQUIRE REVIEW"
+    },
+    {
+      "slug": "ace2-forms",
+      "origin": "10.3390/ijms22136703",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8269184/",
+      "figure_ids": [
+        "Review Figure 1: virus entry pathways",
+        "Review Figure 2: organ ACE2 expression",
+        "Review Figure 7: potential ARDS approaches"
+      ],
+      "rights": "IMPORTANT: Figure 1 and Figure 2 explicitly republished from OTHER studies 'with permission'; do not assume MDPI CC BY permits re-reproduction of those panels",
+      "caution": "Recreate a wholly original pathway diagram from cited biology instead of copying third-party permission-only figures.",
+      "status": "VERIFIED SOURCE; THIRD-PARTY FIGURES QUARANTINED"
+    },
+    {
+      "slug": "making-medicines-keep",
+      "origin": "accepted manuscript HOP-P000014R",
+      "url": "https://www.qdl.qa/en/archive/81055/vdc_100023441781.0x000001",
+      "figure_ids": [
+        "Actual Or 5786 folio scan if authorized access is obtained",
+        "Typeset direct Minhaj julāb quotation from accepted manuscript",
+        "Typeset source repair-rule quotation",
+        "Genizah Or.1081 J39 reference with no unlicensed scan"
+      ],
+      "rights": "QDL marks Or 5786 public-domain; GitHub IIIF request blocked by 403; Cambridge Genizah scan permission not granted",
+      "caution": "No composite fake manuscripts, unrelated Wellcome documents, modern portraits or make-believe medieval shop photos.",
+      "status": "MANUSCRIPT TEXT SOURCED; AUTHENTIC FOLIO PHOTO NOT OBTAINED"
+    },
+    {
+      "slug": "cerebral-cilia",
+      "origin": "10.1161/ATVBAHA.118.311231",
+      "url": "https://doi.org/10.1161/ATVBAHA.118.311231",
+      "figure_ids": [
+        "Published study's actual endothelial-cilia developmental microscopy and quantified distribution; locate exact figure IDs"
+      ],
+      "rights": "APS/ATVB publisher license unknown; do not download until checked",
+      "caution": "Zebrafish hemodynamics paper microscopy cannot silently serve as the cilia-distribution paper's result",
+      "status": "PAPER DOI VERIFIED FROM SITE; FIGURE IDS PENDING"
+    },
+    {
+      "slug": "zebrafish-hemodynamics",
+      "origin": "10.1016/j.micron.2020.102876",
+      "url": "https://doi.org/10.1016/j.micron.2020.102876",
+      "figure_ids": [
+        "Actual high-speed recording and heart-flow analysis panels; verify source ownership"
+      ],
+      "rights": "Elsevier article reuse may require permission; author's rights check",
+      "caution": "Do not cross-contaminate with cranial vascular cilia microscopy",
+      "status": "PAPER DOI VERIFIED FROM SITE; FIGURE IDS PENDING"
+    },
+    {
+      "slug": "slit2-robo",
+      "origin": "10.1080/13543776.2026.2690118",
+      "url": "https://doi.org/10.1080/13543776.2026.2690118",
+      "figure_ids": [
+        "Actual patent families with public grant/application identifiers",
+        "SLIT2/ROBO pathway drawn from cited mechanism"
+      ],
+      "rights": "Review figures may require publisher permission; underlying patent public records have individual image terms",
+      "caution": "A patent filing establishes intellectual-property assertions, not confirmed efficacy",
+      "status": "PAPER DOI VERIFIED FROM SITE; PATENT DIAGRAM TARGETS PENDING"
+    },
+    {
+      "slug": "echo-cnn-lstm",
+      "origin": "10.1109/ACCESS.2023.3316719",
+      "url": "https://doi.org/10.1109/ACCESS.2023.3316719",
+      "figure_ids": [
+        "Actual fetal echocardiography data from pilot if licensing and privacy allow",
+        "Exact network schematic from article",
+        "Actual confusion matrix and external validation if reported"
+      ],
+      "rights": "IEEE Access paper-specific CC BY license to verify, protected medical images excluded without explicit rights",
+      "caution": "Do not substitute adult TAVI or generic Doppler footage",
+      "status": "PAPER DOI VERIFIED FROM SITE; FIGURE IDS PENDING"
+    },
+    {
+      "slug": "niosomes",
+      "origin": "ongoing MSc inhaled vesicle project",
+      "url": "/research/inhalable-vesicles.html",
+      "figure_ids": [
+        "Original DLS/FTIR measurements if authored and available",
+        "Real lab apparatus/CR photos if tied to thesis work",
+        "Mechanistic surfactant–cholesterol bilayer schematic"
+      ],
+      "rights": "Owner data; institute confidentiality and consent must be checked",
+      "caution": "No fabricated particle diameters, clinical effects, deposition claims or outside study microscopy",
+      "status": "RESEARCH RECORD EXISTS; SOURCE FIGURE FILES NOT VERIFIED"
+    },
+    {
+      "slug": "histology-failure",
+      "origin": "owner zebrafish histology unsuccessful attempt",
+      "url": "/films/two-materials-no-section.html",
+      "figure_ids": [
+        "IMG_1970 etc original zebrafish histopathology frames",
+        "Actual agarose orientation and unsuccessful paraffin section"
+      ],
+      "rights": "Owner archive; personal lab privacy reviewed prior to publication",
+      "caution": "No claim that a section succeeded or that interface mechanism was proved",
+      "status": "OWNER PHOTOS IN REPO, DISTINCT FROM QUANTITATIVE PUBLICATION"
+    }
+  ],
+  "notes": "PDF-based author figure inspection completed for airway J Appl Physiol 2021. Reuse review remains separate from evidence verification."
+}

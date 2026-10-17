@@ -1,0 +1,167 @@
+{
+  "version": "cinema-v3-first-principles",
+  "films": [
+    {
+      "slug": "what-survives-the-experiment",
+      "theme": "Research chronology verified at the level of specific experiments rather than a reel of unrelated laboratory shots",
+      "beats": [
+        "Childhood scientific curiosity and dated school science event",
+        "Instrument acquisition in Cairo and transfer to Qatar",
+        "Owner's chemistry experiments with verified provenance",
+        "Airway bubble reopening, paper-specific apparatus and assays",
+        "Unsuccessful histology and materials problem",
+        "Proniosomes and aerosol research explicitly ongoing",
+        "Research output only with actual manuscript/patent source",
+        "Open-ended research question without generic motivational ending"
+      ],
+      "ban": "Never show an unrelated experimental figure under a different project title.",
+      "artwork_status": "STORYBOARD—NOT CLEARED UNTIL EACH SOURCE SHOT HAS DOCUMENT ID AND USAGE RIGHTS",
+      "originals": "Must preserve original MP4 unchanged",
+      "approval": "human science and audio signoff before replacement"
+    },
+    {
+      "slug": "airway-reopening-evidence-cut",
+      "theme": "The controlled flow-chamber method must not be confused with the drug pretreatment paper",
+      "beats": [
+        "Original 2020 method paper figure 1",
+        "Bubble-wave chamber animation with no invented dimensions",
+        "True control and stressed L2 viability from the methods paper",
+        "Published methods paper figure 5 with n and p",
+        "Published cytoskeletal image figure 6",
+        "Separately identify the 2021 DEX/DHEA study and its different groups",
+        "Physical-model bounds",
+        "Methods-specific conclusion"
+      ],
+      "ban": "No 2021 drug-treated results shown as 2020 control study.",
+      "artwork_status": "STORYBOARD—NOT CLEARED UNTIL EACH SOURCE SHOT HAS DOCUMENT ID AND USAGE RIGHTS",
+      "originals": "Must preserve original MP4 unchanged",
+      "approval": "human science and audio signoff before replacement"
+    },
+    {
+      "slug": "what-a-bubble-can-do",
+      "theme": "Source-grounded physical injury across the epithelial monolayer",
+      "beats": [
+        "Advance of an air-liquid interface",
+        "Flow chamber construction with exact source",
+        "Cell injury stain source figure",
+        "Physical tension and model assumptions",
+        "Relevant mechanics tied to original experiment",
+        "Controls and actual measured context",
+        "Only reported live-dead result",
+        "In-vitro limitation"
+      ],
+      "ban": "No patient lungs or ventilator footage presented as primary result.",
+      "artwork_status": "STORYBOARD—NOT CLEARED UNTIL EACH SOURCE SHOT HAS DOCUMENT ID AND USAGE RIGHTS",
+      "originals": "Must preserve original MP4 unchanged",
+      "approval": "human science and audio signoff before replacement"
+    },
+    {
+      "slug": "two-materials-no-section",
+      "theme": "Failed zebrafish specimen histology as materials-interface problem",
+      "beats": [
+        "Owner's original three histology photographs",
+        "2% agarose orientation record",
+        "Transition into paraffin processing",
+        "Microtome observations without an intact section",
+        "Material interface hypothesis clearly nonconclusive",
+        "Actual failed sections",
+        "How to test cause in a future method study",
+        "The retained negative result"
+      ],
+      "ban": "No fictional intact histological section.",
+      "artwork_status": "STORYBOARD—NOT CLEARED UNTIL EACH SOURCE SHOT HAS DOCUMENT ID AND USAGE RIGHTS",
+      "originals": "Must preserve original MP4 unchanged",
+      "approval": "human science and audio signoff before replacement"
+    },
+    {
+      "slug": "two-materials-no-section-evidence-cut",
+      "theme": "Controlled explanatory methods film of unsuccessful embedding",
+      "beats": [
+        "Original specimen photo with context",
+        "Agarose-phase entry",
+        "Paraffin step",
+        "Microtome failure",
+        "Possible interface mismatch",
+        "Evidence versus inference panel",
+        "Future testing possibilities",
+        "No claimed histology result"
+      ],
+      "ban": "No old fake fluorescent zebrafish panel.",
+      "artwork_status": "STORYBOARD—NOT CLEARED UNTIL EACH SOURCE SHOT HAS DOCUMENT ID AND USAGE RIGHTS",
+      "originals": "Must preserve original MP4 unchanged",
+      "approval": "human science and audio signoff before replacement"
+    },
+    {
+      "slug": "ring-that-never-closed",
+      "theme": "Chemistry's distinction between proposed synthesis and identified material",
+      "beats": [
+        "Actual original synthesis-plan source",
+        "Verified named reactants from notebook",
+        "Microwave conditions as hypothesis, no invented yield",
+        "Analytical evidence that would establish structure",
+        "Why ring closure remained unconfirmed",
+        "Alternative curcumin cyanide paper separately identified",
+        "Valid publication's primary spectrum, not retroactively same experiment",
+        "Unresolved question"
+      ],
+      "ban": "No caption implies the target molecule was synthesized.",
+      "artwork_status": "STORYBOARD—NOT CLEARED UNTIL EACH SOURCE SHOT HAS DOCUMENT ID AND USAGE RIGHTS",
+      "originals": "Must preserve original MP4 unchanged",
+      "approval": "human science and audio signoff before replacement"
+    },
+    {
+      "slug": "cairo-microscope",
+      "theme": "A true original scientific autobiography rooted in the actual microscope",
+      "beats": [
+        "True original 2017 microscope image",
+        "Qasr El Einy Cairo acquisition as owner's account",
+        "Transport to Qatar without fabricated travel map data",
+        "Owner's original desktop still life",
+        "Personal observation, no fictional results",
+        "Time freed by owning an instrument",
+        "How to make an observation reproducible",
+        "No unrelated lab portraits"
+      ],
+      "ban": "No microscope brand/model or historical photo invented.",
+      "artwork_status": "STORYBOARD—NOT CLEARED UNTIL EACH SOURCE SHOT HAS DOCUMENT ID AND USAGE RIGHTS",
+      "originals": "Must preserve original MP4 unchanged",
+      "approval": "human science and audio signoff before replacement"
+    },
+    {
+      "slug": "the-laboratory-we-carried-with-us",
+      "theme": "Documented people and collaborations without assumed experimental outcomes",
+      "beats": [
+        "Actual chemistry 2009 exhibition record if available",
+        "University chemistry 2014 original archive",
+        "ACS chapter foundation verified",
+        "Original collaborators with verified captions",
+        "Zebrafish or biomaterials collaboration separated",
+        "Scientific discontinuity and archive preserving",
+        "Source-indexed contributions",
+        "A research community without fabricated credits"
+      ],
+      "ban": "No assignment of authorship, grant roles or dates from appearance alone.",
+      "artwork_status": "STORYBOARD—NOT CLEARED UNTIL EACH SOURCE SHOT HAS DOCUMENT ID AND USAGE RIGHTS",
+      "originals": "Must preserve original MP4 unchanged",
+      "approval": "human science and audio signoff before replacement"
+    },
+    {
+      "slug": "making-medicines-keep",
+      "theme": "Use the new eight-scene primary-text-led film, not the old generic pharmacy footage",
+      "beats": [
+        "Historically bounded Cairo question",
+        "Four different archival genres",
+        "Direct julab quote typeset from accepted article",
+        "Clarification and qiwam original process",
+        "Tasakkur repair from primary quote",
+        "Functional substitution not modern bioequivalence",
+        "Genizah prescription Or.1081 J39 as a source, no scan rights assumption",
+        "Conclude reliability rather than invented GMP genealogy"
+      ],
+      "ban": "No unrelated Wellcome manuscript, imaginary apothecary, owner portrait or fake facsimile.",
+      "artwork_status": "STORYBOARD—NOT CLEARED UNTIL EACH SOURCE SHOT HAS DOCUMENT ID AND USAGE RIGHTS",
+      "originals": "Must preserve original MP4 unchanged",
+      "approval": "human science and audio signoff before replacement"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "film_id": "airway-reopening",
+  "edition": "v3_primary_experiment_not_2020_methods_substitution",
+  "status": "AUTHORED_RENDER_DRAFT_NOT_HUMAN_SCREENED",
+  "format": {
+    "fps": 24,
+    "width": 1280,
+    "height": 720,
+    "scene_seconds": 16,
+    "total_seconds": 128
+  },
+  "primary_paper": {
+    "doi": "10.1152/japplphysiol.00574.2020",
+    "pmc": "PMC8384562",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8384562/",
+    "title": "Dexamethasone and transdehydroandrosterone significantly reduce pulmonary epithelial cell injuries associated with mechanical ventilation"
+  },
+  "verified_figures": [
+    {
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "paper": "2021 J Appl Physiol study",
+      "figure": "Figure 1, panels A–D",
+      "status": "Visually checked original image matches the article's figure arrangement; show whole frame and source attribution."
+    }
+  ],
+  "quoted_numbers": {
+    "bubble_control": {
+      "mean": 54.7,
+      "sem": 3.94
+    },
+    "lat": {
+      "mean": 20.9,
+      "sem": 12
+    },
+    "dexamethasone": {
+      "mean": 15.1,
+      "sem": 3.43
+    },
+    "dhea": {
+      "mean": 16.1,
+      "sem": 2.9
+    }
+  },
+  "figure_replot_label": "Reported injury percentages (mean ± SEM), from paper Fig. 3; animation reveals the final static values and does not depict experimental progression.",
+  "rights": "Owner was named author and prepared figures per article. Confirm publisher's reuse rights before public deployment. Film is a review-only draft.",
+  "scenes": [
+    {
+      "key": "source",
+      "heading": "The interface was physical.",
+      "eyebrow": "PRIMARY PAPER · FIGURE 1",
+      "visual": "primary-figure",
+      "narration": "This experiment began with an epithelial cell monolayer inside a parallel-plate chamber. The original paper documents the equipment, the moving interface, and how survival was assessed."
+    },
+    {
+      "key": "bubble",
+      "heading": "A bubble crossed living cells.",
+      "eyebrow": "THE CONTROLLED DISTURBANCE",
+      "visual": "bubble",
+      "narration": "A single air bubble advanced over rat L2 alveolar epithelial cells. In this model, bubble travel was set at roughly three millimetres per second."
+    },
+    {
+      "key": "groups",
+      "heading": "The comparison was designed.",
+      "eyebrow": "CONTROLLED EXPOSURES",
+      "visual": "treatment-groups",
+      "narration": "Cells were examined without airflow injury and with bubble propagation. Other groups received dexamethasone, transdehydroandrosterone, or latrunculin A before exposure."
+    },
+    {
+      "key": "micrographs",
+      "heading": "Cell survival was measured.",
+      "eyebrow": "LIVE AND DEAD / SOURCE METHODS",
+      "visual": "measurement",
+      "narration": "The study used a live-dead fluorescence assay. Calcein marked viable cells and ethidium homodimer identified damaged cells. Images were counted to estimate injury."
+    },
+    {
+      "key": "reported-values",
+      "heading": "The reported injury changed.",
+      "eyebrow": "REPORTED MEAN ± SEM / FIGURE 3",
+      "visual": "reported-data",
+      "narration": "Bubble exposure produced about fifty-five percent cell death. Pretreatment groups had lower reported death: approximately fifteen percent with dexamethasone and sixteen percent with DHEA."
+    },
+    {
+      "key": "cytoskeleton",
+      "heading": "Cell mechanics offered a hypothesis.",
+      "eyebrow": "ACTIN REORGANISATION AND MORPHOLOGY",
+      "visual": "cytoskeleton",
+      "narration": "The authors examined actin organization and cellular morphology to explore why pretreatment could alter vulnerability. These measurements suggest mechanisms, but do not establish a patient-level effect."
+    },
+    {
+      "key": "scope",
+      "heading": "A chamber is not a human lung.",
+      "eyebrow": "IN-VITRO BOUNDARY",
+      "visual": "boundary",
+      "narration": "The model used rat epithelial cells and a single bubble event. It does not reproduce all human ventilation conditions, systemic dosing, or clinical treatment outcomes."
+    },
+    {
+      "key": "close",
+      "heading": "A result becomes a better question.",
+      "eyebrow": "ORIGINAL EXPERIMENT · NOT CLINICAL EFFICACY",
+      "visual": "study-chain",
+      "narration": "What matters is the link between mechanics, cell properties, and injury under defined conditions. The next experiment must test how far that explanation actually travels."
+    }
+  ]
+}
