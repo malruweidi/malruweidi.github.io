@@ -88,19 +88,92 @@
    let details=x.scenes.length?'<details><summary>Read the six scenes and visual credits</summary><ol class="scenes">'+x.scenes.map(s=>'<li><strong>'+esc(s.title)+'</strong><p>'+esc(s.narration)+'</p><p class="scene-evidence"><span>Visual record: '+esc(s.kind)+'</span>'+(s.credit&&s.credit!==s.kind?'<span>Credit: '+esc(s.credit)+'</span>':'')+(s.link?'<a href="'+esc(s.link)+'" '+(s.link.startsWith("https://")?'target="_blank" rel="noopener noreferrer"':'')+'>Related source or context ↗</a>':'')+'</p></li>').join("")+'</ol></details>':"";
    return '<article class="piece" id="'+mediaId+'"><div class="piece-visual" data-contain="'+(x.poster.endsWith(".svg")?"true":"false")+'"><img src="'+esc(x.poster)+'" loading="lazy" decoding="async" alt="'+esc(x.film_title)+'; contextual still, not the completed film"><span class="visual-label">'+esc(x.visual_language)+'</span></div><div class="piece-copy"><span class="meta">'+esc(x.year)+' · '+esc(x.category)+'</span><h3>'+esc(x.film_title)+'</h3><p class="premise">'+esc(x.premise)+'</p><p class="original">'+esc(x.publication_title)+'</p><span class="state" data-status>Editorial treatment'+(x.production==="render_requested"?" · film rendering prepared":"")+'</span><div class="actions"><a href="'+esc(source(x))+'"'+(x.doi?' target="_blank" rel="noopener"':'')+'>Read the source ↗</a><a href="'+esc(x.page)+'">Research context ↗</a>'+(x.id==="making-medicines-keep"?'<a href="https://www.qdl.qa/en/archive/81055/vdc_100024115485.0x000001" target="_blank" rel="noopener">View surviving Minhaj al-dukkān manuscript, BL Or 5786 ↗</a><a href="https://doi.org/10.1093/jss/fgi086" target="_blank" rel="noopener">Study of an early Genizah syrup fragment ↗</a>':'')+'</div>'+details+'</div></article>';
   }).join("");
+  // Editorially rejected V2 releases are deliberately excluded. Only
+  // subject-specific V3/V4 film versions may displace V1 in this draft page.
+  // All editions remain inspectable; first editions are never deleted.
+  const candidates={
+    "making-medicines-keep":["series-v4","series-v3"],
+    "curcumin-cyanide":["series-v4","series-v3"],
+    "histology-failure":["series-v4","series-v3"],
+    "flow-chamber-method":["series-v4","series-v3"],
+    "pla-grafting":["series-v4","series-v3"],
+    "pla-scaffolds":["series-v3"],
+    "micelles-pahs":["series-v3"],
+    "ace2-forms":["series-v3"]
+  };
   for(let x of selected.filter(x=>x.production==="render_requested")){
-   let target=document.getElementById("film-"+x.id);
+   const target=document.getElementById("film-"+x.id);
    if(!target)continue;
-   const url="/assets/films/series/"+x.id+".mp4";
-   let request=fetch(url,{method:"HEAD",cache:"no-store"}).then(r=>{
-    if(!r.ok || !/^video\/mp4\b/i.test(r.headers.get("content-type")||""))return;
-    if(!target.isConnected)return;
-    let visual=target.querySelector(".piece-visual");
-    visual.innerHTML='<video controls playsinline preload="none" poster="'+esc(x.poster)+'" aria-label="'+esc(x.film_title)+'"><source src="'+esc(url)+'" type="video/mp4"><track kind="captions" src="/assets/films/series/'+esc(x.id)+'.vtt" srclang="en" label="English captions" default></video>';
-    target.querySelector("[data-status]").textContent="Film available · "+x.duration_seconds+" seconds · English captions";
-    const actions=target.querySelector(".actions");
-    if(actions){const link=document.createElement("a");link.href="/assets/films/series/"+encodeURIComponent(x.id)+".vtt";link.textContent="Read captions ↗";link.setAttribute("aria-label","Read English captions for "+x.film_title);actions.appendChild(link);}
-   }).catch(()=>{});
+   const enc=encodeURIComponent(x.id);
+   const folders=[...(candidates[x.id]||[]),"series"];
+   let request=(async()=>{
+     let chosen="series",meta=null;
+     for(const folder of folders){
+       const url="/assets/films/"+folder+"/"+enc+".mp4";
+       try{
+         const response=await fetch(url,{method:"HEAD",cache:"no-store"});
+         if(!response.ok||!/^video\/mp4\b/i.test(response.headers.get("content-type")||""))continue;
+         if(folder!=="series"){
+           const record=await fetch("/assets/films/"+folder+"/"+enc+".json",{cache:"no-store"});
+           if(!record.ok)continue;
+           const m=await record.json();
+           if(!m||!m.sha256||m.id!==x.id||
+              !Array.isArray(m.chapters)||m.chapters.length<6||
+              !String(m.human_review||"").match(/NOT (YET )?(HUMAN )?(REVIEWED|APPROVED)/i))continue;
+           meta=m;
+         }
+         chosen=folder;
+         break;
+       }catch(e){continue}
+     }
+     if(!target.isConnected)return;
+     const visual=target.querySelector(".piece-visual");
+     const status=target.querySelector("[data-status]");
+     const actions=target.querySelector(".actions");
+     const originalDetails=target.querySelector("details")?.innerHTML||"";
+     const cutsrc=folder=>"/assets/films/"+folder+"/"+enc;
+     const show=folder=>{
+       visual.innerHTML='<video controls playsinline preload="metadata" poster="'+esc(x.poster)+'" aria-label="'+esc(x.film_title)+
+         '"><source src="'+esc(cutsrc(folder)+".mp4")+'" type="video/mp4"><track kind="captions" src="'+
+         esc(cutsrc(folder)+".vtt")+'" srclang="en" label="English captions"></video>';
+       const draft=folder!=="series";
+       status.textContent=draft?"Source-specific research film • DRAFT: narration, rights and scientific screening pending":"Original archived film • preserved unchanged";
+       const detail=target.querySelector("details");
+       if(detail){
+         if(draft&&meta){
+           const rows=meta.chapters.map((c,i)=>'<li><strong>'+esc(c.title||"Chapter "+(i+1))+'</strong><p>'+
+             esc(c.speech||c.narration||"")+'</p><p class="scene-evidence">Verified source: '+
+             esc(c.source||meta.source||meta.doi||meta.primary_source||meta.source_witness||"See full provenance manifest")+
+             '</p></li>').join("");
+           detail.innerHTML='<summary>Read this remake’s actual chapters, narration and source notes</summary><ol class="scenes">'+rows+'</ol>';
+         }else{detail.innerHTML=originalDetails}
+       }
+     };
+     show(chosen);
+     if(!actions)return;
+     const transcript=document.createElement("a");
+     transcript.href=cutsrc(chosen)+".vtt";
+     transcript.textContent="Read timed captions ↗";
+     actions.appendChild(transcript);
+     if(chosen!=="series"){
+       const toggle=document.createElement("button");
+       toggle.type="button";
+       toggle.textContent="Watch original edition";
+       toggle.setAttribute("aria-pressed","false");
+       toggle.addEventListener("click",()=>{
+         const original=toggle.getAttribute("aria-pressed")==="false";
+         toggle.setAttribute("aria-pressed",String(original));
+         toggle.textContent=original?"Watch newer research edit":"Watch original edition";
+         show(original?"series":chosen);
+         transcript.href=cutsrc(original?"series":chosen)+".vtt";
+       });
+       actions.appendChild(toggle);
+       const provenance=document.createElement("a");
+       provenance.href=cutsrc(chosen)+".json";
+       provenance.textContent="Exact new film source record ↗";
+       actions.appendChild(provenance);
+     }
+   })().catch(()=>{});
    playerPromises.add(request);request.finally(()=>playerPromises.delete(request));
   }
  }
