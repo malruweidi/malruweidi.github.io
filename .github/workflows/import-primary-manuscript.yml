@@ -1,0 +1,51 @@
+name: Source-verified historical pharmacy folio
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/import-qdl-primary-manuscript.py
+      - .github/workflows/import-primary-manuscript.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ruwaidix-or-5786-folio
+  cancel-in-progress: false
+jobs:
+  import-manuscript:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pillow
+      - name: Download original folio from the authoritative IIIF canvas (no generic substitute)
+        run: python scripts/import-qdl-primary-manuscript.py
+      - name: Confirm the exact folio is stamped and legible
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          folder=Path('assets/films/source-manuscripts')
+          obj=json.loads((folder/'or-5786-1v.json').read_text())
+          jpg=folder/'or-5786-1v-entire-folio.jpg'
+          assert obj['manuscript']=='British Library Or 5786'
+          assert obj['folio']=='1v'
+          assert obj['width']>=800 and obj['height']>=800
+          assert obj['sha256']==hashlib.sha256(jpg.read_bytes()).hexdigest()
+          assert obj['publish_state']=='STAGED - NOT EMBEDDED IN ANY VIDEO'
+          print(obj['title'],obj['sha256'])
+          PY
+      - name: Keep original film footage unchanged and checkpoint this source separately
+        run: |
+          git config user.name "Ruwaidix Primary Sources"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/source-manuscripts/or-5786-1v-entire-folio.jpg assets/films/source-manuscripts/or-5786-1v.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage sourced public-domain Or 5786 folio for historical film review"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase "origin/${{ github.ref_name }}"
+            git push origin HEAD:"${{ github.ref_name }}"
+          fi
