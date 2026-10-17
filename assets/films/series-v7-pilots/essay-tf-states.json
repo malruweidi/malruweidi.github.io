@@ -1,0 +1,162 @@
+{
+  "slug": "essay-tf-states",
+  "visual_revision": "v7.3-caption-safe/film-specific",
+  "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
+  "film_style": "24 individually directed visual beats across 6 narrated chapters",
+  "seconds": 84.0,
+  "fps": 24,
+  "source_audio_sha256": "5d4f4327f17ca27a96c1b10b9f4470f6557fb9f78d8ef1be9c40d3ecaa4f578b",
+  "movie_sha256": "a67c125b2360dbd47349510d6f99544d457b8e8fbc041f6f456edc2522587524",
+  "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
+  "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
+  "scene_count": 6,
+  "visual_beat_count": 24,
+  "beats": [
+    {
+      "scene": "01",
+      "phase": 1,
+      "seconds": 3.583,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 2,
+      "seconds": 3.583,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 3,
+      "seconds": 3.542,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 4,
+      "seconds": 3.542,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 1,
+      "seconds": 3.708,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 2,
+      "seconds": 3.708,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 3,
+      "seconds": 3.667,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 4,
+      "seconds": 3.667,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 1,
+      "seconds": 3.125,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 2,
+      "seconds": 3.083,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 3,
+      "seconds": 3.083,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 4,
+      "seconds": 3.083,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 1,
+      "seconds": 3.25,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 2,
+      "seconds": 3.25,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 3,
+      "seconds": 3.208,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 4,
+      "seconds": 3.208,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 1,
+      "seconds": 3.917,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 2,
+      "seconds": 3.917,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 3,
+      "seconds": 3.917,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 4,
+      "seconds": 3.917,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 1,
+      "seconds": 3.542,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 2,
+      "seconds": 3.5,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 3,
+      "seconds": 3.5,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 4,
+      "seconds": 3.5,
+      "source": "original-nonquantitative-v7-schematic"
+    }
+  ],
+  "contact_sheet": "/assets/films/series-v7-pilots/essay-tf-states.contact.webp",
+  "primary_source": "/writing.html"
+}

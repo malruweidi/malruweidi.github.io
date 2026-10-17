@@ -1,12 +1,12 @@
 {
   "slug": "essay-trna",
-  "visual_revision": "v7.1",
+  "visual_revision": "v7.3-caption-safe/film-specific",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
   "fps": 24,
   "source_audio_sha256": "04ba4bde510d55ec0678cd73edd221577b4758fae6bca6398a7ef1ede621780c",
-  "movie_sha256": "2eeffa9e2ffbe123a77e7e72839c8afc7806d26c93435dd36c27eac2b9254bda",
+  "movie_sha256": "76494830beff4a35e46dcd252091ea821b189ed26d24daa57482a29a573e7253",
   "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
   "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
   "scene_count": 6,
@@ -157,5 +157,6 @@
       "source": "original-nonquantitative-v7-schematic"
     }
   ],
+  "contact_sheet": "/assets/films/series-v7-pilots/essay-trna.contact.webp",
   "primary_source": "/writing.html"
 }
