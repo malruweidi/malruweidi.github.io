@@ -1,7 +1,7 @@
 {
   "id": "gi-autoimmunity-1",
   "seconds": 84.0,
-  "sha256": "26625cce5a7998860b4ade9c09c1a166655cbd15a00952c3f22610a22b6de259",
+  "sha256": "724d11fef267f71e242d3c43a8e57b10fb1b823394745d9eb0561033cb473d9f",
   "primary_source": "https://doi.org/10.5772/intechopen.106184",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
@@ -59,7 +59,7 @@
   "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
   "edition": "cinematic-v2",
   "remaster_signature": "story-motion-v2.2",
-  "source_visual_revision": "curated-2026-10-17-v2",
+  "source_visual_revision": "curated-2026-10-17-v3",
   "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
   "animated_scene_ids": [
     "02",
