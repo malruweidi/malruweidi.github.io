@@ -13,6 +13,7 @@ on:
       - scripts/normalize-film-captions.py
       - scripts/audit-all-film-recuts.py
       - scripts/audit-remake-readiness.py
+      - scripts/build-film-pronunciation-index.py
       - tests/film-overhaul-v2.test.cjs
       - film-studio.html
   workflow_dispatch:
@@ -71,8 +72,9 @@ jobs:
             python scripts/normalize-film-captions.py --collection series-v2
             python scripts/audit-all-film-recuts.py --collection series-v2
             python scripts/audit-remake-readiness.py
+            python scripts/build-film-pronunciation-index.py
             python scripts/make-film-qa-contact-sheets.py --collection series-v2
-            git add assets/films/series-v2/ assets/films/remake-readiness.json
+            git add assets/films/series-v2/ assets/films/remake-readiness.json assets/films/pronunciation-review-v2.json
             if ! git diff --cached --quiet; then
               git commit -m "Checkpoint one source-grounded film with decoded-frame and subtitle QA"
               git fetch origin "$BRANCH"
