@@ -24,7 +24,12 @@ ART_REVISIONS={
  "essay-life-between-diagnoses":"v7.6-correct-portrait-provenance",
  "essay-ai-email":"v7.5-archival-editorial-story",
  "essay-machine-language":"v7.5-authentic-academic-archive",
- "essay-academic-mental-health":"v7.5-original-research-life-archive"
+ "essay-academic-mental-health":"v7.5-original-research-life-archive",
+ "drug-release-twins":"v7.7-experiment-calibrated-model",
+ "essay-potency-exposure":"v7.7-free-exposure-pharmacology",
+ "essay-proximity":"v7.7-event-driven-pharmacology",
+ "essay-scientific-credit":"v7.7-historical-documentation",
+ "heterocycle-cancer":"v7.7-synthesis-assay-logic"
 }
 def expected_visual_revision(slug):
  return FRAME_REVISION+"/"+ART_REVISIONS.get(slug,"film-specific")
