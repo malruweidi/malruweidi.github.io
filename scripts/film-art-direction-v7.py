@@ -333,6 +333,8 @@ def scene_art(slug,idx,phase,output):
   raise ValueError("No source-specific concept: "+slug)
  if typ in ("vesicle","ace2","trna") and idx>1:
   chapter_specific_figure(d,typ,idx,phase)
+ elif typ in ("cilia","receptor","cubic","extrusion") and idx>1:
+  chapter_source_specific(d,typ,idx,phase)
  # Avoid arbitrary reticles that can overlap molecular diagrams, labels or data.
  # Focus instead comes from the subject-specific scene composition.
  # Four visual beats within a single voice-led scene, to guide attention without
@@ -458,6 +460,172 @@ def chapter_specific_figure(d,typ,idx,phase):
    arrow(856,316,925,316)
    box(943,262,174,"READOUT")
    txt(d,(199,418),"MEASURE THE DEPENDENCY, NOT JUST THE PHENOTYPE",17,INK)
+
+def chapter_source_specific(d,typ,idx,phase):
+ """Five different research-grounded chapters, not one changing title.
+
+ Pure explanatory vector drawings. Never synthetic microscopy, measured curves,
+ patents that appear to be real pages, dosing results, animal data or actual
+ crystal structures. Phase highlights elements of a fixed conceptual story.
+ """
+ d.rectangle((98,133,1180,487),fill=(17,45,51))
+ def card(x,y,w,h,title,subtitle="",selected=False):
+  color=GOLD if selected else MINT
+  d.rounded_rectangle((x,y,x+w,y+h),radius=15,outline=color,width=5)
+  for row,text_ in enumerate((title,subtitle)):
+   if not text_:continue
+   txt(d,(x+16,y+19+row*40),text_,20 if row==0 else 15,INK if row==0 else GOLD,row==0)
+ def arrow(x1,y1,x2,y2):
+  line(d,(x1,y1,x2,y2),GOLD,5)
+  d.polygon(((x2-13,y2-10),(x2+5,y2),(x2-13,y2+10)),fill=GOLD)
+ def mole(x,y,color=MINT):
+  oval(d,x,y,20,color,5)
+  oval(d,x+35,y-17,12,GOLD,4)
+  line(d,(x+17,y-8,x+23,y-11),color,4)
+ def echo(text_):
+  txt(d,(162,452),text_,15,INK,True)
+ if typ=="cilia":
+  if idx==2:
+   # Stylized zebrafish embryo and cranial vascular loop.
+   d.ellipse((275,217,845,376),outline=MINT,width=8)
+   d.polygon(((837,268),(1020,186),(977,309),(1020,409),(837,342)),outline=GOLD)
+   oval(d,394,292,18,GOLD,5)
+   d.arc((356,210,580,348),190,375,fill=RED,width=8)
+   line(d,(545,270,638,229,730,249,790,310),GOLD,6)
+   txt(d,(249,183),"ZEBRAFISH EMBRYO / SCHEMATIC",20,INK,True)
+   echo("CRANIAL VESSELS OBSERVED IN A LIVING MODEL")
+  elif idx==3:
+   # Primary cilium must arise from a basal body, not float in the lumen.
+   for j in range(19):
+    x=203+j*45
+    d.ellipse((x-15,388,x+15,414),fill=MINT)
+   d.line([(557,391),(557,303),(583,260),(583,208)],fill=GOLD,width=14,joint="curve")
+   oval(d,557,391,20,RED,7)
+   oval(d,583,200,13,GOLD,6)
+   arrow(785,256,671,256)
+   txt(d,(201,427),"ENDOTHELIAL CELL SURFACE",17,INK)
+   txt(d,(685,219),"FLUID FLOW",18,GOLD,True)
+   txt(d,(631,314),"CILIUM",18,INK,True)
+  elif idx==4:
+   for k,(label_,sub) in enumerate((("ORIGINAL IMAGE","LOCALIZE VESSEL"),
+                                    ("FEATURE","IDENTIFY CILIA"),
+                                    ("SAMPLING","ASSESS DISTRIBUTION"))):
+    card(145+k*355,222,310,144,label_,sub,k==phase%3)
+   echo("ANALYTICAL WORKFLOW / NO OBSERVED COUNTS RECREATED")
+  elif idx==5:
+   card(148,241,353,126,"LOCATION","OBSERVABLE IMAGE")
+   card(747,241,353,126,"MECHANISM","ADDITIONAL EVIDENCE")
+   d.line((502,302,746,302),fill=RED,width=5)
+   txt(d,(584,263),"≠",44,RED,True)
+   echo("DISTRIBUTION DOES NOT ALONE ESTABLISH CAUSATION")
+  else:
+   for k,(word,sub) in enumerate((("WHERE","IN THE VESSEL"),
+                                 ("WHEN","DURING DEVELOPMENT"),
+                                 ("HOW","UNDER FLOW"))):
+    card(132+k*361,220,305,154,word,sub,k==phase%3)
+   echo("FUTURE MECHANISTIC QUESTIONS / NOT NEW RESULTS")
+ elif typ=="receptor":
+  if idx==2:
+   mole(272,281);card(480,221,290,132,"ROBO","CELL-SURFACE RECEPTOR",phase==1)
+   arrow(330,293,454,293)
+   card(862,220,250,134,"CONTEXT","PARTNER NETWORK",phase>=2)
+   arrow(786,293,843,293)
+   echo("EXTRACELLULAR LIGAND RECOGNITION IS CONTEXT-DEPENDENT")
+  elif idx==3:
+   for k,(title_,sub) in enumerate((("CLAIM","PROPOSED ACTION"),
+                                    ("EXAMPLE","EXPERIMENTAL SUPPORT"),
+                                    ("SCOPE","PATENT FAMILY"))):
+    x=144+k*355
+    d.polygon(((x+9,191),(x+280,191),(x+310,219),(x+310,399),(x+9,399)),
+              fill=(30,67,65),outline=GOLD if k==phase%3 else MINT,width=4)
+    txt(d,(x+30,248),title_,26,INK,True)
+    txt(d,(x+30,303),sub,15,GOLD)
+   echo("AN EXPLANATORY PATENT REVIEW WORKFLOW / NOT REAL PATENT PAGES")
+  elif idx==4:
+   for k,(name,detail) in enumerate((("ANTIBODY","BINDING MODALITY"),
+                                    ("LIGAND TRAP","INTERCEPT SIGNAL"),
+                                    ("OTHER","PROPOSED STRATEGY"))):
+    card(141+k*351,225,306,150,name,detail,k==phase%3)
+   echo("MODALITIES REQUIRE DIFFERENT ENABLEMENT EVIDENCE")
+  elif idx==5:
+   card(167,236,345,137,"PATHWAY ACTIVE?","DISEASE CONTEXT")
+   arrow(536,305,712,305)
+   card(737,236,360,137,"INHIBIT?","MEASURE RESPONSE",phase>1)
+   echo("BLOCKADE IS NOT AUTOMATICALLY BENEFICIAL IN EVERY TUMOUR")
+  else:
+   card(150,227,281,150,"WHO?","TUMOUR BIOLOGY")
+   card(498,227,281,150,"WHEN?","SIGNAL STATUS",phase>1)
+   card(846,227,281,150,"WHICH?","INTERVENTION")
+   echo("THE INNOVATION IS THE RIGHT EXPERIMENTAL CONDITION")
+ elif typ=="cubic":
+  if idx==2:
+   oval(d,369,286,113,MINT,8)
+   for t in range(7):
+    yy=226+t*22
+    d.arc((299,yy,438,yy+42),5,175,fill=GOLD,width=4)
+   arrow(510,288,644,288)
+   card(699,191,385,103,"THERAPY","DRUG DELIVERY",phase==1)
+   card(699,335,385,103,"IMAGING","DIAGNOSTIC READOUT",phase>=2)
+   echo("TWO DISTINCT CLAIMS / SEPARATE ASSAYS REQUIRED")
+  elif idx==3:
+   for k,(name,sub) in enumerate((("LIPID PHASE","COMPOSITION"),
+                                 ("LOADED CARGO","RETENTION"),
+                                 ("BIOLOGICAL FLUID","INTERACTION"))):
+    card(139+k*357,214,315,163,name,sub,k==phase%3)
+   echo("FORMULATION VARIABLES CAN ALTER BIOLOGICAL BEHAVIOUR")
+  elif idx==4:
+   card(145,240,306,133,"LIGAND","TARGET RECOGNITION",phase==0)
+   arrow(463,305,609,305)
+   card(625,240,306,133,"CELL","BINDING / UPTAKE",phase==2)
+   txt(d,(962,268),"?",76,GOLD,True)
+   echo("IN VIVO TUMOUR SELECTIVITY REMAINS TO BE DEMONSTRATED")
+  elif idx==5:
+   for k,(name,sub) in enumerate((("STABILITY","SHELF / MEDIA"),
+                                 ("DISTRIBUTION","WHERE CARRIER GOES"),
+                                 ("SAFETY","BIOLOGICAL TOLERANCE"))):
+    card(136+k*360,226,318,153,name,sub,k==phase%3)
+   echo("THE FULL TRANSLATION CHAIN IS NOT A SINGLE ASSAY")
+  else:
+   card(148,232,271,144,"STRUCTURE","MATERIAL DESIGN")
+   card(491,232,271,144,"EVIDENCE","MEASUREMENT",phase>=1)
+   card(832,232,271,144,"TRANSLATION","UNRESOLVED",phase==3)
+   echo("ACCEPTED BOOK CHAPTER / NOT AN APPROVED TREATMENT")
+ elif typ=="extrusion":
+  if idx==2:
+   d.polygon(((302,181),(494,181),(456,303),(338,303)),outline=GOLD)
+   line(d,(396,306,396,359),GOLD,12)
+   for x in range(294,940,38):
+    line(d,(x,385+9*math.sin(x/59),x+25,385+9*math.sin((x+25)/59)),MINT,7)
+   arrow(640,239,811,239)
+   txt(d,(806,229),"DEPOSITION",22,INK,True)
+   echo("MATERIAL MUST EXTRUDE AND RETAIN SHAPE AFTER PRINTING")
+  elif idx==3:
+   for k,(name,sub) in enumerate((("3D","SPATIAL FORM"),
+                                 ("4D","STIMULUS RESPONSE"),
+                                 ("5D / 6D","PROPOSED LABELS"))):
+    card(144+k*351,228,310,141,name,sub,k==phase%3)
+   echo("NOT EVERY NOMINAL DIMENSION HAS A VALIDATED PROCESS")
+  elif idx==4:
+   for layer in range(5):
+    for k in range(11):
+     x=224+k*71+(layer%2)*21;y=214+layer*47
+     rounded(d,(x,y,x+62,y+30),MINT if layer%2 else GOLD,3,9)
+   echo("EDIBLE MICROSTRUCTURE / SCHEMATIC MATERIAL DEPOSITION")
+  elif idx==5:
+   for k,(name,sub) in enumerate((("PRINTABILITY","FLOW / FIDELITY"),
+                                 ("STABILITY","SHAPE RETENTION"),
+                                 ("FOOD SAFETY","TESTED MATERIAL"))):
+    card(143+k*352,228,310,142,name,sub,k==phase%3)
+   echo("POTENTIAL IS NOT VALIDATION OR CONSUMER PERFORMANCE")
+  else:
+   for level in range(5):
+    y=203+level*43
+    line(d,(272,y,950,y),GOLD if level==phase else MINT,8)
+    for x in range(277+(level%2)*23,950,94):
+     oval(d,x,y,11,RED if level==phase else GRID,3)
+   txt(d,(218,419),"SHAPE RETENTION / THE FINAL MATERIAL",20,INK,True)
+   echo("ACCEPTED CHAPTER: PROGRAMMABLE FORM DOES NOT GUARANTEE FUNCTION")
+
 
 def approved_photo(slug,scene,root):
  """Only explicit scene-matched source photos may enter the V7 film."""
