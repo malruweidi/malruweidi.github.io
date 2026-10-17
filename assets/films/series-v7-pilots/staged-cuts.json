@@ -83,8 +83,8 @@
       "captions": "/assets/films/series-v7-pilots/cerebral-cilia.vtt",
       "manifest": "/assets/films/series-v7-pilots/cerebral-cilia.json",
       "contact": "/assets/films/series-v7-pilots/cerebral-cilia.contact.webp",
-      "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-cilia",
-      "sha256": "742fd555cbb052efd8a8e69973ba5d91e32245cd40f5f9fc5d53ce66f7a75ff5",
+      "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-cilia-clean-panel",
+      "sha256": "38b5b049e81ce16c757250164bbc88887911d5cb33389a7a4bed5e86249e511a",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -97,8 +97,8 @@
       "captions": "/assets/films/series-v7-pilots/cubosome-theranostics.vtt",
       "manifest": "/assets/films/series-v7-pilots/cubosome-theranostics.json",
       "contact": "/assets/films/series-v7-pilots/cubosome-theranostics.contact.webp",
-      "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-cubosomes",
-      "sha256": "16b25a6e71755711794414d799a83d7a7d6c14e6cd6bd9a0ed6b130099748408",
+      "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-cubosomes-clean-panel",
+      "sha256": "c362b22b20ad104032d694d8894cd00a768b43fd1a78a3762f0905f8752b5665",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -293,8 +293,8 @@
       "captions": "/assets/films/series-v7-pilots/food-printing.vtt",
       "manifest": "/assets/films/series-v7-pilots/food-printing.json",
       "contact": "/assets/films/series-v7-pilots/food-printing.contact.webp",
-      "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-food-rheology",
-      "sha256": "9ffc96ba88eb9d6154fd1130ba719ba0803a2d06b230d0af7de7735fb378eeb2",
+      "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-food-rheology-clean-panel",
+      "sha256": "f5e79ba92746856a6c940ddcba22fcda5db25fb049554a0007fbe829a87ad220",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -405,8 +405,8 @@
       "captions": "/assets/films/series-v7-pilots/slit2-robo.vtt",
       "manifest": "/assets/films/series-v7-pilots/slit2-robo.json",
       "contact": "/assets/films/series-v7-pilots/slit2-robo.contact.webp",
-      "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-receptor",
-      "sha256": "f84e13253f5ba6d8d918ae6ee5d49de93fed6bc0b319189354b20015876b6527",
+      "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-receptor-clean-panel",
+      "sha256": "af72d79b6f6e8f3cd263ee39adbc87a1cb39abdbdb158a8ea59901c8f1320a00",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
