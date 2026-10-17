@@ -19,7 +19,8 @@
       "exact_leaf_example": "https://www.qdl.qa/archive/81055/vdc_100024189448.0x000040",
       "rights": "Qatar Digital Library item indicates Public Domain; attribution and ethical conditions of reuse still apply.",
       "film_role": "Directly relevant manuscript witness to the formulary discussed. If its image is used, identify the actual folio and crop and date, and do not imply authorship, copy-location, or direct usage without evidence.",
-      "source_type": "primary manuscript witness"
+      "source_type": "primary manuscript witness",
+      "direct_image_import": "NOT IMPORTED: automated QDL IIIF request returned HTTP 403 on 17 October 2026. Keep source record link; do not mirror, bypass restrictions or silently substitute another image."
     },
     {
       "id": "genizah-medical-corpus",
@@ -42,5 +43,5 @@
       "source_type": "primary manuscript fragment catalogue record"
     }
   ],
-  "notes": "Catalogue and licence evidence reviewed 2026-10-17. No new manuscript scan is inserted into a film by this register; film figures stay as credited explanatory art until a specific image is separately verified."
+  "notes": "Exact Or 5786 source identified with public-domain usage term. A GitHub Actions access request returned HTTP 403; no physical folio JPEG was staged and the workflow was limited to manual authorized retries. Existing graphics remain labeled reconstructions."
 }
