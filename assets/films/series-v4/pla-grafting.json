@@ -52,7 +52,7 @@
   "separate_explanatory_animation": true,
   "new_science_fabricated": false,
   "duration_seconds": 120.0,
-  "sha256": "c5015d1d85f4e959fda7ce91a5f3209fb9a8b213c89e28c0ddd70bb2375effab",
+  "sha256": "52cebfccaa4b698b9f60c49607ce24adc39a26339a0c8bb6fb22c23fcabcb802",
   "human_review": "NOT APPROVED — listen, watch, verify panel identities and licensing before live embed",
   "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
   "chapters": [
@@ -109,7 +109,7 @@
       ],
       "eyebrow": "FIGURE 8 · ORIGINAL MEASURED RESULTS",
       "narration": "This published figure compares peel resistance of untreated PLA, plasma treated samples, grafted samples, and blind controls without plasma activation.",
-      "tts_seconds": 10.335
+      "tts_seconds": 10.345
     },
     {
       "mode": "result",
@@ -142,7 +142,7 @@
       ],
       "eyebrow": "SEPARATE 2021 PLA FILM PAPER",
       "narration": "These results describe PLA film and aluminium peel adhesion. They must not be illustrated with the separate twenty twenty antimicrobial electrospun scaffold experiment.",
-      "tts_seconds": 11.135
+      "tts_seconds": 11.145
     }
   ]
 }

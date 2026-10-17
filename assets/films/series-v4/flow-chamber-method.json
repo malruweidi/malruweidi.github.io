@@ -52,7 +52,7 @@
   "separate_explanatory_animation": true,
   "new_science_fabricated": false,
   "duration_seconds": 120.0,
-  "sha256": "bd5ab530ad625935bf48f406703c3a9b209cdf46ef3d7a34ef75ffccf4487c8e",
+  "sha256": "3f4d62c96ce60809d4802aa1958b3eb91dcdf8c5b4ba3ed8330ee2c6da8e670f",
   "human_review": "NOT APPROVED — listen, watch, verify panel identities and licensing before live embed",
   "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
   "chapters": [
@@ -76,7 +76,7 @@
       ],
       "eyebrow": "FIGURE 1 · ORIGINAL APPARATUS",
       "narration": "A syringe pump drives liquid through a parallel plate chamber. The paper shows the actual apparatus and the glass surfaces supporting the cells.",
-      "tts_seconds": 9.119
+      "tts_seconds": 9.129
     },
     {
       "mode": "interface",
@@ -109,7 +109,7 @@
       ],
       "eyebrow": "FIGURE 5 · SEVEN REPEATED EXPERIMENTS",
       "narration": "Across seven replicates, the stressed group showed about fifty three percent cell death, versus around zero to point two percent in controls. The difference was statistically significant.",
-      "tts_seconds": 11.017
+      "tts_seconds": 11.007
     },
     {
       "mode": "source",
