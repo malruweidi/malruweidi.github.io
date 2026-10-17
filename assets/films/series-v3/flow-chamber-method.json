@@ -3,7 +3,7 @@
   "edition": "V3 original experimental-method film / verified 2020 paper",
   "primary_doi": "10.3390/mps3040065",
   "duration_seconds": 120.0,
-  "sha256": "e79dfd52a9aab025ad613686818a2e14894c71fc065287018dbe6d5620acaef7",
+  "sha256": "3c811127cf7a753192335195778a2b7e16c6da61da436b8e7f59fa7277721af8",
   "source_figures": [
     {
       "film": "flow-chamber-method",
@@ -74,13 +74,13 @@
     },
     {
       "title": "Injury becomes visible",
-      "speech": "The authors stained living and dead L2 epithelial cells after the bubble moved over the layer. Their original micrographs compare a control with the experimental group.",
-      "source": "Figure 5 A–C, live/dead stains and published control comparison."
+      "speech": "In the original L2 cell experiment, controls showed almost no cell death. The bubble exposed group averaged around fifty three percent dead cells, across seven experimental repetitions.",
+      "source": "2020 methods paper, Expected Results, Figure 5 A–C; control 0–0.2% and bubble ~53%, seven repetitions."
     },
     {
       "title": "Actin provides another view",
-      "speech": "The published cytoskeleton photographs show actin filaments in green and nuclei stained blue. Comparing control and bubble exposed cells adds structural context to the viability result.",
-      "source": "Figure 6, actin cytoskeleton and DAPI in source paper."
+      "speech": "The actin images reveal a subtler picture. There was no significant overall change in cytoskeletal structure after one bubble, although the authors observed slight differences in filament orientation.",
+      "source": "Figure 6 and published Effects on Cytoskeletal Structure; orientation difference only, no significant structure difference."
     },
     {
       "title": "What the images establish",
