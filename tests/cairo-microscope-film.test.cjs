@@ -62,7 +62,7 @@ test("Cairo documentary keeps both subtitle tracks and the full bilingual scene 
  assert.ok(page.includes('srclang="en"'));
  assert.match(captions,/^WEBVTT/);
  assert.match(englishCaptions,/^WEBVTT/);
- const cues=captions.trim().split(/\\n\\s*\\n/).slice(1);
+ const cues=captions.trim().split(/\n\s*\n/).slice(1);
  assert.equal(cues.length,9,"nine Arabic original scene captions are retained");
  const english=JSON.parse(read("assets/films/cairo-microscope-scenes.json"));
  assert.equal(english.scenes.length,9);
