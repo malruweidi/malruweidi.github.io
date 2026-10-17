@@ -49,12 +49,16 @@ def bottom_label(d,msg):
 def photo(num):
     return Image.open(SOURCE/f"canvas-{num:03d}.jpg").convert("RGB")
 
+_RESIZED = {}
 def _pan_crop(src,t,fx=.5,fy=.5,zoom=1.01):
-    # A genuine source photo: enlarge and pan by selecting pixels only.
+    # Re-use pixels resized from a verified source; only camera crop moves.
     sw,sh=src.size;ratio=max(W/sw,H/sh)
     scale=ratio*zoom
     nw,nh=round(sw*scale),round(sh*scale)
-    visible=src.resize((nw,nh),Image.Resampling.BICUBIC)
+    key=(id(src),nw,nh)
+    if key not in _RESIZED:
+        _RESIZED[key]=src.resize((nw,nh),Image.Resampling.BICUBIC)
+    visible=_RESIZED[key]
     dx=max(0,nw-W);dy=max(0,nh-H)
     ax=int(clamp(fx)*dx);ay=int(clamp(fy)*dy)
     return visible.crop((ax,ay,ax+W,ay+H))
@@ -64,14 +68,20 @@ def manuscript_frame(num,t,zoom=1.27,back=(18,29,28),px=.44,py=.50):
     # Present the actual scanned leaf without altered glyphs; crop/pan is cinematic.
     return _pan_crop(src,t,px+.06*math.sin(t*.12),py+.04*math.cos(t*.11),zoom)
 
-def shader(im,amount=152,reverse=False):
-    # Side-darkened image serves original Arabic manuscript, not forged ink.
-    overlay=Image.new("RGBA",(W,H),(0,0,0,0));p=overlay.load()
+@functools.lru_cache(maxsize=6)
+def _shadow_overlay(amount,reverse):
+    # Compose a real alpha gradient once rather than rewriting every pixel.
+    band=Image.new("RGBA",(W,H),(0,0,0,0))
+    draw=ImageDraw.Draw(band)
     for x in range(W):
         pos=(W-x)/W if reverse else x/W
-        a=int(amount*max(0,1-pos*1.25)**1.5)
-        for y in range(H):p[x,y]=(10,25,28,a)
-    return Image.alpha_composite(im.convert("RGBA"),overlay).convert("RGB")
+        alpha=round(amount*max(0,1-pos*1.25)**1.5)
+        draw.line((x,0,x,H),fill=(10,25,28,alpha),width=1)
+    return band
+
+def shader(im,amount=152,reverse=False):
+    return Image.alpha_composite(im.convert("RGBA"),
+                                 _shadow_overlay(amount,reverse)).convert("RGB")
 
 def baseline(k,t):
     # Less UI chrome. A cinematic shot may occupy the entire viewport.
