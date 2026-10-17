@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-16",
+  "version": "2026-10-17",
   "description": "Additive, source-grounded site discovery; links only to existing Ruwaidix public pages and headings.",
   "categories": [
     "Orientation",
@@ -537,6 +537,22 @@
       "url": "/films/the-ring-that-never-closed.html",
       "summary": "A three-minute archival research film on the unsuccessful imidazopyridine route in UREP23-133-1-028 and the subsequent investigation of three imines, cyanide sensing and exploratory cell biology, with an accountable ten-scene transcript.",
       "keywords": "chemistry Schiff base imine imidazopyridine heterocycle failed ring closure cyanide anion sensor yellow orange UV-Vis 380 450 nm 1.42e-5 M c-MYC PRMT5 UREP23 documentary synthesis الفيديو العلمي الكيمياء قاعدة شيف سيانيد تفاعل فاشل"
+    },
+    {
+      "id": 67,
+      "title": "Research investigations · scientific questions and methods",
+      "category": "Research",
+      "url": "/research.html",
+      "summary": "Six research directions spanning molecular chemistry, experimental physiology, biomaterials, pulmonary therapeutics, computing and history of pharmacy.",
+      "keywords": "research portfolio chemistry molecular design epithelial injury zebrafish biomedicine nanocarriers ongoing thesis history of pharmacy"
+    },
+    {
+      "id": 68,
+      "title": "Publications and scholarly works · selected bibliography",
+      "category": "Research",
+      "url": "/publications.html",
+      "summary": "Status-aware bibliography of original studies, reviews, book chapters and accepted historical scholarship; filter entries and follow publisher or film links.",
+      "keywords": "publications manuscripts articles scientific papers accepted forthcoming DOI bibliography research scholarly"
     }
   ]
 }
