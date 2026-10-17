@@ -1,0 +1,51 @@
+name: Stage verified original figure images for two separate open science papers
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/import-publication-specific-figures.py
+      - .github/workflows/import-verified-study-figures.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  stage-cited-figures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install pillow
+      - name: Fetch figures from paper-verified DOI, figure label and official archive only
+        run: python scripts/import-publication-specific-figures.py
+      - name: Verify image hashes and exact source caption binding
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json
+          root=Path(".")
+          obj=json.loads(Path("assets/films/source-figures/v3/source-figure-provenance.json").read_text())
+          assert len(obj["figures"])==6
+          for fig in obj["figures"]:
+            f=root/fig["local_path"]
+            assert f.is_file() and fig["caption"]
+            assert hashlib.sha256(f.read_bytes()).hexdigest()==fig["sha256"]
+            assert fig["doi"] in ("10.3390/mps3040065","10.3390/polym13213717")
+          print("Six fully cited genuine research images staged without cross-study substitution")
+          PY
+      - name: Commit only verified original article figures
+        run: |
+          git config user.name "Ruwaidix Source Figure Research"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/source-figures/v3/
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage paper-matched experimental and peel-resistance figures with original DOI and licence"
+            git fetch origin "${{ github.ref_name }}"
+            if git rebase "origin/${{ github.ref_name }}"; then
+              git push origin HEAD:"${{ github.ref_name }}"
+            else
+              git rebase --abort
+              exit 1
+            fi
+          fi
