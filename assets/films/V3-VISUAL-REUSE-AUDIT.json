@@ -1,0 +1,726 @@
+{
+  "edition": "2026-10-17-v3-sceptical-review",
+  "warning": "This is a rejection/risk register, not a licence clearance or proof that every non-flagged asset is correct.",
+  "summary": {
+    "film_count": 35,
+    "total_legacy_scenes": 210,
+    "reused_across_films": 24,
+    "cross_study_figure_reuse": 4,
+    "explicitly_flagged_scenes": 21,
+    "films_using_only_one_unique_image": 3
+  },
+  "cross_film_reuses": [
+    {
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "films": [
+        "airway-reopening",
+        "flow-chamber-method"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 6,
+      "requires_inspection": true,
+      "risk": "CROSS_STUDY_FIGURE"
+    },
+    {
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "films": [
+        "cerebral-cilia",
+        "essay-scientific-credit",
+        "zebrafish-hemodynamics"
+      ],
+      "distinct_source_count": 3,
+      "usage_count": 6,
+      "requires_inspection": true,
+      "risk": "CROSS_STUDY_FIGURE"
+    },
+    {
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "films": [
+        "curcumin-cyanide",
+        "essay-machine-language"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 6,
+      "requires_inspection": true,
+      "risk": "CROSS_STUDY_FIGURE"
+    },
+    {
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "films": [
+        "pla-grafting",
+        "pla-scaffolds"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 5,
+      "requires_inspection": true,
+      "risk": "CROSS_STUDY_FIGURE"
+    },
+    {
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "films": [
+        "essay-academic-mental-health",
+        "essay-adc",
+        "essay-ai-email",
+        "essay-life-between-diagnoses",
+        "essay-machine-language",
+        "essay-proximity",
+        "essay-scientific-credit",
+        "essay-tf-states",
+        "essay-trna",
+        "making-medicines-keep",
+        "slit2-robo"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 11,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "films": [
+        "drug-release-twins",
+        "essay-academic-mental-health",
+        "essay-ai-email",
+        "essay-machine-language",
+        "essay-potency-exposure",
+        "niosomes"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 9,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+      "films": [
+        "gi-autoimmunity-1",
+        "gi-autoimmunity-2"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 7,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/niosomes-concept.svg",
+      "films": [
+        "drug-release-twins",
+        "niosomes"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 6,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "films": [
+        "echo-cnn-lstm",
+        "heart-failure-sensors"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 6,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/polymer-concept.svg",
+      "films": [
+        "micelles-pahs",
+        "pla-grafting",
+        "pla-scaffolds"
+      ],
+      "distinct_source_count": 3,
+      "usage_count": 6,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "films": [
+        "essay-proximity",
+        "essay-tf-states",
+        "essay-trna",
+        "microfluidic-virus",
+        "niosomes"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 5,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/evidence-biomaterials.webp",
+      "films": [
+        "cubosome-theranostics",
+        "pla-grafting",
+        "pla-scaffolds"
+      ],
+      "distinct_source_count": 3,
+      "usage_count": 5,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/films/art/source-specific/eosinophilic-gut.svg",
+      "films": [
+        "gi-autoimmunity-1",
+        "gi-autoimmunity-2"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 5,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "films": [
+        "cairo-microscope",
+        "essay-academic-mental-health",
+        "essay-ai-email",
+        "essay-machine-language"
+      ],
+      "distinct_source_count": 1,
+      "usage_count": 5,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/lung-concept.svg",
+      "films": [
+        "airway-reopening",
+        "flow-chamber-method"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 3,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "films": [
+        "airway-reopening",
+        "cubosome-theranostics",
+        "microfluidic-virus"
+      ],
+      "distinct_source_count": 3,
+      "usage_count": 3,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/evidence-pulmonary.webp",
+      "films": [
+        "airway-reopening",
+        "flow-chamber-method",
+        "niosomes"
+      ],
+      "distinct_source_count": 3,
+      "usage_count": 3,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/evidence-zebrafish.webp",
+      "films": [
+        "cerebral-cilia",
+        "zebrafish-hemodynamics"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 3,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "films": [
+        "curcumin-cyanide",
+        "heterocycle-cancer"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 3,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "films": [
+        "essay-ai-email",
+        "essay-machine-language",
+        "essay-potency-exposure"
+      ],
+      "distinct_source_count": 1,
+      "usage_count": 3,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "films": [
+        "essay-adc",
+        "essay-machine-language",
+        "essay-trna"
+      ],
+      "distinct_source_count": 1,
+      "usage_count": 3,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/zebrafish-concept.svg",
+      "films": [
+        "cerebral-cilia",
+        "zebrafish-hemodynamics"
+      ],
+      "distinct_source_count": 2,
+      "usage_count": 2,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+      "films": [
+        "food-printing",
+        "micelles-pahs"
+      ],
+      "distinct_source_count": 1,
+      "usage_count": 2,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    },
+    {
+      "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+      "films": [
+        "essay-life-between-diagnoses",
+        "heterocycle-cancer"
+      ],
+      "distinct_source_count": 1,
+      "usage_count": 2,
+      "requires_inspection": true,
+      "risk": "MULTI_FILM_REUSE_NEEDS_PROVENANCE"
+    }
+  ],
+  "film_findings": [
+    {
+      "id": "airway-reopening",
+      "primary_source": "https://doi.org/10.1152/japplphysiol.00574.2020",
+      "flagged_scenes": [
+        {
+          "chapter": "04",
+          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "status": "REJECTED_BY_EDITORIAL_SOURCE_TREATMENT",
+          "reason": "This actual asset is explicitly disallowed or cross-study in the film-specific source plan."
+        },
+        {
+          "chapter": "05",
+          "image": "assets/evidence-pulmonary.webp",
+          "status": "REJECTED_BY_EDITORIAL_SOURCE_TREATMENT",
+          "reason": "This actual asset is explicitly disallowed or cross-study in the film-specific source plan."
+        },
+        {
+          "chapter": "05",
+          "image": "assets/evidence-pulmonary.webp",
+          "status": "CONTEXT_NOT_EVIDENCE",
+          "reason": "A contextual asset does not prove the claim made in this study."
+        }
+      ],
+      "unique_images": 4,
+      "scene_count": 6,
+      "original_caption": "A breath can injure"
+    },
+    {
+      "id": "cerebral-cilia",
+      "primary_source": "https://doi.org/10.1161/ATVBAHA.118.311231",
+      "flagged_scenes": [],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "How does a vessel know the blood is moving?"
+    },
+    {
+      "id": "slit2-robo",
+      "primary_source": "https://doi.org/10.1080/13543776.2026.2690118",
+      "flagged_scenes": [
+        {
+          "chapter": "03",
+          "image": "assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp",
+          "status": "REJECTED_BY_EDITORIAL_SOURCE_TREATMENT",
+          "reason": "This actual asset is explicitly disallowed or cross-study in the film-specific source plan."
+        },
+        {
+          "chapter": "06",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "status": "REJECTED_BY_EDITORIAL_SOURCE_TREATMENT",
+          "reason": "This actual asset is explicitly disallowed or cross-study in the film-specific source plan."
+        },
+        {
+          "chapter": "06",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "status": "UNRELATED_PORTRAIT",
+          "reason": "An author portrait may belong to credits, not to the study's mechanism or claimed observations."
+        }
+      ],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "The target that can change sides"
+    },
+    {
+      "id": "curcumin-cyanide",
+      "primary_source": "https://doi.org/10.1039/C9AY01557D",
+      "flagged_scenes": [
+        {
+          "chapter": "03",
+          "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+          "status": "REJECTED_BY_EDITORIAL_SOURCE_TREATMENT",
+          "reason": "This actual asset is explicitly disallowed or cross-study in the film-specific source plan."
+        }
+      ],
+      "unique_images": 2,
+      "scene_count": 6,
+      "original_caption": "When a molecule becomes a question"
+    },
+    {
+      "id": "making-medicines-keep",
+      "primary_source": "/#history",
+      "flagged_scenes": [
+        {
+          "chapter": "05",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "status": "REJECTED_BY_EDITORIAL_SOURCE_TREATMENT",
+          "reason": "This actual asset is explicitly disallowed or cross-study in the film-specific source plan."
+        },
+        {
+          "chapter": "05",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "status": "UNRELATED_PORTRAIT",
+          "reason": "An author portrait may belong to credits, not to the study's mechanism or claimed observations."
+        }
+      ],
+      "unique_images": 2,
+      "scene_count": 6,
+      "original_caption": "How did medieval medicines keep?"
+    },
+    {
+      "id": "niosomes",
+      "primary_source": "/research/inhalable-vesicles.html",
+      "flagged_scenes": [
+        {
+          "chapter": "04",
+          "image": "assets/evidence-pulmonary.webp",
+          "status": "REJECTED_BY_EDITORIAL_SOURCE_TREATMENT",
+          "reason": "This actual asset is explicitly disallowed or cross-study in the film-specific source plan."
+        },
+        {
+          "chapter": "04",
+          "image": "assets/evidence-pulmonary.webp",
+          "status": "CONTEXT_NOT_EVIDENCE",
+          "reason": "A contextual asset does not prove the claim made in this study."
+        }
+      ],
+      "unique_images": 4,
+      "scene_count": 6,
+      "original_caption": "Will the medicine survive the nebulizer?"
+    },
+    {
+      "id": "echo-cnn-lstm",
+      "primary_source": "https://doi.org/10.1109/ACCESS.2023.3316719",
+      "flagged_scenes": [],
+      "unique_images": 2,
+      "scene_count": 6,
+      "original_caption": "Can an algorithm read a moving heart?"
+    },
+    {
+      "id": "pla-grafting",
+      "primary_source": "https://doi.org/10.3390/polym13213717",
+      "flagged_scenes": [],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "The surface is not the material"
+    },
+    {
+      "id": "pla-scaffolds",
+      "primary_source": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+      "flagged_scenes": [
+        {
+          "chapter": "04",
+          "image": "assets/evidence-biomaterials.webp",
+          "status": "CONTEXT_NOT_EVIDENCE",
+          "reason": "A contextual asset does not prove the claim made in this study."
+        }
+      ],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "A scaffold meets its environment"
+    },
+    {
+      "id": "flow-chamber-method",
+      "primary_source": "https://doi.org/10.3390/mps3040065",
+      "flagged_scenes": [],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "How to make a reproducible injury"
+    },
+    {
+      "id": "zebrafish-hemodynamics",
+      "primary_source": "https://doi.org/10.1016/j.micron.2020.102876",
+      "flagged_scenes": [
+        {
+          "chapter": "04",
+          "image": "assets/evidence-zebrafish.webp",
+          "status": "CONTEXT_NOT_EVIDENCE",
+          "reason": "A contextual asset does not prove the claim made in this study."
+        }
+      ],
+      "unique_images": 5,
+      "scene_count": 6,
+      "original_caption": "A heartbeat in high-speed frames"
+    },
+    {
+      "id": "ace2-covid-drugs",
+      "primary_source": "https://doi.org/10.1080/08037051.2022.2055530",
+      "flagged_scenes": [],
+      "unique_images": 1,
+      "scene_count": 6,
+      "original_caption": "An enzyme, a receptor, a clinical question"
+    },
+    {
+      "id": "gi-autoimmunity-1",
+      "primary_source": "https://doi.org/10.5772/intechopen.106184",
+      "flagged_scenes": [],
+      "unique_images": 2,
+      "scene_count": 6,
+      "original_caption": "What happens when immunity turns on the gut?"
+    },
+    {
+      "id": "gi-autoimmunity-2",
+      "primary_source": "https://doi.org/10.5772/intechopen.106185",
+      "flagged_scenes": [],
+      "unique_images": 2,
+      "scene_count": 6,
+      "original_caption": "The diagnostic problem"
+    },
+    {
+      "id": "heart-failure-sensors",
+      "primary_source": "https://doi.org/10.1002/9781119813040.ch5",
+      "flagged_scenes": [],
+      "unique_images": 2,
+      "scene_count": 6,
+      "original_caption": "Listening for a failing heart"
+    },
+    {
+      "id": "ace2-forms",
+      "primary_source": "https://doi.org/10.3390/ijms22136703",
+      "flagged_scenes": [],
+      "unique_images": 1,
+      "scene_count": 6,
+      "original_caption": "Two lives of ACE2"
+    },
+    {
+      "id": "microfluidic-virus",
+      "primary_source": "https://doi.org/10.1007/s42247-021-00169-7",
+      "flagged_scenes": [],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "A laboratory shrunk into a channel"
+    },
+    {
+      "id": "drug-release-twins",
+      "primary_source": "https://doi.org/10.70593/978-93-7185-824-3",
+      "flagged_scenes": [],
+      "unique_images": 2,
+      "scene_count": 6,
+      "original_caption": "What can a digital twin predict?"
+    },
+    {
+      "id": "food-printing",
+      "primary_source": "/#publications",
+      "flagged_scenes": [
+        {
+          "chapter": "04",
+          "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+          "status": "REJECTED_BY_EDITORIAL_SOURCE_TREATMENT",
+          "reason": "This actual asset is explicitly disallowed or cross-study in the film-specific source plan."
+        }
+      ],
+      "unique_images": 2,
+      "scene_count": 6,
+      "original_caption": "When food becomes a printable material"
+    },
+    {
+      "id": "ceramics-printing",
+      "primary_source": "/#publications",
+      "flagged_scenes": [],
+      "unique_images": 1,
+      "scene_count": 6,
+      "original_caption": "A structure the body must tolerate"
+    },
+    {
+      "id": "cubosome-theranostics",
+      "primary_source": "/#publications",
+      "flagged_scenes": [
+        {
+          "chapter": "04",
+          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "status": "REJECTED_BY_EDITORIAL_SOURCE_TREATMENT",
+          "reason": "This actual asset is explicitly disallowed or cross-study in the film-specific source plan."
+        }
+      ],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "The difficult promise of a cubic carrier"
+    },
+    {
+      "id": "micelles-pahs",
+      "primary_source": "/grants/urep19.html",
+      "flagged_scenes": [
+        {
+          "chapter": "02",
+          "image": "assets/polymer-concept.svg",
+          "status": "CONTEXT_NOT_EVIDENCE",
+          "reason": "A contextual asset does not prove the claim made in this study."
+        }
+      ],
+      "unique_images": 4,
+      "scene_count": 6,
+      "original_caption": "A polymer meets an insoluble problem"
+    },
+    {
+      "id": "heterocycle-cancer",
+      "primary_source": "/grants/urep23.html",
+      "flagged_scenes": [
+        {
+          "chapter": "06",
+          "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+          "status": "CONTEXT_NOT_EVIDENCE",
+          "reason": "A contextual asset does not prove the claim made in this study."
+        }
+      ],
+      "unique_images": 5,
+      "scene_count": 6,
+      "original_caption": "Build the heterocycle, then challenge the hypothesis"
+    },
+    {
+      "id": "histology-failure",
+      "primary_source": "/films/two-materials-no-section.html",
+      "flagged_scenes": [],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "Two materials. No section."
+    },
+    {
+      "id": "cairo-microscope",
+      "primary_source": "/stories/cairo-microscope.html",
+      "flagged_scenes": [],
+      "unique_images": 4,
+      "scene_count": 6,
+      "original_caption": "The microscope that made curiosity independent"
+    },
+    {
+      "id": "essay-life-between-diagnoses",
+      "primary_source": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+      "flagged_scenes": [],
+      "unique_images": 5,
+      "scene_count": 6,
+      "original_caption": "When the Count Could Not Describe the Pain"
+    },
+    {
+      "id": "essay-ai-email",
+      "primary_source": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+      "flagged_scenes": [],
+      "unique_images": 5,
+      "scene_count": 6,
+      "original_caption": "The Email That Became an Accusation"
+    },
+    {
+      "id": "essay-machine-language",
+      "primary_source": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+      "flagged_scenes": [],
+      "unique_images": 6,
+      "scene_count": 6,
+      "original_caption": "Who Taught Humans to Write Like Machines?"
+    },
+    {
+      "id": "essay-academic-mental-health",
+      "primary_source": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+      "flagged_scenes": [],
+      "unique_images": 5,
+      "scene_count": 6,
+      "original_caption": "The Things an Academic CV Cannot Hold"
+    },
+    {
+      "id": "essay-scientific-credit",
+      "primary_source": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+      "flagged_scenes": [],
+      "unique_images": 5,
+      "scene_count": 6,
+      "original_caption": "Three Names on the Medal, Hundreds in the Record"
+    },
+    {
+      "id": "essay-tf-states",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+      "flagged_scenes": [
+        {
+          "chapter": "06",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "status": "UNRELATED_PORTRAIT",
+          "reason": "An author portrait may belong to credits, not to the study's mechanism or claimed observations."
+        }
+      ],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "The Target Has More Than One Shape"
+    },
+    {
+      "id": "essay-potency-exposure",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+      "flagged_scenes": [],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "The Nanomolar Mirage"
+    },
+    {
+      "id": "essay-trna",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+      "flagged_scenes": [
+        {
+          "chapter": "06",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "status": "UNRELATED_PORTRAIT",
+          "reason": "An author portrait may belong to credits, not to the study's mechanism or claimed observations."
+        }
+      ],
+      "unique_images": 4,
+      "scene_count": 6,
+      "original_caption": "The Molecule Behind Every Protein"
+    },
+    {
+      "id": "essay-proximity",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+      "flagged_scenes": [
+        {
+          "chapter": "06",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "status": "UNRELATED_PORTRAIT",
+          "reason": "An author portrait may belong to credits, not to the study's mechanism or claimed observations."
+        }
+      ],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "When a Drug Makes Two Proteins Meet"
+    },
+    {
+      "id": "essay-adc",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+      "flagged_scenes": [
+        {
+          "chapter": "06",
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "status": "UNRELATED_PORTRAIT",
+          "reason": "An author portrait may belong to credits, not to the study's mechanism or claimed observations."
+        }
+      ],
+      "unique_images": 3,
+      "scene_count": 6,
+      "original_caption": "The Antibody Is Only the Beginning"
+    }
+  ]
+}
