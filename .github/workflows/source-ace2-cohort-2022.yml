@@ -1,0 +1,46 @@
+name: Stage exact 2022 ACE2 observational cohort source figures
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/import-ace2-original-2022-figures.py
+      - .github/workflows/source-ace2-cohort-2022.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  medical-source-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install pymupdf
+      - name: Check Figshare authors, exact article DOI, PDF, licence and real figure captions
+        run: python scripts/import-ace2-original-2022-figures.py
+      - name: Confirm exact original-source hashes and nonclinical reuse
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          d=json.loads(Path("assets/films/source-figures/ace2-covid-drugs-2022/source-manifest.json").read_text())
+          assert d["doi"]=="10.1080/08037051.2022.2055530"
+          assert d["study_type"].startswith("Observational")
+          assert len(d["figure_pages"])==3
+          for f in d["figure_pages"]:
+              assert hashlib.sha256(Path(f["file"]).read_bytes()).hexdigest()==f["sha256"]
+              assert f["width"]>700 and f["height"]>700
+          print("Authentic ACE2 study art staged. No clinical causal efficacy inference allowed.")
+          PY
+      - name: Commit true figure pages to a separate source register
+        run: |
+          git config user.name "Ruwaidix Clinical Sources"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/source-figures/ace2-covid-drugs-2022/
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage exact 2022 ACE2 cohort published figures, not unrelated lung imagery"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase "origin/${{ github.ref_name }}"
+            git push origin HEAD:"${{ github.ref_name }}"
+          fi
