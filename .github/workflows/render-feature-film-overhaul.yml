@@ -69,7 +69,7 @@ jobs:
         run: |
           git config user.name "Ruwaidix Open Film Studio"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/films/longform-v2/*.mp4 assets/films/longform-v2/*.vtt assets/films/longform-v2/*.json assets/films/longform-v2/qa/*.jpg
+          git add assets/films/longform-v2/*.mp4 assets/films/longform-v2/*.vtt assets/films/longform-v2/*.json assets/films/longform-v2/qa/*.jpg assets/films/longform-v2/qa/*.json
           if ! git diff --cached --quiet; then
             git commit -m "Draft five source-grounded feature recuts with exact archived sound and credits"
             git fetch origin "${{ github.ref_name }}"
