@@ -294,6 +294,8 @@ def scene_art(slug,idx,phase,output):
  else:
   # Unrecognised mode must fail loudly, not silently substitute a node diagram.
   raise ValueError("No source-specific concept: "+slug)
+ if typ in ("vesicle","ace2","trna") and idx>1:
+  chapter_specific_figure(d,typ,idx,phase)
  # The attention marker moves between key areas of the *illustration*, not
  # between fabricated scientific values. Its positions represent visual reading,
  # never experimental time or a quantitative trajectory.
@@ -310,6 +312,120 @@ def scene_art(slug,idx,phase,output):
  txt(d,(100,583),"EDITORIAL ANIMATION / NOT ORIGINAL MEASUREMENTS",15,(160,182,173))
  canvas.save(output,optimize=True)
  return output
+
+def chapter_specific_figure(d,typ,idx,phase):
+ """Replace the default diagram with a scientifically bounded chapter-specific argument.
+ The figures depict hypotheses, methods, and distinctions, NEVER measured values.
+ """
+ d.rectangle((95,148,1182,483),fill=(17,45,51))
+ def box(x,y,w,label,color=MINT):
+  d.rounded_rectangle((x,y,x+w,y+106),radius=18,outline=color,width=5)
+  words=label.split();lines=[];cur=""
+  for word in words:
+   item=(cur+" "+word).strip()
+   if len(item)>16 and cur:lines.append(cur);cur=word
+   else:cur=item
+  if cur:lines.append(cur)
+  for j,line_ in enumerate(lines[:3]):
+   txt(d,(x+18,y+19+j*25),line_,20,INK,True)
+ def arrow(x1,y1,x2,y2):
+  line(d,(x1,y1,x2,y2),GOLD,6)
+  d.polygon(((x2-14,y2-9),(x2+4,y2),(x2-14,y2+9)),fill=GOLD)
+ # Each chapter is a different claim, and is always tied to the catalogue narration.
+ if typ=="vesicle":
+  if idx==2:
+   oval(d,385,316,120,MINT,9);oval(d,385,316,97,GOLD,7)
+   for j in range(18):
+    th=2*math.pi*j/18
+    oval(d,385+109*math.cos(th),316+109*math.sin(th),4,GOLD,3)
+   txt(d,(560,253),"SURFACTANT",24,INK,True)
+   txt(d,(560,301),"CHOLESTEROL",24,GOLD,True)
+   txt(d,(560,353),"DEXAMETHASONE",24,MINT,True)
+   txt(d,(560,405),"RATIOS MUST BE MEASURED",16,INK)
+  elif idx==3:
+   box(153,269,247,"SIZE / PDI")
+   box(515,269,247,"CHEMISTRY")
+   box(873,269,240,"DRUG LOADING")
+   txt(d,(162,410),"DLS",17,GOLD,True)
+   txt(d,(540,410),"FTIR",17,GOLD,True)
+   txt(d,(892,410),"ANALYTICAL ASSAY",15,GOLD,True)
+  elif idx==4:
+   rounded(d,(181,224,470,415),MINT,7,26)
+   d.rectangle((271,190,382,222),fill=GOLD)
+   txt(d,(243,353),"NEBULIZER",19,INK,True)
+   arrow(498,325,659,325)
+   for j in range(11):
+    x=704+j*32
+    y=273+(((j+phase)*53)%108)
+    oval(d,x,y,5,MINT,3)
+   txt(d,(730,409),"AEROSOLIZATION",17,GOLD,True)
+  elif idx==5:
+   box(155,262,247,"EMITTED DOSE")
+   arrow(421,316,525,316)
+   box(545,262,247,"DROPLET SIZE")
+   arrow(811,316,887,316)
+   box(907,262,230,"DEPOSITION")
+   txt(d,(220,416),"ALL REQUIRE ACTUAL MEASUREMENT",18,INK,True)
+  else:
+   box(176,266,240,"FORMULATION")
+   box(509,266,240,"DEPOSITION")
+   box(843,266,240,"CLINICAL EFFECT")
+   txt(d,(193,415),"EACH CLAIM REQUIRES DIFFERENT EVIDENCE",17,INK,True)
+ elif typ=="ace2":
+  if idx==2:
+   box(153,255,235,"ANGIOTENSIN II")
+   arrow(408,318,570,318)
+   box(591,255,220,"ANG (1–7)")
+   box(901,255,212,"ACE2 ENZYME",GOLD)
+   txt(d,(413,414),"ACE2 CONVERSION / SCHEMATIC",16,INK)
+  elif idx==3:
+   box(167,263,369,"MEMBRANE ACE2",MINT)
+   box(701,263,369,"SOLUBLE ACE2",GOLD)
+   txt(d,(269,411),"DIFFERENT LOCATION, DIFFERENT READOUT",17,INK,True)
+  elif idx==4:
+   box(151,268,265,"EXPRESSION")
+   arrow(446,320,585,320)
+   box(606,268,266,"FUNCTION")
+   txt(d,(898,286),"≠",65,RED,True)
+   txt(d,(911,380),"CAUSALITY",17,INK,True)
+  elif idx==5:
+   box(180,265,375,"2021 REVIEW")
+   arrow(579,320,694,320)
+   box(720,265,375,"REASSESS EVIDENCE")
+   txt(d,(191,413),"PUBLICATION DATE LIMITS INTERPRETATION",16,INK,True)
+  else:
+   box(145,262,257,"WHICH FORM?")
+   box(503,262,257,"WHICH TISSUE?")
+   box(860,262,253,"WHICH ENDPOINT?")
+   txt(d,(340,414),"AN IDENTIFIABLE MOLECULAR QUESTION",17,GOLD,True)
+ elif typ=="trna":
+  if idx==2:
+   box(162,266,237,"CHARGING")
+   box(530,266,231,"MODIFICATION")
+   box(890,266,216,"CLEAVAGE")
+   txt(d,(198,413),"DISTINCT BIOLOGICAL INTERVENTIONS",18,INK,True)
+  elif idx==3:
+   oval(d,405,313,107,MINT,8)
+   txt(d,(359,306),"aaRS",28,GOLD,True)
+   arrow(538,311,674,311)
+   box(711,254,342,"ADDITIONAL ROLES")
+   txt(d,(329,434),"CATALYSIS ≠ EVERY SIGNALING FUNCTION",18,INK)
+  elif idx==4:
+   box(191,266,377,"ESSENTIAL FUNCTION",MINT)
+   box(690,266,365,"DISEASE DEPENDENCY",GOLD)
+   txt(d,(272,421),"SELECTIVITY MUST BE DEMONSTRATED",20,INK,True)
+  elif idx==5:
+   box(132,255,303,"ENZYME POCKET")
+   box(489,255,303,"RNA FRAGMENT")
+   box(848,255,303,"EXTRACELLULAR",GOLD)
+   txt(d,(246,414),"DIFFERENT TARGETS DEMAND DIFFERENT DRUG DESIGNS",17,INK)
+  else:
+   box(151,262,274,"TARGET")
+   arrow(450,316,550,316)
+   box(567,262,270,"PERTURBATION")
+   arrow(856,316,925,316)
+   box(943,262,174,"READOUT")
+   txt(d,(199,418),"MEASURE THE DEPENDENCY, NOT JUST THE PHENOTYPE",17,INK)
 
 def approved_photo(slug,scene,root):
  """Only explicit scene-matched source photos may enter the V7 film."""
