@@ -32,17 +32,13 @@ PROJECTS={
    "assets/films/source-figures/v3/pla-grafting-figure-08.jpg"]),
  "making-medicines-keep":("series-v4",[
    "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg",
-   "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-001.jpg"]),
+   "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"]),
  "flow-chamber-method":("series-v5", [
    "assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg",
    "assets/films/source-figures/v3/flow-chamber-method-figure-05.jpg",
    "assets/films/source-figures/v3/flow-chamber-method-figure-06.jpg"]),
  "pla-scaffolds":("series-v5", [
-   "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-01.jpg",
-   "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg",
-   "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-06.jpg",
-   "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-07.jpg",
-   "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-03.jpg"]),
+   "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg"]),
  "microfluidic-virus":("series-v5", [
    "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg"])
 }
@@ -50,7 +46,7 @@ PRIMARY_SCENES={
  "pla-grafting":[1,1,None,1,1,0,2,2],
  "making-medicines-keep":[0,1,None,None,None,None,0,1],
  "flow-chamber-method":[0,0,None,1,1,2,2,0],
- "pla-scaffolds":[0,None,None,1,2,3,4,1],
+ "pla-scaffolds":[0,None,None,0,"from-archived-afm","from-archived-ftir",None,0],
  "microfluidic-virus":[0,None,None,0,None,None,None,0]
 }
 FALLBACK_TITLES={
@@ -151,7 +147,8 @@ def frame(slug,chapter,phase,source_file,title,output):
     im=Image.new("RGB",(W,H),BG)
     d=ImageDraw.Draw(im)
     if source_file:
-        p=ROOT/source_file
+        p=Path(source_file)
+        if not p.is_absolute():p=ROOT/p
         assert p.is_file(),p
         with Image.open(p) as raw:
             original=raw.convert("RGB")
@@ -190,17 +187,38 @@ def compose(slug):
         p=Path(tmp)
         entries=["ffconcat version 1.0"]
         scenes=[]
+        # Published AFM and FTIR panels were present in the preserved film
+        # even though their source JPG files are absent in the current branch.
+        # Isolate just those scientific panels from that archived movie rather
+        # than substituting unrelated research figures or generated assays.
+        recovered={}
+        if slug=="pla-scaffolds":
+            for name,second in (("from-archived-afm",68.0),("from-archived-ftir",83.0)):
+                dest=p/(name+".png")
+                sh("ffmpeg","-hide_banner","-loglevel","error","-y",
+                   "-ss",str(second),"-i",str(source),"-frames:v","1",
+                   "-vf","crop=720:490:290:125",str(dest))
+                recovered[name]=dest
         for ci,ch in enumerate(record["chapters"]):
             title=source_title(slug,ci,ch)
             image_i=PRIMARY_SCENES[slug][ci]
-            research_source=assets[image_i] if image_i is not None else None
+            if isinstance(image_i,str):
+                research_source=str(recovered[image_i])
+                credit="archived scientific figure / "+old+"/"+slug+".mp4"
+            elif image_i is not None:
+                research_source=assets[image_i]
+                credit=research_source
+            else:
+                research_source=None
+                credit="original-nonquantitative-illustration"
             for phase in range(4):
                 still=p/f"scene-{ci+1:02d}-{phase:02d}.png"
                 frame(slug,ci,phase,research_source if phase<2 else None,
                       title,still)
                 entries.extend(["file '"+str(still)+"'","duration 3.750000"])
                 scenes.append({"chapter":ci+1,"beat":phase+1,
-                               "source":research_source if phase<2 else "original-nonquantitative-illustration"})
+                               "source":credit if (phase<2 and research_source) else
+                                        "original-nonquantitative-illustration"})
         entries.append("file '"+str(still)+"'")
         ffcat=p/"render.ffcat"
         ffcat.write_text("\n".join(entries)+"\n")
