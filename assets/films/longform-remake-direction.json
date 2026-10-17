@@ -1,0 +1,187 @@
+{
+  "edition": "2026-10-17",
+  "status": "INDIVIDUAL PREPRODUCTION / UNRENDERED",
+  "editorial": "The 9 existing authored feature films receive a verified, distinct storyboard. Original 10 archival clips remain documents to preserve, not generated documentaries.",
+  "films": {
+    "what-survives-the-experiment": {
+      "group": "Research film",
+      "source": "assets/films/what-survives-scenes.json",
+      "theme": "Scientific claims tested against matter and instrument",
+      "beats": [
+        "early independent observation",
+        "chemistry and instrumentation",
+        "failed experiments",
+        "living systems and therapeutic design"
+      ],
+      "scenes_to_reanimate": [
+        "04",
+        "09"
+      ],
+      "motion": [
+        "macro-to-micro transitions",
+        "physical constraints visible as annotated overlays"
+      ],
+      "strict": "Never present archival microscopy as direct proof of unrelated results; damaged histology remains an unsuccessful attempt."
+    },
+    "airway-reopening-evidence-cut": {
+      "group": "Research evidence cut",
+      "source": "assets/films/airway-reopening-evidence-scenes.json",
+      "theme": "What a transient air–liquid interface can do to epithelial cells",
+      "beats": [
+        "model geometry",
+        "time-resolved interface",
+        "viability measures",
+        "limits of the model"
+      ],
+      "scenes_to_reanimate": [
+        "02",
+        "06"
+      ],
+      "motion": [
+        "moving meniscus with stationary epithelial boundary",
+        "qualitative force-vector glyphs without invented values"
+      ],
+      "strict": "Dexamethasone and DHEA outcomes under specified in-vitro conditions only; no clinical extrapolation."
+    },
+    "what-a-bubble-can-do": {
+      "group": "Evidence in Motion",
+      "source": "assets/films/evidence-in-motion.json",
+      "theme": "Mechanical injury and invisible boundaries",
+      "beats": [
+        "reopening injury",
+        "parallel-plate chamber",
+        "L2 viability",
+        "explanatory limits"
+      ],
+      "scenes_to_reanimate": [
+        "01",
+        "03"
+      ],
+      "motion": [
+        "advancing air bubble",
+        "timed chamber flow vectors"
+      ],
+      "strict": "Do not fabricate measured cell viability panels or clinical data."
+    },
+    "two-materials-no-section": {
+      "group": "First-person research story",
+      "source": "assets/films/two-materials-scenes.json",
+      "theme": "The practical failure of agarose–paraffin embedding",
+      "beats": [
+        "orientation constraint",
+        "two incompatible embedding stages",
+        "failed section",
+        "lesson about materials"
+      ],
+      "scenes_to_reanimate": [
+        "02",
+        "05"
+      ],
+      "motion": [
+        "layer deposition and peeling",
+        "microtome pass stops at unsupported interface"
+      ],
+      "strict": "Failure observed; material-interface mechanism remains a hypothesis rather than a proven cause."
+    },
+    "two-materials-no-section-evidence-cut": {
+      "group": "Evidence in Motion",
+      "source": "assets/films/evidence-in-motion.json",
+      "theme": "Why the specimen would not section",
+      "beats": [
+        "zebrafish orientation",
+        "2% agarose",
+        "paraffin interface",
+        "microtomy outcome"
+      ],
+      "scenes_to_reanimate": [
+        "02",
+        "04"
+      ],
+      "motion": [
+        "layer separation animation marked hypothesis",
+        "knife movement over failed section"
+      ],
+      "strict": "Source photographs document an unsuccessful attempt and cannot diagnose its cause alone."
+    },
+    "ring-that-never-closed": {
+      "group": "Research story",
+      "source": "assets/films/ring-that-never-closed-scenes.json",
+      "theme": "When a synthesis hypothesis resists the experiment",
+      "beats": [
+        "hypothesis",
+        "attempted chemical transformations",
+        "analytical constraints",
+        "unresolved result"
+      ],
+      "scenes_to_reanimate": [
+        "02",
+        "05"
+      ],
+      "motion": [
+        "atom-label-preserving reaction path overlay",
+        "divergent reaction pathways with question mark"
+      ],
+      "strict": "No product, yield, structure or spectra may be claimed without confirming the underlying notebook."
+    },
+    "cairo-microscope": {
+      "group": "Personal research story",
+      "source": "assets/films/cairo-microscope-scenes.json",
+      "theme": "The personally purchased microscope that made private inquiry possible",
+      "beats": [
+        "Cairo instrument shop",
+        "transport to Qatar",
+        "home setup",
+        "independent observations"
+      ],
+      "scenes_to_reanimate": [
+        "02",
+        "04"
+      ],
+      "motion": [
+        "archival route with no fabricated travel metrics",
+        "optics and focal-plane schematic"
+      ],
+      "strict": "Original first-person account preserved; don't imply proprietary instrument capability or dated photographs without support."
+    },
+    "the-laboratory-we-carried-with-us": {
+      "group": "Evidence in Motion",
+      "source": "assets/films/evidence-in-motion.json",
+      "theme": "Scientists, networks, and fragile research continuity",
+      "beats": [
+        "community formation",
+        "collaborative practice",
+        "documentation",
+        "scientific continuity"
+      ],
+      "scenes_to_reanimate": [
+        "03",
+        "06"
+      ],
+      "motion": [
+        "historical timeline of verified dates",
+        "linked portraits and group archival stills"
+      ],
+      "strict": "No invented project role, coauthorship, photograph date, or research outcomes."
+    },
+    "making-medicines-keep": {
+      "group": "Evidence in Motion",
+      "source": "assets/films/evidence-in-motion.json",
+      "theme": "Pharmaceutical reliability in Ayyubid-Mamluk Cairo",
+      "beats": [
+        "syrup as manufactured product",
+        "consistency and process",
+        "substitution in sources",
+        "reliability as question"
+      ],
+      "scenes_to_reanimate": [
+        "03",
+        "06"
+      ],
+      "motion": [
+        "syrup handling schematic",
+        "substitution decision tree distinguished from bioequivalence"
+      ],
+      "strict": "Accepted article on 15 October 2026, not yet published; Wellcome contextual manuscript is NOT the relevant Genizah folio; respect manuscript reuse rights."
+    }
+  }
+}
