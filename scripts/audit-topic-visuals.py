@@ -23,7 +23,7 @@ def main():
     audited=[];asset_paths=set()
     for film in items:
         curated=[s for s in film["scenes"] if s["image"].startswith("assets/films/art/source-specific/")]
-        if curated and film.get("source_visual_revision")!="curated-2026-10-17-v1":
+        if curated and film.get("source_visual_revision")!="curated-2026-10-17-v2":
             raise ValueError("Film has source-specific images but does not request a source refresh "+film["id"])
         for scene in curated:
             if not scene["image"].endswith(".svg"): raise ValueError("Expected source-specific SVG")
