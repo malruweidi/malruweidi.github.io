@@ -1,0 +1,63 @@
+name: Clean five primary-source documentary editions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/render-clean-primary-films.py
+      - scripts/publish-clean-primary-films.py
+      - .github/workflows/render-clean-primary-films.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ruwaidix-clean-primary-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  scholarly-documentaries:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Check out source figures, primary manuscript and preserved narrations
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free-source video renderer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check pillow
+      - name: Source and syntax validation
+        run: |
+          python -m py_compile scripts/render-clean-primary-films.py scripts/publish-clean-primary-films.py
+          node --test tests/film-reader-boundary.test.mjs
+      - name: Render five independent figure-faithful film editions
+        run: python scripts/render-clean-primary-films.py --all
+      - name: Verify movie streams and atomically update five active web players
+        run: |
+          python scripts/publish-clean-primary-films.py
+          node --test tests/film-reader-boundary.test.mjs
+      - name: Commit the five verified films without altering prior masters
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Ruwaidix Primary Research Cinema"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v8-primary/ publication-cinema.html films/making-medicines-keep.html cinema-research-preview.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publish five source-faithful film cuts without producer notes [clean-primary-output]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+      - name: Deployment summary
+        run: |
+          echo "## Source-specific film cuts" >> "$GITHUB_STEP_SUMMARY"
+          echo "Five new films have been rendered using their actual research figures or manuscript witness. Original narration and subtitles are preserved." >> "$GITHUB_STEP_SUMMARY"
+          echo "Earlier editions are retained at their original GitHub paths." >> "$GITHUB_STEP_SUMMARY"
