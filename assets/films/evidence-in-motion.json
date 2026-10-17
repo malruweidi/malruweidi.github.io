@@ -168,9 +168,7 @@
           "visual": "agarose",
           "narration": "Changing the agarose grade, processing conditions, or embedding strategy might have answered it. I did not establish which correction would work, and I will not call the attempt successful.",
           "credit": "Alternatives are untested possibilities, not recommendations or successful results.",
-          "link": "/stories/failed-zebrafish-histology.html",
-          "context_visual": "generic-microtome",
-          "context_use": "Supporting visual shown for 4 seconds of this chapter, followed by the documented/diagrammatic main picture. Does not alter narration or displace underlying original scientific evidence."
+          "link": "/stories/failed-zebrafish-histology.html"
         },
         {
           "id": "08",
@@ -183,7 +181,7 @@
           "link": "/stories/failed-zebrafish-histology.html"
         }
       ],
-      "media_stem": "two-materials-no-section-evidence-cut",
+      "media_stem": "two-materials-no-section-source-v2",
       "variant_note": "Additional two-minute evidence cut. The previously published 150-second film and its captions remain available unmodified under the original filename."
     },
     {
