@@ -15,7 +15,7 @@ test("documentary hub separates released films, original observations and preser
   assert.match(html, /what-survives-the-experiment\.mp4/);
   assert.match(html, /Released · two-minute documentary/);
   assert.doesNotMatch(html, /In development · no film released/);
-  assert.match(html, /Watch the revised manuscript-sourced documentary/);
+  assert.match(html, /Watch the source-linked historical edition/);
   assert.match(html, /Watch the formulation film/);
   for (const source of ["/film.html", "/moving-evidence.html", "/stories/failed-zebrafish-histology.html", "/research/pulmonary-epithelial-injury.html"]) {
     assert.ok(html.includes('href="' + source + '"'), "missing existing evidence destination " + source);
