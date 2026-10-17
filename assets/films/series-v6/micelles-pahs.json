@@ -1,0 +1,60 @@
+{
+  "id": "micelles-pahs",
+  "seconds": 84.0,
+  "sha256": "16aa0c690097c695d6845e1b84d3e0028092ee18cc74df495fb1454043dab4e6",
+  "primary_source": "/grants/urep19.html",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Documented unsuccessful original polymer trial photo",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original failed-materials archive",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+      "kind": "Documented unsuccessful original polymer trial photo",
+      "credit": "Documented unsuccessful original polymer trial photo",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/micelles-pahs/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/micelles-pahs/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/micelles-pahs/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+      "kind": "Original failed-materials archive",
+      "credit": "Original failed-materials archive",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/micelles-pahs/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/grants/urep19.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

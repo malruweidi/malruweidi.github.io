@@ -1,0 +1,60 @@
+{
+  "id": "heterocycle-cancer",
+  "seconds": 84.0,
+  "sha256": "c23a6305d310486291bc1d4043796460fb340afa75137e39cb250a7a5dacf9db",
+  "primary_source": "/grants/urep23.html",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original research-context chemical photograph"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/heterocycle-cancer/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/grants/urep23.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/heterocycle-cancer/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/grants/urep23.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/heterocycle-cancer/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/grants/urep23.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/heterocycle-cancer/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/grants/urep23.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/heterocycle-cancer/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/grants/urep23.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "kind": "Original research-context chemical photograph",
+      "credit": "Original research-context chemical photograph",
+      "source": "/grants/urep23.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
