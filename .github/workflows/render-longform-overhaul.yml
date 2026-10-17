@@ -12,7 +12,7 @@ permissions:
   contents: write
   actions: write
 concurrency:
-  group: ruwaidix-evidence-v2-${{ github.ref }}
+  group: ruwaidix-all-longform-${{ github.ref }}
   cancel-in-progress: false
 jobs:
   render:
