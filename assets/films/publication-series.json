@@ -987,7 +987,7 @@
           "link": "/#publications"
         }
       ],
-      "source_visual_revision": "curated-2026-10-17-v2"
+      "source_visual_revision": "curated-2026-10-17-v3"
     },
     {
       "id": "gi-autoimmunity-1",
@@ -1070,7 +1070,7 @@
           "link": "/illness-and-evidence.html"
         }
       ],
-      "source_visual_revision": "curated-2026-10-17-v2"
+      "source_visual_revision": "curated-2026-10-17-v3"
     },
     {
       "id": "gi-autoimmunity-2",
@@ -1153,7 +1153,7 @@
           "link": "/illness-and-evidence.html"
         }
       ],
-      "source_visual_revision": "curated-2026-10-17-v2"
+      "source_visual_revision": "curated-2026-10-17-v3"
     },
     {
       "id": "heart-failure-sensors",
@@ -1236,7 +1236,7 @@
           "link": "/computing.html"
         }
       ],
-      "source_visual_revision": "curated-2026-10-17-v2"
+      "source_visual_revision": "curated-2026-10-17-v3"
     },
     {
       "id": "ace2-forms",
@@ -1319,7 +1319,7 @@
           "link": "/#publications"
         }
       ],
-      "source_visual_revision": "curated-2026-10-17-v2"
+      "source_visual_revision": "curated-2026-10-17-v3"
     },
     {
       "id": "microfluidic-virus",
@@ -2556,7 +2556,7 @@
           "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
         }
       ],
-      "source_visual_revision": "curated-2026-10-17-v2"
+      "source_visual_revision": "curated-2026-10-17-v3"
     },
     {
       "id": "essay-potency-exposure",
@@ -2640,7 +2640,7 @@
           "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
         }
       ],
-      "source_visual_revision": "curated-2026-10-17-v2"
+      "source_visual_revision": "curated-2026-10-17-v3"
     },
     {
       "id": "essay-trna",
@@ -2724,7 +2724,7 @@
           "link": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
         }
       ],
-      "source_visual_revision": "curated-2026-10-17-v2"
+      "source_visual_revision": "curated-2026-10-17-v3"
     },
     {
       "id": "essay-proximity",
@@ -2808,7 +2808,7 @@
           "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
         }
       ],
-      "source_visual_revision": "curated-2026-10-17-v2"
+      "source_visual_revision": "curated-2026-10-17-v3"
     },
     {
       "id": "essay-adc",
@@ -2892,7 +2892,7 @@
           "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
         }
       ],
-      "source_visual_revision": "curated-2026-10-17-v2"
+      "source_visual_revision": "curated-2026-10-17-v3"
     }
   ]
 }
