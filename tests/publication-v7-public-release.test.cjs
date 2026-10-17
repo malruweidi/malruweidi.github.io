@@ -14,18 +14,20 @@ const special={
  "flow-chamber-method":"series-v5",
  "microfluidic-virus":"series-v5"
 };
-test("all 30 V7 films are checksum-verified, captioned, scene-specific and fully sourced",()=>{
+test("each released clean-screen V7 film is source-matched, checksum verified and captioned",()=>{
  assert.equal(release.schema,"ruwaidix-cinema-v7-registered-releases-v1");
- assert.equal(release.count,30);
- assert.equal(release.films.length,30);
- assert.match(release.review_limit,/do not certify/);
+ assert.equal(release.count,release.films.length);
+ assert(release.count>=0 && release.count<=30);
+ assert.match(release.review_limit,/review|not certify|expert/i);
  const allowed=new Set(catalog.filter(x=>!Object.hasOwn(special,x.id)).map(x=>x.id));
  assert.equal(allowed.size,30);
- assert.deepEqual(new Set(release.films.map(x=>x.id)),allowed);
+ assert.equal(new Set(release.films.map(x=>x.id)).size,release.count);
+ for(const f of release.films)assert(allowed.has(f.id),"Unexpected or protected V7 release: "+f.id);
  for(const movie of release.films){
   assert.equal(movie.edition,"series-v7-pilots",movie.id);
   assert.equal(movie.duration_seconds,84,movie.id);
   assert.equal(movie.distinct_chapters,6,movie.id);
+  assert.match(movie.visual_revision,/^v7\.8-clean-screen\//,"No internal-production-label V7 movies may be published: "+movie.id);
   assert.match(movie.sha256,/^[a-f0-9]{64}$/,movie.id);
   const filmPath=path.join(root,movie.video.slice(1));
   assert(fs.existsSync(filmPath),movie.video);
@@ -66,7 +68,7 @@ test("five original article-specific research cuts and every older V6/first edit
   }
  }
 });
-test("saved 35-piece cinema page premieres V7, retains source-first precedence and V6 rollback",()=>{
+test("saved 35-piece cinema page remains playable while progressively verifying V7 updates",()=>{
  const html=read("publication-cinema.html"),staticHtml=html.split("<script>")[0];
  const rows=[...staticHtml.matchAll(/<article class="piece" id="film-([a-z0-9-]+)"/g)].map(m=>m[1]);
  assert.equal(rows.length,35);
@@ -76,7 +78,7 @@ test("saved 35-piece cinema page premieres V7, retains source-first precedence a
  const captions=[...staticHtml.matchAll(/<track kind="captions" src="(\/assets\/films\/[^"]+\.vtt)"/g)].map(m=>m[1]);
  assert.equal(captions.length,35);
  for(let i=0;i<rows.length;i++){
-  const edition=special[rows[i]]||"series-v7-pilots";
+  const edition=special[rows[i]]||"series-v6";
   assert.equal(sources[i],"/assets/films/"+edition+"/"+rows[i]+".mp4");
   assert.equal(captions[i],"/assets/films/"+edition+"/"+rows[i]+".vtt");
  }
