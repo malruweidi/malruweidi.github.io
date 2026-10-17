@@ -221,6 +221,31 @@ def backfill_video_posters():
             raise RuntimeError("Failed to extract original first-frame poster: " + str(film))
         created += 1
     print("MP4-sourced posters generated:", created)
+    # This is the only authority the public catalogue uses to switch editions.
+    # A release is enumerated only after its movie, subtitles, provenance record,
+    # and its own authentic thumbnail are all present and consistent.
+    releases = []
+    for film in sorted(OUTPUT.glob("*.mp4")):
+        subs=film.with_suffix(".vtt")
+        metadata=film.with_suffix(".json")
+        poster=film.with_suffix(".webp")
+        if not all(p.is_file() and p.stat().st_size > 500 for p in (film,subs,metadata,poster)):
+            continue
+        record=json.loads(metadata.read_text(encoding="utf-8"))
+        if record.get("id")!=film.stem:
+            raise ValueError("Release slug mismatch: " + film.name)
+        if record.get("sha256")!=hashlib.sha256(film.read_bytes()).hexdigest():
+            raise ValueError("Release checksum mismatch: " + film.name)
+        if not subs.read_text(encoding="utf-8").startswith("WEBVTT"):
+            raise ValueError("Missing valid captions: " + film.name)
+        releases.append({"id":film.stem,"edition":"series-v6",
+                         "poster":"/assets/films/series-v6/"+film.stem+".webp",
+                         "duration_seconds":record["seconds"],
+                         "sha256":record["sha256"]})
+    if V6:
+        index={"schema":"ruwaidix-film-releases-v1","count":len(releases),"films":releases}
+        (OUTPUT/"releases.json").write_text(json.dumps(index,indent=2)+"\\n",encoding="utf-8")
+        print("Ready-to-play V6 films indexed:", len(releases))
 
 def main():
     p=argparse.ArgumentParser()
