@@ -1,0 +1,148 @@
+{
+  "title": "What a Bubble Does to a Monolayer",
+  "id": "flow-chamber-method",
+  "edition": "V4 study-figure-led documentary",
+  "doi": "10.3390/mps3040065",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7712398/",
+  "license": "CC BY 4.0",
+  "source_visual_limits": "A published cell-monolayer experiment, not patient airway footage. Flow-device photos, live/dead assay, and actin figure are all the same paper.",
+  "source_figures": [
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg",
+      "sha256": "d86c0d8854ae32b83b33d4e02b1da3013b86f3a91de3986f410f5d6aba521692"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg",
+      "sha256": "d86c0d8854ae32b83b33d4e02b1da3013b86f3a91de3986f410f5d6aba521692"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg",
+      "sha256": "d86c0d8854ae32b83b33d4e02b1da3013b86f3a91de3986f410f5d6aba521692"
+    },
+    {
+      "figure": 5,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-05.jpg",
+      "sha256": "43bb54073801952f0e29f4cf95f5f7dd95688f8b146cb078606943c6646f984c"
+    },
+    {
+      "figure": 5,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-05.jpg",
+      "sha256": "43bb54073801952f0e29f4cf95f5f7dd95688f8b146cb078606943c6646f984c"
+    },
+    {
+      "figure": 6,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-06.jpg",
+      "sha256": "c07761e43a405320c1dbb12806d742fa6cd9d02f43eb0b086918f0d2da72b220"
+    },
+    {
+      "figure": 6,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-06.jpg",
+      "sha256": "c07761e43a405320c1dbb12806d742fa6cd9d02f43eb0b086918f0d2da72b220"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg",
+      "sha256": "d86c0d8854ae32b83b33d4e02b1da3013b86f3a91de3986f410f5d6aba521692"
+    }
+  ],
+  "original_figure_pixels_untouched": true,
+  "separate_explanatory_animation": true,
+  "new_science_fabricated": false,
+  "duration_seconds": 120.0,
+  "sha256": "ac961019798da1535e1a9beb16ddf15cfca34b12074b2bda882bab18b083f3fc",
+  "human_review": "NOT APPROVED — listen, watch, verify panel identities and licensing before live embed",
+  "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
+  "chapters": [
+    {
+      "mode": "opening",
+      "figure": 1,
+      "headline": [
+        "THE BUBBLE",
+        "PASSES."
+      ],
+      "eyebrow": "CULTURED EPITHELIAL CELLS",
+      "narration": "A fluid interface crosses a layer of lung epithelial cells. This is the real chamber study, not a film of a patient's lung.",
+      "tts_seconds": 8.318
+    },
+    {
+      "mode": "source",
+      "figure": 1,
+      "headline": [
+        "THE REAL",
+        "CHAMBER"
+      ],
+      "eyebrow": "FIGURE 1 · ORIGINAL APPARATUS",
+      "narration": "A syringe pump drives liquid through a parallel plate chamber. The paper shows the actual apparatus and the glass surfaces supporting the cells.",
+      "tts_seconds": 9.129
+    },
+    {
+      "mode": "interface",
+      "figure": 1,
+      "headline": [
+        "WHERE STRESS",
+        "APPEARS"
+      ],
+      "eyebrow": "AIR–LIQUID INTERFACE · CONCEPT MODEL",
+      "narration": "As the air liquid interface advances, local stresses reach the cell surface. The moving schematic explains the process; it is not a measured stress trace.",
+      "tts_seconds": 9.813
+    },
+    {
+      "mode": "source",
+      "figure": 5,
+      "headline": [
+        "CONTROL",
+        "VERSUS BUBBLE"
+      ],
+      "eyebrow": "FIGURE 5 · UNALTERED LIVE / DEAD IMAGING",
+      "narration": "These fluorescence images are from the original study. The unstressed control and the bubble exposed cells were stained with live and dead markers.",
+      "tts_seconds": 9.353
+    },
+    {
+      "mode": "result",
+      "figure": 5,
+      "headline": [
+        "AROUND 53%",
+        "CELL DEATH"
+      ],
+      "eyebrow": "FIGURE 5 · SEVEN REPEATED EXPERIMENTS",
+      "narration": "Across seven replicates, the stressed group showed about fifty three percent cell death, versus around zero to point two percent in controls. The difference was statistically significant.",
+      "tts_seconds": 11.017
+    },
+    {
+      "mode": "source",
+      "figure": 6,
+      "headline": [
+        "LOOK AGAIN AT",
+        "THE ACTIN"
+      ],
+      "eyebrow": "FIGURE 6 · ORIGINAL CYTOSKELETON IMAGES",
+      "narration": "The study also stained actin filaments and nuclei. Here are its actual control and bubble exposure images, not synthetic fluorescence pictures.",
+      "tts_seconds": 9.46
+    },
+    {
+      "mode": "boundary",
+      "figure": 6,
+      "headline": [
+        "NO SIGNIFICANT",
+        "ACTIN DIFFERENCE"
+      ],
+      "eyebrow": "A DISTINCTION THE PAPER MAKES",
+      "narration": "The single bubble did not produce a statistically significant change in actin organization, although the authors observed possible differences in filament orientation.",
+      "tts_seconds": 10.814
+    },
+    {
+      "mode": "closing",
+      "figure": 1,
+      "headline": [
+        "ONE MODEL.",
+        "ONE QUESTION."
+      ],
+      "eyebrow": "PUBLISHED METHOD · NOT A PATIENT OUTCOME",
+      "narration": "The chamber makes an airway reopening problem experimentally observable. It does not by itself establish what will happen to a patient during ventilation.",
+      "tts_seconds": 9.823
+    }
+  ]
+}

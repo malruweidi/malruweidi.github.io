@@ -1,0 +1,148 @@
+{
+  "title": "What Changes When PLA Meets Plasma",
+  "id": "pla-grafting",
+  "edition": "V4 study-figure-led documentary",
+  "doi": "10.3390/polym13213717",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8588400/",
+  "license": "CC BY 4.0",
+  "source_visual_limits": "This is the 2021 continuous PLA film/aluminium lamination study, not the distinct 2020 electrospun antimicrobial scaffold paper.",
+  "source_figures": [
+    {
+      "figure": 8,
+      "path": "assets/films/source-figures/v3/pla-grafting-figure-08.jpg",
+      "sha256": "13188cdc0317eb158126558a9a0f8cba3166f2ce3054cc29e3a770bc316b28ed"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/pla-grafting-figure-01.jpg",
+      "sha256": "fc3cb0b1526dca9d73d7e5ec133d2552028fbcb6aa3e97ba7f2243528bc9efd8"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/pla-grafting-figure-01.jpg",
+      "sha256": "fc3cb0b1526dca9d73d7e5ec133d2552028fbcb6aa3e97ba7f2243528bc9efd8"
+    },
+    {
+      "figure": 4,
+      "path": "assets/films/source-figures/v3/pla-grafting-figure-04.jpg",
+      "sha256": "053a349f280dbd8f8d080ae6cd38329949b349bd78bc38ef95e6c7a3d9e45c49"
+    },
+    {
+      "figure": 8,
+      "path": "assets/films/source-figures/v3/pla-grafting-figure-08.jpg",
+      "sha256": "13188cdc0317eb158126558a9a0f8cba3166f2ce3054cc29e3a770bc316b28ed"
+    },
+    {
+      "figure": 8,
+      "path": "assets/films/source-figures/v3/pla-grafting-figure-08.jpg",
+      "sha256": "13188cdc0317eb158126558a9a0f8cba3166f2ce3054cc29e3a770bc316b28ed"
+    },
+    {
+      "figure": 8,
+      "path": "assets/films/source-figures/v3/pla-grafting-figure-08.jpg",
+      "sha256": "13188cdc0317eb158126558a9a0f8cba3166f2ce3054cc29e3a770bc316b28ed"
+    },
+    {
+      "figure": 8,
+      "path": "assets/films/source-figures/v3/pla-grafting-figure-08.jpg",
+      "sha256": "13188cdc0317eb158126558a9a0f8cba3166f2ce3054cc29e3a770bc316b28ed"
+    }
+  ],
+  "original_figure_pixels_untouched": true,
+  "separate_explanatory_animation": true,
+  "new_science_fabricated": false,
+  "duration_seconds": 120.0,
+  "sha256": "ad94e5d61a644e443f73fb9c6f74526848283027d2b56444e13834fde515b03e",
+  "human_review": "NOT APPROVED — listen, watch, verify panel identities and licensing before live embed",
+  "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
+  "chapters": [
+    {
+      "mode": "opening",
+      "figure": 8,
+      "headline": [
+        "THE PEEL",
+        "TELLS THE STORY"
+      ],
+      "eyebrow": "PLA FILM / ALUMINIUM LAMINATE",
+      "narration": "The question was practical: could modifying a plant based PLA film make it adhere more strongly to aluminium? The peel test would give the answer.",
+      "tts_seconds": 9.173
+    },
+    {
+      "mode": "surface",
+      "figure": 1,
+      "headline": [
+        "ACTIVATE",
+        "THE SURFACE"
+      ],
+      "eyebrow": "COLD PLASMA · ORIGINAL 2021 PAPER",
+      "narration": "Cold plasma changes the outermost polymer surface, creating reactive sites. The study then grafted ascorbic or fumaric acid onto the treated PLA film.",
+      "tts_seconds": 10.633
+    },
+    {
+      "mode": "source",
+      "figure": 1,
+      "headline": [
+        "WHAT WATER",
+        "REVEALS"
+      ],
+      "eyebrow": "FIGURE 1 · CONTACT ANGLE AND SURFACE ENERGY",
+      "narration": "The authors measured contact angles and surface free energy. Both help characterize wetting, but neither measurement alone proves stronger laminate adhesion.",
+      "tts_seconds": 9.769
+    },
+    {
+      "mode": "source",
+      "figure": 4,
+      "headline": [
+        "CHEMISTRY",
+        "AT THE SURFACE"
+      ],
+      "eyebrow": "FIGURE 4 · X-RAY PHOTOELECTRON SPECTROSCOPY",
+      "narration": "The X ray photoelectron spectra belong to this exact PLA film paper. They help characterize the chemistry of the surface after the treatments.",
+      "tts_seconds": 9.363
+    },
+    {
+      "mode": "source",
+      "figure": 8,
+      "headline": [
+        "THE PEEL",
+        "EXPERIMENT"
+      ],
+      "eyebrow": "FIGURE 8 · ORIGINAL MEASURED RESULTS",
+      "narration": "This published figure compares peel resistance of untreated PLA, plasma treated samples, grafted samples, and blind controls without plasma activation.",
+      "tts_seconds": 10.335
+    },
+    {
+      "mode": "result",
+      "figure": 8,
+      "headline": [
+        "74",
+        "TO 211 N/m"
+      ],
+      "eyebrow": "UNTREATED TO FUMARIC-ACID GRAFTED",
+      "narration": "Untreated film averaged seventy four point four newtons per metre. The fumaric acid grafted sample reached two hundred eleven newtons per metre, the largest increase.",
+      "tts_seconds": 10.484
+    },
+    {
+      "mode": "boundary",
+      "figure": 8,
+      "headline": [
+        "THE CONTROL",
+        "CHANGES THE CLAIM"
+      ],
+      "eyebrow": "NO PLASMA · NO COMPARABLE ADHESION GAIN",
+      "narration": "Adding the acids without prior plasma treatment gave results close to untreated film. That blind control is central to how the researchers interpreted grafting.",
+      "tts_seconds": 10.484
+    },
+    {
+      "mode": "closing",
+      "figure": 8,
+      "headline": [
+        "FILM IS NOT",
+        "SCAFFOLD"
+      ],
+      "eyebrow": "SEPARATE 2021 PLA FILM PAPER",
+      "narration": "These results describe PLA film and aluminium peel adhesion. They must not be illustrated with the separate twenty twenty antimicrobial electrospun scaffold experiment.",
+      "tts_seconds": 11.145
+    }
+  ]
+}
