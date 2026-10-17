@@ -9,7 +9,9 @@ test("pulmonary documentary page plays corrected V2, preserves V1 and cites sour
  assert(html.includes('src="'+base+'.vtt"'));
  assert(fs.existsSync(path.join(root,"assets/films/what-a-bubble-can-do.mp4")),"First movie must remain archived");
  assert(fs.existsSync(path.join(root,"assets/films/what-a-bubble-can-do.vtt")),"First edition captions retained");
- assert.match(html,/2021.*Journal of Applied Physiology|2021.*Journal|Journal of Applied Physiology/i);
+ const finalCardRenderer=read("scripts/render-evidence-series.py");
+ assert.match(finalCardRenderer,/J Appl Physiol \(2021\)/);
+ assert.match(finalCardRenderer,/10\.1152\/japplphysiol\.00574\.2020/);
  for(const ext of [".mp4",".vtt","-build.json"]){
    const fp=path.join(root,"assets/films/what-a-bubble-can-do-evidence-v2"+ext);
    assert(fs.existsSync(fp),"V2 movie or manifest missing: "+fp);
