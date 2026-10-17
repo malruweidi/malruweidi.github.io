@@ -6,7 +6,7 @@ const path = require("node:path");
 const root = path.resolve(__dirname, "..");
 const read = p => fs.readFileSync(path.join(root, p), "utf8");
 
-test("documentary hub separates released film, original observations and unproduced film treatments", () => {
+test("documentary hub separates released films, original observations and preserved research notebooks", () => {
   const html = read("films.html");
   assert.equal((html.match(/<h1\b/g) || []).length, 1);
   assert.match(html, /id="released"/);
@@ -14,7 +14,9 @@ test("documentary hub separates released film, original observations and unprodu
   assert.match(html, /id="film-notebooks"/);
   assert.match(html, /what-survives-the-experiment\.mp4/);
   assert.match(html, /Released · two-minute documentary/);
-  assert.match(html, /In development · no film released/);
+  assert.doesNotMatch(html, /In development · no film released/);
+  assert.match(html, /Watch the revised manuscript-sourced documentary/);
+  assert.match(html, /Watch the formulation film/);
   for (const source of ["/film.html", "/moving-evidence.html", "/stories/failed-zebrafish-histology.html", "/research/pulmonary-epithelial-injury.html"]) {
     assert.ok(html.includes('href="' + source + '"'), "missing existing evidence destination " + source);
   }
