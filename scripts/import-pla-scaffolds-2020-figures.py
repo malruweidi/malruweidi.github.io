@@ -70,7 +70,8 @@ def main():
         page=doc[index]
         wr,hr=page.rect.width,page.rect.height
         rect=fitz.Rect(box[0]*wr,box[1]*hr,box[2]*wr,box[3]*hr)
-        pix=page.get_pixmap(matrix=fitz.Matrix(2.2,2.2),clip=rect,alpha=False)
+        scale=3.35 if label.startswith("Table") else 2.2
+        pix=page.get_pixmap(matrix=fitz.Matrix(scale,scale),clip=rect,alpha=False)
         fname=slug+".png"
         path=OUT/fname
         pix.save(path)
