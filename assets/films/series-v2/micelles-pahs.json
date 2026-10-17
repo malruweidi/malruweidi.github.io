@@ -1,0 +1,84 @@
+{
+  "id": "micelles-pahs",
+  "seconds": 84.0,
+  "sha256": "23c6564b48d18a64b7f0fb8a8df35bae2133f7d50a01c33dceab1181061cb3c7",
+  "primary_source": "/grants/urep19.html",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Documented unsuccessful original polymer trial photo",
+    "Generic conceptual polymer assembly",
+    "Original documented unsuccessful trials, not a successful micelle synthesis",
+    "Original documented copolymer specimen, not proof of PAH loading",
+    "Original failed-materials archive",
+    "Conceptual concluding image"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+      "kind": "Documented unsuccessful original polymer trial photo",
+      "credit": "Documented unsuccessful original polymer trial photo",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/polymer-concept.svg",
+      "kind": "Generic conceptual polymer assembly",
+      "credit": "Generic conceptual polymer assembly",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp",
+      "kind": "Original documented unsuccessful trials, not a successful micelle synthesis",
+      "credit": "Original documented unsuccessful trials, not a successful micelle synthesis",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+      "kind": "Original documented copolymer specimen, not proof of PAH loading",
+      "credit": "Original documented copolymer specimen, not proof of PAH loading",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+      "kind": "Original failed-materials archive",
+      "credit": "Original failed-materials archive",
+      "source": "/grants/urep19.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/polymer-concept.svg",
+      "kind": "Conceptual concluding image",
+      "credit": "Conceptual concluding image",
+      "source": "/grants/urep19.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "vesicle",
+  "motion_storyboard": {
+    "02": "vesicle",
+    "03": "vesicle",
+    "04": "materials",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Amphiphilic assembly",
+    "Hydrophobic cargo",
+    "Experimental uncertainty"
+  ],
+  "evidence_boundary": "Schematic is not evidence that the trials succeeded.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

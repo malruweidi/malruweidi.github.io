@@ -1,0 +1,84 @@
+{
+  "id": "heterocycle-cancer",
+  "seconds": 84.0,
+  "sha256": "d7ba0e76ef284897322ed58a9a6c2115b66c36409ec0fb87a8e0da44fae5b483",
+  "primary_source": "/grants/urep23.html",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Actual archived organic chemistry reagent photo; not proof of the project product",
+    "Original archival chemistry photograph, not a recording of microwave synthesis",
+    "Original reagent photo, not NMR spectral evidence",
+    "Original laboratory-group photo related to medicinal chemistry programme",
+    "Author's early laboratory photograph; illustrative context",
+    "Original research-context chemical photograph"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "kind": "Actual archived organic chemistry reagent photo; not proof of the project product",
+      "credit": "Actual archived organic chemistry reagent photo; not proof of the project product",
+      "source": "/grants/urep23.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+      "kind": "Original archival chemistry photograph, not a recording of microwave synthesis",
+      "credit": "Original archival chemistry photograph, not a recording of microwave synthesis",
+      "source": "/grants/urep23.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp",
+      "kind": "Original reagent photo, not NMR spectral evidence",
+      "credit": "Original reagent photo, not NMR spectral evidence",
+      "source": "/grants/urep23.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/oct12-owner-photos/yousef-hijji-anticancer-group-2019.webp",
+      "kind": "Original laboratory-group photo related to medicinal chemistry programme",
+      "credit": "Original laboratory-group photo related to medicinal chemistry programme",
+      "source": "/grants/urep23.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
+      "kind": "Author's early laboratory photograph; illustrative context",
+      "credit": "Author's early laboratory photograph; illustrative context",
+      "source": "/grants/urep23.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "kind": "Original research-context chemical photograph",
+      "credit": "Original research-context chemical photograph",
+      "source": "/grants/urep23.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "network",
+  "motion_storyboard": {
+    "02": "molecule",
+    "03": "molecule",
+    "04": "assay",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Synthetic target",
+    "Compound screening",
+    "Structure–activity question"
+  ],
+  "evidence_boundary": "No synthesis yield or anticancer effect is invented.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

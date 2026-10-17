@@ -25,6 +25,27 @@
       "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
     },
     {
+      "name": "ace2-forms",
+      "seconds": 84.0,
+      "size_bytes": 2523975,
+      "sha256": "3a9d74f944c9d78463423de064b55e7eb71692ae63ef0da41e238444c7be3470",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 80.86
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
       "name": "airway-reopening",
       "seconds": 84.0,
       "size_bytes": 2489721,
@@ -37,6 +58,48 @@
         "cue_count": 23,
         "max_caption_line": 54,
         "last_caption_second": 79.17
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "cairo-microscope",
+      "seconds": 84.0,
+      "size_bytes": 2566244,
+      "sha256": "e6458de0f191fa6ff2f698ff4f7f6d5bd03bb28fc965e91402dc14a18d5d8140",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 20,
+        "max_caption_line": 54,
+        "last_caption_second": 77.73
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "ceramics-printing",
+      "seconds": 84.0,
+      "size_bytes": 2489398,
+      "sha256": "c0798140413c90ebe36b704d7f9fd7a8e3cdc7538249e0a801855e4bb2743360",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 25,
+        "max_caption_line": 53,
+        "last_caption_second": 80.33
       },
       "black_frames": {
         "sample_rate_hz": 2,
@@ -67,6 +130,27 @@
       "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
     },
     {
+      "name": "cubosome-theranostics",
+      "seconds": 84.0,
+      "size_bytes": 2456226,
+      "sha256": "79640b09d95425ad1bfb89f331708bbe68a1c5daecd862c64d0a126e09aec0e1",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 20,
+        "max_caption_line": 54,
+        "last_caption_second": 79.03
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
       "name": "curcumin-cyanide",
       "seconds": 84.0,
       "size_bytes": 2824724,
@@ -79,6 +163,27 @@
         "cue_count": 21,
         "max_caption_line": 54,
         "last_caption_second": 78.98
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "drug-release-twins",
+      "seconds": 84.0,
+      "size_bytes": 2730382,
+      "sha256": "7d171ee68f821f89898be4e4fd651207a9df74a437afac8c92542b8155e0da44",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 21,
+        "max_caption_line": 53,
+        "last_caption_second": 80.14
       },
       "black_frames": {
         "sample_rate_hz": 2,
@@ -109,6 +214,27 @@
       "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
     },
     {
+      "name": "essay-life-between-diagnoses",
+      "seconds": 84.0,
+      "size_bytes": 2566197,
+      "sha256": "673250501bdf437c9bf0df77d308de3a8181e94cfebd28708b0de84d66856f67",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 20,
+        "max_caption_line": 54,
+        "last_caption_second": 80.31
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
       "name": "flow-chamber-method",
       "seconds": 84.0,
       "size_bytes": 2564876,
@@ -121,6 +247,27 @@
         "cue_count": 22,
         "max_caption_line": 54,
         "last_caption_second": 79.36
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "food-printing",
+      "seconds": 84.0,
+      "size_bytes": 2643971,
+      "sha256": "13a600a45699f71f0c70ef999413599489bc8907a0596eb8a8310cb659dab678",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 79.71
       },
       "black_frames": {
         "sample_rate_hz": 2,
@@ -172,6 +319,69 @@
       "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
     },
     {
+      "name": "heart-failure-sensors",
+      "seconds": 84.0,
+      "size_bytes": 2730217,
+      "sha256": "c2811380afab377a6a799264fa43b34698b1e807d0958ae98b7c05cff923490b",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 53,
+        "last_caption_second": 80.96
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "heterocycle-cancer",
+      "seconds": 84.0,
+      "size_bytes": 2533598,
+      "sha256": "d7ba0e76ef284897322ed58a9a6c2115b66c36409ec0fb87a8e0da44fae5b483",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 24,
+        "max_caption_line": 54,
+        "last_caption_second": 79.4
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "histology-failure",
+      "seconds": 84.0,
+      "size_bytes": 2528614,
+      "sha256": "93ab27a0bdb8792fb1d6c6df3aef7cc7164feb99f9ba174cbd8d571b9fc77b68",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 78.62
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
       "name": "making-medicines-keep",
       "seconds": 84.0,
       "size_bytes": 2494142,
@@ -184,6 +394,48 @@
         "cue_count": 23,
         "max_caption_line": 54,
         "last_caption_second": 80.76
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "micelles-pahs",
+      "seconds": 84.0,
+      "size_bytes": 2808573,
+      "sha256": "23c6564b48d18a64b7f0fb8a8df35bae2133f7d50a01c33dceab1181061cb3c7",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 25,
+        "max_caption_line": 54,
+        "last_caption_second": 80.02
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "microfluidic-virus",
+      "seconds": 84.0,
+      "size_bytes": 2545378,
+      "sha256": "afb095bde1541a9500259051bad31ec25846893b856f2cb7ba7a4cc8762eea40",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 23,
+        "max_caption_line": 54,
+        "last_caption_second": 79.51
       },
       "black_frames": {
         "sample_rate_hz": 2,
