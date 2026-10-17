@@ -40,6 +40,7 @@ def main():
         assert data["old_movie_sha256"]==hashlib.sha256(source.read_bytes()).hexdigest()
         assert len(data["beats"])==32
         assert all(beat["source"]=="original-nonquantitative-illustration" or
+                   beat["source"].startswith("archived scientific figure / ") or
                    (ROOT/beat["source"]).is_file() for beat in data["beats"])
         assert vtt.read_text(encoding="utf8").startswith("WEBVTT")
         with Image.open(poster) as pic:assert pic.size==(1280,720)
