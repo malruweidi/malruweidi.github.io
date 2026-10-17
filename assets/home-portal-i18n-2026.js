@@ -2,6 +2,17 @@
 (function(){ "use strict";
   const d=window.RuwaidixArabicDictionary||(window.RuwaidixArabicDictionary={});
   Object.assign(d,{
+  "Chem Squad": "كيم سكواد",
+  "07 / Chem Squad": "٠٧ / كيم سكواد",
+  "An independent circle of seven chemists, connected since 2016 through shared experiments, friendship and continuing scientific conversation.": "حلقة علمية مستقلة من سبعة كيميائيين تجمعهم التجارب والصداقة والحوار العلمي المتواصل منذ عام ٢٠١٦.",
+  "Meet Chem Squad ↗": "تعرّف على كيم سكواد ↗",
+  "08 / Leadership": "٠٨ / القيادة",
+  "Leadership & management": "القيادة والإدارة",
+  "YVE, The Youth Company, ACS student-chapter leadership, and the practice of quality and process management.": "أنشطة YVE وشركة الشباب، وقيادة فرع الجمعية الكيميائية الأمريكية الطلابي، وممارسات الجودة وإدارة العمليات.",
+  "Explore leadership ↗": "استكشف القيادة والإدارة ↗",
+  "Leadership": "القيادة"
+});
+  Object.assign(d,{
   "Explore research ↗": "استكشف الأبحاث ↗",
   "Browse publications ↗": "تصفح المنشورات ↗",
   "Watch the films ↗": "شاهد الأفلام ↗",
