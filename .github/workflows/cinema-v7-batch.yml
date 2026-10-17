@@ -8,6 +8,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: cinema-v7-staging-${{ github.ref }}
   cancel-in-progress: false
@@ -89,10 +90,15 @@ jobs:
             git rebase FETCH_HEAD
             git push origin HEAD:"${{ github.ref_name }}"
           fi
-      - name: Report remaining original works to remake
+      - name: Queue next bounded batch while outstanding videos remain
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
+          git fetch origin main
+          git checkout --force -B main origin/main
           remaining="$(python scripts/render-cinema-v7-pilots.py --remaining-count | tail -n 1)"
           echo "Unfinished V7 drafts: $remaining"
           if [ "$remaining" -gt 0 ]; then
-            echo "The MP4 file push triggers the next bounded batch."
+            gh workflow run cinema-v7-batch.yml --ref main
           fi
