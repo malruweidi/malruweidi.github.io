@@ -57,6 +57,7 @@ jobs:
               assert subtitle.read_text().count("-->")==12
               poster=f.with_suffix(".webp")
               assert poster.stat().st_size>3000
+              contact=folder/(slug+".contact.webp")
               record=json.loads(f.with_suffix(".json").read_text())
               assert record["slug"]==slug and record["visual_beat_count"]==24
               assert len(record["beats"])==24
@@ -67,6 +68,10 @@ jobs:
               # source paths no longer contain ephemeral runner locations.
               if not record.get("visual_revision","").startswith("v7.3-caption-safe/"):
                   print("Holding stale frame revision outside review gallery:",slug)
+                  continue
+              if (not contact.is_file() or contact.stat().st_size<12000 or
+                  record.get("contact_sheet")!="/assets/films/series-v7-pilots/"+slug+".contact.webp"):
+                  print("Holding cut without six-chapter visual-review contact sheet:",slug)
                   continue
               if any(str(beat["source"]).startswith("/") for beat in record["beats"]):
                   print("Holding ephemeral research-image citation:",slug)
@@ -84,6 +89,8 @@ jobs:
                               "file":"/assets/films/series-v7-pilots/"+slug+".mp4",
                               "captions":"/assets/films/series-v7-pilots/"+slug+".vtt",
                               "manifest":"/assets/films/series-v7-pilots/"+slug+".json",
+                              "contact":record["contact_sheet"],
+                              "visual_revision":record["visual_revision"],
                               "sha256":record["movie_sha256"],
                               "seconds":round(float(track["format"]["duration"]),3),
                               "creative_review":"outstanding"})
