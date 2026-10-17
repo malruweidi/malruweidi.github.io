@@ -1,0 +1,60 @@
+{
+  "id": "essay-ai-email",
+  "seconds": 84.0,
+  "sha256": "7710c1ca9b95d9210bd79a8eef60ebff85e49feccd2f24b1ceeb22c5384cd4b3",
+  "primary_source": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/essay-ai-email/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/essay-ai-email/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/essay-ai-email/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/essay-ai-email/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/essay-ai-email/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/essay-ai-email/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

@@ -1,0 +1,60 @@
+{
+  "id": "essay-machine-language",
+  "seconds": 84.0,
+  "sha256": "94b93771a003f0803ffce9da8385938340391e24330b89eaff9b11d06969995c",
+  "primary_source": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/essay-machine-language/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/essay-machine-language/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/essay-machine-language/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/essay-machine-language/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/essay-machine-language/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/essay-machine-language/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
