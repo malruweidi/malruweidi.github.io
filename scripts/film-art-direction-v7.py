@@ -75,12 +75,35 @@ PHOTO={
  "flow-chamber-method":["assets/home-archive/figure-pulmonary-flow-chamber.jpg"],
  "zebrafish-hemodynamics":["assets/home-archive/figure-zebrafish-microscopy.jpg"],
  "histology-failure":["assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp","assets/2026-10-13-new-photos/zebrafish-histology-processing.webp","assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp"],
- "cairo-microscope":["assets/photos-2017-2019/microscope-morning-still-life-2017.webp"],
+ "cairo-microscope":["assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+                     "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp"],
  "micelles-pahs":["assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp"],
  # A pyridine-4-carboxaldehyde reagent photograph is not verified as evidence
  # of the separate imidazopyridine anticancer synthesis or screening dataset.
  "heterocycle-cancer":[],
- "essay-life-between-diagnoses":["assets/2026-10-13-new-photos/august-2025-hospital-research.webp"],
+ "essay-life-between-diagnoses":[
+    "assets/home-archive/childhood-portrait.jpg",
+    "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+    "assets/owner-archive-2026-10-16/eosinophilic-diagnosis-dr-elsheikh-abdelrahim.webp",
+    "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+    "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"],
+ "essay-ai-email":[
+    "assets/research-archive-2026/qatar-university-research-workstation.webp",
+    "assets/archival-2026-10-12/chemistry-library-2016.webp",
+    "assets/archival-2026-10-12/university-podium-talk-2017.webp",
+    "assets/home-archive/chemistry-chalkboard.jpg",
+    "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"],
+ "essay-machine-language":[
+    "assets/home-archive/chemistry-chalkboard.jpg",
+    "assets/archival-2026-10-12/chemistry-library-2016.webp",
+    "assets/research-archive-2026/qatar-university-research-workstation.webp",
+    "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+    "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"],
+ "essay-academic-mental-health":[
+    "assets/archival-2026-10-12/chemistry-library-2016.webp",
+    "assets/research-archive-2026/qatar-university-research-workstation.webp",
+    "assets/oct12-owner-photos/acs-chapter-recognition-2017.webp",
+    "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"],
  "essay-scientific-credit":["assets/2017-acs-el-sayed-group.webp"]
 }
 
@@ -633,7 +656,10 @@ def approved_photo(slug,scene,root):
  """Only explicit scene-matched source photos may enter the V7 film."""
  path=scene.get("image","").lstrip("/")
  kind=scene.get("kind","").lower()
- if path in PHOTO.get(slug,[]) and any(t in kind for t in ("original","research","published","laboratory","firsthand","document")):
+ # An image must appear on an explicit per-film whitelist AND carry a
+ # provenance descriptor. Personal archives remain context, never clinical
+ # measurements or reenacted scenes; the overlay identifies their limitations.
+ if path in PHOTO.get(slug,[]) and any(t in kind for t in ("original","research","published","laboratory","firsthand","document","archival","personal","portrait","author")):
   p=root/path
   if p.is_file():return p
  return None
