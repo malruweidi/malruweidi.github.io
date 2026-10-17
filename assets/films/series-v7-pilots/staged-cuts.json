@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 8,
+  "count": 12,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -15,6 +15,21 @@
       "contact": "/assets/films/series-v7-pilots/ace2-covid-drugs.contact.webp",
       "visual_revision": "v7.8-clean-screen/film-specific",
       "sha256": "c422f4ce61028eaaa79480c35d00fa673a9c6b9ae16a1ed5ff07e5e79ea39d77",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "ace2-forms",
+      "title": "Two lives of ACE2",
+      "publication": "Do changes in ACE-2 expression affect SARS-CoV-2 virulence and related complications: a closer look into membrane-bound and soluble forms",
+      "poster": "/assets/films/series-v7-pilots/ace2-forms.webp",
+      "file": "/assets/films/series-v7-pilots/ace2-forms.mp4",
+      "captions": "/assets/films/series-v7-pilots/ace2-forms.vtt",
+      "manifest": "/assets/films/series-v7-pilots/ace2-forms.json",
+      "contact": "/assets/films/series-v7-pilots/ace2-forms.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific",
+      "sha256": "f6ef9e053380f86e1e07cbccbeda58103e50febef6696acbf8444659ccaf35d8",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
@@ -78,6 +93,51 @@
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "gi-autoimmunity-1",
+      "title": "What happens when immunity turns on the gut?",
+      "publication": "Autoimmune Diseases of the GI Tract Part I: Etiology and Pathophysiology",
+      "poster": "/assets/films/series-v7-pilots/gi-autoimmunity-1.webp",
+      "file": "/assets/films/series-v7-pilots/gi-autoimmunity-1.mp4",
+      "captions": "/assets/films/series-v7-pilots/gi-autoimmunity-1.vtt",
+      "manifest": "/assets/films/series-v7-pilots/gi-autoimmunity-1.json",
+      "contact": "/assets/films/series-v7-pilots/gi-autoimmunity-1.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific",
+      "sha256": "cb29e1b4d9b7dba59eb2d31fb1125c4c0ca56806414313c3ed607736abed1ae7",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "gi-autoimmunity-2",
+      "title": "The diagnostic problem",
+      "publication": "Autoimmune Diseases of the GI Tract Part II: Emergence of Diagnostic Tools and Treatments",
+      "poster": "/assets/films/series-v7-pilots/gi-autoimmunity-2.webp",
+      "file": "/assets/films/series-v7-pilots/gi-autoimmunity-2.mp4",
+      "captions": "/assets/films/series-v7-pilots/gi-autoimmunity-2.vtt",
+      "manifest": "/assets/films/series-v7-pilots/gi-autoimmunity-2.json",
+      "contact": "/assets/films/series-v7-pilots/gi-autoimmunity-2.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific",
+      "sha256": "e1c5eb4976add00794fb262385ea8b72be11bbf8f2851c3ac14deb9a2db515fa",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "heart-failure-sensors",
+      "title": "Listening for a failing heart",
+      "publication": "Minimally Invasive and Non-Invasive Sensor Technologies for Predicting Heart Failure: An Overview",
+      "poster": "/assets/films/series-v7-pilots/heart-failure-sensors.webp",
+      "file": "/assets/films/series-v7-pilots/heart-failure-sensors.mp4",
+      "captions": "/assets/films/series-v7-pilots/heart-failure-sensors.vtt",
+      "manifest": "/assets/films/series-v7-pilots/heart-failure-sensors.json",
+      "contact": "/assets/films/series-v7-pilots/heart-failure-sensors.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific",
+      "sha256": "4635eaf0a5bec3d5d9295f558f0fef500c2eb4bfdf365b3407ba4fc7a8df6459",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 5,
+      "creative_review": "needs_chapter_art_direction"
     },
     {
       "id": "niosomes",
