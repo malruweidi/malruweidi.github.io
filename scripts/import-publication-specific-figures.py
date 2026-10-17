@@ -63,10 +63,16 @@ def extract(paper):
             mdpi_article="mps-03-00065" if paper["id"]=="flow-chamber-method" else "polymers-13-03717"
             candidates=[f'https://europepmc.org/articles/{paper["pmc"]}/bin/{ref}{ext}'
                         for ext in ("",".jpg",".png",".jpeg")]
-            candidates += [
-                f'https://mdpi-res.com/d_attachment/{mdpi_journal}/{mdpi_article}/article_deploy/{normalized_base}{ext}'
-                for ext in (".png",".jpg",".jpeg",".gif")
-            ]
+            # MDPI publishes the original JATS-linked graphics under its
+            # article_deploy/html/images path; try only this same article and
+            # the exact xlink:href from the verified DOI-bound JATS.
+            for root in (
+                f'https://www.mdpi.com/{mdpi_journal}/{mdpi_article}/article_deploy/html/images/',
+                f'https://mdpi-res.com/{mdpi_journal}/{mdpi_article}/article_deploy/html/images/',
+                f'https://mdpi-res.com/d_attachment/{mdpi_journal}/{mdpi_article}/article_deploy/html/images/',
+                f'https://mdpi-res.com/d_attachment/{mdpi_journal}/{mdpi_article}/article_deploy/',
+            ):
+                candidates.extend(root+normalized_base+ext for ext in (".png",".jpg",".jpeg",".gif"))
             for path in candidates:
                 try:
                     raw=download(path,16000000)
