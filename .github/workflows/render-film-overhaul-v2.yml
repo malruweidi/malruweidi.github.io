@@ -10,6 +10,7 @@ on:
       - assets/films/remake-direction.json
       - .github/workflows/render-film-overhaul-v2.yml
       - scripts/make-film-qa-contact-sheets.py
+      - scripts/normalize-film-captions.py
       - tests/film-overhaul-v2.test.cjs
       - film-studio.html
   workflow_dispatch:
@@ -56,6 +57,8 @@ jobs:
           test "$(stat -c%s film-models/voices-v1.0.bin)" -gt 1000000
       - name: Render next six fully sourced motion remakes
         run: python scripts/remaster-publication-series.py --missing-only --limit 6
+      - name: Enforce mobile-readable timed subtitle cues
+        run: python scripts/normalize-film-captions.py --collection series-v2
       - name: Confirm codecs, captions and exact release provenance
         run: |
           python - <<'PY'
