@@ -1,0 +1,21 @@
+{
+  "id": "6M0J",
+  "pdb_source": "https://files.rcsb.org/download/6M0J.pdb",
+  "entry": "https://www.rcsb.org/structure/6M0J",
+  "citation": "Lan J et al., Structure of the SARS-CoV-2 spike receptor-binding domain bound to the ACE2 receptor. Nature 581, 215-220 (2020). DOI 10.1038/s41586-020-2180-5.",
+  "pdb_doi": "10.2210/pdb6M0J/pdb",
+  "method": "X-ray diffraction",
+  "resolution_angstrom": 2.45,
+  "chains": {
+    "A": "human ACE2 extracellular protease domain (part of ACE2 only)",
+    "E": "SARS-CoV-2 Spike S1 receptor-binding domain"
+  },
+  "ca_counts_by_auth_chain": {
+    "A": 597,
+    "E": 194
+  },
+  "sha256": "51f27a495c0c12fa87f459a2510a9268d4d48a34b63ba3e5db5ae7c672a26af5",
+  "scope": "Experimental receptor-RBD interface, not whole virus/full spike, not membrane orientation or soluble-protein dynamics.",
+  "reuse": "PDB coordinates distributed via wwPDB public archive; credit structure deposition and primary paper.",
+  "film_status": "Source verified and staged for coordinate-based rendering; not yet editorial approved."
+}
