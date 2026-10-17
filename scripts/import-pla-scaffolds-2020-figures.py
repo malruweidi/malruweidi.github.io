@@ -77,10 +77,18 @@ def main():
         pix.save(path)
         with Image.open(path) as im:
             if min(im.size)<380:raise ValueError("Clip resolution too small: "+slug)
+        # Editorial film uses copy of the *same clipped PDF pixels*, with
+        # numeric slot 03 reserved for the genuine Table 3 (not Figure 3).
+        number=3 if slug.startswith("table-03") else int(slug.split("-")[1])
+        shot=OUT/f"pla-scaffolds-figure-{number:02d}.jpg"
+        with Image.open(path) as measured:
+            measured.convert("RGB").save(shot,quality=94,subsampling=0,optimize=True)
         result["figures"].append({"slug":slug,"label":label,"caption_or_role":desc,
               "page_index_zero_based":index,"normalized_crop":[round(float(v),4) for v in box],
               "source_url":url+f"#page={index+1}",
               "file":"assets/films/source-figures/v4/pla-scaffolds/"+fname,
+              "film_jpeg":"assets/films/source-figures/v4/pla-scaffolds/"+shot.name,
+              "film_jpeg_sha256":hashlib.sha256(shot.read_bytes()).hexdigest(),
               "sha256":hashlib.sha256(path.read_bytes()).hexdigest(),
               "data_integrity":"Direct unaltered pixel selection from original PDF page; scale bars / axes must be verified visually before embedding."})
         print("STAGED",label,slug,flush=True)
