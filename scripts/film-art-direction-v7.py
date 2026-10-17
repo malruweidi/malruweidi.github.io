@@ -358,6 +358,8 @@ def scene_art(slug,idx,phase,output):
   chapter_specific_figure(d,typ,idx,phase)
  elif typ in ("cilia","receptor","cubic","extrusion") and idx>1:
   chapter_source_specific(d,typ,idx,phase)
+ elif typ=="microscope" and idx in (2,5):
+  chapter_source_specific(d,typ,idx,phase)
  # Avoid arbitrary reticles that can overlap molecular diagrams, labels or data.
  # Focus instead comes from the subject-specific scene composition.
  # Four visual beats within a single voice-led scene, to guide attention without
@@ -615,6 +617,19 @@ def chapter_source_specific(d,typ,idx,phase):
    card(491,232,271,144,"EVIDENCE","MEASUREMENT",phase>=1)
    card(832,232,271,144,"TRANSLATION","UNRESOLVED",phase==3)
    echo("ACCEPTED BOOK CHAPTER / NOT AN APPROVED TREATMENT")
+ elif typ=="microscope":
+  if idx==2:
+   # A typographic chronology, not a photographed trip or tracked route.
+   card(149,224,372,147,"QASR EL EINY","CAIRO / ORIGINAL PURCHASE",phase==0)
+   card(744,224,363,147,"QATAR","PERSONAL MICROSCOPE",phase>=2)
+   arrow(543,297,713,297)
+   echo("A PERSONAL TRANSFER / NOT FOOTAGE OR A GPS ROUTE")
+  elif idx==5:
+   card(148,223,359,149,"OBSERVATION","WHAT THE EYE SEES",phase==0)
+   card(748,223,352,149,"EVIDENCE","MEASUREMENT / CONTROLS",phase>=2)
+   d.line((516,297,729,297),fill=RED,width=5)
+   txt(d,(605,258),"≠",41,RED,True)
+   echo("THE INSTRUMENT PERMITS INVESTIGATION; IT DOES NOT VALIDATE A CLAIM")
  elif typ=="extrusion":
   if idx==2:
    d.polygon(((302,181),(494,181),(456,303),(338,303)),outline=GOLD)
