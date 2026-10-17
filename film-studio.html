@@ -116,6 +116,9 @@ function choose(item){
   selected=item;
   const plan=direction[item.id];
   byId('selected').innerHTML='<p class="eyebrow">'+esc(item.year)+' / '+esc(item.category)+'</p><h2>'+esc(item.film_title)+'</h2><p class="lead" style="font-size:.96rem">'+esc(item.premise)+'</p><p><a href="'+esc(item.doi?'https://doi.org/'+item.doi:(item.source_url||item.page))+'" target="_blank" rel="noopener">Read the original research or essay ↗</a></p>';
+  if(item.id==='making-medicines-keep'){
+    byId('selected').innerHTML+='<p><a href="/assets/films/historical-manuscript-source-register.json">Examine the manuscript evidence: British Library Or 5786 (1315–1316) and image-use permissions ↗</a></p>';
+  }
   byId('motion-title').textContent=item.visual_language;
   byId('motion-note').textContent=plan.evidence_boundary;
   byId('annotations').innerHTML='<p class="subtitle">THREE EXPLANATORY BEATS</p><p>'+plan.annotations.map(esc).join(' → ')+'</p><p class="meta">These are annotated reconstructions, not measurements.</p>';
