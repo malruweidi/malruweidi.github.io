@@ -1,0 +1,25 @@
+{
+  "film": "ace2-covid-drugs",
+  "source_mp4": "assets/films/series-v4/ace2-covid-drugs.mp4",
+  "source_sha256": "89c17190a7da899825b11e16af7e7cf850a48dbad7cf83f73c522b5acc995df5",
+  "timestamps_seconds": [
+    4,
+    11,
+    19,
+    26,
+    34,
+    41,
+    49,
+    56,
+    64,
+    71,
+    79,
+    86,
+    94,
+    101,
+    109,
+    116
+  ],
+  "frame_geometry": "No cropping or source overlay: 16 decoded full frames; label outside original image",
+  "scientific_and_artistic_review": "NOT DONE - actual watching/listening and source figure screen inspection required"
+}
