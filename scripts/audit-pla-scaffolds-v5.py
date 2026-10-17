@@ -14,6 +14,8 @@ def frame(t):
         raise RuntimeError("Cannot decode "+str(t)+"s: "+result.stderr.decode()[-400:])
     return Image.open(io.BytesIO(result.stdout)).convert("RGB")
 def main():
+    if not M.exists():
+        raise RuntimeError("V5 film has not committed yet; QA must run after source master exists")
     rec=json.loads((F/"pla-scaffolds.json").read_text())
     digest=hashlib.sha256(M.read_bytes()).hexdigest()
     assert rec["sha256"]==digest and rec["edition"].startswith("V5 cinematic")
