@@ -111,7 +111,7 @@
        try {
          const check=await fetch(candidate+".mp4",{method:"HEAD",cache:"no-store"});
          if(check.ok && /^video\/mp4\b/i.test(check.headers.get("content-type")||"")){
-           selectedEdition={edition:"series-v6",duration:84,poster:x.poster};
+           selectedEdition={edition:"series-v6",duration:84,poster:candidate+".webp"};
            base=candidate;
            url=candidate+".mp4";
          }
