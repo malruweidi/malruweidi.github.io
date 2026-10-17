@@ -86,3 +86,19 @@ test("saved 35-piece cinema page premieres V7, retains source-first precedence a
  assert.match(html,/Watch preserved original first edition/);
  assert.match(html,/const fallback=\(isV7&&isV6\?/);
 });
+
+test("all new player chapter menus seek to the source narration rather than approximate chapter times",()=>{
+ const html=read("publication-cinema.html");
+ assert.match(html,/Jump to any of six narrated chapters/);
+ assert.match(html,/chapterNav\.addEventListener\("toggle",async/);
+ assert.match(html,/chapterList\.appendChild\(button\)/);
+ const parse=cap=>[...cap.matchAll(/(\d{2}):(\d{2}):(\d{2}\.\d{3})\s*-->/g)]
+   .map(m=>Number(m[1])*3600+Number(m[2])*60+Number(m[3]));
+ for(const f of release.films){
+  const times=parse(read(f.captions.slice(1)));
+  assert.equal(times.length,12,f.id);
+  const chapters=Array.from({length:6},(_,i)=>times[i*2]);
+  assert(chapters[0]>=0 && chapters[0]<1.5,f.id);
+  for(let i=1;i<6;i++)assert(chapters[i]>chapters[i-1] && chapters[i]<84,f.id);
+ }
+});
