@@ -1,0 +1,62 @@
+{
+  "schema": "ruwaidix-primary-clean-v1",
+  "count": 5,
+  "films": [
+    {
+      "id": "pla-grafting",
+      "edition": "series-v8-primary",
+      "poster": "/assets/films/series-v8-primary/pla-grafting.webp",
+      "video": "/assets/films/series-v8-primary/pla-grafting.mp4",
+      "captions": "/assets/films/series-v8-primary/pla-grafting.vtt",
+      "movie_sha256": "2ba212af8b0ff3adba5193aa005af79182578f52b6f3450d64dd5c362e45d89d",
+      "original_source_sha256": "e63ab995e54eae801a1bb1505c4de61dc463169a2eebbe9421bc4cb76dac93b5",
+      "source_edition": "series-v3",
+      "duration_seconds": 120
+    },
+    {
+      "id": "making-medicines-keep",
+      "edition": "series-v8-primary",
+      "poster": "/assets/films/series-v8-primary/making-medicines-keep.webp",
+      "video": "/assets/films/series-v8-primary/making-medicines-keep.mp4",
+      "captions": "/assets/films/series-v8-primary/making-medicines-keep.vtt",
+      "movie_sha256": "2d5ddea6289557359ba9237694aac55e1a9cff4532901d5da91236b045af30d9",
+      "original_source_sha256": "ac53a532de63488ca55eeb0262eb6ab740a7458c8b4908b585885f7852e40d48",
+      "source_edition": "series-v4",
+      "duration_seconds": 120
+    },
+    {
+      "id": "flow-chamber-method",
+      "edition": "series-v8-primary",
+      "poster": "/assets/films/series-v8-primary/flow-chamber-method.webp",
+      "video": "/assets/films/series-v8-primary/flow-chamber-method.mp4",
+      "captions": "/assets/films/series-v8-primary/flow-chamber-method.vtt",
+      "movie_sha256": "6794c5f51ce0fe7cf1703bf7cc76213e0ad43a969b71d6eae7a9c4e8b4ae4e20",
+      "original_source_sha256": "5b40aff46f6402b098e2a2624eba15e8fe32b5d43a58a78305a8e0360017a349",
+      "source_edition": "series-v5",
+      "duration_seconds": 120
+    },
+    {
+      "id": "pla-scaffolds",
+      "edition": "series-v8-primary",
+      "poster": "/assets/films/series-v8-primary/pla-scaffolds.webp",
+      "video": "/assets/films/series-v8-primary/pla-scaffolds.mp4",
+      "captions": "/assets/films/series-v8-primary/pla-scaffolds.vtt",
+      "movie_sha256": "3bb616d36d4806f16f3a8050edc50dfe4f1cc7a3cb96071f83a79c83f3682014",
+      "original_source_sha256": "c60f24f3673f81ec570dfafa57d7a9ad80575adf07b7603c216da885aaf4d2b4",
+      "source_edition": "series-v5",
+      "duration_seconds": 120
+    },
+    {
+      "id": "microfluidic-virus",
+      "edition": "series-v8-primary",
+      "poster": "/assets/films/series-v8-primary/microfluidic-virus.webp",
+      "video": "/assets/films/series-v8-primary/microfluidic-virus.mp4",
+      "captions": "/assets/films/series-v8-primary/microfluidic-virus.vtt",
+      "movie_sha256": "ad42c1d6bab3cba61c0962ecee8665dced708c9d438ffbc7b22ae4742b3a328f",
+      "original_source_sha256": "5fb0213336a28ac8329acf80dae186f4987f5be9a75b8f5db9a86e967c15c132",
+      "source_edition": "series-v5",
+      "duration_seconds": 120
+    }
+  ],
+  "review_limit": "All five source-specific records checked; artistic and legal screening remains human."
+}

@@ -1,0 +1,175 @@
+{
+  "slug": "pla-scaffolds",
+  "edition": "series-v8-primary",
+  "visual_revision": "audience-clean-primary-20261018-v1",
+  "duration_seconds": 120.0,
+  "source_edition": "series-v5",
+  "old_movie_sha256": "c60f24f3673f81ec570dfafa57d7a9ad80575adf07b7603c216da885aaf4d2b4",
+  "movie_sha256": "3bb616d36d4806f16f3a8050edc50dfe4f1cc7a3cb96071f83a79c83f3682014",
+  "narration": "Original research-edition audio stream, untouched",
+  "captions": "Original source WebVTT, optional on the screening site",
+  "original_scholarship": "10.1016/j.surfcoat.2020.126216",
+  "beats": [
+    {
+      "chapter": 1,
+      "beat": 1,
+      "source": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg"
+    },
+    {
+      "chapter": 1,
+      "beat": 2,
+      "source": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg"
+    },
+    {
+      "chapter": 1,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 1,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 4,
+      "beat": 1,
+      "source": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg"
+    },
+    {
+      "chapter": 4,
+      "beat": 2,
+      "source": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg"
+    },
+    {
+      "chapter": 4,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 4,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 1,
+      "source": "archived scientific figure / series-v5/pla-scaffolds.mp4"
+    },
+    {
+      "chapter": 5,
+      "beat": 2,
+      "source": "archived scientific figure / series-v5/pla-scaffolds.mp4"
+    },
+    {
+      "chapter": 5,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 1,
+      "source": "archived scientific figure / series-v5/pla-scaffolds.mp4"
+    },
+    {
+      "chapter": 6,
+      "beat": 2,
+      "source": "archived scientific figure / series-v5/pla-scaffolds.mp4"
+    },
+    {
+      "chapter": 6,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 8,
+      "beat": 1,
+      "source": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg"
+    },
+    {
+      "chapter": 8,
+      "beat": 2,
+      "source": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg"
+    },
+    {
+      "chapter": 8,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 8,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    }
+  ],
+  "human_review": "Further scientific and art direction review pending"
+}

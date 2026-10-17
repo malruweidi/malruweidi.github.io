@@ -1,0 +1,175 @@
+{
+  "slug": "pla-grafting",
+  "edition": "series-v8-primary",
+  "visual_revision": "audience-clean-primary-20261018-v1",
+  "duration_seconds": 120.0,
+  "source_edition": "series-v3",
+  "old_movie_sha256": "e63ab995e54eae801a1bb1505c4de61dc463169a2eebbe9421bc4cb76dac93b5",
+  "movie_sha256": "2ba212af8b0ff3adba5193aa005af79182578f52b6f3450d64dd5c362e45d89d",
+  "narration": "Original research-edition audio stream, untouched",
+  "captions": "Original source WebVTT, optional on the screening site",
+  "original_scholarship": "10.3390/polym13213717",
+  "beats": [
+    {
+      "chapter": 1,
+      "beat": 1,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-04.jpg"
+    },
+    {
+      "chapter": 1,
+      "beat": 2,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-04.jpg"
+    },
+    {
+      "chapter": 1,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 1,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 1,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-04.jpg"
+    },
+    {
+      "chapter": 2,
+      "beat": 2,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-04.jpg"
+    },
+    {
+      "chapter": 2,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 4,
+      "beat": 1,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-04.jpg"
+    },
+    {
+      "chapter": 4,
+      "beat": 2,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-04.jpg"
+    },
+    {
+      "chapter": 4,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 4,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 1,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-04.jpg"
+    },
+    {
+      "chapter": 5,
+      "beat": 2,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-04.jpg"
+    },
+    {
+      "chapter": 5,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 1,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-01.jpg"
+    },
+    {
+      "chapter": 6,
+      "beat": 2,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-01.jpg"
+    },
+    {
+      "chapter": 6,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 1,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-08.jpg"
+    },
+    {
+      "chapter": 7,
+      "beat": 2,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-08.jpg"
+    },
+    {
+      "chapter": 7,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 8,
+      "beat": 1,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-08.jpg"
+    },
+    {
+      "chapter": 8,
+      "beat": 2,
+      "source": "assets/films/source-figures/v3/pla-grafting-figure-08.jpg"
+    },
+    {
+      "chapter": 8,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 8,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    }
+  ],
+  "human_review": "Further scientific and art direction review pending"
+}

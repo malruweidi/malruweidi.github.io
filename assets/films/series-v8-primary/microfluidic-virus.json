@@ -1,0 +1,175 @@
+{
+  "slug": "microfluidic-virus",
+  "edition": "series-v8-primary",
+  "visual_revision": "audience-clean-primary-20261018-v1",
+  "duration_seconds": 120.0,
+  "source_edition": "series-v5",
+  "old_movie_sha256": "5fb0213336a28ac8329acf80dae186f4987f5be9a75b8f5db9a86e967c15c132",
+  "movie_sha256": "ad42c1d6bab3cba61c0962ecee8665dced708c9d438ffbc7b22ae4742b3a328f",
+  "narration": "Original research-edition audio stream, untouched",
+  "captions": "Original source WebVTT, optional on the screening site",
+  "original_scholarship": "10.1007/s42247-021-00169-7",
+  "beats": [
+    {
+      "chapter": 1,
+      "beat": 1,
+      "source": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg"
+    },
+    {
+      "chapter": 1,
+      "beat": 2,
+      "source": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg"
+    },
+    {
+      "chapter": 1,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 1,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 4,
+      "beat": 1,
+      "source": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg"
+    },
+    {
+      "chapter": 4,
+      "beat": 2,
+      "source": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg"
+    },
+    {
+      "chapter": 4,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 4,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 8,
+      "beat": 1,
+      "source": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg"
+    },
+    {
+      "chapter": 8,
+      "beat": 2,
+      "source": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg"
+    },
+    {
+      "chapter": 8,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 8,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    }
+  ],
+  "human_review": "Further scientific and art direction review pending"
+}

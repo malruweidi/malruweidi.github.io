@@ -1,0 +1,175 @@
+{
+  "slug": "making-medicines-keep",
+  "edition": "series-v8-primary",
+  "visual_revision": "audience-clean-primary-20261018-v1",
+  "duration_seconds": 120.0,
+  "source_edition": "series-v4",
+  "old_movie_sha256": "ac53a532de63488ca55eeb0262eb6ab740a7458c8b4908b585885f7852e40d48",
+  "movie_sha256": "2d5ddea6289557359ba9237694aac55e1a9cff4532901d5da91236b045af30d9",
+  "narration": "Original research-edition audio stream, untouched",
+  "captions": "Original source WebVTT, optional on the screening site",
+  "original_scholarship": "al-Kūhīn al-ʿAṭṭār, Minhāj al-dukkān, composed Cairo 658 AH / 1260",
+  "beats": [
+    {
+      "chapter": 1,
+      "beat": 1,
+      "source": "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"
+    },
+    {
+      "chapter": 1,
+      "beat": 2,
+      "source": "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"
+    },
+    {
+      "chapter": 1,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 1,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 1,
+      "source": "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"
+    },
+    {
+      "chapter": 2,
+      "beat": 2,
+      "source": "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"
+    },
+    {
+      "chapter": 2,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 2,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 3,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 4,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 4,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 4,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 4,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 5,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 1,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 2,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 6,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 1,
+      "source": "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"
+    },
+    {
+      "chapter": 7,
+      "beat": 2,
+      "source": "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"
+    },
+    {
+      "chapter": 7,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 7,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 8,
+      "beat": 1,
+      "source": "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"
+    },
+    {
+      "chapter": 8,
+      "beat": 2,
+      "source": "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"
+    },
+    {
+      "chapter": 8,
+      "beat": 3,
+      "source": "original-nonquantitative-illustration"
+    },
+    {
+      "chapter": 8,
+      "beat": 4,
+      "source": "original-nonquantitative-illustration"
+    }
+  ],
+  "human_review": "Further scientific and art direction review pending"
+}

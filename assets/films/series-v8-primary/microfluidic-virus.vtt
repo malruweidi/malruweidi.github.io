@@ -1,0 +1,91 @@
+WEBVTT
+
+00:00:00.650 --> 00:00:03.969
+This open-access paper is a review, not
+
+00:00:03.969 --> 00:00:07.288
+a new patient experiment. Its published Figure
+
+00:00:07.288 --> 00:00:10.608
+One maps possible ways microfluidic systems might
+
+00:00:10.608 --> 00:00:12.030
+detect respiratory viruses.
+
+00:00:15.650 --> 00:00:18.732
+Sample preparation is upstream of detection. A
+
+00:00:18.732 --> 00:00:21.815
+swab, saliva specimen, or other fluid must
+
+00:00:21.815 --> 00:00:24.897
+be handled before a device can produce
+
+00:00:24.897 --> 00:00:26.218
+an interpretable signal.
+
+00:00:30.650 --> 00:00:33.953
+Some methods seek viral particles or antigens.
+
+00:00:33.953 --> 00:00:37.255
+Others search for viral nucleic acid. Those
+
+00:00:37.255 --> 00:00:40.558
+distinct targets create very different assay architectures.
+
+00:00:45.650 --> 00:00:48.899
+The authors' original Figure One connects sample,
+
+00:00:48.899 --> 00:00:52.148
+sensing elements, and transduction. These are alternatives,
+
+00:00:52.148 --> 00:00:55.398
+not proof that one fabricated chip performs
+
+00:00:55.398 --> 00:00:56.326
+every assay.
+
+00:01:00.650 --> 00:01:04.139
+An antibody, aptamer, magnetic bead, nanoparticle, or
+
+00:01:04.139 --> 00:01:07.628
+enzyme can form part of the sensing
+
+00:01:07.628 --> 00:01:11.117
+strategy. Specificity still depends on careful recognition
+
+00:01:11.117 --> 00:01:11.615
+chemistry.
+
+00:01:15.650 --> 00:01:18.507
+In optical schemes, changes in light are
+
+00:01:18.507 --> 00:01:21.363
+translated into a readout. The moving traces
+
+00:01:21.363 --> 00:01:24.220
+here explain the idea; they are not
+
+00:01:24.220 --> 00:01:25.036
+experimental results.
+
+00:01:30.650 --> 00:01:34.715
+Electrical and electrochemical methods use different signal
+
+00:01:34.715 --> 00:01:38.780
+pathways and calibration requirements. A visually convincing
+
+00:01:38.780 --> 00:01:42.265
+waveform alone cannot establish diagnostic accuracy.
+
+00:01:45.650 --> 00:01:49.471
+The scientific contribution is a critical map
+
+00:01:49.471 --> 00:01:53.292
+of detection technologies. Clinical validity requires sensitivity,
+
+00:01:53.292 --> 00:01:57.113
+specificity, controls, and verification in a defined
+
+00:01:57.113 --> 00:01:57.659
+population.
