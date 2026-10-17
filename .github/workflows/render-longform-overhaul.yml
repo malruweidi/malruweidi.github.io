@@ -55,11 +55,14 @@ jobs:
           import hashlib,json,subprocess
           from pathlib import Path
           d=Path("assets/films/longform-v2")
-          assert len(list(d.glob("*.mp4")))>0
-          for f in d.glob("*.mp4"):
-              stem=f.stem
-              manifest=d/(stem.replace("-evidence-cut","")+"-build.json")
-              assert manifest.exists(),(f,manifest)
+          films=json.loads(Path("assets/films/evidence-in-motion.json").read_text())["films"]
+          assert len(films)==4
+          for original in films:
+              slug=original["slug"]
+              stem=original.get("media_stem",slug)
+              f=d/(stem+".mp4")
+              manifest=d/(slug+"-build.json")
+              assert f.exists() and manifest.exists(),(f,manifest)
               record=json.loads(manifest.read_text())
               assert record["edition"]=="longform-v2"
               assert record["sha256"]==hashlib.sha256(f.read_bytes()).hexdigest()
