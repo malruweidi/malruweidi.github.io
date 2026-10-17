@@ -1,0 +1,51 @@
+{
+  "edition": "V4-ACE2 2026-10-17",
+  "claims": {
+    "ace2-covid-drugs": {
+      "title": "Soluble ACE2 and angiotensin II in hypertensive COVID-19 patients treated with different antihypertensive drugs",
+      "doi": "10.1080/08037051.2022.2055530",
+      "source": "https://www.tandfonline.com/doi/full/10.1080/08037051.2022.2055530",
+      "alternate_repository": "https://figshare.com/articles/journal_contribution/Soluble_ACE2_and_angiotensin_II_levels_are_modulated_in_hypertensive_COVID-19_patients_treated_with_different_antihypertension_drugs/29116886",
+      "design": "200 hypertensive COVID-19 patient observational cohort; measured circulating ACE2 and ANGII via ELISA; treatment class groups; severity observational associations. Do not depict drug-caused outcomes.",
+      "methodology_constraints": [
+        "Overall n=200; ACEi 57, ARB 68, BB 15, CCB 30, and 30 missing medication classifications.",
+        "Paper's severity categories overlap differently reported denominators (76 mild,76 moderate,52 severe) and cannot be silently treated as 200 unique strata without resolving original table.",
+        "Figure 1 groups circulating ACE2 and angiotensin II by disease severity; actual dot plots and 95% CI must be preserved.",
+        "Figure 2 compares ACE2 and ANGII among antihypertensive classes. Adjustment/covariates must be presented explicitly; crude association does not establish individual therapeutic advice.",
+        "Figure 3 contains treatment-by-severity results; Figure 4 compares severity distributions; use only original whole figures or well-identified crops.",
+        "Reported ARB versus ACEi and CCB versus ACEi differences do not prove that those medications cause disease severity or should be started/stopped.",
+        "Hypertensive inpatients only, 2022 COVID-19 care context. No patient-identifiable images, invented hospital footage or anecdotal case reports."
+      ],
+      "assets_approved_for_retrieval": "Original publisher figures or openly deposited author article with verified reuse licence, not unrelated ACE2 protein microscopy.",
+      "provisional_story": [
+        "Observational question with explicit cohort denominators",
+        "Circulating ACE2 and ANGII biochemical assays, not membrane receptor expression",
+        "Actual Figure 1 severity comparison",
+        "Actual Figure 2 medication class comparisons",
+        "Confounder / indication-by-severity conceptual diagram, clearly authored",
+        "Original Figure 3 severity-by-treatment interaction",
+        "Limits: association not treatment recommendation",
+        "Research result with cautious clinical interpretation"
+      ]
+    },
+    "ace2-forms": {
+      "title": "Do Changes in ACE-2 Expression Affect SARS-CoV-2 Virulence and Related Complications?",
+      "doi": "10.3390/ijms22136703",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8269184/",
+      "rights_risk": "Figures 1 and 2 are explicitly reproduced from third-party sources with permission; do not infer that the current review's CC BY licence grants independent re-use rights for those two figures.",
+      "design": "Show original authored ACE2 membrane/shedding concepts with citations; use the review's own original figures only after caption and rights inspection.",
+      "methodology_constraints": [
+        "ACE2 is a membrane-localized receptor and an enzyme in the renin-angiotensin system; shed soluble ectodomain differs biologically.",
+        "Receptor abundance alone does not yield a clinical SARS-CoV-2 virulence or treatment conclusion.",
+        "ADAM17 and TMPRSS2 biology must be depicted conditionally, not as an exact molecular structure unless paired with a verified accession.",
+        "Figure 1 and Figure 2 of the 2021 review reproduced from other studies with permission; do not put those pixels in an unlicensed film.",
+        "Organ expression comparisons vary by mRNA, protein and cellular subtype, and must not be conflated."
+      ],
+      "original_visual_options": [
+        "Custom explicit conceptual shedding animation (not an experimental observation)",
+        "Source-specific peer-reviewed ACE2 molecular structure only with PDB accession and permissions",
+        "Review's original RAAS mechanism diagram after rights and figure ancestry verification"
+      ]
+    }
+  }
+}
