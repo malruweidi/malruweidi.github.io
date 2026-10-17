@@ -1,0 +1,31 @@
+{
+  "film": "pla-grafting",
+  "doi": "10.3390/polym13213717",
+  "source_sha256": "6992f4598bfdf2ce933bf4ec47e28b643f4f8cae101a7ffeb82ce0156d4ddcb0",
+  "source_original_figure_numbers": [
+    1,
+    4,
+    8
+  ],
+  "sample_seconds": [
+    3,
+    11,
+    18,
+    26,
+    33,
+    41,
+    48,
+    56,
+    63,
+    71,
+    78,
+    86,
+    93,
+    101,
+    108,
+    116
+  ],
+  "preserves_entire_frames": true,
+  "human_viewed_or_listened": false,
+  "release_state": "INDEPENDENT SCIENTIFIC AND CINEMATIC VIEWING REQUIRED"
+}
