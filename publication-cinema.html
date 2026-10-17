@@ -116,7 +116,7 @@
        releasedV7=new Map(manifest.films.filter(f=>
          f && /^[-a-z0-9]+$/.test(f.id||"") &&
          f.edition==="series-v7-pilots" && f.distinct_chapters===6 &&
-         typeof f.visual_revision==="string" && f.visual_revision.startsWith("v7.8-clean-screen/") &&
+         typeof f.visual_revision==="string" && (f.visual_revision.startsWith("v7.8-clean-screen/") || f.visual_revision.startsWith("v8.0-audience-clean-20261018/")) &&
          Number(f.duration_seconds)===84 && /^[a-f0-9]{64}$/.test(f.sha256||"")
        ).map(f=>[f.id,f]));
      }
