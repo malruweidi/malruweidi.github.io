@@ -50,7 +50,13 @@ def inventory(p):
 def main():
  report={"purpose":"Find genuinely matching research figures without treating published-image presence as reuse clearance.",
          "warning":"EXACT PAPER: CC BY applies subject to separately credited third-party material. Warnings are conservative, not a legal determination.",
-         "papers":[inventory(p) for p in PAPERS]}
+         "papers":[],"unresolved_sources":[]}
+ for p in PAPERS:
+  try:report["papers"].append(inventory(p))
+  except Exception as ex:
+   report["unresolved_sources"].append({"slug":p["slug"],"doi":p["doi"],"pmcid":p["pmcid"],
+     "status":"SOURCE REQUEST FAILED / DO NOT GUESS IMAGE OR LICENCE","error":str(ex)[:400],
+     "retry":"Use publisher JATS, author files or institutional repository metadata after verification."})
  OUT.mkdir(parents=True,exist_ok=True)
  target=OUT/"ace2-and-cerebral-cilia-figure-ledger.json"
  target.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")
@@ -60,4 +66,5 @@ def main():
   for f in p["figures"]:
    print(" ",f["label"],"THIRD-PARTY" if f["third_party_warning"] else "CHECK RIGHTS",
          f["caption"][:130])
+ print("Unresolved independent paper records:",len(report["unresolved_sources"]))
 if __name__=="__main__":main()
