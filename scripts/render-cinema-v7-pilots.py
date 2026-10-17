@@ -13,7 +13,7 @@ SRC=ROOT/"assets/films/series-v6"
 OUT=ROOT/"assets/films/series-v7-pilots"
 CAT=ROOT/"assets/films/publication-series.json"
 # Rebuilt corrections require new source-derived images; unchanged films remain cached.
-FRAME_REVISION="v7.8-clean-screen"
+FRAME_REVISION="v8.0-audience-clean-20261018"
 ART_REVISIONS={
  "cerebral-cilia":"v7.4-chapter-specific-cilia-clean-panel",
  "slit2-robo":"v7.4-chapter-specific-receptor-clean-panel",
