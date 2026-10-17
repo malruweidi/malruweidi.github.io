@@ -20,7 +20,7 @@ test('free CPU runner, no paid endpoints, authentic output validation', () => {
   const workflow = read('.github/workflows/film-manim-open-source-v3.yml');
   assert.match(workflow, /runs-on: ubuntu-latest/);
   assert.match(workflow, /pip install.*manim/);
-  assert.match(workflow, /ffprobe/);
+  assert.match(read('scripts/audit-manim-film-v3.py'), /ffprobe/);
   assert.match(workflow, /python scripts\/audit-manim-film-v3.py/);
   assert.doesNotMatch(workflow, /\b(?:runway|heygen|elevenlabs|replicate|fal\.ai|paid-api)\b/i);
 });
