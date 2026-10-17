@@ -75,3 +75,13 @@ test('film-studio browser scripts parse and preserve user navigation',()=>{
     assert.ok(html.includes('source'),filename+' exposes evidence collection');
   }
 });
+
+test('medieval pharmacy manuscript visual evidence is referenced without claiming a Genizah scan is freely reusable',()=>{
+  const src=JSON.parse(read('assets/films/historical-manuscript-source-register.json'));
+  assert.equal(src.film_id,'making-medicines-keep');
+  assert.ok(src.records.some(item=>item.shelfmark?.includes('Or 5786') && item.witness_date.includes('1315')));
+  const genizah=src.records.find(item=>item.id==='genizah-ts-10j6');
+  assert.ok(genizah.rights.includes('permission'));
+  assert.ok(read('film-studio.html').includes('historical-manuscript-source-register.json'));
+  assert.ok(read('feature-film-studio.html').includes('historical-manuscript-source-register.json'));
+});
