@@ -1,0 +1,98 @@
+name: Ruwaidix V7 complete cinema staging
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/cinema-v7-batch.yml
+      - assets/films/series-v7-pilots/*.mp4
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cinema-v7-staging-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free native production software
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install pillow
+      - name: Render up to four source-screened unpublished remakes
+        run: |
+          python -m py_compile scripts/film-art-direction-v7.py scripts/build-cinema-v7-previews.py scripts/render-cinema-v7-pilots.py
+          python scripts/render-cinema-v7-pilots.py --all-missing --batch-size 4
+      - name: Inspect every staged movie and construct release-independent review register
+        run: |
+          python - <<'PY'
+          import hashlib,json,subprocess
+          from pathlib import Path
+          folder=Path("assets/films/series-v7-pilots")
+          catalog=json.loads(Path("assets/films/publication-series.json").read_text())["items"]
+          protected={"making-medicines-keep","pla-grafting","pla-scaffolds",
+                     "flow-chamber-method","microfluidic-virus"}
+          allowed={p["id"]:p for p in catalog if p["id"] not in protected}
+          assert len(allowed)==30
+          entries=[]
+          for f in sorted(folder.glob("*.mp4")):
+              slug=f.stem
+              assert slug in allowed, "Original research edition must not be silently replaced: "+slug
+              assert f.stat().st_size>1000000, "Incomplete film: "+slug
+              track=json.loads(subprocess.check_output(
+                  ["ffprobe","-v","error","-show_format","-show_streams","-of","json",str(f)]))
+              assert {stream["codec_type"] for stream in track["streams"]}>={"audio","video"}
+              assert abs(float(track["format"]["duration"])-84)<.25
+              subtitle=f.with_suffix(".vtt")
+              assert subtitle.read_text().startswith("WEBVTT")
+              assert subtitle.read_text().count("-->")==12
+              poster=f.with_suffix(".webp")
+              assert poster.stat().st_size>3000
+              record=json.loads(f.with_suffix(".json").read_text())
+              assert record["slug"]==slug and record["visual_beat_count"]==24
+              assert len(record["beats"])==24
+              assert record["movie_sha256"]==hashlib.sha256(f.read_bytes()).hexdigest()
+              assert "STAGING ONLY" in record["status"]
+              source=Path("assets/films/series-v6")/(slug+".mp4")
+              assert record["source_audio_sha256"]==hashlib.sha256(source.read_bytes()).hexdigest()
+              entries.append({"id":slug,"title":allowed[slug]["film_title"],
+                              "publication":allowed[slug]["publication_title"],
+                              "poster":"/assets/films/series-v7-pilots/"+slug+".webp",
+                              "file":"/assets/films/series-v7-pilots/"+slug+".mp4",
+                              "captions":"/assets/films/series-v7-pilots/"+slug+".vtt",
+                              "manifest":"/assets/films/series-v7-pilots/"+slug+".json",
+                              "sha256":record["movie_sha256"],
+                              "seconds":round(float(track["format"]["duration"]),3),
+                              "creative_review":"outstanding"})
+          index={"schema":"ruwaidix-cinema-v7-staging-v1","count":len(entries),
+                 "total_eligible":30,"release_status":"NOT APPROVED FOR REPLACING LIVE MOVIES",
+                 "films":entries}
+          (folder/"staged-cuts.json").write_text(json.dumps(index,ensure_ascii=False,indent=2)+"\n")
+          print("Technical video QC passed:",len(entries),"of 30 staging films")
+          PY
+      - name: Publish independent preview archive, never overwrite live movies
+        run: |
+          git config user.name "Ruwaidix Cinema Staging"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v7-pilots/*.mp4 assets/films/series-v7-pilots/*.vtt assets/films/series-v7-pilots/*.webp assets/films/series-v7-pilots/*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage four source-screened full publication films [v7-staging]"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase FETCH_HEAD
+            git push origin HEAD:"${{ github.ref_name }}"
+          fi
+      - name: Report remaining original works to remake
+        run: |
+          remaining="$(python scripts/render-cinema-v7-pilots.py --remaining-count | tail -n 1)"
+          echo "Unfinished V7 drafts: $remaining"
+          if [ "$remaining" -gt 0 ]; then
+            echo "The MP4 file push triggers the next bounded batch."
+          fi
