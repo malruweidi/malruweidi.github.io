@@ -66,7 +66,7 @@ def render(entry):
     entries.extend(["file '"+str(path)+"'",f"duration {duration:.7f}"])
     shot_records.append({"scene":scene["id"],"phase":phase+1,
                          "seconds":round(duration,3),
-                         "source":art.art.approved_photo(slug,scene,ROOT).as_posix()
+                         "source":scene["image"].lstrip("/")
                          if art.art.approved_photo(slug,scene,ROOT) and phase in (0,1)
                          else "original-nonquantitative-v7-schematic"})
     durations.append(duration);baseframes+=size
@@ -117,9 +117,12 @@ def complete(slug):
   return False
  try:
   record=json.loads(paths[-1].read_text())
-  valid_source=(slug!="cerebral-cilia" or
-      all("figure-zebrafish-microscopy.jpg" not in str(b.get("source",""))
-          for b in record.get("beats",[])))
+  beats=record.get("beats",[])
+  valid_source=(len(beats)==24 and
+      all(not str(b.get("source","")).startswith("/") for b in beats) and
+      (slug!="cerebral-cilia" or
+       all("figure-zebrafish-microscopy.jpg" not in str(b.get("source",""))
+           for b in beats)))
   return (record["slug"]==slug and record["visual_beat_count"]==24 and
           record["movie_sha256"]==hashlib.sha256(paths[0].read_bytes()).hexdigest() and
           paths[1].read_text().startswith("WEBVTT") and valid_source)
