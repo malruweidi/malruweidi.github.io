@@ -1,0 +1,97 @@
+{
+  "title": "Two Materials. No Section.",
+  "seconds": 120.0,
+  "bytes": 3383165,
+  "sha256": "65eb566550ed92ede137140664bfc4e324bc042596db1b91df0a657d8d15604b",
+  "source": "assets/films/evidence-in-motion.json",
+  "chapters": 8,
+  "media": [
+    {
+      "chapter": "01",
+      "type": "ORIGINAL SPECIMEN PHOTOGRAPH",
+      "credit": "Actual owner-supplied specimen photograph; image does not depict histological sections.",
+      "source": "/assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "02",
+      "type": "ANIMATED EXPLANATION",
+      "credit": "Illustrative diagram of 2% agarose pre-embedding. Not actual footage.",
+      "source": null,
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "03",
+      "type": "ORIGINAL LABORATORY PHOTOGRAPH",
+      "credit": "Photograph from the actual attempted histology preparation.",
+      "source": "/assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "04",
+      "type": "ORIGINAL FAILED EXPERIMENT",
+      "credit": "Actual owner-supplied image of an unsuccessful paraffin/agarose attempt; no usable section resulted.",
+      "source": "/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "05",
+      "type": "MATERIAL INTERFACE",
+      "credit": "Original image documents the visibly separated specimen block.",
+      "source": "/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "06",
+      "type": "ANIMATED HYPOTHESIS",
+      "credit": "Material-interface explanation is a hypothesis, not an established causal analysis.",
+      "source": null,
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "07",
+      "type": "RESEARCH METHODS",
+      "credit": "Alternatives are untested possibilities, not recommendations or successful results.",
+      "source": null,
+      "context_visual": "generic-microtome",
+      "context_source": {
+        "id": "generic-microtome",
+        "asset": "microtome-manas-context.webp",
+        "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/bcc98ec9-7ee3-499f-8835-f50223543e54.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Microtome-1.jpg",
+        "credit": "Photograph: Michal Maňas, Microtome-1.jpg, Wikimedia Commons, CC BY 4.0. Generic instrument photographed in 2005; NOT the microtome used in the user's failed zebrafish histology experiment. Cropped/resized for illustrative sequence.",
+        "license": "CC BY 4.0; attribution required",
+        "category": "third-party contemporary equipment photograph",
+        "caption": "GENERIC MICROTOME • CONTEXT PHOTO, NOT THE EXPERIMENT",
+        "show_seconds": 4,
+        "on_frame_lines": [
+          "GENERIC MICROTOME PHOTOGRAPH",
+          "NOT THE EXPERIMENT'S MACHINE"
+        ]
+      }
+    },
+    {
+      "chapter": "08",
+      "type": "ORIGINAL ARCHIVE",
+      "credit": "Original failed attempt, unaltered.",
+      "source": "/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "context_visual": null,
+      "context_source": null
+    }
+  ],
+  "editorial_method": "Real owner archive retained uncropped in frames; explicitly non-documentary original illustrations; audio Kokoro-ONNX + self-generated original score.",
+  "edition": "longform-v2",
+  "human_screening": "NOT YET COMPLETED",
+  "animated_scene_ids": [
+    "02",
+    "05"
+  ],
+  "evidence_boundary": "Failure observed; material-interface mechanism remains a hypothesis rather than a proven cause.",
+  "method": "Pillow + FFmpeg open-source explanatory moving plates, original Kokoro synthesis"
+}
