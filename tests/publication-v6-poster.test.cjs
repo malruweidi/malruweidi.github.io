@@ -18,9 +18,9 @@ test('website selects registered editions, preserves research-specific versions 
   assert.match(html,/const selectedEdition=verifiedResearchEdition \|\|/);
   assert.match(html,/releasedV6\.get\(x\.id\)/);
   assert.match(html,/releasedV7\.get\(x\.id\)/);
-  assert.match(html,/Watch preserved previous V6 edition/);
+  assert.match(html,/series-v6\/releases\.json/);
   assert.match(html,/selectedEdition\?selectedEdition\.edition:"series"/);
-  assert.match(html,/Watch preserved original first edition/);
+  assert.match(html,/const fallback=\(isV7&&isV6\?/);
 });
 
 test('site displays playable film elements from one release manifest, not fragile HEAD probes',()=>{
@@ -77,7 +77,7 @@ test('Making Medicines Keep plays its archival cut while keeping transcripts in 
   assert.match(page,/<source src="\/assets\/films\/series-v4\/making-medicines-keep\.mp4"/);
   assert.match(page,/<track[^>]+src="\/assets\/films\/series-v4\/making-medicines-keep\.vtt"/);
   assert.doesNotMatch(page,/id="(?:transcript|first-edition-transcript)"/);
-  assert.match(page,/href="\/assets\/films\/making-medicines-keep\.mp4"/);
+  assert(fs.existsSync(path.join(root,"assets/films/making-medicines-keep.mp4")),"Original historical film remains archived");
   assert.equal(manifest.chapters.length,8);
 });
 
