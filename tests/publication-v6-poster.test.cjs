@@ -15,8 +15,8 @@ test('published V6 video posters originate from their own MP4 frames',()=>{
 
 test('website prefers study-specific V5 editions, then V6 poster, then original intact',()=>{
   const html=fs.readFileSync(path.join(root,'publication-cinema.html'),'utf8');
-  assert.match(html,/let selectedEdition=verifiedFilmMasters\[x\.id\]/);
-  assert.match(html,/candidate\+"\.webp"/);
+  assert.match(html,/const selectedEdition=verifiedFilmMasters\[x\.id\]/);
+  assert.match(html,/isV6\?\{edition:"series-v6",duration:84,poster:/);
   assert.match(html,/selectedEdition\?selectedEdition\.edition:"series"/);
   assert.match(html,/Watch preserved original first edition/);
 });
