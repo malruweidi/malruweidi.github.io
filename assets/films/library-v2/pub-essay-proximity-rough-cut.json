@@ -1,0 +1,78 @@
+{
+  "slug": "pub-essay-proximity",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "a592ac448b2cf893acddb4f088cbc24f431308448248665627765dc0b9174dce",
+  "shots": [
+    {
+      "title": "When a Drug Makes Two Proteins Meet",
+      "kind": "Original laboratory apparatus photo; not proteasomal data",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Original laboratory apparatus photo; not proteasomal data"
+    },
+    {
+      "title": "The drug is not a cork in a hole",
+      "kind": "Illustrative pathway sketch, not a PROTAC ternary structure",
+      "image": "assets/robo-concept.svg",
+      "museum": null,
+      "credit": "Illustrative pathway sketch, not a PROTAC ternary structure"
+    },
+    {
+      "title": "Recruit an effector",
+      "kind": "Original laboratory apparatus photo; not proteasomal data",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Original laboratory apparatus photo; not proteasomal data"
+    },
+    {
+      "title": "Geometry controls the event",
+      "kind": "Generic chemistry laboratory context",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "museum": null,
+      "credit": "Generic chemistry laboratory context"
+    },
+    {
+      "title": "The complex cannot last forever",
+      "kind": "Concept diagram, not a kinetic trace",
+      "image": "assets/robo-concept.svg",
+      "museum": null,
+      "credit": "Concept diagram, not a kinetic trace"
+    },
+    {
+      "title": "The difficulty: Not every match destroys",
+      "kind": "Generic therapeutic concept graphic, not evidence of a published degrader",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Generic therapeutic concept graphic, not evidence of a published degrader"
+    },
+    {
+      "title": "Not every match destroys",
+      "kind": "Generic therapeutic concept graphic, not evidence of a published degrader",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Generic therapeutic concept graphic, not evidence of a published degrader"
+    },
+    {
+      "title": "A different design discipline",
+      "kind": "Author's editorial portrait",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "museum": null,
+      "credit": "Author's editorial portrait"
+    }
+  ],
+  "film_title": "When a Drug Makes Two Proteins Meet",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "a5af66d75af4dcc886cb76da933ff847ab18f768753dfb57ac7be3be146b0381"
+}

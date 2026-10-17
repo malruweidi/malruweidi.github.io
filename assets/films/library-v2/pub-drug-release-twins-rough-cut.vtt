@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.491
+A smooth drug-release curve on a computer can be
+
+00:00:03.491 --> 00:00:06.532
+produced before a single tablet or vesicle is tested.
+
+00:00:06.532 --> 00:00:07.883
+Its smoothness proves nothing.
+
+00:00:17.450 --> 00:00:21.120
+A physical dosage form releases medicine over time. A
+
+00:00:21.120 --> 00:00:23.974
+mathematical model tries to describe that changing
+
+00:00:23.974 --> 00:00:24.381
+process.
+
+00:00:32.450 --> 00:00:35.075
+Formulation composition, geometry and transport
+
+00:00:35.075 --> 00:00:38.225
+assumptions affect simulated release. The selected
+
+00:00:38.225 --> 00:00:41.375
+equations embody choices that need scrutiny.
+
+00:00:47.450 --> 00:00:50.948
+The book chapter examines simulation of drug release
+
+00:00:50.948 --> 00:00:54.009
+and performance prediction using virtual models within
+
+00:00:54.009 --> 00:00:54.883
+pharmaceutical development.
+
+00:01:02.450 --> 00:01:05.207
+Without calibration and suitable validation, a model
+
+00:01:05.207 --> 00:01:08.358
+can produce elegant curves and still make poor
+
+00:01:08.358 --> 00:01:08.751
+predictions.
+
+00:01:17.450 --> 00:01:20.360
+Assumptions about transport or kinetics need
+
+00:01:20.360 --> 00:01:23.754
+experimental comparison. A convincing digital twin must
+
+00:01:23.754 --> 00:01:25.694
+expose residuals and uncertainty.
+
+00:01:32.450 --> 00:01:35.134
+Mechanistic assumptions, parameter uncertainty and
+
+00:01:35.134 --> 00:01:38.355
+extrapolation beyond known experiments all limit
+
+00:01:38.355 --> 00:01:40.502
+credible digital performance forecasts.
+
+00:01:46.450 --> 00:01:49.310
+Models earn their place in formulation science when
+
+00:01:49.310 --> 00:01:52.170
+they guide better tests and can fail against
+
+00:01:52.170 --> 00:01:52.528
+observations.

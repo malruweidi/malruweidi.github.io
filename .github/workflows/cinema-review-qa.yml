@@ -1,0 +1,22 @@
+name: Review workroom / original versus remake validation
+on:
+  push:
+    branches:
+      - cinematic-remake-20261017
+    paths:
+      - cinema-review-v2.html
+      - tests/cinema-review-qa.test.cjs
+      - .github/workflows/cinema-review-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  comparison-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source-preserving A/B review and syntactically valid JavaScript
+        run: node --test tests/cinema-review-qa.test.cjs

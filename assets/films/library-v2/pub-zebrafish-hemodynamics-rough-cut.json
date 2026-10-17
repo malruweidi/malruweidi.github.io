@@ -1,0 +1,81 @@
+{
+  "slug": "pub-zebrafish-hemodynamics",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_george",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "4580b260599a8a57eccc7042c580e16b65f57c656364e28594fd3f2ef1b7db96",
+  "shots": [
+    {
+      "title": "A heartbeat in high-speed frames",
+      "kind": "Original zebrafish microscopy contextual still",
+      "image": "assets/zebrafish-larva-microscopy.webp",
+      "museum": null,
+      "credit": "Original zebrafish microscopy contextual still"
+    },
+    {
+      "title": "The blood moves before we can count it",
+      "kind": "Zebrafish microscopy archive, specimen context must not be assigned to a specific figure",
+      "image": "assets/zebrafish-embryo-microscopy.webp",
+      "museum": null,
+      "credit": "Zebrafish microscopy archive, specimen context must not be assigned to a specific figure"
+    },
+    {
+      "title": "High-speed observation",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/zebrafish-hemodynamics-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "From frames to function",
+      "kind": "Published high-speed zebrafish imaging context",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "museum": null,
+      "credit": "Published high-speed zebrafish imaging context"
+    },
+    {
+      "title": "An instrument has a sampling limit",
+      "kind": "Existing research-context image, not primary numerical data",
+      "image": "assets/evidence-zebrafish.webp",
+      "museum": null,
+      "credit": "Existing research-context image, not primary numerical data"
+    },
+    {
+      "title": "The difficulty: A living system resists simplification",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/zebrafish-hemodynamics-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "A living system resists simplification",
+      "kind": "Original conceptual biological schematic",
+      "image": "assets/zebrafish-concept.svg",
+      "museum": null,
+      "credit": "Original conceptual biological schematic"
+    },
+    {
+      "title": "Making the invisible measurable",
+      "kind": "Published microscopy figure",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "museum": null,
+      "credit": "Published microscopy figure"
+    }
+  ],
+  "film_title": "A heartbeat in high-speed frames",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1016/j.micron.2020.102876",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [],
+  "input_sha256": "628916bd075caaca8b9f38f35f1e0e5a685398d52f2d5ada93f4b9c049fe9367"
+}

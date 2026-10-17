@@ -1,0 +1,88 @@
+{
+  "slug": "two-materials-no-section",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_george",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "e87ae904ecb3195fef8e46458c8cc0a9294ac900bf31949860e5ab8f34477eec",
+  "shots": [
+    {
+      "title": "The result",
+      "kind": "owner_photo",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "museum": null,
+      "credit": "Owner's actual unsuccessful attempt"
+    },
+    {
+      "title": "The problem before cutting",
+      "kind": "owner_photo",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "museum": null,
+      "credit": "Owner-supplied original zebrafish specimens"
+    },
+    {
+      "title": "A reasonable idea",
+      "kind": "owner_photo",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "museum": null,
+      "credit": "Owner-supplied original histology-processing photograph"
+    },
+    {
+      "title": "Two materials",
+      "kind": "original_diagram",
+      "image": "assets/films/plates/two-materials-no-section-03.webp",
+      "museum": null,
+      "credit": "Explanatory schematic, not an image of the actual interface"
+    },
+    {
+      "title": "Where it broke",
+      "kind": "owner_photo",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "museum": null,
+      "credit": "Actual failed section attempt"
+    },
+    {
+      "title": "A hypothesis, not a diagnosis",
+      "kind": "original_diagram",
+      "image": "assets/films/plates/two-materials-no-section-06.webp",
+      "museum": null,
+      "credit": "Material-behavior hypothesis; not proof of molecular mechanism"
+    },
+    {
+      "title": "The questions left",
+      "kind": "owner_photo",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "museum": null,
+      "credit": "Original preparation photograph; proposed remedies untested here"
+    },
+    {
+      "title": "The record remains",
+      "kind": "owner_photo",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "museum": null,
+      "credit": "Photographic record of unsuccessful attempt"
+    },
+    {
+      "title": "Not a successful slide",
+      "kind": "owner_photo",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "museum": null,
+      "credit": "Authentic specimen photograph; no successful histological outcome claimed"
+    }
+  ],
+  "film_title": "No Section Came Off the Blade",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/directors-cuts-v2.json",
+  "primary_reference": "Personal original failed zebrafish histology attempt; source photographs in Stories archive",
+  "source_collection": "feature",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [],
+  "input_sha256": "273d34d7d167b5a764ce07b5c1b48a11d453619230a79dcb738e6d6a2c904654"
+}

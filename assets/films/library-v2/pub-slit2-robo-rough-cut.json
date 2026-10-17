@@ -1,0 +1,81 @@
+{
+  "slug": "pub-slit2-robo",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_lewis",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "b971f6bb890a6c2e4e601ad26098fd9290bd57fe225c0db6a20388b45f0feda1",
+  "shots": [
+    {
+      "title": "The target that can change sides",
+      "kind": "Simplified pathway illustration, not experimental structure",
+      "image": "assets/robo-concept.svg",
+      "museum": null,
+      "credit": "Simplified pathway illustration, not experimental structure"
+    },
+    {
+      "title": "A promising target can change sides",
+      "kind": "Original conceptual pathway diagram",
+      "image": "assets/robo-concept.svg",
+      "museum": null,
+      "credit": "Original conceptual pathway diagram"
+    },
+    {
+      "title": "The receptor does not act alone",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/slit2-robo-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The patent question",
+      "kind": "Research workspace photograph, not a patent experiment",
+      "image": "assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp",
+      "museum": null,
+      "credit": "Research workspace photograph, not a patent experiment"
+    },
+    {
+      "title": "Many modalities, uneven evidence",
+      "kind": "Editorial pathway diagram; not a ranking of inventions",
+      "image": "assets/robo-concept.svg",
+      "museum": null,
+      "credit": "Editorial pathway diagram; not a ranking of inventions"
+    },
+    {
+      "title": "The difficulty: The missing condition",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/slit2-robo-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The missing condition",
+      "kind": "Conceptual scientific illustration",
+      "image": "assets/robo-concept.svg",
+      "museum": null,
+      "credit": "Conceptual scientific illustration"
+    },
+    {
+      "title": "The real invention",
+      "kind": "Personal editorial portrait, not patent or molecular data",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "museum": null,
+      "credit": "Personal editorial portrait, not patent or molecular data"
+    }
+  ],
+  "film_title": "The target that can change sides",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1080/13543776.2026.2690118",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [],
+  "input_sha256": "e49d940fb6aee80d8cc739eb9d14642ae8df26c3f41a16395b470da554f9fa41"
+}

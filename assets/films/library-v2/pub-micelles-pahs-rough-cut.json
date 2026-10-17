@@ -1,0 +1,78 @@
+{
+  "slug": "pub-micelles-pahs",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "8905dc07650c15ae1378e112b96f74d44818ffb15166550bdeb17eedd2dc209c",
+  "shots": [
+    {
+      "title": "A polymer meets an insoluble problem",
+      "kind": "Generic conceptual polymer assembly",
+      "image": "assets/polymer-concept.svg",
+      "museum": null,
+      "credit": "Generic conceptual polymer assembly"
+    },
+    {
+      "title": "Some molecules refuse the water",
+      "kind": "Documented unsuccessful original polymer trial photo",
+      "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+      "museum": null,
+      "credit": "Documented unsuccessful original polymer trial photo"
+    },
+    {
+      "title": "The theory looked reasonable",
+      "kind": "Generic conceptual polymer assembly",
+      "image": "assets/polymer-concept.svg",
+      "museum": null,
+      "credit": "Generic conceptual polymer assembly"
+    },
+    {
+      "title": "Then the material answered",
+      "kind": "Original documented unsuccessful trials, not a successful micelle synthesis",
+      "image": "assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp",
+      "museum": null,
+      "credit": "Original documented unsuccessful trials, not a successful micelle synthesis"
+    },
+    {
+      "title": "Concentration is not a magic word",
+      "kind": "Original documented copolymer specimen, not proof of PAH loading",
+      "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+      "museum": null,
+      "credit": "Original documented copolymer specimen, not proof of PAH loading"
+    },
+    {
+      "title": "The difficulty: What an unsuccessful trial teaches",
+      "kind": "Original failed-materials archive",
+      "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+      "museum": null,
+      "credit": "Original failed-materials archive"
+    },
+    {
+      "title": "What an unsuccessful trial teaches",
+      "kind": "Original failed-materials archive",
+      "image": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+      "museum": null,
+      "credit": "Original failed-materials archive"
+    },
+    {
+      "title": "The record is more valuable intact",
+      "kind": "Conceptual concluding image",
+      "image": "assets/polymer-concept.svg",
+      "museum": null,
+      "credit": "Conceptual concluding image"
+    }
+  ],
+  "film_title": "A polymer meets an insoluble problem",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/grants/urep19.html",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "4ba93f15d68e2d5a68b7aaafd2f3b05778efce86bab25f988617fdb8cdf70ff0"
+}

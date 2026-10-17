@@ -1,0 +1,16 @@
+{
+  "scene": "ACE2Topology",
+  "film": "pub-ace2-forms",
+  "shot_number": 4,
+  "seconds": 16.0,
+  "dimensions": "1280x720",
+  "sha256": "bfc053cf7bdb0a43bdefd8914f02bb8d7eafdae18018cf427b836556976ba926",
+  "source_script": "scripts/manim-scientific-films-v3.py",
+  "source_script_sha256": "5bbc24208fdfec006dcc6de52fbbaf888c12fa34605b561de0f31c614acff9c1",
+  "engine": "Manim Community Edition / FFmpeg",
+  "status": "UNAPPROVED VISUAL EXPLANATION, NOT EXPERIMENTAL FOOTAGE",
+  "source_nature": "Author-drawn moving scientific schematic",
+  "editorial_status": "Requires scientific and artistic screening before use",
+  "human_narration_approved": false,
+  "rights_note": "Original programmatic shapes only; no recorded scientific result or patented molecular structure"
+}

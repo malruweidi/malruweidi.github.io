@@ -1,0 +1,78 @@
+{
+  "slug": "pub-essay-potency-exposure",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "86a3c50f8031c85d1dbcb257552fc21b3b598768b681815eb1b36b2af100a163",
+  "shots": [
+    {
+      "title": "The Nanomolar Mirage",
+      "kind": "Generic drug-delivery visual, not pharmacokinetic data",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Generic drug-delivery visual, not pharmacokinetic data"
+    },
+    {
+      "title": "The perfect number",
+      "kind": "Published independent chemistry study figure, not the DMPK compound",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Published independent chemistry study figure, not the DMPK compound"
+    },
+    {
+      "title": "The journey is a different experiment",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/essay-potency-exposure-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Total is not free",
+      "kind": "Generic pulmonary evidence image; not a measured concentration profile",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Generic pulmonary evidence image; not a measured concentration profile"
+    },
+    {
+      "title": "Turn the comparison around",
+      "kind": "Original analysis workspace, not a clinical dosing model",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "museum": null,
+      "credit": "Original analysis workspace, not a clinical dosing model"
+    },
+    {
+      "title": "The difficulty: An impressive hit may still fail",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/essay-potency-exposure-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "An impressive hit may still fail",
+      "kind": "Illustration of delivery principle, no measured exposure",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Illustration of delivery principle, no measured exposure"
+    },
+    {
+      "title": "Measure the achievable",
+      "kind": "Original chemistry archive",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "museum": null,
+      "credit": "Original chemistry archive"
+    }
+  ],
+  "film_title": "The Nanomolar Mirage",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "2da31a6abe85122aba1287f7e5e5b1a47e3587ae7ea091930267d96bb53c06d3"
+}

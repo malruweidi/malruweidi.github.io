@@ -1,0 +1,108 @@
+{
+  "slug": "feature-airway-reopening-evidence-cut",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 153.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "792c2b9c1bb60735900613fbf32a98dd9fe7002f37424ad775b074ab0e6e45e8",
+  "shots": [
+    {
+      "title": "Reopening is not always gentle",
+      "kind": "AIRWAY / CONCEPTUAL",
+      "image": "assets/films/plates/what-a-bubble-can-do-01.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "A boundary that moves",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "image": "assets/films/plates/what-a-bubble-can-do-02.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive. Animation: Original mechanistic illustration of the moving air–liquid boundary; not the experiment's recorded video, geometry, scale, or measurements. Simplified interface motion; clinical and cell data shown separately."
+    },
+    {
+      "title": "Inside the flow chamber",
+      "kind": "ORIGINAL PUBLISHED FIGURE",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "The comparison",
+      "kind": "EXPERIMENTAL DESIGN / NO SIMULATED CELLS",
+      "image": "assets/films/plates/what-a-bubble-can-do-03.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "How cell injury was read",
+      "kind": "ASSAY METHOD / NO INVENTED MICROSCOPY",
+      "image": "assets/films/plates/what-a-bubble-can-do-04.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "The unprotected group",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "Dexamethasone pretreatment",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "image": "assets/films/plates/what-a-bubble-can-do-05.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "Transdehydroandrosterone",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "image": "assets/films/plates/what-a-bubble-can-do-06.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "Another mechanical comparison",
+      "kind": "PUBLISHED IN-VITRO RESULT",
+      "image": "assets/films/plates/what-a-bubble-can-do-07.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "The cytoskeleton matters",
+      "kind": "MECHANISTIC INTERPRETATION / NOT PROOF OF A SINGLE PATHWAY",
+      "image": "assets/films/plates/what-a-bubble-can-do-08.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "What the experiment can say",
+      "kind": "EVIDENCE LIMIT / 2021 PUBLICATION",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    }
+  ],
+  "film_title": "A Bubble Against an Epithelium: What the Numbers Show",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/airway-reopening-evidence-scenes.json",
+  "primary_reference": "https://doi.org/10.1152/japplphysiol.00574.2020",
+  "source_collection": "feature",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [
+    {
+      "scene": 2,
+      "video": "assets/films/motion-v2/airway-interface.mp4",
+      "credit": "Editorial explanation; original context archive. Animation: Original mechanistic illustration of the moving air–liquid boundary; not the experiment's recorded video, geometry, scale, or measurements. Simplified interface motion; clinical and cell data shown separately.",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "source_sha256": "21e0ec38bb89851088b472f87ffa26f875affa48ad3ae0243d003af11aba58b9"
+    }
+  ],
+  "input_sha256": "cd8e38fc235b7ba76b035ef8db94dc9aad5a021fbd55ef15e5e91dc125df1f43"
+}

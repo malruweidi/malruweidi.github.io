@@ -1,0 +1,89 @@
+{
+  "slug": "pub-microfluidic-virus",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "d2d27d23ed7371ba2cbc789bece484d779da472c428297ba2ad08562870aff15",
+  "shots": [
+    {
+      "title": "A laboratory shrunk into a channel",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-microfluid-channel.svg",
+      "museum": null,
+      "credit": "Illustrated sample transport through a microchannel; not filmed viral detection"
+    },
+    {
+      "title": "A laboratory in a narrow channel",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/microfluidic-sensing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "The sample does not prepare itself",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/microfluidic-virus-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Fluid control becomes analytical control",
+      "kind": "Original scientific concept animation (not experimental data)",
+      "image": "assets/films/art/v2-microfluid-capture.svg",
+      "museum": null,
+      "credit": "Original schematic microfluidic sample movement; not actual virological assay footage"
+    },
+    {
+      "title": "Detection is not diagnosis",
+      "kind": "Original research apparatus photograph",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Original research apparatus photograph"
+    },
+    {
+      "title": "The difficulty: The practical bottleneck",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/microfluidic-virus-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The practical bottleneck",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/microfluidic-sensing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "Smaller does not mean simpler",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-microfluid-readout.svg",
+      "museum": null,
+      "credit": "Conceptual assay signal and background, no invented values or clinical diagnostic performance"
+    }
+  ],
+  "film_title": "A laboratory shrunk into a channel",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1007/s42247-021-00169-7",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [
+    {
+      "scene": 4,
+      "video": "assets/films/animations-v2/microfluidic-transport.mp4",
+      "credit": "Original schematic microfluidic sample movement; not actual virological assay footage",
+      "kind": "Original scientific concept animation (not experimental data)",
+      "source_sha256": "59ef50c9abd6c3a67f36955c302eb86460393df1d16bad338fb97b61b5670697"
+    }
+  ],
+  "input_sha256": "01a8938bdadaa29193182aed561173a7beb04c1530dbb46fb14ff610e29a9dae"
+}

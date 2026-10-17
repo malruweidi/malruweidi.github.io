@@ -1,0 +1,78 @@
+{
+  "slug": "pub-cairo-microscope",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "16d890aa7be15c08da81c2d31536c28b2c2924de1ab590bef08973411dec77d2",
+  "shots": [
+    {
+      "title": "The microscope that made curiosity independent",
+      "kind": "Personal Cairo archival photograph, not a photograph of the microscope transport",
+      "image": "assets/archival-2026-10-12/cairo-mokattam-sunset-2026.webp",
+      "museum": null,
+      "credit": "Personal Cairo archival photograph, not a photograph of the microscope transport"
+    },
+    {
+      "title": "The instrument was mine",
+      "kind": "Original archival photograph of the user's own microscope",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "museum": null,
+      "credit": "Original archival photograph of the user's own microscope"
+    },
+    {
+      "title": "It had to travel",
+      "kind": "Personal Cairo archival photograph, not a photograph of the microscope transport",
+      "image": "assets/archival-2026-10-12/cairo-mokattam-sunset-2026.webp",
+      "museum": null,
+      "credit": "Personal Cairo archival photograph, not a photograph of the microscope transport"
+    },
+    {
+      "title": "The point was time",
+      "kind": "Original photograph of personal microscopy context",
+      "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "museum": null,
+      "credit": "Original photograph of personal microscopy context"
+    },
+    {
+      "title": "A question could begin in the evening",
+      "kind": "Original personal microscope photograph",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "museum": null,
+      "credit": "Original personal microscope photograph"
+    },
+    {
+      "title": "The difficulty: The microscope was not the discovery",
+      "kind": "Original archival university context photo",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "museum": null,
+      "credit": "Original archival university context photo"
+    },
+    {
+      "title": "The microscope was not the discovery",
+      "kind": "Original archival university context photo",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "museum": null,
+      "credit": "Original archival university context photo"
+    },
+    {
+      "title": "The habit stayed with me",
+      "kind": "Original personal microscope-era archive",
+      "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "museum": null,
+      "credit": "Original personal microscope-era archive"
+    }
+  ],
+  "film_title": "The microscope that made curiosity independent",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/stories/cairo-microscope.html",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "e1b36f50e1574f93c7017c1b3abf5e9f9930dda19a7096ed98fe7857e3453742"
+}

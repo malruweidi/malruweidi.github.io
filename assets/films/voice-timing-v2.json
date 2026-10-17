@@ -1,0 +1,588 @@
+{
+  "status": "SYNTHETIC VOICE DURATION PREFLIGHT; NOT AN AUDIO QUALITY ENDORSEMENT",
+  "voice": "Kokoro bm_george / 1.06 / en-gb",
+  "required_buffer_seconds": 0.62,
+  "features": [
+    {
+      "film": "feature-the-laboratory-we-carried-with-us",
+      "needs_rewrite": false,
+      "scenes": [
+        {
+          "scene": 1,
+          "title": "An organic chemistry bench",
+          "allocated_seconds": 15,
+          "voice_seconds": 9.278,
+          "breathing_margin_seconds": 5.102,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 2,
+          "title": "From extract to evidence",
+          "allocated_seconds": 16,
+          "voice_seconds": 10.793,
+          "breathing_margin_seconds": 4.587,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 3,
+          "title": "Seven chemists",
+          "allocated_seconds": 16,
+          "voice_seconds": 12.222,
+          "breathing_margin_seconds": 3.158,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 4,
+          "title": "An ACS chapter of our own",
+          "allocated_seconds": 13,
+          "voice_seconds": 10.313,
+          "breathing_margin_seconds": 2.067,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 5,
+          "title": "Other people learning",
+          "allocated_seconds": 15,
+          "voice_seconds": 13.907,
+          "breathing_margin_seconds": 0.473,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 6,
+          "title": "The chemistry festival",
+          "allocated_seconds": 16,
+          "voice_seconds": 11.872,
+          "breathing_margin_seconds": 3.508,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 7,
+          "title": "The conversations continue",
+          "allocated_seconds": 16,
+          "voice_seconds": 11.913,
+          "breathing_margin_seconds": 3.467,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 8,
+          "title": "A shared beginning",
+          "allocated_seconds": 13,
+          "voice_seconds": 8.564,
+          "breathing_margin_seconds": 3.816,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        }
+      ]
+    },
+    {
+      "film": "feature-what-survives-the-experiment",
+      "needs_rewrite": false,
+      "scenes": [
+        {
+          "scene": 1,
+          "title": "The anatomy room",
+          "allocated_seconds": 8,
+          "voice_seconds": 6.475,
+          "breathing_margin_seconds": 0.905,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 2,
+          "title": "A microscope of my own",
+          "allocated_seconds": 9,
+          "voice_seconds": 7.243,
+          "breathing_margin_seconds": 1.137,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 3,
+          "title": "Beginning with matter",
+          "allocated_seconds": 11,
+          "voice_seconds": 9.087,
+          "breathing_margin_seconds": 1.293,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 4,
+          "title": "What a spectrum can say",
+          "allocated_seconds": 9,
+          "voice_seconds": 8.211,
+          "breathing_margin_seconds": 0.169,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 5,
+          "title": "Learning in company",
+          "allocated_seconds": 8,
+          "voice_seconds": 7.315,
+          "breathing_margin_seconds": 0.065,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 6,
+          "title": "When the polymer resisted",
+          "allocated_seconds": 10,
+          "voice_seconds": 8.127,
+          "breathing_margin_seconds": 1.253,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 7,
+          "title": "A living system moves",
+          "allocated_seconds": 10,
+          "voice_seconds": 9.15,
+          "breathing_margin_seconds": 0.23,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 8,
+          "title": "The section that failed",
+          "allocated_seconds": 12,
+          "voice_seconds": 10.08,
+          "breathing_margin_seconds": 1.3,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 9,
+          "title": "An airway reopens",
+          "allocated_seconds": 9,
+          "voice_seconds": 8.361,
+          "breathing_margin_seconds": 0.019,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 10,
+          "title": "The interface matters",
+          "allocated_seconds": 11,
+          "voice_seconds": 9.449,
+          "breathing_margin_seconds": 0.931,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 11,
+          "title": "Reaching the lung",
+          "allocated_seconds": 9,
+          "voice_seconds": 7.668,
+          "breathing_margin_seconds": 0.712,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 12,
+          "title": "What can be relied upon?",
+          "allocated_seconds": 14,
+          "voice_seconds": 11.529,
+          "breathing_margin_seconds": 1.851,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        }
+      ],
+      "all_current_scenes_pass": true
+    },
+    {
+      "film": "feature-cairo-microscope",
+      "needs_rewrite": false,
+      "scenes": [
+        {
+          "scene": 1,
+          "title": "An ordinary morning",
+          "allocated_seconds": 15,
+          "voice_seconds": 8.671,
+          "breathing_margin_seconds": 5.709,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 2,
+          "title": "Qasr El Einy → Qatar",
+          "allocated_seconds": 15,
+          "voice_seconds": 10.377,
+          "breathing_margin_seconds": 4.003,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 3,
+          "title": "A microscope of my own",
+          "allocated_seconds": 13,
+          "voice_seconds": 7.732,
+          "breathing_margin_seconds": 4.648,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 4,
+          "title": "Inside the scheduled laboratory",
+          "allocated_seconds": 13,
+          "voice_seconds": 9.183,
+          "breathing_margin_seconds": 3.197,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 5,
+          "title": "No assigned experiment",
+          "allocated_seconds": 13,
+          "voice_seconds": 9.237,
+          "breathing_margin_seconds": 3.143,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 6,
+          "title": "The freedom to return",
+          "allocated_seconds": 13,
+          "voice_seconds": 7.601,
+          "breathing_margin_seconds": 4.779,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 7,
+          "title": "Seeing is not knowing",
+          "allocated_seconds": 14,
+          "voice_seconds": 10.239,
+          "breathing_margin_seconds": 3.141,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 8,
+          "title": "Among ordinary things",
+          "allocated_seconds": 13,
+          "voice_seconds": 8.661,
+          "breathing_margin_seconds": 3.719,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 9,
+          "title": "The microscope from Cairo",
+          "allocated_seconds": 11,
+          "voice_seconds": 8.457,
+          "breathing_margin_seconds": 1.923,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        }
+      ]
+    },
+    {
+      "film": "feature-ring-that-never-closed",
+      "needs_rewrite": false,
+      "scenes": [
+        {
+          "scene": 1,
+          "title": "An unfinished drawing",
+          "allocated_seconds": 12,
+          "voice_seconds": 8.766,
+          "breathing_margin_seconds": 2.614,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 2,
+          "title": "Two routes, one ambition",
+          "allocated_seconds": 12,
+          "voice_seconds": 9.716,
+          "breathing_margin_seconds": 1.664,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 3,
+          "title": "The closure did not happen",
+          "allocated_seconds": 10,
+          "voice_seconds": 5.546,
+          "breathing_margin_seconds": 3.834,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 4,
+          "title": "What we could isolate",
+          "allocated_seconds": 12,
+          "voice_seconds": 7.263,
+          "breathing_margin_seconds": 4.117,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 5,
+          "title": "A different question",
+          "allocated_seconds": 12,
+          "voice_seconds": 7.253,
+          "breathing_margin_seconds": 4.127,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 6,
+          "title": "From yellow to orange",
+          "allocated_seconds": 13,
+          "voice_seconds": 8.501,
+          "breathing_margin_seconds": 3.879,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 7,
+          "title": "Where the bands moved",
+          "allocated_seconds": 14,
+          "voice_seconds": 11.755,
+          "breathing_margin_seconds": 1.625,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 8,
+          "title": "Beyond the flask",
+          "allocated_seconds": 12,
+          "voice_seconds": 10.602,
+          "breathing_margin_seconds": 0.778,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 9,
+          "title": "The unanswered mechanism",
+          "allocated_seconds": 12,
+          "voice_seconds": 10.879,
+          "breathing_margin_seconds": 0.501,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 10,
+          "title": "What the report could say",
+          "allocated_seconds": 11,
+          "voice_seconds": 9.824,
+          "breathing_margin_seconds": 0.556,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        }
+      ],
+      "all_current_scenes_pass": true
+    },
+    {
+      "film": "feature-airway-reopening-evidence-cut",
+      "needs_rewrite": false,
+      "scenes": [
+        {
+          "scene": 1,
+          "title": "Reopening is not always gentle",
+          "allocated_seconds": 12,
+          "voice_seconds": 8.639,
+          "breathing_margin_seconds": 2.741,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 2,
+          "title": "A boundary that moves",
+          "allocated_seconds": 12,
+          "voice_seconds": 8.831,
+          "breathing_margin_seconds": 2.549,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 3,
+          "title": "Inside the flow chamber",
+          "allocated_seconds": 11,
+          "voice_seconds": 9.225,
+          "breathing_margin_seconds": 1.155,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 4,
+          "title": "The comparison",
+          "allocated_seconds": 11,
+          "voice_seconds": 8.991,
+          "breathing_margin_seconds": 1.389,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 5,
+          "title": "How cell injury was read",
+          "allocated_seconds": 10,
+          "voice_seconds": 9.312,
+          "breathing_margin_seconds": 0.068,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 6,
+          "title": "The unprotected group",
+          "allocated_seconds": 11,
+          "voice_seconds": 8.595,
+          "breathing_margin_seconds": 1.785,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 7,
+          "title": "Dexamethasone pretreatment",
+          "allocated_seconds": 10,
+          "voice_seconds": 7.936,
+          "breathing_margin_seconds": 1.444,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 8,
+          "title": "Transdehydroandrosterone",
+          "allocated_seconds": 11,
+          "voice_seconds": 9.322,
+          "breathing_margin_seconds": 1.058,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 9,
+          "title": "Another mechanical comparison",
+          "allocated_seconds": 9,
+          "voice_seconds": 7.915,
+          "breathing_margin_seconds": 0.465,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 10,
+          "title": "The cytoskeleton matters",
+          "allocated_seconds": 12,
+          "voice_seconds": 9.854,
+          "breathing_margin_seconds": 1.526,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 11,
+          "title": "What the experiment can say",
+          "allocated_seconds": 11,
+          "voice_seconds": 9.599,
+          "breathing_margin_seconds": 0.781,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        }
+      ],
+      "all_current_scenes_pass": true
+    },
+    {
+      "film": "feature-two-materials-no-section-evidence-cut",
+      "needs_rewrite": false,
+      "scenes": [
+        {
+          "scene": 1,
+          "title": "The section that never existed",
+          "allocated_seconds": 11,
+          "voice_seconds": 8.629,
+          "breathing_margin_seconds": 1.751,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 2,
+          "title": "Orientation mattered",
+          "allocated_seconds": 12,
+          "voice_seconds": 9.619,
+          "breathing_margin_seconds": 1.761,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 3,
+          "title": "A temporary support",
+          "allocated_seconds": 12,
+          "voice_seconds": 10.271,
+          "breathing_margin_seconds": 1.109,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 4,
+          "title": "The paraffin stage",
+          "allocated_seconds": 13,
+          "voice_seconds": 10.602,
+          "breathing_margin_seconds": 1.778,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 5,
+          "title": "The material boundary",
+          "allocated_seconds": 11,
+          "voice_seconds": 8.779,
+          "breathing_margin_seconds": 1.601,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 6,
+          "title": "The block came apart",
+          "allocated_seconds": 15,
+          "voice_seconds": 10.751,
+          "breathing_margin_seconds": 3.629,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 7,
+          "title": "What I could actually conclude",
+          "allocated_seconds": 13,
+          "voice_seconds": 10.453,
+          "breathing_margin_seconds": 1.927,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 8,
+          "title": "A hypothesis, not a diagnosis",
+          "allocated_seconds": 12,
+          "voice_seconds": 9.588,
+          "breathing_margin_seconds": 1.792,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 9,
+          "title": "What a future test might ask",
+          "allocated_seconds": 10,
+          "voice_seconds": 7.755,
+          "breathing_margin_seconds": 1.625,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        },
+        {
+          "scene": 10,
+          "title": "No section. An intact record.",
+          "allocated_seconds": 11,
+          "voice_seconds": 7.477,
+          "breathing_margin_seconds": 2.903,
+          "needs_rewrite": false,
+          "extra_seconds_needed": 0
+        }
+      ],
+      "all_current_scenes_pass": true
+    }
+  ],
+  "rescored_against": "Four previously lengthened feature documentaries restored to the requested two-minute format after measurement of the same unaltered synthesized voice; no speech clipped."
+}
