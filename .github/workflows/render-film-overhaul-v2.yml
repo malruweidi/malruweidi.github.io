@@ -11,6 +11,7 @@ on:
       - .github/workflows/render-film-overhaul-v2.yml
       - scripts/make-film-qa-contact-sheets.py
       - scripts/normalize-film-captions.py
+      - scripts/audit-all-film-recuts.py
       - tests/film-overhaul-v2.test.cjs
       - film-studio.html
   workflow_dispatch:
@@ -75,6 +76,8 @@ jobs:
               assert abs(float(data["format"]["duration"])-84)<.3,v
               print(v,meta["animated_scene_ids"])
           PY
+      - name: Gate each produced batch using actual decoded frames, VTT timing, H.264 streams and source hashes
+        run: python scripts/audit-all-film-recuts.py --collection series-v2
       - name: Produce proof-of-render frame contact sheets for editorial review
         run: python scripts/make-film-qa-contact-sheets.py --collection series-v2
       - name: Preserve old films and commit only alternative v2 releases
