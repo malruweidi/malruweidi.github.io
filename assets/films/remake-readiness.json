@@ -1,0 +1,555 @@
+{
+  "edition": "Ruwaidix V2 source and editorial release gate",
+  "interpretation": "The table separates existence, source recency, technical verification, and human scientific/rights approval. Automated tools cannot confer peer review or media rights.",
+  "short_films": {
+    "expected": 35,
+    "mp4_rendered": 29,
+    "latest_source_and_motion": 26,
+    "encoded_technical_qa": 29,
+    "human_screened": 0,
+    "approved_for_replacement": 0,
+    "originals_preserved": 35
+  },
+  "records": [
+    {
+      "id": "airway-reopening",
+      "title": "A breath can injure",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "cerebral-cilia",
+      "title": "How does a vessel know the blood is moving?",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "slit2-robo",
+      "title": "The target that can change sides",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "curcumin-cyanide",
+      "title": "When a molecule becomes a question",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "making-medicines-keep",
+      "title": "How did medieval medicines keep?",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "niosomes",
+      "title": "Will the medicine survive the nebulizer?",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "echo-cnn-lstm",
+      "title": "Can an algorithm read a moving heart?",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "pla-grafting",
+      "title": "The surface is not the material",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "pla-scaffolds",
+      "title": "A scaffold meets its environment",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "flow-chamber-method",
+      "title": "How to make a reproducible injury",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "zebrafish-hemodynamics",
+      "title": "A heartbeat in high-speed frames",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "ace2-covid-drugs",
+      "title": "An enzyme, a receptor, a clinical question",
+      "mp4_rendered": true,
+      "source_revision_required": "curated-2026-10-17-v3",
+      "source_revision_in_mp4": "curated-2026-10-17-v3",
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "gi-autoimmunity-1",
+      "title": "What happens when immunity turns on the gut?",
+      "mp4_rendered": true,
+      "source_revision_required": "curated-2026-10-17-v3",
+      "source_revision_in_mp4": "curated-2026-10-17-v3",
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "gi-autoimmunity-2",
+      "title": "The diagnostic problem",
+      "mp4_rendered": true,
+      "source_revision_required": "curated-2026-10-17-v3",
+      "source_revision_in_mp4": "curated-2026-10-17-v3",
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "heart-failure-sensors",
+      "title": "Listening for a failing heart",
+      "mp4_rendered": true,
+      "source_revision_required": "curated-2026-10-17-v3",
+      "source_revision_in_mp4": "curated-2026-10-17-v3",
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "ace2-forms",
+      "title": "Two lives of ACE2",
+      "mp4_rendered": true,
+      "source_revision_required": "curated-2026-10-17-v3",
+      "source_revision_in_mp4": "curated-2026-10-17-v3",
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "microfluidic-virus",
+      "title": "A laboratory shrunk into a channel",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "drug-release-twins",
+      "title": "What can a digital twin predict?",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "food-printing",
+      "title": "When food becomes a printable material",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "ceramics-printing",
+      "title": "A structure the body must tolerate",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "cubosome-theranostics",
+      "title": "The difficult promise of a cubic carrier",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "micelles-pahs",
+      "title": "A polymer meets an insoluble problem",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "heterocycle-cancer",
+      "title": "Build the heterocycle, then challenge the hypothesis",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "histology-failure",
+      "title": "Two materials. No section.",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "cairo-microscope",
+      "title": "The microscope that made curiosity independent",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "essay-life-between-diagnoses",
+      "title": "When the Count Could Not Describe the Pain",
+      "mp4_rendered": true,
+      "source_revision_required": null,
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "essay-ai-email",
+      "title": "The Email That Became an Accusation",
+      "mp4_rendered": true,
+      "source_revision_required": "essay-motion-2026-10-17-v1",
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": false,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Source or motion edition superseded: needs re-render",
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "essay-machine-language",
+      "title": "Who Taught Humans to Write Like Machines?",
+      "mp4_rendered": true,
+      "source_revision_required": "essay-motion-2026-10-17-v1",
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": false,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Source or motion edition superseded: needs re-render",
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "essay-academic-mental-health",
+      "title": "The Things an Academic CV Cannot Hold",
+      "mp4_rendered": true,
+      "source_revision_required": "essay-motion-2026-10-17-v1",
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": false,
+      "encoded_technical_qa": true,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "Source or motion edition superseded: needs re-render",
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "essay-scientific-credit",
+      "title": "Three Names on the Medal, Hundreds in the Record",
+      "mp4_rendered": false,
+      "source_revision_required": "essay-motion-2026-10-17-v1",
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": false,
+      "encoded_technical_qa": false,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "A complete MP4, timed VTT and source manifest do not yet coexist",
+        "Source or motion edition superseded: needs re-render",
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "essay-tf-states",
+      "title": "The Target Has More Than One Shape",
+      "mp4_rendered": false,
+      "source_revision_required": "curated-2026-10-17-v3",
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": false,
+      "encoded_technical_qa": false,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "A complete MP4, timed VTT and source manifest do not yet coexist",
+        "Source or motion edition superseded: needs re-render",
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "essay-potency-exposure",
+      "title": "The Nanomolar Mirage",
+      "mp4_rendered": false,
+      "source_revision_required": "curated-2026-10-17-v3",
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": false,
+      "encoded_technical_qa": false,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "A complete MP4, timed VTT and source manifest do not yet coexist",
+        "Source or motion edition superseded: needs re-render",
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "essay-trna",
+      "title": "The Molecule Behind Every Protein",
+      "mp4_rendered": false,
+      "source_revision_required": "curated-2026-10-17-v3",
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": false,
+      "encoded_technical_qa": false,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "A complete MP4, timed VTT and source manifest do not yet coexist",
+        "Source or motion edition superseded: needs re-render",
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "essay-proximity",
+      "title": "When a Drug Makes Two Proteins Meet",
+      "mp4_rendered": false,
+      "source_revision_required": "curated-2026-10-17-v3",
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": false,
+      "encoded_technical_qa": false,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "A complete MP4, timed VTT and source manifest do not yet coexist",
+        "Source or motion edition superseded: needs re-render",
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    },
+    {
+      "id": "essay-adc",
+      "title": "The Antibody Is Only the Beginning",
+      "mp4_rendered": false,
+      "source_revision_required": "curated-2026-10-17-v3",
+      "source_revision_in_mp4": null,
+      "source_visual_and_motion_current": false,
+      "encoded_technical_qa": false,
+      "original_archive_preserved": true,
+      "human_screened": false,
+      "ready_for_public_replacement": false,
+      "pending_reasons": [
+        "A complete MP4, timed VTT and source manifest do not yet coexist",
+        "Source or motion edition superseded: needs re-render",
+        "Science, audio, rights and editorial human sign-off outstanding"
+      ]
+    }
+  ]
+}

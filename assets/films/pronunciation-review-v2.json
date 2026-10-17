@@ -17,6 +17,37 @@
       "number_of_review_cues": 1
     },
     {
+      "film": "ace2-forms",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "ACE2",
+          "start_second": 0.55,
+          "cue": "ACE2 can be embedded in a cell membrane or exist in a",
+          "video": "/assets/films/series-v2/ace2-forms.mp4#t=0.55"
+        },
+        {
+          "term_id": "ACE2",
+          "start_second": 14.383,
+          "cue": "ACE2 participates in the renin-angiotensin system. In",
+          "video": "/assets/films/series-v2/ace2-forms.mp4#t=14.383"
+        },
+        {
+          "term_id": "ACE2",
+          "start_second": 34.935,
+          "cue": "soluble ACE2 expression might influence",
+          "video": "/assets/films/series-v2/ace2-forms.mp4#t=34.935"
+        },
+        {
+          "term_id": "ACE2",
+          "start_second": 75.621,
+          "cue": "ACE2 form, which tissue and which endpoint is actually",
+          "video": "/assets/films/series-v2/ace2-forms.mp4#t=75.621"
+        }
+      ],
+      "number_of_review_cues": 4
+    },
+    {
       "film": "airway-reopening",
       "collection": "series-v2",
       "review_cues": [
@@ -40,6 +71,25 @@
         }
       ],
       "number_of_review_cues": 3
+    },
+    {
+      "film": "cairo-microscope",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "Qasr-El-Einy",
+          "start_second": 0.55,
+          "cue": "I purchased a microscope near Qasr El Einy in Cairo.",
+          "video": "/assets/films/series-v2/cairo-microscope.mp4#t=0.55"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "ceramics-printing",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
     },
     {
       "film": "cerebral-cilia",
@@ -79,6 +129,25 @@
       "number_of_review_cues": 5
     },
     {
+      "film": "cubosome-theranostics",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "cubosome",
+          "start_second": 0.55,
+          "cue": "Cubosomes contain structured internal lipid domains.",
+          "video": "/assets/films/series-v2/cubosome-theranostics.mp4#t=0.55"
+        },
+        {
+          "term_id": "cubosome",
+          "start_second": 73.732,
+          "cue": "cancer-targeted cubosome design and the difficult path",
+          "video": "/assets/films/series-v2/cubosome-theranostics.mp4#t=73.732"
+        }
+      ],
+      "number_of_review_cues": 2
+    },
+    {
       "film": "curcumin-cyanide",
       "collection": "series-v2",
       "review_cues": [
@@ -102,6 +171,12 @@
         }
       ],
       "number_of_review_cues": 3
+    },
+    {
+      "film": "drug-release-twins",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
     },
     {
       "film": "echo-cnn-lstm",
@@ -129,10 +204,47 @@
       "number_of_review_cues": 3
     },
     {
+      "film": "essay-academic-mental-health",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-ai-email",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-life-between-diagnoses",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-machine-language",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
       "film": "flow-chamber-method",
       "collection": "series-v2",
       "review_cues": [],
       "number_of_review_cues": 0
+    },
+    {
+      "film": "food-printing",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "rheology",
+          "start_second": 3.766,
+          "cue": "deposited material collapses. The rheology of the ink",
+          "video": "/assets/films/series-v2/food-printing.mp4#t=3.766"
+        }
+      ],
+      "number_of_review_cues": 1
     },
     {
       "film": "gi-autoimmunity-1",
@@ -154,6 +266,38 @@
       "number_of_review_cues": 0
     },
     {
+      "film": "heart-failure-sensors",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "heterocycle-cancer",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "imidazopyridine",
+          "start_second": 15.175,
+          "cue": "The UREP research investigated imidazopyridine",
+          "video": "/assets/films/series-v2/heterocycle-cancer.mp4#t=15.175"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "histology-failure",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "zebrafish",
+          "start_second": 0.55,
+          "cue": "To cut a useful section of a zebrafish specimen,",
+          "video": "/assets/films/series-v2/histology-failure.mp4#t=0.55"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
       "film": "making-medicines-keep",
       "collection": "series-v2",
       "review_cues": [
@@ -168,6 +312,31 @@
           "start_second": 77.554,
           "cue": "under the conditions of Ayyubid-Mamluk Cairo.",
           "video": "/assets/films/series-v2/making-medicines-keep.mp4#t=77.554"
+        }
+      ],
+      "number_of_review_cues": 2
+    },
+    {
+      "film": "micelles-pahs",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "microfluidic-virus",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "microfluidic",
+          "start_second": 27.217,
+          "cue": "Microfluidic systems can organise small volumes and",
+          "video": "/assets/films/series-v2/microfluidic-virus.mp4#t=27.217"
+        },
+        {
+          "term_id": "microfluidic",
+          "start_second": 69.092,
+          "cue": "The 2021 review surveys microfluidic approaches to",
+          "video": "/assets/films/series-v2/microfluidic-virus.mp4#t=69.092"
         }
       ],
       "number_of_review_cues": 2

@@ -1,7 +1,7 @@
 {
   "id": "ace2-forms",
   "seconds": 84.0,
-  "sha256": "02cc176936e0f665cf45b5ba9966529f01cf9f94f874c0a6ba64ab9e7ac2def4",
+  "sha256": "78af056cc7c36a1bf69ee8ace6647503f12f60c46addd009f284bc02995410fe",
   "primary_source": "https://doi.org/10.3390/ijms22136703",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
@@ -59,7 +59,7 @@
   "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
   "edition": "cinematic-v2",
   "remaster_signature": "story-motion-v2.2",
-  "source_visual_revision": "curated-2026-10-17-v2",
+  "source_visual_revision": "curated-2026-10-17-v3",
   "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
   "animated_scene_ids": [
     "02",
