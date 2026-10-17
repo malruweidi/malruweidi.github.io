@@ -26,7 +26,7 @@ jobs:
           assert a["doi"]=="10.1161/ATVBAHA.118.311231"
           assert a["pmcid"]=="PMC6309420"
           assert "cerebral" in a["title"].lower()
-          assert len(a["figures"])>=2 or a["figure_inventory_status"]=="UNAVAILABLE FROM OFFICIAL XML ENDPOINT"
+          assert len(a["figures"])>=2 or a["figure_inventory_status"]=="UNAVAILABLE FROM OFFICIAL XML ENDPOINT" or a["figure_inventory_status"]=="UNAVAILABLE FROM OFFICIAL XML ENDPOINT"
           assert all("NOT AUTHORISED" in x["image_import"] for x in a["figures"])
           print("Metadata-only rights and figure inventory correctly separated from published microscopy.")
           PY
