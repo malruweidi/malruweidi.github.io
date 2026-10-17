@@ -1,0 +1,47 @@
+{
+  "article_title": "Soluble ACE2 and angiotensin II levels are modulated in hypertensive COVID-19 patients treated with different antihypertension drugs",
+  "article_source": "https://manara.qnl.qa/articles/journal_contribution/Soluble_ACE2_and_angiotensin_II_levels_are_modulated_in_hypertensive_COVID-19_patients_treated_with_different_antihypertension_drugs/29116886",
+  "doi": "10.1080/08037051.2022.2055530",
+  "original_pdf_sha256": "50ea01c196693f720acbe3d857724b269c647e8f02b2f1a159cff4a30591643b",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "publisher": "Taylor & Francis / Blood Pressure (2022)",
+  "reported_n": 200,
+  "study_type": "Observational hypertensive COVID-19 cohort; no randomized treatment assignment",
+  "image_status": "SOURCE STAGED ONLY / specific visual approval outstanding",
+  "figure_pages": [
+    {
+      "figure": 1,
+      "page_zero_based": 5,
+      "width": 976,
+      "height": 1270,
+      "file": "assets/films/source-figures/ace2-covid-drugs-2022/figure-01-original-full-source-page.png",
+      "sha256": "79265de4d6795131d106ea1a9de5fad20803f5d5e0b6918adf1b739bb6603f21",
+      "caption_validation": "Caption's page located by PDF text; visual panel location still requires human check.",
+      "privacy": "Aggregated patient-cohort assay results only; original published figure not a patient photograph."
+    },
+    {
+      "figure": 2,
+      "page_zero_based": 5,
+      "width": 976,
+      "height": 1270,
+      "file": "assets/films/source-figures/ace2-covid-drugs-2022/figure-02-original-full-source-page.png",
+      "sha256": "79265de4d6795131d106ea1a9de5fad20803f5d5e0b6918adf1b739bb6603f21",
+      "caption_validation": "Caption's page located by PDF text; visual panel location still requires human check.",
+      "privacy": "Aggregated patient-cohort assay results only; original published figure not a patient photograph."
+    },
+    {
+      "figure": 3,
+      "page_zero_based": 6,
+      "width": 976,
+      "height": 1270,
+      "file": "assets/films/source-figures/ace2-covid-drugs-2022/figure-03-original-full-source-page.png",
+      "sha256": "7004cabcaebae1a8d4ba0e2f8b92c63120644d59516b3512bf05e8e091ca7e8b",
+      "caption_validation": "Caption's page located by PDF text; visual panel location still requires human check.",
+      "privacy": "Aggregated patient-cohort assay results only; original published figure not a patient photograph."
+    }
+  ]
+}
