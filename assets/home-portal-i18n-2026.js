@@ -2,6 +2,7 @@
 (function(){ "use strict";
   const d=window.RuwaidixArabicDictionary||(window.RuwaidixArabicDictionary={});
   Object.assign(d,{
+  "Chem Squad": "كيم سكواد",
   "07 / Chem Squad": "٠٧ / كيم سكواد",
   "An independent circle of seven chemists, connected since 2016 through shared experiments, friendship and continuing scientific conversation.": "حلقة علمية مستقلة من سبعة كيميائيين تجمعهم التجارب والصداقة والحوار العلمي المتواصل منذ عام ٢٠١٦.",
   "Meet Chem Squad ↗": "تعرّف على كيم سكواد ↗",
