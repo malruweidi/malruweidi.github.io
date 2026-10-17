@@ -150,7 +150,7 @@ def s3(im,d,t):
   x=center[0]+34*math.cos(angle+t*.16)
   y=center[1]+34*math.sin(angle+t*.16)
   d.ellipse((x-7,y-7,x+7,y+7),fill=GOLD)
- txt(d,63,598,"Conceptual structure; composition, aggregation and PAH partitioning unmeasured",15,MINT)
+ text(d,63,598,"Conceptual structure; aggregation and pollutant partitioning remain unmeasured",15,MINT)
 def s4(im,d,t):
  title(d,["A MODEL","IS NOT A VIAL"],size=57)
  nodes=[("POLYMER","BLOCK RATIO"),("SOLVENT","COMPATIBILITY"),("CONCENTRATION","AGGREGATION"),("HANDLING","HISTORY")]
