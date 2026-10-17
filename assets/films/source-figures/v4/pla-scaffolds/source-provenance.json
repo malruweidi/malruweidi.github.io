@@ -25,6 +25,8 @@
       ],
       "source_url": "https://m.publikace.k.utb.cz/bitstream/handle/10563/1009831/Fulltext_1009831.pdf?isAllowed=y&sequence=1#page=2",
       "file": "assets/films/source-figures/v4/pla-scaffolds/figure-01-electrospinning-plasma.png",
+      "film_jpeg": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-01.jpg",
+      "film_jpeg_sha256": "af40f7b320bdbc9e934a28ce205b18634ea38bcd32a5afb8466561df1f7d8860",
       "sha256": "4a9b6d997863bf0cd4e454ebe9174cbd0e6d85281ea0a26c0af570cd00731e57",
       "data_integrity": "Direct unaltered pixel selection from original PDF page; scale bars / axes must be verified visually before embedding."
     },
@@ -41,6 +43,8 @@
       ],
       "source_url": "https://m.publikace.k.utb.cz/bitstream/handle/10563/1009831/Fulltext_1009831.pdf?isAllowed=y&sequence=1#page=5",
       "file": "assets/films/source-figures/v4/pla-scaffolds/figure-05-sem.png",
+      "film_jpeg": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg",
+      "film_jpeg_sha256": "ae667164eb915dff5f5198f73115b45c987f7e515124b26e635478a6dc96a18a",
       "sha256": "b3736488461e8c502005cf1a806c6ebdb293e33779c0fb25b56f2d1ee1f65145",
       "data_integrity": "Direct unaltered pixel selection from original PDF page; scale bars / axes must be verified visually before embedding."
     },
@@ -57,6 +61,8 @@
       ],
       "source_url": "https://m.publikace.k.utb.cz/bitstream/handle/10563/1009831/Fulltext_1009831.pdf?isAllowed=y&sequence=1#page=7",
       "file": "assets/films/source-figures/v4/pla-scaffolds/figure-06-afm.png",
+      "film_jpeg": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-06.jpg",
+      "film_jpeg_sha256": "152712dc07ebbdb00207883e8646ecc9f7c677b20a1032b9b3e12dce83fe8a23",
       "sha256": "f4791a74c2db9db715521e4e0a26215733c7c4c47e3de4537307e60f279f13cb",
       "data_integrity": "Direct unaltered pixel selection from original PDF page; scale bars / axes must be verified visually before embedding."
     },
@@ -73,6 +79,8 @@
       ],
       "source_url": "https://m.publikace.k.utb.cz/bitstream/handle/10563/1009831/Fulltext_1009831.pdf?isAllowed=y&sequence=1#page=8",
       "file": "assets/films/source-figures/v4/pla-scaffolds/figure-07-ftir.png",
+      "film_jpeg": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-07.jpg",
+      "film_jpeg_sha256": "fee1aab4c8adb7299683eefa000f58859d086943ecc89029e0ceb11e2c469663",
       "sha256": "2adf798e62c2820d148595fbb7a4859bea09e4c22d51e695e880952236a9362c",
       "data_integrity": "Direct unaltered pixel selection from original PDF page; scale bars / axes must be verified visually before embedding."
     },
@@ -89,6 +97,8 @@
       ],
       "source_url": "https://m.publikace.k.utb.cz/bitstream/handle/10563/1009831/Fulltext_1009831.pdf?isAllowed=y&sequence=1#page=10",
       "file": "assets/films/source-figures/v4/pla-scaffolds/table-03-antibacterial.png",
+      "film_jpeg": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-03.jpg",
+      "film_jpeg_sha256": "f726d6a042539eb19a84d61c03378ef9b9dc7370da5443ceb26c22d2b2c32132",
       "sha256": "bc85d3fbc6feb920574ea3e17cc5e305e6f97bb3bd1245010f6ff12604ad2469",
       "data_integrity": "Direct unaltered pixel selection from original PDF page; scale bars / axes must be verified visually before embedding."
     }
