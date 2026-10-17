@@ -4,6 +4,7 @@ on:
     branches: [film-remake-20261017]
     paths:
       - scripts/audit-all-film-recuts.py
+      - scripts/normalize-film-captions.py
       - .github/workflows/audit-film-recuts.yml
   workflow_dispatch:
 permissions:
@@ -26,6 +27,10 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg
+      - name: Correct long captions in the replacement editions without rewriting narration
+        run: |
+          python scripts/normalize-film-captions.py --collection series-v2
+          python scripts/normalize-film-captions.py --collection longform-v2
       - name: Validate all current publication documentary remakes
         run: python scripts/audit-all-film-recuts.py --collection series-v2
       - name: Validate every feature documentary recut
@@ -34,7 +39,7 @@ jobs:
         run: |
           git config user.name "Ruwaidix Film Quality Gate"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/films/series-v2/technical-qa.json assets/films/longform-v2/technical-qa.json
+          git add assets/films/series-v2/technical-qa.json assets/films/longform-v2/technical-qa.json assets/films/series-v2/*.vtt assets/films/longform-v2/*.vtt
           if ! git diff --cached --quiet; then
             git commit -m "Audit full encoded films for interrupted playback, caption coverage and source hashes [qa-only]"
             git fetch origin "${{ github.ref_name }}"
