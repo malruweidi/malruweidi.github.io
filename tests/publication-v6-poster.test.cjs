@@ -20,3 +20,12 @@ test('website prefers study-specific V5 editions, then V6 poster, then original 
   assert.match(html,/selectedEdition\?selectedEdition\.edition:"series"/);
   assert.match(html,/Watch preserved original first edition/);
 });
+
+test('site displays playable film elements from one release manifest, not fragile HEAD probes',()=>{
+  const html=fs.readFileSync(path.join(root,'publication-cinema.html'),'utf8');
+  const renderer=fs.readFileSync(path.join(root,'scripts/render-publication-series.py'),'utf8');
+  assert.match(html,/series-v6\/releases\.json/);
+  assert.doesNotMatch(html,/method:"HEAD"/);
+  assert.match(html,/<video controls playsinline/);
+  assert.match(renderer,/releases\.json/);
+});
