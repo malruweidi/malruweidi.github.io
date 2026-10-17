@@ -8,6 +8,10 @@ on:
       - films/making-medicines-keep.html
       - assets/films/publication-series.json
       - assets/films/series-v6/releases.json
+      - assets/films/series-v7-pilots/releases.json
+      - assets/films/series-v7-pilots/*.mp4
+      - assets/films/series-v7-pilots/*.vtt
+      - tests/publication-v7-public-release.test.cjs
       - tests/publication-v6-poster.test.cjs
       - tests/all-cinema-release.test.cjs
       - tests/cinema-science-provenance.test.cjs
@@ -26,6 +30,10 @@ on:
       - films/making-medicines-keep.html
       - assets/films/publication-series.json
       - assets/films/series-v6/releases.json
+      - assets/films/series-v7-pilots/releases.json
+      - assets/films/series-v7-pilots/*.mp4
+      - assets/films/series-v7-pilots/*.vtt
+      - tests/publication-v7-public-release.test.cjs
       - tests/publication-v6-poster.test.cjs
       - tests/all-cinema-release.test.cjs
       - tests/cinema-science-provenance.test.cjs
@@ -46,7 +54,7 @@ jobs:
         with:
           node-version: '22'
       - name: Check 35 film sources, captions, posters, preserved versions, and release index
-        run: node --test tests/publication-v6-poster.test.cjs tests/all-cinema-release.test.cjs tests/cinema-quality-screening.test.cjs tests/cinema-science-provenance.test.cjs tests/cinema-corrected-documentaries.test.cjs
+        run: node --test tests/publication-v6-poster.test.cjs tests/all-cinema-release.test.cjs tests/cinema-quality-screening.test.cjs tests/cinema-science-provenance.test.cjs tests/cinema-corrected-documentaries.test.cjs tests/publication-v7-public-release.test.cjs
       - name: Check inline catalogue player JavaScript
         run: |
           node - <<'JS'
