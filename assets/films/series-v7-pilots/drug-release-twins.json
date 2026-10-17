@@ -1,11 +1,12 @@
 {
   "slug": "drug-release-twins",
+  "visual_revision": "v7.3-caption-safe/film-specific",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
   "fps": 24,
   "source_audio_sha256": "75310e1d18d363b9f63c6a68f30f42f7d4b89de682d2d560135cd86123f7cd02",
-  "movie_sha256": "3c130e546f9cf28aa02fd9fcedd39dc1fcd713e3cece0f5d71c7a27606879193",
+  "movie_sha256": "2c970eb02a692a7e4f5b1d0c9dd3204020789d3df566c81451b08adc1869947c",
   "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
   "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
   "scene_count": 6,
@@ -156,5 +157,6 @@
       "source": "original-nonquantitative-v7-schematic"
     }
   ],
+  "contact_sheet": "/assets/films/series-v7-pilots/drug-release-twins.contact.webp",
   "primary_source": "10.70593/978-93-7185-824-3"
 }

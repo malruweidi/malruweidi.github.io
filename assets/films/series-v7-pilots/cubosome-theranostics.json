@@ -1,0 +1,162 @@
+{
+  "slug": "cubosome-theranostics",
+  "visual_revision": "v7.3-caption-safe/v7.2-bicontinuous",
+  "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
+  "film_style": "24 individually directed visual beats across 6 narrated chapters",
+  "seconds": 84.0,
+  "fps": 24,
+  "source_audio_sha256": "02af24d29d6b193608a875656194384b756e95e12223f2df2642bddca9f0a4e6",
+  "movie_sha256": "22500db7aa95031cfefa4dc288d3800bcb0fee00ab3f83ebc06d33189c963f81",
+  "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
+  "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
+  "scene_count": 6,
+  "visual_beat_count": 24,
+  "beats": [
+    {
+      "scene": "01",
+      "phase": 1,
+      "seconds": 3.917,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 2,
+      "seconds": 3.917,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 3,
+      "seconds": 3.917,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 4,
+      "seconds": 3.917,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 1,
+      "seconds": 3.458,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 2,
+      "seconds": 3.458,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 3,
+      "seconds": 3.417,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 4,
+      "seconds": 3.417,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 1,
+      "seconds": 3.333,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 2,
+      "seconds": 3.333,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 3,
+      "seconds": 3.292,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 4,
+      "seconds": 3.292,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 1,
+      "seconds": 2.958,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 2,
+      "seconds": 2.958,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 3,
+      "seconds": 2.958,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 4,
+      "seconds": 2.958,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 1,
+      "seconds": 3.792,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 2,
+      "seconds": 3.792,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 3,
+      "seconds": 3.75,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 4,
+      "seconds": 3.75,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 1,
+      "seconds": 3.625,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 2,
+      "seconds": 3.625,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 3,
+      "seconds": 3.583,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 4,
+      "seconds": 3.583,
+      "source": "original-nonquantitative-v7-schematic"
+    }
+  ],
+  "contact_sheet": "/assets/films/series-v7-pilots/cubosome-theranostics.contact.webp",
+  "primary_source": "/#publications"
+}

@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 12,
+  "count": 16,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -47,6 +47,20 @@
       "creative_review": "outstanding"
     },
     {
+      "id": "ceramics-printing",
+      "title": "A structure the body must tolerate",
+      "publication": "Clinical Applications of Additively Manufactured Biomedical Ceramics",
+      "poster": "/assets/films/series-v7-pilots/ceramics-printing.webp",
+      "file": "/assets/films/series-v7-pilots/ceramics-printing.mp4",
+      "captions": "/assets/films/series-v7-pilots/ceramics-printing.vtt",
+      "manifest": "/assets/films/series-v7-pilots/ceramics-printing.json",
+      "contact": "/assets/films/series-v7-pilots/ceramics-printing.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "a127a44b687d351f99bdbf8733204879253a9cd9fdd8ec21bd6e98ee523393d3",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
       "id": "cerebral-cilia",
       "title": "How does a vessel know the blood is moving?",
       "publication": "Characterization of endothelial cilia distribution during cerebral-vascular development in zebrafish",
@@ -57,6 +71,20 @@
       "contact": "/assets/films/series-v7-pilots/cerebral-cilia.contact.webp",
       "visual_revision": "v7.3-caption-safe/v7.2-cilia-provenance",
       "sha256": "88e1ebd79bbb104499140a2781f82efb50ceb3dd335562eef34956f7bd39b554",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "cubosome-theranostics",
+      "title": "The difficult promise of a cubic carrier",
+      "publication": "Theranostic Potential of Cubosomes in Targeted Cancer Therapy: From Mechanistic Design to Clinical Translation",
+      "poster": "/assets/films/series-v7-pilots/cubosome-theranostics.webp",
+      "file": "/assets/films/series-v7-pilots/cubosome-theranostics.mp4",
+      "captions": "/assets/films/series-v7-pilots/cubosome-theranostics.vtt",
+      "manifest": "/assets/films/series-v7-pilots/cubosome-theranostics.json",
+      "contact": "/assets/films/series-v7-pilots/cubosome-theranostics.contact.webp",
+      "visual_revision": "v7.3-caption-safe/v7.2-bicontinuous",
+      "sha256": "22500db7aa95031cfefa4dc288d3800bcb0fee00ab3f83ebc06d33189c963f81",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -75,6 +103,20 @@
       "creative_review": "outstanding"
     },
     {
+      "id": "drug-release-twins",
+      "title": "What can a digital twin predict?",
+      "publication": "Simulation of Drug Release and Performance Prediction Using Virtual Models",
+      "poster": "/assets/films/series-v7-pilots/drug-release-twins.webp",
+      "file": "/assets/films/series-v7-pilots/drug-release-twins.mp4",
+      "captions": "/assets/films/series-v7-pilots/drug-release-twins.vtt",
+      "manifest": "/assets/films/series-v7-pilots/drug-release-twins.json",
+      "contact": "/assets/films/series-v7-pilots/drug-release-twins.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "2c970eb02a692a7e4f5b1d0c9dd3204020789d3df566c81451b08adc1869947c",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
       "id": "echo-cnn-lstm",
       "title": "Can an algorithm read a moving heart?",
       "publication": "Deep learning technique for congenital heart disease detection using stacking-based CNN-LSTM models from fetal echocardiogram: a pilot study",
@@ -85,6 +127,20 @@
       "contact": "/assets/films/series-v7-pilots/echo-cnn-lstm.contact.webp",
       "visual_revision": "v7.3-caption-safe/v7.2-ultrasound",
       "sha256": "8c0fc655edf09f6880effb05bed7e65d3b8abe9f8a08228e08deee62894603ff",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "food-printing",
+      "title": "When food becomes a printable material",
+      "publication": "Materials Science for 3D, 4D, 5D, and 6D Food Printing: Rheology, Microstructure, Smart Edible Inks, and Programmable Food Architecture",
+      "poster": "/assets/films/series-v7-pilots/food-printing.webp",
+      "file": "/assets/films/series-v7-pilots/food-printing.mp4",
+      "captions": "/assets/films/series-v7-pilots/food-printing.vtt",
+      "manifest": "/assets/films/series-v7-pilots/food-printing.json",
+      "contact": "/assets/films/series-v7-pilots/food-printing.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "915f9a47d4651d5424502f986cfaeefb1954fd0a7753155bf327b59976591a32",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
