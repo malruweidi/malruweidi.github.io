@@ -82,3 +82,17 @@ test('Making Medicines Keep standalone page plays the improved manuscript-source
     assert(page.includes(chapter.speech),'Revised spoken chapter missing from web transcript: '+chapter.title);
   }
 });
+
+test('documentary collection links its already released work instead of labelling it unfinished',()=>{
+  const page=fs.readFileSync(path.join(root,'films.html'),'utf8');
+  assert.doesNotMatch(page,/In development · no film released/);
+  for(const destination of [
+    '/films/airway-reopening-evidence.html',
+    '/publication-cinema.html#film-cerebral-cilia',
+    '/publication-cinema.html#film-niosomes',
+    '/films/the-laboratory-we-carried-with-us.html',
+    '/films/making-medicines-keep.html'
+  ]){
+    assert(page.includes('href="'+destination+'"'),'Missing release link: '+destination);
+  }
+});
