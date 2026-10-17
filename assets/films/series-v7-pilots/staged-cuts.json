@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 21,
+  "count": 25,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -155,6 +155,36 @@
       "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
+      "id": "essay-academic-mental-health",
+      "title": "The Things an Academic CV Cannot Hold",
+      "publication": "Fifteen Things I Wish Young Academics Were Told About Mental Health",
+      "poster": "/assets/films/series-v7-pilots/essay-academic-mental-health.webp",
+      "file": "/assets/films/series-v7-pilots/essay-academic-mental-health.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-academic-mental-health.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-academic-mental-health.json",
+      "contact": "/assets/films/series-v7-pilots/essay-academic-mental-health.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.5-original-research-life-archive/source-figure-fully-visible",
+      "sha256": "772393ae17b0efdb36bd454a81dd1eca6298ddc25deac69eaf04cb42800c7b9a",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "essay-ai-email",
+      "title": "The Email That Became an Accusation",
+      "publication": "Sorry, My First Email to You Was Probably Polished by AI",
+      "poster": "/assets/films/series-v7-pilots/essay-ai-email.webp",
+      "file": "/assets/films/series-v7-pilots/essay-ai-email.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-ai-email.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-ai-email.json",
+      "contact": "/assets/films/series-v7-pilots/essay-ai-email.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.5-archival-editorial-story/source-figure-fully-visible",
+      "sha256": "9987dd3b8e8e8377e119cf0e8cfe49251575a5546aa07862660f0622e7febf19",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
       "id": "essay-life-between-diagnoses",
       "title": "When the Count Could Not Describe the Pain",
       "publication": "The Life Between Diagnoses",
@@ -165,6 +195,36 @@
       "contact": "/assets/films/series-v7-pilots/essay-life-between-diagnoses.contact.webp",
       "visual_revision": "v7.8-clean-screen/v7.6-correct-portrait-provenance/source-figure-fully-visible",
       "sha256": "92550916ee4e5972b35c13146852ad3c11e0e81b268ea9187f89335675c05fb1",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "essay-machine-language",
+      "title": "Who Taught Humans to Write Like Machines?",
+      "publication": "We Taught People to Sound Like Machines. Now We’re Surprised They Use Them.",
+      "poster": "/assets/films/series-v7-pilots/essay-machine-language.webp",
+      "file": "/assets/films/series-v7-pilots/essay-machine-language.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-machine-language.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-machine-language.json",
+      "contact": "/assets/films/series-v7-pilots/essay-machine-language.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.5-authentic-academic-archive/source-figure-fully-visible",
+      "sha256": "3fabbe5be43d0c5ba493adf5174bcea3bd61ce0ee8e16805bbed7ddf39b2ac0e",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "essay-scientific-credit",
+      "title": "Three Names on the Medal, Hundreds in the Record",
+      "publication": "The Nobel Prize Has Room for Three. Science Never Did.",
+      "poster": "/assets/films/series-v7-pilots/essay-scientific-credit.webp",
+      "file": "/assets/films/series-v7-pilots/essay-scientific-credit.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-scientific-credit.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-scientific-credit.json",
+      "contact": "/assets/films/series-v7-pilots/essay-scientific-credit.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.9-attribution-labels/source-figure-fully-visible",
+      "sha256": "3e5da49b37515e4ded3a2e477b17ff012ff7c049c97af8c1a796dcb46cd6f261",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
