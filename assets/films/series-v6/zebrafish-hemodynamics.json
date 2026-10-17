@@ -1,0 +1,60 @@
+{
+  "id": "zebrafish-hemodynamics",
+  "seconds": 84.0,
+  "sha256": "25f273603c519718caa1fb7c36649ba4bb2f699406b6233917841ce2255e0250",
+  "primary_source": "https://doi.org/10.1016/j.micron.2020.102876",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Published high-speed zebrafish imaging context",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Published microscopy figure"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/zebrafish-hemodynamics/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/moving-evidence.html#zebrafish-films"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/zebrafish-hemodynamics/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/moving-evidence.html#zebrafish-films"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "kind": "Published high-speed zebrafish imaging context",
+      "credit": "Published high-speed zebrafish imaging context",
+      "source": "/moving-evidence.html#zebrafish-films"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/zebrafish-hemodynamics/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/moving-evidence.html#zebrafish-films"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/zebrafish-hemodynamics/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/moving-evidence.html#zebrafish-films"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "kind": "Published microscopy figure",
+      "credit": "Published microscopy figure",
+      "source": "/moving-evidence.html#zebrafish-films"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
