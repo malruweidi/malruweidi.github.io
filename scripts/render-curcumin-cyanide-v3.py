@@ -68,8 +68,8 @@ def orig():
 def panel(which):
     x=orig()
     # Cropped quadrants preserve original spectra/legend, never redraw data.
-    box={"a":(0,0,316,219),"b":(315,0,716,213),
-         "c":(0,214,317,448),"d":(315,211,716,448)}
+    box={"a":(0,0,316,219),"b":(315,0,715,213),
+         "c":(0,214,317,448),"d":(315,211,715,448)}
     return x.crop(box[which])
 
 def exhibit(im,d,source,rect,tag):
@@ -166,7 +166,7 @@ def validate():
     raw=SOURCE.read_bytes()
     blob=b"blob "+str(len(raw)).encode()+b"\x00"+raw
     assert hashlib.sha1(blob).hexdigest()==GIT_SHA,"Source-archive image was changed without review"
-    assert Image.open(SOURCE).size==(716,448)
+    assert Image.open(SOURCE).size==(715,448), "Author-archived four-panel figure resolution changed"
     assert len(SCENES)==8
 
 def main():
