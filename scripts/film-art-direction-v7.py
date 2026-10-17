@@ -41,20 +41,20 @@ LABELS={
  "receptor":("LIGAND","RECEPTOR SIGNAL"),
  "optical":("MOLECULAR PROBE","READOUT IS EXPERIMENTAL"),
  "vesicle":("NONIONIC SURFACTANT BILAYER","AEROSOL DELIVERY: CONCEPTUAL"),
- "echo":("ECHOCARDIOGRAPHIC FRAMES","MODEL OUTPUT IS NOT A DIAGNOSIS"),
- "plasma":("POLYMER SURFACE","PLASMA TREATMENT: SCHEMATIC"),
+ "echo":("ECHOCARDIOGRAPHIC FRAMES","SIGNAL INTERPRETATION"),
+ "plasma":("POLYMER SURFACE","PLASMA SURFACE MODIFICATION"),
  "fibres":("ELECTROSPUN FIBRE MAT","SURFACE MODIFICATION"),
  "flow":("FLOW DIRECTION","IMAGE-DERIVED MEASUREMENT"),
  "ace2":("MEMBRANE-BOUND ACE2","SOLUBLE ACE2"),
  "epithelium":("EPITHELIAL BARRIER","IMMUNE CELL RESPONSE"),
- "biopsy":("HISTOLOGY IS A CLINICAL MEASUREMENT","SCHEMATIC ONLY"),
+ "biopsy":("HISTOLOGY IS A CLINICAL MEASUREMENT","CELLULAR MORPHOLOGY"),
  "ecg":("PHYSIOLOGICAL SIGNAL","CLINICAL INTERPRETATION REQUIRES VALIDATION"),
  "transport":("CARRIER / CONCENTRATION","EXPOSURE IS NOT POTENCY"),
  "extrusion":("NOZZLE","DEPOSITED FILAMENT"),
  "lattice":("ADDITIVE PROCESS","POROUS ARCHITECTURE"),
  "cubic":("BICONTINUOUS LIPID STRUCTURE","SYMBOLIC CROSS-SECTION"),
  "micelle":("AMPHIPHILIC POLYMER","HYDROPHOBIC DOMAIN"),
- "heterocycle":("HETEROCYCLIC RING","ASSAY OUTCOME NOT IMPLIED"),
+ "heterocycle":("HETEROCYCLIC RING","MOLECULAR SYNTHESIS"),
  "interface":("AGAROSE SUPPORT","PARAFFIN INTERFACE"),
  "microscope":("OBSERVATION","ARCHIVAL INSTRUMENT"),
  "document":("WRITTEN WORDS","ATTRIBUTION AND EVIDENCE"),
@@ -64,7 +64,7 @@ LABELS={
  "ternary":("TARGET PROTEIN","RECRUITED PARTNER"),
  "antibody":("ANTIBODY BINDING","LINKER / PAYLOAD"),
  "microfluidic":("SAMPLE CHANNEL","DETECTION REGION"),
- "historical":("RECIPE / DOCUMENT","RECONSTRUCTION: NOT A FACSIMILE")
+ "historical":("RECIPE / DOCUMENT","PHARMACEUTICAL HISTORY")
 }
 # Film titles sharing a broad visual grammar still require precise domain labels.
 # These are educational descriptors, not fabricated experimental observations.
@@ -314,7 +314,7 @@ def scene_art(slug,idx,phase,output):
   rounded(d,(822,211,1083,399),GOLD,5,16)
   txt(d,(865,264),"VIDEO",23,INK,True)
   txt(d,(865,300),"FRAMES",23,INK,True)
-  txt(d,(220,464),"ULTRASOUND IMAGING — NOT A PATIENT RECORD",16,INK)
+  txt(d,(220,464),"ECHOCARDIOGRAPHIC IMAGING",16,INK)
  elif typ in ("ecg","transport","optical"):
   points=[]
   for j in range(780):
@@ -330,7 +330,7 @@ def scene_art(slug,idx,phase,output):
   d.line(points,fill=MINT,width=6)
   line(d,(210,436,1100,436),GOLD,4)
   line(d,(210,179,210,436),GOLD,4)
-  txt(d,(900,453),"QUALITATIVE ONLY",15,INK)
+  txt(d,(900,453),"RELATIVE RESPONSE",15,INK)
  elif typ in ("epithelium","biopsy"):
   for j in range(19):
    x=194+j*43
@@ -451,7 +451,7 @@ def chapter_specific_figure(d,typ,idx,phase):
    arrow(408,318,570,318)
    box(591,255,220,"ANG (1–7)")
    box(901,255,212,"ACE2 ENZYME",GOLD)
-   txt(d,(413,414),"ACE2 CONVERSION / SCHEMATIC",16,INK)
+   txt(d,(413,414),"ANGIOTENSIN PEPTIDE METABOLISM",16,INK)
   elif idx==3:
    box(167,263,369,"MEMBRANE ACE2",MINT)
    box(701,263,369,"SOLUBLE ACE2",GOLD)
@@ -534,7 +534,7 @@ def chapter_source_specific(d,typ,idx,phase):
    oval(d,394,292,18,GOLD,5)
    d.arc((356,210,580,348),190,375,fill=RED,width=8)
    line(d,(545,270,638,229,730,249,790,310),GOLD,6)
-   txt(d,(249,183),"ZEBRAFISH EMBRYO / SCHEMATIC",20,INK,True)
+   txt(d,(249,183),"ZEBRAFISH CRANIAL VASCULATURE",20,INK,True)
    echo("CRANIAL VESSELS OBSERVED IN A LIVING MODEL")
   elif idx==3:
    # Primary cilium must arise from a basal body, not float in the lumen.
@@ -553,7 +553,7 @@ def chapter_source_specific(d,typ,idx,phase):
                                     ("FEATURE","IDENTIFY CILIA"),
                                     ("SAMPLING","ASSESS DISTRIBUTION"))):
     card(145+k*355,222,310,144,label_,sub,k==phase%3)
-   echo("ANALYTICAL WORKFLOW / NO OBSERVED COUNTS RECREATED")
+   echo("IMAGE LOCALIZATION AND MORPHOLOGY")
   elif idx==5:
    card(148,241,353,126,"LOCATION","OBSERVABLE IMAGE")
    card(747,241,353,126,"MECHANISM","ADDITIONAL EVIDENCE")
@@ -565,7 +565,7 @@ def chapter_source_specific(d,typ,idx,phase):
                                  ("WHEN","DURING DEVELOPMENT"),
                                  ("HOW","UNDER FLOW"))):
     card(132+k*361,220,305,154,word,sub,k==phase%3)
-   echo("FUTURE MECHANISTIC QUESTIONS / NOT NEW RESULTS")
+   echo("CILIA, FLOW AND DEVELOPMENT")
  elif typ=="receptor":
   if idx==2:
    mole(272,281);card(480,221,290,132,"ROBO","CELL-SURFACE RECEPTOR",phase==1)
@@ -582,7 +582,7 @@ def chapter_source_specific(d,typ,idx,phase):
               fill=(30,67,65),outline=GOLD if k==phase%3 else MINT,width=4)
     txt(d,(x+30,248),title_,26,INK,True)
     txt(d,(x+30,303),sub,15,GOLD)
-   echo("AN EXPLANATORY PATENT REVIEW WORKFLOW / NOT REAL PATENT PAGES")
+   echo("PATENT CLAIMS AND SCIENTIFIC EVIDENCE")
   elif idx==4:
    for k,(name,detail) in enumerate((("ANTIBODY","BINDING MODALITY"),
                                     ("LIGAND TRAP","INTERCEPT SIGNAL"),
@@ -631,14 +631,14 @@ def chapter_source_specific(d,typ,idx,phase):
    card(148,232,271,144,"STRUCTURE","MATERIAL DESIGN")
    card(491,232,271,144,"EVIDENCE","MEASUREMENT",phase>=1)
    card(832,232,271,144,"TRANSLATION","UNRESOLVED",phase==3)
-   echo("ACCEPTED BOOK CHAPTER / NOT AN APPROVED TREATMENT")
+   echo("BIOMATERIAL DESIGN AND BIOLOGICAL RESPONSE")
  elif typ=="microscope":
   if idx==2:
    # A typographic chronology, not a photographed trip or tracked route.
    card(149,224,372,147,"QASR EL EINY","CAIRO / ORIGINAL PURCHASE",phase==0)
    card(744,224,363,147,"QATAR","PERSONAL MICROSCOPE",phase>=2)
    arrow(543,297,713,297)
-   echo("A PERSONAL TRANSFER / NOT FOOTAGE OR A GPS ROUTE")
+   echo("FROM CAIRO TO QATAR")
   elif idx==5:
    card(148,223,359,149,"OBSERVATION","WHAT THE EYE SEES",phase==0)
    card(748,223,352,149,"EVIDENCE","MEASUREMENT / CONTROLS",phase>=2)
@@ -659,13 +659,13 @@ def chapter_source_specific(d,typ,idx,phase):
                                  ("4D","STIMULUS RESPONSE"),
                                  ("5D / 6D","PROPOSED LABELS"))):
     card(144+k*351,228,310,141,name,sub,k==phase%3)
-   echo("NOT EVERY NOMINAL DIMENSION HAS A VALIDATED PROCESS")
+   echo("PRINT GEOMETRY AND MATERIAL PROPERTIES")
   elif idx==4:
    for layer in range(5):
     for k in range(11):
      x=224+k*71+(layer%2)*21;y=214+layer*47
      rounded(d,(x,y,x+62,y+30),MINT if layer%2 else GOLD,3,9)
-   echo("EDIBLE MICROSTRUCTURE / SCHEMATIC MATERIAL DEPOSITION")
+   echo("EDIBLE MATERIAL DEPOSITION")
   elif idx==5:
    for k,(name,sub) in enumerate((("PRINTABILITY","FLOW / FIDELITY"),
                                  ("STABILITY","SHAPE RETENTION"),
@@ -679,7 +679,7 @@ def chapter_source_specific(d,typ,idx,phase):
     for x in range(277+(level%2)*23,950,94):
      oval(d,x,y,11,RED if level==phase else GRID,3)
    txt(d,(218,419),"SHAPE RETENTION / THE FINAL MATERIAL",20,INK,True)
-   echo("ACCEPTED CHAPTER: PROGRAMMABLE FORM DOES NOT GUARANTEE FUNCTION")
+   echo("FROM STRUCTURE TO FUNCTION")
 
 
 def chapter_five_reworks(d,slug,idx,phase):
@@ -713,7 +713,7 @@ def chapter_five_reworks(d,slug,idx,phase):
    card(617,224,485,104,"MATHEMATICAL MODEL","ILLUSTRATIVE RELEASE PROFILE")
    card(617,355,485,104,"PERFORMANCE CLAIM","REQUIRES EXPERIMENTAL TEST",GOLD)
   elif idx==4:
-   card(145,230,322,153,"MODEL OUTPUT","QUALITATIVE PATTERN",MINT)
+   card(145,230,322,153,"MODEL OUTPUT","RESPONSE PATTERN",MINT)
    card(805,230,322,153,"LAB OBSERVATION","MEASURED IN FUTURE",GOLD)
    d.line((469,304,795,304),fill=RED,width=5)
    txt(d,(603,260),"≠",49,RED,True)
@@ -731,7 +731,7 @@ def chapter_five_reworks(d,slug,idx,phase):
   if idx==2:
    for k,(name,sub) in enumerate((("ASSAY","IN VITRO POTENCY"),("ABSORPTION","ENTRY INTO BODY"),("TISSUE","TARGET EXPOSURE"))):
     card(134+354*k,247,316,126,name,sub,GOLD if k==phase%3 else MINT)
-   footer("AN ASSAY VALUE CANNOT SUBSTITUTE FOR PHARMACOKINETICS")
+   footer("POTENCY AND PHARMACOKINETICS")
   elif idx==3:
    card(158,225,382,150,"TOTAL CONCENTRATION","FREE + BOUND",MINT)
    card(741,225,375,150,"UNBOUND FRACTION","CAN ENGAGE TARGET",GOLD)
@@ -762,7 +762,7 @@ def chapter_five_reworks(d,slug,idx,phase):
    d.rounded_rectangle((527,259,724,326),outline=RED,width=7,radius=22)
    line(d,(416,295,527,295),MINT,6);line(d,(724,295,846,295),GOLD,6)
    txt(d,(535,340),"BIFUNCTIONAL LINKER",17,INK)
-   footer("INDUCED RECRUITMENT / CELL-LEVEL SCHEMATIC")
+   footer("TARGET AND E3 LIGASE RECRUITMENT")
   elif idx==3:
    for k,(name,sub) in enumerate((("LINKER","LENGTH"),("ORIENTATION","GEOMETRY"),("COOPERATIVITY","COMPLEX"))):
     card(132+356*k,234,312,148,name,sub,GOLD if k==phase%3 else MINT)
@@ -799,7 +799,7 @@ def chapter_five_reworks(d,slug,idx,phase):
    d.line((511,302,738,302),fill=RED,width=5)
    txt(d,(598,264),"≠",44,RED,True)
    card(755,232,346,143,"HISTORY","FULL EVIDENCE TRAIL")
-   footer("RECOGNITION IS NOT THE ENTIRE CHAIN OF DISCOVERY")
+   footer("MOLECULAR RECOGNITION AND VALIDATION")
   elif idx==5:
    for k,(name,sub) in enumerate((("PAPER","CITATION"),("NOTEBOOK","EXPERIMENT"),("PATENT","DOCUMENTED CLAIM"))):
     card(131+357*k,240,307,139,name,sub,GOLD if k==phase%3 else MINT)
@@ -824,7 +824,7 @@ def chapter_five_reworks(d,slug,idx,phase):
     x=190+k*220
     rounded(d,(x,218,x+175,356),MINT if k!=phase else GOLD,5,14)
     oval(d,x+85,274,28,RED if k==phase else MINT,5)
-   footer("CYTOTOXICITY SCREEN / NOT A HUMAN CANCER TREATMENT")
+   footer("CELL-BASED CYTOTOXICITY SCREEN")
   elif idx==5:
    card(147,236,303,137,"INTENT","PLANNED MOLECULE")
    card(481,236,303,137,"RESULT","ACTUALLY OBTAINED")
@@ -834,7 +834,7 @@ def chapter_five_reworks(d,slug,idx,phase):
    card(149,232,358,141,"SYNTHESIS","CAN IT BE MADE?")
    arrow(529,736)
    card(771,232,335,141,"EVIDENCE","WHAT WAS MEASURED?",GOLD)
-   footer("A PROMISING DESIGN IS NOT A DOCUMENTED DRUG")
+   footer("FORMULATION DEVELOPMENT AND EVIDENCE")
 
 def chapter_two_final(d,slug,idx,phase):
  """Six evidence-safe cinematic explanations for two previously repeated films.
