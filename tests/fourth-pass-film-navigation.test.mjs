@@ -16,3 +16,16 @@ test("the four film links promise the experience the reader actually receives",(
    assert.match(read("films/"+path+".html"),/<video\b[^>]*controls/);
  }
 });
+
+test("the histology documentary player is inside the main landmark and is reached by the skip link",()=>{
+ const html=read("films/two-materials-no-section.html");
+ const main=html.indexOf('<main id="main"');
+ const film=html.indexOf('<section class="rx-film-chapter"');
+ const player=html.indexOf('<video controls');
+ const closing=html.indexOf('</main>',main);
+ assert.ok(main!==-1&&film!==-1&&player!==-1);
+ assert.ok(main<film&&film<player&&player<closing,"skip-to-main must include the actual film player");
+ assert.ok(html.includes('href="#main"'));
+ assert.ok(html.includes('href="/stories/failed-zebrafish-histology.html"'));
+ assert.doesNotMatch(html,/Direct video ↗<\/a>\s*·\s*<\/p>/);
+});
