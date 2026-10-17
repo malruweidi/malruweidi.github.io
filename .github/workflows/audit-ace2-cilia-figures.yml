@@ -1,0 +1,29 @@
+name: Audit exact ACE2 and zebrafish-cilia study figures
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/stage-exact-paper-figure-ledgers.py
+      - .github/workflows/audit-ace2-cilia-figures.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Check figure attribution inside exact DOI-linked article XML
+        run: python scripts/stage-exact-paper-figure-ledgers.py
+      - name: Commit read-only source catalogue and conservative reuse flags
+        run: |
+          git config user.name "Ruwaidix Scientific Figure Research"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/source-figures/paper-audit/
+          if ! git diff --cached --quiet; then
+            git commit -m "Catalogue matching ACE2 and vascular cilia JATS figures and third-party rights"
+            git fetch origin "${{ github.ref_name }}"
+            if git rebase "origin/${{ github.ref_name }}"; then git push origin HEAD:"${{ github.ref_name }}"; else git rebase --abort; exit 1; fi
+          fi
