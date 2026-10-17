@@ -1,12 +1,12 @@
 {
   "slug": "essay-scientific-credit",
-  "visual_revision": "v7.3-caption-safe/film-specific",
+  "visual_revision": "v7.3-caption-safe/v7.7-historical-documentation",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
   "fps": 24,
   "source_audio_sha256": "f95d99e8798d17f81f715bc3497f59c505a55b7df4360c959a42a0104d25a335",
-  "movie_sha256": "68402c49866e01a4b5761b640652c3ccad73fdbe907d5fd9ffd465407bf9c84d",
+  "movie_sha256": "87d14e9c9c4b53d4d7d18a25dbba38e45edd5abcef3481b8fe5a583385f46cd5",
   "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
   "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
   "scene_count": 6,
@@ -88,13 +88,13 @@
       "scene": "04",
       "phase": 1,
       "seconds": 3.958,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/2017-acs-el-sayed-group.webp"
     },
     {
       "scene": "04",
       "phase": 2,
       "seconds": 3.917,
-      "source": "original-nonquantitative-v7-schematic"
+      "source": "assets/2017-acs-el-sayed-group.webp"
     },
     {
       "scene": "04",

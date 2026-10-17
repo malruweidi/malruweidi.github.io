@@ -133,11 +133,11 @@
       "captions": "/assets/films/series-v7-pilots/drug-release-twins.vtt",
       "manifest": "/assets/films/series-v7-pilots/drug-release-twins.json",
       "contact": "/assets/films/series-v7-pilots/drug-release-twins.contact.webp",
-      "visual_revision": "v7.3-caption-safe/film-specific",
-      "sha256": "2c970eb02a692a7e4f5b1d0c9dd3204020789d3df566c81451b08adc1869947c",
+      "visual_revision": "v7.3-caption-safe/v7.7-experiment-calibrated-model",
+      "sha256": "880c79bb528c60ab00fd634746b1bf6d4f00732704b8a05439287b36c955cbc3",
       "seconds": 84.0,
-      "unique_mechanism_scenes": 5,
-      "creative_review": "needs_chapter_art_direction"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "echo-cnn-lstm",
@@ -238,11 +238,11 @@
       "captions": "/assets/films/series-v7-pilots/essay-potency-exposure.vtt",
       "manifest": "/assets/films/series-v7-pilots/essay-potency-exposure.json",
       "contact": "/assets/films/series-v7-pilots/essay-potency-exposure.contact.webp",
-      "visual_revision": "v7.3-caption-safe/film-specific",
-      "sha256": "eccb13535b87e5aa9429caa31154766f50bfc5865f8b6fb552cc5a1c2980ee68",
+      "visual_revision": "v7.3-caption-safe/v7.7-free-exposure-pharmacology",
+      "sha256": "a58acb14d50b275f1ee95bc20850bd49ba5a117e6adc443f7df2cc39da7b9c51",
       "seconds": 84.0,
-      "unique_mechanism_scenes": 5,
-      "creative_review": "needs_chapter_art_direction"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "essay-proximity",
@@ -268,11 +268,11 @@
       "captions": "/assets/films/series-v7-pilots/essay-scientific-credit.vtt",
       "manifest": "/assets/films/series-v7-pilots/essay-scientific-credit.json",
       "contact": "/assets/films/series-v7-pilots/essay-scientific-credit.contact.webp",
-      "visual_revision": "v7.3-caption-safe/film-specific",
-      "sha256": "68402c49866e01a4b5761b640652c3ccad73fdbe907d5fd9ffd465407bf9c84d",
+      "visual_revision": "v7.3-caption-safe/v7.7-historical-documentation",
+      "sha256": "87d14e9c9c4b53d4d7d18a25dbba38e45edd5abcef3481b8fe5a583385f46cd5",
       "seconds": 84.0,
-      "unique_mechanism_scenes": 4,
-      "creative_review": "needs_chapter_art_direction"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "essay-tf-states",
@@ -373,11 +373,11 @@
       "captions": "/assets/films/series-v7-pilots/heterocycle-cancer.vtt",
       "manifest": "/assets/films/series-v7-pilots/heterocycle-cancer.json",
       "contact": "/assets/films/series-v7-pilots/heterocycle-cancer.contact.webp",
-      "visual_revision": "v7.3-caption-safe/film-specific",
-      "sha256": "2718f54532ca8a20ec4b6c7ff203115e60d4465c3d8d82bef2ea179324a446bf",
+      "visual_revision": "v7.3-caption-safe/v7.7-synthesis-assay-logic",
+      "sha256": "11f0ac1285eb880b9f74d93e025ca42a73b72d11bf78f0ccf1770b9cc4be6109",
       "seconds": 84.0,
-      "unique_mechanism_scenes": 5,
-      "creative_review": "needs_chapter_art_direction"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "histology-failure",
