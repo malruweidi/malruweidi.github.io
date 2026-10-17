@@ -1,10 +1,5 @@
-name: Source-verified historical pharmacy folio
+name: Optional authorized manuscript folio import (manual only)
 on:
-  push:
-    branches: [film-remake-20261017]
-    paths:
-      - scripts/import-qdl-primary-manuscript.py
-      - .github/workflows/import-primary-manuscript.yml
   workflow_dispatch:
 permissions:
   contents: write
