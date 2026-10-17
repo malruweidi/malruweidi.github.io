@@ -84,19 +84,19 @@ jobs:
                       for beat in record["beats"]):
                   print("Holding misattributed hemodynamics image:",slug)
                   continue
-              if "v7.4-chapter-specific" in record.get("visual_revision",""):
-                  # Compare the actual scientific drawing areas, not chapter title
-                  # typography. Six chapters must present six distinct compositions.
-                  from PIL import Image
-                  with Image.open(contact) as sheet:
-                      if sheet.size!=(1920,800):raise AssertionError(slug+" contact sheet malformed")
-                      story_pixels=[]
-                      for ch in range(6):
-                          xx=(ch%3)*640;yy=(ch//3)*400
-                          crop=sheet.crop((xx+75,yy+100,xx+560,yy+240))
-                          story_pixels.append(hashlib.sha256(crop.tobytes()).hexdigest())
-                  if len(set(story_pixels))!=6:
-                      raise AssertionError("Repeated scientific illustration across chapters: "+slug)
+              # Six chapter titles over one reused picture are not six visual
+              # explanations. Assess image areas while excluding chapter typography.
+              from PIL import Image
+              with Image.open(contact) as sheet:
+                  if sheet.size!=(1920,800):raise AssertionError(slug+" contact sheet malformed")
+                  story_pixels=[]
+                  for ch in range(6):
+                      xx=(ch%3)*640;yy=(ch//3)*400
+                      crop=sheet.crop((xx+75,yy+100,xx+560,yy+240))
+                      story_pixels.append(hashlib.sha256(crop.tobytes()).hexdigest())
+              unique_scenes=len(set(story_pixels))
+              if "v7.4-chapter-specific" in record.get("visual_revision","") and unique_scenes!=6:
+                  raise AssertionError("Repeated scientific illustration across chapters: "+slug)
               source=Path("assets/films/series-v6")/(slug+".mp4")
               assert record["source_audio_sha256"]==hashlib.sha256(source.read_bytes()).hexdigest()
               entries.append({"id":slug,"title":allowed[slug]["film_title"],
@@ -109,7 +109,9 @@ jobs:
                               "visual_revision":record["visual_revision"],
                               "sha256":record["movie_sha256"],
                               "seconds":round(float(track["format"]["duration"]),3),
-                              "creative_review":"outstanding"})
+                              "unique_mechanism_scenes":unique_scenes,
+                              "creative_review":"needs_chapter_art_direction" if unique_scenes<6
+                              else "scientific_and_artistic_signoff_outstanding"})
           index={"schema":"ruwaidix-cinema-v7-staging-v1","count":len(entries),
                  "total_eligible":30,"release_status":"NOT APPROVED FOR REPLACING LIVE MOVIES",
                  "films":entries}
