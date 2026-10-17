@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - scripts/render-cinema-v7-pilots.py
+      - scripts/build-cinema-v7-previews.py
+      - scripts/film-art-direction-v7.py
       - .github/workflows/cinema-v7-pilots.yml
   workflow_dispatch:
 permissions:
