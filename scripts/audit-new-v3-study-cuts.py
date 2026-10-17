@@ -50,6 +50,7 @@ def source_gate(name,meta):
   assert "No claim of measured" in meta["scientific_limit"]
  elif name=="pla-scaffolds":
   assert meta["doi"]=="10.1016/j.surfcoat.2020.126216"
+  assert meta["license"].startswith("CC BY 4.0")
   assert len(meta["source_pages"])==5
   assert "2021 PLA-film dataset is distinct" in meta["research_boundary"]
   labels={p["label"] for p in meta["source_pages"]}
