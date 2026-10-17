@@ -99,15 +99,31 @@
   for(let x of selected.filter(x=>x.production==="render_requested")){
    let target=document.getElementById("film-"+x.id);
    if(!target)continue;
-   const selectedEdition=verifiedFilmMasters[x.id];
-   const base="/assets/films/"+(selectedEdition?selectedEdition.edition:"series")+"/"+x.id;
-   const url=base+".mp4";
-   let request=fetch(url,{method:"HEAD",cache:"no-store"}).then(r=>{
+   let selectedEdition=verifiedFilmMasters[x.id];
+   let base="/assets/films/"+(selectedEdition?selectedEdition.edition:"series")+"/"+x.id;
+   let url=base+".mp4";
+   // The five primary-source editions remain preferred. For other subjects,
+   // use a source-screened V6 remake only when its actual MP4 has deployed;
+   // otherwise retain the published first edition and its subtitles.
+   let request=(async()=>{
+     if(!selectedEdition){
+       const candidate="/assets/films/series-v6/"+x.id;
+       try {
+         const check=await fetch(candidate+".mp4",{method:"HEAD",cache:"no-store"});
+         if(check.ok && /^video\\/mp4\\b/i.test(check.headers.get("content-type")||"")){
+           selectedEdition={edition:"series-v6",duration:84,poster:x.poster};
+           base=candidate;
+           url=candidate+".mp4";
+         }
+       }catch(_){ /* Existing edition stays visible. */ }
+     }
+     return fetch(url,{method:"HEAD",cache:"no-store"});
+   })().then(r=>{
     if(!r.ok || !/^video\/mp4\b/i.test(r.headers.get("content-type")||""))return;
     if(!target.isConnected)return;
     let visual=target.querySelector(".piece-visual");
     visual.innerHTML='<video controls playsinline preload="none" poster="'+esc((selectedEdition&&selectedEdition.poster)||x.poster)+'" aria-label="'+esc(x.film_title)+'"><source src="'+esc(url)+'" type="video/mp4"><track kind="captions" src="'+esc(base+".vtt")+'" srclang="en" label="English captions" default></video>';
-    target.querySelector("[data-status]").textContent="Film available · "+(selectedEdition?selectedEdition.duration:x.duration_seconds)+" seconds · English captions"+(selectedEdition?" · revised study-specific research edition":"");
+    target.querySelector("[data-status]").textContent="Film available · "+(selectedEdition?selectedEdition.duration:x.duration_seconds)+" seconds · English captions"+(selectedEdition?" · source-screened revised edition":"");
     const actions=target.querySelector(".actions");
     if(actions){const link=document.createElement("a");link.href=base+".vtt";link.textContent="Read captions ↗";link.setAttribute("aria-label","Read English captions for "+x.film_title);actions.appendChild(link);if(selectedEdition){const orig=document.createElement("a");orig.href="/assets/films/series/"+encodeURIComponent(x.id)+".mp4";orig.textContent="Watch preserved original first edition ↗";actions.appendChild(orig);const map=document.createElement("a");map.href=base+".json";map.textContent="View verified new chapter sources ↗";actions.appendChild(map);}}
    }).catch(()=>{});
