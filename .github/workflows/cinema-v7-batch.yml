@@ -95,7 +95,7 @@ jobs:
                       crop=sheet.crop((xx+75,yy+100,xx+560,yy+240))
                       story_pixels.append(hashlib.sha256(crop.tobytes()).hexdigest())
               unique_scenes=len(set(story_pixels))
-              if "v7.4-chapter-specific" in record.get("visual_revision","") and unique_scenes!=6:
+              if any(tag in record.get("visual_revision","") for tag in ("v7.4-chapter-specific","v7.7-")) and unique_scenes!=6:
                   raise AssertionError("Repeated scientific illustration across chapters: "+slug)
               source=Path("assets/films/series-v6")/(slug+".mp4")
               assert record["source_audio_sha256"]==hashlib.sha256(source.read_bytes()).hexdigest()
