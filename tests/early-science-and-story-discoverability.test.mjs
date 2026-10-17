@@ -50,3 +50,11 @@ test('public film dossiers and the scientific fieldnotes are in the sitemap',()=
    assert.ok(sitemap.includes('https://malruweidi.github.io'+path),path);
  }
 });
+
+test('reader map offers both overlooked stories as direct accessible destinations',()=>{
+ const map=read('reading-map.html');
+ assert.ok(map.includes('href="/stories.html#school-chemistry-and-graduation"'));
+ assert.ok(map.includes('href="/stories.html#life-between-diagnoses-story"'));
+ assert.ok(map.includes('First chemistry teacher'));
+ assert.ok(map.includes('The Life Between Diagnoses'));
+});
