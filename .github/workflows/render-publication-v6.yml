@@ -5,6 +5,7 @@ on:
     paths:
       - scripts/film-art-direction-v6.py
       - scripts/render-publication-series.py
+      - tests/publication-v6-poster.test.cjs
       - .github/workflows/render-publication-v6.yml
   workflow_dispatch:
 permissions:
