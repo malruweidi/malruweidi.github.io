@@ -1,0 +1,84 @@
+{
+  "id": "ace2-forms",
+  "seconds": 84.0,
+  "sha256": "3a9d74f944c9d78463423de064b55e7eb71692ae63ef0da41e238444c7be3470",
+  "primary_source": "https://doi.org/10.3390/ijms22136703",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Contextual pulmonary scientific illustration",
+    "Conceptual non-specific signalling image, not ACE2 molecular structure",
+    "Pulmonary research-context illustration",
+    "Archival laboratory workspace, not ACE2 assay",
+    "Editorial image, not original coronavirus micrograph",
+    "Conceptual visual, not study data"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/evidence-pulmonary.webp",
+      "kind": "Contextual pulmonary scientific illustration",
+      "credit": "Contextual pulmonary scientific illustration",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/echo-concept.svg",
+      "kind": "Conceptual non-specific signalling image, not ACE2 molecular structure",
+      "credit": "Conceptual non-specific signalling image, not ACE2 molecular structure",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/evidence-pulmonary.webp",
+      "kind": "Pulmonary research-context illustration",
+      "credit": "Pulmonary research-context illustration",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "kind": "Archival laboratory workspace, not ACE2 assay",
+      "credit": "Archival laboratory workspace, not ACE2 assay",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/evidence-pulmonary.webp",
+      "kind": "Editorial image, not original coronavirus micrograph",
+      "credit": "Editorial image, not original coronavirus micrograph",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/echo-concept.svg",
+      "kind": "Conceptual visual, not study data",
+      "credit": "Conceptual visual, not study data",
+      "source": "/#publications"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "network",
+  "motion_storyboard": {
+    "02": "network",
+    "03": "molecule",
+    "04": "network",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Membrane-bound ACE2",
+    "Soluble ACE2",
+    "Context-dependent activity"
+  ],
+  "evidence_boundary": "An explanatory relationship, not a measured concentration.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

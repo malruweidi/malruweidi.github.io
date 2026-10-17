@@ -1,0 +1,84 @@
+{
+  "id": "drug-release-twins",
+  "seconds": 84.0,
+  "sha256": "7d171ee68f821f89898be4e4fd651207a9df74a437afac8c92542b8155e0da44",
+  "primary_source": "https://doi.org/10.70593/978-93-7185-824-3",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original conceptual drug-carrier drawing",
+    "Original research workstation, not the book chapter's simulation screenshot",
+    "Conceptual carrier visual, not computed simulation output",
+    "Actual computer/research workspace; no claims of model-validation success",
+    "Editorial illustration, not measured release profile",
+    "Archival computational research context"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/niosomes-concept.svg",
+      "kind": "Original conceptual drug-carrier drawing",
+      "credit": "Original conceptual drug-carrier drawing",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "kind": "Original research workstation, not the book chapter's simulation screenshot",
+      "credit": "Original research workstation, not the book chapter's simulation screenshot",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/niosomes-concept.svg",
+      "kind": "Conceptual carrier visual, not computed simulation output",
+      "credit": "Conceptual carrier visual, not computed simulation output",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "kind": "Actual computer/research workspace; no claims of model-validation success",
+      "credit": "Actual computer/research workspace; no claims of model-validation success",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/niosomes-concept.svg",
+      "kind": "Editorial illustration, not measured release profile",
+      "credit": "Editorial illustration, not measured release profile",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "kind": "Archival computational research context",
+      "credit": "Archival computational research context",
+      "source": "/computing.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "vesicle",
+  "motion_storyboard": {
+    "02": "vesicle",
+    "03": "signal",
+    "04": "signal",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Carrier release",
+    "Model prediction",
+    "Experimental validation"
+  ],
+  "evidence_boundary": "Animated particles do not represent release measurements.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}
