@@ -77,7 +77,9 @@ PHOTO={
  "histology-failure":["assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp","assets/2026-10-13-new-photos/zebrafish-histology-processing.webp","assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp"],
  "cairo-microscope":["assets/photos-2017-2019/microscope-morning-still-life-2017.webp"],
  "micelles-pahs":["assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp"],
- "heterocycle-cancer":["assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp"],
+ # A pyridine-4-carboxaldehyde reagent photograph is not verified as evidence
+ # of the separate imidazopyridine anticancer synthesis or screening dataset.
+ "heterocycle-cancer":[],
  "essay-life-between-diagnoses":["assets/2026-10-13-new-photos/august-2025-hospital-research.webp"],
  "essay-scientific-credit":["assets/2017-acs-el-sayed-group.webp"]
 }
