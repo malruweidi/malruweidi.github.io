@@ -112,6 +112,29 @@ def main():
     print("Selected cinematic remakes:",", ".join(x["id"] for x in items))
     if not items: return
 
+    # Topic-specific authored diagrams already contain their own provenance
+    # heading and figure legend. The legacy two-tier film title would obscure
+    # the illustration and repeat it. Use a low, unobtrusive editorial caption.
+    source_overlay=pub.custom_overlay
+    def editorial_overlay(scene,total,label):
+        if not scene["image"].startswith("assets/films/art/source-specific/"):
+            return source_overlay(scene,total,label)
+        from PIL import Image, ImageDraw
+        W,H=pub.engine.W,pub.engine.H
+        out=Image.new("RGBA",(W,H),(0,0,0,0))
+        d=ImageDraw.Draw(out)
+        for y in range(565,H):
+            alpha=round(229*min(1,(y-565)/46))
+            d.line((0,y,W,y),fill=(11,35,40,alpha))
+        d.text((55,586),"RUWAIDIX  /  CHAPTER "+scene["id"]+" OF "+str(total).zfill(2),
+               font=pub.engine.font(15,True),fill=(203,173,137))
+        lines=pub.engine.lines_to_fit(scene["title"],d,pub.engine.font(36,True),1158)
+        for i,line in enumerate(lines[:2]):
+            d.text((55,611+i*37),line,font=pub.engine.font(36,True),fill=(247,241,229))
+        d.text((56,701),"CONCEPT DRAWING / NOT EXPERIMENTAL DATA",
+               font=pub.engine.font(13),fill=(179,212,191))
+        return out
+    pub.custom_overlay=editorial_overlay
     pub.OUTPUT=DIR
     pub.engine.FILM=DIR
     original_make_clip=pub.engine.make_clip
