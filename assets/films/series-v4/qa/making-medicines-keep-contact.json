@@ -1,25 +1,25 @@
 {
-  "source": "assets/films/series-v4/making-medicines-keep.mp4",
-  "sha256": "ac53a532de63488ca55eeb0262eb6ab740a7458c8b4908b585885f7852e40d48",
-  "sample_seconds": [
-    3,
+  "film": "making-medicines-keep",
+  "source_mp4": "assets/films/series-v4/making-medicines-keep.mp4",
+  "source_sha256": "ac53a532de63488ca55eeb0262eb6ab740a7458c8b4908b585885f7852e40d48",
+  "timestamps_seconds": [
+    4,
     11,
-    18,
+    19,
     26,
-    33,
+    34,
     41,
-    48,
+    49,
     56,
-    63,
+    64,
     71,
-    78,
+    79,
     86,
-    93,
+    94,
     101,
-    108,
+    109,
     116
   ],
-  "scenes": 8,
-  "preserves_full_frames": true,
-  "status": "REVIEW REQUIRED: visual, acoustic, historical and rights verification pending"
+  "frame_geometry": "No cropping or source overlay: 16 decoded full frames; label outside original image",
+  "scientific_and_artistic_review": "NOT DONE - actual watching/listening and source figure screen inspection required"
 }
