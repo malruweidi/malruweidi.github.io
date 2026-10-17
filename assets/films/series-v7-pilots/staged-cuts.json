@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 13,
+  "count": 17,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -50,6 +50,21 @@
       "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
+      "id": "ceramics-printing",
+      "title": "A structure the body must tolerate",
+      "publication": "Clinical Applications of Additively Manufactured Biomedical Ceramics",
+      "poster": "/assets/films/series-v7-pilots/ceramics-printing.webp",
+      "file": "/assets/films/series-v7-pilots/ceramics-printing.mp4",
+      "captions": "/assets/films/series-v7-pilots/ceramics-printing.vtt",
+      "manifest": "/assets/films/series-v7-pilots/ceramics-printing.json",
+      "contact": "/assets/films/series-v7-pilots/ceramics-printing.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific",
+      "sha256": "8c10db4e074b33e4a73e46ea1d209eeebe1eb36e0a1d2aeecb8225d1a8d7cfae",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
       "id": "cerebral-cilia",
       "title": "How does a vessel know the blood is moving?",
       "publication": "Characterization of endothelial cilia distribution during cerebral-vascular development in zebrafish",
@@ -60,6 +75,21 @@
       "contact": "/assets/films/series-v7-pilots/cerebral-cilia.contact.webp",
       "visual_revision": "v7.8-clean-screen/v7.4-chapter-specific-cilia-clean-panel",
       "sha256": "d41d9048e8fc3e344379d7a21f85bca98e6842a7c677c18f822bc6bcf7f90098",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "cubosome-theranostics",
+      "title": "The difficult promise of a cubic carrier",
+      "publication": "Theranostic Potential of Cubosomes in Targeted Cancer Therapy: From Mechanistic Design to Clinical Translation",
+      "poster": "/assets/films/series-v7-pilots/cubosome-theranostics.webp",
+      "file": "/assets/films/series-v7-pilots/cubosome-theranostics.mp4",
+      "captions": "/assets/films/series-v7-pilots/cubosome-theranostics.vtt",
+      "manifest": "/assets/films/series-v7-pilots/cubosome-theranostics.json",
+      "contact": "/assets/films/series-v7-pilots/cubosome-theranostics.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.4-chapter-specific-cubosomes-clean-panel",
+      "sha256": "a805987886ab34d90e47647162a78dc08a818354f43feb6e9b904f9136a9ffb6",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
@@ -110,6 +140,21 @@
       "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
+      "id": "food-printing",
+      "title": "When food becomes a printable material",
+      "publication": "Materials Science for 3D, 4D, 5D, and 6D Food Printing: Rheology, Microstructure, Smart Edible Inks, and Programmable Food Architecture",
+      "poster": "/assets/films/series-v7-pilots/food-printing.webp",
+      "file": "/assets/films/series-v7-pilots/food-printing.mp4",
+      "captions": "/assets/films/series-v7-pilots/food-printing.vtt",
+      "manifest": "/assets/films/series-v7-pilots/food-printing.json",
+      "contact": "/assets/films/series-v7-pilots/food-printing.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.4-chapter-specific-food-rheology-clean-panel",
+      "sha256": "c97fc66f7167d07652053de51059ef7855c17c78712c747701142da160205948",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
       "id": "gi-autoimmunity-1",
       "title": "What happens when immunity turns on the gut?",
       "publication": "Autoimmune Diseases of the GI Tract Part I: Etiology and Pathophysiology",
@@ -153,6 +198,21 @@
       "seconds": 84.0,
       "unique_mechanism_scenes": 5,
       "creative_review": "needs_chapter_art_direction"
+    },
+    {
+      "id": "micelles-pahs",
+      "title": "A polymer meets an insoluble problem",
+      "publication": "Polymeric micelles for polycyclic aromatic hydrocarbons",
+      "poster": "/assets/films/series-v7-pilots/micelles-pahs.webp",
+      "file": "/assets/films/series-v7-pilots/micelles-pahs.mp4",
+      "captions": "/assets/films/series-v7-pilots/micelles-pahs.vtt",
+      "manifest": "/assets/films/series-v7-pilots/micelles-pahs.json",
+      "contact": "/assets/films/series-v7-pilots/micelles-pahs.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific/source-figure-fully-visible",
+      "sha256": "ea9fc3c2a7bd251bcf97435ae965a5691a6f8a7a83a4973df66ecd35aa8dbecb",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "niosomes",
