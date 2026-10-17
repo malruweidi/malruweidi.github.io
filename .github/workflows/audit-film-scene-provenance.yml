@@ -1,0 +1,29 @@
+name: Editorial image identity audit — all 35 films
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/audit-legacy-image-reuse.py
+      - assets/films/V3-EVIDENCE-FIRST-DIRECTORIAL-REGISTER.json
+      - .github/workflows/audit-film-scene-provenance.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  exact-source-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python scripts/audit-legacy-image-reuse.py
+      - name: Preserve source-based risk register as a human-readable review artifact
+        run: |
+          git config user.name "Ruwaidix Source Audit"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/V3-VISUAL-REUSE-AUDIT.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record cross-study imagery hazards and each film's unique visual coverage"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase "origin/${{ github.ref_name }}"
+            git push origin HEAD:"${{ github.ref_name }}"
+          fi
