@@ -107,9 +107,21 @@ jobs:
           git add assets/films/series-v7-pilots/*.mp4 assets/films/series-v7-pilots/*.vtt assets/films/series-v7-pilots/*.webp assets/films/series-v7-pilots/*.json
           if ! git diff --cached --quiet; then
             git commit -m "Stage four source-screened full publication films [v7-staging]"
-            git fetch origin "${{ github.ref_name }}"
-            git rebase FETCH_HEAD
-            git push origin HEAD:"${{ github.ref_name }}"
+            published=0
+            for attempt in 1 2 3 4 5; do
+              git fetch origin "${{ github.ref_name }}"
+              git rebase FETCH_HEAD
+              if git push origin HEAD:"${{ github.ref_name }}"; then
+                published=1
+                break
+              fi
+              echo "Concurrent upstream commit; retrying safe non-forced rebase and push: $attempt / 5"
+              sleep 4
+            done
+            if [ "$published" -ne 1 ]; then
+              echo "Unable to publish after five safe attempts: no force-push performed"
+              exit 1
+            fi
           fi
       - name: Queue next bounded batch while outstanding videos remain
         if: github.ref == 'refs/heads/main'
