@@ -99,11 +99,12 @@ test("sourced context photos have explicit credit, rights and actual source link
     assert.ok(asset.caption.toUpperCase().includes("NOT")||asset.caption.toUpperCase().includes("CONTEXT")||asset.caption.toUpperCase().includes("ILLUSTRATION"));
   }
   const uses=data.films.flatMap(f=>f.scenes.filter(s=>s.context_visual).map(s=>({f,s})));
-  assert.equal(uses.length,6);
+  assert.equal(uses.length,5);
+  assert.ok(!uses.some(x => x.s.context_visual==="generic-microtome"),
+    "the original histology experiment must not show unrelated equipment");
   assert.ok([
 
     "what-a-bubble-can-do:01",
-    "two-materials-no-section:07",
     "making-medicines-keep:01",
     "making-medicines-keep:02",
     "making-medicines-keep:03",
