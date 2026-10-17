@@ -70,12 +70,12 @@ footer{padding:35px 0 60px;border-top:1px solid var(--hair);color:var(--muted);f
 <section class="hero"><div class="wrap">
 <p class="kicker">Film laboratory / working cuts</p>
 <h1>What belongs <em>in the frame?</em></h1>
-<p class="intro">A research film is not improved by adding more movement to the wrong picture. These previews rebuild the relationship between the argument, the original evidence, and the animation. The published editions remain in the archive while the new work is assessed.</p>
+<p class="intro">A research film is not improved by adding more movement to the wrong picture. The 30 revised publication films are now available in Publication Cinema, while all previous cuts remain preserved. This review room documents where their images come from and what further scientific and artistic scrutiny is still needed.</p>
 <div class="keyline"></div>
-<div class="keygrid"><div><strong>35</strong><span>Publication-story visual review sequences</span></div><div><strong>3</strong><span>New staging films with 24 visual beats each</span></div><div><strong>44</strong><span>Existing cinematic masters and documentary cuts safeguarded</span></div></div>
+<div class="keygrid"><div><strong>35</strong><span>Publication-story visual review sequences</span></div><div><strong>30</strong><span>Revised publication films, each with 24 visual beats</span></div><div><strong>44</strong><span>Existing cinematic masters and documentary cuts safeguarded</span></div></div>
 </div></section>
-<section id="pilots"><div class="wrap"><p class="kicker">01 / Motion and evidence</p><h2>Three new screening cuts.</h2>
-<p class="section-copy">These are not approved final films. The narration and caption timing come from the corresponding V6 editions. The new pictures are original explanatory graphics and identified source material. Watch the entire film, not only the poster, and compare it to the earlier edition.</p>
+<section id="pilots"><div class="wrap"><p class="kicker">01 / Motion and evidence</p><h2>Three films to compare closely.</h2>
+<p class="section-copy">The three selections below illustrate the released V7 revision. Their original narration and synchronized captions were retained from V6; new diagrams are explicitly explanatory, not recreated research data. Publication does not replace independent scholarly and artistic review. Compare each complete film with its original edition.</p>
 <div id="film-screens">
 <article class="screen" data-slug="niosomes"><div class="screen-head"><div><p class="mono">Research-in-progress / inhalable formulations</p><h3>The vial is not the lung.</h3></div><div class="actions"><button type="button" data-switch aria-label="Compare with earlier niosomes film">Compare with V6</button><a class="note" href="/research/inhalable-vesicles.html">Research dossier ↗</a></div></div><p>Original, nonquantitative formulation diagrams. No fabricated entrapment, droplet deposition or clinical effectiveness measurements.</p><video controls playsinline preload="none" poster="/assets/films/series-v7-pilots/niosomes.webp" aria-label="Niosomes visual pilot"><source src="/assets/films/series-v7-pilots/niosomes.mp4" type="video/mp4"><track kind="captions" src="/assets/films/series-v7-pilots/niosomes.vtt" srclang="en" label="English captions" default></video></article>
 <article class="screen" data-slug="ace2-forms"><div class="screen-head"><div><p class="mono">Molecular pharmacology / 2021 review</p><h3>One protein, different places.</h3></div><div class="actions"><button type="button" data-switch aria-label="Compare with earlier ACE2 film">Compare with V6</button><a class="note" href="https://doi.org/10.3390/ijms22136703" target="_blank" rel="noopener">Published review ↗</a></div></div><p>Soluble ACE2 is represented separately from the membrane-anchored form. No clinical causal claim is manufactured from the simplified pathway art.</p><video controls playsinline preload="none" poster="/assets/films/series-v7-pilots/ace2-forms.webp" aria-label="ACE2 forms visual pilot"><source src="/assets/films/series-v7-pilots/ace2-forms.mp4" type="video/mp4"><track kind="captions" src="/assets/films/series-v7-pilots/ace2-forms.vtt" srclang="en" label="English captions" default></video></article>
@@ -83,8 +83,8 @@ footer{padding:35px 0 60px;border-top:1px solid var(--hair);color:var(--muted);f
 </div></div></section>
 
 <section id="staged-cuts"><div class="wrap">
-<p class="kicker">03 / The full remake programme</p><h2>Every staged film, individually.</h2>
-<p class="section-copy">This is the expanding archive of new V7 review copies. Each film can be watched here, with captions, alongside its published research context. These are not replacements for the established films: figure permissions, spoken pronunciation, scientific detail and cinema-quality approval remain separate requirements.</p>
+<p class="kicker">03 / The full remake programme</p><h2>Thirty revised films, one at a time.</h2>
+<p class="section-copy">These V7 cuts are publicly available as the current editorial versions of 30 publication stories. The source-specific scholarly cuts of five other films keep priority; V6 and the first editions remain accessible. This screening room remains a working audit: figure provenance, pronunciation, scientific detail and cinema-quality judgement still require continued attention.</p>
 <div class="stage-toolbar"><p class="stage-label" id="staging-status">Reading the staged-film release ledger…</p><label class="mono" for="stage-search">Find a film
 <input id="stage-search" type="search" placeholder="Search title, study, film…" autocomplete="off"></label></div>
 <div class="stage-player screen" id="staged-screen" hidden aria-live="polite"></div>
@@ -133,11 +133,11 @@ footer{padding:35px 0 60px;border-top:1px solid var(--hair);color:var(--muted);f
       (x.id+" "+x.title+" "+x.publication).toLowerCase().includes(q));
    stageGrid.innerHTML=items.length?items.map(x=>
       '<article class="story"><img loading="lazy" decoding="async" src="'+esc(x.poster)+'" alt="'+esc(x.title)+' — original V7 storyboard frame">'+
-      '<div class="copy"><p>84-SECOND REVIEW CUT · '+(Number.isFinite(x.unique_mechanism_scenes)?x.unique_mechanism_scenes+'/6 distinct chapter visuals':'awaiting frame audit')+'</p><h3>'+esc(x.title)+'</h3>'+
+      '<div class="copy"><p>84-SECOND PUBLIC EDITORIAL CUT · '+(Number.isFinite(x.unique_mechanism_scenes)?x.unique_mechanism_scenes+'/6 distinct chapter visuals':'awaiting frame audit')+'</p><h3>'+esc(x.title)+'</h3>'+
       '<p>'+esc(x.publication)+'</p><div class="actions stage-actions">'+
       '<button type="button" data-stage-film="'+esc(x.id)+'">Play revised cut</button>'+
       (x.contact?'<a href="'+esc(x.contact)+'" target="_blank" rel="noopener">Inspect all six frames ↗</a>':"")+
-      '<a href="/publication-cinema.html#film-'+esc(x.id)+'">Published edition ↗</a></div></div></article>').join("")
+      '<a href="/publication-cinema.html#film-'+esc(x.id)+'">Watch on Publication Cinema ↗</a></div></div></article>').join("")
        :'<p>No staged films match the current search.</p>';
  }
  stageGrid.addEventListener("click",e=>{
@@ -146,7 +146,7 @@ footer{padding:35px 0 60px;border-top:1px solid var(--hair);color:var(--muted);f
    const entry=staging.get(button.dataset.stageFilm);
    if(!entry)return;
    stageScreen.hidden=false;
-   stageScreen.innerHTML='<p class="mono">UNRELEASED EDITORIAL SCREENING CUT</p><h3>'+
+   stageScreen.innerHTML='<p class="mono">REVISED EDITORIAL CUT / UNDER CONTINUING REVIEW</p><h3>'+
      esc(entry.title)+'</h3><p>'+esc(entry.publication)+'</p>'+
      '<video controls playsinline preload="metadata" poster="'+esc(entry.poster)+'" aria-label="'+esc(entry.title)+' — V7 review cut">'+
      '<source src="'+esc(entry.file)+'" type="video/mp4">'+
@@ -167,11 +167,11 @@ footer{padding:35px 0 60px;border-top:1px solid var(--hair);color:var(--muted);f
          staging.set(entry.id,entry);
       }
       const repeated=[...staging.values()].filter(x=>x.creative_review==="needs_chapter_art_direction").length;
-      stageStatus.textContent=staging.size+" / "+data.total_eligible+" renders · "+repeated+" still require individual scene artwork · none yet approved for replacement";
+      stageStatus.textContent=staging.size+" / "+data.total_eligible+" rendered films · "+repeated+" need unique chapter art · editorial review continues beyond the public premiere";
       stageRender();
    })
    .catch(()=>{
-      stageStatus.textContent="The full staging ledger is being published. Three individual pilot films are above.";
+      stageStatus.textContent="The complete V7 film ledger could not be loaded. Three playable films are still featured above.";
       stageGrid.innerHTML='<p>Return to the three pilots above or <a href="/publication-cinema.html">watch the established films</a>.</p>';
    });
 
