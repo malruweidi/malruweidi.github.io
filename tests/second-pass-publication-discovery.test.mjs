@@ -31,3 +31,11 @@ test('public film and original research notebook pages supply meaningful social 
    assert.ok(existsSync(join(root,image.replace(/^\//,''))),file+' original asset remains');
  }
 });
+
+test('unfinished cinema previews remain available by URL but are not indexed as finished films',()=>{
+ for(const file of ['cinema-quality-preview.html','cinema-research-preview.html','preview-rx23.html']){
+  const html=read(file);
+  assert.match(html,/<meta[^>]+name="robots"[^>]+content="noindex\s*,\s*nofollow"/,file);
+  assert.ok(html.includes('<main')||html.includes('<body'),file+' remains available');
+ }
+});
