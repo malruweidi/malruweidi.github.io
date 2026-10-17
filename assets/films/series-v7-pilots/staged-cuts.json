@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 25,
+  "count": 29,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -215,6 +215,36 @@
       "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
+      "id": "essay-potency-exposure",
+      "title": "The Nanomolar Mirage",
+      "publication": "Potency Is Not an Exposure Strategy",
+      "poster": "/assets/films/series-v7-pilots/essay-potency-exposure.webp",
+      "file": "/assets/films/series-v7-pilots/essay-potency-exposure.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-potency-exposure.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-potency-exposure.json",
+      "contact": "/assets/films/series-v7-pilots/essay-potency-exposure.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.9-unbound-exposure-labels",
+      "sha256": "d2692918a4f0482fb4fed922d881934d7423cc67a40c46f2abdb98593148eea8",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "essay-proximity",
+      "title": "When a Drug Makes Two Proteins Meet",
+      "publication": "The Matchmaker Modality: Engineering Event-Driven Pharmacology With Induced Proximity",
+      "poster": "/assets/films/series-v7-pilots/essay-proximity.webp",
+      "file": "/assets/films/series-v7-pilots/essay-proximity.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-proximity.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-proximity.json",
+      "contact": "/assets/films/series-v7-pilots/essay-proximity.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.9-proximity-ligand-labels",
+      "sha256": "ccfc29ad0cb50ad727eb160f3e00809b5afd24f02448694fc279e89c5bd83d7b",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
       "id": "essay-scientific-credit",
       "title": "Three Names on the Medal, Hundreds in the Record",
       "publication": "The Nobel Prize Has Room for Three. Science Never Did.",
@@ -225,6 +255,36 @@
       "contact": "/assets/films/series-v7-pilots/essay-scientific-credit.contact.webp",
       "visual_revision": "v7.8-clean-screen/v7.9-attribution-labels/source-figure-fully-visible",
       "sha256": "3e5da49b37515e4ded3a2e477b17ff012ff7c049c97af8c1a796dcb46cd6f261",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "essay-tf-states",
+      "title": "The Target Has More Than One Shape",
+      "publication": "Target Transcription Factor States, Not Pockets",
+      "poster": "/assets/films/series-v7-pilots/essay-tf-states.webp",
+      "file": "/assets/films/series-v7-pilots/essay-tf-states.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-tf-states.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-tf-states.json",
+      "contact": "/assets/films/series-v7-pilots/essay-tf-states.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific",
+      "sha256": "88e60082dc587134f6e32e3185bce250cf0fdc9894ce916091477df7b076dff8",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 5,
+      "creative_review": "needs_chapter_art_direction"
+    },
+    {
+      "id": "essay-trna",
+      "title": "The Molecule Behind Every Protein",
+      "publication": "Drugging the tRNA Control System",
+      "poster": "/assets/films/series-v7-pilots/essay-trna.webp",
+      "file": "/assets/films/series-v7-pilots/essay-trna.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-trna.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-trna.json",
+      "contact": "/assets/films/series-v7-pilots/essay-trna.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific",
+      "sha256": "cd057066279d7e34b2bef447c524accdbaa8d91c102af0af62fe4cee367e4d66",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
