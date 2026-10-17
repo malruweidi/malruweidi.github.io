@@ -54,8 +54,8 @@ jobs:
           if [ ! -s film-models/voices-v1.0.bin ]; then curl --fail --location --retry 3 --silent --show-error -o film-models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin; fi
           test "$(stat -c%s film-models/kokoro-v1.0.fp16.onnx)" -gt 90000000
           test "$(stat -c%s film-models/voices-v1.0.bin)" -gt 1000000
-      - name: Render next two fully sourced motion remakes
-        run: python scripts/remaster-publication-series.py --missing-only --limit 2
+      - name: Render next six fully sourced motion remakes
+        run: python scripts/remaster-publication-series.py --missing-only --limit 6
       - name: Confirm codecs, captions and exact release provenance
         run: |
           python - <<'PY'
