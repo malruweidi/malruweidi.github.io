@@ -87,6 +87,19 @@ def scene_camera(film,scene,i):
         box=None
     return src,box,ref
 
+
+# Alternate documentary shots of ONLY the same exact experimental figure.
+# Pans/crops are tagged; no cut can imply the panel belongs to a new study.
+FOCUS = {
+ "flow-chamber-method": {
+    1:(.47,.03,.98,.57), 3:(.32,.00,.665,1.00),
+    5:(.47,.00,1.00,1.00), 6:(.00,.00,.55,1.00),
+    7:(.00,.00,.59,.54)},
+ "pla-grafting": {
+    2:(.00,.00,.53,1.00), 3:(.16,.00,.88,1.00),
+    4:(.10,.00,.92,.98), 5:(.26,.01,1.00,1.00),
+    6:(.00,.01,.73,1.00), 7:(.22,.01,1.00,1.00)}
+}
 def credit(d,film,scene,cropped,figure):
     d.rectangle((0,666,W,H),fill=(12,35,39))
     if scene["mode"] in ("interface","surface"):
@@ -160,14 +173,33 @@ def full_scene(film,scene,i,t,art,region):
         canvas.paste(pic,pos)
         d=ImageDraw.Draw(canvas)
         d.rectangle((pos[0]-3,pos[1]-3,pos[0]+pic.width+3,pos[1]+pic.height+3),outline=(200,174,140),width=2)
+    # The chapter becomes an EDIT: after six seconds the camera cuts from
+    # source overview to its real, labelled experimental panel. No invented
+    # re-plotting, recoloring, interpolation or synthetic microscope pixels.
+    focus=FOCUS.get(film,{}).get(i)
+    if focus is not None and t>=6 and scene["mode"] not in ("interface","surface"):
+        # Restore clean source-derived background, then present the close-up.
+        canvas=background(art,i,t)
+        close,where=source_panel(art,focus,dest)
+        canvas.paste(close,where)
+        d=ImageDraw.Draw(canvas)
+        d.rectangle((where[0]-3,where[1]-3,where[0]+close.width+3,where[1]+close.height+3),
+                    outline=(213,169,124),width=3)
+        text(d,(where[0],max(81,where[1]-30)),f"PANEL CROP FROM ORIGINAL FIGURE {scene['figure']}",12,SAND,"bold")
+        region=focus
     # Smaller editorial words; figure dominates the viewport.
     bg_block=(28,133,414,629)
     d.rounded_rectangle(bg_block,16,fill=(15,41,44))
     text(d,(46,153),scene["eyebrow"].upper()[:31],13,SAND,"bold")
     y=220
     for title in scene["headline"]:
-        text(d,(40,y),title,49,CREAM,"serif")
-        y+=70
+        # Measure, then fit every title within its editorial panel. Do not
+        # obscure a published figure simply because its claim is long.
+        size=49
+        while size>26 and d.textbbox((0,0),title,font=f(size,"serif"))[2]>354:
+            size-=2
+        text(d,(40,y),title,size,CREAM,"serif")
+        y+=max(61,size+13)
     if scene["mode"]=="result":
         label="SOURCE MEASUREMENT\nNOT SIMULATED"
     elif scene["mode"] in ("interface","surface"):
