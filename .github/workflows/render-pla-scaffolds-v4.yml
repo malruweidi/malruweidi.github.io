@@ -1,0 +1,89 @@
+name: Render genuine 2020 PLA electrospun antimicrobial documentary V4
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/render-pla-scaffolds-v4.py
+      - assets/films/V4-PLA-SCAFFOLDS-2020-DIRECTORIAL.json
+      - .github/workflows/render-pla-scaffolds-v4.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ruwaidix-pla-scaffolds-2020-v4
+  cancel-in-progress: false
+jobs:
+  render-distinct-scaffold-experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install local animation, voice, and video encoding
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install pillow numpy soundfile kokoro-onnx
+          python -m py_compile scripts/render-pla-scaffolds-v4.py
+      - name: Check exact 2020 DOI figures and Table 3, reject 2021 foil images
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          fig=Path("assets/films/source-figures/v4/pla-scaffolds/source-provenance.json")
+          record=json.loads(fig.read_text())
+          assert record["doi"]=="10.1016/j.surfcoat.2020.126216"
+          assert len(record["figures"])==5
+          for x in record["figures"]:
+              im=Path(x["film_jpeg"])
+              assert im.is_file() and hashlib.sha256(im.read_bytes()).hexdigest()==x["film_jpeg_sha256"]
+          assert "10.3390/polym13213717" in record["not_this_study"]
+          print("All primary figures and original antibacterial table from same 2020 paper")
+          PY
+      - uses: actions/cache@v4
+        with:
+          path: film-models
+          key: ruwaidix-kokoro-onnx-fp16-v1.1
+      - name: Download open Kokoro models
+        run: |
+          mkdir -p film-models
+          if [ ! -s film-models/kokoro-v1.0.fp16.onnx ]; then curl --fail --location --retry 3 -sS -o film-models/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx; fi
+          if [ ! -s film-models/voices-v1.0.bin ]; then curl --fail --location --retry 3 -sS -o film-models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin; fi
+      - name: Render eight independently scripted true electrospun PLA scaffold scenes
+        run: python scripts/render-pla-scaffolds-v4.py
+      - name: Technical and primary-figure integrity validation
+        run: |
+          python - <<'PY'
+          import hashlib,json,subprocess
+          from pathlib import Path
+          parent=Path("assets/films/series-v4")
+          film=parent/"pla-scaffolds.mp4"
+          m=json.loads((parent/"pla-scaffolds.json").read_text())
+          assert film.stat().st_size>600_000 and film.stat().st_size<98_000_000
+          assert hashlib.sha256(film.read_bytes()).hexdigest()==m["sha256"]
+          assert m["doi"]=="10.1016/j.surfcoat.2020.126216"
+          assert len(m["chapters"])==8 and len(m["source_figures"])==8
+          assert "NOT APPROVED" in m["human_review"]
+          assert "WEBVTT" in (parent/"pla-scaffolds.vtt").read_text()[:10]
+          assert abs(m["duration_seconds"]-120)<.4
+          codecs=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-of","json",str(film)]))["streams"]
+          assert {"h264","aac"}<={x["codec_name"] for x in codecs}
+          print("Distinct 2020 scaffold V4 primary-figure film encoded, awaiting human screening")
+          PY
+      - name: Commit safely as review-only MP4, preserving first edition
+        run: |
+          git config user.name "Ruwaidix source-specific cinema"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v4/pla-scaffolds.*
+          if ! git diff --cached --quiet; then
+            git commit -m "Encode actual 2020 electrospun PLA SEM AFM FTIR bacteria-test film V4"
+            git fetch origin "${{ github.ref_name }}"
+            if git rebase "origin/${{ github.ref_name }}"; then
+              git push origin HEAD:"${{ github.ref_name }}"
+            else
+              git rebase --abort
+              exit 1
+            fi
+          fi
