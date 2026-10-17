@@ -88,3 +88,36 @@ html[data-rx-page="home"] .rx-home-film-media a:focus-visible{
   html[data-rx-page="home"] .rx-home-film *::before,
   html[data-rx-page="home"] .rx-home-film *::after{animation:none!important;transition:none!important}
 }
+
+/* The two-minute introduction lives above the homepage index, not behind the full-record disclosure. */
+html[data-rx-page="home"] .rx-featured-film-frame{
+  aspect-ratio:16/9;
+  overflow:hidden;
+  background:#142d32;
+}
+html[data-rx-page="home"] .rx-featured-film-frame video{
+  display:block;
+  width:100%;
+  height:100%;
+  aspect-ratio:16/9;
+  object-fit:contain;
+}
+html[data-rx-page="home"] .rx-featured-related{
+  border-top:1px solid #cad5cf;
+  margin-top:22px;
+  padding-top:12px;
+}
+html[data-rx-page="home"] .rx-featured-related summary{
+  cursor:pointer;
+  color:#92543f;
+  font:700 12px/1.7 var(--sans,"DM Sans",Arial,sans-serif);
+}
+html[data-rx-page="home"] .rx-featured-related-list{
+  display:grid;
+  gap:8px;
+  margin-top:12px;
+  padding:0 0 5px 17px;
+}
+html[data-rx-page="home"] .rx-featured-related-list a:hover{
+  color:#9b573f;
+}
