@@ -1,7 +1,10 @@
 WEBVTT
 
-00:00:00.550 --> 00:00:04.782
-Inside fetal echocardiography, anatomy changes with each
+00:00:00.550 --> 00:00:04.474
+Inside fetal echocardiography, anatomy changes with
+
+00:00:04.474 --> 00:00:04.782
+each
 
 00:00:04.782 --> 00:00:08.787
 frame. Diagnosing congenital cardiac disease requires
@@ -24,14 +27,23 @@ Convolutional neural networks can extract visual
 00:00:31.143 --> 00:00:34.650
 patterns. Long short-term memory models can process
 
-00:00:34.650 --> 00:00:38.570
-sequence information, when the input design preserves it.
+00:00:34.650 --> 00:00:38.360
+sequence information, when the input design preserves
 
-00:00:41.342 --> 00:00:45.392
-Our paper studied stacking-based CNN-LSTM techniques for
+00:00:38.360 --> 00:00:38.570
+it.
 
-00:00:45.392 --> 00:00:49.370
-fetal echocardiogram interpretation. Evaluating them is
+00:00:41.342 --> 00:00:45.171
+Our paper studied stacking-based CNN-LSTM techniques
+
+00:00:45.171 --> 00:00:45.392
+for
+
+00:00:45.392 --> 00:00:49.223
+fetal echocardiogram interpretation. Evaluating them
+
+00:00:49.223 --> 00:00:49.370
+is
 
 00:00:49.370 --> 00:00:52.552
 different from establishing safe deployment.
@@ -42,8 +54,11 @@ Model accuracy alone cannot settle clinical utility.
 00:00:59.136 --> 00:01:02.672
 Dataset composition, validation design, and false
 
-00:01:02.672 --> 00:01:06.712
-positive or missed cases determine how results should be
+00:01:02.672 --> 00:01:06.565
+positive or missed cases determine how results should
+
+00:01:06.565 --> 00:01:06.712
+be
 
 00:01:06.712 --> 00:01:07.073
 read.
