@@ -1,11 +1,12 @@
 {
   "slug": "ace2-covid-drugs",
+  "visual_revision": "v7.1",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
   "fps": 24,
   "source_audio_sha256": "54b3ca2969bc434169ab79163c14082eff2880eb5ffb9d3675750acdd1e51b19",
-  "movie_sha256": "4fcf59d32ce401362c8b6b811f38b6445411a337d2315db708775f41f56e2d15",
+  "movie_sha256": "2fe1008181be58aad10f7bc3b65082b3d62bf989a51583eddfc76765665e5ed2",
   "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
   "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
   "scene_count": 6,

@@ -12,7 +12,7 @@
       "file": "/assets/films/series-v7-pilots/ace2-covid-drugs.mp4",
       "captions": "/assets/films/series-v7-pilots/ace2-covid-drugs.vtt",
       "manifest": "/assets/films/series-v7-pilots/ace2-covid-drugs.json",
-      "sha256": "4fcf59d32ce401362c8b6b811f38b6445411a337d2315db708775f41f56e2d15",
+      "sha256": "2fe1008181be58aad10f7bc3b65082b3d62bf989a51583eddfc76765665e5ed2",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -84,7 +84,7 @@
       "file": "/assets/films/series-v7-pilots/echo-cnn-lstm.mp4",
       "captions": "/assets/films/series-v7-pilots/echo-cnn-lstm.vtt",
       "manifest": "/assets/films/series-v7-pilots/echo-cnn-lstm.json",
-      "sha256": "0cd61ac4a8bd8e613d81095b3cae0ad24f130ea7405cc2f1e42431e19638ea06",
+      "sha256": "8c0fc655edf09f6880effb05bed7e65d3b8abe9f8a08228e08deee62894603ff",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -108,7 +108,7 @@
       "file": "/assets/films/series-v7-pilots/gi-autoimmunity-1.mp4",
       "captions": "/assets/films/series-v7-pilots/gi-autoimmunity-1.vtt",
       "manifest": "/assets/films/series-v7-pilots/gi-autoimmunity-1.json",
-      "sha256": "4de0a65ccc60c7d5adadf44679432102edf30334adb157e680776cd65e65fcda",
+      "sha256": "9f019f6bcabffbd8b69908655d3a4e717cd25900c52b0d23755922d5f356d202",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -168,7 +168,7 @@
       "file": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.mp4",
       "captions": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.vtt",
       "manifest": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.json",
-      "sha256": "7e4c44315ab0a6e5fa41a7201def7cffb90f2589674f7df9914aed09b69f0e24",
+      "sha256": "7c1af55a7166643f3f11e6e7c5d476a3e321ef667a5ca98b07e59f017e23ef8e",
       "seconds": 84.0,
       "creative_review": "outstanding"
     }

@@ -1,11 +1,12 @@
 {
   "slug": "gi-autoimmunity-1",
+  "visual_revision": "v7.1",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
   "fps": 24,
   "source_audio_sha256": "07b74717b4430e0b0202554668ce7c9b26e87fbb414d450783dc8df1b41f983a",
-  "movie_sha256": "4de0a65ccc60c7d5adadf44679432102edf30334adb157e680776cd65e65fcda",
+  "movie_sha256": "9f019f6bcabffbd8b69908655d3a4e717cd25900c52b0d23755922d5f356d202",
   "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
   "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
   "scene_count": 6,
