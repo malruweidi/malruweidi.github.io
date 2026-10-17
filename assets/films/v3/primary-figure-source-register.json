@@ -16,7 +16,14 @@
       ],
       "rights": "Open full text at PMC; inspect actual article licensing and reproduce figures with proper attribution only after checking reuse notices",
       "caution": "Do not confuse this 2021 pharmacological-treatment paper with Shurbaji et al. 2020 methods paper; they use related setups but are distinct experiments.",
-      "status": "FIGURE DESCRIPTIONS VERIFIED; IMAGE BYTES NOT YET INGESTED"
+      "status": "FIGURES 1–4 DIRECTLY VERIFIED AGAINST AUTHOR'S ACTUAL PDF PAGE IMAGES, BUT FIGS 2–4 NOT YET IMPORTED INTO CINEMATIC ASSETS",
+      "library_manuscript_inspection": {
+        "file": "al-ruweidi-et-al-2021-dexamethasone-and-transdehydroandrosterone-significantly-reduce-pulmonary-epithelial-cell.pdf",
+        "file_type": "Author's own scholarly full-paper PDF (9 pages) in connected source Library",
+        "source_inspection": "Confirmed with page images: PDF p4 contains exact Figure 1 A-D, PDF p5 contains Figure 2 treatment/control fluorescence image grid, PDF p6 contains Figure 3 %Death chart and Figure 4 actin immunostaining, later PDF page contains Figure 5 AFM.",
+        "rights_status": "Original APS copyright still applies despite author availability. No additional published figures have been imported into the public website or Git repository as unverified reproductions.",
+        "next_visual_replacement": "Source Figure 2 and Figure 4 should replace the schematic green/red circles and abstract actin drawings only after explicit rights review. Film remains a draft."
+      }
     },
     {
       "slug": "flow-chamber-method",
@@ -162,5 +169,6 @@
       "caution": "No claim that a section succeeded or that interface mechanism was proved",
       "status": "OWNER PHOTOS IN REPO, DISTINCT FROM QUANTITATIVE PUBLICATION"
     }
-  ]
+  ],
+  "notes": "PDF-based author figure inspection completed for airway J Appl Physiol 2021. Reuse review remains separate from evidence verification."
 }
