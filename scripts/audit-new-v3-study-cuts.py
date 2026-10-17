@@ -93,7 +93,12 @@ def inspect(name):
  print("SOURCE-CHECKED COMPLETE FRAMES",name,meta["sha256"][:12])
  return True
 def main():
- complete=sum(inspect(x) for x in TARGET)
- if complete==0:raise RuntimeError("No new studies rendered yet")
- print("Audited",complete,"of",len(TARGET))
+ import argparse
+ parser=argparse.ArgumentParser()
+ parser.add_argument("--only",choices=TARGET)
+ args=parser.parse_args()
+ targets=[args.only] if args.only else TARGET
+ complete=sum(inspect(x) for x in targets)
+ if complete!=len(targets):raise RuntimeError("Missing requested rendered movie: "+str(targets))
+ print("Source-validated decoded-frame QA",complete,"of",len(targets))
 if __name__=="__main__":main()
