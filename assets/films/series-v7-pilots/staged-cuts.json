@@ -16,7 +16,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "2fe1008181be58aad10f7bc3b65082b3d62bf989a51583eddfc76765665e5ed2",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "ace2-forms",
@@ -30,7 +31,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "db851532950a074fb73f5a562f49faa496a3c5cdaf1737b5a27f302b03a4f2d1",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "airway-reopening",
@@ -44,7 +46,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "15b2738efc7885855044ce62bc02885c738689d034da3683eb00aee6e3e61976",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "cairo-microscope",
@@ -58,7 +61,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "12205b3df15091e06208c6cb6d549a484e2fe680ad22a418620a67d0a43a1f57",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 4,
+      "creative_review": "needs_chapter_art_direction"
     },
     {
       "id": "ceramics-printing",
@@ -72,7 +76,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "a127a44b687d351f99bdbf8733204879253a9cd9fdd8ec21bd6e98ee523393d3",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "cerebral-cilia",
@@ -86,7 +91,8 @@
       "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-cilia-clean-panel",
       "sha256": "38b5b049e81ce16c757250164bbc88887911d5cb33389a7a4bed5e86249e511a",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "cubosome-theranostics",
@@ -100,7 +106,8 @@
       "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-cubosomes-clean-panel",
       "sha256": "c362b22b20ad104032d694d8894cd00a768b43fd1a78a3762f0905f8752b5665",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "curcumin-cyanide",
@@ -114,7 +121,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "3ed1b3c83fad2f0c5db7b33a89e7528ebe0be2d2efbff311529a4b4cbf408362",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "drug-release-twins",
@@ -128,7 +136,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "2c970eb02a692a7e4f5b1d0c9dd3204020789d3df566c81451b08adc1869947c",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 5,
+      "creative_review": "needs_chapter_art_direction"
     },
     {
       "id": "echo-cnn-lstm",
@@ -142,7 +151,8 @@
       "visual_revision": "v7.3-caption-safe/v7.2-ultrasound",
       "sha256": "8c0fc655edf09f6880effb05bed7e65d3b8abe9f8a08228e08deee62894603ff",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "essay-academic-mental-health",
@@ -156,7 +166,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "632328be0e001058e997b1c212798047a22ceaabf5ef2a35341711b601b6fa8e",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 3,
+      "creative_review": "needs_chapter_art_direction"
     },
     {
       "id": "essay-adc",
@@ -170,7 +181,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "d9189927a94f62510a9963cdc194afa8d2e09bb56a26483a222b96467103368b",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "essay-ai-email",
@@ -184,7 +196,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "6be75ba3dbc23493d114e632861c348190116c3b5d34c708f43fb873f7f566c8",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 3,
+      "creative_review": "needs_chapter_art_direction"
     },
     {
       "id": "essay-life-between-diagnoses",
@@ -198,7 +211,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "2d5cda36b41f2f0c3521b241710c98aa590d62023ed68919c33535316cdd116f",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "essay-machine-language",
@@ -212,7 +226,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "5b47f2abf2a3143c13f8cac56613abc6b80c3687184507c710b073fe03de81c9",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 3,
+      "creative_review": "needs_chapter_art_direction"
     },
     {
       "id": "essay-potency-exposure",
@@ -226,7 +241,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "eccb13535b87e5aa9429caa31154766f50bfc5865f8b6fb552cc5a1c2980ee68",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 5,
+      "creative_review": "needs_chapter_art_direction"
     },
     {
       "id": "essay-proximity",
@@ -240,7 +256,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "66894fc557d2cc9ea666cce2ead72e9afad6a517af0eda65337a9e6916aed9c6",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 5,
+      "creative_review": "needs_chapter_art_direction"
     },
     {
       "id": "essay-scientific-credit",
@@ -254,7 +271,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "68402c49866e01a4b5761b640652c3ccad73fdbe907d5fd9ffd465407bf9c84d",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 4,
+      "creative_review": "needs_chapter_art_direction"
     },
     {
       "id": "essay-tf-states",
@@ -268,7 +286,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "a67c125b2360dbd47349510d6f99544d457b8e8fbc041f6f456edc2522587524",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "essay-trna",
@@ -282,7 +301,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "76494830beff4a35e46dcd252091ea821b189ed26d24daa57482a29a573e7253",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "food-printing",
@@ -296,7 +316,8 @@
       "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-food-rheology-clean-panel",
       "sha256": "f5e79ba92746856a6c940ddcba22fcda5db25fb049554a0007fbe829a87ad220",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "gi-autoimmunity-1",
@@ -310,7 +331,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "9f019f6bcabffbd8b69908655d3a4e717cd25900c52b0d23755922d5f356d202",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "gi-autoimmunity-2",
@@ -324,7 +346,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "933dffdaea8be41ba45434f12f2eeed6f8c65e1de84d62b2389e9e9b00a91715",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "heart-failure-sensors",
@@ -338,7 +361,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "52adac6463de1433b103935df87e12ede1a6198b5abb0a3cb3744c66f4ac084b",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "heterocycle-cancer",
@@ -352,7 +376,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "2718f54532ca8a20ec4b6c7ff203115e60d4465c3d8d82bef2ea179324a446bf",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 5,
+      "creative_review": "needs_chapter_art_direction"
     },
     {
       "id": "histology-failure",
@@ -366,7 +391,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "bd1781d69eb62fd6fec33d23058b10681cbcd96a1595cff54330cc0ede52fb1e",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "micelles-pahs",
@@ -380,7 +406,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "da4c875c3d0f9e8f8fc0e330d5e86a526b827b105456d2b9d66ea1fb5a985105",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "niosomes",
@@ -394,7 +421,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "40232935f67d2f838b67c3df50a6605bffbdb52b7f1ef30fb55f2bbe40c344f7",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "slit2-robo",
@@ -408,7 +436,8 @@
       "visual_revision": "v7.3-caption-safe/v7.4-chapter-specific-receptor-clean-panel",
       "sha256": "af72d79b6f6e8f3cd263ee39adbc87a1cb39abdbdb158a8ea59901c8f1320a00",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "zebrafish-hemodynamics",
@@ -422,7 +451,8 @@
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "7c1af55a7166643f3f11e6e7c5d476a3e321ef667a5ca98b07e59f017e23ef8e",
       "seconds": 84.0,
-      "creative_review": "outstanding"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     }
   ]
 }
