@@ -1,0 +1,46 @@
+{
+  "version": "2026-10-17",
+  "film_id": "making-medicines-keep",
+  "status": "Verified digital-catalogue sources; rights and archaeological context must be inspected before any new embedded image is added to a rendered film.",
+  "historical_boundaries": [
+    "The publication on Making Medicines Keep was accepted 15 October 2026; do not present it as already published.",
+    "Minhaj al-dukkan is a medieval pharmacy handbook; British Library Or 5786 is a dated 715 AH / AD 1315-16 manuscript witness, not an autograph or proof that the copy was produced in Cairo.",
+    "Source materials are documentary evidence of pharmaceutical practice and prescription formulations; they are not measured evidence of contemporary pharmacological efficacy.",
+    "An independent generic Wellcome Arabic medical manuscript cannot be represented as a leaf from British Library Or 5786 or a specific Cairo Genizah fragment."
+  ],
+  "records": [
+    {
+      "id": "or-5786",
+      "collection": "British Library Oriental Manuscripts",
+      "shelfmark": "Or 5786, ff. 1v–95v",
+      "title": "Minhāj al-dukkān wa-dustūr al-aʿyān, al-Kūhīn al-ʿAṭṭār",
+      "witness_date": "715 AH / 1315–1316 CE",
+      "source_url": "https://www.qdl.qa/en/archive/81055/vdc_100023441781.0x000001",
+      "exact_leaf_example": "https://www.qdl.qa/archive/81055/vdc_100024189448.0x000040",
+      "rights": "Qatar Digital Library item indicates Public Domain; attribution and ethical conditions of reuse still apply.",
+      "film_role": "Directly relevant manuscript witness to the formulary discussed. If its image is used, identify the actual folio and crop and date, and do not imply authorship, copy-location, or direct usage without evidence.",
+      "source_type": "primary manuscript witness"
+    },
+    {
+      "id": "genizah-medical-corpus",
+      "collection": "Cambridge University Library, Taylor-Schechter Collection",
+      "title": "Medical corpus of the Cairo Genizah",
+      "source_url": "https://www.lib.cam.ac.uk/collections/departments/taylor-schechter-genizah-research-unit/projects/medicine-medieval-egypt",
+      "rights": "High-resolution images are searchable; separate permission required for reproduction on public websites.",
+      "permission_url": "https://www.lib.cam.ac.uk/collections/departments/taylor-schechter-genizah-research-unit/frequently-asked-questions",
+      "film_role": "Contextual project and manuscript research lead, not automatic permission to reuse specific fragment images.",
+      "source_type": "institutional corpus catalogue"
+    },
+    {
+      "id": "genizah-ts-10j6",
+      "collection": "Cambridge University Library / Princeton Geniza Project",
+      "shelfmark": "T-S 10J6.17 + T-S 8J22.13",
+      "title": "Medical prescription(s) in Arabic script",
+      "source_url": "https://geniza.princeton.edu/en/documents/35168/",
+      "rights": "Cambridge University Library requires public website reproduction permission; do not download or embed until granted.",
+      "film_role": "A specifically catalogued medical prescription record; not established as a witness to the syrup or substitution passage without further manuscript analysis.",
+      "source_type": "primary manuscript fragment catalogue record"
+    }
+  ],
+  "notes": "Catalogue and licence evidence reviewed 2026-10-17. No new manuscript scan is inserted into a film by this register; film figures stay as credited explanatory art until a specific image is separately verified."
+}
