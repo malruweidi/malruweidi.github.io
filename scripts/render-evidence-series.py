@@ -237,13 +237,26 @@ def illustrate(film,scene):
     elif kind in ("substitution","scales"):
         historic_accountability_plates(d,kind)
     elif kind=="publication":
+        # A shared renderer cannot use a historical pharmacy title as the end
+        # card of an unrelated, experimentally grounded pulmonary research film.
         d.rounded_rectangle((168,165,1110,466),radius=8,fill=(225,211,183),outline=(240,200,132),width=4)
-        write_label(d,(210,208),"MAKING MEDICINES KEEP",39,(49,60,53),True)
-        write_label(d,(215,270),"Syrups, Substitution, and Pharmaceutical Reliability",20,(62,72,60))
-        write_label(d,(215,306),"in Ayyubid-Mamluk Cairo",20,(62,72,60))
-        d.line((210,347,1060,347),fill=(161,112,69),width=3)
-        write_label(d,(215,366),"History of Pharmacy and Pharmaceuticals",20,(73,78,66),True)
-        write_label(d,(215,403),"ACCEPTED · 15 OCTOBER 2026",18,(117,86,60))
+        if film["slug"]=="making-medicines-keep":
+            write_label(d,(210,208),"MAKING MEDICINES KEEP",39,(49,60,53),True)
+            write_label(d,(215,270),"Syrups, Substitution, and Pharmaceutical Reliability",20,(62,72,60))
+            write_label(d,(215,306),"in Ayyubid-Mamluk Cairo",20,(62,72,60))
+            d.line((210,347,1060,347),fill=(161,112,69),width=3)
+            write_label(d,(215,366),"History of Pharmacy and Pharmaceuticals",20,(73,78,66),True)
+            write_label(d,(215,403),"ACCEPTED · 15 OCTOBER 2026",18,(117,86,60))
+        elif film["slug"]=="what-a-bubble-can-do":
+            write_label(d,(210,201),"A PUBLISHED EXPERIMENT",32,(49,60,53),True)
+            write_label(d,(212,260),"Dexamethasone and transdehydroandrosterone",24,(62,72,60),True)
+            write_label(d,(212,298),"reduce pulmonary epithelial cell injuries",23,(62,72,60))
+            write_label(d,(212,335),"associated with mechanical ventilation",23,(62,72,60))
+            d.line((210,380,1060,380),fill=(161,112,69),width=3)
+            write_label(d,(212,390),"J Appl Physiol (2021) · DOI: 10.1152/japplphysiol.00574.2020",17,(73,78,66),True)
+            write_label(d,(212,428),"IN VITRO CELL RESEARCH · NOT A PATIENT TREATMENT CLAIM",15,(117,86,60))
+        else:
+            raise ValueError("No sourced publication end card exists for film "+film["slug"])
     else:
         write_label(d,(125,232),scene["title"].upper(),37,SAFFRON,True)
     return bg
