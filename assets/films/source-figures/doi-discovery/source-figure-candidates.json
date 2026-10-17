@@ -1,0 +1,182 @@
+{
+  "edition": "2026-10-17-source-identity-only",
+  "scope": "Each figure from the correct article DOI; no thumbnail or image was imported or released.",
+  "critical": "Article-level CC BY cannot automatically license a reproduced third-party figure.",
+  "summary": {
+    "ace2-forms": {
+      "all_figures": 7,
+      "possible_third_party": 5
+    },
+    "microfluidic-virus": {
+      "all_figures": 3,
+      "possible_third_party": 0
+    }
+  },
+  "papers": [
+    {
+      "film": "ace2-forms",
+      "pmc": "PMC8269184",
+      "doi": "10.3390/ijms22136703",
+      "source_fulltext": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8269184/fullTextXML",
+      "article_title": "Do Changes in ACE-2 Expression Affect SARS-CoV-2 Virulence and Related Complications: A Closer Look into Membrane-Bound and Soluble Forms",
+      "article_licence": [
+        {
+          "href": null,
+          "text": "Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/)."
+        }
+      ],
+      "figures": [
+        {
+          "label": "Figure 1",
+          "caption": "SARS-CoV’s viral invasion of the host cell via a membrane-bound ACE-2 receptor. ACE-2 mediates entry of coronavirus in two distinct ways. The first one is Clathrin and ADAM 17-dependent endocytosis, and the second one is TMPRSS2-dependent membrane fusion. Figure replicated from [6] with permission.",
+          "image_jats_href": [
+            "ijms-22-06703-g001.jpg",
+            "ijms-22-06703-g001.gif"
+          ],
+          "captured_copyright_clues": [
+            "replicated",
+            "with permission"
+          ],
+          "source_credit": "",
+          "status": "THIRD_PARTY_LICENSE_POSSIBLE_REUSE_NOT_CLEARED",
+          "reuse_decision": "NEEDS MANUAL LICENCE AND FIGURE OWNERSHIP REVIEW"
+        },
+        {
+          "label": "Figure 2",
+          "caption": "Organ-specific comparative ACE-2 expression. Figure replicated from [13] with permission.",
+          "image_jats_href": [
+            "ijms-22-06703-g002.jpg",
+            "ijms-22-06703-g002.gif"
+          ],
+          "captured_copyright_clues": [
+            "replicated",
+            "with permission"
+          ],
+          "source_credit": "",
+          "status": "THIRD_PARTY_LICENSE_POSSIBLE_REUSE_NOT_CLEARED",
+          "reuse_decision": "NEEDS MANUAL LICENCE AND FIGURE OWNERSHIP REVIEW"
+        },
+        {
+          "label": "Figure 3",
+          "caption": "Schematic diagram for the major pathways in RAAS.",
+          "image_jats_href": [
+            "ijms-22-06703-g003.jpg",
+            "ijms-22-06703-g003.gif"
+          ],
+          "captured_copyright_clues": [],
+          "source_credit": "",
+          "status": "SOURCE_OWNERSHIP_NOT_YET_VERIFIED",
+          "reuse_decision": "NEEDS MANUAL LICENCE AND FIGURE OWNERSHIP REVIEW"
+        },
+        {
+          "label": "Figure 4",
+          "caption": "ACE-2 shedding and SARS-CoV-2 entry. TMPRSS2 process ACE-2 for efficient viral entry and replication. Figure replicated from [12] with permission.",
+          "image_jats_href": [
+            "ijms-22-06703-g004.jpg",
+            "ijms-22-06703-g004.gif"
+          ],
+          "captured_copyright_clues": [
+            "replicated",
+            "with permission"
+          ],
+          "source_credit": "",
+          "status": "THIRD_PARTY_LICENSE_POSSIBLE_REUSE_NOT_CLEARED",
+          "reuse_decision": "NEEDS MANUAL LICENCE AND FIGURE OWNERSHIP REVIEW"
+        },
+        {
+          "label": "Figure 5",
+          "caption": "The RAAS with COVID-19. The thicker arrows show an increase in the degree of pathway activation; dotted arrows show a decrease in pathway activation. ACE: angiotensin-converting enzyme; ACE-2: angiotensin-converting enzyme-2; AT1R: angiotensin type 1 receptor; AT2R: angiotensin type2 receptor; ANG 1–7: angiotensin 1–7; ARB: angiotensin receptor blockers; rhACE-2: recombinant human ACE-2; TMPRSS2: transmembrane serine protease 2 (figure replicated from [46] with permission).",
+          "image_jats_href": [
+            "ijms-22-06703-g005.jpg",
+            "ijms-22-06703-g005.gif"
+          ],
+          "captured_copyright_clues": [
+            "replicated",
+            "with permission"
+          ],
+          "source_credit": "",
+          "status": "THIRD_PARTY_LICENSE_POSSIBLE_REUSE_NOT_CLEARED",
+          "reuse_decision": "NEEDS MANUAL LICENCE AND FIGURE OWNERSHIP REVIEW"
+        },
+        {
+          "label": "Figure 6",
+          "caption": "Working mechanisms for ACEi and ARB and relevance to SARS-CoV/SARS-CoV-2 infections. Figure replicated from [82] with permission.",
+          "image_jats_href": [
+            "ijms-22-06703-g006.jpg",
+            "ijms-22-06703-g006.gif"
+          ],
+          "captured_copyright_clues": [
+            "replicated",
+            "with permission"
+          ],
+          "source_credit": "",
+          "status": "THIRD_PARTY_LICENSE_POSSIBLE_REUSE_NOT_CLEARED",
+          "reuse_decision": "NEEDS MANUAL LICENCE AND FIGURE OWNERSHIP REVIEW"
+        },
+        {
+          "label": "Figure 7",
+          "caption": "Potential approaches against ARDS and adverse cardiac events relevant to SARS-CoV-2 infection.",
+          "image_jats_href": [
+            "ijms-22-06703-g007.jpg",
+            "ijms-22-06703-g007.gif"
+          ],
+          "captured_copyright_clues": [],
+          "source_credit": "",
+          "status": "SOURCE_OWNERSHIP_NOT_YET_VERIFIED",
+          "reuse_decision": "NEEDS MANUAL LICENCE AND FIGURE OWNERSHIP REVIEW"
+        }
+      ]
+    },
+    {
+      "film": "microfluidic-virus",
+      "pmc": "PMC7992628",
+      "doi": "10.1007/s42247-021-00169-7",
+      "source_fulltext": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7992628/fullTextXML",
+      "article_title": "Microfluidic-based virus detection methods for respiratory diseases",
+      "article_licence": [
+        {
+          "href": null,
+          "text": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise "
+        }
+      ],
+      "figures": [
+        {
+          "label": "Fig. 1",
+          "caption": "Overview of microfluidic methods used for detection of respiratory viruses. Various collected samples (genetic materials or direct respiratory virus particles in body fluids) can be detected using microfluidic-based detection systems that can contain antibodies, aptamers, magnetic beads, nanoparticles, or enzymes",
+          "image_jats_href": [
+            "42247_2021_169_Fig1_HTML.jpg",
+            "42247_2021_169_Fig1_HTML.gif"
+          ],
+          "captured_copyright_clues": [],
+          "source_credit": "",
+          "status": "SOURCE_OWNERSHIP_NOT_YET_VERIFIED",
+          "reuse_decision": "NEEDS MANUAL LICENCE AND FIGURE OWNERSHIP REVIEW"
+        },
+        {
+          "label": "Fig. 2",
+          "caption": "Illustrations of optical-based microfluidic platforms for detection of respiratory viruses or their products. a Absorbance-based detection technique, b Micropore array used for fluorescent detection. c Colorimetric detection in a paper-based microfluidic platform using RT-LAMP",
+          "image_jats_href": [
+            "42247_2021_169_Fig2_HTML.jpg",
+            "42247_2021_169_Fig2_HTML.gif"
+          ],
+          "captured_copyright_clues": [],
+          "source_credit": "",
+          "status": "SOURCE_OWNERSHIP_NOT_YET_VERIFIED",
+          "reuse_decision": "NEEDS MANUAL LICENCE AND FIGURE OWNERSHIP REVIEW"
+        },
+        {
+          "label": "Fig. 3",
+          "caption": "Illustrations of electrical-based methods for the detection of respiratory viruses or their products. a FET-based biosensor, b Electrochemical biosensors to detect DNA fragments",
+          "image_jats_href": [
+            "42247_2021_169_Fig3_HTML.jpg",
+            "42247_2021_169_Fig3_HTML.gif"
+          ],
+          "captured_copyright_clues": [],
+          "source_credit": "",
+          "status": "SOURCE_OWNERSHIP_NOT_YET_VERIFIED",
+          "reuse_decision": "NEEDS MANUAL LICENCE AND FIGURE OWNERSHIP REVIEW"
+        }
+      ]
+    }
+  ]
+}
