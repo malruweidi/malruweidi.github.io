@@ -31,6 +31,8 @@ jobs:
         run: node --test tests/evidence-films.test.cjs
       - name: Verify 180-second pulmonary evidence cut, published data and source preservation
         run: node --test tests/airway-evidence-cut.test.cjs
+      - name: Verify compact chapter-led homepage and preserved full record
+        run: node --test tests/homepage-chapter-navigation.test.mjs
       - name: Check editorial wayfinding and chapter preservation
         run: node --test tests/editorial-wayfinding.test.mjs
       - name: Re-audit editorial prose and preserved scientific provenance
