@@ -42,16 +42,17 @@ def frame(entry,scene,phase,out,root=ROOT):
         image=Image.open(image).convert("RGB")
         media="EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT"
         provenance="v7-original-illustration"
-    # Avoid copying long title into an image that already contains it.
+    # Reserve the bottom 76px for native WebVTT captions. Never bake labels
+    # beneath an active caption track or overlap subtitles and film titles.
     d=ImageDraw.Draw(image)
-    d.rectangle((0,542,art.W,720),fill=(13,37,43))
-    d.rectangle((74,564,126,569),fill=GOLD)
-    d.text((77,581),"RUWAIDIX   /   SCIENTIFIC FILM",font=art.font(15,True),fill=PAPER)
-    lines,size=fit_text(d,scene["title"],art.font(34,True),34)
+    d.rectangle((0,533,art.W,720),fill=(13,37,43))
+    d.rectangle((74,544,126,549),fill=GOLD)
+    d.text((77,554),"RUWAIDIX   /   SCIENTIFIC FILM",font=art.font(13,True),fill=PAPER)
+    lines,size=fit_text(d,scene["title"],art.font(30,True),30)
     for i,line in enumerate(lines):
-        d.text((77,615+i*38),line,font=art.font(size,True),fill=PAPER)
-    d.text((75,696),media[:90],font=art.font(11),fill=(179,201,192))
-    d.text((1120,582),scene["id"]+" / 06",font=art.font(20,True),fill=GOLD)
+        d.text((77,580+i*33),line,font=art.font(size,True),fill=PAPER)
+    d.text((72,46),media[:100],font=art.font(11),fill=(179,201,192))
+    d.text((1120,554),scene["id"]+" / 06",font=art.font(18,True),fill=GOLD)
     image.save(out,optimize=True)
     try:
         review_path=str(out.relative_to(ROOT))
