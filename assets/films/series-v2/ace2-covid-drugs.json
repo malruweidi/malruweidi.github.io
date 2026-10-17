@@ -1,0 +1,84 @@
+{
+  "id": "ace2-covid-drugs",
+  "seconds": 84.0,
+  "sha256": "b1f1e920566489b946e6609fc0958e2ff302ae7df90a0f8eb156e6cbad98be12",
+  "primary_source": "https://doi.org/10.1080/08037051.2022.2055530",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Pulmonary clinical-context scientific illustration, no identifiable patient",
+    "General physiological diagram, not a specific assay result",
+    "Original healthcare-imaging workspace; no patient data from study",
+    "Contextual pulmonary image, not the published patient dataset",
+    "Conceptual depiction, not treatment guidance",
+    "Editorial science illustration"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/evidence-pulmonary.webp",
+      "kind": "Pulmonary clinical-context scientific illustration, no identifiable patient",
+      "credit": "Pulmonary clinical-context scientific illustration, no identifiable patient",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/echo-concept.svg",
+      "kind": "General physiological diagram, not a specific assay result",
+      "credit": "General physiological diagram, not a specific assay result",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "kind": "Original healthcare-imaging workspace; no patient data from study",
+      "credit": "Original healthcare-imaging workspace; no patient data from study",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/evidence-pulmonary.webp",
+      "kind": "Contextual pulmonary image, not the published patient dataset",
+      "credit": "Contextual pulmonary image, not the published patient dataset",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/echo-concept.svg",
+      "kind": "Conceptual depiction, not treatment guidance",
+      "credit": "Conceptual depiction, not treatment guidance",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/evidence-pulmonary.webp",
+      "kind": "Editorial science illustration",
+      "credit": "Editorial science illustration",
+      "source": "/#publications"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "network",
+  "motion_storyboard": {
+    "02": "network",
+    "03": "network",
+    "04": "signal",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Medication exposure",
+    "ACE2 and angiotensin II",
+    "Confounding variables"
+  ],
+  "evidence_boundary": "No patient observations or causal estimate is depicted.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}
