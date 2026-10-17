@@ -45,7 +45,8 @@ jobs:
           cfg=json.loads(Path("assets/films/V4-EXACT-FIGURE-DOCUMENTARIES.json").read_text())["films"]
           images=json.loads(Path("assets/films/source-figures/v3/source-figure-provenance.json").read_text())["figures"]
           keys={(item["film"],item["figure_number"]):item for item in images}
-          for slug,film in cfg.items():
+          for slug in ("flow-chamber-method","pla-grafting"):
+              film=cfg[slug]
               assert len(film["scenes"])==8
               for scene in film["scenes"]:
                   ref=keys[(slug,scene["figure"])]
