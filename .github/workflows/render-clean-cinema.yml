@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: ruwaidix-clean-cinema-${{ github.ref }}
@@ -24,6 +25,20 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
+      - name: Disable superseded cinematic batch workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Prevent the earlier staging workflow from rewriting this release
+          # register with an incomplete 0–30 draft catalogue.
+          gh workflow disable cinema-v7-batch.yml || true
+          for state in in_progress queued; do
+            gh run list --workflow cinema-v7-batch.yml --status "$state" --limit 30 --json databaseId --jq '.[].databaseId' |
+            while read -r run; do
+              if [ -n "$run" ]; then gh run cancel "$run" || true; fi
+            done
+          done
+
       - name: Check out all scientific film assets
         uses: actions/checkout@v4
         with:
