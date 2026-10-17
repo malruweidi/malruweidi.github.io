@@ -1,0 +1,16 @@
+{
+  "film": "microfluidic-virus",
+  "doi": "10.1007/s42247-021-00169-7",
+  "pmcid": "PMC7992628",
+  "paper_title": "Microfluidic-based virus detection methods for respiratory diseases",
+  "original_figure": "Figure 1",
+  "caption": "Overview of microfluidic methods used for detection of respiratory viruses. Various collected samples (genetic materials or direct respiratory virus particles in body fluids) can be detected using microfluidic-based detection systems that can contain antibodies, aptamers, magnetic beads, nanoparticles, or enzymes",
+  "source_url": "https://d-nb.info/1234783940/34#page=3",
+  "original_jats": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7992628/fullTextXML",
+  "asset": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg",
+  "sha256": "89352641055513f068604e5d2bd02458aa9503d976b0cbd79d9b203a7a14a11e",
+  "source_representation": "Exact DOI archived article page containing Figure 1; full page, not cropped figure",
+  "licence": "CC BY 4.0 from matching open-access article; retain Tarim et al. 2021 and DOI",
+  "editorial_note": "Figure 1 is the authors' review schematic; not a photograph of a fabricated device, new experimental dataset or original patient specimen.",
+  "status": "SOURCE VERIFICATION PASSED, HUMAN VISUAL REVIEW STILL REQUIRED"
+}
