@@ -5,6 +5,8 @@ on:
     paths:
       - scripts/audit-experiment-films-v3.py
       - .github/workflows/audit-experiment-films-v3.yml
+      - assets/films/series-v3/pla-grafting.mp4
+      - assets/films/series-v3/flow-chamber-method.mp4
   workflow_dispatch:
 permissions: {contents: write}
 concurrency:
