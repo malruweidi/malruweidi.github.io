@@ -130,6 +130,48 @@
       "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
     },
     {
+      "name": "gi-autoimmunity-1",
+      "seconds": 84.0,
+      "size_bytes": 2603871,
+      "sha256": "63b0dabb1296cd3b5e2d702bf9d1c51329f008a5222f58b77497eb2022710f71",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 80.12
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "gi-autoimmunity-2",
+      "seconds": 84.0,
+      "size_bytes": 2679592,
+      "sha256": "1ac286718ef9e0469210a21d9b584b1470f8816918185fd73effb090b5336d3a",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 23,
+        "max_caption_line": 53,
+        "last_caption_second": 79.55
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
       "name": "making-medicines-keep",
       "seconds": 84.0,
       "size_bytes": 2494142,
