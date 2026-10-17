@@ -2,7 +2,7 @@
 """Build visual proof for every V7 cinematic treatment before any release."""
 import argparse, json, importlib.util, hashlib, tempfile, shutil
 from pathlib import Path
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageChops
 ROOT=Path(__file__).resolve().parents[1]
 MODEL=ROOT/"scripts/film-art-direction-v7.py"
 CATALOG=ROOT/"assets/films/publication-series.json"
@@ -53,6 +53,12 @@ def frame(entry,scene,phase,out,root=ROOT):
         d.text((77,580+i*33),line,font=art.font(size,True),fill=PAPER)
     d.text((72,46),media[:100],font=art.font(11),fill=(179,201,192))
     d.text((1120,554),scene["id"]+" / 06",font=art.font(18,True),fill=GOLD)
+    # The lower caption safety region must remain completely blank, so that
+    # native subtitles cannot obscure source credits, evidence, or chapter titles.
+    empty_caption_band=Image.new("RGB",(art.W,68),BG)
+    occupied=ImageChops.difference(image.crop((0,652,art.W,720)),empty_caption_band).getbbox()
+    if occupied:
+        raise AssertionError("Narration captions would overlap visual text: "+slug+" / "+scene["id"])
     image.save(out,optimize=True)
     try:
         review_path=str(out.relative_to(ROOT))
