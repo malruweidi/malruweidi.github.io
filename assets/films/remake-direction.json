@@ -436,10 +436,10 @@
       "evidence_boundary": "No quotations attributed to real correspondents.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "editorial",
-        "03": "editorial",
-        "04": "editorial",
-        "05": "editorial"
+        "02": "letter-review",
+        "03": "letter-review",
+        "04": "institution-form",
+        "05": "attribution-network"
       }
     },
     "essay-machine-language": {
@@ -452,10 +452,10 @@
       "evidence_boundary": "Text motion is illustrative, not quoted scholarship.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "editorial",
-        "03": "editorial",
-        "04": "editorial",
-        "05": "editorial"
+        "02": "institution-form",
+        "03": "letter-review",
+        "04": "institution-form",
+        "05": "attribution-network"
       }
     },
     "essay-academic-mental-health": {
@@ -468,10 +468,10 @@
       "evidence_boundary": "No clinical events beyond the author's account are invented.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "editorial",
-        "03": "editorial",
-        "04": "editorial",
-        "05": "editorial"
+        "02": "cv-parallel",
+        "03": "cv-parallel",
+        "04": "attribution-network",
+        "05": "cv-parallel"
       }
     },
     "essay-scientific-credit": {
@@ -484,10 +484,10 @@
       "evidence_boundary": "No invented acknowledgments or publication counts.",
       "motion_rule": "Chapters 02–05 contain a separate source-attributed animated conceptual field; original input images remain unchanged and unmodified. Chapters 01 and 06 show the source at its intended legible size.",
       "scene_motifs": {
-        "02": "editorial",
-        "03": "network",
-        "04": "editorial",
-        "05": "editorial"
+        "02": "attribution-network",
+        "03": "attribution-network",
+        "04": "institution-form",
+        "05": "attribution-network"
       }
     },
     "essay-tf-states": {
@@ -576,5 +576,5 @@
       "review_poster": "/assets/films/art/source-specific/adc-molecular.svg"
     }
   },
-  "version": "2.3"
+  "version": "2.4"
 }
