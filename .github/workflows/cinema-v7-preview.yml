@@ -1,0 +1,62 @@
+name: Ruwaidix V7 visual direction quality gate
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/film-art-direction-v7.py
+      - scripts/build-cinema-v7-previews.py
+      - .github/workflows/cinema-v7-preview.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cinema-v7-preview-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  storyboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free storyboard drawing engine
+        run: |
+          python -m pip install pillow
+      - name: Validate provenance-safe scene-specific drawings
+        run: |
+          python -m py_compile scripts/film-art-direction-v7.py scripts/build-cinema-v7-previews.py
+          python scripts/build-cinema-v7-previews.py --all
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          from PIL import Image
+          directory=Path("assets/films/quality-review-v7")
+          rows=json.loads((directory/"review-index.json").read_text())["films"]
+          assert len(rows)==35
+          thumbs=[]
+          for row in rows:
+              assert len(row["frames"])==4
+              for info in row["frames"]:
+                  p=Path(info["file"])
+                  assert p.stat().st_size>5000
+                  with Image.open(p) as im:
+                      assert im.size==(1280,720)
+                  thumbs.append(hashlib.sha256(p.read_bytes()).hexdigest())
+          assert len(set(thumbs))>=110,"Visual frames must vary meaningfully across films and movements"
+          print("Visual proof:",len(rows),"films,",len(thumbs),"individual story beats")
+          PY
+      - name: Publish only review stills and evidence map, not unapproved films
+        run: |
+          git config user.name "Ruwaidix Film QC"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/quality-review-v7/*.webp assets/films/quality-review-v7/review-index.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish V7 quality-review storyboards; existing films remain preserved [v7-previews]"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase FETCH_HEAD
+            git push origin HEAD:"${{ github.ref_name }}"
+          fi
