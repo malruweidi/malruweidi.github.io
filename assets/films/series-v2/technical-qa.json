@@ -6,8 +6,8 @@
     {
       "name": "ace2-covid-drugs",
       "seconds": 84.0,
-      "size_bytes": 2541370,
-      "sha256": "7531772ed1c7b23dd4ad2e8393e68650ebbf2091824dc0bafe91db72ed65ffd4",
+      "size_bytes": 2437301,
+      "sha256": "8d150a0af5b9b999015837afcf6910b67c8a1409023d4324f3de707ba176eae5",
       "width": 1280,
       "height": 720,
       "codec": "h264",
@@ -15,7 +15,7 @@
       "captions": {
         "cue_count": 21,
         "max_caption_line": 54,
-        "last_caption_second": 80.88
+        "last_caption_second": 80.89
       },
       "black_frames": {
         "sample_rate_hz": 2,
