@@ -68,3 +68,17 @@ test('every referenced film master, caption and poster is in the preserved site 
     assert(fs.existsSync(path.join(root,'assets/films/series-v6',film.id+'.webp')));
   }
 });
+
+test('Making Medicines Keep standalone page plays the improved manuscript-sourced cut and retains the first-edition transcript',()=>{
+  const page=fs.readFileSync(path.join(root,'films/making-medicines-keep.html'),'utf8');
+  const manifest=JSON.parse(fs.readFileSync(path.join(root,'assets/films/series-v4/making-medicines-keep.json'),'utf8'));
+  assert.match(page,/<source src="\/assets\/films\/series-v4\/making-medicines-keep\.mp4"/);
+  assert.match(page,/<track[^>]+src="\/assets\/films\/series-v4\/making-medicines-keep\.vtt"/);
+  assert.match(page,/id="first-edition-transcript"/);
+  assert.match(page,/href="\/assets\/films\/making-medicines-keep\.mp4"/);
+  assert.match(page,/1904/);
+  assert.equal(manifest.chapters.length,8);
+  for(const chapter of manifest.chapters){
+    assert(page.includes(chapter.speech),'Revised spoken chapter missing from web transcript: '+chapter.title);
+  }
+});
