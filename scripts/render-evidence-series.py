@@ -553,7 +553,7 @@ def render_one(film,tts):
                 "media":[{"chapter":s["id"],"type":s["kind"],"credit":s["credit"],"source":s.get("image",None),
                           "context_visual":s.get("context_visual"),"context_source":sources.get(s.get("context_visual"))} for s in film["scenes"]],
                 "editorial_method":"Real owner archive retained uncropped in frames; explicitly non-documentary original illustrations; audio Kokoro-ONNX + self-generated original score."}
-        (FILMS/(film["slug"]+"-build.json")).write_text(json.dumps(record,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+        (FILMS/(film.get("media_stem",film["slug"])+"-build.json")).write_text(json.dumps(record,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print("COMPLETE",film["slug"],round(dur,2),"s",final.stat().st_size,"bytes",flush=True)
 
 def main():
