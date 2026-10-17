@@ -55,11 +55,12 @@
 <main id="main">
 <section class="film-hero"><div class="wrap-film"><p class="kicker">A documentary research portrait / 2026</p><h1>What survives <em>the experiment.</em></h1><p class="deck">Twelve scenes from a scientific life: a school anatomy lesson, a microscope from Cairo, chemistry, developing vessels, failed materials, damaged lung cells and the difficult journey from molecule to medicine.</p><p class="film-intro"><span>02:00 running time</span><span>Research documentary</span><span></span></p></div></section>
 <section class="screen-section" aria-label="Documentary screening"><div class="wrap-film">
-<div class="screen"><video id="research-film" controls playsinline preload="metadata" poster="/assets/photos-2017-2019/microscope-morning-still-life-2017.webp" aria-label="What Survives the Experiment, a two-minute research documentary" hidden>
+<div class="screen"><video id="research-film" controls playsinline preload="metadata" poster="/assets/photos-2017-2019/microscope-morning-still-life-2017.webp" aria-label="What Survives the Experiment, a two-minute research documentary">
 <source src="/assets/films/what-survives-the-experiment.mp4" type="video/mp4">
 <track kind="captions" src="/assets/films/what-survives-the-experiment.vtt" srclang="en" label="English captions" default>
-</video><div class="screen-fallback" id="film-fallback"><div><p>Watch the complete documentary.</p><a href="/assets/films/what-survives-the-experiment.mp4">Watch the MP4 ↗</a> · <a href="/moving-evidence.html">Original footage ↗</a></div></div></div>
-<p class="film-context"> <a href="/assets/films/what-survives-the-experiment.mp4">Open the film directly</a> · .</p>
+<p>Your browser does not support this video. <a href="/assets/films/what-survives-the-experiment.mp4">Open the two-minute film directly</a>.</p>
+</video><div class="screen-fallback" id="film-fallback" hidden><div><p>Watch the complete documentary.</p><a href="/assets/films/what-survives-the-experiment.mp4">Watch the MP4 ↗</a> · <a href="/moving-evidence.html">Original footage ↗</a></div></div></div>
+<p class="film-context"> <a href="/assets/films/what-survives-the-experiment.mp4">Open the film directly</a>.</p>
 </div></section>
 
 <details class="film-arabic" lang="ar" dir="rtl"><summary>النص العربي للفيلم · ترجمة مكتوبة</summary><p class="film-translation-note">هذه ترجمة عربية للنص المنطوق باللغة الإنجليزية، وليست مسارًا صوتيًا عربيًا.</p></details>
@@ -68,6 +69,6 @@
 </main>
 <footer class="film-footer"><div class="wrap-film"><p>Mahmoud K. Al-Ruweidi / Ruwaidix</p><p><a href="/">Return home</a> · <a href="/research-horizon.html">Future research</a> · <a href="/figures.html">Figures and sources</a></p></div></footer>
 <script>
-(function(){const v=document.getElementById("research-film"),f=document.getElementById("film-fallback");fetch("/assets/films/what-survives-the-experiment.mp4",{method:"HEAD"}).then(r=>{if(!r.ok||!Number(r.headers.get("content-length")))return;v.hidden=false;f.hidden=true}).catch(()=>{});})();
+(function(){const v=document.getElementById("research-film"),f=document.getElementById("film-fallback");if(!v||!f)return;const unavailable=()=>{v.hidden=true;f.hidden=false};v.addEventListener("error",unavailable);v.querySelector("source")?.addEventListener("error",unavailable);})();
 </script>
 </body></html>
