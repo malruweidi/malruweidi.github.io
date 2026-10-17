@@ -179,6 +179,95 @@
           "narration": "These results describe PLA film and aluminium peel adhesion. They must not be illustrated with the separate twenty twenty antimicrobial electrospun scaffold experiment."
         }
       ]
+    },
+    "ace2-covid-drugs": {
+      "title": "Soluble ACE2 Is Not a Treatment Verdict",
+      "doi": "10.1080/08037051.2022.2055530",
+      "source": "https://www.tandfonline.com/doi/full/10.1080/08037051.2022.2055530",
+      "media_license": "CC BY 4.0",
+      "visual_thesis": "The exact 2022 observational hypertensive COVID-19 paper, with its published circulating ACE2/angiotensin-II figures. No third-party 2021 review graphics, patient photos, or causal claims.",
+      "scenes": [
+        {
+          "mode": "opening",
+          "figure": 1,
+          "headline": [
+            "TWO BLOOD",
+            "MARKERS"
+          ],
+          "eyebrow": "HYPERTENSIVE COVID-19 COHORT",
+          "narration": "This clinical study measured circulating ACE two and angiotensin two in two hundred hypertensive patients with COVID nineteen. It is an observational analysis, not a treatment trial."
+        },
+        {
+          "mode": "source",
+          "figure": 1,
+          "headline": [
+            "SEVERITY",
+            "AND ACE TWO"
+          ],
+          "eyebrow": "FIGURE 1 · REAL DOT PLOTS",
+          "narration": "The original dot plots compare circulating ACE two and angiotensin two across mild, moderate, and severe illness, with the authors' reported confidence intervals."
+        },
+        {
+          "mode": "result",
+          "figure": 1,
+          "headline": [
+            "HIGHER IN",
+            "SEVERE CASES"
+          ],
+          "eyebrow": "OBSERVATIONAL ASSOCIATION · FIGURE 1",
+          "narration": "The reported soluble ACE two level was about one point nine times higher in severe disease than in mild cases. This does not establish the direction of causation."
+        },
+        {
+          "mode": "source",
+          "figure": 2,
+          "headline": [
+            "FOUR MEDICINE",
+            "CLASSES"
+          ],
+          "eyebrow": "FIGURE 2 · EXPOSURE GROUPS",
+          "narration": "The researchers compared patients taking ACE inhibitors, angiotensin receptor blockers, beta blockers, and calcium channel blockers. These were recorded exposures, not randomly assigned drugs."
+        },
+        {
+          "mode": "result",
+          "figure": 2,
+          "headline": [
+            "REAL ASSAY",
+            "DISTRIBUTIONS"
+          ],
+          "eyebrow": "FIGURE 2 · ORIGINAL GROUP RESULTS",
+          "narration": "The original figure shows variation between medication groups in circulating ACE two and angiotensin two. These are blood assays, not direct measurements of membrane receptor expression."
+        },
+        {
+          "mode": "source",
+          "figure": 3,
+          "headline": [
+            "GROUPS AND",
+            "ILLNESS SEVERITY"
+          ],
+          "eyebrow": "FIGURE 3 · ACTUAL PUBLISHED VIOLIN PLOTS",
+          "narration": "The third figure separates medication classes by disease severity. It reports treatment group associations within an already ill population, not clinical benefit from starting a drug."
+        },
+        {
+          "mode": "boundary",
+          "figure": 3,
+          "headline": [
+            "ASSOCIATION",
+            "IS NOT CAUSE"
+          ],
+          "eyebrow": "CONFOUNDING BY INDICATION AND SEVERITY",
+          "narration": "Medication choice, baseline cardiovascular disease, age, and illness severity can all shape the observed associations. The study cannot resolve all of those differences."
+        },
+        {
+          "mode": "closing",
+          "figure": 1,
+          "headline": [
+            "MEASURED",
+            "NOT PRESCRIBED"
+          ],
+          "eyebrow": "THE SCIENTIFIC LIMIT",
+          "narration": "The contribution is a clinical biochemical observation linking treatment context, soluble ACE two, and angiotensin two. It does not tell a patient to change medication."
+        }
+      ]
     }
   }
 }
