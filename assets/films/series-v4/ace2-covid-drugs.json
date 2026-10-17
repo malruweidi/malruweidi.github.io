@@ -52,7 +52,7 @@
   "separate_explanatory_animation": true,
   "new_science_fabricated": false,
   "duration_seconds": 120.0,
-  "sha256": "da69c1f7e077bbd75f5b21294ddf2d2acdccc9f7af8cc5471e24c3a7dbeb37ed",
+  "sha256": "a510b9993829a08aac42c51f60a6014b5edf1037004ec5089d27483320746931",
   "human_review": "NOT APPROVED — listen, watch, verify panel identities and licensing before live embed",
   "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
   "chapters": [
@@ -65,7 +65,7 @@
       ],
       "eyebrow": "HYPERTENSIVE COVID-19 COHORT",
       "narration": "This clinical study measured circulating ACE two and angiotensin two in two hundred hypertensive patients with COVID nineteen. It is an observational analysis, not a treatment trial.",
-      "tts_seconds": 12.297
+      "tts_seconds": 12.287
     },
     {
       "mode": "source",
@@ -76,7 +76,7 @@
       ],
       "eyebrow": "FIGURE 1 · REAL DOT PLOTS",
       "narration": "The original dot plots compare circulating ACE two and angiotensin two across mild, moderate, and severe illness, with the authors' reported confidence intervals.",
-      "tts_seconds": 10.868
+      "tts_seconds": 10.878
     },
     {
       "mode": "result",
@@ -87,7 +87,7 @@
       ],
       "eyebrow": "OBSERVATIONAL ASSOCIATION · FIGURE 1",
       "narration": "The reported soluble ACE two level was about one point nine times higher in severe disease than in mild cases. This does not establish the direction of causation.",
-      "tts_seconds": 11.273
+      "tts_seconds": 11.275
     },
     {
       "mode": "source",
@@ -109,7 +109,7 @@
       ],
       "eyebrow": "FIGURE 2 · ORIGINAL GROUP RESULTS",
       "narration": "The original figure shows variation between medication groups in circulating ACE two and angiotensin two. These are blood assays, not direct measurements of membrane receptor expression.",
-      "tts_seconds": 12.499
+      "tts_seconds": 12.489
     },
     {
       "mode": "source",
