@@ -184,7 +184,7 @@
            const resp=await fetch(base+".vtt");
            if(!resp.ok)throw Error("Captions unavailable");
            const captions=await resp.text();
-           const matches=[...captions.matchAll(/(\\d{2}):(\\d{2}):(\\d{2}\\.\\d{3})\\s*-->/g)];
+           const matches=[...captions.matchAll(/(\d{2}):(\d{2}):(\d{2}\.\d{3})\s*-->/g)];
            if(matches.length!==12)throw Error("Expected twelve timed narration cues");
            chapterList.textContent="";
            x.scenes.forEach((scene,idx)=>{
