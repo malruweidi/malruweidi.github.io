@@ -1,7 +1,7 @@
 {
   "id": "cerebral-cilia",
   "seconds": 84.0,
-  "sha256": "a2e5099ee5dbb178244cf6a356aaf1ffe302bfe9f0823c79a62e5e8fef485dc8",
+  "sha256": "06f75066973464e16d89d87c9614fdd6ca70f7b5ce23b8e2540e358c9bf5813a",
   "primary_source": "https://doi.org/10.1161/ATVBAHA.118.311231",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
@@ -58,11 +58,20 @@
   ],
   "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
   "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
   "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
   "animated_scene_ids": [
-    "03"
+    "03",
+    "04",
+    "05"
   ],
   "motion_motif": "vessel",
+  "motion_storyboard": {
+    "02": "vessel",
+    "03": "vessel",
+    "04": "signal",
+    "05": "translation"
+  },
   "motion_annotations": [
     "Flow in a developing vessel",
     "Ciliary distribution",

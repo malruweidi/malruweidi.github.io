@@ -1,7 +1,7 @@
 {
   "id": "airway-reopening",
   "seconds": 84.0,
-  "sha256": "f8b1d9f2c89740b9673fbf67ce2f6ff72a74ee5796094cc3cc0bbce7c365008a",
+  "sha256": "0751123c798b5725eebe5ceab6b8f813a9fce50748fbfc5168217d1383eb1193",
   "primary_source": "https://doi.org/10.1152/japplphysiol.00574.2020",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
@@ -58,11 +58,21 @@
   ],
   "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
   "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
   "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
   "animated_scene_ids": [
-    "02"
+    "02",
+    "03",
+    "04",
+    "05"
   ],
   "motion_motif": "interface",
+  "motion_storyboard": {
+    "02": "interface",
+    "03": "chamber",
+    "04": "assay",
+    "05": "translation"
+  },
   "motion_annotations": [
     "Interface advances",
     "Epithelial response",
