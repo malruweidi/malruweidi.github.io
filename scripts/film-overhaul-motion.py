@@ -46,7 +46,14 @@ def make_base(picture, original_label):
         src=ImageOps.exif_transpose(src).convert("RGB")
         src.thumbnail((534,300),Image.Resampling.LANCZOS)
         im.paste(src,(333-src.width//2,312-src.height//2))
-    label(d,(67,455),"ORIGINAL SOURCE VISUAL",GREEN,14,True)
+    context=original_label.casefold()
+    if "published" in context or "study figure" in context:
+        credit="PUBLISHED SCIENTIFIC FIGURE / CONSULT PAPER"
+    elif "concept" in context or "diagram" in context or "schematic" in context:
+        credit="AUTHOR'S CONCEPT ILLUSTRATION / NOT DATA"
+    else:
+        credit="CREDITED SOURCE-CONTEXT VISUAL / CHECK REGISTER"
+    label(d,(67,455),credit,GREEN,13,True,55)
     # Never call source figures experimental footage.
     label(d,(646,153),"EXPLANATORY MOTION  /  NOT MEASURED DATA",GOLD,13,True,58)
     return im
