@@ -9,6 +9,7 @@ on:
       - assets/films/series-v3/curcumin-cyanide.mp4
       - assets/films/series-v3/histology-failure.mp4
       - assets/films/series-v3/micelles-pahs.mp4
+      - assets/films/series-v3/pla-scaffolds.mp4
   workflow_dispatch:
 permissions: {contents: write}
 concurrency:
