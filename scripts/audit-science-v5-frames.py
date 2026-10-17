@@ -30,6 +30,21 @@ def main():
         manifest=json.loads(mp4.with_suffix(".json").read_text())
         blob=hashlib.sha256(mp4.read_bytes()).hexdigest()
         if blob!=manifest.get("sha256"):raise ValueError("Source SHA mismatch "+mp4.name)
+        allowed={
+            "microfluidic-virus":"10.1007/s42247-021-00169-7",
+            "flow-chamber-method":"10.3390/mps3040065",
+            "pla-scaffolds":"10.1016/j.surfcoat.2020.126216"
+        }
+        if mp4.stem not in allowed or manifest.get("doi")!=allowed[mp4.stem]:
+            raise ValueError("Unknown film or original study DOI mismatch: "+mp4.stem)
+        if not manifest.get("source_figures"):
+            raise ValueError("Study-bound original figure inventory absent: "+mp4.stem)
+        for figure in manifest["source_figures"]:
+            original=ROOT/figure["path"]
+            if mp4.stem not in original.name:
+                raise ValueError("CROSS-STUDY FIGURE DETECTED: "+mp4.stem+" ← "+str(original))
+            if hashlib.sha256(original.read_bytes()).hexdigest()!=figure["sha256"]:
+                raise ValueError("Source figure file changed since rendering: "+str(original))
         board=Image.new("RGB",(480*4,309*4),(12,31,36));d=ImageDraw.Draw(board)
         font=ImageFont.truetype(FT,16)
         for index,t in enumerate(SAMPLE):
