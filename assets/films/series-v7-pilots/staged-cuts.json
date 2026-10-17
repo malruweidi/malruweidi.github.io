@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 30,
+  "count": 26,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -30,21 +30,6 @@
       "contact": "/assets/films/series-v7-pilots/ace2-forms.contact.webp",
       "visual_revision": "v7.8-clean-screen/film-specific",
       "sha256": "f6ef9e053380f86e1e07cbccbeda58103e50febef6696acbf8444659ccaf35d8",
-      "seconds": 84.0,
-      "unique_mechanism_scenes": 6,
-      "creative_review": "scientific_and_artistic_signoff_outstanding"
-    },
-    {
-      "id": "airway-reopening",
-      "title": "A breath can injure",
-      "publication": "Dexamethasone and transdehydroandrosterone significantly reduce pulmonary epithelial cell injuries associated with mechanical ventilation",
-      "poster": "/assets/films/series-v7-pilots/airway-reopening.webp",
-      "file": "/assets/films/series-v7-pilots/airway-reopening.mp4",
-      "captions": "/assets/films/series-v7-pilots/airway-reopening.vtt",
-      "manifest": "/assets/films/series-v7-pilots/airway-reopening.json",
-      "contact": "/assets/films/series-v7-pilots/airway-reopening.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific/source-figure-fully-visible",
-      "sha256": "c8e443340e1cfcd1f6c58fa501e3653ad74cfe44a557014a9350afc487be685e",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
@@ -80,21 +65,6 @@
       "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
-      "id": "cerebral-cilia",
-      "title": "How does a vessel know the blood is moving?",
-      "publication": "Characterization of endothelial cilia distribution during cerebral-vascular development in zebrafish",
-      "poster": "/assets/films/series-v7-pilots/cerebral-cilia.webp",
-      "file": "/assets/films/series-v7-pilots/cerebral-cilia.mp4",
-      "captions": "/assets/films/series-v7-pilots/cerebral-cilia.vtt",
-      "manifest": "/assets/films/series-v7-pilots/cerebral-cilia.json",
-      "contact": "/assets/films/series-v7-pilots/cerebral-cilia.contact.webp",
-      "visual_revision": "v7.8-clean-screen/v7.4-chapter-specific-cilia-clean-panel",
-      "sha256": "d41d9048e8fc3e344379d7a21f85bca98e6842a7c677c18f822bc6bcf7f90098",
-      "seconds": 84.0,
-      "unique_mechanism_scenes": 6,
-      "creative_review": "scientific_and_artistic_signoff_outstanding"
-    },
-    {
       "id": "cubosome-theranostics",
       "title": "The difficult promise of a cubic carrier",
       "publication": "Theranostic Potential of Cubosomes in Targeted Cancer Therapy: From Mechanistic Design to Clinical Translation",
@@ -105,21 +75,6 @@
       "contact": "/assets/films/series-v7-pilots/cubosome-theranostics.contact.webp",
       "visual_revision": "v7.8-clean-screen/v7.4-chapter-specific-cubosomes-clean-panel",
       "sha256": "a805987886ab34d90e47647162a78dc08a818354f43feb6e9b904f9136a9ffb6",
-      "seconds": 84.0,
-      "unique_mechanism_scenes": 6,
-      "creative_review": "scientific_and_artistic_signoff_outstanding"
-    },
-    {
-      "id": "curcumin-cyanide",
-      "title": "When a molecule becomes a question",
-      "publication": "Curcumin: a colorimetric and fluorimetric cyanide probe in aqueous system and living cells",
-      "poster": "/assets/films/series-v7-pilots/curcumin-cyanide.webp",
-      "file": "/assets/films/series-v7-pilots/curcumin-cyanide.mp4",
-      "captions": "/assets/films/series-v7-pilots/curcumin-cyanide.vtt",
-      "manifest": "/assets/films/series-v7-pilots/curcumin-cyanide.json",
-      "contact": "/assets/films/series-v7-pilots/curcumin-cyanide.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific/source-figure-fully-visible",
-      "sha256": "55e2be4e11c5c36f99e87d17a66010039dfe0b75116af5a9a1e1d7d33a994821",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
@@ -420,21 +375,6 @@
       "contact": "/assets/films/series-v7-pilots/niosomes.contact.webp",
       "visual_revision": "v7.8-clean-screen/film-specific",
       "sha256": "9a545eee804c106831e85c02496d668ee8ca2dbfa964b5e0d6b8d36813cdbf24",
-      "seconds": 84.0,
-      "unique_mechanism_scenes": 6,
-      "creative_review": "scientific_and_artistic_signoff_outstanding"
-    },
-    {
-      "id": "slit2-robo",
-      "title": "The target that can change sides",
-      "publication": "SLIT2 and ROBO-axis inhibitors for the treatment of cancer: a patent review (2020–2026)",
-      "poster": "/assets/films/series-v7-pilots/slit2-robo.webp",
-      "file": "/assets/films/series-v7-pilots/slit2-robo.mp4",
-      "captions": "/assets/films/series-v7-pilots/slit2-robo.vtt",
-      "manifest": "/assets/films/series-v7-pilots/slit2-robo.json",
-      "contact": "/assets/films/series-v7-pilots/slit2-robo.contact.webp",
-      "visual_revision": "v7.8-clean-screen/v7.4-chapter-specific-receptor-clean-panel",
-      "sha256": "b175eafffd28811b6762a1085c31e8455b14f85065da3f702ed38b8a34e902fa",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
