@@ -214,6 +214,27 @@
       "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
     },
     {
+      "name": "essay-academic-mental-health",
+      "seconds": 84.0,
+      "size_bytes": 2736273,
+      "sha256": "c8a6493331ea8b9af4ec792344d1c55a4be82f02b6607fc8c0b1b7687c345a02",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 79.76
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
       "name": "essay-ai-email",
       "seconds": 84.0,
       "size_bytes": 2586002,
