@@ -48,7 +48,8 @@ const pending=JSON.parse(fs.readFileSync(path.join(root,"assets/archival-2019-20
 if(absent.length)warnings.push(absent.length+" owner-identified 2019-2020 images still lack publishable binaries; cards hidden");
 // Ruwaidix editorial architecture invariants: prevent loss of reader paths and release regressions.
 const home=html.get("index.html")||"";
-const checkpoints=['class="rx-evidence-index"','id="research"','id="publications"','id="film"','class="rh-home-entry"','class="rx-chapters"','id="story"'];
+// The approved two-minute introduction screens first; research follows, with its record intact.
+const checkpoints=['id="film"','class="rx-evidence-index"','id="rx26-portal"','id="research"','id="publications"','class="rh-home-entry"','class="rx-chapters"','id="story"'];
 const positions=checkpoints.map(x=>home.indexOf(x));
 if(positions.some((p,i)=>p<0||(i>0&&p<=positions[i-1])))error("index.html","research-first homepage sections are missing or out of order");
 for(const [route,sourceFile] of [["/research.html","research.html"],["/publications.html","publications.html"]]){
