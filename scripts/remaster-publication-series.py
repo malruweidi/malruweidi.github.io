@@ -67,6 +67,8 @@ def valid_release(entry):
     manifest=json.loads(m.read_text(encoding="utf8"))
     if manifest.get("edition")!="cinematic-v2" or manifest.get("remaster_signature")!="story-motion-v2.2":
         return False
+    if entry.get("source_visual_revision") and manifest.get("source_visual_revision") != entry.get("source_visual_revision"):
+        return False
     if hashlib.sha256(v.read_bytes()).hexdigest()!=manifest.get("sha256"):
         raise ValueError("Existing v2 release has a hash mismatch: "+slug)
     return True
@@ -140,6 +142,7 @@ def main():
         record=json.loads(p.read_text(encoding="utf8"))
         record["edition"]="cinematic-v2"
         record["remaster_signature"]="story-motion-v2.2"
+        record["source_visual_revision"]=entry.get("source_visual_revision")
         record["human_screening"]="NOT YET COMPLETED; narration, science and device playback require sign-off"
         record["animated_scene_ids"]=[s["id"] for s in picks]
         record["motion_motif"]=plan["motif"]
