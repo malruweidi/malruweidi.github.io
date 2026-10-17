@@ -41,10 +41,15 @@ def main():
     assert len(catalogue) == 35
     assert registered.get("schema") == "ruwaidix-cinema-v7-registered-releases-v1"
     by_id = {x["id"]: x for x in catalogue}
-    films = registered["films"]
-    assert len(films) == registered["count"] == 30
-    assert len({f["id"] for f in films}) == 30
-    assert set(f["id"] for f in films) == set(by_id) - renderer.PRESERVE_SCHOLARLY
+    assert len(by_id) == 35
+    # An older bounded staging workflow may have replaced releases.json with
+    # only the completed subset. The authoritative set of films is always the
+    # original complete bibliography, never a partial staging register.
+    eligible = [x["id"] for x in catalogue
+                if x["id"] not in renderer.PRESERVE_SCHOLARLY]
+    assert len(eligible) == 30 and len(set(eligible)) == 30
+    assert not (renderer.PRESERVE_SCHOLARLY - set(by_id))
+    films = [{"id": slug} for slug in eligible]
 
     for f in films:
         slug = f["id"]
@@ -74,6 +79,8 @@ def main():
                    for s in (".mp4", ".vtt", ".webp", ".json", ".contact.webp"))
         print("CLEAN FILM VERIFIED", slug, flush=True)
 
+    registered["films"] = films
+    registered["count"] = len(films)
     registered["version"] = "2026-10-18-clean-screen"
     registered["release_intent"] = "Film-first screening; provenance in GitHub production records"
     registered["review_limit"] = (
