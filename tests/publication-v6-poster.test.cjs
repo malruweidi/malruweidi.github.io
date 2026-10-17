@@ -47,3 +47,24 @@ test('the saved HTML contains 35 directly playable source-matched films before c
     assert(!/series-v6/.test(films[i]) || /series-v6/.test(posters[i]),'V6 poster must come from its own edition');
   }
 });
+
+test('every referenced film master, caption and poster is in the preserved site repository',()=>{
+  const html=fs.readFileSync(path.join(root,'publication-cinema.html'),'utf8').split('<script>')[0];
+  const assets=[...html.matchAll(/<(?:source|track|video)\b[^>]*\b(?:src|poster)="(\/assets\/films\/[^"]+)"/g)].map(x=>x[1]);
+  const posters=[...html.matchAll(/<video controls playsinline[^>]+poster="([^"]+)"/g)].map(x=>x[1]);
+  for(const poster of posters)assets.push(poster);
+  assert(assets.length>=105,'35 videos with captions and posters');
+  for(const asset of new Set(assets)){
+    assert(fs.existsSync(path.join(root,asset.slice(1))), 'Missing website asset: '+asset);
+  }
+  const manifest=JSON.parse(fs.readFileSync(path.join(root,'assets/films/series-v6/releases.json'),'utf8'));
+  assert.equal(manifest.count,30,'retain the complete 30-video V6 remakes');
+  assert.equal(manifest.films.length,30);
+  assert.equal(new Set(manifest.films.map(x=>x.id)).size,30);
+  for(const film of manifest.films){
+    assert(fs.existsSync(path.join(root,'assets/films/series-v6',film.id+'.mp4')));
+    assert(fs.existsSync(path.join(root,'assets/films/series-v6',film.id+'.vtt')));
+    assert(fs.existsSync(path.join(root,'assets/films/series-v6',film.id+'.json')));
+    assert(fs.existsSync(path.join(root,'assets/films/series-v6',film.id+'.webp')));
+  }
+});
