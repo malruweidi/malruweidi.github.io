@@ -19,7 +19,7 @@ XLINK="{http://www.w3.org/1999/xlink}href"
 
 def download(url,limit=26000000):
     parsed=urllib.parse.urlparse(url)
-    if parsed.scheme!="https" or parsed.hostname not in ("www.ebi.ac.uk","europepmc.org","www.europepmc.org","www.mdpi.com","pmc.ncbi.nlm.nih.gov"):
+    if parsed.scheme!="https" or parsed.hostname not in ("www.ebi.ac.uk","europepmc.org","www.europepmc.org","www.mdpi.com","pmc.ncbi.nlm.nih.gov","mdpi-res.com","www.mdpi-res.com"):
         raise ValueError("Only official open publication media hosts allowed: "+str(parsed.hostname))
     req=urllib.request.Request(url,headers={"User-Agent":"Ruwaidix-scientific-cinema-figure-check/1.0","Accept":"application/xml,image/jpeg,image/png,*/*"})
     with urllib.request.urlopen(req,timeout=45) as response:
@@ -53,10 +53,20 @@ def extract(paper):
         graphics=[g for g in graphics if g]
         if not graphics:raise ValueError(f"No graphics for verified {paper['id']} figure {number}")
         found=None
+        errors=[]
         for ref in graphics:
-            for suff in ("",".jpg",".png",".jpeg"):
-                # Official Europe PMC article figures, never a search-engine substitute.
-                path=f'https://europepmc.org/articles/{paper["pmc"]}/bin/{ref}{suff}'
+            # Both routes are published by the same DOI-bearing original paper.
+            # Never use a figure image from a different paper or an image search.
+            normalized=ref.rsplit("/",1)[-1]
+            mdpi_journal="mps" if paper["id"]=="flow-chamber-method" else "polymers"
+            mdpi_article="mps-03-00065" if paper["id"]=="flow-chamber-method" else "polymers-13-03717"
+            candidates=[f'https://europepmc.org/articles/{paper["pmc"]}/bin/{ref}{ext}'
+                        for ext in ("",".jpg",".png",".jpeg")]
+            candidates += [
+                f'https://mdpi-res.com/d_attachment/{mdpi_journal}/{mdpi_article}/article_deploy/{normalized}{ext}'
+                for ext in (".png",".jpg",".jpeg")
+            ]
+            for path in candidates:
                 try:
                     raw=download(path,16000000)
                     im=Image.open(io.BytesIO(raw))
@@ -64,11 +74,11 @@ def extract(paper):
                     if min(im.size)<300:raise ValueError("Unusable thumbnail")
                     found=(path,im.convert("RGB"))
                     break
-                except Exception:pass
+                except Exception as error:errors.append(path+" -> "+str(error)[:120])
             if found:break
         if not found:
-            # No graphic replacement from a foreign paper.
-            raise RuntimeError(f"Unable to fetch verified original graphic for {paper['id']} Figure {number}; do not substitute")
+            # No replacement figure from another article; report checked source URLs.
+            raise RuntimeError(f"Unable to fetch verified graphic {paper['id']} Figure {number}. Official attempts: "+ " | ".join(errors[-7:]))
         remote,picture=found
         OUT.mkdir(parents=True,exist_ok=True)
         path=OUT/f'{paper["id"]}-figure-{number:02d}.jpg'
