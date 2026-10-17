@@ -16,7 +16,7 @@ test("all publicly registered V7 cinema cuts use cleaned, provenance-preserving 
   assert.equal(new Set(register.films.map(f=>f.id)).size,30);
   for(const film of register.films){
     assert(!protectedIds.has(film.id),"Do not displace better primary-source edition: "+film.id);
-    assert.match(film.visual_revision,/^v7\.8-clean-screen\//,"Older on-screen-production-note render: "+film.id);
+    assert.match(film.visual_revision,/^(?:v7\.8-clean-screen|v8\.0-audience-clean-20261018)\//,"Older on-screen-production-note render: "+film.id);
     assert.equal(film.distinct_chapters,6);
     const source=JSON.parse(read(film.scene_manifest.slice(1)));
     assert.equal(source.movie_sha256,film.sha256);
@@ -47,7 +47,7 @@ test("film catalogue stays playable without JavaScript while progressive V7 deli
   assert.equal((staticHTML.match(/<source src="\/assets\/films\/series-v6\//g)||[]).length,30);
   assert(!staticHTML.includes("illustration or original research-context photograph"),
     "Unverified stock/editorial fallback prose must not appear in a film player");
-  assert.match(html,/f\.visual_revision\.startsWith\("v7\.8-clean-screen\/"\)/);
+  assert.match(html,/v8\\.0-audience-clean-20261018/);
   assert.match(html,/verifiedFilmMasters\[x\.id\]/);
   assert.match(html,/series-v6\/releases\.json/);
 });
