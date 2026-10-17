@@ -58,13 +58,14 @@ def extract(paper):
             # Both routes are published by the same DOI-bearing original paper.
             # Never use a figure image from a different paper or an image search.
             normalized=ref.rsplit("/",1)[-1]
+            normalized_base=re.sub(r"\.(gif|png|jpe?g|tiff?)$","",normalized,flags=re.IGNORECASE)
             mdpi_journal="mps" if paper["id"]=="flow-chamber-method" else "polymers"
             mdpi_article="mps-03-00065" if paper["id"]=="flow-chamber-method" else "polymers-13-03717"
             candidates=[f'https://europepmc.org/articles/{paper["pmc"]}/bin/{ref}{ext}'
                         for ext in ("",".jpg",".png",".jpeg")]
             candidates += [
-                f'https://mdpi-res.com/d_attachment/{mdpi_journal}/{mdpi_article}/article_deploy/{normalized}{ext}'
-                for ext in (".png",".jpg",".jpeg")
+                f'https://mdpi-res.com/d_attachment/{mdpi_journal}/{mdpi_article}/article_deploy/{normalized_base}{ext}'
+                for ext in (".png",".jpg",".jpeg",".gif")
             ]
             for path in candidates:
                 try:
