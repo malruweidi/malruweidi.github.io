@@ -82,6 +82,22 @@ jobs:
               git push origin HEAD:"$BRANCH"
             fi
           done
+      - name: Refresh complete-frame QA even if there are no new films
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          python scripts/make-film-qa-contact-sheets.py --collection series-v2
+          python scripts/audit-remake-readiness.py
+          python scripts/build-film-pronunciation-index.py
+          git config user.name "Ruwaidix Open Film Studio"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v2/qa/ assets/films/remake-readiness.json assets/films/pronunciation-review-v2.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh complete-frame source-hashed reviewer contact sheets"
+            git fetch origin "$BRANCH"
+            git rebase "origin/$BRANCH"
+            git push origin HEAD:"$BRANCH"
+          fi
       - name: Continue remaining films in the source-preserving review branch
         if: success()
         env:
