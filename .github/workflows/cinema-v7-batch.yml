@@ -69,7 +69,7 @@ jobs:
               # Earlier cuts stay in the Git archive, but may not be published in
               # the active screening gallery until corrected, caption-safe, and
               # source paths no longer contain ephemeral runner locations.
-              if not record.get("visual_revision","").startswith("v7.3-caption-safe/"):
+              if not record.get("visual_revision","").startswith("v7.8-clean-screen/"):
                   print("Holding stale frame revision outside review gallery:",slug)
                   continue
               if (not contact.is_file() or contact.stat().st_size<12000 or
