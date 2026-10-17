@@ -161,6 +161,7 @@ def main():
     record={"title":entry["title"],"doi":DOI,"source":entry["source"],
       "media_license":entry["media_license"],"visual_thesis":entry["visual_thesis"],
       "scenes":entry["chapters"]}
+    base.FIG=ASSETS
     base.read_art=correct_source
     base.full_scene=full_scene
     base.FOCUS[FILM]={}
