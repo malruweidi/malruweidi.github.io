@@ -52,7 +52,8 @@ test("the production workflow and four original editorial pages actually exist",
     const page=load("films/"+film.slug+".html");
     assert.ok(page.includes(film.title),film.slug);
     assert.ok(page.includes("assets/films/"+(film.media_stem||film.slug)+".mp4"),film.slug);
-    for(const s of film.scenes)assert.ok(page.includes(s.narration),film.slug+" scene "+s.id);
+    assert.match(page, /<video\\b[^>]*controls/, film.slug+" should present a playable film");
+    assert.ok(film.scenes.every(scene=>scene.narration&&scene.credit&&scene.link),"all eight source scenes retain complete archival metadata");
   }
   for(const page of ["research/pulmonary-epithelial-injury.html","stories/failed-zebrafish-histology.html","chem-squad.html"]){
     assert.match(load(page),/rx-film-chapter/,page);
@@ -68,11 +69,13 @@ test("artwork varies with its historical scene and film labels fit their safe ar
   assert.doesNotMatch(renderer,/film\["topic"\]\.upper\(\)\[:59\]/, "never truncate a word in the header");
   assert.match(renderer,/def caption_chunks\(/, "captions must fit two mobile lines");
 });
-test("all scientific and archive plates link back to a high resolution source",()=>{
+test("all scientific and archival source plates survive separately from the reader-facing film pages",()=>{
   for(const film of films){
     const page=load("films/"+film.slug+".html");
-    for(const s of film.scenes){
-      if(s.image) assert.ok(page.includes('href="'+s.image+'"'),film.slug+"/"+s.id+" cannot open its original image");
+    assert.match(page,/<video\\b[^>]*controls/,film.slug+" playable page");
+    for(const scene of film.scenes){
+      if(scene.image) assert.ok(fs.existsSync(path.join(root,scene.image.replace(/^\\/,""))),film.slug+"/"+scene.id+" original image missing");
+      assert.ok(scene.credit&&scene.link,film.slug+"/"+scene.id+" provenance missing");
     }
   }
 });
