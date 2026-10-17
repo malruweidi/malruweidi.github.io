@@ -360,6 +360,9 @@ def scene_art(slug,idx,phase,output):
   chapter_source_specific(d,typ,idx,phase)
  elif typ=="microscope" and idx in (2,5):
   chapter_source_specific(d,typ,idx,phase)
+ elif slug in ("drug-release-twins","essay-potency-exposure","essay-proximity",
+              "essay-scientific-credit","heterocycle-cancer") and idx>1:
+  chapter_five_reworks(d,slug,idx,phase)
  # Avoid arbitrary reticles that can overlap molecular diagrams, labels or data.
  # Focus instead comes from the subject-specific scene composition.
  # Four visual beats within a single voice-led scene, to guide attention without
@@ -666,6 +669,160 @@ def chapter_source_specific(d,typ,idx,phase):
    txt(d,(218,419),"SHAPE RETENTION / THE FINAL MATERIAL",20,INK,True)
    echo("ACCEPTED CHAPTER: PROGRAMMABLE FORM DOES NOT GUARANTEE FUNCTION")
 
+
+def chapter_five_reworks(d,slug,idx,phase):
+ """Source-calibrated, original schematic treatments for five articles.
+ Every panel is conceptual: no made-up rates, yields, structures, numerical
+ pharmacokinetic curves, spectra, microscopy, Nobel documentation or assays.
+ """
+ d.rectangle((94,132,1182,532),fill=(17,45,51))
+ def card(x,y,w,h,head,sub="",color=MINT):
+  d.rounded_rectangle((x,y,x+w,y+h),radius=16,outline=color,width=5)
+  txt(d,(x+15,y+18),head,19,INK,True)
+  if sub:txt(d,(x+15,y+57),sub,15,GOLD)
+ def arrow(x1,x2,y=301):
+  line(d,(x1,y,x2,y),GOLD,6)
+  d.polygon(((x2-13,y-10),(x2+5,y),(x2-13,y+10)),fill=GOLD)
+ def footer(t):
+  txt(d,(155,451),t,16,INK,True)
+ if slug=="drug-release-twins":
+  if idx==2:
+   card(137,236,286,127,"FORMULATION","MATERIAL / GEOMETRY")
+   card(495,236,286,127,"ASSUMPTIONS","TRANSPORT LAW")
+   card(854,236,277,127,"MODEL","TESTABLE OUTPUT",GOLD)
+   arrow(432,480);arrow(789,835)
+   footer("MODEL ASSUMPTIONS MUST BE EXPLICIT")
+  elif idx==3:
+   d.ellipse((200,230,415,408),outline=MINT,width=9)
+   for k in range(8):
+    xx=247+32*(k%4);yy=286+34*(k//4)
+    oval(d,xx,yy,5,GOLD,3)
+   arrow(456,598)
+   card(617,224,485,104,"MATHEMATICAL MODEL","PREDICTED RELEASE / NO DATA")
+   card(617,355,485,104,"PERFORMANCE CLAIM","REQUIRES EXPERIMENTAL TEST",GOLD)
+  elif idx==4:
+   card(145,230,322,153,"MODEL OUTPUT","QUALITATIVE PATTERN",MINT)
+   card(805,230,322,153,"LAB OBSERVATION","MEASURED IN FUTURE",GOLD)
+   d.line((469,304,795,304),fill=RED,width=5)
+   txt(d,(603,260),"≠",49,RED,True)
+   footer("WITHOUT CALIBRATION, MODEL CURVES ARE NOT VALIDATION")
+  elif idx==5:
+   for k,(name,sub) in enumerate((("ASSUMPTIONS","MECHANISTIC BIAS"),("PARAMETERS","UNCERTAINTY"),("NEW CONTEXT","EXTRAPOLATION"))):
+    card(130+357*k,243,309,148,name,sub,GOLD if k==phase%3 else MINT)
+   footer("A MODEL'S DOMAIN OF VALIDITY MUST BE DEFINED")
+  else:
+   card(171,238,343,133,"SIMULATION","FORM A HYPOTHESIS")
+   arrow(529,739)
+   card(756,238,336,133,"EXPERIMENT","CHECK AND REVISE",GOLD)
+   footer("THE LABORATORY DECIDES WHETHER THE MODEL SURVIVES")
+ elif slug=="essay-potency-exposure":
+  if idx==2:
+   for k,(name,sub) in enumerate((("ASSAY","IN VITRO POTENCY"),("ABSORPTION","ENTRY INTO BODY"),("TISSUE","TARGET EXPOSURE"))):
+    card(134+354*k,247,316,126,name,sub,GOLD if k==phase%3 else MINT)
+   footer("AN ASSAY VALUE CANNOT SUBSTITUTE FOR PHARMACOKINETICS")
+  elif idx==3:
+   card(158,225,382,150,"TOTAL CONCENTRATION","FREE + BOUND",MINT)
+   card(741,225,375,150,"UNBOUND FRACTION","CAN ENGAGE TARGET",GOLD)
+   for k in range(10):
+    oval(d,199+k*33,370,5,RED if k>2 else GOLD,3)
+   footer("HIGH TOTAL AMOUNT DOES NOT GUARANTEE FREE EXPOSURE")
+  elif idx==4:
+   card(147,234,294,146,"DOSE","ACHIEVABLE?")
+   card(485,234,294,146,"OCCUPANCY","HOW LONG?")
+   card(826,234,294,146,"SAFETY","OFF-TARGET?",GOLD)
+   footer("TARGET ENGAGEMENT AND SAFETY NEED JOINT EVIDENCE")
+  elif idx==5:
+   card(153,230,350,140,"POTENT COMPOUND","IN VITRO")
+   d.line((513,302,710,302),fill=RED,width=6)
+   txt(d,(580,257),"≠",49,RED,True)
+   card(755,230,352,140,"FEASIBLE DRUG","ADME / TOLERABILITY",GOLD)
+   footer("A VERY SMALL ASSAY NUMBER MAY STILL FAIL IN VIVO")
+  else:
+   card(149,236,311,136,"FREE EXPOSURE","UNBOUND AT SITE")
+   arrow(488,701)
+   card(726,236,391,136,"BIOLOGICAL EFFECT","TEST THE REAL ENDPOINT",GOLD)
+   footer("MEASURE EXPOSURE AND RESPONSE, NOT POTENCY ALONE")
+ elif slug=="essay-proximity":
+  if idx==2:
+   oval(d,322,295,91,MINT,8);oval(d,937,295,91,GOLD,8)
+   txt(d,(279,280),"TARGET",19,INK,True)
+   txt(d,(911,278),"E3",25,INK,True)
+   d.rounded_rectangle((527,259,724,326),outline=RED,width=7,radius=22)
+   line(d,(416,295,527,295),MINT,6);line(d,(724,295,846,295),GOLD,6)
+   txt(d,(535,340),"BIFUNCTIONAL LINKER",17,INK)
+   footer("INDUCED RECRUITMENT / CELL-LEVEL SCHEMATIC")
+  elif idx==3:
+   for k,(name,sub) in enumerate((("LINKER","LENGTH"),("ORIENTATION","GEOMETRY"),("COOPERATIVITY","COMPLEX"))):
+    card(132+356*k,234,312,148,name,sub,GOLD if k==phase%3 else MINT)
+   footer("A PRODUCTIVE TERNARY COMPLEX IS NOT JUST TWO AFFINITIES")
+  elif idx==4:
+   oval(d,332,292,77,MINT,7);oval(d,590,292,77,GOLD,7)
+   line(d,(410,292,510,292),RED,8)
+   d.arc((672,203,937,391),215,35,fill=GOLD,width=8)
+   arrow(905,1018)
+   txt(d,(744,240),"RELEASE / TURNOVER",20,INK)
+   footer("RESIDENCE AND RECYCLING ARE FUNCTIONAL VARIABLES")
+  elif idx==5:
+   for k,(name,sub) in enumerate((("DEGRADATION","REMOVE TARGET"),("RELOCALIZE","CHANGE LOCATION"),("STABILIZE","ALTER LIFETIME"))):
+    card(129+356*k,238,310,141,name,sub,GOLD if k==phase%3 else MINT)
+   footer("NOT EVERY PROXIMITY EVENT PRODUCES DEGRADATION")
+  else:
+   card(154,231,289,147,"RECRUITMENT","SELECTIVE?")
+   card(488,231,289,147,"EXPOSURE","SUFFICIENT?")
+   card(817,231,298,147,"FUNCTION","MEASURABLE?",GOLD)
+   footer("DESIGN THE CELLULAR EVENT AND VALIDATE ITS CONSEQUENCES")
+ elif slug=="essay-scientific-credit":
+  if idx==2:
+   for k in range(12):
+    xx=244+(k%6)*136;yy=220+(k//6)*170
+    oval(d,xx,yy,23,GOLD if k==phase else MINT,5)
+    if k<6:line(d,(xx,yy+27,xx,yy+73),GRID,3)
+   footer("SCIENTIFIC WORK EXTENDS BEYOND A SINGLE CEREMONY")
+  elif idx==3:
+   for k,(name,sub) in enumerate((("AUTHORS","PUBLICATION"),("TECHNICIANS","METHODS"),("EARLIER TEAMS","PRIOR WORK"))):
+    card(132+358*k,234,317,146,name,sub,GOLD if k==phase%3 else MINT)
+   footer("DIFFERENT KINDS OF CONTRIBUTION MUST BE DOCUMENTED")
+  elif idx==4:
+   card(145,232,354,143,"CEREMONY","SELECTED HONOREES",GOLD)
+   d.line((511,302,738,302),fill=RED,width=5)
+   txt(d,(598,264),"≠",44,RED,True)
+   card(755,232,346,143,"HISTORY","FULL EVIDENCE TRAIL")
+   footer("RECOGNITION IS NOT THE ENTIRE CHAIN OF DISCOVERY")
+  elif idx==5:
+   for k,(name,sub) in enumerate((("PAPER","CITATION"),("NOTEBOOK","EXPERIMENT"),("PATENT","DOCUMENTED CLAIM"))):
+    card(131+357*k,240,307,139,name,sub,GOLD if k==phase%3 else MINT)
+   footer("NO INVENTED HEROES: TRACE EVIDENCE BEFORE CREDIT")
+  else:
+   card(150,224,302,155,"DISCOVERY","SCIENTIFIC VALUE")
+   card(810,224,304,155,"CREDIT","FAIR RECORD",GOLD)
+   arrow(487,773)
+   footer("HONOUR THE CONTRIBUTION WITHOUT ERASING THE TEAM")
+ elif slug=="heterocycle-cancer":
+  if idx==2:
+   card(162,226,347,160,"REACTION DESIGN","MICROWAVE ASSISTED")
+   arrow(522,721)
+   card(750,226,338,160,"ISOLATED SAMPLE","STRUCTURE UNKNOWN UNTIL TEST",GOLD)
+   footer("NO REACTION CONDITIONS OR YIELD ARE INVENTED")
+  elif idx==3:
+   for k,(name,sub) in enumerate((("ISOLATION","PURITY"),("STRUCTURE","IDENTITY"),("ASSIGNMENT","CHARACTERIZATION"))):
+    card(133+358*k,230,315,153,name,sub,GOLD if k==phase%3 else MINT)
+   footer("A CHEMICAL IDENTITY MUST PRECEDE BIOLOGICAL INTERPRETATION")
+  elif idx==4:
+   for k in range(4):
+    x=190+k*220
+    rounded(d,(x,218,x+175,356),MINT if k!=phase else GOLD,5,14)
+    oval(d,x+85,274,28,RED if k==phase else MINT,5)
+   footer("CYTOTOXICITY SCREEN / NOT A HUMAN CANCER TREATMENT")
+  elif idx==5:
+   card(147,236,303,137,"INTENT","PLANNED MOLECULE")
+   card(481,236,303,137,"RESULT","ACTUALLY OBTAINED")
+   card(817,236,303,137,"INFERENCE","SUPPORTED LIMIT",GOLD)
+   footer("DOCUMENT WHICH EXPERIMENTS WERE ACTUALLY PERFORMED")
+  else:
+   card(149,232,358,141,"SYNTHESIS","CAN IT BE MADE?")
+   arrow(529,736)
+   card(771,232,335,141,"EVIDENCE","WHAT WAS MEASURED?",GOLD)
+   footer("A PROMISING DESIGN IS NOT A DOCUMENTED DRUG")
 
 def approved_photo(slug,scene,root):
  """Only explicit scene-matched source photos may enter the V7 film."""
