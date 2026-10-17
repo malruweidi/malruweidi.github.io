@@ -45,14 +45,14 @@ def frame(entry,scene,phase,out,root=ROOT):
     # Reserve the bottom 76px for native WebVTT captions. Never bake labels
     # beneath an active caption track or overlap subtitles and film titles.
     d=ImageDraw.Draw(image)
+    # Scene provenance is retained in the shot record. It must not be stamped
+    # into the viewer's film as workflow notes, AI labels, or fact-check status.
     d.rectangle((0,533,art.W,720),fill=(13,37,43))
-    d.rectangle((74,544,126,549),fill=GOLD)
-    d.text((77,554),"RUWAIDIX   /   SCIENTIFIC FILM",font=art.font(13,True),fill=PAPER)
+    d.rectangle((74,546,126,550),fill=GOLD)
+    d.text((77,557),"RUWAIDIX",font=art.font(13,True),fill=PAPER)
     lines,size=fit_text(d,scene["title"],art.font(30,True),30)
     for i,line in enumerate(lines):
-        d.text((77,580+i*33),line,font=art.font(size,True),fill=PAPER)
-    d.text((72,46),media[:100],font=art.font(11),fill=(179,201,192))
-    d.text((1120,554),scene["id"]+" / 06",font=art.font(18,True),fill=GOLD)
+        d.text((77,585+i*31),line,font=art.font(size,True),fill=PAPER)
     # The lower caption safety region must remain completely blank, so that
     # native subtitles cannot obscure source credits, evidence, or chapter titles.
     empty_caption_band=Image.new("RGB",(art.W,68),BG)
