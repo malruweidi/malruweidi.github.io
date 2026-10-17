@@ -1,0 +1,59 @@
+{
+  "work_id": [
+    "cesersut",
+    "qgq88pbk"
+  ],
+  "title": "Minhāj al-dukkān / MS Arabic 1002",
+  "copy_date": "Egypt, 1904 CE",
+  "holdings": "Wellcome Collection",
+  "rights": "Public Domain Mark, Wellcome Collection",
+  "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b21417283",
+  "canvas_count": 180,
+  "staged_pages": [
+    {
+      "canvas_index_zero_based": 0,
+      "label": "-",
+      "iiif_canvas": "https://iiif.wellcomecollection.org/presentation/b21417283/canvases/b21417283_WMS_Arabic_1002_0001.jp2",
+      "image_url": "https://iiif.wellcomecollection.org/image/b21417283_WMS_Arabic_1002_0001.jp2/full/1338,1001/0/default.jpg",
+      "filename": "canvas-001.jpg",
+      "sha256": "a6075d119e552003e9215e509efa94ee597cd85323b366d7992551ef8ee29459",
+      "width": 1339,
+      "height": 1001,
+      "subject_identification": "UNVERIFIED PAGE; NOT YET CLAIMED AS SYRUP CHAPTER"
+    },
+    {
+      "canvas_index_zero_based": 5,
+      "label": "-",
+      "iiif_canvas": "https://iiif.wellcomecollection.org/presentation/b21417283/canvases/b21417283_WMS_Arabic_1002_0006.jp2",
+      "image_url": "https://iiif.wellcomecollection.org/image/b21417283_WMS_Arabic_1002_0006.jp2/full/1338,1001/0/default.jpg",
+      "filename": "canvas-006.jpg",
+      "sha256": "20d2112032390c4c728f3a8158d9a003648683dd20ba815640dedc87d57b1700",
+      "width": 1339,
+      "height": 1001,
+      "subject_identification": "UNVERIFIED PAGE; NOT YET CLAIMED AS SYRUP CHAPTER"
+    },
+    {
+      "canvas_index_zero_based": 12,
+      "label": "-",
+      "iiif_canvas": "https://iiif.wellcomecollection.org/presentation/b21417283/canvases/b21417283_WMS_Arabic_1002_0013.jp2",
+      "image_url": "https://iiif.wellcomecollection.org/image/b21417283_WMS_Arabic_1002_0013.jp2/full/1338,1001/0/default.jpg",
+      "filename": "canvas-013.jpg",
+      "sha256": "367e261054b09d568c4abe3ecf17386fd45c9efed6b2e6e5405b1a569a903036",
+      "width": 1339,
+      "height": 1001,
+      "subject_identification": "UNVERIFIED PAGE; NOT YET CLAIMED AS SYRUP CHAPTER"
+    },
+    {
+      "canvas_index_zero_based": 25,
+      "label": "-",
+      "iiif_canvas": "https://iiif.wellcomecollection.org/presentation/b21417283/canvases/b21417283_WMS_Arabic_1002_0026.jp2",
+      "image_url": "https://iiif.wellcomecollection.org/image/b21417283_WMS_Arabic_1002_0026.jp2/full/1338,1001/0/default.jpg",
+      "filename": "canvas-026.jpg",
+      "sha256": "de90affb5e886c11aa9abd423ffccf25cc8dd0bd615766e8f0bf01bd77aa1906",
+      "width": 1339,
+      "height": 1001,
+      "subject_identification": "UNVERIFIED PAGE; NOT YET CLAIMED AS SYRUP CHAPTER"
+    }
+  ],
+  "publication_use": "Do not identify any staged page with a specific syrup rule until the Arabic page has been checked by a reader."
+}
