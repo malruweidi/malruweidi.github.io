@@ -52,7 +52,7 @@
   "separate_explanatory_animation": true,
   "new_science_fabricated": false,
   "duration_seconds": 120.0,
-  "sha256": "a432ef2eaeffb0d1f578745470e10ce40c192bffdae9b52ff7216043caaf68f8",
+  "sha256": "5b40aff46f6402b098e2a2624eba15e8fe32b5d43a58a78305a8e0360017a349",
   "human_review": "NOT APPROVED — check scientific interpretation, figure crops, voice and all 8 chapters.",
   "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
   "chapters": [
@@ -84,7 +84,7 @@
       ],
       "eyebrow": "PROVENANCE",
       "narration": "The conceptual animation shows an interface moving over cells. This is not a measured stress field, and no velocity or force has been invented.",
-      "tts_seconds": 9.279
+      "tts_seconds": 9.291
     },
     {
       "figure": 5,
