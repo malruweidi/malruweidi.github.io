@@ -23,7 +23,7 @@ BOLD="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 SANS="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 SERIF="/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"
 SCENES=[
-{"title":"Five specimens and a question","speech":"I needed histological sections of zebrafish embryos. They were small, and their orientation mattered: a slice through the wrong plane could miss the anatomy I wanted to study.","source":"Owner's 2025 image of five oriented zebrafish specimens, no outcome claimed."},
+{"title":"Small specimens and a question","speech":"I needed histological sections of zebrafish embryos. They were small, and their orientation mattered: a slice through the wrong plane could miss the anatomy I wanted to study.","source":"Owner's 2025 image of five oriented zebrafish specimens, no outcome claimed."},
 {"title":"An orientation scaffold","speech":"My first step used two percent agarose as a support. I could position the specimens before the paraffin step, with the hope of preserving the chosen plane during sectioning.","source":"Owner first-person account, 2% agarose preparation; placement photograph."},
 {"title":"Two materials in sequence","speech":"The proposal depended on two different materials. Agarose maintained orientation; paraffin was supposed to support thin sections after processing. The second stage would have to integrate with the first.","source":"First-person description, not a claim of chemical bonding between matrices."},
 {"title":"The laboratory attempt","speech":"This is the real processing apparatus from that attempt. It records what was tried, but a photograph of the instrument is not evidence that a usable section was made.","source":"Owner late-2025 photograph of laboratory histological processing instrument."},
@@ -129,10 +129,12 @@ def s5(im,d,t):
 
 def s6(im,d,t):
     d=picture(im,d,2,77,146,575,456,t,full=True)
-    headline(d,["NO USABLE","SECTION"],"THE NEGATIVE RESULT",198,66)
-    d.rectangle((647,176,1200,520),fill=DARK)
-    text(d,685,464,"No stained tissue micrograph",19,TEAL)
-    text(d,685,502,"is being claimed.",19,TEAL)
+    d.rectangle((671,171,1217,565),fill=DARK)
+    text(d,693,185,"THE NEGATIVE RESULT",17,GOLD,"bold")
+    text(d,690,258,"NO USABLE",57,WHITE,"serif")
+    text(d,690,336,"SECTION",61,WHITE,"serif")
+    text(d,696,485,"No stained tissue micrograph",19,TEAL)
+    text(d,696,520,"is being claimed.",19,TEAL)
 
 def s7(im,d,t):
     headline(d,["THE NEXT","EXPERIMENT"],"QUESTIONS, NOT RESULTS",141,69)
