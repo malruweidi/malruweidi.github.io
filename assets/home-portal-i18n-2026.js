@@ -2,6 +2,22 @@
 (function(){ "use strict";
   const d=window.RuwaidixArabicDictionary||(window.RuwaidixArabicDictionary={});
   Object.assign(d,{
+  "Explore research ↗": "استكشف الأبحاث ↗",
+  "Browse publications ↗": "تصفح المنشورات ↗",
+  "Watch the films ↗": "شاهد الأفلام ↗",
+  "Read the stories ↗": "اقرأ الحكايات ↗",
+  "Read the account ↗": "اقرأ التجربة ↗",
+  "Browse writing ↗": "تصفح الكتابات ↗",
+  "Methods atlas ↗": "أطلس التقنيات ↗",
+  "Figures & evidence ↗": "الأشكال والأدلة ↗",
+  "Research grants ↗": "المنح البحثية ↗",
+  "Research horizon ↗": "الآفاق البحثية ↗",
+  "Science & society ↗": "العلم والمجتمع ↗",
+  "Photo archive ↗": "أرشيف الصور ↗",
+  "Computing & models ↗": "الحوسبة والنماذج ↗",
+  "Publication cinema ↗": "سينما المنشورات ↗"
+});
+  Object.assign(d,{
   "AN EDITED INDEX · THE COMPLETE RECORD REMAINS AVAILABLE": "فهرس محرّر · السجل الكامل محفوظ",
   "Choose a chapter.": "اختر فصلاً.",
   "This site contains a research archive, a personal record and work in progress. The front page is a map. Open a collection to read it properly.": "يضم هذا الموقع أرشيفاً بحثياً وسجلاً شخصياً وأعمالاً قيد التطوير. الصفحة الرئيسية خريطة للقراءة، وتفتح كل مجموعة على صفحتها المفصلة.",
