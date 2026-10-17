@@ -5,6 +5,8 @@ on:
     paths:
       - scripts/audit-all-film-recuts.py
       - scripts/normalize-film-captions.py
+      - scripts/build-film-pronunciation-index.py
+      - assets/films/pronunciation-review-lexicon.json
       - .github/workflows/audit-film-recuts.yml
   workflow_dispatch:
 permissions:
@@ -31,6 +33,8 @@ jobs:
         run: |
           python scripts/normalize-film-captions.py --collection series-v2
           python scripts/normalize-film-captions.py --collection longform-v2
+      - name: Index high-risk scientific names and Arabic terms for human listening
+        run: python scripts/build-film-pronunciation-index.py
       - name: Validate all current publication documentary remakes
         run: python scripts/audit-all-film-recuts.py --collection series-v2
       - name: Validate every feature documentary recut
@@ -39,7 +43,7 @@ jobs:
         run: |
           git config user.name "Ruwaidix Film Quality Gate"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/films/series-v2/technical-qa.json assets/films/longform-v2/technical-qa.json assets/films/series-v2/*.vtt assets/films/longform-v2/*.vtt
+          git add assets/films/pronunciation-review-v2.json assets/films/series-v2/technical-qa.json assets/films/longform-v2/technical-qa.json assets/films/series-v2/*.vtt assets/films/longform-v2/*.vtt
           if ! git diff --cached --quiet; then
             git commit -m "Audit full encoded films for interrupted playback, caption coverage and source hashes [qa-only]"
             git fetch origin "${{ github.ref_name }}"
