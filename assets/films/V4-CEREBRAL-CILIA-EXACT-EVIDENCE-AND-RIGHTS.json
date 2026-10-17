@@ -1,0 +1,77 @@
+{
+  "version": "source-screen-2026-10-17",
+  "film_id": "cerebral-cilia",
+  "status": "ARTICLE IDENTIFIED; FIGURE LICENSING NOT VERIFIED FOR PUBLIC WEB REPUBLISHING",
+  "primary_source": {
+    "doi": "10.1161/ATVBAHA.118.311231",
+    "pmcid": "PMC6309420",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6309420/",
+    "publisher": "American Heart Association, Arteriosclerosis Thrombosis and Vascular Biology (2018)",
+    "rights_boundary": "The PMC version is an author manuscript. Its availability does not automatically establish CC BY or permission to republish publisher/composite figure pixels in the film. Request/verify exact license or explicit rightsholder permission before importing its images."
+  },
+  "scenes": [
+    {
+      "chapter": 1,
+      "source_figure": "Figure 1A–C",
+      "argument": "The embryo and primordial midbrain channel at 24 hpf",
+      "extraction": "Microscopy from original paper only if reuse rights confirmed",
+      "animation": "Cerebrovascular map illustrating early vasculogenesis, clearly marked diagram."
+    },
+    {
+      "chapter": 2,
+      "source_figure": "Figure 1D–I",
+      "argument": "Primary cilia localize along early intravascular-space boundaries; paper reports 18.6 ± 3.1 cilia/PMBC and 64.7 ± 9.3% at boundaries (n=8)",
+      "extraction": "Caption source table/figure must remain labelled by time point and exact transgenic line",
+      "animation": "Highlight documented vessel/cilia geometry, never draw fabricated immunofluorescence."
+    },
+    {
+      "chapter": 3,
+      "source_figure": "Figure 1J–O",
+      "argument": "Dynamic endothelial cilium observation around PMBC formation and flow onset",
+      "extraction": "Use only original time-lapse supplemental frames/movies with permission",
+      "animation": "Time-point ruler is conceptual, not a substitute for measured movies."
+    },
+    {
+      "chapter": 4,
+      "source_figure": "Figure 2",
+      "argument": "Cilia localization during hindbrain central artery sprout and capillary emergence",
+      "extraction": "True original Figure 2 and its 33–55 hpf series; retain scale bars",
+      "animation": "Anastomosis mechanism separately authored and caveated."
+    },
+    {
+      "chapter": 5,
+      "source_figure": "Figure 3",
+      "argument": "Cilia at retinal vasculature, curved vessels, branching and anastomoses at different larval stages",
+      "extraction": "Actual DOI-matched images with original hpf/dpf stage labels",
+      "animation": "No borrowed unrelated zebrafish heart pictures."
+    },
+    {
+      "chapter": 6,
+      "source_figure": "Figure 4",
+      "argument": "ift81/ift172 biogenesis loss, cerebral hemorrhage and endothelial-cell rescue",
+      "extraction": "Original paper Figure 4; experimental genotype and rescue must be maintained",
+      "animation": "Reconstruction only as labelled conditional mechanism."
+    },
+    {
+      "chapter": 7,
+      "source_figure": "Figure 5",
+      "argument": "Increased velocity and shear altered cilia stability; paper's temperature conditions and nonidentical sample groups need clear qualification",
+      "extraction": "Actual measured Figure 5A plus microscopy B–K if licensed",
+      "animation": "Never invent flow-speed graph."
+    },
+    {
+      "chapter": 8,
+      "source_figure": "Figure 1–5 conclusions",
+      "argument": "Flow-independent early vascular assembly and flow-responsive cilia stability are not contradictory claims",
+      "extraction": "Reprise exact source visuals only if rights confirmed",
+      "animation": "Separate initiation/remodelling/stability in clearly labelled model."
+    }
+  ],
+  "forbidden": [
+    "Photographs from unrelated zebrafish-hemodynamics Micron 2020 paper",
+    "Figures from the distinct 2015 Endothelial Cilia Are Essential paper PMC4378100",
+    "Invented fluorescence microscopy",
+    "Substituting retinal hyaloid vascular images from unrelated study",
+    "Calling PMC access a CC BY license"
+  ]
+}
