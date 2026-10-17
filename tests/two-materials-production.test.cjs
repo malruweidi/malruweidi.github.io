@@ -53,10 +53,14 @@ test("existing failed experiment story and original film remain intact",()=>{
 test("released film is findable, playable, and remains linked to the first-person primary account",()=>{
  const hub=read("films.html"),article=read("films/two-materials-no-section.html");
  for(const html of [hub,article]){
+  assert.ok(html.includes("/assets/films/two-materials-no-section-source-v2.mp4"));
+  assert.ok(html.includes("/assets/films/two-materials-no-section-source-v2.vtt"));
   assert.ok(html.includes("/assets/films/two-materials-no-section.mp4"));
-  assert.ok(html.includes("/assets/films/two-materials-no-section.vtt"));
   assert.match(html,/kind="captions"/);
  }
+ assert.ok(article.includes("/assets/films/two-materials-no-section.vtt"));
+ assert.ok(fs.existsSync(path.join(root,"assets/films/two-materials-no-section.vtt")));
+ assert.ok(hub.includes("/assets/films/two-materials-no-section-evidence-cut.mp4"));
  assert.ok(article.includes('href="/stories/failed-zebrafish-histology.html"'));
  assert.ok(article.includes("id=\"source-record\""));
  const index=JSON.parse(read("assets/discovery-index.json"));
