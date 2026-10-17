@@ -1,9 +1,21 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 7,
+  "count": 11,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
+    {
+      "id": "ace2-covid-drugs",
+      "title": "An enzyme, a receptor, a clinical question",
+      "publication": "Soluble ACE2 and angiotensin II levels are modulated in hypertensive COVID-19 patients treated with different antihypertension drugs",
+      "poster": "/assets/films/series-v7-pilots/ace2-covid-drugs.webp",
+      "file": "/assets/films/series-v7-pilots/ace2-covid-drugs.mp4",
+      "captions": "/assets/films/series-v7-pilots/ace2-covid-drugs.vtt",
+      "manifest": "/assets/films/series-v7-pilots/ace2-covid-drugs.json",
+      "sha256": "4fcf59d32ce401362c8b6b811f38b6445411a337d2315db708775f41f56e2d15",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
     {
       "id": "ace2-forms",
       "title": "Two lives of ACE2",
@@ -53,6 +65,18 @@
       "creative_review": "outstanding"
     },
     {
+      "id": "echo-cnn-lstm",
+      "title": "Can an algorithm read a moving heart?",
+      "publication": "Deep learning technique for congenital heart disease detection using stacking-based CNN-LSTM models from fetal echocardiogram: a pilot study",
+      "poster": "/assets/films/series-v7-pilots/echo-cnn-lstm.webp",
+      "file": "/assets/films/series-v7-pilots/echo-cnn-lstm.mp4",
+      "captions": "/assets/films/series-v7-pilots/echo-cnn-lstm.vtt",
+      "manifest": "/assets/films/series-v7-pilots/echo-cnn-lstm.json",
+      "sha256": "0cd61ac4a8bd8e613d81095b3cae0ad24f130ea7405cc2f1e42431e19638ea06",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
       "id": "essay-trna",
       "title": "The Molecule Behind Every Protein",
       "publication": "Drugging the tRNA Control System",
@@ -61,6 +85,18 @@
       "captions": "/assets/films/series-v7-pilots/essay-trna.vtt",
       "manifest": "/assets/films/series-v7-pilots/essay-trna.json",
       "sha256": "2eeffa9e2ffbe123a77e7e72839c8afc7806d26c93435dd36c27eac2b9254bda",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "gi-autoimmunity-1",
+      "title": "What happens when immunity turns on the gut?",
+      "publication": "Autoimmune Diseases of the GI Tract Part I: Etiology and Pathophysiology",
+      "poster": "/assets/films/series-v7-pilots/gi-autoimmunity-1.webp",
+      "file": "/assets/films/series-v7-pilots/gi-autoimmunity-1.mp4",
+      "captions": "/assets/films/series-v7-pilots/gi-autoimmunity-1.vtt",
+      "manifest": "/assets/films/series-v7-pilots/gi-autoimmunity-1.json",
+      "sha256": "4de0a65ccc60c7d5adadf44679432102edf30334adb157e680776cd65e65fcda",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -85,6 +121,18 @@
       "captions": "/assets/films/series-v7-pilots/slit2-robo.vtt",
       "manifest": "/assets/films/series-v7-pilots/slit2-robo.json",
       "sha256": "334250cb9b316690021300607eed97bf1a78de3554cb1c004d83d497f66dc8ae",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "zebrafish-hemodynamics",
+      "title": "A heartbeat in high-speed frames",
+      "publication": "Cardiac function and blood flow hemodynamics assessment of zebrafish using high-speed video microscopy",
+      "poster": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.webp",
+      "file": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.mp4",
+      "captions": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.vtt",
+      "manifest": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.json",
+      "sha256": "7e4c44315ab0a6e5fa41a7201def7cffb90f2589674f7df9914aed09b69f0e24",
       "seconds": 84.0,
       "creative_review": "outstanding"
     }
