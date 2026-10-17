@@ -15,7 +15,7 @@ test('published V6 video posters originate from their own MP4 frames',()=>{
 
 test('website selects registered editions, preserves research-specific versions and original films',()=>{
   const html=fs.readFileSync(path.join(root,'publication-cinema.html'),'utf8');
-  assert.match(html,/const selectedEdition=isV6/);
+  assert.match(html,/const selectedEdition=verifiedResearchEdition \\|\\|/);
   assert.match(html,/releasedV6\.get\(x\.id\)/);
   assert.match(html,/selectedEdition\?selectedEdition\.edition:"series"/);
   assert.match(html,/Watch preserved original first edition/);
