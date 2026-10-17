@@ -1,7 +1,7 @@
 {
   "id": "curcumin-cyanide",
   "seconds": 84.0,
-  "sha256": "c787c5e97dabc194d1e9044f528f4191c58057b758bfcb00fe30e700d5341fa5",
+  "sha256": "881ff4d8be7061c9e289b56de1c7bb71e0cf9eb18da1efd58c705db28fdd6ba3",
   "primary_source": "https://doi.org/10.1039/C9AY01557D",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
@@ -58,11 +58,21 @@
   ],
   "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
   "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
   "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
   "animated_scene_ids": [
-    "03"
+    "02",
+    "03",
+    "04",
+    "05"
   ],
   "motion_motif": "signal",
+  "motion_storyboard": {
+    "02": "molecule",
+    "03": "signal",
+    "04": "signal",
+    "05": "assay"
+  },
   "motion_annotations": [
     "Analyte–probe interaction",
     "Optical response",

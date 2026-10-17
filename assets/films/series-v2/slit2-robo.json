@@ -1,7 +1,7 @@
 {
   "id": "slit2-robo",
   "seconds": 84.0,
-  "sha256": "0dee9c9b0e72ef42dfc841bc109ae44c9da54b073f8d921599b3c1d79e98f3e1",
+  "sha256": "914236d1730593996a8a56e1dd9aec1569edf6d964f4699d277d532ed6af6313",
   "primary_source": "https://doi.org/10.1080/13543776.2026.2690118",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
@@ -58,12 +58,21 @@
   ],
   "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
   "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
   "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
   "animated_scene_ids": [
-    "01",
+    "02",
+    "03",
+    "04",
     "05"
   ],
   "motion_motif": "network",
+  "motion_storyboard": {
+    "02": "network",
+    "03": "molecule",
+    "04": "network",
+    "05": "translation"
+  },
   "motion_annotations": [
     "Ligand–receptor context",
     "Downstream signalling",
