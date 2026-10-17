@@ -1,0 +1,60 @@
+{
+  "id": "food-printing",
+  "seconds": 84.0,
+  "sha256": "68c80e8d407cc0665dbbc133f5796d9265db1a66db4775283c14233e5a7d8073",
+  "primary_source": "/#publications",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/food-printing/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/food-printing/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/food-printing/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/food-printing/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/food-printing/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/food-printing/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

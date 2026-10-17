@@ -1,0 +1,60 @@
+{
+  "id": "drug-release-twins",
+  "seconds": 84.0,
+  "sha256": "75310e1d18d363b9f63c6a68f30f42f7d4b89de682d2d560135cd86123f7cd02",
+  "primary_source": "https://doi.org/10.70593/978-93-7185-824-3",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/drug-release-twins/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/drug-release-twins/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/drug-release-twins/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/drug-release-twins/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/drug-release-twins/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/drug-release-twins/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
