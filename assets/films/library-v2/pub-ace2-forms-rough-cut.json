@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bf_emma",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "a048c075cf44188e31e745327ab87f9b9640a4e20793d40097eeadc533e5012e",
+  "sha256": "53e29803a7872fccfd232247268932be94b80165261badf0ea5fb54345cc2ea2",
   "shots": [
     {
       "title": "Two lives of ACE2",
@@ -74,5 +76,14 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "ee21f0836b2a794694d0036ab26dfc5620a4082f5aca277e2cdb79aef854120b"
+  "motion_shots": [
+    {
+      "scene": 4,
+      "video": "assets/films/animations-v2/ace2-shedding.mp4",
+      "credit": "Conceptual animation of membrane ectodomain shedding and soluble ACE2 context; no study measurements",
+      "kind": "Original scientific concept animation (not experimental data)",
+      "source_sha256": "c64bf3fdac1f9dc1af730f929cf5e2a09a18dae9dc388732d8b961775e260416"
+    }
+  ],
+  "input_sha256": "2f7500a5b6c3ed9e5e11d03641c7fb1d72966e6455f78229daa0cc8295f9cd21"
 }

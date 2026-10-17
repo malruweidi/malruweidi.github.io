@@ -1,70 +1,70 @@
 WEBVTT
 
-00:00:00.450 --> 00:00:04.484
+00:00:00.450 --> 00:00:04.535
 A droplet entering a microchannel looks like progress
 
-00:00:04.484 --> 00:00:08.013
+00:00:04.535 --> 00:00:08.109
 toward a small diagnostic laboratory. The hard
 
-00:00:08.013 --> 00:00:09.526
+00:00:08.109 --> 00:00:09.641
 questions begin downstream.
 
-00:00:15.450 --> 00:00:18.906
+00:00:15.450 --> 00:00:18.817
 Imagine taking a complex testing workflow and moving
 
-00:00:18.906 --> 00:00:23.226
+00:00:18.817 --> 00:00:23.025
 parts of it into channels so small that fluid behaviour
 
-00:00:23.226 --> 00:00:24.954
+00:00:23.025 --> 00:00:24.709
 becomes a design constraint.
 
-00:00:32.450 --> 00:00:35.721
+00:00:32.450 --> 00:00:35.675
 Specimen collection, sample transport and preparation
 
-00:00:35.721 --> 00:00:40.083
+00:00:35.675 --> 00:00:39.974
 can determine whether a miniature diagnostic device is
 
-00:00:40.083 --> 00:00:40.629
+00:00:39.974 --> 00:00:40.511
 useful.
 
-00:00:47.450 --> 00:00:51.249
+00:00:47.450 --> 00:00:51.233
 Microfluidic systems can organise small volumes and
 
-00:00:51.249 --> 00:00:55.049
+00:00:51.233 --> 00:00:55.017
 reactions, but sensitivity and specificity still depend
 
-00:00:55.049 --> 00:00:57.220
+00:00:55.017 --> 00:00:57.179
 on the biological assay.
 
-00:01:02.450 --> 00:01:05.952
+00:01:02.450 --> 00:01:06.077
 Finding an analytical signal requires distinguishing
 
-00:01:05.952 --> 00:01:10.039
+00:01:06.077 --> 00:01:10.308
 target detection, contamination, false results and the
 
-00:01:10.039 --> 00:01:11.206
+00:01:10.308 --> 00:01:11.517
 clinical situation.
 
-00:01:17.450 --> 00:01:20.629
+00:01:17.450 --> 00:01:20.632
 Sample processing, target capture and analytical
 
-00:01:20.629 --> 00:01:24.868
+00:01:20.632 --> 00:01:24.874
 specificity do not disappear when a device becomes
 
-00:01:24.868 --> 00:01:27.517
+00:01:24.874 --> 00:01:27.525
 smaller. Miniaturisation can add constraints.
 
-00:01:32.450 --> 00:01:35.589
+00:01:32.450 --> 00:01:35.660
 Manufacturability, reliable reagents, operator burden
 
-00:01:35.589 --> 00:01:39.984
+00:01:35.660 --> 00:01:40.155
 and clinical validation decide whether a clever
 
-00:01:39.984 --> 00:01:41.867
+00:01:40.155 --> 00:01:42.081
 microsystem becomes useful.
 
-00:01:46.450 --> 00:01:50.624
+00:01:46.450 --> 00:01:50.582
 The purpose of a chip is reliable detection in a real
 
-00:01:50.624 --> 00:01:53.660
+00:01:50.582 --> 00:01:53.587
 sample, not merely an attractive miniature flow path.

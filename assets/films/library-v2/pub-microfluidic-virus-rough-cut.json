@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "a3143017034b8c30cb9c44522466c742d5f1244d8051f3053f7be88b46352745",
+  "sha256": "d2d27d23ed7371ba2cbc789bece484d779da472c428297ba2ad08562870aff15",
   "shots": [
     {
       "title": "A laboratory shrunk into a channel",
@@ -74,5 +76,14 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "8be0c08cd2c7d4f789a055b70d4a1fb7424dcc7a9cf60ddc2c63e27156c5542c"
+  "motion_shots": [
+    {
+      "scene": 4,
+      "video": "assets/films/animations-v2/microfluidic-transport.mp4",
+      "credit": "Original schematic microfluidic sample movement; not actual virological assay footage",
+      "kind": "Original scientific concept animation (not experimental data)",
+      "source_sha256": "59ef50c9abd6c3a67f36955c302eb86460393df1d16bad338fb97b61b5670697"
+    }
+  ],
+  "input_sha256": "01a8938bdadaa29193182aed561173a7beb04c1530dbb46fb14ff610e29a9dae"
 }

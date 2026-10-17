@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bf_emma",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "e04ad4a4e2f31c11e6ebb420da34b2d31d68dc52af0aa97d6170085d6cea4d84",
+  "sha256": "38ccb1f7b9be32abba937c565af01f3e342e4855415eab2dd171b2365657c366",
   "shots": [
     {
       "title": "What can a digital twin predict?",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "f321754d134291fd15c59844f4523354d0cbc6e807deefb131f9baba1d64717e"
+  "motion_shots": [],
+  "input_sha256": "6b19f973512e27e38f83478a645d05a561f98a805c6e075f90a0c41de275194e"
 }
