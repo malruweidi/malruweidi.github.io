@@ -1,0 +1,17 @@
+{
+  "layout_version": "full-frame-qa-v2",
+  "source_mp4": "assets/films/longform-v2/the-laboratory-we-carried-with-us.mp4",
+  "source_sha256": "9ed9f1a6ead142cb8c4991cc988f27473980ae5fa34e1ff936f20176b30099eb",
+  "samples_seconds": [
+    4,
+    17,
+    29,
+    41,
+    54,
+    68,
+    83,
+    105
+  ],
+  "full_picture_preserved": true,
+  "label_placement": "Outside original frame bounds; never obscures title or scientific figure"
+}
