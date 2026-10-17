@@ -48,8 +48,8 @@
   "Read the qualifications and issuers ↗": "اطلع على المؤهلات والجهات المانحة ↗",
   "Explore the research-process and quality chapter ↗": "استكشف فصل منهج البحث والجودة ↗",
   "Distinct research community": "مجتمع علمي مستقل",
-  "Chem Squad has its own chapter.": "لكيم سكواد فصل مستقل.",
-  "Chem Squad is an independent scientific circle with its own history and members. It is not a quality-management programme or a subdivision of the leadership record.": "كيم سكواد حلقة علمية مستقلة لها تاريخها وأعضاؤها، وليست برنامجاً لإدارة الجودة أو جزءاً من سجل القيادة.",
-  "Explore Chem Squad separately ↗": "استكشف كيم سكواد بشكل مستقل ↗",
+  "Another chapter: Chem Squad.": "فصل آخر: كيم سكواد.",
+  "Seven chemists have continued an independent scientific conversation since 2016. Their projects and friendships have a chapter of their own in this archive.": "يواصل سبعة كيميائيين حواراً علمياً مستقلاً منذ عام ٢٠١٦، ولتجاربهم وصداقاتهم فصلها الخاص في هذا الأرشيف.",
+  "Read the Chem Squad chapter ↗": "اقرأ فصل كيم سكواد ↗",
   "Academic CV": "السيرة الأكاديمية"
 });})();
