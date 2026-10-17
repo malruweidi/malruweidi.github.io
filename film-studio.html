@@ -90,7 +90,7 @@ async function player(){
   byId('status').textContent='Checking the available cut…';
   if(!await check(preferred)){video=uri(serial,'v1','mp4');edition='v1'}
   if(!selected||selected.id!==serial)return;
-  target.innerHTML='<video controls playsinline preload="metadata" poster="'+esc(selected.poster)+'" aria-label="'+esc(selected.film_title)+'"><source src="'+esc(video)+'" type="video/mp4"><track kind="captions" src="'+esc(uri(serial,edition,'vtt'))+'" srclang="en" label="English captions"></video><div class="under"><a href="'+esc(uri(serial,edition,'vtt'))+'">Open the narrated transcript and captions ↗</a></div>';
+  target.innerHTML='<video controls playsinline preload="metadata" poster="'+esc(direction[serial]?.review_poster||selected.poster)+'" aria-label="'+esc(selected.film_title)+'"><source src="'+esc(video)+'" type="video/mp4"><track kind="captions" src="'+esc(uri(serial,edition,'vtt'))+'" srclang="en" label="English captions"></video><div class="under"><a href="'+esc(uri(serial,edition,'vtt'))+'">Open the narrated transcript and captions ↗</a></div>';
   byId('status').textContent=edition==='v2'?'Cinematic draft available. Human audiovisual approval remains outstanding.':'Showing the original 84-second version; the new edition is still in production.';
 }
 function choose(item){
@@ -105,7 +105,7 @@ function choose(item){
   player();
   if(window.innerWidth<900)byId('selected').scrollIntoView({behavior:'smooth',block:'start'});
 }
-byId('collection').innerHTML=films.map(item=>'<article class="film" data-id="'+esc(item.id)+'"><img loading="lazy" src="'+esc(item.poster)+'" alt="Source poster for '+esc(item.film_title)+'"><div class="desc"><div class="subtitle">'+esc(item.year)+' · '+esc(item.category)+'</div><strong>'+esc(item.film_title)+'</strong><p>'+esc(item.publication_title)+'</p><button type="button" data-film="'+esc(item.id)+'">Review film and evidence</button></div></article>').join('');
+byId('collection').innerHTML=films.map(item=>'<article class="film" data-id="'+esc(item.id)+'"><img loading="lazy" src="'+esc(direction[item.id]?.review_poster||item.poster)+'" alt="Source poster for '+esc(item.film_title)+'"><div class="desc"><div class="subtitle">'+esc(item.year)+' · '+esc(item.category)+'</div><strong>'+esc(item.film_title)+'</strong><p>'+esc(item.publication_title)+'</p><button type="button" data-film="'+esc(item.id)+'">Review film and evidence</button></div></article>').join('');
 byId('collection').addEventListener('click',ev=>{const el=ev.target.closest('button[data-film]');if(el){const found=films.find(f=>f.id===el.dataset.film);if(found)choose(found)}});
 for(const variant of ['v1','v2'])byId(variant).addEventListener('click',()=>{cut=variant;byId('v1').setAttribute('aria-pressed',cut==='v1');byId('v2').setAttribute('aria-pressed',cut==='v2');player()});
 choose(films[0]);
