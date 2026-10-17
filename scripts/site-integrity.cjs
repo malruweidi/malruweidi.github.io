@@ -62,7 +62,7 @@ if([...academic.matchAll(/<h2 class="label">/g)].length!==7)error("cv.html","aca
 const bibliography=html.get("publications.html")||"";
 if([...bibliography.matchAll(/class="pub-card"/g)].length<20)error("publications.html","curated bibliography unexpectedly lost entries");
 const cinema=html.get("publication-cinema.html")||"";
-if(!cinema.includes("const selectedEdition=isV6?")||!cinema.includes("releasedV6=new Map("))error("publication-cinema.html","film release manifest must take precedence over legacy editions");
+if(!cinema.includes("const selectedEdition=verifiedResearchEdition ||")||!cinema.includes("releasedV6=new Map(")||!cinema.includes("verifiedFilmMasters[x.id]"))error("publication-cinema.html","source-verified editions must take precedence, then V6 release manifest, with intact originals");
 try{
  const releases=JSON.parse(fs.readFileSync(path.join(root,"assets/films/series-v6/releases.json"),"utf8"));
  if(releases.schema!=="ruwaidix-film-releases-v1"||!Array.isArray(releases.films)||releases.count!==releases.films.length)error("film releases","V6 index schema or count mismatch");
