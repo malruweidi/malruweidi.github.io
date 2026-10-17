@@ -1,0 +1,96 @@
+{
+  "id": "pla-scaffolds",
+  "title": "Antimicrobial modification of PLA scaffolds with ascorbic and fumaric acids via plasma treatment",
+  "doi": "10.1016/j.surfcoat.2020.126216",
+  "journal": "Surface & Coatings Technology 400 (2020) 126216",
+  "paper": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+  "repository_item": "https://m.publikace.k.utb.cz/handle/10563/1009831?locale-attribute=en",
+  "downloaded_pdf_url": "https://m.publikace.k.utb.cz/bitstream/handle/10563/1009831/Fulltext_1009831.pdf?isAllowed=y&sequence=1",
+  "pdf_sha256": "e42038169c3ad2e828d0bb99b1221dd159d44275bcb8297fad71e87f08997682",
+  "document_pages": 12,
+  "license": "Original publisher PDF states Creative Commons Attribution 4.0, 2020 The Authors.",
+  "rights": "Use with attribution of Anton Popelka et al., source DOI, and identify any crop. Do not edit scientific scales/labels.",
+  "not_this_study": "2021 PLA cast-film–aluminium peel adhesion paper DOI 10.3390/polym13213717",
+  "figures": [
+    {
+      "slug": "figure-01-electrospinning-plasma",
+      "label": "Figure 1",
+      "caption_or_role": "Fabrication schematic; electrospinning, plasma and ascorbic/fumaric grafting",
+      "page_index_zero_based": 1,
+      "normalized_crop": [
+        0.098,
+        0.068,
+        0.931,
+        0.413
+      ],
+      "source_url": "https://m.publikace.k.utb.cz/bitstream/handle/10563/1009831/Fulltext_1009831.pdf?isAllowed=y&sequence=1#page=2",
+      "file": "assets/films/source-figures/v4/pla-scaffolds/figure-01-electrospinning-plasma.png",
+      "sha256": "4a9b6d997863bf0cd4e454ebe9174cbd0e6d85281ea0a26c0af570cd00731e57",
+      "data_integrity": "Direct unaltered pixel selection from original PDF page; scale bars / axes must be verified visually before embedding."
+    },
+    {
+      "slug": "figure-05-sem",
+      "label": "Figure 5",
+      "caption_or_role": "SEM: untreated/plasma/ASA/FA grafting; retain all four original 3 μm scale bars",
+      "page_index_zero_based": 4,
+      "normalized_crop": [
+        0.143,
+        0.454,
+        0.87,
+        0.973
+      ],
+      "source_url": "https://m.publikace.k.utb.cz/bitstream/handle/10563/1009831/Fulltext_1009831.pdf?isAllowed=y&sequence=1#page=5",
+      "file": "assets/films/source-figures/v4/pla-scaffolds/figure-05-sem.png",
+      "sha256": "b3736488461e8c502005cf1a806c6ebdb293e33779c0fb25b56f2d1ee1f65145",
+      "data_integrity": "Direct unaltered pixel selection from original PDF page; scale bars / axes must be verified visually before embedding."
+    },
+    {
+      "slug": "figure-06-afm",
+      "label": "Figure 6",
+      "caption_or_role": "AFM micrographs, measured roughness; original scale bars intact",
+      "page_index_zero_based": 6,
+      "normalized_crop": [
+        0.11,
+        0.059,
+        0.926,
+        0.564
+      ],
+      "source_url": "https://m.publikace.k.utb.cz/bitstream/handle/10563/1009831/Fulltext_1009831.pdf?isAllowed=y&sequence=1#page=7",
+      "file": "assets/films/source-figures/v4/pla-scaffolds/figure-06-afm.png",
+      "sha256": "f4791a74c2db9db715521e4e0a26215733c7c4c47e3de4537307e60f279f13cb",
+      "data_integrity": "Direct unaltered pixel selection from original PDF page; scale bars / axes must be verified visually before embedding."
+    },
+    {
+      "slug": "figure-07-ftir",
+      "label": "Figure 7",
+      "caption_or_role": "Original FTIR-ATR spectrum: six explicitly labelled sample traces",
+      "page_index_zero_based": 7,
+      "normalized_crop": [
+        0.521,
+        0.065,
+        0.967,
+        0.387
+      ],
+      "source_url": "https://m.publikace.k.utb.cz/bitstream/handle/10563/1009831/Fulltext_1009831.pdf?isAllowed=y&sequence=1#page=8",
+      "file": "assets/films/source-figures/v4/pla-scaffolds/figure-07-ftir.png",
+      "sha256": "2adf798e62c2820d148595fbb7a4859bea09e4c22d51e695e880952236a9362c",
+      "data_integrity": "Direct unaltered pixel selection from original PDF page; scale bars / axes must be verified visually before embedding."
+    },
+    {
+      "slug": "table-03-antibacterial",
+      "label": "Table 3",
+      "caption_or_role": "Actual ordinal bacterial-colony ratings from three replicates per group",
+      "page_index_zero_based": 9,
+      "normalized_crop": [
+        0.057,
+        0.765,
+        0.521,
+        0.973
+      ],
+      "source_url": "https://m.publikace.k.utb.cz/bitstream/handle/10563/1009831/Fulltext_1009831.pdf?isAllowed=y&sequence=1#page=10",
+      "file": "assets/films/source-figures/v4/pla-scaffolds/table-03-antibacterial.png",
+      "sha256": "bc85d3fbc6feb920574ea3e17cc5e305e6f97bb3bd1245010f6ff12604ad2469",
+      "data_integrity": "Direct unaltered pixel selection from original PDF page; scale bars / axes must be verified visually before embedding."
+    }
+  ]
+}
