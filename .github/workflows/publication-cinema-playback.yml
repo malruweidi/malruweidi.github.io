@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - publication-cinema.html
+      - films.html
       - films/making-medicines-keep.html
       - assets/films/publication-series.json
       - assets/films/series-v6/releases.json
@@ -12,6 +13,7 @@ on:
   pull_request:
     paths:
       - publication-cinema.html
+      - films.html
       - films/making-medicines-keep.html
       - assets/films/publication-series.json
       - assets/films/series-v6/releases.json
