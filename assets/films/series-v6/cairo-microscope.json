@@ -1,0 +1,60 @@
+{
+  "id": "cairo-microscope",
+  "seconds": 84.0,
+  "sha256": "049bedf30999e84054d6730000b08d606f51d8a37eec4591c35f2488db49b127",
+  "primary_source": "/stories/cairo-microscope.html",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original archival photograph of the user's own microscope",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original personal microscope photograph",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "kind": "Original archival photograph of the user's own microscope",
+      "credit": "Original archival photograph of the user's own microscope",
+      "source": "/stories/cairo-microscope.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/cairo-microscope/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/stories/cairo-microscope.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/cairo-microscope/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/stories/cairo-microscope.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "kind": "Original personal microscope photograph",
+      "credit": "Original personal microscope photograph",
+      "source": "/stories/cairo-microscope.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/cairo-microscope/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/stories/cairo-microscope.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/cairo-microscope/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/stories/cairo-microscope.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

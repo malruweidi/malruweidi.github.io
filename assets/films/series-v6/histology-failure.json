@@ -1,0 +1,60 @@
+{
+  "id": "histology-failure",
+  "seconds": 84.0,
+  "sha256": "d3bd4d1b35cbda03e5d1c45eb4c5c38c09c0642f9f71ba77b8c2666a48767789",
+  "primary_source": "/films/two-materials-no-section.html",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original firsthand photographs of zebrafish orientation procedure",
+    "Original laboratory processing evidence of unsuccessful attempt",
+    "Original photographed failed embedding and microtomy record",
+    "Original explanatory schematic; not research evidence",
+    "Original laboratory record, not a corrected protocol validation",
+    "Documented orientation specimen image"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "kind": "Original firsthand photographs of zebrafish orientation procedure",
+      "credit": "Original firsthand photographs of zebrafish orientation procedure",
+      "source": "/films/two-materials-no-section.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "kind": "Original laboratory processing evidence of unsuccessful attempt",
+      "credit": "Original laboratory processing evidence of unsuccessful attempt",
+      "source": "/films/two-materials-no-section.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "kind": "Original photographed failed embedding and microtomy record",
+      "credit": "Original photographed failed embedding and microtomy record",
+      "source": "/films/two-materials-no-section.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/histology-failure/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/films/two-materials-no-section.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "kind": "Original laboratory record, not a corrected protocol validation",
+      "credit": "Original laboratory record, not a corrected protocol validation",
+      "source": "/films/two-materials-no-section.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "kind": "Documented orientation specimen image",
+      "credit": "Documented orientation specimen image",
+      "source": "/films/two-materials-no-section.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
