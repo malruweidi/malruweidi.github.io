@@ -1,0 +1,149 @@
+{
+  "edition": "V3 2026-10-17",
+  "phase": "SOURCE-LOCKING / CONTINUOUS SCREENING / NOT RELEASED",
+  "concept": "Nine independent documentary subjects must not inherit unrelated research images merely because the old edits share a codec.",
+  "features": [
+    {
+      "id": "what-survives-the-experiment",
+      "source": "Owner science chronology, laboratory archive, documented research publications",
+      "structural_cut": [
+        "Bought microscope from Qasr El Einy: date provenance separate from research",
+        "Real student laboratory and instrumentation training; photographs kept at correct chronology",
+        "Published experiments accompanied by their own original scientific figures",
+        "2017 diblock failure and 2025 zebrafish embedding failure shown as failures",
+        "Shift into doctoral ambitions through original rather than stock footage"
+      ],
+      "deny": [
+        "Every success inferred from an unaudited photo",
+        "Hospital private records",
+        "Generic microscopy scene to describe unrelated method"
+      ]
+    },
+    {
+      "id": "airway-reopening-evidence-cut",
+      "source": "2021 Journal of Applied Physiology primary article plus 2020 Methods and Protocols chamber study",
+      "structural_cut": [
+        "Separate cell models from in-vivo ventilation",
+        "Reconstruct true published chamber geometry",
+        "Use genuine original paper Figure 1 chamber",
+        "Study-specific original fluorescence and cytoskeleton figures",
+        "Dexamethasone and DHEA results with accurate comparisons and study limitations"
+      ],
+      "deny": [
+        "ventilator patient imagery falsely treated as this experiment",
+        "photo from unrelated biological cabinet",
+        "uncited numerical graphs"
+      ]
+    },
+    {
+      "id": "what-a-bubble-can-do",
+      "source": "10.3390/mps3040065 original chamber method and figure permissions CC BY",
+      "structural_cut": [
+        "Flow geometry from source Figure 1",
+        "Advancing meniscus with exact source orientation",
+        "Real stills from Figure 1 study apparatus",
+        "Real viability/actin endpoints only if figure identity and controls confirmed",
+        "A single bubble in an epithelial monolayer is a model, not a diseased patient's airway"
+      ],
+      "deny": [
+        "fabricated cell-mortality measurement",
+        "generated fluorescence pictures"
+      ]
+    },
+    {
+      "id": "two-materials-no-section",
+      "source": "Owner 2025 failed agarose/paraffin embedding photographs and firsthand methods",
+      "structural_cut": [
+        "Three actual original photographed specimen attempts",
+        "Two-percent agarose orientation setup",
+        "Subsequent paraffin embedding as separate phase",
+        "Actual sectioning failure and visible material separation",
+        "Possible methodological remedies distinguished from established cause"
+      ],
+      "deny": [
+        "successful zebrafish histology replacement image",
+        "lab attribution user declined",
+        "invented recovery outcome"
+      ]
+    },
+    {
+      "id": "two-materials-no-section-evidence-cut",
+      "source": "Owner photographs and sectioning failure; method hypotheses explicitly caveated",
+      "structural_cut": [
+        "Specimen orientation",
+        "2% agarose layer and paraffin interface",
+        "Actual failed specimen photos not false micrographs",
+        "Sectioning mechanism annotated as hypothesis",
+        "What can be tested on next attempt"
+      ],
+      "deny": [
+        "claim separation mechanism definitively measured",
+        "unrelated tissue pathology"
+      ]
+    },
+    {
+      "id": "ring-that-never-closed",
+      "source": "Owner early organic chemistry synthesis records, authentic compound routes, completed cyanide sensor publication as a separate project",
+      "structural_cut": [
+        "The genuine proposed imidazopyridine route",
+        "Failed ring closure represented as failed path rather than product",
+        "Real authentic reagent/sample if exact notes verify",
+        "Later cyanide-sensing work shown distinctly, from 2019 paper, never claimed a successful ring closure",
+        "Uncertainty, interpretation, next hypothesis"
+      ],
+      "deny": [
+        "RSC cyanide figure presented as proof of successful failed route",
+        "invented yields or spectra"
+      ]
+    },
+    {
+      "id": "cairo-microscope",
+      "source": "2017 owner's home microscope photographs and Qasr El Einy purchase story",
+      "structural_cut": [
+        "Cairo Qasr El Einy as the stated point of purchase not unrelated mosque view",
+        "Actual instrument on desk and owner archive",
+        "Route from Cairo to Qatar with modern outlined map, clearly illustrative",
+        "Independent observation outside university schedule",
+        "No invented specific optical magnification or recorded specimen"
+      ],
+      "deny": [
+        "generic microscope image from commercial laboratory",
+        "false geographical location inferred from image"
+      ]
+    },
+    {
+      "id": "the-laboratory-we-carried-with-us",
+      "source": "Source-labelled university and collaborator archives, dated original photographs and fellow researcher histories",
+      "structural_cut": [
+        "Correct chronology and identity of group archives",
+        "Individuals named only with documentary permission",
+        "Acknowledge collaborators without inventing contributions",
+        "Original student-chapter footage only when event and date confirmed",
+        "Network of mentorship and laboratory continuity"
+      ],
+      "deny": [
+        "portraits attributed to wrong researchers",
+        "made-up awards or experiments",
+        "footage from different lab presented as original"
+      ]
+    },
+    {
+      "id": "making-medicines-keep",
+      "source": "Author's accepted HoPP manuscript; Minhāj al-dukkān; Wellcome MS Arabic 1002 (1904); BL Or 5786; Genizah studies",
+      "structural_cut": [
+        "A later authentic manuscript document, titled and correctly dated",
+        "Julāb medium: rose water, sugar and fruit differentiation",
+        "Preparation steps: clarification and material endpoint",
+        "Tasakkur crystallization and repair",
+        "Substitution versus adulteration, plus Genizah prescription-stock gap",
+        "Historical reliability with no GMP genealogy"
+      ],
+      "deny": [
+        "generic apothecary image masquerading as medieval Cairo",
+        "1910–2020 historical objects implied to be from 1260",
+        "Cambridge Genizah scan without reuse permission",
+        "modern pharmaceutical stability curve as measured historical fact"
+      ]
+    }
+  ]
+}
