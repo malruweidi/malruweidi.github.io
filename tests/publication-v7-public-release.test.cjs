@@ -1,0 +1,88 @@
+"use strict";
+// Reversible publication: source-specific masters first; V7 next; V6 kept.
+const test=require("node:test"),assert=require("node:assert/strict");
+const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
+const root=path.resolve(__dirname,"..");
+const read=rel=>fs.readFileSync(path.join(root,rel),"utf8");
+const release=JSON.parse(read("assets/films/series-v7-pilots/releases.json"));
+const v6=JSON.parse(read("assets/films/series-v6/releases.json"));
+const catalog=JSON.parse(read("assets/films/publication-series.json")).items;
+const special={
+ "making-medicines-keep":"series-v4",
+ "pla-grafting":"series-v3",
+ "pla-scaffolds":"series-v5",
+ "flow-chamber-method":"series-v5",
+ "microfluidic-virus":"series-v5"
+};
+test("all 30 V7 films are checksum-verified, captioned, scene-specific and fully sourced",()=>{
+ assert.equal(release.schema,"ruwaidix-cinema-v7-registered-releases-v1");
+ assert.equal(release.count,30);
+ assert.equal(release.films.length,30);
+ assert.match(release.review_limit,/do not certify/);
+ const allowed=new Set(catalog.filter(x=>!Object.hasOwn(special,x.id)).map(x=>x.id));
+ assert.equal(allowed.size,30);
+ assert.deepEqual(new Set(release.films.map(x=>x.id)),allowed);
+ for(const movie of release.films){
+  assert.equal(movie.edition,"series-v7-pilots",movie.id);
+  assert.equal(movie.duration_seconds,84,movie.id);
+  assert.equal(movie.distinct_chapters,6,movie.id);
+  assert.match(movie.sha256,/^[a-f0-9]{64}$/,movie.id);
+  const filmPath=path.join(root,movie.video.slice(1));
+  assert(fs.existsSync(filmPath),movie.video);
+  const bytes=fs.readFileSync(filmPath);
+  assert(bytes.length>1_000_000,movie.id);
+  assert.equal(crypto.createHash("sha256").update(bytes).digest("hex"),movie.sha256,"stale V7 movie "+movie.id);
+  assert.equal(bytes.toString("ascii",4,8),"ftyp",movie.id);
+  const captions=read(movie.captions.slice(1));
+  assert(captions.startsWith("WEBVTT"));
+  assert.equal((captions.match(/-->/g)||[]).length,12,movie.id);
+  assert(fs.statSync(path.join(root,movie.poster.slice(1))).size>3000,movie.id);
+  assert(fs.statSync(path.join(root,movie.source_review.slice(1))).size>12000,movie.id);
+  const source=JSON.parse(read(movie.scene_manifest.slice(1)));
+  assert.equal(source.slug,movie.id);
+  assert.equal(source.visual_beat_count,24);
+  assert.equal(source.movie_sha256,movie.sha256);
+  assert.equal(source.visual_revision,movie.visual_revision);
+  assert.equal(source.scene_count,6);
+  assert.equal(source.beats.length,24);
+  assert(!source.beats.some(b=>String(b.source).startsWith("/")),movie.id);
+ }
+});
+test("five original article-specific research cuts and every older V6/first edition remain",()=>{
+ const all=new Set(catalog.map(x=>x.id));
+ assert.equal(all.size,35);
+ for(const [id,edition] of Object.entries(special)){
+  assert(!release.films.some(x=>x.id===id),"Protected source film overwritten: "+id);
+  for(const ext of [".mp4",".vtt",".json"]){
+   assert(fs.existsSync(path.join(root,"assets/films/"+edition+"/"+id+ext)));
+  }
+ }
+ assert.equal(v6.films.length,30);
+ for(const id of release.films.map(x=>x.id)){
+  for(const dir of ["series-v6","series"]){
+   for(const ext of [".mp4",".vtt"]){
+    assert(fs.existsSync(path.join(root,"assets/films/"+dir+"/"+id+ext)),dir+" preservation "+id+ext);
+   }
+  }
+ }
+});
+test("saved 35-piece cinema page premieres V7, retains source-first precedence and V6 rollback",()=>{
+ const html=read("publication-cinema.html"),staticHtml=html.split("<script>")[0];
+ const rows=[...staticHtml.matchAll(/<article class="piece" id="film-([a-z0-9-]+)"/g)].map(m=>m[1]);
+ assert.equal(rows.length,35);
+ assert.equal(new Set(rows).size,35);
+ const sources=[...staticHtml.matchAll(/<source src="(\/assets\/films\/[^"]+\.mp4)"/g)].map(m=>m[1]);
+ assert.equal(sources.length,35);
+ const captions=[...staticHtml.matchAll(/<track kind="captions" src="(\/assets\/films\/[^"]+\.vtt)"/g)].map(m=>m[1]);
+ assert.equal(captions.length,35);
+ for(let i=0;i<rows.length;i++){
+  const edition=special[rows[i]]||"series-v7-pilots";
+  assert.equal(sources[i],"/assets/films/"+edition+"/"+rows[i]+".mp4");
+  assert.equal(captions[i],"/assets/films/"+edition+"/"+rows[i]+".vtt");
+ }
+ assert.match(html,/series-v7-pilots\/releases\.json/);
+ assert.match(html,/const selectedEdition=verifiedResearchEdition \|\| \(isV7\?/);
+ assert.match(html,/Watch preserved previous V6 edition/);
+ assert.match(html,/Watch preserved original first edition/);
+ assert.match(html,/const fallback=\(isV7&&isV6\?/);
+});
