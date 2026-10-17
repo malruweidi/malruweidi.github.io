@@ -1,0 +1,56 @@
+{
+  "doi": "10.1080/08037051.2022.2055530",
+  "figures": [
+    {
+      "figure": 1,
+      "source_page": "assets/films/source-figures/ace2-covid-drugs-2022/figure-01-original-full-source-page.png",
+      "source_page_sha256": "79265de4d6795131d106ea1a9de5fad20803f5d5e0b6918adf1b739bb6603f21",
+      "pixel_crop": [
+        187,
+        70,
+        796,
+        452
+      ],
+      "original_caption_and_axes_in_crop": true,
+      "image_path": "assets/films/source-figures/v3/ace2-covid-drugs-figure-01.jpg",
+      "sha256": "e74d66bd578fda034711b607275867917d99c779462e65f30b897b73933fad54",
+      "license": "CC BY 4.0; exact 2022 original paper",
+      "source_doi": "10.1080/08037051.2022.2055530",
+      "scientific_boundary": "This is an observational clinical cohort, not a randomized intervention or causal medication recommendation."
+    },
+    {
+      "figure": 2,
+      "source_page": "assets/films/source-figures/ace2-covid-drugs-2022/figure-02-original-full-source-page.png",
+      "source_page_sha256": "79265de4d6795131d106ea1a9de5fad20803f5d5e0b6918adf1b739bb6603f21",
+      "pixel_crop": [
+        181,
+        446,
+        791,
+        958
+      ],
+      "original_caption_and_axes_in_crop": true,
+      "image_path": "assets/films/source-figures/v3/ace2-covid-drugs-figure-02.jpg",
+      "sha256": "25c6ab2f4a570dbb81ab8f97c92349c5db8d08dfe09acffe6f9b598bbecd2e88",
+      "license": "CC BY 4.0; exact 2022 original paper",
+      "source_doi": "10.1080/08037051.2022.2055530",
+      "scientific_boundary": "This is an observational clinical cohort, not a randomized intervention or causal medication recommendation."
+    },
+    {
+      "figure": 3,
+      "source_page": "assets/films/source-figures/ace2-covid-drugs-2022/figure-03-original-full-source-page.png",
+      "source_page_sha256": "7004cabcaebae1a8d4ba0e2f8b92c63120644d59516b3512bf05e8e091ca7e8b",
+      "pixel_crop": [
+        202,
+        70,
+        798,
+        551
+      ],
+      "original_caption_and_axes_in_crop": true,
+      "image_path": "assets/films/source-figures/v3/ace2-covid-drugs-figure-03.jpg",
+      "sha256": "567c0516ef47164cc7d960ba4d4ca9ce0f53ab2bc14f4a8c2b65b81be32ebbab",
+      "license": "CC BY 4.0; exact 2022 original paper",
+      "source_doi": "10.1080/08037051.2022.2055530",
+      "scientific_boundary": "This is an observational clinical cohort, not a randomized intervention or causal medication recommendation."
+    }
+  ]
+}
