@@ -9,6 +9,7 @@ on:
       - scripts/remaster-publication-series.py
       - assets/films/remake-direction.json
       - .github/workflows/render-film-overhaul-v2.yml
+      - scripts/make-film-qa-contact-sheets.py
       - tests/film-overhaul-v2.test.cjs
       - film-studio.html
   workflow_dispatch:
@@ -71,6 +72,8 @@ jobs:
               assert abs(float(data["format"]["duration"])-84)<.3,v
               print(v,meta["animated_scene_ids"])
           PY
+      - name: Produce proof-of-render frame contact sheets for editorial review
+        run: python scripts/make-film-qa-contact-sheets.py --collection series-v2
       - name: Preserve old films and commit only alternative v2 releases
         run: |
           git config user.name "Ruwaidix Open Film Studio"
@@ -82,15 +85,15 @@ jobs:
             git rebase FETCH_HEAD
             git push origin HEAD:${{ github.ref_name }}
           fi
-      - name: Continue the remaining film remakes after default-branch release
-        if: github.ref == 'refs/heads/main'
+      - name: Continue remaining films in the source-preserving review branch
+        if: success()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          git fetch origin main
-          git checkout --force -B main origin/main
+          git fetch origin "${{ github.ref_name }}"
+          git checkout --force -B "${{ github.ref_name }}" "origin/${{ github.ref_name }}"
           count="$(python scripts/remaster-publication-series.py --remaining-count | tail -n 1)"
           echo "V2 films still to render: $count"
           if [ "$count" -gt 0 ]; then
-            gh workflow run render-film-overhaul-v2.yml --ref main
+            gh workflow run render-film-overhaul-v2.yml --ref "${{ github.ref_name }}"
           fi
