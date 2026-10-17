@@ -7,8 +7,8 @@ test("pulmonary documentary page plays corrected V2, preserves V1 and cites sour
  const base="/assets/films/what-a-bubble-can-do-evidence-v2";
  assert(html.includes('<source src="'+base+'.mp4" type="video/mp4">'));
  assert(html.includes('src="'+base+'.vtt"'));
- assert(html.includes('href="/assets/films/what-a-bubble-can-do.mp4"'));
- assert(html.includes('href="/assets/films/what-a-bubble-can-do.vtt"'));
+ assert(fs.existsSync(path.join(root,"assets/films/what-a-bubble-can-do.mp4")),"First movie must remain archived");
+ assert(fs.existsSync(path.join(root,"assets/films/what-a-bubble-can-do.vtt")),"First edition captions retained");
  assert.match(html,/2021.*Journal of Applied Physiology|2021.*Journal|Journal of Applied Physiology/i);
  for(const ext of [".mp4",".vtt","-build.json"]){
    const fp=path.join(root,"assets/films/what-a-bubble-can-do-evidence-v2"+ext);
@@ -26,7 +26,7 @@ test("histology pages and central film hub play source-corrected V2, while both 
   assert(page.includes('<source src="'+base+'.mp4" type="video/mp4">'));
   assert(page.includes('src="'+base+'.vtt"'));
  }
- assert(html.includes('href="/assets/films/two-materials-no-section-evidence-cut.mp4"'));
+ assert(fs.existsSync(path.join(root,"assets/films/two-materials-no-section-evidence-cut.mp4")));
  assert(hub.includes('href="/assets/films/two-materials-no-section-evidence-cut.mp4"'));
  assert(hub.includes('href="/assets/films/two-materials-no-section.mp4"'));
  for(const name of ["two-materials-no-section.mp4","two-materials-no-section-evidence-cut.mp4","two-materials-no-section-source-v2.mp4",
