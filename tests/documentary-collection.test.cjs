@@ -37,6 +37,8 @@ test("histology documentary stays reader-first while three experimental photogra
   assert.match(film, /<video\b[^>]*controls/);
   assert.ok(film.includes('href="/stories/failed-zebrafish-histology.html"'));
   assert.match(film, /Its exact cause was not conclusively established/);
+  assert.match(film, /<meta property="og:description" content="A two-minute film/);
+  assert.doesNotMatch(film, /150-second|complete narration, storyboard/);
   assert.doesNotMatch(film, /No finished film has been published/);
 });
 
