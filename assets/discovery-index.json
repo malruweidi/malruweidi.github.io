@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-17",
+  "version": "2026-10-18",
   "description": "Additive, source-grounded site discovery; links only to existing Ruwaidix public pages and headings.",
   "categories": [
     "Orientation",
@@ -544,7 +544,7 @@
       "category": "Research",
       "url": "/research.html",
       "summary": "Six research directions spanning molecular chemistry, experimental physiology, biomaterials, pulmonary therapeutics, computing and history of pharmacy.",
-      "keywords": "research portfolio chemistry molecular design epithelial injury zebrafish biomedicine nanocarriers ongoing thesis history of pharmacy"
+      "keywords": "research portfolio chemistry molecular design epithelial injury zebrafish biomedicine nanocarriers ongoing thesis history of pharmacy الأبحاث والكيمياء والطرق العلمية"
     },
     {
       "id": 68,
@@ -552,7 +552,39 @@
       "category": "Research",
       "url": "/publications.html",
       "summary": "Status-aware bibliography of original studies, reviews, book chapters and accepted historical scholarship; filter entries and follow publisher or film links.",
-      "keywords": "publications manuscripts articles scientific papers accepted forthcoming DOI bibliography research scholarly"
+      "keywords": "publications manuscripts articles scientific papers accepted forthcoming DOI bibliography research scholarly المنشورات البحثية والأوراق العلمية والمراجع"
+    },
+    {
+      "id": 69,
+      "title": "With Mr. Aref Elahmad · My first chemistry teacher",
+      "category": "Stories",
+      "url": "/stories.html#school-chemistry-and-graduation",
+      "summary": "The owner-identified photograph with Mr. Aref Elahmad from the Grade 10 school chemistry festival and the graduation image with Mr. Jameel Al-Shamarri.",
+      "keywords": "Mr Aref Elahmad عارف الأحمد chemistry teacher Doha school school festival certificate graduation chemistry research أستاذي الأول الكيمياء"
+    },
+    {
+      "id": 70,
+      "title": "The life between diagnoses · Personal story and photographs",
+      "category": "Stories",
+      "url": "/stories.html#life-between-diagnoses-story",
+      "summary": "A fuller autobiographical account of eosinophilic gastrointestinal illness, school examinations, and the personal photographic archive.",
+      "keywords": "eosinophilic eosinophils illness gastroenteritis HES vomiting medical school 2017 photograph مرض يوزيني قيء تشخيصات"
+    },
+    {
+      "id": 71,
+      "title": "The Life Between Diagnoses · Bilingual illness chapter",
+      "category": "Stories",
+      "url": "/illness-and-evidence.html#life-between-diagnoses",
+      "summary": "An English and Arabic personal narrative about chronic eosinophilic disease, medical school and the limits of blood counts and clinical classifications.",
+      "keywords": "life between diagnoses eosinophilic disease imatinib clinical personal essay disease المرض اليوزيني الحياة بين التشخيصات طب"
+    },
+    {
+      "id": 72,
+      "title": "My first chemistry teacher · Home feature",
+      "category": "Archive & people",
+      "url": "/#first-chemistry-teacher",
+      "summary": "The school chemistry festival photograph with Mr. Aref Elahmad and a route to the complete story.",
+      "keywords": "Aref Elahmad عارف الأحمد chemistry teacher grade ten photograph مهرجان الكيمياء مدرس دوحة"
     }
   ]
 }
