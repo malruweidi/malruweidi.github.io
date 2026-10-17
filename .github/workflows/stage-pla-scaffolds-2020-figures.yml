@@ -1,0 +1,54 @@
+name: Source-lock 2020 antimicrobial PLA scaffold original figures
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/import-pla-scaffolds-2020-figures.py
+      - .github/workflows/stage-pla-scaffolds-2020-figures.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-primary-publication-figures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Install PDF figure extraction tools
+        run: |
+          python -m pip install pymupdf pillow
+          python -m py_compile scripts/import-pla-scaffolds-2020-figures.py
+      - name: Retrieve and crop only the original 2020 CC BY paper figures
+        run: python scripts/import-pla-scaffolds-2020-figures.py
+      - name: Verify every scientific figure's exact publication identity
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          data=json.loads(Path("assets/films/source-figures/v4/pla-scaffolds/source-provenance.json").read_text())
+          assert data["doi"]=="10.1016/j.surfcoat.2020.126216"
+          assert "10.3390/polym13213717" in data["not_this_study"]
+          assert len(data["figures"])==5
+          for x in data["figures"]:
+              assert hashlib.sha256(Path(x["file"]).read_bytes()).hexdigest()==x["sha256"]
+              assert x["page_index_zero_based"] in (1,4,6,7,9)
+          print("Exact DOI and five authentic source assets verified.")
+          PY
+      - name: Stage source pixels and manifest separately from any film
+        run: |
+          git config user.name "Ruwaidix primary-source figures"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/source-figures/v4/pla-scaffolds/
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage actual electrospun PLA scaffold figures from 2020 paper, with DOI and source page"
+            git fetch origin "${{ github.ref_name }}"
+            if git rebase "origin/${{ github.ref_name }}"; then
+              git push origin HEAD:"${{ github.ref_name }}"
+            else
+              git rebase --abort
+              echo "Source import conflict: do not substitute or corrupt figure pixels"
+              exit 1
+            fi
+          fi
