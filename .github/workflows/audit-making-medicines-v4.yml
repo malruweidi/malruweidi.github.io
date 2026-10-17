@@ -1,0 +1,33 @@
+name: V4 Making Medicines Keep — full-frame encoded cinema QA
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/audit-making-medicines-v4.py
+      - .github/workflows/audit-making-medicines-v4.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install pillow
+      - run: python scripts/audit-making-medicines-v4.py
+      - name: Commit independently validated image samples, not the movie
+        run: |
+          git config user.name "Ruwaidix Cinematic Review"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v4/qa/
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage sixteen archival-movie screenshots for editorial film QA"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase "origin/${{ github.ref_name }}"
+            git push origin HEAD:"${{ github.ref_name }}"
+          fi
