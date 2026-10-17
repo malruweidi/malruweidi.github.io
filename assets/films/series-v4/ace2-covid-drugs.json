@@ -52,7 +52,7 @@
   "separate_explanatory_animation": true,
   "new_science_fabricated": false,
   "duration_seconds": 120.0,
-  "sha256": "89c17190a7da899825b11e16af7e7cf850a48dbad7cf83f73c522b5acc995df5",
+  "sha256": "da69c1f7e077bbd75f5b21294ddf2d2acdccc9f7af8cc5471e24c3a7dbeb37ed",
   "human_review": "NOT APPROVED — listen, watch, verify panel identities and licensing before live embed",
   "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
   "chapters": [
@@ -87,7 +87,7 @@
       ],
       "eyebrow": "OBSERVATIONAL ASSOCIATION · FIGURE 1",
       "narration": "The reported soluble ACE two level was about one point nine times higher in severe disease than in mild cases. This does not establish the direction of causation.",
-      "tts_seconds": 11.275
+      "tts_seconds": 11.273
     },
     {
       "mode": "source",
@@ -109,7 +109,7 @@
       ],
       "eyebrow": "FIGURE 2 · ORIGINAL GROUP RESULTS",
       "narration": "The original figure shows variation between medication groups in circulating ACE two and angiotensin two. These are blood assays, not direct measurements of membrane receptor expression.",
-      "tts_seconds": 12.489
+      "tts_seconds": 12.499
     },
     {
       "mode": "source",
