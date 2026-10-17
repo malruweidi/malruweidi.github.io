@@ -39,15 +39,22 @@ def ease(t):
     u=min(1,max(0,t))
     return u*u*(3-2*u)
 
+_BACKGROUNDS={}
+_PANELS={}
 def background(src,k,t):
+    if k in _BACKGROUNDS:
+        return _BACKGROUNDS[k].copy()
     # Low contrast, defocused art direction from THIS paper's actual pixels,
     # NOT passed off as the experimental figure.
     fit=ImageOps.fit(src,(W,H),method=Image.Resampling.BICUBIC,centering=(.5,.5))
     fit=fit.filter(ImageFilter.GaussianBlur(radius=18)).convert("RGB")
     veil=Image.new("RGB",(W,H),BG)
-    return Image.blend(fit,veil,.90)
+    _BACKGROUNDS[k]=Image.blend(fit,veil,.90)
+    return _BACKGROUNDS[k].copy()
 
 def source_panel(src,region,dest):
+    key=(id(src),region,dest)
+    if key in _PANELS:return _PANELS[key]
     # Only unmodified pixel selection; preserve labels, intensity and color.
     if region is not None:
         w,h=src.size
@@ -57,7 +64,8 @@ def source_panel(src,region,dest):
     # Entire selected source figure panel fits, no stretching.
     img=ImageOps.contain(src,(x1-x0,y1-y0),method=Image.Resampling.LANCZOS)
     x=(x0+x1-img.width)//2;y=(y0+y1-img.height)//2
-    return img,(x,y)
+    _PANELS[key]=(img,(x,y))
+    return _PANELS[key]
 
 def read_art(film,figure):
     path=FIG/f"{film}-figure-{figure:02d}.jpg"
@@ -221,6 +229,7 @@ def render(film,info,models):
         vtt(scenes,stats,tmp/"film.vtt")
         movies=[]
         for k,scene in enumerate(scenes):
+            _PANELS.clear()
             src,region,ref=scene_camera(film,scene,k)
             out=tmp/f"scene-{k:02}.mp4"
             args=["ffmpeg","-hide_banner","-loglevel","error","-y","-f","image2pipe","-vcodec","mjpeg",
