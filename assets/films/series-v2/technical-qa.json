@@ -256,6 +256,27 @@
       "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
     },
     {
+      "name": "essay-machine-language",
+      "seconds": 84.0,
+      "size_bytes": 2615629,
+      "sha256": "f5d405b6e1b212eeee7d4ccc7e2bbdd61dfeec90372b7726718e314739a79a23",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 23,
+        "max_caption_line": 54,
+        "last_caption_second": 79.68
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
       "name": "flow-chamber-method",
       "seconds": 84.0,
       "size_bytes": 2564876,
