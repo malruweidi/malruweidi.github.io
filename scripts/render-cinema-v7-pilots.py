@@ -140,7 +140,11 @@ PRESERVE_SCHOLARLY={"making-medicines-keep","pla-grafting","pla-scaffolds",
 
 def complete(slug):
  paths=[OUT/(slug+ext) for ext in (".mp4",".vtt",".webp",".json",".contact.webp")]
- if not all(p.is_file() and p.stat().st_size>1000 for p in paths):
+ # Caption tracks are plain text: valid twelve-cue files may be below 1 KB.
+ # Size thresholds must reflect the actual file format to avoid infinite rerenders.
+ minimum=(1_000_000,100,3_000,300,12_000)
+ if not all(p.is_file() and p.stat().st_size>=minimum[i]
+            for i,p in enumerate(paths)):
   return False
  try:
   record=json.loads((OUT/(slug+".json")).read_text())
