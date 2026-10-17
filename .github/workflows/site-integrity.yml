@@ -57,3 +57,5 @@ jobs:
         run: node --test tests/early-science-and-story-discoverability.test.mjs
       - name: Verify archive dating and source-linked film social previews
         run: node --test tests/second-pass-publication-discovery.test.mjs
+      - name: Check film viewer playback and reader-facing screening links
+        run: node --test tests/third-pass-film-reader-experience.test.mjs
