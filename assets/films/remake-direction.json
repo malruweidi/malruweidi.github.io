@@ -1,0 +1,359 @@
+{
+  "edition": "2026-10-17",
+  "purpose": "A non-destructive alternate cut for all 35 source-linked Ruwaidix publication and essay films.",
+  "status": "PRODUCTION_DRAFT_NOT_HUMAN_APPROVED",
+  "visual_policy": "Preserve every source image; published research figures are shown unzoomed and without numerical animation. Drawings and overlays are overtly marked as explanatory reconstructions, not measured data. Patient imagery must not be fabricated.",
+  "audio_policy": "Open Kokoro ONNX narrator; spoken pronunciations require direct human audition, not automatic certification.",
+  "films": {
+    "airway-reopening": {
+      "motif": "interface",
+      "annotations": [
+        "Interface advances",
+        "Epithelial response",
+        "In-vitro endpoint"
+      ],
+      "evidence_boundary": "The illustration is not a recorded experiment.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "cerebral-cilia": {
+      "motif": "vessel",
+      "annotations": [
+        "Flow in a developing vessel",
+        "Ciliary distribution",
+        "Imaging and interpretation"
+      ],
+      "evidence_boundary": "Motion is schematic, not measured zebrafish velocity.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "slit2-robo": {
+      "motif": "network",
+      "annotations": [
+        "Ligand–receptor context",
+        "Downstream signalling",
+        "Tumour-specific effects"
+      ],
+      "evidence_boundary": "No molecular structure or binding constant is inferred.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "curcumin-cyanide": {
+      "motif": "signal",
+      "annotations": [
+        "Analyte–probe interaction",
+        "Optical response",
+        "Calibration and controls"
+      ],
+      "evidence_boundary": "Graphic shows assay logic, not an observed spectrum.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "making-medicines-keep": {
+      "motif": "pharmacy",
+      "annotations": [
+        "Preparation",
+        "Consistency and storage",
+        "Substitution decisions"
+      ],
+      "evidence_boundary": "A modern schematic, not an authentic medieval instrument.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "niosomes": {
+      "motif": "vesicle",
+      "annotations": [
+        "Surfactant membrane",
+        "Aerosol stress",
+        "Formulation characterisation"
+      ],
+      "evidence_boundary": "Carrier morphology and performance are not measurements.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "echo-cnn-lstm": {
+      "motif": "signal",
+      "annotations": [
+        "Ultrasound sequence",
+        "Spatial features",
+        "Temporal modelling"
+      ],
+      "evidence_boundary": "No patient ECG or published model-performance curve is fabricated.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "pla-grafting": {
+      "motif": "materials",
+      "annotations": [
+        "PLA substrate",
+        "Surface activation",
+        "Grafted functionality"
+      ],
+      "evidence_boundary": "Surface chemistry is simplified; no micrograph is invented.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "pla-scaffolds": {
+      "motif": "materials",
+      "annotations": [
+        "Fibre architecture",
+        "Surface treatment",
+        "Biological interface"
+      ],
+      "evidence_boundary": "Not an antimicrobial efficacy assay.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "flow-chamber-method": {
+      "motif": "interface",
+      "annotations": [
+        "Air–liquid interface",
+        "Monolayer exposure",
+        "Controlled injury assay"
+      ],
+      "evidence_boundary": "Geometry illustrative; consult published apparatus for dimensions.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "zebrafish-hemodynamics": {
+      "motif": "vessel",
+      "annotations": [
+        "Pulsatile circulation",
+        "High-speed imaging",
+        "Analysis constraints"
+      ],
+      "evidence_boundary": "No measured flow velocity is represented.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "ace2-covid-drugs": {
+      "motif": "network",
+      "annotations": [
+        "Medication exposure",
+        "ACE2 and angiotensin II",
+        "Confounding variables"
+      ],
+      "evidence_boundary": "No patient observations or causal estimate is depicted.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "gi-autoimmunity-1": {
+      "motif": "organ",
+      "annotations": [
+        "Barrier integrity",
+        "Immune signalling",
+        "Disease-specific pathology"
+      ],
+      "evidence_boundary": "Generic immune schematic, not an individual's biopsy.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "gi-autoimmunity-2": {
+      "motif": "organ",
+      "annotations": [
+        "Clinical presentation",
+        "Diagnostic evidence",
+        "Therapeutic interpretation"
+      ],
+      "evidence_boundary": "No real patient tissue, imaging, or results are invented.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "heart-failure-sensors": {
+      "motif": "signal",
+      "annotations": [
+        "Physiological input",
+        "Sensor readout",
+        "Clinical validation"
+      ],
+      "evidence_boundary": "Signal is symbolic, not measured patient physiology.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "ace2-forms": {
+      "motif": "network",
+      "annotations": [
+        "Membrane-bound ACE2",
+        "Soluble ACE2",
+        "Context-dependent activity"
+      ],
+      "evidence_boundary": "An explanatory relationship, not a measured concentration.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "microfluidic-virus": {
+      "motif": "chip",
+      "annotations": [
+        "Sample enters channel",
+        "Target capture",
+        "Analytical readout"
+      ],
+      "evidence_boundary": "No clinical specificity or performance value is implied.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "drug-release-twins": {
+      "motif": "vesicle",
+      "annotations": [
+        "Carrier release",
+        "Model prediction",
+        "Experimental validation"
+      ],
+      "evidence_boundary": "Animated particles do not represent release measurements.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "food-printing": {
+      "motif": "materials",
+      "annotations": [
+        "Ink flow",
+        "Shape retention",
+        "Material behaviour"
+      ],
+      "evidence_boundary": "No printed structure is claimed to be experimental output.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "ceramics-printing": {
+      "motif": "materials",
+      "annotations": [
+        "Layer deposition",
+        "Interconnected pores",
+        "Mechanical constraints"
+      ],
+      "evidence_boundary": "Structure and its strength are schematic.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "cubosome-theranostics": {
+      "motif": "materials",
+      "annotations": [
+        "Bicontinuous topology",
+        "Cargo transport",
+        "Translation barrier"
+      ],
+      "evidence_boundary": "No measured cubic phase or therapeutic result is depicted.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "micelles-pahs": {
+      "motif": "vesicle",
+      "annotations": [
+        "Amphiphilic assembly",
+        "Hydrophobic cargo",
+        "Experimental uncertainty"
+      ],
+      "evidence_boundary": "Schematic is not evidence that the trials succeeded.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "heterocycle-cancer": {
+      "motif": "network",
+      "annotations": [
+        "Synthetic target",
+        "Compound screening",
+        "Structure–activity question"
+      ],
+      "evidence_boundary": "No synthesis yield or anticancer effect is invented.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "histology-failure": {
+      "motif": "histology",
+      "annotations": [
+        "2% agarose orientation",
+        "Paraffin embedding",
+        "Sectioning failure"
+      ],
+      "evidence_boundary": "This was an unsuccessful attempt, not successful microscopy.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "cairo-microscope": {
+      "motif": "editorial",
+      "annotations": [
+        "Buying the microscope",
+        "Carrying it to Qatar",
+        "Independent observation"
+      ],
+      "evidence_boundary": "Illustrative timeline does not replace personal photographs.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "essay-life-between-diagnoses": {
+      "motif": "editorial",
+      "annotations": [
+        "Acute symptoms",
+        "Examination uncertainty",
+        "What records miss"
+      ],
+      "evidence_boundary": "A personal chronology, not fabricated clinical data.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "essay-ai-email": {
+      "motif": "editorial",
+      "annotations": [
+        "A written message",
+        "AI accusations",
+        "Standards of evidence"
+      ],
+      "evidence_boundary": "No quotations attributed to real correspondents.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "essay-machine-language": {
+      "motif": "editorial",
+      "annotations": [
+        "Language expectations",
+        "Model-generated prose",
+        "Authorship and judgment"
+      ],
+      "evidence_boundary": "Text motion is illustrative, not quoted scholarship.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "essay-academic-mental-health": {
+      "motif": "editorial",
+      "annotations": [
+        "Academic workload",
+        "Unseen experiences",
+        "Institutional responsibility"
+      ],
+      "evidence_boundary": "No clinical events beyond the author's account are invented.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "essay-scientific-credit": {
+      "motif": "editorial",
+      "annotations": [
+        "Many contributors",
+        "Attribution systems",
+        "Scientific accountability"
+      ],
+      "evidence_boundary": "No invented acknowledgments or publication counts.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "essay-tf-states": {
+      "motif": "network",
+      "annotations": [
+        "Protein states",
+        "Ligand recognition",
+        "Context-dependent function"
+      ],
+      "evidence_boundary": "No experimentally determined structural ensemble is implied.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "essay-potency-exposure": {
+      "motif": "signal",
+      "annotations": [
+        "In-vitro potency",
+        "Pharmacokinetics",
+        "Target-site exposure"
+      ],
+      "evidence_boundary": "No simulated concentration curve shown as patient data.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "essay-trna": {
+      "motif": "network",
+      "annotations": [
+        "Codon recognition",
+        "tRNA charging",
+        "Ribosomal translation"
+      ],
+      "evidence_boundary": "Simplified pathway is not structural or kinetic evidence.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "essay-proximity": {
+      "motif": "network",
+      "annotations": [
+        "Protein A",
+        "Molecular glue",
+        "Protein B"
+      ],
+      "evidence_boundary": "Proximity is conceptual, not a solved molecular structure.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    },
+    "essay-adc": {
+      "motif": "vesicle",
+      "annotations": [
+        "Target binding",
+        "Payload delivery",
+        "Therapeutic window"
+      ],
+      "evidence_boundary": "Carrier drawing is conceptual; ADCs are not vesicles.",
+      "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
+    }
+  }
+}
