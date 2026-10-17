@@ -117,7 +117,7 @@ E("evidence").innerHTML='<p>Loading the original scene manuscript…</p>';
 fetch("/assets/films/"+film[3]).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()}).then(x=>{
 if(current!==film)return;
 const scenes=x.scenes||((x.films||[]).find(y=>y.slug===(film[0]==="two-materials-no-section-evidence-cut"?"two-materials-no-section":film[0]))||{}).scenes||[];
-E("evidence").innerHTML='<p><a href="/assets/films/'+esc(film[3])+'">Read the full source record ↗</a></p><ol>'+scenes.map(s=>'<li><strong>'+esc(s.title)+'</strong><p>'+esc(s.narration||s.text||"")+'</p><p>'+esc(s.kind||s.mode||"")+' · '+esc(s.credit||"")+'</p></li>').join("")+'</ol>';
+E("evidence").innerHTML='<p><a href="/assets/films/'+esc(film[3])+'">Read the full source record ↗</a></p><ol>'+scenes.map(s=>'<li><strong>'+esc(s.title)+'</strong><p>'+esc(s.narration||s.text||"")+'</p><p>'+esc(s.kind||s.mode||"")+' · '+esc(s.credit||"")+'</p>'+(s.image?'<p><a href="'+esc(s.image.startsWith('https://')?s.image:'/'+s.image.replace(/^\\/+/,''))+'" target="_blank" rel="noopener">Inspect original photograph or research figure ↗</a></p>':'')+'</li>').join("")+'</ol>';
 }).catch(()=>E("evidence").textContent="Original scene register temporarily unavailable.");
 show();
 if(scroll&&window.innerWidth<851)E("selected").scrollIntoView({behavior:"smooth",block:"start"});
