@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 28,
+  "count": 30,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -159,6 +159,20 @@
       "creative_review": "outstanding"
     },
     {
+      "id": "essay-adc",
+      "title": "The Antibody Is Only the Beginning",
+      "publication": "Antibody–Drug Conjugates 3.0: A New Era Of Precision Engineering In Oncology",
+      "poster": "/assets/films/series-v7-pilots/essay-adc.webp",
+      "file": "/assets/films/series-v7-pilots/essay-adc.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-adc.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-adc.json",
+      "contact": "/assets/films/series-v7-pilots/essay-adc.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "d9189927a94f62510a9963cdc194afa8d2e09bb56a26483a222b96467103368b",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
       "id": "essay-ai-email",
       "title": "The Email That Became an Accusation",
       "publication": "Sorry, My First Email to You Was Probably Polished by AI",
@@ -211,6 +225,20 @@
       "contact": "/assets/films/series-v7-pilots/essay-potency-exposure.contact.webp",
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "eccb13535b87e5aa9429caa31154766f50bfc5865f8b6fb552cc5a1c2980ee68",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "essay-proximity",
+      "title": "When a Drug Makes Two Proteins Meet",
+      "publication": "The Matchmaker Modality: Engineering Event-Driven Pharmacology With Induced Proximity",
+      "poster": "/assets/films/series-v7-pilots/essay-proximity.webp",
+      "file": "/assets/films/series-v7-pilots/essay-proximity.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-proximity.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-proximity.json",
+      "contact": "/assets/films/series-v7-pilots/essay-proximity.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "66894fc557d2cc9ea666cce2ead72e9afad6a517af0eda65337a9e6916aed9c6",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
