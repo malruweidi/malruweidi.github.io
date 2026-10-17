@@ -1134,3 +1134,26 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "I have worked on molecular sensors, polymers, vascular imaging and pulmonary drug delivery. Each project required me to learn techniques suited to its particular questions, from spectral characterization to experiments on living cells.": "عملتُ على المستشعرات الجزيئية والبوليمرات وتصوير الأوعية الدموية وإيصال الدواء إلى الرئة. احتاج كل مشروع إلى تقنيات تناسب أسئلته، من التوصيف الطيفي إلى التجارب على الخلايا الحية.",
   "My interests lie where molecular pharmacology meets pharmaceutical delivery. A target hypothesis raises questions about dose, tissue exposure and the response of living cells. I want those measurements to influence molecular and formulation design from the beginning.": "أهتم بالمنطقة التي تلتقي فيها الفارماكولوجيا الجزيئية مع توصيل الأدوية. تقود فرضية الهدف الدوائي إلى أسئلة عن الجرعة والتعرض داخل الأنسجة واستجابة الخلايا الحية، وأريد أن تؤثر هذه القياسات في تصميم الجزيء والمستحضر منذ البداية."
 });
+
+/* Homepage research chronology bilingual mapping, October 2026. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "The route through the laboratories.": "رحلتي بين المختبرات.",
+  "Chemistry research at school": "البحث الكيميائي في المدرسة",
+  "At Doha Independent School, I began working on chemistry research and organized the school's first chemistry exhibition.": "بدأتُ العمل على أبحاث في الكيمياء بمدرسة الدوحة المستقلة، ونظّمت أول معرض للكيمياء في المدرسة.",
+  "Anatomy at school": "التشريح في المدرسة",
+  "Examining a fox specimen makes biological structure tangible years before I enter a research laboratory.": "جعل فحص عيّنة من ثعلب في المدرسة البنية التشريحية شيئًا ملموسًا، قبل دخولي المختبرات البحثية بسنوات.",
+  "A chemistry community forms": "تشكّل مجتمع للكيمياء",
+  "Qatar University's ACS student chapter is established in 2015. Early university laboratory work and the independent Chem Squad conversations take shape by 2016.": "تأسّس الفرع الطلابي للجمعية الكيميائية الأمريكية في جامعة قطر عام 2015، وتبلورت التجارب المختبرية الجامعية الأولى ونقاشات فريق الكيمياء المستقل بحلول عام 2016.",
+  "Research beyond campus": "البحث خارج الحرم الجامعي",
+  "Student-chapter representation and research presentations at the 254th ACS National Meeting in Washington, DC, documented in contemporary reporting.": "مثّلتُ الفرع الطلابي وقدّمتُ أبحاثًا في الاجتماع الوطني الرابع والخمسين بعد المئتين للجمعية الكيميائية الأمريكية بواشنطن العاصمة، كما وثّقته التغطيات المعاصرة.",
+  "From vessels to cell injury": "من الأوعية الدموية إلى إصابة الخلايا",
+  "Published work spans zebrafish endothelial cilia and cardiovascular imaging, pulmonary epithelial mechanobiology, molecular sensing and modified polymer surfaces. I complete my BSc in Chemistry in 2021.": "شملت الأعمال المنشورة الأهداب في بطانة أوعية أسماك الزرد، وتصوير القلب والأوعية، والميكانيكا الحيوية لظهارة الرئة، والاستشعار الجزيئي والأسطح البوليمرية المعدّلة. أكملتُ البكالوريوس في الكيمياء عام 2021.",
+  "Graduate pharmaceutical sciences": "الدراسات العليا في العلوم الصيدلانية",
+  "I begin the MSc in Pharmaceutical Sciences at Qatar University, building towards experimental work in pulmonary formulations and drug delivery.": "بدأتُ دراسة الماجستير في العلوم الصيدلانية بجامعة قطر، واتجهتُ نحو العمل التجريبي على المستحضرات الرئوية وتوصيل الأدوية.",
+  "New methods, continuing work": "تقنيات جديدة وأبحاث متواصلة",
+  "Peer-reviewed fetal-echocardiography machine learning appears in 2023. Materials and nanotextile work also become part of the research record.": "نُشر عام 2023 عملٌ محكّم في تعلّم الآلة لتصوير قلب الجنين بالموجات فوق الصوتية، وأصبحت بحوث المواد والمنسوجات النانوية جزءًا من سجلي البحثي.",
+  "Back to formulation research": "العودة إلى أبحاث المستحضرات",
+  "I return to graduate study in 2025. Work on inhalable vesicles continues alongside scientific computing, research writing and the 2026 SLIT2–ROBO patent review.": "عدتُ إلى الدراسات العليا عام 2025، وتواصل العمل على الحويصلات القابلة للاستنشاق بالتوازي مع الحوسبة العلمية والكتابة البحثية ومراجعة براءات اختراع مسار SLIT2–ROBO المنشورة عام 2026.",
+  "MSc completion": "إكمال الماجستير",
+  "The master's thesis remains in progress. Completion in 2027 is an expectation, not an awarded degree or a published experimental outcome.": "لا تزال رسالة الماجستير قيد الإنجاز، وعام 2027 موعد متوقّع لإكمالها، وليس تاريخًا لمنح الدرجة أو إعلان نتائج تجريبية منشورة."
+});
