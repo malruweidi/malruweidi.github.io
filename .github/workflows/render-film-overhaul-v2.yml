@@ -12,6 +12,7 @@ on:
       - scripts/make-film-qa-contact-sheets.py
       - scripts/normalize-film-captions.py
       - scripts/audit-all-film-recuts.py
+      - scripts/audit-remake-readiness.py
       - tests/film-overhaul-v2.test.cjs
       - film-studio.html
   workflow_dispatch:
@@ -69,8 +70,9 @@ jobs:
             python scripts/remaster-publication-series.py --missing-only --limit 1
             python scripts/normalize-film-captions.py --collection series-v2
             python scripts/audit-all-film-recuts.py --collection series-v2
+            python scripts/audit-remake-readiness.py
             python scripts/make-film-qa-contact-sheets.py --collection series-v2
-            git add assets/films/series-v2/
+            git add assets/films/series-v2/ assets/films/remake-readiness.json
             if ! git diff --cached --quiet; then
               git commit -m "Checkpoint one source-grounded film with decoded-frame and subtitle QA"
               git fetch origin "$BRANCH"
