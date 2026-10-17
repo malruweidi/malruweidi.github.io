@@ -210,6 +210,12 @@
       "number_of_review_cues": 0
     },
     {
+      "film": "essay-adc",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
       "film": "essay-ai-email",
       "collection": "series-v2",
       "review_cues": [],

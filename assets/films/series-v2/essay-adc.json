@@ -1,0 +1,85 @@
+{
+  "id": "essay-adc",
+  "seconds": 84.0,
+  "sha256": "b8a69fa3d8fa1daed4f0699abb32d21dd739c5ff21e121755b53e3849d6f75e2",
+  "primary_source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original lab flask context, not clinical adverse-event footage",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Author's editorial portrait"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/films/art/source-specific/adc-molecular.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/films/art/source-specific/adc-molecular.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/films/art/source-specific/adc-molecular.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "kind": "Original lab flask context, not clinical adverse-event footage",
+      "credit": "Original lab flask context, not clinical adverse-event footage",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/films/art/source-specific/adc-molecular.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "kind": "Author's editorial portrait",
+      "credit": "Author's editorial portrait",
+      "source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "source_visual_revision": "curated-2026-10-17-v3",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "network",
+  "motion_storyboard": {
+    "02": "adc-linker",
+    "03": "adc-linker",
+    "04": "target-exposure",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Target binding",
+    "Payload delivery",
+    "Therapeutic window"
+  ],
+  "evidence_boundary": "The molecular-linker-payload relationship is schematic. Antibody–drug conjugates are not lipid vesicles.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

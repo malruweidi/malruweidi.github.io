@@ -235,6 +235,27 @@
       "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
     },
     {
+      "name": "essay-adc",
+      "seconds": 84.0,
+      "size_bytes": 2444867,
+      "sha256": "b8a69fa3d8fa1daed4f0699abb32d21dd739c5ff21e121755b53e3849d6f75e2",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 27,
+        "max_caption_line": 54,
+        "last_caption_second": 79.65
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
       "name": "essay-ai-email",
       "seconds": 84.0,
       "size_bytes": 2557254,
