@@ -1,0 +1,43 @@
+name: Ruwaidix encoded-film quality gate
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/audit-all-film-recuts.py
+      - .github/workflows/audit-film-recuts.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ruwaidix-video-audit-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  inspect-encoded-video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install genuine encoded-video validation stack
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+      - name: Validate all current publication documentary remakes
+        run: python scripts/audit-all-film-recuts.py --collection series-v2
+      - name: Validate every feature documentary recut
+        run: python scripts/audit-all-film-recuts.py --collection longform-v2
+      - name: Save technical review results without mutating any film
+        run: |
+          git config user.name "Ruwaidix Film Quality Gate"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v2/technical-qa.json assets/films/longform-v2/technical-qa.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Audit full encoded films for interrupted playback, caption coverage and source hashes [qa-only]"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase FETCH_HEAD
+            git push origin HEAD:${{ github.ref_name }}
+          fi
