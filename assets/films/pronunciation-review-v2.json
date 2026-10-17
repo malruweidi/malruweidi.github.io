@@ -234,6 +234,12 @@
       "number_of_review_cues": 0
     },
     {
+      "film": "essay-proximity",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
       "film": "essay-scientific-credit",
       "collection": "series-v2",
       "review_cues": [],

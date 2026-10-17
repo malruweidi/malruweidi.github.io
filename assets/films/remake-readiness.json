@@ -3,9 +3,9 @@
   "interpretation": "The table separates existence, source recency, technical verification, and human scientific/rights approval. Automated tools cannot confer peer review or media rights.",
   "short_films": {
     "expected": 35,
-    "mp4_rendered": 33,
-    "latest_source_and_motion": 33,
-    "encoded_technical_qa": 33,
+    "mp4_rendered": 34,
+    "latest_source_and_motion": 34,
+    "encoded_technical_qa": 34,
     "human_screened": 0,
     "approved_for_replacement": 0,
     "originals_preserved": 35
@@ -509,17 +509,15 @@
     {
       "id": "essay-proximity",
       "title": "When a Drug Makes Two Proteins Meet",
-      "mp4_rendered": false,
+      "mp4_rendered": true,
       "source_revision_required": "curated-2026-10-17-v3",
-      "source_revision_in_mp4": null,
-      "source_visual_and_motion_current": false,
-      "encoded_technical_qa": false,
+      "source_revision_in_mp4": "curated-2026-10-17-v3",
+      "source_visual_and_motion_current": true,
+      "encoded_technical_qa": true,
       "original_archive_preserved": true,
       "human_screened": false,
       "ready_for_public_replacement": false,
       "pending_reasons": [
-        "A complete MP4, timed VTT and source manifest do not yet coexist",
-        "Source or motion edition superseded: needs re-render",
         "Science, audio, rights and editorial human sign-off outstanding"
       ]
     },
