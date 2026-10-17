@@ -66,6 +66,16 @@ LABELS={
  "microfluidic":("SAMPLE CHANNEL","DETECTION REGION"),
  "historical":("RECIPE / DOCUMENT","RECONSTRUCTION: NOT A FACSIMILE")
 }
+# Film titles sharing a broad visual grammar still require precise domain labels.
+# These are educational descriptors, not fabricated experimental observations.
+FILM_LABELS={
+ "drug-release-twins":("RELEASE MODEL","FORMULATION AND TRANSPORT"),
+ "essay-potency-exposure":("POTENCY AND EXPOSURE","UNBOUND CONCENTRATION"),
+ "essay-proximity":("INDUCED PROXIMITY","TARGET AND RECRUITED PARTNER"),
+ "essay-scientific-credit":("A DISCOVERY'S CONTRIBUTORS","EVIDENCE AND ATTRIBUTION"),
+ "heterocycle-cancer":("HETEROCYCLIC SYNTHESIS","CHEMICAL IDENTITY BEFORE BIOLOGY")
+}
+
 PHOTO={
  "airway-reopening":["assets/home-archive/figure-pulmonary-flow-chamber.jpg"],
  # The pictured heart-video analysis software belongs to hemodynamics, not
@@ -135,7 +145,7 @@ def scene_art(slug,idx,phase,output):
   line(d,(88,y,1192,y),GRID,1)
  d.rounded_rectangle((78,86,1203,548),radius=22,fill=(17,45,51),outline=(57,92,90),width=2)
  # Small source-independent guide sits INSIDE diagram but does not repeat title.
- first,second=LABELS[typ]
+ first,second=FILM_LABELS.get(slug,LABELS[typ])
  txt(d,(112,108),first,18,GOLD,True)
  txt(d,(112,496),second,18,MINT,True)
  x0=250;y0=185
@@ -698,7 +708,7 @@ def chapter_five_reworks(d,slug,idx,phase):
     xx=247+32*(k%4);yy=286+34*(k//4)
     oval(d,xx,yy,5,GOLD,3)
    arrow(456,598)
-   card(617,224,485,104,"MATHEMATICAL MODEL","PREDICTED RELEASE / NO DATA")
+   card(617,224,485,104,"MATHEMATICAL MODEL","ILLUSTRATIVE RELEASE PROFILE")
    card(617,355,485,104,"PERFORMANCE CLAIM","REQUIRES EXPERIMENTAL TEST",GOLD)
   elif idx==4:
    card(145,230,322,153,"MODEL OUTPUT","QUALITATIVE PATTERN",MINT)
