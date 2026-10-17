@@ -1,9 +1,24 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 4,
+  "count": 8,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
+    {
+      "id": "ace2-covid-drugs",
+      "title": "An enzyme, a receptor, a clinical question",
+      "publication": "Soluble ACE2 and angiotensin II levels are modulated in hypertensive COVID-19 patients treated with different antihypertension drugs",
+      "poster": "/assets/films/series-v7-pilots/ace2-covid-drugs.webp",
+      "file": "/assets/films/series-v7-pilots/ace2-covid-drugs.mp4",
+      "captions": "/assets/films/series-v7-pilots/ace2-covid-drugs.vtt",
+      "manifest": "/assets/films/series-v7-pilots/ace2-covid-drugs.json",
+      "contact": "/assets/films/series-v7-pilots/ace2-covid-drugs.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific",
+      "sha256": "c422f4ce61028eaaa79480c35d00fa673a9c6b9ae16a1ed5ff07e5e79ea39d77",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
     {
       "id": "airway-reopening",
       "title": "A breath can injure",
@@ -50,6 +65,36 @@
       "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
+      "id": "echo-cnn-lstm",
+      "title": "Can an algorithm read a moving heart?",
+      "publication": "Deep learning technique for congenital heart disease detection using stacking-based CNN-LSTM models from fetal echocardiogram: a pilot study",
+      "poster": "/assets/films/series-v7-pilots/echo-cnn-lstm.webp",
+      "file": "/assets/films/series-v7-pilots/echo-cnn-lstm.mp4",
+      "captions": "/assets/films/series-v7-pilots/echo-cnn-lstm.vtt",
+      "manifest": "/assets/films/series-v7-pilots/echo-cnn-lstm.json",
+      "contact": "/assets/films/series-v7-pilots/echo-cnn-lstm.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.2-ultrasound",
+      "sha256": "caabab213012c1e803736029b5afcfffc205debe5fb25482d28affc83d0c2fc4",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "niosomes",
+      "title": "Will the medicine survive the nebulizer?",
+      "publication": "Inhalable dexamethasone niosomes and proniosomes",
+      "poster": "/assets/films/series-v7-pilots/niosomes.webp",
+      "file": "/assets/films/series-v7-pilots/niosomes.mp4",
+      "captions": "/assets/films/series-v7-pilots/niosomes.vtt",
+      "manifest": "/assets/films/series-v7-pilots/niosomes.json",
+      "contact": "/assets/films/series-v7-pilots/niosomes.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific",
+      "sha256": "9a545eee804c106831e85c02496d668ee8ca2dbfa964b5e0d6b8d36813cdbf24",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
       "id": "slit2-robo",
       "title": "The target that can change sides",
       "publication": "SLIT2 and ROBO-axis inhibitors for the treatment of cancer: a patent review (2020–2026)",
@@ -60,6 +105,21 @@
       "contact": "/assets/films/series-v7-pilots/slit2-robo.contact.webp",
       "visual_revision": "v7.8-clean-screen/v7.4-chapter-specific-receptor-clean-panel",
       "sha256": "b175eafffd28811b6762a1085c31e8455b14f85065da3f702ed38b8a34e902fa",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "zebrafish-hemodynamics",
+      "title": "A heartbeat in high-speed frames",
+      "publication": "Cardiac function and blood flow hemodynamics assessment of zebrafish using high-speed video microscopy",
+      "poster": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.webp",
+      "file": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.mp4",
+      "captions": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.vtt",
+      "manifest": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.json",
+      "contact": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific",
+      "sha256": "e7a992c6e118cde6e13e5575e6c62e5dad5fc963745918e7d3c58ba5a4e763d8",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
