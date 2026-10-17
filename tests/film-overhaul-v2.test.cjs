@@ -43,6 +43,6 @@ test('source-based preview will not claim remakes are human approved',()=>{
   assert.ok(page.includes('NOT YET HUMAN-SCREENED'));
   assert.ok(page.includes('remake-direction.json'));
   assert.ok(page.includes('series-v2'));
-  assert.ok(page.includes('series/'));
+  assert.ok(page.includes('series') && page.includes("'v1'"));
   assert.ok(page.includes('publication-cinema.html'));
 });
