@@ -1,0 +1,48 @@
+name: 2018 cranial endothelial cilia exact-article figure and license audit
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/audit-cerebral-cilia-source.py
+      - .github/workflows/audit-cerebral-cilia-source.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  audit-exact-jats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Verify primary manuscript DOI, source figure legends, and legal reuse status
+        run: python scripts/audit-cerebral-cilia-source.py
+      - name: Check it is not a reused hemodynamics paper
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          p=Path("assets/films/source-figures/v5/cerebral-cilia/rights-and-figure-inventory.json")
+          a=json.loads(p.read_text())
+          assert a["doi"]=="10.1161/ATVBAHA.118.311231"
+          assert a["pmcid"]=="PMC6309420"
+          assert "cerebral" in a["title"].lower()
+          assert len(a["figures"])>=2
+          assert all("NOT AUTHORISED" in x["image_import"] for x in a["figures"])
+          print("Metadata-only rights and figure inventory correctly separated from published microscopy.")
+          PY
+      - name: Preserve this primary paper audit as rights evidence, not a film
+        run: |
+          git config user.name "Ruwaidix Figure Rights Audit"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/source-figures/v5/cerebral-cilia/rights-and-figure-inventory.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Document exact 2018 cranial-cilia paper image rights and source figure captions"
+            git fetch origin "${{ github.ref_name }}"
+            if git rebase "origin/${{ github.ref_name }}"; then
+              git push origin HEAD:"${{ github.ref_name }}"
+            else
+              git rebase --abort
+              echo "Concurrent figure-rights update; no unsupported image import allowed."
+              exit 1
+            fi
+          fi
