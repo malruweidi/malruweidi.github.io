@@ -15,10 +15,11 @@ CAT=ROOT/"assets/films/publication-series.json"
 # Rebuilt corrections require new source-derived images; unchanged films remain cached.
 FRAME_REVISION="v7.3-caption-safe"
 ART_REVISIONS={
- "cerebral-cilia":"v7.2-cilia-provenance",
- "slit2-robo":"v7.2-robo-receptor",
+ "cerebral-cilia":"v7.4-chapter-specific-cilia",
+ "slit2-robo":"v7.4-chapter-specific-receptor",
  "echo-cnn-lstm":"v7.2-ultrasound",
- "cubosome-theranostics":"v7.2-bicontinuous"
+ "cubosome-theranostics":"v7.4-chapter-specific-cubosomes",
+ "food-printing":"v7.4-chapter-specific-food-rheology"
 }
 def expected_visual_revision(slug):
  return FRAME_REVISION+"/"+ART_REVISIONS.get(slug,"film-specific")
