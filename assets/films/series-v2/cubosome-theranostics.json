@@ -1,0 +1,84 @@
+{
+  "id": "cubosome-theranostics",
+  "seconds": 84.0,
+  "sha256": "79640b09d95425ad1bfb89f331708bbe68a1c5daecd862c64d0a126e09aec0e1",
+  "primary_source": "/#publications",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Nanomedicine context image, not cubosome micrograph",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Original cell culture laboratory context, not data from this chapter",
+    "General biomaterials research imagery",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/films/art/cubosome-topology.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/evidence-biomaterials.webp",
+      "kind": "Nanomedicine context image, not cubosome micrograph",
+      "credit": "Nanomedicine context image, not cubosome micrograph",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/films/art/cubosome-topology.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "kind": "Original cell culture laboratory context, not data from this chapter",
+      "credit": "Original cell culture laboratory context, not data from this chapter",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/evidence-biomaterials.webp",
+      "kind": "General biomaterials research imagery",
+      "credit": "General biomaterials research imagery",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/films/art/cubosome-topology.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#publications"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "materials",
+  "motion_storyboard": {
+    "02": "materials",
+    "03": "vesicle",
+    "04": "molecule",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Bicontinuous topology",
+    "Cargo transport",
+    "Translation barrier"
+  ],
+  "evidence_boundary": "No measured cubic phase or therapeutic result is depicted.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

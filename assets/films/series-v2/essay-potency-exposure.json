@@ -1,0 +1,85 @@
+{
+  "id": "essay-potency-exposure",
+  "seconds": 84.0,
+  "sha256": "d4b22c3b0cfd55f657131889be2cc06c7e40b7c6694494acbf2795e131b8df65",
+  "primary_source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original analysis workspace, not a clinical dosing model",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original chemistry archive"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/films/art/source-specific/pk-potency.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/films/art/source-specific/pk-potency.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/films/art/source-specific/pk-potency.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "kind": "Original analysis workspace, not a clinical dosing model",
+      "credit": "Original analysis workspace, not a clinical dosing model",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/films/art/source-specific/pk-potency.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "kind": "Original chemistry archive",
+      "credit": "Original chemistry archive",
+      "source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "source_visual_revision": "curated-2026-10-17-v3",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "signal",
+  "motion_storyboard": {
+    "02": "target-exposure",
+    "03": "target-exposure",
+    "04": "signal",
+    "05": "target-exposure"
+  },
+  "motion_annotations": [
+    "In-vitro potency",
+    "Pharmacokinetics",
+    "Target-site exposure"
+  ],
+  "evidence_boundary": "No simulated concentration curve shown as patient data.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

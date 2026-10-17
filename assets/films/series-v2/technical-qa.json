@@ -1,0 +1,742 @@
+{
+  "collection": "series-v2",
+  "method": "Decoded H.264/AAC and 2Hz full-film low-resolution luminance frames; machine technical QA only",
+  "caveat": "No synthetic assessment can establish scientific truth, ethical rights, cultural sensitivity or naturalness of pronunciation.",
+  "films": [
+    {
+      "name": "ace2-covid-drugs",
+      "seconds": 84.0,
+      "size_bytes": 2437301,
+      "sha256": "8d150a0af5b9b999015837afcf6910b67c8a1409023d4324f3de707ba176eae5",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 21,
+        "max_caption_line": 54,
+        "last_caption_second": 80.89
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "ace2-forms",
+      "seconds": 84.0,
+      "size_bytes": 2434654,
+      "sha256": "78af056cc7c36a1bf69ee8ace6647503f12f60c46addd009f284bc02995410fe",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 80.86
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "airway-reopening",
+      "seconds": 84.0,
+      "size_bytes": 2489721,
+      "sha256": "0751123c798b5725eebe5ceab6b8f813a9fce50748fbfc5168217d1383eb1193",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 23,
+        "max_caption_line": 54,
+        "last_caption_second": 79.17
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "cairo-microscope",
+      "seconds": 84.0,
+      "size_bytes": 2566244,
+      "sha256": "e6458de0f191fa6ff2f698ff4f7f6d5bd03bb28fc965e91402dc14a18d5d8140",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 20,
+        "max_caption_line": 54,
+        "last_caption_second": 77.73
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "ceramics-printing",
+      "seconds": 84.0,
+      "size_bytes": 2489398,
+      "sha256": "c0798140413c90ebe36b704d7f9fd7a8e3cdc7538249e0a801855e4bb2743360",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 25,
+        "max_caption_line": 53,
+        "last_caption_second": 80.33
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "cerebral-cilia",
+      "seconds": 84.0,
+      "size_bytes": 3465509,
+      "sha256": "06f75066973464e16d89d87c9614fdd6ca70f7b5ce23b8e2540e358c9bf5813a",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 20,
+        "max_caption_line": 54,
+        "last_caption_second": 78.51
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "cubosome-theranostics",
+      "seconds": 84.0,
+      "size_bytes": 2456226,
+      "sha256": "79640b09d95425ad1bfb89f331708bbe68a1c5daecd862c64d0a126e09aec0e1",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 20,
+        "max_caption_line": 54,
+        "last_caption_second": 79.03
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "curcumin-cyanide",
+      "seconds": 84.0,
+      "size_bytes": 2824724,
+      "sha256": "881ff4d8be7061c9e289b56de1c7bb71e0cf9eb18da1efd58c705db28fdd6ba3",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 21,
+        "max_caption_line": 54,
+        "last_caption_second": 78.98
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "drug-release-twins",
+      "seconds": 84.0,
+      "size_bytes": 2730382,
+      "sha256": "7d171ee68f821f89898be4e4fd651207a9df74a437afac8c92542b8155e0da44",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 21,
+        "max_caption_line": 53,
+        "last_caption_second": 80.14
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "echo-cnn-lstm",
+      "seconds": 84.0,
+      "size_bytes": 2772727,
+      "sha256": "fa233fa4d04ec538e035401c95268357c738dea18f25aef668d6cd41f43661b7",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 24,
+        "max_caption_line": 54,
+        "last_caption_second": 81.67
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "essay-academic-mental-health",
+      "seconds": 84.0,
+      "size_bytes": 2734332,
+      "sha256": "b30b79489f0c59ba51410c60c237a9b959e554b74b97ba0b4147804ebce485d8",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 79.76
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "essay-adc",
+      "seconds": 84.0,
+      "size_bytes": 2444867,
+      "sha256": "b8a69fa3d8fa1daed4f0699abb32d21dd739c5ff21e121755b53e3849d6f75e2",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 27,
+        "max_caption_line": 54,
+        "last_caption_second": 79.65
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "essay-ai-email",
+      "seconds": 84.0,
+      "size_bytes": 2557254,
+      "sha256": "1705f99589161d8c3de69e72998d2ad546d7e4047c42db0bdccb426872020f20",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 26,
+        "max_caption_line": 54,
+        "last_caption_second": 79.91
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "essay-life-between-diagnoses",
+      "seconds": 84.0,
+      "size_bytes": 2566197,
+      "sha256": "673250501bdf437c9bf0df77d308de3a8181e94cfebd28708b0de84d66856f67",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 20,
+        "max_caption_line": 54,
+        "last_caption_second": 80.31
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "essay-machine-language",
+      "seconds": 84.0,
+      "size_bytes": 2565787,
+      "sha256": "c089e7cf4e63ed1c3cec008d3a782089191c78c1ffffaaa11d9c4e5be0db22ad",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 23,
+        "max_caption_line": 54,
+        "last_caption_second": 79.68
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "essay-potency-exposure",
+      "seconds": 84.0,
+      "size_bytes": 2425739,
+      "sha256": "d4b22c3b0cfd55f657131889be2cc06c7e40b7c6694494acbf2795e131b8df65",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 78.83
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "essay-proximity",
+      "seconds": 84.0,
+      "size_bytes": 2576956,
+      "sha256": "0feed76ce0988ff7fd11bebbf330f8630ef1415325000f579eceabfecba7bf0a",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 24,
+        "max_caption_line": 54,
+        "last_caption_second": 80.5
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "essay-scientific-credit",
+      "seconds": 84.0,
+      "size_bytes": 2722476,
+      "sha256": "c605e36ef54ab912dca71b57bb4eebc16a44759afc71799e6928c577b289801e",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 25,
+        "max_caption_line": 54,
+        "last_caption_second": 80.33
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "essay-tf-states",
+      "seconds": 84.0,
+      "size_bytes": 2557923,
+      "sha256": "b36ecebbe4861f9ac55c403b1b3170b0eafc06fd5b4ddbe4104ace0279585ce2",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 80.53
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "essay-trna",
+      "seconds": 84.0,
+      "size_bytes": 2497912,
+      "sha256": "b9ebc7074c7f7d57ade17045269378592361021a4e3f6d2181443ef7da0655b2",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 20,
+        "max_caption_line": 53,
+        "last_caption_second": 80.32
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "flow-chamber-method",
+      "seconds": 84.0,
+      "size_bytes": 2564876,
+      "sha256": "c36935f5a6b5acaec589937c0da99001d39b454887ba78da09db2fb86a6b3700",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 79.36
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "food-printing",
+      "seconds": 84.0,
+      "size_bytes": 2643971,
+      "sha256": "13a600a45699f71f0c70ef999413599489bc8907a0596eb8a8310cb659dab678",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 79.71
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "gi-autoimmunity-1",
+      "seconds": 84.0,
+      "size_bytes": 2546824,
+      "sha256": "724d11fef267f71e242d3c43a8e57b10fb1b823394745d9eb0561033cb473d9f",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 80.12
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "gi-autoimmunity-2",
+      "seconds": 84.0,
+      "size_bytes": 2487805,
+      "sha256": "f5cc6e9b4ea221aa7cee58c2c5bac6e97ab48e3a11676367252b23f246957472",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 23,
+        "max_caption_line": 53,
+        "last_caption_second": 79.55
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "heart-failure-sensors",
+      "seconds": 84.0,
+      "size_bytes": 2678273,
+      "sha256": "88db7c8b1bb5d31d4befad4a604afaf3b76550a1c914dd8524a039a71dc54030",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 53,
+        "last_caption_second": 80.96
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "heterocycle-cancer",
+      "seconds": 84.0,
+      "size_bytes": 2533598,
+      "sha256": "d7ba0e76ef284897322ed58a9a6c2115b66c36409ec0fb87a8e0da44fae5b483",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 24,
+        "max_caption_line": 54,
+        "last_caption_second": 79.4
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "histology-failure",
+      "seconds": 84.0,
+      "size_bytes": 2528614,
+      "sha256": "93ab27a0bdb8792fb1d6c6df3aef7cc7164feb99f9ba174cbd8d571b9fc77b68",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 78.62
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "making-medicines-keep",
+      "seconds": 84.0,
+      "size_bytes": 2494142,
+      "sha256": "89b64d689b66fe4b053ba04a25d0946a6255d8279ddecbeb1e79d8bde9e52acc",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 23,
+        "max_caption_line": 54,
+        "last_caption_second": 80.76
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "micelles-pahs",
+      "seconds": 84.0,
+      "size_bytes": 2808573,
+      "sha256": "23c6564b48d18a64b7f0fb8a8df35bae2133f7d50a01c33dceab1181061cb3c7",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 25,
+        "max_caption_line": 54,
+        "last_caption_second": 80.02
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "microfluidic-virus",
+      "seconds": 84.0,
+      "size_bytes": 2545378,
+      "sha256": "afb095bde1541a9500259051bad31ec25846893b856f2cb7ba7a4cc8762eea40",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 23,
+        "max_caption_line": 54,
+        "last_caption_second": 79.51
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "niosomes",
+      "seconds": 84.0,
+      "size_bytes": 2496282,
+      "sha256": "633d98666c7711448e44aa96b681d02a911db1b3258e82fe5903360f96fcdd26",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 18,
+        "max_caption_line": 53,
+        "last_caption_second": 78.54
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "pla-grafting",
+      "seconds": 84.0,
+      "size_bytes": 2406447,
+      "sha256": "027c64a046b248839dbca0245eb13c301582a17eb70cd93dedb6b39c7c5f6266",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 21,
+        "max_caption_line": 54,
+        "last_caption_second": 80.4
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "pla-scaffolds",
+      "seconds": 84.0,
+      "size_bytes": 2514270,
+      "sha256": "5dc9a7eef96f6a1d39ba050075c469e8fa49c312d8558b17d3a64acf3f694b4e",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 24,
+        "max_caption_line": 54,
+        "last_caption_second": 80.98
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "slit2-robo",
+      "seconds": 84.0,
+      "size_bytes": 2557608,
+      "sha256": "914236d1730593996a8a56e1dd9aec1569edf6d964f4699d277d532ed6af6313",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 17,
+        "max_caption_line": 54,
+        "last_caption_second": 79.21
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
+      "name": "zebrafish-hemodynamics",
+      "seconds": 84.0,
+      "size_bytes": 2643359,
+      "sha256": "cc1793d76788bec81f61bc77b71a0c656c7c8ba6a2048e42e893ffebe98305cc",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 19,
+        "max_caption_line": 54,
+        "last_caption_second": 78.96
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    }
+  ]
+}

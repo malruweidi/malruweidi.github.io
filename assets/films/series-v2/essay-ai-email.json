@@ -1,0 +1,85 @@
+{
+  "id": "essay-ai-email",
+  "seconds": 84.0,
+  "sha256": "1705f99589161d8c3de69e72998d2ad546d7e4047c42db0bdccb426872020f20",
+  "primary_source": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original research workstation, not the correspondence being discussed",
+    "Author's archival university library photo, not the recipient",
+    "Original author presentation image, not a reenactment of the anecdote",
+    "Archival author research workspace, no actual editor invoices implied",
+    "Original chemistry chalkboard archive, metaphorical context",
+    "Actual editorial portrait of the author"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "kind": "Original research workstation, not the correspondence being discussed",
+      "credit": "Original research workstation, not the correspondence being discussed",
+      "source": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "kind": "Author's archival university library photo, not the recipient",
+      "credit": "Author's archival university library photo, not the recipient",
+      "source": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/archival-2026-10-12/university-podium-talk-2017.webp",
+      "kind": "Original author presentation image, not a reenactment of the anecdote",
+      "credit": "Original author presentation image, not a reenactment of the anecdote",
+      "source": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "kind": "Archival author research workspace, no actual editor invoices implied",
+      "credit": "Archival author research workspace, no actual editor invoices implied",
+      "source": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "kind": "Original chemistry chalkboard archive, metaphorical context",
+      "credit": "Original chemistry chalkboard archive, metaphorical context",
+      "source": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "kind": "Actual editorial portrait of the author",
+      "credit": "Actual editorial portrait of the author",
+      "source": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "source_visual_revision": "essay-motion-2026-10-17-v1",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "editorial",
+  "motion_storyboard": {
+    "02": "letter-review",
+    "03": "letter-review",
+    "04": "institution-form",
+    "05": "attribution-network"
+  },
+  "motion_annotations": [
+    "A written message",
+    "AI accusations",
+    "Standards of evidence"
+  ],
+  "evidence_boundary": "No quotations attributed to real correspondents.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "making-medicines-keep",
+  "seconds": 84.0,
+  "sha256": "89b64d689b66fe4b053ba04a25d0946a6255d8279ddecbeb1e79d8bde9e52acc",
+  "primary_source": "/#history",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Personal editorial portrait; not a historical document",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/films/art/medieval-pharmacy.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#history"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/films/art/medieval-pharmacy.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#history"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/films/art/medieval-pharmacy.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#history"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/films/art/medieval-pharmacy.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#history"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "kind": "Personal editorial portrait; not a historical document",
+      "credit": "Personal editorial portrait; not a historical document",
+      "source": "/#history"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/films/art/medieval-pharmacy.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/#history"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "pharmacy",
+  "motion_storyboard": {
+    "02": "pharmacy",
+    "03": "pharmacy",
+    "04": "editorial",
+    "05": "editorial"
+  },
+  "motion_annotations": [
+    "Preparation",
+    "Consistency and storage",
+    "Substitution decisions"
+  ],
+  "evidence_boundary": "A modern schematic, not an authentic medieval instrument.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

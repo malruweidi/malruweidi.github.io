@@ -1,0 +1,196 @@
+{
+  "collection": "longform-v2",
+  "method": "Decoded H.264/AAC and 2Hz full-film low-resolution luminance frames; machine technical QA only",
+  "caveat": "No synthetic assessment can establish scientific truth, ethical rights, cultural sensitivity or naturalness of pronunciation.",
+  "films": [
+    {
+      "name": "airway-reopening-evidence-cut",
+      "seconds": 180.0,
+      "size_bytes": 5256718,
+      "sha256": "dd13ff67103b71ad69f1151f2bc51e1099028bcafda0387c0f4db3022a73ef42",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 46,
+        "max_caption_line": 54,
+        "last_caption_second": 179.6
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED"
+    },
+    {
+      "name": "cairo-microscope",
+      "seconds": 120.0,
+      "size_bytes": 3965567,
+      "sha256": "40e8d6d2c84422d63dfdea9330db80be1234c773896ba05080495fcdfbb2da12",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 25,
+        "max_caption_line": 53,
+        "last_caption_second": 113.65
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED"
+    },
+    {
+      "name": "making-medicines-keep",
+      "seconds": 120.0,
+      "size_bytes": 3632780,
+      "sha256": "86b545cd8fd790104b2cf7e5874832411ae5f6974a75bcb5d91d74a46fa1fd67",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 48,
+        "max_caption_line": 54,
+        "last_caption_second": 118.12
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED"
+    },
+    {
+      "name": "ring-that-never-closed",
+      "seconds": 180.0,
+      "size_bytes": 5139910,
+      "sha256": "5e7adbada0e00243d35125599a60e718ec6aeedd4835d0591bd15b322ff8df17",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 43,
+        "max_caption_line": 54,
+        "last_caption_second": 179.55
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED"
+    },
+    {
+      "name": "the-laboratory-we-carried-with-us",
+      "seconds": 120.0,
+      "size_bytes": 3457141,
+      "sha256": "9ed9f1a6ead142cb8c4991cc988f27473980ae5fa34e1ff936f20176b30099eb",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 45,
+        "max_caption_line": 54,
+        "last_caption_second": 117.76
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED"
+    },
+    {
+      "name": "two-materials-no-section",
+      "seconds": 150.0,
+      "size_bytes": 4790821,
+      "sha256": "441bf5013c4aebe5431dc59cd46df9cd3f6a002c78c587a1f4258f16e3571034",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 37,
+        "max_caption_line": 54,
+        "last_caption_second": 150.38
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED"
+    },
+    {
+      "name": "two-materials-no-section-evidence-cut",
+      "seconds": 120.0,
+      "size_bytes": 3383165,
+      "sha256": "65eb566550ed92ede137140664bfc4e324bc042596db1b91df0a657d8d15604b",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 42,
+        "max_caption_line": 54,
+        "last_caption_second": 116.17
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED"
+    },
+    {
+      "name": "what-a-bubble-can-do",
+      "seconds": 120.0,
+      "size_bytes": 3400968,
+      "sha256": "f7f126af5dcd5d195f7bd3b7b98acc89c922460f52b634d34f3779350c4511fa",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 44,
+        "max_caption_line": 54,
+        "last_caption_second": 117.44
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED"
+    },
+    {
+      "name": "what-survives-the-experiment",
+      "seconds": 120.0,
+      "size_bytes": 4327956,
+      "sha256": "98fc87e17173842aecdd8ea36e45591bc220960530dc3a9d8a44f785d0755052",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 44,
+        "max_caption_line": 54,
+        "last_caption_second": 119.04
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED"
+    }
+  ]
+}

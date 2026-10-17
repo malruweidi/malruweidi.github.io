@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Review the evolving, source-annotated cinematic remakes of Ruwaidix research and writing documentaries alongside the original releases.">
+<title>Film Studio · Ruwaidix</title>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<style>
+:root{color-scheme:dark;--bg:#10242a;--paper:#f4eee1;--mute:#bdc9c1;--line:#3d5b5c;--accent:#dba67e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--paper);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+a{color:#eac3a4}a:focus-visible,button:focus-visible{outline:3px solid #f6d5a3;outline-offset:3px}
+.page{max-width:1360px;margin:auto;padding:1.6rem clamp(1rem,4vw,3rem) 5rem}
+nav{display:flex;flex-wrap:wrap;gap:1.3rem;border-bottom:1px solid var(--line);padding-bottom:1rem;font-size:.91rem}
+.eyebrow{text-transform:uppercase;letter-spacing:.17em;color:var(--accent);font-size:.77rem}
+h1{font-family:Georgia,serif;font-weight:400;letter-spacing:-.04em;line-height:1.1;font-size:clamp(2.8rem,6vw,5.5rem);max-width:850px;margin:.35em 0}
+h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(1.5rem,2.7vw,2.3rem);line-height:1.15;margin:.4rem 0}
+.lead{font-size:1.1rem;color:var(--mute);max-width:820px;line-height:1.8}
+.note{max-width:860px;border-left:3px solid var(--accent);padding:.2rem 0 .2rem 1.1rem;color:var(--mute)}
+.main{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(290px,.85fr);gap:clamp(1.1rem,3vw,2.4rem);margin-top:2.8rem}
+.screen{background:#07161b;border:1px solid var(--line);border-radius:6px;overflow:hidden;min-width:0}
+.screen video{width:100%;display:block;aspect-ratio:16/9;background:#061217}
+.screen .empty{aspect-ratio:16/9;display:grid;place-items:center;padding:2rem;color:var(--mute)}
+.screen .under{padding:1rem 1.2rem;border-top:1px solid var(--line)}
+.controls{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+button{cursor:pointer;border:1px solid #607b78;border-radius:3px;padding:.7rem 1rem;font:inherit;background:transparent;color:var(--paper)}
+button[aria-pressed="true"]{background:#d1a486;color:#0b282b;border-color:#d1a486}
+button:hover{border-color:var(--accent)}
+small,.meta{color:var(--mute)}
+details{border-top:1px solid var(--line);padding:.75rem 0}summary{cursor:pointer;color:var(--paper)}
+.scenes{padding-left:1rem}.scenes li{margin:.8rem 0}.scenes p{margin:.25rem 0;color:var(--mute);font-size:.87rem}
+.list{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1rem;margin-top:1.5rem}
+.film{border:1px solid var(--line);background:#152f35;display:grid;grid-template-columns:115px 1fr;min-height:135px}
+.film img{width:115px;height:100%;object-fit:cover;background:#26404a}
+.film .desc{padding:.8rem}.film p{font-size:.79rem;color:var(--mute);margin:.4rem 0}.film button{padding:.35rem .6rem;margin-top:.4rem;font-size:.85rem}
+.film.selected{border-color:#d4a67f;box-shadow:0 0 0 1px #d4a67f}
+.subtitle{font-size:.81rem;letter-spacing:.08em;color:#d7b794}
+footer{margin-top:4rem;border-top:1px solid var(--line);padding-top:1.5rem;color:var(--mute)}
+@media(max-width:900px){.main{grid-template-columns:1fr}.film{grid-template-columns:98px 1fr}.film img{width:98px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+<nav aria-label="Ruwaidix navigation"><a href="/">Home</a><a href="/publication-cinema.html">Publication cinema</a><a href="/films.html">Long documentaries</a><a href="/feature-film-studio.html">Nine feature recuts</a><a href="/stories.html">Stories</a><a href="/figures.html">Figures</a></nav>
+<header>
+<p class="eyebrow">RUWAIDIX / SOURCE CONTROLLED FILMMAKING</p>
+<h1>Film studio.</h1>
+<p class="lead">Every film begins with a published paper, a research record, or an authored essay. These evolving edits pair original photographs and research figures with animated explanations. Their purpose is to make the underlying work more intelligible, not to replace its evidence.</p>
+<p class="note"><strong>Review status: NOT YET HUMAN-SCREENED.</strong> Automated rendering and source tracking do not certify narration, pronunciation, licensing, scientific interpretation, or viewing quality. The original films and source visuals remain accessible.</p>
+</header>
+<div class="main">
+<main>
+<div id="selected" aria-live="polite"><p class="meta">Choose a film below to review its cut and scene evidence.</p></div>
+<div id="player" class="screen"><div class="empty">Choose a title from the film index.</div></div>
+<div class="controls" aria-label="Film cut selection"><button type="button" id="v2" aria-pressed="true">New cinematic cut</button><button type="button" id="v1" aria-pressed="false">Original film</button></div>
+<p id="status" class="meta">Cinematic cuts are published incrementally. If one is not ready, its original remains available.</p>
+<section id="evidence" aria-label="Chapter evidence and narration"></section>
+</main>
+<aside>
+<p class="eyebrow">DIRECTOR'S NOTEBOOK</p>
+<h2 id="motion-title">Evidence determines the camera.</h2>
+<p id="motion-note" class="lead" style="font-size:.96rem">Research graphics keep their scales, axes and captions. Animated molecular or historical graphics are declared illustrative. Photographs carry their own provenance. No invented result is displayed as a measurement.</p>
+<div id="annotations"></div>
+<p><a href="/assets/films/remake-direction.json">Read the complete motion and evidence register ↗</a></p><p><a href="/assets/films/pronunciation-review-v2.json">Find time-coded technical pronunciation passages for human audition ↗</a></p>
+</aside>
+</div>
+<section aria-labelledby="film-index">
+<p class="eyebrow" style="margin-top:3rem">FULL EDITORIAL COLLECTION</p>
+<h2 id="film-index">The 35 films</h2>
+<div id="collection" class="list"></div>
+</section>
+<footer>Ruwaidix · An open-source, reversible editorial film collection. Scientific manuscripts, owner archive and original cut retained. <a href="/feature-film-studio.html">Compare nine longer documentary editions ↗</a> · <a href="/publication-cinema.html">Return to source library</a>.</footer>
+</div>
+<script>
+(async()=>{
+const byId=id=>document.getElementById(id);
+const esc=t=>String(t||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const [a,b]=await Promise.all([fetch('/assets/films/publication-series.json'),fetch('/assets/films/remake-direction.json')]);
+if(!a.ok||!b.ok){byId('status').textContent='The editorial film registers could not be loaded.';return}
+const films=(await a.json()).items, direction=(await b.json()).films;
+let selected=null, cut='v2';
+function uri(id,edition,ext){return '/assets/films/'+(edition==='v2'?'series-v2':'series')+'/'+encodeURIComponent(id)+'.'+ext}
+async function check(url){try{const r=await fetch(url,{method:'HEAD',cache:'no-cache'});return r.ok&&(r.headers.get('content-type')||'').includes('video/')}catch{return false}}
+async function player(){
+  if(!selected)return;
+  const serial=selected.id;const requested=cut;const target=byId('player');
+  const preferred=uri(serial,cut,'mp4');
+  let video=preferred,edition=cut;
+  byId('status').textContent='Checking the available cut…';
+  let staleRemake=false;
+  let shouldFallback=!(await check(preferred));
+  if(!shouldFallback&&cut==='v2'&&selected.source_visual_revision){
+    try{
+      const metaResponse=await fetch(uri(serial,'v2','json'),{cache:'no-store'});
+      const meta=metaResponse.ok?await metaResponse.json():null;
+      if(!meta||meta.source_visual_revision!==selected.source_visual_revision){
+        shouldFallback=true;
+        staleRemake=true;
+      }
+    }catch{shouldFallback=true;staleRemake=true}
+  }
+  if(shouldFallback){video=uri(serial,'v1','mp4');edition='v1'}
+  if(!selected||selected.id!==serial||cut!==requested)return;
+  target.innerHTML='<video controls playsinline preload="metadata" poster="'+esc(edition==='v2'?(direction[serial]?.review_poster||selected.poster):selected.poster)+'" aria-label="'+esc(selected.film_title)+'"><source src="'+esc(video)+'" type="video/mp4"><track kind="captions" src="'+esc(uri(serial,edition,'vtt'))+'" srclang="en" label="English captions"></video><div class="under"><a href="'+esc(uri(serial,edition,'vtt'))+'">Open the narrated transcript and captions ↗</a></div>';
+  byId('status').textContent=edition==='v2'?'Cinematic draft available. Human audiovisual approval remains outstanding.':staleRemake?'Showing the original: the scientifically revised film has not completed its new source-validated render.':'Showing the original 84-second version; the new edition is still in production.';
+  // The two cuts may contain DIFFERENT pictures. Use the exact per-cut
+  // provenance manifest, never attribute a newer scientific illustration
+  // to archival footage in the original film.
+  let provenance=[];
+  try{const response=await fetch(uri(serial,edition,'json'));if(response.ok){const manifest=await response.json();provenance=manifest.scene_provenance||[]}}catch{}
+  if(!selected||selected.id!==serial||cut!==requested)return;
+  byId('evidence').innerHTML='<details><summary>Inspect all six scenes and evidence actually displayed in the '+(edition==='v2'?'new':'original')+' film</summary><ol class="scenes">'+selected.scenes.map((s,i)=>{const p=provenance[i]||{};const image=p.image||s.image;const context=p.source||s.link;return '<li><strong>'+esc(s.title)+'</strong><p>'+esc(s.narration)+'</p><p>'+esc(p.credit||s.credit)+' · '+esc(p.kind||s.kind)+' · <a href="'+esc(context)+'">Source/context</a> · <a target="_blank" rel="noopener" href="'+esc('/'+image.replace(/^[/]+/,''))+'">Inspect original figure ↗</a></p></li>'}).join('')+'</ol></details>';
+}
+function choose(item){
+  selected=item;
+  const plan=direction[item.id];
+  byId('selected').innerHTML='<p class="eyebrow">'+esc(item.year)+' / '+esc(item.category)+'</p><h2>'+esc(item.film_title)+'</h2><p class="lead" style="font-size:.96rem">'+esc(item.premise)+'</p><p><a href="'+esc(item.doi?'https://doi.org/'+item.doi:(item.source_url||item.page))+'" target="_blank" rel="noopener">Read the original research or essay ↗</a></p>';
+  if(item.id==='making-medicines-keep'){
+    byId('selected').innerHTML+='<p><a href="/assets/films/historical-manuscript-source-register.json">Examine the manuscript evidence: British Library Or 5786 (codex dated 1315–16) and image-use permissions ↗</a></p>';
+  }
+  byId('motion-title').textContent=item.visual_language;
+  byId('motion-note').textContent=plan.evidence_boundary;
+  byId('annotations').innerHTML='<p class="subtitle">THREE EXPLANATORY BEATS</p><p>'+plan.annotations.map(esc).join(' → ')+'</p><p class="meta">These are annotated reconstructions, not measurements.</p>';
+  byId('evidence').innerHTML='<p>Reading the source register for this edition…</p>';
+  document.querySelectorAll('.film').forEach(el=>el.classList.toggle('selected',el.dataset.id===item.id));
+  player();
+  if(window.innerWidth<900)byId('selected').scrollIntoView({behavior:'smooth',block:'start'});
+}
+byId('collection').innerHTML=films.map(item=>'<article class="film" data-id="'+esc(item.id)+'"><img loading="lazy" src="'+esc(direction[item.id]?.review_poster||item.poster)+'" alt="Source poster for '+esc(item.film_title)+'"><div class="desc"><div class="subtitle">'+esc(item.year)+' · '+esc(item.category)+'</div><strong>'+esc(item.film_title)+'</strong><p>'+esc(item.publication_title)+'</p><button type="button" data-film="'+esc(item.id)+'">Review film and evidence</button></div></article>').join('');
+byId('collection').addEventListener('click',ev=>{const el=ev.target.closest('button[data-film]');if(el){const found=films.find(f=>f.id===el.dataset.film);if(found)choose(found)}});
+for(const variant of ['v1','v2'])byId(variant).addEventListener('click',()=>{cut=variant;byId('v1').setAttribute('aria-pressed',cut==='v1');byId('v2').setAttribute('aria-pressed',cut==='v2');player()});
+choose(films[0]);
+})();
+</script>
+</body></html>

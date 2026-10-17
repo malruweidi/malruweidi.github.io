@@ -1,0 +1,373 @@
+{
+  "edition": "2026-10-17",
+  "status": "SOURCE-LINKED PLANNED MOTION / VOICE REBUILD REQUIRED FOR CAIRO; NOT HUMAN-SCREENED",
+  "editorial": "The 9 existing authored feature films receive a verified, distinct storyboard. Original 10 archival clips remain documents to preserve, not generated documentaries.",
+  "films": {
+    "what-survives-the-experiment": {
+      "group": "Research film",
+      "source": "assets/films/what-survives-scenes.json",
+      "theme": "Scientific claims tested against matter and instrument",
+      "beats": [
+        "early independent observation",
+        "chemistry and instrumentation",
+        "failed experiments",
+        "living systems and therapeutic design"
+      ],
+      "scenes_to_reanimate": [
+        "04",
+        "09"
+      ],
+      "motion": [
+        "macro-to-micro transitions",
+        "physical constraints visible as annotated overlays"
+      ],
+      "strict": "Never present archival microscopy as direct proof of unrelated results; damaged histology remains an unsuccessful attempt.",
+      "scene_motions": {
+        "11": {
+          "motif": "vesicle",
+          "annotations": [
+            "Surfactant membrane",
+            "Nebulizer stress",
+            "Deposition is unproven"
+          ]
+        },
+        "02": {
+          "motif": "editorial",
+          "annotations": [
+            "Bought in Cairo",
+            "Carried to Qatar",
+            "A microscope at home"
+          ]
+        },
+        "04": {
+          "motif": "signal",
+          "annotations": [
+            "A measurable response",
+            "Absorption and fluorescence",
+            "Control the conditions"
+          ]
+        },
+        "08": {
+          "motif": "histology",
+          "annotations": [
+            "Orientation in agarose",
+            "Paraffin embedding",
+            "An unsuccessful section"
+          ]
+        }
+      },
+      "production_treatment": "Original audio, registered figure and archive stay intact outside four editorial inset intervals. V2 does not replace source data."
+    },
+    "airway-reopening-evidence-cut": {
+      "group": "Research evidence cut",
+      "source": "assets/films/airway-reopening-evidence-scenes.json",
+      "theme": "What a transient air–liquid interface can do to epithelial cells",
+      "beats": [
+        "model geometry",
+        "time-resolved interface",
+        "viability measures",
+        "limits of the model"
+      ],
+      "scenes_to_reanimate": [
+        "02",
+        "06"
+      ],
+      "motion": [
+        "moving meniscus with stationary epithelial boundary",
+        "qualitative force-vector glyphs without invented values"
+      ],
+      "strict": "Dexamethasone and DHEA outcomes under specified in-vitro conditions only; no clinical extrapolation.",
+      "scene_motions": {
+        "10": {
+          "motif": "network",
+          "annotations": [
+            "Cytoskeletal organization",
+            "Mechanical vulnerability",
+            "Mechanism remains conditional"
+          ]
+        },
+        "02": {
+          "motif": "interface",
+          "annotations": [
+            "Fluid boundary advances",
+            "Epithelial cells underneath",
+            "Idealized geometry"
+          ]
+        },
+        "04": {
+          "motif": "chamber",
+          "annotations": [
+            "Static group",
+            "Bubble-flow group",
+            "Defined pretreatments"
+          ]
+        },
+        "05": {
+          "motif": "assay",
+          "annotations": [
+            "Viability staining",
+            "Cytoskeletal assessment",
+            "No invented cell images"
+          ]
+        }
+      },
+      "production_treatment": "Original audio, registered figure and archive stay intact outside four editorial inset intervals. V2 does not replace source data."
+    },
+    "what-a-bubble-can-do": {
+      "group": "Evidence in Motion",
+      "source": "assets/films/evidence-in-motion.json",
+      "theme": "Mechanical injury and invisible boundaries",
+      "beats": [
+        "reopening injury",
+        "parallel-plate chamber",
+        "L2 viability",
+        "explanatory limits"
+      ],
+      "scenes_to_reanimate": [
+        "01",
+        "03"
+      ],
+      "motion": [
+        "advancing air bubble",
+        "timed chamber flow vectors"
+      ],
+      "strict": "Do not fabricate measured cell viability panels or clinical data."
+    },
+    "two-materials-no-section": {
+      "group": "First-person research story",
+      "source": "assets/films/two-materials-scenes.json",
+      "theme": "The practical failure of agarose–paraffin embedding",
+      "beats": [
+        "orientation constraint",
+        "two incompatible embedding stages",
+        "failed section",
+        "lesson about materials"
+      ],
+      "scenes_to_reanimate": [
+        "02",
+        "05"
+      ],
+      "motion": [
+        "layer deposition and peeling",
+        "microtome pass stops at unsupported interface"
+      ],
+      "strict": "Failure observed; material-interface mechanism remains a hypothesis rather than a proven cause.",
+      "scene_motions": {
+        "03": {
+          "motif": "histology",
+          "annotations": [
+            "Two-percent agarose",
+            "Initial specimen orientation",
+            "Temporary support"
+          ]
+        },
+        "05": {
+          "motif": "histology",
+          "annotations": [
+            "Agarose interface",
+            "Paraffin embedding",
+            "Possible separation mechanism"
+          ]
+        },
+        "07": {
+          "motif": "translation",
+          "annotations": [
+            "What was observed",
+            "What remains hypothetical",
+            "No intact section"
+          ]
+        },
+        "08": {
+          "motif": "editorial",
+          "annotations": [
+            "Agarose grade",
+            "Processing conditions",
+            "A future comparison"
+          ]
+        }
+      },
+      "production_treatment": "Original audio, registered figure and archive stay intact outside four editorial inset intervals. V2 does not replace source data."
+    },
+    "two-materials-no-section-evidence-cut": {
+      "group": "Evidence in Motion",
+      "source": "assets/films/evidence-in-motion.json",
+      "theme": "Why the specimen would not section",
+      "beats": [
+        "zebrafish orientation",
+        "2% agarose",
+        "paraffin interface",
+        "microtomy outcome"
+      ],
+      "scenes_to_reanimate": [
+        "02",
+        "04"
+      ],
+      "motion": [
+        "layer separation animation marked hypothesis",
+        "knife movement over failed section"
+      ],
+      "strict": "Source photographs document an unsuccessful attempt and cannot diagnose its cause alone."
+    },
+    "ring-that-never-closed": {
+      "group": "Research story",
+      "source": "assets/films/ring-that-never-closed-scenes.json",
+      "theme": "When a synthesis hypothesis resists the experiment",
+      "beats": [
+        "hypothesis",
+        "attempted chemical transformations",
+        "analytical constraints",
+        "unresolved result"
+      ],
+      "scenes_to_reanimate": [
+        "02",
+        "05"
+      ],
+      "motion": [
+        "atom-label-preserving reaction path overlay",
+        "divergent reaction pathways with question mark"
+      ],
+      "strict": "No product, yield, structure or spectra may be claimed without confirming the underlying notebook.",
+      "scene_motions": {
+        "02": {
+          "motif": "molecule",
+          "annotations": [
+            "Planned intermediates",
+            "Ring closure hypothesis",
+            "Product not established"
+          ]
+        },
+        "03": {
+          "motif": "molecule",
+          "annotations": [
+            "An unfinished synthetic route",
+            "Report differs from plan",
+            "No claimed target product"
+          ]
+        },
+        "05": {
+          "motif": "signal",
+          "annotations": [
+            "Alternative anion sensing",
+            "Observed optical response",
+            "Conditions determine meaning"
+          ]
+        },
+        "09": {
+          "motif": "network",
+          "annotations": [
+            "Expression observations",
+            "Unresolved mechanism",
+            "Follow-up incomplete"
+          ]
+        }
+      },
+      "production_treatment": "Original audio, registered figure and archive stay intact outside four editorial inset intervals. V2 does not replace source data."
+    },
+    "cairo-microscope": {
+      "group": "Personal research story",
+      "source": "assets/films/cairo-microscope-scenes.json",
+      "theme": "The personally purchased microscope that made private inquiry possible",
+      "beats": [
+        "Cairo instrument shop",
+        "transport to Qatar",
+        "home setup",
+        "independent observations"
+      ],
+      "scenes_to_reanimate": [
+        "02",
+        "04"
+      ],
+      "motion": [
+        "archival route with no fabricated travel metrics",
+        "optics and focal-plane schematic"
+      ],
+      "strict": "Original first-person account preserved; don't imply proprietary instrument capability or dated photographs without support.",
+      "scene_motions": {
+        "02": {
+          "motif": "editorial",
+          "annotations": [
+            "Qasr El Einy, Cairo",
+            "Instrument acquired",
+            "Transport to Qatar"
+          ]
+        },
+        "06": {
+          "motif": "editorial",
+          "annotations": [
+            "A question arises",
+            "An instrument is available",
+            "The observation continues"
+          ]
+        },
+        "07": {
+          "motif": "translation",
+          "annotations": [
+            "What I saw",
+            "What I could establish",
+            "Independent controls required"
+          ]
+        },
+        "09": {
+          "motif": "editorial",
+          "annotations": [
+            "The instrument from Cairo",
+            "On a desk in Qatar",
+            "Curiosity without an appointment"
+          ]
+        }
+      },
+      "production_treatment": "Original audio, registered figure and archive stay intact outside four editorial inset intervals. V2 does not replace source data.",
+      "narration_v2": {
+        "01": "That morning in Qatar, my microscope was sitting on the desk. The photograph was posted in July 2017.",
+        "02": "I had bought the microscope near Qasr El Einy in Cairo. Bringing it back to Qatar was a considerable hassle.",
+        "03": "Once it was home, I could return to an observation whenever a question interested me. I wanted that freedom.",
+        "04": "University laboratories offered more sophisticated instruments and formal protocols. My own microscope served a different, personal purpose.",
+        "05": "This was a vacation morning, with books and notes beside the microscope. It was not an assigned experiment.",
+        "06": "I could look again, change the angle, and take another day to think about what I had seen.",
+        "07": "The instrument could enlarge an object. But a persuasive explanation would still need controls and careful documentation.",
+        "08": "The microscope lived among ordinary things on my desk. I used it to follow questions outside scheduled laboratory work.",
+        "09": "I carried it from Cairo to Qatar. Years later, I still remember what having an instrument at home made possible."
+      }
+    },
+    "the-laboratory-we-carried-with-us": {
+      "group": "Evidence in Motion",
+      "source": "assets/films/evidence-in-motion.json",
+      "theme": "Scientists, networks, and fragile research continuity",
+      "beats": [
+        "community formation",
+        "collaborative practice",
+        "documentation",
+        "scientific continuity"
+      ],
+      "scenes_to_reanimate": [
+        "03",
+        "06"
+      ],
+      "motion": [
+        "historical timeline of verified dates",
+        "linked portraits and group archival stills"
+      ],
+      "strict": "No invented project role, coauthorship, photograph date, or research outcomes."
+    },
+    "making-medicines-keep": {
+      "group": "Evidence in Motion",
+      "source": "assets/films/evidence-in-motion.json",
+      "theme": "Pharmaceutical reliability in Ayyubid-Mamluk Cairo",
+      "beats": [
+        "syrup as manufactured product",
+        "consistency and process",
+        "substitution in sources",
+        "reliability as question"
+      ],
+      "scenes_to_reanimate": [
+        "03",
+        "06"
+      ],
+      "motion": [
+        "syrup handling schematic",
+        "substitution decision tree distinguished from bioequivalence"
+      ],
+      "strict": "Accepted article on 15 October 2026, not yet published; Wellcome contextual manuscript is NOT the relevant Genizah folio; respect manuscript reuse rights."
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ace2-forms",
+  "seconds": 84.0,
+  "sha256": "78af056cc7c36a1bf69ee8ace6647503f12f60c46addd009f284bc02995410fe",
+  "primary_source": "https://doi.org/10.3390/ijms22136703",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "source_visual_revision": "curated-2026-10-17-v3",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "network",
+  "motion_storyboard": {
+    "02": "ace2-shedding",
+    "03": "ace2-shedding",
+    "04": "network",
+    "05": "ace2-shedding"
+  },
+  "motion_annotations": [
+    "Membrane-bound ACE2",
+    "Soluble ACE2",
+    "Context-dependent activity"
+  ],
+  "evidence_boundary": "An explanatory relationship, not a measured concentration.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

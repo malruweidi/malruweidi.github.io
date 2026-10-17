@@ -1,0 +1,84 @@
+{
+  "id": "slit2-robo",
+  "seconds": 84.0,
+  "sha256": "914236d1730593996a8a56e1dd9aec1569edf6d964f4699d277d532ed6af6313",
+  "primary_source": "https://doi.org/10.1080/13543776.2026.2690118",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original conceptual pathway diagram",
+    "Simplified pathway illustration, not experimental structure",
+    "Research workspace photograph, not a patent experiment",
+    "Editorial pathway diagram; not a ranking of inventions",
+    "Conceptual scientific illustration",
+    "Personal editorial portrait, not patent or molecular data"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/robo-concept.svg",
+      "kind": "Original conceptual pathway diagram",
+      "credit": "Original conceptual pathway diagram",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/robo-concept.svg",
+      "kind": "Simplified pathway illustration, not experimental structure",
+      "credit": "Simplified pathway illustration, not experimental structure",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp",
+      "kind": "Research workspace photograph, not a patent experiment",
+      "credit": "Research workspace photograph, not a patent experiment",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/robo-concept.svg",
+      "kind": "Editorial pathway diagram; not a ranking of inventions",
+      "credit": "Editorial pathway diagram; not a ranking of inventions",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/robo-concept.svg",
+      "kind": "Conceptual scientific illustration",
+      "credit": "Conceptual scientific illustration",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "kind": "Personal editorial portrait, not patent or molecular data",
+      "credit": "Personal editorial portrait, not patent or molecular data",
+      "source": "/#publications"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "network",
+  "motion_storyboard": {
+    "02": "network",
+    "03": "molecule",
+    "04": "network",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Ligand–receptor context",
+    "Downstream signalling",
+    "Tumour-specific effects"
+  ],
+  "evidence_boundary": "No molecular structure or binding constant is inferred.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

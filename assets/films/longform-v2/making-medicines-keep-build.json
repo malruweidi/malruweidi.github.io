@@ -1,0 +1,127 @@
+{
+  "title": "Making Medicines Keep",
+  "seconds": 120.0,
+  "bytes": 3632780,
+  "sha256": "86b545cd8fd790104b2cf7e5874832411ae5f6974a75bcb5d91d74a46fa1fd67",
+  "source": "assets/films/evidence-in-motion.json",
+  "chapters": 8,
+  "media": [
+    {
+      "chapter": "01",
+      "type": "ORIGINAL EDITORIAL ILLUSTRATION",
+      "credit": "Reconstruction based on the author's historical research; not period footage or a primary source.",
+      "source": null,
+      "context_visual": "wellcome-arabic-manuscript",
+      "context_source": {
+        "id": "wellcome-arabic-manuscript",
+        "asset": "wellcome-arabic-medical-manuscript-15c.webp",
+        "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/73a36a9b-26b7-4e39-926a-08e288d73d0b.jpg",
+        "source_url": "https://wellcomecollection.org/works/qgp6m763",
+        "credit": "Wellcome Collection, M0008126. 15th-century Arabic medical manuscript photograph; NOT a page of Minhāj al-dukkān or the Cairo Genizah prescription.",
+        "license": "Public Domain Mark",
+        "category": "contextual historical photograph",
+        "caption": "15th-century Arabic medical manuscript • comparative context, not the cited source",
+        "show_seconds": 4,
+        "on_frame_lines": [
+          "COMPARATIVE MEDICAL MANUSCRIPT",
+          "NOT THE CAIRO GENIZAH SOURCE"
+        ]
+      }
+    },
+    {
+      "chapter": "02",
+      "type": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
+      "credit": "Original AI-generated 2026 conceptual reconstruction; not historical photography, a verified medieval vessel, or evidence for a particular prescription.",
+      "source": null,
+      "context_visual": "syrup-still-life",
+      "context_source": {
+        "id": "syrup-still-life",
+        "asset": "syrup-editorial-reconstruction.webp",
+        "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/00617636-9415-4c53-868b-6060b4648bde.jpg",
+        "source_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/00617636-9415-4c53-868b-6060b4648bde.jpg",
+        "credit": "Original AI-assisted conceptual reconstruction commissioned for Ruwaidix. Syrup, vessels and shop setting are illustrative, not historical objects or verified practices.",
+        "license": "Original editorial AI-generated illustration",
+        "category": "AI-assisted editorial reconstruction",
+        "caption": "EDITORIAL RECONSTRUCTION • NOT A HISTORICAL PHOTOGRAPH",
+        "show_seconds": 9
+      }
+    },
+    {
+      "chapter": "03",
+      "type": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
+      "credit": "Original AI-assisted 2026 reconstruction illustrating heating, skimming, and straining; not a recorded medieval experiment. Explanatory interpretation of the historical described process; not a laboratory measurement.",
+      "source": null,
+      "context_visual": "syrup-skimming",
+      "context_source": {
+        "id": "syrup-skimming",
+        "asset": "syrup-skimming-editorial-reconstruction.webp",
+        "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/21a0fdee-6e4f-42be-86c9-d86a346ba74d.jpg",
+        "source_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/21a0fdee-6e4f-42be-86c9-d86a346ba74d.jpg",
+        "credit": "Original AI-assisted explanatory reconstruction for Ruwaidix, October 2026; depicted process and materials are interpretations, not photographed historical evidence.",
+        "license": "Original AI-assisted editorial illustration",
+        "category": "AI-assisted process reconstruction",
+        "caption": "SKIMMING AND STRAINING • EDITORIAL RECONSTRUCTION, NOT PERIOD FOOTAGE",
+        "show_seconds": 9
+      }
+    },
+    {
+      "chapter": "04",
+      "type": "ORIGINAL EDITORIAL ILLUSTRATION",
+      "credit": "Historical possibility illustrated without claiming that this is an authentic medieval vessel.",
+      "source": null,
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "05",
+      "type": "EDITORIAL SOURCE INTERPRETATION",
+      "credit": "Source: Cambridge Genizah Or.1081 J39. Typeset editorial depiction; original manuscript scan deliberately not reproduced without permission.",
+      "source": null,
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "06",
+      "type": "SOURCE-GROUNDED CONCEPTUAL DIAGRAM",
+      "credit": "Conceptual text diagram; historically framed substitution not modern chemical/bioequivalence.",
+      "source": null,
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "07",
+      "type": "AI-ASSISTED EDITORIAL RECONSTRUCTION",
+      "credit": "Original AI-generated 2026 conceptual reconstruction; not historical photography, a verified medieval vessel, or evidence for a particular prescription.",
+      "source": null,
+      "context_visual": "balance-still-life",
+      "context_source": {
+        "id": "balance-still-life",
+        "asset": "market-balance-editorial-reconstruction.webp",
+        "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/afe03214-9996-4017-8c1f-03c8c38ad838.jpg",
+        "source_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/afe03214-9996-4017-8c1f-03c8c38ad838.jpg",
+        "credit": "Original AI-assisted conceptual reconstruction commissioned for Ruwaidix; illustrated balance and botanicals are not identified medieval objects.",
+        "license": "Original editorial AI-generated illustration",
+        "category": "AI-assisted editorial reconstruction",
+        "caption": "EDITORIAL RECONSTRUCTION • NOT A HISTORICAL PHOTOGRAPH",
+        "show_seconds": 9
+      }
+    },
+    {
+      "chapter": "08",
+      "type": "ACCEPTED SCHOLARLY MANUSCRIPT",
+      "credit": "Manuscript accepted by History of Pharmacy and Pharmaceuticals on 15 October 2026. Typeset bibliographic title, not a fabricated journal cover.",
+      "source": null,
+      "context_visual": null,
+      "context_source": null
+    }
+  ],
+  "editorial_method": "Real owner archive retained uncropped in frames; explicitly non-documentary original illustrations; audio Kokoro-ONNX + self-generated original score.",
+  "edition": "longform-v2",
+  "human_screening": "NOT YET COMPLETED",
+  "animated_scene_ids": [
+    "03",
+    "06"
+  ],
+  "evidence_boundary": "Accepted article on 15 October 2026, not yet published; Wellcome contextual manuscript is NOT the relevant Genizah folio; respect manuscript reuse rights.",
+  "method": "Pillow + FFmpeg open-source explanatory moving plates, original Kokoro synthesis"
+}

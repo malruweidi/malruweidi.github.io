@@ -1,0 +1,17 @@
+{
+  "layout_version": "full-frame-qa-v2",
+  "source_mp4": "assets/films/series-v2/micelles-pahs.mp4",
+  "source_sha256": "23c6564b48d18a64b7f0fb8a8df35bae2133f7d50a01c33dceab1181061cb3c7",
+  "samples_seconds": [
+    4,
+    14,
+    24,
+    34,
+    44,
+    55,
+    66,
+    77
+  ],
+  "full_picture_preserved": true,
+  "label_placement": "Outside original frame bounds; never obscures title or scientific figure"
+}

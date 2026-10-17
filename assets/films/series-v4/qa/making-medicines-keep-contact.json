@@ -1,0 +1,25 @@
+{
+  "source": "assets/films/series-v4/making-medicines-keep.mp4",
+  "sha256": "ac53a532de63488ca55eeb0262eb6ab740a7458c8b4908b585885f7852e40d48",
+  "sample_seconds": [
+    3,
+    11,
+    18,
+    26,
+    33,
+    41,
+    48,
+    56,
+    63,
+    71,
+    78,
+    86,
+    93,
+    101,
+    108,
+    116
+  ],
+  "scenes": 8,
+  "preserves_full_frames": true,
+  "status": "REVIEW REQUIRED: visual, acoustic, historical and rights verification pending"
+}

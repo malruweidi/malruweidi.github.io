@@ -1,0 +1,84 @@
+{
+  "id": "microfluidic-virus",
+  "seconds": 84.0,
+  "sha256": "afb095bde1541a9500259051bad31ec25846893b856f2cb7ba7a4cc8762eea40",
+  "primary_source": "https://doi.org/10.1007/s42247-021-00169-7",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Archival lab context, not an actual viral detection device",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Original research apparatus photograph",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+    "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/films/art/microfluidic-sensing.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/techniques.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "kind": "Archival lab context, not an actual viral detection device",
+      "credit": "Archival lab context, not an actual viral detection device",
+      "source": "/techniques.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/films/art/microfluidic-sensing.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/techniques.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "kind": "Original research apparatus photograph",
+      "credit": "Original research apparatus photograph",
+      "source": "/techniques.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/films/art/microfluidic-sensing.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/techniques.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/films/art/microfluidic-sensing.svg",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "source": "/techniques.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "chip",
+  "motion_storyboard": {
+    "02": "chip",
+    "03": "chip",
+    "04": "signal",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Sample enters channel",
+    "Target capture",
+    "Analytical readout"
+  ],
+  "evidence_boundary": "No clinical specificity or performance value is implied.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

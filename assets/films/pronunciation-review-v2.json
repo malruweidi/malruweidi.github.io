@@ -1,0 +1,677 @@
+{
+  "scope": "Open-source Ruwaidix film v2 editions only",
+  "status": "HUMAN AUDITION REQUIRED / NOT VERIFIED",
+  "limit": "Timing follows published VTT captions, not forced alignment to acoustic phonemes; quality of TTS or pronunciation is not inferred.",
+  "films": [
+    {
+      "film": "ace2-covid-drugs",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "ACE2",
+          "start_second": 12.675,
+          "cue": "Soluble ACE2 and angiotensin II are distinct",
+          "video": "/assets/films/series-v2/ace2-covid-drugs.mp4#t=12.675"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "ace2-forms",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "ACE2",
+          "start_second": 0.55,
+          "cue": "ACE2 can be embedded in a cell membrane or exist in a",
+          "video": "/assets/films/series-v2/ace2-forms.mp4#t=0.55"
+        },
+        {
+          "term_id": "ACE2",
+          "start_second": 14.383,
+          "cue": "ACE2 participates in the renin-angiotensin system. In",
+          "video": "/assets/films/series-v2/ace2-forms.mp4#t=14.383"
+        },
+        {
+          "term_id": "ACE2",
+          "start_second": 34.935,
+          "cue": "soluble ACE2 expression might influence",
+          "video": "/assets/films/series-v2/ace2-forms.mp4#t=34.935"
+        },
+        {
+          "term_id": "ACE2",
+          "start_second": 75.621,
+          "cue": "ACE2 form, which tissue and which endpoint is actually",
+          "video": "/assets/films/series-v2/ace2-forms.mp4#t=75.621"
+        }
+      ],
+      "number_of_review_cues": 4
+    },
+    {
+      "film": "airway-reopening",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "alveolar",
+          "start_second": 14.45,
+          "cue": "alveolar",
+          "video": "/assets/films/series-v2/airway-reopening.mp4#t=14.45"
+        },
+        {
+          "term_id": "dexamethasone",
+          "start_second": 40.613,
+          "cue": "dexamethasone or trans-dehydroandrosterone could",
+          "video": "/assets/films/series-v2/airway-reopening.mp4#t=40.613"
+        },
+        {
+          "term_id": "dehydroandrosterone",
+          "start_second": 40.613,
+          "cue": "dexamethasone or trans-dehydroandrosterone could",
+          "video": "/assets/films/series-v2/airway-reopening.mp4#t=40.613"
+        }
+      ],
+      "number_of_review_cues": 3
+    },
+    {
+      "film": "cairo-microscope",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "Qasr-El-Einy",
+          "start_second": 0.55,
+          "cue": "I purchased a microscope near Qasr El Einy in Cairo.",
+          "video": "/assets/films/series-v2/cairo-microscope.mp4#t=0.55"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "ceramics-printing",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "cerebral-cilia",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "endothelial",
+          "start_second": 3.82,
+          "cue": "endothelial projections meet the surrounding flow.",
+          "video": "/assets/films/series-v2/cerebral-cilia.mp4#t=3.82"
+        },
+        {
+          "term_id": "zebrafish",
+          "start_second": 11.967,
+          "cue": "Transparent zebrafish embryos let researchers observe",
+          "video": "/assets/films/series-v2/cerebral-cilia.mp4#t=11.967"
+        },
+        {
+          "term_id": "cilia",
+          "start_second": 24.758,
+          "cue": "Primary cilia can act as biological structures",
+          "video": "/assets/films/series-v2/cerebral-cilia.mp4#t=24.758"
+        },
+        {
+          "term_id": "endothelial",
+          "start_second": 44.379,
+          "cue": "assessment of endothelial cilia and hemodynamic",
+          "video": "/assets/films/series-v2/cerebral-cilia.mp4#t=44.379"
+        },
+        {
+          "term_id": "cilia",
+          "start_second": 44.379,
+          "cue": "assessment of endothelial cilia and hemodynamic",
+          "video": "/assets/films/series-v2/cerebral-cilia.mp4#t=44.379"
+        }
+      ],
+      "number_of_review_cues": 5
+    },
+    {
+      "film": "cubosome-theranostics",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "cubosome",
+          "start_second": 0.55,
+          "cue": "Cubosomes contain structured internal lipid domains.",
+          "video": "/assets/films/series-v2/cubosome-theranostics.mp4#t=0.55"
+        },
+        {
+          "term_id": "cubosome",
+          "start_second": 73.732,
+          "cue": "cancer-targeted cubosome design and the difficult path",
+          "video": "/assets/films/series-v2/cubosome-theranostics.mp4#t=73.732"
+        }
+      ],
+      "number_of_review_cues": 2
+    },
+    {
+      "film": "curcumin-cyanide",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "curcumin",
+          "start_second": 13.008,
+          "cue": "Curcumin has a conjugated electronic system, which",
+          "video": "/assets/films/series-v2/curcumin-cyanide.mp4#t=13.008"
+        },
+        {
+          "term_id": "curcumin",
+          "start_second": 26.258,
+          "cue": "The paper investigated curcumin as a colorimetric and",
+          "video": "/assets/films/series-v2/curcumin-cyanide.mp4#t=26.258"
+        },
+        {
+          "term_id": "cyanide",
+          "start_second": 30.292,
+          "cue": "fluorescent cyanide probe in aqueous conditions and",
+          "video": "/assets/films/series-v2/curcumin-cyanide.mp4#t=30.292"
+        }
+      ],
+      "number_of_review_cues": 3
+    },
+    {
+      "film": "drug-release-twins",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "echo-cnn-lstm",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "convolutional",
+          "start_second": 0.55,
+          "cue": "Inside fetal echocardiography, anatomy changes with",
+          "video": "/assets/films/series-v2/echo-cnn-lstm.mp4#t=0.55"
+        },
+        {
+          "term_id": "convolutional",
+          "start_second": 27.842,
+          "cue": "Convolutional neural networks can extract visual",
+          "video": "/assets/films/series-v2/echo-cnn-lstm.mp4#t=27.842"
+        },
+        {
+          "term_id": "convolutional",
+          "start_second": 41.342,
+          "cue": "Our paper studied stacking-based CNN-LSTM techniques",
+          "video": "/assets/films/series-v2/echo-cnn-lstm.mp4#t=41.342"
+        }
+      ],
+      "number_of_review_cues": 3
+    },
+    {
+      "film": "essay-academic-mental-health",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-adc",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-ai-email",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-life-between-diagnoses",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-machine-language",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-potency-exposure",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-proximity",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-scientific-credit",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-tf-states",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "essay-trna",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "flow-chamber-method",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "food-printing",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "rheology",
+          "start_second": 3.766,
+          "cue": "deposited material collapses. The rheology of the ink",
+          "video": "/assets/films/series-v2/food-printing.mp4#t=3.766"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "gi-autoimmunity-1",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "cilia",
+          "start_second": 45.926,
+          "cue": "presentation require careful reconciliation before",
+          "video": "/assets/films/series-v2/gi-autoimmunity-1.mp4#t=45.926"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "gi-autoimmunity-2",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "heart-failure-sensors",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "heterocycle-cancer",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "imidazopyridine",
+          "start_second": 15.175,
+          "cue": "The UREP research investigated imidazopyridine",
+          "video": "/assets/films/series-v2/heterocycle-cancer.mp4#t=15.175"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "histology-failure",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "zebrafish",
+          "start_second": 0.55,
+          "cue": "To cut a useful section of a zebrafish specimen,",
+          "video": "/assets/films/series-v2/histology-failure.mp4#t=0.55"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "making-medicines-keep",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "Minhaj",
+          "start_second": 12.508,
+          "cue": "The Minhaj al-dukkan associated with al-Kuhin al-Attar",
+          "video": "/assets/films/series-v2/making-medicines-keep.mp4#t=12.508"
+        },
+        {
+          "term_id": "Mamluk",
+          "start_second": 77.554,
+          "cue": "under the conditions of Ayyubid-Mamluk Cairo.",
+          "video": "/assets/films/series-v2/making-medicines-keep.mp4#t=77.554"
+        }
+      ],
+      "number_of_review_cues": 2
+    },
+    {
+      "film": "micelles-pahs",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
+      "film": "microfluidic-virus",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "microfluidic",
+          "start_second": 27.217,
+          "cue": "Microfluidic systems can organise small volumes and",
+          "video": "/assets/films/series-v2/microfluidic-virus.mp4#t=27.217"
+        },
+        {
+          "term_id": "microfluidic",
+          "start_second": 69.092,
+          "cue": "The 2021 review surveys microfluidic approaches to",
+          "video": "/assets/films/series-v2/microfluidic-virus.mp4#t=69.092"
+        }
+      ],
+      "number_of_review_cues": 2
+    },
+    {
+      "film": "niosomes",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "dexamethasone",
+          "start_second": 12.8,
+          "cue": "My master's research explores dexamethasone-loaded",
+          "video": "/assets/films/series-v2/niosomes.mp4#t=12.8"
+        },
+        {
+          "term_id": "niosomes",
+          "start_second": 16.511,
+          "cue": "niosomes and proniosomes, including surfactant and",
+          "video": "/assets/films/series-v2/niosomes.mp4#t=16.511"
+        },
+        {
+          "term_id": "proniosomes",
+          "start_second": 16.511,
+          "cue": "niosomes and proniosomes, including surfactant and",
+          "video": "/assets/films/series-v2/niosomes.mp4#t=16.511"
+        }
+      ],
+      "number_of_review_cues": 3
+    },
+    {
+      "film": "pla-grafting",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "poly-lactic-acid",
+          "start_second": 0.55,
+          "cue": "Poly(lactic acid) may keep its familiar bulk chemistry",
+          "video": "/assets/films/series-v2/pla-grafting.mp4#t=0.55"
+        },
+        {
+          "term_id": "poly-lactic-acid",
+          "start_second": 30.117,
+          "cue": "involving fumaric and ascorbic acids on PLA films,",
+          "video": "/assets/films/series-v2/pla-grafting.mp4#t=30.117"
+        }
+      ],
+      "number_of_review_cues": 2
+    },
+    {
+      "film": "pla-scaffolds",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "poly-lactic-acid",
+          "start_second": 14.508,
+          "cue": "Poly(lactic acid) scaffolds provide a material",
+          "video": "/assets/films/series-v2/pla-scaffolds.mp4#t=14.508"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "slit2-robo",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "slit2-robo",
+          "start_second": 13.425,
+          "cue": "SLIT2 binds ROBO receptors through a broad protein",
+          "video": "/assets/films/series-v2/slit2-robo.mp4#t=13.425"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "zebrafish-hemodynamics",
+      "collection": "series-v2",
+      "review_cues": [
+        {
+          "term_id": "zebrafish",
+          "start_second": 0.55,
+          "cue": "Inside a developing zebrafish, the heart contracts and",
+          "video": "/assets/films/series-v2/zebrafish-hemodynamics.mp4#t=0.55"
+        },
+        {
+          "term_id": "hemodynamics",
+          "start_second": 31.55,
+          "cue": "blood-flow hemodynamics, rather than treating a single",
+          "video": "/assets/films/series-v2/zebrafish-hemodynamics.mp4#t=31.55"
+        }
+      ],
+      "number_of_review_cues": 2
+    },
+    {
+      "film": "airway-reopening-evidence-cut",
+      "collection": "longform-v2",
+      "review_cues": [
+        {
+          "term_id": "l2-cell-line",
+          "start_second": 29.5,
+          "cue": "In our 2021 study, rat L2 alveolar epithelial cells",
+          "video": "/assets/films/longform-v2/airway-reopening-evidence-cut.mp4#t=29.5"
+        },
+        {
+          "term_id": "alveolar",
+          "start_second": 29.5,
+          "cue": "In our 2021 study, rat L2 alveolar epithelial cells",
+          "video": "/assets/films/longform-v2/airway-reopening-evidence-cut.mp4#t=29.5"
+        },
+        {
+          "term_id": "dexamethasone",
+          "start_second": 55.55,
+          "cue": "We also tested cells pretreated with dexamethasone or",
+          "video": "/assets/films/longform-v2/airway-reopening-evidence-cut.mp4#t=55.55"
+        },
+        {
+          "term_id": "dehydroandrosterone",
+          "start_second": 59.692,
+          "cue": "transdehydroandrosterone before the bubble passed.",
+          "video": "/assets/films/longform-v2/airway-reopening-evidence-cut.mp4#t=59.692"
+        },
+        {
+          "term_id": "dexamethasone",
+          "start_second": 96.5,
+          "cue": "With dexamethasone pretreatment, reported cell death",
+          "video": "/assets/films/longform-v2/airway-reopening-evidence-cut.mp4#t=96.5"
+        },
+        {
+          "term_id": "dehydroandrosterone",
+          "start_second": 113.5,
+          "cue": "Cells pretreated with transdehydroandrosterone showed",
+          "video": "/assets/films/longform-v2/airway-reopening-evidence-cut.mp4#t=113.5"
+        },
+        {
+          "term_id": "latrunculin",
+          "start_second": 130.5,
+          "cue": "The study also included latrunculin A, an experimental",
+          "video": "/assets/films/longform-v2/airway-reopening-evidence-cut.mp4#t=130.5"
+        }
+      ],
+      "number_of_review_cues": 7
+    },
+    {
+      "film": "cairo-microscope",
+      "collection": "longform-v2",
+      "review_cues": [
+        {
+          "term_id": "Qasr-El-Einy",
+          "start_second": 11.46,
+          "cue": "I had bought the microscope near Qasr El Einy in",
+          "video": "/assets/films/longform-v2/cairo-microscope.mp4#t=11.46"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "making-medicines-keep",
+      "collection": "longform-v2",
+      "review_cues": [
+        {
+          "term_id": "Minhaj",
+          "start_second": 15.562,
+          "cue": "A thirteenth-century manual, Minhāj al-dukkān, begins",
+          "video": "/assets/films/longform-v2/making-medicines-keep.mp4#t=15.562"
+        },
+        {
+          "term_id": "julab",
+          "start_second": 19.237,
+          "cue": "chapter with julāb: a base of sugar and rose water.",
+          "video": "/assets/films/longform-v2/making-medicines-keep.mp4#t=19.237"
+        },
+        {
+          "term_id": "qiwam",
+          "start_second": 34.257,
+          "cue": "recognizing when the liquid had reached qiwām: an",
+          "video": "/assets/films/longform-v2/making-medicines-keep.mp4#t=34.257"
+        }
+      ],
+      "number_of_review_cues": 3
+    },
+    {
+      "film": "ring-that-never-closed",
+      "collection": "longform-v2",
+      "review_cues": [
+        {
+          "term_id": "imidazopyridine",
+          "start_second": 5.328,
+          "cue": "imidazopyridine. The",
+          "video": "/assets/films/longform-v2/ring-that-never-closed.mp4#t=5.328"
+        },
+        {
+          "term_id": "imidazopyridine",
+          "start_second": 19.158,
+          "cue": "substituted imidazopyridines, with structural",
+          "video": "/assets/films/longform-v2/ring-that-never-closed.mp4#t=19.158"
+        },
+        {
+          "term_id": "schiff",
+          "start_second": 58.93,
+          "cue": "called Schiff bases. They had",
+          "video": "/assets/films/longform-v2/ring-that-never-closed.mp4#t=58.93"
+        },
+        {
+          "term_id": "cyanide",
+          "start_second": 79.55,
+          "cue": "response to anions. Cyanide produced a particularly",
+          "video": "/assets/films/longform-v2/ring-that-never-closed.mp4#t=79.55"
+        },
+        {
+          "term_id": "cyanide",
+          "start_second": 93.501,
+          "cue": "turned orange after cyanide was added.",
+          "video": "/assets/films/longform-v2/ring-that-never-closed.mp4#t=93.501"
+        }
+      ],
+      "number_of_review_cues": 5
+    },
+    {
+      "film": "the-laboratory-we-carried-with-us",
+      "collection": "longform-v2",
+      "review_cues": [
+        {
+          "term_id": "Chem-Squad",
+          "start_second": 29.978,
+          "cue": "The group that became Chem Squad included seven",
+          "video": "/assets/films/longform-v2/the-laboratory-we-carried-with-us.mp4#t=29.978"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "two-materials-no-section-evidence-cut",
+      "collection": "longform-v2",
+      "review_cues": [
+        {
+          "term_id": "zebrafish",
+          "start_second": 0.52,
+          "cue": "Under a microscope, a zebrafish embryo can look",
+          "video": "/assets/films/longform-v2/two-materials-no-section-evidence-cut.mp4#t=0.52"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "two-materials-no-section",
+      "collection": "longform-v2",
+      "review_cues": [
+        {
+          "term_id": "zebrafish",
+          "start_second": 0.6,
+          "cue": "I wanted to see inside a developing zebrafish. These",
+          "video": "/assets/films/longform-v2/two-materials-no-section.mp4#t=0.6"
+        }
+      ],
+      "number_of_review_cues": 1
+    },
+    {
+      "film": "what-a-bubble-can-do",
+      "collection": "longform-v2",
+      "review_cues": [
+        {
+          "term_id": "l2-cell-line",
+          "start_second": 29.062,
+          "cue": "We worked with L2 alveolar epithelial cells in a",
+          "video": "/assets/films/longform-v2/what-a-bubble-can-do.mp4#t=29.062"
+        },
+        {
+          "term_id": "alveolar",
+          "start_second": 29.062,
+          "cue": "We worked with L2 alveolar epithelial cells in a",
+          "video": "/assets/films/longform-v2/what-a-bubble-can-do.mp4#t=29.062"
+        }
+      ],
+      "number_of_review_cues": 2
+    },
+    {
+      "film": "what-survives-the-experiment",
+      "collection": "longform-v2",
+      "review_cues": [
+        {
+          "term_id": "zebrafish",
+          "start_second": 60.055,
+          "cue": "zebrafish. The",
+          "video": "/assets/films/longform-v2/what-survives-the-experiment.mp4#t=60.055"
+        },
+        {
+          "term_id": "dexamethasone",
+          "start_second": 97.675,
+          "cue": "Now I study dexamethasone vesicles intended for",
+          "video": "/assets/films/longform-v2/what-survives-the-experiment.mp4#t=97.675"
+        },
+        {
+          "term_id": "nebulization",
+          "start_second": 102.655,
+          "cue": "must withstand nebulization before it can even be",
+          "video": "/assets/films/longform-v2/what-survives-the-experiment.mp4#t=102.655"
+        }
+      ],
+      "number_of_review_cues": 3
+    }
+  ]
+}

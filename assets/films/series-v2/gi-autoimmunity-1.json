@@ -1,0 +1,85 @@
+{
+  "id": "gi-autoimmunity-1",
+  "seconds": 84.0,
+  "sha256": "724d11fef267f71e242d3c43a8e57b10fb1b823394745d9eb0561033cb473d9f",
+  "primary_source": "https://doi.org/10.5772/intechopen.106184",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/films/art/source-specific/eosinophilic-gut.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/films/art/source-specific/eosinophilic-gut.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/films/art/source-specific/eosinophilic-gut.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/films/art/source-specific/eosinophilic-gut.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/illness-and-evidence.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "source_visual_revision": "curated-2026-10-17-v3",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "organ",
+  "motion_storyboard": {
+    "02": "gut-barrier",
+    "03": "gut-barrier",
+    "04": "assay",
+    "05": "gut-barrier"
+  },
+  "motion_annotations": [
+    "Barrier integrity",
+    "Immune signalling",
+    "Disease-specific pathology"
+  ],
+  "evidence_boundary": "Generic immune schematic, not an individual's biopsy.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

@@ -1,0 +1,17 @@
+{
+  "layout_version": "full-frame-qa-v2",
+  "source_mp4": "assets/films/longform-v2/two-materials-no-section-evidence-cut.mp4",
+  "source_sha256": "65eb566550ed92ede137140664bfc4e324bc042596db1b91df0a657d8d15604b",
+  "samples_seconds": [
+    4,
+    17,
+    29,
+    41,
+    54,
+    68,
+    83,
+    105
+  ],
+  "full_picture_preserved": true,
+  "label_placement": "Outside original frame bounds; never obscures title or scientific figure"
+}

@@ -1,0 +1,17 @@
+{
+  "layout_version": "full-frame-qa-v2",
+  "source_mp4": "assets/films/longform-v2/ring-that-never-closed.mp4",
+  "source_sha256": "5e7adbada0e00243d35125599a60e718ec6aeedd4835d0591bd15b322ff8df17",
+  "samples_seconds": [
+    4,
+    17,
+    29,
+    41,
+    54,
+    68,
+    83,
+    105
+  ],
+  "full_picture_preserved": true,
+  "label_placement": "Outside original frame bounds; never obscures title or scientific figure"
+}

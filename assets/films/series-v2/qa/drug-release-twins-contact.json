@@ -1,0 +1,17 @@
+{
+  "layout_version": "full-frame-qa-v2",
+  "source_mp4": "assets/films/series-v2/drug-release-twins.mp4",
+  "source_sha256": "7d171ee68f821f89898be4e4fd651207a9df74a437afac8c92542b8155e0da44",
+  "samples_seconds": [
+    4,
+    14,
+    24,
+    34,
+    44,
+    55,
+    66,
+    77
+  ],
+  "full_picture_preserved": true,
+  "label_placement": "Outside original frame bounds; never obscures title or scientific figure"
+}

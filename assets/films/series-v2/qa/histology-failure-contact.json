@@ -1,0 +1,17 @@
+{
+  "layout_version": "full-frame-qa-v2",
+  "source_mp4": "assets/films/series-v2/histology-failure.mp4",
+  "source_sha256": "93ab27a0bdb8792fb1d6c6df3aef7cc7164feb99f9ba174cbd8d571b9fc77b68",
+  "samples_seconds": [
+    4,
+    14,
+    24,
+    34,
+    44,
+    55,
+    66,
+    77
+  ],
+  "full_picture_preserved": true,
+  "label_placement": "Outside original frame bounds; never obscures title or scientific figure"
+}

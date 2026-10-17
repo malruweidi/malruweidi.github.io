@@ -1,0 +1,238 @@
+{
+  "edition": "2026-10-17",
+  "status": "HUMAN AUDIO AUDITION REQUIRED",
+  "purpose": "Identify high-risk biomedical, chemical, historical and Arabic words in spoken-film captions. This is a review index, not a phonetic truth database or a certificate that generated audio is accurate.",
+  "items": [
+    {
+      "id": "dexamethasone",
+      "find": [
+        "dexamethasone"
+      ],
+      "discipline": "pharmacology"
+    },
+    {
+      "id": "dehydroandrosterone",
+      "find": [
+        "transdehydroandrosterone",
+        "trans-dehydroandrosterone",
+        "dehydroandrosterone"
+      ],
+      "discipline": "steroid nomenclature"
+    },
+    {
+      "id": "latrunculin",
+      "find": [
+        "latrunculin"
+      ],
+      "discipline": "cell biology"
+    },
+    {
+      "id": "l2-cell-line",
+      "find": [
+        "L2 alveolar",
+        "L2 cell",
+        "L2 cells"
+      ],
+      "discipline": "experimental cell line"
+    },
+    {
+      "id": "alveolar",
+      "find": [
+        "alveolar"
+      ],
+      "discipline": "pulmonary anatomy"
+    },
+    {
+      "id": "endothelial",
+      "find": [
+        "endothelial"
+      ],
+      "discipline": "vascular biology"
+    },
+    {
+      "id": "cilia",
+      "find": [
+        "cilia",
+        "cilium"
+      ],
+      "discipline": "cell and developmental biology"
+    },
+    {
+      "id": "hemodynamics",
+      "find": [
+        "hemodynamics",
+        "haemodynamics"
+      ],
+      "discipline": "physiology"
+    },
+    {
+      "id": "niosomes",
+      "find": [
+        "niosomes",
+        "niosome"
+      ],
+      "discipline": "drug-delivery nanotechnology"
+    },
+    {
+      "id": "proniosomes",
+      "find": [
+        "proniosomes",
+        "proniosome"
+      ],
+      "discipline": "drug-delivery nanotechnology"
+    },
+    {
+      "id": "nebulization",
+      "find": [
+        "nebulization",
+        "nebulisation",
+        "nebulizer",
+        "nebuliser"
+      ],
+      "discipline": "pulmonary pharmaceutics"
+    },
+    {
+      "id": "poly-lactic-acid",
+      "find": [
+        "poly(lactic acid)",
+        "polylactic acid",
+        "PLA films",
+        "PLA scaffolds"
+      ],
+      "discipline": "polymer science"
+    },
+    {
+      "id": "curcumin",
+      "find": [
+        "curcumin"
+      ],
+      "discipline": "natural products / chemical sensors"
+    },
+    {
+      "id": "cyanide",
+      "find": [
+        "cyanide"
+      ],
+      "discipline": "analytical chemistry"
+    },
+    {
+      "id": "imidazopyridine",
+      "find": [
+        "imidazopyridines",
+        "imidazopyridine"
+      ],
+      "discipline": "heterocyclic synthesis"
+    },
+    {
+      "id": "schiff",
+      "find": [
+        "Schiff bases",
+        "Schiff base"
+      ],
+      "discipline": "organic chemistry"
+    },
+    {
+      "id": "slit2-robo",
+      "find": [
+        "SLIT2",
+        "ROBO receptor",
+        "ROBO receptors"
+      ],
+      "discipline": "cancer pharmacology"
+    },
+    {
+      "id": "ACE2",
+      "find": [
+        "ACE2",
+        "angiotensin II"
+      ],
+      "discipline": "renin-angiotensin system"
+    },
+    {
+      "id": "convolutional",
+      "find": [
+        "convolutional",
+        "LSTM",
+        "echocardiography"
+      ],
+      "discipline": "medical imaging / AI"
+    },
+    {
+      "id": "cubosome",
+      "find": [
+        "cubosome",
+        "cubosomes"
+      ],
+      "discipline": "lipid self-assembly"
+    },
+    {
+      "id": "rheology",
+      "find": [
+        "rheology"
+      ],
+      "discipline": "materials engineering"
+    },
+    {
+      "id": "microfluidic",
+      "find": [
+        "microfluidic"
+      ],
+      "discipline": "bioengineering"
+    },
+    {
+      "id": "Minhaj",
+      "find": [
+        "Minhāj al-dukkān",
+        "Minhaj al-dukkan",
+        "Minhaj al-dukkān"
+      ],
+      "discipline": "Arabic medieval formulary"
+    },
+    {
+      "id": "julab",
+      "find": [
+        "julāb",
+        "julab"
+      ],
+      "discipline": "medieval Arabic pharmacy"
+    },
+    {
+      "id": "qiwam",
+      "find": [
+        "qiwām",
+        "qiwam"
+      ],
+      "discipline": "Arabic historical pharmacy"
+    },
+    {
+      "id": "Mamluk",
+      "find": [
+        "Mamluk",
+        "Ayyubid"
+      ],
+      "discipline": "medieval history"
+    },
+    {
+      "id": "Qasr-El-Einy",
+      "find": [
+        "Qasr El Einy",
+        "Qasr El Aini"
+      ],
+      "discipline": "Cairo place name"
+    },
+    {
+      "id": "Chem-Squad",
+      "find": [
+        "Chem Squad"
+      ],
+      "discipline": "scientific organization and owner archive"
+    },
+    {
+      "id": "zebrafish",
+      "find": [
+        "zebrafish"
+      ],
+      "discipline": "developmental research"
+    }
+  ]
+}

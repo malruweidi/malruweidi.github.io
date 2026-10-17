@@ -1,0 +1,17 @@
+{
+  "layout_version": "full-frame-qa-v2",
+  "source_mp4": "assets/films/longform-v2/making-medicines-keep.mp4",
+  "source_sha256": "86b545cd8fd790104b2cf7e5874832411ae5f6974a75bcb5d91d74a46fa1fd67",
+  "samples_seconds": [
+    4,
+    17,
+    29,
+    41,
+    54,
+    68,
+    83,
+    105
+  ],
+  "full_picture_preserved": true,
+  "label_placement": "Outside original frame bounds; never obscures title or scientific figure"
+}

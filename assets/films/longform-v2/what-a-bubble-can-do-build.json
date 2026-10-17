@@ -1,0 +1,97 @@
+{
+  "title": "What a Bubble Can Do",
+  "seconds": 120.0,
+  "bytes": 3400968,
+  "sha256": "f7f126af5dcd5d195f7bd3b7b98acc89c922460f52b634d34f3779350c4511fa",
+  "source": "assets/films/evidence-in-motion.json",
+  "chapters": 8,
+  "media": [
+    {
+      "chapter": "01",
+      "type": "ANIMATED EXPLANATION",
+      "credit": "Conceptual drawing. Not experimental or clinical footage.",
+      "source": null,
+      "context_visual": "nih-alveoli",
+      "context_source": {
+        "id": "nih-alveoli",
+        "asset": "nih-niaid-alveoli-context.webp",
+        "download_url": "https://cdn.creativeclaw.co/u/8a002dd8/images/d04eb043-de5d-454a-9e2f-46ae57eed9c1.png",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Alveoli_(NIH_BioArt_14).png",
+        "credit": "NIAID / NIH BioArt #14 Alveoli. Public-domain anatomical illustration; unrelated to the experimental data of the pulmonary flow-chamber research.",
+        "license": "Public domain, U.S. federal government work; source attribution NIAID/NIH",
+        "category": "third-party anatomical reference",
+        "caption": "NIH ANATOMICAL ILLUSTRATION • NOT EXPERIMENTAL DATA",
+        "show_seconds": 5,
+        "on_frame_lines": [
+          "NIH ANATOMY REFERENCE",
+          "NOT THE RESEARCH MICROGRAPH"
+        ]
+      }
+    },
+    {
+      "chapter": "02",
+      "type": "PUBLISHED SCIENTIFIC FIGURE",
+      "credit": "Published flow-chamber figure: research context only.",
+      "source": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "03",
+      "type": "ANIMATED EXPLANATION",
+      "credit": "Diagram of chamber geometry. Schematic, not measured dimensions.",
+      "source": null,
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "04",
+      "type": "SCIENTIFIC METHOD",
+      "credit": "Actual fluorescence panels not available for verification here; retained publication illustration only, not invented cell imagery.",
+      "source": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "05",
+      "type": "ANIMATED EXPLANATION",
+      "credit": "Illustrative assay logic; no invented readings.",
+      "source": null,
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "06",
+      "type": "SCIENTIFIC METHOD",
+      "credit": "Publication figure, not patient-treatment evidence.",
+      "source": "/assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "07",
+      "type": "ANIMATED EXPLANATION",
+      "credit": "Explanatory geometry only.",
+      "source": null,
+      "context_visual": null,
+      "context_source": null
+    },
+    {
+      "chapter": "08",
+      "type": "RESEARCH DOCUMENT",
+      "credit": "Original 2021 peer-reviewed paper credited in end card.",
+      "source": null,
+      "context_visual": null,
+      "context_source": null
+    }
+  ],
+  "editorial_method": "Real owner archive retained uncropped in frames; explicitly non-documentary original illustrations; audio Kokoro-ONNX + self-generated original score.",
+  "edition": "longform-v2",
+  "human_screening": "NOT YET COMPLETED",
+  "animated_scene_ids": [
+    "01",
+    "03"
+  ],
+  "evidence_boundary": "Do not fabricate measured cell viability panels or clinical data.",
+  "method": "Pillow + FFmpeg open-source explanatory moving plates, original Kokoro synthesis"
+}

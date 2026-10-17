@@ -1,0 +1,84 @@
+{
+  "id": "echo-cnn-lstm",
+  "seconds": 84.0,
+  "sha256": "fa233fa4d04ec538e035401c95268357c738dea18f25aef668d6cd41f43661b7",
+  "primary_source": "https://doi.org/10.1109/ACCESS.2023.3316719",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original echocardiography workspace archive, not an identified pilot-study fetal image",
+    "Original explanatory diagram, not diagnostic clinical data",
+    "Conceptual model architecture, not the exact published CNN-LSTM figure",
+    "Original workspace photo; not the study performance data",
+    "Editorial machine-learning interpretation; see original paper for actual metrics",
+    "Archived imaging instrumentation; published paper linked separately"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "kind": "Original echocardiography workspace archive, not an identified pilot-study fetal image",
+      "credit": "Original echocardiography workspace archive, not an identified pilot-study fetal image",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/echo-concept.svg",
+      "kind": "Original explanatory diagram, not diagnostic clinical data",
+      "credit": "Original explanatory diagram, not diagnostic clinical data",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/echo-concept.svg",
+      "kind": "Conceptual model architecture, not the exact published CNN-LSTM figure",
+      "credit": "Conceptual model architecture, not the exact published CNN-LSTM figure",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "kind": "Original workspace photo; not the study performance data",
+      "credit": "Original workspace photo; not the study performance data",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/echo-concept.svg",
+      "kind": "Editorial machine-learning interpretation; see original paper for actual metrics",
+      "credit": "Editorial machine-learning interpretation; see original paper for actual metrics",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "kind": "Archived imaging instrumentation; published paper linked separately",
+      "credit": "Archived imaging instrumentation; published paper linked separately",
+      "source": "/computing.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "signal",
+  "motion_storyboard": {
+    "02": "signal",
+    "03": "network",
+    "04": "signal",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Ultrasound sequence",
+    "Spatial features",
+    "Temporal modelling"
+  ],
+  "evidence_boundary": "No patient ECG or published model-performance curve is fabricated.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

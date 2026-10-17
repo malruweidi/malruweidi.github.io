@@ -1,0 +1,31 @@
+{
+  "film": "flow-chamber-method",
+  "doi": "10.3390/mps3040065",
+  "source_sha256": "3c811127cf7a753192335195778a2b7e16c6da61da436b8e7f59fa7277721af8",
+  "source_original_figure_numbers": [
+    1,
+    5,
+    6
+  ],
+  "sample_seconds": [
+    3,
+    11,
+    18,
+    26,
+    33,
+    41,
+    48,
+    56,
+    63,
+    71,
+    78,
+    86,
+    93,
+    101,
+    108,
+    116
+  ],
+  "preserves_entire_frames": true,
+  "human_viewed_or_listened": false,
+  "release_state": "INDEPENDENT SCIENTIFIC AND CINEMATIC VIEWING REQUIRED"
+}

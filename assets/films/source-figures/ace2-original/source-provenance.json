@@ -1,0 +1,27 @@
+{
+  "paper": "Do Changes in ACE-2 Expression Affect SARS-CoV-2 Virulence and Related Complications: A Closer Look into Membrane-Bound and Soluble Forms",
+  "doi": "10.3390/ijms22136703",
+  "source": "https://doi.org/10.3390/ijms22136703",
+  "article_licence": "CC BY 4.0; figures 3 and 7 not marked reproduced in the paper's own captions",
+  "warning": "This is source-based rights triage; scientific and legal human review still required",
+  "figures": [
+    {
+      "figure_number": 3,
+      "caption": "Schematic diagram for the major pathways in RAAS.",
+      "publisher_image_url": "https://www.mdpi.com/ijms/ijms-22-06703/article_deploy/html/images/ijms-22-06703-g003.png",
+      "archive_image": "assets/films/source-figures/ace2-original/ace2-forms-figure-03.jpg",
+      "image_sha256": "356993d09c9f20754c72af7a54284f084f6c92c3395f24f8ef854c10b013ee18",
+      "presentation": "Original full figure; no replotting data axes or clipping source citations.",
+      "disclosure": "Review article, not new experimental measurements."
+    },
+    {
+      "figure_number": 7,
+      "caption": "Potential approaches against ARDS and adverse cardiac events relevant to SARS-CoV-2 infection.",
+      "publisher_image_url": "https://www.mdpi.com/ijms/ijms-22-06703/article_deploy/html/images/ijms-22-06703-g007.png",
+      "archive_image": "assets/films/source-figures/ace2-original/ace2-forms-figure-07.jpg",
+      "image_sha256": "eecb86c11a231f0b2e7ca8be914cefaac92c9e6570f84bc28f83d660ffce742b",
+      "presentation": "Original full figure; no replotting data axes or clipping source citations.",
+      "disclosure": "Review article, not new experimental measurements."
+    }
+  ]
+}

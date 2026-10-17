@@ -1,0 +1,55 @@
+{
+  "title": "Two Materials. No Section.",
+  "edition": "longform-v2-recut",
+  "signature": "four-motion-chapters-2026-10-17",
+  "seconds": 150.0,
+  "sha256": "441bf5013c4aebe5431dc59cd46df9cd3f6a002c78c587a1f4258f16e3571034",
+  "original_mp4": "assets/films/two-materials-no-section.mp4",
+  "source_manifest": "assets/films/two-materials-scenes.json",
+  "source_credits": [
+    {
+      "scene": "03",
+      "start_seconds": 28.1,
+      "duration_seconds": 15.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "two-materials-no-section.mp4",
+      "motion": "histology",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "05",
+      "start_seconds": 61.1,
+      "duration_seconds": 14.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "two-materials-no-section.mp4",
+      "motion": "histology",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "07",
+      "start_seconds": 92.1,
+      "duration_seconds": 15.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "two-materials-no-section.mp4",
+      "motion": "translation",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "08",
+      "start_seconds": 108.1,
+      "duration_seconds": 14.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "two-materials-no-section.mp4",
+      "motion": "editorial",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    }
+  ],
+  "human_screening": "NOT YET COMPLETED",
+  "narration": "Original first-edition synthetic audio preserved",
+  "scientific_policy": "Failure observed; material-interface mechanism remains a hypothesis rather than a proven cause.",
+  "tools": [
+    "Pillow 13",
+    "FFmpeg H264",
+    "original AAC"
+  ]
+}

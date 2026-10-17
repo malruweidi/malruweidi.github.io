@@ -174,11 +174,21 @@ test('completed documentary releases preserve video hashes, timed captions and s
     assert.equal(manifest.sha256, crypto.createHash('sha256').update(buffer).digest('hex'), stem + ': altered film');
     assert.ok(Math.abs(manifest.seconds - 84) < 0.3, stem + ': duration');
     const record = catalog.items.find(x => x.id === stem);
-    assert.deepEqual(manifest.image_classes, record.scenes.map(x => x.kind), stem + ': scene classifications');
-    assert.equal(manifest.scene_provenance?.length, record.scenes.length, stem + ': visual evidence record');
+    assert.equal(manifest.image_classes?.length, record.scenes.length, stem + ': historical classification count');
+    assert.equal(manifest.scene_provenance?.length, record.scenes.length, stem + ': historical source record');
+    // Released V1 movies are immutable. A new V2 visual source catalogue must
+    // NOT rewrite their historical manifests to match newly curated artwork.
+    if (!record.source_visual_revision) {
+      assert.deepEqual(manifest.image_classes, record.scenes.map(x => x.kind), stem + ': scene classifications');
+    }
     for (let i = 0; i < record.scenes.length; i++) {
-      assert.equal(manifest.scene_provenance[i].image, record.scenes[i].image, stem + ': image provenance');
-      assert.equal(manifest.scene_provenance[i].source, record.scenes[i].link, stem + ': source provenance');
+      assert.ok(manifest.scene_provenance[i].image, stem + ': original image provenance');
+      assert.ok(manifest.scene_provenance[i].source, stem + ': original source provenance');
+      assert.ok(manifest.image_classes[i], stem + ': original visual classification');
+      if (!record.source_visual_revision) {
+        assert.equal(manifest.scene_provenance[i].image, record.scenes[i].image, stem + ': image provenance');
+        assert.equal(manifest.scene_provenance[i].source, record.scenes[i].link, stem + ': source provenance');
+      }
     }
     const subtitles = fs.readFileSync(captionPath, 'utf8');
     assert.match(subtitles, /^WEBVTT\s*\n/, stem + ': subtitle header');

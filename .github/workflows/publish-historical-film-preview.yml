@@ -1,0 +1,89 @@
+name: Publish isolated historical research-film preview (not the old V2 batch)
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - cinema-research-preview.html
+      - .github/workflows/publish-historical-film-preview.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ruwaidix-single-preview-main-release
+  cancel-in-progress: false
+jobs:
+  publish-only-one-reviewed-source-route:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify actual V4 movie and the exact manuscript source before any public mutation
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          f=Path("assets/films/series-v4/making-medicines-keep.mp4")
+          m=json.loads(f.with_suffix(".json").read_text())
+          scan=Path("assets/films/source-manuscripts/wellcome-ms-arabic-1002/source-register.json")
+          src=json.loads(scan.read_text())
+          assert f.stat().st_size>1000000
+          assert m["sha256"]==hashlib.sha256(f.read_bytes()).hexdigest()
+          assert "V4 archival-material" in m["edition"]
+          assert "NOT HUMAN REVIEWED" in m["human_review"]
+          assert src["copy_date"]=="Egypt, 1904 CE"
+          assert Path("assets/films/series/making-medicines-keep.mp4").is_file()
+          print("Preview only, no global film replacement: validated")
+          PY
+      - name: Move only the V4 movie, original manuscript images, and preview page to live main
+        run: |
+          mkdir -p /tmp/ruwaidix-v4
+          cp cinema-research-preview.html /tmp/ruwaidix-v4/preview.html
+          cp assets/films/series-v4/making-medicines-keep.* /tmp/ruwaidix-v4/
+          cp assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg /tmp/ruwaidix-v4/
+          cp assets/films/source-manuscripts/wellcome-ms-arabic-1002/source-register.json /tmp/ruwaidix-v4/
+          git fetch origin main
+          git checkout -B main origin/main
+          mkdir -p assets/films/series-v4 assets/films/source-manuscripts/wellcome-ms-arabic-1002
+          cp /tmp/ruwaidix-v4/preview.html cinema-research-preview.html
+          cp /tmp/ruwaidix-v4/making-medicines-keep.* assets/films/series-v4/
+          cp /tmp/ruwaidix-v4/canvas-013.jpg assets/films/source-manuscripts/wellcome-ms-arabic-1002/
+          cp /tmp/ruwaidix-v4/source-register.json assets/films/source-manuscripts/wellcome-ms-arabic-1002/
+      - name: Add a review link only for the historical article without editing other film routes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path("publication-cinema.html")
+          text=p.read_text()
+          a="""(x.id==="making-medicines-keep"?'<a href="https://www.qdl.qa/en/archive/81055/vdc_100024115485.0x000001" """
+          b="""(x.id==="making-medicines-keep"?'<a href="/cinema-research-preview.html">Watch new archival-source research cut ↗</a><a href="https://www.qdl.qa/en/archive/81055/vdc_100024115485.0x000001" """
+          if a not in text:
+            if b in text:print("Review link already added")
+            else:raise ValueError("Original page changed: no safe anchor for targeted link")
+          else:
+            text=text.replace(a,b,1)
+            p.write_text(text)
+          PY
+      - name: Verify 54 historic MP4 archives and the main website data remain present
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          c=json.loads(Path("assets/films/publication-series.json").read_text())
+          assert len(c["items"])==35
+          for item in c["items"]:
+            assert Path("assets/films/series",item["id"]+".mp4").is_file()
+          assert Path("assets/films/series-v4/making-medicines-keep.mp4").is_file()
+          assert Path("cinema-research-preview.html").is_file()
+          print("All original 35 publication films remain intact")
+          PY
+      - name: Publish only the isolated preview and source link, never merge the unfinished V2 remake PR
+        run: |
+          git config user.name "Ruwaidix Source Cinema"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cinema-research-preview.html publication-cinema.html assets/films/series-v4/making-medicines-keep.* assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg assets/films/source-manuscripts/wellcome-ms-arabic-1002/source-register.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Add genuine manuscript-backed pharmacy film preview, keep all original cinema sources"
+            git push origin HEAD:main
+          fi

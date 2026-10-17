@@ -1,0 +1,95 @@
+name: Publish only three verified research films to original-preserving cinema
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - .github/workflows/publish-three-verified-cinema.yml
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency:
+  group: ruwaidix-selective-main-cinema-promotion
+  cancel-in-progress: false
+jobs:
+  source-verified-single-purpose-promotion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify all three new film master hashes and original figure identities
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          for slug,edition,doi,expected in [
+            ("making-medicines-keep","series-v4",None,None),
+            ("pla-grafting","series-v3","10.3390/polym13213717",{1,4,8}),
+            ("flow-chamber-method","series-v3","10.3390/mps3040065",{1,5,6})]:
+            target=Path("assets/films")/edition/(slug+".mp4")
+            m=json.loads(target.with_suffix(".json").read_text())
+            q=json.loads((target.parent/"qa"/(slug+"-contact.json")).read_text())
+            assert target.stat().st_size>1000000
+            assert hashlib.sha256(target.read_bytes()).hexdigest()==m["sha256"]==q.get("source_sha256",q.get("sha256")),slug
+            assert target.with_suffix(".vtt").read_text().startswith("WEBVTT")
+            assert Path("assets/films/series",slug+".mp4").is_file()
+            if doi:
+              assert m.get("doi",m.get("primary_doi"))==doi
+              fig=m.get("figures",m.get("source_figures"))
+              assert {f["figure_number"] for f in fig}==expected
+              assert all(f["doi"]==doi and f["sha256"]==hashlib.sha256(Path(f["local_path"]).read_bytes()).hexdigest() for f in fig)
+          manuscript=json.loads(Path("assets/films/source-manuscripts/wellcome-ms-arabic-1002/source-register.json").read_text())
+          assert manuscript["copy_date"]=="Egypt, 1904 CE"
+          print("Three source verified MP4s have QA manifests consistent with current files")
+          PY
+      - name: Save only the exact approved-selection file paths before changing branch
+        run: |
+          tar -cf /tmp/ruwaidix-selected-three.tar \
+            assets/films/series-v4/making-medicines-keep.mp4 \
+            assets/films/series-v4/making-medicines-keep.vtt \
+            assets/films/series-v4/making-medicines-keep.json \
+            assets/films/series-v3/pla-grafting.mp4 \
+            assets/films/series-v3/pla-grafting.vtt \
+            assets/films/series-v3/pla-grafting.json \
+            assets/films/series-v3/flow-chamber-method.mp4 \
+            assets/films/series-v3/flow-chamber-method.vtt \
+            assets/films/series-v3/flow-chamber-method.json \
+            assets/films/source-figures/v3/source-figure-provenance.json \
+            assets/films/source-figures/v3/pla-grafting-figure-01.jpg \
+            assets/films/source-figures/v3/pla-grafting-figure-04.jpg \
+            assets/films/source-figures/v3/pla-grafting-figure-08.jpg \
+            assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg \
+            assets/films/source-figures/v3/flow-chamber-method-figure-05.jpg \
+            assets/films/source-figures/v3/flow-chamber-method-figure-06.jpg \
+            scripts/promote-three-research-film-editions.py
+      - name: Apply only selected versions to live main without merging unrelated V2 cuts
+        run: |
+          git fetch origin main
+          git checkout -B main origin/main
+          tar -xf /tmp/ruwaidix-selected-three.tar
+          python scripts/promote-three-research-film-editions.py
+      - name: Test browser JavaScript and preserve the full first-edition archive
+        run: |
+          python - <<'PY'
+          import json,re
+          from pathlib import Path
+          s=Path("publication-cinema.html").read_text()
+          chunks=re.findall(r"<script>(.*?)</script>",s,re.S)
+          assert len(chunks)==1, "Unexpectedly changed cinema JS structure"
+          Path("/tmp/ruwaidix-scene-player.js").write_text(chunks[0])
+          assert 'verifiedFilmMasters=Object.freeze(' in s
+          assert s.count('const url=base+".mp4";')==1
+          assert len(json.loads(Path("assets/films/publication-series.json").read_text())["items"])==35
+          for meta in json.loads(Path("assets/films/publication-series.json").read_text())["items"]:
+            assert Path("assets/films/series",meta["id"]+".mp4").exists(),meta["id"]
+          print("Original 35 short-film MP4s still present")
+          PY
+          node --check /tmp/ruwaidix-scene-player.js
+          git diff --check
+      - name: Release three new research editions and preserve all existing website routes
+        run: |
+          git config user.name "Ruwaidix Scientific Film Releases"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add publication-cinema.html scripts/promote-three-research-film-editions.py assets/films/series-v4/making-medicines-keep.* assets/films/series-v3/pla-grafting.* assets/films/series-v3/flow-chamber-method.* assets/films/source-figures/v3/
+          if ! git diff --cached --quiet; then
+            git commit -m "Prefer three authentic figure-sourced research cinema editions, retain all original films"
+            git push origin HEAD:main
+          fi

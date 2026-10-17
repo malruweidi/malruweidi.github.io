@@ -1,0 +1,26 @@
+{
+  "film": "micelles-pahs",
+  "hash": "cfd7b081cb2386432177f48eecaba2918e10a4f3a740f6f72f0127ce5ae64e5e",
+  "source_gate": "Verified actual on-repository original image/experimental coordinate hashes and source identity",
+  "runtime": 120.0,
+  "sample_seconds": [
+    3,
+    11,
+    18,
+    26,
+    33,
+    41,
+    48,
+    56,
+    63,
+    71,
+    78,
+    86,
+    93,
+    101,
+    108,
+    116
+  ],
+  "pictured_scientific_evidence": "Source-attributed; chapter-level scientific interpretation still needs human evaluation",
+  "note": "Full-frame inspection only. Does not approve pronunciation, art direction or publishing."
+}

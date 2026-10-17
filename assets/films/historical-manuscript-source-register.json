@@ -1,0 +1,61 @@
+{
+  "version": "2026-10-17",
+  "film_id": "making-medicines-keep",
+  "status": "Verified digital-catalogue sources; rights and archaeological context must be inspected before any new embedded image is added to a rendered film.",
+  "historical_boundaries": [
+    "The publication on Making Medicines Keep was accepted 15 October 2026; do not present it as already published.",
+    "The catalogue dates the composite volume to 715 AH / 1315–16 from the third treatise's colophon on fol. 139v; this does not independently date every leaf or show that the copy was produced in Cairo. Or 5786 is a manuscript witness, not an authorial autograph.",
+    "Source materials are documentary evidence of pharmaceutical practice and prescription formulations; they are not measured evidence of contemporary pharmacological efficacy.",
+    "An independent generic Wellcome Arabic medical manuscript cannot be represented as a leaf from British Library Or 5786 or a specific Cairo Genizah fragment."
+  ],
+  "records": [
+    {
+      "id": "or-5786",
+      "collection": "British Library Oriental Manuscripts",
+      "shelfmark": "Or 5786, ff. 1v–95v",
+      "title": "Minhāj al-dukkān wa-dustūr al-aʿyān, al-Kūhīn al-ʿAṭṭār",
+      "witness_date": "Codex catalogued as transcribed in 715 AH / 1315–1316 CE; dating comes from the colophon of the third item (fol. 139v), not an independent colophon on every Minhāj al-dukkān leaf.",
+      "source_url": "https://www.qdl.qa/en/archive/81055/vdc_100023441781.0x000001",
+      "exact_leaf_example": "https://www.qdl.qa/archive/81055/vdc_100024189448.0x000040",
+      "rights": "Qatar Digital Library item indicates Public Domain; attribution and ethical conditions of reuse still apply.",
+      "film_role": "Directly relevant manuscript witness to the formulary discussed. If its image is used, identify the actual folio and crop and date, and do not imply authorship, copy-location, or direct usage without evidence.",
+      "source_type": "primary manuscript witness",
+      "direct_image_import": "NOT IMPORTED: automated QDL IIIF request returned HTTP 403 on 17 October 2026. Keep source record link; do not mirror, bypass restrictions or silently substitute another image."
+    },
+    {
+      "id": "genizah-medical-corpus",
+      "collection": "Cambridge University Library, Taylor-Schechter Collection",
+      "title": "Medical corpus of the Cairo Genizah",
+      "source_url": "https://www.lib.cam.ac.uk/collections/departments/taylor-schechter-genizah-research-unit/projects/medicine-medieval-egypt",
+      "rights": "High-resolution images are searchable; separate permission required for reproduction on public websites.",
+      "permission_url": "https://www.lib.cam.ac.uk/collections/departments/taylor-schechter-genizah-research-unit/frequently-asked-questions",
+      "film_role": "Contextual project and manuscript research lead, not automatic permission to reuse specific fragment images.",
+      "source_type": "institutional corpus catalogue"
+    },
+    {
+      "id": "genizah-ts-10j6",
+      "collection": "Cambridge University Library / Princeton Geniza Project",
+      "shelfmark": "T-S 10J6.17 + T-S 8J22.13",
+      "title": "Medical prescription(s) in Arabic script",
+      "source_url": "https://geniza.princeton.edu/en/documents/35168/",
+      "rights": "Cambridge University Library requires public website reproduction permission; do not download or embed until granted.",
+      "film_role": "A specifically catalogued medical prescription record; not established as a witness to the syrup or substitution passage without further manuscript analysis.",
+      "source_type": "primary manuscript fragment catalogue record"
+    },
+    {
+      "id": "wellcome-arabic-1002",
+      "collection": "Wellcome Collection",
+      "shelfmark": "MS Arabic 1002",
+      "title": "Minhāj al-dukkān wa-dustūr al-aʿyān",
+      "source_url": "https://wellcomecollection.org/works/cesersut",
+      "catalogue_url": "https://wellcomecollection.org/works/qgq88pbk",
+      "digitized": "180 images; no specific page of the syrup chapter has yet been transcription-verified",
+      "copy_date": "Catalogued copy produced Egypt, 1904 CE, not a thirteenth-century manuscript and not the Cambridge Genizah fragment.",
+      "rights": "Wellcome Collection displays Public Domain Mark for this work; attribute exact MS Arabic 1002 folio/page.",
+      "film_role": "A genuinely relevant later manuscript witness to the same pharmacy handbook, suitable for documentary citation and potentially authentic manuscript images once a specific IIIF canvas is matched.",
+      "source_type": "later original-work manuscript witness",
+      "image_import_state": "Pending a successful official Wellcome API IIIF import and manual folio verification."
+    }
+  ],
+  "notes": "Exact Or 5786 source identified with public-domain usage term. A GitHub Actions access request returned HTTP 403; no physical folio JPEG was staged and the workflow was limited to manual authorized retries. Existing graphics remain labeled reconstructions. A second catalogued and freely reusable copy of the same actual text has been identified at Wellcome MS Arabic 1002 (1904); unlike generic Wellcome M0008126, it is genuinely Minhāj al-dukkān. Do not imply a page or copy date proves thirteenth-century production."
+}

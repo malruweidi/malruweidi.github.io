@@ -1,0 +1,17 @@
+{
+  "layout_version": "full-frame-qa-v2",
+  "source_mp4": "assets/films/longform-v2/what-survives-the-experiment.mp4",
+  "source_sha256": "98fc87e17173842aecdd8ea36e45591bc220960530dc3a9d8a44f785d0755052",
+  "samples_seconds": [
+    4,
+    17,
+    29,
+    41,
+    54,
+    68,
+    83,
+    105
+  ],
+  "full_picture_preserved": true,
+  "label_placement": "Outside original frame bounds; never obscures title or scientific figure"
+}

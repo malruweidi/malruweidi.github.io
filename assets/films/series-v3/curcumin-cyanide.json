@@ -1,0 +1,57 @@
+{
+  "id": "curcumin-cyanide",
+  "edition": "V3 source-specific colorimetric / fluorimetric cyanide experiment",
+  "primary_doi": "10.1039/C9AY01557D",
+  "title": "Curcumin a colorimetric and fluorimetric cyanide probe in aqueous system and living cells",
+  "original_author_archived_figure": "assets/home-archive/figure-cyanide-sensor.jpg",
+  "source_image_git_blob_sha": "05f658f81f63fe0811699dd686955a232be97e36",
+  "figure_panel_identity": "a absorption; b solution colors; c fluorescence; d UV samples. Original figure number pending source PDF confirmation.",
+  "permissions": "RSC article-author reuse provision requires accurate attribution and can be confirmed before live embed",
+  "no_stock_or_crossstudy_figures": true,
+  "original_2019_spectra_unchanged": true,
+  "duration_seconds": 120.0,
+  "sha256": "b2479eae14f8bf771fcbf10d32a260a2a4bedafb1c5a8cf61b608c96b52f0ec5",
+  "chapters": [
+    {
+      "title": "The colour of a test",
+      "speech": "A bright yellow solution turns orange when cyanide is introduced. But does the colour change actually identify one ion, or only something about the mixture?",
+      "source": "2019 Analytical Methods 11:5169–5176; original author-archived four-panel photograph and absorption data."
+    },
+    {
+      "title": "The original scientific record",
+      "speech": "This is the published experiment, not a substitute stock photograph. The four panels record absorption, visible colour, fluorescence emission, and the vials under ultraviolet light.",
+      "source": "Owner archive figure-cyanide-sensor.jpg, visual panels a–d; RSC DOI 10.1039/C9AY01557D. Figure numbering pending original PDF inspection."
+    },
+    {
+      "title": "What changes in solution",
+      "speech": "The test was in ninety percent acetonitrile and ten percent water. Curcumin began yellow, while added cyanide produced a striking orange solution. This is not a water-only assay.",
+      "source": "2019 study Abstract: CH3CN:H2O 90:10; curcumin visible yellow-to-orange response; archived panel b."
+    },
+    {
+      "title": "Two spectral landmarks",
+      "speech": "The original absorbance figure gives the numerical story. The original band at four hundred twenty-one nanometres decreases, while a strong signal emerges at five hundred twenty. The shift is ninety-nine nanometres.",
+      "source": "2019 article measured UV-vis values 421 and 520 nm, shift 99 nm; original panel a."
+    },
+    {
+      "title": "Selectivity is conditional",
+      "speech": "Most tested monovalent anions caused no comparable response. Hydroxide is the important exception: it also changed the colour. That caveat belongs beside the claim of cyanide sensing.",
+      "source": "2019 article lists controls F−, Cl−, Br−, I−, acetate, dihydrogen arsenate, azide; hydroxide similar more intense response."
+    },
+    {
+      "title": "The light dims",
+      "speech": "Curcumin emits fluorescence around five hundred twenty nanometres. Adding cyanide quenched that emission. These are the actual fluorescence results, accompanied by photographed sample vials.",
+      "source": "2019 paper fluorescence at 520 nm and quenching; original four-panel figure panels c/d."
+    },
+    {
+      "title": "A cellular observation",
+      "speech": "Curcumin fluorescence was also observed in living cells. After cyanide was added, the signal slowly faded over time. The schematic here is illustrative; it is not a fabricated cell image.",
+      "source": "2019 article reports living-cell fluorescence and slow quenching; source microscopy image not staged, therefore never fabricated."
+    },
+    {
+      "title": "What the result does not mean",
+      "speech": "The reported detection limit was two point three micromolar. The solvent mixture, hydroxide interference, and slow cellular response limit how broadly we can interpret this finding.",
+      "source": "2019 article lower limit 2.3 × 10^-6 molar, 90:10 CH3CN-water, hydroxide response and cell time dependence."
+    }
+  ],
+  "human_review": "NOT APPROVED; must audition each scene and confirm exact archived four-panel figure provenance before replacing public edition"
+}

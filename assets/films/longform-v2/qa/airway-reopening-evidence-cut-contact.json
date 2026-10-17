@@ -1,0 +1,17 @@
+{
+  "layout_version": "full-frame-qa-v2",
+  "source_mp4": "assets/films/longform-v2/airway-reopening-evidence-cut.mp4",
+  "source_sha256": "dd13ff67103b71ad69f1151f2bc51e1099028bcafda0387c0f4db3022a73ef42",
+  "samples_seconds": [
+    4,
+    17,
+    29,
+    41,
+    54,
+    68,
+    83,
+    105
+  ],
+  "full_picture_preserved": true,
+  "label_placement": "Outside original frame bounds; never obscures title or scientific figure"
+}

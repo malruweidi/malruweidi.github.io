@@ -1,0 +1,84 @@
+{
+  "id": "flow-chamber-method",
+  "seconds": 84.0,
+  "sha256": "c36935f5a6b5acaec589937c0da99001d39b454887ba78da09db2fb86a6b3700",
+  "primary_source": "https://doi.org/10.3390/mps3040065",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Published experimental flow-chamber figure",
+    "Original conceptual diagram, not the paper's exact hardware",
+    "Published flow-chamber research figure",
+    "Pulmonary research figure context; consult methods paper for exact protocols",
+    "Explicitly simplified model illustration",
+    "Published methods figure"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "kind": "Published experimental flow-chamber figure",
+      "credit": "Published experimental flow-chamber figure",
+      "source": "/grants/urep21.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/lung-concept.svg",
+      "kind": "Original conceptual diagram, not the paper's exact hardware",
+      "credit": "Original conceptual diagram, not the paper's exact hardware",
+      "source": "/grants/urep21.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "kind": "Published flow-chamber research figure",
+      "credit": "Published flow-chamber research figure",
+      "source": "/grants/urep21.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/evidence-pulmonary.webp",
+      "kind": "Pulmonary research figure context; consult methods paper for exact protocols",
+      "credit": "Pulmonary research figure context; consult methods paper for exact protocols",
+      "source": "/grants/urep21.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/lung-concept.svg",
+      "kind": "Explicitly simplified model illustration",
+      "credit": "Explicitly simplified model illustration",
+      "source": "/grants/urep21.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "kind": "Published methods figure",
+      "credit": "Published methods figure",
+      "source": "/grants/urep21.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "interface",
+  "motion_storyboard": {
+    "02": "chamber",
+    "03": "interface",
+    "04": "assay",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Air–liquid interface",
+    "Monolayer exposure",
+    "Controlled injury assay"
+  ],
+  "evidence_boundary": "Geometry illustrative; consult published apparatus for dimensions.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

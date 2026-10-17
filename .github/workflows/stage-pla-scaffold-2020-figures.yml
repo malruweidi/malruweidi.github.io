@@ -1,0 +1,52 @@
+name: Stage true 2020 PLA antimicrobial scaffold experimental figures
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/stage-pla-scaffold-2020-figures.py
+      - .github/workflows/stage-pla-scaffold-2020-figures.yml
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency: {group: ruwaidix-2020-pla-scaffold-source, cancel-in-progress: false}
+jobs:
+  fetch-original-paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install pymupdf
+      - name: Verify DOI and capture five unaltered source figure/table pages
+        run: python scripts/stage-pla-scaffold-2020-figures.py
+      - name: Reject mixed-up 2021 study or unverified page images
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          root=Path("assets/films/source-figures/pla-scaffolds-2020")
+          data=json.loads((root/"source-identity.json").read_text())
+          assert data["doi"]=="10.1016/j.surfcoat.2020.126216"
+          assert len(data["study_specific_media"])==5
+          assert data["status"].startswith("ORIGINAL PDF PAGES STAGED")
+          for p in data["study_specific_media"]:
+            file=Path(p["artifact"])
+            assert file.is_file() and p["original_page_preserved"]
+            assert hashlib.sha256(file.read_bytes()).hexdigest()==p["sha256"]
+          print("Exact 2020 electrospun scaffold figures and source metadata verified.")
+          PY
+      - name: Commit only authenticated scholarly source pages for director's inspection
+        run: |
+          git config user.name "Ruwaidix Scientific Film Sources"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/source-figures/pla-scaffolds-2020/
+          if ! git diff --cached --quiet; then
+            git commit -m "Preserve exact 2020 PLA antimicrobial scaffold paper figures, DOI and source page indices"
+            git fetch origin "${{ github.ref_name }}"
+            if git rebase "origin/${{ github.ref_name }}"; then
+              git push origin HEAD:"${{ github.ref_name }}"
+            else
+              git rebase --abort
+              exit 1
+            fi
+          fi

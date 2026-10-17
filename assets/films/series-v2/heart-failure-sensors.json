@@ -1,0 +1,85 @@
+{
+  "id": "heart-failure-sensors",
+  "seconds": 84.0,
+  "sha256": "88db7c8b1bb5d31d4befad4a604afaf3b76550a1c914dd8524a039a71dc54030",
+  "primary_source": "https://doi.org/10.1002/9781119813040.ch5",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original cardiac imaging workstation, not data used in the review",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Archival Doppler apparatus, not heart-failure sensor comparison",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Imaging-context photograph",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "kind": "Original cardiac imaging workstation, not data used in the review",
+      "credit": "Original cardiac imaging workstation, not data used in the review",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/films/art/source-specific/heart-sensing.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "kind": "Archival Doppler apparatus, not heart-failure sensor comparison",
+      "credit": "Archival Doppler apparatus, not heart-failure sensor comparison",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/films/art/source-specific/heart-sensing.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "kind": "Imaging-context photograph",
+      "credit": "Imaging-context photograph",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/films/art/source-specific/heart-sensing.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/computing.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "source_visual_revision": "curated-2026-10-17-v3",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "signal",
+  "motion_storyboard": {
+    "02": "signal",
+    "03": "signal",
+    "04": "target-exposure",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Physiological input",
+    "Sensor readout",
+    "Clinical validation"
+  ],
+  "evidence_boundary": "Signal is symbolic, not measured patient physiology.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

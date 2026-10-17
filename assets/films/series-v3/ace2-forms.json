@@ -1,0 +1,65 @@
+{
+  "id": "ace2-forms",
+  "edition": "V3 source-matched ACE2 forms research documentary",
+  "article_doi": "10.3390/ijms22136703",
+  "source_pdb": "6M0J",
+  "source_pdb_doi": "10.2210/pdb6M0J/pdb",
+  "source_figures": [
+    {
+      "figure_number": 3,
+      "caption": "Schematic diagram for the major pathways in RAAS.",
+      "publisher_image_url": "https://www.mdpi.com/ijms/ijms-22-06703/article_deploy/html/images/ijms-22-06703-g003.png",
+      "archive_image": "assets/films/source-figures/ace2-original/ace2-forms-figure-03.jpg",
+      "image_sha256": "356993d09c9f20754c72af7a54284f084f6c92c3395f24f8ef854c10b013ee18",
+      "presentation": "Original full figure; no replotting data axes or clipping source citations.",
+      "disclosure": "Review article, not new experimental measurements."
+    }
+  ],
+  "pdb_structure_sha256": "51f27a495c0c12fa87f459a2510a9268d4d48a34b63ba3e5db5ae7c672a26af5",
+  "duration_seconds": 120.0,
+  "sha256": "60dccf8d70b23b7f25666831c4dd63fe45a3eff1be7a2c86e3a94efd7306688c",
+  "chapter_sources": [
+    {
+      "title": "One protein, two states",
+      "speech": "ACE2 is not simply a docking site for a virus. Its position matters. The membrane-bound receptor and its shed soluble ectodomain can have different biological consequences.",
+      "source": "2021 IJMS review, DOI 10.3390/ijms22136703, sections 2.1\u20132.3."
+    },
+    {
+      "title": "The binding interface is real",
+      "speech": "This molecular trace comes from crystal structure six M zero J: human ACE2 bound to the SARS CoV two spike receptor-binding domain. These are experimentally determined coordinates.",
+      "source": "PDB 6M0J; Lan et al., Nature 2020; X-ray diffraction at 2.45 \u00c5; this depicts the extracellular binding interface only."
+    },
+    {
+      "title": "An enzyme within a network",
+      "speech": "ACE2 also processes angiotensin two to angiotensin one to seven, helping counterbalance signalling elsewhere in the renin angiotensin system. It is not a one-way viral-entry switch.",
+      "source": "The review's original Figure 3: RAAS schematic, CC BY 4.0. Diagram is illustrative, not a measured trial result."
+    },
+    {
+      "title": "The membrane is a boundary",
+      "speech": "Membrane ACE2 has an extracellular catalytic domain connected through the cell membrane to an intracellular tail. A picture of the isolated protein cannot represent that whole context.",
+      "source": "2021 review ACE2 domain and shedding discussion; original conceptual membrane scene; not drawn from 6M0J."
+    },
+    {
+      "title": "Shedding changes the question",
+      "speech": "Proteolytic shedding can release ACE2's catalytic ectodomain into extracellular fluid. Soluble ACE2 retains enzymatic activity, but its consequences depend on tissue, timing, and disease state.",
+      "source": "2021 review section 2.3: soluble/membrane ACE2 and enzymatically active released ectodomain."
+    },
+    {
+      "title": "Binding is not infection",
+      "speech": "The receptor-binding event is an initial step, not a complete account of infection. Entry also depends on host proteases and cellular processes. No single diagram explains every tissue.",
+      "source": "2021 review section 2.1, membrane fusion/endocytic processes; original author conceptual, no third-party Figure 1 reused."
+    },
+    {
+      "title": "Association is not intervention",
+      "speech": "ACE2 expression varies across tissues, illnesses, and medication exposure. Observational associations cannot by themselves show that changing ACE2 improves a patient's outcome.",
+      "source": "2021 review disease and ACE inhibitor / ARB evidence, limitations; no invented tissue counts or treatment recommendation."
+    },
+    {
+      "title": "Two forms, open questions",
+      "speech": "The same protein participates in protective enzymatic signalling and viral receptor binding. The review asks how membrane and soluble forms alter risk. It does not settle that question.",
+      "source": "Paper Abstract and conclusions, 2021; an evidence-bound review, not a prospective clinical trial."
+    }
+  ],
+  "human_review": "NOT YET APPROVED; inspect biological labels, narration, original Figure 3 and 6M0J chain connectivity.",
+  "research_boundary": "2021 review; this film depicts hypotheses and source structures, not prospective clinical studies or treatments; PDB 6M0J is only extracellular ACE2\u2013RBD."
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ace2-covid-drugs",
+  "seconds": 84.0,
+  "sha256": "8d150a0af5b9b999015837afcf6910b67c8a1409023d4324f3de707ba176eae5",
+  "primary_source": "https://doi.org/10.1080/08037051.2022.2055530",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/films/art/source-specific/ace2-system.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/films/art/source-specific/ace2-system.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/films/art/source-specific/ace2-system.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/films/art/source-specific/ace2-system.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/films/art/source-specific/ace2-system.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/films/art/source-specific/ace2-system.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
+      "source": "/#publications"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "source_visual_revision": "curated-2026-10-17-v3",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "network",
+  "motion_storyboard": {
+    "02": "target-exposure",
+    "03": "ace2-shedding",
+    "04": "network",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Medication exposure",
+    "ACE2 and angiotensin II",
+    "Confounding variables"
+  ],
+  "evidence_boundary": "No patient observations or causal estimate is depicted.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

@@ -1,0 +1,30 @@
+name: Verify third-party image rights before ACE2 and microfluidic cinema
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/discover-rights-sensitive-scientific-figures.py
+      - .github/workflows/discover-study-figure-rights.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  inspect-and-register:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Audit article JATS and all individual figure attribution captions
+        run: python scripts/discover-rights-sensitive-scientific-figures.py
+      - name: Preserve source-only candidate register without downloading any disputed image
+        run: |
+          git config user.name "Ruwaidix Source and Reuse Review"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/source-figures/doi-discovery/
+          if ! git diff --cached --quiet; then
+            git commit -m "Identify original ACE2 and microfluidic figure rights and third-party restrictions"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase "origin/${{ github.ref_name }}"
+            git push origin HEAD:"${{ github.ref_name }}"
+          fi

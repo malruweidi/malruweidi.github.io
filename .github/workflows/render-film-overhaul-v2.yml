@@ -1,0 +1,147 @@
+name: Ruwaidix film overhaul v2 (open-source)
+on:
+  push:
+    branches:
+      - film-remake-20261017
+      - main
+    paths:
+      - scripts/film-overhaul-motion.py
+      - scripts/remaster-publication-series.py
+      - assets/films/remake-direction.json
+      - .github/workflows/render-film-overhaul-v2.yml
+      - scripts/make-film-qa-contact-sheets.py
+      - scripts/normalize-film-captions.py
+      - scripts/audit-all-film-recuts.py
+      - scripts/audit-remake-readiness.py
+      - scripts/build-film-pronunciation-index.py
+      - tests/film-overhaul-v2.test.cjs
+      - film-studio.html
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: ruwaidix-remake-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  render-film-v2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install open-source media and scientific drawing tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --upgrade pip
+          python -m pip install pillow numpy soundfile kokoro-onnx cairosvg
+      - name: Synchronize the latest authoritative review branch before any validation or rendering
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git fetch origin "$BRANCH"
+          git checkout --force -B "$BRANCH" "origin/$BRANCH"
+      - name: Validate source-bound editorial directions and preserved archive
+        run: |
+          python -m py_compile scripts/remaster-publication-series.py scripts/film-overhaul-motion.py
+          python scripts/remaster-publication-series.py --validate-only
+          node --test tests/film-overhaul-v2.test.cjs
+          node --test tests/publication-film-series.test.cjs
+      - name: Cache open Kokoro ONNX voice files
+        uses: actions/cache@v4
+        with:
+          path: film-models
+          key: ruwaidix-kokoro-onnx-fp16-v1.1
+      - name: Download open public narrator model
+        run: |
+          mkdir -p film-models
+          if [ ! -s film-models/kokoro-v1.0.fp16.onnx ]; then curl --fail --location --retry 3 --silent --show-error -o film-models/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx; fi
+          if [ ! -s film-models/voices-v1.0.bin ]; then curl --fail --location --retry 3 --silent --show-error -o film-models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin; fi
+          test "$(stat -c%s film-models/kokoro-v1.0.fp16.onnx)" -gt 90000000
+          test "$(stat -c%s film-models/voices-v1.0.bin)" -gt 1000000
+      - name: Render, validate and commit each film as an independent checkpoint
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "Ruwaidix Open Film Studio"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for batch in 1 2 3 4 5 6; do
+            # Each Actions run can begin from an older checkout; never re-render
+            # a film already committed by a previous or concurrently finishing run.
+            git fetch origin "$BRANCH"
+            git reset --hard "origin/$BRANCH"
+            left="$(python scripts/remaster-publication-series.py --remaining-count | tail -n 1)"
+            echo "Cycle $batch; fully current films still required: $left"
+            if [ "$left" -eq 0 ]; then break; fi
+            python scripts/remaster-publication-series.py --missing-only --limit 1
+            python scripts/normalize-film-captions.py --collection series-v2
+            python scripts/audit-all-film-recuts.py --collection series-v2
+            python scripts/audit-remake-readiness.py
+            python scripts/build-film-pronunciation-index.py
+            python scripts/make-film-qa-contact-sheets.py --collection series-v2
+            git add assets/films/series-v2/ assets/films/remake-readiness.json assets/films/pronunciation-review-v2.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Checkpoint one source-grounded film with decoded-frame and subtitle QA"
+              git fetch origin "$BRANCH"
+              if ! git rebase "origin/$BRANCH"; then
+                # A competing checkpoint already added this file or metadata.
+                # Keep its authoritative version rather than merging binaries.
+                git rebase --abort
+                git reset --hard "origin/$BRANCH"
+                echo "Concurrent source update: discarded duplicate output; the next cycle will recheck remaining films."
+                continue
+              fi
+              if ! git push origin HEAD:"$BRANCH"; then
+                git fetch origin "$BRANCH"
+                git reset --hard "origin/$BRANCH"
+                echo "Remote moved after rebase: duplicate or stale output discarded; recheck in next cycle."
+                continue
+              fi
+            fi
+          done
+      - name: Refresh complete-frame QA even if there are no new films
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          # This job may have started before other checked-in film artifacts.
+          # Regenerate derived QA solely against the current remote tree.
+          git fetch origin "$BRANCH"
+          git reset --hard "origin/$BRANCH"
+          python scripts/make-film-qa-contact-sheets.py --collection series-v2
+          python scripts/audit-remake-readiness.py
+          python scripts/build-film-pronunciation-index.py
+          git config user.name "Ruwaidix Open Film Studio"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v2/qa/ assets/films/remake-readiness.json assets/films/pronunciation-review-v2.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh complete-frame source-hashed reviewer contact sheets"
+            git fetch origin "$BRANCH"
+            if ! git rebase "origin/$BRANCH"; then
+              git rebase --abort
+              git reset --hard "origin/$BRANCH"
+              echo "Remote QA register changed concurrently; preserving current authoritative records."
+            else
+              if ! git push origin HEAD:"$BRANCH"; then
+                git fetch origin "$BRANCH"
+                git reset --hard "origin/$BRANCH"
+                echo "QA-only commit race. Future on-demand audit may refresh derived metadata."
+              fi
+            fi
+          fi
+      - name: Continue remaining films in the source-preserving review branch
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git fetch origin "${{ github.ref_name }}"
+          git checkout --force -B "${{ github.ref_name }}" "origin/${{ github.ref_name }}"
+          count="$(python scripts/remaster-publication-series.py --remaining-count | tail -n 1)"
+          echo "V2 films still to render: $count"
+          if [ "$count" -gt 0 ]; then
+            gh workflow run render-film-overhaul-v2.yml --ref "${{ github.ref_name }}"
+          fi

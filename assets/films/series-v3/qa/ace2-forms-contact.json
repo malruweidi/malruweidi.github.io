@@ -1,0 +1,26 @@
+{
+  "film": "ace2-forms",
+  "hash": "60dccf8d70b23b7f25666831c4dd63fe45a3eff1be7a2c86e3a94efd7306688c",
+  "source_gate": "Verified actual on-repository original image/experimental coordinate hashes and source identity",
+  "runtime": 120.0,
+  "sample_seconds": [
+    3,
+    11,
+    18,
+    26,
+    33,
+    41,
+    48,
+    56,
+    63,
+    71,
+    78,
+    86,
+    93,
+    101,
+    108,
+    116
+  ],
+  "pictured_scientific_evidence": "Source-attributed; chapter-level scientific interpretation still needs human evaluation",
+  "note": "Full-frame inspection only. Does not approve pronunciation, art direction or publishing."
+}

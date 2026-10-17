@@ -1,0 +1,95 @@
+name: Two evidence-verified V4 scientific documentaries
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/render-study-figures-v4.py
+      - assets/films/V4-EXACT-FIGURE-DOCUMENTARIES.json
+      - .github/workflows/render-exact-figure-films-v4.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ruwaidix-v4-measured-figures
+  cancel-in-progress: false
+jobs:
+  figure-led-cinema:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install open-source film and sound modules
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --upgrade pip
+          python -m pip install pillow numpy soundfile kokoro-onnx
+          python -m py_compile scripts/render-study-figures-v4.py
+      - uses: actions/cache@v4
+        with:
+          path: film-models
+          key: ruwaidix-kokoro-onnx-fp16-v1.1
+      - name: Stage publicly distributed on-device voice
+        run: |
+          mkdir -p film-models
+          if [ ! -s film-models/kokoro-v1.0.fp16.onnx ]; then curl --fail --location --retry 3 -sS -o film-models/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx; fi
+          if [ ! -s film-models/voices-v1.0.bin ]; then curl --fail --location --retry 3 -sS -o film-models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin; fi
+      - name: Check authentic research figure boundaries before any rendering
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          cfg=json.loads(Path("assets/films/V4-EXACT-FIGURE-DOCUMENTARIES.json").read_text())["films"]
+          images=json.loads(Path("assets/films/source-figures/v3/source-figure-provenance.json").read_text())["figures"]
+          keys={(item["film"],item["figure_number"]):item for item in images}
+          for slug,film in cfg.items():
+              assert len(film["scenes"])==8
+              for scene in film["scenes"]:
+                  ref=keys[(slug,scene["figure"])]
+                  assert ref["doi"]==film["doi"]
+                  img=Path(ref["local_path"])
+                  assert hashlib.sha256(img.read_bytes()).hexdigest()==ref["sha256"]
+          print("All 16 narrative chapters resolve to exact-source original figure pixels")
+          PY
+      - name: Render actual flow-chamber 2020 methods experiment
+        run: python scripts/render-study-figures-v4.py --film flow-chamber-method
+      - name: Render actual 2021 PLA film/aluminium study
+        run: python scripts/render-study-figures-v4.py --film pla-grafting
+      - name: Validate both complete 120-second encoded film masters
+        run: |
+          python - <<'PY'
+          import json,hashlib,subprocess
+          from pathlib import Path
+          folder=Path("assets/films/series-v4")
+          for stem in ("flow-chamber-method","pla-grafting"):
+              film=folder/(stem+".mp4")
+              record=json.loads((folder/(stem+".json")).read_text())
+              assert film.stat().st_size>1_000_000
+              assert hashlib.sha256(film.read_bytes()).hexdigest()==record["sha256"]
+              assert len(record["chapters"])==8 and len(record["source_figures"])==8
+              assert "NOT APPROVED" in record["human_review"]
+              assert (folder/(stem+".vtt")).read_text().startswith("WEBVTT")
+              streams=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-of","json",str(film)]))["streams"]
+              assert {"h264","aac"}<={s["codec_name"] for s in streams}
+              assert abs(float(record["duration_seconds"])-120)<.3
+              print(stem,"verified 120-second study-specific source master")
+          PY
+      - name: Commit two film candidates without changing default public originals
+        run: |
+          git config user.name "Ruwaidix Source-Figure Film Studio"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v4/flow-chamber-method.* assets/films/series-v4/pla-grafting.*
+          if ! git diff --cached --quiet; then
+            git commit -m "Encode independent V4 films from real flow-chamber and PLA-film experimental figures"
+            git fetch origin "${{ github.ref_name }}"
+            if git rebase "origin/${{ github.ref_name }}"; then
+              git push origin HEAD:"${{ github.ref_name }}"
+            else
+              git rebase --abort
+              echo "Do not merge binary film versions or alter original released files"
+              exit 1
+            fi
+          fi
