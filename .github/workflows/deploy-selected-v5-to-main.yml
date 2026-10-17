@@ -1,0 +1,106 @@
+name: Deploy three source-correct V5 cinema cuts without deleting originals
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - .github/workflows/deploy-selected-v5-to-main.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ruwaidix-selected-main-cinema-publish
+  cancel-in-progress: false
+jobs:
+  conservative-three-film-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Validate candidate paper identities, film bytes, and original preservation
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          source=Path("assets/films/series-v5")
+          expected={
+            "microfluidic-virus":"10.1007/s42247-021-00169-7",
+            "flow-chamber-method":"10.3390/mps3040065",
+            "pla-scaffolds":"10.1016/j.surfcoat.2020.126216"
+          }
+          for stem,doi in expected.items():
+            mp4=source/(stem+".mp4");m=json.loads((source/(stem+".json")).read_text())
+            assert m["doi"]==doi
+            assert m["sha256"]==hashlib.sha256(mp4.read_bytes()).hexdigest()
+            assert len(m["chapters"])==8 and abs(m["duration_seconds"]-120)<.4
+            assert (source/(stem+".vtt")).read_text().startswith("WEBVTT")
+            assert Path("assets/films/series/"+stem+".mp4").is_file()
+            assert "NOT APPROVED" in m["human_review"] or "NOT HUMAN REVIEWED" in m["human_review"]
+            for figure in m["source_figures"]:
+              file=Path(figure["path"])
+              assert stem in file.name
+              assert figure["sha256"]==hashlib.sha256(file.read_bytes()).hexdigest()
+          print("Three original-publication figure-bound films approved for REVERSIBLE PUBLIC PREVIEW ONLY")
+          PY
+      - name: Prepare exact new MP4s and patch only the three edition selectors on latest main
+        run: |
+          git fetch origin main
+          git worktree add --detach /tmp/ruwaidix-selected-main origin/main
+          mkdir -p /tmp/ruwaidix-selected-main/assets/films/series-v5
+          mkdir -p /tmp/ruwaidix-selected-main/assets/films/source-figures/v4/microfluidic-virus
+          mkdir -p /tmp/ruwaidix-selected-main/assets/films/source-figures/v4/pla-scaffolds
+          for slug in microfluidic-virus flow-chamber-method pla-scaffolds; do
+            cp "assets/films/series-v5/$slug.mp4" "assets/films/series-v5/$slug.vtt" "assets/films/series-v5/$slug.json" /tmp/ruwaidix-selected-main/assets/films/series-v5/
+          done
+          cp assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg /tmp/ruwaidix-selected-main/assets/films/source-figures/v4/microfluidic-virus/
+          cp assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg /tmp/ruwaidix-selected-main/assets/films/source-figures/v4/pla-scaffolds/
+          python - <<'PY'
+          from pathlib import Path
+          file=Path("/tmp/ruwaidix-selected-main/publication-cinema.html")
+          text=file.read_text()
+          start='  const verifiedFilmMasters=Object.freeze({'
+          assert text.count(start)==1
+          old='   "flow-chamber-method":{edition:"series-v3",duration:120,poster:"/assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg"}'
+          new='   "flow-chamber-method":{edition:"series-v5",duration:120,poster:"/assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg"}'
+          assert old in text or new in text
+          text=text.replace(old,new)
+          additions=[
+            '   "microfluidic-virus":{edition:"series-v5",duration:120,poster:"/assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg"},',
+            '   "pla-scaffolds":{edition:"series-v5",duration:120,poster:"/assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg"},'
+          ]
+          missing=[line for line in additions if line not in text]
+          if missing:
+            text=text.replace(start,start+"\n"+"\n".join(missing),1)
+          assert all(line in text for line in additions)
+          assert new in text
+          assert '"making-medicines-keep":{edition:"series-v4"' in text
+          file.write_text(text)
+          PY
+      - name: Verify all existing main-original MP4 SHA identities before pushing
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+          original=subprocess.check_output(["git","ls-tree","-r","--full-tree","origin/main"],text=True).splitlines()
+          old={line.split("\t",1)[1]:line.split()[2] for line in original if line.endswith(".mp4") and "/series-v" not in line}
+          root=Path("/tmp/ruwaidix-selected-main")
+          assert len(old)>=54,("Main archived films unexpectedly fewer than 54",len(old))
+          for path,sha in old.items():
+            actual=subprocess.check_output(["git","-C",str(root),"hash-object",str(root/path)],text=True).strip()
+            assert sha==actual,path
+          print("All",len(old),"original main films remain byte-for-byte intact")
+          PY
+      - name: Publish only selected V5 alternatives to original main site
+        run: |
+          cd /tmp/ruwaidix-selected-main
+          git config user.name "Ruwaidix Evidence-First Film Release"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add publication-cinema.html assets/films/series-v5/ assets/films/source-figures/v4/microfluidic-virus/ assets/films/source-figures/v4/pla-scaffolds/
+          if ! git diff --cached --quiet; then
+            git commit -m "Live cinema: 2020 flow chamber, 2020 PLA scaffold and 2021 microfluidic authentic V5 editions; originals preserved"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
