@@ -1,0 +1,25 @@
+{
+  "film": "flow-chamber-method",
+  "source_mp4": "assets/films/series-v5/flow-chamber-method.mp4",
+  "source_sha256": "a432ef2eaeffb0d1f578745470e10ce40c192bffdae9b52ff7216043caaf68f8",
+  "frames_seconds": [
+    4,
+    11,
+    19,
+    26,
+    34,
+    41,
+    49,
+    56,
+    64,
+    71,
+    79,
+    86,
+    94,
+    101,
+    109,
+    116
+  ],
+  "full_encoded_pixels_preserved": true,
+  "approval": "SOURCE/QC-REVIEW ONLY; not a guarantee of artistic or scientific approval"
+}
