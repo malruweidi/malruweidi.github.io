@@ -244,7 +244,7 @@ def backfill_video_posters():
                          "sha256":record["sha256"]})
     if V6:
         index={"schema":"ruwaidix-film-releases-v1","count":len(releases),"films":releases}
-        (OUTPUT/"releases.json").write_text(json.dumps(index,indent=2)+"\\n",encoding="utf-8")
+        (OUTPUT/"releases.json").write_text(json.dumps(index,indent=2),encoding="utf-8")
         print("Ready-to-play V6 films indexed:", len(releases))
 
 def main():
