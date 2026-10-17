@@ -1,0 +1,133 @@
+{
+  "purpose": "Find genuinely matching research figures without treating published-image presence as reuse clearance.",
+  "warning": "EXACT PAPER: CC BY applies subject to separately credited third-party material. Warnings are conservative, not a legal determination.",
+  "papers": [
+    {
+      "slug": "ace2-forms",
+      "doi": "10.3390/ijms22136703",
+      "pmcid": "PMC8269184",
+      "jats": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8269184/fullTextXML",
+      "title": "Do Changes in ACE-2 Expression Affect SARS-CoV-2 Virulence and Related Complications: A Closer Look into Membrane-Bound and Soluble Forms",
+      "roles": "2021 scientific review, NOT new in-vivo experiment",
+      "license_items": [
+        {
+          "href": null,
+          "text": "Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/)."
+        }
+      ],
+      "article_license_ccby": true,
+      "figure_count": 7,
+      "eligible_for_manual_reuse_review": 2,
+      "figures": [
+        {
+          "figure_id": "ijms-22-06703-f001",
+          "label": "Figure 1",
+          "caption": "SARS-CoV’s viral invasion of the host cell via a membrane-bound ACE-2 receptor. ACE-2 mediates entry of coronavirus in two distinct ways. The first one is Clathrin and ADAM 17-dependent endocytosis, and the second one is TMPRSS2-dependent membrane fusion. Figure replicated from [6] with permission.",
+          "caption_title": "",
+          "graphic_ids": [
+            "ijms-22-06703-g001.jpg",
+            "ijms-22-06703-g001.gif"
+          ],
+          "third_party_warning": true,
+          "candidate_for_author_article_ccby_use": false,
+          "media_state": "NOT DOWNLOADED; image/panels, ethics and actual licence require source review",
+          "review_instruction": "Source identity and the original subpanels must be checked before embedding. Avoid close recreations of third-party figures."
+        },
+        {
+          "figure_id": "ijms-22-06703-f002",
+          "label": "Figure 2",
+          "caption": "Organ-specific comparative ACE-2 expression. Figure replicated from [13] with permission.",
+          "caption_title": "",
+          "graphic_ids": [
+            "ijms-22-06703-g002.jpg",
+            "ijms-22-06703-g002.gif"
+          ],
+          "third_party_warning": true,
+          "candidate_for_author_article_ccby_use": false,
+          "media_state": "NOT DOWNLOADED; image/panels, ethics and actual licence require source review",
+          "review_instruction": "Source identity and the original subpanels must be checked before embedding. Avoid close recreations of third-party figures."
+        },
+        {
+          "figure_id": "ijms-22-06703-f003",
+          "label": "Figure 3",
+          "caption": "Schematic diagram for the major pathways in RAAS.",
+          "caption_title": "",
+          "graphic_ids": [
+            "ijms-22-06703-g003.jpg",
+            "ijms-22-06703-g003.gif"
+          ],
+          "third_party_warning": false,
+          "candidate_for_author_article_ccby_use": true,
+          "media_state": "NOT DOWNLOADED; image/panels, ethics and actual licence require source review",
+          "review_instruction": "Source identity and the original subpanels must be checked before embedding. Avoid close recreations of third-party figures."
+        },
+        {
+          "figure_id": "ijms-22-06703-f004",
+          "label": "Figure 4",
+          "caption": "ACE-2 shedding and SARS-CoV-2 entry. TMPRSS2 process ACE-2 for efficient viral entry and replication. Figure replicated from [12] with permission.",
+          "caption_title": "",
+          "graphic_ids": [
+            "ijms-22-06703-g004.jpg",
+            "ijms-22-06703-g004.gif"
+          ],
+          "third_party_warning": true,
+          "candidate_for_author_article_ccby_use": false,
+          "media_state": "NOT DOWNLOADED; image/panels, ethics and actual licence require source review",
+          "review_instruction": "Source identity and the original subpanels must be checked before embedding. Avoid close recreations of third-party figures."
+        },
+        {
+          "figure_id": "ijms-22-06703-f005",
+          "label": "Figure 5",
+          "caption": "The RAAS with COVID-19. The thicker arrows show an increase in the degree of pathway activation; dotted arrows show a decrease in pathway activation. ACE: angiotensin-converting enzyme; ACE-2: angiotensin-converting enzyme-2; AT1R: angiotensin type 1 receptor; AT2R: angiotensin type2 receptor; ANG 1–7: angiotensin 1–7; ARB: angiotensin receptor blockers; rhACE-2: recombinant human ACE-2; TMPRSS2: transmembrane serine protease 2 (figure replicated from [46] with permission).",
+          "caption_title": "",
+          "graphic_ids": [
+            "ijms-22-06703-g005.jpg",
+            "ijms-22-06703-g005.gif"
+          ],
+          "third_party_warning": true,
+          "candidate_for_author_article_ccby_use": false,
+          "media_state": "NOT DOWNLOADED; image/panels, ethics and actual licence require source review",
+          "review_instruction": "Source identity and the original subpanels must be checked before embedding. Avoid close recreations of third-party figures."
+        },
+        {
+          "figure_id": "ijms-22-06703-f006",
+          "label": "Figure 6",
+          "caption": "Working mechanisms for ACEi and ARB and relevance to SARS-CoV/SARS-CoV-2 infections. Figure replicated from [82] with permission.",
+          "caption_title": "",
+          "graphic_ids": [
+            "ijms-22-06703-g006.jpg",
+            "ijms-22-06703-g006.gif"
+          ],
+          "third_party_warning": true,
+          "candidate_for_author_article_ccby_use": false,
+          "media_state": "NOT DOWNLOADED; image/panels, ethics and actual licence require source review",
+          "review_instruction": "Source identity and the original subpanels must be checked before embedding. Avoid close recreations of third-party figures."
+        },
+        {
+          "figure_id": "ijms-22-06703-f007",
+          "label": "Figure 7",
+          "caption": "Potential approaches against ARDS and adverse cardiac events relevant to SARS-CoV-2 infection.",
+          "caption_title": "",
+          "graphic_ids": [
+            "ijms-22-06703-g007.jpg",
+            "ijms-22-06703-g007.gif"
+          ],
+          "third_party_warning": false,
+          "candidate_for_author_article_ccby_use": true,
+          "media_state": "NOT DOWNLOADED; image/panels, ethics and actual licence require source review",
+          "review_instruction": "Source identity and the original subpanels must be checked before embedding. Avoid close recreations of third-party figures."
+        }
+      ]
+    }
+  ],
+  "unresolved_sources": [
+    {
+      "slug": "cerebral-cilia",
+      "doi": "10.1161/ATVBAHA.118.311231",
+      "pmcid": "PMC6309420",
+      "status": "SOURCE REQUEST FAILED / DO NOT GUESS IMAGE OR LICENCE",
+      "error": "HTTP Error 500: ",
+      "retry": "Use publisher JATS, author files or institutional repository metadata after verification."
+    }
+  ]
+}
