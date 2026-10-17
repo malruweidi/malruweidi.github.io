@@ -39,12 +39,14 @@ def backdrop(title,number,note):
 def full_panel(n,im,label,t,region=None):
     src=figure(n)
     # Never clip the first presentation of a measured image.
-    target=ImageOps.contain(src,(1110,513),Image.Resampling.LANCZOS)
+    # Reserve a fixed, separate documentary title and bottom attribution.
+    # Even zoomed true-source result plots must never cross them.
+    target=ImageOps.contain(src,(1110,390),Image.Resampling.LANCZOS)
     if region:
         sw,sh=src.size
         x0,y0,x1,y1=region
-        target=ImageOps.contain(src.crop((int(x0*sw),int(y0*sh),int(x1*sw),int(y1*sh))),(1120,512),Image.Resampling.LANCZOS)
-    pos=((W-target.width)//2+int(math.sin(t*.3)*7),207+(445-target.height)//2)
+        target=ImageOps.contain(src.crop((int(x0*sw),int(y0*sh),int(x1*sw),int(y1*sh))),(1110,390),Image.Resampling.LANCZOS)
+    pos=((W-target.width)//2+int(math.sin(t*.3)*7),210+(390-target.height)//2)
     im.paste(target,pos);d=ImageDraw.Draw(im)
     d.rectangle((pos[0]-3,pos[1]-3,pos[0]+target.width+3,pos[1]+target.height+3),outline=GOLD,width=3)
     d.rounded_rectangle((43,610,1226,647),radius=8,fill=(17,42,46))
