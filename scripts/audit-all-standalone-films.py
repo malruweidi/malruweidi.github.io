@@ -44,7 +44,7 @@ def audit_movie(stem,edition):
  tracks=json.loads(shell("ffprobe","-v","error","-show_streams","-show_format",
                         "-of","json",str(movie)))
  types={x["codec_type"] for x in tracks["streams"]}
- if types!={"video","audio"}:
+ if not {"video","audio"}.issubset(types):
   raise ValueError("Missing video or audio: "+str(movie)+" tracks "+str(types))
  seconds=float(tracks["format"]["duration"])
  if seconds<50:
