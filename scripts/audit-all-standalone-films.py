@@ -24,6 +24,10 @@ RESEARCH=[
  ("series-v4","making-medicines-keep"),("series-v3","pla-grafting"),
  ("series-v5","flow-chamber-method")
 ]
+CORRECTED=[
+ "what-a-bubble-can-do-evidence-v2",
+ "two-materials-no-section-source-v2"
+]
 FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
 def shell(*cmd):
@@ -89,12 +93,14 @@ def main():
   results.append(audit_movie(stem,None))
  for edition,stem in RESEARCH:
   results.append(audit_movie(stem,edition))
- if len(results)!=14 or len({x["contact_sheet"] for x in results})!=14:
-  raise AssertionError("14 unique preserved films expected")
+ for stem in CORRECTED:
+  results.append(audit_movie(stem,None))
+ if len(results)!=16 or len({x["contact_sheet"] for x in results})!=16:
+  raise AssertionError("16 unique original, research and corrected film editions expected")
  index={"schema":"ruwaidix-cinema-standalone-qa-v1","films":results,
         "count":len(results),"review_status":"UNAPPROVED DIRECTOR'S CONTACT SHEETS",
         "note":"Frame captures prove what was rendered, not scientific or creative quality."}
  (OUT/"review-index.json").write_text(json.dumps(index,indent=2,ensure_ascii=False)+"\n")
- print("14 preserved editions inspected; 84 source-movie frames produced.")
+ print("16 preserved and corrected editions inspected; 96 actual movie frames produced.")
 
 if __name__=="__main__":main()
