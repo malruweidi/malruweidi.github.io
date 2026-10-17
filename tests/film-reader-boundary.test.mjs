@@ -47,5 +47,6 @@ test('captions remain available in screening players', () => {
   for (const path of pages) {
     if (path === 'films.html' || path === 'publication-cinema.html') continue; 
     assert.match(visible(raw(path)), /<track\b[^>]*kind=["']captions["']/i, path);
+    assert.doesNotMatch(visible(raw(path)), /<track\b[^>]*\sdefault(?:\s|>)/i, path+' captions must be opt-in');
   }
 });
