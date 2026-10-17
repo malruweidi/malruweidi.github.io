@@ -1,0 +1,74 @@
+{
+  "id": "airway-reopening",
+  "seconds": 84.0,
+  "sha256": "f8b1d9f2c89740b9673fbf67ce2f6ff72a74ee5796094cc3cc0bbce7c365008a",
+  "primary_source": "https://doi.org/10.1152/japplphysiol.00574.2020",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Published research figure: parallel-plate experimental geometry",
+    "Original diagram, conceptual only",
+    "Study figure reproduced in the author's research archive",
+    "Archival laboratory workspace, not a recording of the drug exposure",
+    "Research-context figure; see primary paper for quantitative readouts",
+    "Published study context; DOI on film page"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "kind": "Published research figure: parallel-plate experimental geometry",
+      "credit": "Published research figure: parallel-plate experimental geometry",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/lung-concept.svg",
+      "kind": "Original diagram, conceptual only",
+      "credit": "Original diagram, conceptual only",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "kind": "Study figure reproduced in the author's research archive",
+      "credit": "Study figure reproduced in the author's research archive",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "kind": "Archival laboratory workspace, not a recording of the drug exposure",
+      "credit": "Archival laboratory workspace, not a recording of the drug exposure",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/evidence-pulmonary.webp",
+      "kind": "Research-context figure; see primary paper for quantitative readouts",
+      "credit": "Research-context figure; see primary paper for quantitative readouts",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "kind": "Published study context; DOI on film page",
+      "credit": "Published study context; DOI on film page",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02"
+  ],
+  "motion_motif": "interface",
+  "motion_annotations": [
+    "Interface advances",
+    "Epithelial response",
+    "In-vitro endpoint"
+  ],
+  "evidence_boundary": "The illustration is not a recorded experiment.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}

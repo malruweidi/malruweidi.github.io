@@ -1,0 +1,74 @@
+{
+  "id": "cerebral-cilia",
+  "seconds": 84.0,
+  "sha256": "a2e5099ee5dbb178244cf6a356aaf1ffe302bfe9f0823c79a62e5e8fef485dc8",
+  "primary_source": "https://doi.org/10.1161/ATVBAHA.118.311231",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Published zebrafish research imagery",
+    "Original microscopy footage, model-context limitations apply",
+    "Original editorial concept diagram",
+    "Published figure in research archive",
+    "Zebrafish context image; the original footage is linked separately",
+    "Published research record"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "kind": "Published zebrafish research imagery",
+      "credit": "Published zebrafish research imagery",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/evidence-zebrafish.webp",
+      "kind": "Original microscopy footage, model-context limitations apply",
+      "credit": "Original hosted zebrafish microscopy recording; research context, not proof of every result",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/zebrafish-concept.svg",
+      "kind": "Original editorial concept diagram",
+      "credit": "Original editorial concept diagram",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "kind": "Published figure in research archive",
+      "credit": "Published figure in research archive",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/evidence-zebrafish.webp",
+      "kind": "Zebrafish context image; the original footage is linked separately",
+      "credit": "Zebrafish context image; the original footage is linked separately",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "kind": "Published research record",
+      "credit": "Published research record",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "03"
+  ],
+  "motion_motif": "vessel",
+  "motion_annotations": [
+    "Flow in a developing vessel",
+    "Ciliary distribution",
+    "Imaging and interpretation"
+  ],
+  "evidence_boundary": "Motion is schematic, not measured zebrafish velocity.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}
