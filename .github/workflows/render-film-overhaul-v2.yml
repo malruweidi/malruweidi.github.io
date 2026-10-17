@@ -40,6 +40,12 @@ jobs:
           sudo apt-get install -y ffmpeg fonts-dejavu-core
           python -m pip install --upgrade pip
           python -m pip install pillow numpy soundfile kokoro-onnx cairosvg
+      - name: Synchronize the latest authoritative review branch before any validation or rendering
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git fetch origin "$BRANCH"
+          git checkout --force -B "$BRANCH" "origin/$BRANCH"
       - name: Validate source-bound editorial directions and preserved archive
         run: |
           python -m py_compile scripts/remaster-publication-series.py scripts/film-overhaul-motion.py
@@ -65,6 +71,10 @@ jobs:
           git config user.name "Ruwaidix Open Film Studio"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for batch in 1 2 3 4 5 6; do
+            # Each Actions run can begin from an older checkout; never re-render
+            # a film already committed by a previous or concurrently finishing run.
+            git fetch origin "$BRANCH"
+            git reset --hard "origin/$BRANCH"
             left="$(python scripts/remaster-publication-series.py --remaining-count | tail -n 1)"
             echo "Cycle $batch; fully current films still required: $left"
             if [ "$left" -eq 0 ]; then break; fi
@@ -78,14 +88,30 @@ jobs:
             if ! git diff --cached --quiet; then
               git commit -m "Checkpoint one source-grounded film with decoded-frame and subtitle QA"
               git fetch origin "$BRANCH"
-              git rebase "origin/$BRANCH"
-              git push origin HEAD:"$BRANCH"
+              if ! git rebase "origin/$BRANCH"; then
+                # A competing checkpoint already added this file or metadata.
+                # Keep its authoritative version rather than merging binaries.
+                git rebase --abort
+                git reset --hard "origin/$BRANCH"
+                echo "Concurrent source update: discarded duplicate output; the next cycle will recheck remaining films."
+                continue
+              fi
+              if ! git push origin HEAD:"$BRANCH"; then
+                git fetch origin "$BRANCH"
+                git reset --hard "origin/$BRANCH"
+                echo "Remote moved after rebase: duplicate or stale output discarded; recheck in next cycle."
+                continue
+              fi
             fi
           done
       - name: Refresh complete-frame QA even if there are no new films
         env:
           BRANCH: ${{ github.ref_name }}
         run: |
+          # This job may have started before other checked-in film artifacts.
+          # Regenerate derived QA solely against the current remote tree.
+          git fetch origin "$BRANCH"
+          git reset --hard "origin/$BRANCH"
           python scripts/make-film-qa-contact-sheets.py --collection series-v2
           python scripts/audit-remake-readiness.py
           python scripts/build-film-pronunciation-index.py
@@ -95,8 +121,17 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Refresh complete-frame source-hashed reviewer contact sheets"
             git fetch origin "$BRANCH"
-            git rebase "origin/$BRANCH"
-            git push origin HEAD:"$BRANCH"
+            if ! git rebase "origin/$BRANCH"; then
+              git rebase --abort
+              git reset --hard "origin/$BRANCH"
+              echo "Remote QA register changed concurrently; preserving current authoritative records."
+            else
+              if ! git push origin HEAD:"$BRANCH"; then
+                git fetch origin "$BRANCH"
+                git reset --hard "origin/$BRANCH"
+                echo "QA-only commit race. Future on-demand audit may refresh derived metadata."
+              fi
+            fi
           fi
       - name: Continue remaining films in the source-preserving review branch
         if: success()
