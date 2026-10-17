@@ -63,3 +63,15 @@ test('every authored long-form documentary has an accessible original-vs-recut c
   assert.ok(read('film-studio.html').includes('feature-film-studio.html'));
   assert.ok(read('films.html').includes('feature-film-studio.html'));
 });
+
+test('film-studio browser scripts parse and preserve user navigation',()=>{
+  const vm=require('node:vm');
+  for(const filename of ['film-studio.html','feature-film-studio.html']){
+    const html=read(filename);
+    const scripts=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)];
+    assert.ok(scripts.length>0,filename+' has JavaScript');
+    for(const fragment of scripts)new vm.Script(fragment[1],{filename});
+    assert.ok(html.includes('controls'),filename+' retains native video playback');
+    assert.ok(html.includes('source'),filename+' exposes evidence collection');
+  }
+});
