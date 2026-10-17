@@ -83,6 +83,9 @@ def scene_camera(film,scene,i):
         elif i==3:box=(0,.00,.665,.99)
         elif i==4:box=(.655,0,1,1)
         elif i in (5,6):box=None
+    elif film=="ace2-covid-drugs":
+        # Pixel-cropped exact 2022 published Figure 1-3 pages, axes intact.
+        box=None
     elif film=="pla-grafting":
         box=None
     return src,box,ref
@@ -95,6 +98,7 @@ FOCUS = {
     1:(.47,.03,.98,.57), 3:(.32,.00,.665,1.00),
     5:(.47,.00,1.00,1.00), 6:(.00,.00,.55,1.00),
     7:(.00,.00,.59,.54)},
+ "ace2-covid-drugs": {3:(.00,.00,.95,1.00),5:(.00,.00,.95,1.00)},
  "pla-grafting": {
     2:(.00,.00,.53,1.00), 3:(.16,.00,.88,1.00),
     4:(.10,.00,.92,.98), 5:(.26,.01,1.00,1.00),
@@ -105,7 +109,9 @@ def credit(d,film,scene,cropped,figure):
     if scene["mode"] in ("interface","surface"):
         msg="AUTHORED PHYSICAL EXPLANATION • NOT A MEASURED IMAGE"
     else:
-        msg=f"ORIGINAL FIGURE {figure} • {'DOCUMENTED SOURCE PANEL CROP' if cropped else 'FULL PUBLISHED FIGURE'} • DOI {('10.3390/mps3040065' if film=='flow-chamber-method' else '10.3390/polym13213717')}"
+        doi={"flow-chamber-method":"10.3390/mps3040065","pla-grafting":"10.3390/polym13213717",
+             "ace2-covid-drugs":"10.1080/08037051.2022.2055530"}[film]
+        msg=f"ORIGINAL FIGURE {figure} • {'DOCUMENTED SOURCE PANEL CROP' if cropped else 'FULL PUBLISHED FIGURE'} • DOI {doi}"
     text(d,(39,677),msg,13,GRAY,"sans")
 
 def visual_layers(d,film,scene,t):
@@ -311,7 +317,7 @@ def render(film,info,models):
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument("--film",choices=["flow-chamber-method","pla-grafting"],required=True)
+    parser.add_argument("--film",choices=["flow-chamber-method","pla-grafting","ace2-covid-drugs"],required=True)
     args=parser.parse_args()
     cfg=json.loads(MANIFEST.read_text())["films"][args.film]
     render(args.film,cfg,ROOT/"film-models")
