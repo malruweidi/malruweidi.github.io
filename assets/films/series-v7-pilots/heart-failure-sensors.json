@@ -1,11 +1,12 @@
 {
   "slug": "heart-failure-sensors",
+  "visual_revision": "v7.3-caption-safe/film-specific",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
   "fps": 24,
   "source_audio_sha256": "a5071e75cf771e8cd24e95796c665fe8f4ea6aa228b7d3f92ddf42ef784a2280",
-  "movie_sha256": "76e09702c236fb9f68f612a05e645686e09836008c57a9207ae4d89122360dda",
+  "movie_sha256": "52adac6463de1433b103935df87e12ede1a6198b5abb0a3cb3744c66f4ac084b",
   "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
   "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
   "scene_count": 6,
@@ -156,5 +157,6 @@
       "source": "original-nonquantitative-v7-schematic"
     }
   ],
+  "contact_sheet": "/assets/films/series-v7-pilots/heart-failure-sensors.contact.webp",
   "primary_source": "10.1002/9781119813040.ch5"
 }

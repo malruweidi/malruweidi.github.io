@@ -1,6 +1,6 @@
 {
   "slug": "gi-autoimmunity-1",
-  "visual_revision": "v7.1",
+  "visual_revision": "v7.3-caption-safe/film-specific",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
@@ -157,5 +157,6 @@
       "source": "original-nonquantitative-v7-schematic"
     }
   ],
+  "contact_sheet": "/assets/films/series-v7-pilots/gi-autoimmunity-1.contact.webp",
   "primary_source": "10.5772/intechopen.106184"
 }

@@ -1,12 +1,12 @@
 {
   "slug": "ace2-forms",
-  "visual_revision": "v7.1",
+  "visual_revision": "v7.3-caption-safe/film-specific",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
   "fps": 24,
   "source_audio_sha256": "5adf8ca0a3a2a08c45d4dfa22ccf67690873aee1cca6cd5142f3e5e242fa7d31",
-  "movie_sha256": "98fc9d201825be6288a94865ef96f04e5dcd89b8845e2a6f0684901c3b1c59e8",
+  "movie_sha256": "db851532950a074fb73f5a562f49faa496a3c5cdaf1737b5a27f302b03a4f2d1",
   "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
   "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
   "scene_count": 6,
@@ -157,5 +157,6 @@
       "source": "original-nonquantitative-v7-schematic"
     }
   ],
+  "contact_sheet": "/assets/films/series-v7-pilots/ace2-forms.contact.webp",
   "primary_source": "10.3390/ijms22136703"
 }

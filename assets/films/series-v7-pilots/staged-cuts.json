@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 8,
+  "count": 12,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -15,6 +15,20 @@
       "contact": "/assets/films/series-v7-pilots/ace2-covid-drugs.contact.webp",
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "2fe1008181be58aad10f7bc3b65082b3d62bf989a51583eddfc76765665e5ed2",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "ace2-forms",
+      "title": "Two lives of ACE2",
+      "publication": "Do changes in ACE-2 expression affect SARS-CoV-2 virulence and related complications: a closer look into membrane-bound and soluble forms",
+      "poster": "/assets/films/series-v7-pilots/ace2-forms.webp",
+      "file": "/assets/films/series-v7-pilots/ace2-forms.mp4",
+      "captions": "/assets/films/series-v7-pilots/ace2-forms.vtt",
+      "manifest": "/assets/films/series-v7-pilots/ace2-forms.json",
+      "contact": "/assets/films/series-v7-pilots/ace2-forms.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "db851532950a074fb73f5a562f49faa496a3c5cdaf1737b5a27f302b03a4f2d1",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -71,6 +85,48 @@
       "contact": "/assets/films/series-v7-pilots/echo-cnn-lstm.contact.webp",
       "visual_revision": "v7.3-caption-safe/v7.2-ultrasound",
       "sha256": "8c0fc655edf09f6880effb05bed7e65d3b8abe9f8a08228e08deee62894603ff",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "gi-autoimmunity-1",
+      "title": "What happens when immunity turns on the gut?",
+      "publication": "Autoimmune Diseases of the GI Tract Part I: Etiology and Pathophysiology",
+      "poster": "/assets/films/series-v7-pilots/gi-autoimmunity-1.webp",
+      "file": "/assets/films/series-v7-pilots/gi-autoimmunity-1.mp4",
+      "captions": "/assets/films/series-v7-pilots/gi-autoimmunity-1.vtt",
+      "manifest": "/assets/films/series-v7-pilots/gi-autoimmunity-1.json",
+      "contact": "/assets/films/series-v7-pilots/gi-autoimmunity-1.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "9f019f6bcabffbd8b69908655d3a4e717cd25900c52b0d23755922d5f356d202",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "gi-autoimmunity-2",
+      "title": "The diagnostic problem",
+      "publication": "Autoimmune Diseases of the GI Tract Part II: Emergence of Diagnostic Tools and Treatments",
+      "poster": "/assets/films/series-v7-pilots/gi-autoimmunity-2.webp",
+      "file": "/assets/films/series-v7-pilots/gi-autoimmunity-2.mp4",
+      "captions": "/assets/films/series-v7-pilots/gi-autoimmunity-2.vtt",
+      "manifest": "/assets/films/series-v7-pilots/gi-autoimmunity-2.json",
+      "contact": "/assets/films/series-v7-pilots/gi-autoimmunity-2.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "933dffdaea8be41ba45434f12f2eeed6f8c65e1de84d62b2389e9e9b00a91715",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "heart-failure-sensors",
+      "title": "Listening for a failing heart",
+      "publication": "Minimally Invasive and Non-Invasive Sensor Technologies for Predicting Heart Failure: An Overview",
+      "poster": "/assets/films/series-v7-pilots/heart-failure-sensors.webp",
+      "file": "/assets/films/series-v7-pilots/heart-failure-sensors.mp4",
+      "captions": "/assets/films/series-v7-pilots/heart-failure-sensors.vtt",
+      "manifest": "/assets/films/series-v7-pilots/heart-failure-sensors.json",
+      "contact": "/assets/films/series-v7-pilots/heart-failure-sensors.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "52adac6463de1433b103935df87e12ede1a6198b5abb0a3cb3744c66f4ac084b",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
