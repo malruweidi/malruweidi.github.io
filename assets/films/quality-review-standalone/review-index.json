@@ -1,0 +1,274 @@
+{
+  "schema": "ruwaidix-cinema-standalone-qa-v1",
+  "films": [
+    {
+      "film": "airway-reopening-evidence-cut",
+      "edition": "original",
+      "source": "/assets/films/airway-reopening-evidence-cut.mp4",
+      "captions": "/assets/films/airway-reopening-evidence-cut.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/original-airway-reopening-evidence-cut.webp",
+      "duration_seconds": 180.0,
+      "samples": [
+        18.0,
+        46.8,
+        75.6,
+        104.4,
+        133.2,
+        162.0
+      ],
+      "sha256": "5ac4c484dbc549e405dea07c5a177a685eff7c5ff292daa0fdb77c6fe4b2876b",
+      "caption_cues": 22,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "cairo-microscope",
+      "edition": "original",
+      "source": "/assets/films/cairo-microscope.mp4",
+      "captions": "/assets/films/cairo-microscope.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/original-cairo-microscope.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "7549b0716e3c3863ea617998d3f31d12eb14df3062cc5814ba6a5cf5906f7791",
+      "caption_cues": 20,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "making-medicines-keep",
+      "edition": "original",
+      "source": "/assets/films/making-medicines-keep.mp4",
+      "captions": "/assets/films/making-medicines-keep.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/original-making-medicines-keep.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "4f9ab54845021f9a7c49d73409a38a8ee63c338da69c2d31f64fa7014a721a15",
+      "caption_cues": 28,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "ring-that-never-closed",
+      "edition": "original",
+      "source": "/assets/films/ring-that-never-closed.mp4",
+      "captions": "/assets/films/ring-that-never-closed.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/original-ring-that-never-closed.webp",
+      "duration_seconds": 180.0,
+      "samples": [
+        18.0,
+        46.8,
+        75.6,
+        104.4,
+        133.2,
+        162.0
+      ],
+      "sha256": "96c9e3c8cab5c0b617f09f6630b3053ffb26be66affb3f4f247d7b7d49b51353",
+      "caption_cues": 20,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "the-laboratory-we-carried-with-us",
+      "edition": "original",
+      "source": "/assets/films/the-laboratory-we-carried-with-us.mp4",
+      "captions": "/assets/films/the-laboratory-we-carried-with-us.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/original-the-laboratory-we-carried-with-us.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "090bcaccdc63ec6d827ee6cb20c210bef10363557ca46529612916a4bb393a87",
+      "caption_cues": 25,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "two-materials-no-section-evidence-cut",
+      "edition": "original",
+      "source": "/assets/films/two-materials-no-section-evidence-cut.mp4",
+      "captions": "/assets/films/two-materials-no-section-evidence-cut.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/original-two-materials-no-section-evidence-cut.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "19d5a1381406ac4dc5ee82f3b850f50e226ac744abeef76ec9f68895f6374994",
+      "caption_cues": 24,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "two-materials-no-section",
+      "edition": "original",
+      "source": "/assets/films/two-materials-no-section.mp4",
+      "captions": "/assets/films/two-materials-no-section.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/original-two-materials-no-section.webp",
+      "duration_seconds": 150.0,
+      "samples": [
+        15.0,
+        39.0,
+        63.0,
+        87.0,
+        111.0,
+        135.0
+      ],
+      "sha256": "1b6333d6ab5d701d7058691562e4b5f0b29113bdc9150d4aa98e98bb2941ba33",
+      "caption_cues": 20,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "what-a-bubble-can-do",
+      "edition": "original",
+      "source": "/assets/films/what-a-bubble-can-do.mp4",
+      "captions": "/assets/films/what-a-bubble-can-do.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/original-what-a-bubble-can-do.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "efa8325e1bc95e7f62e4e25a74c27a02c8e1104e32703faea97ae8a7d4bd67b2",
+      "caption_cues": 25,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "what-survives-the-experiment",
+      "edition": "original",
+      "source": "/assets/films/what-survives-the-experiment.mp4",
+      "captions": "/assets/films/what-survives-the-experiment.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/original-what-survives-the-experiment.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "6b6550bb5fa3c514db4f1d0c224231b932675d4e7f9936d4d4ef8d0040203778",
+      "caption_cues": 24,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "pla-scaffolds",
+      "edition": "series-v5",
+      "source": "/assets/films/series-v5/pla-scaffolds.mp4",
+      "captions": "/assets/films/series-v5/pla-scaffolds.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/series-v5-pla-scaffolds.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "c60f24f3673f81ec570dfafa57d7a9ad80575adf07b7603c216da885aaf4d2b4",
+      "caption_cues": 35,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "microfluidic-virus",
+      "edition": "series-v5",
+      "source": "/assets/films/series-v5/microfluidic-virus.mp4",
+      "captions": "/assets/films/series-v5/microfluidic-virus.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/series-v5-microfluidic-virus.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "5fb0213336a28ac8329acf80dae186f4987f5be9a75b8f5db9a86e967c15c132",
+      "caption_cues": 30,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "making-medicines-keep",
+      "edition": "series-v4",
+      "source": "/assets/films/series-v4/making-medicines-keep.mp4",
+      "captions": "/assets/films/series-v4/making-medicines-keep.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/series-v4-making-medicines-keep.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "ac53a532de63488ca55eeb0262eb6ab740a7458c8b4908b585885f7852e40d48",
+      "caption_cues": 32,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "pla-grafting",
+      "edition": "series-v3",
+      "source": "/assets/films/series-v3/pla-grafting.mp4",
+      "captions": "/assets/films/series-v3/pla-grafting.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/series-v3-pla-grafting.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "e63ab995e54eae801a1bb1505c4de61dc463169a2eebbe9421bc4cb76dac93b5",
+      "caption_cues": 34,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "flow-chamber-method",
+      "edition": "series-v5",
+      "source": "/assets/films/series-v5/flow-chamber-method.mp4",
+      "captions": "/assets/films/series-v5/flow-chamber-method.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/series-v5-flow-chamber-method.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "5b40aff46f6402b098e2a2624eba15e8fe32b5d43a58a78305a8e0360017a349",
+      "caption_cues": 29,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    }
+  ],
+  "count": 14,
+  "review_status": "UNAPPROVED DIRECTOR'S CONTACT SHEETS",
+  "note": "Frame captures prove what was rendered, not scientific or creative quality."
+}
