@@ -34,7 +34,9 @@ test('the alternative renderer cannot replace the original released films',()=>{
 test('cinematic animation has conspicuous scientific-provenance labelling',()=>{
   const script=read('scripts/film-overhaul-motion.py');
   assert.ok(script.includes('NOT MEASURED DATA'));
-  assert.ok(script.includes('ORIGINAL SOURCE VISUAL'));
+  assert.ok(script.includes('AUTHOR\'S CONCEPT ILLUSTRATION / NOT DATA'));
+  assert.ok(script.includes('PUBLISHED SCIENTIFIC FIGURE / CONSULT PAPER'));
+  assert.ok(script.includes('CREDITED SOURCE-CONTEXT VISUAL / CHECK REGISTER'));
   assert.ok(script.includes('PARAFFIN  /  SECTION FAILED'));
   assert.ok(script.includes('ILLUSTRATIVE SIGNAL, NOT A READOUT'));
   assert.ok(script.includes('RECONSTRUCTED PROCESS'));
