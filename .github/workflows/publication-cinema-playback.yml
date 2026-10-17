@@ -12,6 +12,7 @@ on:
       - assets/films/series-v7-pilots/*.mp4
       - assets/films/series-v7-pilots/*.vtt
       - tests/publication-v7-public-release.test.cjs
+      - tests/cinema-clean-screen.test.cjs
       - tests/publication-v6-poster.test.cjs
       - tests/all-cinema-release.test.cjs
       - tests/cinema-science-provenance.test.cjs
@@ -34,6 +35,7 @@ on:
       - assets/films/series-v7-pilots/*.mp4
       - assets/films/series-v7-pilots/*.vtt
       - tests/publication-v7-public-release.test.cjs
+      - tests/cinema-clean-screen.test.cjs
       - tests/publication-v6-poster.test.cjs
       - tests/all-cinema-release.test.cjs
       - tests/cinema-science-provenance.test.cjs
@@ -54,7 +56,7 @@ jobs:
         with:
           node-version: '22'
       - name: Check 35 film sources, captions, posters, preserved versions, and release index
-        run: node --test tests/publication-v6-poster.test.cjs tests/all-cinema-release.test.cjs tests/cinema-quality-screening.test.cjs tests/cinema-science-provenance.test.cjs tests/cinema-corrected-documentaries.test.cjs tests/publication-v7-public-release.test.cjs
+        run: node --test tests/publication-v6-poster.test.cjs tests/all-cinema-release.test.cjs tests/cinema-quality-screening.test.cjs tests/cinema-science-provenance.test.cjs tests/cinema-corrected-documentaries.test.cjs tests/publication-v7-public-release.test.cjs tests/cinema-clean-screen.test.cjs
       - name: Check inline catalogue player JavaScript
         run: |
           node - <<'JS'
