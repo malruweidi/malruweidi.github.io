@@ -228,6 +228,12 @@
       "number_of_review_cues": 0
     },
     {
+      "film": "essay-potency-exposure",
+      "collection": "series-v2",
+      "review_cues": [],
+      "number_of_review_cues": 0
+    },
+    {
       "film": "essay-scientific-credit",
       "collection": "series-v2",
       "review_cues": [],

@@ -298,6 +298,27 @@
       "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
     },
     {
+      "name": "essay-potency-exposure",
+      "seconds": 84.0,
+      "size_bytes": 2425739,
+      "sha256": "d4b22c3b0cfd55f657131889be2cc06c7e40b7c6694494acbf2795e131b8df65",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 22,
+        "max_caption_line": 54,
+        "last_caption_second": 78.83
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
       "name": "essay-scientific-credit",
       "seconds": 84.0,
       "size_bytes": 2722476,
