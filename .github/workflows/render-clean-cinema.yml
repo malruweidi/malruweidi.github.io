@@ -25,6 +25,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
+      - name: Check out all scientific film assets
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+
       - name: Disable superseded cinematic batch workflow
         env:
           GH_TOKEN: ${{ github.token }}
@@ -39,11 +45,6 @@ jobs:
             done
           done
 
-      - name: Check out all scientific film assets
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-          persist-credentials: true
 
       - name: Python for open-source film rendering
         uses: actions/setup-python@v5
