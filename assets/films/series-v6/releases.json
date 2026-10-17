@@ -1,0 +1,216 @@
+{
+  "schema": "ruwaidix-film-releases-v1",
+  "count": 30,
+  "films": [
+    {
+      "id": "ace2-covid-drugs",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/ace2-covid-drugs.webp",
+      "duration_seconds": 84.0,
+      "sha256": "54b3ca2969bc434169ab79163c14082eff2880eb5ffb9d3675750acdd1e51b19"
+    },
+    {
+      "id": "ace2-forms",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/ace2-forms.webp",
+      "duration_seconds": 84.0,
+      "sha256": "5adf8ca0a3a2a08c45d4dfa22ccf67690873aee1cca6cd5142f3e5e242fa7d31"
+    },
+    {
+      "id": "airway-reopening",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/airway-reopening.webp",
+      "duration_seconds": 84.0,
+      "sha256": "452b9316c0d8f39988cd6ad506551eb57153ac2cb34f87c2d20e101df763d04e"
+    },
+    {
+      "id": "cairo-microscope",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/cairo-microscope.webp",
+      "duration_seconds": 84.0,
+      "sha256": "049bedf30999e84054d6730000b08d606f51d8a37eec4591c35f2488db49b127"
+    },
+    {
+      "id": "ceramics-printing",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/ceramics-printing.webp",
+      "duration_seconds": 84.0,
+      "sha256": "a5d0666ffb6328b0d66c2e066230d16ed3869f3efb69f0ce68f7974251b75752"
+    },
+    {
+      "id": "cerebral-cilia",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/cerebral-cilia.webp",
+      "duration_seconds": 84.0,
+      "sha256": "1945f6bc99c25290fba205e8e737be0d187a2b61ae1854c50656fa966ea71a28"
+    },
+    {
+      "id": "cubosome-theranostics",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/cubosome-theranostics.webp",
+      "duration_seconds": 84.0,
+      "sha256": "02af24d29d6b193608a875656194384b756e95e12223f2df2642bddca9f0a4e6"
+    },
+    {
+      "id": "curcumin-cyanide",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/curcumin-cyanide.webp",
+      "duration_seconds": 84.0,
+      "sha256": "8d8bf27dca4c03b5016ef09e1722fb6f38c6b70daa2f143cdc54bdc73293b67d"
+    },
+    {
+      "id": "drug-release-twins",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/drug-release-twins.webp",
+      "duration_seconds": 84.0,
+      "sha256": "75310e1d18d363b9f63c6a68f30f42f7d4b89de682d2d560135cd86123f7cd02"
+    },
+    {
+      "id": "echo-cnn-lstm",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/echo-cnn-lstm.webp",
+      "duration_seconds": 84.0,
+      "sha256": "6b020a3a84b9883c5fa31d6d01659e9886483d56d31646db3d63621e657b4752"
+    },
+    {
+      "id": "essay-academic-mental-health",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/essay-academic-mental-health.webp",
+      "duration_seconds": 84.0,
+      "sha256": "56902a7e5f1b21e2986b98a22673d327f2c872f0e2883ccef8c3adfbdff718ad"
+    },
+    {
+      "id": "essay-adc",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/essay-adc.webp",
+      "duration_seconds": 84.0,
+      "sha256": "f6a5a45249d2957e5ceb7b2c9738b34dec95f85c6ad7b5cff415b21f8cd8deb2"
+    },
+    {
+      "id": "essay-ai-email",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/essay-ai-email.webp",
+      "duration_seconds": 84.0,
+      "sha256": "7710c1ca9b95d9210bd79a8eef60ebff85e49feccd2f24b1ceeb22c5384cd4b3"
+    },
+    {
+      "id": "essay-life-between-diagnoses",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/essay-life-between-diagnoses.webp",
+      "duration_seconds": 84.0,
+      "sha256": "e8cc5963813176dbc60c35bc165f23a6cd0132ab8db2d662994c704912d2e048"
+    },
+    {
+      "id": "essay-machine-language",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/essay-machine-language.webp",
+      "duration_seconds": 84.0,
+      "sha256": "94b93771a003f0803ffce9da8385938340391e24330b89eaff9b11d06969995c"
+    },
+    {
+      "id": "essay-potency-exposure",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/essay-potency-exposure.webp",
+      "duration_seconds": 84.0,
+      "sha256": "aa17e58bf48a55ff87b22251840a9b574a82ce613a5b4c4731647713a4ee7970"
+    },
+    {
+      "id": "essay-proximity",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/essay-proximity.webp",
+      "duration_seconds": 84.0,
+      "sha256": "10a2fa70273800048682f3f3798157cf15d5eccce2621ddaf5642c03d3c2e67b"
+    },
+    {
+      "id": "essay-scientific-credit",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/essay-scientific-credit.webp",
+      "duration_seconds": 84.0,
+      "sha256": "f95d99e8798d17f81f715bc3497f59c505a55b7df4360c959a42a0104d25a335"
+    },
+    {
+      "id": "essay-tf-states",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/essay-tf-states.webp",
+      "duration_seconds": 84.0,
+      "sha256": "5d4f4327f17ca27a96c1b10b9f4470f6557fb9f78d8ef1be9c40d3ecaa4f578b"
+    },
+    {
+      "id": "essay-trna",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/essay-trna.webp",
+      "duration_seconds": 84.0,
+      "sha256": "04ba4bde510d55ec0678cd73edd221577b4758fae6bca6398a7ef1ede621780c"
+    },
+    {
+      "id": "food-printing",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/food-printing.webp",
+      "duration_seconds": 84.0,
+      "sha256": "68c80e8d407cc0665dbbc133f5796d9265db1a66db4775283c14233e5a7d8073"
+    },
+    {
+      "id": "gi-autoimmunity-1",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/gi-autoimmunity-1.webp",
+      "duration_seconds": 84.0,
+      "sha256": "07b74717b4430e0b0202554668ce7c9b26e87fbb414d450783dc8df1b41f983a"
+    },
+    {
+      "id": "gi-autoimmunity-2",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/gi-autoimmunity-2.webp",
+      "duration_seconds": 84.0,
+      "sha256": "29a8200472150666052b90a11fee6a8c1cbfe5641469eb69f6897313ad55d793"
+    },
+    {
+      "id": "heart-failure-sensors",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/heart-failure-sensors.webp",
+      "duration_seconds": 84.0,
+      "sha256": "a5071e75cf771e8cd24e95796c665fe8f4ea6aa228b7d3f92ddf42ef784a2280"
+    },
+    {
+      "id": "heterocycle-cancer",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/heterocycle-cancer.webp",
+      "duration_seconds": 84.0,
+      "sha256": "c23a6305d310486291bc1d4043796460fb340afa75137e39cb250a7a5dacf9db"
+    },
+    {
+      "id": "histology-failure",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/histology-failure.webp",
+      "duration_seconds": 84.0,
+      "sha256": "d3bd4d1b35cbda03e5d1c45eb4c5c38c09c0642f9f71ba77b8c2666a48767789"
+    },
+    {
+      "id": "micelles-pahs",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/micelles-pahs.webp",
+      "duration_seconds": 84.0,
+      "sha256": "16aa0c690097c695d6845e1b84d3e0028092ee18cc74df495fb1454043dab4e6"
+    },
+    {
+      "id": "niosomes",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/niosomes.webp",
+      "duration_seconds": 84.0,
+      "sha256": "7cf04d6cacdbefe418e84764b4866d2d40dd3a735b88a1b7910fc24de40a76d6"
+    },
+    {
+      "id": "slit2-robo",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/slit2-robo.webp",
+      "duration_seconds": 84.0,
+      "sha256": "e3f11d4a655aa5514fa8e391fdc6ae505d78a50f9b6d1baec03013f58c741824"
+    },
+    {
+      "id": "zebrafish-hemodynamics",
+      "edition": "series-v6",
+      "poster": "/assets/films/series-v6/zebrafish-hemodynamics.webp",
+      "duration_seconds": 84.0,
+      "sha256": "25f273603c519718caa1fb7c36649ba4bb2f699406b6233917841ce2255e0250"
+    }
+  ]
+}
