@@ -925,10 +925,10 @@
           "title": "A therapy can change the system around it",
           "subtitle": "clinical evidence",
           "narration": "During COVID-19, clinicians were treating infection in patients who also lived with hypertension and chronic medication exposure.",
-          "image": "assets/evidence-pulmonary.webp",
+          "image": "assets/films/art/source-specific/ace2-system.svg",
           "contain": false,
-          "kind": "Pulmonary clinical-context scientific illustration, no identifiable patient",
-          "credit": "Pulmonary clinical-context scientific illustration, no identifiable patient",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         },
         {
@@ -936,10 +936,10 @@
           "title": "Two signals in circulation",
           "subtitle": "clinical evidence",
           "narration": "Soluble ACE2 and angiotensin II are distinct measurements in the renin-angiotensin system. Their interpretation requires clinical context.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art/source-specific/ace2-system.svg",
           "contain": true,
-          "kind": "General physiological diagram, not a specific assay result",
-          "credit": "General physiological diagram, not a specific assay result",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         },
         {
@@ -947,10 +947,10 @@
           "title": "Treatments are not randomized by a chart",
           "subtitle": "clinical evidence",
           "narration": "Our 2022 publication investigated reported differences in those levels among hypertensive COVID-19 patients receiving different antihypertensive medications.",
-          "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "image": "assets/films/art/source-specific/ace2-system.svg",
           "contain": false,
-          "kind": "Original healthcare-imaging workspace; no patient data from study",
-          "credit": "Original healthcare-imaging workspace; no patient data from study",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         },
         {
@@ -958,10 +958,10 @@
           "title": "Do not confuse association with mechanism",
           "subtitle": "clinical evidence",
           "narration": "Medication groups, disease severity and confounding factors matter. A measured level does not reveal the entire causal pathway.",
-          "image": "assets/evidence-pulmonary.webp",
+          "image": "assets/films/art/source-specific/ace2-system.svg",
           "contain": false,
-          "kind": "Contextual pulmonary image, not the published patient dataset",
-          "credit": "Contextual pulmonary image, not the published patient dataset",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         },
         {
@@ -969,10 +969,10 @@
           "title": "The clinical question is conditional",
           "subtitle": "clinical evidence",
           "narration": "A signal in a patient cohort motivates mechanistic investigation. It should not become an unsupported instruction to stop or change medication.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art/source-specific/ace2-system.svg",
           "contain": true,
-          "kind": "Conceptual depiction, not treatment guidance",
-          "credit": "Conceptual depiction, not treatment guidance",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         },
         {
@@ -980,13 +980,14 @@
           "title": "Evidence before advice",
           "subtitle": "clinical evidence",
           "narration": "The source article contains the study design and results. This film explains the uncertainty around clinical association rather than prescribing care.",
-          "image": "assets/evidence-pulmonary.webp",
+          "image": "assets/films/art/source-specific/ace2-system.svg",
           "contain": false,
-          "kind": "Editorial science illustration",
-          "credit": "Editorial science illustration",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         }
-      ]
+      ],
+      "source_visual_revision": "curated-2026-10-17-v1"
     },
     {
       "id": "gi-autoimmunity-1",
@@ -1007,10 +1008,10 @@
           "title": "The intestine is not simply a tube",
           "subtitle": "medical explanatory",
           "narration": "The gastrointestinal wall is an immune interface, with specialised barriers and molecular signals operating beside digestion.",
-          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "image": "assets/films/art/source-specific/eosinophilic-gut.svg",
           "contain": false,
-          "kind": "Original laboratory photograph, not tissue from this chapter",
-          "credit": "Original laboratory photograph, not tissue from this chapter",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         },
         {
@@ -1018,10 +1019,10 @@
           "title": "What makes tolerance possible?",
           "subtitle": "medical explanatory",
           "narration": "The immune system must distinguish threats from food-associated and resident signals. Breakdown can produce complex pathology.",
-          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
           "contain": false,
-          "kind": "Original laboratory workspace, not intestinal pathology",
-          "credit": "Original laboratory workspace, not intestinal pathology",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         },
         {
@@ -1029,10 +1030,10 @@
           "title": "Disease names conceal different mechanisms",
           "subtitle": "medical explanatory",
           "narration": "The chapter examines autoimmune gastrointestinal diseases and their aetiology, considering immunological mechanisms rather than treating all inflammation as one diagnosis.",
-          "image": "assets/evidence-pulmonary.webp",
+          "image": "assets/films/art/source-specific/eosinophilic-gut.svg",
           "contain": false,
-          "kind": "General scientific research-context image, not GI histopathology",
-          "credit": "General scientific research-context image, not GI histopathology",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         },
         {
@@ -1040,10 +1041,10 @@
           "title": "Tissue tells part of the story",
           "subtitle": "medical explanatory",
           "narration": "Histological patterns, molecular mechanisms and clinical presentation require careful reconciliation before attributing symptoms to a particular immune disorder.",
-          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
           "contain": false,
-          "kind": "Original laboratory image, not patient diagnostic specimen",
-          "credit": "Original laboratory image, not patient diagnostic specimen",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         },
         {
@@ -1051,10 +1052,10 @@
           "title": "Complexity is not a license to guess",
           "subtitle": "medical explanatory",
           "narration": "Mechanistic plausibility should be weighed against measured evidence and disease-specific diagnostic criteria.",
-          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "image": "assets/films/art/source-specific/eosinophilic-gut.svg",
           "contain": false,
-          "kind": "Laboratory context",
-          "credit": "Laboratory context",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         },
         {
@@ -1062,13 +1063,14 @@
           "title": "Before treatment, understand the process",
           "subtitle": "medical explanatory",
           "narration": "Part One of the 2022 open-access chapter explores what researchers understand about disease origins and pathophysiology, not a universal diagnosis.",
-          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "image": "assets/films/art/source-specific/eosinophilic-gut.svg",
           "contain": false,
-          "kind": "Editorial research context",
-          "credit": "Editorial research context",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         }
-      ]
+      ],
+      "source_visual_revision": "curated-2026-10-17-v1"
     },
     {
       "id": "gi-autoimmunity-2",
@@ -1089,10 +1091,10 @@
           "title": "The symptoms do not name the disease",
           "subtitle": "medical explanatory",
           "narration": "Abdominal illness can look similar across immune, inflammatory and infectious processes. Clinical appearance alone may be insufficient.",
-          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
           "contain": false,
-          "kind": "Original laboratory workspace, not patient diagnosis",
-          "credit": "Original laboratory workspace, not patient diagnosis",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         },
         {
@@ -1100,10 +1102,10 @@
           "title": "Choose the evidence to examine",
           "subtitle": "medical explanatory",
           "narration": "Diagnostic interpretation can involve biomarkers, endoscopy and tissue findings, with different roles and limitations in distinct diseases.",
-          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
           "contain": false,
-          "kind": "Laboratory photo, not endoscopy or pathology result",
-          "credit": "Laboratory photo, not endoscopy or pathology result",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         },
         {
@@ -1111,10 +1113,10 @@
           "title": "The tools evolve",
           "subtitle": "medical explanatory",
           "narration": "Part Two surveys emerging diagnostic techniques and treatments for autoimmune gastrointestinal conditions in a changing evidence landscape.",
-          "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
           "contain": false,
-          "kind": "Original biomedical research-context photo",
-          "credit": "Original biomedical research-context photo",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         },
         {
@@ -1122,10 +1124,10 @@
           "title": "The intervention has a target",
           "subtitle": "medical explanatory",
           "narration": "Therapeutic approaches follow disease mechanisms, but treatment evidence differs by condition, study design and patient population.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art/source-specific/eosinophilic-gut.svg",
           "contain": true,
-          "kind": "Conceptual science graphic, not a clinical treatment device",
-          "credit": "Conceptual science graphic, not a clinical treatment device",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         },
         {
@@ -1133,10 +1135,10 @@
           "title": "What remains uncertain",
           "subtitle": "medical explanatory",
           "narration": "A new assay or biologic may improve the available choices without solving every diagnostic or therapeutic question.",
-          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
           "contain": false,
-          "kind": "Archival research context",
-          "credit": "Archival research context",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         },
         {
@@ -1144,13 +1146,14 @@
           "title": "An evolving map, not a prescription",
           "subtitle": "medical explanatory",
           "narration": "The 2022 chapter documents the literature available then. Current medical decisions require updated clinical evidence and professional evaluation.",
-          "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
           "contain": false,
-          "kind": "Biomedical research archive",
-          "credit": "Biomedical research archive",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/illness-and-evidence.html"
         }
-      ]
+      ],
+      "source_visual_revision": "curated-2026-10-17-v1"
     },
     {
       "id": "heart-failure-sensors",
@@ -1182,10 +1185,10 @@
           "title": "Signals outside the operating room",
           "subtitle": "signal-processing documentary",
           "narration": "Non-invasive and minimally invasive sensors can produce information about cardiac and circulatory physiology without requiring identical clinical procedures.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art/source-specific/heart-sensing.svg",
           "contain": true,
-          "kind": "Conceptual cardiac detection diagram",
-          "credit": "Conceptual cardiac detection diagram",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/computing.html"
         },
         {
@@ -1204,10 +1207,10 @@
           "title": "A signal can mislead",
           "subtitle": "signal-processing documentary",
           "narration": "Motion, noise, timing and patient variability all influence interpretation. A useful measurement is not automatically a useful clinical decision.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art/source-specific/heart-sensing.svg",
           "contain": true,
-          "kind": "Original explanatory depiction, not validated sensor output",
-          "credit": "Original explanatory depiction, not validated sensor output",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/computing.html"
         },
         {
@@ -1226,13 +1229,14 @@
           "title": "A technology belongs to its use",
           "subtitle": "signal-processing documentary",
           "narration": "This 2022 book chapter maps the promise and constraints of measuring physiological warning signs. The chapter supplies the cited technologies.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art/source-specific/heart-sensing.svg",
           "contain": true,
-          "kind": "Conceptual technology animation source",
-          "credit": "Conceptual technology animation source",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/computing.html"
         }
-      ]
+      ],
+      "source_visual_revision": "curated-2026-10-17-v1"
     },
     {
       "id": "ace2-forms",
@@ -1253,10 +1257,10 @@
           "title": "One protein, different places",
           "subtitle": "molecular explanation",
           "narration": "ACE2 can be embedded in a cell membrane or exist in a soluble form. They should not be discussed as identical biological objects.",
-          "image": "assets/evidence-pulmonary.webp",
+          "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
           "contain": false,
-          "kind": "Contextual pulmonary scientific illustration",
-          "credit": "Contextual pulmonary scientific illustration",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         },
         {
@@ -1264,10 +1268,10 @@
           "title": "A receptor in a larger pathway",
           "subtitle": "molecular explanation",
           "narration": "ACE2 participates in the renin-angiotensin system. In SARS-CoV-2 infection, its receptor-related role introduces additional biological complexity.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
           "contain": true,
-          "kind": "Conceptual non-specific signalling image, not ACE2 molecular structure",
-          "credit": "Conceptual non-specific signalling image, not ACE2 molecular structure",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         },
         {
@@ -1275,10 +1279,10 @@
           "title": "The location changes the question",
           "subtitle": "molecular explanation",
           "narration": "The review examines how changes in membrane-bound and soluble ACE2 expression might influence interpretations of viral biology and complications.",
-          "image": "assets/evidence-pulmonary.webp",
+          "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
           "contain": false,
-          "kind": "Pulmonary research-context illustration",
-          "credit": "Pulmonary research-context illustration",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         },
         {
@@ -1286,10 +1290,10 @@
           "title": "Expression is not the whole mechanism",
           "subtitle": "molecular explanation",
           "narration": "A measured protein change does not, without suitable functional evidence, settle viral infectivity or clinical outcomes.",
-          "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
           "contain": false,
-          "kind": "Archival laboratory workspace, not ACE2 assay",
-          "credit": "Archival laboratory workspace, not ACE2 assay",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         },
         {
@@ -1297,10 +1301,10 @@
           "title": "Separate hypothesis from demonstration",
           "subtitle": "molecular explanation",
           "narration": "The 2021 review weighs emerging research at a rapidly changing moment. The date of evidence matters for its interpretation.",
-          "image": "assets/evidence-pulmonary.webp",
+          "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
           "contain": false,
-          "kind": "Editorial image, not original coronavirus micrograph",
-          "credit": "Editorial image, not original coronavirus micrograph",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         },
         {
@@ -1308,13 +1312,14 @@
           "title": "Two forms, two questions",
           "subtitle": "molecular explanation",
           "narration": "A careful mechanistic discussion starts by saying which ACE2 form, which tissue and which endpoint is actually being investigated.",
-          "image": "assets/echo-concept.svg",
+          "image": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
           "contain": true,
-          "kind": "Conceptual visual, not study data",
-          "credit": "Conceptual visual, not study data",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "/#publications"
         }
-      ]
+      ],
+      "source_visual_revision": "curated-2026-10-17-v1"
     },
     {
       "id": "microfluidic-virus",
@@ -2489,10 +2494,10 @@
           "title": "The pocket is not the protein",
           "subtitle": "pharmacology / science cinema",
           "narration": "A purified protein fragment can look druggable, while the living regulatory complex occupies many shapes and partnerships that a crystal cannot freeze.",
-          "image": "assets/robo-concept.svg",
+          "image": "assets/films/art/source-specific/protein-states.svg",
           "contain": true,
-          "kind": "Generic molecular signaling editorial illustration, not a TF structure",
-          "credit": "Generic molecular signaling editorial illustration, not a TF structure",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
         },
         {
@@ -2500,10 +2505,10 @@
           "title": "Think in states",
           "subtitle": "pharmacology / science cinema",
           "narration": "The therapeutic hypothesis should identify the disease-sustaining transcription-factor state and what biological transition a ligand is supposed to cause.",
-          "image": "assets/home-archive/chemistry-chalkboard.jpg",
+          "image": "assets/films/art/source-specific/protein-states.svg",
           "contain": true,
-          "kind": "Original chalkboard archive, not structural model",
-          "credit": "Original chalkboard archive, not structural model",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
         },
         {
@@ -2522,10 +2527,10 @@
           "title": "A chain of experiments",
           "subtitle": "pharmacology / science cinema",
           "narration": "Engagement, conformation, chromatin occupancy and cellular response must be linked through experiments that can also disprove the claim.",
-          "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "image": "assets/films/art/source-specific/protein-states.svg",
           "contain": true,
-          "kind": "Published chemical figure from unrelated author's work; method analogy only",
-          "credit": "Published chemical figure from unrelated author's work; method analogy only",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
         },
         {
@@ -2533,10 +2538,10 @@
           "title": "Real precedents, different mechanisms",
           "subtitle": "pharmacology / science cinema",
           "narration": "Belzutifan, TEAD inhibitors and mutant-p53 reactivation illustrate distinct modes of controlling regulatory state rather than a universal method.",
-          "image": "assets/robo-concept.svg",
+          "image": "assets/films/art/source-specific/protein-states.svg",
           "contain": true,
-          "kind": "Generic concept pathway, not specific drug's atomic model",
-          "credit": "Generic concept pathway, not specific drug's atomic model",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
         },
         {
@@ -2550,7 +2555,8 @@
           "credit": "Author's editorial portrait",
           "link": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001"
         }
-      ]
+      ],
+      "source_visual_revision": "curated-2026-10-17-v1"
     },
     {
       "id": "essay-potency-exposure",
@@ -2572,10 +2578,10 @@
           "title": "The perfect number",
           "subtitle": "pharmacology / science cinema",
           "narration": "A compound works at nanomolar concentration in a protected assay. The number is seductive, but a patient never receives an assay plate.",
-          "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "image": "assets/films/art/source-specific/pk-potency.svg",
           "contain": true,
-          "kind": "Published independent chemistry study figure, not the DMPK compound",
-          "credit": "Published independent chemistry study figure, not the DMPK compound",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
         },
         {
@@ -2583,10 +2589,10 @@
           "title": "The journey is a different experiment",
           "subtitle": "pharmacology / science cinema",
           "narration": "Solubility, absorption, distribution, metabolism and clearance decide whether the required free concentration reaches the tissue.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art/source-specific/pk-potency.svg",
           "contain": true,
-          "kind": "Generic drug-delivery visual, not pharmacokinetic data",
-          "credit": "Generic drug-delivery visual, not pharmacokinetic data",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
         },
         {
@@ -2594,10 +2600,10 @@
           "title": "Total is not free",
           "subtitle": "pharmacology / science cinema",
           "narration": "A high tissue or plasma concentration can conceal extensive binding. Free exposure at the site of action is the relevant question.",
-          "image": "assets/evidence-pulmonary.webp",
+          "image": "assets/films/art/source-specific/pk-potency.svg",
           "contain": false,
-          "kind": "Generic pulmonary evidence image; not a measured concentration profile",
-          "credit": "Generic pulmonary evidence image; not a measured concentration profile",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
         },
         {
@@ -2616,10 +2622,10 @@
           "title": "An impressive hit may still fail",
           "subtitle": "pharmacology / science cinema",
           "narration": "Potency cannot compensate indefinitely for permeability barriers, toxicity or infeasible pharmacokinetics.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art/source-specific/pk-potency.svg",
           "contain": true,
-          "kind": "Illustration of delivery principle, no measured exposure",
-          "credit": "Illustration of delivery principle, no measured exposure",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
         },
         {
@@ -2633,7 +2639,8 @@
           "credit": "Original chemistry archive",
           "link": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001"
         }
-      ]
+      ],
+      "source_visual_revision": "curated-2026-10-17-v1"
     },
     {
       "id": "essay-trna",
@@ -2655,10 +2662,10 @@
           "title": "A translator inside every cell",
           "subtitle": "pharmacology / science cinema",
           "narration": "Before a protein takes shape, transfer RNA helps turn genetic instructions into an amino-acid sequence. It is not passive cellular plumbing.",
-          "image": "assets/home-archive/chemistry-chalkboard.jpg",
+          "image": "assets/films/art/source-specific/trna-translation.svg",
           "contain": true,
-          "kind": "Original chemistry chalkboard, not a tRNA molecular structure",
-          "credit": "Original chemistry chalkboard, not a tRNA molecular structure",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
         },
         {
@@ -2677,10 +2684,10 @@
           "title": "Synthetases can do more",
           "subtitle": "pharmacology / science cinema",
           "narration": "Aminoacyl-tRNA synthetases have catalytic charging functions, and some have additional signalling roles beyond translation.",
-          "image": "assets/robo-concept.svg",
+          "image": "assets/films/art/source-specific/trna-translation.svg",
           "contain": true,
-          "kind": "General pathway illustration; not a synthetase structure",
-          "credit": "General pathway illustration; not a synthetase structure",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
         },
         {
@@ -2699,10 +2706,10 @@
           "title": "Match the modality to the biology",
           "subtitle": "pharmacology / science cinema",
           "narration": "An enzyme pocket, disease-associated RNA fragment or extracellular synthetase domain requires different chemistry, assays and delivery.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art/source-specific/trna-translation.svg",
           "contain": true,
-          "kind": "Drug-carrier concept unrelated to any validated tRNA therapeutic",
-          "credit": "Drug-carrier concept unrelated to any validated tRNA therapeutic",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
         },
         {
@@ -2716,7 +2723,8 @@
           "credit": "Author's editorial portrait",
           "link": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001"
         }
-      ]
+      ],
+      "source_visual_revision": "curated-2026-10-17-v1"
     },
     {
       "id": "essay-proximity",
@@ -2738,10 +2746,10 @@
           "title": "The drug is not a cork in a hole",
           "subtitle": "pharmacology / science cinema",
           "narration": "For years drug action was pictured as occupancy. Induced proximity instead asks whether a molecule can bring two biological partners together.",
-          "image": "assets/robo-concept.svg",
+          "image": "assets/films/art/source-specific/molecular-proximity.svg",
           "contain": true,
-          "kind": "Illustrative pathway sketch, not a PROTAC ternary structure",
-          "credit": "Illustrative pathway sketch, not a PROTAC ternary structure",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
         },
         {
@@ -2760,10 +2768,10 @@
           "title": "Geometry controls the event",
           "subtitle": "pharmacology / science cinema",
           "narration": "The two proteins must form a productive complex. Linker length, orientation and cooperativity matter in ways simple binary affinity does not describe.",
-          "image": "assets/home-archive/chemistry-chalkboard.jpg",
+          "image": "assets/films/art/source-specific/molecular-proximity.svg",
           "contain": true,
-          "kind": "Generic chemistry laboratory context",
-          "credit": "Generic chemistry laboratory context",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
         },
         {
@@ -2771,10 +2779,10 @@
           "title": "The complex cannot last forever",
           "subtitle": "pharmacology / science cinema",
           "narration": "A bridge that dissociates too fast fails to act, while one that never releases may fail to turn over. Residence time becomes functional.",
-          "image": "assets/robo-concept.svg",
+          "image": "assets/films/art/source-specific/molecular-proximity.svg",
           "contain": true,
-          "kind": "Concept diagram, not a kinetic trace",
-          "credit": "Concept diagram, not a kinetic trace",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
         },
         {
@@ -2782,10 +2790,10 @@
           "title": "Not every match destroys",
           "subtitle": "pharmacology / science cinema",
           "narration": "Induced proximity can also relocalise or stabilize a protein, revealing that the real modality is the event the molecule causes.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art/source-specific/molecular-proximity.svg",
           "contain": true,
-          "kind": "Generic therapeutic concept graphic, not evidence of a published degrader",
-          "credit": "Generic therapeutic concept graphic, not evidence of a published degrader",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
         },
         {
@@ -2799,7 +2807,8 @@
           "credit": "Author's editorial portrait",
           "link": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001"
         }
-      ]
+      ],
+      "source_visual_revision": "curated-2026-10-17-v1"
     },
     {
       "id": "essay-adc",
@@ -2821,10 +2830,10 @@
           "title": "A guided payload still travels through a body",
           "subtitle": "pharmacology / science cinema",
           "narration": "An antibody-drug conjugate is a chemical system. Tumour binding is only one step in an exposure and release problem.",
-          "image": "assets/evidence-biomaterials.webp",
+          "image": "assets/films/art/source-specific/adc-molecular.svg",
           "contain": false,
-          "kind": "Generic scientific visual; not an antibody-drug conjugate micrograph",
-          "credit": "Generic scientific visual; not an antibody-drug conjugate micrograph",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
         },
         {
@@ -2832,10 +2841,10 @@
           "title": "Linker chemistry decides where",
           "subtitle": "pharmacology / science cinema",
           "narration": "Stable, cleavable and non-cleavable linkers change what escapes the carrier, how much reaches other tissues and how a tumour is exposed.",
-          "image": "assets/niosomes-concept.svg",
+          "image": "assets/films/art/source-specific/adc-molecular.svg",
           "contain": true,
-          "kind": "General carrier visual, not an ADC structure",
-          "credit": "General carrier visual, not an ADC structure",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
         },
         {
@@ -2843,10 +2852,10 @@
           "title": "A ratio reshapes a drug",
           "subtitle": "pharmacology / science cinema",
           "narration": "Drug-to-antibody ratio influences distribution, heterogeneity and pharmacokinetics. Higher loading is not automatically more precise.",
-          "image": "assets/robo-concept.svg",
+          "image": "assets/films/art/source-specific/adc-molecular.svg",
           "contain": true,
-          "kind": "General molecular graphic, not a conjugated antibody",
-          "credit": "General molecular graphic, not a conjugated antibody",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
         },
         {
@@ -2865,10 +2874,10 @@
           "title": "Bystander effects are conditional",
           "subtitle": "pharmacology / science cinema",
           "narration": "Permeable payloads may help reach heterogeneous tumours, but surrounding normal tissue and exposure constrain the apparent advantage.",
-          "image": "assets/evidence-biomaterials.webp",
+          "image": "assets/films/art/source-specific/adc-molecular.svg",
           "contain": false,
-          "kind": "Generic materials context visual",
-          "credit": "Generic materials context visual",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+          "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
           "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
         },
         {
@@ -2882,7 +2891,8 @@
           "credit": "Author's editorial portrait",
           "link": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001"
         }
-      ]
+      ],
+      "source_visual_revision": "curated-2026-10-17-v1"
     }
   ]
 }
