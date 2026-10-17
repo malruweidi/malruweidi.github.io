@@ -9,6 +9,8 @@ on:
       - scripts/remaster-publication-series.py
       - assets/films/remake-direction.json
       - .github/workflows/render-film-overhaul-v2.yml
+      - tests/film-overhaul-v2.test.cjs
+      - film-studio.html
   workflow_dispatch:
 permissions:
   contents: write
