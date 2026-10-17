@@ -1,0 +1,84 @@
+{
+  "id": "pla-grafting",
+  "seconds": 84.0,
+  "sha256": "027c64a046b248839dbca0245eb13c301582a17eb70cd93dedb6b39c7c5f6266",
+  "primary_source": "https://doi.org/10.3390/polym13213717",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Published polymer surface research imagery; see source DOI",
+    "Original conceptual surface-treatment diagram",
+    "Study-related scientific figure; not a movie of plasma treatment",
+    "Biomaterials research context, not a substitute for specific data",
+    "Published surface characterization imagery",
+    "Conceptual concluding illustration"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "kind": "Published polymer surface research imagery; see source DOI",
+      "credit": "Published polymer surface research imagery; see source DOI",
+      "source": "/techniques.html#materials"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/polymer-concept.svg",
+      "kind": "Original conceptual surface-treatment diagram",
+      "credit": "Original conceptual surface-treatment diagram",
+      "source": "/techniques.html#materials"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "kind": "Study-related scientific figure; not a movie of plasma treatment",
+      "credit": "Study-related scientific figure; not a movie of plasma treatment",
+      "source": "/techniques.html#materials"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/evidence-biomaterials.webp",
+      "kind": "Biomaterials research context, not a substitute for specific data",
+      "credit": "Biomaterials research context, not a substitute for specific data",
+      "source": "/techniques.html#materials"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "kind": "Published surface characterization imagery",
+      "credit": "Published surface characterization imagery",
+      "source": "/techniques.html#materials"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/polymer-concept.svg",
+      "kind": "Conceptual concluding illustration",
+      "credit": "Conceptual concluding illustration",
+      "source": "/techniques.html#materials"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "materials",
+  "motion_storyboard": {
+    "02": "materials",
+    "03": "molecule",
+    "04": "materials",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "PLA substrate",
+    "Surface activation",
+    "Grafted functionality"
+  ],
+  "evidence_boundary": "Surface chemistry is simplified; no micrograph is invented.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}
