@@ -1,0 +1,38 @@
+name: Publication Cinema playback integrity
+on:
+  push:
+    branches: [main]
+    paths:
+      - publication-cinema.html
+      - assets/films/publication-series.json
+      - assets/films/series-v6/releases.json
+      - tests/publication-v6-poster.test.cjs
+      - .github/workflows/publication-cinema-playback.yml
+  pull_request:
+    paths:
+      - publication-cinema.html
+      - assets/films/publication-series.json
+      - assets/films/series-v6/releases.json
+      - tests/publication-v6-poster.test.cjs
+      - .github/workflows/publication-cinema-playback.yml
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check 35 film sources, captions, posters, preserved versions, and release index
+        run: node --test tests/publication-v6-poster.test.cjs
+      - name: Check inline catalogue player JavaScript
+        run: |
+          node - <<'JS'
+          const fs=require('node:fs'),vm=require('node:vm');
+          const html=fs.readFileSync('publication-cinema.html','utf8');
+          const tags=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)];
+          let checked=0;
+          for(const [,script] of tags){ if(script.trim()){new vm.Script(script);checked++;} }
+          if(!checked)throw Error('No inline film-player script was found');
+          console.log('Checked',checked,'film page script blocks');
+          JS
