@@ -1,0 +1,60 @@
+name: Ruwaidix original documentaries cinematic audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/audit-all-standalone-films.py
+      - .github/workflows/cinema-standalone-review.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: standalone-cinema-audit-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free visual and audio inspection tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install pillow
+      - name: Inspect 14 original and research-specific movies across 84 actual film frames
+        run: |
+          python -m py_compile scripts/audit-all-standalone-films.py
+          python scripts/audit-all-standalone-films.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from PIL import Image
+          d=Path("assets/films/quality-review-standalone")
+          index=json.loads((d/"review-index.json").read_text())
+          assert index["count"]==14
+          assert len({x["source"] for x in index["films"]})==14
+          for entry in index["films"]:
+            p=Path(entry["contact_sheet"].lstrip("/"))
+            assert p.stat().st_size>20000
+            with Image.open(p) as im: assert im.size==(1920,804)
+            assert len(entry["samples"])==6
+            assert entry["caption_cues"]>=6
+          print("All 14 contact sheets and original audio/video tracks verified")
+          PY
+      - name: Publish only review stills, do not alter finished movie masters
+        run: |
+          git config user.name "Ruwaidix Film QC"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/quality-review-standalone/*.webp assets/films/quality-review-standalone/review-index.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive actual film contact sheets for 9 documentaries and 5 source-specific releases [cinema-audit]"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase FETCH_HEAD
+            git push origin HEAD:"${{ github.ref_name }}"
+          fi
