@@ -27,7 +27,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg fonts-dejavu-core
           python -m pip install pillow
-      - name: Inspect 14 original and research-specific movies across 84 actual film frames
+      - name: Inspect 16 original, corrected and research-specific films across 96 actual film frames
         run: |
           python -m py_compile scripts/audit-all-standalone-films.py
           python scripts/audit-all-standalone-films.py
@@ -37,7 +37,7 @@ jobs:
           from PIL import Image
           d=Path("assets/films/quality-review-standalone")
           index=json.loads((d/"review-index.json").read_text())
-          assert index["count"]==14
+          assert index["count"]==16
           assert len({x["source"] for x in index["films"]})==14
           for entry in index["films"]:
             p=Path(entry["contact_sheet"].lstrip("/"))
@@ -45,7 +45,7 @@ jobs:
             with Image.open(p) as im: assert im.size==(1920,804)
             assert len(entry["samples"])==6
             assert entry["caption_cues"]>=6
-          print("All 14 contact sheets and original audio/video tracks verified")
+          print("All 16 contact sheets and original audio/video tracks verified")
           PY
       - name: Publish only review stills, do not alter finished movie masters
         run: |
