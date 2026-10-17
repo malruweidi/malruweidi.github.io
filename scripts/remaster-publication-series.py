@@ -65,7 +65,7 @@ def valid_release(entry):
     if not (v.exists() and t.exists() and m.exists()): return False
     if min(v.stat().st_size,t.stat().st_size,m.stat().st_size)<20: return False
     manifest=json.loads(m.read_text(encoding="utf8"))
-    if manifest.get("edition")!="cinematic-v2":
+    if manifest.get("edition")!="cinematic-v2" or manifest.get("remaster_signature")!="story-motion-v2.2":
         return False
     if hashlib.sha256(v.read_bytes()).hexdigest()!=manifest.get("sha256"):
         raise ValueError("Existing v2 release has a hash mismatch: "+slug)
@@ -122,26 +122,28 @@ def main():
     models=(ROOT/args.models).resolve()
     for entry in items:
         plan=directions["films"][entry["id"]]
-        # Prefer originally designated conceptual SVGs; when absent, use an
-        # attributable contextual archive still, never a published figure.
-        eligible=[s for s in entry["scenes"] if not s.get("video")
-                  and (s["image"].endswith(".svg") or
-                       ("figure-" not in s["image"] and "evidence-" not in s["image"]))]
-        svg=[s for s in eligible if s["image"].endswith(".svg")]
-        chosen=(svg or eligible)
-        if not chosen: raise ValueError("No safely animatable source visual: "+entry["id"])
-        # Two chapters per film contain original animated explanatory content,
-        # with the other four retaining research figures / documentary imagery.
-        picks=(chosen[:1]+chosen[-1:]) if len(chosen)>1 else chosen
-        for s in picks:
-            s["_remake"]=plan
+        # Four dramaturgically different, expressly conceptual chapters, while
+        # chapters 01/06 retain full-width source/figure presentation.
+        # A published figure in an intermediate chapter is shown completely
+        # (uncropped) in the left original-source inset; NO data are altered.
+        picks=[scene for scene in entry["scenes"]
+               if scene["id"] in {"02","03","04","05"} and not scene.get("video")]
+        if len(picks)<2:
+            raise ValueError("Insufficient distinctly authored animated chapters: "+entry["id"])
+        for scene in picks:
+            scene["_remake"]={
+                **plan,
+                "motif":plan["scene_motifs"][scene["id"]],
+            }
         pub.render(entry,models)
         p=DIR/(entry["id"]+".json")
         record=json.loads(p.read_text(encoding="utf8"))
         record["edition"]="cinematic-v2"
+        record["remaster_signature"]="story-motion-v2.2"
         record["human_screening"]="NOT YET COMPLETED; narration, science and device playback require sign-off"
         record["animated_scene_ids"]=[s["id"] for s in picks]
         record["motion_motif"]=plan["motif"]
+        record["motion_storyboard"]=plan["scene_motifs"]
         record["motion_annotations"]=plan["annotations"]
         record["evidence_boundary"]=plan["evidence_boundary"]
         record["method"]="Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators"
@@ -151,7 +153,7 @@ def main():
         parsed=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","json",str(v)]))
         if abs(float(parsed["format"]["duration"])-84)>.3:
             raise ValueError("Unexpected release duration "+entry["id"])
-        print("CINEMATIC V2",entry["id"],",",v.stat().st_size,"bytes",
+        print("CINEMATIC V2.2",entry["id"],",",v.stat().st_size,"bytes",
               "animated",record["animated_scene_ids"],flush=True)
 
 if __name__=="__main__":
