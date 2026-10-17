@@ -116,7 +116,29 @@ jobs:
                  "total_eligible":30,"release_status":"NOT APPROVED FOR REPLACING LIVE MOVIES",
                  "films":entries}
           (folder/"staged-cuts.json").write_text(json.dumps(index,ensure_ascii=False,indent=2)+"\n")
-          print("Technical video QC passed:",len(entries),"of 30 staging films")
+          # Public release is deliberately distinct from the staging manifest.
+          # Never promote an old V7 with baked production labels. Every new
+          # entry must have clean-screen provenance, 6 distinct chapters, verified
+          # H.264/AAC, captions, complete source material and its own poster.
+          releasable=[row for row in entries if
+                      row["visual_revision"].startswith("v7.8-clean-screen/") and
+                      row["unique_mechanism_scenes"]==6 and
+                      row["creative_review"]!="needs_chapter_art_direction"]
+          release={"schema":"ruwaidix-cinema-v7-registered-releases-v1",
+                   "version":"clean-editorial-release",
+                   "count":len(releasable),
+                   "review_limit":"Further expert scientific and artistic review may improve these editions.",
+                   "films":[{
+                     "id":row["id"],"edition":"series-v7-pilots","poster":row["poster"],
+                     "duration_seconds":84,"sha256":row["sha256"],
+                     "video":row["file"],"captions":row["captions"],
+                     "scene_manifest":row["manifest"],"source_review":row["contact"],
+                     "visual_revision":row["visual_revision"],
+                     "distinct_chapters":row["unique_mechanism_scenes"],
+                     "version":"clean-editorial-release"
+                   } for row in releasable]}
+          (folder/"releases.json").write_text(json.dumps(release,ensure_ascii=False,indent=2)+"\n")
+          print("Technically validated:",len(entries),"of 30; clean-screen public releases:",len(releasable))
           PY
       - name: Publish independent preview archive, never overwrite live movies
         run: |
