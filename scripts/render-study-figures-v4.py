@@ -93,17 +93,19 @@ def scene_camera(film,scene,i):
 
 # Alternate documentary shots of ONLY the same exact experimental figure.
 # Pans/crops are tagged; no cut can imply the panel belongs to a new study.
+# SOURCE FIGURES ARE SCIENTIFIC RESULTS. Bars, axes, scale bars, control
+# groups and captions must remain fully legible. We use only safe microscopy
+# subpanel enlargements, never partial analytical plots.
 FOCUS = {
  "flow-chamber-method": {
-    1:(.47,.03,.98,.57), 3:(.32,.00,.665,1.00),
-    5:(.47,.00,1.00,1.00), 6:(.00,.00,.55,1.00),
-    7:(.00,.00,.59,.54)},
- "ace2-covid-drugs": {3:(.00,.00,.95,1.00),5:(.00,.00,.95,1.00)},
- "pla-grafting": {
-    2:(.00,.00,.53,1.00), 3:(.16,.00,.88,1.00),
-    4:(.10,.00,.92,.98), 5:(.26,.01,1.00,1.00),
-    6:(.00,.01,.73,1.00), 7:(.22,.01,1.00,1.00)}
+    1:(.47,.03,.98,.57), # Full native apparatus subpanel B, not an assay
+    3:(.34,.00,.67,1.00), # Complete fluorescent cell-image panel B
+    5:(.47,.00,1.00,1.00) # Complete original actin micrograph panel
+ },
+ "pla-grafting": {},
+ "ace2-covid-drugs": {}
 }
+
 def credit(d,film,scene,cropped,figure):
     d.rectangle((0,666,W,H),fill=(12,35,39))
     if scene["mode"] in ("interface","surface"):
@@ -193,6 +195,13 @@ def full_scene(film,scene,i,t,art,region):
                     outline=(213,169,124),width=3)
         text(d,(where[0],max(81,where[1]-30)),f"PANEL CROP FROM ORIGINAL FIGURE {scene['figure']}",12,SAND,"bold")
         region=focus
+    if scene["mode"] in ("result","boundary","source") and region is None:
+        # Put a moving emphasis INDICATOR in the margin below/beside the
+        # publication figure. No source pixels or labels are hidden or changed.
+        dx=int(90*ease(t/CHAPTER))
+        ytop=632 if scene["mode"]!="source" else 641
+        d.line((537,ytop,537+dx,ytop),fill=SAND,width=5)
+        d.ellipse((532+dx,ytop-5,542+dx,ytop+5),fill=CREAM)
     # Smaller editorial words; figure dominates the viewport.
     bg_block=(28,133,414,629)
     d.rounded_rectangle(bg_block,16,fill=(15,41,44))
