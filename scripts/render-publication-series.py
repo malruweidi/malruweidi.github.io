@@ -114,7 +114,7 @@ def write_vtt(items, starts, speech_lengths, path):
 def scene_provenance(entry, scenes=None):
     """Preserve visual evidence labels from the editorial source catalogue, not media encoding."""
     return [
-        {"scene_id": scene["id"], "image": scene["image"], "kind": scene["kind"],
+        {"scene_id": scene["id"], "image": scene.get("provenance_image", scene["image"]), "kind": scene["kind"],
          "credit": scene["credit"], "source": scene["link"]}
         for scene in (scenes if scenes is not None else entry["scenes"])
     ]
@@ -159,6 +159,7 @@ def render(entry, models):
             for scene in scenes:
                 visual,label,source_record=art.select_visual(slug,scene,w,ROOT)
                 scene["image"]=str(visual)
+                scene["provenance_image"]=(str(visual.relative_to(ROOT)) if source_record else ("generated:film-art-direction-v6/"+slug+"/scene-"+scene["id"]))
                 scene["kind"]=label
                 scene["credit"]=label
                 scene["link"]=entry.get("page") or "/publication-cinema.html"
