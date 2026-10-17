@@ -1,0 +1,98 @@
+{
+  "id": "flow-chamber-method",
+  "edition": "V3 original experimental-method film / verified 2020 paper",
+  "primary_doi": "10.3390/mps3040065",
+  "duration_seconds": 120.0,
+  "sha256": "3c811127cf7a753192335195778a2b7e16c6da61da436b8e7f59fa7277721af8",
+  "source_figures": [
+    {
+      "film": "flow-chamber-method",
+      "figure_number": 1,
+      "caption": "Experimental setup. (A) We exposed epithelial cells to frictional shear stress relevant to airway reopening in our setup. (B) A single bubble is propagated over cell monolayer by filling the chamber and then retracting fluid over the cells. (C) The parallel plate flow chamber is composed of an upper cover slip, a cell-seeded lower coverslip, and a membrane sandwiched between two coverslips. (D) A propagating bubble is seen. (E) Fluorescent live/dead stain method is used to assess viability. Here, green represents calcein-stained live cells, and red are ethidium-stained dead cells.",
+      "article_title": "Application of a Flow-Induced Stress Wave and Investigation of Associated Injuries on Cell Monolayers Using a Parallel Plate Flow Chamber",
+      "doi": "10.3390/mps3040065",
+      "pmc": "PMC7712398",
+      "label": "Figure 1",
+      "image_url": "https://www.mdpi.com/mps/mps-03-00065/article_deploy/html/images/mps-03-00065-g001.png",
+      "article_jats": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7712398/fullTextXML",
+      "local_path": "assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg",
+      "sha256": "d86c0d8854ae32b83b33d4e02b1da3013b86f3a91de3986f410f5d6aba521692",
+      "license": "Creative Commons Attribution 4.0 (source JATS verified); retain citation and original panel identity",
+      "display_policy": "Experimental figures are immutable; preserve control labels, scales, and original axis values."
+    },
+    {
+      "film": "flow-chamber-method",
+      "figure_number": 5,
+      "caption": "Fluorescent images for 149 L2 cells: (A) control group, and (B) experimental group, where a bubble was formed to induce a stress wave on the cells. Green color is for live cells while red color is for dead cells. (C) Bar chart for control and experimental group, showing a significant difference (p-value < 0.01) in death percentage. Error bars are for standard error.",
+      "article_title": "Application of a Flow-Induced Stress Wave and Investigation of Associated Injuries on Cell Monolayers Using a Parallel Plate Flow Chamber",
+      "doi": "10.3390/mps3040065",
+      "pmc": "PMC7712398",
+      "label": "Figure 5",
+      "image_url": "https://www.mdpi.com/mps/mps-03-00065/article_deploy/html/images/mps-03-00065-g005.png",
+      "article_jats": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7712398/fullTextXML",
+      "local_path": "assets/films/source-figures/v3/flow-chamber-method-figure-05.jpg",
+      "sha256": "43bb54073801952f0e29f4cf95f5f7dd95688f8b146cb078606943c6646f984c",
+      "license": "Creative Commons Attribution 4.0 (source JATS verified); retain citation and original panel identity",
+      "display_policy": "Experimental figures are immutable; preserve control labels, scales, and original axis values."
+    },
+    {
+      "film": "flow-chamber-method",
+      "figure_number": 6,
+      "caption": "(A) Cell’s cytoskeleton for the control group, and (B) cell’s cytoskeleton for the bubble-propagated group. The green color represents actin filaments, and blue is the nucleus stained with DAPI (4’,6-Diamidino-2-Phenylindole). The white arrow represents the direction of actin filaments’ orientation.",
+      "article_title": "Application of a Flow-Induced Stress Wave and Investigation of Associated Injuries on Cell Monolayers Using a Parallel Plate Flow Chamber",
+      "doi": "10.3390/mps3040065",
+      "pmc": "PMC7712398",
+      "label": "Figure 6",
+      "image_url": "https://www.mdpi.com/mps/mps-03-00065/article_deploy/html/images/mps-03-00065-g006.png",
+      "article_jats": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7712398/fullTextXML",
+      "local_path": "assets/films/source-figures/v3/flow-chamber-method-figure-06.jpg",
+      "sha256": "c07761e43a405320c1dbb12806d742fa6cd9d02f43eb0b086918f0d2da72b220",
+      "license": "Creative Commons Attribution 4.0 (source JATS verified); retain citation and original panel identity",
+      "display_policy": "Experimental figures are immutable; preserve control labels, scales, and original axis values."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "An injured cell in an idealized airway",
+      "speech": "When an air liquid boundary moves across epithelial cells, mechanical forces can cause injury. This question motivated a controlled laboratory model, not a trial in patients.",
+      "source": "Methods and Protocols 2020 3(4):65, introduction and setup."
+    },
+    {
+      "title": "The original chamber",
+      "speech": "The published apparatus drives fluid over cells through a parallel plate flow chamber. Its components define the model, including the cover slips and the narrow channel.",
+      "source": "2020 methods article Figure 1, original experimental apparatus."
+    },
+    {
+      "title": "One moving interface",
+      "speech": "A bubble advances across the monolayer, exposing cells to forces near the moving interface. Our animation explains the geometry without inventing numerical stress measurements.",
+      "source": "Figure 1A conceptual mechanics; no quantitative stress field simulated."
+    },
+    {
+      "title": "Make the geometry repeatable",
+      "speech": "The cell bearing cover slip sits beneath a gasket and a second cover slip. Repeating that arrangement helps isolate exposure while limiting what the apparatus can represent.",
+      "source": "Original Figure 1C and apparatus methods."
+    },
+    {
+      "title": "Injury becomes visible",
+      "speech": "In the original L2 cell experiment, controls showed almost no cell death. The bubble exposed group averaged around fifty three percent dead cells, across seven experimental repetitions.",
+      "source": "2020 methods paper, Expected Results, Figure 5 A–C; control 0–0.2% and bubble ~53%, seven repetitions."
+    },
+    {
+      "title": "Actin provides another view",
+      "speech": "The actin images reveal a subtler picture. There was no significant overall change in cytoskeletal structure after one bubble, although the authors observed slight differences in filament orientation.",
+      "source": "Figure 6 and published Effects on Cytoskeletal Structure; orientation difference only, no significant structure difference."
+    },
+    {
+      "title": "What the images establish",
+      "speech": "A mechanical insult in a simplified system can change cell viability and organization. It does not by itself tell us how a patient's entire respiratory tract will respond.",
+      "source": "Source paper Results and Discussion; in-vitro model limitations."
+    },
+    {
+      "title": "A model, not a lung",
+      "speech": "The chamber makes a hidden physical event experimentally accessible. Its strength is repeatability; its limit is the distance between a cell monolayer and the living lung.",
+      "source": "Experimental model scope; no clinical extrapolation."
+    }
+  ],
+  "human_review": "NOT APPROVED / visually check apparatus, cell labels and all narration",
+  "research_boundary": "Simplified L2 epithelial-monolayer flow chamber, not evidence of patient injury or a completed clinical test. Cell cartoons are not microscope images."
+}

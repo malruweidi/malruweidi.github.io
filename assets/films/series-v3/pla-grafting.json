@@ -1,0 +1,108 @@
+{
+  "id": "pla-grafting",
+  "edition": "V3 primary-study figures and original experiment storytelling",
+  "paper": "Surface Modification of Poly(lactic acid) Film via Cold Plasma Assisted Grafting of Fumaric and Ascorbic Acid",
+  "doi": "10.3390/polym13213717",
+  "duration": 120.0,
+  "sha256": "e63ab995e54eae801a1bb1505c4de61dc463169a2eebbe9421bc4cb76dac93b5",
+  "figures": [
+    {
+      "film": "pla-grafting",
+      "figure_number": 1,
+      "caption": "(a) The contact angles of the testing liquids on the PLA samples, (b) The surface free energy of the PLA samples.",
+      "article_title": "Surface Modification of Poly(lactic acid) Film via Cold Plasma Assisted Grafting of Fumaric and Ascorbic Acid",
+      "doi": "10.3390/polym13213717",
+      "pmc": "PMC8588400",
+      "label": "Figure 1",
+      "image_url": "https://www.mdpi.com/polymers/polymers-13-03717/article_deploy/html/images/polymers-13-03717-g001.png",
+      "article_jats": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8588400/fullTextXML",
+      "local_path": "assets/films/source-figures/v3/pla-grafting-figure-01.jpg",
+      "sha256": "fc3cb0b1526dca9d73d7e5ec133d2552028fbcb6aa3e97ba7f2243528bc9efd8",
+      "license": "Creative Commons Attribution 4.0 (source JATS verified); retain citation and original panel identity",
+      "display_policy": "Experimental figures are immutable; preserve control labels, scales, and original axis values."
+    },
+    {
+      "film": "pla-grafting",
+      "figure_number": 4,
+      "caption": "X-ray photoelectron spectroscopy (XPS) spectra of PLA samples.",
+      "article_title": "Surface Modification of Poly(lactic acid) Film via Cold Plasma Assisted Grafting of Fumaric and Ascorbic Acid",
+      "doi": "10.3390/polym13213717",
+      "pmc": "PMC8588400",
+      "label": "Figure 4",
+      "image_url": "https://www.mdpi.com/polymers/polymers-13-03717/article_deploy/html/images/polymers-13-03717-g004.png",
+      "article_jats": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8588400/fullTextXML",
+      "local_path": "assets/films/source-figures/v3/pla-grafting-figure-04.jpg",
+      "sha256": "053a349f280dbd8f8d080ae6cd38329949b349bd78bc38ef95e6c7a3d9e45c49",
+      "license": "Creative Commons Attribution 4.0 (source JATS verified); retain citation and original panel identity",
+      "display_policy": "Experimental figures are immutable; preserve control labels, scales, and original axis values."
+    },
+    {
+      "film": "pla-grafting",
+      "figure_number": 8,
+      "caption": "Peel resistance of PLA/Al laminate.",
+      "article_title": "Surface Modification of Poly(lactic acid) Film via Cold Plasma Assisted Grafting of Fumaric and Ascorbic Acid",
+      "doi": "10.3390/polym13213717",
+      "pmc": "PMC8588400",
+      "label": "Figure 8",
+      "image_url": "https://www.mdpi.com/polymers/polymers-13-03717/article_deploy/html/images/polymers-13-03717-g008.png",
+      "article_jats": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8588400/fullTextXML",
+      "local_path": "assets/films/source-figures/v3/pla-grafting-figure-08.jpg",
+      "sha256": "13188cdc0317eb158126558a9a0f8cba3166f2ce3054cc29e3a770bc316b28ed",
+      "license": "Creative Commons Attribution 4.0 (source JATS verified); retain citation and original panel identity",
+      "display_policy": "Experimental figures are immutable; preserve control labels, scales, and original axis values."
+    }
+  ],
+  "data_note": "Contact angles: 70.2° untreated, 55.1° plasma, 49.6° FA-plasma; peel resistance: 74.4 untreated, 73.3 ASA without plasma, 87.2 FA without plasma, 107 plasma, 130 ASA-plasma, 211 FA-plasma. Published paper Table 1 and Figure 8. No simulated experiment promoted as observation.",
+  "restrictions": "2020 antimicrobial PLA scaffolds were a different study and are not depicted. Artificial film/polymer molecular shapes are conceptual. Original figures contain original controls, captions and axis units.",
+  "human_review": "NOT YET APPROVED: check audio/acoustics, data readouts, figure rights and full-speed editing",
+  "chapters": [
+    {
+      "title": "The invisible surface",
+      "speech": "Two plastic films may look identical until something meets their surface. We changed the outermost layer of poly lactic acid, then tested how it behaved.",
+      "source": "2021 Polymers 13:3717; material study premise.",
+      "tts_seconds": 9.962
+    },
+    {
+      "title": "A baseline for the experiment",
+      "speech": "Untreated PLA had a measured water contact angle of seventy point two degrees. In this experiment, that helped establish the reference surface for comparison.",
+      "source": "2021 paper Table 1; water contact angle 70.2 (±1.6) degrees.",
+      "tts_seconds": 10.153
+    },
+    {
+      "title": "Plasma changes the contact layer",
+      "speech": "Cold plasma alters the film's contact surface. The next question is whether new surface chemistry can be introduced, rather than merely depositing molecules on an unprepared polymer.",
+      "source": "2021 paper methods and discussion; illustrative plasma activation mechanism, not experimental footage.",
+      "tts_seconds": 11.817
+    },
+    {
+      "title": "Two different grafting reagents",
+      "speech": "The study compared ascorbic acid with fumaric acid after plasma treatment. Their different surface responses became a test of what chemical modification had actually achieved.",
+      "source": "Original 2021 grafting study; ASA versus FA treatments.",
+      "tts_seconds": 11.615
+    },
+    {
+      "title": "Proof must be chemical",
+      "speech": "Contact angle alone cannot establish molecular attachment. The investigators also used X-ray photoelectron spectroscopy to compare surface chemistry after plasma exposure and grafting.",
+      "source": "2021 source paper Figure 4: XPS spectra; genuine original published figure.",
+      "tts_seconds": 12.905
+    },
+    {
+      "title": "The wetting changed",
+      "speech": "The measured water contact angle fell from seventy point two degrees untreated to fifty five point one after plasma treatment, and forty nine point six after fumaric acid grafting.",
+      "source": "2021 paper Table 1 water contact angles and Figure 1 wettability; actual numeric values.",
+      "tts_seconds": 11.775
+    },
+    {
+      "title": "The peel experiment",
+      "speech": "In the original peel test, the untreated laminate resisted separation at seventy four newtons per meter. Fumaric acid grafting after plasma treatment reached two hundred eleven.",
+      "source": "2021 paper Figure 8; original figures indicate ~74.4 and 211 N/m.",
+      "tts_seconds": 11.434
+    },
+    {
+      "title": "The control answers the question",
+      "speech": "Adding fumaric acid without plasma gave only eighty seven newtons per meter. The strongest result required the treatment sequence. That is evidence for a surface process, not a universal packaging claim.",
+      "source": "2021 paper Figure 8: untreated + FA approximately 87.2; plasma + FA 211 N/m.",
+      "tts_seconds": 12.713
+    }
+  ]
+}
