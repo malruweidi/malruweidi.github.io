@@ -6,6 +6,7 @@ on:
       - scripts/audit-all-v4-films.py
       - assets/films/series-v4/*.mp4
       - assets/films/series-v4/*.json
+      - scripts/render-pla-scaffolds-v4.py
       - .github/workflows/audit-all-v4-films.yml
   workflow_dispatch:
 permissions:
@@ -25,7 +26,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg fonts-dejavu-core
           python -m pip install pillow
-      - name: Decode all five V4 films and compare source manifests to actual bytes
+      - name: Decode all currently present V4 films and compare source manifests to actual bytes
         run: python scripts/audit-all-v4-films.py
       - name: Commit only images and SHA metadata
         run: |
@@ -35,6 +36,11 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Review actual encoded V4 frames across historical and scientific film cuts"
             git fetch origin "${{ github.ref_name }}"
-            git rebase "origin/${{ github.ref_name }}"
-            git push origin HEAD:"${{ github.ref_name }}"
+            if git rebase "origin/${{ github.ref_name }}"; then
+              git push origin HEAD:"${{ github.ref_name }}"
+            else
+              git rebase --abort
+              echo "QA-only binary contact sheet race: use next audit run."
+              exit 1
+            fi
           fi
