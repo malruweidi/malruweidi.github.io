@@ -468,7 +468,9 @@ def chapter_source_specific(d,typ,idx,phase):
  patents that appear to be real pages, dosing results, animal data or actual
  crystal structures. Phase highlights elements of a fixed conceptual story.
  """
- d.rectangle((98,133,1180,487),fill=(17,45,51))
+ # Clear the previous base illustration INCLUDING its footer/domain label;
+ # otherwise old figure traces and labels appear behind later chapters.
+ d.rectangle((94,133,1182,532),fill=(17,45,51))
  def card(x,y,w,h,title,subtitle="",selected=False):
   color=GOLD if selected else MINT
   d.rounded_rectangle((x,y,x+w,y+h),radius=15,outline=color,width=5)
