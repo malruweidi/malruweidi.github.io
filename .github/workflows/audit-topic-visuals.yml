@@ -1,0 +1,24 @@
+name: Subject-specific research image integrity
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - assets/films/art/source-specific/**
+      - assets/films/publication-series.json
+      - scripts/audit-topic-visuals.py
+      - .github/workflows/audit-topic-visuals.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate-image-provenance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install cairosvg pillow
+      - name: Rasterize topic-specific diagrams and verify scientific source provenance
+        run: python scripts/audit-topic-visuals.py
