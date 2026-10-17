@@ -145,11 +145,11 @@ def scene_art(slug,idx,phase,output):
    rounded(d,(x-29,y-162,x+29,y-77),MINT,7,18)
    oval(d,x,y-174,29,GOLD,5)
   if phase>=1:
-   rounded(d,(913,194,975,299),MINT,6,22)
-   oval(d,944,180,30,GOLD,5)
-   line(d,(968,325,968,382),GOLD,2)
-  txt(d,(248,437),"MEMBRANE",15,INK)
-  txt(d,(878,437),"SOLUBLE",15,INK)
+   # Soluble ACE2 is completely detached. Never draw a stalk to membrane.
+   rounded(d,(905,179,967,274),MINT,6,22)
+   oval(d,936,164,30,GOLD,5)
+   txt(d,(870,292),"SOLUBLE ACE2",15,INK,True)
+  txt(d,(248,437),"PLASMA MEMBRANE",15,INK)
  elif typ=="trna":
   # Symbolic secondary structure; no fabricated crystal structure.
   pts=[(440,205),(440,312),(505,312),(505,390),(550,438),(592,392),(592,310),(655,310),(655,204)]
@@ -162,9 +162,11 @@ def scene_art(slug,idx,phase,output):
   txt(d,(505,478),"ANTICODON",17,INK)
   d.rounded_rectangle((811,245,1074,396),radius=65,outline=GOLD,width=12)
   line(d,(852,338,1036,338),MINT,7)
-  for j in range(6):
-   txt(d,(868+j*27,351),"AUG"[j%3],18,INK,True)
-  txt(d,(850,418),"RIBOSOME: SCHEMATIC",15,INK)
+  # A single mRNA codon is shown. Letter positions are not made-up sequence data.
+  for j,base in enumerate("AUG"):
+   txt(d,(880+j*48,350),base,21,INK,True)
+  txt(d,(877,391),"mRNA  5′→3′",15,INK)
+  txt(d,(848,434),"RIBOSOME / EXPLANATORY",15,INK)
  elif typ=="alveoli":
   rounded(d,(165,220,1043,420),MINT,5,28)
   for j in range(19):
