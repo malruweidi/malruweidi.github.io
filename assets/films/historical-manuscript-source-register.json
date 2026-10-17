@@ -4,7 +4,7 @@
   "status": "Verified digital-catalogue sources; rights and archaeological context must be inspected before any new embedded image is added to a rendered film.",
   "historical_boundaries": [
     "The publication on Making Medicines Keep was accepted 15 October 2026; do not present it as already published.",
-    "Minhaj al-dukkan is a medieval pharmacy handbook; British Library Or 5786 is a dated 715 AH / AD 1315-16 manuscript witness, not an autograph or proof that the copy was produced in Cairo.",
+    "The catalogue dates the composite volume to 715 AH / 1315–16 from the third treatise's colophon on fol. 139v; this does not independently date every leaf or show that the copy was produced in Cairo. Or 5786 is a manuscript witness, not an authorial autograph.",
     "Source materials are documentary evidence of pharmaceutical practice and prescription formulations; they are not measured evidence of contemporary pharmacological efficacy.",
     "An independent generic Wellcome Arabic medical manuscript cannot be represented as a leaf from British Library Or 5786 or a specific Cairo Genizah fragment."
   ],
@@ -14,7 +14,7 @@
       "collection": "British Library Oriental Manuscripts",
       "shelfmark": "Or 5786, ff. 1v–95v",
       "title": "Minhāj al-dukkān wa-dustūr al-aʿyān, al-Kūhīn al-ʿAṭṭār",
-      "witness_date": "715 AH / 1315–1316 CE",
+      "witness_date": "Codex catalogued as transcribed in 715 AH / 1315–1316 CE; dating comes from the colophon of the third item (fol. 139v), not an independent colophon on every Minhāj al-dukkān leaf.",
       "source_url": "https://www.qdl.qa/en/archive/81055/vdc_100023441781.0x000001",
       "exact_leaf_example": "https://www.qdl.qa/archive/81055/vdc_100024189448.0x000040",
       "rights": "Qatar Digital Library item indicates Public Domain; attribution and ethical conditions of reuse still apply.",
