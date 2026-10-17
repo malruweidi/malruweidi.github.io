@@ -1,0 +1,17 @@
+{
+  "layout_version": "full-frame-qa-v2",
+  "source_mp4": "assets/films/series-v2/gi-autoimmunity-2.mp4",
+  "source_sha256": "f5cc6e9b4ea221aa7cee58c2c5bac6e97ab48e3a11676367252b23f246957472",
+  "samples_seconds": [
+    4,
+    14,
+    24,
+    34,
+    44,
+    55,
+    66,
+    77
+  ],
+  "full_picture_preserved": true,
+  "label_placement": "Outside original frame bounds; never obscures title or scientific figure"
+}

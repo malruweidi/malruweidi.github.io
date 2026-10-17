@@ -361,6 +361,27 @@
       "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
     },
     {
+      "name": "essay-trna",
+      "seconds": 84.0,
+      "size_bytes": 2497912,
+      "sha256": "b9ebc7074c7f7d57ade17045269378592361021a4e3f6d2181443ef7da0655b2",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 20,
+        "max_caption_line": 53,
+        "last_caption_second": 80.32
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
       "name": "flow-chamber-method",
       "seconds": 84.0,
       "size_bytes": 2564876,
