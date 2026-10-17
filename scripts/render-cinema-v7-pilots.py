@@ -20,8 +20,8 @@ ART_REVISIONS={
  "echo-cnn-lstm":"v7.2-ultrasound",
  "cubosome-theranostics":"v7.4-chapter-specific-cubosomes-clean-panel",
  "food-printing":"v7.4-chapter-specific-food-rheology-clean-panel",
- "cairo-microscope":"v7.5-primary-owner-microscopy",
- "essay-life-between-diagnoses":"v7.5-dated-autobiographical-source",
+ "cairo-microscope":"v7.6-chapter-directed-microscope",
+ "essay-life-between-diagnoses":"v7.6-correct-portrait-provenance",
  "essay-ai-email":"v7.5-archival-editorial-story",
  "essay-machine-language":"v7.5-authentic-academic-archive",
  "essay-academic-mental-health":"v7.5-original-research-life-archive"
