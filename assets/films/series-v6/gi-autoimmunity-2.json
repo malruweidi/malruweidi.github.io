@@ -1,0 +1,60 @@
+{
+  "id": "gi-autoimmunity-2",
+  "seconds": 84.0,
+  "sha256": "29a8200472150666052b90a11fee6a8c1cbfe5641469eb69f6897313ad55d793",
+  "primary_source": "https://doi.org/10.5772/intechopen.106185",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/gi-autoimmunity-2/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/gi-autoimmunity-2/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/gi-autoimmunity-2/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/gi-autoimmunity-2/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/gi-autoimmunity-2/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/gi-autoimmunity-2/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/illness-and-evidence.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

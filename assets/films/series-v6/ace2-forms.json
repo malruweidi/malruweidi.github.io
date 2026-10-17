@@ -1,0 +1,60 @@
+{
+  "id": "ace2-forms",
+  "seconds": 84.0,
+  "sha256": "5adf8ca0a3a2a08c45d4dfa22ccf67690873aee1cca6cd5142f3e5e242fa7d31",
+  "primary_source": "https://doi.org/10.3390/ijms22136703",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/ace2-forms/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/ace2-forms/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/ace2-forms/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/ace2-forms/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/ace2-forms/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/ace2-forms/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/#publications"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

@@ -1,0 +1,60 @@
+{
+  "id": "heart-failure-sensors",
+  "seconds": 84.0,
+  "sha256": "a5071e75cf771e8cd24e95796c665fe8f4ea6aa228b7d3f92ddf42ef784a2280",
+  "primary_source": "https://doi.org/10.1002/9781119813040.ch5",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/heart-failure-sensors/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/heart-failure-sensors/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/heart-failure-sensors/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/heart-failure-sensors/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/heart-failure-sensors/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/heart-failure-sensors/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
