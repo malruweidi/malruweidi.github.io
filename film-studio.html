@@ -88,10 +88,22 @@ async function player(){
   const preferred=uri(serial,cut,'mp4');
   let video=preferred,edition=cut;
   byId('status').textContent='Checking the available cut…';
-  if(!await check(preferred)){video=uri(serial,'v1','mp4');edition='v1'}
+  let staleRemake=false;
+  let shouldFallback=!(await check(preferred));
+  if(!shouldFallback&&cut==='v2'&&selected.source_visual_revision){
+    try{
+      const metaResponse=await fetch(uri(serial,'v2','json'),{cache:'no-store'});
+      const meta=metaResponse.ok?await metaResponse.json():null;
+      if(!meta||meta.source_visual_revision!==selected.source_visual_revision){
+        shouldFallback=true;
+        staleRemake=true;
+      }
+    }catch{shouldFallback=true;staleRemake=true}
+  }
+  if(shouldFallback){video=uri(serial,'v1','mp4');edition='v1'}
   if(!selected||selected.id!==serial||cut!==requested)return;
   target.innerHTML='<video controls playsinline preload="metadata" poster="'+esc(edition==='v2'?(direction[serial]?.review_poster||selected.poster):selected.poster)+'" aria-label="'+esc(selected.film_title)+'"><source src="'+esc(video)+'" type="video/mp4"><track kind="captions" src="'+esc(uri(serial,edition,'vtt'))+'" srclang="en" label="English captions"></video><div class="under"><a href="'+esc(uri(serial,edition,'vtt'))+'">Open the narrated transcript and captions ↗</a></div>';
-  byId('status').textContent=edition==='v2'?'Cinematic draft available. Human audiovisual approval remains outstanding.':'Showing the original 84-second version; the new edition is still in production.';
+  byId('status').textContent=edition==='v2'?'Cinematic draft available. Human audiovisual approval remains outstanding.':staleRemake?'Showing the original: the scientifically revised film has not completed its new source-validated render.':'Showing the original 84-second version; the new edition is still in production.';
   // The two cuts may contain DIFFERENT pictures. Use the exact per-cut
   // provenance manifest, never attribute a newer scientific illustration
   // to archival footage in the original film.
