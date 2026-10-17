@@ -305,7 +305,7 @@ def render(film,info,models):
         if abs(seconds-120)>.30:raise RuntimeError("Unexpected film duration "+str(seconds))
         images=[]
         for s in scenes:
-            pic=FIG/f"{film}-figure-{s['figure']:02}.jpg"
+            _,pic=read_art(film,s["figure"])
             images.append({"figure":s["figure"],"path":str(pic.relative_to(ROOT)),
                            "sha256":hashlib.sha256(pic.read_bytes()).hexdigest()})
         manifest={
