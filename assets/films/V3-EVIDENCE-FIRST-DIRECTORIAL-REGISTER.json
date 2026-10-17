@@ -1,0 +1,3148 @@
+{
+  "version": "evidence-first-v3-2026-10-17",
+  "status": "ALL PRIOR AUTO-RENDERS REJECTED FOR EDITORIAL RELEASE; NEW FILM SHOULD BE BUILT FROM THESE STUDY-SPECIFIC TREATMENTS",
+  "title": "Publication cinema: scientific picture and narrative audit",
+  "policy": {
+    "content": "No cross-study photograph, generic laboratory equipment or privately identifiable medical image may stand in for experimental data. Manuscript images must be the specifically catalogued witness, not a similar-looking Arabic page.",
+    "license": "Each media item must have a verified page/DOI/repository ID and a reuse license or owner release. Pending rights means no embedding.",
+    "motion": "Physical motion describes the actual explanatory mechanism and is explicitly conceptual; experimental numerical traces are animated only from verified data.",
+    "review": "Every scene requires approval of its fact, asset identity, license, legibility and pronunciation before default public replacement.",
+    "fallback": "No same-source image available -> original authored labelled geometry or kinetic typography; never random other-study photos."
+  },
+  "films": [
+    {
+      "id": "airway-reopening",
+      "title": "A breath can injure",
+      "source_title": "Dexamethasone and transdehydroandrosterone significantly reduce pulmonary epithelial cell injuries associated with mechanical ventilation",
+      "primary_source": "https://doi.org/10.1152/japplphysiol.00574.2020",
+      "claim": "Airway reopening injures an epithelial monolayer; steroid pretreatment is a bounded cell-model question.",
+      "source_to_inspect": "2021 Journal of Applied Physiology article, DOI 10.1152/japplphysiol.00574.2020",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Experimental chamber",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "moving interface",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "study-specific cell viability readout",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "specific pretreatments",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "within-model interpretation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "in-vivo boundary",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "figure-pulmonary-flow-chamber.jpg",
+      "rejected_or_restricted": [
+        "biological-safety-cabinet-workspace.webp",
+        "evidence-pulmonary.webp"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "kind": "Published research figure: parallel-plate experimental geometry"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/lung-concept.svg",
+          "kind": "Original diagram, conceptual only"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "kind": "Study figure reproduced in the author's research archive"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "kind": "Archival laboratory workspace, not a recording of the drug exposure"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/evidence-pulmonary.webp",
+          "kind": "Research-context figure; see primary paper for quantitative readouts"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "kind": "Published study context; DOI on film page"
+        }
+      ]
+    },
+    {
+      "id": "cerebral-cilia",
+      "title": "How does a vessel know the blood is moving?",
+      "source_title": "Characterization of endothelial cilia distribution during cerebral-vascular development in zebrafish",
+      "primary_source": "https://doi.org/10.1161/ATVBAHA.118.311231",
+      "claim": "How endothelial cilia distribute during zebrafish cerebral-vascular development.",
+      "source_to_inspect": "DOI 10.1161/ATVBAHA.118.311231",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Genuine zebrafish developmental field",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "cerebral vessel segmentation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "cilia localisation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "study figure panels",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "anatomical qualifiers",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "unresolved mechanosensory function",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "figure-zebrafish-microscopy.jpg",
+      "rejected_or_restricted": [
+        "generic blood-flow micrograph",
+        "unrelated zebrafish heart figure"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+          "kind": "Published zebrafish research imagery"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/evidence-zebrafish.webp",
+          "kind": "Original microscopy footage, model-context limitations apply"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/zebrafish-concept.svg",
+          "kind": "Original editorial concept diagram"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+          "kind": "Published figure in research archive"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/evidence-zebrafish.webp",
+          "kind": "Zebrafish context image; the original footage is linked separately"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+          "kind": "Published research record"
+        }
+      ]
+    },
+    {
+      "id": "slit2-robo",
+      "title": "The target that can change sides",
+      "source_title": "SLIT2 and ROBO-axis inhibitors for the treatment of cancer: a patent review (2020–2026)",
+      "primary_source": "https://doi.org/10.1080/13543776.2026.2690118",
+      "claim": "Why SLIT2/ROBO signalling is context-dependent across tumour settings.",
+      "source_to_inspect": "DOI 10.1080/13543776.2026.2690118",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Correct ligand and receptor",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "downstream context",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "reported tumour-specific effect",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "patent claim taxonomy",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "strength of evidence",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "non-equivalence of inhibition strategies",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "robo-concept.svg",
+      "rejected_or_restricted": [
+        "cell-culture-safety-cabinet-archive.webp",
+        "research-portrait-calligraphy.webp"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/robo-concept.svg",
+          "kind": "Original conceptual pathway diagram"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/robo-concept.svg",
+          "kind": "Simplified pathway illustration, not experimental structure"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp",
+          "kind": "Research workspace photograph, not a patent experiment"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/robo-concept.svg",
+          "kind": "Editorial pathway diagram; not a ranking of inventions"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/robo-concept.svg",
+          "kind": "Conceptual scientific illustration"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "kind": "Personal editorial portrait, not patent or molecular data"
+        }
+      ]
+    },
+    {
+      "id": "curcumin-cyanide",
+      "title": "When a molecule becomes a question",
+      "source_title": "Curcumin: a colorimetric and fluorimetric cyanide probe in aqueous system and living cells",
+      "primary_source": "https://doi.org/10.1039/C9AY01557D",
+      "claim": "Cyanide-dependent optical responses in aqueous media and living cells, exactly as the 2019 study reports.",
+      "source_to_inspect": "DOI 10.1039/C9AY01557D",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Curcumin molecular structure",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "original assay setup",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "paper's absorption/fluorescence figure",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "cell-image time course if licensed",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "inference limits",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "experimental controls",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "figure-cyanide-sensor.jpg",
+      "rejected_or_restricted": [
+        "pyridine-4-carboxaldehyde-reagent-front-2018.webp"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "kind": "Published cyanide sensor figure"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "kind": "Published study figure"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+          "kind": "Contemporary laboratory chemical photograph; not curcumin sample"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "kind": "Published sensor optical readouts"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "kind": "Published sensing and cell figure"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "kind": "Published research record"
+        }
+      ]
+    },
+    {
+      "id": "making-medicines-keep",
+      "title": "How did medieval medicines keep?",
+      "source_title": "Making Medicines Keep: Syrups, Substitution, and Pharmaceutical Reliability in Ayyubid-Mamluk Cairo",
+      "primary_source": "/#history",
+      "claim": "How syrup manufacture, correction and substitution produced workable reliability in thirteenth-century Cairo.",
+      "source_to_inspect": "Accepted History of Pharmacy and Pharmaceuticals manuscript; QDL Or 5786; Wellcome MS Arabic 1002; Chipman and Lev 2006",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "A documented manuscript witness",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "julāb as vehicle",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "clarification and achieved consistency",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "crystallisation and repair",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "prescription-versus-stock gap",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "no modern GMP genealogy",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "Wellcome MS Arabic 1002; BL Or 5786",
+      "rejected_or_restricted": [
+        "medieval-pharmacy.svg as dominant repeat",
+        "research-portrait-calligraphy.webp",
+        "generic Wellcome manuscript M0008126"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/medieval-pharmacy.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/films/art/medieval-pharmacy.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/medieval-pharmacy.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/films/art/medieval-pharmacy.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "kind": "Personal editorial portrait; not a historical document"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/films/art/medieval-pharmacy.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        }
+      ]
+    },
+    {
+      "id": "niosomes",
+      "title": "Will the medicine survive the nebulizer?",
+      "source_title": "Inhalable dexamethasone niosomes and proniosomes",
+      "primary_source": "/research/inhalable-vesicles.html",
+      "claim": "Which physical tests must an inhaled dexamethasone vesicle survive before deposition is claimed.",
+      "source_to_inspect": "MSc project source and owner laboratory notebooks; not yet a published efficacy study",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Span 60–cholesterol membrane design",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "size/dispersity experiments if available",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "nebulizer challenge",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "impactor/deposition geometry",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "analytical QC",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "evidence still missing",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "niosomes-concept.svg for clearly labelled explanatory inset",
+      "rejected_or_restricted": [
+        "evidence-pulmonary.webp",
+        "unrelated tissue micrograph",
+        "fabricated TEM/DLS/FTIR"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/niosomes-concept.svg",
+          "kind": "Conceptual vesicular carrier, no measured data"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/niosomes-concept.svg",
+          "kind": "Illustrative vesicle, not measured morphology"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "kind": "Original laboratory workspace photograph, not an assay result"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/evidence-pulmonary.webp",
+          "kind": "Pulmonary research-context illustration"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/niosomes-concept.svg",
+          "kind": "Illustration of ongoing research questions"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "kind": "Original research workspace photograph"
+        }
+      ]
+    },
+    {
+      "id": "echo-cnn-lstm",
+      "title": "Can an algorithm read a moving heart?",
+      "source_title": "Deep learning technique for congenital heart disease detection using stacking-based CNN-LSTM models from fetal echocardiogram: a pilot study",
+      "primary_source": "https://doi.org/10.1109/ACCESS.2023.3316719",
+      "claim": "How a CNN-LSTM fetal echocardiogram pipeline should be evaluated as a pilot study.",
+      "source_to_inspect": "DOI 10.1109/ACCESS.2023.3316719",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Only consent-cleared fetal echo from the actual work",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "preprocessing",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "exact model architecture if in paper",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "pilot metrics on original axis",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "external validation gap",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "clinician decision",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "publisher original figure to be obtained",
+      "rejected_or_restricted": [
+        "unrelated Doppler-workstation.webp passed off as fetal data"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "kind": "Original echocardiography workspace archive, not an identified pilot-study fetal image"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/echo-concept.svg",
+          "kind": "Original explanatory diagram, not diagnostic clinical data"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/echo-concept.svg",
+          "kind": "Conceptual model architecture, not the exact published CNN-LSTM figure"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "kind": "Original workspace photo; not the study performance data"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/echo-concept.svg",
+          "kind": "Editorial machine-learning interpretation; see original paper for actual metrics"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "kind": "Archived imaging instrumentation; published paper linked separately"
+        }
+      ]
+    },
+    {
+      "id": "pla-grafting",
+      "title": "The surface is not the material",
+      "source_title": "Surface modification of poly(lactic acid) film via cold plasma-assisted grafting of fumaric and ascorbic acid",
+      "primary_source": "https://doi.org/10.3390/polym13213717",
+      "claim": "How cold plasma plus fumaric/ascorbic acid changes PLA-film surface and peel adhesion.",
+      "source_to_inspect": "DOI 10.3390/polym13213717, specifically Figure 8 peel resistance",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "PLA sheet",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "surface activation mechanism",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "study SEM/contact angle",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "study FTIR/XPS if available",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "actual Figure 8 peel results",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "experimental controls",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "Study Figure 8, CC BY",
+      "rejected_or_restricted": [
+        "generic biomaterials.webp as data"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/home-archive/figure-pla-surface.jpg",
+          "kind": "Published polymer surface research imagery; see source DOI"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/polymer-concept.svg",
+          "kind": "Original conceptual surface-treatment diagram"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/home-archive/figure-pla-surface.jpg",
+          "kind": "Study-related scientific figure; not a movie of plasma treatment"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/evidence-biomaterials.webp",
+          "kind": "Biomaterials research context, not a substitute for specific data"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/home-archive/figure-pla-surface.jpg",
+          "kind": "Published surface characterization imagery"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/polymer-concept.svg",
+          "kind": "Conceptual concluding illustration"
+        }
+      ]
+    },
+    {
+      "id": "pla-scaffolds",
+      "title": "A scaffold meets its environment",
+      "source_title": "Antimicrobial modification of PLA scaffolds with ascorbic and fumaric acids via plasma treatment",
+      "primary_source": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+      "claim": "Antimicrobial effects of plasma-grafted electrospun PLA scaffolds in a distinct 2020 study.",
+      "source_to_inspect": "DOI 10.1016/j.surfcoat.2020.126216 (2020 journal article CC BY)",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Electrospun fibres",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "plasma functionalisation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "ascorbic/fumaric treatment",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "study SEM",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "bacterial assay results for E. coli and S. aureus",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "in-vitro scope",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "2020 paper original figures, CC BY",
+      "rejected_or_restricted": [
+        "figure-pla-surface.jpg from separate 2021 PLA-film paper"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/evidence-biomaterials.webp",
+          "kind": "Existing scientific biomaterials research visual"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/polymer-concept.svg",
+          "kind": "Original explanatory polymer scaffold schematic"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/home-archive/figure-pla-surface.jpg",
+          "kind": "Published materials characterization context"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/evidence-biomaterials.webp",
+          "kind": "Research-context image, not a reproduced antimicrobial assay"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/home-archive/figure-pla-surface.jpg",
+          "kind": "Study-related scientific figure; source DOI holds exact endpoints"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/polymer-concept.svg",
+          "kind": "Original conceptual film closing"
+        }
+      ]
+    },
+    {
+      "id": "flow-chamber-method",
+      "title": "How to make a reproducible injury",
+      "source_title": "Application of a flow-induced stress wave and investigation of associated injuries on cell monolayers using a parallel plate flow chamber",
+      "primary_source": "https://doi.org/10.3390/mps3040065",
+      "claim": "How the published chamber generates reproducible air–liquid stress over monolayers.",
+      "source_to_inspect": "DOI 10.3390/mps3040065, Figure 1 apparatus and Figure 6 actin imaging (CC BY)",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Figure 1 physical setup",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "fluid-interface mechanics",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "bubble sequence",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "Figure 6 stained images",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "viability assay methodology",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "limits of extrapolation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "DOI paper Figures 1 and 6, CC BY",
+      "rejected_or_restricted": [
+        "unrelated patient ventilation imagery"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "kind": "Published experimental flow-chamber figure"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/lung-concept.svg",
+          "kind": "Original conceptual diagram, not the paper's exact hardware"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "kind": "Published flow-chamber research figure"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/evidence-pulmonary.webp",
+          "kind": "Pulmonary research figure context; consult methods paper for exact protocols"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/lung-concept.svg",
+          "kind": "Explicitly simplified model illustration"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "kind": "Published methods figure"
+        }
+      ]
+    },
+    {
+      "id": "zebrafish-hemodynamics",
+      "title": "A heartbeat in high-speed frames",
+      "source_title": "Cardiac function and blood flow hemodynamics assessment of zebrafish using high-speed video microscopy",
+      "primary_source": "https://doi.org/10.1016/j.micron.2020.102876",
+      "claim": "Measuring cardiac dynamics and flow using high-speed microscopy rather than guessing from footage.",
+      "source_to_inspect": "DOI 10.1016/j.micron.2020.102876",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Original specimen imaging",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "time-base and imaging geometry",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "heart segmentation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "measured blood-flow method",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "original figures",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "limits of resolution",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "study microscopy figures when properly matched",
+      "rejected_or_restricted": [
+        "cerebral-cilia figures treated as cardiac measurement"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/zebrafish-embryo-microscopy.webp",
+          "kind": "Zebrafish microscopy archive, specimen context must not be assigned to a specific figure"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/zebrafish-larva-microscopy.webp",
+          "kind": "Original zebrafish microscopy contextual still"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+          "kind": "Published high-speed zebrafish imaging context"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/evidence-zebrafish.webp",
+          "kind": "Existing research-context image, not primary numerical data"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/zebrafish-concept.svg",
+          "kind": "Original conceptual biological schematic"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+          "kind": "Published microscopy figure"
+        }
+      ]
+    },
+    {
+      "id": "ace2-covid-drugs",
+      "title": "An enzyme, a receptor, a clinical question",
+      "source_title": "Soluble ACE2 and angiotensin II levels are modulated in hypertensive COVID-19 patients treated with different antihypertension drugs",
+      "primary_source": "https://doi.org/10.1080/08037051.2022.2055530",
+      "claim": "Distinguishing observational antihypertensive treatment groups from ACE2 mechanism.",
+      "source_to_inspect": "DOI 10.1080/08037051.2022.2055530",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Study cohort groups",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "assay readouts from paper if licensed",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "membrane/soluble ACE2 difference",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "measured angiotensin II",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "confounders",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "no prescription inference",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "study tables/figures and custom causal diagram",
+      "rejected_or_restricted": [
+        "evidence-pulmonary.webp",
+        "lung flow chamber"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/source-specific/ace2-system.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/films/art/source-specific/ace2-system.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/source-specific/ace2-system.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/films/art/source-specific/ace2-system.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/source-specific/ace2-system.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/films/art/source-specific/ace2-system.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        }
+      ]
+    },
+    {
+      "id": "gi-autoimmunity-1",
+      "title": "What happens when immunity turns on the gut?",
+      "source_title": "Autoimmune Diseases of the GI Tract Part I: Etiology and Pathophysiology",
+      "primary_source": "https://doi.org/10.5772/intechopen.106184",
+      "claim": "A differential mechanism account of autoimmunity in the gastrointestinal tract.",
+      "source_to_inspect": "DOI 10.5772/intechopen.106184",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Gut epithelial landscape",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "organ/site differences",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "immune mediator interactions",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "correct disease-specific histology only if sourced",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "differential pathways",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "author review limits",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "original IntechOpen chapter figures if CC BY verified",
+      "rejected_or_restricted": [
+        "university-lab-coat.jpg",
+        "presumed personal pathology"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/source-specific/eosinophilic-gut.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/source-specific/eosinophilic-gut.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/source-specific/eosinophilic-gut.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/films/art/source-specific/eosinophilic-gut.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        }
+      ]
+    },
+    {
+      "id": "gi-autoimmunity-2",
+      "title": "The diagnostic problem",
+      "source_title": "Autoimmune Diseases of the GI Tract Part II: Emergence of Diagnostic Tools and Treatments",
+      "primary_source": "https://doi.org/10.5772/intechopen.106185",
+      "claim": "Separating GI diagnostics from supported therapeutic evidence.",
+      "source_to_inspect": "DOI 10.5772/intechopen.106185",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Phenotype",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "investigation algorithm",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "histological confirmation principles",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "diagnostic test limitations",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "treatment evidence by condition",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "no generalized prescription",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "original IntechOpen chapter figures if CC BY verified",
+      "rejected_or_restricted": [
+        "any owner's private histology or unsourced microscopy"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/films/art/source-specific/eosinophilic-gut.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        }
+      ]
+    },
+    {
+      "id": "heart-failure-sensors",
+      "title": "Listening for a failing heart",
+      "source_title": "Minimally Invasive and Non-Invasive Sensor Technologies for Predicting Heart Failure: An Overview",
+      "primary_source": "https://doi.org/10.1002/9781119813040.ch5",
+      "claim": "How non-invasive signals become clinical predictions only after validation.",
+      "source_to_inspect": "DOI 10.1002/9781119813040.ch5",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Sensor types",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "ECG/PPG/physical signal schema",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "artifact versus signal",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "model input/output",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "validation evidence",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "no invented patient trace",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "chapter figures with permission or recreated clearly original taxonomy",
+      "rejected_or_restricted": [
+        "echocardiography-spectral-doppler-workstation.webp implying studied sensor"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "kind": "Original cardiac imaging workstation, not data used in the review"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/films/art/source-specific/heart-sensing.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "kind": "Archival Doppler apparatus, not heart-failure sensor comparison"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/films/art/source-specific/heart-sensing.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "kind": "Imaging-context photograph"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/films/art/source-specific/heart-sensing.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        }
+      ]
+    },
+    {
+      "id": "ace2-forms",
+      "title": "Two lives of ACE2",
+      "source_title": "Do changes in ACE-2 expression affect SARS-CoV-2 virulence and related complications: a closer look into membrane-bound and soluble forms",
+      "primary_source": "https://doi.org/10.3390/ijms22136703",
+      "claim": "Why surface ACE2 and soluble ACE2 may differ in biology and interpretation.",
+      "source_to_inspect": "DOI 10.3390/ijms22136703, CC BY",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Membrane domain",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "shedding process",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "soluble ectodomain",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "RAS context",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "viral entry factors",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "interpretation caveats",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "original review figure or authored receptor cartoon",
+      "rejected_or_restricted": [
+        "lung mechanics and generic virus stock photo"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/films/art/source-specific/ace2-membrane-soluble.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        }
+      ]
+    },
+    {
+      "id": "microfluidic-virus",
+      "title": "A laboratory shrunk into a channel",
+      "source_title": "Microfluidic-based virus detection methods for respiratory diseases",
+      "primary_source": "https://doi.org/10.1007/s42247-021-00169-7",
+      "claim": "A viral detection workflow must begin with specimen handling and finish with analytical validation.",
+      "source_to_inspect": "DOI 10.1007/s42247-021-00169-7",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Microchannel plan",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "sample preparation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "capture chemistry",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "optical/electrical readout",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "analytical specificity",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "use-case limits",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "article schematics if openly licensed or original device CAD",
+      "rejected_or_restricted": [
+        "unrelated cell-culture cabinet or pipette photograph as evidence"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/microfluidic-sensing.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "kind": "Archival lab context, not an actual viral detection device"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/microfluidic-sensing.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "kind": "Original research apparatus photograph"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/microfluidic-sensing.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/films/art/microfluidic-sensing.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        }
+      ]
+    },
+    {
+      "id": "drug-release-twins",
+      "title": "What can a digital twin predict?",
+      "source_title": "Simulation of Drug Release and Performance Prediction Using Virtual Models",
+      "primary_source": "https://doi.org/10.70593/978-93-7185-824-3",
+      "claim": "What a release model predicts versus what measured data would be needed to validate it.",
+      "source_to_inspect": "Drug release virtual models chapter, 10.70593/978-93-7185-824-3",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "A formulation variable",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "release law and boundary",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "simulation with explicit illustrative tag",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "comparison requiring measured curve",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "parameter identifiability",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "actionable model limitation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "original chapter figures if permission, otherwise original equations",
+      "rejected_or_restricted": [
+        "niosomes-concept.svg treated as evidence of that chapter's model"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/niosomes-concept.svg",
+          "kind": "Original conceptual drug-carrier drawing"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "kind": "Original research workstation, not the book chapter's simulation screenshot"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/niosomes-concept.svg",
+          "kind": "Conceptual carrier visual, not computed simulation output"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "kind": "Actual computer/research workspace; no claims of model-validation success"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/niosomes-concept.svg",
+          "kind": "Editorial illustration, not measured release profile"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "kind": "Archival computational research context"
+        }
+      ]
+    },
+    {
+      "id": "food-printing",
+      "title": "When food becomes a printable material",
+      "source_title": "Materials Science for 3D, 4D, 5D, and 6D Food Printing: Rheology, Microstructure, Smart Edible Inks, and Programmable Food Architecture",
+      "primary_source": "/#publications",
+      "claim": "Rheology and recoverable structure behind 3D–6D food-printing claims.",
+      "source_to_inspect": "Accepted chapter; original author source required",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Actual edible ink type",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "extrusion/shape retention",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "thixotropy",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "programmable deformation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "source-defined 4D/5D/6D terms",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "validation boundary",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "own chapter artwork or verified openly licensed edible-printing imagery",
+      "rejected_or_restricted": [
+        "copolymer-sample-qatar-university-2017.webp"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/edible-printing.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/films/art/edible-printing.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/edible-printing.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+          "kind": "Unrelated polymer material photograph, labelled as analogy"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/edible-printing.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/films/art/edible-printing.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        }
+      ]
+    },
+    {
+      "id": "ceramics-printing",
+      "title": "A structure the body must tolerate",
+      "source_title": "Clinical Applications of Additively Manufactured Biomedical Ceramics",
+      "primary_source": "/#publications",
+      "claim": "Additively manufactured bioceramics: pore connectivity versus integrity.",
+      "source_to_inspect": "Accepted chapter; original author source required",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Powder/slurry route",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "print toolpaths",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "sintering/shrinkage",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "pores and compressive load",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "cell interface",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "preclinical versus clinical",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "chapter-specific originals or licensed biomedical ceramic micrographs",
+      "rejected_or_restricted": [
+        "generic PLA or other polymer scaffold"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/bioceramic-lattice.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/films/art/bioceramic-lattice.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/bioceramic-lattice.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/films/art/bioceramic-lattice.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/bioceramic-lattice.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/films/art/bioceramic-lattice.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        }
+      ]
+    },
+    {
+      "id": "cubosome-theranostics",
+      "title": "The difficult promise of a cubic carrier",
+      "source_title": "Theranostic Potential of Cubosomes in Targeted Cancer Therapy: From Mechanistic Design to Clinical Translation",
+      "primary_source": "/#publications",
+      "claim": "Why cubic lipid mesophases are not demonstrated therapies.",
+      "source_to_inspect": "Accepted chapter; original author source required",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Bicontinuous topology",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "molecular assembly phase",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "cargo occupancy",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "in-vitro barriers",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "targeted mechanism claim",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "translational uncertainty",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "verified article cubic-phase figure or schematic",
+      "rejected_or_restricted": [
+        "biological-safety-cabinet-workspace.webp",
+        "generic polymer-scaffold micrographs"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/cubosome-topology.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/evidence-biomaterials.webp",
+          "kind": "Nanomedicine context image, not cubosome micrograph"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/cubosome-topology.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "kind": "Original cell culture laboratory context, not data from this chapter"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/evidence-biomaterials.webp",
+          "kind": "General biomaterials research imagery"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/films/art/cubosome-topology.svg",
+          "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+        }
+      ]
+    },
+    {
+      "id": "micelles-pahs",
+      "title": "A polymer meets an insoluble problem",
+      "source_title": "Polymeric micelles for polycyclic aromatic hydrocarbons",
+      "primary_source": "/grants/urep19.html",
+      "claim": "The failed diblock micelle attempts are the real story, not a successful pollutant-removal claim.",
+      "source_to_inspect": "UREP19-110-1-014 reports and original 2017 experiment photographs",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Owner's actual unsuccessful samples",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "chain architecture",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "Flory–Huggins reasoning",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "real trial sequence",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "formulation failure",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "unresolved solubilisation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "diblock-copolymer-unsuccessful-trials-2017.webp; series-of-unfortunate-trials-diblock-2017.webp",
+      "rejected_or_restricted": [
+        "stock water-pollution scenes as experimental evidence"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+          "kind": "Documented unsuccessful original polymer trial photo"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/polymer-concept.svg",
+          "kind": "Generic conceptual polymer assembly"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp",
+          "kind": "Original documented unsuccessful trials, not a successful micelle synthesis"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+          "kind": "Original documented copolymer specimen, not proof of PAH loading"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+          "kind": "Original failed-materials archive"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/polymer-concept.svg",
+          "kind": "Conceptual concluding image"
+        }
+      ]
+    },
+    {
+      "id": "heterocycle-cancer",
+      "title": "Build the heterocycle, then challenge the hypothesis",
+      "source_title": "Imidazopyridine synthesis and anticancer screening",
+      "primary_source": "/grants/urep23.html",
+      "claim": "How imidazopyridine compounds were synthesized and tested with bounded anticancer claims.",
+      "source_to_inspect": "UREP23-133-1-028 original grants/reports and lab notes",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Actual route and reagents",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "microwave reaction rationale",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "real characterization",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "assay design",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "reported screening if source documented",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "inconclusive tests",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "yousef-hijji-anticancer-group-2019.webp as group archival, not assay",
+      "rejected_or_restricted": [
+        "unrelated pyridine-4-carboxaldehyde reagent",
+        "2014 freshman photo as chemistry evidence"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+          "kind": "Actual archived organic chemistry reagent photo; not proof of the project product"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+          "kind": "Original archival chemistry photograph, not a recording of microwave synthesis"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp",
+          "kind": "Original reagent photo, not NMR spectral evidence"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/oct12-owner-photos/yousef-hijji-anticancer-group-2019.webp",
+          "kind": "Original laboratory-group photo related to medicinal chemistry programme"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
+          "kind": "Author's early laboratory photograph; illustrative context"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+          "kind": "Original research-context chemical photograph"
+        }
+      ]
+    },
+    {
+      "id": "histology-failure",
+      "title": "Two materials. No section.",
+      "source_title": "Zebrafish agarose–paraffin histopathology attempt",
+      "primary_source": "/films/two-materials-no-section.html",
+      "claim": "A zebrafish section that never worked because two embedding materials failed to cohere.",
+      "source_to_inspect": "2025 owner photo archive and first-person experiment documentation",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Actual oriented specimens",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "2% agarose mold",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "paraffin embed",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "microtome attempt",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "observed separation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "alternative troubleshooting hypothesis",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "zebrafish-orientation-specimens.webp; zebrafish-histology-processing.webp; zebrafish-paraffin-microtomy-failure.webp",
+      "rejected_or_restricted": [
+        "healthy histological micrograph implying success"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+          "kind": "Original firsthand photographs of zebrafish orientation procedure"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+          "kind": "Original laboratory processing evidence of unsuccessful attempt"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+          "kind": "Original photographed failed embedding and microtomy record"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+          "kind": "Actual unsuccessful sectioning evidence; no successful histology is claimed"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+          "kind": "Original laboratory record, not a corrected protocol validation"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+          "kind": "Documented orientation specimen image"
+        }
+      ]
+    },
+    {
+      "id": "cairo-microscope",
+      "title": "The microscope that made curiosity independent",
+      "source_title": "The microscope I brought from Cairo",
+      "primary_source": "/stories/cairo-microscope.html",
+      "claim": "An instrument bought near Qasr El Einy and carried home to Qatar enabled independent observation.",
+      "source_to_inspect": "Owner photographs and first-person Cairo microscope story",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Exact purchased microscope",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "Cairo provenance on an unambiguous textual map",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "travel documentary (not reconstructed travel footage)",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "2017 desk picture",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "independent use",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "mature reflective close",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "microscope-morning-still-life-2017.webp; microscopy-vacation-morning-2017.webp",
+      "rejected_or_restricted": [
+        "unrelated lab microscope photos"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+          "kind": "Original archival photograph of the user's own microscope"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/archival-2026-10-12/cairo-mokattam-sunset-2026.webp",
+          "kind": "Personal Cairo archival photograph, not a photograph of the microscope transport"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+          "kind": "Original photograph of personal microscopy context"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+          "kind": "Original personal microscope photograph"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "kind": "Original archival university context photo"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+          "kind": "Original personal microscope-era archive"
+        }
+      ]
+    },
+    {
+      "id": "essay-life-between-diagnoses",
+      "title": "When the Count Could Not Describe the Pain",
+      "source_title": "The Life Between Diagnoses",
+      "primary_source": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+      "claim": "An illness account about an attack, missed schooling and the gap between count and pain.",
+      "source_to_inspect": "Original Substack essay and owner-dated medical archive",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Actual dated childhood portrait",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "accurate school chronology",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "actual medical photograph with consent",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "symptom experience without fabricated readout",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "competing diagnoses not asserted as fact",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "illness in scholarship",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "owner approved archival portraits and medical documents with privacy review",
+      "rejected_or_restricted": [
+        "fabricated blood eosinophil chart",
+        "false Qatari passport",
+        "invented personal attack footage"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/home-archive/childhood-portrait.jpg",
+          "kind": "Archival childhood portrait, not a photograph of the later school examinations"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+          "kind": "Personal 2025 medical archive; not an image of every earlier attack"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/owner-archive-2026-10-16/eosinophilic-diagnosis-dr-elsheikh-abdelrahim.webp",
+          "kind": "Personal clinical history portrait; not a dated record of the specific pre-travel event"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+          "kind": "Personal 2025 illness archive; not a substitute for medical records"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+          "kind": "Original freshman chemistry photograph, not clinical data"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "kind": "Contemporary author's portrait"
+        }
+      ]
+    },
+    {
+      "id": "essay-ai-email",
+      "title": "The Email That Became an Accusation",
+      "source_title": "Sorry, My First Email to You Was Probably Polished by AI",
+      "primary_source": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+      "claim": "How accusation of AI writing becomes a proxy for status and language policing.",
+      "source_to_inspect": "Original Substack essay, not a fabricated email thread",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Typeset hypothetical email explicitly labelled",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "AI accusation treated critically",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "institutional editing history",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "native-speaker contrast",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "fair attribution",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "authored ending",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "designed correspondence typography with no implied real sender",
+      "rejected_or_restricted": [
+        "qatar-university-research-workstation.webp as illustration",
+        "fake screenshot of real person"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "kind": "Original research workstation, not the correspondence being discussed"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "kind": "Author's archival university library photo, not the recipient"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/archival-2026-10-12/university-podium-talk-2017.webp",
+          "kind": "Original author presentation image, not a reenactment of the anecdote"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "kind": "Archival author research workspace, no actual editor invoices implied"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/home-archive/chemistry-chalkboard.jpg",
+          "kind": "Original chemistry chalkboard archive, metaphorical context"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "kind": "Actual editorial portrait of the author"
+        }
+      ]
+    },
+    {
+      "id": "essay-machine-language",
+      "title": "Who Taught Humans to Write Like Machines?",
+      "source_title": "We Taught People to Sound Like Machines. Now We’re Surprised They Use Them.",
+      "primary_source": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+      "claim": "Why standardized institutional prose long pre-dates generative models.",
+      "source_to_inspect": "Original essay and identifiable style manuals",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Academic template evolution",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "imposed writing conventions",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "comparison of text patterns",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "authorship evaluation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "genuine cited policy examples",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "unsolved attribution",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "original motion typography and properly sourced style guides",
+      "rejected_or_restricted": [
+        "cyanide sensor figure",
+        "unrelated microscopy / flask"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/home-archive/chemistry-chalkboard.jpg",
+          "kind": "Archival chalkboard photograph, not text of an identified academic abstract"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "kind": "Author's university library archive, not an institutional policy document"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "kind": "Research computer workspace used as editorial context"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "kind": "Scientific figure used to evoke actual measurable evidence, not an AI-detection assay"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "kind": "Original laboratory image; methodological metaphor rather than evidence of AI authorship"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "kind": "Author's editorial portrait"
+        }
+      ]
+    },
+    {
+      "id": "essay-academic-mental-health",
+      "title": "The Things an Academic CV Cannot Hold",
+      "source_title": "Fifteen Things I Wish Young Academics Were Told About Mental Health",
+      "primary_source": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+      "claim": "An evidence-grounded personal argument about academic mental health and hidden workload.",
+      "source_to_inspect": "Original fifteen-things essay, private images only by authorization",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Actual archival university scene",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "known institutional role, not invented scene",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "calendar/workload abstraction",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "no fabricated diagnosis",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "evidence-based support",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "nuanced conclusion",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "owner's library photo contextual only; generic graphical calendar",
+      "rejected_or_restricted": [
+        "self-mythologizing portrait montage or invented clinical record"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "kind": "Original academic archive, not a clinical record"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "kind": "Original late research workspace, no asserted capture hour"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/oct12-owner-photos/acs-chapter-recognition-2017.webp",
+          "kind": "Archived recognition photo, not proof of any specific mentorship interaction"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/home-archive/university-lab-coat.jpg",
+          "kind": "Original author's university laboratory-coat photograph"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "kind": "Archival university photo used as general context"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "kind": "Personal editorial portrait"
+        }
+      ]
+    },
+    {
+      "id": "essay-scientific-credit",
+      "title": "Three Names on the Medal, Hundreds in the Record",
+      "source_title": "The Nobel Prize Has Room for Three. Science Never Did.",
+      "primary_source": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+      "claim": "How credit architectures compress broad collaboration into a few celebrated names.",
+      "source_to_inspect": "Original Nobel-credit essay and primary Nobel statutes/history",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Documented multi-author contributions",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "formal award rule",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "real group archive with contextual date",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "invisible supporting labor",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "priority disputes with sources",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "institutional choice",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "genuine 2017 ACS group image only when captioned accurately",
+      "rejected_or_restricted": [
+        "zebrafish figure passed off as prize-winning work"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/2017-acs-el-sayed-group.webp",
+          "kind": "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/home-archive/early-science-talk.jpg",
+          "kind": "Original early science presentation photo, not an image of the discovery discussed"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/photos-2017-2019/chem-squad-abdelgalil-colleagues-2019.webp",
+          "kind": "Personal scientific colleagues photograph, general context not Nobel provenance"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/2017-acs-el-sayed-group.webp",
+          "kind": "Archival encounter with Professor Elmostafa El-Sayed, unrelated to prize claim"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+          "kind": "Research figure illustrating traceable published contribution, not a Nobel-related experiment"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "kind": "Author's editorial portrait"
+        }
+      ]
+    },
+    {
+      "id": "essay-tf-states",
+      "title": "The Target Has More Than One Shape",
+      "source_title": "Target Transcription Factor States, Not Pockets",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+      "claim": "Transcription-factor druggability requires targeting biologically relevant conformational states.",
+      "source_to_inspect": "Original Drug Discovery Online column",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Validated target-specific binding state source",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "disorder-to-state transition",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "partner-dependent activation",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "state-selective intervention",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "experimental readout",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "no fantasy structure",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "original conformational illustration, PDB structures only with same protein and accession",
+      "rejected_or_restricted": [
+        "ROBO receptor diagram reused for unrelated TF"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/source-specific/protein-states.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/films/art/source-specific/protein-states.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "kind": "Author laboratory archive, not data from article"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/films/art/source-specific/protein-states.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/source-specific/protein-states.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "kind": "Author's editorial portrait"
+        }
+      ]
+    },
+    {
+      "id": "essay-potency-exposure",
+      "title": "The Nanomolar Mirage",
+      "source_title": "Potency Is Not an Exposure Strategy",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+      "claim": "A low IC50 does not guarantee exposure at the target.",
+      "source_to_inspect": "Original Drug Discovery Online column and PK fundamentals",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Assay potency",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "unbound fraction",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "membrane distribution",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "metabolism",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "target exposure curve only if simulated and labelled",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "development decision",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "authored kinetic animation with disclosed illustrative values",
+      "rejected_or_restricted": [
+        "niosomes drawing",
+        "unrelated generic molecule picture"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/source-specific/pk-potency.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/films/art/source-specific/pk-potency.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/source-specific/pk-potency.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "kind": "Original analysis workspace, not a clinical dosing model"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/source-specific/pk-potency.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/home-archive/chemistry-chalkboard.jpg",
+          "kind": "Original chemistry archive"
+        }
+      ]
+    },
+    {
+      "id": "essay-trna",
+      "title": "The Molecule Behind Every Protein",
+      "source_title": "Drugging the tRNA Control System",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+      "claim": "tRNA charging and modification as experimentally constrained drug targets.",
+      "source_to_inspect": "Original Drug Discovery Online column and cited structural biology studies",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Correct tRNA secondary structure",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "aminoacyl synthetase/tRNA complex verified if reused",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "anticodon",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "charging mechanism",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "selectivity problem",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "toxicity boundary",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "original tRNA schema plus same-target PDB citation if verified",
+      "rejected_or_restricted": [
+        "generic 2017 cell culture cabinet or personal portrait"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/source-specific/trna-translation.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "kind": "Original laboratory research photo, not a tRNA manipulation"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/source-specific/trna-translation.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "kind": "Original lab flask, not cytotoxicity data"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/source-specific/trna-translation.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "kind": "Author's editorial portrait"
+        }
+      ]
+    },
+    {
+      "id": "essay-proximity",
+      "title": "When a Drug Makes Two Proteins Meet",
+      "source_title": "The Matchmaker Modality: Engineering Event-Driven Pharmacology With Induced Proximity",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+      "claim": "Induced proximity is a geometry- and context-dependent pharmacological event.",
+      "source_to_inspect": "Original Drug Discovery Online column",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Separate molecular glue from PROTAC",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "target/E3 conformations",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "ternary geometry",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "ubiquitination/degradation proof",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "cooperativity",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "limitations",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "authored separate glue/PROTAC animations tied to structural references",
+      "rejected_or_restricted": [
+        "generic ROBO cartoon",
+        "unverified protein docking"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/source-specific/molecular-proximity.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "kind": "Original laboratory apparatus photo; not proteasomal data"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/source-specific/molecular-proximity.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/films/art/source-specific/molecular-proximity.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/source-specific/molecular-proximity.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "kind": "Author's editorial portrait"
+        }
+      ]
+    },
+    {
+      "id": "essay-adc",
+      "title": "The Antibody Is Only the Beginning",
+      "source_title": "Antibody–Drug Conjugates 3.0: A New Era Of Precision Engineering In Oncology",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+      "claim": "ADC pharmacology depends on target, linker, payload, drug-to-antibody ratio and disposition.",
+      "source_to_inspect": "Original Drug Discovery Online column",
+      "required_visual_sequence": [
+        {
+          "chapter": 1,
+          "visual_argument": "Real antibody architecture",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 2,
+          "visual_argument": "linker cleavage versus non-cleavage",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 3,
+          "visual_argument": "tissue distribution",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 4,
+          "visual_argument": "internalization",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 5,
+          "visual_argument": "payload catabolism",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        },
+        {
+          "chapter": 6,
+          "visual_argument": "heterogeneity and bystander effect",
+          "media": "PRIMARY SOURCE FIGURE or AUTHENTIC OWNER RECORD; if unavailable use newly authored labelled schematic for this exact topic",
+          "asset_verification": "PENDING EDITORIAL REVIEW",
+          "not_data_without_experiment": true
+        }
+      ],
+      "strong_candidate": "open-access mechanistic review figure with appropriate license or original bioconjugation sequence",
+      "rejected_or_restricted": [
+        "evidence-biomaterials.webp",
+        "PLA scaffolds",
+        "unrelated cell-flask photos"
+      ],
+      "old_edition": "DO NOT PROMOTE old V1/V2 as approved simply because it passed codec checks",
+      "current_six_scene_media": [
+        {
+          "chapter": "01",
+          "path": "assets/films/art/source-specific/adc-molecular.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "02",
+          "path": "assets/films/art/source-specific/adc-molecular.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "03",
+          "path": "assets/films/art/source-specific/adc-molecular.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "04",
+          "path": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+          "kind": "Original lab flask context, not clinical adverse-event footage"
+        },
+        {
+          "chapter": "05",
+          "path": "assets/films/art/source-specific/adc-molecular.svg",
+          "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
+        },
+        {
+          "chapter": "06",
+          "path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "kind": "Author's editorial portrait"
+        }
+      ]
+    }
+  ]
+}
