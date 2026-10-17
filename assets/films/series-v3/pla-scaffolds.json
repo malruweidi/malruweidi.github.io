@@ -1,0 +1,115 @@
+{
+  "id": "pla-scaffolds",
+  "edition": "V3 original exact-2020-paper PLA scaffold documentary",
+  "doi": "10.1016/j.surfcoat.2020.126216",
+  "source_paper": "Surface and Coatings Technology (2020), 400:126216",
+  "duration_seconds": 120.0,
+  "sha256": "1a65f4ef36a70adadbdeac7472f1a30467ecd49626a132765150f03e50ff1dd7",
+  "license": "CC BY 4.0, source university archive and Popelka et al.",
+  "research_boundary": "In-vitro colony assessment is not a clinical device outcome. 2021 PLA-film dataset is distinct.",
+  "source_pages": [
+    {
+      "label": "Figure 1",
+      "postprint_page_zero_based": 5,
+      "original_page_preserved": true,
+      "original_full_paper_caption_in_page": true,
+      "topic": "electrospinning / plasma / ascorbic or fumaric acid surface grafting",
+      "artifact": "assets/films/source-figures/pla-scaffolds-2020/figure-1-full-source-page.png",
+      "sha256": "5c62106c715b1699a0f8a47b1d57493126531af1bf7c2afe0a80164925f2ef7c",
+      "image_width": 1010,
+      "image_height": 1307,
+      "visual_use": "Staged for visual review; a later exact figure crop requires independent confirmation."
+    },
+    {
+      "label": "Figure 5",
+      "postprint_page_zero_based": 16,
+      "original_page_preserved": true,
+      "original_full_paper_caption_in_page": true,
+      "topic": "SEM of untreated, plasma-treated, ASA- and FA-modified PLA fibre mats",
+      "artifact": "assets/films/source-figures/pla-scaffolds-2020/figure-5-full-source-page.png",
+      "sha256": "85b2d1b7f051c7a5f8bc74d4eb96992656850a8f3d2f51cbedb9e44285eea91f",
+      "image_width": 1010,
+      "image_height": 1307,
+      "visual_use": "Staged for visual review; a later exact figure crop requires independent confirmation."
+    },
+    {
+      "label": "Figure 6",
+      "postprint_page_zero_based": 18,
+      "original_page_preserved": true,
+      "original_full_paper_caption_in_page": true,
+      "topic": "AFM texture after plasma and ASA/FA surface modification",
+      "artifact": "assets/films/source-figures/pla-scaffolds-2020/figure-6-full-source-page.png",
+      "sha256": "ab4012ea4d8bd44fdfe0cf3c1f5aaa90b864561919252ea4fd7543c87df9045d",
+      "image_width": 1010,
+      "image_height": 1307,
+      "visual_use": "Staged for visual review; a later exact figure crop requires independent confirmation."
+    },
+    {
+      "label": "Figure 7",
+      "postprint_page_zero_based": 20,
+      "original_page_preserved": true,
+      "original_full_paper_caption_in_page": true,
+      "topic": "actual FTIR-ATR spectra for scaffold fibre mats",
+      "artifact": "assets/films/source-figures/pla-scaffolds-2020/figure-7-full-source-page.png",
+      "sha256": "132188fcffbfb2d1b84350c75849993352c3df96d4ea65bb11f8f25d9f2440ae",
+      "image_width": 1010,
+      "image_height": 1307,
+      "visual_use": "Staged for visual review; a later exact figure crop requires independent confirmation."
+    },
+    {
+      "label": "Table 3",
+      "postprint_page_zero_based": 23,
+      "original_page_preserved": true,
+      "original_full_paper_caption_in_page": true,
+      "topic": "observed S. aureus / E. coli growth assessment, nonclinical",
+      "artifact": "assets/films/source-figures/pla-scaffolds-2020/table-3-full-source-page.png",
+      "sha256": "f4239690b2b5d56b32baaa00cd01a6890ef991fcece3fd8f1a553068d086ff7d",
+      "image_width": 1010,
+      "image_height": 1307,
+      "visual_use": "Staged for visual review; a later exact figure crop requires independent confirmation."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "SURFACE, NOT JUST SHAPE",
+      "speech": "An electrospun polymer mat can have the intended shape and still invite bacterial colonization. This study asked whether its surface could be changed.",
+      "figure": null
+    },
+    {
+      "title": "THREE REAL STEPS",
+      "speech": "The published method combined electrospinning, radiofrequency plasma treatment, and then ascorbic or fumaric acid modification. This is the original figure from that experiment.",
+      "figure": "Figure 1"
+    },
+    {
+      "title": "THIRTY SECONDS",
+      "speech": "Plasma treatment produced reactive surfaces. The study selected thirty seconds for subsequent modification, balancing functionalization with damage that can accumulate during longer treatment.",
+      "figure": null
+    },
+    {
+      "title": "THE ACTUAL MICROGRAPHS",
+      "speech": "These micrographs belong to this exact scaffold paper. Untreated, plasma-treated, ascorbic-grafted and fumaric-grafted fibres show different surface textures, with three-micrometre scale bars.",
+      "figure": "Figure 5"
+    },
+    {
+      "title": "WETTABILITY IS NOT SIMPLE",
+      "speech": "Water contact angle fell with plasma treatment and ascorbic grafting. Fumaric acid grafting instead produced a high water contact angle. The measured table shows why material identity matters.",
+      "figure": "Figure 6 / Table 2"
+    },
+    {
+      "title": "A CHEMICAL FINGERPRINT",
+      "speech": "The paper's infrared spectra support interpretation of functional changes after treatment. Spectral assignments belong alongside microscopy and the other material evidence, not in place of them.",
+      "figure": "Figure 7"
+    },
+    {
+      "title": "THE ANTIMICROBIAL ASSAY",
+      "speech": "In the reported colony assessment, both acid-grafted scaffolds received zero growth scores against Staphylococcus aureus and Escherichia coli. That is an in-vitro result.",
+      "figure": "Table 3"
+    },
+    {
+      "title": "NOT YET A CLINICAL DEVICE",
+      "speech": "The research demonstrates surface alteration and an antimicrobial response in an assay. Clinical infection prevention, durability and biological compatibility remain separate questions.",
+      "figure": null
+    }
+  ],
+  "human_review": "NOT APPROVED: scientific/cinematic/voice and source panel inspection required"
+}
