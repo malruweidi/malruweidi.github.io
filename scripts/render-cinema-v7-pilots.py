@@ -7,6 +7,7 @@ unchanged from each matching V6 release so the spoken script remains synchronize
 import argparse, json, re, math, subprocess, hashlib, tempfile, shutil
 from pathlib import Path
 import importlib.util
+from PIL import Image,ImageDraw
 ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/"assets/films/series-v6"
 OUT=ROOT/"assets/films/series-v7-pilots"
@@ -104,6 +105,21 @@ def render(entry):
   cmd("ffmpeg","-hide_banner","-loglevel","error","-y",
       "-ss","1.0","-i",str(out),"-frames:v","1","-q:v","75",
       str(OUT/(slug+".webp")))
+  # These are ACTUAL composited scene frames, not invented promotional art.
+  # A six-chapter contact sheet makes scientific and editorial auditing practical.
+  sheet=Image.new("RGB",(1920,800),(13,37,43))
+  sd=ImageDraw.Draw(sheet)
+  for chapter in range(1,7):
+   reference=directory/(f"chapter-{chapter:02d}-beat-02.png")
+   with Image.open(reference) as frame_image:
+    thumb=frame_image.convert("RGB").resize((640,360),Image.Resampling.LANCZOS)
+   x=((chapter-1)%3)*640
+   y=((chapter-1)//3)*400
+   sheet.paste(thumb,(x,y))
+   sd.text((x+22,y+368),f"CHAPTER {chapter:02d} / VISUAL PROOF",fill=(234,217,191),
+           font=art.art.font(19))
+  contact=OUT/(slug+".contact.webp")
+  sheet.save(contact,quality=88,method=6)
   metadata={
    "slug":slug,"visual_revision":expected_visual_revision(slug),"status":"STAGING ONLY — creative, legal and scientific human review outstanding",
    "film_style":"24 individually directed visual beats across 6 narrated chapters",
@@ -112,6 +128,7 @@ def render(entry):
    "audio_and_captions":"preserved synchronized V6 narration and captions, not newly recorded",
    "visual_credit":"original explanatory diagrams explicitly separated from approved archival photos",
    "scene_count":6,"visual_beat_count":len(shot_records),"beats":shot_records,
+   "contact_sheet":"/assets/films/series-v7-pilots/"+slug+".contact.webp",
    "primary_source":entry.get("doi") or entry.get("page")}
   (OUT/(slug+".json")).write_text(json.dumps(metadata,indent=2)+"\n")
   print("V7 PILOT",slug,"duration",round(duration,2),"bytes",out.stat().st_size,"shots",len(shot_records))
@@ -122,11 +139,11 @@ PRESERVE_SCHOLARLY={"making-medicines-keep","pla-grafting","pla-scaffolds",
                     "flow-chamber-method","microfluidic-virus"}
 
 def complete(slug):
- paths=[OUT/(slug+ext) for ext in (".mp4",".vtt",".webp",".json")]
+ paths=[OUT/(slug+ext) for ext in (".mp4",".vtt",".webp",".json",".contact.webp")]
  if not all(p.is_file() and p.stat().st_size>1000 for p in paths):
   return False
  try:
-  record=json.loads(paths[-1].read_text())
+  record=json.loads((OUT/(slug+".json")).read_text())
   beats=record.get("beats",[])
   valid_source=(len(beats)==24 and
       all(not str(b.get("source","")).startswith("/") for b in beats) and
@@ -136,6 +153,7 @@ def complete(slug):
   return (record["slug"]==slug and record["visual_beat_count"]==24 and
           record.get("visual_revision")==expected_visual_revision(slug) and
           record["movie_sha256"]==hashlib.sha256(paths[0].read_bytes()).hexdigest() and
+          record.get("contact_sheet")=="/assets/films/series-v7-pilots/"+slug+".contact.webp" and
           paths[1].read_text().startswith("WEBVTT") and valid_source)
  except (OSError,KeyError,ValueError,TypeError):
   return False
