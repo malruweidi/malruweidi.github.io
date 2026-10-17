@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 17,
+  "count": 21,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -45,6 +45,21 @@
       "contact": "/assets/films/series-v7-pilots/airway-reopening.contact.webp",
       "visual_revision": "v7.8-clean-screen/film-specific/source-figure-fully-visible",
       "sha256": "c8e443340e1cfcd1f6c58fa501e3653ad74cfe44a557014a9350afc487be685e",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "cairo-microscope",
+      "title": "The microscope that made curiosity independent",
+      "publication": "The microscope I brought from Cairo",
+      "poster": "/assets/films/series-v7-pilots/cairo-microscope.webp",
+      "file": "/assets/films/series-v7-pilots/cairo-microscope.mp4",
+      "captions": "/assets/films/series-v7-pilots/cairo-microscope.vtt",
+      "manifest": "/assets/films/series-v7-pilots/cairo-microscope.json",
+      "contact": "/assets/films/series-v7-pilots/cairo-microscope.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.6-chapter-directed-microscope/source-figure-fully-visible",
+      "sha256": "ce2ff34938d6cd4720f103a710ca58840c0dedaa3d8d9719c732b772d4383079",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
@@ -140,6 +155,21 @@
       "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
+      "id": "essay-life-between-diagnoses",
+      "title": "When the Count Could Not Describe the Pain",
+      "publication": "The Life Between Diagnoses",
+      "poster": "/assets/films/series-v7-pilots/essay-life-between-diagnoses.webp",
+      "file": "/assets/films/series-v7-pilots/essay-life-between-diagnoses.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-life-between-diagnoses.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-life-between-diagnoses.json",
+      "contact": "/assets/films/series-v7-pilots/essay-life-between-diagnoses.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.6-correct-portrait-provenance/source-figure-fully-visible",
+      "sha256": "92550916ee4e5972b35c13146852ad3c11e0e81b268ea9187f89335675c05fb1",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
       "id": "food-printing",
       "title": "When food becomes a printable material",
       "publication": "Materials Science for 3D, 4D, 5D, and 6D Food Printing: Rheology, Microstructure, Smart Edible Inks, and Programmable Food Architecture",
@@ -198,6 +228,36 @@
       "seconds": 84.0,
       "unique_mechanism_scenes": 5,
       "creative_review": "needs_chapter_art_direction"
+    },
+    {
+      "id": "heterocycle-cancer",
+      "title": "Build the heterocycle, then challenge the hypothesis",
+      "publication": "Imidazopyridine synthesis and anticancer screening",
+      "poster": "/assets/films/series-v7-pilots/heterocycle-cancer.webp",
+      "file": "/assets/films/series-v7-pilots/heterocycle-cancer.mp4",
+      "captions": "/assets/films/series-v7-pilots/heterocycle-cancer.vtt",
+      "manifest": "/assets/films/series-v7-pilots/heterocycle-cancer.json",
+      "contact": "/assets/films/series-v7-pilots/heterocycle-cancer.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.9-heterocycle-labels",
+      "sha256": "e16e5df49bd30e5e94f7eeb6996b6d0f9ae8294728e8338b79eb0892cd784b30",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "histology-failure",
+      "title": "Two materials. No section.",
+      "publication": "Zebrafish agarose–paraffin histopathology attempt",
+      "poster": "/assets/films/series-v7-pilots/histology-failure.webp",
+      "file": "/assets/films/series-v7-pilots/histology-failure.mp4",
+      "captions": "/assets/films/series-v7-pilots/histology-failure.vtt",
+      "manifest": "/assets/films/series-v7-pilots/histology-failure.json",
+      "contact": "/assets/films/series-v7-pilots/histology-failure.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific/source-figure-fully-visible",
+      "sha256": "d907c275603c6298b77e3b91cb0a382444605a9116700fdd0b35e8ccae5ee5b8",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "micelles-pahs",
