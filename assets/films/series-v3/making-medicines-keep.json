@@ -1,0 +1,105 @@
+{
+  "id": "making-medicines-keep",
+  "edition": "V3 original primary-source documentary",
+  "duration_seconds": 120.0,
+  "sha256": "70c16214e51b4f431670c00cb681173c2dd836ba8b9a40557a19de8aae4a686f",
+  "source_witness": "Wellcome MS Arabic 1002, later copy Egypt 1904; genuine images used only as whole manuscript/spread contextual documents",
+  "archive_images": [
+    {
+      "file": "canvas-001.jpg",
+      "canvas": "b21417283_WMS_Arabic_1002_0001.jp2"
+    },
+    {
+      "file": "canvas-013.jpg",
+      "canvas": "b21417283_WMS_Arabic_1002_0013.jp2"
+    }
+  ],
+  "source_credit": "Wellcome Collection, MS Arabic 1002, Public Domain Mark; IIIF b21417283.",
+  "primary_work": "al-Kūhīn al-ʿAṭṭār, Minhāj al-dukkān, composed Cairo 658 AH / 1260",
+  "author_source": "Making Medicines Keep — Syrups, Substitution, and Pharmaceutical Reliability in Ayyubid-Mamluk Cairo; accepted manuscript 15 October 2026",
+  "source_limit": "Wellcome physical copy produced 1904. Scene pictograms are contemporary explanatory diagrams; no authentic Genizah fragment has been displayed. No numerical historical assay, clinical efficacy, or GMP genealogy asserted.",
+  "human_review": "NOT YET APPROVED; audition factual performance, Arabic pronunciation, chapter pacing and legibility",
+  "tts": "Kokoro ONNX bm_george; English synthetic narration; locally generated low-level abstract ambience",
+  "chapters": [
+    {
+      "title": "AFTER THE FIRE",
+      "tag": "CAIRO / 1260",
+      "speech": "In thirteenth-century Cairo, a medicine had to remain useful after the fire went out. That was a problem of process, material judgment, and trust.",
+      "motion": "prologue",
+      "source": "al-Kūhīn al-ʿAṭṭār, original composition Cairo, 658 AH / 1260; historical synthesis in owner's accepted 2026 manuscript.",
+      "scene": 1,
+      "tts_seconds": 9.247,
+      "words": 24
+    },
+    {
+      "title": "A WORKING HANDBOOK",
+      "tag": "A GENUINE LATER COPY / 1904",
+      "speech": "A pharmacist's handbook composed in Cairo in twelve sixty sets out practical rules. The manuscript pictured here is a later Egyptian copy, dated nineteen oh four.",
+      "motion": "manuscript",
+      "source": "Wellcome Collection MS Arabic 1002 (Egypt, 1904), Public Domain Mark; introductory scanned spreads in their original context.",
+      "scene": 2,
+      "tts_seconds": 10.633,
+      "words": 26
+    },
+    {
+      "title": "THE BASE AND THE FORM",
+      "tag": "ROSE WATER + SUGAR / FRUIT",
+      "speech": "Its rose-water and sugar base could become many different syrups. Fruit or medicinal material supplied the distinguishing form. The handbook describes this material relationship explicitly.",
+      "motion": "julep",
+      "source": "Minhāj al-dukkān syrup chapter; author's English translation of the julāb, hayūlā and ṣūra discussion.",
+      "scene": 3,
+      "tts_seconds": 11.743,
+      "words": 25
+    },
+    {
+      "title": "MAKE, SKIM, STRAIN",
+      "tag": "PROCESS IS PART OF THE PRODUCT",
+      "speech": "Preparation demanded more than mixing. Sugar was dissolved, foam was removed, the liquid passed through cloth, and the vessel returned to the fire for further concentration.",
+      "motion": "clarification",
+      "source": "Minhāj al-dukkān syrup chapter; process reconstruction from owner's accepted manuscript, pages 14–16.",
+      "scene": 4,
+      "tts_seconds": 10.313,
+      "words": 26
+    },
+    {
+      "title": "KNOW THE CONSISTENCY",
+      "tag": "QIWĀM / ACHIEVED MATERIAL STATE",
+      "speech": "A recognized consistency was the endpoint, not a numerical reading. Too little control risked spoilage. Pushing concentration too far could make a syrup crystallize.",
+      "motion": "consistency",
+      "source": "Minhāj al-dukkān qiwām / ʿaqīd / mushāsh language; qualitative physical interpretation, no historic numerical assays.",
+      "scene": 5,
+      "tts_seconds": 10.751,
+      "words": 24
+    },
+    {
+      "title": "WHAT IF IT FAILS?",
+      "tag": "CRYSTALLIZATION / REPAIR RULE",
+      "speech": "The handbook also described failure. Sugared syrup could be dissolved with warm water, brought back toward its intended consistency, and adjusted with fruit water.",
+      "motion": "repair",
+      "source": "Minhāj al-dukkān, end-of-syrup-chapter qawānīn and tasakkur repair instruction.",
+      "scene": 6,
+      "tts_seconds": 9.834,
+      "words": 24
+    },
+    {
+      "title": "REPLACEMENT IS A JUDGMENT",
+      "tag": "SUBSTITUTION ≠ FRAUD",
+      "speech": "Scarcity raised another problem. The appropriate substitute had to be judged by function and preparation, not simply appearance. Deliberate adulteration posed a different kind of risk.",
+      "motion": "substitution",
+      "source": "Minhāj al-dukkān substitution and ḥisba discussion; analytical distinction, no modern bioequivalence claim.",
+      "scene": 7,
+      "tts_seconds": 10.955,
+      "words": 26
+    },
+    {
+      "title": "RECIPE IS NOT INVENTORY",
+      "tag": "WHAT THE RECORD CANNOT SHOW",
+      "speech": "Cairo Genizah prescriptions illuminate the distance between written demand and available supply. Reliability was achieved through practical judgment, not through a medieval version of modern drug regulation.",
+      "motion": "document-gap",
+      "source": "Or.1081 J39 prescription as discussed in author's manuscript; actual Genizah fragment image NOT reproduced.",
+      "scene": 8,
+      "tts_seconds": 13.333,
+      "words": 27
+    }
+  ]
+}
