@@ -10,13 +10,13 @@ permissions: {contents: write}
 jobs:
   source-figure-only:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
-      - run: python -m pip install pillow
-      - name: Verify published Figure 1 comes only from Springer Nature
+      - run: python -m pip install pillow pymupdf
+      - name: Verify Figure 1 only from DOI-bound PMC JATS or exact national-library archived article PDF
         run: python scripts/import-microfluidic-review-fig1.py
       - name: Verify correct paper and photo credits
         run: |
@@ -26,8 +26,9 @@ jobs:
           p=Path("assets/films/source-figures/v4/microfluidic-virus/source-provenance.json")
           j=json.loads(p.read_text())
           assert j["doi"]=="10.1007/s42247-021-00169-7"
-          assert "NOT ACTUAL DEVICE" in j["interpretation"]
-          assert hashlib.sha256(Path(j["image"]).read_bytes()).hexdigest()==j["sha256"]
+          assert "not a photograph" in j["editorial_note"]
+          assert j["pmcid"]=="PMC7992628"
+          assert hashlib.sha256(Path(j["asset"]).read_bytes()).hexdigest()==j["sha256"]
           PY
       - name: Commit genuine source pixels without overwriting published film
         run: |
