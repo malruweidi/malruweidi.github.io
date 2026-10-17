@@ -74,5 +74,5 @@ def main():
  source=json.loads(FIGURE_SOURCE.read_text())
  count=sum(check(k,*v,source) for k,v in FILMS.items())
  if count==0:raise RuntimeError("No new paper-specific films yet")
- print(f"PASS: {count} paper-specific MP4s checked with verified corresponding figures.")
+ print(f"PASS: {count} independent source-verified scientific films with original encoded frame samples.")
 if __name__=="__main__":main()
