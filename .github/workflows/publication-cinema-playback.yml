@@ -9,6 +9,7 @@ on:
       - assets/films/publication-series.json
       - assets/films/series-v6/releases.json
       - tests/publication-v6-poster.test.cjs
+      - tests/all-cinema-release.test.cjs
       - .github/workflows/publication-cinema-playback.yml
   pull_request:
     paths:
@@ -18,6 +19,7 @@ on:
       - assets/films/publication-series.json
       - assets/films/series-v6/releases.json
       - tests/publication-v6-poster.test.cjs
+      - tests/all-cinema-release.test.cjs
       - .github/workflows/publication-cinema-playback.yml
 jobs:
   integrity:
@@ -28,7 +30,7 @@ jobs:
         with:
           node-version: '22'
       - name: Check 35 film sources, captions, posters, preserved versions, and release index
-        run: node --test tests/publication-v6-poster.test.cjs
+        run: node --test tests/publication-v6-poster.test.cjs tests/all-cinema-release.test.cjs
       - name: Check inline catalogue player JavaScript
         run: |
           node - <<'JS'
