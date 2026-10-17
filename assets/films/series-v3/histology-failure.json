@@ -1,0 +1,66 @@
+{
+  "id": "histology-failure",
+  "edition": "V3 authored original-failure photography",
+  "duration_seconds": 120.0,
+  "sha256": "2928196411d951ada57a104f529879ce0940071eb3fd2b1fad787b4d10e3d7ca",
+  "sources": [
+    {
+      "path": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "git_sha": "963ea9561a986b9858c34f8eb15b95e9aa0daa86"
+    },
+    {
+      "path": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "git_sha": "45a46894d7a9bbfbe4cd9194bbce06751fca861c"
+    },
+    {
+      "path": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "git_sha": "746a499ab1571a351a60bbacdcdb694560ea952f"
+    }
+  ],
+  "first_person_source": "stories/failed-zebrafish-histology.html",
+  "result": "UNSUCCESSFUL. No interpretable serial zebrafish section obtained",
+  "scientific_limit": "Mechanics of agarose-paraffin interface are inferred from observed separation, not proved experimentally. No tissue micrograph, measured modulus, or successful repeat invented.",
+  "human_review": "NOT APPROVED. Compare full-size source photographs and listen to film before replacing any original.",
+  "chapters": [
+    {
+      "title": "Small specimens and a question",
+      "speech": "I needed histological sections of zebrafish embryos. They were small, and their orientation mattered: a slice through the wrong plane could miss the anatomy I wanted to study.",
+      "source": "Owner's 2025 image of five oriented zebrafish specimens, no outcome claimed."
+    },
+    {
+      "title": "An orientation scaffold",
+      "speech": "My first step used two percent agarose as a support. I could position the specimens before the paraffin step, with the hope of preserving the chosen plane during sectioning.",
+      "source": "Owner first-person account, 2% agarose preparation; placement photograph."
+    },
+    {
+      "title": "Two materials in sequence",
+      "speech": "The proposal depended on two different materials. Agarose maintained orientation; paraffin was supposed to support thin sections after processing. The second stage would have to integrate with the first.",
+      "source": "First-person description, not a claim of chemical bonding between matrices."
+    },
+    {
+      "title": "The laboratory attempt",
+      "speech": "This is the real processing apparatus from that attempt. It records what was tried, but a photograph of the instrument is not evidence that a usable section was made.",
+      "source": "Owner late-2025 photograph of laboratory histological processing instrument."
+    },
+    {
+      "title": "Where the interface mattered",
+      "speech": "Instead of behaving like one mechanically coherent block, the embedded materials formed distinguishable layers. A sectioning method that works with one solid block may fail when the material interface separates.",
+      "source": "Observed layer separation in first-person record; hypothetical mechanical explanation labelled."
+    },
+    {
+      "title": "At the microtome",
+      "speech": "Here is the actual block in the microtome. At sectioning the material separated and broke apart. The problem was no longer merely positioning a fish; it was obtaining a sectionable composite.",
+      "source": "Owner microtomy-failure photograph: actual preparation, no successful tissue section."
+    },
+    {
+      "title": "No interpretable section",
+      "speech": "I did not obtain reliable, interpretable histological sections from this sequence. Nothing here is a successful stained slide, and these photographs should not be used to imply one.",
+      "source": "Failed result in first-person field note. No fabricated microscopy or quantitative output."
+    },
+    {
+      "title": "The next trial would differ",
+      "speech": "The failure suggests questions for a new method: embedding compatibility, processing, and orientation controls. Those are experiments still to perform, not results I have already produced.",
+      "source": "Future method hypotheses only; exact procedure for successful follow-up not established."
+    }
+  ]
+}
