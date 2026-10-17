@@ -31,8 +31,17 @@ ART_REVISIONS={
  "essay-scientific-credit":"v7.9-attribution-labels",
  "heterocycle-cancer":"v7.9-heterocycle-labels"
 }
+# These films use identified original research figures or documentary photographs.
+# Rebuild them if the source figure's full-frame safe-area geometry changes.
+FULL_FRAME_SOURCES={
+ "airway-reopening","curcumin-cyanide","zebrafish-hemodynamics",
+ "micelles-pahs","histology-failure","cairo-microscope",
+ "essay-life-between-diagnoses","essay-ai-email","essay-machine-language",
+ "essay-academic-mental-health","essay-scientific-credit"
+}
 def expected_visual_revision(slug):
- return FRAME_REVISION+"/"+ART_REVISIONS.get(slug,"film-specific")
+ base=FRAME_REVISION+"/"+ART_REVISIONS.get(slug,"film-specific")
+ return base+("/source-figure-fully-visible" if slug in FULL_FRAME_SOURCES else "")
 ART=ROOT/"scripts/build-cinema-v7-previews.py"
 spec=importlib.util.spec_from_file_location("ruwaidix_v7_previews",ART)
 art=importlib.util.module_from_spec(spec);spec.loader.exec_module(art)
