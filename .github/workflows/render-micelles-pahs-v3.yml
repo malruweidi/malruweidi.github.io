@@ -5,6 +5,7 @@ on:
     paths:
       - scripts/render-micelles-pahs-v3.py
       - .github/workflows/render-micelles-pahs-v3.yml
+      - scripts/audit-new-v3-study-cuts.py
   workflow_dispatch:
 permissions: {contents: write}
 concurrency: {group: ruwaidix-owner-micelles-v3, cancel-in-progress: false}
@@ -53,11 +54,13 @@ jobs:
           assert "NOT APPROVED" in meta["human_review"]
           print("True owner-archive polymer documentary encoded; scientific and rights review pending")
           PY
+      - name: Inspect real encoded frames, original-asset SHA and complete source credits for this specific film
+        run: python scripts/audit-new-v3-study-cuts.py --only micelles-pahs
       - name: Commit independent V3 film without deleting or replacing original
         run: |
           git config user.name "Ruwaidix Research Film"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/films/series-v3/micelles-pahs.*
+          git add assets/films/series-v3/micelles-pahs.* assets/films/series-v3/qa/micelles-pahs-contact.jpg assets/films/series-v3/qa/micelles-pahs-contact.json
           if ! git diff --cached --quiet; then
             git commit -m "Render original-archive polymer micelle research documentary"
             git fetch origin "${{ github.ref_name }}"
