@@ -56,41 +56,28 @@ jobs:
           if [ ! -s film-models/voices-v1.0.bin ]; then curl --fail --location --retry 3 --silent --show-error -o film-models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin; fi
           test "$(stat -c%s film-models/kokoro-v1.0.fp16.onnx)" -gt 90000000
           test "$(stat -c%s film-models/voices-v1.0.bin)" -gt 1000000
-      - name: Render next six fully sourced motion remakes
-        run: python scripts/remaster-publication-series.py --missing-only --limit 6
-      - name: Enforce mobile-readable timed subtitle cues
-        run: python scripts/normalize-film-captions.py --collection series-v2
-      - name: Confirm codecs, captions and exact release provenance
-        run: |
-          python - <<'PY'
-          import json,hashlib,subprocess
-          from pathlib import Path
-          p=Path("assets/films/series-v2")
-          for v in p.glob("*.mp4"):
-              meta=json.loads(v.with_suffix(".json").read_text())
-              assert meta["edition"]=="cinematic-v2"
-              assert meta["sha256"]==hashlib.sha256(v.read_bytes()).hexdigest()
-              assert len(meta["animated_scene_ids"])>=1
-              assert v.with_suffix(".vtt").read_text().startswith("WEBVTT")
-              data=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","json",str(v)]))
-              assert abs(float(data["format"]["duration"])-84)<.3,v
-              print(v,meta["animated_scene_ids"])
-          PY
-      - name: Gate each produced batch using actual decoded frames, VTT timing, H.264 streams and source hashes
-        run: python scripts/audit-all-film-recuts.py --collection series-v2
-      - name: Produce proof-of-render frame contact sheets for editorial review
-        run: python scripts/make-film-qa-contact-sheets.py --collection series-v2
-      - name: Preserve old films and commit only alternative v2 releases
+      - name: Render, validate and commit each film as an independent checkpoint
+        env:
+          BRANCH: ${{ github.ref_name }}
         run: |
           git config user.name "Ruwaidix Open Film Studio"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/films/series-v2/
-          if ! git diff --cached --quiet; then
-            git commit -m "Add separately preserved scientific-motion film remakes [v2-output]"
-            git fetch origin "${{ github.ref_name }}"
-            git rebase FETCH_HEAD
-            git push origin HEAD:${{ github.ref_name }}
-          fi
+          for batch in 1 2 3 4 5 6; do
+            left="$(python scripts/remaster-publication-series.py --remaining-count | tail -n 1)"
+            echo "Cycle $batch; fully current films still required: $left"
+            if [ "$left" -eq 0 ]; then break; fi
+            python scripts/remaster-publication-series.py --missing-only --limit 1
+            python scripts/normalize-film-captions.py --collection series-v2
+            python scripts/audit-all-film-recuts.py --collection series-v2
+            python scripts/make-film-qa-contact-sheets.py --collection series-v2
+            git add assets/films/series-v2/
+            if ! git diff --cached --quiet; then
+              git commit -m "Checkpoint one source-grounded film with decoded-frame and subtitle QA"
+              git fetch origin "$BRANCH"
+              git rebase "origin/$BRANCH"
+              git push origin HEAD:"$BRANCH"
+            fi
+          done
       - name: Continue remaining films in the source-preserving review branch
         if: success()
         env:
