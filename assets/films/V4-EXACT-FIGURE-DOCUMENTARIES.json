@@ -1,0 +1,184 @@
+{
+  "schema": "ruwaidix-verified-figure-film/v1",
+  "publication_provenance": "Primary article DOI and matched full figure pixels. Numeric claims sourced from article text. No overlays allowed inside data figures.",
+  "films": {
+    "flow-chamber-method": {
+      "title": "What a Bubble Does to a Monolayer",
+      "doi": "10.3390/mps3040065",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7712398/",
+      "media_license": "CC BY 4.0",
+      "visual_thesis": "A published cell-monolayer experiment, not patient airway footage. Flow-device photos, live/dead assay, and actin figure are all the same paper.",
+      "scenes": [
+        {
+          "mode": "opening",
+          "figure": 1,
+          "headline": [
+            "THE BUBBLE",
+            "PASSES."
+          ],
+          "eyebrow": "CULTURED EPITHELIAL CELLS",
+          "narration": "A fluid interface crosses a layer of lung epithelial cells. This is the real chamber study, not a film of a patient's lung."
+        },
+        {
+          "mode": "source",
+          "figure": 1,
+          "headline": [
+            "THE REAL",
+            "CHAMBER"
+          ],
+          "eyebrow": "FIGURE 1 · ORIGINAL APPARATUS",
+          "narration": "A syringe pump drives liquid through a parallel plate chamber. The paper shows the actual apparatus and the glass surfaces supporting the cells."
+        },
+        {
+          "mode": "interface",
+          "figure": 1,
+          "headline": [
+            "WHERE STRESS",
+            "APPEARS"
+          ],
+          "eyebrow": "AIR–LIQUID INTERFACE · CONCEPT MODEL",
+          "narration": "As the air liquid interface advances, local stresses reach the cell surface. The moving schematic explains the process; it is not a measured stress trace."
+        },
+        {
+          "mode": "source",
+          "figure": 5,
+          "headline": [
+            "CONTROL",
+            "VERSUS BUBBLE"
+          ],
+          "eyebrow": "FIGURE 5 · UNALTERED LIVE / DEAD IMAGING",
+          "narration": "These fluorescence images are from the original study. The unstressed control and the bubble exposed cells were stained with live and dead markers."
+        },
+        {
+          "mode": "result",
+          "figure": 5,
+          "headline": [
+            "AROUND 53%",
+            "CELL DEATH"
+          ],
+          "eyebrow": "FIGURE 5 · SEVEN REPEATED EXPERIMENTS",
+          "narration": "Across seven replicates, the stressed group showed about fifty three percent cell death, versus around zero to point two percent in controls. The difference was statistically significant."
+        },
+        {
+          "mode": "source",
+          "figure": 6,
+          "headline": [
+            "LOOK AGAIN AT",
+            "THE ACTIN"
+          ],
+          "eyebrow": "FIGURE 6 · ORIGINAL CYTOSKELETON IMAGES",
+          "narration": "The study also stained actin filaments and nuclei. Here are its actual control and bubble exposure images, not synthetic fluorescence pictures."
+        },
+        {
+          "mode": "boundary",
+          "figure": 6,
+          "headline": [
+            "NO SIGNIFICANT",
+            "ACTIN DIFFERENCE"
+          ],
+          "eyebrow": "A DISTINCTION THE PAPER MAKES",
+          "narration": "The single bubble did not produce a statistically significant change in actin organization, although the authors observed possible differences in filament orientation."
+        },
+        {
+          "mode": "closing",
+          "figure": 1,
+          "headline": [
+            "ONE MODEL.",
+            "ONE QUESTION."
+          ],
+          "eyebrow": "PUBLISHED METHOD · NOT A PATIENT OUTCOME",
+          "narration": "The chamber makes an airway reopening problem experimentally observable. It does not by itself establish what will happen to a patient during ventilation."
+        }
+      ]
+    },
+    "pla-grafting": {
+      "title": "What Changes When PLA Meets Plasma",
+      "doi": "10.3390/polym13213717",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8588400/",
+      "media_license": "CC BY 4.0",
+      "visual_thesis": "This is the 2021 continuous PLA film/aluminium lamination study, not the distinct 2020 electrospun antimicrobial scaffold paper.",
+      "scenes": [
+        {
+          "mode": "opening",
+          "figure": 8,
+          "headline": [
+            "THE PEEL",
+            "TELLS THE STORY"
+          ],
+          "eyebrow": "PLA FILM / ALUMINIUM LAMINATE",
+          "narration": "The question was practical: could modifying a plant based PLA film make it adhere more strongly to aluminium? The peel test would give the answer."
+        },
+        {
+          "mode": "surface",
+          "figure": 1,
+          "headline": [
+            "ACTIVATE",
+            "THE SURFACE"
+          ],
+          "eyebrow": "COLD PLASMA · ORIGINAL 2021 PAPER",
+          "narration": "Cold plasma changes the outermost polymer surface, creating reactive sites. The study then grafted ascorbic or fumaric acid onto the treated PLA film."
+        },
+        {
+          "mode": "source",
+          "figure": 1,
+          "headline": [
+            "WHAT WATER",
+            "REVEALS"
+          ],
+          "eyebrow": "FIGURE 1 · CONTACT ANGLE AND SURFACE ENERGY",
+          "narration": "The authors measured contact angles and surface free energy. Both help characterize wetting, but neither measurement alone proves stronger laminate adhesion."
+        },
+        {
+          "mode": "source",
+          "figure": 4,
+          "headline": [
+            "CHEMISTRY",
+            "AT THE SURFACE"
+          ],
+          "eyebrow": "FIGURE 4 · X-RAY PHOTOELECTRON SPECTROSCOPY",
+          "narration": "The X ray photoelectron spectra belong to this exact PLA film paper. They help characterize the chemistry of the surface after the treatments."
+        },
+        {
+          "mode": "source",
+          "figure": 8,
+          "headline": [
+            "THE PEEL",
+            "EXPERIMENT"
+          ],
+          "eyebrow": "FIGURE 8 · ORIGINAL MEASURED RESULTS",
+          "narration": "This published figure compares peel resistance of untreated PLA, plasma treated samples, grafted samples, and blind controls without plasma activation."
+        },
+        {
+          "mode": "result",
+          "figure": 8,
+          "headline": [
+            "74",
+            "TO 211 N/m"
+          ],
+          "eyebrow": "UNTREATED TO FUMARIC-ACID GRAFTED",
+          "narration": "Untreated film averaged seventy four point four newtons per metre. The fumaric acid grafted sample reached two hundred eleven newtons per metre, the largest increase."
+        },
+        {
+          "mode": "boundary",
+          "figure": 8,
+          "headline": [
+            "THE CONTROL",
+            "CHANGES THE CLAIM"
+          ],
+          "eyebrow": "NO PLASMA · NO COMPARABLE ADHESION GAIN",
+          "narration": "Adding the acids without prior plasma treatment gave results close to untreated film. That blind control is central to how the researchers interpreted grafting."
+        },
+        {
+          "mode": "closing",
+          "figure": 8,
+          "headline": [
+            "FILM IS NOT",
+            "SCAFFOLD"
+          ],
+          "eyebrow": "SEPARATE 2021 PLA FILM PAPER",
+          "narration": "These results describe PLA film and aluminium peel adhesion. They must not be illustrated with the separate twenty twenty antimicrobial electrospun scaffold experiment."
+        }
+      ]
+    }
+  }
+}
