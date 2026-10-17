@@ -311,8 +311,8 @@
           "narrative_role": "method",
           "shot_treatment": "documentary",
           "sec": 15,
-          "video": "assets/films/animations-v2/airway-interface.mp4",
-          "motion_source": "assets/films/animations-v2/",
+          "video": "assets/films/manim-v3/airway-interface.mp4",
+          "motion_source": "assets/films/manim-v3/",
           "rationale": "The moving schematic illustrates the stated physical phenomenon; it does not invent measurements, patient footage or experimental outcomes."
         },
         {
@@ -2407,8 +2407,8 @@
           "narrative_role": "evidence",
           "shot_treatment": "documentary",
           "sec": 15,
-          "video": "assets/films/animations-v2/ace2-shedding.mp4",
-          "motion_source": "assets/films/animations-v2/",
+          "video": "assets/films/manim-v3/ace2-topology.mp4",
+          "motion_source": "assets/films/manim-v3/",
           "rationale": "The moving schematic illustrates the stated physical phenomenon; it does not invent measurements, patient footage or experimental outcomes."
         },
         {
@@ -2550,8 +2550,8 @@
           "shot_treatment": "documentary",
           "sec": 15,
           "source_detail": "Editorial mechanism illustration; not experimental, historical or clinical evidence",
-          "video": "assets/films/animations-v2/microfluidic-transport.mp4",
-          "motion_source": "assets/films/animations-v2/",
+          "video": "assets/films/manim-v3/microfluidic-transport.mp4",
+          "motion_source": "assets/films/manim-v3/",
           "rationale": "The moving schematic illustrates the stated physical phenomenon; it does not invent measurements, patient footage or experimental outcomes."
         },
         {
@@ -2814,8 +2814,8 @@
           "sec": 15,
           "original_image": "assets/films/art/edible-printing.svg",
           "visual_edition": "cinematic-original-art",
-          "video": "assets/films/animations-v2/edible-extrusion.mp4",
-          "motion_source": "assets/films/animations-v2/",
+          "video": "assets/films/manim-v3/food-extrusion.mp4",
+          "motion_source": "assets/films/manim-v3/",
           "rationale": "The moving schematic illustrates the stated physical phenomenon; it does not invent measurements, patient footage or experimental outcomes."
         },
         {
@@ -2965,6 +2965,9 @@
           "subtitle": "biomaterials editorial",
           "narration": "Ceramic processing and densification impose constraints beyond the original digital model. The final properties must be measured.",
           "image": "assets/films/art-v2/ceramics-sintering-constraints.svg",
+          "video": "assets/films/manim-v3/ceramic-sintering.mp4",
+          "motion_source": "assets/films/manim-v3/",
+          "rationale": "CPU-rendered conceptual demonstration of possible geometry change during processing; not a measurement or predictive model.",
           "contain": true,
           "kind": "Original conceptual scientific illustration, not a published experimental figure",
           "credit": "Ruwaidix original interpretive visual about material processing and translation; no measured test outcomes or clinical results depicted",
