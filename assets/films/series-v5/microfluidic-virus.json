@@ -1,0 +1,150 @@
+{
+  "title": "The Virus on a Chip: Detection Without Guesswork",
+  "id": "microfluidic-virus",
+  "edition": "V5 unique microfluidic review documentary / 8 evidence-led episodes",
+  "doi": "10.1007/s42247-021-00169-7",
+  "source": "Tarim et al., 2021 Emergent Materials, DOI 10.1007/s42247-021-00169-7",
+  "license": "Original Figure 1 CC BY 4.0; clearly labelled new explanatory diagrams by Ruwaidix",
+  "source_visual_limits": "One genuine Figure 1 shown in whole-page context and as a labelled excerpt. All other frames are disclosed unmeasured explanatory reconstructions.",
+  "source_figures": [
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg",
+      "sha256": "89352641055513f068604e5d2bd02458aa9503d976b0cbd79d9b203a7a14a11e"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg",
+      "sha256": "89352641055513f068604e5d2bd02458aa9503d976b0cbd79d9b203a7a14a11e"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg",
+      "sha256": "89352641055513f068604e5d2bd02458aa9503d976b0cbd79d9b203a7a14a11e"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg",
+      "sha256": "89352641055513f068604e5d2bd02458aa9503d976b0cbd79d9b203a7a14a11e"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg",
+      "sha256": "89352641055513f068604e5d2bd02458aa9503d976b0cbd79d9b203a7a14a11e"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg",
+      "sha256": "89352641055513f068604e5d2bd02458aa9503d976b0cbd79d9b203a7a14a11e"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg",
+      "sha256": "89352641055513f068604e5d2bd02458aa9503d976b0cbd79d9b203a7a14a11e"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg",
+      "sha256": "89352641055513f068604e5d2bd02458aa9503d976b0cbd79d9b203a7a14a11e"
+    }
+  ],
+  "original_figure_pixels_untouched": true,
+  "separate_explanatory_animation": true,
+  "new_science_fabricated": false,
+  "duration_seconds": 120.0,
+  "sha256": "5fb0213336a28ac8329acf80dae186f4987f5be9a75b8f5db9a86e967c15c132",
+  "human_review": "NOT APPROVED; verify all pronunciations, timings and figure identity before default live replacement",
+  "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
+  "chapters": [
+    {
+      "narration": "This open-access paper is a review, not a new patient experiment. Its published Figure One maps possible ways microfluidic systems might detect respiratory viruses.",
+      "figure": 1,
+      "mode": "source",
+      "eyebrow": "Source-locked",
+      "headline": [
+        "PRIMARY SOURCE"
+      ],
+      "evidence_caption": "Overview of microfluidic methods used for detection of respiratory viruses. Various collected samples (genetic materials or direct respiratory virus particles in body fluids) can be detected using microfluidic-based detection systems that can contain antibodies, aptamers, magnetic beads, nanoparticles, or enzymes",
+      "tts_seconds": 11.38
+    },
+    {
+      "narration": "Sample preparation is upstream of detection. A swab, saliva specimen, or other fluid must be handled before a device can produce an interpretable signal.",
+      "figure": 1,
+      "mode": "source",
+      "eyebrow": "Source-locked",
+      "headline": [
+        "SAMPLE HANDLING"
+      ],
+      "evidence_caption": "Original authors' conceptual mechanism",
+      "tts_seconds": 10.568
+    },
+    {
+      "narration": "Some methods seek viral particles or antigens. Others search for viral nucleic acid. Those distinct targets create very different assay architectures.",
+      "figure": 1,
+      "mode": "source",
+      "eyebrow": "Source-locked",
+      "headline": [
+        "TARGET SELECTION"
+      ],
+      "evidence_caption": "Original authors' conceptual mechanism",
+      "tts_seconds": 9.908
+    },
+    {
+      "narration": "The authors' original Figure One connects sample, sensing elements, and transduction. These are alternatives, not proof that one fabricated chip performs every assay.",
+      "figure": 1,
+      "mode": "source",
+      "eyebrow": "Source-locked",
+      "headline": [
+        "THE PUBLISHED SCHEMATIC"
+      ],
+      "evidence_caption": "Overview of microfluidic methods used for detection of respiratory viruses. Various collected samples (genetic materials or direct respiratory virus particles in body fluids) can be detected using microfluidic-based detection systems that can contain antibodies, aptamers, magnetic beads, nanoparticles, or enzymes",
+      "tts_seconds": 10.676
+    },
+    {
+      "narration": "An antibody, aptamer, magnetic bead, nanoparticle, or enzyme can form part of the sensing strategy. Specificity still depends on careful recognition chemistry.",
+      "figure": 1,
+      "mode": "source",
+      "eyebrow": "Source-locked",
+      "headline": [
+        "BINDING CHEMISTRY"
+      ],
+      "evidence_caption": "Original authors' conceptual mechanism",
+      "tts_seconds": 10.965
+    },
+    {
+      "narration": "In optical schemes, changes in light are translated into a readout. The moving traces here explain the idea; they are not experimental results.",
+      "figure": 1,
+      "mode": "source",
+      "eyebrow": "Source-locked",
+      "headline": [
+        "OPTICAL DETECTION"
+      ],
+      "evidence_caption": "Original authors' conceptual mechanism",
+      "tts_seconds": 9.386
+    },
+    {
+      "narration": "Electrical and electrochemical methods use different signal pathways and calibration requirements. A visually convincing waveform alone cannot establish diagnostic accuracy.",
+      "figure": 1,
+      "mode": "source",
+      "eyebrow": "Source-locked",
+      "headline": [
+        "ELECTRICAL TRANSDUCTION"
+      ],
+      "evidence_caption": "Original authors' conceptual mechanism",
+      "tts_seconds": 11.615
+    },
+    {
+      "narration": "The scientific contribution is a critical map of detection technologies. Clinical validity requires sensitivity, specificity, controls, and verification in a defined population.",
+      "figure": 1,
+      "mode": "source",
+      "eyebrow": "Source-locked",
+      "headline": [
+        "A REVIEW IS NOT A TRIAL"
+      ],
+      "evidence_caption": "Original authors' conceptual mechanism",
+      "tts_seconds": 12.009
+    }
+  ],
+  "primary_figure": "2021 paper original Figure 1 from page 145 of exact DOI national-library copy",
+  "validity": "REVIEW: no new experiment or clinical device results are claimed"
+}

@@ -1,0 +1,145 @@
+{
+  "title": "A Bubble Across a Cell Monolayer: Measured and Unmeasured",
+  "id": "flow-chamber-method",
+  "edition": "V5 full-width 2020 study documentary with separate source-correct motion",
+  "doi": "10.3390/mps3040065",
+  "source": "Published 2020 Methods and Protocols, same-DOI original Figures 1, 5, 6",
+  "license": "CC BY 4.0, original study authors; no photographic substitutions",
+  "source_visual_limits": "Full-frame real chamber/viability/actin figures with distinct physics animation; no artificial result figures.",
+  "source_figures": [
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg",
+      "sha256": "d86c0d8854ae32b83b33d4e02b1da3013b86f3a91de3986f410f5d6aba521692"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg",
+      "sha256": "d86c0d8854ae32b83b33d4e02b1da3013b86f3a91de3986f410f5d6aba521692"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg",
+      "sha256": "d86c0d8854ae32b83b33d4e02b1da3013b86f3a91de3986f410f5d6aba521692"
+    },
+    {
+      "figure": 5,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-05.jpg",
+      "sha256": "43bb54073801952f0e29f4cf95f5f7dd95688f8b146cb078606943c6646f984c"
+    },
+    {
+      "figure": 5,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-05.jpg",
+      "sha256": "43bb54073801952f0e29f4cf95f5f7dd95688f8b146cb078606943c6646f984c"
+    },
+    {
+      "figure": 6,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-06.jpg",
+      "sha256": "c07761e43a405320c1dbb12806d742fa6cd9d02f43eb0b086918f0d2da72b220"
+    },
+    {
+      "figure": 6,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-06.jpg",
+      "sha256": "c07761e43a405320c1dbb12806d742fa6cd9d02f43eb0b086918f0d2da72b220"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg",
+      "sha256": "d86c0d8854ae32b83b33d4e02b1da3013b86f3a91de3986f410f5d6aba521692"
+    }
+  ],
+  "original_figure_pixels_untouched": true,
+  "separate_explanatory_animation": true,
+  "new_science_fabricated": false,
+  "duration_seconds": 120.0,
+  "sha256": "5b40aff46f6402b098e2a2624eba15e8fe32b5d43a58a78305a8e0360017a349",
+  "human_review": "NOT APPROVED — check scientific interpretation, figure crops, voice and all 8 chapters.",
+  "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
+  "chapters": [
+    {
+      "figure": 1,
+      "mode": "source",
+      "headline": [
+        "SOURCE"
+      ],
+      "eyebrow": "PROVENANCE",
+      "narration": "A microbubble crosses a cultured lung epithelial monolayer. The paper documents the apparatus. The photograph on screen is from the experiment, not a patient's lung.",
+      "tts_seconds": 10.783
+    },
+    {
+      "figure": 1,
+      "mode": "source",
+      "headline": [
+        "SOURCE"
+      ],
+      "eyebrow": "PROVENANCE",
+      "narration": "A syringe pump drives flow through the parallel plate chamber. Its coverslips support epithelial cells, while an advancing air–liquid interface creates the mechanical event.",
+      "tts_seconds": 10.751
+    },
+    {
+      "figure": 1,
+      "mode": "source",
+      "headline": [
+        "SOURCE"
+      ],
+      "eyebrow": "PROVENANCE",
+      "narration": "The conceptual animation shows an interface moving over cells. This is not a measured stress field, and no velocity or force has been invented.",
+      "tts_seconds": 9.291
+    },
+    {
+      "figure": 5,
+      "mode": "source",
+      "headline": [
+        "SOURCE"
+      ],
+      "eyebrow": "PROVENANCE",
+      "narration": "Here are the real live–dead micrographs. The control and the bubble-exposed cells are separate study conditions with fluorescence-based viability staining.",
+      "tts_seconds": 9.726
+    },
+    {
+      "figure": 5,
+      "mode": "source",
+      "headline": [
+        "SOURCE"
+      ],
+      "eyebrow": "PROVENANCE",
+      "narration": "Seven repetitions revealed a substantially higher cell-death percentage after bubble propagation, approximately fifty-three percent, compared with near-zero control death.",
+      "tts_seconds": 10.817
+    },
+    {
+      "figure": 6,
+      "mode": "source",
+      "headline": [
+        "SOURCE"
+      ],
+      "eyebrow": "PROVENANCE",
+      "narration": "The paper also imaged F-actin and nuclei. These are its actual microscopy panels, not AI-generated cytoskeletal photographs or unrelated studies.",
+      "tts_seconds": 10.548
+    },
+    {
+      "figure": 6,
+      "mode": "source",
+      "headline": [
+        "SOURCE"
+      ],
+      "eyebrow": "PROVENANCE",
+      "narration": "A single bubble did not yield a statistically significant change in actin organization. Differences suggested by visual inspection cannot replace the measured statistical result.",
+      "tts_seconds": 11.583
+    },
+    {
+      "figure": 1,
+      "mode": "source",
+      "headline": [
+        "SOURCE"
+      ],
+      "eyebrow": "PROVENANCE",
+      "narration": "The chamber makes a difficult reopening event experimentally observable. It does not on its own predict the outcome of ventilation in a living patient.",
+      "tts_seconds": 9.801
+    }
+  ],
+  "documented_figures": {
+    "1": "Experimental setup. (A) We exposed epithelial cells to frictional shear stress relevant to airway reopening in our setup. (B) A single bubble is propagated over cell monolayer by filling the chamber and then retracting fluid over the cells. (C) The parallel plate flow chamber is composed of an upper cover slip, a cell-seeded lower coverslip, and a membrane sandwiched between two coverslips. (D) A propagating bubble is seen. (E) Fluorescent live/dead stain method is used to assess viability. Here, green represents calcein-stained live cells, and red are ethidium-stained dead cells.",
+    "5": "Fluorescent images for 149 L2 cells: (A) control group, and (B) experimental group, where a bubble was formed to induce a stress wave on the cells. Green color is for live cells while red color is for dead cells. (C) Bar chart for control and experimental group, showing a significant difference (p-value < 0.01) in death percentage. Error bars are for standard error.",
+    "6": "(A) Cell’s cytoskeleton for the control group, and (B) cell’s cytoskeleton for the bubble-propagated group. The green color represents actin filaments, and blue is the nucleus stained with DAPI (4’,6-Diamidino-2-Phenylindole). The white arrow represents the direction of actin filaments’ orientation."
+  }
+}

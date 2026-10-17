@@ -1,0 +1,151 @@
+{
+  "title": "Electrospun PLA: How Surface Treatment Changed the Experiment",
+  "id": "pla-scaffolds",
+  "edition": "V5 cinematic full-frame primary source documentary",
+  "doi": "10.1016/j.surfcoat.2020.126216",
+  "source": "https://m.publikace.k.utb.cz/handle/10563/1009831?locale-attribute=en",
+  "license": "CC BY 4.0, 2020 authors / Surface & Coatings Technology",
+  "source_visual_limits": "Actual 2020 electrospun PLA fibre-mat study; Figure 1, original SEM Figure 5, AFM Figure 6, FTIR Figure 7 and Table 3. No figures from the separate 2021 PLA foil/aluminium adhesion experiment.",
+  "source_figures": [
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-01.jpg",
+      "sha256": "af40f7b320bdbc9e934a28ce205b18634ea38bcd32a5afb8466561df1f7d8860"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-01.jpg",
+      "sha256": "af40f7b320bdbc9e934a28ce205b18634ea38bcd32a5afb8466561df1f7d8860"
+    },
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-01.jpg",
+      "sha256": "af40f7b320bdbc9e934a28ce205b18634ea38bcd32a5afb8466561df1f7d8860"
+    },
+    {
+      "figure": 5,
+      "path": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg",
+      "sha256": "ae667164eb915dff5f5198f73115b45c987f7e515124b26e635478a6dc96a18a"
+    },
+    {
+      "figure": 6,
+      "path": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-06.jpg",
+      "sha256": "152712dc07ebbdb00207883e8646ecc9f7c677b20a1032b9b3e12dce83fe8a23"
+    },
+    {
+      "figure": 7,
+      "path": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-07.jpg",
+      "sha256": "fee1aab4c8adb7299683eefa000f58859d086943ecc89029e0ceb11e2c469663"
+    },
+    {
+      "figure": 3,
+      "path": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-03.jpg",
+      "sha256": "f726d6a042539eb19a84d61c03378ef9b9dc7370da5443ceb26c22d2b2c32132"
+    },
+    {
+      "figure": 5,
+      "path": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg",
+      "sha256": "ae667164eb915dff5f5198f73115b45c987f7e515124b26e635478a6dc96a18a"
+    }
+  ],
+  "original_figure_pixels_untouched": true,
+  "separate_explanatory_animation": true,
+  "new_science_fabricated": false,
+  "duration_seconds": 120.0,
+  "sha256": "c60f24f3673f81ec570dfafa57d7a9ad80575adf07b7603c216da885aaf4d2b4",
+  "human_review": "NOT APPROVED — audit 120-second voice and watch full-frame film before release",
+  "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
+  "chapters": [
+    {
+      "mode": "opening",
+      "figure": 1,
+      "headline": [
+        "A FIBRE MAT.",
+        "NOT A FILM."
+      ],
+      "eyebrow": "ELECTROSPUN PLA / 2020 STUDY",
+      "narration": "This is an electrospun PLA scaffold, not a packaging film. The question was whether a carefully modified surface could reduce bacterial colonization without losing its fibrous architecture.",
+      "tts_seconds": 12.969
+    },
+    {
+      "mode": "interface",
+      "figure": 1,
+      "headline": [
+        "ELECTRIC",
+        "FIELD → FIBRES"
+      ],
+      "eyebrow": "STEP 1 / ORIGINAL FIGURE 1",
+      "narration": "Electrospinning turns a polymer solution into fine fibres. The source paper used a high voltage needle and a collecting drum. This moving strand is an explanatory schematic, not filmed laboratory footage.",
+      "tts_seconds": 13.128
+    },
+    {
+      "mode": "surface",
+      "figure": 1,
+      "headline": [
+        "THIRTY SECONDS",
+        "OF PLASMA"
+      ],
+      "eyebrow": "STEP 2 / REACTIVE PLA SURFACE",
+      "narration": "A brief radiofrequency plasma treatment generated reactive surface sites. Thirty seconds was selected for subsequent grafting after the authors examined wettability and hydroperoxide formation.",
+      "tts_seconds": 12.937
+    },
+    {
+      "mode": "source",
+      "figure": 5,
+      "headline": [
+        "THE FIBRES",
+        "ARE REAL"
+      ],
+      "eyebrow": "FIGURE 5 / UNMODIFIED + TREATED SEM",
+      "narration": "The original scanning electron micrographs show the untreated mat, plasma treated fibres and both acid grafted preparations. These are the images of this scaffold experiment, with its own three micrometre scale bars.",
+      "tts_seconds": 13.887
+    },
+    {
+      "mode": "source",
+      "figure": 6,
+      "headline": [
+        "SURFACE",
+        "TOPOGRAPHY"
+      ],
+      "eyebrow": "FIGURE 6 / ORIGINAL AFM",
+      "narration": "Atomic force microscopy revealed differences in surface roughness and morphology after treatment. These are the actual five sample conditions reported in Figure six, not illustrations borrowed from a different polymer study.",
+      "tts_seconds": 14.239
+    },
+    {
+      "mode": "source",
+      "figure": 7,
+      "headline": [
+        "LOOK AT",
+        "THE SPECTRA"
+      ],
+      "eyebrow": "FIGURE 7 / SIX FTIR–ATR TRACES",
+      "narration": "The original FTIR spectra compare untreated, plasma treated and acid grafted PLA. Band changes support surface modification but cannot, on their own, establish the complete mechanism.",
+      "tts_seconds": 12.957
+    },
+    {
+      "mode": "result",
+      "figure": 3,
+      "headline": [
+        "BACTERIAL",
+        "COLONIES"
+      ],
+      "eyebrow": "TABLE 3 / ORIGINAL ORDINAL RATINGS",
+      "narration": "Table three reports zero colonies for both grafted fibre mats in all three entries for each tested bacterium. These are laboratory assessment scores, not clinical infection outcomes.",
+      "tts_seconds": 12.138
+    },
+    {
+      "mode": "closing",
+      "figure": 5,
+      "headline": [
+        "THE CLAIM",
+        "HAS LIMITS"
+      ],
+      "eyebrow": "SURFACE SCIENCE / NOT A CLINICAL IMPLANT",
+      "narration": "The paper links surface treatment to measurable fibre properties and lower bacterial growth in vitro. It does not establish long term safety or effectiveness after implantation.",
+      "tts_seconds": 11.337
+    }
+  ],
+  "camera_treatment": "Figure-first full-frame evidence, source-labelled microscopy edits, dynamic electrospinning/plasma models, no artificial assay curves",
+  "source_pdf_sha256": "e42038169c3ad2e828d0bb99b1221dd159d44275bcb8297fad71e87f08997682",
+  "data_fidelity": "All originals are taken from the 2020 publisher study, scales retained, ordinal bacterial scores shown without redrawing."
+}
