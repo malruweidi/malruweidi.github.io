@@ -302,6 +302,53 @@ def motif(d,kind,t,annotations):
             d.ellipse((cx-13,py-11,cx+13,py+11),fill=(54,117,110))
             label(d,(cx-37,391),"STATE "+chr(65+i),GOLD,15,True)
         label(d,(733,429),"NOT A RESOLVED STRUCTURAL ENSEMBLE",GREEN,12,True,56)
+    elif kind=="letter-review":
+        # A fictional graphic device, never an actual correspondent or email.
+        card(d,(719,218,1129,402),fill=(35,59,64),outline=GREEN)
+        label(d,(747,230),"MESSAGE  /  DOCUMENT CONTEXT",GREEN,15,True,52)
+        lines=[(756,281,1055),(756,311,1085),(756,342,997)]
+        for k,(left,top,right) in enumerate(lines):
+            dx=(right-left)*min(1,max(0,t*3-k*.34))
+            d.line((left,top,left+dx,top),fill=CREAM,width=5)
+        highlight=int(756+310*t)
+        d.rectangle((highlight,329,min(1090,highlight+8),351),fill=(218,170,131,95))
+        label(d,(742,419),"FICTIONAL LAYOUT / NO ACTUAL QUOTATION",GOLD,12,True,59)
+    elif kind=="institution-form":
+        card(d,(719,208,1136,404),fill=(33,53,62),outline=GOLD)
+        label(d,(751,225),"STANDARDIZED ACADEMIC FORM",GREEN,15,True,50)
+        for k in range(5):
+            y=271+k*24
+            width=337-(k%2)*48
+            d.rectangle((753,y,753+width,y+7),fill=(84,123,125))
+        x=753+int(325*t)
+        d.line((x,271,x,384),fill=GOLD,width=3)
+        label(d,(729,419),"MODEL OF A TEMPLATE / NOT UNIVERSITY POLICY",GOLD,12,True,60)
+    elif kind=="attribution-network":
+        pts=[(734,258),(834,223),(952,249),(1093,232),(778,349),(900,365),(1081,359)]
+        edges=[(0,1),(1,2),(2,3),(0,4),(1,5),(2,5),(3,6),(4,5),(5,6)]
+        for a,b in edges:
+            d.line((*pts[a],*pts[b]),fill=(75,115,115),width=3)
+            u=min(1,max(0,3.3*t-.14*(a+b)))
+            x=mix(pts[a][0],pts[b][0],u)
+            y=mix(pts[a][1],pts[b][1],u)
+            d.ellipse((x-5,y-5,x+5,y+5),fill=GOLD)
+        for k,(x,y) in enumerate(pts):
+            d.ellipse((x-12,y-12,x+12,y+12),fill=GREEN if k<4 else (212,165,130))
+        label(d,(729,414),"CONTRIBUTIONS / HISTORICAL LINKS",GREEN,13,True)
+        label(d,(723,435),"NO IDENTITIES OR AWARDS INVENTED",GOLD,12,True)
+    elif kind=="cv-parallel":
+        d.line((728,258,1148,258),fill=GREEN,width=5)
+        d.line((728,346,1148,346),fill=GOLD,width=5)
+        for k in range(5):
+            x=737+k*96
+            radius=7+2*math.sin(k+t*8)**2
+            d.ellipse((x-radius,258-radius,x+radius,258+radius),fill=GREEN)
+            d.ellipse((x-radius,346-radius,x+radius,346+radius),fill=GOLD)
+        x=730+414*t
+        d.line((x,234,x,372),fill=(217,222,207),width=2)
+        label(d,(719,207),"RECORDED MILESTONES",GREEN,15,True,48)
+        label(d,(718,386),"UNRECORDED EXPERIENCE",GOLD,15,True,48)
+        label(d,(731,421),"ABSTRACT TIMELINE / NO DATED EVENTS",GOLD,12,True,60)
     elif kind=="editorial":
         for k,entry in enumerate(annotations):
             reveal=min(1,max(0,4*t-k*.9))
