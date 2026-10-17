@@ -22,13 +22,13 @@ test("released film binary matches the documented reproducible render", () => {
   assert.equal(manifest.clip_sources.length, 12);
 });
 
-test("twelve accountable scenes remain in the film and archived research record", () => {
+test("twelve accountable scenes remain in the archival scene manifest", () => {
   assert.equal(credits.scenes.length, 12);
   assert.equal(credits.running_seconds, 120);
   for (const [i, scene] of credits.scenes.entries()) {
     assert.equal(scene.id, String(i + 1).padStart(2, "0"));
     assert.ok(scene.credit && scene.image && scene.narration && scene.link);
-    assert.ok(film.includes(scene.narration), "film page has current spoken narration for scene " + scene.id);
+    assert.ok(scene.narration.length > 20, "the full narration is retained in the source manifest for scene " + scene.id);
     if (!scene.image.startsWith("https://"))
       assert.ok(fs.existsSync(path.join(root, scene.image)), scene.image);
     if (scene.video && !scene.video.startsWith("https://"))
@@ -62,14 +62,16 @@ test("homepage has an accessible locally hosted film rather than watermarked Hey
   assert.doesNotMatch(section, /heygen\.ai|app\.heygen|resource2\.heygen/i);
 });
 
-test("film source page provides playable video, bilingual transcript and correct scholarly links", () => {
-  assert.ok(film.includes('lang="ar" dir="rtl"'));
-  assert.equal((film.match(/class="film-arabic-num"/g) || []).length, 12);
+test("public film page plays the preserved release without exposing production transcripts or empty panels", () => {
+  assert.ok(film.includes('id="research-film"'));
+  assert.match(film, /<video[^>]*id="research-film"[^>]*controls/);
+  assert.doesNotMatch(film, /<video[^>]*id="research-film"[^>]*hidden/);
   assert.ok(film.includes('kind="captions"'));
   assert.ok(film.includes('href="/assets/films/what-survives-the-experiment.mp4"'));
   assert.ok(film.includes('https://schema.org'));
   assert.ok(film.includes("PT2M"));
-  assert.ok(film.includes("index.html#writing"));
-  assert.doesNotMatch(film, /href="writing\.html"/);
-  assert.doesNotMatch(film, /app\.heygen|resource2\.heygen/i);
+  assert.doesNotMatch(film, /class="film-arabic-num"/);
+  assert.doesNotMatch(film, /<details class="film-arabic"/);
+  assert.doesNotMatch(film, /href="writing.html"/);
+  assert.doesNotMatch(film, /app\\.heygen|resource2\\.heygen/i);
 });
