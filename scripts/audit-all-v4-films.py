@@ -55,4 +55,5 @@ def main():
     if opts.only:movies=[m for m in movies if m.stem==opts.only]
     if not movies:raise ValueError("No matching V4 MP4 outputs")
     for m in movies:make(m)
+    print("PASS: individual hash-bound contact sheets for",len(movies),"encoded V4 cuts",flush=True)
 if __name__=="__main__":main()
