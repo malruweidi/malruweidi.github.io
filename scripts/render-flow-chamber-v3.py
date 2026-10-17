@@ -32,8 +32,8 @@ SCENES=[
 {"title":"The original chamber","speech":"The published apparatus drives fluid over cells through a parallel plate flow chamber. Its components define the model, including the cover slips and the narrow channel.","source":"2020 methods article Figure 1, original experimental apparatus."},
 {"title":"One moving interface","speech":"A bubble advances across the monolayer, exposing cells to forces near the moving interface. Our animation explains the geometry without inventing numerical stress measurements.","source":"Figure 1A conceptual mechanics; no quantitative stress field simulated."},
 {"title":"Make the geometry repeatable","speech":"The cell bearing cover slip sits beneath a gasket and a second cover slip. Repeating that arrangement helps isolate exposure while limiting what the apparatus can represent.","source":"Original Figure 1C and apparatus methods."},
-{"title":"Injury becomes visible","speech":"The authors stained living and dead L2 epithelial cells after the bubble moved over the layer. Their original micrographs compare a control with the experimental group.","source":"Figure 5 A–C, live/dead stains and published control comparison."},
-{"title":"Actin provides another view","speech":"The published cytoskeleton photographs show actin filaments in green and nuclei stained blue. Comparing control and bubble exposed cells adds structural context to the viability result.","source":"Figure 6, actin cytoskeleton and DAPI in source paper."},
+{"title":"Injury becomes visible","speech":"In the original L2 cell experiment, controls showed almost no cell death. The bubble exposed group averaged around fifty three percent dead cells, across seven experimental repetitions.","source":"2020 methods paper, Expected Results, Figure 5 A–C; control 0–0.2% and bubble ~53%, seven repetitions."},
+{"title":"Actin provides another view","speech":"The actin images reveal a subtler picture. There was no significant overall change in cytoskeletal structure after one bubble, although the authors observed slight differences in filament orientation.","source":"Figure 6 and published Effects on Cytoskeletal Structure; orientation difference only, no significant structure difference."},
 {"title":"What the images establish","speech":"A mechanical insult in a simplified system can change cell viability and organization. It does not by itself tell us how a patient's entire respiratory tract will respond.","source":"Source paper Results and Discussion; in-vitro model limitations."},
 {"title":"A model, not a lung","speech":"The chamber makes a hidden physical event experimentally accessible. Its strength is repeatability; its limit is the distance between a cell monolayer and the living lung.","source":"Experimental model scope; no clinical extrapolation."}
 ]
@@ -88,10 +88,9 @@ def s0(im,d,t):
  bubble(d,t,-170)
  write(d,(56,606),"A migrating air–liquid interface over cultured epithelium",16,MINT)
 def s1(im,d,t):
- title(d,["THE CHAMBER","WAS REAL"],n=49)
- d=figure(im,d,1,(460,139,1224,580))
- write(d,(60,530),"Figure 1:",24,ORANGE,"bold")
- write(d,(60,569),"Original study apparatus",19,PALE)
+ write(d,(56,116),"THE EXPERIMENTAL APPARATUS",42,PALE,"serif")
+ d=figure(im,d,1,(62,203,1217,608))
+ write(d,(72,621),"Real syringe pump and parallel-plate chamber / published Figure 1",16,MINT)
 def s2(im,d,t):
  title(d,["THE BUBBLE","MOVES"])
  film_cells(d,t)
@@ -112,15 +111,13 @@ def s3(im,d,t):
   d.ellipse((x,536,x+22,550),fill=RED if i%5==0 else MINT)
  write(d,(490,611),"Exploded explanatory geometry; actual apparatus in Figure 1",15,MINT)
 def s4(im,d,t):
- title(d,["LIVE / DEAD","ASSAY"],n=50)
- d=figure(im,d,5,(398,155,1214,594),"CONTROL AND BUBBLE GROUP")
- write(d,(63,562),"Green: live",18,MINT)
- write(d,(63,588),"Red: dead",18,RED)
+ write(d,(54,113),"THE L2 CELL-VIABILITY EXPERIMENT",39,PALE,"serif")
+ d=figure(im,d,5,(69,198,1221,592),"A–C / COMPLETE PUBLISHED PANEL")
+ write(d,(80,612),"Control: ~0–0.2%  /  Bubble exposure: ~53% dead; n=7, p<0.01",17,MINT)
 def s5(im,d,t):
- title(d,["CYTOSKELETAL","RESPONSE"],n=44)
- d=figure(im,d,6,(404,157,1217,592),"STAINED ACTIN AND DAPI")
- write(d,(59,565),"Actin / green",17,MINT)
- write(d,(60,594),"Nuclei / blue",17,BLUE)
+ write(d,(55,112),"THE ACTIN CYTOSKELETON",42,PALE,"serif")
+ d=figure(im,d,6,(69,200,1218,594),"A–B / CONTROL VS BUBBLE")
+ write(d,(77,613),"No significant overall structural change / slight orientation differences",16,MINT)
 def s6(im,d,t):
  title(d,["AN ASSAY","HAS LIMITS"],n=53)
  film_cells(d,t,dead=True)
