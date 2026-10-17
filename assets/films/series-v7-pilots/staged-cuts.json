@@ -253,11 +253,11 @@
       "captions": "/assets/films/series-v7-pilots/essay-proximity.vtt",
       "manifest": "/assets/films/series-v7-pilots/essay-proximity.json",
       "contact": "/assets/films/series-v7-pilots/essay-proximity.contact.webp",
-      "visual_revision": "v7.3-caption-safe/film-specific",
-      "sha256": "66894fc557d2cc9ea666cce2ead72e9afad6a517af0eda65337a9e6916aed9c6",
+      "visual_revision": "v7.3-caption-safe/v7.7-event-driven-pharmacology",
+      "sha256": "7412cdd712a785b13ba844277558f7c67d448f654e1567ee08ce3aac0bf52f64",
       "seconds": 84.0,
-      "unique_mechanism_scenes": 5,
-      "creative_review": "needs_chapter_art_direction"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "essay-scientific-credit",
