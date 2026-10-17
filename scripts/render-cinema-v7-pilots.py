@@ -117,9 +117,12 @@ def complete(slug):
   return False
  try:
   record=json.loads(paths[-1].read_text())
+  valid_source=(slug!="cerebral-cilia" or
+      all("figure-zebrafish-microscopy.jpg" not in str(b.get("source",""))
+          for b in record.get("beats",[])))
   return (record["slug"]==slug and record["visual_beat_count"]==24 and
           record["movie_sha256"]==hashlib.sha256(paths[0].read_bytes()).hexdigest() and
-          paths[1].read_text().startswith("WEBVTT"))
+          paths[1].read_text().startswith("WEBVTT") and valid_source)
  except (OSError,KeyError,ValueError,TypeError):
   return False
 
