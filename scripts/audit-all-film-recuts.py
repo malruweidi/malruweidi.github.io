@@ -88,6 +88,8 @@ def inspect(film,collection):
     meta1=collection/(film+".json")
     meta2=collection/(film+"-feature-build.json")
     meta3=collection/(film+"-build.json")
+    if film=="two-materials-no-section-evidence-cut":
+        meta3=collection/"two-materials-no-section-build.json"
     manifest=next((p for p in (meta1,meta2,meta3) if p.is_file()),None)
     if manifest is None:raise ValueError("Missing independent film provenance: "+film)
     record=json.loads(manifest.read_text(encoding="utf8"))
