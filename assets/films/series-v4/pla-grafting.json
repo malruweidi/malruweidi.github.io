@@ -52,7 +52,7 @@
   "separate_explanatory_animation": true,
   "new_science_fabricated": false,
   "duration_seconds": 120.0,
-  "sha256": "7967fc202e6dcb4a4a3e9d4621ea0f4006d49d94d7810433c3ab2522f74d4d41",
+  "sha256": "c5015d1d85f4e959fda7ce91a5f3209fb9a8b213c89e28c0ddd70bb2375effab",
   "human_review": "NOT APPROVED — listen, watch, verify panel identities and licensing before live embed",
   "narrator": "Kokoro ONNX, synthetic, not a real researcher narration",
   "chapters": [
@@ -142,7 +142,7 @@
       ],
       "eyebrow": "SEPARATE 2021 PLA FILM PAPER",
       "narration": "These results describe PLA film and aluminium peel adhesion. They must not be illustrated with the separate twenty twenty antimicrobial electrospun scaffold experiment.",
-      "tts_seconds": 11.145
+      "tts_seconds": 11.135
     }
   ]
 }
