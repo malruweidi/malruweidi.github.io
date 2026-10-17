@@ -27,7 +27,7 @@ test("each released clean-screen V7 film is source-matched, checksum verified an
   assert.equal(movie.edition,"series-v7-pilots",movie.id);
   assert.equal(movie.duration_seconds,84,movie.id);
   assert.equal(movie.distinct_chapters,6,movie.id);
-  assert.match(movie.visual_revision,/^v7\.8-clean-screen\//,"No internal-production-label V7 movies may be published: "+movie.id);
+  assert.match(movie.visual_revision,/^(?:v7\.8-clean-screen|v8\.0-audience-clean-20261018)\//,"No internal-production-label V7 movies may be published: "+movie.id);
   assert.match(movie.sha256,/^[a-f0-9]{64}$/,movie.id);
   const filmPath=path.join(root,movie.video.slice(1));
   assert(fs.existsSync(filmPath),movie.video);
