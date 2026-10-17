@@ -178,9 +178,7 @@ def s7(im,d,t):
 DRAWERS=[s0,s1,s2,s3,s4,s5,s6,s7]
 def make_frame(k,t):
  im=canvas()
- d=ImageDraw.Draw(im)
- DRAWERS[k](im,d,t)
- return im,d
+ return im,ImageDraw.Draw(im)
 def verify():
  meta=json.loads((SOURCE/"source-figure-provenance.json").read_text())
  rows={r["figure_number"]:r for r in meta["figures"] if r["film"]==ID}
@@ -192,6 +190,8 @@ def verify():
   assert rows[n]["caption"] and rows[n]["license"].startswith("Creative Commons")
 def main():
  verify()
+ source_manifest=json.loads((SOURCE/"source-figure-provenance.json").read_text())
+ rows={r["figure_number"]:r for r in source_manifest["figures"] if r["film"]==ID}
  path=ROOT/"scripts/render-making-medicines-v3.py"
  spec=importlib.util.spec_from_file_location("ruwaidix_audio_encoder",path)
  engine=importlib.util.module_from_spec(spec)
