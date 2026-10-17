@@ -109,6 +109,9 @@ function choose(film,scroll){
 current=film;
 const d=directions[film[0]];
 E("selected").innerHTML='<p class="kicker">'+clock(film[2])+' / original and recut</p><h2>'+esc(film[1])+'</h2><p>'+esc(d.theme)+'</p>';
+if(film[0]==="making-medicines-keep"){
+  E("selected").innerHTML+='<p><a href="/assets/films/historical-manuscript-source-register.json">Primary manuscript research: British Library Or 5786 and Cambridge image rights ↗</a></p>';
+}
 E("theme").textContent=d.theme;
 E("constraint").textContent=d.strict;
 E("production").textContent=d.production_treatment||"All original archival photographs and motion records retain their attribution.";
