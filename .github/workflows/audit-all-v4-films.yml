@@ -4,6 +4,8 @@ on:
     branches: [film-remake-20261017]
     paths:
       - scripts/audit-all-v4-films.py
+      - assets/films/series-v4/*.mp4
+      - assets/films/series-v4/*.json
       - .github/workflows/audit-all-v4-films.yml
   workflow_dispatch:
 permissions:
