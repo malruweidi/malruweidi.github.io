@@ -1,7 +1,7 @@
 {
   "id": "niosomes",
   "seconds": 84.0,
-  "sha256": "6f1d941fd4681ec460a17d17d4ef09dfd29c8d171f3b1945bb748f4d3ef02fd3",
+  "sha256": "633d98666c7711448e44aa96b681d02a911db1b3258e82fe5903360f96fcdd26",
   "primary_source": "/research/inhalable-vesicles.html",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
@@ -58,12 +58,21 @@
   ],
   "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
   "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
   "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
   "animated_scene_ids": [
-    "01",
+    "02",
+    "03",
+    "04",
     "05"
   ],
   "motion_motif": "vesicle",
+  "motion_storyboard": {
+    "02": "vesicle",
+    "03": "molecule",
+    "04": "vesicle",
+    "05": "translation"
+  },
   "motion_annotations": [
     "Surfactant membrane",
     "Aerosol stress",
