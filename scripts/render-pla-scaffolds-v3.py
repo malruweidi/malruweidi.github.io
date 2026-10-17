@@ -69,8 +69,10 @@ def actual(im,d,key,rect,bounds,caption):
  txt(d,rect[0]+6,rect[3]+11,caption,13,MINT)
 def fibers(d,t,small=False):
  for k in range(19):
-  x1=310+(k%5)*110
-  x2=650+(k%7)*87
+  # Keep the complete fibre field on the specimen side of the edit;
+  # technical headings must never be obscured by a decorative overlay.
+  x1=605+(k%3)*14
+  x2=1218-(k%4)*9
   y=165+k*23
   points=[]
   for j in range(30):
