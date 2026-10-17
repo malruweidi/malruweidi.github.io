@@ -1,0 +1,1337 @@
+{
+  "name": "Ruwaidix Cinema V7 source-safe storyboards",
+  "count": 35,
+  "films": [
+    {
+      "slug": "airway-reopening",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The violence inside a breath",
+          "phase": 0,
+          "real_image": true,
+          "image_source": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Published research figure: parallel-plate experimental geometry",
+          "file": "assets/films/quality-review-v7/airway-reopening-s01-p0.webp"
+        },
+        {
+          "title": "The violence inside a breath",
+          "phase": 1,
+          "real_image": true,
+          "image_source": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Published research figure: parallel-plate experimental geometry",
+          "file": "assets/films/quality-review-v7/airway-reopening-s01-p1.webp"
+        },
+        {
+          "title": "The violence inside a breath",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/airway-reopening-s01-p2.webp"
+        },
+        {
+          "title": "The violence inside a breath",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/airway-reopening-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "cerebral-cilia",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "What tells a vessel where to grow?",
+          "phase": 0,
+          "real_image": true,
+          "image_source": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Published zebrafish research imagery",
+          "file": "assets/films/quality-review-v7/cerebral-cilia-s01-p0.webp"
+        },
+        {
+          "title": "What tells a vessel where to grow?",
+          "phase": 1,
+          "real_image": true,
+          "image_source": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Published zebrafish research imagery",
+          "file": "assets/films/quality-review-v7/cerebral-cilia-s01-p1.webp"
+        },
+        {
+          "title": "What tells a vessel where to grow?",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/cerebral-cilia-s01-p2.webp"
+        },
+        {
+          "title": "What tells a vessel where to grow?",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/cerebral-cilia-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "slit2-robo",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A promising target can change sides",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/slit2-robo-s01-p0.webp"
+        },
+        {
+          "title": "A promising target can change sides",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/slit2-robo-s01-p1.webp"
+        },
+        {
+          "title": "A promising target can change sides",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/slit2-robo-s01-p2.webp"
+        },
+        {
+          "title": "A promising target can change sides",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/slit2-robo-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "curcumin-cyanide",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "Colour is evidence, but of what?",
+          "phase": 0,
+          "real_image": true,
+          "image_source": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Published cyanide sensor figure",
+          "file": "assets/films/quality-review-v7/curcumin-cyanide-s01-p0.webp"
+        },
+        {
+          "title": "Colour is evidence, but of what?",
+          "phase": 1,
+          "real_image": true,
+          "image_source": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Published cyanide sensor figure",
+          "file": "assets/films/quality-review-v7/curcumin-cyanide-s01-p1.webp"
+        },
+        {
+          "title": "Colour is evidence, but of what?",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/curcumin-cyanide-s01-p2.webp"
+        },
+        {
+          "title": "Colour is evidence, but of what?",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/curcumin-cyanide-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "making-medicines-keep",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The medicine had to last",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/making-medicines-keep-s01-p0.webp"
+        },
+        {
+          "title": "The medicine had to last",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/making-medicines-keep-s01-p1.webp"
+        },
+        {
+          "title": "The medicine had to last",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/making-medicines-keep-s01-p2.webp"
+        },
+        {
+          "title": "The medicine had to last",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/making-medicines-keep-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "niosomes",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The vial is not the lung",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/niosomes-s01-p0.webp"
+        },
+        {
+          "title": "The vial is not the lung",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/niosomes-s01-p1.webp"
+        },
+        {
+          "title": "The vial is not the lung",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/niosomes-s01-p2.webp"
+        },
+        {
+          "title": "The vial is not the lung",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/niosomes-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "echo-cnn-lstm",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A heart before birth",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/echo-cnn-lstm-s01-p0.webp"
+        },
+        {
+          "title": "A heart before birth",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/echo-cnn-lstm-s01-p1.webp"
+        },
+        {
+          "title": "A heart before birth",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/echo-cnn-lstm-s01-p2.webp"
+        },
+        {
+          "title": "A heart before birth",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/echo-cnn-lstm-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "pla-grafting",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "One material, two surfaces",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/pla-grafting-s01-p0.webp"
+        },
+        {
+          "title": "One material, two surfaces",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/pla-grafting-s01-p1.webp"
+        },
+        {
+          "title": "One material, two surfaces",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/pla-grafting-s01-p2.webp"
+        },
+        {
+          "title": "One material, two surfaces",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/pla-grafting-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "pla-scaffolds",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The scaffold is not inert",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/pla-scaffolds-s01-p0.webp"
+        },
+        {
+          "title": "The scaffold is not inert",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/pla-scaffolds-s01-p1.webp"
+        },
+        {
+          "title": "The scaffold is not inert",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/pla-scaffolds-s01-p2.webp"
+        },
+        {
+          "title": "The scaffold is not inert",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/pla-scaffolds-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "flow-chamber-method",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "How do you study an injury you cannot hold?",
+          "phase": 0,
+          "real_image": true,
+          "image_source": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Published experimental flow-chamber figure",
+          "file": "assets/films/quality-review-v7/flow-chamber-method-s01-p0.webp"
+        },
+        {
+          "title": "How do you study an injury you cannot hold?",
+          "phase": 1,
+          "real_image": true,
+          "image_source": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Published experimental flow-chamber figure",
+          "file": "assets/films/quality-review-v7/flow-chamber-method-s01-p1.webp"
+        },
+        {
+          "title": "How do you study an injury you cannot hold?",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/flow-chamber-method-s01-p2.webp"
+        },
+        {
+          "title": "How do you study an injury you cannot hold?",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/flow-chamber-method-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "zebrafish-hemodynamics",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The blood moves before we can count it",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/zebrafish-hemodynamics-s01-p0.webp"
+        },
+        {
+          "title": "The blood moves before we can count it",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/zebrafish-hemodynamics-s01-p1.webp"
+        },
+        {
+          "title": "The blood moves before we can count it",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/zebrafish-hemodynamics-s01-p2.webp"
+        },
+        {
+          "title": "The blood moves before we can count it",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/zebrafish-hemodynamics-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "ace2-covid-drugs",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A therapy can change the system around it",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ace2-covid-drugs-s01-p0.webp"
+        },
+        {
+          "title": "A therapy can change the system around it",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ace2-covid-drugs-s01-p1.webp"
+        },
+        {
+          "title": "A therapy can change the system around it",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ace2-covid-drugs-s01-p2.webp"
+        },
+        {
+          "title": "A therapy can change the system around it",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ace2-covid-drugs-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "gi-autoimmunity-1",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The intestine is not simply a tube",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/gi-autoimmunity-1-s01-p0.webp"
+        },
+        {
+          "title": "The intestine is not simply a tube",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/gi-autoimmunity-1-s01-p1.webp"
+        },
+        {
+          "title": "The intestine is not simply a tube",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/gi-autoimmunity-1-s01-p2.webp"
+        },
+        {
+          "title": "The intestine is not simply a tube",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/gi-autoimmunity-1-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "gi-autoimmunity-2",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The symptoms do not name the disease",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/gi-autoimmunity-2-s01-p0.webp"
+        },
+        {
+          "title": "The symptoms do not name the disease",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/gi-autoimmunity-2-s01-p1.webp"
+        },
+        {
+          "title": "The symptoms do not name the disease",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/gi-autoimmunity-2-s01-p2.webp"
+        },
+        {
+          "title": "The symptoms do not name the disease",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/gi-autoimmunity-2-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "heart-failure-sensors",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "Can the heart warn us early?",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/heart-failure-sensors-s01-p0.webp"
+        },
+        {
+          "title": "Can the heart warn us early?",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/heart-failure-sensors-s01-p1.webp"
+        },
+        {
+          "title": "Can the heart warn us early?",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/heart-failure-sensors-s01-p2.webp"
+        },
+        {
+          "title": "Can the heart warn us early?",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/heart-failure-sensors-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "ace2-forms",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "One protein, different places",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ace2-forms-s01-p0.webp"
+        },
+        {
+          "title": "One protein, different places",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ace2-forms-s01-p1.webp"
+        },
+        {
+          "title": "One protein, different places",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ace2-forms-s01-p2.webp"
+        },
+        {
+          "title": "One protein, different places",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ace2-forms-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "microfluidic-virus",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A laboratory in a narrow channel",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/microfluidic-virus-s01-p0.webp"
+        },
+        {
+          "title": "A laboratory in a narrow channel",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/microfluidic-virus-s01-p1.webp"
+        },
+        {
+          "title": "A laboratory in a narrow channel",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/microfluidic-virus-s01-p2.webp"
+        },
+        {
+          "title": "A laboratory in a narrow channel",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/microfluidic-virus-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "drug-release-twins",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A medicine can have a second life in a model",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/drug-release-twins-s01-p0.webp"
+        },
+        {
+          "title": "A medicine can have a second life in a model",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/drug-release-twins-s01-p1.webp"
+        },
+        {
+          "title": "A medicine can have a second life in a model",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/drug-release-twins-s01-p2.webp"
+        },
+        {
+          "title": "A medicine can have a second life in a model",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/drug-release-twins-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "food-printing",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "Edible material meets geometry",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/food-printing-s01-p0.webp"
+        },
+        {
+          "title": "Edible material meets geometry",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/food-printing-s01-p1.webp"
+        },
+        {
+          "title": "Edible material meets geometry",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/food-printing-s01-p2.webp"
+        },
+        {
+          "title": "Edible material meets geometry",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/food-printing-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "ceramics-printing",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A patient will live with the material",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ceramics-printing-s01-p0.webp"
+        },
+        {
+          "title": "A patient will live with the material",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ceramics-printing-s01-p1.webp"
+        },
+        {
+          "title": "A patient will live with the material",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ceramics-printing-s01-p2.webp"
+        },
+        {
+          "title": "A patient will live with the material",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/ceramics-printing-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "cubosome-theranostics",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A cube may hide a labyrinth",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/cubosome-theranostics-s01-p0.webp"
+        },
+        {
+          "title": "A cube may hide a labyrinth",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/cubosome-theranostics-s01-p1.webp"
+        },
+        {
+          "title": "A cube may hide a labyrinth",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/cubosome-theranostics-s01-p2.webp"
+        },
+        {
+          "title": "A cube may hide a labyrinth",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/cubosome-theranostics-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "micelles-pahs",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "Some molecules refuse the water",
+          "phase": 0,
+          "real_image": true,
+          "image_source": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Documented unsuccessful original polymer trial photo",
+          "file": "assets/films/quality-review-v7/micelles-pahs-s01-p0.webp"
+        },
+        {
+          "title": "Some molecules refuse the water",
+          "phase": 1,
+          "real_image": true,
+          "image_source": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Documented unsuccessful original polymer trial photo",
+          "file": "assets/films/quality-review-v7/micelles-pahs-s01-p1.webp"
+        },
+        {
+          "title": "Some molecules refuse the water",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/micelles-pahs-s01-p2.webp"
+        },
+        {
+          "title": "Some molecules refuse the water",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/micelles-pahs-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "heterocycle-cancer",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A ring is an intention until it exists",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/heterocycle-cancer-s01-p0.webp"
+        },
+        {
+          "title": "A ring is an intention until it exists",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/heterocycle-cancer-s01-p1.webp"
+        },
+        {
+          "title": "A ring is an intention until it exists",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/heterocycle-cancer-s01-p2.webp"
+        },
+        {
+          "title": "A ring is an intention until it exists",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/heterocycle-cancer-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "histology-failure",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A section begins before the blade",
+          "phase": 0,
+          "real_image": true,
+          "image_source": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Original firsthand photographs of zebrafish orientation procedure",
+          "file": "assets/films/quality-review-v7/histology-failure-s01-p0.webp"
+        },
+        {
+          "title": "A section begins before the blade",
+          "phase": 1,
+          "real_image": true,
+          "image_source": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Original firsthand photographs of zebrafish orientation procedure",
+          "file": "assets/films/quality-review-v7/histology-failure-s01-p1.webp"
+        },
+        {
+          "title": "A section begins before the blade",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/histology-failure-s01-p2.webp"
+        },
+        {
+          "title": "A section begins before the blade",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/histology-failure-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "cairo-microscope",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The instrument was mine",
+          "phase": 0,
+          "real_image": true,
+          "image_source": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Original archival photograph of the user's own microscope",
+          "file": "assets/films/quality-review-v7/cairo-microscope-s01-p0.webp"
+        },
+        {
+          "title": "The instrument was mine",
+          "phase": 1,
+          "real_image": true,
+          "image_source": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Original archival photograph of the user's own microscope",
+          "file": "assets/films/quality-review-v7/cairo-microscope-s01-p1.webp"
+        },
+        {
+          "title": "The instrument was mine",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/cairo-microscope-s01-p2.webp"
+        },
+        {
+          "title": "The instrument was mine",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/cairo-microscope-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "essay-life-between-diagnoses",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "Before the degree",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-life-between-diagnoses-s01-p0.webp"
+        },
+        {
+          "title": "Before the degree",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-life-between-diagnoses-s01-p1.webp"
+        },
+        {
+          "title": "Before the degree",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-life-between-diagnoses-s01-p2.webp"
+        },
+        {
+          "title": "Before the degree",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-life-between-diagnoses-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "essay-ai-email",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The crime was a polished email",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-ai-email-s01-p0.webp"
+        },
+        {
+          "title": "The crime was a polished email",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-ai-email-s01-p1.webp"
+        },
+        {
+          "title": "The crime was a polished email",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-ai-email-s01-p2.webp"
+        },
+        {
+          "title": "The crime was a polished email",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-ai-email-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "essay-machine-language",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The style existed before the chatbot",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-machine-language-s01-p0.webp"
+        },
+        {
+          "title": "The style existed before the chatbot",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-machine-language-s01-p1.webp"
+        },
+        {
+          "title": "The style existed before the chatbot",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-machine-language-s01-p2.webp"
+        },
+        {
+          "title": "The style existed before the chatbot",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-machine-language-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "essay-academic-mental-health",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A CV tells the wrong kind of time",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-academic-mental-health-s01-p0.webp"
+        },
+        {
+          "title": "A CV tells the wrong kind of time",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-academic-mental-health-s01-p1.webp"
+        },
+        {
+          "title": "A CV tells the wrong kind of time",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-academic-mental-health-s01-p2.webp"
+        },
+        {
+          "title": "A CV tells the wrong kind of time",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-academic-mental-health-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "essay-scientific-credit",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "An award fits a few names",
+          "phase": 0,
+          "real_image": true,
+          "image_source": "assets/2017-acs-el-sayed-group.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+          "file": "assets/films/quality-review-v7/essay-scientific-credit-s01-p0.webp"
+        },
+        {
+          "title": "An award fits a few names",
+          "phase": 1,
+          "real_image": true,
+          "image_source": "assets/2017-acs-el-sayed-group.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+          "file": "assets/films/quality-review-v7/essay-scientific-credit-s01-p1.webp"
+        },
+        {
+          "title": "An award fits a few names",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-scientific-credit-s01-p2.webp"
+        },
+        {
+          "title": "An award fits a few names",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-scientific-credit-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "essay-tf-states",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The pocket is not the protein",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-tf-states-s01-p0.webp"
+        },
+        {
+          "title": "The pocket is not the protein",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-tf-states-s01-p1.webp"
+        },
+        {
+          "title": "The pocket is not the protein",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-tf-states-s01-p2.webp"
+        },
+        {
+          "title": "The pocket is not the protein",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-tf-states-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "essay-potency-exposure",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The perfect number",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-potency-exposure-s01-p0.webp"
+        },
+        {
+          "title": "The perfect number",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-potency-exposure-s01-p1.webp"
+        },
+        {
+          "title": "The perfect number",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-potency-exposure-s01-p2.webp"
+        },
+        {
+          "title": "The perfect number",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-potency-exposure-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "essay-trna",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A translator inside every cell",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-trna-s01-p0.webp"
+        },
+        {
+          "title": "A translator inside every cell",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-trna-s01-p1.webp"
+        },
+        {
+          "title": "A translator inside every cell",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-trna-s01-p2.webp"
+        },
+        {
+          "title": "A translator inside every cell",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-trna-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "essay-proximity",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "The drug is not a cork in a hole",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-proximity-s01-p0.webp"
+        },
+        {
+          "title": "The drug is not a cork in a hole",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-proximity-s01-p1.webp"
+        },
+        {
+          "title": "The drug is not a cork in a hole",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-proximity-s01-p2.webp"
+        },
+        {
+          "title": "The drug is not a cork in a hole",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-proximity-s01-p3.webp"
+        }
+      ]
+    },
+    {
+      "slug": "essay-adc",
+      "scene": "01",
+      "frames": [
+        {
+          "title": "A guided payload still travels through a body",
+          "phase": 0,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-adc-s01-p0.webp"
+        },
+        {
+          "title": "A guided payload still travels through a body",
+          "phase": 1,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-adc-s01-p1.webp"
+        },
+        {
+          "title": "A guided payload still travels through a body",
+          "phase": 2,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-adc-s01-p2.webp"
+        },
+        {
+          "title": "A guided payload still travels through a body",
+          "phase": 3,
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "file": "assets/films/quality-review-v7/essay-adc-s01-p3.webp"
+        }
+      ]
+    }
+  ],
+  "human_approval": "NOT COMPLETE: scientific peer and artistic review required before replacing published films"
+}
