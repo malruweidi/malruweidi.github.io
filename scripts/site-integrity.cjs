@@ -46,6 +46,36 @@ if(!c.includes("2017-chick-embryo-incubator.webp"))error("stories.html","chick p
 for(const f of paths.filter(x=>x.endsWith(".js"))){const p=cp.spawnSync(process.execPath,["--check",path.join(root,f)],{encoding:"utf8"});if(p.status!==0)error(f,"JavaScript parse error "+String(p.stderr).slice(0,100));}
 const pending=JSON.parse(fs.readFileSync(path.join(root,"assets/archival-2019-2020-provenance.json")));const absent=(pending.assets||[]).filter(x=>!known.has(x.path));
 if(absent.length)warnings.push(absent.length+" owner-identified 2019-2020 images still lack publishable binaries; cards hidden");
+// Ruwaidix editorial architecture invariants: prevent loss of reader paths and release regressions.
+const home=html.get("index.html")||"";
+const checkpoints=['class="rx-evidence-index"','id="research"','id="publications"','id="film"','class="rh-home-entry"','class="rx-chapters"','id="story"'];
+const positions=checkpoints.map(x=>home.indexOf(x));
+if(positions.some((p,i)=>p<0||(i>0&&p<=positions[i-1])))error("index.html","research-first homepage sections are missing or out of order");
+for(const [route,sourceFile] of [["/research.html","research.html"],["/publications.html","publications.html"]]){
+ if(!known.has(sourceFile)||!home.includes('href="'+route+'"'))error("navigation","canonical hub missing from home "+route);
+ const xml=fs.readFileSync(path.join(root,"sitemap.xml"),"utf8");
+ if(!xml.includes("https://malruweidi.github.io"+route))error("sitemap.xml","new hub absent "+route);
+}
+if(!home.includes('class="rx-more"')||!home.includes('href="#research"'))error("index.html","secondary navigation no longer preserves in-page research route");
+const academic=html.get("cv.html")||"";
+if([...academic.matchAll(/<h2 class="label">/g)].length!==7)error("cv.html","academic CV requires seven semantic section headings");
+const bibliography=html.get("publications.html")||"";
+if([...bibliography.matchAll(/class="pub-card"/g)].length<20)error("publications.html","curated bibliography unexpectedly lost entries");
+const cinema=html.get("publication-cinema.html")||"";
+if(!cinema.includes("const selectedEdition=isV6?")||!cinema.includes("releasedV6=new Map("))error("publication-cinema.html","film release manifest must take precedence over legacy editions");
+try{
+ const releases=JSON.parse(fs.readFileSync(path.join(root,"assets/films/series-v6/releases.json"),"utf8"));
+ if(releases.schema!=="ruwaidix-film-releases-v1"||!Array.isArray(releases.films)||releases.count!==releases.films.length)error("film releases","V6 index schema or count mismatch");
+ const seen=new Set();
+ for(const film of releases.films||[]){
+  if(!/^[a-z0-9-]+$/.test(film.id||"")||seen.has(film.id))error("film releases","invalid or repeated release id "+film.id);
+  seen.add(film.id);
+  if(!Number.isFinite(Number(film.duration_seconds))||Number(film.duration_seconds)<=0)error("film releases","invalid film duration "+film.id);
+  for(const ext of ["mp4","vtt","json","webp"])requireFile("assets/films/series-v6/"+film.id+"."+ext);
+ }
+}catch(err){error("film releases","could not validate release manifest: "+err.message);}
+const discovery=JSON.parse(fs.readFileSync(path.join(root,"assets/discovery-index.json"),"utf8"));
+for(const route of ["/research.html","/publications.html"])if(!(discovery.items||[]).some(x=>x.url===route))error("discovery","new hub missing from discovery index: "+route);
 console.log("Audited "+htmls.length+" HTML pages, "+paths.filter(x=>x.endsWith(".js")).length+" scripts, "+linkCount+" links, "+assetCount+" static references.");
 for(const w of [...new Set(warnings)])console.warn("WARN "+w);
 for(const e of [...new Set(errors)])console.error("FAIL "+e);
