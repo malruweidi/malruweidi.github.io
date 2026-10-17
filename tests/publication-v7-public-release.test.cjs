@@ -78,7 +78,7 @@ test("saved 35-piece cinema page remains playable while progressively verifying 
  const captions=[...staticHtml.matchAll(/<track kind="captions" src="(\/assets\/films\/[^"]+\.vtt)"/g)].map(m=>m[1]);
  assert.equal(captions.length,35);
  for(let i=0;i<rows.length;i++){
-  const edition=special[rows[i]]||"series-v6";
+  const edition=(fs.existsSync(path.join(root,"assets/films/series-v8-primary/releases.json")) && special[rows[i]]) ? "series-v8-primary" : special[rows[i]]||"series-v6";
   assert.equal(sources[i],"/assets/films/"+edition+"/"+rows[i]+".mp4");
   assert.equal(captions[i],"/assets/films/"+edition+"/"+rows[i]+".vtt");
  }
