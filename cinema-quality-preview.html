@@ -133,7 +133,7 @@ footer{padding:35px 0 60px;border-top:1px solid var(--hair);color:var(--muted);f
       (x.id+" "+x.title+" "+x.publication).toLowerCase().includes(q));
    stageGrid.innerHTML=items.length?items.map(x=>
       '<article class="story"><img loading="lazy" decoding="async" src="'+esc(x.poster)+'" alt="'+esc(x.title)+' — original V7 storyboard frame">'+
-      '<div class="copy"><p>84-SECOND REVIEW CUT · UNAPPROVED</p><h3>'+esc(x.title)+'</h3>'+
+      '<div class="copy"><p>84-SECOND REVIEW CUT · '+(Number.isFinite(x.unique_mechanism_scenes)?x.unique_mechanism_scenes+'/6 distinct chapter visuals':'awaiting frame audit')+'</p><h3>'+esc(x.title)+'</h3>'+
       '<p>'+esc(x.publication)+'</p><div class="actions stage-actions">'+
       '<button type="button" data-stage-film="'+esc(x.id)+'">Play revised cut</button>'+
       (x.contact?'<a href="'+esc(x.contact)+'" target="_blank" rel="noopener">Inspect all six frames ↗</a>':"")+
@@ -166,7 +166,8 @@ footer{padding:35px 0 60px;border-top:1px solid var(--hair);color:var(--muted);f
              continue;
          staging.set(entry.id,entry);
       }
-      stageStatus.textContent=staging.size+" / "+data.total_eligible+" eligible cuts available for creative review";
+      const repeated=[...staging.values()].filter(x=>x.creative_review==="needs_chapter_art_direction").length;
+      stageStatus.textContent=staging.size+" / "+data.total_eligible+" renders · "+repeated+" still require individual scene artwork · none yet approved for replacement";
       stageRender();
    })
    .catch(()=>{
