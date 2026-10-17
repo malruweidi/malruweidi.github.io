@@ -17,6 +17,8 @@ test('website selects registered editions, preserves research-specific versions 
   const html=fs.readFileSync(path.join(root,'publication-cinema.html'),'utf8');
   assert.match(html,/const selectedEdition=verifiedResearchEdition \|\|/);
   assert.match(html,/releasedV6\.get\(x\.id\)/);
+  assert.match(html,/releasedV7\.get\(x\.id\)/);
+  assert.match(html,/Watch preserved previous V6 edition/);
   assert.match(html,/selectedEdition\?selectedEdition\.edition:"series"/);
   assert.match(html,/Watch preserved original first edition/);
 });
@@ -99,7 +101,7 @@ test('documentary collection links its already released work instead of labellin
 
 test('verified primary-source research films are preferred to generic release-index entries',()=>{
   const html=fs.readFileSync(path.join(root,'publication-cinema.html'),'utf8');
-  assert.match(html,/let sourcePoster=verifiedFilmMasters\[x\.id\]\?\.poster \|\| releasedV6\.get\(x\.id\)\?\.poster/);
+  assert.match(html,/let sourcePoster=verifiedFilmMasters\[x\.id\]\?\.poster \|\| releasedV7\.get\(x\.id\)\?\.poster \|\| releasedV6\.get\(x\.id\)\?\.poster/);
   assert.match(html,/const v6Release=verifiedResearchEdition\?null:releasedV6\.get\(x\.id\)/);
   assert.match(html,/const selectedEdition=verifiedResearchEdition \|\|/);
 });
