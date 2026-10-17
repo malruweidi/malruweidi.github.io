@@ -5,6 +5,7 @@ on:
     paths:
       - scripts/render-pla-scaffolds-v3.py
       - .github/workflows/render-pla-scaffolds-v3.yml
+      - scripts/audit-new-v3-study-cuts.py
   workflow_dispatch:
 permissions: {contents: write}
 concurrency: {group: ruwaidix-pla-scaffolds-2020-v3, cancel-in-progress: false}
@@ -52,11 +53,13 @@ jobs:
           assert "NOT APPROVED" in meta["human_review"]
           print("2020 source-only scaffold science film is technically valid; human approval pending")
           PY
+      - name: Inspect real encoded frames, original-asset SHA and complete source credits for this specific film
+        run: python scripts/audit-new-v3-study-cuts.py --only pla-scaffolds
       - name: Commit independently; never replace the previous paper or any live film
         run: |
           git config user.name "Ruwaidix Scientific Materials Cinema"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/films/series-v3/pla-scaffolds.*
+          git add assets/films/series-v3/pla-scaffolds.* assets/films/series-v3/qa/pla-scaffolds-contact.jpg assets/films/series-v3/qa/pla-scaffolds-contact.json
           if ! git diff --cached --quiet; then
             git commit -m "Render actual-2020-scaffold figure-backed eight-scene materials documentary"
             git fetch origin "${{ github.ref_name }}"
