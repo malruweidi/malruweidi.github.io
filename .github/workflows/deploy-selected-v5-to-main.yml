@@ -58,25 +58,29 @@ jobs:
           cp assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg /tmp/ruwaidix-selected-main/assets/films/source-figures/v4/pla-scaffolds/
           python - <<'PY'
           from pathlib import Path
+          import re
           file=Path("/tmp/ruwaidix-selected-main/publication-cinema.html")
           text=file.read_text()
-          start='  const verifiedFilmMasters=Object.freeze({'
-          assert text.count(start)==1
-          old='   "flow-chamber-method":{edition:"series-v3",duration:120,poster:"/assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg"}'
-          new='   "flow-chamber-method":{edition:"series-v5",duration:120,poster:"/assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg"}'
-          assert old in text or new in text
-          text=text.replace(old,new)
+          anchor="const verifiedFilmMasters=Object.freeze({"
+          assert text.count(anchor)==1,"Existing public player manifest absent or ambiguous"
+          flow_key='"flow-chamber-method":{edition:"'
+          assert text.count(flow_key)==1,"Cannot identify the original flow-film override"
+          text,num=re.subn(r'("flow-chamber-method":\{edition:")series-v3(")',r'\g<1>series-v5\g<2>',text)
+          assert num==1 or '"flow-chamber-method":{edition:"series-v5"' in text
           additions=[
-            '   "microfluidic-virus":{edition:"series-v5",duration:120,poster:"/assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg"},',
-            '   "pla-scaffolds":{edition:"series-v5",duration:120,poster:"/assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg"},'
+            '  "microfluidic-virus":{edition:"series-v5",duration:120,poster:"/assets/films/source-figures/v4/microfluidic-virus/microfluidic-virus-figure-01-source-page.jpg"},',
+            '  "pla-scaffolds":{edition:"series-v5",duration:120,poster:"/assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg"},',
           ]
-          missing=[line for line in additions if line not in text]
-          if missing:
-            text=text.replace(start,start+"\n"+"\n".join(missing),1)
-          assert all(line in text for line in additions)
-          assert new in text
+          for entry in additions:
+            token=entry.strip().split(":",1)[0]+":"
+            assert text.count(token)<=1,"Duplicate per-film main selector"
+            if token not in text:
+              text=text.replace(anchor,anchor+"\n"+entry,1)
+          for slug in ("flow-chamber-method","microfluidic-virus","pla-scaffolds"):
+            assert '"'+slug+'":{edition:"series-v5"' in text
           assert '"making-medicines-keep":{edition:"series-v4"' in text
           file.write_text(text)
+          print("Verified three new edition mappings without touching any other films.")
           PY
       - name: Verify all existing main-original MP4 SHA identities before pushing
         run: |
