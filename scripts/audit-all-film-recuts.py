@@ -49,7 +49,7 @@ def captions(path,duration):
         following=body[m.end():].split("\n\n",1)[0].strip()
         max_text=max(max_text,max([len(x) for x in following.splitlines()] or [0]))
         results.append((start,end))
-    if max_text>130:raise ValueError("Caption exceeds mobile readable width: "+str(path)+" "+str(max_text))
+    if max_text>65:raise ValueError("Caption exceeds mobile readable width: "+str(path)+" "+str(max_text))
     return {"cue_count":len(matches),"max_caption_line":max_text,
             "last_caption_second":round(results[-1][1],2)}
 
