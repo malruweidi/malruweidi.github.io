@@ -373,6 +373,8 @@ def scene_art(slug,idx,phase,output):
  elif slug in ("drug-release-twins","essay-potency-exposure","essay-proximity",
               "essay-scientific-credit","heterocycle-cancer") and idx>1:
   chapter_five_reworks(d,slug,idx,phase)
+ elif slug in ("essay-tf-states","heart-failure-sensors"):
+  chapter_two_final(d,slug,idx,phase)
  # Avoid arbitrary reticles that can overlap molecular diagrams, labels or data.
  # Focus instead comes from the subject-specific scene composition.
  # Four visual beats within a single voice-led scene, to guide attention without
@@ -833,6 +835,106 @@ def chapter_five_reworks(d,slug,idx,phase):
    arrow(529,736)
    card(771,232,335,141,"EVIDENCE","WHAT WAS MEASURED?",GOLD)
    footer("A PROMISING DESIGN IS NOT A DOCUMENTED DRUG")
+
+def chapter_two_final(d,slug,idx,phase):
+ """Six evidence-safe cinematic explanations for two previously repeated films.
+ No made-up cardiograms, patient traces, drug structures, assays or quantified
+ predictive performance. The frame is explicitly a conceptual illustration.
+ """
+ d.rectangle((94,132,1182,532),fill=(17,45,51))
+ def card(x,y,w,h,a,b="",color=MINT):
+  d.rounded_rectangle((x,y,x+w,y+h),radius=19,outline=color,width=5)
+  txt(d,(x+16,y+19),a,19,INK,True)
+  if b:txt(d,(x+16,y+56),b,15,GOLD)
+ def arrow(x1,y1,x2,y2,color=GOLD):
+  line(d,(x1,y1,x2,y2),color,5)
+  d.polygon(((x2-14,y2-9),(x2+4,y2),(x2-14,y2+9)),fill=color)
+ def footer(value):
+  txt(d,(157,455),value,16,INK,True)
+ if slug=="essay-tf-states":
+  if idx==1:
+   for j in range(14):
+    x=192+j*61;y=368+18*math.sin(j*.95)
+    oval(d,x,y,7,GOLD,3)
+    if j<13:
+     xx=192+(j+1)*61;yy=368+18*math.sin((j+1)*.95)
+     line(d,(x+9,y,xx-9,yy),MINT,5)
+   d.rounded_rectangle((488,195,714,341),radius=66,outline=GOLD,width=9)
+   txt(d,(523,247),"TF COMPLEX",22,INK,True)
+   footer("DNA-ASSOCIATED REGULATION INVOLVES PARTNERS AND STATE")
+  elif idx==2:
+   for j,(state,description) in enumerate((("STATE A","PARTNER CONTEXT"),
+                                            ("STATE B","ALTERNATE ASSEMBLY"),
+                                            ("STATE C","FUNCTIONAL RESPONSE"))):
+    card(125+351*j,245,308,138,state,description,GOLD if j==phase%3 else MINT)
+    if j<2:arrow(443+351*j,313,473+351*j,313)
+   footer("THE HYPOTHESIS MUST NAME THE DISEASE-SUSTAINING STATE")
+  elif idx==3:
+   card(134,221,305,143,"LIGAND BINDING","TARGET ENGAGEMENT",MINT)
+   arrow(458,293,602,293)
+   card(633,221,426,143,"REGULATORY RESPONSE","REQUIRES CELLULAR EVIDENCE",GOLD)
+   txt(d,(558,248),"?",37,RED,True)
+   footer("AFFINITY ALONE DOES NOT DEMONSTRATE TRANSCRIPTIONAL ACTION")
+  elif idx==4:
+   for j,(name,subtitle) in enumerate((("ENGAGEMENT","BINDING"),
+                                       ("STATE","CONFORMATION"),
+                                       ("CHROMATIN","OCCUPANCY"),
+                                       ("CELLS","PHENOTYPE"))):
+    card(116+j*273,234,249,148,name,subtitle,GOLD if j==phase else MINT)
+   footer("LINK THESE EXPERIMENTS WITH CAUSAL CONTROLS")
+  elif idx==5:
+   for j,(name,subtitle) in enumerate((("BELZUTIFAN","HIF-2α"),
+                                       ("TEAD","LIPID-POCKET TARGETING"),
+                                       ("MUTANT p53","REACTIVATION APPROACH"))):
+    card(129+j*359,228,323,157,name,subtitle,GOLD if j==phase%3 else MINT)
+   footer("THREE PRECEDENTS WITH DIFFERENT MOLECULAR MECHANISMS")
+  else:
+   for j,(name,subtitle) in enumerate((("STATE","REGULATORY CONTEXT"),
+                                       ("BIOMARKER","MEASURED EFFECT"),
+                                       ("EXPOSURE","FEASIBLE IN CELLS"))):
+    card(136+j*351,230,315,150,name,subtitle,GOLD if j==phase%3 else MINT)
+   footer("RECONCILE STATE SELECTIVITY WITH BIOLOGICAL MEASUREMENTS")
+ else:
+  if idx==1:
+   # A stylized heart outline is context, never clinical imaging or patient data.
+   heart=[(366,263),(315,208),(249,207),(201,250),(214,317),
+          (278,383),(365,445),(452,383),(521,316),(536,248),
+          (482,202),(417,209)]
+   d.line(heart+[heart[0]],fill=MINT,width=9,joint="curve")
+   for j in range(3):
+    card(648,194+j*91,408,77,
+         ("MOVEMENT","RHYTHM","CIRCULATION")[j],"PHYSIOLOGICAL CONTEXT",GOLD if j==phase%3 else MINT)
+   footer("HEART FAILURE CANNOT BE REDUCED TO ONE SIGNAL")
+  elif idx==2:
+   for j,(name,subtitle) in enumerate((("WEARABLE","NON-INVASIVE"),
+                                       ("IMAGING","PHYSIOLOGIC"),
+                                       ("SENSOR","MINIMALLY INVASIVE"))):
+    card(122+j*361,243,324,146,name,subtitle,GOLD if j==phase%3 else MINT)
+   footer("DIFFERENT SENSORS DO NOT HAVE IDENTICAL EVIDENCE BASES")
+  elif idx==3:
+   for j,(name,subtitle) in enumerate((("ACQUIRE","RAW SIGNAL"),
+                                       ("INTERPRET","CLINICAL CONTEXT"),
+                                       ("ASSESS","RISK OR TRAJECTORY"))):
+    card(123+j*361,240,324,154,name,subtitle,GOLD if j==phase%3 else MINT)
+   footer("A PREDICTION MUST BE VALIDATED AGAINST REAL ENDPOINTS")
+  elif idx==4:
+   for j,(name,subtitle) in enumerate((("MOVEMENT","ARTIFACT"),
+                                       ("NOISE","UNCERTAINTY"),
+                                       ("VARIATION","PATIENT CONTEXT"))):
+    card(123+j*361,232,324,156,name,subtitle,GOLD if j==phase%3 else MINT)
+   footer("A SIGNAL IS NOT THE SAME AS A CLINICAL DECISION")
+  elif idx==5:
+   card(124,235,340,147,"DEVELOPMENT","TRAIN / TUNE",MINT)
+   arrow(483,307,632,307)
+   card(652,235,378,147,"EXTERNAL VALIDATION","NEW POPULATIONS",GOLD)
+   footer("A MODEL MUST GENERALIZE BEYOND THE STUDY SAMPLE")
+  else:
+   for j,(name,subtitle) in enumerate((("DEVICE","PERFORMANCE"),
+                                       ("WORKFLOW","PRACTICAL USE"),
+                                       ("ACCESS","EQUITABLE REACH"))):
+    card(123+j*360,234,319,145,name,subtitle,GOLD if j==phase%3 else MINT)
+   footer("TECHNOLOGY IS JUDGED BY ITS CLINICAL CONTEXT")
+
 
 def approved_photo(slug,scene,root):
  """Only explicit scene-matched source photos may enter the V7 film."""
