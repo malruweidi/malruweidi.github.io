@@ -59,6 +59,11 @@ def frame(entry,scene,phase,out,root=ROOT):
     occupied=ImageChops.difference(image.crop((0,652,art.W,720)),empty_caption_band).getbbox()
     if occupied:
         raise AssertionError("Narration captions would overlap visual text: "+slug+" / "+scene["id"])
+    # Keep a clean upper margin for the finished viewer. Evidence and provenance
+    # labels are exclusively in the JSON/production ledger, never on-screen notes.
+    empty_top=Image.new("RGB",(art.W,75),BG)
+    if ImageChops.difference(image.crop((0,0,art.W,75)),empty_top).getbbox():
+        raise AssertionError("Editorial or metadata text intrudes into finished film: "+slug+" / "+scene["id"])
     image.save(out,optimize=True)
     try:
         review_path=str(out.relative_to(ROOT))
