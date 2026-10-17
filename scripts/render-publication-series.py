@@ -17,7 +17,8 @@ from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "assets" / "films" / "publication-series.json"
-OUTPUT = ROOT / "assets" / "films" / "series"
+V6 = "--edition-v6" in __import__("sys").argv
+OUTPUT = ROOT / "assets" / "films" / ("series-v6" if V6 else "series")
 ENGINE = ROOT / "scripts" / "render-documentary.py"
 OUTPUT.mkdir(parents=True, exist_ok=True)
 
@@ -67,7 +68,8 @@ def checked(*cmd):
     return r.stdout
 
 def resolve_image(scene, work):
-    p = ROOT / scene["image"].lstrip("/")
+    p = Path(scene["image"])
+    if not p.is_absolute(): p = ROOT / p
     if p.suffix.lower() != ".svg":
         return p
     import cairosvg
@@ -109,12 +111,12 @@ def write_vtt(items, starts, speech_lengths, path):
             cues.extend([f"{engine.vtt_time(begin)} --> {engine.vtt_time(end)}"," ".join(part),""])
     path.write_text("\n".join(cues),encoding="utf-8")
 
-def scene_provenance(entry):
+def scene_provenance(entry, scenes=None):
     """Preserve visual evidence labels from the editorial source catalogue, not media encoding."""
     return [
         {"scene_id": scene["id"], "image": scene["image"], "kind": scene["kind"],
          "credit": scene["credit"], "source": scene["link"]}
-        for scene in entry["scenes"]
+        for scene in (scenes if scenes is not None else entry["scenes"])
     ]
 
 def reconcile_manifests(items):
@@ -148,7 +150,20 @@ def render(entry, models):
             src = models / name
             if not src.is_file(): raise FileNotFoundError(str(src))
             (w/name).symlink_to(src)
-        scenes = entry["scenes"]
+        scenes = [dict(x) for x in entry["scenes"]]
+        if V6:
+            modpath = ROOT / "scripts" / "film-art-direction-v6.py"
+            artspec=importlib.util.spec_from_file_location("ruwaidix_art_direction_v6",modpath)
+            art=importlib.util.module_from_spec(artspec)
+            artspec.loader.exec_module(art)
+            for scene in scenes:
+                visual,label,source_record=art.select_visual(slug,scene,w,ROOT)
+                scene["image"]=str(visual)
+                scene["kind"]=label
+                scene["credit"]=label
+                scene["link"]=entry.get("page") or "/publication-cinema.html"
+                scene["contain"]=bool(source_record)
+                scene.pop("video",None)
         speech,sr = engine.synthesize(scenes,w)
         counts = engine.allocate(speech,sr)
         starts = []
@@ -186,7 +201,7 @@ def render(entry, models):
         record={"id":slug,"seconds":round(duration,2),"sha256":hashlib.sha256(out.read_bytes()).hexdigest(),
                 "primary_source":("https://doi.org/"+entry["doi"]) if entry.get("doi") else entry.get("source_url", entry["page"]),
                 "voice":"Open Kokoro ONNX, synthetic actor-free narrator","image_classes":classes,
-                "scene_provenance":scene_provenance(entry),
+                "scene_provenance":scene_provenance(entry,scenes),
                 "disclosure":"Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."}
         (OUTPUT/(slug+".json")).write_text(json.dumps(record,indent=2)+"\n")
         print("RENDERED",slug,round(duration,2),"seconds",out.stat().st_size,"bytes")
@@ -194,6 +209,8 @@ def render(entry, models):
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--validate-only",action="store_true")
+    p.add_argument("--edition-v6",action="store_true",help="Rebuild in a separate safe v6 directory")
+    p.add_argument("--skip-v5",action="store_true",help="Preserve the five newer source-figure editions")
     p.add_argument("--models",default="film-models")
     p.add_argument("--film",action="append",help="Specific slug; otherwise renders all currently selected films")
     p.add_argument("--missing-only",action="store_true",help="Keep verified existing MP4/VTT/JSON releases; render only absent titles")
@@ -203,6 +220,9 @@ def main():
     opts=p.parse_args()
     data=json.loads(CATALOG.read_text(encoding="utf-8"))
     items=verify_catalog(data["items"])
+    if opts.skip_v5:
+        preserved={"pla-scaffolds","microfluidic-virus","making-medicines-keep","pla-grafting","flow-chamber-method"}
+        items=[x for x in items if x["id"] not in preserved]
     if opts.film:
         wanted=set(opts.film)
         missing = wanted - {x["id"] for x in items}
@@ -211,6 +231,7 @@ def main():
     print("Films validated:", ", ".join(x["id"] for x in items))
     if opts.validate_only: return
     if opts.reconcile_manifests:
+        if V6: raise ValueError("V6 is source-exact; do not replace its original records with old metadata")
         reconcile_manifests(items)
         return
     if opts.missing_only or opts.remaining_count:
