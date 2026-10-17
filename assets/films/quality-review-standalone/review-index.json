@@ -266,9 +266,47 @@
       "sha256": "5b40aff46f6402b098e2a2624eba15e8fe32b5d43a58a78305a8e0360017a349",
       "caption_cues": 29,
       "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "what-a-bubble-can-do-evidence-v2",
+      "edition": "original",
+      "source": "/assets/films/what-a-bubble-can-do-evidence-v2.mp4",
+      "captions": "/assets/films/what-a-bubble-can-do-evidence-v2.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/original-what-a-bubble-can-do-evidence-v2.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "6fbf1e84bff37b0e399bad56e8df90cf28af2d19e378f55c93ab8404860ac618",
+      "caption_cues": 25,
+      "review_status": "visual inspection and source-rights clearance outstanding"
+    },
+    {
+      "film": "two-materials-no-section-source-v2",
+      "edition": "original",
+      "source": "/assets/films/two-materials-no-section-source-v2.mp4",
+      "captions": "/assets/films/two-materials-no-section-source-v2.vtt",
+      "contact_sheet": "/assets/films/quality-review-standalone/original-two-materials-no-section-source-v2.webp",
+      "duration_seconds": 120.0,
+      "samples": [
+        12.0,
+        31.2,
+        50.4,
+        69.6,
+        88.8,
+        108.0
+      ],
+      "sha256": "6a8119acb67824b4279c2d15bdf5a471fe943541bff6c3e0ff1b00fa81afb0bd",
+      "caption_cues": 24,
+      "review_status": "visual inspection and source-rights clearance outstanding"
     }
   ],
-  "count": 14,
+  "count": 16,
   "review_status": "UNAPPROVED DIRECTOR'S CONTACT SHEETS",
   "note": "Frame captures prove what was rendered, not scientific or creative quality."
 }
