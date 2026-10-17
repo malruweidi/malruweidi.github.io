@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_lewis",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "984f367f80b143d04a826e85f9ba79839980d5cb7a06313df13293db721459e8",
+  "sha256": "9043c91fdfd61d16a23f7c6ed1be48df776ec3f81abc48a2abd2e0e8bee1566d",
   "shots": [
     {
       "title": "The diagnostic problem",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "a06bbcc6fb887031c041bce6a0f8892a1b8094ed23697bd6d88409890fc5ae41"
+  "motion_shots": [],
+  "input_sha256": "bbb189b7dc6330dd711a14436f320768ceaed12519a944e71fb0dcd1b6ae1d4b"
 }

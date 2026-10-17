@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "8ccff23674be1ee7ab81f2645f73ad65a36de355097b9ae2d15d9d9e5c8c4aa5",
+  "sha256": "a1ee442483da39a183ffef5980b72cf7d048acaf6726cc4b9df39967fcb6c950",
   "shots": [
     {
       "title": "Listening for a failing heart",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "b946aaa02513f0c91e859ecbc6e1a649cb965fb1474135cd13f697960e611eec"
+  "motion_shots": [],
+  "input_sha256": "efcbf3a9126a6b14d4203589b3ca32b649be99fa71ea2c172837965d1acc9a67"
 }

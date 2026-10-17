@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bf_emma",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "c9fd9bc1bbf902e729077ba7b09133006555f90435f0126d5886864579561f76",
+  "sha256": "7e28b8c2d40f1dcaa7c21a8e42cb9e1247efe924384721e026d47ed8ea95e301",
   "shots": [
     {
       "title": "What happens when immunity turns on the gut?",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "4cc64131ab526437040dc940b86ae1901236861525e07e388ab14af6c26b6d38"
+  "motion_shots": [],
+  "input_sha256": "77183f348cdb16d4e787f8044ca4f7ae76c34df521d7a531b7b46662231d9192"
 }
