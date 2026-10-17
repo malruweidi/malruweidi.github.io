@@ -5,7 +5,7 @@
   "seconds": 84.0,
   "fps": 24,
   "source_audio_sha256": "1945f6bc99c25290fba205e8e737be0d187a2b61ae1854c50656fa966ea71a28",
-  "movie_sha256": "88d2aa2dd032466a620f1ddc3816ddfc63a46c2f94d63bb6c77f836501ceee55",
+  "movie_sha256": "88cc939a7f286c91247a6ddc752fc7a540f49335313a8c926de2ee411d9c1511",
   "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
   "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
   "scene_count": 6,
@@ -15,13 +15,13 @@
       "scene": "01",
       "phase": 1,
       "seconds": 2.875,
-      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-zebrafish-microscopy.jpg"
+      "source": "original-nonquantitative-v7-schematic"
     },
     {
       "scene": "01",
       "phase": 2,
       "seconds": 2.875,
-      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-zebrafish-microscopy.jpg"
+      "source": "original-nonquantitative-v7-schematic"
     },
     {
       "scene": "01",
@@ -87,13 +87,13 @@
       "scene": "04",
       "phase": 1,
       "seconds": 3.5,
-      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-zebrafish-microscopy.jpg"
+      "source": "original-nonquantitative-v7-schematic"
     },
     {
       "scene": "04",
       "phase": 2,
       "seconds": 3.458,
-      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-zebrafish-microscopy.jpg"
+      "source": "original-nonquantitative-v7-schematic"
     },
     {
       "scene": "04",
@@ -135,13 +135,13 @@
       "scene": "06",
       "phase": 1,
       "seconds": 3.792,
-      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-zebrafish-microscopy.jpg"
+      "source": "original-nonquantitative-v7-schematic"
     },
     {
       "scene": "06",
       "phase": 2,
       "seconds": 3.792,
-      "source": "/home/runner/work/malruweidi.github.io/malruweidi.github.io/assets/home-archive/figure-zebrafish-microscopy.jpg"
+      "source": "original-nonquantitative-v7-schematic"
     },
     {
       "scene": "06",

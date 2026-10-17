@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 11,
+  "count": 14,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -48,7 +48,7 @@
       "file": "/assets/films/series-v7-pilots/cerebral-cilia.mp4",
       "captions": "/assets/films/series-v7-pilots/cerebral-cilia.vtt",
       "manifest": "/assets/films/series-v7-pilots/cerebral-cilia.json",
-      "sha256": "88d2aa2dd032466a620f1ddc3816ddfc63a46c2f94d63bb6c77f836501ceee55",
+      "sha256": "88cc939a7f286c91247a6ddc752fc7a540f49335313a8c926de2ee411d9c1511",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -61,6 +61,18 @@
       "captions": "/assets/films/series-v7-pilots/curcumin-cyanide.vtt",
       "manifest": "/assets/films/series-v7-pilots/curcumin-cyanide.json",
       "sha256": "72f564f12079c40ca699f4354d6647c88995b2cc4b94f967d4afe191bdb507ee",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "drug-release-twins",
+      "title": "What can a digital twin predict?",
+      "publication": "Simulation of Drug Release and Performance Prediction Using Virtual Models",
+      "poster": "/assets/films/series-v7-pilots/drug-release-twins.webp",
+      "file": "/assets/films/series-v7-pilots/drug-release-twins.mp4",
+      "captions": "/assets/films/series-v7-pilots/drug-release-twins.vtt",
+      "manifest": "/assets/films/series-v7-pilots/drug-release-twins.json",
+      "sha256": "3c130e546f9cf28aa02fd9fcedd39dc1fcd713e3cece0f5d71c7a27606879193",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -97,6 +109,30 @@
       "captions": "/assets/films/series-v7-pilots/gi-autoimmunity-1.vtt",
       "manifest": "/assets/films/series-v7-pilots/gi-autoimmunity-1.json",
       "sha256": "4de0a65ccc60c7d5adadf44679432102edf30334adb157e680776cd65e65fcda",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "gi-autoimmunity-2",
+      "title": "The diagnostic problem",
+      "publication": "Autoimmune Diseases of the GI Tract Part II: Emergence of Diagnostic Tools and Treatments",
+      "poster": "/assets/films/series-v7-pilots/gi-autoimmunity-2.webp",
+      "file": "/assets/films/series-v7-pilots/gi-autoimmunity-2.mp4",
+      "captions": "/assets/films/series-v7-pilots/gi-autoimmunity-2.vtt",
+      "manifest": "/assets/films/series-v7-pilots/gi-autoimmunity-2.json",
+      "sha256": "574a0926c1c4b263da06a4291730f3d71ec160e2338ee4998b13125e97d0cf4c",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "heart-failure-sensors",
+      "title": "Listening for a failing heart",
+      "publication": "Minimally Invasive and Non-Invasive Sensor Technologies for Predicting Heart Failure: An Overview",
+      "poster": "/assets/films/series-v7-pilots/heart-failure-sensors.webp",
+      "file": "/assets/films/series-v7-pilots/heart-failure-sensors.mp4",
+      "captions": "/assets/films/series-v7-pilots/heart-failure-sensors.vtt",
+      "manifest": "/assets/films/series-v7-pilots/heart-failure-sensors.json",
+      "sha256": "76e09702c236fb9f68f612a05e645686e09836008c57a9207ae4d89122360dda",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },

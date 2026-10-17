@@ -1,0 +1,160 @@
+{
+  "slug": "heart-failure-sensors",
+  "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
+  "film_style": "24 individually directed visual beats across 6 narrated chapters",
+  "seconds": 84.0,
+  "fps": 24,
+  "source_audio_sha256": "a5071e75cf771e8cd24e95796c665fe8f4ea6aa228b7d3f92ddf42ef784a2280",
+  "movie_sha256": "76e09702c236fb9f68f612a05e645686e09836008c57a9207ae4d89122360dda",
+  "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
+  "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
+  "scene_count": 6,
+  "visual_beat_count": 24,
+  "beats": [
+    {
+      "scene": "01",
+      "phase": 1,
+      "seconds": 3.042,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 2,
+      "seconds": 3.042,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 3,
+      "seconds": 3.042,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 4,
+      "seconds": 3.042,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 1,
+      "seconds": 3.75,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 2,
+      "seconds": 3.75,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 3,
+      "seconds": 3.75,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 4,
+      "seconds": 3.75,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 1,
+      "seconds": 3.208,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 2,
+      "seconds": 3.208,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 3,
+      "seconds": 3.208,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 4,
+      "seconds": 3.208,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 1,
+      "seconds": 3.583,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 2,
+      "seconds": 3.542,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 3,
+      "seconds": 3.542,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 4,
+      "seconds": 3.542,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 1,
+      "seconds": 3.833,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 2,
+      "seconds": 3.833,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 3,
+      "seconds": 3.792,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 4,
+      "seconds": 3.792,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 1,
+      "seconds": 3.667,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 2,
+      "seconds": 3.625,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 3,
+      "seconds": 3.625,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 4,
+      "seconds": 3.625,
+      "source": "original-nonquantitative-v7-schematic"
+    }
+  ],
+  "primary_source": "10.1002/9781119813040.ch5"
+}

@@ -1,0 +1,160 @@
+{
+  "slug": "drug-release-twins",
+  "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
+  "film_style": "24 individually directed visual beats across 6 narrated chapters",
+  "seconds": 84.0,
+  "fps": 24,
+  "source_audio_sha256": "75310e1d18d363b9f63c6a68f30f42f7d4b89de682d2d560135cd86123f7cd02",
+  "movie_sha256": "3c130e546f9cf28aa02fd9fcedd39dc1fcd713e3cece0f5d71c7a27606879193",
+  "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
+  "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
+  "scene_count": 6,
+  "visual_beat_count": 24,
+  "beats": [
+    {
+      "scene": "01",
+      "phase": 1,
+      "seconds": 3.458,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 2,
+      "seconds": 3.458,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 3,
+      "seconds": 3.458,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "01",
+      "phase": 4,
+      "seconds": 3.417,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 1,
+      "seconds": 4.208,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 2,
+      "seconds": 4.167,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 3,
+      "seconds": 4.167,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "02",
+      "phase": 4,
+      "seconds": 4.167,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 1,
+      "seconds": 3.75,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 2,
+      "seconds": 3.708,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 3,
+      "seconds": 3.708,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "03",
+      "phase": 4,
+      "seconds": 3.708,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 1,
+      "seconds": 3.125,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 2,
+      "seconds": 3.083,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 3,
+      "seconds": 3.083,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "04",
+      "phase": 4,
+      "seconds": 3.083,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 1,
+      "seconds": 3.875,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 2,
+      "seconds": 3.875,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 3,
+      "seconds": 3.875,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "05",
+      "phase": 4,
+      "seconds": 3.833,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 1,
+      "seconds": 2.708,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 2,
+      "seconds": 2.708,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 3,
+      "seconds": 2.708,
+      "source": "original-nonquantitative-v7-schematic"
+    },
+    {
+      "scene": "06",
+      "phase": 4,
+      "seconds": 2.667,
+      "source": "original-nonquantitative-v7-schematic"
+    }
+  ],
+  "primary_source": "10.70593/978-93-7185-824-3"
+}
