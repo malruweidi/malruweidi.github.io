@@ -66,13 +66,13 @@ def extract(paper):
             # MDPI publishes the original JATS-linked graphics under its
             # article_deploy/html/images path; try only this same article and
             # the exact xlink:href from the verified DOI-bound JATS.
-            for root in (
+            for image_base_url in (
                 f'https://www.mdpi.com/{mdpi_journal}/{mdpi_article}/article_deploy/html/images/',
                 f'https://mdpi-res.com/{mdpi_journal}/{mdpi_article}/article_deploy/html/images/',
                 f'https://mdpi-res.com/d_attachment/{mdpi_journal}/{mdpi_article}/article_deploy/html/images/',
                 f'https://mdpi-res.com/d_attachment/{mdpi_journal}/{mdpi_article}/article_deploy/',
             ):
-                candidates.extend(root+normalized_base+ext for ext in (".png",".jpg",".jpeg",".gif"))
+                candidates.extend(image_base_url+normalized_base+ext for ext in (".png",".jpg",".jpeg",".gif"))
             for path in candidates:
                 try:
                     raw=download(path,16000000)
