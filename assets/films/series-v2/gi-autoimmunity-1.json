@@ -1,0 +1,84 @@
+{
+  "id": "gi-autoimmunity-1",
+  "seconds": 84.0,
+  "sha256": "63b0dabb1296cd3b5e2d702bf9d1c51329f008a5222f58b77497eb2022710f71",
+  "primary_source": "https://doi.org/10.5772/intechopen.106184",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original laboratory photograph, not tissue from this chapter",
+    "Original laboratory workspace, not intestinal pathology",
+    "General scientific research-context image, not GI histopathology",
+    "Original laboratory image, not patient diagnostic specimen",
+    "Laboratory context",
+    "Editorial research context"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "kind": "Original laboratory photograph, not tissue from this chapter",
+      "credit": "Original laboratory photograph, not tissue from this chapter",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "kind": "Original laboratory workspace, not intestinal pathology",
+      "credit": "Original laboratory workspace, not intestinal pathology",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/evidence-pulmonary.webp",
+      "kind": "General scientific research-context image, not GI histopathology",
+      "credit": "General scientific research-context image, not GI histopathology",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "kind": "Original laboratory image, not patient diagnostic specimen",
+      "credit": "Original laboratory image, not patient diagnostic specimen",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "kind": "Laboratory context",
+      "credit": "Laboratory context",
+      "source": "/illness-and-evidence.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "kind": "Editorial research context",
+      "credit": "Editorial research context",
+      "source": "/illness-and-evidence.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
+  "edition": "cinematic-v2",
+  "remaster_signature": "story-motion-v2.2",
+  "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
+  "animated_scene_ids": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "motion_motif": "organ",
+  "motion_storyboard": {
+    "02": "organ",
+    "03": "network",
+    "04": "organ",
+    "05": "translation"
+  },
+  "motion_annotations": [
+    "Barrier integrity",
+    "Immune signalling",
+    "Disease-specific pathology"
+  ],
+  "evidence_boundary": "Generic immune schematic, not an individual's biopsy.",
+  "method": "Open-source Pillow vector/keyframe render, FFmpeg H.264/AAC, Kokoro-ONNX narrator; no proprietary video generators",
+  "subtitle_timing": "Narration-length estimate, not forced alignment"
+}
