@@ -4,7 +4,7 @@
   "short_films": {
     "expected": 35,
     "mp4_rendered": 29,
-    "latest_source_and_motion": 26,
+    "latest_source_and_motion": 27,
     "encoded_technical_qa": 29,
     "human_screened": 0,
     "approved_for_replacement": 0,
@@ -406,14 +406,13 @@
       "title": "The Email That Became an Accusation",
       "mp4_rendered": true,
       "source_revision_required": "essay-motion-2026-10-17-v1",
-      "source_revision_in_mp4": null,
-      "source_visual_and_motion_current": false,
+      "source_revision_in_mp4": "essay-motion-2026-10-17-v1",
+      "source_visual_and_motion_current": true,
       "encoded_technical_qa": true,
       "original_archive_preserved": true,
       "human_screened": false,
       "ready_for_public_replacement": false,
       "pending_reasons": [
-        "Source or motion edition superseded: needs re-render",
         "Science, audio, rights and editorial human sign-off outstanding"
       ]
     },
