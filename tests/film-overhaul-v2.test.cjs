@@ -27,7 +27,8 @@ test('the alternative renderer cannot replace the original released films',()=>{
   assert.ok(!script.includes('shutil.rmtree'));
   assert.ok(script.includes('pub.OUTPUT=DIR'));
   assert.ok(script.includes('pub.render(entry,models)'));
-  assert.ok(script.includes('if not s.get("video")'));
+  assert.ok(script.includes('story-motion-v2.2'));
+  assert.ok(script.includes('and not scene.get("video")'));
   assert.ok(script.includes('scene.get("_remake") and not video'));
 });
 test('cinematic animation has conspicuous scientific-provenance labelling',()=>{
