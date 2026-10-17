@@ -52,7 +52,7 @@ test("the production workflow and four original editorial pages actually exist",
     const page=load("films/"+film.slug+".html");
     assert.ok(page.includes(film.title),film.slug);
     assert.ok(page.includes("assets/films/"+(film.media_stem||film.slug)+".mp4"),film.slug);
-    assert.match(page, /<video\\b[^>]*controls/, film.slug+" should present a playable film");
+    assert.match(page, /<video\b[^>]*controls/, film.slug+" should present a playable film");
     assert.ok(film.scenes.every(scene=>scene.narration&&scene.credit&&scene.link),"all eight source scenes retain complete archival metadata");
   }
   for(const page of ["research/pulmonary-epithelial-injury.html","stories/failed-zebrafish-histology.html","chem-squad.html"]){
@@ -72,9 +72,9 @@ test("artwork varies with its historical scene and film labels fit their safe ar
 test("all scientific and archival source plates survive separately from the reader-facing film pages",()=>{
   for(const film of films){
     const page=load("films/"+film.slug+".html");
-    assert.match(page,/<video\\b[^>]*controls/,film.slug+" playable page");
+    assert.match(page,/<video\b[^>]*controls/,film.slug+" playable page");
     for(const scene of film.scenes){
-      if(scene.image) assert.ok(fs.existsSync(path.join(root,scene.image.replace(/^\\/,""))),film.slug+"/"+scene.id+" original image missing");
+      if(scene.image) assert.ok(fs.existsSync(path.join(root,scene.image.startsWith("/")?scene.image.slice(1):scene.image)),film.slug+"/"+scene.id+" original image missing");
       assert.ok(scene.credit&&scene.link,film.slug+"/"+scene.id+" provenance missing");
     }
   }
