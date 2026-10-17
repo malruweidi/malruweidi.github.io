@@ -346,13 +346,13 @@
       "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
     },
     "essay-adc": {
-      "motif": "vesicle",
+      "motif": "network",
       "annotations": [
         "Target binding",
         "Payload delivery",
         "Therapeutic window"
       ],
-      "evidence_boundary": "Carrier drawing is conceptual; ADCs are not vesicles.",
+      "evidence_boundary": "The molecular-linker-payload relationship is schematic. Antibody–drug conjugates are not lipid vesicles.",
       "motion_rule": "Animate a clearly labeled conceptual inset only. Keep original photographs and publications attributable."
     }
   }
