@@ -50,19 +50,22 @@ test("existing failed experiment story and original film remain intact",()=>{
  assert.match(film,/what-survives-the-experiment.mp4/);
  assert.match(home,/rx-feature-film/);
 });
-test("released film is findable, playable, and remains linked to the first-person primary account",()=>{
+test("the released reader-first evidence cut remains playable while earlier release and captions stay in the source archive",()=>{
  const hub=read("films.html"),article=read("films/two-materials-no-section.html");
  for(const html of [hub,article]){
   assert.ok(html.includes("/assets/films/two-materials-no-section-source-v2.mp4"));
   assert.ok(html.includes("/assets/films/two-materials-no-section-source-v2.vtt"));
-  assert.ok(html.includes("/assets/films/two-materials-no-section.mp4"));
   assert.match(html,/kind="captions"/);
  }
- assert.ok(article.includes("/assets/films/two-materials-no-section.vtt"));
- assert.ok(fs.existsSync(path.join(root,"assets/films/two-materials-no-section.vtt")));
+ for(const file of [
+  "assets/films/two-materials-no-section-source-v2.mp4",
+  "assets/films/two-materials-no-section-source-v2.vtt",
+  "assets/films/two-materials-no-section.mp4",
+  "assets/films/two-materials-no-section.vtt"
+ ]) assert.ok(fs.existsSync(path.join(root,file)), "original or revised archival payload missing " + file);
  assert.ok(hub.includes("/assets/films/two-materials-no-section-evidence-cut.mp4"));
  assert.ok(article.includes('href="/stories/failed-zebrafish-histology.html"'));
- assert.ok(article.includes("id=\"source-record\""));
+ assert.doesNotMatch(article,/id="source-record"/);
  const index=JSON.parse(read("assets/discovery-index.json"));
  assert.ok(index.items.some(x=>x.url==="/films/two-materials-no-section.html"));
 });
