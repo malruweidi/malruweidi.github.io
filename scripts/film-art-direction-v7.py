@@ -296,13 +296,8 @@ def scene_art(slug,idx,phase,output):
   raise ValueError("No source-specific concept: "+slug)
  if typ in ("vesicle","ace2","trna") and idx>1:
   chapter_specific_figure(d,typ,idx,phase)
- # The attention marker moves between key areas of the *illustration*, not
- # between fabricated scientific values. Its positions represent visual reading,
- # never experimental time or a quantitative trajectory.
- fx=(325,550,778,990)[phase]
- fy=(246,365,269,381)[phase]
- d.arc((fx-37,fy-37,fx+37,fy+37),20,310,fill=GOLD,width=5)
- d.line((fx+32,fy-22,fx+69,fy-57),fill=GOLD,width=3)
+ # Avoid arbitrary reticles that can overlap molecular diagrams, labels or data.
+ # Focus instead comes from the subject-specific scene composition.
  # Four visual beats within a single voice-led scene, to guide attention without
  # claims about biological or historical temporal sequences.
  for j in range(4):
@@ -317,7 +312,7 @@ def chapter_specific_figure(d,typ,idx,phase):
  """Replace the default diagram with a scientifically bounded chapter-specific argument.
  The figures depict hypotheses, methods, and distinctions, NEVER measured values.
  """
- d.rectangle((95,148,1182,483),fill=(17,45,51))
+ d.rectangle((95,132,1182,491),fill=(17,45,51))
  def box(x,y,w,label,color=MINT):
   d.rounded_rectangle((x,y,x+w,y+106),radius=18,outline=color,width=5)
   words=label.split();lines=[];cur=""
