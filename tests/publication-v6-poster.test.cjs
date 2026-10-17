@@ -29,3 +29,21 @@ test('site displays playable film elements from one release manifest, not fragil
   assert.match(html,/<video controls playsinline/);
   assert.match(renderer,/releases\.json/);
 });
+
+test('the saved HTML contains 35 directly playable source-matched films before catalogue hydration',()=>{
+  const html=fs.readFileSync(path.join(root,'publication-cinema.html'),'utf8');
+  const staticHTML=html.slice(0,html.indexOf('<script>'));
+  const entries=[...staticHTML.matchAll(/<article class="piece" id="film-([a-z0-9-]+)"/g)].map(x=>x[1]);
+  const posters=[...staticHTML.matchAll(/<video controls playsinline[^>]*poster="([^"]+)"/g)].map(x=>x[1]);
+  const films=[...staticHTML.matchAll(/<source src="([^"]+\.mp4)" type="video\/mp4"/g)].map(x=>x[1]);
+  const tracks=[...staticHTML.matchAll(/<track kind="captions" src="([^"]+\.vtt)"/g)].map(x=>x[1]);
+  assert.equal(entries.length,35,'do not remove or condense any publication record');
+  assert.equal(films.length,35,'every entry must have direct video markup');
+  assert.equal(posters.length,35,'every film must supply its own poster or relevant primary figure');
+  assert.equal(tracks.length,35,'every film must have captions');
+  for(let i=0;i<entries.length;i++){
+    assert.match(films[i],new RegExp('/'+entries[i]+'\\.mp4$'));
+    assert.match(tracks[i],new RegExp('/'+entries[i]+'\\.vtt$'));
+    assert(!/series-v6/.test(films[i]) || /series-v6/.test(posters[i]),'V6 poster must come from its own edition');
+  }
+});
