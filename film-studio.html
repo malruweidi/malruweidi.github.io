@@ -100,7 +100,7 @@ function choose(item){
   byId('motion-title').textContent=item.visual_language;
   byId('motion-note').textContent=plan.evidence_boundary;
   byId('annotations').innerHTML='<p class="subtitle">THREE EXPLANATORY BEATS</p><p>'+plan.annotations.map(esc).join(' → ')+'</p><p class="meta">These are annotated reconstructions, not measurements.</p>';
-  byId('evidence').innerHTML='<details><summary>Read all six chapters, source labels and credits</summary><ol class="scenes">'+item.scenes.map(s=>'<li><strong>'+esc(s.title)+'</strong><p>'+esc(s.narration)+'</p><p>'+esc(s.credit)+' · <a href="'+esc(s.link)+'">Source/context</a> · <a target="_blank" rel="noopener" href="'+esc('/'+s.image.replace(/^\\/+/,''))+'">Inspect image at full resolution ↗</a></p></li>').join('')+'</ol></details>';
+  byId('evidence').innerHTML='<details><summary>Read all six chapters, source labels and credits</summary><ol class="scenes">'+item.scenes.map(s=>'<li><strong>'+esc(s.title)+'</strong><p>'+esc(s.narration)+'</p><p>'+esc(s.credit)+' · <a href="'+esc(s.link)+'">Source/context</a> · <a target="_blank" rel="noopener" href="'+esc('/'+s.image.replace(/^\/+/,''))+'">Inspect image at full resolution ↗</a></p></li>').join('')+'</ol></details>';
   document.querySelectorAll('.film').forEach(el=>el.classList.toggle('selected',el.dataset.id===item.id));
   player();
   if(window.innerWidth<900)byId('selected').scrollIntoView({behavior:'smooth',block:'start'});
