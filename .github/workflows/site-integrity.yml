@@ -59,3 +59,5 @@ jobs:
         run: node --test tests/second-pass-publication-discovery.test.mjs
       - name: Check film viewer playback and reader-facing screening links
         run: node --test tests/third-pass-film-reader-experience.test.mjs
+      - name: Check public film collection language against playable destinations
+        run: node --test tests/fourth-pass-film-navigation.test.mjs
