@@ -47,3 +47,19 @@ test('source-based preview will not claim remakes are human approved',()=>{
   assert.ok(page.includes('series') && page.includes("'v1'"));
   assert.ok(page.includes('publication-cinema.html'));
 });
+
+test('every authored long-form documentary has an accessible original-vs-recut comparison',()=>{
+  const page=read('feature-film-studio.html');
+  const directions=JSON.parse(read('assets/films/longform-remake-direction.json'));
+  const films=Object.keys(directions.films);
+  assert.equal(films.length,9);
+  for(const slug of films){
+    assert.ok(page.includes('"'+slug+'"'), 'missing feature studio title: '+slug);
+    assert.ok(fs.existsSync(path.join(root,'assets','films',slug+'.mp4')), 'original preserved: '+slug);
+  }
+  assert.ok(page.includes('longform-v2/'));
+  assert.ok(page.includes('method:"HEAD"'));
+  assert.ok(page.includes('not yet human-screened'));
+  assert.ok(read('film-studio.html').includes('feature-film-studio.html'));
+  assert.ok(read('films.html').includes('feature-film-studio.html'));
+});
