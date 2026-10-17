@@ -161,6 +161,52 @@ def motif(d,kind,t,annotations):
         xx=672+int(470*t)
         d.line((xx,217,xx,386),fill=GOLD,width=3)
         label(d,(758,393),"ILLUSTRATIVE SIGNAL, NOT A READOUT",GOLD,13,True,53)
+    elif kind=="assay":
+        # Qualitative cell fate, with NO numeric counts, viability threshold or data.
+        for ix in range(8):
+            for iy in range(3):
+                x=719+ix*54
+                y=234+iy*58
+                phase=math.sin(ix*1.3+iy*.7+2*t*math.pi)
+                d.rounded_rectangle((x-17,y-15,x+17,y+15),radius=12,
+                    outline=GREEN if phase>-.16 else GOLD,width=2)
+                d.ellipse((x-4,y-4,x+4,y+4),fill=GREEN if phase>-.16 else GOLD)
+        label(d,(725,413),"ILLUSTRATIVE CELLS / NO COUNT DATA",GOLD,14,True)
+    elif kind=="chamber":
+        d.rectangle((702,252,1146,389),outline=GREEN,width=5)
+        d.line((709,360,1139,360),fill=GOLD,width=6)
+        for k in range(10):
+            x=722+k*43
+            d.ellipse((x-12,367,x+12,387),outline=GREEN,width=2)
+        pos=718+378*t
+        d.arc((pos-65,274,pos+65,360),40,160,fill=GOLD,width=6)
+        for k in range(5):
+            x=713+(k*86+200*t)%420
+            d.line((x,312,x+37,312),fill=(115,184,211),width=3)
+            d.polygon([(x+31,307),(x+39,312),(x+31,317)],fill=(115,184,211))
+        label(d,(704,410),"SCHEMATIC / DIMENSIONS NOT TO SCALE",GOLD,12,True)
+    elif kind=="translation":
+        card(d,(678,255,876,359),fill=(24,57,61),outline=GREEN)
+        card(d,(968,255,1168,359),fill=(45,39,35),outline=GOLD)
+        label(d,(706,276),"EXPERIMENT",GREEN,20,True)
+        label(d,(984,276),"HUMAN USE?",GOLD,20,True)
+        d.line((886,305,946,305),fill=GOLD,width=4)
+        d.polygon([(940,297),(952,305),(940,313)],fill=GOLD)
+        for k in range(3):
+            if t > (.18+k*.19):
+                d.line((998+k*38,337,1014+k*38,337),fill=GOLD,width=3)
+        label(d,(721,396),"TRANSLATION REQUIRES INDEPENDENT EVIDENCE",GOLD,13,True,57)
+    elif kind=="molecule":
+        pts=[(757,285),(851,251),(930,313),(1022,250),(1090,329),(946,374),(801,370)]
+        edges=[(0,1),(1,2),(2,3),(3,4),(2,5),(5,6),(6,0)]
+        for a,b in edges:
+            d.line((*pts[a],*pts[b]),fill=(85,153,145),width=3)
+        for k,(x,y) in enumerate(pts):
+            rad=10+2*math.sin(10*t+k)
+            d.ellipse((x-rad,y-rad,x+rad,y+rad),fill=GOLD if k in (1,3) else GREEN)
+        moving=pts[min(len(pts)-1,int(t*(len(pts)-1)))]
+        d.ellipse((moving[0]-23,moving[1]-23,moving[0]+23,moving[1]+23),outline=(211,231,230),width=3)
+        label(d,(710,409),"TOPOLOGY SYMBOL ONLY / NO ASSIGNED STRUCTURE",GOLD,12,True,57)
     elif kind=="editorial":
         for k,entry in enumerate(annotations):
             reveal=min(1,max(0,4*t-k*.9))
