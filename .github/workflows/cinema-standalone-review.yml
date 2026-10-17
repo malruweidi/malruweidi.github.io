@@ -38,7 +38,7 @@ jobs:
           d=Path("assets/films/quality-review-standalone")
           index=json.loads((d/"review-index.json").read_text())
           assert index["count"]==16
-          assert len({x["source"] for x in index["films"]})==14
+          assert len({x["source"] for x in index["films"]})==16
           for entry in index["films"]:
             p=Path(entry["contact_sheet"].lstrip("/"))
             assert p.stat().st_size>20000
