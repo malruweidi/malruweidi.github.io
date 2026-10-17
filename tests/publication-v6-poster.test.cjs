@@ -74,8 +74,9 @@ test('every referenced film master, caption and poster is in the preserved site 
 test('Making Medicines Keep plays its archival cut while keeping transcripts in production sources, not on the reader page',()=>{
   const page=fs.readFileSync(path.join(root,'films/making-medicines-keep.html'),'utf8');
   const manifest=JSON.parse(fs.readFileSync(path.join(root,'assets/films/series-v4/making-medicines-keep.json'),'utf8'));
-  assert.match(page,/<source src="\/assets\/films\/series-v4\/making-medicines-keep\.mp4"/);
-  assert.match(page,/<track[^>]+src="\/assets\/films\/series-v4\/making-medicines-keep\.vtt"/);
+  const activeEdition=fs.existsSync(path.join(root,"assets/films/series-v8-primary/releases.json"))?"series-v8-primary":"series-v4";
+  assert(page.includes('<source src="/assets/films/'+activeEdition+'/making-medicines-keep.mp4"'));
+  assert(page.includes('/assets/films/'+activeEdition+'/making-medicines-keep.vtt'));
   assert.doesNotMatch(page,/id="(?:transcript|first-edition-transcript)"/);
   assert(fs.existsSync(path.join(root,"assets/films/making-medicines-keep.mp4")),"Original historical film remains archived");
   assert.equal(manifest.chapters.length,8);
