@@ -1,0 +1,28 @@
+name: Ruwaidix documentary playback quality gate
+on:
+  push:
+    branches: [main]
+    paths:
+      - films.html
+      - publication-cinema.html
+      - tests/film-main-player-integrity.test.cjs
+      - tests/publication-v6-poster.test.cjs
+      - .github/workflows/film-main-qa.yml
+  pull_request:
+    paths:
+      - films.html
+      - publication-cinema.html
+      - tests/film-main-player-integrity.test.cjs
+      - tests/publication-v6-poster.test.cjs
+      - .github/workflows/film-main-qa.yml
+jobs:
+  film-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test documentary source, captions and preservation
+        run: |
+          node --test tests/film-main-player-integrity.test.cjs tests/publication-v6-poster.test.cjs
