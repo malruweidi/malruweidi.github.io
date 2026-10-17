@@ -12,6 +12,8 @@
       "file": "/assets/films/series-v7-pilots/airway-reopening.mp4",
       "captions": "/assets/films/series-v7-pilots/airway-reopening.vtt",
       "manifest": "/assets/films/series-v7-pilots/airway-reopening.json",
+      "contact": "/assets/films/series-v7-pilots/airway-reopening.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "15b2738efc7885855044ce62bc02885c738689d034da3683eb00aee6e3e61976",
       "seconds": 84.0,
       "creative_review": "outstanding"
@@ -24,6 +26,8 @@
       "file": "/assets/films/series-v7-pilots/cerebral-cilia.mp4",
       "captions": "/assets/films/series-v7-pilots/cerebral-cilia.vtt",
       "manifest": "/assets/films/series-v7-pilots/cerebral-cilia.json",
+      "contact": "/assets/films/series-v7-pilots/cerebral-cilia.contact.webp",
+      "visual_revision": "v7.3-caption-safe/v7.2-cilia-provenance",
       "sha256": "88e1ebd79bbb104499140a2781f82efb50ceb3dd335562eef34956f7bd39b554",
       "seconds": 84.0,
       "creative_review": "outstanding"
@@ -36,6 +40,8 @@
       "file": "/assets/films/series-v7-pilots/curcumin-cyanide.mp4",
       "captions": "/assets/films/series-v7-pilots/curcumin-cyanide.vtt",
       "manifest": "/assets/films/series-v7-pilots/curcumin-cyanide.json",
+      "contact": "/assets/films/series-v7-pilots/curcumin-cyanide.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "3ed1b3c83fad2f0c5db7b33a89e7528ebe0be2d2efbff311529a4b4cbf408362",
       "seconds": 84.0,
       "creative_review": "outstanding"
@@ -48,6 +54,8 @@
       "file": "/assets/films/series-v7-pilots/slit2-robo.mp4",
       "captions": "/assets/films/series-v7-pilots/slit2-robo.vtt",
       "manifest": "/assets/films/series-v7-pilots/slit2-robo.json",
+      "contact": "/assets/films/series-v7-pilots/slit2-robo.contact.webp",
+      "visual_revision": "v7.3-caption-safe/v7.2-robo-receptor",
       "sha256": "346c9db65d7a2d20d7c47285b8cc9635137d55226c934d63fdf9b8b6ebe10283",
       "seconds": 84.0,
       "creative_review": "outstanding"
