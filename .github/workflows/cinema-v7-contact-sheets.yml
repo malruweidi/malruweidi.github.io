@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - scripts/audit-v7-pilot-contact-sheets.py
+      - assets/films/series-v7-pilots/*.mp4
       - .github/workflows/cinema-v7-contact-sheets.yml
   workflow_dispatch:
 permissions:
