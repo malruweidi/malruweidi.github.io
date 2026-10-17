@@ -235,11 +235,31 @@ def scene_art(slug,idx,phase,output):
     line(d,(550+115*math.cos(th),315+115*math.sin(th),550+139*math.cos(th),315+139*math.sin(th)),GOLD,4)
    oval(d,550,315,60,RED,4)
   elif typ=="cubic":
-   for j in range(7):
-    for k in range(5):
-     x=335+j*88;y=167+k*76
-     oval(d,x,y,19,GOLD if (j+k)%2 else MINT,4)
-     if j<6:line(d,(x+20,y,x+68,y),GRID,4)
+   # A two-dimensional symbolic cut through a periodically curved bilayer.
+   # This is NOT a crystallographic unit cell, SAXS reconstruction or TEM image.
+   for lane in range(5):
+    upper=[];lower=[]
+    for x in range(231,1045,7):
+     y=192+lane*67+16*math.sin((x-231)/73.0+lane*1.15+phase*.12)
+     upper.append((x,y))
+     lower.append((x,y+17))
+    d.line(upper,fill=MINT,width=7,joint="curve")
+    d.line(lower,fill=GOLD,width=7,joint="curve")
+   txt(d,(309,435),"PERIODIC LIPID/WATER DOMAINS — SYMBOLIC",16,INK)
+  elif typ=="receptor":
+   # SLIT2 is extracellular; ROBO is a transmembrane receptor.
+   for j in range(29):
+    xx=203+j*29
+    d.ellipse((xx-11,392,xx+11,414),fill=MINT)
+    d.ellipse((xx-11,432,xx+11,454),fill=GOLD)
+   rounded(d,(786,205,855,470),MINT,8,21)
+   oval(d,820,205,51,GOLD,7)
+   oval(d,464+phase*42,246,63,MINT,8)
+   txt(d,(386,332),"SLIT2 LIGAND",20,INK,True)
+   txt(d,(756,159),"ROBO RECEPTOR",18,INK,True)
+   txt(d,(736,474),"PLASMA MEMBRANE",16,INK)
+   line(d,(548,246,692,246),GOLD,5)
+   d.polygon([(687,237),(703,246),(687,255)],fill=GOLD)
   else:
    oval(d,470,315,120,MINT,8)
    oval(d,850,315,105,GOLD,8)
@@ -247,12 +267,25 @@ def scene_art(slug,idx,phase,output):
    if typ=="antibody":
     line(d,(510,325,600,242),MINT,13);line(d,(510,325,610,422),MINT,13)
     oval(d,728,316,14,RED,5)
- elif typ in ("echo","ecg","transport","optical"):
+ elif typ=="echo":
+  # Original-frame illustration; never a claimed fetal scan or patient readout.
+  d.polygon([(460,158),(220,447),(997,447)],fill=(27,66,67))
+  for k in range(5):
+   rad=65+k*46
+   d.arc((460-rad,165-rad,460+rad,165+rad),15,165,fill=GRID,width=5)
+  for k in range(16):
+   xx=306+(k%4)*152; yy=244+(k//4)*53
+   oval(d,xx,yy,9+(k%3)*4,MINT if k==phase+4 else GRID,3)
+  rounded(d,(822,211,1083,399),GOLD,5,16)
+  txt(d,(865,264),"VIDEO",23,INK,True)
+  txt(d,(865,300),"FRAMES",23,INK,True)
+  txt(d,(220,464),"ULTRASOUND IMAGING — NOT A PATIENT RECORD",16,INK)
+ elif typ in ("ecg","transport","optical"):
   points=[]
   for j in range(780):
    x=230+j
    phase_x=j/780*math.pi*7
-   if typ in ("echo","ecg"):
+   if typ=="ecg":
     dy=118*math.sin(phase_x)*math.exp(-((j%165-84)/40)**2)
    elif typ=="optical":
     dy=95*math.sin(phase_x)+25*math.sin(phase_x*2)
