@@ -1,64 +1,65 @@
 {
   "id": "gi-autoimmunity-2",
   "seconds": 84.0,
-  "sha256": "1ac286718ef9e0469210a21d9b584b1470f8816918185fd73effb090b5336d3a",
+  "sha256": "0cb5a8d079410af23c4babc13ff478df6df62e297e3bbf223b9bc01c8b7e6f79",
   "primary_source": "https://doi.org/10.5772/intechopen.106185",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
-    "Original laboratory workspace, not patient diagnosis",
-    "Laboratory photo, not endoscopy or pathology result",
-    "Original biomedical research-context photo",
-    "Conceptual science graphic, not a clinical treatment device",
-    "Archival research context",
-    "Biomedical research archive"
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
   ],
   "scene_provenance": [
     {
       "scene_id": "01",
-      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
-      "kind": "Original laboratory workspace, not patient diagnosis",
-      "credit": "Original laboratory workspace, not patient diagnosis",
+      "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
       "source": "/illness-and-evidence.html"
     },
     {
       "scene_id": "02",
-      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
-      "kind": "Laboratory photo, not endoscopy or pathology result",
-      "credit": "Laboratory photo, not endoscopy or pathology result",
+      "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
       "source": "/illness-and-evidence.html"
     },
     {
       "scene_id": "03",
-      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
-      "kind": "Original biomedical research-context photo",
-      "credit": "Original biomedical research-context photo",
+      "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
       "source": "/illness-and-evidence.html"
     },
     {
       "scene_id": "04",
-      "image": "assets/echo-concept.svg",
-      "kind": "Conceptual science graphic, not a clinical treatment device",
-      "credit": "Conceptual science graphic, not a clinical treatment device",
+      "image": "assets/films/art/source-specific/eosinophilic-gut.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
       "source": "/illness-and-evidence.html"
     },
     {
       "scene_id": "05",
-      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
-      "kind": "Archival research context",
-      "credit": "Archival research context",
+      "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
       "source": "/illness-and-evidence.html"
     },
     {
       "scene_id": "06",
-      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
-      "kind": "Biomedical research archive",
-      "credit": "Biomedical research archive",
+      "image": "assets/films/art/source-specific/gi-diagnostic-evidence.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
       "source": "/illness-and-evidence.html"
     }
   ],
   "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
   "edition": "cinematic-v2",
   "remaster_signature": "story-motion-v2.2",
+  "source_visual_revision": "curated-2026-10-17-v2",
   "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
   "animated_scene_ids": [
     "02",
@@ -68,9 +69,9 @@
   ],
   "motion_motif": "organ",
   "motion_storyboard": {
-    "02": "organ",
-    "03": "signal",
-    "04": "organ",
+    "02": "gut-barrier",
+    "03": "assay",
+    "04": "gut-barrier",
     "05": "translation"
   },
   "motion_annotations": [

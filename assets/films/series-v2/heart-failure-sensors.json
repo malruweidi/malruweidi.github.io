@@ -1,16 +1,16 @@
 {
   "id": "heart-failure-sensors",
   "seconds": 84.0,
-  "sha256": "c2811380afab377a6a799264fa43b34698b1e807d0958ae98b7c05cff923490b",
+  "sha256": "35a9db2e30db9ceccdf782298236a64dd5d3f866fffe3cf97a988c2a665bfff7",
   "primary_source": "https://doi.org/10.1002/9781119813040.ch5",
   "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
   "image_classes": [
     "Original cardiac imaging workstation, not data used in the review",
-    "Conceptual cardiac detection diagram",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
     "Archival Doppler apparatus, not heart-failure sensor comparison",
-    "Original explanatory depiction, not validated sensor output",
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
     "Imaging-context photograph",
-    "Conceptual technology animation source"
+    "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result"
   ],
   "scene_provenance": [
     {
@@ -22,9 +22,9 @@
     },
     {
       "scene_id": "02",
-      "image": "assets/echo-concept.svg",
-      "kind": "Conceptual cardiac detection diagram",
-      "credit": "Conceptual cardiac detection diagram",
+      "image": "assets/films/art/source-specific/heart-sensing.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
       "source": "/computing.html"
     },
     {
@@ -36,9 +36,9 @@
     },
     {
       "scene_id": "04",
-      "image": "assets/echo-concept.svg",
-      "kind": "Original explanatory depiction, not validated sensor output",
-      "credit": "Original explanatory depiction, not validated sensor output",
+      "image": "assets/films/art/source-specific/heart-sensing.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
       "source": "/computing.html"
     },
     {
@@ -50,15 +50,16 @@
     },
     {
       "scene_id": "06",
-      "image": "assets/echo-concept.svg",
-      "kind": "Conceptual technology animation source",
-      "credit": "Conceptual technology animation source",
+      "image": "assets/films/art/source-specific/heart-sensing.svg",
+      "kind": "Original topic-specific conceptual scientific diagram; deliberately NOT source evidence or measured result",
+      "credit": "Ruwaidix editorial schematic, 2026; scientifically motivated conceptual relationship, not experimental observation or data figure. The cited article remains the authoritative source.",
       "source": "/computing.html"
     }
   ],
   "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence.",
   "edition": "cinematic-v2",
   "remaster_signature": "story-motion-v2.2",
+  "source_visual_revision": "curated-2026-10-17-v2",
   "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off",
   "animated_scene_ids": [
     "02",
@@ -70,7 +71,7 @@
   "motion_storyboard": {
     "02": "signal",
     "03": "signal",
-    "04": "network",
+    "04": "target-exposure",
     "05": "translation"
   },
   "motion_annotations": [

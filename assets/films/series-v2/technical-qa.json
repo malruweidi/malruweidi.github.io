@@ -6,8 +6,8 @@
     {
       "name": "ace2-covid-drugs",
       "seconds": 84.0,
-      "size_bytes": 2670669,
-      "sha256": "b1f1e920566489b946e6609fc0958e2ff302ae7df90a0f8eb156e6cbad98be12",
+      "size_bytes": 2541370,
+      "sha256": "7531772ed1c7b23dd4ad2e8393e68650ebbf2091824dc0bafe91db72ed65ffd4",
       "width": 1280,
       "height": 720,
       "codec": "h264",
@@ -27,8 +27,8 @@
     {
       "name": "ace2-forms",
       "seconds": 84.0,
-      "size_bytes": 2523975,
-      "sha256": "3a9d74f944c9d78463423de064b55e7eb71692ae63ef0da41e238444c7be3470",
+      "size_bytes": 2548270,
+      "sha256": "02cc176936e0f665cf45b5ba9966529f01cf9f94f874c0a6ba64ab9e7ac2def4",
       "width": 1280,
       "height": 720,
       "codec": "h264",
@@ -214,6 +214,27 @@
       "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
     },
     {
+      "name": "essay-ai-email",
+      "seconds": 84.0,
+      "size_bytes": 2586002,
+      "sha256": "da5290a9176c1e342f44da2134f0592998196bd95dca5316995996bedb26978b",
+      "width": 1280,
+      "height": 720,
+      "codec": "h264",
+      "audio": "aac",
+      "captions": {
+        "cue_count": 26,
+        "max_caption_line": 54,
+        "last_caption_second": 79.91
+      },
+      "black_frames": {
+        "sample_rate_hz": 2,
+        "blank_intervals_seconds": [],
+        "longest_black_seconds": 0
+      },
+      "human_screening": "NOT YET COMPLETED; narration, science and device playback require sign-off"
+    },
+    {
       "name": "essay-life-between-diagnoses",
       "seconds": 84.0,
       "size_bytes": 2566197,
@@ -279,8 +300,8 @@
     {
       "name": "gi-autoimmunity-1",
       "seconds": 84.0,
-      "size_bytes": 2603871,
-      "sha256": "63b0dabb1296cd3b5e2d702bf9d1c51329f008a5222f58b77497eb2022710f71",
+      "size_bytes": 2628745,
+      "sha256": "26625cce5a7998860b4ade9c09c1a166655cbd15a00952c3f22610a22b6de259",
       "width": 1280,
       "height": 720,
       "codec": "h264",
@@ -300,8 +321,8 @@
     {
       "name": "gi-autoimmunity-2",
       "seconds": 84.0,
-      "size_bytes": 2679592,
-      "sha256": "1ac286718ef9e0469210a21d9b584b1470f8816918185fd73effb090b5336d3a",
+      "size_bytes": 2568447,
+      "sha256": "0cb5a8d079410af23c4babc13ff478df6df62e297e3bbf223b9bc01c8b7e6f79",
       "width": 1280,
       "height": 720,
       "codec": "h264",
@@ -321,8 +342,8 @@
     {
       "name": "heart-failure-sensors",
       "seconds": 84.0,
-      "size_bytes": 2730217,
-      "sha256": "c2811380afab377a6a799264fa43b34698b1e807d0958ae98b7c05cff923490b",
+      "size_bytes": 2729038,
+      "sha256": "35a9db2e30db9ceccdf782298236a64dd5d3f866fffe3cf97a988c2a665bfff7",
       "width": 1280,
       "height": 720,
       "codec": "h264",
