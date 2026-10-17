@@ -16,7 +16,7 @@
       "path": "assets/home-archive/figure-zebrafish-microscopy.jpg",
       "also": "assets/evidence-zebrafish.webp",
       "reason": "MicroZebraLab zebrafish blood-flow tracking image showing PCV/DA and velocity analysis software, not published primary-cilia microscopy in 2018 cerebral vascular cilia paper. Cannot be used as an experimental figure here.",
-      "allowed_alternate_context": "May remain in separate true MicroZebraLab blood-flow study archive when appropriate and attributed."
+      "allowed_alternate_context": "MicroZebraLab visualization is thematically appropriate for the *distinct* 2020 coauthored paper on zebrafish cardiac function/hemodynamics, DOI 10.1016/j.micron.2020.102876, subject to verifying exact published figure panel identity and image reuse permission. It is NOT the 2018 cerebrovascular cilia paper."
     }
   ],
   "authentic_figures": [
@@ -69,5 +69,13 @@
   ],
   "approved_for_public_embed": false,
   "rights_gate": "The 2018 journal article includes American Heart Association copyright notice; appearing at PMC or ZFIN is NOT sufficient to establish reuse rights. Seek explicit permission or rights documentation for image redistribution on public website.",
-  "policy": "No new microscopy, readouts or figure panels invented by the editing pipeline. Simulated geometries must be labelled conceptual and never impersonate confocal data."
+  "policy": "No new microscopy, readouts or figure panels invented by the editing pipeline. Simulated geometries must be labelled conceptual and never impersonate confocal data.",
+  "distinct_relevant_other_paper": {
+    "doi": "10.1016/j.micron.2020.102876",
+    "title": "Cardiac function and blood flow hemodynamics assessment of zebrafish (Danio rerio) using high-speed video microscopy",
+    "published": 2020,
+    "journal": "Micron",
+    "source": "https://www.sciencedirect.com/science/article/pii/S0968432820301256",
+    "reason": "Uses actual MicroZebraLab software to quantify blood flow and cardiac dynamics in zebrafish; a software screenshot may be relevant *only* to that film, with figure/license proof."
+  }
 }
