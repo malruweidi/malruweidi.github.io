@@ -10,7 +10,7 @@ from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/"assets/films/series-v3"
-TARGET=["curcumin-cyanide","histology-failure","ace2-forms"]
+TARGET=["curcumin-cyanide","histology-failure","ace2-forms","micelles-pahs"]
 CLOCK=[3,11,18,26,33,41,48,56,63,71,78,86,93,101,108,116]
 FACE="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -38,6 +38,16 @@ def source_gate(name,meta):
   f=meta["source_figures"]
   assert len(f)==1 and f[0]["figure_number"]==3
   assert sha(ROOT/"assets/films/source-figures/ace2-original/ace2-forms-figure-03.jpg")==f[0]["image_sha256"]
+ elif name=="micelles-pahs":
+  assert meta["original_grant"]=="UREP19-110-1-014"
+  expected={
+   "assets/owner-archive-2026-10-17/acs-2017-micelles-research-poster.webp":"c80f9d3dd5cdee81d521189598cb83c8eb8ab9cb",
+   "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp":"d1c8301885cdb6f83ff8ef647c7dfa371b4d592c",
+   "assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp":"fec7e23b25fb8b78c149862922b871015e0f0c7d"
+  }
+  assert set(meta["archival_files"])==set(expected)
+  for file,blob_sha in expected.items():assert gitblob(ROOT/file)==blob_sha
+  assert "No claim of measured" in meta["scientific_limit"]
  else:raise ValueError("Unauthorized study requested")
 def inspect(name):
  m=SRC/(name+".mp4")
