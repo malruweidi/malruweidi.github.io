@@ -959,17 +959,17 @@
         {
           "title": "Before the degree",
           "phase": 0,
-          "real_image": false,
-          "image_source": "v7-original-illustration",
-          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "real_image": true,
+          "image_source": "assets/home-archive/childhood-portrait.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Archival childhood portrait, not a photograph of the later school examinations",
           "file": "assets/films/quality-review-v7/essay-life-between-diagnoses-s01-p0.webp"
         },
         {
           "title": "Before the degree",
           "phase": 1,
-          "real_image": false,
-          "image_source": "v7-original-illustration",
-          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "real_image": true,
+          "image_source": "assets/home-archive/childhood-portrait.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Archival childhood portrait, not a photograph of the later school examinations",
           "file": "assets/films/quality-review-v7/essay-life-between-diagnoses-s01-p1.webp"
         },
         {
@@ -997,17 +997,17 @@
         {
           "title": "The crime was a polished email",
           "phase": 0,
-          "real_image": false,
-          "image_source": "v7-original-illustration",
-          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "real_image": true,
+          "image_source": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Original research workstation, not the correspondence being discussed",
           "file": "assets/films/quality-review-v7/essay-ai-email-s01-p0.webp"
         },
         {
           "title": "The crime was a polished email",
           "phase": 1,
-          "real_image": false,
-          "image_source": "v7-original-illustration",
-          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "real_image": true,
+          "image_source": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Original research workstation, not the correspondence being discussed",
           "file": "assets/films/quality-review-v7/essay-ai-email-s01-p1.webp"
         },
         {
@@ -1035,17 +1035,17 @@
         {
           "title": "The style existed before the chatbot",
           "phase": 0,
-          "real_image": false,
-          "image_source": "v7-original-illustration",
-          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "real_image": true,
+          "image_source": "assets/home-archive/chemistry-chalkboard.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Archival chalkboard photograph, not text of an identified academic abstract",
           "file": "assets/films/quality-review-v7/essay-machine-language-s01-p0.webp"
         },
         {
           "title": "The style existed before the chatbot",
           "phase": 1,
-          "real_image": false,
-          "image_source": "v7-original-illustration",
-          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "real_image": true,
+          "image_source": "assets/home-archive/chemistry-chalkboard.jpg",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Archival chalkboard photograph, not text of an identified academic abstract",
           "file": "assets/films/quality-review-v7/essay-machine-language-s01-p1.webp"
         },
         {
@@ -1073,17 +1073,17 @@
         {
           "title": "A CV tells the wrong kind of time",
           "phase": 0,
-          "real_image": false,
-          "image_source": "v7-original-illustration",
-          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "real_image": true,
+          "image_source": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Original academic archive, not a clinical record",
           "file": "assets/films/quality-review-v7/essay-academic-mental-health-s01-p0.webp"
         },
         {
           "title": "A CV tells the wrong kind of time",
           "phase": 1,
-          "real_image": false,
-          "image_source": "v7-original-illustration",
-          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
+          "real_image": true,
+          "image_source": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Original academic archive, not a clinical record",
           "file": "assets/films/quality-review-v7/essay-academic-mental-health-s01-p1.webp"
         },
         {
