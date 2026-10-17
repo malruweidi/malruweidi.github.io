@@ -22,22 +22,22 @@ test("documentary hub separates released films, original observations and preser
   }
 });
 
-test("failed histology film notebook uses only three traceable photographs and distinguishes observation from hypothesis", () => {
-  const notebook = read("films/two-materials-no-section.html");
+test("histology documentary stays reader-first while three experimental photographs remain in the original story", () => {
+  const film = read("films/two-materials-no-section.html");
+  const story = read("stories/failed-zebrafish-histology.html");
   for (const file of [
     "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
     "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
     "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp"
   ]) {
-    assert.ok(fs.existsSync(path.join(root, file)), "original image absent " + file);
-    assert.ok(notebook.includes("/" + file), "film notebook omits source " + file);
+    assert.ok(fs.existsSync(path.join(root, file)), "original photo absent " + file);
+    assert.ok(story.includes("/" + file), "original experimental story omits photograph " + file);
   }
-  assert.match(notebook, /No finished film has been published/);
-  assert.match(notebook, /No interpretable histological section was obtained/);
-  assert.match(notebook, /not established as the sole cause/);
-  assert.match(notebook, /2% agarose/);
-  assert.match(notebook, /id="source-record"/);
-  assert.ok(notebook.includes('href="/stories/failed-zebrafish-histology.html"'));
+  assert.match(story, /2% agarose/);
+  assert.match(film, /<video\\b[^>]*controls/);
+  assert.ok(film.includes('href="/stories/failed-zebrafish-histology.html"'));
+  assert.match(film, /Its exact cause was not conclusively established/);
+  assert.doesNotMatch(film, /No finished film has been published/);
 });
 
 test("new collection is additive and searchable without removing published footage", () => {
