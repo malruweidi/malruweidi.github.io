@@ -14,7 +14,22 @@ DOI="10.1161/ATVBAHA.118.311231"
 SRC="https://www.ebi.ac.uk/europepmc/webservices/rest/"+PMCID+"/fullTextXML"
 def main():
     req=urllib.request.Request(SRC,headers={"Accept":"application/xml","User-Agent":"Ruwaidix study-specific archival-licence-inspection/1.0"})
-    with urllib.request.urlopen(req,timeout=45) as r:raw=r.read(6_000_000)
+    try:
+        with urllib.request.urlopen(req,timeout=45) as r:raw=r.read(6_000_000)
+    except Exception as error:
+        # Restricted scientific text cannot authorise invented microscopy.
+        DEST.mkdir(exist_ok=True,parents=True)
+        fallback={"id":"cerebral-cilia",
+                  "title":"Characterization of Endothelial Cilia Distribution During Cerebral-Vascular Development in Zebrafish",
+                  "doi":DOI,"pmcid":PMCID,"jats_source":SRC,
+                  "rights_status":"UNKNOWN / BLOCKED / NO REPRODUCTION APPROVAL",
+                  "figure_inventory_status":"UNAVAILABLE FROM OFFICIAL XML ENDPOINT",
+                  "source_failure":str(error)[:220],
+                  "film_condition":"No other zebrafish heart study, synthetic microscopy or unrelated vessel image may substitute.",
+                  "figures":[]}
+        (DEST/"rights-and-figure-inventory.json").write_text(json.dumps(fallback,indent=2,ensure_ascii=False)+"\n")
+        print("SOURCE BLOCKED: NO CILIA IMAGES ACQUIRED",str(error)[:130])
+        return
     root=ET.fromstring(raw)
     article_dois=[(x.text or "").lower() for x in root.findall(".//article-id") if x.attrib.get("pub-id-type")=="doi"]
     if DOI.lower() not in article_dois:raise ValueError("Unrelated cilia article, do not import figures")
