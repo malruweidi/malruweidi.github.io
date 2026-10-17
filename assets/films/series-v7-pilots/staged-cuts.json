@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 29,
+  "count": 30,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -165,6 +165,21 @@
       "contact": "/assets/films/series-v7-pilots/essay-academic-mental-health.contact.webp",
       "visual_revision": "v7.8-clean-screen/v7.5-original-research-life-archive/source-figure-fully-visible",
       "sha256": "772393ae17b0efdb36bd454a81dd1eca6298ddc25deac69eaf04cb42800c7b9a",
+      "seconds": 84.0,
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
+    },
+    {
+      "id": "essay-adc",
+      "title": "The Antibody Is Only the Beginning",
+      "publication": "Antibody–Drug Conjugates 3.0: A New Era Of Precision Engineering In Oncology",
+      "poster": "/assets/films/series-v7-pilots/essay-adc.webp",
+      "file": "/assets/films/series-v7-pilots/essay-adc.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-adc.vtt",
+      "manifest": "/assets/films/series-v7-pilots/essay-adc.json",
+      "contact": "/assets/films/series-v7-pilots/essay-adc.contact.webp",
+      "visual_revision": "v7.8-clean-screen/film-specific",
+      "sha256": "bd5f6bb9ec4512b0eb45c70266cde153780c598cdc055fa368504e1504fc350a",
       "seconds": 84.0,
       "unique_mechanism_scenes": 6,
       "creative_review": "scientific_and_artistic_signoff_outstanding"
