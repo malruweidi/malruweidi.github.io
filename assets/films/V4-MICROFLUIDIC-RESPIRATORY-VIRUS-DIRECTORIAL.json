@@ -1,0 +1,90 @@
+{
+  "schema": "source-matched-v4-review-cinema",
+  "doi": "10.1007/s42247-021-00169-7",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7992628/",
+  "review_not_trial": true,
+  "licence": "CC BY 4.0 for article and author-created Figure 1 only; other composite figures may contain separately credited content",
+  "narrative": "Animated methods taxonomy from the actual paper's Figure 1; all other mechanisms explicitly schematic, no claimed real sensor device, performance values or clinical test.",
+  "scenes": [
+    {
+      "title": "From a sample to a result",
+      "headline": [
+        "From a sample to a result"
+      ],
+      "eyebrow": "A REVIEW, NOT ONE DEVICE",
+      "narration": "In respiratory-virus testing, the hard question is how a sample becomes a reliable signal. This review examines several microfluidic approaches, not one validated commercial instrument.",
+      "mode": "source",
+      "figure": 1
+    },
+    {
+      "title": "The channel",
+      "headline": [
+        "The channel"
+      ],
+      "eyebrow": "SMALL VOLUMES, CONTROLLED FLOW",
+      "narration": "A microfluidic channel directs a small amount of sample past defined sensing areas. Geometry changes transport and contact time, which can influence whether the target reaches the surface.",
+      "mode": "channel",
+      "figure": 1
+    },
+    {
+      "title": "Capture is conditional",
+      "headline": [
+        "Capture is conditional"
+      ],
+      "eyebrow": "ANTIBODY · APTAMER · BEAD",
+      "narration": "Different systems use antibodies, aptamers or magnetic beads to recognize targets. Binding alone does not guarantee specificity, particularly in complex nasal fluids.",
+      "mode": "capture",
+      "figure": 1
+    },
+    {
+      "title": "Different light signals",
+      "headline": [
+        "Different light signals"
+      ],
+      "eyebrow": "OPTICAL DETECTION",
+      "narration": "An optical microchip may read fluorescence, absorption or a plasmonic change. The signal depends on the chosen chemistry, optics and background, not simply the presence of a virus.",
+      "mode": "optical",
+      "figure": 1
+    },
+    {
+      "title": "Charge is another route",
+      "headline": [
+        "Charge is another route"
+      ],
+      "eyebrow": "ELECTRICAL / ELECTROCHEMICAL",
+      "narration": "Electrochemical or electrical sensors convert a local target-related event into an instrument signal. Surface fouling, ionic conditions and interfering compounds still matter.",
+      "mode": "electrochemical",
+      "figure": 1
+    },
+    {
+      "title": "RNA is not antigen",
+      "headline": [
+        "RNA is not antigen"
+      ],
+      "eyebrow": "DIRECT VIRAL GENETIC MATERIAL",
+      "narration": "Nucleic acid detection first has to make its intended viral sequence accessible. When amplification is used, contamination and assay controls become essential.",
+      "mode": "nucleic",
+      "figure": 1
+    },
+    {
+      "title": "Every threshold has a cost",
+      "headline": [
+        "Every threshold has a cost"
+      ],
+      "eyebrow": "FALSE POSITIVES AND MISSED SIGNALS",
+      "narration": "Detection limits, cross-reactivity and reproducibility must be measured with proper samples. A promising sensor prototype is not automatically a clinically validated point-of-care test.",
+      "mode": "validation",
+      "figure": 1
+    },
+    {
+      "title": "The review's proper claim",
+      "headline": [
+        "The review's proper claim"
+      ],
+      "eyebrow": "AN ENGINEERING MAP, NOT CLINICAL ADVICE",
+      "narration": "The paper maps ways to engineer direct respiratory-virus detection. Choosing a device requires independent validation of sensitivity, specificity and practical use.",
+      "mode": "closing",
+      "figure": 1
+    }
+  ]
+}
