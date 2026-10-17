@@ -1,0 +1,60 @@
+{
+  "id": "echo-cnn-lstm",
+  "seconds": 84.0,
+  "sha256": "6b020a3a84b9883c5fa31d6d01659e9886483d56d31646db3d63621e657b4752",
+  "primary_source": "https://doi.org/10.1109/ACCESS.2023.3316719",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/echo-cnn-lstm/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/echo-cnn-lstm/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/echo-cnn-lstm/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/echo-cnn-lstm/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/echo-cnn-lstm/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/echo-cnn-lstm/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/computing.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

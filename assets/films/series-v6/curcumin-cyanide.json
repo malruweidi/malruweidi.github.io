@@ -1,0 +1,60 @@
+{
+  "id": "curcumin-cyanide",
+  "seconds": 84.0,
+  "sha256": "8d8bf27dca4c03b5016ef09e1722fb6f38c6b70daa2f143cdc54bdc73293b67d",
+  "primary_source": "https://doi.org/10.1039/C9AY01557D",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Published cyanide sensor figure",
+    "Published study figure",
+    "Original explanatory schematic; not research evidence",
+    "Published sensor optical readouts",
+    "Published sensing and cell figure",
+    "Published research record"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published cyanide sensor figure",
+      "credit": "Published cyanide sensor figure",
+      "source": "/stories/the-ring-that-never-closed.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published study figure",
+      "credit": "Published study figure",
+      "source": "/stories/the-ring-that-never-closed.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/curcumin-cyanide/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/stories/the-ring-that-never-closed.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published sensor optical readouts",
+      "credit": "Published sensor optical readouts",
+      "source": "/stories/the-ring-that-never-closed.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published sensing and cell figure",
+      "credit": "Published sensing and cell figure",
+      "source": "/stories/the-ring-that-never-closed.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "kind": "Published research record",
+      "credit": "Published research record",
+      "source": "/stories/the-ring-that-never-closed.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

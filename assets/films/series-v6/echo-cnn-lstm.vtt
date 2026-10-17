@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.550 --> 00:00:06.236
+Inside fetal echocardiography, anatomy changes with each frame. Diagnosing congenital
+
+00:00:06.236 --> 00:00:11.922
+cardiac disease requires more than recognising a single still image.
+
+00:00:14.925 --> 00:00:19.988
+Ultrasound images are sensitive to acquisition and annotation. Before modelling,
+
+00:00:19.988 --> 00:00:25.051
+their quality and the study's sampling conditions need careful attention.
+
+00:00:27.842 --> 00:00:33.147
+Convolutional neural networks can extract visual patterns. Long short-term memory
+
+00:00:33.147 --> 00:00:38.453
+models can process sequence information, when the input design preserves it.
+
+00:00:41.342 --> 00:00:46.891
+Our paper studied stacking-based CNN-LSTM techniques for fetal echocardiogram
+
+00:00:46.891 --> 00:00:52.440
+interpretation. Evaluating them is different from establishing safe deployment.
+
+00:00:55.383 --> 00:01:01.170
+Model accuracy alone cannot settle clinical utility. Dataset composition, validation design,
+
+00:01:01.170 --> 00:01:06.956
+and false positive or missed cases determine how results should be read.
+
+00:01:10.008 --> 00:01:15.779
+The 2023 publication is an exploratory contribution to congenital heart
+
+00:01:15.779 --> 00:01:21.549
+disease detection. The source paper retains the actual comparisons and limits.

@@ -1,0 +1,60 @@
+{
+  "id": "niosomes",
+  "seconds": 84.0,
+  "sha256": "7cf04d6cacdbefe418e84764b4866d2d40dd3a735b88a1b7910fc24de40a76d6",
+  "primary_source": "/research/inhalable-vesicles.html",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/niosomes/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/inhalable-vesicles.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/niosomes/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/inhalable-vesicles.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/niosomes/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/inhalable-vesicles.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/niosomes/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/inhalable-vesicles.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/niosomes/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/inhalable-vesicles.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/niosomes/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/inhalable-vesicles.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
