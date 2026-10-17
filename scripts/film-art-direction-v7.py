@@ -68,7 +68,9 @@ LABELS={
 }
 PHOTO={
  "airway-reopening":["assets/home-archive/figure-pulmonary-flow-chamber.jpg"],
- "cerebral-cilia":["assets/home-archive/figure-zebrafish-microscopy.jpg"],
+ # The pictured heart-video analysis software belongs to hemodynamics, not
+ # the endothelial-cilia distribution experiment. Do not assign it to cilia.
+ "cerebral-cilia":[],
  "curcumin-cyanide":["assets/home-archive/figure-cyanide-sensor.jpg"],
  "flow-chamber-method":["assets/home-archive/figure-pulmonary-flow-chamber.jpg"],
  "zebrafish-hemodynamics":["assets/home-archive/figure-zebrafish-microscopy.jpg"],
