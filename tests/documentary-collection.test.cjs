@@ -34,7 +34,7 @@ test("histology documentary stays reader-first while three experimental photogra
     assert.ok(story.includes("/" + file), "original experimental story omits photograph " + file);
   }
   assert.match(story, /2% agarose/);
-  assert.match(film, /<video\\b[^>]*controls/);
+  assert.match(film, /<video\b[^>]*controls/);
   assert.ok(film.includes('href="/stories/failed-zebrafish-histology.html"'));
   assert.match(film, /Its exact cause was not conclusively established/);
   assert.doesNotMatch(film, /No finished film has been published/);
