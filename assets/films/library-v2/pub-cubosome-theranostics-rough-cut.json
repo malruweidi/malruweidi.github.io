@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bf_emma",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "b6226bf23852a70233064a4ba6847e7f229173abb9d1aa8288ebf3d25122c430",
+  "sha256": "1964f3f7b3f055eba0d4de2bf33c0f9499cc5b9677254ccdedb22eee9112d470",
   "shots": [
     {
       "title": "The difficult promise of a cubic carrier",
@@ -74,5 +76,6 @@
   "needs_human_narration_review": true,
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
-  "input_sha256": "eb9e37e5ca77147c1492435b652f9c72c3e3fbe7d7b05e740e29268ed11d59f7"
+  "motion_shots": [],
+  "input_sha256": "4afa89f9366f273b715224c8c27cd798da42459713a3e2d30644df711582dd8c"
 }

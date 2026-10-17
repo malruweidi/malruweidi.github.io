@@ -3,11 +3,13 @@
   "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
   "duration": 120.0,
   "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_lewis",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
   "voice_approved": false,
   "sound_mix_approved": false,
   "source_rights_approved": false,
   "continuous_playback_approved": false,
-  "sha256": "d9be6d90836702602c172d4c6e5dbc21f7688e0bc093a88e8c92cd1ff9ce840e",
+  "sha256": "e7fbf5e4f8e187342eb0952b408d4dfbccad410a50395f65f203598eb6415a27",
   "shots": [
     {
       "title": "A structure the body must tolerate",
@@ -75,5 +77,5 @@
   "needs_visual_composition_review": true,
   "never_auto_publish": true,
   "motion_shots": [],
-  "input_sha256": "cf721cd87ea82b721870a17a999fd3c84924f94479a992a6900facf6a1810868"
+  "input_sha256": "15b6cf32075c767ae6bb3b8a7f72de6f125b757fbfa2ff378b94b1d039012519"
 }
