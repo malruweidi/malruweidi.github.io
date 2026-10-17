@@ -1,0 +1,60 @@
+{
+  "id": "essay-tf-states",
+  "seconds": 84.0,
+  "sha256": "5d4f4327f17ca27a96c1b10b9f4470f6557fb9f78d8ef1be9c40d3ecaa4f578b",
+  "primary_source": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/essay-tf-states/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/essay-tf-states/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/essay-tf-states/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/essay-tf-states/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/essay-tf-states/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/essay-tf-states/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

@@ -1,0 +1,60 @@
+{
+  "id": "essay-scientific-credit",
+  "seconds": 84.0,
+  "sha256": "f95d99e8798d17f81f715bc3497f59c505a55b7df4360c959a42a0104d25a335",
+  "primary_source": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/2017-acs-el-sayed-group.webp",
+      "kind": "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+      "credit": "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/essay-scientific-credit/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/essay-scientific-credit/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/essay-scientific-credit/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/essay-scientific-credit/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/essay-scientific-credit/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

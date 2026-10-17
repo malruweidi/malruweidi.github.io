@@ -1,0 +1,60 @@
+{
+  "id": "essay-potency-exposure",
+  "seconds": 84.0,
+  "sha256": "aa17e58bf48a55ff87b22251840a9b574a82ce613a5b4c4731647713a4ee7970",
+  "primary_source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "generated:film-art-direction-v6/essay-potency-exposure/scene-01",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/essay-potency-exposure/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/essay-potency-exposure/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/essay-potency-exposure/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/essay-potency-exposure/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "generated:film-art-direction-v6/essay-potency-exposure/scene-06",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/writing.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
