@@ -106,15 +106,46 @@ def render(entry):
   (OUT/(slug+".json")).write_text(json.dumps(metadata,indent=2)+"\n")
   print("V7 PILOT",slug,"duration",round(duration,2),"bytes",out.stat().st_size,"shots",len(shot_records))
 
+# Five peer-evidence-based cuts already exist and are preserved unaltered.
+# A generic new drawing must not silently displace their source-matched art.
+PRESERVE_SCHOLARLY={"making-medicines-keep","pla-grafting","pla-scaffolds",
+                    "flow-chamber-method","microfluidic-virus"}
+
+def complete(slug):
+ paths=[OUT/(slug+ext) for ext in (".mp4",".vtt",".webp",".json")]
+ if not all(p.is_file() and p.stat().st_size>1000 for p in paths):
+  return False
+ try:
+  record=json.loads(paths[-1].read_text())
+  return (record["slug"]==slug and record["visual_beat_count"]==24 and
+          record["movie_sha256"]==hashlib.sha256(paths[0].read_bytes()).hexdigest() and
+          paths[1].read_text().startswith("WEBVTT"))
+ except (OSError,KeyError,ValueError,TypeError):
+  return False
+
 def main():
  p=argparse.ArgumentParser()
- p.add_argument("--film",action="append",required=True)
+ p.add_argument("--film",action="append",help="One or more exact publication film IDs")
+ p.add_argument("--all-missing",action="store_true",help="Render only missing staging editions among 30 eligible films")
+ p.add_argument("--batch-size",type=int,default=4,help="Maximum V7 staging films per Actions run")
+ p.add_argument("--remaining-count",action="store_true",help="Return one numeric line containing unfinished films")
  args=p.parse_args()
  catalog=json.loads(CAT.read_text())["items"]
  byid={x["id"]:x for x in catalog}
  if len(byid)!=35:raise AssertionError("Bibliography completeness regression")
- for slug in args.film:
-  if slug not in byid:raise ValueError(slug)
+ eligible=[x["id"] for x in catalog if x["id"] not in PRESERVE_SCHOLARLY]
+ if len(eligible)!=30:raise AssertionError("Protect exactly five source-specific research editions")
+ if args.remaining_count:
+  print(sum(not complete(slug) for slug in eligible))
+  return
+ if args.all_missing:
+  if args.batch_size<1 or args.batch_size>8:raise ValueError("Batch size must be 1 through 8")
+  selected=[slug for slug in eligible if not complete(slug)][:args.batch_size]
+ else:
+  selected=args.film or []
+  if not selected:raise ValueError("Select --film or --all-missing")
+ for slug in selected:
+  if slug not in eligible:raise ValueError("Protected scholarly film or unknown ID: "+slug)
   render(byid[slug])
-
+ print("V7 STAGING COMPLETE",len(selected),"remaining",sum(not complete(slug) for slug in eligible))
 if __name__=="__main__": main()
