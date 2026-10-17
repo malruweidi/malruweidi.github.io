@@ -1,0 +1,60 @@
+{
+  "id": "airway-reopening",
+  "seconds": 84.0,
+  "sha256": "452b9316c0d8f39988cd6ad506551eb57153ac2cb34f87c2d20e101df763d04e",
+  "primary_source": "https://doi.org/10.1152/japplphysiol.00574.2020",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Published research figure: parallel-plate experimental geometry",
+    "Original explanatory schematic; not research evidence",
+    "Study figure reproduced in the author's research archive",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Published study context; DOI on film page"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "kind": "Published research figure: parallel-plate experimental geometry",
+      "credit": "Published research figure: parallel-plate experimental geometry",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/airway-reopening/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "kind": "Study figure reproduced in the author's research archive",
+      "credit": "Study figure reproduced in the author's research archive",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "generated:film-art-direction-v6/airway-reopening/scene-04",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/airway-reopening/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "kind": "Published study context; DOI on film page",
+      "credit": "Published study context; DOI on film page",
+      "source": "/research/pulmonary-epithelial-injury.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}

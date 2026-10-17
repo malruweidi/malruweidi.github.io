@@ -1,0 +1,60 @@
+{
+  "id": "cerebral-cilia",
+  "seconds": 84.0,
+  "sha256": "1945f6bc99c25290fba205e8e737be0d187a2b61ae1854c50656fa966ea71a28",
+  "primary_source": "https://doi.org/10.1161/ATVBAHA.118.311231",
+  "voice": "Open Kokoro ONNX, synthetic actor-free narrator",
+  "image_classes": [
+    "Published zebrafish research imagery",
+    "Original explanatory schematic; not research evidence",
+    "Original explanatory schematic; not research evidence",
+    "Published figure in research archive",
+    "Original explanatory schematic; not research evidence",
+    "Published research record"
+  ],
+  "scene_provenance": [
+    {
+      "scene_id": "01",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "kind": "Published zebrafish research imagery",
+      "credit": "Published zebrafish research imagery",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    },
+    {
+      "scene_id": "02",
+      "image": "generated:film-art-direction-v6/cerebral-cilia/scene-02",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    },
+    {
+      "scene_id": "03",
+      "image": "generated:film-art-direction-v6/cerebral-cilia/scene-03",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    },
+    {
+      "scene_id": "04",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "kind": "Published figure in research archive",
+      "credit": "Published figure in research archive",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    },
+    {
+      "scene_id": "05",
+      "image": "generated:film-art-direction-v6/cerebral-cilia/scene-05",
+      "kind": "Original explanatory schematic; not research evidence",
+      "credit": "Original explanatory schematic; not research evidence",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    },
+    {
+      "scene_id": "06",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "kind": "Published research record",
+      "credit": "Published research record",
+      "source": "/research/zebrafish-vascular-cilia.html"
+    }
+  ],
+  "disclosure": "Illustrations, archival context and scientific figures are identified; no AI images presented as source evidence."
+}
