@@ -84,12 +84,12 @@ function uri(id,edition,ext){return '/assets/films/'+(edition==='v2'?'series-v2'
 async function check(url){try{const r=await fetch(url,{method:'HEAD',cache:'no-cache'});return r.ok&&(r.headers.get('content-type')||'').includes('video/')}catch{return false}}
 async function player(){
   if(!selected)return;
-  const serial=selected.id;const target=byId('player');
+  const serial=selected.id;const requested=cut;const target=byId('player');
   const preferred=uri(serial,cut,'mp4');
   let video=preferred,edition=cut;
   byId('status').textContent='Checking the available cut…';
   if(!await check(preferred)){video=uri(serial,'v1','mp4');edition='v1'}
-  if(!selected||selected.id!==serial)return;
+  if(!selected||selected.id!==serial||cut!==requested)return;
   target.innerHTML='<video controls playsinline preload="metadata" poster="'+esc(edition==='v2'?(direction[serial]?.review_poster||selected.poster):selected.poster)+'" aria-label="'+esc(selected.film_title)+'"><source src="'+esc(video)+'" type="video/mp4"><track kind="captions" src="'+esc(uri(serial,edition,'vtt'))+'" srclang="en" label="English captions"></video><div class="under"><a href="'+esc(uri(serial,edition,'vtt'))+'">Open the narrated transcript and captions ↗</a></div>';
   byId('status').textContent=edition==='v2'?'Cinematic draft available. Human audiovisual approval remains outstanding.':'Showing the original 84-second version; the new edition is still in production.';
   // The two cuts may contain DIFFERENT pictures. Use the exact per-cut
@@ -97,8 +97,8 @@ async function player(){
   // to archival footage in the original film.
   let provenance=[];
   try{const response=await fetch(uri(serial,edition,'json'));if(response.ok){const manifest=await response.json();provenance=manifest.scene_provenance||[]}}catch{}
-  if(!selected||selected.id!==serial)return;
-  byId('evidence').innerHTML='<details><summary>Inspect all six scenes and evidence actually displayed in the '+(edition==='v2'?'new':'original')+' film</summary><ol class="scenes">'+selected.scenes.map((s,i)=>{const p=provenance[i]||{};const image=p.image||s.image;const context=p.source||s.link;return '<li><strong>'+esc(s.title)+'</strong><p>'+esc(s.narration)+'</p><p>'+esc(p.credit||s.credit)+' · '+esc(p.kind||s.kind)+' · <a href="'+esc(context)+'">Source/context</a> · <a target="_blank" rel="noopener" href="'+esc('/'+image.replace(/^\\/+/,''))+'">Inspect original figure ↗</a></p></li>'}).join('')+'</ol></details>';
+  if(!selected||selected.id!==serial||cut!==requested)return;
+  byId('evidence').innerHTML='<details><summary>Inspect all six scenes and evidence actually displayed in the '+(edition==='v2'?'new':'original')+' film</summary><ol class="scenes">'+selected.scenes.map((s,i)=>{const p=provenance[i]||{};const image=p.image||s.image;const context=p.source||s.link;return '<li><strong>'+esc(s.title)+'</strong><p>'+esc(s.narration)+'</p><p>'+esc(p.credit||s.credit)+' · '+esc(p.kind||s.kind)+' · <a href="'+esc(context)+'">Source/context</a> · <a target="_blank" rel="noopener" href="'+esc('/'+image.replace(/^[/]+/,''))+'">Inspect original figure ↗</a></p></li>'}).join('')+'</ol></details>';
 }
 function choose(item){
   selected=item;
