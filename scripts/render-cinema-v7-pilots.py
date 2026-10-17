@@ -29,7 +29,9 @@ ART_REVISIONS={
  "essay-potency-exposure":"v7.9-unbound-exposure-labels",
  "essay-proximity":"v7.9-proximity-ligand-labels",
  "essay-scientific-credit":"v7.9-attribution-labels",
- "heterocycle-cancer":"v7.9-heterocycle-labels"
+ "heterocycle-cancer":"v7.9-heterocycle-labels",
+ "essay-tf-states":"v7.11-regulatory-state-cinema",
+ "heart-failure-sensors":"v7.11-physiological-sensor-cinema"
 }
 # These films use identified original research figures or documentary photographs.
 # Rebuild them if the source figure's full-frame safe-area geometry changes.
