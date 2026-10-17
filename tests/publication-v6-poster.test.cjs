@@ -96,3 +96,10 @@ test('documentary collection links its already released work instead of labellin
     assert(page.includes('href="'+destination+'"'),'Missing release link: '+destination);
   }
 });
+
+test('verified primary-source research films are preferred to generic release-index entries',()=>{
+  const html=fs.readFileSync(path.join(root,'publication-cinema.html'),'utf8');
+  assert.match(html,/let sourcePoster=verifiedFilmMasters\[x\.id\]\?\.poster \|\| releasedV6\.get\(x\.id\)\?\.poster/);
+  assert.match(html,/const v6Release=verifiedResearchEdition\?null:releasedV6\.get\(x\.id\)/);
+  assert.match(html,/const selectedEdition=verifiedResearchEdition \|\|/);
+});
