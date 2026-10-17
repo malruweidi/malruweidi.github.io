@@ -1,6 +1,6 @@
 {
   "slug": "ace2-covid-drugs",
-  "visual_revision": "v7.1",
+  "visual_revision": "v7.3-caption-safe/film-specific",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
@@ -157,5 +157,6 @@
       "source": "original-nonquantitative-v7-schematic"
     }
   ],
+  "contact_sheet": "/assets/films/series-v7-pilots/ace2-covid-drugs.contact.webp",
   "primary_source": "10.1080/08037051.2022.2055530"
 }

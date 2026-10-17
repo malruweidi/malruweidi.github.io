@@ -1,12 +1,12 @@
 {
   "slug": "niosomes",
-  "visual_revision": "v7.1",
+  "visual_revision": "v7.3-caption-safe/film-specific",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
   "fps": 24,
   "source_audio_sha256": "7cf04d6cacdbefe418e84764b4866d2d40dd3a735b88a1b7910fc24de40a76d6",
-  "movie_sha256": "dee0c329a2d9a07d95da3d5175d71ec38c80fc31148767b60209cb3c8594c294",
+  "movie_sha256": "40232935f67d2f838b67c3df50a6605bffbdb52b7f1ef30fb55f2bbe40c344f7",
   "audio_and_captions": "preserved synchronized V6 narration and captions, not newly recorded",
   "visual_credit": "original explanatory diagrams explicitly separated from approved archival photos",
   "scene_count": 6,
@@ -157,5 +157,6 @@
       "source": "original-nonquantitative-v7-schematic"
     }
   ],
+  "contact_sheet": "/assets/films/series-v7-pilots/niosomes.contact.webp",
   "primary_source": "/research/inhalable-vesicles.html"
 }

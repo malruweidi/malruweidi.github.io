@@ -1,9 +1,23 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 4,
+  "count": 8,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
+    {
+      "id": "ace2-covid-drugs",
+      "title": "An enzyme, a receptor, a clinical question",
+      "publication": "Soluble ACE2 and angiotensin II levels are modulated in hypertensive COVID-19 patients treated with different antihypertension drugs",
+      "poster": "/assets/films/series-v7-pilots/ace2-covid-drugs.webp",
+      "file": "/assets/films/series-v7-pilots/ace2-covid-drugs.mp4",
+      "captions": "/assets/films/series-v7-pilots/ace2-covid-drugs.vtt",
+      "manifest": "/assets/films/series-v7-pilots/ace2-covid-drugs.json",
+      "contact": "/assets/films/series-v7-pilots/ace2-covid-drugs.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "2fe1008181be58aad10f7bc3b65082b3d62bf989a51583eddfc76765665e5ed2",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
     {
       "id": "airway-reopening",
       "title": "A breath can injure",
@@ -47,6 +61,34 @@
       "creative_review": "outstanding"
     },
     {
+      "id": "echo-cnn-lstm",
+      "title": "Can an algorithm read a moving heart?",
+      "publication": "Deep learning technique for congenital heart disease detection using stacking-based CNN-LSTM models from fetal echocardiogram: a pilot study",
+      "poster": "/assets/films/series-v7-pilots/echo-cnn-lstm.webp",
+      "file": "/assets/films/series-v7-pilots/echo-cnn-lstm.mp4",
+      "captions": "/assets/films/series-v7-pilots/echo-cnn-lstm.vtt",
+      "manifest": "/assets/films/series-v7-pilots/echo-cnn-lstm.json",
+      "contact": "/assets/films/series-v7-pilots/echo-cnn-lstm.contact.webp",
+      "visual_revision": "v7.3-caption-safe/v7.2-ultrasound",
+      "sha256": "8c0fc655edf09f6880effb05bed7e65d3b8abe9f8a08228e08deee62894603ff",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "niosomes",
+      "title": "Will the medicine survive the nebulizer?",
+      "publication": "Inhalable dexamethasone niosomes and proniosomes",
+      "poster": "/assets/films/series-v7-pilots/niosomes.webp",
+      "file": "/assets/films/series-v7-pilots/niosomes.mp4",
+      "captions": "/assets/films/series-v7-pilots/niosomes.vtt",
+      "manifest": "/assets/films/series-v7-pilots/niosomes.json",
+      "contact": "/assets/films/series-v7-pilots/niosomes.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "40232935f67d2f838b67c3df50a6605bffbdb52b7f1ef30fb55f2bbe40c344f7",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
       "id": "slit2-robo",
       "title": "The target that can change sides",
       "publication": "SLIT2 and ROBO-axis inhibitors for the treatment of cancer: a patent review (2020–2026)",
@@ -57,6 +99,20 @@
       "contact": "/assets/films/series-v7-pilots/slit2-robo.contact.webp",
       "visual_revision": "v7.3-caption-safe/v7.2-robo-receptor",
       "sha256": "346c9db65d7a2d20d7c47285b8cc9635137d55226c934d63fdf9b8b6ebe10283",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "zebrafish-hemodynamics",
+      "title": "A heartbeat in high-speed frames",
+      "publication": "Cardiac function and blood flow hemodynamics assessment of zebrafish using high-speed video microscopy",
+      "poster": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.webp",
+      "file": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.mp4",
+      "captions": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.vtt",
+      "manifest": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.json",
+      "contact": "/assets/films/series-v7-pilots/zebrafish-hemodynamics.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "7c1af55a7166643f3f11e6e7c5d476a3e321ef667a5ca98b07e59f017e23ef8e",
       "seconds": 84.0,
       "creative_review": "outstanding"
     }

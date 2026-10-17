@@ -1,6 +1,6 @@
 {
   "slug": "echo-cnn-lstm",
-  "visual_revision": "v7.2-ultrasound",
+  "visual_revision": "v7.3-caption-safe/v7.2-ultrasound",
   "status": "STAGING ONLY \u2014 creative, legal and scientific human review outstanding",
   "film_style": "24 individually directed visual beats across 6 narrated chapters",
   "seconds": 84.0,
@@ -157,5 +157,6 @@
       "source": "original-nonquantitative-v7-schematic"
     }
   ],
+  "contact_sheet": "/assets/films/series-v7-pilots/echo-cnn-lstm.contact.webp",
   "primary_source": "10.1109/ACCESS.2023.3316719"
 }
