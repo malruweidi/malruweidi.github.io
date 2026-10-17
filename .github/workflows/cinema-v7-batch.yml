@@ -62,6 +62,20 @@ jobs:
               assert len(record["beats"])==24
               assert record["movie_sha256"]==hashlib.sha256(f.read_bytes()).hexdigest()
               assert "STAGING ONLY" in record["status"]
+              # Earlier cuts stay in the Git archive, but may not be published in
+              # the active screening gallery until corrected, caption-safe, and
+              # source paths no longer contain ephemeral runner locations.
+              if not record.get("visual_revision","").startswith("v7.3-caption-safe/"):
+                  print("Holding stale frame revision outside review gallery:",slug)
+                  continue
+              if any(str(beat["source"]).startswith("/") for beat in record["beats"]):
+                  print("Holding ephemeral research-image citation:",slug)
+                  continue
+              if slug=="cerebral-cilia" and any(
+                      "figure-zebrafish-microscopy.jpg" in str(beat["source"])
+                      for beat in record["beats"]):
+                  print("Holding misattributed hemodynamics image:",slug)
+                  continue
               source=Path("assets/films/series-v6")/(slug+".mp4")
               assert record["source_audio_sha256"]==hashlib.sha256(source.read_bytes()).hexdigest()
               entries.append({"id":slug,"title":allowed[slug]["film_title"],
