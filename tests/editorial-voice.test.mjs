@@ -41,7 +41,8 @@ test('Ramadan first-person narrative matches its available archive and Arabic so
 test('documentary scientific cautions remain discoverable without duplicating owner notes in every scene', () => {
   const film = read('films/two-materials-no-section.html');
   assert.doesNotMatch(film, /Source designation: archival photograph; original owner-supplied photograph/);
-  assert.match(film, /Source designation: explanatory schematic/);
+  assert.ok(film.includes('src="/assets/films/two-materials-no-section-source-v2.mp4"'), "released source-corrected video must remain playable");
+  assert.ok(film.includes('href="/stories/failed-zebrafish-histology.html"'), "full experimental account remains linked outside screening page");
   assert.match(film, /No usable section|No interpretable section|usable ribbon of histological sections/i);
   const stories = read('stories.html');
   assert.ok((stories.match(/<details class="stories-source rx-source-fold">/g) || []).length >= 15,
