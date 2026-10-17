@@ -31,6 +31,7 @@ jobs:
           python -m pip install pillow numpy soundfile kokoro-onnx cairosvg
       - name: Verify 35 individual scientific art directions and registered sources
         run: |
+          node --test tests/publication-v6-poster.test.cjs
           python -m py_compile scripts/render-documentary.py scripts/render-publication-series.py scripts/film-art-direction-v6.py
           python scripts/render-publication-series.py --edition-v6 --skip-v5 --validate-only
           python - <<'PY'
@@ -60,6 +61,8 @@ jobs:
           test "$(stat -c%s film-models/kokoro-v1.0.fp16.onnx)" -gt 90000000
       - name: Render next three missing films; keep existing editions untouched
         run: python scripts/render-publication-series.py --edition-v6 --skip-v5 --models film-models --missing-only --limit 3
+      - name: Create verified film-frame posters instead of misleading research thumbnails
+        run: python scripts/render-publication-series.py --edition-v6 --skip-v5 --posters-only
       - name: Validate videos, audible streams, captions and source maps
         run: |
           python - <<'PY'
@@ -72,6 +75,7 @@ jobs:
               streams=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-of","json",str(f)]))["streams"]
               assert {s["codec_type"] for s in streams}>={"video","audio"}
               assert f.with_suffix(".vtt").read_text().count("-->")>=10
+              assert f.with_suffix(".webp").stat().st_size>1000
               metadata=json.loads(f.with_suffix(".json").read_text())
               assert len(metadata["scene_provenance"])==6
               assert all(not s["image"].startswith("/tmp/") for s in metadata["scene_provenance"])
@@ -81,7 +85,7 @@ jobs:
         run: |
           git config user.name "Ruwaidix Scientific Film Builder"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/films/series-v6/*.mp4 assets/films/series-v6/*.vtt assets/films/series-v6/*.json
+          git add assets/films/series-v6/*.mp4 assets/films/series-v6/*.vtt assets/films/series-v6/*.json assets/films/series-v6/*.webp
           if ! git diff --cached --quiet; then
             git commit -m "Publish revised source-screened research films [v6-output]"
             git fetch origin ${{ github.ref_name }}
