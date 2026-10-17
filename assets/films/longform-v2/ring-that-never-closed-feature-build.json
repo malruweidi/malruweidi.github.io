@@ -1,0 +1,55 @@
+{
+  "title": "The Ring That Never Closed",
+  "edition": "longform-v2-recut",
+  "signature": "four-motion-chapters-2026-10-17",
+  "seconds": 180.0,
+  "sha256": "5e7adbada0e00243d35125599a60e718ec6aeedd4835d0591bd15b322ff8df17",
+  "original_mp4": "assets/films/ring-that-never-closed.mp4",
+  "source_manifest": "assets/films/ring-that-never-closed-scenes.json",
+  "source_credits": [
+    {
+      "scene": "02",
+      "start_seconds": 15.1,
+      "duration_seconds": 17.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "ring-that-never-closed.mp4",
+      "motion": "molecule",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "03",
+      "start_seconds": 33.1,
+      "duration_seconds": 19.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "ring-that-never-closed.mp4",
+      "motion": "molecule",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "05",
+      "start_seconds": 71.1,
+      "duration_seconds": 16.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "ring-that-never-closed.mp4",
+      "motion": "signal",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "09",
+      "start_seconds": 144.1,
+      "duration_seconds": 17.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "ring-that-never-closed.mp4",
+      "motion": "network",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    }
+  ],
+  "human_screening": "NOT YET COMPLETED",
+  "narration": "Original first-edition synthetic audio preserved",
+  "scientific_policy": "No product, yield, structure or spectra may be claimed without confirming the underlying notebook.",
+  "tools": [
+    "Pillow 13",
+    "FFmpeg H264",
+    "original AAC"
+  ]
+}

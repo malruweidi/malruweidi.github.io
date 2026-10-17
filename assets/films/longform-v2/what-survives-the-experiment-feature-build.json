@@ -1,0 +1,55 @@
+{
+  "title": "What Survives the Experiment",
+  "edition": "longform-v2-recut",
+  "signature": "four-motion-chapters-2026-10-17",
+  "seconds": 120.0,
+  "sha256": "98fc87e17173842aecdd8ea36e45591bc220960530dc3a9d8a44f785d0755052",
+  "original_mp4": "assets/films/what-survives-the-experiment.mp4",
+  "source_manifest": "assets/films/what-survives-scenes.json",
+  "source_credits": [
+    {
+      "scene": "11",
+      "start_seconds": 97.225,
+      "duration_seconds": 10.808,
+      "source_type": "unchanged registered original source photograph or publication figure",
+      "source_path": "assets/evidence-pulmonary.webp",
+      "motion": "vesicle",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "02",
+      "start_seconds": 9.142,
+      "duration_seconds": 8.225,
+      "source_type": "unchanged registered original source photograph or publication figure",
+      "source_path": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "motion": "editorial",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "04",
+      "start_seconds": 27.933,
+      "duration_seconds": 9.142,
+      "source_type": "unchanged registered original source photograph or publication figure",
+      "source_path": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "motion": "signal",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "08",
+      "start_seconds": 66.225,
+      "duration_seconds": 10.142,
+      "source_type": "unchanged registered original source photograph or publication figure",
+      "source_path": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "motion": "histology",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    }
+  ],
+  "human_screening": "NOT YET COMPLETED",
+  "narration": "Original first-edition synthetic audio preserved",
+  "scientific_policy": "Never present archival microscopy as direct proof of unrelated results; damaged histology remains an unsuccessful attempt.",
+  "tools": [
+    "Pillow 13",
+    "FFmpeg H264",
+    "original AAC"
+  ]
+}

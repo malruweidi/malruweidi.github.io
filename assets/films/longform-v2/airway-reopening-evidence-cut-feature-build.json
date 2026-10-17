@@ -1,0 +1,55 @@
+{
+  "title": "What Happens When an Airway Reopens? — Evidence Cut",
+  "edition": "longform-v2-recut",
+  "signature": "four-motion-chapters-2026-10-17",
+  "seconds": 180.0,
+  "sha256": "dd13ff67103b71ad69f1151f2bc51e1099028bcafda0387c0f4db3022a73ef42",
+  "original_mp4": "assets/films/airway-reopening-evidence-cut.mp4",
+  "source_manifest": "assets/films/airway-reopening-evidence-scenes.json",
+  "source_credits": [
+    {
+      "scene": "10",
+      "start_seconds": 147.1,
+      "duration_seconds": 16.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "airway-reopening-evidence-cut.mp4",
+      "motion": "network",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "02",
+      "start_seconds": 13.1,
+      "duration_seconds": 15.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "airway-reopening-evidence-cut.mp4",
+      "motion": "interface",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "04",
+      "start_seconds": 47.1,
+      "duration_seconds": 16.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "airway-reopening-evidence-cut.mp4",
+      "motion": "chamber",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "05",
+      "start_seconds": 64.1,
+      "duration_seconds": 15.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "airway-reopening-evidence-cut.mp4",
+      "motion": "assay",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    }
+  ],
+  "human_screening": "NOT YET COMPLETED",
+  "narration": "Original first-edition synthetic audio preserved",
+  "scientific_policy": "Dexamethasone and DHEA outcomes under specified in-vitro conditions only; no clinical extrapolation.",
+  "tools": [
+    "Pillow 13",
+    "FFmpeg H264",
+    "original AAC"
+  ]
+}

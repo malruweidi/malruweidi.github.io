@@ -1,0 +1,55 @@
+{
+  "title": "The Microscope I Brought from Cairo",
+  "edition": "longform-v2-recut",
+  "signature": "four-motion-chapters-2026-10-17",
+  "seconds": 120.0,
+  "sha256": "40e8d6d2c84422d63dfdea9330db80be1234c773896ba05080495fcdfbb2da12",
+  "original_mp4": "assets/films/cairo-microscope.mp4",
+  "source_manifest": "assets/films/cairo-microscope-scenes.json",
+  "source_credits": [
+    {
+      "scene": "02",
+      "start_seconds": 11.1,
+      "duration_seconds": 13.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "cairo-microscope.mp4",
+      "motion": "editorial",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "06",
+      "start_seconds": 66.1,
+      "duration_seconds": 12.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "cairo-microscope.mp4",
+      "motion": "editorial",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "07",
+      "start_seconds": 79.1,
+      "duration_seconds": 13.35,
+      "source_type": "unaltered extracted original film frame, not new scientific data",
+      "source_path": "cairo-microscope.mp4",
+      "motion": "translation",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    },
+    {
+      "scene": "09",
+      "start_seconds": 106.1,
+      "duration_seconds": 13.35,
+      "source_type": "unchanged registered original source photograph or publication figure",
+      "source_path": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "motion": "editorial",
+      "evidence": "Explicitly illustrated, not experimental measurement"
+    }
+  ],
+  "human_screening": "NOT YET COMPLETED",
+  "narration": "New nine-scene Kokoro British-English synthetic narration mixed with original instrumental score",
+  "scientific_policy": "Original first-person account preserved; don't imply proprietary instrument capability or dated photographs without support.",
+  "tools": [
+    "Pillow 13",
+    "FFmpeg H264",
+    "Kokoro ONNX"
+  ]
+}
