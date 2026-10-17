@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" data-rx-page="feature-film-studio">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17343b">
+<title>Feature Film Review | Ruwaidix</title>
+<meta name="description" content="Compare nine Ruwaidix research and personal documentary films with evidence-bound open-source remasters.">
+<link rel="icon" href="/assets/ruwaidix-approved.webp" type="image/webp">
+<link rel="stylesheet" href="/assets/design-system.css">
+<style>
+:root{--pine:#17343b;--paper:#f7f5ee;--ink:#294941;--muted:#45615e;--clay:#994c36;--line:#c6d2ca}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--pine);font:16px/1.7 system-ui,sans-serif}
+a{color:var(--clay);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--clay);outline-offset:4px}
+header{background:var(--pine);color:var(--paper)}
+nav{max-width:1200px;margin:auto;padding:18px 22px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+nav a{color:var(--paper);font-size:13px}.brand{font:27px Georgia,serif;text-decoration:none;margin-right:auto}
+main{max-width:1200px;margin:auto;padding:45px 22px 80px}
+.kicker{font:600 12px ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--clay)}
+h1,h2,h3{font-family:Georgia,serif;font-weight:400;line-height:1.15}
+h1{font-size:clamp(48px,7vw,88px);letter-spacing:-.045em;margin:15px 0 24px}
+h2{font-size:clamp(31px,4vw,48px);margin:8px 0}
+h3{font-size:26px;margin:10px 0}
+.intro{font:clamp(18px,2.1vw,24px)/1.55 Georgia,serif;max-width:850px}
+.note{border-left:3px solid var(--clay);padding:8px 0 8px 18px;max-width:860px;color:var(--muted);margin:24px 0 40px}
+.layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(270px,.85fr);gap:30px}
+.viewer{border:1px solid var(--line);background:#fff}
+.viewer video{display:block;width:100%;aspect-ratio:16/9;background:#10272d}
+.viewer .under{padding:13px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+button{font:inherit;cursor:pointer;padding:9px 13px;border:1px solid #93aaa1;background:white;color:var(--pine)}
+button[aria-pressed="true"]{background:var(--pine);color:var(--paper)}
+.side{border-top:1px solid var(--line);padding-top:12px}
+.side p{color:var(--muted)}
+details{border-top:1px solid var(--line);padding:14px 0;margin-top:19px}
+summary{font-weight:600;cursor:pointer}
+li{margin:13px 0}li p{font-size:13px;color:var(--muted);margin:2px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+.entry{border:1px solid var(--line);background:white;display:grid;align-content:start}
+.entry img,.entry .blank{width:100%;aspect-ratio:16/9;object-fit:contain;background:var(--pine);color:var(--paper)}
+.entry .blank{display:grid;place-items:center;text-align:center}
+.entry .info{padding:15px}
+.entry h3{font-size:25px}
+.entry p{color:var(--muted);font-size:13px}
+.entry[aria-current="true"]{outline:2px solid var(--clay)}
+small{color:var(--muted)}footer{margin-top:65px;border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:13px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><nav aria-label="Film and site navigation"><a class="brand" href="/">RUWAIDIX</a><a href="/film-studio.html">Short-film studio</a><a href="/publication-cinema.html">Publication cinema</a><a href="/films.html">Documentaries</a><a href="/stories.html">Stories</a></nav></header>
+<main>
+<p class="kicker">Source-annotated documentary studio</p>
+<h1>Nine films.<br>Two editions.</h1>
+<p class="intro">The complete long-form collection, with original releases alongside cinematic open-source recuts. Examine the underlying photographs, published figures, archival references, and experimental limits rather than watching an animation stripped of its evidence.</p>
+<p class="note"><strong>Editorial drafts — not yet human-screened.</strong> Technical rendering is not scientific peer review or an audition of narrated pronunciation. Copyright clearance, scientific interpretation, audio quality and display on phones still require approval. No first-edition MP4 has been removed.</p>
+<div class="layout">
+<section>
+<div id="selected" aria-live="polite">Choose a film from the archive.</div>
+<div class="viewer" id="viewer"><div class="under">Choose a film to watch.</div></div>
+<div class="controls"><button type="button" id="new-cut" aria-pressed="true">New recut</button><button type="button" id="original-cut" aria-pressed="false">Original film</button></div>
+<p id="status" role="status"><small>Checking film availability…</small></p>
+<details><summary>Open all original scene descriptions, narration and credits</summary><div id="evidence"></div></details>
+</section>
+<aside class="side"><p class="kicker">Director's evidence register</p><h2 id="theme">Research before imagery.</h2><p id="constraint">Every depiction is attributed to a source or marked as a conceptual illustration.</p><p id="production"></p><a href="/assets/films/longform-remake-direction.json">Read nine research-film direction records ↗</a></aside>
+</div>
+<section style="margin-top:65px" aria-labelledby="catalogue"><p class="kicker">The long-form film archive</p><h2 id="catalogue">Choose a documentary</h2><div id="all" class="grid"></div></section>
+<footer>Ruwaidix · Original archival movies and publication pages remain unchanged. <a href="/">Return to the original website</a>.</footer>
+</main>
+<script>
+(async function(){
+const names=[
+["what-survives-the-experiment","What Survives the Experiment",120,"what-survives-scenes.json",""],
+["airway-reopening-evidence-cut","Airway Reopening: The Evidence",180,"airway-reopening-evidence-scenes.json","airway-reopening-evidence-poster.webp"],
+["what-a-bubble-can-do","What a Bubble Can Do",120,"evidence-in-motion.json","what-a-bubble-can-do-poster.webp"],
+["two-materials-no-section","Two Materials. No Section.",150,"two-materials-scenes.json","two-materials-no-section-poster.webp"],
+["two-materials-no-section-evidence-cut","Two Materials: Evidence Cut",120,"evidence-in-motion.json","two-materials-no-section-poster.webp"],
+["ring-that-never-closed","The Ring That Never Closed",180,"ring-that-never-closed-scenes.json","ring-that-never-closed-poster.webp"],
+["cairo-microscope","The Microscope I Brought from Cairo",120,"cairo-microscope-scenes.json",""],
+["the-laboratory-we-carried-with-us","The Laboratory We Carried With Us",120,"evidence-in-motion.json","the-laboratory-we-carried-with-us-poster.webp"],
+["making-medicines-keep","Making Medicines Keep",120,"evidence-in-motion.json","making-medicines-keep-poster.webp"]
+];
+const E=id=>document.getElementById(id);
+const esc=s=>String(s||"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[x]));
+const clock=n=>Math.floor(n/60)+":"+String(n%60).padStart(2,"0");
+const path=(film,edition,ext)=>"/assets/films/"+(edition==="new"?"longform-v2/":"")+encodeURIComponent(film[0])+"."+ext;
+let directions;
+try{const d=await fetch("/assets/films/longform-remake-direction.json");if(!d.ok)throw Error("Missing");directions=(await d.json()).films}
+catch{E("status").textContent="The film source register is unavailable.";return}
+let current=null,cut="new",serial=0;
+async function videoExists(url){
+try{const r=await fetch(url,{method:"HEAD",cache:"no-store"});return r.ok&&(r.headers.get("content-type")||"").includes("video/")}catch{return false}
+}
+async function show(){
+if(!current)return;const attempt=++serial;const film=current;
+let edition=cut;let url=path(film,edition,"mp4");
+E("status").textContent="Checking the available edition…";
+if(!await videoExists(url)){edition="original";url=path(film,edition,"mp4")}
+if(!await videoExists(url)){if(attempt===serial){E("viewer").innerHTML='<div class="under">No MP4 video response was verified. Source descriptions remain available.</div>';E("status").textContent="Video cannot be verified."}return}
+if(attempt!==serial||current!==film)return;
+const caption=path(film,edition,"vtt");
+const poster=film[4]?' poster="/assets/films/'+esc(film[4])+'"':'';
+E("viewer").innerHTML='<video controls playsinline preload="metadata"'+poster+' aria-label="'+esc(film[1])+'"><source src="'+esc(url)+'" type="video/mp4"><track kind="captions" src="'+esc(caption)+'" srclang="en" label="English"></video><div class="under"><a href="'+esc(caption)+'">Read timed subtitles ↗</a></div>';
+E("status").textContent=(edition==="new"?"New draft loaded. Final audiovisual approval is outstanding.":"Original edition loaded.")+" Runtime: "+clock(film[2])+".";
+}
+function choose(film,scroll){
+current=film;
+const d=directions[film[0]];
+E("selected").innerHTML='<p class="kicker">'+clock(film[2])+' / original and recut</p><h2>'+esc(film[1])+'</h2><p>'+esc(d.theme)+'</p>';
+E("theme").textContent=d.theme;
+E("constraint").textContent=d.strict;
+E("production").textContent=d.production_treatment||"All original archival photographs and motion records retain their attribution.";
+for(const article of document.querySelectorAll(".entry"))article.setAttribute("aria-current",String(article.dataset.id===film[0]));
+E("evidence").innerHTML='<p>Loading the original scene manuscript…</p>';
+fetch("/assets/films/"+film[3]).then(r=>{if(!r.ok)throw Error("Unavailable");return r.json()}).then(x=>{
+if(current!==film)return;
+const scenes=x.scenes||((x.films||[]).find(y=>y.slug===film[0])||{}).scenes||[];
+E("evidence").innerHTML='<p><a href="/assets/films/'+esc(film[3])+'">Read the full source record ↗</a></p><ol>'+scenes.map(s=>'<li><strong>'+esc(s.title)+'</strong><p>'+esc(s.narration||s.text||"")+'</p><p>'+esc(s.kind||s.mode||"")+' · '+esc(s.credit||"")+'</p></li>').join("")+'</ol>';
+}).catch(()=>E("evidence").textContent="Original scene register temporarily unavailable.");
+show();
+if(scroll&&window.innerWidth<851)E("selected").scrollIntoView({behavior:"smooth",block:"start"});
+}
+E("all").innerHTML=names.map(n=>'<article class="entry" data-id="'+esc(n[0])+'" aria-current="false">'+(n[4]?'<img loading="lazy" decoding="async" src="/assets/films/'+esc(n[4])+'" alt="Source-aligned documentary poster">':'<div class="blank">RUWAIDIX / DOCUMENTARY</div>')+'<div class="info"><p class="kicker">'+clock(n[2])+'</p><h3>'+esc(n[1])+'</h3><p>'+esc(directions[n[0]].strict)+'</p><button type="button" data-film="'+esc(n[0])+'">Compare editions</button></div></article>').join("");
+E("all").addEventListener("click",e=>{const b=e.target.closest("button[data-film]");if(b){const n=names.find(n=>n[0]===b.dataset.film);if(n)choose(n,true)}});
+for(const [id,edition] of [["new-cut","new"],["original-cut","original"]])E(id).addEventListener("click",()=>{cut=edition;E("new-cut").setAttribute("aria-pressed",String(cut==="new"));E("original-cut").setAttribute("aria-pressed",String(cut==="original"));show()});
+choose(names.find(n=>n[0]===location.hash.slice(1))||names[0],false);
+})();
+</script>
+</body></html>
