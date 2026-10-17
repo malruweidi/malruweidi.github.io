@@ -110,7 +110,7 @@ def s0(im,d,t):
  text(d,65,593,"PAHs / low water solubility is the motivation, not a measured project result",18,MINT)
 def s1(im,d,t):
  # Genuine dated 2017 poster photograph. It is contextual, not a chemical assay.
- image_fit(im,d,ASSETS[0],(480,113,1177,606),zoom=1.05,focusx=.5,focusy=.4,t=t,
+ image_fit(im,d,ASSETS[0],(603,113,1199,606),zoom=1.05,focusx=.5,focusy=.4,t=t,
    credit="2017 OWNER ARCHIVE / PROJECT POSTER IN BACKGROUND, NOT AN ASSAY")
  title(d,["AN EXPERIMENT","WAS PROPOSED"],at=(56,195),size=46)
  text(d,61,580,"The photograph records a public presentation.",18,PALE)
@@ -130,23 +130,27 @@ def s2(im,d,t):
  text(d,624,521,"HYDROPHILIC  /  HYDROPHOBIC",22,MINT)
  text(d,623,553,"Idealised chain: not a verified polymer structure",17,GOLD)
 def s3(im,d,t):
- title(d,["A MICELLE IS","AN HYPOTHESIS"],size=54)
- # full-field assembly from free amphiphiles toward a self-assembled sphere.
- center=(925,398);q=eased(t/15)
+ title(d,["A MICELLE","IS A HYPOTHESIS"],size=51)
+ # The hydrophilic corona and hydrophobic chain segments retain their
+ # radial ordering throughout assembly. The initial radius is bounded
+ # so unimers cannot overprint or obscure the scientific title.
+ center=(948,403);q=eased(t/15)
  for k in range(24):
   angle=2*math.pi*k/24
-  rx=550*(1-q)+140*q
-  ry=220*(1-q)+140*q
-  x=center[0]+rx*math.cos(angle);y=center[1]+ry*math.sin(angle)
-  tx=center[0]+(42+100*q)*math.cos(angle);ty=center[1]+(42+100*q)*math.sin(angle)
+  r_outer=(252*(1-q)+143*q)
+  r_inner=r_outer-69
+  x=center[0]+r_outer*math.cos(angle)
+  y=center[1]+r_outer*math.sin(angle)
+  tx=center[0]+r_inner*math.cos(angle)
+  ty=center[1]+r_inner*math.sin(angle)
   line(d,[(x,y),(tx,ty)],COPPER,7)
   d.ellipse((x-11,y-11,x+11,y+11),fill=MINT,outline=PALE,width=2)
  for k in range(10):
   angle=k*2.4
-  x=center[0]+35*math.cos(angle+t*.16)
-  y=center[1]+35*math.sin(angle+t*.16)
+  x=center[0]+34*math.cos(angle+t*.16)
+  y=center[1]+34*math.sin(angle+t*.16)
   d.ellipse((x-7,y-7,x+7,y+7),fill=GOLD)
- text(d,65,583,"Hypothetical molecular arrangement; no size or loading measured here",16,MINT)
+ txt(d,63,598,"Conceptual structure; composition, aggregation and PAH partitioning unmeasured",15,MINT)
 def s4(im,d,t):
  title(d,["A MODEL","IS NOT A VIAL"],size=57)
  nodes=[("POLYMER","BLOCK RATIO"),("SOLVENT","COMPATIBILITY"),("CONCENTRATION","AGGREGATION"),("HANDLING","HISTORY")]
