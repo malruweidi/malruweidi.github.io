@@ -363,8 +363,8 @@
     {
       "name": "gi-autoimmunity-2",
       "seconds": 84.0,
-      "size_bytes": 2568447,
-      "sha256": "0cb5a8d079410af23c4babc13ff478df6df62e297e3bbf223b9bc01c8b7e6f79",
+      "size_bytes": 2487805,
+      "sha256": "f5cc6e9b4ea221aa7cee58c2c5bac6e97ab48e3a11676367252b23f246957472",
       "width": 1280,
       "height": 720,
       "codec": "h264",
