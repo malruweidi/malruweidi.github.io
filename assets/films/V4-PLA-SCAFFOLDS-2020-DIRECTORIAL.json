@@ -71,7 +71,7 @@
           "THE SPECTRA"
         ],
         "eyebrow": "FIGURE 7 / SIX FTIR–ATR TRACES",
-        "narration": "The FTIR spectra compare untreated PLA, plasma treated fibres, both grafted mats and the neat acids. Spectral changes support surface modification, but one absorption band by itself is not a full chemical proof."
+        "narration": "The original FTIR spectra compare untreated, plasma treated and acid grafted PLA. Band changes support surface modification but cannot, on their own, establish the complete mechanism."
       },
       {
         "mode": "result",
@@ -81,7 +81,7 @@
           "COLONIES"
         ],
         "eyebrow": "TABLE 3 / ORIGINAL ORDINAL RATINGS",
-        "narration": "In the paper's bacterial colonization assessment, grafted samples were scored zero in all three entries for both Staphylococcus aureus and Escherichia coli. These are in vitro test scores, not an infection cure."
+        "narration": "Table three reports zero colonies for both grafted fibre mats in all three entries for each tested bacterium. These are laboratory assessment scores, not clinical infection outcomes."
       },
       {
         "mode": "closing",
@@ -91,7 +91,7 @@
           "HAS LIMITS"
         ],
         "eyebrow": "SURFACE SCIENCE / NOT A CLINICAL IMPLANT",
-        "narration": "This experiment links surface treatment to the measured behaviour of electrospun fibres and bacterial growth under laboratory conditions. It does not establish the long term safety or effectiveness of an implanted scaffold."
+        "narration": "The paper links surface treatment to measurable fibre properties and lower bacterial growth in vitro. It does not establish long term safety or effectiveness after implantation."
       }
     ]
   }
