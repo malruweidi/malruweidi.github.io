@@ -1,0 +1,85 @@
+name: V5 full-screen original-source PLA documentary
+on:
+  push:
+    branches: [film-remake-20261017]
+    paths:
+      - scripts/render-pla-scaffolds-v5.py
+      - .github/workflows/render-pla-scaffolds-v5.yml
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency:
+  group: ruwaidix-v5-scaffold-film
+  cancel-in-progress: false
+jobs:
+  source-cinematic-edit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Set up open image/video/voice toolchain
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install pillow numpy soundfile kokoro-onnx
+          python -m py_compile scripts/render-pla-scaffolds-v5.py
+      - name: Validate SHA and licence of each original source figure
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          f=Path("assets/films/source-figures/v4/pla-scaffolds/source-provenance.json")
+          p=json.loads(f.read_text())
+          assert p["doi"]=="10.1016/j.surfcoat.2020.126216"
+          assert "2021" in p["not_this_study"]
+          for item in p["figures"]:
+            im=Path(item["film_jpeg"])
+            assert im.exists()
+            assert hashlib.sha256(im.read_bytes()).hexdigest()==item["film_jpeg_sha256"]
+          print("Correct same-paper source evidence authenticated")
+          PY
+      - uses: actions/cache@v4
+        with:
+          path: film-models
+          key: ruwaidix-kokoro-onnx-fp16-v1.1
+      - name: Obtain public offline voice model
+        run: |
+          mkdir -p film-models
+          if [ ! -s film-models/kokoro-v1.0.fp16.onnx ]; then curl --fail --location --retry 3 -sS -o film-models/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx; fi
+          if [ ! -s film-models/voices-v1.0.bin ]; then curl --fail --location --retry 3 -sS -o film-models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin; fi
+      - name: Render completely reframed source-dominant cinematic film
+        run: python scripts/render-pla-scaffolds-v5.py
+      - name: Verify film and captions without claiming artistic sign-off
+        run: |
+          python - <<'PY'
+          import json,hashlib,subprocess
+          from pathlib import Path
+          p=Path("assets/films/series-v5/pla-scaffolds.mp4")
+          j=json.loads(p.with_suffix(".json").read_text())
+          assert "V5 cinematic" in j["edition"]
+          assert j["doi"]=="10.1016/j.surfcoat.2020.126216"
+          assert abs(j["duration_seconds"]-120)<.3
+          assert j["sha256"]==hashlib.sha256(p.read_bytes()).hexdigest()
+          assert "NOT APPROVED" in j["human_review"]
+          assert p.with_suffix(".vtt").read_text().startswith("WEBVTT")
+          streams=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-of","json",str(p)]))["streams"]
+          assert {"h264","aac"} <= {x["codec_name"] for x in streams}
+          assert Path("assets/films/series/pla-scaffolds.mp4").is_file()
+          print("Full-frame 2020 V5 paper-specific cinema produced, human screening pending")
+          PY
+      - name: Commit distinct V5 alternate without altering released films
+        run: |
+          git config user.name "Ruwaidix independent cinematic science"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v5/pla-scaffolds.*
+          if ! git diff --cached --quiet; then
+            git commit -m "Build independently visual-directed same-paper PLA scaffold V5 documentary"
+            git fetch origin "${{ github.ref_name }}"
+            if git rebase "origin/${{ github.ref_name }}"; then
+              git push origin HEAD:"${{ github.ref_name }}"
+            else
+              git rebase --abort
+              exit 1
+            fi
+          fi
