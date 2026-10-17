@@ -47,17 +47,17 @@
         {
           "title": "What tells a vessel where to grow?",
           "phase": 0,
-          "real_image": true,
-          "image_source": "assets/home-archive/figure-zebrafish-microscopy.jpg",
-          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Published zebrafish research imagery",
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
           "file": "assets/films/quality-review-v7/cerebral-cilia-s01-p0.webp"
         },
         {
           "title": "What tells a vessel where to grow?",
           "phase": 1,
-          "real_image": true,
-          "image_source": "assets/home-archive/figure-zebrafish-microscopy.jpg",
-          "caption": "ARCHIVAL OR PUBLISHED SOURCE / Published zebrafish research imagery",
+          "real_image": false,
+          "image_source": "v7-original-illustration",
+          "caption": "EDITORIAL SCHEMATIC / NOT A RESEARCH FIGURE OR MEASURED RESULT",
           "file": "assets/films/quality-review-v7/cerebral-cilia-s01-p1.webp"
         },
         {
