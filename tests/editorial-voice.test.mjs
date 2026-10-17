@@ -43,7 +43,7 @@ test('documentary scientific cautions remain discoverable without duplicating ow
   assert.doesNotMatch(film, /Source designation: archival photograph; original owner-supplied photograph/);
   assert.ok(film.includes('src="/assets/films/two-materials-no-section-source-v2.mp4"'), "released source-corrected video must remain playable");
   assert.ok(film.includes('href="/stories/failed-zebrafish-histology.html"'), "full experimental account remains linked outside screening page");
-  assert.match(film, /No usable section|No interpretable section|usable ribbon of histological sections/i);
+  assert.match(film, /unsuccessful attempt at zebrafish histology|not with interpretable tissue sections|did not form a stable sectioning block/i);
   const stories = read('stories.html');
   assert.ok((stories.match(/<details class="stories-source rx-source-fold">/g) || []).length >= 15,
     'source documentation disclosures must remain accessible');
