@@ -1,23 +1,9 @@
 {
   "schema": "ruwaidix-cinema-v7-registered-releases-v1",
   "version": "clean-editorial-release",
-  "count": 22,
+  "count": 18,
   "review_limit": "Further expert scientific and artistic review may improve these editions.",
   "films": [
-    {
-      "id": "ace2-forms",
-      "edition": "series-v7-pilots",
-      "poster": "/assets/films/series-v7-pilots/ace2-forms.webp",
-      "duration_seconds": 84,
-      "sha256": "f6ef9e053380f86e1e07cbccbeda58103e50febef6696acbf8444659ccaf35d8",
-      "video": "/assets/films/series-v7-pilots/ace2-forms.mp4",
-      "captions": "/assets/films/series-v7-pilots/ace2-forms.vtt",
-      "scene_manifest": "/assets/films/series-v7-pilots/ace2-forms.json",
-      "source_review": "/assets/films/series-v7-pilots/ace2-forms.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific",
-      "distinct_chapters": 6,
-      "version": "clean-editorial-release"
-    },
     {
       "id": "cairo-microscope",
       "edition": "series-v7-pilots",
@@ -225,48 +211,6 @@
       "scene_manifest": "/assets/films/series-v7-pilots/food-printing.json",
       "source_review": "/assets/films/series-v7-pilots/food-printing.contact.webp",
       "visual_revision": "v7.8-clean-screen/v7.4-chapter-specific-food-rheology-clean-panel",
-      "distinct_chapters": 6,
-      "version": "clean-editorial-release"
-    },
-    {
-      "id": "gi-autoimmunity-1",
-      "edition": "series-v7-pilots",
-      "poster": "/assets/films/series-v7-pilots/gi-autoimmunity-1.webp",
-      "duration_seconds": 84,
-      "sha256": "cb29e1b4d9b7dba59eb2d31fb1125c4c0ca56806414313c3ed607736abed1ae7",
-      "video": "/assets/films/series-v7-pilots/gi-autoimmunity-1.mp4",
-      "captions": "/assets/films/series-v7-pilots/gi-autoimmunity-1.vtt",
-      "scene_manifest": "/assets/films/series-v7-pilots/gi-autoimmunity-1.json",
-      "source_review": "/assets/films/series-v7-pilots/gi-autoimmunity-1.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific",
-      "distinct_chapters": 6,
-      "version": "clean-editorial-release"
-    },
-    {
-      "id": "gi-autoimmunity-2",
-      "edition": "series-v7-pilots",
-      "poster": "/assets/films/series-v7-pilots/gi-autoimmunity-2.webp",
-      "duration_seconds": 84,
-      "sha256": "e1c5eb4976add00794fb262385ea8b72be11bbf8f2851c3ac14deb9a2db515fa",
-      "video": "/assets/films/series-v7-pilots/gi-autoimmunity-2.mp4",
-      "captions": "/assets/films/series-v7-pilots/gi-autoimmunity-2.vtt",
-      "scene_manifest": "/assets/films/series-v7-pilots/gi-autoimmunity-2.json",
-      "source_review": "/assets/films/series-v7-pilots/gi-autoimmunity-2.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific",
-      "distinct_chapters": 6,
-      "version": "clean-editorial-release"
-    },
-    {
-      "id": "heart-failure-sensors",
-      "edition": "series-v7-pilots",
-      "poster": "/assets/films/series-v7-pilots/heart-failure-sensors.webp",
-      "duration_seconds": 84,
-      "sha256": "5ef8fca428458f11fddaa647e57d2a59c8f92a0d31366a3b094bd4fe3ff57117",
-      "video": "/assets/films/series-v7-pilots/heart-failure-sensors.mp4",
-      "captions": "/assets/films/series-v7-pilots/heart-failure-sensors.vtt",
-      "scene_manifest": "/assets/films/series-v7-pilots/heart-failure-sensors.json",
-      "source_review": "/assets/films/series-v7-pilots/heart-failure-sensors.contact.webp",
-      "visual_revision": "v7.8-clean-screen/v7.11-physiological-sensor-cinema",
       "distinct_chapters": 6,
       "version": "clean-editorial-release"
     },
