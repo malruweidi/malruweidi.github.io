@@ -1,7 +1,7 @@
 {
   "schema": "ruwaidix-cinema-v7-registered-releases-v1",
   "version": "clean-editorial-release",
-  "count": 28,
+  "count": 30,
   "review_limit": "Further expert scientific and artistic review may improve these editions.",
   "films": [
     {
@@ -257,6 +257,20 @@
       "version": "clean-editorial-release"
     },
     {
+      "id": "essay-tf-states",
+      "edition": "series-v7-pilots",
+      "poster": "/assets/films/series-v7-pilots/essay-tf-states.webp",
+      "duration_seconds": 84,
+      "sha256": "bce605df837a48db8922e820893eb9564bbdb810c01d71a482388ce1f163bf50",
+      "video": "/assets/films/series-v7-pilots/essay-tf-states.mp4",
+      "captions": "/assets/films/series-v7-pilots/essay-tf-states.vtt",
+      "scene_manifest": "/assets/films/series-v7-pilots/essay-tf-states.json",
+      "source_review": "/assets/films/series-v7-pilots/essay-tf-states.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.11-regulatory-state-cinema",
+      "distinct_chapters": 6,
+      "version": "clean-editorial-release"
+    },
+    {
       "id": "essay-trna",
       "edition": "series-v7-pilots",
       "poster": "/assets/films/series-v7-pilots/essay-trna.webp",
@@ -309,6 +323,20 @@
       "scene_manifest": "/assets/films/series-v7-pilots/gi-autoimmunity-2.json",
       "source_review": "/assets/films/series-v7-pilots/gi-autoimmunity-2.contact.webp",
       "visual_revision": "v7.8-clean-screen/film-specific",
+      "distinct_chapters": 6,
+      "version": "clean-editorial-release"
+    },
+    {
+      "id": "heart-failure-sensors",
+      "edition": "series-v7-pilots",
+      "poster": "/assets/films/series-v7-pilots/heart-failure-sensors.webp",
+      "duration_seconds": 84,
+      "sha256": "5ef8fca428458f11fddaa647e57d2a59c8f92a0d31366a3b094bd4fe3ff57117",
+      "video": "/assets/films/series-v7-pilots/heart-failure-sensors.mp4",
+      "captions": "/assets/films/series-v7-pilots/heart-failure-sensors.vtt",
+      "scene_manifest": "/assets/films/series-v7-pilots/heart-failure-sensors.json",
+      "source_review": "/assets/films/series-v7-pilots/heart-failure-sensors.contact.webp",
+      "visual_revision": "v7.8-clean-screen/v7.11-physiological-sensor-cinema",
       "distinct_chapters": 6,
       "version": "clean-editorial-release"
     },

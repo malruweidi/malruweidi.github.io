@@ -283,11 +283,11 @@
       "captions": "/assets/films/series-v7-pilots/essay-tf-states.vtt",
       "manifest": "/assets/films/series-v7-pilots/essay-tf-states.json",
       "contact": "/assets/films/series-v7-pilots/essay-tf-states.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific",
-      "sha256": "88e60082dc587134f6e32e3185bce250cf0fdc9894ce916091477df7b076dff8",
+      "visual_revision": "v7.8-clean-screen/v7.11-regulatory-state-cinema",
+      "sha256": "bce605df837a48db8922e820893eb9564bbdb810c01d71a482388ce1f163bf50",
       "seconds": 84.0,
-      "unique_mechanism_scenes": 5,
-      "creative_review": "needs_chapter_art_direction"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "essay-trna",
@@ -358,11 +358,11 @@
       "captions": "/assets/films/series-v7-pilots/heart-failure-sensors.vtt",
       "manifest": "/assets/films/series-v7-pilots/heart-failure-sensors.json",
       "contact": "/assets/films/series-v7-pilots/heart-failure-sensors.contact.webp",
-      "visual_revision": "v7.8-clean-screen/film-specific",
-      "sha256": "4635eaf0a5bec3d5d9295f558f0fef500c2eb4bfdf365b3407ba4fc7a8df6459",
+      "visual_revision": "v7.8-clean-screen/v7.11-physiological-sensor-cinema",
+      "sha256": "5ef8fca428458f11fddaa647e57d2a59c8f92a0d31366a3b094bd4fe3ff57117",
       "seconds": 84.0,
-      "unique_mechanism_scenes": 5,
-      "creative_review": "needs_chapter_art_direction"
+      "unique_mechanism_scenes": 6,
+      "creative_review": "scientific_and_artistic_signoff_outstanding"
     },
     {
       "id": "heterocycle-cancer",
