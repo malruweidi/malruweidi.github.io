@@ -1,10 +1,8 @@
 {
   "film": "pla-scaffolds",
-  "edition": "V5",
-  "video_file": "assets/films/series-v5/pla-scaffolds.mp4",
-  "sha256": "c60f24f3673f81ec570dfafa57d7a9ad80575adf07b7603c216da885aaf4d2b4",
-  "source_doi": "10.1016/j.surfcoat.2020.126216",
-  "samples_seconds": [
+  "source_mp4": "assets/films/series-v5/pla-scaffolds.mp4",
+  "source_sha256": "c60f24f3673f81ec570dfafa57d7a9ad80575adf07b7603c216da885aaf4d2b4",
+  "frames_seconds": [
     4,
     11,
     19,
@@ -22,6 +20,6 @@
     109,
     116
   ],
-  "metadata": "Original figure source scales and axis text reviewed separately",
-  "screening": "AUTOMATED FRAME CONTACT ONLY, HUMAN CONTENT AND ARTISTIC REVIEW OUTSTANDING"
+  "full_encoded_pixels_preserved": true,
+  "approval": "SOURCE/QC-REVIEW ONLY; not a guarantee of artistic or scientific approval"
 }

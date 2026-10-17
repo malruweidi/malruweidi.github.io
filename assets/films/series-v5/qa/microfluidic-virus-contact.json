@@ -1,0 +1,25 @@
+{
+  "film": "microfluidic-virus",
+  "source_mp4": "assets/films/series-v5/microfluidic-virus.mp4",
+  "source_sha256": "5fb0213336a28ac8329acf80dae186f4987f5be9a75b8f5db9a86e967c15c132",
+  "frames_seconds": [
+    4,
+    11,
+    19,
+    26,
+    34,
+    41,
+    49,
+    56,
+    64,
+    71,
+    79,
+    86,
+    94,
+    101,
+    109,
+    116
+  ],
+  "full_encoded_pixels_preserved": true,
+  "approval": "SOURCE/QC-REVIEW ONLY; not a guarantee of artistic or scientific approval"
+}
