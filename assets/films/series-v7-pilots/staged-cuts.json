@@ -1,6 +1,6 @@
 {
   "schema": "ruwaidix-cinema-v7-staging-v1",
-  "count": 16,
+  "count": 20,
   "total_eligible": 30,
   "release_status": "NOT APPROVED FOR REPLACING LIVE MOVIES",
   "films": [
@@ -43,6 +43,20 @@
       "contact": "/assets/films/series-v7-pilots/airway-reopening.contact.webp",
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "15b2738efc7885855044ce62bc02885c738689d034da3683eb00aee6e3e61976",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "cairo-microscope",
+      "title": "The microscope that made curiosity independent",
+      "publication": "The microscope I brought from Cairo",
+      "poster": "/assets/films/series-v7-pilots/cairo-microscope.webp",
+      "file": "/assets/films/series-v7-pilots/cairo-microscope.mp4",
+      "captions": "/assets/films/series-v7-pilots/cairo-microscope.vtt",
+      "manifest": "/assets/films/series-v7-pilots/cairo-microscope.json",
+      "contact": "/assets/films/series-v7-pilots/cairo-microscope.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "12205b3df15091e06208c6cb6d549a484e2fe680ad22a418620a67d0a43a1f57",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
@@ -183,6 +197,48 @@
       "contact": "/assets/films/series-v7-pilots/heart-failure-sensors.contact.webp",
       "visual_revision": "v7.3-caption-safe/film-specific",
       "sha256": "52adac6463de1433b103935df87e12ede1a6198b5abb0a3cb3744c66f4ac084b",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "heterocycle-cancer",
+      "title": "Build the heterocycle, then challenge the hypothesis",
+      "publication": "Imidazopyridine synthesis and anticancer screening",
+      "poster": "/assets/films/series-v7-pilots/heterocycle-cancer.webp",
+      "file": "/assets/films/series-v7-pilots/heterocycle-cancer.mp4",
+      "captions": "/assets/films/series-v7-pilots/heterocycle-cancer.vtt",
+      "manifest": "/assets/films/series-v7-pilots/heterocycle-cancer.json",
+      "contact": "/assets/films/series-v7-pilots/heterocycle-cancer.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "2718f54532ca8a20ec4b6c7ff203115e60d4465c3d8d82bef2ea179324a446bf",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "histology-failure",
+      "title": "Two materials. No section.",
+      "publication": "Zebrafish agarose–paraffin histopathology attempt",
+      "poster": "/assets/films/series-v7-pilots/histology-failure.webp",
+      "file": "/assets/films/series-v7-pilots/histology-failure.mp4",
+      "captions": "/assets/films/series-v7-pilots/histology-failure.vtt",
+      "manifest": "/assets/films/series-v7-pilots/histology-failure.json",
+      "contact": "/assets/films/series-v7-pilots/histology-failure.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "bd1781d69eb62fd6fec33d23058b10681cbcd96a1595cff54330cc0ede52fb1e",
+      "seconds": 84.0,
+      "creative_review": "outstanding"
+    },
+    {
+      "id": "micelles-pahs",
+      "title": "A polymer meets an insoluble problem",
+      "publication": "Polymeric micelles for polycyclic aromatic hydrocarbons",
+      "poster": "/assets/films/series-v7-pilots/micelles-pahs.webp",
+      "file": "/assets/films/series-v7-pilots/micelles-pahs.mp4",
+      "captions": "/assets/films/series-v7-pilots/micelles-pahs.vtt",
+      "manifest": "/assets/films/series-v7-pilots/micelles-pahs.json",
+      "contact": "/assets/films/series-v7-pilots/micelles-pahs.contact.webp",
+      "visual_revision": "v7.3-caption-safe/film-specific",
+      "sha256": "da4c875c3d0f9e8f8fc0e330d5e86a526b827b105456d2b9d66ea1fb5a985105",
       "seconds": 84.0,
       "creative_review": "outstanding"
     },
