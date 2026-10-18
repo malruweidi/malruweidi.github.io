@@ -33,6 +33,8 @@ jobs:
         run: node --test tests/airway-evidence-cut.test.cjs
       - name: Verify distinct Chem Squad and leadership destinations
         run: node --test tests/chem-squad-leadership-navigation.test.mjs
+      - name: Verify Major Revisions book, cover and clear site navigation
+        run: node --test tests/major-revisions-navigation.test.cjs
       - name: Verify compact chapter-led homepage and preserved full record
         run: node --test tests/homepage-chapter-navigation.test.mjs
       - name: Check editorial wayfinding and chapter preservation
