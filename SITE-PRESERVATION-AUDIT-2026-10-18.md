@@ -20,6 +20,8 @@ Scope: the live `main` branch of `malruweidi/malruweidi.github.io`, the preserve
 
 ## 18 October correction
 
+- **Superseded-film mismatch fixed:** the hidden original homepage chapter embedded the V4 *Making Medicines Keep* video while its dedicated film page already used the newer verified V8-primary edition. The homepage source, captions and poster now use the same hosted V8 edition, and the film-viewer regression test checks that edition instead of requiring restoration of the obsolete V4 player.
+
 - Added `behind-the-record.html` and `assets/behind-the-record.css` as a source-led, illustrated directory to the **existing** pages. All images are hosted repository files and all text keeps personal memory, apparatus photographs and validated research evidence distinct.
 - Added a **single small link** in the homepage's existing specialist-link strip, not a new stacked section or extra homepage chapter card. Its nine main categories, compressed homepage layout and original expandable record remain intact.
 - Added the guide to `archive.html` near the opening archive links, updated sitemap, bilingual homepage shortcut and website search. Indexed `research-horizon.html` as well.
