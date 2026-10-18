@@ -108,7 +108,7 @@ for(const [file,marker] of [
 ])if(!(html.get(file)||"").includes(marker))error(file,"source-led experimental/research content missing "+marker);
 if((html.get("research/pulmonary-epithelial-injury.html")||"").includes("complete transcript"))error("research dossier","production-facing transcript promoted on public film link");
 if(!(html.get("research.html")||"").includes("/research/high-speed-zebrafish-imaging.html")||!(html.get("research.html")||"").includes("/research/plasma-modified-pla.html"))error("research.html","dossier discovery links missing");
-const polymer=bibliography.match(/<article class="pub-card"[^>]*id="work-9"[\\s\\S]*?<\\/article>/);
+const polymer=bibliography.match(/<article class="pub-card"[^>]*id="work-9"[^]*?<\/article>/);
 if(!polymer||!polymer[0].includes("CRediT")||!polymer[0].includes("investigation")&&!polymer[0].includes("Experimentation"))error("publications.html","formal and personal polymer credits not differentiated");
 try{
  const v7=JSON.parse(fs.readFileSync(path.join(root,"assets/films/series-v7-pilots/releases.json"),"utf8"));
@@ -118,7 +118,7 @@ try{
   if(seen.has(film.id))error("cinema","V7 duplicate release "+film.id);
   seen.add(film.id);
   if(film.edition!=="series-v7-pilots"||film.distinct_chapters!==6||Number(film.duration_seconds)!==84)error("cinema","V7 inconsistent duration or scene register "+film.id);
-  for(const key of ["video","captions","poster"]){const ref=film[key];if(!ref||!known.has(String(ref).replace(/^\\//,"")))error("cinema","V7 missing "+key+" for "+film.id);}
+  for(const key of ["video","captions","poster"]){const ref=film[key];if(!ref||!known.has((String(ref).startsWith("/")?String(ref).slice(1):String(ref))))error("cinema","V7 missing "+key+" for "+film.id);}
  }
 }catch(err){error("cinema","V7 verification failed "+err.message);}
 for(const id of ["pla-scaffolds","microfluidic-virus","making-medicines-keep","pla-grafting","flow-chamber-method"]){
