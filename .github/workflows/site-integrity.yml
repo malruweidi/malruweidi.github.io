@@ -43,6 +43,8 @@ jobs:
         run: node --test tests/editorial-wayfinding.test.mjs
       - name: Re-audit editorial prose and preserved scientific provenance
         run: node --test tests/editorial-voice.test.mjs
+      - name: Guard public captions, film links and story translations
+        run: node --test tests/public-copy-boundary.test.mjs
       - name: Test lossless standalone stories and research dossiers
         run: node --test tests/deep-reading.test.mjs
       - name: Validate UREP23 research story, preserved chapters and bilingual discovery
