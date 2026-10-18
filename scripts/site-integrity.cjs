@@ -80,7 +80,7 @@ if(!supervisor.includes('<details class="research-archive">'))error("research id
 for(const heading of ["What can molecular structure control?","What changes between preparation and exposure?","How do we know what changed in living systems?"])if(!supervisor.includes(heading))error("research identity","missing scientific question "+heading);
 if(!supervisor.includes("fundamental research")&&!supervisor.includes("fundamental chemistry"))error("research directions","fundamental research openness missing");
 if(!supervisor.includes("not prerequisites for joining a laboratory"))error("research directions","pathway non-exclusivity note missing");
-if(!supervisor.includes("no doctoral laboratory needs to work on all three")&&!supervisor.includes("no doctoral laboratory needs to work on all three"))error("research directions","focused doctoral fit must not require all three questions in one laboratory");
+if(!supervisor.includes("no doctoral laboratory needs to work on all three"))error("research directions","focused doctoral fit must not require all three questions in one laboratory");
 if((html.get("doctoral-concepts.html")||"").includes("One doctoral question, one main experimental system."))error("doctoral concepts","concept examples still framed as exclusive scope");
 const legacyFaculty=html.get("for-supervisors.html")||"";
 if(!legacyFaculty.includes("location.replace")||!legacyFaculty.includes("/molecular-therapeutics.html"))error("legacy redirect","old faculty link must redirect to molecular therapeutics without losing its original HTML source");
@@ -88,8 +88,8 @@ if(!supervisor.includes("clip:rect(0,0,0,0)")||!supervisor.includes(".skip-link:
 for(const term of ["CD28–CD80/CD86","TREM2–TYROBP/DAP12–SYK","SMAD1/5/9","circular RNA","siRNA","Ted Lakowski","Moustafa T. Gabr","Katie B. Ryan","Rasha A. Alshaikh","Jing Yong Ye","S1PR3-directed RNA silencing"])if(!supervisor.includes(term))error("molecular-therapeutics.html","research focus missing "+term);
 if(!supervisor.includes("From molecular design")||!supervisor.includes("PROTACs")||!supervisor.includes("Ted Lakowski")||!supervisor.includes("Moustafa T. Gabr")||!supervisor.includes("circular RNA")||!supervisor.includes("siRNA")||!supervisor.includes("click chemistry")||!supervisor.includes("microfluidic")||!supervisor.includes("aptamer"))error("molecular-therapeutics.html","research identity missing core future interests");
 if(!(html.get("doctoral-concepts.html")||"").includes("Katie Ryan")||!(html.get("doctoral-concepts.html")||"").includes("Jing Yong Ye")||!(html.get("doctoral-concepts.html")||"").includes("Rasha Alshaikh"))error("doctoral-concepts.html","independent RNA hypothesis must distinguish aerosol, aptamer-biosensing and S1P literature from new work");
-if(!home.includes('href="/molecular-therapeutics.html"')||!academic.includes('href="/molecular-therapeutics.html"'))error("faculty","supervisor path missing from homepage or public CV");
-if(!fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").includes("https://malruweidi.github.io/molecular-therapeutics.html"))error("sitemap.xml","faculty page missing");
+if(!home.includes('href="/molecular-therapeutics.html"')||!academic.includes('href="/molecular-therapeutics.html"'))error("research navigation","research-directions link missing from homepage or public academic profile");
+if(!fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").includes("https://malruweidi.github.io/molecular-therapeutics.html"))error("sitemap.xml","research-directions canonical route missing");
 if(!([...bibliography.matchAll(/class="pub-contribution"/g)].length===20))error("publications.html","not every publication has a contribution note");
 for(const id of ["work-13","work-14"]){
  const card=bibliography.match(new RegExp('<article class="pub-card"[^>]*id="'+id+'"'+'[\\s\\S]*?<\\/article>'));
