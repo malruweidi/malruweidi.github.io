@@ -73,3 +73,20 @@ The new page synthesizes four distinct scientific problems using sourced example
 The pathway atlas distinguishes SLIT2–ROBO, CD28–CD80/86, TREM2–DAP12/SYK, HDAC/DOT1L histone regulation, BMPR2–SMAD1/5/9–ID1 and injury-remodelling TGF-β–SMAD2/3. These are distinct potential systems, **not** one proposed mixed pathway or a claim that the author has already conducted experimental interventions on all of them. The researchers are acknowledged as independent influences with no implication of collaboration.
 
 The screenshot supplied by the owner showed the keyboard 'Skip to research profile' link permanently visible above the navigation. New page-specific CSS now hides this control until keyboard focus; release assertions protect this behavior. A real browser/mobile acceptance test remains required; no unverifiable claim of visual completion should be made solely from source inspection.
+
+## Breadth-of-fit revision — 19 October 2026
+The author expressed concern that the named investigators, two worked doctoral ideas and emphasis on PROTACs/RNA/particular pathways could unintentionally signal **exclusive laboratory requirements** and reduce fit with chemistry, pharmaceutics, pharmacology, biomaterials, bioengineering and biomedical-science programmes.
+
+The public scientific profile at `molecular-therapeutics.html` now opens with a broad *Molecules, materials and living systems* narrative, followed by **six evidence-linked research routes**:
+1. Molecular chemistry (chemical sensing; imine/heterocyclic and analytic work).
+2. Pharmaceutics and delivery (niosomes/proniosomes and aerosol/formulation questions).
+3. Biomaterials and soft matter (plasma-modified PLA, electrospinning, polymer assemblies).
+4. Cell biology/experimental pharmacology (epithelial injury, zebrafish vascular work, cell readouts).
+5. Bioengineering and measurement (camera/acquisition protocol, microphysiological methods and imaging).
+6. Computational and quantitative science (fetal echocardiography machine learning, formulation software).
+
+Each route differentiates actual experience from **possible future research**. Named scientists (Gabr, Lakowski, Ryan, Alshaikh, Ye and circRNA researchers), illustrative signalling pathways and the two degrader/RNA project designs remain as intellectually rigorous research references, **not a required list of targets, modalities, disease systems or acceptable supervisors**. The independent public title now reads *Research Directions | Chemistry, Biology & Engineering*, while the preserved canonical route remains `/molecular-therapeutics.html`. The research horizon, doctoral concept examples and public academic profile have matching breadth-of-fit language. Homepage structure and visual design are preserved; no downloadable CV is introduced.
+
+This revision follows an academically grounded distinction: research projects should be focused, but a student with credible interdisciplinary experience may be open to multiple laboratory traditions. NIH NIBIB recognizes basic and applied interdisciplinary work spanning physical, engineering and life sciences: https://www.nih.gov/about-nih/nih-almanac/national-institute-biomedical-imaging-bioengineering-nibib . The website should not falsely imply that all such disciplines are equally well represented in the applicant's completed research, or that broad interests guarantee admissions, funding or acceptance. Decisions about scientific fit remain lab-specific.
+
+Static assertions now guard the six research routes, openness to fundamental research and nonexclusive wording. These are **source-level checks only**. Live visual/browser acceptance and film playback still require separate testing.
