@@ -657,6 +657,30 @@
       "url": "/research-horizon.html",
       "summary": "An evidence-aware research agenda spanning molecular intervention, therapeutic transport, living models, imaging and the dialogue between computation and experiment.",
       "keywords": "research horizon future research questions drug delivery biological state pharmacology molecular design computational models research agenda آفاق البحث العلمي مشاريع مستقبلية دواء"
+    },
+    {
+      "id": 82,
+      "title": "High-speed zebrafish imaging: camera implementation and protocol",
+      "category": "Research",
+      "url": "/research/high-speed-zebrafish-imaging.html",
+      "summary": "Original Micron methods context; a source-led dossier distinguishing camera-system implementation, written imaging protocol and group research findings.",
+      "keywords": "zebrafish high-speed camera cardiac hemodynamics protocol Micron 2020 physiology imaging method"
+    },
+    {
+      "id": 83,
+      "title": "Plasma-modified PLA: surfaces and evidence",
+      "category": "Research",
+      "url": "/research/plasma-modified-pla.html",
+      "summary": "Two collaborative PLA experiments with separate adhesion and antimicrobial endpoints, original DOI sources and reconciled CRediT contributions.",
+      "keywords": "Anton Popelka PLA film electrospinning plasma ascorbic fumaric acid grafting formal analysis biomaterials CRediT"
+    },
+    {
+      "id": 84,
+      "title": "Two doctoral research concepts: chemical biology and RNA delivery",
+      "category": "Research",
+      "url": "/doctoral-concepts.html",
+      "summary": "Falsifiable doctoral proposals on PROTAC/degrader pharmacology and aptamer-guided circular-RNA delivery with microfluidic engineering.",
+      "keywords": "future doctoral research click chemistry PROTAC BRD4 aptamers circular RNA microfluidics pharmacology PKPD research proposals"
     }
   ]
 }
