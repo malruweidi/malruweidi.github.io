@@ -32,7 +32,7 @@
       "category": "Research",
       "url": "/molecular-therapeutics.html",
       "summary": "Three evidence-led research questions arising from chemical sensing and synthesis, polymer interfaces and formulation, pulmonary epithelial injury and quantitative imaging; pathways and advanced RNA/chemical biology remain deeper future interests.",
-      "keywords": "Mahmoud Al-Ruweidi molecular design chemical sensing imine polymer PLA interfaces molecular recognition pharmacology drug transport formulation niosomes proniosomes pulmonary epithelial injury quantitative imaging zebrafish biomaterials chemical biology siRNA circular RNA aptamers PROTACs experimental evidence"
+      "keywords": "Mahmoud Al-Ruweidi molecular design chemical sensing imine polymer PLA interfaces molecular recognition pharmacology drug transport formulation niosomes proniosomes pulmonary epithelial injury quantitative imaging zebrafish biomaterials chemical biology siRNA circular RNA aptamers PROTACs experimental evidence كيمياء دوائية تصميم جزيئي علاج دوائي توصيل نانوي فارماكولوجيا حمض نووي حلقي"
     },
     {
       "id": 3,
@@ -664,7 +664,7 @@
       "category": "Research",
       "url": "/research/high-speed-zebrafish-imaging.html",
       "summary": "Original Micron methods context; a source-led dossier distinguishing camera-system implementation, written imaging protocol and group research findings.",
-      "keywords": "zebrafish high-speed camera cardiac hemodynamics protocol Micron 2020 physiology imaging method"
+      "keywords": "zebrafish high-speed camera cardiac hemodynamics protocol Micron 2020 physiology imaging method تصوير سريع سمك الزرد كاميرا القلب بروتوكول"
     },
     {
       "id": 83,
@@ -672,7 +672,7 @@
       "category": "Research",
       "url": "/research/plasma-modified-pla.html",
       "summary": "Two collaborative PLA experiments with separate adhesion and antimicrobial endpoints, original DOI sources and reconciled CRediT contributions.",
-      "keywords": "Anton Popelka PLA film electrospinning plasma ascorbic fumaric acid grafting formal analysis biomaterials CRediT"
+      "keywords": "Anton Popelka PLA film electrospinning plasma ascorbic fumaric acid grafting formal analysis biomaterials CRediT بوليمرات بلازما ألياف كهروغزل أسطح مواد حيوية"
     },
     {
       "id": 84,
@@ -680,7 +680,7 @@
       "category": "Research",
       "url": "/doctoral-concepts.html",
       "summary": "Falsifiable doctoral proposals on PROTAC/degrader pharmacology and aptamer-guided circular-RNA delivery with microfluidic engineering.",
-      "keywords": "future doctoral research click chemistry PROTAC BRD4 aptamers circular RNA microfluidics pharmacology PKPD research proposals"
+      "keywords": "future doctoral research click chemistry PROTAC BRD4 aptamers circular RNA microfluidics pharmacology PKPD research proposals مقترحات دكتوراه كيمياء حيوية رنا دائري ابتامرات هندسة توصيل أدوية"
     }
   ]
 }

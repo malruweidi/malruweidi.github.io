@@ -27,7 +27,9 @@ test('2009 school chemistry beginning predates the 2011 anatomy story without fa
   assert.match(archive,/2009/);
   assert.doesNotMatch(home,/The first system that truly puzzled me was a body/);
   assert.doesNotMatch(archive,/The archive begins with a school anatomy lesson/);
-  assert.match(stories,/original capture date unverified|original camera date unverified|photograph date unverified|capture date unverified/i);
+  assert.match(stories,/I organized my first school chemistry exhibition at Doha Independent School in 2009/);
+  assert.match(stories,/In a photograph from a Grade 10 chemistry festival/);
+  assert.doesNotMatch(stories,/photograph (?:taken|captured) in 2009/i);
 });
 test('illness story is a real static chapter linked to both the original essay and archive',()=>{
   assert.ok(stories.includes('id="life-between-diagnoses-story"'));
