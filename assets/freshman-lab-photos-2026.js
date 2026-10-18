@@ -3,7 +3,7 @@
   "use strict";
   const photos=[
     {src:"/assets/archival-2026-10-13/early-chemistry-flask-2014.webp",title:"First-year chemistry laboratory",alt:"Mahmoud in a white laboratory coat holding up a flask containing a dark liquid in a university chemistry laboratory",caption:"Mahmoud in the chemistry laboratory, freshman year, circa 2014. Sample contents not documented."},
-    {src:"/assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",title:"At the chemistry bench",alt:"Black-and-white laboratory photograph of Mahmoud in a white laboratory coat holding a glass test tube",caption:"Mahmoud with a test tube during his early undergraduate chemistry training, circa 2014. Sample identity unverified."},
+    {src:"/assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",title:"At the chemistry bench",alt:"Black-and-white laboratory photograph of Mahmoud in a white laboratory coat holding a glass test tube",caption:"Mahmoud with a test tube during his early undergraduate chemistry training, circa 2014. Early undergraduate chemistry laboratory."},
     {src:"/assets/archival-2026-10-13/abdelgalil-chemistry-lab-tablet.webp",title:"Abdelgalil in the laboratory",alt:"Abdelgalil Khalaf Ahmed seated at a chemistry laboratory bench wearing a white coat and gloves and holding a tablet",caption:"Abdelgalil Khalaf Ahmed in the chemistry laboratory. Date, sample and procedure not established."}
   ];
   function imageExists(src){return new Promise(resolve=>{const image=new Image();image.onload=()=>resolve(true);image.onerror=()=>resolve(false);image.src=src;});}
