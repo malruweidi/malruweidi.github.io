@@ -36,7 +36,7 @@
   Object.assign(d,{
   "RESEARCH · SCHOLARSHIP · PERSONAL HISTORY": "البحث العلمي · التأليف · السيرة الشخصية",
   "Choose a chapter.": "اختر فصلاً.",
-  "This site contains a research archive, a personal record and work in progress. The front page is a map. Open a collection to read it properly.": "يضم هذا الموقع أرشيفاً بحثياً وسجلاً شخصياً وأعمالاً قيد التطوير. الصفحة الرئيسية خريطة للقراءة، وتفتح كل مجموعة على صفحتها المفصلة.",
+  "Follow the studies, ideas and people that shaped this work, from early experiments to research and writing.": "تتبّع التجارب والأفكار والأشخاص الذين أسهموا في تشكيل هذه المسيرة، من البدايات إلى البحث العلمي والكتابة.",
   "01 / Research": "٠١ / البحث العلمي",
   "Research & experiments": "الأبحاث والتجارب",
   "From imine chemistry to zebrafish vascular development, pulmonary epithelial injury and inhalable formulation.": "من كيمياء الإيمين إلى تطور الأوعية في أسماك الزرد وإصابة ظهارة الرئة والمستحضرات الدوائية للاستنشاق.",
@@ -47,7 +47,7 @@
   "Browse publications": "تصفح المنشورات",
   "03 / Films": "٠٣ / الأفلام",
   "Scientific films": "الأفلام العلمية",
-  "Experimental questions told through evidence-led documentaries, with methods, narration and source notes.": "أسئلة تجريبية تُروى في أفلام وثائقية علمية مع المنهج والتعليق والتوثيق.",
+  "Scientific films about experiments, their challenges and the questions that emerged.": "أفلام علمية عن التجارب وتحدياتها والأسئلة التي نشأت عنها.",
   "Watch the films": "شاهد الأفلام",
   "04 / Stories": "٠٤ / الحكايات",
   "Stories from the work": "حكايات من العمل",
