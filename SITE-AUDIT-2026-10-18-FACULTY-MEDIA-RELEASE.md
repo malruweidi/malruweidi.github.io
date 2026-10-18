@@ -90,3 +90,20 @@ Each route differentiates actual experience from **possible future research**. N
 This revision follows an academically grounded distinction: research projects should be focused, but a student with credible interdisciplinary experience may be open to multiple laboratory traditions. NIH NIBIB recognizes basic and applied interdisciplinary work spanning physical, engineering and life sciences: https://www.nih.gov/about-nih/nih-almanac/national-institute-biomedical-imaging-bioengineering-nibib . The website should not falsely imply that all such disciplines are equally well represented in the applicant's completed research, or that broad interests guarantee admissions, funding or acceptance. Decisions about scientific fit remain lab-specific.
 
 Static assertions now guard the six research routes, openness to fundamental research and nonexclusive wording. These are **source-level checks only**. Live visual/browser acceptance and film playback still require separate testing.
+
+## Evidence-led synthesis revision — 19 October 2026
+
+An editorial review identified a second weakness: the broad six-category admissions-oriented pitch was correct about possible academic disciplines but failed to explain the **scientific problem connecting the actual record**. The research profile's front matter has therefore been rebuilt around a substantive research theme: **molecular design, material behavior/transport, and measured biological response**. These are three testable questions a lab may pursue independently, not a compulsory complete drug-discovery pipeline.
+
+The page's three main research cards now connect:
+- chemical sensing, imine chemistry, heterocycle/SLIT literature work to questions of molecular recognition, chemical modification and target function;
+- plasma-treated PLA, electrospinning, polymeric systems and inhalable niosomes/proniosomes to material properties, formulation, interfaces and exposure;
+- pulmonary epithelial cell injury, zebrafish/camera methodology and fetal echocardiography imaging to physiological response, quantification, model validity and causal inference.
+
+The scientific logic is evidenced by four distinct measurement limitations: selective chemical sensing versus optical change; surface chemistry versus functional properties in PLA; fluorescence injury measurement versus molecular mechanism; colloidal carrier stability versus aerosol delivery. These are not claimed as one experimental project. Links point to original publications and individual research dossiers.
+
+**Non-destructive rule:** All six earlier broad area cards remain intact in a collapsed `<details class="research-archive">` section. All deeper pathway material, publications, scientist references (Ryan, Alshaikh, Ye, Gabr, Lakowski), siRNA/circRNA research and previous doctoral concepts remain accessible. The former hero copy was edited for clarity; the historical six-card content is preserved verbatim. Existing visual language, site navigation routes, film archive and the prohibition against a downloadable CV remain intact.
+
+The homepage lead, public academic profile, research horizon and site-search description were aligned to the same three-question logic. Targeted integrity assertions now explicitly require three primary research cards and the continued presence of the six archived cards.
+
+These changes are grounded in repository source; full deployment, mobile rendering, linked external sources and visual/audio media acceptance still require independent live-site testing. Do not claim those checks have passed.
