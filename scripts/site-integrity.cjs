@@ -95,8 +95,40 @@ try{
   for(const ext of ["mp4","vtt","json","webp"])requireFile("assets/films/series-v6/"+film.id+"."+ext);
  }
 }catch(err){error("film releases","could not validate release manifest: "+err.message);}
+// Faculty-facing technical dossier and cinema release safeguards.
+for(const page of ["doctoral-concepts.html","research/high-speed-zebrafish-imaging.html","research/plasma-modified-pla.html"]){
+ if(!known.has(page))error("research routes","missing published page "+page);
+ if(!fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").includes("https://malruweidi.github.io/"+page))error("sitemap.xml","new research route missing "+page);
+}
+for(const [file,marker] of [
+ ["research/high-speed-zebrafish-imaging.html","high-speed camera/acquisition system"],
+ ["research/plasma-modified-pla.html","formal CRediT"],
+ ["research/pulmonary-epithelial-injury.html","CASE STUDY / WHAT THE EXPERIMENT ACTUALLY CONTROLLED"],
+ ["doctoral-concepts.html","Working hypothesis."]
+])if(!(html.get(file)||"").includes(marker))error(file,"source-led experimental/research content missing "+marker);
+if((html.get("research/pulmonary-epithelial-injury.html")||"").includes("complete transcript"))error("research dossier","production-facing transcript promoted on public film link");
+if(!(html.get("research.html")||"").includes("/research/high-speed-zebrafish-imaging.html")||!(html.get("research.html")||"").includes("/research/plasma-modified-pla.html"))error("research.html","dossier discovery links missing");
+const polymer=bibliography.match(/<article class="pub-card"[^>]*id="work-9"[\\s\\S]*?<\\/article>/);
+if(!polymer||!polymer[0].includes("CRediT")||!polymer[0].includes("investigation")&&!polymer[0].includes("Experimentation"))error("publications.html","formal and personal polymer credits not differentiated");
+try{
+ const v7=JSON.parse(fs.readFileSync(path.join(root,"assets/films/series-v7-pilots/releases.json"),"utf8"));
+ if(v7.schema!=="ruwaidix-cinema-v7-registered-releases-v1"||v7.count!==v7.films.length)error("cinema","V7 release count/schema mismatch");
+ const seen=new Set();
+ for(const film of v7.films||[]){
+  if(seen.has(film.id))error("cinema","V7 duplicate release "+film.id);
+  seen.add(film.id);
+  if(film.edition!=="series-v7-pilots"||film.distinct_chapters!==6||Number(film.duration_seconds)!==84)error("cinema","V7 inconsistent duration or scene register "+film.id);
+  for(const key of ["video","captions","poster"]){const ref=film[key];if(!ref||!known.has(String(ref).replace(/^\\//,"")))error("cinema","V7 missing "+key+" for "+film.id);}
+ }
+}catch(err){error("cinema","V7 verification failed "+err.message);}
+for(const id of ["pla-scaffolds","microfluidic-virus","making-medicines-keep","pla-grafting","flow-chamber-method"]){
+ if(!cinema.includes('"'+id+'":{edition:"series-v8-primary"'))error("cinema","primary verified film not selected "+id);
+ for(const ext of ["mp4","vtt","webp"])requireFile("assets/films/series-v8-primary/"+id+"."+ext);
+ const vtt=fs.readFileSync(path.join(root,"assets/films/series-v8-primary/"+id+".vtt"),"utf8");
+ if(!vtt.startsWith("WEBVTT")||/date not verified|production note|shot list|review checklist|manifests? for the editor/i.test(vtt))error("cinema","subtitle release contamination "+id);
+}
 const discovery=JSON.parse(fs.readFileSync(path.join(root,"assets/discovery-index.json"),"utf8"));
-for(const route of ["/research.html","/publications.html"])if(!(discovery.items||[]).some(x=>x.url===route))error("discovery","new hub missing from discovery index: "+route);
+for(const route of ["/research.html","/publications.html","/doctoral-concepts.html","/research/high-speed-zebrafish-imaging.html","/research/plasma-modified-pla.html"])if(!(discovery.items||[]).some(x=>x.url===route))error("discovery","new hub missing from discovery index: "+route);
 if(!(discovery.items||[]).some(x=>x.url==="/for-supervisors.html"))error("discovery","faculty page absent from search index");
 console.log("Audited "+htmls.length+" HTML pages, "+paths.filter(x=>x.endsWith(".js")).length+" scripts, "+linkCount+" links, "+assetCount+" static references.");
 for(const w of [...new Set(warnings)])console.warn("WARN "+w);
