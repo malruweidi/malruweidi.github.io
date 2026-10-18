@@ -31,9 +31,9 @@ This document is repository-facing quality documentation, not website copy, a fi
 
 ## Scientific film release verification: what has been checked
 
-- `assets/films/series-v6/releases.json`: 30 registered releases. The existing source integrity script checks the manifest schema, count, IDs, positive durations, and MP4/VTT/JSON/WebP files.
+- `assets/films/series-v6/releases.json`: 30 registered releases. **All 30 English VTT files were read** and screened for obvious production-facing terms; all 30 passed the lexical check. The source integrity script checks the manifest schema, count, IDs, positive durations, and MP4/VTT/JSON/WebP files.
 - `assets/films/series-v7-pilots/releases.json`: 14 registered revisions; all 14 English VTT files were read at source. Their opening content matched the named subject at a basic semantic level, and none had obvious strings for editorial notes, placeholders, shot lists, contact sheets, 'date not verified' or manifests.
-- `assets/films/series-v8-primary`: five source-priority titles in the cinema catalogue (PLA scaffold, PLA grafting, microfluidic-virus review, flow-chamber method and *Making Medicines Keep*). All five English VTT files were read; no obvious production-note contamination was found. V8 videos for one title and the linked subtitles could be located at their GitHub paths. A full per-frame audiovisual review has **not** been completed.
+- `assets/films/series-v8-primary`: five source-priority titles in the cinema catalogue (PLA scaffold, PLA grafting, microfluidic-virus review, flow-chamber method and *Making Medicines Keep*). All five English VTT files were read; no obvious production-note contamination was found. All five poster assets were confirmed to exist by GitHub lookup (the text reader cannot decode binary WebP files); the *Making Medicines Keep* MP4 and matching VTT were also located. A full per-frame audiovisual review has **not** been completed.
 - The public pulmonary research page no longer advertises a complete transcript in its linked evidence-film call-to-action. Production transcripts and film planning notes belong in GitHub documentation, not on film pages.
 
 ### What subtitle and source checks cannot establish
