@@ -13,8 +13,8 @@ window.RuwaidixArabicDictionary = {
   "But the question": "لكن السؤال",
   "came earlier.": "كان أقدم من ذلك.",
   "I did not arrive at chemistry with a neat plan to become a pharmaceutical scientist. I arrived with an old habit of asking how things work, and then finding that an answer at one scale was rarely enough.": "لم أدخل عالم الكيمياء وفي يدي خطة مرتبة لأصبح باحثًا في العلوم الصيدلانية. دخلته وفي ذهني عادة قديمة: أن أسأل كيف تعمل الأشياء، ثم أكتشف أن الإجابة على مستوى واحد نادرًا ما تكفي.",
-  "Before university · Personal archive · Original date unverified": "قبل الجامعة · أرشيف شخصي · التاريخ الأصلي غير مؤكد",
-  "A much earlier version of me · Personal archive · Undated": "من طفولتي · أرشيف شخصي · صورة غير مؤرخة",
+  "Before university · Personal photograph": "قبل الجامعة · صورة شخصية من البدايات",
+  "A much earlier version of me · Personal photograph": "صورة من طفولتي",
   "The earlier years": "سنوات البدايات",
   "Curiosity came before a discipline.": "سبق الفضولُ اختيارَ التخصص.",
   "When I look at these photographs, I do not see evidence that I was destined for a particular career. They remind me that an interest in how the world works existed before I knew the language of research or the names of academic fields.": "حين أتأمل هذه الصور، لا أرى فيها دليلًا على أن طريقًا مهنيًا بعينه كان مكتوبًا لي. لكنها تذكرني بأن رغبتي في فهم العالم سبقت معرفتي بلغة البحث العلمي وأسماء التخصصات الجامعية.",
@@ -691,7 +691,7 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Consortium of Eosinophilic Gastrointestinal Disease Researchers (CEGIR) ↗": "اتحاد باحثي اضطرابات الجهاز الهضمي اليوزينية (CEGIR) ↗",
   "Verify nonprofit (EIN 38-3027574) ↗": "تحقق من تسجيل المؤسسة (EIN 38-3027574) ↗",
   "From the personal history / 2011–2026": "من المسيرة الشخصية / 2011–2026",
-  "CHILDHOOD PHOTOGRAPH · DATE UNVERIFIED": "صورة من الطفولة · التاريخ غير مؤكد",
+  "CHILDHOOD PHOTOGRAPH": "صورة من الطفولة",
   "EARLY UNIVERSITY · FILE NAMED NOV 2014": "بدايات الجامعة · ملف مؤرخ في نوفمبر 2014",
   "FIRST AUTHOR · 2021": "المؤلف الأول · 2021",
   "PULMONARY MECHANOBIOLOGY": "الميكانيكا الحيوية الرئوية",
@@ -900,7 +900,7 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "From early laboratory training and the founding of a chemistry student chapter to experimental bioengineering, pharmaceutical sciences and scientific writing, the record is one of growing scientific questions and the communities built around them.": "من التدريب المختبري المبكر وتأسيس فرع طلابي للكيمياء إلى الهندسة الحيوية التجريبية والعلوم الصيدلانية والكتابة العلمية، يسجل الأرشيف تطور الأسئلة العلمية والمجتمعات التي نشأت حولها.",
   "An early photograph from my university research period.": "صورة مبكرة من فترة البحث الجامعي.",
   "A university-era photograph from the formative years of QUACS.": "صورة من سنوات تشكّل فرع QUACS خلال الدراسة الجامعية.",
-  "Personal archive photograph preserved without an invented year.": "صورة شخصية محفوظة في الأرشيف دون افتراض تاريخ غير موثق.",
+  "A moment from my early years, long before the laboratory became part of my daily life.": "صورة من سنوات البدايات، قبل أن تصبح المختبرات جزءًا من حياتي اليومية.",
   "University-era portrait from the earlier visual archive.": "صورة شخصية من الأرشيف البصري لفترة الدراسة الجامعية.",
   "These photographs come from the earlier documented personal archive. Dates are given only when supported by the accompanying photo metadata or provenance.": "تأتي هذه الصور من الأرشيف الشخصي السابق الموثق. ولا تُذكر تواريخها إلا حين تسندها بيانات الصورة أو أدلة المصدر."
 });
