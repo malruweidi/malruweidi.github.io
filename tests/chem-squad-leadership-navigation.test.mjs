@@ -10,7 +10,8 @@ test("Chem Squad and Leadership & Management are distinct full-sized homepage ca
  const section=home.slice(home.indexOf('<section class="rx26-portal"'),home.indexOf('<details class="rx-home-complete-record"'));
  assert.ok(section.includes('href="/chem-squad.html"'));
  assert.ok(section.includes('href="/leadership.html"'));
- assert.equal((section.match(/class="rx26-portal-card"/g)||[]).length,8);
+ assert.equal((section.match(/class="rx26-portal-card"/g)||[]).length,9);
+ assert.ok(section.includes('href="/major-revisions.html"'),"forthcoming book remains a separate homepage chapter");
  assert.match(section,/07 \/ Chem Squad/);
  assert.match(section,/08 \/ Leadership/);
  assert.match(section,/Leadership &amp; management/);
