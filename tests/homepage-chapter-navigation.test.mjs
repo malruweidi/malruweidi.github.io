@@ -8,13 +8,13 @@ const root=resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const read=path=>readFileSync(join(root,path),"utf8");
 const home=read("index.html");
 
-test("homepage is a compact directory of the eight primary collections",()=>{
+test("homepage is a compact directory of the nine primary collections",()=>{
   assert.ok(home.includes('id="rx26-portal"'));
   const start=home.indexOf('id="rx26-portal"');
   const end=home.indexOf('id="rx-home-complete-record"');
   const portal=home.slice(start,end);
   assert.ok(end>start);
-  for(const route of ["/research.html","/publications.html","/films.html","/stories.html","/illness-and-evidence.html","/writing.html","/chem-squad.html","/leadership.html"]){
+  for(const route of ["/research.html","/publications.html","/films.html","/stories.html","/illness-and-evidence.html","/writing.html","/chem-squad.html","/leadership.html","/major-revisions.html"]){
     assert.ok(portal.includes('href="'+route+'"'),"missing homepage collection "+route);
   }
   assert.ok(portal.includes('aria-labelledby="rx26-portal-title"'));
