@@ -68,7 +68,7 @@ if(!home.includes('href="/for-supervisors.html"')||!academic.includes('href="/fo
 if(!fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").includes("https://malruweidi.github.io/for-supervisors.html"))error("sitemap.xml","faculty page missing");
 if(!([...bibliography.matchAll(/class="pub-contribution"/g)].length===20))error("publications.html","not every publication has a contribution note");
 for(const id of ["work-13","work-14"]){const card=bibliography.match(new RegExp('<article class="pub-card"[^>]*id="'+id+'"[\\s\\S]*?<\\/article>'));if(!card||!card[0].includes("Experimental contribution only; no manuscript-writing contribution."))error("publications.html","experimental-only exception missing "+id);}
-if(!(discovery.items||[]).some(x=>x.url==="/for-supervisors.html"))error("discovery","faculty page absent from search index");
+
 const cinema=html.get("publication-cinema.html")||"";
 if(!cinema.includes("const selectedEdition=verifiedResearchEdition ||")||!cinema.includes("releasedV6=new Map(")||!cinema.includes("verifiedFilmMasters[x.id]"))error("publication-cinema.html","source-verified editions must take precedence, then V6 release manifest, with intact originals");
 try{
@@ -84,6 +84,7 @@ try{
 }catch(err){error("film releases","could not validate release manifest: "+err.message);}
 const discovery=JSON.parse(fs.readFileSync(path.join(root,"assets/discovery-index.json"),"utf8"));
 for(const route of ["/research.html","/publications.html"])if(!(discovery.items||[]).some(x=>x.url===route))error("discovery","new hub missing from discovery index: "+route);
+if(!(discovery.items||[]).some(x=>x.url==="/for-supervisors.html"))error("discovery","faculty page absent from search index");
 console.log("Audited "+htmls.length+" HTML pages, "+paths.filter(x=>x.endsWith(".js")).length+" scripts, "+linkCount+" links, "+assetCount+" static references.");
 for(const w of [...new Set(warnings)])console.warn("WARN "+w);
 for(const e of [...new Set(errors)])console.error("FAIL "+e);
