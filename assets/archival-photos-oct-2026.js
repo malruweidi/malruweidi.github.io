@@ -1,12 +1,12 @@
 /* Owner-identified historical photographs, 12 October 2026. No broken-image placeholders. */
 (()=>{'use strict';
 const items=[
-['mokattam-cairo-sunset.webp','A Cairo sunset from Mokattam','Personal history','Mahmoud overlooking Cairo at sunset from a rocky vantage point near Mokattam','Date not verified'],
-['labcoat-black-white-portrait.webp','An early laboratory portrait','Academic life','Black-and-white portrait of Mahmoud in a laboratory coat','Date not verified'],
+['mokattam-cairo-sunset.webp','A Cairo sunset from Mokattam','Personal history','Mahmoud overlooking Cairo at sunset from a rocky vantage point near Mokattam','Personal archive'],
+['labcoat-black-white-portrait.webp','An early laboratory portrait','Academic life','Black-and-white portrait of Mahmoud in a laboratory coat','Personal archive'],
 ['the-youth-company-breast-cancer-outreach-2013.webp','Breast cancer awareness with The Youth Company','Public service','Mahmoud volunteering at The Youth Company breast-cancer-awareness booth','Facebook display: 6 April 2013'],
 ['youth-change-everything-recognition-2013.webp','Youth Change Everything: recognition','Early leadership','Mahmoud receiving a conference recognition certificate','Facebook display: 1 May 2013'],
-['fifth-chemistry-festival-host.webp','Hosting the fifth Chemistry Festival','Science outreach','Mahmoud hosting the fifth Chemistry Festival beside an ACS panel','Date not verified'],
-['molecular-model-aged-19.webp','Exploring molecular structures at nineteen','Early chemistry','Mahmoud holding a six-membered ring molecular model at approximately age nineteen','Benzene versus cyclohexane cannot be confirmed']
+['fifth-chemistry-festival-host.webp','Hosting the fifth Chemistry Festival','Science outreach','Mahmoud hosting the fifth Chemistry Festival beside an ACS panel','Personal archive'],
+['molecular-model-aged-19.webp','Exploring molecular structures at nineteen','Early chemistry','Mahmoud holding a six-membered ring molecular model at approximately age nineteen','An early interest in molecular structures']
 ];
 const path=x=>'/archive/'+x[0];
 function addStyles(){if(document.getElementById('rxOct2026Style'))return;let s=document.createElement('style');s.id='rxOct2026Style';s.textContent='.rx-oct-photos{padding:52px 24px 64px;background:#f7f4ed;border-top:1px solid #cbd6cc}.rx-oct-inner{max-width:1110px;margin:auto}.rx-oct-photos h2{font:400 clamp(33px,4vw,50px)/1.16 Newsreader,Georgia,serif;margin:12px 0 14px}.rx-oct-intro{font:15px/1.8 "DM Sans",Arial,sans-serif;color:#50686a;max-width:75ch;margin:0 0 29px}.rx-oct-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px}.rx-oct-card{margin:0;padding:8px;background:#fffdf7;border:1px solid #cbd7cd;min-width:0}.rx-oct-card img{display:block;width:100%;height:215px;object-fit:cover}.rx-oct-card figcaption{font:12px/1.5 "DM Sans",sans-serif;color:#5e7677;padding:10px 4px 5px}.rx-oct-card strong{display:block;font-size:14px;color:#19383b;margin-bottom:6px}.rx-oct-card small{display:block}.rx-oct-story{margin:24px 0}.rx-oct-story h3{font:400 28px Newsreader,Georgia,serif;color:#203e42}@media(max-width:490px){.rx-oct-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rx-oct-card img{height:155px}}';document.head.append(s)}
