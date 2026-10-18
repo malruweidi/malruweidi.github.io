@@ -56,8 +56,8 @@ const run=()=>{
      title:"Controlling flow during shear-stress experiments",titleAr:"التحكم بالتدفق في تجارب إجهاد القص",
      text:"A syringe pump used in a shear-stress experiment. The archived screen shows a 0.1 mL volume and programmed rates of 4 and 9 mL/min. These are flow settings; wall shear stress must be calculated from channel geometry, medium rheology and flow conditions rather than read directly from the pump.",
      textAr:"مضخة محقنة استُخدمت في تجربة لإجهاد القص. تُظهر شاشة الجهاز حجماً مقداره ٠٫١ مل ومعدلي تدفق ٤ و٩ مل/دقيقة. هذه إعدادات للتدفق وليست قياساً مباشراً لإجهاد القص على الجدار، الذي يتطلب معرفة هندسة القناة وخواص السائل وظروف الجريان.",
-     date:"Original laboratory photograph · experimental date not verified",
-     dateAr:"صورة مختبرية أصلية · تاريخ التجربة غير موثق"});
+     date:"From the laboratory archive",
+     dateAr:"من أرشيف المختبر"});
    if(dest)dest.append(pump);
    else if(targetSection)targetSection.append(pump);
  }
@@ -74,8 +74,8 @@ const run=()=>{
      titleAr:"صباح عطلة مع المجهر",
      text:"I bought this microscope in the Qasr El Einy area of Cairo and brought it to Qatar. It became part of how I pursued my own questions beyond scheduled university laboratory work. I tell the fuller story of bringing it from Cairo in the Stories section.",
      textAr:"اشتريت هذا المجهر من منطقة القصر العيني في القاهرة وجئت به إلى قطر. صار وسيلتي إلى متابعة الأسئلة التي تثير فضولي خارج مواعيد مختبر الجامعة. أروي في قسم الحكايات تفاصيل رحلته معي من القاهرة.",
-     date:"Original Instagram post · 1 July 2017; camera date unverified",
-     dateAr:"منشور إنستغرام · ١ يوليو ٢٠١٧؛ تاريخ التصوير غير موثق"
+     date:"Shared on Instagram · 1 July 2017",
+     dateAr:"منشور على إنستغرام · ١ يوليو ٢٠١٧"
    });
    const storyLink=document.createElement("a");storyLink.href="/stories.html#personal-microscope";storyLink.className="rx-provenance-link";storyLink.textContent=ar?"اقرأ حكاية المجهر: من القاهرة إلى قطر ↗":"Read the microscope's journey from Cairo to Qatar ↗";
    morning.querySelector("figcaption").append(storyLink);

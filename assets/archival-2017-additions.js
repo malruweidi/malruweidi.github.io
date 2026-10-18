@@ -9,35 +9,35 @@
       alt: ['Framed certificate identifying Mahmoud Khatib AbdelRasool as a 2016–17 QUACS executive committee member', 'شهادة تقدير باسم محمود خطيب عبدالرسول لعضويته في اللجنة التنفيذية لفرع الجمعية الكيميائية الأمريكية بجامعة قطر'],
       title: ['The executive committee, on record', 'عضوية اللجنة التنفيذية موثقة'],
       caption: ['The Department of Chemistry and Earth Sciences commended my contribution as an executive committee member to the Qatar University ACS student chapter, 2016–17. Photo-library display: Qatar University, 22 May 2017.', 'شهادة تقدير من قسم الكيمياء وعلوم الأرض عن المساهمة بصفتي عضوًا في اللجنة التنفيذية لفرع الجمعية الكيميائية الأمريكية بجامعة قطر للعام ٢٠١٦–٢٠١٧. تاريخ عرض مكتبة الصور: ٢٢ مايو ٢٠١٧.'],
-      source: ['Original certificate, photographed by the archive owner. Screenshot: IMG_7985.jpeg.', 'شهادة أصلية من تصوير صاحب الأرشيف. المصدر: IMG_7985.jpeg.']
+      source: ['Certificate of participation in the ACS student chapter, 2016–17.', 'شهادة من أنشطة الفصل الطلابي للجمعية الكيميائية الأمريكية، ٢٠١٦–٢٠١٧.']
     },
     service: {
       file: 'acs-student-chapter-service-award-2017.webp',
       alt: ['Transparent Qatar University College of Arts and Sciences ACS service award held in a hand', 'درع تقدير لخدمة فرع الجمعية الكيميائية الأمريكية بجامعة قطر'],
       title: ['A service award, May 2017', 'تكريم على خدمة الفصل الطلابي، مايو ٢٠١٧'],
       caption: ['The Chemistry and Earth Sciences department recognized my initiatives and commitment to the success of the Qatar University ACS student chapter. The award is dated May 2017.', 'كرّم قسم الكيمياء وعلوم الأرض المبادرات والالتزام اللذين ساعدا في إنجاح الفصل الطلابي للجمعية الكيميائية الأمريكية بجامعة قطر. الدرع مؤرخ في مايو ٢٠١٧.'],
-      source: ['Original award photographed by the archive owner. Source: IMG_7986.png.', 'درع أصلي من تصوير صاحب الأرشيف. المصدر: IMG_7986.png.']
+      source: ['Qatar University ACS student-chapter service award.', 'درع تكريم على خدمة الفرع الطلابي للجمعية الكيميائية الأمريكية بجامعة قطر.']
     },
     microscope: {
       file: 'jeol-jcm6000-qatar-university-2017.webp',
       alt: ['JEOL JCM-6000 scanning electron microscope at Qatar University with instrument label visible', 'مجهر إلكتروني ماسح JEOL JCM-6000 في جامعة قطر'],
       title: ['The SEM in July', 'المجهر الإلكتروني في يوليو'],
       caption: ['A JEOL JCM-6000 scanning electron microscope in a Qatar University facility. Photo-library display: 18 July 2017, 13:16. I photographed the instrument during a visit to the facility.', 'مجهر إلكتروني ماسح من طراز JEOL JCM-6000 في إحدى مرافق جامعة قطر. تاريخ عرض مكتبة الصور: ١٨ يوليو ٢٠١٧، الساعة ١٣:١٦. التقطت الصورة للجهاز خلال وجودي في المرفق.'],
-      source: ['Owner-supplied photo-library screenshot: IMG_7988.jpeg.', 'صورة من مكتبة الصور الشخصية: IMG_7988.jpeg.']
+      source: ['JEOL scanning electron microscope, Qatar University.', 'مجهر إلكتروني ماسح من طراز JEOL في جامعة قطر.']
     },
     group: {
       file: 'qatar-university-acs-delegation-2017.webp',
       alt: ['Five members of a university group at an airport holding the Qatar flag and Qatar University flag', 'خمسة أشخاص في مطار يحملون علم دولة قطر وعلم جامعة قطر'],
       title: ['The university delegation', 'وفد الجامعة'],
       caption: ['Our university travel group together at the airport with the Qatar and Qatar University flags.', 'صورة تجمع وفد الجامعة في المطار مع علم دولة قطر وعلم جامعة قطر.'],
-      source: ['Owner-supplied photograph: IMG_7989.png.', 'صورة مقدمة من صاحب الأرشيف: IMG_7989.png.']
+      source: ['Qatar University delegation photograph.', 'صورة لوفد جامعة قطر.']
     },
     dulles: {
       file: 'dulles-acs-travel-2017.webp',
       alt: ['Airport selfie of chemistry travelers seated with luggage', 'صورة جماعية لرفاق رحلة علمية في المطار مع حقائب سفر'],
       title: ['At Dulles, 18 August', 'في مطار دالاس، ١٨ أغسطس'],
       caption: ['An airport selfie among fellow travelers. The photo-library display identifies Washington Dulles International Airport, 18 August 2017, 21:45.', 'صورة ذاتية جماعية مع رفاق السفر. تسجل مكتبة الصور مطار واشنطن دالاس الدولي في ١٨ أغسطس ٢٠١٧، الساعة ٢١:٤٥.'],
-      source: ['Owner-supplied photo-library screenshot: IMG_7990.jpeg.', 'صورة من مكتبة الصور الشخصية: IMG_7990.jpeg.']
+      source: ['Dulles airport during the ACS journey.', 'في مطار دالاس أثناء رحلة الجمعية الكيميائية الأمريكية.']
     },
     mars: {
       file: 'acs-journey-to-mars-poster-2017.webp',
