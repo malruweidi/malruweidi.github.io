@@ -19,7 +19,7 @@ Editorial voice and source-placement requirements: **[Ruwaidix editorial standar
 - `engagement.html`: original chapter photographs, source-linked Chemist Café historical posters, an account of Chemistry Festival hosting, and two original zebrafish microscopy films
 - `techniques.html`: four original animal-model archival recordings; three zebrafish MP4 videos are hosted by the existing Creative Claw CDN
 - `cv.html`: public academic profile omitting private phone number, home address, and referee details
-- `for-supervisors.html`: academic research identity and faculty-facing evidence path, with no downloadable CV
+- `molecular-therapeutics.html`: independent scientific-research profile in molecular therapeutics, chemical biology, epigenetic pharmacology and RNA medicine; no downloadable CV. The former `for-supervisors.html` remains a backward-compatible redirect.
 - `research/high-speed-zebrafish-imaging.html`: documented camera implementation, protocol writing and source boundaries for the `Micron` paper
 - `research/plasma-modified-pla.html`: linked PLA-film and scaffold papers with distinct experimental endpoints and a formal-versus-firsthand contribution distinction
 - `doctoral-concepts.html`: two falsifiable, expressly prospective doctoral concepts in targeted degradation and engineered circRNA delivery
