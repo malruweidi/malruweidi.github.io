@@ -59,9 +59,16 @@ for(const [route,sourceFile] of [["/research.html","research.html"],["/publicati
 }
 if(!home.includes('class="rx-more"')||!home.includes('href="#research"'))error("index.html","secondary navigation no longer preserves in-page research route");
 const academic=html.get("cv.html")||"";
-if([...academic.matchAll(/<h2 class="label">/g)].length!==7)error("cv.html","academic CV requires seven semantic section headings");
+if([...academic.matchAll(/<h2 class="label">/g)].length!==8)error("cv.html","academic CV requires eight semantic section headings, including the research direction");
 const bibliography=html.get("publications.html")||"";
 if([...bibliography.matchAll(/class="pub-card"/g)].length<20)error("publications.html","curated bibliography unexpectedly lost entries");
+const supervisor=html.get("for-supervisors.html")||"";
+if(!supervisor.includes("From the bench")||!supervisor.includes("PROTACs")||!supervisor.includes("click chemistry")||!supervisor.includes("microfluidic")||!supervisor.includes("aptamer"))error("for-supervisors.html","research identity missing core future interests");
+if(!home.includes('href="/for-supervisors.html"')||!academic.includes('href="/for-supervisors.html"'))error("faculty","supervisor path missing from homepage or public CV");
+if(!fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").includes("https://malruweidi.github.io/for-supervisors.html"))error("sitemap.xml","faculty page missing");
+if(!([...bibliography.matchAll(/class="pub-contribution"/g)].length===20))error("publications.html","not every publication has a contribution note");
+for(const id of ["work-13","work-14"]){const card=bibliography.match(new RegExp('<article class="pub-card"[^>]*id="'+id+'"[\\s\\S]*?<\\/article>'));if(!card||!card[0].includes("Experimental contribution only; no manuscript-writing contribution."))error("publications.html","experimental-only exception missing "+id);}
+if(!(discovery.items||[]).some(x=>x.url==="/for-supervisors.html"))error("discovery","faculty page absent from search index");
 const cinema=html.get("publication-cinema.html")||"";
 if(!cinema.includes("const selectedEdition=verifiedResearchEdition ||")||!cinema.includes("releasedV6=new Map(")||!cinema.includes("verifiedFilmMasters[x.id]"))error("publication-cinema.html","source-verified editions must take precedence, then V6 release manifest, with intact originals");
 try{
