@@ -67,7 +67,20 @@ if(!supervisor.includes("From the bench")||!supervisor.includes("PROTACs")||!sup
 if(!home.includes('href="/for-supervisors.html"')||!academic.includes('href="/for-supervisors.html"'))error("faculty","supervisor path missing from homepage or public CV");
 if(!fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").includes("https://malruweidi.github.io/for-supervisors.html"))error("sitemap.xml","faculty page missing");
 if(!([...bibliography.matchAll(/class="pub-contribution"/g)].length===20))error("publications.html","not every publication has a contribution note");
-for(const id of ["work-13","work-14"]){const card=bibliography.match(new RegExp('<article class="pub-card"[^>]*id="'+id+'"[\\s\\S]*?<\\/article>'));if(!card||!(card[0].includes("Experimental contribution only; no manuscript-writing contribution.") || (/Experimental(?: zebrafish\/imaging)? work only\./i.test(card[0]) && card[0].includes("did not write the manuscript."))))error("publications.html","experimental-only exception missing "+id);}
+for(const id of ["work-13","work-14"]){
+ const card=bibliography.match(new RegExp('<article class="pub-card"[^>]*id="'+id+'"'+'[\\s\\S]*?<\\/article>'));
+ if(!card||!card[0].includes("Experimental")||!card[0].includes("did not perform the paper's data analysis")||!card[0].includes("did not write the manuscript"))error("publications.html","experimental-only/no-analysis/no-writing exception missing "+id);
+}
+for(const [id,terms] of Object.entries({
+ "work-12":["high-speed camera","wrote","protocol"],
+ "work-6":["machine-learning research workflow","model evaluation","manuscript writing"],
+ "work-7":["grant","analysed","interpreted"],
+ "work-18":["conceptual interpretation","wrote relevant manuscript sections"],
+ "work-17":["second author"]
+})){
+ const card=bibliography.match(new RegExp('<article class="pub-card"[^>]*id="'+id+'"'+'[\\s\\S]*?<\\/article>'));
+ if(!card||terms.some(t=>!card[0].toLowerCase().includes(t.toLowerCase())))error("publications.html","contribution detail missing "+id);
+}
 
 const cinema=html.get("publication-cinema.html")||"";
 if(!cinema.includes("const selectedEdition=verifiedResearchEdition ||")||!cinema.includes("releasedV6=new Map(")||!cinema.includes("verifiedFilmMasters[x.id]"))error("publication-cinema.html","source-verified editions must take precedence, then V6 release manifest, with intact originals");
