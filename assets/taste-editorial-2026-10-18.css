@@ -1,0 +1,374 @@
+/* Ruwaidix / Taste-Skill editorial refinement / 18 October 2026
+   Design read: scholarly documentary + personal research archive.
+   DESIGN_VARIANCE 6 | MOTION_INTENSITY 3 | VISUAL_DENSITY 4.
+   Additive, homepage-scoped, no new dependencies, no archival modifications.
+   To roll back, remove the link from index.html; previous CSS remains intact.
+*/
+html[data-rx-page="home"] {
+  --taste-ink:#17343b;
+  --taste-accent:#88452f;
+  --taste-rule:#c7d2ca;
+  --taste-paper:#f7f5ee;
+  --taste-paper-light:#fffdf8;
+  --taste-mist:#e7eee8;
+}
+
+/* Editorial navigation: one strong action, the rest a quiet reading index. */
+html[data-rx-page="home"] .header {
+  border-bottom:1px solid var(--taste-rule);
+}
+html[data-rx-page="home"] .header .nav {
+  gap:clamp(15px,2vw,32px);
+}
+html[data-rx-page="home"] .header .brandname {
+  letter-spacing:-.028em;
+}
+html[data-rx-page="home"] .header .navlinks>a:not(.contactbutton),
+html[data-rx-page="home"] .header .rx-more>summary {
+  text-decoration-thickness:1px;
+  text-underline-offset:8px;
+}
+html[data-rx-page="home"] .header .navlinks>a:not(.contactbutton):hover,
+html[data-rx-page="home"] .header .rx-more>summary:hover {
+  text-decoration:underline;
+  text-decoration-color:var(--taste-accent);
+}
+html[data-rx-page="home"] .header .navlinks .contactbutton {
+  background:var(--taste-ink);
+  color:#fffdf8;
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+}
+html[data-rx-page="home"] .header .navlinks .contactbutton:hover {
+  background:#315b53;
+  color:#fffdf8;
+}
+
+/* The two distinct halves of the opening should read like a journal cover,
+   not like a stack of headline, button, and generic sales cards. */
+html[data-rx-page="home"] .rx-editorial-hero {
+  padding-top:clamp(28px,3.6vw,56px);
+  padding-bottom:clamp(45px,5vw,75px);
+}
+html[data-rx-page="home"] .rx-hero-topline {
+  border-bottom-color:var(--taste-rule);
+  letter-spacing:.075em;
+}
+html[data-rx-page="home"] .rx-hero-grid {
+  grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);
+  gap:clamp(36px,5.3vw,86px);
+  align-items:start;
+}
+html[data-rx-page="home"] .rx-hero-copy {
+  padding-block:clamp(14px,3vw,50px);
+}
+html[data-rx-page="home"] .rx-hero-title {
+  max-width:14.2ch;
+  font-size:clamp(49px,5.15vw,83px);
+  line-height:1.055;
+  letter-spacing:-.045em;
+  margin-bottom:clamp(23px,2.5vw,36px);
+  text-wrap:balance;
+}
+html[data-rx-page="home"] .rx-hero-title em {
+  display:inline;
+  line-height:1.11;
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone;
+}
+html[data-rx-page="home"] .rx-hero-lead {
+  font-size:clamp(18px,1.65vw,23px);
+  line-height:1.56;
+  max-width:54ch;
+}
+html[data-rx-page="home"] .rx-hero-detail {
+  max-width:67ch;
+  line-height:1.83;
+  color:#3c5657;
+}
+html[data-rx-page="home"] .rx-hero-links {
+  gap:9px 21px;
+  margin-top:26px;
+}
+html[data-rx-page="home"] .rx-hero-primary {
+  min-height:47px;
+  gap:18px;
+  background:var(--taste-ink);
+}
+html[data-rx-page="home"] .rx-hero-secondary {
+  font-size:12.5px;
+  min-height:38px;
+  display:inline-flex;
+  align-items:center;
+  border-bottom-color:#9f6b59;
+}
+html[data-rx-page="home"] .rx-hero-secondary:hover {
+  color:#642f22;
+  border-bottom-color:#642f22;
+}
+html[data-rx-page="home"] .rx-hero-portrait {
+  max-width:100%;
+}
+html[data-rx-page="home"] .rx-portrait-mat {
+  padding:9px;
+  background:#e4ebe5;
+  border-color:#c5d2c9;
+  box-shadow:0 24px 52px rgba(23,52,59,.09);
+}
+html[data-rx-page="home"] .rx-portrait-mat img {
+  height:clamp(420px,50vw,660px);
+  object-position:50% 32%;
+}
+html[data-rx-page="home"] .rx-portrait-detail {
+  left:-16px;
+  bottom:58px;
+  background:#fffdf8;
+  box-shadow:none;
+  border-left:3px solid var(--taste-accent);
+}
+
+/* Give the two-minute scientific introduction the visual standing of a film,
+   without autoplay, forced scroll, or replaced footage. */
+html[data-rx-page="home"] .rx-home-film {
+  padding-block:clamp(44px,5.8vw,78px);
+}
+html[data-rx-page="home"] .rx-home-film-grid {
+  grid-template-columns:minmax(240px,.72fr) minmax(0,1.28fr);
+  gap:clamp(28px,5.8vw,80px);
+}
+html[data-rx-page="home"] .rx-home-film-title {
+  letter-spacing:-.045em;
+  text-wrap:balance;
+}
+html[data-rx-page="home"] .rx-home-film-media {
+  border-color:#a9bdb4;
+  box-shadow:0 14px 39px rgba(12,43,43,.09);
+}
+
+/* An asymmetrical index with documented priority, never nine cloned tiles.
+   First row = research / publications / film; second = human record;
+   final row = leadership / the book. Keep the exact nine destinations. */
+@media (min-width:1171px) {
+  html[data-rx-page="home"] .rx26-portal-grid {
+    grid-template-columns:repeat(12,minmax(0,1fr));
+    gap:12px;
+  }
+  html[data-rx-page="home"] .rx26-portal-card {grid-column:span 3;min-height:217px;}
+  html[data-rx-page="home"] .rx26-portal-card:nth-child(1) {grid-column:span 5;min-height:270px;}
+  html[data-rx-page="home"] .rx26-portal-card:nth-child(2) {grid-column:span 4;}
+  html[data-rx-page="home"] .rx26-portal-card:nth-child(3) {grid-column:span 3;}
+  html[data-rx-page="home"] .rx26-portal-card:nth-child(8),
+  html[data-rx-page="home"] .rx26-portal-card:nth-child(9) {grid-column:span 6;min-height:197px;}
+}
+html[data-rx-page="home"] .rx26-portal {
+  padding-top:clamp(56px,6vw,87px);
+  padding-bottom:clamp(38px,4.5vw,60px);
+  background:var(--taste-paper-light);
+}
+html[data-rx-page="home"] .rx26-portal-head {
+  margin-bottom:clamp(27px,3.4vw,45px);
+  gap:24px;
+}
+html[data-rx-page="home"] .rx26-portal-head h2 {
+  letter-spacing:-.045em;
+}
+html[data-rx-page="home"] .rx26-portal-card {
+  overflow:hidden;
+  border:1px solid var(--taste-rule);
+  background:#f5f5ee;
+  border-radius:0;
+  box-shadow:none;
+  padding:clamp(18px,2.05vw,26px);
+  min-width:0;
+  transform:none;
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(3),
+html[data-rx-page="home"] .rx26-portal-card:nth-child(5),
+html[data-rx-page="home"] .rx26-portal-card:nth-child(7),
+html[data-rx-page="home"] .rx26-portal-card:nth-child(8) {
+  background:#eaf0ea;
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) {
+  background:#193c40;
+  color:#f7f5ee;
+  border-color:#193c40;
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-top,
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-arrow,
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-action {
+  color:#fff1df;
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) p {
+  color:#dfe9e1;
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-action {
+  border-top-color:#6d9189;
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(9) {
+  background:#eee8dd;
+}
+html[data-rx-page="home"] .rx26-portal-card .rx26-card-body {
+  margin:auto 0 17px;
+  padding-top:18px;
+}
+html[data-rx-page="home"] .rx26-portal-card h3 {
+  font-size:clamp(25px,2.05vw,34px);
+  line-height:1.13;
+  letter-spacing:-.026em;
+}
+html[data-rx-page="home"] .rx26-portal-card p {
+  max-width:45ch;
+  font-size:13px;
+  line-height:1.66;
+}
+html[data-rx-page="home"] .rx26-card-top {
+  letter-spacing:.075em;
+}
+html[data-rx-page="home"] .rx26-card-action {
+  margin-top:auto;
+  border-top-color:#bdcbc1;
+  text-decoration:underline;
+  text-decoration-color:transparent;
+  text-underline-offset:4px;
+  transition:text-decoration-color .18s ease;
+}
+html[data-rx-page="home"] .rx26-portal-card:hover {
+  transform:none;
+  box-shadow:none;
+  border-color:#597d70;
+}
+html[data-rx-page="home"] .rx26-portal-card:hover .rx26-card-action,
+html[data-rx-page="home"] .rx26-portal-card:focus-visible .rx26-card-action {
+  text-decoration-color:currentColor;
+}
+html[data-rx-page="home"] .rx26-portal-card:focus-visible {
+  outline:3px solid #88452f;
+  outline-offset:3px;
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1):focus-visible {
+  outline-color:#f2b68a;
+}
+html[data-rx-page="home"] .rx26-portal-paths {
+  margin-top:30px;
+  gap:12px 22px;
+  padding-top:21px;
+}
+html[data-rx-page="home"] .rx26-portal-paths a {
+  line-height:1.8;
+}
+html[data-rx-page="home"] .rx-home-complete-summary {
+  min-height:76px;
+}
+html[data-rx-page="home"] .rx-home-complete-summary:hover {
+  background:#ebece5;
+}
+
+/* The record must remain a real disclosure, never visually removed.
+   Tablet and mobile: no broken bento, readable labels, reachable actions. */
+@media (min-width:611px) and (max-width:1170px) {
+  html[data-rx-page="home"] .rx26-portal-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+  }
+  html[data-rx-page="home"] .rx26-portal-card {
+    min-height:205px;
+  }
+  html[data-rx-page="home"] .rx26-portal-card:nth-child(9) {
+    grid-column:1/-1;
+    min-height:170px;
+  }
+}
+@media (max-width:900px) {
+  html[data-rx-page="home"] .rx-hero-grid,
+  html[data-rx-page="home"] .rx-home-film-grid {
+    grid-template-columns:minmax(0,1fr);
+    gap:30px;
+  }
+  html[data-rx-page="home"] .rx-hero-copy {
+    padding-block:0;
+  }
+  html[data-rx-page="home"] .rx-hero-title {
+    max-width:18ch;
+    font-size:clamp(46px,6.4vw,68px);
+  }
+  html[data-rx-page="home"] .rx-hero-portrait {
+    width:min(100%,670px);
+    margin-inline:auto;
+  }
+  html[data-rx-page="home"] .rx-portrait-mat img {
+    height:auto;
+    aspect-ratio:4/4.2;
+    object-fit:cover;
+  }
+  html[data-rx-page="home"] .rx-portrait-detail {
+    left:12px;
+  }
+}
+@media (max-width:610px) {
+  html[data-rx-page="home"] .rx-editorial-hero {
+    padding-top:22px;
+    padding-bottom:40px;
+  }
+  html[data-rx-page="home"] .rx-hero-title {
+    max-width:100%;
+    font-size:clamp(39px,10vw,53px);
+    line-height:1.08;
+    margin-bottom:22px;
+  }
+  html[data-rx-page="home"] .rx-hero-lead {
+    font-size:18px;
+    line-height:1.6;
+  }
+  html[data-rx-page="home"] .rx-hero-detail {
+    font-size:14px;
+    line-height:1.8;
+  }
+  html[data-rx-page="home"] .rx-portrait-mat img {
+    aspect-ratio:4/4.8;
+  }
+  html[data-rx-page="home"] .rx26-portal-grid {
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:9px;
+  }
+  html[data-rx-page="home"] .rx26-portal-card,
+  html[data-rx-page="home"] .rx26-portal-card:nth-child(1),
+  html[data-rx-page="home"] .rx26-portal-card:nth-child(8),
+  html[data-rx-page="home"] .rx26-portal-card:nth-child(9) {
+    grid-column:auto;
+    min-height:0;
+    padding:18px 20px 17px;
+  }
+  html[data-rx-page="home"] .rx26-portal-card .rx26-card-body {
+    margin:9px 0 12px;
+    padding-top:0;
+  }
+  html[data-rx-page="home"] .rx26-portal-card h3 {
+    font-size:clamp(25px,6.5vw,31px);
+    margin:0 0 7px;
+  }
+  html[data-rx-page="home"] .rx26-portal-card p {
+    font-size:12.5px;
+    line-height:1.55;
+  }
+  html[data-rx-page="home"] .rx26-card-action {
+    padding-top:9px;
+  }
+  html[data-rx-page="home"] .rx-home-complete-summary {
+    min-height:0;
+  }
+}
+html[dir="rtl"][data-rx-page="home"] .rx26-portal-card h3,
+html[dir="rtl"][data-rx-page="home"] .rx-hero-title {
+  letter-spacing:normal;
+  line-height:1.3;
+}
+@media (prefers-reduced-motion:reduce) {
+  html[data-rx-page="home"] .rx26-portal-card,
+  html[data-rx-page="home"] .rx26-card-action,
+  html[data-rx-page="home"] .rx-hero-primary,
+  html[data-rx-page="home"] .rx-hero-secondary {
+    transition:none!important;
+  }
+}
