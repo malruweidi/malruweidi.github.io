@@ -30,7 +30,8 @@
   "Science & society ↗": "العلم والمجتمع ↗",
   "Photo archive ↗": "أرشيف الصور ↗",
   "Computing & models ↗": "الحوسبة والنماذج ↗",
-  "Publication cinema ↗": "سينما المنشورات ↗"
+  "Publication cinema ↗": "سينما المنشورات ↗",
+  "Beyond the homepage ↗": "ما وراء الصفحة الرئيسية ↗"
 });
   Object.assign(d,{
   "AN EDITED INDEX · THE COMPLETE RECORD REMAINS AVAILABLE": "فهرس محرّر · السجل الكامل محفوظ",
