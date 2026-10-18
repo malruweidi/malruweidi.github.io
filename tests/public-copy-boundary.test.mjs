@@ -55,3 +55,32 @@ test('research attribution identifies different individual roles instead of a br
   assert.doesNotMatch(profile, /rather than independent certification of author contributions/);
   assert.match(read('methods-evidence.html'), /not authorship, data analysis for, or any other contribution to a resulting paper/);
 });
+
+test('Stories captions separate reader context from production notes', () => {
+  const stories = read('stories.html');
+  const trials = read('stories/unfortunate-copolymer-trials.html');
+  const ring = read('stories/the-ring-that-never-closed.html');
+  assert.doesNotMatch(stories, /Photograph date unverified|Qatar University photo-library label:|compound identity unverified/i);
+  assert.doesNotMatch(trials, /Qatar University photo-library label:/);
+  const revisedCaption = 'A laboratory sample photographed during the copolymer trials at Qatar University';
+  assert.ok(stories.includes(revisedCaption));
+  assert.ok(trials.includes(revisedCaption));
+  assert.match(ring, /Watch The Ring That Never Closed \(03:00\) ↗/);
+  assert.doesNotMatch(ring, /full scene transcript/i);
+  assert.ok(stories.includes('src="/archive/archive-7885.jpg"'));
+  const translations = read('assets/stories-i18n.js');
+  assert.ok(translations.includes(revisedCaption));
+  assert.ok(translations.includes('With Dr. Elsheikh Abdelrahim, one of the physicians'));
+});
+
+test('science-community and leadership pages avoid internal production notes', () => {
+  const engagement = read('engagement.html');
+  const leadership = read('leadership.html');
+  assert.doesNotMatch(engagement, /any stand-alone extraction should retain|These four photographs are now captioned|Dates and places are reproduced from the photo-library display|Archive filename:/i);
+  assert.doesNotMatch(leadership, /unverified camera capture dates/i);
+  assert.match(engagement, /the outcome of a specific experiment/);
+  assert.match(leadership, /Photographs from the 2013 community-health outreach/);
+  const translations = read('assets/i18n-dictionary.js');
+  assert.ok(translations.includes('An original recording from the cardiovascular microscopy archive.'));
+  assert.ok(read('assets/leadership-i18n-2026.js').includes('associated youth initiatives appear below.'));
+});
