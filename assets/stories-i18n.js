@@ -379,3 +379,11 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "The photograph comes from my school archive. My account of examining a fox specimen is a memory of the anatomy lesson.": "تعود الصورة إلى أرشيفي المدرسي. أما روايتي عن فحص عينة ثعلب فهي مما أتذكره من حصة التشريح.",
   "Zebrafish vascular microscopy from the research archive, shown alongside my recollection of Ramadan research evenings": "صورة مجهرية لأوعية سمك الزرد من أرشيف البحث، أرفقتها بذكرياتي عن أمسيات العمل خلال رمضان"
 });
+
+/* Reader-facing Arabic translations: editorial pass 19 October 2026. */
+Object.assign(window.RuwaidixArabicDictionary || (window.RuwaidixArabicDictionary = {}), {
+  "With Dr. Elsheikh Abdelrahim, one of the physicians I remember from my early eosinophilic-disease diagnosis": "مع الدكتور الشيخ عبدالرحيم، أحد الأطباء الذين أتذكرهم من بدايات تشخيص مرضي اليوزيني.",
+  "At approximately nineteen, holding a six-membered molecular model": "في نحو التاسعة عشرة، أحمل نموذجًا جزيئيًا لحلقة سداسية.",
+  "A laboratory sample photographed during the copolymer trials at Qatar University": "عينة مختبرية صُوّرت أثناء تجارب البوليمرات المشتركة في جامعة قطر.",
+  "Watch The Ring That Never Closed (03:00) ↗": "شاهد فيلم «الحلقة التي لم تُغلق» (٣ دقائق) ↗"
+});

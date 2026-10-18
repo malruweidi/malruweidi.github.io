@@ -53,3 +53,8 @@
   "Read the Chem Squad chapter ↗": "اقرأ فصل كيم سكواد ↗",
   "Academic CV": "السيرة الأكاديمية"
 });})();
+
+/* Reader-facing Arabic translations: editorial pass 19 October 2026. */
+Object.assign(window.RuwaidixArabicDictionary || (window.RuwaidixArabicDictionary = {}), {
+  "Photographs from the 2013 community-health outreach and associated youth initiatives appear below.": "تُعرض أدناه صور من أنشطة التوعية الصحية المجتمعية والمبادرات الشبابية المرتبطة بها عام ٢٠١٣."
+});
