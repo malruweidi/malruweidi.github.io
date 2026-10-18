@@ -10,6 +10,10 @@
   "Leadership & management": "القيادة والإدارة",
   "YVE, The Youth Company, ACS student-chapter leadership, and the practice of quality and process management.": "أنشطة YVE وشركة الشباب، وقيادة فرع الجمعية الكيميائية الأمريكية الطلابي، وممارسات الجودة وإدارة العمليات.",
   "Explore leadership ↗": "استكشف القيادة والإدارة ↗",
+  "09 / Book in progress": "٠٩ / كتاب قيد التأليف",
+  "Major Revisions": "Major Revisions",
+  "A forthcoming personal book about growing up between cultures, belonging, and finding a place in academia.": "كتاب شخصي قيد التأليف عن النشأة بين ثقافات متعددة، ومعنى الانتماء، والبحث عن مكان في الحياة الأكاديمية.",
+  "Discover the book ↗": "تعرّف على الكتاب ↗",
   "Leadership": "القيادة"
 });
   Object.assign(d,{
