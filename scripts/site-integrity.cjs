@@ -63,6 +63,10 @@ if([...academic.matchAll(/<h2 class="label">/g)].length!==8)error("cv.html","aca
 const bibliography=html.get("publications.html")||"";
 if([...bibliography.matchAll(/class="pub-card"/g)].length<20)error("publications.html","curated bibliography unexpectedly lost entries");
 const supervisor=html.get("molecular-therapeutics.html")||"";
+const legacyFaculty=html.get("for-supervisors.html")||"";
+if(!legacyFaculty.includes("location.replace")||!legacyFaculty.includes("/molecular-therapeutics.html"))error("legacy redirect","old faculty link must redirect to molecular therapeutics without losing its original HTML source");
+if(!supervisor.includes("clip:rect(0,0,0,0)")||!supervisor.includes(".skip-link:focus"))error("molecular-therapeutics.html","skip link must be visually hidden until keyboard focus");
+for(const term of ["CD28–CD80/CD86","TREM2–TYROBP/DAP12–SYK","SMAD1/5/9","circular RNA","siRNA","Ted Lakowski","Moustafa T. Gabr"])if(!supervisor.includes(term))error("molecular-therapeutics.html","research focus missing "+term);
 if(!supervisor.includes("From molecular recognition")||!supervisor.includes("PROTACs")||!supervisor.includes("Ted Lakowski")||!supervisor.includes("Moustafa T. Gabr")||!supervisor.includes("circular RNA")||!supervisor.includes("siRNA")||!supervisor.includes("click chemistry")||!supervisor.includes("microfluidic")||!supervisor.includes("aptamer"))error("molecular-therapeutics.html","research identity missing core future interests");
 if(!home.includes('href="/molecular-therapeutics.html"')||!academic.includes('href="/molecular-therapeutics.html"'))error("faculty","supervisor path missing from homepage or public CV");
 if(!fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").includes("https://malruweidi.github.io/molecular-therapeutics.html"))error("sitemap.xml","faculty page missing");
