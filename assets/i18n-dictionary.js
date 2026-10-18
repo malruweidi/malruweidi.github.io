@@ -1157,3 +1157,14 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "MSc completion": "إكمال الماجستير",
   "The master's thesis remains in progress. Completion in 2027 is an expectation, not an awarded degree or a published experimental outcome.": "لا تزال رسالة الماجستير قيد الإنجاز، وعام 2027 موعد متوقّع لإكمالها، وليس تاريخًا لمنح الدرجة أو إعلان نتائج تجريبية منشورة."
 });
+
+/* Reader-facing Arabic translations: editorial pass 19 October 2026. */
+Object.assign(window.RuwaidixArabicDictionary || (window.RuwaidixArabicDictionary = {}), {
+  "The contemporary poster figures show how The Chemist Café was presented as part of the chapter’s public activities.": "تُظهر الأشكال المنشورة في الملصقات المعاصرة كيف عُرض برنامج «مقهى الكيميائي» ضمن أنشطة الفصل الطلابي العامة.",
+  "These photographs show student-chapter recognition, informal gatherings and conversations at science events. They are not identified as photographs of The Chemist Café or the Chemistry Festival.": "تُظهر هذه الصور تكريمًا للفصل الطلابي ولقاءات غير رسمية وأحاديث في فعاليات علمية، دون نسبتها تحديدًا إلى «مقهى الكيميائي» أو مهرجان الكيمياء.",
+  "The photographs record laboratory materials and equipment at Qatar University. They do not document embryo viability or the outcome of a specific experiment.": "تُوثّق الصور مواد وأجهزة مختبرية في جامعة قطر، ولا تثبت حيوية الأجنة أو نتيجة تجربة بعينها.",
+  "An original recording from the cardiovascular microscopy archive.": "تسجيل أصلي من أرشيف التصوير المجهري لأبحاث القلب والأوعية الدموية.",
+  "A second original recording from the cardiovascular microscopy archive.": "تسجيل أصلي ثانٍ من أرشيف التصوير المجهري لأبحاث القلب والأوعية الدموية.",
+  "Archived May 2017": "محفوظ ضمن منشورات مايو ٢٠١٧",
+  "Archived March 2017": "محفوظ ضمن منشورات مارس ٢٠١٧"
+});
