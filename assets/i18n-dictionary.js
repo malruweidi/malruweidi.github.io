@@ -1200,3 +1200,19 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Spectral Doppler workstation with patient details concealed": "محطة دوبلر طيفي مع إخفاء بيانات المريض",
   "A laboratory apparatus assembly in motion": "جهاز مختبري أثناء التشغيل"
 });
+
+/* Chem Squad editorial refinements, October 2026. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "We followed different paths after university, but the papers and experiment ideas kept circulating among us. When we meet, nobody has to explain why they still care about a chemistry problem.": "اتخذ كل منا طريقًا مختلفًا بعد الجامعة، لكن الأوراق البحثية وأفكار التجارب ظلت تتداول بيننا. وحين نلتقي، لا يحتاج أحد منا إلى تفسير سبب استمرار شغفه بمسألة كيميائية.",
+  "Seven people have kept this conversation alive since 2016.": "سبعة أشخاص أبقوا هذا الحوار حيًا منذ عام ٢٠١٦.",
+  "Photographs from our years together": "صور من سنوات صداقتنا",
+  "We stepped outside between the conference sessions to watch the eclipse.": "خرجنا بين جلسات المؤتمر لمشاهدة الكسوف.",
+  "ACS Qatar University student chapter · 2017": "فرع الجمعية الكيميائية الأمريكية الطلابي بجامعة قطر · ٢٠١٧",
+  "RESEARCH / WORK WE SHARED": "الأبحاث / عمل أنجزناه معًا",
+  "Some of us later met again on journal author lists, in book chapters and on conference programmes, even as our research moved into different laboratories. The work collected here involved at least two members of Chem Squad alongside the other researchers named in each publication or presentation.": "ظهر بعضنا لاحقًا معًا في قوائم مؤلفي أوراق المجلات وفصول الكتب وبرامج المؤتمرات، رغم تفرّق أبحاثنا بين مختبرات مختلفة. وتضم الأعمال المعروضة هنا اثنين على الأقل من أعضاء كيم سكواد، إلى جانب الباحثين الآخرين المذكورين في كل منشور أو عرض.",
+  "Still meeting after ten years": "وما زلنا نلتقي بعد عشر سنوات",
+  "The conversation carried on after the laboratory course ended.": "استمر النقاش حتى بعد انتهاء المقرر المختبري.",
+  "Someone brings a new paper. Someone else challenges its assumptions. An idea for an experiment moves around the room until we can see what would actually have to be measured.": "يأتي أحدنا بورقة بحثية جديدة، فيناقش آخر افتراضاتها. وتدور فكرة التجربة بيننا حتى نعرف ما الذي يجب قياسه بالفعل.",
+  "Our work has taken us into different fields. We still come back to the same table.": "أخذنا العمل إلى تخصصات مختلفة، لكننا ما زلنا نعود إلى الطاولة نفسها.",
+  "CHEM SQUAD · SINCE 2016": "كيم سكواد · منذ ٢٠١٦"
+});
