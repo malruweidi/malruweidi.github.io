@@ -68,6 +68,6 @@ test('renal therapeutics is a researched future direction with traceable primary
   for(const paper of ['s41467-025-56223-z','s41467-025-65997-1','42538939','PMC11403423']){
     assert.ok(page.includes(paper),'Missing source: '+paper);
   }
-  assert.match(read('research.html'),/renal therapeutics as a future research direction/i);
+  assert.match(read('research.html'),/future research direction in renal therapeutics/i);
   assert.doesNotMatch(read('research.html'),/completed kidney disease research by Mahmoud/i);
 });
