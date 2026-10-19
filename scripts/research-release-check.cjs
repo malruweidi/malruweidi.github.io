@@ -42,6 +42,13 @@ for(const p of pages){
 const profile=read("molecular-therapeutics.html");
 const old=read("for-supervisors.html");
 assert((profile.match(/class="core-card"/g)||[]).length===3,"Expected three main scientific research questions");
+assert((profile.match(/class="evidence-card"/g)||[]).length===3,"Selected experimental evidence cards missing");
+assert(profile.includes('id="selected-experiments"'),"Selected evidence section missing");
+for(const term of ["54.7 ± 3.94%","15.1 ± 3.43%","74%","184%","H. C. Yalcin","firsthand account"])assert(profile.includes(term),"Study result or attribution missing "+term);
+assert(profile.includes('<details class="research-deepdive evidence-archive">'),"Extended contribution record missing");
+assert(profile.includes('<details class="research-deepdive research-future-details">'),"Long renal research agenda missing");
+assert((profile.match(/<details\b/g)||[]).length===(profile.match(/<\/details>/g)||[]).length,"Unbalanced details elements");
+
 assert((profile.match(/class="route-card"/g)||[]).length===6,"Existing six-field archive has been truncated");
 assert(profile.includes('<details class="research-archive">'),"Background research archive lost");
 assert((profile.match(/class="research-deepdive"/g)||[]).length===3,"Three deeper reading groups missing");
