@@ -10,8 +10,10 @@ test('main documentary page presents corrected 120-second histology cut and pres
  assert.match(page,/<source src="\/assets\/films\/two-materials-no-section-source-v2\.mp4"/);
  assert.match(page,/<track kind="captions" src="\/assets\/films\/two-materials-no-section-source-v2\.vtt"/);
  assert.match(page,/two-materials-no-section-poster\.webp/);
- assert.match(page,/Preserved previous 02:00 evidence cut/);
- assert.match(page,/Preserved 150-second original/);
+ assert.match(page,/<details class="fc-versions">/);
+ assert.match(page,/Earlier film editions/);
+ assert.match(page,/two-materials-no-section-evidence-cut\.mp4/);
+ assert.match(page,/two-materials-no-section\.mp4/);
  const source=JSON.parse(text('assets/films/two-materials-no-section-source-v2-build.json'));
  assert.equal(source.seconds,120);
  assert.ok(source.media.some(x=>/unsuccessful|failed/i.test(x.type+" "+x.credit)));
