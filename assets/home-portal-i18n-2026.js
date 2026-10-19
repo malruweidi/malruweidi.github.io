@@ -8,7 +8,7 @@
   "Meet Chem Squad ↗": "تعرّف على كيم سكواد ↗",
   "08 / Leadership": "٠٨ / القيادة",
   "Leadership & management": "القيادة والإدارة",
-  "YVE, The Youth Company, ACS student-chapter leadership, and the practice of quality and process management.": "أنشطة YVE وشركة الشباب، وقيادة فرع الجمعية الكيميائية الأمريكية الطلابي، وممارسات الجودة وإدارة العمليات.",
+  "The Youth Company, the ACS student chapter at Qatar University, and professional work in quality and process management.": "شركة الشباب، والفرع الطلابي للجمعية الكيميائية الأمريكية بجامعة قطر، والعمل المهني في إدارة الجودة والعمليات.",
   "Explore leadership ↗": "استكشف القيادة والإدارة ↗",
   "09 / Book in progress": "٠٩ / كتاب قيد التأليف",
   "Major Revisions": "Major Revisions",
