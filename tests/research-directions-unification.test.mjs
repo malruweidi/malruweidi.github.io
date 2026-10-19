@@ -27,7 +27,7 @@ test('one primary research directions page now contains scientific foundation an
 
 test('homepage presents one future direction destination rather than two competing shortcuts',()=>{
   const home=read('index.html');
-  assert.ok(home.includes('href="/molecular-therapeutics.html">Research directions <span'), 'homepage primary research shortcut remains');
+  assert.ok(home.includes('href="/molecular-therapeutics.html">Research directions ↗</a>'), 'homepage primary research shortcut remains');
   assert.doesNotMatch(home,/>Where I want the research to go ↗<\/a>/);
   assert.doesNotMatch(home,/href="\/?research-horizon.html"/);
   assert.ok(home.includes('href="/molecular-therapeutics.html#research-agenda"'));
