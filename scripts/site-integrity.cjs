@@ -105,7 +105,7 @@ for(const [id,terms] of Object.entries({
  "work-8":["Yalcin","original manuscript drafting"],
  "work-12":["high-speed camera","wrote","protocol"],
  "work-6":["machine-learning research workflow","model evaluation","manuscript writing"],
- "work-7":["grant","analysed","interpreted"],
+ "work-7":["grant-acquisition","analysing","interpreting"],
  "work-18":["conceptual interpretation","wrote relevant manuscript sections"],
  "work-17":["second author"]
 })){
