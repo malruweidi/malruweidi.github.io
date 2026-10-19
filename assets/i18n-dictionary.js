@@ -1168,3 +1168,21 @@ Object.assign(window.RuwaidixArabicDictionary || (window.RuwaidixArabicDictionar
   "Archived May 2017": "محفوظ ضمن منشورات مايو ٢٠١٧",
   "Archived March 2017": "محفوظ ضمن منشورات مارس ٢٠١٧"
 });
+
+/* Arabic equivalents for the 19 October public-copy refinements. Earlier keys remain for archived pages. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "Research in chemical sensing, pulmonary mechanobiology, computational imaging and materials engineering, alongside reviews, pharmaceutical modelling and historical scholarship. Each entry identifies its publication status and links to the relevant scholarly record.": "أبحاث في الاستشعار الكيميائي والميكانيكا الحيوية للرئة والتصوير الحاسوبي وهندسة المواد، إلى جانب المراجعات العلمية والنمذجة الصيدلانية والدراسات التاريخية. وتُبيّن كل مادة حالتها المنشورة وتتيح الوصول إلى سجلها العلمي.",
+  "Before university · At the computer": "قبل الجامعة · أمام الحاسوب",
+  "A childhood portrait from the family album": "صورة من ألبوم العائلة في الطفولة",
+  "Grade 10 chemistry festival · With Mr. Aref Elahmad at Doha Independent School": "مهرجان الكيمياء للصف العاشر · مع الأستاذ عارف الأحمد في مدرسة الدوحة المستقلة",
+  "Mr. Aref Elahmad was my first chemistry teacher. We are pictured after my research presentation at the Grade 10 chemistry festival at Doha Independent School; I am holding the certificate from that day.": "كان الأستاذ عارف الأحمد أول معلم للكيمياء درسني. تجمعنا الصورة بعد عرض بحثي في مهرجان الكيمياء للصف العاشر بمدرسة الدوحة المستقلة، وأحمل فيها شهادة المشاركة.",
+  "I organized my first school chemistry exhibition in 2009. Those school years came before university research and before eosinophilic illness began to change the course of my education.": "نظّمت أول معرض كيمياء في مدرستي سنة ٢٠٠٩. كانت تلك السنوات سابقة لعملي البحثي الجامعي، ولسنوات المرض اليوزيني التي غيّرت مسار دراستي.",
+  "A short film about the questions that stayed with me: a fox specimen on the anatomy table, a microscope from Cairo, a histology preparation that fell apart, developing vessels in zebrafish and lung cells injured when an airway reopens. The story reaches my current work on inhaled medicines.": "فيلم قصير عن أسئلة لازمتني: عينة ثعلب على طاولة التشريح، ومجهر أحضرته من القاهرة، ومحاولة تحضير مقاطع نسيجية لم تنجح، وأوعية تتشكل في سمك الزرد، وخلايا رئوية تتأذى عند إعادة فتح المجرى الهوائي. وتمتد الحكاية إلى عملي الحالي في الأدوية المستنشقة.",
+  "RESEARCH · WRITING · PERSONAL HISTORIES": "الأبحاث · الكتابة · حكايات شخصية",
+  "Research papers, films, personal histories and the people who shaped the work. Choose the thread you want to follow.": "أبحاث وأفلام وحكايات شخصية وأشخاص شاركوني هذه الرحلة العلمية. اختر الباب الذي تريد البدء منه.",
+  "Short documentaries about experiments, unexpected results and the people and objects behind the research.": "أفلام وثائقية قصيرة عن التجارب والنتائج غير المتوقعة والأشخاص والأشياء التي صاحبت العمل البحثي.",
+  "CHILDHOOD · FAMILY ALBUM": "الطفولة · ألبوم العائلة",
+  "EARLY UNIVERSITY · PERSONAL ALBUM": "بدايات الجامعة · ألبوم شخصي",
+  "The photographs bring back the school years, the first university encounters and the laboratories that followed.": "تعيدني الصور إلى سنوات المدرسة وبدايات الجامعة والمختبرات التي عرفتها بعد ذلك.",
+  "Open the longer chapters on research, biography and the scientific community.": "افتح الفصول المطوّلة عن الأبحاث والسيرة الشخصية والمجتمع العلمي."
+});
