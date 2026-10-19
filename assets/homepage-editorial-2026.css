@@ -238,3 +238,19 @@ html[lang="ar"][data-rx-page="home"] .rx-portrait-detail{left:auto;right:-12px;b
   html[data-rx-page="home"] .rx-portrait-mat img {height:560px;}
   html[data-rx-page="home"] .rx-portrait-detail {left:13px;}
 }
+
+/* Focused homepage introduction: more of the scientific story visible on narrow screens. */
+html[data-rx-page="home"] .rx-hero-backstory{border-top:1px solid var(--home-rule);margin:12px 0 24px;padding:15px 0 0;max-width:66ch}
+html[data-rx-page="home"] .rx-hero-backstory summary{cursor:pointer;width:max-content;max-width:100%;font:600 13px/1.6 var(--sans);color:var(--home-accent);list-style:none}
+html[data-rx-page="home"] .rx-hero-backstory summary::-webkit-details-marker{display:none}
+html[data-rx-page="home"] .rx-hero-backstory summary:after{content:" +";font-weight:400}
+html[data-rx-page="home"] .rx-hero-backstory[open] summary:after{content:" −"}
+html[data-rx-page="home"] .rx-hero-backstory summary:focus-visible{outline:2px solid var(--home-accent);outline-offset:4px}
+html[data-rx-page="home"] .rx-hero-backstory-body{padding-top:12px;color:var(--home-secondary);font:400 14px/1.8 var(--sans)}
+html[data-rx-page="home"] .rx-hero-backstory-body p{margin:0 0 13px}
+@media(max-width:500px){
+ html[data-rx-page="home"] .rx-hero-kicker{margin-bottom:15px}
+ html[data-rx-page="home"] .rx-hero-title{font-size:clamp(42px,10.7vw,52px);max-width:100%;line-height:1.02;margin-bottom:17px}
+ html[data-rx-page="home"] .rx-hero-lead{font-size:19px;line-height:1.45;max-width:100%}
+ html[data-rx-page="home"] .rx-hero-detail{line-height:1.72}
+}
