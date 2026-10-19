@@ -76,3 +76,12 @@
   "Open complete record": "افتح السجل الكامل"
 });
 })();
+
+/* Navigation to the consolidated research agenda. */
+(function(){const d=window.RuwaidixArabicDictionary||(window.RuwaidixArabicDictionary={});Object.assign(d,{
+  "Research agenda":"الأجندة البحثية",
+  "Research agenda ↗":"الأجندة البحثية ↗",
+  "Explore my research agenda ↗":"استكشف خطتي البحثية ↗",
+  "Research directions and agenda ↗":"توجّهات البحث والخطة المستقبلية ↗",
+  "Research Directions":"التوجّهات البحثية"
+});})();
