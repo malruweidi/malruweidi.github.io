@@ -67,9 +67,15 @@ const broadRoutes=["CHEMISTRY / MOLECULAR DESIGN","PHARMACEUTICS / DELIVERY","BI
 for(const route of broadRoutes)if(!supervisor.includes(route))error("research directions","interdisciplinary evidence-based route missing "+route);
 if((supervisor.match(/class="route-card"/g)||[]).length!==6)error("research directions","archival six-field methods record must be preserved");
 if((supervisor.match(/class="core-card"/g)||[]).length!==3)error("research identity","expected three primary evidence-backed scientific research questions");
+if((supervisor.match(/class="evidence-card"/g)||[]).length!==3)error("selected evidence","expected three experimental case studies");
+for(const evidence of ["54.7 ± 3.94%","15.1 ± 3.43%","74%","184%","H. C. Yalcin","formal analysis","firsthand account"])if(!supervisor.includes(evidence))error("selected evidence","numerical finding or role attribution missing "+evidence);
+for(const doi of ["10.1152/japplphysiol.00574.2020","10.3390/polym13213717","10.1016/j.micron.2020.102876"])if(!supervisor.includes(doi))error("selected evidence","primary publication missing "+doi);
+if(!supervisor.includes('<details class="research-deepdive evidence-archive">'))error("selected evidence","longer contribution record is no longer available");
+if(!supervisor.includes('<details class="research-deepdive research-future-details">'))error("research agenda","renal and related research materials must remain available in optional reading");
+
 const profilePrimaryLinks=supervisor.match(/<div class="actionlinks">([\s\S]*?)<\/div>/)?.[1]||"";
 if([...profilePrimaryLinks.matchAll(/<a\b/g)].length!==4)error("research profile","first screen should retain four focused primary reading paths");
-for(const destination of ["#research-entry-points","#research-evidence","#present-work","#research-programmes"])if(!profilePrimaryLinks.includes('href="'+destination+'"'))error("research profile","primary reading path missing "+destination);
+for(const destination of ["#research-entry-points","#selected-experiments","#present-work","#research-programmes"])if(!profilePrimaryLinks.includes('href="'+destination+'"'))error("research profile","primary reading path missing "+destination);
 if((supervisor.match(/class="research-deepdive"/g)||[]).length!==3)error("research profile","expected three expandable advanced-literature panels");
 if(!supervisor.includes('<details class="research-archive">'))error("research profile","archival disciplinary grid no longer available by disclosure");
 const profileIds=new Set([...supervisor.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]));
@@ -96,6 +102,7 @@ for(const id of ["work-13","work-14"]){
  if(!card||!card[0].includes("Experimental")||!card[0].includes("did not perform the paper's data analysis")||!card[0].includes("did not write the manuscript"))error("publications.html","experimental-only/no-analysis/no-writing exception missing "+id);
 }
 for(const [id,terms] of Object.entries({
+ "work-8":["Yalcin","original manuscript drafting"],
  "work-12":["high-speed camera","wrote","protocol"],
  "work-6":["machine-learning research workflow","model evaluation","manuscript writing"],
  "work-7":["grant","analysed","interpreted"],
