@@ -42,3 +42,9 @@
 @media (prefers-reduced-motion:reduce){
   .fc-paths a,.fc-link{transition:none}
 }
+
+/* Reader-first edition history: earlier cuts remain accessible without crowding primary actions. */
+.fc-versions{margin-top:14px;padding-top:10px;border-top:1px solid rgba(60,77,72,.18)}
+.fc-versions summary{display:inline-flex;align-items:center;min-height:44px;cursor:pointer;font:500 13px/1.5 "DM Sans",sans-serif;text-decoration:underline;text-underline-offset:4px}
+.fc-versions summary:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.fc-versions .fc-inline{margin-top:6px}
