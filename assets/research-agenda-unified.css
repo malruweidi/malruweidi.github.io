@@ -1,0 +1,24 @@
+/* Research Directions: integrated future agenda, preserving the existing editorial design. */
+.research-agenda .agenda-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:25px 0}
+.research-agenda .agenda-card{min-width:0;padding:25px 24px 22px;background:#faf9f3;border:1px solid var(--line)}
+.research-agenda .agenda-card h3{font:400 clamp(25px,2.5vw,32px)/1.16 "Newsreader",Georgia,serif;margin:10px 0 14px}
+.research-agenda .agenda-card p{font-size:14px;line-height:1.8;color:#405957}
+.research-agenda .agenda-card p.num{font:500 11px/1.6 "DM Mono",monospace;color:var(--copper);letter-spacing:.08em}
+.research-agenda .agenda-card .agenda-test{padding-top:13px;border-top:1px solid var(--line);color:#284441}
+.research-agenda .agenda-card a,.research-agenda .agenda-archive-link a{font-size:13px;font-weight:700}
+.research-agenda .agenda-bridge{font-size:15px;line-height:1.9;padding:2px 0 2px 18px;border-left:2px solid var(--copper);color:#435a57;margin:25px 0}
+.research-agenda .agenda-archive-link{font-size:13px;color:#536665;margin-top:18px}
+.research-agenda .agenda-deepdive{margin-top:24px}
+.research-agenda .agenda-expanded{padding-top:14px}
+.research-agenda .agenda-expanded .rh-section{border-top:1px solid var(--line);padding:22px 0}
+.research-agenda .agenda-expanded .rh-shell{width:100%;max-width:100%;margin:0}
+.research-agenda .agenda-expanded .rh-kicker,.research-agenda .agenda-expanded .rh-tag,.research-agenda .agenda-expanded .rh-question-no{font:500 11px/1.6 "DM Mono",monospace;letter-spacing:.06em;color:var(--copper)}
+.research-agenda .agenda-expanded h2{font:400 clamp(28px,3.4vw,40px)/1.15 "Newsreader",Georgia,serif;margin:8px 0 17px}
+.research-agenda .agenda-expanded h3{font:400 26px/1.2 "Newsreader",Georgia,serif;margin:15px 0 10px}
+.research-agenda .agenda-expanded p,.research-agenda .agenda-expanded li{font-size:14px;line-height:1.85;color:#405957;max-width:780px}
+.research-agenda .agenda-expanded .rh-question-card,.research-agenda .agenda-expanded .rh-programme,.research-agenda .agenda-expanded .rh-reading-item{padding:14px 0;border-bottom:1px solid var(--line)}
+.research-agenda .agenda-expanded a{font-weight:600;text-underline-offset:4px;overflow-wrap:anywhere}
+.research-agenda .agenda-expanded .rh-source-links{display:flex;flex-wrap:wrap;gap:11px;margin:15px 0}
+.research-agenda .agenda-expanded .rh-source-links a{font-size:13px}
+.research-agenda .agenda-expanded .rh-footnote{font-size:12px;color:var(--muted)}
+@media(max-width:780px){.research-agenda .agenda-grid{grid-template-columns:1fr}.research-agenda .agenda-card{padding:21px 19px}.research-agenda .agenda-expanded .rh-section{padding:16px 0}}
