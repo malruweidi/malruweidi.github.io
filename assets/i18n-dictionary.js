@@ -1235,3 +1235,13 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Author-name variants in the original records": "صيغ أسماء المؤلفين في المصادر الأصلية",
   "Conference and publisher records sometimes use different forms of the same author’s name, including Mahmoud Abdelrasool, Mohammed Naser and Khalid Jama. Mohamed G. Nassr (Nassr MG) and Mohammed Jaber Nasr (Nasr MJ) refer to the same Chem Squad member. Each citation retains the spelling used by its original source.": "تستخدم بعض سجلات المؤتمرات والناشرين صيغًا مختلفة لاسم المؤلف نفسه، ومنها محمود عبدالرسول ومحمد ناصر وخالد جامع. ويشير الاسمان Mohamed G. Nassr وMohammed Jaber Nasr إلى العضو نفسه في كيم سكواد. احتُفظ في كل استشهاد بصيغة الاسم الواردة في مصدره الأصلي."
 });
+
+/* Public-health research competition participation · Ministry certificate */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "Public health · Ministry of Sports and Youth, Qatar": "الصحة العامة · وزارة الرياضة والشباب، قطر",
+  "A research competition on youth health.": "مسابقة بحثية عن صحة الشباب.",
+  "I participated in the research competition": "شاركت في المسابقة البحثية",
+  "“Sports as a Way of Life: Towards Youth Awareness of Obesity Risks and the Importance of Promoting Healthy Lifestyles.”": "«الرياضة أسلوب حياة: نحو وعي شبابي بمخاطر السمنة وحتمية تعزيز أنماط الحياة الصحية»،",
+  "Qatar's Ministry of Sports and Youth issued a certificate of appreciation recognizing my active participation.": "وقد أصدرت وزارة الرياضة والشباب في قطر شهادة شكر وتقدير لمشاركتي الفعالة.",
+  "Certificate of appreciation issued in Arabic. The supplied certificate is undated.": "شهادة شكر وتقدير صادرة باللغة العربية. ولا يظهر تاريخ إصدارها في النسخة المتاحة."
+});
