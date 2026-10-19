@@ -1,0 +1,2863 @@
+{
+  "edition": "cinema-v3-evidence-first/2026-10-17",
+  "basis": "35 source manuscripts in the public website; revised with topic-specific, non-interchangeable visual programs",
+  "audit_scope": "All 210 scenes audited for provenance design (not 210 individual figure-page licences)",
+  "rejected_automated_shot_reuse": "No unverified cross-study figures, generic portraits, unrelated workstations, or retrospective fabricated experiment images",
+  "old_v2_rejected": "V2 technical QA measured codecs, file hashes, and blank frames, NOT artistic merit or paper-specific image correctness",
+  "publication_state": "NOT READY; v3 shotplans require sourcing and human approval, not a licence to bulk replace MP4",
+  "films": [
+    {
+      "slug": "airway-reopening",
+      "film_title": "A breath can injure",
+      "publication_title": "Dexamethasone and transdehydroandrosterone significantly reduce pulmonary epithelial cell injuries associated with mechanical ventilation",
+      "primary_source": "https://doi.org/10.1152/japplphysiol.00574.2020",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "04",
+          "asset": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+        "assets/lung-concept.svg",
+        "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+        "assets/evidence-pulmonary.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "A real liquid–air interface advancing above an epithelial monolayer",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1152/japplphysiol.00574.2020",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Actual Fig. 1 experimental setup from this J Appl Physiol paper",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1152/japplphysiol.00574.2020",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Actual Fig. 2 live/dead micrographs from the same drug paper",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1152/japplphysiol.00574.2020",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Actual Fig. 3 study death-percentage results, axes preserved",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1152/japplphysiol.00574.2020",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Stepwise DEX versus DHEA experimental groups; labels and controls",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1152/japplphysiol.00574.2020",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Precisely bounded in-vitro conclusion, not patient efficacy",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1152/japplphysiol.00574.2020",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "cerebral-cilia",
+      "film_title": "How does a vessel know the blood is moving?",
+      "publication_title": "Characterization of endothelial cilia distribution during cerebral-vascular development in zebrafish",
+      "primary_source": "https://doi.org/10.1161/ATVBAHA.118.311231",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [],
+      "source_images_previous": [
+        "assets/home-archive/figure-zebrafish-microscopy.jpg",
+        "assets/evidence-zebrafish.webp",
+        "assets/zebrafish-concept.svg"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Identified zebrafish embryo and original vessel imaging",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1161/ATVBAHA.118.311231",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Primary paper developmental map and endothelial-cilia micrographs",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1161/ATVBAHA.118.311231",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Cilia flow-sensing model drawn as a hypothesis",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1161/ATVBAHA.118.311231",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Measurements cited only from the original paper",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1161/ATVBAHA.118.311231",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Spatial and developmental distribution, not adult human extrapolation",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1161/ATVBAHA.118.311231",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Unresolved mechanotransduction question",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1161/ATVBAHA.118.311231",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "slit2-robo",
+      "film_title": "The target that can change sides",
+      "publication_title": "SLIT2 and ROBO-axis inhibitors for the treatment of cancer: a patent review (2020–2026)",
+      "primary_source": "https://doi.org/10.1080/13543776.2026.2690118",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "03",
+          "asset": "assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/robo-concept.svg",
+        "assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp",
+        "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "The actual 2026 patent-review title and scope",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1080/13543776.2026.2690118",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Ligand/receptor network annotated from review, not a foreign-lab image",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1080/13543776.2026.2690118",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Patent family or modality timeline verified by publication",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1080/13543776.2026.2690118",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Select example with exact patent application number and source",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1080/13543776.2026.2690118",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Context-dependent downstream pathways with uncertainty",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1080/13543776.2026.2690118",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Limitations: patents are not efficacy trials",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1080/13543776.2026.2690118",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "curcumin-cyanide",
+      "film_title": "When a molecule becomes a question",
+      "publication_title": "Curcumin: a colorimetric and fluorimetric cyanide probe in aqueous system and living cells",
+      "primary_source": "https://doi.org/10.1039/C9AY01557D",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [],
+      "source_images_previous": [
+        "assets/home-archive/figure-cyanide-sensor.jpg",
+        "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Authentic curcumin chemical formula, not a pyridine reagent photo",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1039/C9AY01557D",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Actual RSC paper graphical abstract with source credit",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1039/C9AY01557D",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Study optical spectrum: 421 nm to 520 nm, original conditions",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1039/C9AY01557D",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Original cyanide-selectivity experiment with hydroxide caveat",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1039/C9AY01557D",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Original cell assay figures, if permission and access verified",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1039/C9AY01557D",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "2.3 µM LOD only as reported for this particular assay",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1039/C9AY01557D",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "making-medicines-keep",
+      "film_title": "How did medieval medicines keep?",
+      "publication_title": "Making Medicines Keep: Syrups, Substitution, and Pharmaceutical Reliability in Ayyubid-Mamluk Cairo",
+      "primary_source": "/#history",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "05",
+          "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/films/art/medieval-pharmacy.svg",
+        "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "13th-century Cairo question, no counterfeit merchant portrait",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/#history",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Authentic Minhaj text witness, exact source folio if accessible",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#history",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Source-authored julab Arabic passage: hayula and sura",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#history",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Material process: heat, clarify, skim, strain, endpoint as drawn sequence",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#history",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Crystallization repair rule, quoted with attributed printed source",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#history",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Substitution and Genizah prescription-shelf gap without false equivalence",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/#history",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "niosomes",
+      "film_title": "Will the medicine survive the nebulizer?",
+      "publication_title": "Inhalable dexamethasone niosomes and proniosomes",
+      "primary_source": "/research/inhalable-vesicles.html",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "03",
+          "asset": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "04",
+          "asset": "assets/evidence-pulmonary.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/niosomes-concept.svg",
+        "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+        "assets/evidence-pulmonary.webp",
+        "assets/research-archive-2026/qatar-university-research-workstation.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Actual dexamethasone Span60/cholesterol formulation details from thesis only",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/research/inhalable-vesicles.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Niosomal bilayer schematic, original artwork, no SEM substitute",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/research/inhalable-vesicles.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Experimental DLS and FTIR only with original verified files",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/research/inhalable-vesicles.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Real nebulizer image/video only from thesis or licensed equipment imagery",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/research/inhalable-vesicles.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Aerosol deposition model with no fabricated distribution",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/research/inhalable-vesicles.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Ongoing project status; no invented clinical or lung-deposition results",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/research/inhalable-vesicles.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "echo-cnn-lstm",
+      "film_title": "Can an algorithm read a moving heart?",
+      "publication_title": "Deep learning technique for congenital heart disease detection using stacking-based CNN-LSTM models from fetal echocardiogram: a pilot study",
+      "primary_source": "https://doi.org/10.1109/ACCESS.2023.3316719",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "01",
+          "asset": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "04",
+          "asset": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+        "assets/echo-concept.svg"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Sourced study fetal echo frames, not adult Doppler image",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1109/ACCESS.2023.3316719",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Data provenance / training and test cohort disclosure",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1109/ACCESS.2023.3316719",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Exact published CNN-LSTM architecture or explicitly schematic diagram",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1109/ACCESS.2023.3316719",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Temporal CNN versus recurrent processing animation",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1109/ACCESS.2023.3316719",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Actual study metrics and denominator only from paper",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1109/ACCESS.2023.3316719",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Pilot limitation, no deployment or regulatory clearance claim",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1109/ACCESS.2023.3316719",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "pla-grafting",
+      "film_title": "The surface is not the material",
+      "publication_title": "Surface modification of poly(lactic acid) film via cold plasma-assisted grafting of fumaric and ascorbic acid",
+      "primary_source": "https://doi.org/10.3390/polym13213717",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [],
+      "source_images_previous": [
+        "assets/home-archive/figure-pla-surface.jpg",
+        "assets/polymer-concept.svg",
+        "assets/evidence-biomaterials.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Original PLA plasma grafting article figure 1 wetting data",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.3390/polym13213717",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Article FTIR/XPS actual spectra figures 3–4",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/polym13213717",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Surface-reaction mechanism drawn with uncertainty where unknown",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/polym13213717",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Author's SEM from the same article figure 5, not PLA scaffold photo",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/polym13213717",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Article AFM figure 6 and changed roughness",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/polym13213717",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Boundary between measured surface change and application claim",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.3390/polym13213717",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "pla-scaffolds",
+      "film_title": "A scaffold meets its environment",
+      "publication_title": "Antimicrobial modification of PLA scaffolds with ascorbic and fumaric acids via plasma treatment",
+      "primary_source": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [],
+      "source_images_previous": [
+        "assets/evidence-biomaterials.webp",
+        "assets/polymer-concept.svg",
+        "assets/home-archive/figure-pla-surface.jpg"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Primary scaffold paper sample / geometry figure",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Actual article plasma treatment experimental configuration",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Chemical grafting and contact angle results from scaffold paper",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Original antimicrobial test and controls from scaffold paper",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Material/biological performance limitations",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "No clinical implant success claim",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1016/j.surfcoat.2020.126216",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "flow-chamber-method",
+      "film_title": "How to make a reproducible injury",
+      "publication_title": "Application of a flow-induced stress wave and investigation of associated injuries on cell monolayers using a parallel plate flow chamber",
+      "primary_source": "https://doi.org/10.3390/mps3040065",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [],
+      "source_images_previous": [
+        "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+        "assets/lung-concept.svg",
+        "assets/evidence-pulmonary.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Exact original paper Figure 1 chamber and bubble route",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.3390/mps3040065",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Original paper Fig. 4 live/dead imaging and labels",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/mps3040065",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Published cell injury quantitative Fig. 5, axes preserved",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/mps3040065",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Original paper Fig. 6 cytoskeletal images with controls",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/mps3040065",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Method workflow with test conditions, not other lab's injury result",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/mps3040065",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Reproducibility, limits and direct primary source citation",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.3390/mps3040065",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "zebrafish-hemodynamics",
+      "film_title": "A heartbeat in high-speed frames",
+      "publication_title": "Cardiac function and blood flow hemodynamics assessment of zebrafish using high-speed video microscopy",
+      "primary_source": "https://doi.org/10.1016/j.micron.2020.102876",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [],
+      "source_images_previous": [
+        "assets/zebrafish-embryo-microscopy.webp",
+        "assets/zebrafish-larva-microscopy.webp",
+        "assets/home-archive/figure-zebrafish-microscopy.jpg",
+        "assets/evidence-zebrafish.webp",
+        "assets/zebrafish-concept.svg"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Study-specific high-speed recording, not generic embryo video",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1016/j.micron.2020.102876",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Real frame sampling and rate from research paper",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1016/j.micron.2020.102876",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Study original cardiac/blood-flow tracking figures",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1016/j.micron.2020.102876",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Velocity/flow results only at cited original conditions",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1016/j.micron.2020.102876",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Instrument resolution, sampling bias, viable organism context",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1016/j.micron.2020.102876",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "No substitution with a separate cilia-development study",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1016/j.micron.2020.102876",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "ace2-covid-drugs",
+      "film_title": "An enzyme, a receptor, a clinical question",
+      "publication_title": "Soluble ACE2 and angiotensin II levels are modulated in hypertensive COVID-19 patients treated with different antihypertension drugs",
+      "primary_source": "https://doi.org/10.1080/08037051.2022.2055530",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "01",
+          "asset": "assets/evidence-pulmonary.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "03",
+          "asset": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "04",
+          "asset": "assets/evidence-pulmonary.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/evidence-pulmonary.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/evidence-pulmonary.webp",
+        "assets/echo-concept.svg",
+        "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Hypertensive COVID-19 observational cohort variables",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1080/08037051.2022.2055530",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Exact published group descriptions and drug classes",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1080/08037051.2022.2055530",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Soluble ACE2 / angiotensin II study results only if original figure",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1080/08037051.2022.2055530",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Causal DAG separates confounding-by-indication from effects",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1080/08037051.2022.2055530",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Membrane receptor cartoon explicitly conceptual",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1080/08037051.2022.2055530",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "No antihypertensive prescribing guidance inferred",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1080/08037051.2022.2055530",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "gi-autoimmunity-1",
+      "film_title": "What happens when immunity turns on the gut?",
+      "publication_title": "Autoimmune Diseases of the GI Tract Part I: Etiology and Pathophysiology",
+      "primary_source": "https://doi.org/10.5772/intechopen.106184",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "02",
+          "asset": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "03",
+          "asset": "assets/evidence-pulmonary.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "04",
+          "asset": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+        "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+        "assets/evidence-pulmonary.webp",
+        "assets/research-archive-2026/biological-safety-cabinet-workspace.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "GI organ anatomy and barrier taxonomy",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.5772/intechopen.106184",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Disease-specific immune-cell mechanisms, separate eosinophilic from autoimmune",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.5772/intechopen.106184",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Review's original figure(s) only if rights verified",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.5772/intechopen.106184",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Epithelial tolerance and dysregulation conceptual schema",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.5772/intechopen.106184",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "The review's actual citations and disease categories",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.5772/intechopen.106184",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "No fictional histology labelled as patient sample",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.5772/intechopen.106184",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "gi-autoimmunity-2",
+      "film_title": "The diagnostic problem",
+      "publication_title": "Autoimmune Diseases of the GI Tract Part II: Emergence of Diagnostic Tools and Treatments",
+      "primary_source": "https://doi.org/10.5772/intechopen.106185",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "01",
+          "asset": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "03",
+          "asset": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "05",
+          "asset": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+        "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+        "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+        "assets/echo-concept.svg"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Diagnostic decision framework from source review",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.5772/intechopen.106185",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Histology, antibodies, imaging separated by disease",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.5772/intechopen.106185",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Available therapies matched to appropriate diagnostic category",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.5772/intechopen.106185",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Evidence-level hierarchy for treatments",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.5772/intechopen.106185",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Risks and diagnostic limitations from review",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.5772/intechopen.106185",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Not individual medical advice or assay results",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.5772/intechopen.106185",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "heart-failure-sensors",
+      "film_title": "Listening for a failing heart",
+      "publication_title": "Minimally Invasive and Non-Invasive Sensor Technologies for Predicting Heart Failure: An Overview",
+      "primary_source": "https://doi.org/10.1002/9781119813040.ch5",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "01",
+          "asset": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "03",
+          "asset": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "05",
+          "asset": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+        "assets/echo-concept.svg"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Clear real device categories described in chapter",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1002/9781119813040.ch5",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Sensor transduction mechanisms, contextual schematic",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1002/9781119813040.ch5",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Actual waveform only from authored chapter or openly licensed example",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1002/9781119813040.ch5",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Algorithm validation workflow no invented metric",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1002/9781119813040.ch5",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Human clinical validity, calibration and external testing",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1002/9781119813040.ch5",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Concept overview, not a device clinical trial",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1002/9781119813040.ch5",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "ace2-forms",
+      "film_title": "Two lives of ACE2",
+      "publication_title": "Do changes in ACE-2 expression affect SARS-CoV-2 virulence and related complications: a closer look into membrane-bound and soluble forms",
+      "primary_source": "https://doi.org/10.3390/ijms22136703",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "01",
+          "asset": "assets/evidence-pulmonary.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "03",
+          "asset": "assets/evidence-pulmonary.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "04",
+          "asset": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "05",
+          "asset": "assets/evidence-pulmonary.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/evidence-pulmonary.webp",
+        "assets/echo-concept.svg",
+        "assets/research-archive-2026/biological-safety-cabinet-workspace.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Membrane-tethered ACE2 and soluble ACE2 separate cartoons",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.3390/ijms22136703",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Actual ACE2 review Fig. 1/2 when identified",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/ijms22136703",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Protease-mediated shedding and tissue compartments",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/ijms22136703",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "RAS/Ang II/Ang(1–7) relationship from primary review",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/ijms22136703",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "SARS-CoV-2 attachment depicted as context-sensitive",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.3390/ijms22136703",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Hypotheses separated from measured epidemiology",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.3390/ijms22136703",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "microfluidic-virus",
+      "film_title": "A laboratory shrunk into a channel",
+      "publication_title": "Microfluidic-based virus detection methods for respiratory diseases",
+      "primary_source": "https://doi.org/10.1007/s42247-021-00169-7",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "02",
+          "asset": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "04",
+          "asset": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/films/art/microfluidic-sensing.svg",
+        "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+        "assets/research-archive-2026/molecular-biology-pipette-workbench.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Respiratory diagnostic sample preparation process",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1007/s42247-021-00169-7",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Channel geometry explicitly conceptual",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1007/s42247-021-00169-7",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Review's own device modalities figures if verified",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1007/s42247-021-00169-7",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Capture/readout biochemistry, controls",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1007/s42247-021-00169-7",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Detection vs clinical diagnostic validation comparison",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.1007/s42247-021-00169-7",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "No invented clinical sensitivity/specificity",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.1007/s42247-021-00169-7",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "drug-release-twins",
+      "film_title": "What can a digital twin predict?",
+      "publication_title": "Simulation of Drug Release and Performance Prediction Using Virtual Models",
+      "primary_source": "https://doi.org/10.70593/978-93-7185-824-3",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "02",
+          "asset": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "04",
+          "asset": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/niosomes-concept.svg",
+        "assets/research-archive-2026/qatar-university-research-workstation.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Real model assumptions, not fictional study dataset",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.70593/978-93-7185-824-3",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Partition/release mass-balance conceptual animation",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.70593/978-93-7185-824-3",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Parameter calibration versus validation comparison",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.70593/978-93-7185-824-3",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Only published input curves if identifiable",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.70593/978-93-7185-824-3",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Sensitivity and extrapolation failure scenarios",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://doi.org/10.70593/978-93-7185-824-3",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "No invented release-time values or validated digital twin",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://doi.org/10.70593/978-93-7185-824-3",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "food-printing",
+      "film_title": "When food becomes a printable material",
+      "publication_title": "Materials Science for 3D, 4D, 5D, and 6D Food Printing: Rheology, Microstructure, Smart Edible Inks, and Programmable Food Architecture",
+      "primary_source": "/#publications",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [],
+      "source_images_previous": [
+        "assets/films/art/edible-printing.svg",
+        "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Real rheological curves from reviewed source if accessible",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Deposition physics: yield stress and shear thinning conceptual",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Structure/slicing layer constraints",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "3D–6D taxonomy as article actually defines it",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Theoretical versus experimentally demonstrated design",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "No unrelated polymer sample photo",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "ceramics-printing",
+      "film_title": "A structure the body must tolerate",
+      "publication_title": "Clinical Applications of Additively Manufactured Biomedical Ceramics",
+      "primary_source": "/#publications",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [],
+      "source_images_previous": [
+        "assets/films/art/bioceramic-lattice.svg"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Real bioceramic material classes from chapter",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Additive manufacturing deposition/sintering workflow",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Porosity connectivity topology schematic",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Biological and mechanical endpoints distinct",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Available clinical evidence and limitations",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Not a photograph from unrelated PLA processing",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "cubosome-theranostics",
+      "film_title": "The difficult promise of a cubic carrier",
+      "publication_title": "Theranostic Potential of Cubosomes in Targeted Cancer Therapy: From Mechanistic Design to Clinical Translation",
+      "primary_source": "/#publications",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "04",
+          "asset": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/films/art/cubosome-topology.svg",
+        "assets/evidence-biomaterials.webp",
+        "assets/research-archive-2026/biological-safety-cabinet-workspace.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Bicontinuous cubic phase with explicit topology labels",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Formulation architecture schematic no TEM invented",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Release/targeting claims require source-specific evidence",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Imaging versus therapy modalities kept separate",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Biological translation and toxicity constraints",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Cubosome != niosome/ordinary liposome",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/#publications",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "micelles-pahs",
+      "film_title": "A polymer meets an insoluble problem",
+      "publication_title": "Polymeric micelles for polycyclic aromatic hydrocarbons",
+      "primary_source": "/grants/urep19.html",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [],
+      "source_images_previous": [
+        "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+        "assets/polymer-concept.svg",
+        "assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp",
+        "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "User's original unsuccessful diblock copolymer experiment photo",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/grants/urep19.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Flory–Huggins and partitioning conceptual illustration",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/grants/urep19.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Observed failed material behavior, avoid retrospective success",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/grants/urep19.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "No fake PAH-removal numbers",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/grants/urep19.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Alternative hypotheses and experimental tests",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/grants/urep19.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Document why unsuccessful runs matter",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/grants/urep19.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "heterocycle-cancer",
+      "film_title": "Build the heterocycle, then challenge the hypothesis",
+      "publication_title": "Imidazopyridine synthesis and anticancer screening",
+      "primary_source": "/grants/urep23.html",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "05",
+          "asset": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+        "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+        "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp",
+        "assets/oct12-owner-photos/yousef-hijji-anticancer-group-2019.webp",
+        "assets/archival-2026-10-13/early-chemistry-flask-2014.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Original target scaffold from grant/notebook verified",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/grants/urep23.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Microwave reaction setup from relevant experiment only",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/grants/urep23.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Verification methods NMR/LC-MS as plans, not claimed spectra",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/grants/urep23.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Cell-screening readouts only if original results shared",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/grants/urep23.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Structure–activity questions, not cancer cure",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/grants/urep23.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "No random 2014 freshman flask used as a 2019 result",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/grants/urep23.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "histology-failure",
+      "film_title": "Two materials. No section.",
+      "publication_title": "Zebrafish agarose–paraffin histopathology attempt",
+      "primary_source": "/films/two-materials-no-section.html",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [],
+      "source_images_previous": [
+        "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+        "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+        "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Owner's actual zebrafish specimen photograph",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/films/two-materials-no-section.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Actual 2% agarose orientation step",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/films/two-materials-no-section.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Actual paraffin microtomy failure photo",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/films/two-materials-no-section.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Hypothesis of two materials separating labelled speculative",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/films/two-materials-no-section.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Conditions needed to test mechanism",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/films/two-materials-no-section.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Emphasize no intact section was obtained",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/films/two-materials-no-section.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "cairo-microscope",
+      "film_title": "The microscope that made curiosity independent",
+      "publication_title": "The microscope I brought from Cairo",
+      "primary_source": "/stories/cairo-microscope.html",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [],
+      "source_images_previous": [
+        "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+        "assets/archival-2026-10-12/cairo-mokattam-sunset-2026.webp",
+        "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+        "assets/archival-2026-10-12/chemistry-library-2016.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Owner original home microscope photograph from 2017",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/stories/cairo-microscope.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Route Cairo Qasr El Einy to Qatar only if supported",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/stories/cairo-microscope.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Home desk and personal instrument detail",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/stories/cairo-microscope.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Independent observation without claiming unpublished discovery",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/stories/cairo-microscope.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Distinguish curiosity from experimental result",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "/stories/cairo-microscope.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Close with archival instrument image, not generic stock lab",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "/stories/cairo-microscope.html",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "essay-life-between-diagnoses",
+      "film_title": "When the Count Could Not Describe the Pain",
+      "publication_title": "The Life Between Diagnoses",
+      "primary_source": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "06",
+          "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/home-archive/childhood-portrait.jpg",
+        "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+        "assets/owner-archive-2026-10-16/eosinophilic-diagnosis-dr-elsheikh-abdelrahim.webp",
+        "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+        "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Owner's dated 2012 archival photo if consent and source",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Symptom chronology through authentic owner records",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Acute flare before US journey as actual event",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "No invented patient count, eosinophil lab number or biopsy",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "School-to-research chronology verified with writing",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Resist sentimental stock medical imagery",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://malruweidi.substack.com/p/the-life-between-diagnoses",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "essay-ai-email",
+      "film_title": "The Email That Became an Accusation",
+      "publication_title": "Sorry, My First Email to You Was Probably Polished by AI",
+      "primary_source": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "01",
+          "asset": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "03",
+          "asset": "assets/archival-2026-10-12/university-podium-talk-2017.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "04",
+          "asset": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/research-archive-2026/qatar-university-research-workstation.webp",
+        "assets/archival-2026-10-12/chemistry-library-2016.webp",
+        "assets/archival-2026-10-12/university-podium-talk-2017.webp",
+        "assets/home-archive/chemistry-chalkboard.jpg",
+        "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Original essay title and verifiable author's language",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Abstract anonymized email layout, never actual private message",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Language editing history with actual referenced evidence",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Power asymmetry expressed through editorial choreography",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Counterfactual superior's email not presented as real",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Conclusion anchored to authorship and evaluation",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "essay-machine-language",
+      "film_title": "Who Taught Humans to Write Like Machines?",
+      "publication_title": "We Taught People to Sound Like Machines. Now We’re Surprised They Use Them.",
+      "primary_source": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "03",
+          "asset": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "04",
+          "asset": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/home-archive/chemistry-chalkboard.jpg",
+        "assets/archival-2026-10-12/chemistry-library-2016.webp",
+        "assets/research-archive-2026/qatar-university-research-workstation.webp",
+        "assets/home-archive/figure-cyanide-sensor.jpg",
+        "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+        "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Original essay's published claims and citations",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Journal instruction archive only if exact citation available",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Editing and AI-style rhetoric via abstract typesetting",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Detector uncertainty represented without made-up probabilities",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Distinguish fluency, originality and authorship",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "No unrelated chemical experiment photograph",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "essay-academic-mental-health",
+      "film_title": "The Things an Academic CV Cannot Hold",
+      "publication_title": "Fifteen Things I Wish Young Academics Were Told About Mental Health",
+      "primary_source": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "02",
+          "asset": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/archival-2026-10-12/chemistry-library-2016.webp",
+        "assets/research-archive-2026/qatar-university-research-workstation.webp",
+        "assets/oct12-owner-photos/acs-chapter-recognition-2017.webp",
+        "assets/home-archive/university-lab-coat.jpg",
+        "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Owner essay text and first-person details as approved",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Academic time pressure as abstract calendar",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Mentorship claims from essay only",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "No invented psychiatric records or dramatic patient imagery",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Structural support and labor data only with sources",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "A quiet human close, no generic stock portrait",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "essay-scientific-credit",
+      "film_title": "Three Names on the Medal, Hundreds in the Record",
+      "publication_title": "The Nobel Prize Has Room for Three. Science Never Did.",
+      "primary_source": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "06",
+          "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/2017-acs-el-sayed-group.webp",
+        "assets/home-archive/early-science-talk.jpg",
+        "assets/photos-2017-2019/chem-squad-abdelgalil-colleagues-2019.webp",
+        "assets/home-archive/figure-zebrafish-microscopy.jpg",
+        "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "The Nobel three-person award limit historical primary record",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Real collaboration or lab archive when consent given",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Citation histories properly linked not fabricated",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Credited coauthors shown only where justified",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Awards and contributors separated, no false photograph labels",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Credit follows documented contribution",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "essay-tf-states",
+      "film_title": "The Target Has More Than One Shape",
+      "publication_title": "Target Transcription Factor States, Not Pockets",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "03",
+          "asset": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "04",
+          "asset": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/robo-concept.svg",
+        "assets/home-archive/chemistry-chalkboard.jpg",
+        "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+        "assets/home-archive/figure-cyanide-sensor.jpg",
+        "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Real transcription factor structure from PDB only if correct target",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Conformational-state cartoon labelled hypothesis",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Drug-binding interaction based on published precedent",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Orthogonal assays from essay's actual source",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Selectivity and protein-state occupancy distinction",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "No randomly generated molecular structure",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "essay-potency-exposure",
+      "film_title": "The Nanomolar Mirage",
+      "publication_title": "Potency Is Not an Exposure Strategy",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "01",
+          "asset": "assets/home-archive/figure-cyanide-sensor.jpg",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "03",
+          "asset": "assets/evidence-pulmonary.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "04",
+          "asset": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/home-archive/figure-cyanide-sensor.jpg",
+        "assets/niosomes-concept.svg",
+        "assets/evidence-pulmonary.webp",
+        "assets/research-archive-2026/qatar-university-research-workstation.webp",
+        "assets/home-archive/chemistry-chalkboard.jpg"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Real in-vitro potency notation with assay provenance",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Free concentration versus total concentration conceptual schema",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Partitioning, protein binding and tissue exposure model",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "PK validation against measured concentration-time curve if sourced",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "No fictional dosing or simulated patient efficacy",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Exposure and meaningful target coverage matter",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "essay-trna",
+      "film_title": "The Molecule Behind Every Protein",
+      "publication_title": "Drugging the tRNA Control System",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "02",
+          "asset": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/home-archive/chemistry-chalkboard.jpg",
+        "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+        "assets/robo-concept.svg",
+        "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+        "assets/niosomes-concept.svg",
+        "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Authentic tRNA and aminoacyl-tRNA synthetase structures (PDB IDs)",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Charging reaction chemically correct and directional",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Anticodon recognition and translational context",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Separate canonical from noncanonical aaRS functions",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Selectivity / mitochondrial translation liabilities",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "No unrelated cell-culture photo",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "essay-proximity",
+      "film_title": "When a Drug Makes Two Proteins Meet",
+      "publication_title": "The Matchmaker Modality: Engineering Event-Driven Pharmacology With Induced Proximity",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "02",
+          "asset": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        },
+        {
+          "scene": "06",
+          "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/robo-concept.svg",
+        "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+        "assets/home-archive/chemistry-chalkboard.jpg",
+        "assets/niosomes-concept.svg",
+        "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Real VHL/CRBN/target ternary structures only with exact PDB",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Molecular glue distinct from heterobifunctional PROTAC",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Ubiquitination and degradation conditional sequence",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Residence and cooperativity interpreted without invented values",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Mechanisms beyond protein degradation distinguished",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Do not promise every recruited target is degraded",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    },
+    {
+      "slug": "essay-adc",
+      "film_title": "The Antibody Is Only the Beginning",
+      "publication_title": "Antibody–Drug Conjugates 3.0: A New Era Of Precision Engineering In Oncology",
+      "primary_source": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+      "status": "EDITORIAL_REDESIGN_REQUIRED",
+      "rejected_unrelated_assets": [
+        {
+          "scene": "06",
+          "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "reason": "Not verified to depict the actual study or essay; reject as film evidence. May be retained elsewhere as separately credited archive."
+        }
+      ],
+      "source_images_previous": [
+        "assets/evidence-biomaterials.webp",
+        "assets/niosomes-concept.svg",
+        "assets/robo-concept.svg",
+        "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+        "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+      ],
+      "source_visual_script": [
+        {
+          "scene": "01",
+          "visual_argument": "Actual IgG topology, not a liposome cartoon",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "02",
+          "visual_argument": "Cleavable versus noncleavable linker mechanism",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "03",
+          "visual_argument": "Defined DAR distribution and hydrophobicity relationship",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "04",
+          "visual_argument": "Internalization versus extracellular release pathways",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "05",
+          "visual_argument": "Bystander killing as conditional on payload properties",
+          "source_kind": "source-specific paper figure, directly related owner archive, or explanatory scientific drawing",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        },
+        {
+          "scene": "06",
+          "visual_argument": "Safety tradeoffs and clinical claims source-locked",
+          "source_kind": "source-titled documentary typography",
+          "source_url": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+          "original_image_status": "NO IMAGE CLEARED AUTOMATICALLY; choose an exact figure, license and panel before rendering",
+          "motion": "Scene-specific animation derived from physical/causal argument; no Ken Burns stills as default"
+        }
+      ],
+      "requires": [
+        "primary DOI/source inspected",
+        "figure and panel identified",
+        "reproduction rights verified",
+        "script checked against the exact publication",
+        "shot composition test on phone",
+        "human audiovisual screening"
+      ],
+      "do_not_borrow_from_other_films": true
+    }
+  ]
+}
