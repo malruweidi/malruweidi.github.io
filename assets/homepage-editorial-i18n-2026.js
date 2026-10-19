@@ -41,7 +41,7 @@
     "Read the patient perspective ↗":"اقرأ تجربة المريض ↗",
     "Or browse essays and ideas ↗":"أو تصفح المقالات والأفكار ↗",
     "A research journal / a personal archive":"دفتر بحثي / أرشيف شخصي",
-    "From laboratory notebooks to living systems":"من دفاتر المختبر إلى دراسة الأنظمة الحية",
+    "Drug discovery and drug delivery":"اكتشاف الأدوية وتوصيلها",
     "Mahmoud Khatib A. A. Al-Ruweidi":"محمود خطيب علي عبدالرسول الرويدي",
     "I learned to make molecules.":"تعلّمت كيف أصنع الجزيئات.",
     "Then I wanted to know what they could do.":"ثم أردت أن أعرف ما الذي يمكن أن تفعله.",
