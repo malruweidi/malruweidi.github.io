@@ -4,6 +4,8 @@
   "use strict";
   const d = window.RuwaidixArabicDictionary || (window.RuwaidixArabicDictionary = {});
   Object.assign(d, {
+    "When the COVID-19 lockdown began in 2020, I suffered another severe flare. Hospital access was disrupted, and concerns about the immune effects of glucocorticoids delayed my prescription. I spent fourteen days vomiting and waiting for it. Those two weeks were hell.": "مع بداية الإغلاق العام بسبب جائحة كوفيد-١٩ عام ٢٠٢٠، أصابتني نوبة شديدة أخرى. تعطّل الوصول إلى المستشفيات، وتأخرت وصفة الغلُوكوكورتيكويدات بسبب المخاوف من تأثيرها المثبط للمناعة. قضيت أربعة عشر يوماً أعاني القيء وأنتظر الوصفة. كان هذان الأسبوعان جحيماً.",
+    "Read the account of those two weeks ↗": "اقرأ قصة هذين الأسبوعين ↗",
     "Stories Between the Experiments | Mahmoud K. Al-Ruweidi": "حكايات من وراء التجارب | محمود الرويدي",
     "Home": "الرئيسية",
     "Reader’s map": "خريطة القراءة",
