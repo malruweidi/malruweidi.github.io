@@ -1216,3 +1216,6 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Our work has taken us into different fields. We still come back to the same table.": "أخذنا العمل إلى تخصصات مختلفة، لكننا ما زلنا نعود إلى الطاولة نفسها.",
   "CHEM SQUAD · SINCE 2016": "كيم سكواد · منذ ٢٠١٦"
 });
+
+/* Split heading nodes in the Chem Squad shared-publications title. */
+Object.assign(window.RuwaidixArabicDictionary, {"The work we":"الأعمال التي","wrote together.":"كتبناها معًا."});
