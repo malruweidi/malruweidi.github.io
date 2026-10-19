@@ -57,3 +57,17 @@ test('related visitor routes and bilingual homepage label use the consolidated a
   assert.ok(index.items.some(item=>item.url==='/research-horizon.html'&&item.title.includes('Long-form')));
   assert.match(read('assets/home-portal-i18n-2026.js'),/الأجندة البحثية/);
 });
+
+test('renal therapeutics is a researched future direction with traceable primary evidence, not a claimed past project',()=>{
+  const page=read('molecular-therapeutics.html');
+  assert.match(page,/id="renal-therapeutics"/);
+  for(const term of ['Acute kidney injury','polycystic kidney disease','glomerular','proximal tubule','KIM-1','megalin','collecting duct','organ-on-chip','functional delivery','siRNA']){
+    assert.ok(page.toLowerCase().includes(term.toLowerCase()),'Missing renal focus: '+term);
+  }
+  assert.match(page,/Preprint[^<]{0,100}not yet peer-reviewed|not yet peer-reviewed[^<]{0,100}preprint/i);
+  for(const paper of ['s41467-025-56223-z','s41467-025-65997-1','42538939','PMC11403423']){
+    assert.ok(page.includes(paper),'Missing source: '+paper);
+  }
+  assert.match(read('research.html'),/renal therapeutics as a future research direction/i);
+  assert.doesNotMatch(read('research.html'),/completed kidney disease research by Mahmoud/i);
+});
