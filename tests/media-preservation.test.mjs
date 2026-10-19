@@ -64,11 +64,11 @@ test("captions, methods and scientific provenance remain intact", () => {
   assert.ok((chemistry.match(/<img\b/gi)||[]).length >= 5);
 });
 
-test("HTML is lighter without decreasing the total public research archive", () => {
+test("HTML remains bounded while preserving the expanding public research archive", () => {
   // Allow measured growth for named Chem Squad contributors, publication links and owner-provided archival photographs; keep binary media external.
   assert.ok(statSync(join(root,"archive.html")).size < 26000);
   assert.ok(statSync(join(root,"imaging.html")).size < 20000);
-  assert.ok(statSync(join(root,"chem-squad.html")).size < 52000);
+  assert.ok(statSync(join(root,"chem-squad.html")).size < 65000, "Chem Squad HTML exceeded the documented editorial-growth budget");
   assert.ok(existsSync(join(root,"stories.html")));
   assert.ok(existsSync(join(root,"figures.html")));
   assert.ok(existsSync(join(root,"archive/archive-video-2016.mp4")));
