@@ -1186,3 +1186,17 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "The photographs bring back the school years, the first university encounters and the laboratories that followed.": "تعيدني الصور إلى سنوات المدرسة وبدايات الجامعة والمختبرات التي عرفتها بعد ذلك.",
   "Open the longer chapters on research, biography and the scientific community.": "افتح الفصول المطوّلة عن الأبحاث والسيرة الشخصية والمجتمع العلمي."
 });
+
+/* Research apparatus captions and story, October 2026. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "Between the bench and the image": "بين طاولة المختبر والصورة",
+  "The photographs bring me back to very different workspaces: pipettes on a molecular-biology bench, a stereomicroscope with positioning equipment, a biological safety cabinet and, later, a cardiovascular imaging workstation. Each setting had its own preparations and its own ways of judging whether an observation was useful.": "تعيدني هذه الصور إلى أماكن عمل مختلفة: ماصات دقيقة على طاولة للأحياء الجزيئية، ومجهر تشريحي بجوار أدوات تثبيت العينات، وخزانة سلامة حيوية، ثم محطة للتصوير القلبي الوعائي. ولكل مكان تحضيراته وطريقته في الحكم على صلاحية الملاحظة.",
+  "I kept a photograph of a spectral Doppler display and a brief recording of laboratory machinery running. I remember the attention given to positioning, instrument settings and calibration, long before a result could be interpreted.": "احتفظت بصورة لشاشة دوبلر طيفي وبتسجيل قصير لآلة تعمل في المختبر. وما زلت أتذكر ما يُبذل من عناية في ضبط الوضعية وإعدادات الأجهزة ومعايرتها قبل أن يصبح تفسير النتائج ممكنًا.",
+  "The published figure is usually the last thing a reader sees. Much of my time around the instruments was spent getting to the point where there was a measurement worth examining.": "يرى القارئ الشكل المنشور عادةً بوصفه النتيجة النهائية. أما الوقت الذي قضيته قرب الأجهزة فكان جزء كبير منه محاولة الوصول إلى قياس يستحق الفحص أصلًا.",
+  "Pipettes and prepared samples on the molecular-biology bench": "ماصات دقيقة وعينات محضّرة على طاولة الأحياء الجزيئية",
+  "Stereomicroscope and specimen-positioning equipment": "مجهر تشريحي وأدوات لتثبيت العينات",
+  "Biological safety cabinet and laboratory workspace": "خزانة سلامة حيوية ومساحة عمل مختبرية",
+  "Cell-culture workspace · Pipettes, sample racks and Eppendorf centrifuge": "مساحة عمل لزراعة الخلايا · ماصات دقيقة وحوامل عينات وجهاز طرد مركزي من إيبندورف",
+  "Spectral Doppler workstation with patient details concealed": "محطة دوبلر طيفي مع إخفاء بيانات المريض",
+  "A laboratory apparatus assembly in motion": "جهاز مختبري أثناء التشغيل"
+});
