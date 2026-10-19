@@ -387,3 +387,10 @@ Object.assign(window.RuwaidixArabicDictionary || (window.RuwaidixArabicDictionar
   "A laboratory sample photographed during the copolymer trials at Qatar University": "عينة مختبرية صُوّرت أثناء تجارب البوليمرات المشتركة في جامعة قطر.",
   "Watch The Ring That Never Closed (03:00) ↗": "شاهد فيلم «الحلقة التي لم تُغلق» (٣ دقائق) ↗"
 });
+
+/* Arabic rendering for revised Stories opening, 19 October 2026. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "In 2009 I organized a school chemistry exhibition. Two years later I was examining a fox specimen in anatomy class, struck by the difference between the body on the table and the one drawn in our textbook. University brought different objects into view: zebrafish vessels under a microscope, polymers that resisted the procedure, and a histology block that came apart before I could cut a useful section. Those experiences belong to the story as much as the papers do.": "بدأتُ بتنظيم معرض مدرسي للكيمياء سنة ٢٠٠٩. وبعد عامين، كنت أفحص عيّنة ثعلب في درس التشريح، وأتأمل الفرق بين الجسم أمامي والرسم الذي ندرسه في الكتاب. ثم جاءت الجامعة بأشياء أخرى: أوعية سمك الزرد تحت المجهر، وبوليمرات لم تستجب لطريقة التحضير، وكتلة تضمين نسيجي تفككت قبل أن أتمكن من إعداد مقطع صالح للفحص. هذه الوقائع جزء من حكايتي العلمية بقدر ما هي الأبحاث المنشورة.",
+  "There are photographs of the microscope on my desk, colleagues between experiments, and preparations that failed. They remind me of what a published figure cannot show.": "ما زالت عندي صور للمجهر على مكتبي، ولزملاء بين التجارب، ولمحاولات تحضير لم تنجح. تذكرني بما لا تستطيع الأشكال المنشورة أن تحكيه.",
+  "Start with the school, follow an experiment into the laboratory, or meet the people who stayed in the conversation.": "ابدأ من المدرسة، أو تتبّع تجربة داخل المختبر، أو تعرّف إلى الأشخاص الذين استمر الحوار العلمي معهم."
+});
