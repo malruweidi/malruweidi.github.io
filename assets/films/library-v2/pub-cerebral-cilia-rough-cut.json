@@ -1,0 +1,96 @@
+{
+  "slug": "pub-cerebral-cilia",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_george",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "cadebf9fc84811e9164c8498f7d280c29098abb0feadd968bb48cef727aaacfd",
+  "shots": [
+    {
+      "title": "How does a vessel know the blood is moving?",
+      "kind": "Hosted illustrative/context motion clip; provenance not yet verified as original microscopy",
+      "image": "assets/evidence-zebrafish.webp",
+      "museum": null,
+      "credit": "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed."
+    },
+    {
+      "title": "What tells a vessel where to grow?",
+      "kind": "Published zebrafish research imagery",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "museum": null,
+      "credit": "Published zebrafish research imagery"
+    },
+    {
+      "title": "An organism in motion",
+      "kind": "Hosted illustrative/context motion clip; provenance not yet verified as original microscopy",
+      "image": "assets/films/art-v2/cerebral-cilia-1.svg",
+      "museum": null,
+      "credit": "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed."
+    },
+    {
+      "title": "The cilium",
+      "kind": "Original editorial concept diagram",
+      "image": "assets/zebrafish-concept.svg",
+      "museum": null,
+      "credit": "Original editorial concept diagram"
+    },
+    {
+      "title": "Make observation quantitative",
+      "kind": "Published figure in research archive",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "museum": null,
+      "credit": "Published figure in research archive"
+    },
+    {
+      "title": "The difficulty: Observation needs context",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/cerebral-cilia-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Observation needs context",
+      "kind": "Zebrafish context image; the original footage is linked separately",
+      "image": "assets/evidence-zebrafish.webp",
+      "museum": null,
+      "credit": "Zebrafish context image; the original footage is linked separately"
+    },
+    {
+      "title": "The question remains alive",
+      "kind": "Published research record",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "museum": null,
+      "credit": "Published research record"
+    }
+  ],
+  "film_title": "How does a vessel know the blood is moving?",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1161/ATVBAHA.118.311231",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [
+    {
+      "scene": 1,
+      "video": "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4",
+      "credit": "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed.",
+      "kind": "Hosted illustrative/context motion clip; provenance not yet verified as original microscopy",
+      "source_sha256": null
+    },
+    {
+      "scene": 3,
+      "video": "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4",
+      "credit": "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed.",
+      "kind": "Hosted illustrative/context motion clip; provenance not yet verified as original microscopy",
+      "source_sha256": null
+    }
+  ],
+  "input_sha256": "8d44e450fa50e0b5fa97940203b78b9f9eca8a177d70b72e8c6b2a71e53a425b"
+}

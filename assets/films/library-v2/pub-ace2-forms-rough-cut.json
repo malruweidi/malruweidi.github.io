@@ -1,0 +1,89 @@
+{
+  "slug": "pub-ace2-forms",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bf_emma",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "53e29803a7872fccfd232247268932be94b80165261badf0ea5fb54345cc2ea2",
+  "shots": [
+    {
+      "title": "Two lives of ACE2",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ace2-membrane.svg",
+      "museum": null,
+      "credit": "Membrane-bound ACE2 and lipid bilayer; simplified conceptual molecular illustration"
+    },
+    {
+      "title": "One protein, different places",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ace2-soluble.svg",
+      "museum": null,
+      "credit": "Soluble ACE2 ectodomain; illustrative shedding mechanism, not a measurement"
+    },
+    {
+      "title": "A receptor in a larger pathway",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/ace2-forms-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The location changes the question",
+      "kind": "Original scientific concept animation (not experimental data)",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Conceptual animation of membrane ectodomain shedding and soluble ACE2 context; no study measurements"
+    },
+    {
+      "title": "Expression is not the whole mechanism",
+      "kind": "Archival laboratory workspace, not ACE2 assay",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "museum": null,
+      "credit": "Archival laboratory workspace, not ACE2 assay"
+    },
+    {
+      "title": "The difficulty: Separate hypothesis from demonstration",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/ace2-forms-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Separate hypothesis from demonstration",
+      "kind": "Editorial image, not original coronavirus micrograph",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "Editorial image, not original coronavirus micrograph"
+    },
+    {
+      "title": "Two forms, two questions",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ace2-context.svg",
+      "museum": null,
+      "credit": "Conceptual comparison of membrane-bound and soluble ACE2 contexts; not assay data"
+    }
+  ],
+  "film_title": "Two lives of ACE2",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.3390/ijms22136703",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [
+    {
+      "scene": 4,
+      "video": "assets/films/animations-v2/ace2-shedding.mp4",
+      "credit": "Conceptual animation of membrane ectodomain shedding and soluble ACE2 context; no study measurements",
+      "kind": "Original scientific concept animation (not experimental data)",
+      "source_sha256": "c64bf3fdac1f9dc1af730f929cf5e2a09a18dae9dc388732d8b961775e260416"
+    }
+  ],
+  "input_sha256": "2f7500a5b6c3ed9e5e11d03641c7fb1d72966e6455f78229daa0cc8295f9cd21"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "edible-extrusion",
+  "duration": 16,
+  "frame_rate": 24,
+  "size": [
+    1280,
+    720
+  ],
+  "evidence_status": "ORIGINAL CONCEPTUAL ANIMATION; NOT EXPERIMENTAL FOOTAGE",
+  "source": "scripts/render-science-motion-v2.py",
+  "sha256": "cc7bbdb61f9375d66baf3dd5764de66324bd67648920c11ef796f6e4bea2dd84"
+}

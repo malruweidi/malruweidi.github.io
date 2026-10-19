@@ -1,0 +1,110 @@
+{
+  "slug": "making-medicines-keep",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_lewis",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "dfd6f7ba01e18e4658ead6a9f8ad08d33e44313a7e1ae058e929d93dc41c6ffa",
+  "shots": [
+    {
+      "title": "The jar",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-01.webp",
+      "museum": null,
+      "credit": "Editorial reconstruction; not a photographed historical preparation"
+    },
+    {
+      "title": "The preparation",
+      "kind": "museum_public_domain",
+      "image": null,
+      "museum": {
+        "objectID": 451400,
+        "title": "\"Preparing Medicine from Honey\", from a Dispersed Manuscript of an Arabic Translation of De Materia Medica of Dioscorides",
+        "artist": "'Abdullah ibn al-Fadl",
+        "date": "dated 621 AH/1224 CE",
+        "public_domain": true,
+        "url": "https://www.metmuseum.org/art/collection/search/451400"
+      },
+      "credit": "The Metropolitan Museum of Art, Baghdad, 1224; comparative manuscript, not a Cairo document"
+    },
+    {
+      "title": "Julāb",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-02.webp",
+      "museum": null,
+      "credit": "Editorial reconstruction of textual description; not a period manuscript"
+    },
+    {
+      "title": "Under heat",
+      "kind": "museum_public_domain",
+      "image": null,
+      "museum": {
+        "objectID": 446288,
+        "title": "\"Physician Preparing an Elixir\", Folio from a Materia Medica of Dioscorides",
+        "artist": "'Abdullah ibn al-Fadl",
+        "date": "dated 621 AH/1224 CE",
+        "public_domain": true,
+        "url": "https://www.metmuseum.org/art/collection/search/446288"
+      },
+      "credit": "The Metropolitan Museum of Art, Baghdad, 1224; illustrative contemporary comparison, not a depiction of qiwām"
+    },
+    {
+      "title": "What changes later",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "image": "assets/films/plates/making-medicines-keep-04.webp",
+      "museum": null,
+      "credit": "Modern illustrative interpretation; crystallization is not a laboratory measurement from medieval Cairo. Animation: Illustrative material sequence, not period footage, a recipe reconstruction, chemical time-lapse, or evidence of a particular Cairo shop. Crystallization is illustrative, not evidence that a particular medieval syrup spoiled."
+    },
+    {
+      "title": "The prescription",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-05.webp",
+      "museum": null,
+      "credit": "Typeset interpretation of Cairo Genizah Or.1081 J39; not a manuscript scan"
+    },
+    {
+      "title": "Substitution",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-06.webp",
+      "museum": null,
+      "credit": "Editorial conceptual diagram; historical substitution is not modern bioequivalence"
+    },
+    {
+      "title": "What the customer cannot see",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-07.webp",
+      "museum": null,
+      "credit": "Editorial interpretation of hisba discussions; not a contemporary depiction of inspections"
+    },
+    {
+      "title": "The record",
+      "kind": "original_illustration",
+      "image": "assets/films/plates/making-medicines-keep-08.webp",
+      "museum": null,
+      "credit": "Editorial acceptance card: article accepted by History of Pharmacy and Pharmaceuticals on 15 October 2026; not a fabricated journal cover"
+    }
+  ],
+  "film_title": "The Medicine in the Jar",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/directors-cuts-v2.json",
+  "primary_reference": "Accepted article 15 October 2026, Making Medicines Keep",
+  "source_collection": "feature",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [
+    {
+      "scene": 5,
+      "video": "assets/films/motion-v2/historical-syrup.mp4",
+      "credit": "Modern illustrative interpretation; crystallization is not a laboratory measurement from medieval Cairo. Animation: Illustrative material sequence, not period footage, a recipe reconstruction, chemical time-lapse, or evidence of a particular Cairo shop. Crystallization is illustrative, not evidence that a particular medieval syrup spoiled.",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "source_sha256": "edbe1104307f771fbb3bb38ba66f41f888af7fc3bf71d3b10b299046679a8367"
+    }
+  ],
+  "input_sha256": "3017cbd00a88e1fd304a5b03cf83a7247d3129afa17d6ac37dc0847cac56fa2f"
+}

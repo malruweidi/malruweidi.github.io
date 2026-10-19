@@ -1,0 +1,78 @@
+{
+  "slug": "pub-essay-tf-states",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "cede8e4671d7c3c02a3e80b343c585a94c15d96c820d0413fa1438760005a569",
+  "shots": [
+    {
+      "title": "The Target Has More Than One Shape",
+      "kind": "Original chalkboard archive, not structural model",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "museum": null,
+      "credit": "Original chalkboard archive, not structural model"
+    },
+    {
+      "title": "The pocket is not the protein",
+      "kind": "Generic molecular signaling editorial illustration, not a TF structure",
+      "image": "assets/robo-concept.svg",
+      "museum": null,
+      "credit": "Generic molecular signaling editorial illustration, not a TF structure"
+    },
+    {
+      "title": "Think in states",
+      "kind": "Original chalkboard archive, not structural model",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "museum": null,
+      "credit": "Original chalkboard archive, not structural model"
+    },
+    {
+      "title": "Binding is just an entrance",
+      "kind": "Author laboratory archive, not data from article",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Author laboratory archive, not data from article"
+    },
+    {
+      "title": "A chain of experiments",
+      "kind": "Published chemical figure from unrelated author's work; method analogy only",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Published chemical figure from unrelated author's work; method analogy only"
+    },
+    {
+      "title": "The difficulty: Real precedents, different mechanisms",
+      "kind": "Generic concept pathway, not specific drug's atomic model",
+      "image": "assets/robo-concept.svg",
+      "museum": null,
+      "credit": "Generic concept pathway, not specific drug's atomic model"
+    },
+    {
+      "title": "Real precedents, different mechanisms",
+      "kind": "Generic concept pathway, not specific drug's atomic model",
+      "image": "assets/robo-concept.svg",
+      "museum": null,
+      "credit": "Generic concept pathway, not specific drug's atomic model"
+    },
+    {
+      "title": "Drug discovery needs a better unit",
+      "kind": "Author's editorial portrait",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "museum": null,
+      "credit": "Author's editorial portrait"
+    }
+  ],
+  "film_title": "The Target Has More Than One Shape",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "228f3ddd41676c4c78be92f02c1dfe05e50780a56fbcf73ed8ca5a414fbbad8f"
+}

@@ -1,0 +1,81 @@
+{
+  "slug": "pub-cubosome-theranostics",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bf_emma",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "1964f3f7b3f055eba0d4de2bf33c0f9499cc5b9677254ccdedb22eee9112d470",
+  "shots": [
+    {
+      "title": "The difficult promise of a cubic carrier",
+      "kind": "Nanomedicine context image, not cubosome micrograph",
+      "image": "assets/evidence-biomaterials.webp",
+      "museum": null,
+      "credit": "Nanomedicine context image, not cubosome micrograph"
+    },
+    {
+      "title": "A cube may hide a labyrinth",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/cubosome-topology.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "Two tasks in one carrier",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/cubosome-theranostics-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Design at the interface",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/cubosome-topology.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "Targeting is an experimental claim",
+      "kind": "Original cell culture laboratory context, not data from this chapter",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "museum": null,
+      "credit": "Original cell culture laboratory context, not data from this chapter"
+    },
+    {
+      "title": "The difficulty: Between structure and treatment",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/cubosome-theranostics-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Between structure and treatment",
+      "kind": "General biomaterials research imagery",
+      "image": "assets/evidence-biomaterials.webp",
+      "museum": null,
+      "credit": "General biomaterials research imagery"
+    },
+    {
+      "title": "The promise is conditional",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/cubosome-topology.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    }
+  ],
+  "film_title": "The difficult promise of a cubic carrier",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/#publications",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [],
+  "input_sha256": "4afa89f9366f273b715224c8c27cd798da42459713a3e2d30644df711582dd8c"
+}

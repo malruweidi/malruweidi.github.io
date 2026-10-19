@@ -1,0 +1,46 @@
+{
+  "version": "history-material-objects-2026-10-17",
+  "film": "making-medicines-keep",
+  "status": "CURATED COMPARATIVE SHOT SOURCES; NOT ADDED TO RELEASED FILM",
+  "introduction": "These museum objects are physical-culture context, not evidence that the specific Cairo pharmacy stored medicine in them. All object records require public-domain API confirmation before downloading.",
+  "selected": [
+    {
+      "museum": "The Metropolitan Museum of Art",
+      "object_id": 448383,
+      "title": "Flask",
+      "attribution": "Probably Syria",
+      "period": "Second half of the thirteenth century",
+      "source": "https://www.metmuseum.org/art/collection/search/448383",
+      "reuse": "Public Domain per museum record",
+      "camera_treatment": "Neutral object shot showing glassmaking, not syrup compounding",
+      "limitation": "No verified medical or pharmaceutical use for this specific flask"
+    },
+    {
+      "museum": "The Metropolitan Museum of Art",
+      "object_id": 450940,
+      "title": "Jar",
+      "attribution": "Raqqa, Syria",
+      "period": "Twelfth–thirteenth century",
+      "source": "https://www.metmuseum.org/art/collection/search/450940",
+      "reuse": "Public Domain per museum record",
+      "camera_treatment": "Material-culture comparison for ceramic containers and craft",
+      "limitation": "Do not call this an apothecary jar or claim it came from Cairo"
+    },
+    {
+      "museum": "The Metropolitan Museum of Art",
+      "object_id": 445983,
+      "title": "Jar",
+      "attribution": "Raqqa, Syria",
+      "period": "Thirteenth century",
+      "source": "https://www.metmuseum.org/art/collection/search/445983",
+      "reuse": "Public Domain per museum record",
+      "camera_treatment": "Brief comparative material close-up to interrupt repeating conceptual artwork",
+      "limitation": "No proof this particular object stored medicines"
+    }
+  ],
+  "existing_already_in_films": [
+    451400,
+    446288
+  ],
+  "directing_rule": "Never silently insert a visually appealing object as evidence of the manuscript; visually label period, place and uncertainty. Prefer the written Cairo sources for historical claims."
+}

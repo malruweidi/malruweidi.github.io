@@ -1,0 +1,405 @@
+{
+  "total": 44,
+  "technically_current": 36,
+  "stale_exports": 8,
+  "missing_exports": 0,
+  "human_approved": 0,
+  "films": [
+    {
+      "film": "making-medicines-keep",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "two-materials-no-section",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "what-a-bubble-can-do",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-airway-reopening",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-cerebral-cilia",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-slit2-robo",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-curcumin-cyanide",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-making-medicines-keep",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-niosomes",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-echo-cnn-lstm",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-pla-grafting",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-pla-scaffolds",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-flow-chamber-method",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-zebrafish-hemodynamics",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-ace2-covid-drugs",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-gi-autoimmunity-1",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-gi-autoimmunity-2",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-heart-failure-sensors",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-ace2-forms",
+      "current": false,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": true,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-microfluidic-virus",
+      "current": false,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": true,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-drug-release-twins",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-food-printing",
+      "current": false,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": true,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-ceramics-printing",
+      "current": false,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": true,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-cubosome-theranostics",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-micelles-pahs",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-heterocycle-cancer",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-histology-failure",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-cairo-microscope",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-essay-life-between-diagnoses",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-essay-ai-email",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-essay-machine-language",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-essay-academic-mental-health",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-essay-scientific-credit",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-essay-tf-states",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-essay-potency-exposure",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-essay-trna",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-essay-proximity",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "pub-essay-adc",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "feature-the-laboratory-we-carried-with-us",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "feature-what-survives-the-experiment",
+      "current": false,
+      "has_mp4": true,
+      "duration_script": 156,
+      "duration_export": 168.0,
+      "stale": true,
+      "blocked_record_exists": true
+    },
+    {
+      "film": "feature-cairo-microscope",
+      "current": true,
+      "has_mp4": true,
+      "duration_script": 120,
+      "duration_export": 120.0,
+      "stale": false,
+      "blocked_record_exists": false
+    },
+    {
+      "film": "feature-ring-that-never-closed",
+      "current": false,
+      "has_mp4": true,
+      "duration_script": 150,
+      "duration_export": 131.0,
+      "stale": true,
+      "blocked_record_exists": true
+    },
+    {
+      "film": "feature-airway-reopening-evidence-cut",
+      "current": false,
+      "has_mp4": true,
+      "duration_script": 153,
+      "duration_export": 138.0,
+      "stale": true,
+      "blocked_record_exists": true
+    },
+    {
+      "film": "feature-two-materials-no-section-evidence-cut",
+      "current": false,
+      "has_mp4": true,
+      "duration_script": 150,
+      "duration_export": 120.0,
+      "stale": true,
+      "blocked_record_exists": true
+    }
+  ]
+}

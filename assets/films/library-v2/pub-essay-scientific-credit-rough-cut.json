@@ -1,0 +1,78 @@
+{
+  "slug": "pub-essay-scientific-credit",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "22f90ec9620e15152df64b69291d9590f158847c66d7ba7d6609f765652cfe75",
+  "shots": [
+    {
+      "title": "Three Names on the Medal, Hundreds in the Record",
+      "kind": "Original early science presentation photo, not an image of the discovery discussed",
+      "image": "assets/home-archive/early-science-talk.jpg",
+      "museum": null,
+      "credit": "Original early science presentation photo, not an image of the discovery discussed"
+    },
+    {
+      "title": "An award fits a few names",
+      "kind": "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+      "image": "assets/2017-acs-el-sayed-group.webp",
+      "museum": null,
+      "credit": "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay"
+    },
+    {
+      "title": "A discovery has a longer genealogy",
+      "kind": "Original early science presentation photo, not an image of the discovery discussed",
+      "image": "assets/home-archive/early-science-talk.jpg",
+      "museum": null,
+      "credit": "Original early science presentation photo, not an image of the discovery discussed"
+    },
+    {
+      "title": "The laboratory is not a single author",
+      "kind": "Personal scientific colleagues photograph, general context not Nobel provenance",
+      "image": "assets/photos-2017-2019/chem-squad-abdelgalil-colleagues-2019.webp",
+      "museum": null,
+      "credit": "Personal scientific colleagues photograph, general context not Nobel provenance"
+    },
+    {
+      "title": "Commemoration edits the past",
+      "kind": "Archival encounter with Professor Elmostafa El-Sayed, unrelated to prize claim",
+      "image": "assets/2017-acs-el-sayed-group.webp",
+      "museum": null,
+      "credit": "Archival encounter with Professor Elmostafa El-Sayed, unrelated to prize claim"
+    },
+    {
+      "title": "The difficulty: Credit still needs proof",
+      "kind": "Research figure illustrating traceable published contribution, not a Nobel-related experiment",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "museum": null,
+      "credit": "Research figure illustrating traceable published contribution, not a Nobel-related experiment"
+    },
+    {
+      "title": "Credit still needs proof",
+      "kind": "Research figure illustrating traceable published contribution, not a Nobel-related experiment",
+      "image": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "museum": null,
+      "credit": "Research figure illustrating traceable published contribution, not a Nobel-related experiment"
+    },
+    {
+      "title": "Do justice to the record",
+      "kind": "Author's editorial portrait",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "museum": null,
+      "credit": "Author's editorial portrait"
+    }
+  ],
+  "film_title": "Three Names on the Medal, Hundreds in the Record",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "ea26c2ae79188041ddaa81ae44972b63f933351dfd426116fd647cb87ad1e41c"
+}

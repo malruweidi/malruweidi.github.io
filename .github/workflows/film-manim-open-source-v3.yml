@@ -1,0 +1,89 @@
+name: Free open-source Manim scientific film pilot (review only)
+on:
+  push:
+    branches:
+      - cinematic-remake-20261017
+    paths:
+      - scripts/manim-scientific-films-v3.py
+      - scripts/audit-manim-film-v3.py
+      - tests/manim-scientific-films-v3.test.cjs
+      - .github/workflows/film-manim-open-source-v3.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ruwaidix-open-source-manim-pilot
+  cancel-in-progress: false
+
+jobs:
+  generate-five-illustrative-scenes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[manim-v3-output]')
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate the five source-bound motion scenes
+        run: node --test tests/manim-scientific-films-v3.test.cjs
+
+      - name: Install free Manim Community and local media dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev fonts-dejavu-core
+          python -m pip install "manim==0.22.0"
+          python -m py_compile scripts/manim-scientific-films-v3.py scripts/audit-manim-film-v3.py
+          python scripts/audit-manim-film-v3.py --list
+
+      - name: Render five distinct silent science animations on CPU
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/films/manim-v3
+          for pair in \
+            "AirwayInterface:airway-interface" \
+            "ACE2Topology:ace2-topology" \
+            "MicrofluidicTransport:microfluidic-transport" \
+            "FoodExtrusion:food-extrusion" \
+            "CeramicSintering:ceramic-sintering"; do
+            scene="$(printf '%s' "$pair" | cut -d: -f1)"
+            slug="$(printf '%s' "$pair" | cut -d: -f2)"
+            manim render --disable_caching --format mp4 --fps 24 -r 1280,720 \
+              --media_dir "$RUNNER_TEMP/manim-v3" \
+              scripts/manim-scientific-films-v3.py "$scene"
+            built="$(find "$RUNNER_TEMP/manim-v3" -type f -name "$scene.mp4" -print -quit)"
+            test -n "$built"
+            cp "$built" "assets/films/manim-v3/$slug.mp4"
+          done
+
+      - name: Inspect real video streams, 16-second timing and source/output fingerprints
+        run: python scripts/audit-manim-film-v3.py
+
+      - name: Preserve unapproved review assets on protected branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Ruwaidix Open Source Film Studio"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/manim-v3/
+          if ! git diff --cached --quiet; then
+            git commit -m "Produce five open-source Manim review-only film clips [manim-v3-output]"
+            for retry in 1 2 3 4 5 6; do
+              git fetch origin cinematic-remake-20261017
+              git rebase FETCH_HEAD
+              if git push origin HEAD:cinematic-remake-20261017; then exit 0; fi
+              sleep 5
+            done
+            exit 1
+          fi

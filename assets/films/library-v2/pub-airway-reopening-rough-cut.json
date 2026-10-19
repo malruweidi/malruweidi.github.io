@@ -1,0 +1,89 @@
+{
+  "slug": "pub-airway-reopening",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "7248c63b6607e51b2563e8cbf1f99eed623dfaa99c7e4e8a9250f2bb290f5b96",
+  "shots": [
+    {
+      "title": "When an airway reopens",
+      "kind": "Original diagram, conceptual only",
+      "image": "assets/lung-concept.svg",
+      "museum": null,
+      "credit": "Original diagram, conceptual only"
+    },
+    {
+      "title": "The violence inside a breath",
+      "kind": "Published research figure: parallel-plate experimental geometry",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Published research figure: parallel-plate experimental geometry"
+    },
+    {
+      "title": "An airway reopens",
+      "kind": "Original scientific concept animation (not experimental data)",
+      "image": "assets/lung-concept.svg",
+      "museum": null,
+      "credit": "Original concept animation of advancing air-liquid interface; not actual cell culture or paper microscopy"
+    },
+    {
+      "title": "Making the injury measurable",
+      "kind": "Study figure reproduced in the author's research archive",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Study figure reproduced in the author's research archive"
+    },
+    {
+      "title": "Before exposure",
+      "kind": "Archival laboratory workspace, not a recording of the drug exposure",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "museum": null,
+      "credit": "Archival laboratory workspace, not a recording of the drug exposure"
+    },
+    {
+      "title": "When the bubble passed",
+      "kind": "Author-created chart showing published in-vitro mean cell-death percentages; no uncertainty type inferred",
+      "image": "assets/films/art-v2/airway-injury-measured.svg",
+      "museum": null,
+      "credit": "Al-Ruweidi et al., J Appl Physiol 130 (2021), DOI 10.1152/japplphysiol.00574.2020. Only reported means redrawn; the original source's variability is not assigned an unverified error-bar type."
+    },
+    {
+      "title": "Another pretreatment, same model",
+      "kind": "Author-created chart showing published in-vitro mean cell-death percentages; no uncertainty type inferred",
+      "image": "assets/films/art-v2/airway-injury-measured.svg",
+      "museum": null,
+      "credit": "Al-Ruweidi et al., J Appl Physiol 130 (2021), DOI 10.1152/japplphysiol.00574.2020. Only reported means redrawn; the original source's variability is not assigned an unverified error-bar type."
+    },
+    {
+      "title": "A boundary around the result",
+      "kind": "Published study context; DOI on film page",
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "museum": null,
+      "credit": "Published study context; DOI on film page"
+    }
+  ],
+  "film_title": "A breath can injure",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1152/japplphysiol.00574.2020",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [
+    {
+      "scene": 3,
+      "video": "assets/films/animations-v2/airway-interface.mp4",
+      "credit": "Original concept animation of advancing air-liquid interface; not actual cell culture or paper microscopy",
+      "kind": "Original scientific concept animation (not experimental data)",
+      "source_sha256": "bc80c5efd0fc8b45e238346fcdbbf6320cdd039e2bf213efd10a46a234da453f"
+    }
+  ],
+  "input_sha256": "38625441fb06de93f30e7b3fda9ba9b829007cb4aaf667a09387518c8c8aa584"
+}

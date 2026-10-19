@@ -1,0 +1,87 @@
+{
+  "slug": "pub-histology-failure",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "c7d531c0b4e6ee97ecd3530a762f425e6c88f4574e5ca1dd78352d0201db3382",
+  "shots": [
+    {
+      "title": "Two materials. No section.",
+      "kind": "Original laboratory processing evidence of unsuccessful attempt",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "museum": null,
+      "credit": "Original laboratory processing evidence of unsuccessful attempt"
+    },
+    {
+      "title": "A section begins before the blade",
+      "kind": "Original firsthand photographs of zebrafish orientation procedure",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "museum": null,
+      "credit": "Original firsthand photographs of zebrafish orientation procedure"
+    },
+    {
+      "title": "We chose two percent agarose",
+      "kind": "Original explanatory reconstruction of unsuccessful histology procedure; not a research result",
+      "image": "assets/films/plates/two-materials-no-section-03.webp",
+      "museum": null,
+      "credit": "Source-bound editorial reconstruction, not an interpretable histological section"
+    },
+    {
+      "title": "The block did not behave as one",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "image": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "museum": null,
+      "credit": "Original photographed failed embedding and microtomy record. Animation: Original mechanism hypothesis based on observed block separation; does not claim that polymer interface chemistry or failure mechanism was proven. Hypothesis about material separation; observed failed block shown in separate scenes."
+    },
+    {
+      "title": "The blade exposed the interface",
+      "kind": "Original explanatory reconstruction of unsuccessful histology procedure; not a research result",
+      "image": "assets/films/plates/two-materials-no-section-05.webp",
+      "museum": null,
+      "credit": "Source-bound editorial reconstruction, not an interpretable histological section"
+    },
+    {
+      "title": "The difficulty: A failed section is a usable finding",
+      "kind": "Original explanatory reconstruction of unsuccessful histology procedure; not a research result",
+      "image": "assets/films/plates/two-materials-no-section-06.webp",
+      "museum": null,
+      "credit": "Source-bound editorial reconstruction, not an interpretable histological section"
+    },
+    {
+      "title": "A failed section is a usable finding",
+      "kind": "Original laboratory record, not a corrected protocol validation",
+      "image": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "museum": null,
+      "credit": "Original laboratory record, not a corrected protocol validation"
+    },
+    {
+      "title": "Keep the record honest",
+      "kind": "Documented orientation specimen image",
+      "image": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "museum": null,
+      "credit": "Documented orientation specimen image"
+    }
+  ],
+  "film_title": "Two materials. No section.",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/films/two-materials-no-section.html",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [
+    {
+      "scene": 4,
+      "video": "assets/films/motion-v2/histology-interface.mp4",
+      "credit": "Original photographed failed embedding and microtomy record. Animation: Original mechanism hypothesis based on observed block separation; does not claim that polymer interface chemistry or failure mechanism was proven. Hypothesis about material separation; observed failed block shown in separate scenes.",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "source_sha256": "d691649b5e984fdfd8c72a811ce3e1ec178a412b9c1c89acf03eabbbd0139758"
+    }
+  ],
+  "input_sha256": "e4f281ac01a88c0beba1644b88f23dea4b761924924819be50c4177a343077f6"
+}
