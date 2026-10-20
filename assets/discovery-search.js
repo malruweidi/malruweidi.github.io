@@ -120,10 +120,13 @@
   }
   function draw() {
     const query = input.value.trim();
-    sequence = items.filter(x => active === "All" || x.category === active)
-      .map(x => ({entry: x, weight: phraseScore(x, query)}))
-      .filter(x => x.weight > 0)
-      .sort((a, b) => b.weight - a.weight || a.entry.id - b.entry.id);
+    sequence = window.RuwaidixDiscovery
+      ? window.RuwaidixDiscovery.search(items, query, active)
+          .map(result => ({entry: result.entry, weight: result.score}))
+      : items.filter(x => active === "All" || x.category === active)
+          .map(x => ({entry: x, weight: phraseScore(x, query)}))
+          .filter(x => x.weight > 0)
+          .sort((a, b) => b.weight - a.weight || a.entry.id - b.entry.id);
     const fragment = document.createDocumentFragment();
     sequence.slice(0, shown).forEach(({entry}) => fragment.append(makeEntry(entry)));
     output.replaceChildren(fragment);
@@ -145,6 +148,15 @@
     input.value = ""; shown = 18; draw(); syncUrl(); input.focus();
   });
   more.addEventListener("click", () => { shown += 18; draw(); });
+  document.querySelectorAll("[data-query]").forEach(button => {
+    button.addEventListener("click", () => {
+      input.value = (language === "ar" && button.dataset.queryAr) ?
+        button.dataset.queryAr : button.dataset.query;
+      active = "All"; shown = 18;
+      drawFilters(); draw(); syncUrl();
+      input.focus();
+    });
+  });
   langButton.addEventListener("click", () => setLanguage(language === "en" ? "ar" : "en", true));
   document.addEventListener("keydown", event => {
     const typing = event.target instanceof HTMLElement &&
