@@ -23,3 +23,9 @@ Popelka, A.; Abdulkareem, A.; Mahmoud, A. A.; Nassr, M. G.; Al-Ruweidi, M. K. A.
 - Rendering continuity alone is not a cinematic-quality certificate. Human watch/listen verification must specifically inspect zoomed AFM/FTIR source readability, all text at mobile scale, chemical-accuracy of interpretive visuals, story pacing, score/narration balance and rights/credit lines.
 
 **Release:** PR remains draft until the author approves after complete screening. Keep public website, published routes, old masters and research notes untouched. Do not start Film 10 without an explicit user request.
+
+## Render and visual review (20 October 2026)
+
+The 120-second master was exported successfully in GitHub Actions #39495286786: 1920 × 1080, 24 fps, 2,880 individual rendered frames. Independent video-only sample audit: **120/120 distinct 1 Hz frame fingerprints**. Full-program audio measurement: **−18.0 LUFS integrated**, peak **−2.0 dBTP**; exact MP4 SHA-256: `33c3164f46fd713152eaa0e4f688d72ecb3f137e4e5e2994969525ee5465993f`.
+
+The actual contact sheet was opened and visually inspected. It shows the polymer fibre world, moving collector, surface activation, full four-panel SEM, inherited AFM and FTIR documentary frames, the tabulated ordinal bacterial scores, and closing clinical boundary. The AFM/FTIR images are visibly limited in resolution; mobile-screen scientific legibility is **not approved**. The page-wide website integrity audit initially ran before the extracted source frames had been committed and detected these missing paths; they are now in the review branch. A new integrity audit must confirm the final committed state. Human watching and listening to the entire encoded film remain open release gates.
