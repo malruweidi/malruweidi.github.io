@@ -75,11 +75,21 @@ jobs:
         run: |
           git config user.name "Ruwaidix Cinema Production"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          set -euo pipefail
+          source_hash="$(git hash-object scripts/render-cilia-v10.py)"
+          mkdir -p /tmp/cilia-output
+          cp -a assets/films/series-v10-cilia/. /tmp/cilia-output/
+          git fetch origin cinema/cerebral-cilia-v10-motion-review
+          upstream_hash="$(git show origin/cinema/cerebral-cilia-v10-motion-review:scripts/render-cilia-v10.py | git hash-object --stdin)"
+          if [ "$source_hash" != "$upstream_hash" ]; then
+            echo "Newer renderer supersedes this run; do not publish a stale export"
+            exit 0
+          fi
+          git reset --hard origin/cinema/cerebral-cilia-v10-motion-review
+          cp -a /tmp/cilia-output/. assets/films/series-v10-cilia/
           git add assets/films/series-v10-cilia/
           if git diff --cached --quiet; then
-            echo "Already rendered"; exit 0
+            echo "Identical master already present"; exit 0
           fi
           git commit -m "Export Film 02 continuously animated cinematic edition [cilia-v10-output]"
-          git fetch origin cinema/cerebral-cilia-v10-motion-review
-          git rebase origin/cinema/cerebral-cilia-v10-motion-review
           git push origin HEAD:cinema/cerebral-cilia-v10-motion-review
