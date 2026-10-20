@@ -1,0 +1,85 @@
+name: Film 02 | Cilia V10 motion-first cinema
+
+on:
+  push:
+    branches:
+      - cinema/cerebral-cilia-v10-motion-review
+    paths:
+      - scripts/render-cilia-v10.py
+      - tests/cilia-v10.test.py
+      - .github/workflows/render-cilia-v10.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cilia-v10-one-film-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  animated-documentary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - name: Retrieve preserved source files
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Prepare free Python film tools
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install open-source compositor
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check Pillow
+      - name: Verify evidence sources, file integrity and six continuously moving scenes
+        run: |
+          python -m py_compile scripts/render-cilia-v10.py tests/cilia-v10.test.py
+          python scripts/render-cilia-v10.py --validate-only
+          python tests/cilia-v10.test.py
+      - name: Render only Film 02, with optional authentic archive footage
+        run: python scripts/render-cilia-v10.py
+      - name: Movie playback stream, temporal motion, captions, and manifest QC
+        run: |
+          python - <<'PY'
+          import json,subprocess,re,hashlib
+          from pathlib import Path
+          root=Path("assets/films/series-v10-cilia")
+          movie=root/"cerebral-cilia.mp4"
+          info=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_format","-show_streams","-of","json",str(movie)]))
+          streams=info["streams"]
+          assert {"audio","video"} <= {s["codec_type"] for s in streams}
+          assert any(s["codec_type"]=="video" and s["codec_name"]=="h264" and
+                     s["width"]==1280 and s["height"]==720 for s in streams)
+          duration=float(info["format"]["duration"])
+          assert abs(duration-84.0)<.15,duration
+          assert (root/"cerebral-cilia.vtt").read_text().count("-->")==12
+          assert (root/"cerebral-cilia.contact.webp").stat().st_size>20000
+          assert (root/"cerebral-cilia.webp").stat().st_size>3000
+          record=json.loads((root/"cerebral-cilia.json").read_text())
+          assert record["primary_publication_doi"]=="10.1161/ATVBAHA.118.311231"
+          assert record["duration_seconds"]==duration
+          assert hashlib.sha256(movie.read_bytes()).hexdigest()==record["sha256"]
+          md5=subprocess.check_output(["ffmpeg","-hide_banner","-loglevel","error",
+                     "-i",str(movie),"-vf","fps=1","-f","framemd5","-"],text=True)
+          fingerprints=[s.rsplit(",",1)[-1].strip() for s in md5.splitlines() if s and not s.startswith("#")]
+          assert len(fingerprints)>=83,len(fingerprints)
+          assert len(set(fingerprints))>=78, "Motion regression: film contains static shots"
+          print("FILM02 MASTER PASSED: duration",duration,"distinct temporal samples",
+                len(set(fingerprints)),"of",len(fingerprints),
+                "authentic clips",len(record["archival_microscopy_sources"]))
+          PY
+      - name: Commit verified master to isolated review branch
+        run: |
+          git config user.name "Ruwaidix Cinema Production"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v10-cilia/
+          if git diff --cached --quiet; then
+            echo "Already rendered"; exit 0
+          fi
+          git commit -m "Export Film 02 continuously animated cinematic edition [cilia-v10-output]"
+          git fetch origin cinema/cerebral-cilia-v10-motion-review
+          git rebase origin/cinema/cerebral-cilia-v10-motion-review
+          git push origin HEAD:cinema/cerebral-cilia-v10-motion-review
