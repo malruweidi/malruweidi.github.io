@@ -25,6 +25,43 @@
         if (event.key === "Enter" || event.key === " ") {event.preventDefault();activate(point.dataset.place,false);}
       });
     }
+    const mapText = {
+      egypt: {
+        en:["EGYPT","Roots","Egypt: family roots and heritage"],
+        ar:["مصر","الجذور","مصر: الجذور العائلية والموروث الثقافي"]
+      },
+      qatar: {
+        en:["QATAR","Formation","Qatar: upbringing and scientific formation"],
+        ar:["قطر","التكوين","قطر: النشأة والتكوين العلمي"]
+      },
+      usa: {
+        en:["UNITED STATES","Scientific connections","United States: scientific networks and future research possibilities"],
+        ar:["الولايات المتحدة","الروابط العلمية","الولايات المتحدة: شبكات علمية وآفاق بحثية مستقبلية"]
+      }
+    };
+    const title = section.querySelector("#geo-map-title");
+    const description = section.querySelector("#geo-map-description");
+    const decorativeLabels = section.querySelectorAll(".geo-map > text");
+    function syncMapLanguage() {
+      const language = document.documentElement.lang === "ar" ? "ar" : "en";
+      for (const point of points) {
+        const content = mapText[point.dataset.place][language];
+        const labels = point.querySelectorAll("text");
+        labels[0].textContent = content[0];
+        labels[1].textContent = content[1];
+        point.setAttribute("aria-label", content[2]);
+      }
+      if (title) title.textContent = language === "ar" ? "مصر وقطر والولايات المتحدة: ثلاثة أبعاد جغرافية للسيرة" : "Egypt, Qatar, and the United States — three geographical anchors";
+      if (description) description.textContent = language === "ar" ?
+        "خريطة عالم مبسطة: مصر موطن الجذور، وقطر مكان النشأة والتكوين العلمي، والولايات المتحدة مكان الروابط العلمية والفرص البحثية المستقبلية. تمثل الخطوط روابط فكرية لا رحلات سفر أو تعيينات مؤسسية." :
+        "A simplified equirectangular world map. Egypt marks family roots; Qatar marks growing up, education and scientific formation; the United States marks scientific networks and future research possibilities. Lines represent connections and ideas, not measured travel routes or institutional appointments. Select a country marker to highlight its story.";
+      if (decorativeLabels.length >= 2) {
+        decorativeLabels[0].textContent = language === "ar" ? "الأطلسي / المتوسط / الخليج" : "ATLANTIC / MEDITERRANEAN / GULF";
+        decorativeLabels[1].textContent = language === "ar" ? "روابط فكرية وليست مسار رحلة" : "NOT TO SCALE AS A JOURNEY";
+      }
+    }
+    new MutationObserver(syncMapLanguage).observe(document.documentElement, {attributes:true,attributeFilter:["lang"]});
+    syncMapLanguage();
     activate("qatar", false);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", ready);
