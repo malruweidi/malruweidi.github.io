@@ -44,3 +44,6 @@
 @media(max-width:900px){.geographies{padding:74px 0 80px}.geographies .geo-heading{grid-template-columns:1fr;gap:22px}.geographies .geo-map-topline{left:15px;top:14px;font-size:9px}.geographies .geo-places{grid-template-columns:1fr}.geographies .geo-place{padding:20px 22px}.geographies .geo-place .geo-name{margin-top:7px}.geographies .geo-place .geo-description{margin-top:6px}.geographies .geo-lead{font-size:14px}}
 @media(max-width:550px){.geographies .geo-heading h2{font-size:48px}.geographies .geo-map-footer{padding:14px;font-size:9px}.geographies .geo-legend{gap:10px}}
 @media(prefers-reduced-motion:reduce){.geographies *{transition:none!important;animation:none!important}}
+
+.geographies .geo-source{margin:20px 0 0;color:#75847e;font:10px/1.75 var(--mono,monospace)}
+.geographies .geo-source a{color:#8b5644;text-decoration:underline;text-underline-offset:3px}
