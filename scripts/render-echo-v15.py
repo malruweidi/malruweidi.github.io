@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Film 07: render exactly one 84-second thesis-workflow film in 1920×1080.
+"""Film 07: render exactly one 84-second fetal echocardiography temporal-AI film in 1920×1080.
 
 Preserves the existing 84-second spoken narration and timed WebVTT, layers a
 quiet self-generated score, and makes evidence vs interpretation explicit.
-Browser seeks to each numeric frame time. No fictitious measurements, deposition
-distributions, confocal microscopy, DLS traces, or patient benefits are implied.
+Browser seeks to each numeric frame time. No synthetic view is genuine patient
+ultrasound; reported pilot metrics are separated from clinical efficacy.
 """
 import argparse,hashlib,io,json,math,shutil,subprocess,tempfile
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/"assets/films/series-v15-echo-cnn-lstm"
+OUT=ROOT/"assets/films/series-v15-echo"
 HTML=OUT/"film.html"
 ORIGINAL=ROOT/"assets/films/series-v7-pilots/echo-cnn-lstm.mp4"
 CAPTIONS=ROOT/"assets/films/series-v7-pilots/echo-cnn-lstm.vtt"
