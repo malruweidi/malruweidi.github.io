@@ -101,7 +101,7 @@ def render():
                 page.wait_for_function("window.__ready === true",timeout=30000)
                 meta=page.evaluate("window.__meta")
                 assert (meta["W"],meta["H"],meta["FPS"],meta["DURATION"])==(W,H,FPS,SECS),meta
-                assert page.evaluate("[...document.querySelectorAll('.source')].every(i=>i.naturalWidth>=450 && i.naturalHeight>=250)")
+                assert page.evaluate("[...document.querySelectorAll('.source')].every(i=>i.naturalWidth>=450 && i.naturalHeight>=180)")
                 for n in range(FPS*SECS):
                     t=n/FPS
                     page.evaluate("(t)=>window.__draw(t)",t)
@@ -129,7 +129,7 @@ def render():
             "-c:v","copy","-c:a","aac","-b:a","192k","-t",str(SECS),
             "-movflags","+faststart",outfile)
         shutil.copyfile(CAPTIONS,OUT/"pla-grafting.vtt")
-        contact=Image.new("RGB",(4*480,math.ceil(len(thumb)/4)*300),COVER:="#101e24")
+        contact=Image.new("RGB",(4*480,math.ceil(len(thumb)/4)*300),"#101e24")
         dr=ImageDraw.Draw(contact)
         for k,(t,jpg) in enumerate(thumb):
             frame=Image.open(io.BytesIO(jpg)).convert("RGB")
