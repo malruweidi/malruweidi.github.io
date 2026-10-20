@@ -35,7 +35,8 @@
     "Methods & evidence": "المنهجيات والأدلة",
     "Stories": "الحكايات",
     "Archive & people": "الأرشيف والأشخاص",
-    "Writing & society": "الكتابة والمجتمع"
+    "Writing & society": "الكتابة والمجتمع",
+    "Recommended reading": "ترشيحات للقراءة والمشاهدة"
   };
   const normalize = value => String(value || "").normalize("NFKD")
     .replace(/[\u0300-\u036f\u064b-\u065f\u0670\u0640]/g, "")
@@ -100,6 +101,15 @@
     li.append(link);
     return li;
   }
+  // Update the existing button nodes: rebuilding a focused filter on every click
+  // would silently drop keyboard focus and screen-reader position.
+  function updateFilterSelection() {
+    Array.from(filters.children).forEach(button => {
+      const selected = button.dataset.category === active;
+      button.className = "rx-filter" + (selected ? " is-active" : "");
+      button.setAttribute("aria-pressed", String(selected));
+    });
+  }
   function drawFilters() {
     if (!items.length) return;
     const categories = ["All", ...new Set(items.map(x => x.category))];
@@ -107,12 +117,13 @@
     categories.forEach(category => {
       const button = document.createElement("button");
       button.type = "button";
+      button.dataset.category = category;
       button.className = "rx-filter" + (active === category ? " is-active" : "");
       button.setAttribute("aria-pressed", String(active === category));
       button.textContent = category === "All" ? labels[language].all :
         language === "ar" ? categoryArabic[category] || category : category;
       button.addEventListener("click", () => {
-        active = category; shown = 18; drawFilters(); draw();
+        active = category; shown = 18; updateFilterSelection(); draw();
       });
       fragment.append(button);
     });
