@@ -17,16 +17,16 @@ test("Chem Squad and Leadership & Management are distinct full-sized homepage ca
  assert.match(section,/Leadership &amp; management/);
  assert.ok(!section.includes('href="/#quality"'),"quality should live within leadership, not replace its directory");
 });
-test("Leadership destination groups YVE, TYC, ACS and quality without folding Chem Squad into them",()=>{
+test("Leadership destination documents The Youth Company, ACS and quality without inventing YVE",()=>{
  assert.ok(existsSync(join(root,"leadership.html")));
  const page=read("leadership.html");
- for(const marker of ['<main','<h1','id="yve"','id="tyc"','id="acs"','id="quality"','YVE','The Youth Company','Youth Change Everything','American Chemical Society','Lean Six Sigma']){
+ for(const marker of ['<main','<h1','id="tyc"','id="acs"','id="quality"','The Youth Company','Youth Change Everything','Run the World Festival','American Chemical Society','Lean Six Sigma']){
    assert.ok(page.includes(marker),"missing leadership section or source "+marker);
  }
  assert.ok(page.includes('href="/stories.html#community-before-lab"'));
  assert.ok(page.includes('href="/engagement.html#acs-2019"'));
  assert.ok(page.includes('href="/cv.html#quality-credentials"'));
- assert.ok(!page.includes('YVE stands for'),"do not guess unidentified acronym");
+ assert.doesNotMatch(page,/\bYVE\b|id="yve"/,"YVE was a typo, not a documented organisation");
  assert.ok(!page.includes('Chem Squad quality management'),"keep independent scientific circle separate");
 });
 test("New leadership category is a visible, accessible and bilingual destination",()=>{

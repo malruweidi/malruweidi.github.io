@@ -7,6 +7,7 @@ on:
       - assets/discovery-*.css
       - assets/discovery-index.json
       - tests/discovery-index.test.mjs
+      - tests/discovery-intelligence.test.cjs
       - .github/workflows/discovery-qa.yml
   pull_request:
     paths:
@@ -15,6 +16,7 @@ on:
       - assets/discovery-*.css
       - assets/discovery-index.json
       - tests/discovery-index.test.mjs
+      - tests/discovery-intelligence.test.cjs
       - .github/workflows/discovery-qa.yml
 jobs:
   check-search:
@@ -26,9 +28,10 @@ jobs:
           node-version: "22"
       - name: Syntax check
         run: |
+          node --check assets/discovery-intelligence.js
           node --check assets/discovery-search.js
           node --check assets/discovery-global.js
           node --check assets/site-enhancements.js
           node --check assets/unified-pages.js
       - name: Index and anchor integrity
-        run: node --test tests/discovery-index.test.mjs
+        run: node --test tests/discovery-index.test.mjs tests/discovery-intelligence.test.cjs

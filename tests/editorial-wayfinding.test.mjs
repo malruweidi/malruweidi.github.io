@@ -40,7 +40,7 @@ test("homepage and story index routes are translated into Arabic",()=>{
 });
 test("original homepage sections and hero remain intact",()=>{
  for(const id of ["patient-perspective","visual-archive","framework","methods","imaging","wisconsin-collaboration","quality","history","writing","press","initiatives","community","quacs","about","contact"]) assert.ok(home.includes('id="'+id+'"'),id);
- for(const k of ["I learned to make molecules","rx-evidence-index","rx-chapters"]) assert.ok(home.includes(k),k);
+ for(const k of ["I follow molecules","rx-evidence-index","rx-chapters"]) assert.ok(home.includes(k),k);
 });
 
 test("archival object routes retain the existing chronology and photo collection",()=>{

@@ -37,7 +37,7 @@ test('illness story is a real static chapter linked to both the original essay a
   assert.ok(stories.includes('eosinophilic-diagnosis-dr-elsheikh-abdelrahim.webp'));
   assert.ok(illness.includes('id="life-between-diagnoses"'));
   assert.ok(illness.includes('id="the-week-before-the-flight"'));
-  assert.match(illness,/a week before I was due to travel to the United States/i);
+  assert.match(illness,/A severe flare shortly before an important journey required endoscopy and glucocorticoid treatment/i);
   assert.ok(home.includes('href="/illness-and-evidence.html#life-between-diagnoses"'));
   assert.ok(stories.includes('https://malruweidi.substack.com/p/the-life-between-diagnoses'));
 });

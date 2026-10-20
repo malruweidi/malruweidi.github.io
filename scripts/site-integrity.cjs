@@ -59,14 +59,15 @@ for(const [route,sourceFile] of [["/research.html","research.html"],["/publicati
 }
 if(!home.includes('class="rx-more"')||!home.includes('href="#research"'))error("index.html","secondary navigation no longer preserves in-page research route");
 const academic=html.get("cv.html")||"";
-if([...academic.matchAll(/<h2 class="label">/g)].length!==8)error("cv.html","academic CV requires eight semantic section headings, including the research direction");
+if([...academic.matchAll(/<h2 class="label">/g)].length<8 || !academic.includes('<h2 class="label">Research direction</h2>'))error("cv.html","academic CV requires the research-direction heading and at least eight semantic section headings");
 const bibliography=html.get("publications.html")||"";
 if([...bibliography.matchAll(/class="pub-card"/g)].length<20)error("publications.html","curated bibliography unexpectedly lost entries");
 const supervisor=html.get("molecular-therapeutics.html")||"";
 const broadRoutes=["CHEMISTRY / MOLECULAR DESIGN","PHARMACEUTICS / DELIVERY","BIOMATERIALS / SOFT MATTER","CELLULAR BIOLOGY / PHARMACOLOGY","BIOENGINEERING / MEASUREMENT","COMPUTATION / QUANTITATIVE SCIENCE"];
 for(const route of broadRoutes)if(!supervisor.includes(route))error("research directions","interdisciplinary evidence-based route missing "+route);
 if((supervisor.match(/class="route-card"/g)||[]).length!==6)error("research directions","archival six-field methods record must be preserved");
-if((supervisor.match(/class="core-card"/g)||[]).length!==3)error("research identity","expected three primary evidence-backed scientific research questions");
+const researchQuestions = supervisor.match(/<section class="section" id="research-entry-points"[\s\S]*?<\/section>/)?.[0] || "";
+if((researchQuestions.match(/class="core-card"/g)||[]).length!==3)error("research identity","expected three evidence-backed questions inside research-entry-points");
 if((supervisor.match(/class="evidence-card"/g)||[]).length!==3)error("selected evidence","expected three experimental case studies");
 for(const evidence of ["54.7 ± 3.94%","15.1 ± 3.43%","74%","184%","H. C. Yalcin","formal analysis","firsthand account"])if(!supervisor.includes(evidence))error("selected evidence","numerical finding or role attribution missing "+evidence);
 for(const doi of ["10.1152/japplphysiol.00574.2020","10.3390/polym13213717","10.1016/j.micron.2020.102876"])if(!supervisor.includes(doi))error("selected evidence","primary publication missing "+doi);
