@@ -1,0 +1,65 @@
+{
+  "film_index": 4,
+  "title": "When a Molecule Becomes a Question",
+  "film_release": "v12 review master",
+  "seconds": 84.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "original_audio": "assets/films/series-v7-pilots/curcumin-cyanide.mp4",
+  "source_narration": "84-second source audio retained on its original timeline, with quiet original-score mix",
+  "original_captions": "assets/films/series-v7-pilots/curcumin-cyanide.vtt",
+  "primary_paper_doi": "10.1039/C9AY01557D",
+  "source_range": "Analytical Methods (2019), 11, 5169–5176",
+  "source_figure": "assets/home-archive/figure-cyanide-sensor.jpg",
+  "source_figure_integrity": "Original published four-panel figure used with full extent; not modified or synthesized",
+  "reported_optical_results": {
+    "absorption_before_nm": 421,
+    "absorption_after_nm": 520,
+    "bathochromic_shift_nm": 99,
+    "detection_limit_molar": 2.3e-06,
+    "medium": "acetonitrile:water 90:10",
+    "hydroxide_interference": "reported optical response",
+    "cell_fluorescence": "quenching after cyanide exposure"
+  },
+  "scenes": [
+    {
+      "name": "Can color explain the chemistry?",
+      "start": 0,
+      "end": 12.5
+    },
+    {
+      "name": "Conjugation enables optical readout",
+      "start": 12.5,
+      "end": 25.75
+    },
+    {
+      "name": "Solvent context: acetonitrile–water",
+      "start": 25.75,
+      "end": 40.42
+    },
+    {
+      "name": "Reported 421→520 nm absorption shift",
+      "start": 40.42,
+      "end": 55.08
+    },
+    {
+      "name": "Cell imaging and analytical limits",
+      "start": 55.08,
+      "end": 69.83
+    },
+    {
+      "name": "The primary research evidence",
+      "start": 69.83,
+      "end": 84
+    }
+  ],
+  "animation_system": "deterministic time-seekable Canvas2D via Chromium Playwright, FFmpeg, 24fps native 1920x1080",
+  "visual_status": "Original published spectroscopic figure presented intact. Explanatory chromophore/cell/cuvette animations are conceptual; no invented spectra, microscopy, clinical detection or pure-water validation.",
+  "originals_preserved": true,
+  "live_site_modified": false,
+  "human_signoff": "Not yet completed; user screening, scholarly check, legal review and listening required",
+  "sha256": "66c0ccfd331e6a3e776dac3bdcee18b8d8fef5efe59e63a4658432f2c443c3a1"
+}
