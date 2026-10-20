@@ -1,0 +1,105 @@
+name: Film 09 | 3D-inspired electrospun scaffold research cinema
+on:
+  push:
+    branches:
+      - cinema/pla-scaffolds-v17-fiber-world
+    paths:
+      - assets/films/series-v17-scaffolds/film.html
+      - scripts/render-scaffolds-v17.py
+      - tests/scaffolds-v17.test.py
+      - .github/workflows/render-scaffolds-v17.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: film09-scaffold-v17-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  make-film09-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - name: Checkout genuine 2020 SEM, published archive and existing narration
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python 3.12 for freely reproducible composition
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Free compositor and FFmpeg encode stack
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check pillow playwright numpy soundfile
+          python -m playwright install --with-deps chromium
+      - name: Stage authentic AFM and FTIR snapshots from prior V5 research edition
+        run: python scripts/render-scaffolds-v17.py --prepare
+      - name: Test source hashes, scientific assertions, meaningful scene motion
+        run: |
+          python -m py_compile scripts/render-scaffolds-v17.py tests/scaffolds-v17.test.py
+          python scripts/render-scaffolds-v17.py --validate-only
+          python tests/scaffolds-v17.test.py
+      - name: Render exactly Film 09 in native Full HD
+        run: python -u scripts/render-scaffolds-v17.py
+      - name: Independent MP4 and source evidence audit
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json,subprocess
+          root=Path('assets/films/series-v17-scaffolds')
+          movie=root/'pla-scaffolds.mp4'
+          data=json.loads((root/'pla-scaffolds.json').read_text())
+          probed=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(movie)]))
+          assert abs(float(probed['format']['duration'])-120)<.15
+          assert {'video','audio'} <= {z['codec_type'] for z in probed['streams']}
+          assert any(z.get('codec_name')=='h264' and z.get('width')==1920 and z.get('height')==1080 for z in probed['streams'])
+          assert data['film_index']==9
+          assert data['primary_study']['doi']=='10.1016/j.surfcoat.2020.126216'
+          assert data['original_SEM']['source_figure']==5
+          assert len(data['additional_source_frames'])==2
+          for src in data['additional_source_frames']:
+              assert hashlib.sha256(Path(src['path']).read_bytes()).hexdigest()==src['sha256']
+              assert 'not direct original pixel master' in src['role']
+          assert data['published_laboratory_results']['plasma_pretreatment_seconds']==30
+          assert data['published_laboratory_results']['table_3_scores']['ascorbic_acid_grafted']['E_coli']==['0','0','0']
+          assert data['published_laboratory_results']['table_3_scores']['fumaric_acid_grafted']['S_aureus']==['0','0','0']
+          assert data['earlier_versions_preserved'] and data['live_website_unchanged']
+          assert hashlib.sha256(movie.read_bytes()).hexdigest()==data['sha256']
+          assert (root/'pla-scaffolds.vtt').read_text().count('-->')>=30
+          assert (root/'pla-scaffolds.contact.webp').stat().st_size>25000
+          assert len(list(root.glob('chapter-??.jpg')))==8
+          v=subprocess.check_output(['ffmpeg','-v','error','-i',str(movie),'-map','0:v:0',
+             '-an','-vf','fps=1','-f','framemd5','-'],text=True)
+          hashes=[z.rsplit(',',1)[-1].strip() for z in v.splitlines() if z and not z.startswith('#')]
+          assert 119<=len(hashes)<=121,len(hashes)
+          assert len(set(hashes))>=115,('Static interval regression',len(set(hashes)))
+          print('FILM09 VIDEO-ONLY FRAME MOTION',len(set(hashes)),'of',len(hashes))
+          q=subprocess.run(['ffmpeg','-hide_banner','-i',str(movie),'-map','0:a:0',
+              '-filter_complex','ebur128=peak=true','-f','null','-'],capture_output=True,text=True)
+          assert q.returncode==0
+          print('FILM09 EBU R128 LOUDNESS',q.stderr[-1500:])
+          PY
+      - name: Commit final verified file to isolated review branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Ruwaidix Research Cinema"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          source_hash="$(git hash-object scripts/render-scaffolds-v17.py)"
+          mkdir -p /tmp/scaffolds-v17-final
+          cp -a assets/films/series-v17-scaffolds/. /tmp/scaffolds-v17-final/
+          git fetch origin cinema/pla-scaffolds-v17-fiber-world
+          newer="$(git show origin/cinema/pla-scaffolds-v17-fiber-world:scripts/render-scaffolds-v17.py | git hash-object --stdin)"
+          if [ "$source_hash" != "$newer" ]; then
+            echo "Renderer updated since export; do not commit outdated video"
+            exit 0
+          fi
+          git reset --hard origin/cinema/pla-scaffolds-v17-fiber-world
+          cp -a /tmp/scaffolds-v17-final/. assets/films/series-v17-scaffolds/
+          git add assets/films/series-v17-scaffolds/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Film 09: native 1080p scaffold cinema, actual 2020 research sources and grounded in-vitro results"
+          git push origin HEAD:cinema/pla-scaffolds-v17-fiber-world
