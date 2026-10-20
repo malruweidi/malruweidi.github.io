@@ -63,9 +63,9 @@ jobs:
           assert record["duration_seconds"]==duration
           assert hashlib.sha256(movie.read_bytes()).hexdigest()==record["sha256"]
           md5=subprocess.check_output(["ffmpeg","-hide_banner","-loglevel","error",
-                     "-i",str(movie),"-vf","fps=1","-f","framemd5","-"],text=True)
+                     "-i",str(movie),"-map","0:v:0","-an","-vf","fps=1","-f","framemd5","-"],text=True)
           fingerprints=[s.rsplit(",",1)[-1].strip() for s in md5.splitlines() if s and not s.startswith("#")]
-          assert len(fingerprints)>=83,len(fingerprints)
+          assert 83<=len(fingerprints)<=85,len(fingerprints)
           assert len(set(fingerprints))>=78, "Motion regression: film contains static shots"
           print("FILM02 MASTER PASSED: duration",duration,"distinct temporal samples",
                 len(set(fingerprints)),"of",len(fingerprints),
