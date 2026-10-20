@@ -30,10 +30,10 @@ test("ranked results are deterministic, deduplicated and ordered", () => {
 });
 test("navigation enhances rather than replaces the published archive", () => {
   const html = readFileSync(join(__dirname, "../search.html"), "utf8");
-  assert.match(html, /assets\\/discovery-intelligence\\.js/);
+  assert.match(html, /assets\/discovery-intelligence\.js/);
   assert.match(html, /id="rx-search-fallback"/);
   assert.match(html, /data-query="/);
   const js = readFileSync(join(__dirname, "../assets/discovery-search.js"), "utf8");
   assert.match(js, /RuwaidixDiscovery/);
-  assert.doesNotMatch(js, /innerHTML\\s*=/);
+  assert.doesNotMatch(js, /innerHTML\s*=/);
 });
