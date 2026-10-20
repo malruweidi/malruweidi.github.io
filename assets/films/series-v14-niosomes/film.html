@@ -1,0 +1,272 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Will the Medicine Survive the Nebulizer? | Ruwaidix Film 06</title><style>
+html,body{margin:0;background:#071b26;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.reference{position:absolute;left:-9999px;width:1px;height:1px}
+</style></head><body><h1 class="sr-only">Will the Medicine Survive the Nebulizer? — a cinematic study of vesicular inhalation research</h1>
+<img class="reference" id="workbench" src="../../research-archive-2026/molecular-biology-pipette-workbench.webp" alt="Contemporary research workbench photograph; contextual, not an inhaled vesicle assay result">
+<img class="reference" id="workspace" src="../../research-archive-2026/qatar-university-research-workstation.webp" alt="Research workstation photograph, general archive context">
+<canvas id="film" width="1920" height="1080" role="img" aria-label="Motion documentary showing hypothetical niosomal membrane assembly, characterization, nebulization stresses and deposition questions without fabricating MSc results"></canvas>
+<script>
+"use strict";
+const W=1280,H=720,FPS=24,DURATION=84,B=[0,12.4,27.7,42.55,53.8,69.05,84];
+const C={ink:"#081b26",navy:"#0b2630",sea:"#163b46",mint:"#8dd5c7",aqua:"#4eacb3",foam:"#e2faf0",
+ copper:"#e6a073",amber:"#e8c28b",rust:"#aa6559",blue:"#6c96c1",dim:"#72909a",
+ charcoal:"#18313a",fog:"#c2d7d4",violet:"#9a99ba",slate:"#283e44"};
+const root=document.getElementById("film"),out=root.getContext("2d",{alpha:false});
+const buffers=[document.createElement("canvas"),document.createElement("canvas")];
+buffers.forEach(x=>{x.width=W;x.height=H});const dc=buffers.map(x=>x.getContext("2d",{alpha:false}));
+const photos=[document.getElementById("workbench"),document.getElementById("workspace")];
+const PI=Math.PI,TAU=2*PI,sin=Math.sin,cos=Math.cos;
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const ease=(x)=>{x=clamp(x);return x*x*(3-2*x)};
+const outEase=(x)=>1-Math.pow(1-clamp(x),3);
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const mix=(a,b,p)=>a+(b-a)*p;
+function rect(d,x,y,w,h,c){d.fillStyle=c;d.fillRect(x,y,w,h)}
+function line(d,points,c,w=2,a=1){d.save();d.globalAlpha=a;d.strokeStyle=c;d.lineWidth=w;d.lineCap="round";d.lineJoin="round";d.beginPath();d.moveTo(...points[0]);for(let i=1;i<points.length;i++)d.lineTo(...points[i]);d.stroke();d.restore()}
+function dot(d,x,y,r,c,a=1){d.save();d.globalAlpha=a;d.beginPath();d.arc(x,y,Math.max(.1,r),0,TAU);d.fillStyle=c;d.fill();d.restore()}
+function ring(d,x,y,r,c,w=2,a=1){d.save();d.globalAlpha=a;d.beginPath();d.arc(x,y,Math.max(1,r),0,TAU);d.strokeStyle=c;d.lineWidth=w;d.stroke();d.restore()}
+function rounded(d,x,y,w,h,r,c){d.beginPath();d.roundRect(x,y,w,h,r);d.fillStyle=c;d.fill()}
+function text(d,s,x,y,size=24,col=C.foam,family="sans",alpha=1,align="left"){
+ d.save();d.globalAlpha=clamp(alpha);d.textAlign=align;d.textBaseline="alphabetic";
+ d.fillStyle=col;d.font=size+"px "+(family==="serif"?"Georgia,serif":family==="mono"?"monospace":"Arial,sans-serif");
+ d.fillText(s,x,y);d.restore()}
+function title(d,s,x,y,size,t,start,col=C.foam){
+ let q=outEase(seg(t,start,start+.9));d.save();d.beginPath();d.rect(x-4,y-size*1.2,1160,(size+30)*q);d.clip();
+ text(d,s,x,y+19*(1-q),size,col,"serif");d.restore()}
+function background(d,t){
+ rect(d,0,0,W,H,C.ink);let g=d.createRadialGradient(928,310,32,928,310,840);
+ g.addColorStop(0,"rgba(82,163,162,.15)");g.addColorStop(1,"rgba(0,0,0,0)");rect(d,0,0,W,H,g);
+ for(let i=0;i<9;i++){let x=40+i*170+5*sin(t*.2+i);line(d,[[x,75],[x-15,645]],C.aqua,1,.08)}
+}
+function header(d,t,chapter){line(d,[[69,60],[1210,60]],C.mint,1,.24);
+ text(d,"RUWAIDIX  /  PHARMACEUTICAL SCIENCES",71,43,14,C.mint,"mono");
+ text(d,"FILM 06  /  INHALABLE VESICLES",1210,43,13,C.dim,"mono",1,"right");
+ line(d,[[72,681],[1208,681]],C.mint,1,.24);
+ line(d,[[72,681],[72+1136*t/84,681]],C.copper,3,.93);
+ text(d,String(chapter+1).padStart(2,"0")+" / 06",73,662,14,C.dim,"mono");
+}
+function molecule(d,x,y,t,s=.7){
+ d.save();d.translate(x,y);d.rotate(.10*sin(t*.6+x*.01));d.scale(s,s);
+ const q=[[-43,-5],[-22,-28],[12,-22],[41,4],[12,33],[-22,21]];
+ for(let i=0;i<6;i++)line(d,[q[i],q[(i+1)%6]],C.copper,4,.85);
+ for(let i=0;i<6;i++)dot(d,q[i][0],q[i][1],7,i%3?C.copper:C.amber);
+ dot(d,6,0,8,C.rust,.7);d.restore()
+}
+function bilayer(d,cx,cy,r,t,anisotropy=0,outerAlpha=1){
+ d.save();d.translate(cx,cy);
+ // Mechanistic cartoon: undulating vesicular bilayer, not a measured structure.
+ const N=52;
+ for(let layer=0;layer<2;layer++){
+  const rad=r-(layer===1?25:0),head=layer===0?C.mint:C.aqua;
+  for(let k=0;k<N;k++){
+   let th=k*TAU/N;
+   let deform=anisotropy*(.22*cos(th*2+t*.48)+.05*sin(th*5+t*.8))*r;
+   let rr=rad+deform+2*sin(t*.35+k*.38),ox=rr*cos(th),oy=(rr-anisotropy*.09*r)*sin(th);
+   let inner=layer===0?-12:12;
+   line(d,[[ox+inner*cos(th),oy+inner*sin(th)],
+      [ox+(inner*1.8)*cos(th)+3*cos(t*.62+th*3),
+       oy+(inner*1.8)*sin(th)+3*sin(t*.45+th*4)]],C.copper,2,outerAlpha*.75);
+   dot(d,ox,oy,6.3,head,outerAlpha*.96);
+  }
+ }
+ ring(d,0,0,r-12,C.sea,5,.6*outerAlpha);
+ d.restore();
+}
+function inside(d,cx,cy,r,t,count=9){
+ for(let k=0;k<count;k++){
+  const ph=k*2.39996,rr=(r-64)*Math.sqrt((k+1)/(count+1))*.74;
+  molecule(d,cx+rr*cos(ph+t*.07),cy+rr*sin(ph+t*.055),t,.29);
+ }
+}
+function movingParticle(d,x0,y0,x1,y1,t,speed=1,c=C.mint){
+ for(let i=0;i<8;i++){
+  let q=(t*.17*speed+i/8)%1;
+  const x=mix(x0,x1,q),y=mix(y0,y1,q)+18*sin(PI*q);
+  dot(d,x,y,2.4+(i%3)*.4,c,.15+.64*sin(PI*q));
+ }
+}
+function container(d,x,y,w=220,h=290,t=0){
+ d.save();d.fillStyle="rgba(127,212,202,.08)";d.strokeStyle="#80b3ae";d.lineWidth=3;
+ d.beginPath();d.roundRect(x,y,w,h,17);d.fill();d.stroke();
+ let yy=y+94+5*sin(t*.4);let gg=d.createLinearGradient(0,yy,0,y+h);
+ gg.addColorStop(0,"rgba(66,142,146,.20)");gg.addColorStop(1,"rgba(71,129,132,.50)");
+ d.fillStyle=gg;d.beginPath();d.roundRect(x+10,yy,w-20,y+h-yy-11,8);d.fill();
+ line(d,[[x+13,yy],[x+w/2,yy+4*sin(t*.62)],[x+w-13,yy]],C.mint,2,.45);
+ for(let k=0;k<5;k++){let vx=x+30+k*33;dot(d,vx,yy+46+(k%2)*32+7*sin(t*.4+k),2.5,C.amber,.65)}
+ d.restore();
+}
+function airflow(d,t,x=100,y=425,len=1080){
+ for(let k=0;k<10;k++){
+  let offset=k*21;let coords=[];
+  for(let i=0;i<=38;i++){let q=i/38;coords.push([x+q*len,y-98+offset+18*sin(q*TAU+t*.24+k*.5)])}
+  line(d,coords,k%2?C.aqua:C.mint,1.9,.12);
+ }
+}
+function droplet(d,cx,cy,r,t,col=C.aqua,vesicles=false){
+ d.save();d.translate(cx,cy);
+ let points=[];for(let i=0;i<=80;i++){let th=i/80*TAU;
+  let wave=1+.025*sin(th*4+t*.55)+.025*sin(th*6-t*.31);
+  points.push([r*wave*cos(th),r*wave*sin(th)]);}
+ d.beginPath();d.moveTo(...points[0]);for(let i=1;i<points.length;i++)d.lineTo(...points[i]);d.closePath();
+ d.fillStyle="rgba(47,118,129,.37)";d.fill();d.strokeStyle=C.mint;d.lineWidth=2.4;d.stroke();
+ if(vesicles){for(let k=0;k<6;k++){let a=k*2.399963,rr=r*.64*Math.sqrt((k+1)/7);
+  dot(d,rr*cos(a+t*.11),rr*sin(a-t*.08),7,C.amber,.73);
+ }}
+ d.restore();
+}
+function workbench(d,t){
+ let img=photos[0],aspect=img.naturalWidth/img.naturalHeight;
+ d.save();d.beginPath();d.roundRect(105,184,1069,362,12);d.clip();
+ // Archival photography kept intact in its aspect ratio. Camera pans across its frame.
+ let scale=Math.max(1069/img.naturalWidth,362/img.naturalHeight)*1.02;
+ let ww=img.naturalWidth*scale,hh=img.naturalHeight*scale;
+ let shift=18*sin(t*.18),x=105+(1069-ww)/2+shift,y=184+(362-hh)/2+5*cos(t*.25);
+ d.drawImage(img,x,y,ww,hh);
+ let shade=d.createLinearGradient(0,184,0,550);
+ shade.addColorStop(0,"rgba(4,23,29,.12)");shade.addColorStop(1,"rgba(4,23,29,.30)");
+ d.fillStyle=shade;d.fillRect(105,184,1069,362);d.restore();
+}
+function s0(d,t){
+ background(d,t);airflow(d,t);
+ title(d,"The vial is not the lung.",86,165,68,t,.3);
+ const p=ease(seg(t,3.1,8.4));
+ container(d,242,280,183,286,t);
+ bilayer(d,mix(332,855,p),mix(409,419,p),65,t,.07);
+ inside(d,mix(332,855,p),mix(409,419,p),65,t,4);
+ line(d,[[450,410],[710,410]],C.copper,3,p);
+ movingParticle(d,456,410,713,410,t,1,C.amber);
+ text(d,"FORMULATION",201,615,17,C.dim,"mono",outEase(seg(t,4,5)));
+ text(d,"DELIVERY CHALLENGE",808,615,17,C.copper,"mono",outEase(seg(t,5,6)));
+ text(d,"A promising preparation still has to pass a device.",89,249,24,C.fog,"serif",outEase(seg(t,7,8)));
+ header(d,t,0);
+}
+function s1(d,t){
+ background(d,t);let l=t-B[1];
+ title(d,"Design the membrane.",83,151,65,t,B[1]+.3);
+ let z=outEase(seg(l,1,6));
+ bilayer(d,663,414,173*z+30,t,.045*z);
+ inside(d,663,414,173*z+30,t,11);
+ for(let k=0;k<13;k++){
+  let theta=(k/13)*TAU+.20;
+  let rr=260+12*sin(t*.26+k);
+  dot(d,663+rr*cos(theta),414+rr*sin(theta),4.5,k%3===0?C.amber:C.mint,.25+.2*z);
+ }
+ line(d,[[866,290],[1043,249]],C.copper,2,.64*z);
+ text(d,"SURFACTANT",1048,247,20,C.mint,"mono",z);
+ line(d,[[889,469],[1056,521]],C.copper,2,.64*z);
+ text(d,"CHOLESTEROL",1063,529,18,C.copper,"mono",z);
+ text(d,"SPAN 60   /   CHOLESTEROL   /   DEXAMETHASONE",82,622,20,C.fog,"mono",outEase(seg(l,6,7)));
+ text(d,"NIOSOME   ·   PRONIOSOME",82,653,16,C.dim,"mono",outEase(seg(l,9,10)));
+ header(d,t,1);
+}
+function s2(d,t){
+ background(d,t);let l=t-B[2];
+ title(d,"Characterize before claiming.",85,143,55,t,B[2]+.3);
+ if(l<7.7){
+  workbench(d,t);
+  rect(d,106,496,728,48,"rgba(6,28,36,.84)");
+  text(d,"ARCHIVAL LAB WORKBENCH · CONTEXT ONLY",127,528,18,C.foam,"mono");
+ }else{
+  bilayer(d,537,372,131,t,.02);
+  inside(d,537,372,131,t,8);
+  let state=outEase(seg(l,8.0,9.2));
+  const x0=847,y0=308;
+  for(let k=0;k<26;k++){
+   let px=x0+(k%7)*31+12*sin(t*.51+k),py=y0+Math.floor(k/7)*43+11*cos(t*.63+k);
+   dot(d,px,py,3+(k%3)*.8,C.mint,.15+.6*state);
+  }
+  text(d,"DLS : SIZE / PDI",767,545,21,C.mint,"mono",state);
+  text(d,"DRUG ASSAY : METHOD FIRST",767,584,18,C.amber,"mono",state);
+ }
+ text(d,"A measurement needs conditions, controls, uncertainty.",95,620,22,C.fog,"serif",outEase(seg(l,5,6)));
+ header(d,t,2);
+}
+function s3(d,t){
+ background(d,t);let l=t-B[3];title(d,"Now comes the stress test.",86,143,60,t,B[3]+.25);
+ // Device silhouette based on generic fluid mechanics, not a real user's exact nebulizer.
+ rounded(d,110,318,302,211,24,C.slate);
+ rounded(d,150,352,120,141,13,C.sea);
+ container(d,175,377,76,102,t);
+ line(d,[[409,371],[513,371],[560,332],[661,332]],C.fog,9,.85);
+ let jet=ease(seg(l,2,8));
+ for(let i=0;i<64;i++){
+  let q=(t*.24+i*.61803398875)%1,spread=(q*.2+q*q*.4);
+  const x=644+q*510,y=361+100*spread*sin(i*2.399+t*.27);
+  const size=4.8-(q*2.2)+(i%3)*.3;
+  dot(d,x,y,size,i%4===0?C.copper:C.aqua,jet*(.2+.6*(1-q)));
+ }
+ bilayer(d,mix(525,882,jet),mix(335,388,jet),67-5*jet,t,.12*jet,.85);
+ if(l>5.7){line(d,[[929,500],[1136,500]],C.copper,2,.7);
+  text(d,"VERIFY INTEGRITY",958,537,18,C.copper,"mono");
+  text(d,"BEFORE  /  AFTER",956,568,16,C.dim,"mono");}
+ text(d,"Nebulization applies mechanical and interfacial stresses.",86,622,22,C.fog,"serif",outEase(seg(l,3.9,5)));
+ header(d,t,3);
+}
+function s4(d,t){
+ background(d,t);let l=t-B[4];title(d,"From droplet to deposited dose.",84,139,54,t,B[4]+.3);
+ airflow(d,t,150,389,880);
+ let stage=ease(seg(l,1.8,11));
+ const linePts=[[148,390],[449,391],[635,331],[824,385],[1108,385]];
+ line(d,linePts,C.mint,5,.55);
+ for(let i=0;i<17;i++){
+  let q=(stage*.94+i*.059)%1,x=mix(174,1055,q),
+  y=385+35*sin(q*PI*2+i*.36);
+  droplet(d,x,y,6+(i%4)*2.2,t,C.aqua,i%6===0);
+ }
+ let cx=mix(295,904,stage);
+ droplet(d,cx,354+17*sin(l*.32),43-14*stage,t,C.aqua,true);
+ // NGI stages: empty mechanical bins with no data and no inferred percentages.
+ for(let k=0;k<5;k++){let x=370+k*155;
+  line(d,[[x,520],[x,563]],C.fog,2,.7);
+  rounded(d,x-27,563,54,31,6,C.sea);
+  text(d,"?",x,586,20,C.amber,"mono",1,"center");}
+ text(d,"AEROSOL OUTPUT",103,641,18,C.fog,"mono",outEase(seg(l,4,5)));
+ text(d,"SIZE DISTRIBUTION",521,641,18,C.fog,"mono",outEase(seg(l,6,7)));
+ text(d,"DEPOSITION?",970,641,18,C.copper,"mono",outEase(seg(l,8,9)));
+ header(d,t,4);
+}
+function s5(d,t){
+ background(d,t);let l=t-B[5];
+ title(d,"A study, not a result.",85,145,62,t,B[5]+.2);
+ const statuses=[
+  ["FORMULATION IDENTITY","DEFINE"],
+  ["SIZE / POLYDISPERSITY","MEASURE"],
+  ["DRUG CONTENT","VALIDATE"],
+  ["AFTER NEBULIZATION","COMPARE"],
+  ["AERODYNAMIC DEPOSITION","ESTABLISH"]
+ ];
+ for(let i=0;i<statuses.length;i++){
+  const p=outEase(seg(l,1+i*.8,2+i*.8)),y=236+i*71;
+  rounded(d,100,y,1050,51,8,"#18333c");
+  line(d,[[100,y+50],[1148,y+50]],C.mint,2,p*.24);
+  text(d,statuses[i][0],123,y+32,20,C.fog,"mono",p);
+  text(d,statuses[i][1],1079,y+32,19,i%2?C.amber:C.mint,"mono",p,"right");
+  dot(d,1112,y+25,4,C.copper,p);
+ }
+ text(d,"Ongoing MSc investigation · No unpublished performance claims",104,628,18,C.copper,"mono",outEase(seg(l,7,8)));
+ // Return to the vesicle as a question rather than fake outcome.
+ bilayer(d,1178,100,52,t,.06,.65);
+ header(d,t,5);
+}
+const SCENES=[s0,s1,s2,s3,s4,s5];
+function scene(d,i,t){d.save();SCENES[i](d,t);d.restore()}
+function draw(t){
+ t=clamp(t,0,DURATION-1/FPS);
+ let i=5;for(let j=0;j<6;j++)if(t>=B[j]&&t<B[j+1]){i=j;break}
+ let tr=-1;for(let k=1;k<6;k++)if(t>=B[k]-.42&&t<B[k]+.42){tr=k;break}
+ out.setTransform(1.5,0,0,1.5,0,0);
+ if(tr<0){scene(dc[0],i,t);out.drawImage(buffers[0],0,0);return;}
+ scene(dc[0],tr-1,t);scene(dc[1],tr,t);let p=ease(seg(t,B[tr]-.42,B[tr]+.42));
+ out.drawImage(buffers[0],0,0);out.save();out.beginPath();
+ if(tr%2){out.arc(590,377,Math.hypot(W,H)*p,0,TAU)}
+ else{let x=(W+170)*p-90;out.moveTo(0,0);out.lineTo(x,0);out.lineTo(x-120,H);out.lineTo(0,H);out.closePath()}
+ out.clip();out.drawImage(buffers[1],0,0);out.restore();
+}
+window.__meta={W:1920,H:1080,FPS,DURATION,title:"Will the Medicine Survive the Nebulizer?",source:"Ongoing MSc thesis, unpublished; no efficacy, encapsulation or deposition outcomes"};
+window.__draw=t=>{draw(t);return t};window.__ready=false;
+Promise.all([document.fonts.ready,...photos.map(img=>new Promise((ok,fail)=>{if(img.complete&&img.naturalWidth>0)return ok();img.addEventListener("load",ok,{once:true});img.addEventListener("error",()=>fail(Error("Original source photo missing "+img.id)),{once:true})}))])
+.then(()=>{window.__ready=true;draw(0)}).catch(e=>window.__renderError=String(e));
+let playing=false,at=0;function playback(now){if(!playing)return;let t=(now-at)/1000;if(t>=DURATION){playing=false;draw(DURATION-.1);return;}draw(t);requestAnimationFrame(playback)}
+document.addEventListener("click",()=>{playing=!playing;if(playing){at=performance.now();requestAnimationFrame(playback)}});
+</script></body></html>
