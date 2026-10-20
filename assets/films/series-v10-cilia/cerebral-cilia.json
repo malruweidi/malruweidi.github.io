@@ -25,6 +25,7 @@
     }
   ],
   "used_genuine_microscopy": true,
+  "archival_continuity": "Only forward playback; cross-dissolve between genuine recordings if both available; no frozen last frames",
   "fallback": "Purely editorial animation if archived video not available; no counterfeit footage",
   "scene_bounds": [
     0.0,
@@ -47,5 +48,5 @@
   "scientific_limit": "Nonmotile primary cilium has passive small deformation; flow drawing is conceptual, not particle data; no causal or clinical extrapolation",
   "preservation": "Distinct review folder. Does not overwrite originals or public website video.",
   "human_review": "Full screening, pronunciation and legal usage still required",
-  "sha256": "5b7408329807167069ad76d2d535c6f577832e705710b89f69bd9ee2cac23dc0"
+  "sha256": "a44961539b2d5b45c8ec9f0b70881bde0a4a9b0f96d0cc0b137ab305848138eb"
 }
