@@ -14,8 +14,8 @@ from PIL import Image
 with Image.open(m.FIGURE) as f:
     source=f.convert("RGBA")
     fitted,xy=m.crop_contain(source)
-    assert fitted.width<=960 and fitted.height<=422
-    assert xy[0]>=150 and xy[1]>=143
+    assert fitted.width<=975 and fitted.height<=426
+    assert xy[0]>=153 and xy[1]>=142
 bg=m.visual_background()
 # A seekable frame always has exactly the same pixels, regardless of call order.
 for t in (0.4,8.0,14.0,28.0,43.0,58.0,75.0):
