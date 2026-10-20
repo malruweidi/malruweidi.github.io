@@ -41,6 +41,10 @@ jobs:
         run: node --test tests/homepage-chapter-navigation.test.mjs
       - name: Check editorial wayfinding and chapter preservation
         run: node --test tests/editorial-wayfinding.test.mjs
+      - name: Test accessible mobile Explore and bilingual page context
+        run: node --test tests/responsive-wayfinding-2026.test.cjs
+      - name: Verify new reading, screen and training pages are discoverable
+        run: node --test tests/public-discovery-coverage-2026.test.cjs
       - name: Re-audit editorial prose and preserved scientific provenance
         run: node --test tests/editorial-voice.test.mjs
       - name: Guard public captions, film links and story translations

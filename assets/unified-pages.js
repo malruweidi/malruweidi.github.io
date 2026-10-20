@@ -9,6 +9,27 @@ const ready=()=>{
   const logo="/assets/ruwaidix-approved.webp";
   const pages={
     "full-record.html":["Complete research record","السجل العلمي الكامل"],
+    "research.html":["Research investigations","الأبحاث والدراسات"],
+    "publications.html":["Publications & scholarly works","المنشورات والأعمال العلمية"],
+    "writing.html":["Essays & writing","المقالات والكتابة"],
+    "reading-map.html":["A reader’s map","خريطة القراءة"],
+    "search.html":["Find the thread","البحث في الأرشيف"],
+    "recommendations.html":["Recommendations","ترشيحات للقراءة والمشاهدة"],
+    "recommended-books.html":["Recommended books","كتب مقترحة"],
+    "recommended-essays.html":["Recommended essays","مقالات مقترحة"],
+    "recommended-screen.html":["Film & television recommendations","ترشيحات السينما والتلفزيون"],
+    "training.html":["Research training","التدريب والتطوير المهني"],
+    "films.html":["Scientific films","الأفلام العلمية"],
+    "film.html":["Research film","فيلم بحثي"],
+    "publication-cinema.html":["Publication cinema","سينما المنشورات"],
+    "molecular-therapeutics.html":["Molecular therapeutics","العلاجات الجزيئية"],
+    "illness-and-evidence.html":["Illness & evidence","المرض والدليل"],
+    "behind-the-record.html":["Behind the record","خلف السجل"],
+    "major-revisions.html":["Major Revisions","المراجعات الكبرى"],
+    "scientific-fieldnotes-2026.html":["Scientific fieldnotes","ملاحظات علمية"],
+    "doctoral-concepts.html":["Doctoral research concepts","تصورات البحث للدكتوراه"],
+    "evidence-viewer.html":["Research evidence viewer","عارض الأدلة البحثية"],
+    "methods-evidence.html":["Methods & evidence","الطرق والأدلة"],
     "techniques.html":["Methods atlas","أطلس التقنيات"],
     "figures.html":["Figures & evidence","الأشكال والأدلة"],
     "computing.html":["AI & computing","الذكاء الاصطناعي والحوسبة"],
@@ -40,25 +61,39 @@ const ready=()=>{
     ["/full-record.html#quality","Quality & process","الجودة والعمليات"],
     ["/full-record.html#give-eosinophilic","Patient advocacy","دعم المرضى"]
   ];
+  const hubLinks=[
+    ["/research.html","Research investigations","الأبحاث والدراسات"],
+    ["/publications.html","Publications index","فهرس المنشورات"],
+    ["/writing.html","Essays & writing","المقالات والكتابة"],
+    ["/reading-map.html","Reader’s map","خريطة القراءة"],
+    ["/recommendations.html","Reading & viewing","القراءة والمشاهدة"],
+    ["/training.html","Research training","التدريب البحثي"],
+    ["/full-record.html","Complete historical record","السجل التاريخي الكامل"]
+  ];
   function h(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;")}
   const selected=u=>u.split("#")[0]===location.pathname;
   const locale=()=>document.documentElement.lang==="ar"?"ar":"en";
   const label=(en,ar)=>locale()==="ar"?ar:en;
-  const link=([u,en,ar])=>'<a href="'+h(u)+'" data-en="'+h(en)+'" data-ar="'+h(ar)+'"'+(selected(u)?' aria-current="page"':'')+'>'+h(label(en,ar))+'</a>';
+  const link=([u,en,ar],extraClass="")=>'<a'+(extraClass?' class="'+h(extraClass)+'"':'')+' href="'+h(u)+'" data-en="'+h(en)+'" data-ar="'+h(ar)+'"'+(selected(u)?' aria-current="page"':'')+'>'+h(label(en,ar))+'</a>';
   const header=document.createElement("header");
   header.className="rx-universal";
   header.setAttribute("aria-label","Global website navigation");
-  header.innerHTML='<a class="rx-skip" href="#rx-content">Skip to content</a><div class="rx-inner"><a class="rx-identity" href="/index.html" aria-label="Mahmoud Al-Ruweidi home"><img class="rx-mark" src="'+logo+'" alt="Approved Ruwaidix logo" width="48" height="48"><span class="rx-brand"><strong>Mahmoud Al-Ruweidi</strong><small>RESEARCH / DRUG DELIVERY / LIVING SYSTEMS</small></span></a><nav class="rx-primary" aria-label="Primary">'+items.slice(0,5).map(link).join("")+'<details class="rx-more"><summary data-en="Explore" data-ar="استكشف">'+h(label("Explore","استكشف"))+'</summary><div class="rx-menu-panel"><span class="rx-menu-label">RESEARCH · SCHOLARSHIP · COMMUNITY</span>'+items.slice(5).map(link).join("")+'<div class="rx-langs" role="group" aria-label="Language"><span data-en="Language" data-ar="اللغة">'+h(label("Language","اللغة"))+'</span><button type="button" data-language="en" aria-pressed="'+(locale()==="en")+'">EN</button><button type="button" data-language="ar" aria-pressed="'+(locale()==="ar")+'">العربية</button></div></div></details></nav></div>';
+  header.innerHTML='<a class="rx-skip" href="#rx-content">Skip to content</a><div class="rx-inner"><a class="rx-identity" href="/index.html" aria-label="Mahmoud Al-Ruweidi home"><img class="rx-mark" src="'+logo+'" alt="Approved Ruwaidix logo" width="48" height="48"><span class="rx-brand"><strong>Mahmoud Al-Ruweidi</strong><small>RESEARCH / DRUG DELIVERY / LIVING SYSTEMS</small></span></a><nav class="rx-primary" aria-label="Primary">'+items.slice(0,5).map(link).join("")+'<details class="rx-more"><summary data-en="Explore" data-ar="استكشف">'+h(label("Explore","استكشف"))+'</summary><div class="rx-menu-panel"><span class="rx-menu-label rx-mobile-route" data-en="START HERE" data-ar="ابدأ هنا">'+h(label("START HERE","ابدأ هنا"))+'</span>'+items.slice(0,5).map(entry=>link(entry,"rx-mobile-route")).join("")+'<span class="rx-menu-label" data-en="FEATURED DESTINATIONS" data-ar="الأقسام الرئيسية">'+h(label("FEATURED DESTINATIONS","الأقسام الرئيسية"))+'</span>'+hubLinks.map(entry=>link(entry)).join("")+'<span class="rx-menu-label" data-en="MORE FROM THE RECORD" data-ar="المزيد من السجل">'+h(label("MORE FROM THE RECORD","المزيد من السجل"))+'</span>'+items.slice(5).map(link).join("")+'<div class="rx-langs" role="group" aria-label="Language"><span data-en="Language" data-ar="اللغة">'+h(label("Language","اللغة"))+'</span><button type="button" data-language="en" aria-pressed="'+(locale()==="en")+'">EN</button><button type="button" data-language="ar" aria-pressed="'+(locale()==="ar")+'">العربية</button></div></div></details></nav></div>';
   const currentHeader=Array.from(document.body.children).find(el=>el.tagName==="HEADER"&&el.querySelector("nav")&&!el.classList.contains("heading"));
   if(currentHeader){currentHeader.classList.add("rx-legacy-header");currentHeader.setAttribute("aria-hidden","true");currentHeader.querySelectorAll("a,button,input,select").forEach(el=>el.setAttribute("tabindex","-1"))}
   const directNav=Array.from(document.body.children).find(el=>el.classList&&el.classList.contains("nav")&&el.tagName!=="HEADER"&&el.querySelectorAll("a").length>1);
   if(directNav){directNav.classList.add("rx-legacy-nav");directNav.setAttribute("aria-hidden","true");directNav.querySelectorAll("a,button").forEach(el=>el.setAttribute("tabindex","-1"))}
   const main=document.querySelector("main");
-  if(main&&!main.id)main.id="rx-content";
-  else if(!document.getElementById("rx-content")){const content=document.createElement("span");content.id="rx-content";content.tabIndex=-1;if(main)main.before(content);else document.body.prepend(content)}
+  if(main){
+    if(!main.id)main.id="rx-content";
+    header.querySelector(".rx-skip").setAttribute("href","#"+main.id);
+    if(!main.hasAttribute("tabindex"))main.tabIndex=-1;
+  } else if(!document.getElementById("rx-content")){
+    const content=document.createElement("span");content.id="rx-content";content.tabIndex=-1;document.body.prepend(content);
+  }
   document.body.prepend(header);
-  const context=document.createElement("div");context.className="rx-context";
-  context.innerHTML='<div class="rx-context-inner"><a href="/index.html" data-en="Home" data-ar="الرئيسية">'+h(label("Home","الرئيسية"))+'</a><span class="rx-delimiter">/</span><span data-en="'+h(current[0])+'" data-ar="'+h(current[1])+'">'+h(label(current[0],current[1]))+'</span></div>';
+  const context=document.createElement("nav");context.className="rx-context";context.setAttribute("aria-label",label("Breadcrumb","مسار التصفح"));
+  context.innerHTML='<div class="rx-context-inner"><a href="/index.html" data-en="Home" data-ar="الرئيسية">'+h(label("Home","الرئيسية"))+'</a><span class="rx-delimiter" aria-hidden="true">/</span><span aria-current="page" data-en="'+h(current[0])+'" data-ar="'+h(current[1])+'">'+h(label(current[0],current[1]))+'</span></div>';
   header.insertAdjacentElement("afterend",context);
   /* Retain the original page's in-page navigation without duplicating the old masthead. */
   const originalJumps=currentHeader?Array.from(currentHeader.querySelectorAll('a[href^="#"]')):[];
@@ -80,10 +115,11 @@ const ready=()=>{
     details.appendChild(links);context.querySelector(".rx-context-inner").appendChild(details);
     links.addEventListener("click",()=>{details.open=false});
     document.addEventListener("click",e=>{if(!details.contains(e.target))details.open=false});
+    document.addEventListener("keydown",e=>{if(e.key==="Escape"&&details.open){details.open=false;summary.focus()}});
   }
 
   document.documentElement.classList.add("rx-site-theme");
-  function refresh(){header.querySelectorAll("[data-en][data-ar]").forEach(el=>{el.textContent=el.dataset[locale()]});header.querySelectorAll("button[data-language]").forEach(el=>el.setAttribute("aria-pressed",String(el.dataset.language===locale())));context.querySelectorAll("[data-en][data-ar]").forEach(el=>{el.textContent=el.dataset[locale()]})}
+  function refresh(){context.setAttribute("aria-label",label("Breadcrumb","مسار التصفح"));header.setAttribute("aria-label",label("Global website navigation","التنقل في الموقع"));header.querySelectorAll("[data-en][data-ar]").forEach(el=>{el.textContent=el.dataset[locale()]});header.querySelectorAll("button[data-language]").forEach(el=>el.setAttribute("aria-pressed",String(el.dataset.language===locale())));context.querySelectorAll("[data-en][data-ar]").forEach(el=>{el.textContent=el.dataset[locale()]})}
   header.querySelectorAll("button[data-language]").forEach(button=>button.addEventListener("click",()=>{const l=button.dataset.language;try{localStorage.setItem("ruwaidix-language",l)}catch(e){}const u=new URL(location.href);u.searchParams.set("lang",l);location.assign(u.toString())}));
   document.addEventListener("click",e=>{const d=header.querySelector("details.rx-more");if(d&&!d.contains(e.target))d.open=false});
   document.addEventListener("keydown",e=>{if(e.key==="Escape"){const d=header.querySelector("details.rx-more");if(d?.open){d.open=false;d.querySelector("summary").focus()}}});
