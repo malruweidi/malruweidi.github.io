@@ -34,6 +34,17 @@ source=Image.new("RGB",(320,240),(221,24,37))
 target=Image.new("RGB",(1280,720),mod.INK)
 mod.draw_archival(target,source,2.5,1)
 assert (221,24,37) in target.getdata(), "Actual moving-source frame was not incorporated"
+# Short original clips must never become frozen final frames.
+first=[Image.new("RGB",(320,240),(150+i,20,22)) for i in range(8)]
+second=[Image.new("RGB",(320,240),(20,22,150+i)) for i in range(9)]
+pair={1:first,4:second}
+early=mod.frame_for_scene(1,.15,pair)
+late=mod.frame_for_scene(1,1.7,pair)
+assert early.getpixel((0,0))[0]>100
+assert late.getpixel((0,0))[2]>100, "End of source clip wrongly frozen"
+assert mod.frame_for_scene(1,1.71,pair).size==(320,240)
+single=mod.frame_for_scene(1,1.7,{1:first})
+assert single.tobytes()!=first[-1].tobytes(), "Single source must loop instead of freeze"
 # No claim of cilia beating from a nonmotile primary cilium.
 script=path.read_text()
 assert "Passive bending only" in script
