@@ -1,0 +1,148 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>When a Molecule Becomes a Question | Ruwaidix Film 04</title><style>
+html,body{margin:0;background:#111410;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+#primary-figure{position:absolute;left:-9999px;width:1px;height:1px}
+</style></head><body><h1 class="sr-only">When a Molecule Becomes a Question — Curcumin and Cyanide Sensing</h1>
+<img id="primary-figure" src="../../home-archive/figure-cyanide-sensor.jpg" alt="Original published four-panel optical and fluorescence figure from Hijji and colleagues, 2019">
+<canvas id="screen" width="1920" height="1080" role="img" aria-label="Cinematic molecular color essay using the authentic published curcumin sensing figure and distinguishable explanatory motion"></canvas>
+<script>
+"use strict";
+// Original film 04 — source-grounded animation. Every frame is a pure function
+// of absolute time. No created molecular coordinates, measured calibration
+// curves, patient data, or invented microscopy.
+const W=1280,H=720,FPS=24,DURATION=84;
+const B=[0,12.50,25.75,40.42,55.08,69.83,84];
+const C={black:"#131610",shadow:"#273022",dark:"#26221c",paper:"#f1eadb",ivory:"#fffaed",
+  yellow:"#edc63c",deepYellow:"#c59b27",orange:"#e47632",scarlet:"#b83d2f",
+  green:"#6b8f77",lilac:"#aa8dc8",violet:"#4c3764",steel:"#85968c",
+  ink:"#22251f",muted:"#b8bcac",whitish:"#f8f2df",gray:"#7a8177"};
+const root=document.getElementById("screen"),ctx=root.getContext("2d",{alpha:false});
+const buffer=[document.createElement("canvas"),document.createElement("canvas")];
+buffer.forEach(q=>{q.width=W;q.height=H});const dc=buffer.map(q=>q.getContext("2d",{alpha:false}));
+const source=document.getElementById("primary-figure");
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const smooth=x=>{x=clamp(x);return x*x*(3-2*x)};
+const out=x=>1-(1-clamp(x))**3;
+const mix=(a,b,p)=>a+(b-a)*p;
+const sin=Math.sin,cos=Math.cos,PI=Math.PI;
+function rect(d,x,y,w,h,col){d.fillStyle=col;d.fillRect(x,y,w,h)}
+function drawLine(d,points,col,w=2,a=1){d.save();d.globalAlpha=a;d.strokeStyle=col;d.lineWidth=w;d.lineCap="round";d.lineJoin="round";d.beginPath();d.moveTo(points[0][0],points[0][1]);for(let i=1;i<points.length;i++)d.lineTo(points[i][0],points[i][1]);d.stroke();d.restore()}
+function circle(d,x,y,r,col,a=1){d.save();d.globalAlpha=a;d.beginPath();d.arc(x,y,Math.max(1,r),0,2*PI);d.fillStyle=col;d.fill();d.restore()}
+function outline(d,x,y,r,col,w=2,a=1){d.save();d.globalAlpha=a;d.beginPath();d.arc(x,y,Math.max(1,r),0,2*PI);d.strokeStyle=col;d.lineWidth=w;d.stroke();d.restore()}
+function roundrect(d,x,y,w,h,r,color){d.beginPath();d.roundRect(x,y,w,h,r);d.fillStyle=color;d.fill()}
+function text(d,content,x,y,size=24,color=C.whitish,kind="sans",alpha=1,align="left"){
+  d.save();d.globalAlpha=clamp(alpha);d.fillStyle=color;d.textAlign=align;
+  d.font=size+"px "+(kind==="serif"?"Georgia,serif":kind==="mono"?"monospace":"Arial,sans-serif");
+  d.textBaseline="alphabetic";d.fillText(content,x,y);d.restore();
+}
+function title(d,content,x,y,size,t,on,color=C.whitish){let p=out(seg(t,on,on+.85));d.save();d.beginPath();d.rect(x-3,y-size*1.2,1150,(size+35)*p);d.clip();text(d,content,x,y+16*(1-p),size,color,"serif");d.restore()}
+function bar(d,x,y,len,t,on,color){let p=smooth(seg(t,on,on+1));drawLine(d,[[x,y],[x+len*p,y]],color,3)}
+function bg(d,t,light=false){rect(d,0,0,W,H,light?C.paper:C.black);d.save();d.translate(7*sin(t*.29),4*cos(t*.35));for(let k=0;k<6;k++)drawLine(d,[[120+211*k,0],[120+211*k,H]],light?"#dfd5c5":"#273025",1,.3);d.restore();let g=d.createRadialGradient(light?550:942,light?300:310,35,light?550:942,310,640);g.addColorStop(0,light?"rgba(216,159,53,.085)":"rgba(229,174,57,.065)");g.addColorStop(1,"rgba(0,0,0,0)");rect(d,0,0,W,H,g)}
+function globalFrame(d,t,j,light=false){let c=light?C.ink:C.muted;drawLine(d,[[69,61],[1210,61]],c,1,.25);text(d,"RUWAIDIX   /   CHEMISTRY IN MOTION",76,45,14,c,"mono");text(d,"04 / OPTICAL SENSING",1206,45,14,c,"mono",1,"right");drawLine(d,[[76,683],[1206,683]],c,1,.3);drawLine(d,[[76,683],[76+1130*(t/84),683]],light?C.scarlet:C.yellow,3);text(d,String(j+1).padStart(2,"0")+" / 06",79,664,13,c,"mono");}
+function beam(d,t,fromX=245,fromY=350,targetX=852,targetY=351,intensity=1){
+  d.save();let blink=.87+.1*sin(t*.71);d.globalAlpha=intensity*blink;
+  let g=d.createLinearGradient(fromX,fromY,targetX,targetY);
+  g.addColorStop(0,"rgba(239,202,62,.0)");g.addColorStop(.27,"rgba(239,202,62,.28)");g.addColorStop(.73,"rgba(239,189,61,.45)");g.addColorStop(1,"rgba(232,140,50,.05)");
+  d.beginPath();d.moveTo(fromX,fromY-11);d.lineTo(targetX,targetY-32);d.lineTo(targetX,targetY+32);d.lineTo(fromX,fromY+11);d.closePath();d.fillStyle=g;d.fill();
+  drawLine(d,[[fromX,fromY],[targetX,targetY]],C.yellow,2,.75);d.restore();}
+function cuvette(d,x,y,t,mixSignal=0,sz=1){d.save();d.translate(x,y);d.scale(sz,sz);
+ const w=146,h=250;d.fillStyle="rgba(235,240,225,.10)";d.strokeStyle="#a4b2a2";d.lineWidth=3;d.beginPath();d.roundRect(-w/2,-h/2,w,h,12);d.fill();d.stroke();
+ let surface=-47+4*sin(t*.7+x*.005);let col=mixSignal<.5?C.yellow:C.orange;
+ const grad=d.createLinearGradient(-75,0,80,0);grad.addColorStop(0,"#8b6f23");grad.addColorStop(.28,col);grad.addColorStop(.7,col);grad.addColorStop(1,"#773620");
+ d.save();d.beginPath();d.roundRect(-w/2+9,surface,w-18,164,5);d.clip();d.globalAlpha=.78;d.fillStyle=grad;d.fillRect(-70,surface,140,185);d.globalAlpha=.38;for(let j=0;j<14;j++){let xx=-58+j*9+6*sin(t*.6+j);let yy=surface+14+(j*47)%128+12*sin(t*.6+j);circle(d,xx,yy,1.5,C.whitish,.48)}d.restore();
+ drawLine(d,[[-61,surface],[-14,surface+4*sin(t*.56)],[64,surface+2*cos(t*.6)]],C.ivory,2,.64);
+ d.fillStyle="rgba(255,255,240,.2)";d.fillRect(-56,-95,7,175);d.restore();}
+function chromophore(d,t,x,y,scale=1){d.save();d.translate(x,y);d.scale(scale,scale);
+ const nodes=[];for(let i=0;i<13;i++){let xx=-420+i*67,yy=18*sin(i*1.25+t*.14);nodes.push([xx,yy]);}
+ for(let i=1;i<nodes.length;i++){let a=nodes[i-1],b=nodes[i];drawLine(d,[a,b],C.deepYellow,6,.9);if(i%2===0)drawLine(d,[[a[0],a[1]-11],[b[0],b[1]-11]],C.yellow,2,.6);}
+ for(let i=0;i<nodes.length;i++)circle(d,nodes[i][0],nodes[i][1],i===0||i===12?17:10,i%2?C.orange:C.yellow);
+ for(let k=0;k<7;k++){let q=(t*.085+k/7)%1;let px=mix(-420,384,q),py=18*sin(q*12*1.25+t*.14)-32;circle(d,px,py,4,C.whitish,.16+.55*sin(q*PI));}
+ outline(d,-420,0,45,C.orange,2,.35);outline(d,384,0,45,C.orange,2,.35);
+ d.restore();}
+function sourceFigure(d,x,y,w,h){let iw=source.naturalWidth,ih=source.naturalHeight,ar=iw/ih;
+ if(!iw||!ih)return;
+ // Keep complete actual four-panel figure; no crop, retracing or forged spectra.
+ let fitw=Math.min(w,h*ar),fith=fitw/ar;d.save();d.fillStyle="#fefcf7";d.fillRect(x-14,y-14,w+28,h+28);d.drawImage(source,x+(w-fitw)/2,y+(h-fith)/2,fitw,fith);d.restore();}
+function shot0(d,t){bg(d,t,false);let local=t;
+ title(d,"What does colour",90,177,67,t,.25);title(d,"actually tell us?",90,255,58,t,1.35,C.yellow);
+ const q=smooth(seg(t,3.0,9.2));beam(d,t,170,428,1080,421,1);cuvette(d,892,419,t,q,1.05);
+ let gx=265+125*sin(t*.5), gy=490+35*sin(t*.42);
+ for(let k=0;k<6;k++){let phase=(t*.11+k/6)%1;circle(d,160+phase*450,440+sin(phase*PI*2+k)*8,3,C.yellow,.21+.52*sin(phase*PI));}
+ text(d,"CURCUMIN",110,575,19,C.muted,"mono",out(seg(t,4.3,5.4)));
+ text(d,"LIGHT IS A READOUT. NOT AN EXPLANATION.",110,610,19,C.muted,"mono",out(seg(t,7.4,8.4)));
+ globalFrame(d,t,0);}
+function shot1(d,t){bg(d,t,false);let local=t-B[1];d.save();d.translate(0,70+12*sin(local*.23));chromophore(d,t,635,375,1.03+.014*sin(local*.35));d.restore();
+ title(d,"A molecule that",83,166,61,t,B[1]+.3);title(d,"responds to light",83,238,55,t,B[1]+1.45,C.yellow);
+ let n=14;for(let j=0;j<n;j++){let px=130+j*74;let yy=525-18*sin(local*.66-j*.6);circle(d,px,yy,2.5,C.orange,.2+.17*sin(local+j));}
+ text(d,"CURCUMIN  /  CONJUGATED ELECTRONIC SYSTEM",114,586,18,C.muted,"mono",out(seg(local,4,5)));
+ text(d,"CONCEPTUAL CHAIN • NOT AN ATOMIC STRUCTURE MODEL",114,620,14,C.gray,"mono",out(seg(local,7,8)));
+ globalFrame(d,t,1);}
+function shot2(d,t){bg(d,t,false);let l=t-B[2];
+ title(d,"An assay is a setting.",89,157,56,t,B[2]+.25);
+ // The published result is acetonitrile:water 90:10, not neat aqueous media.
+ let s=smooth(seg(l,3,9));cuvette(d,670,390,t,s,1.04);beam(d,t,190,397,1161,397,.83);
+ let a=91,by=533;drawLine(d,[[a,by],[a+990,by]],C.gray,2,.55);
+ let proportion=990*s;drawLine(d,[[a,by],[a+990*.9,by]],C.yellow,11,.88);drawLine(d,[[a+990*.9,by],[a+990,by]],C.green,11,.87);
+ // Source-reported proportions are explained, not a mixing procedure.
+ text(d,"ACETONITRILE  90%",100,572,22,C.yellow,"mono",out(seg(l,2,3.0)));
+ text(d,"WATER  10%",1181,572,21,C.green,"mono",out(seg(l,3,4)),"right");
+ text(d,"THE PAPER'S TEST MEDIUM, NOT PURE WATER",97,627,18,C.muted,"mono",out(seg(l,6,7)));
+ globalFrame(d,t,2);}
+function wavelength(d,t,x,y,w){let pulse=.5+.5*sin(t*.75);
+ for(let i=0;i<41;i++){let u=i/40,xx=x+u*w;let hue=280-260*u;d.fillStyle="hsl("+hue+" 72% 58%)";d.fillRect(xx,y,Math.ceil(w/40)+1,13)}
+ let p=smooth(seg(t,B[3]+3,B[3]+10)),u1=(421-350)/250,u2=(520-350)/250;
+ drawLine(d,[[x+w*u1,y-31],[x+w*u1,y+35]],C.yellow,4,.95);drawLine(d,[[x+w*u2,y-31],[x+w*u2,y+35]],C.orange,4,p);
+ text(d,"421 nm",x+w*u1,y-44,19,C.whitish,"mono",1,"center");
+ text(d,"520 nm",x+w*u2,y+64,19,C.orange,"mono",p,"center");
+ text(d,"+99 nm",x+w*(u1+u2)/2,y-45,22,C.yellow,"mono",p,"center");}
+function shot3(d,t){bg(d,t,false);let l=t-B[3];
+ title(d,"Absorption moves.",86,148,58,t,B[3]+.17);
+ if(l<6.4){wavelength(d,t,125,275,1032);text(d,"A bathochromic shift reported in the paper",120,377,23,C.muted,"serif",out(seg(l,2,3)));let scale=.8+.2*smooth(seg(l,2,5));cuvette(d,642,479,t,scale,0.65);}
+ else{sourceFigure(d,134,162,1020,490); // Absolutely no crop or invented curves.
+   let alpha=out(seg(l,6.4,7.1));
+   d.save();d.globalAlpha=alpha;rect(d,0,74,1280,75,C.black);text(d,"ORIGINAL 2019 FIGURE · HIJJI ET AL.",101,120,22,C.yellow,"mono");d.restore();}
+ globalFrame(d,t,3);}
+function cells(d,t,fluorescence){ // distinct illustrative cell shapes, not pretend microscopy
+ let l=t-B[4];let q=1-fluorescence*smooth(seg(l,5.5,13.5));
+ for(let k=0;k<16;k++){let x=198+(k%5)*192+10*sin(t*.31+k),y=250+Math.floor(k/5)*107+9*cos(t*.45+k*.7);
+  let r=37+3*sin(t*.52+k);d.save();d.globalAlpha=.19+.19*q;d.fillStyle=C.lilac;d.beginPath();d.ellipse(x,y,r+8,r*.76,-.22,0,2*PI);d.fill();d.restore();d.strokeStyle="#86769c";d.lineWidth=2;d.beginPath();d.ellipse(x,y,r+8,r*.76,-.22,0,2*PI);d.stroke();
+  circle(d,x,y,13,C.violet,.55);outline(d,x,y,18,C.lilac,2,.35*q);
+  for(let a=0;a<5;a++)circle(d,x+25*cos(a*1.25+k),y+16*sin(a*1.25+k),2,C.whitish,.20+.54*q);}
+}
+function shot4(d,t){bg(d,t,false);let l=t-B[4];cells(d,t,1);
+ rect(d,75,95,1145,125,"#171912");title(d,"Cells are not",91,158,57,t,B[4]+.2);title(d,"calibration vials.",91,221,55,t,B[4]+1.2,C.lilac);
+ text(d,"FLUORESCENCE QUENCHED IN LIVING CELLS OVER TIME",98,599,19,C.muted,"mono",out(seg(l,4,5)));
+ text(d,"BIOIMAGING ≠ CLINICAL VALIDATION",98,633,20,C.yellow,"mono",out(seg(l,8,9)));globalFrame(d,t,4);}
+function shot5(d,t){bg(d,t,true);let l=t-B[5];let q=smooth(seg(l,1.4,3.2));
+ rect(d,66,82,1146,102,C.paper);title(d,"A signal is the beginning.",86,157,57,t,B[5]+.25,C.ink);
+ sourceFigure(d,148,223,994,399);
+ // Full source figure preserved, held readable with shifting editorial frame.
+ let rail=92+1063*((t-B[5])/(84-B[5]));drawLine(d,[[rail,639],[rail+90,639]],C.scarlet,5,.7);
+ text(d,"421 → 520 nm  ·  +99 nm",164,650,17,C.ink,"mono",out(seg(l,4,5)));
+ text(d,"HYDROXIDE ALSO SHOWED A RESPONSE",1151,650,15,C.scarlet,"mono",out(seg(l,6,7)),"right");
+ globalFrame(d,t,5,true);}
+const scene=[shot0,shot1,shot2,shot3,shot4,shot5];
+function drawShot(c,i,t){c.save();scene[i](c,t);c.restore();}
+function draw(t){t=clamp(t,0,DURATION-1/FPS);let which=5;
+ for(let i=0;i<6;i++)if(t>=B[i]&&t<B[i+1]){which=i;break}
+ let tr=-1;for(let i=1;i<6;i++)if(t>=B[i]-.42&&t<B[i]+.42){tr=i;break}
+ ctx.setTransform(1.5,0,0,1.5,0,0);
+ if(tr<0){drawShot(dc[0],which,t);ctx.drawImage(buffer[0],0,0);return}
+ drawShot(dc[0],tr-1,t);drawShot(dc[1],tr,t);
+ let p=smooth(seg(t,B[tr]-.42,B[tr]+.42));ctx.drawImage(buffer[0],0,0);
+ ctx.save();ctx.beginPath();
+ if(tr===3||tr===5){ // analytical reveal as slit iris
+  let xx=640,yy=365;let radius=Math.hypot(W,H)*p;ctx.arc(xx,yy,radius,0,2*PI);
+ }else{ // light beam wipe; same motion grammar, motivated by color response
+  let xx=(W+220)*p-80;ctx.moveTo(-5,-5);ctx.lineTo(xx,0);ctx.lineTo(xx-105,H);ctx.lineTo(-5,H);ctx.closePath()
+ }
+ ctx.clip();ctx.drawImage(buffer[1],0,0);ctx.restore();
+}
+window.__meta={W:1920,H:1080,FPS,DURATION,film:"When a Molecule Becomes a Question",figure:"Hijji et al Analytical Methods 2019 DOI 10.1039/C9AY01557D"};
+window.__draw=(t)=>{draw(t);return t};window.__ready=false;
+Promise.all([document.fonts.ready,new Promise((ok,fail)=>{if(source.complete&&source.naturalWidth)return ok();source.addEventListener("load",ok,{once:true});source.addEventListener("error",()=>fail(new Error("Source figure missing")),{once:true})})])
+ .then(()=>{window.__ready=true;draw(0)}).catch(e=>{window.__renderError=String(e)});
+let playing=false,start=0,t0=0;function tick(now){if(!playing)return;let t=start+(now-t0)/1000;if(t>=DURATION){playing=false;draw(DURATION-.1);return}draw(t);requestAnimationFrame(tick)}
+document.addEventListener("click",()=>{playing=!playing;if(playing){t0=performance.now();requestAnimationFrame(tick)}});
+</script></body></html>
