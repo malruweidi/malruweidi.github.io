@@ -66,7 +66,7 @@ const supervisor=html.get("molecular-therapeutics.html")||"";
 const broadRoutes=["CHEMISTRY / MOLECULAR DESIGN","PHARMACEUTICS / DELIVERY","BIOMATERIALS / SOFT MATTER","CELLULAR BIOLOGY / PHARMACOLOGY","BIOENGINEERING / MEASUREMENT","COMPUTATION / QUANTITATIVE SCIENCE"];
 for(const route of broadRoutes)if(!supervisor.includes(route))error("research directions","interdisciplinary evidence-based route missing "+route);
 if((supervisor.match(/class="route-card"/g)||[]).length!==6)error("research directions","archival six-field methods record must be preserved");
-const researchQuestions = supervisor.match(/<section class="section" id="research-entry-points"[\\s\\S]*?<\\/section>/)?.[0] || "";
+const researchQuestions = supervisor.match(/<section class="section" id="research-entry-points"[\s\S]*?<\/section>/)?.[0] || "";
 if((researchQuestions.match(/class="core-card"/g)||[]).length!==3)error("research identity","expected three evidence-backed questions inside research-entry-points");
 if((supervisor.match(/class="evidence-card"/g)||[]).length!==3)error("selected evidence","expected three experimental case studies");
 for(const evidence of ["54.7 ± 3.94%","15.1 ± 3.43%","74%","184%","H. C. Yalcin","formal analysis","firsthand account"])if(!supervisor.includes(evidence))error("selected evidence","numerical finding or role attribution missing "+evidence);
