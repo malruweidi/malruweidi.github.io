@@ -1,0 +1,46 @@
+/* Three Places — additive homepage geographic identity; October 2026.
+   No map services, external scripts, personal tracking or location requests. */
+.geographies{background:#f6f3eb;color:#182e33;padding:104px 0 108px;border-top:1px solid #d7d7ce;border-bottom:1px solid #d7d7ce}
+.geographies .geo-heading{display:grid;grid-template-columns:1fr .76fr;gap:64px;align-items:end;margin-bottom:37px}
+.geographies .geo-heading .eyebrow{color:#a45e44}
+.geographies .geo-heading h2{font:400 clamp(48px,5.4vw,79px)/1.03 var(--serif,Georgia,serif);letter-spacing:-.045em;margin:18px 0 0;max-width:780px}
+.geographies .geo-heading h2 em{font-style:italic;color:#b35e42}
+.geographies .geo-lead{font:400 16px/1.95 var(--sans,Arial,sans-serif);color:#526665;max-width:520px;margin:0 0 3px}
+.geographies .geo-panel{background:#132e35;position:relative;overflow:hidden;border:1px solid #315159;box-shadow:0 24px 48px #18343a17}
+.geographies .geo-map-scroll{overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;scrollbar-color:#637d7e #17333a}
+.geographies .geo-map{width:100%;min-width:720px;height:auto;display:block;touch-action:pan-x;user-select:none}
+.geographies .geo-land{fill:#3c5c5d;stroke:#75908a;stroke-opacity:.24;stroke-width:1.2;stroke-linejoin:round}
+.geographies .geo-triangle{fill:#efd5ac;fill-opacity:.11;stroke:#e9ca9e;stroke-opacity:.23;stroke-width:1}
+.geographies .geo-arc{fill:none;stroke:#dba982;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;transition:opacity .25s,stroke-width .25s;opacity:.64}
+.geographies .geo-arc--us-egypt{stroke:#cfbbb0;stroke-dasharray:3 9}
+.geographies .geo-arc--us-qatar{stroke:#edc08a;stroke-dasharray:9 9}
+.geographies .geo-arc--egypt-qatar{stroke:#efa78c;stroke-width:3.7}
+.geographies .geo-point{cursor:pointer;outline:none}
+.geographies .geo-point .geo-ring{fill:#e7c39c;fill-opacity:.10;stroke:#efd2a5;stroke-opacity:.52;stroke-width:1.5;transition:r .2s,stroke-opacity .2s}
+.geographies .geo-point .geo-dot{fill:#f8ede0;stroke:#d99376;stroke-width:2.8}
+.geographies .geo-point .geo-label{fill:#f7f0e0;font:600 13px/1 var(--sans,Arial,sans-serif);letter-spacing:.11em;paint-order:stroke;stroke:#132e35;stroke-width:5;stroke-linejoin:round;pointer-events:none}
+.geographies .geo-point .geo-label-sub{fill:#b7d0cc;font:400 10px/1 var(--mono,monospace);letter-spacing:.035em;paint-order:stroke;stroke:#132e35;stroke-width:4;pointer-events:none}
+.geographies .geo-point:is(:hover,:focus-visible) .geo-ring,.geographies [data-selected="egypt"] .geo-point--egypt .geo-ring,.geographies [data-selected="qatar"] .geo-point--qatar .geo-ring,.geographies [data-selected="usa"] .geo-point--usa .geo-ring{stroke-opacity:1;fill-opacity:.26;stroke-width:3}
+.geographies .geo-point:focus-visible .geo-dot{stroke:#fff;stroke-width:4}
+.geographies .geo-map-topline{position:absolute;left:25px;top:20px;right:25px;display:flex;justify-content:space-between;gap:20px;color:#c2d2cd;font:10px/1.5 var(--mono,monospace);letter-spacing:.15em;pointer-events:none;text-transform:uppercase}
+.geographies .geo-map-footer{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:14px 24px;color:#c1d1cb;background:#1b373f;font:10px/1.7 var(--mono,monospace);border-top:1px solid #34535a;flex-wrap:wrap}
+.geographies .geo-legend{display:flex;gap:20px;flex-wrap:wrap}
+.geographies .geo-legend span{display:inline-flex;gap:8px;align-items:center}
+.geographies .geo-key{width:24px;height:0;border-top:2px solid #e8a48d;display:inline-block}
+.geographies .geo-key--dotted{border-color:#eac18e;border-top-style:dashed}
+.geographies .geo-places{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#d4d9d1;border:1px solid #d4d9d1;border-top:none}
+.geographies .geo-place{min-width:0;display:flex;flex-direction:column;gap:0;background:#fbfaf4;text-align:left;border:0;outline-offset:-4px;padding:26px 26px 25px;color:#223a3b;cursor:pointer;transition:background .2s,box-shadow .2s}
+.geographies .geo-place:hover,.geographies .geo-place:focus-visible,.geographies .geo-place[aria-pressed="true"]{background:#e8eee6;box-shadow:inset 0 4px #af6b50}
+.geographies .geo-place .geo-index{color:#a35c44;font:10px/1.4 var(--mono,monospace);letter-spacing:.13em}
+.geographies .geo-place h3{font:400 32px/1.1 var(--serif,Georgia,serif);letter-spacing:-.02em;margin:14px 0 4px}
+.geographies .geo-place .geo-role{font:600 10px/1.5 var(--mono,monospace);letter-spacing:.08em;text-transform:uppercase;color:#7c4f42}
+.geographies .geo-place p{margin:12px 0 0;color:#556969;font:12px/1.8 var(--sans,Arial,sans-serif)}
+.geographies .geo-afterword{display:flex;gap:32px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-top:18px}
+.geographies .geo-afterword p{margin:0;max-width:700px;color:#657774;font:11px/1.75 var(--sans,Arial,sans-serif)}
+.geographies .geo-afterword a{color:#95533e;text-decoration:underline;text-underline-offset:5px;font:600 12px var(--sans,Arial,sans-serif)}
+.geographies [data-selected="egypt"] .geo-arc--us-qatar,.geographies [data-selected="qatar"] .geo-arc--us-egypt{opacity:.22}
+.geographies [data-selected="usa"] .geo-arc--egypt-qatar{opacity:.22}
+.geographies [data-selected="egypt"] .geo-arc--us-egypt,.geographies [data-selected="qatar"] .geo-arc--us-qatar,.geographies [data-selected="usa"] .geo-arc--us-qatar{stroke-width:4;opacity:1}
+@media(max-width:900px){.geographies{padding:74px 0 80px}.geographies .geo-heading{grid-template-columns:1fr;gap:22px}.geographies .geo-map-topline{left:15px;top:14px;font-size:9px}.geographies .geo-places{grid-template-columns:1fr}.geographies .geo-place{padding:20px 22px}.geographies .geo-place h3{margin-top:7px}.geographies .geo-place p{margin-top:6px}.geographies .geo-lead{font-size:14px}}
+@media(max-width:550px){.geographies .geo-heading h2{font-size:48px}.geographies .geo-map-footer{padding:14px;font-size:9px}.geographies .geo-legend{gap:10px}}
+@media(prefers-reduced-motion:reduce){.geographies *{transition:none!important;animation:none!important}}
