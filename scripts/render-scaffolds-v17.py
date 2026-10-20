@@ -55,7 +55,7 @@ def validate():
     assert HTML.is_file() and CAPTIONS.is_file() and ARCHIVE_INFO.is_file() and SEM.is_file()
     src=HTML.read_text(encoding="utf8")
     for key in ("window.__draw","window.__meta","window.__ready","fibermat(",
-                "SCHEMATIC","PUBLISHED FIGURE 5","S. AUREUS","E. COLI",
+                "schematic","PUBLISHED FIGURE 5","S. AUREUS","E. COLI",
                 "30 s was selected","SOURCE TABLE 3","0 = NO GROWTH"):
         assert key in src,key
     assert "Math.random(" not in src and "<h1 class=" in src
