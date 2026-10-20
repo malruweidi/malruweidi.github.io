@@ -1,0 +1,199 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>The Surface Is Not the Material | Film 08</title><style>
+html,body{margin:0;background:#121c21;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.source{position:absolute;left:-9999px;width:1px;height:1px}
+</style></head><body>
+<h1 class="sr-only">The Surface Is Not the Material: experimental PLA plasma grafting and peel resistance</h1>
+<img id="fig1" class="source" src="../source-figures/v3/pla-grafting-figure-01.jpg" alt="Unaltered Figure 1 from Abdulkareem and colleagues 2021 showing contact angles and surface free energy">
+<img id="fig4" class="source" src="../source-figures/v3/pla-grafting-figure-04.jpg" alt="Unaltered Figure 4: X-ray photoelectron spectroscopy spectra of PLA samples">
+<img id="fig8" class="source" src="../source-figures/v3/pla-grafting-figure-08.jpg" alt="Unaltered Figure 8: peel resistance of PLA-aluminum laminates">
+<canvas id="screen" width="1920" height="1080" role="img" aria-label="Experimental materials-film animation with moving polymer boundaries, cold plasma, grafting, droplets, peel forces, and unaltered source figures"></canvas>
+<script>
+"use strict";
+// All animations of atoms/plasma/wetting/peeling are *explicitly interpretive*.
+// Published experimental charts are displayed from unaltered existing source files.
+// The 2021 study concerned PLA/aluminum laminate wetting and adhesion in a
+// packaging-material setting, NOT human biocompatibility/medical efficacy.
+const W=1280,H=720,FPS=24,DURATION=120,B=[0,15,30,45,60,75,90,105,120];
+const C={ink:"#101e24",mid:"#203940",sea:"#32575b",mint:"#8dbfb2",white:"#f4f3e8",
+  fog:"#d0d8d0",gray:"#849d9a",orange:"#d9a371",red:"#bd7360",blue:"#75b1c7",
+  pale:"#e8e9d9",paper:"#f2efe7",dark:"#223039",green:"#74a28c",metal:"#929da0"};
+const source=[document.getElementById("fig1"),document.getElementById("fig4"),document.getElementById("fig8")];
+const canvas=document.getElementById("screen"),view=canvas.getContext("2d",{alpha:false});
+const buf=[document.createElement("canvas"),document.createElement("canvas")];buf.forEach(x=>{x.width=W;x.height=H;});const dc=buf.map(x=>x.getContext("2d",{alpha:false}));
+const clamp=(q,a=0,b=1)=>Math.max(a,Math.min(b,q)),ease=q=>{q=clamp(q);return q*q*(3-2*q)},out=q=>1-Math.pow(1-clamp(q),3),seg=(t,a,b)=>clamp((t-a)/(b-a)),lerp=(a,b,p)=>a+(b-a)*p,PI=Math.PI,TAU=2*Math.PI;
+const sin=Math.sin,cos=Math.cos;
+function rect(d,x,y,w,h,c){d.fillStyle=c;d.fillRect(x,y,w,h)}
+function line(d,p,c,w=2,a=1){d.save();d.globalAlpha=a;d.strokeStyle=c;d.lineWidth=w;d.lineJoin="round";d.lineCap="round";d.beginPath();d.moveTo(...p[0]);for(let k=1;k<p.length;k++)d.lineTo(...p[k]);d.stroke();d.restore()}
+function ring(d,x,y,r,c,w=2,a=1){d.save();d.globalAlpha=a;d.strokeStyle=c;d.lineWidth=w;d.beginPath();d.arc(x,y,Math.max(1,r),0,TAU);d.stroke();d.restore()}
+function dot(d,x,y,r,c,a=1){d.save();d.globalAlpha=a;d.fillStyle=c;d.beginPath();d.arc(x,y,Math.max(1,r),0,TAU);d.fill();d.restore()}
+function rounded(d,x,y,w,h,r,c){d.fillStyle=c;d.beginPath();d.roundRect(x,y,w,h,r);d.fill()}
+function txt(d,s,x,y,z=20,c=C.white,f="sans",a=1,align="left"){d.save();d.globalAlpha=clamp(a);d.fillStyle=c;d.textAlign=align;d.textBaseline="alphabetic";d.font=z+"px "+(f==="serif"?"Georgia,serif":f==="mono"?"monospace":"Arial,sans-serif");d.fillText(s,x,y);d.restore()}
+function reveal(d,s,x,y,size,t,at,c=C.white){let p=out(seg(t,at,at+.8));d.save();d.beginPath();d.rect(x-8,y-size*1.28,1140,(size+33)*p);d.clip();txt(d,s,x,y+14*(1-p),size,c,"serif");d.restore()}
+function bg(d,t,light=false){rect(d,0,0,W,H,light?C.paper:C.ink);let gr=d.createRadialGradient(light?450:970,220,50,light?450:970,220,940);gr.addColorStop(0,light?"rgba(133,105,79,.10)":"rgba(103,164,152,.10)");gr.addColorStop(1,"rgba(0,0,0,0)");rect(d,0,0,W,H,gr);
+ for(let i=0;i<7;i++){let x=105+i*193+9*sin(t*.15+i);line(d,[[x,69],[x-17,661]],light?C.gray:C.sea,1,.16)}}
+function hud(d,t,j,light=false){let c=light?C.dark:C.gray;line(d,[[72,65],[1208,65]],c,1,.34);txt(d,"RUWAIDIX / MATERIAL INTERFACES",76,46,13,c,"mono");txt(d,"FILM 08 · 2021 POLYMERS",1204,46,13,c,"mono",1,"right");line(d,[[72,684],[1208,684]],c,1,.30);line(d,[[72,684],[72+1136*(t/120),684]],light?C.red:C.orange,3);txt(d,String(j+1).padStart(2,"0")+" / 08",73,661,14,c,"mono");}
+function filmSurface(d,t,y=491,mode="untreated",x0=96,x1=1161){
+ const active=mode==="plasma"||mode==="fa"||mode==="asa";
+ rounded(d,x0,y,x1-x0,123,13,C.mid);
+ const points=[];for(let x=x0;x<=x1;x+=9){let rough=active?5*sin(x*.09+t*.21)+2*sin(x*.31):1.5*sin(x*.07+t*.25);points.push([x,y+rough]);}
+ line(d,points,active?C.green:C.blue,6);
+ for(let k=0;k<32;k++){let x=x0+17+k*(x1-x0-35)/31;
+  let yy=y+17+4*sin(x*.12+t*.18);
+  line(d,[[x,yy],[x+6,yy+85]],C.mint,2,.12);
+  if(mode==="fa"||mode==="asa"){
+   let th=t*.4+k*.3;line(d,[[x,y],[x+5*sin(th),y-26-2*cos(th)]],C.orange,3,.7);
+   dot(d,x+5*sin(th),y-26-2*cos(th),5,mode==="fa"?C.orange:C.green,.9);
+  }
+ }
+}
+function droplet(d,cx,baseY,t,theta=70.2,scale=1){
+ const width=lerp(76,125,(70.2-theta)/28)*scale,height=lerp(112,68,(70.2-theta)/28)*scale;
+ const y=baseY-4;
+ d.save();d.translate(cx,y);d.beginPath();d.moveTo(-width,0);
+ d.bezierCurveTo(-width*.91,-height*.40,-width*.50,-height,width*.08,-height);
+ d.bezierCurveTo(width*.61,-height,width*.93,-height*.41,width,0);
+ d.closePath();let grad=d.createLinearGradient(0,-height,0,0);grad.addColorStop(0,"rgba(176,221,216,.82)");grad.addColorStop(1,"rgba(72,149,163,.49)");
+ d.fillStyle=grad;d.fill();d.strokeStyle=C.mint;d.lineWidth=3;d.stroke();
+ for(let k=0;k<5;k++){let x=-width*.62+k*width*.28+3*sin(t*.65+k),yy=-height*.40+5*cos(t*.5+k);dot(d,x,yy,2.2,C.white,.24)}
+ d.restore();
+}
+function fan(d,t,x,y,w=950,n=50){
+ for(let i=0;i<n;i++){let q=(t*.087+(i*.61803398875)%1)%1,xx=x+q*w;
+ let yy=y+90*sin((xx-x)/w*PI*2+i*.35);
+ dot(d,xx,yy,1.3+(i%3)*.5,i%4?C.blue:C.orange,.2+.5*sin(PI*q));
+ }
+}
+function sourceCard(d,idx,x,y,w,h,label){
+ const im=source[idx],iw=im.naturalWidth,ih=im.naturalHeight;
+ if(!iw||!ih)return;
+ rounded(d,x-14,y-14,w+28,h+28,9,C.paper);
+ let ww=Math.min(w,h*iw/ih),hh=ww*ih/iw;
+ d.drawImage(im,x+(w-ww)/2,y+(h-hh)/2,ww,hh);
+ line(d,[[x-14,y+h+25],[x+w+14,y+h+25]],C.gray,2,.4);
+ txt(d,"UNALTERED PUBLISHED "+label+" · DOI 10.3390/POLYM13213717",x,y+h+49,16,C.orange,"mono");
+}
+function movingSurfaceZoom(d,t){
+ const p=.5+.5*sin(t*.28),y=434;filmSurface(d,t,y,"fa");
+ for(let i=0;i<16;i++){let xx=154+i*59+7*sin(t*.44+i*.43),yy=398-18*sin(t*.48+i);
+  ring(d,xx,yy,7+(i%3),C.orange,2,.2+.25*p)}
+}
+function particle(d,x,y,t,k){dot(d,x,y,3+(k%3),k%4?C.blue:C.orange,.58);ring(d,x,y,6,C.blue,1,.2);}
+function peelFilm(d,t,x,y,w,h,angle=.35){
+ const l=out(seg(t,1,11)); // paired, moving thin films pulled apart
+ rounded(d,x,y,w,h,5,C.sea);
+ d.save();d.translate(x+20,y);d.rotate(-angle*l);
+ rect(d,0,-13,w*.87,15,C.mint);line(d,[[0,-13],[w*.87,-13]],C.white,2,.65);d.restore();
+ for(let k=0;k<22;k++){let q=(t*.14+k/22)%1;let xx=x+w*.19+w*.67*q;
+ dot(d,xx,y+2+8*sin(q*5+t*.3),2.1,C.orange,.36+.42*sin(PI*q))}
+}
+function scene0(d,t){
+ bg(d,t);reveal(d,"Two films.",89,168,76,t,.22);
+ reveal(d,"One invisible difference.",89,247,61,t,1.35,C.orange);
+ filmSurface(d,t,453,"untreated",112,613);filmSurface(d,t,453,"fa",678,1176);
+ droplet(d,352,454,t,70.2,.76);droplet(d,913,454,t,49.6,.82);
+ txt(d,"UNTREATED POLY(LACTIC ACID)",124,621,18,C.blue,"mono",out(seg(t,4,5)));
+ txt(d,"PLASMA + FUMARIC ACID",753,621,18,C.orange,"mono",out(seg(t,5,6)));
+ fan(d,t,116,371,1050,31);
+ hud(d,t,0);
+}
+function scene1(d,t){
+ bg(d,t);let l=t-15;reveal(d,"First: establish a baseline.",90,154,57,t,15.4);
+ filmSurface(d,t,495,"untreated",145,1120);
+ let hold=out(seg(l,.6,3));
+ droplet(d,636,496,t,70.2,1.2);
+ for(let i=0;i<9;i++){let r=30+18*i,angle=i*.4+.15*t;dot(d,635+r*cos(angle),295+r*.14*sin(angle),2,C.mint,.16)}
+ txt(d,"WATER CONTACT ANGLE",106,278,21,C.mint,"mono",hold);
+ txt(d,"70.2°",110,378,78,C.white,"serif",hold);
+ txt(d,"Measured untreated PLA · 2021 Table 1",111,415,18,C.gray,"mono",out(seg(l,5,6)));
+ line(d,[[113,436],[483,436]],C.orange,3,.55);
+ hud(d,t,1);
+}
+function scene2(d,t){
+ bg(d,t);let l=t-30;reveal(d,"Activate the contact layer.",84,140,60,t,30.3);
+ filmSurface(d,t,460,"plasma");
+ // Cold plasma represented as a field of ionization, NOT actual experiment or chemistry trajectory.
+ for(let k=0;k<95;k++){
+  let q=(t*.13+(k*.61803399)%1)%1,x=103+q*1054;
+  let y=175+(k*37)%236+10*sin(t*.74+k);
+  let rr=2.0+(k%3)*.45;
+  particle(d,x,y,t,k);
+  if(k%6===0)line(d,[[x,y],[x+6*sin(t+k),464]],C.blue,1,.16);
+ }
+ for(let k=0;k<32;k++){let x=123+k*31;let on=out(seg(l,k*.08+2,k*.08+4));
+  ring(d,x,452,7,C.orange,2,.3+.5*on);}
+ txt(d,"LOW-TEMPERATURE RF PLASMA / SURFACE ACTIVATION",101,619,19,C.mint,"mono",out(seg(l,5,6)));
+ txt(d,"INTERPRETIVE ANIMATION, NOT PLASMA FOOTAGE",101,650,14,C.gray,"mono",out(seg(l,7,8)));
+ hud(d,t,2);
+}
+function scene3(d,t){
+ bg(d,t);let l=t-45;reveal(d,"Same substrate. Two grafts.",81,145,57,t,45.3);
+ filmSurface(d,t,403,"asa",81,629);filmSurface(d,t,403,"fa",681,1185);
+ for(let i=0;i<22;i++){
+  let x1=110+i*22,y=390-30*sin(t*.32+i*.3),x2=715+i*20;
+  dot(d,x1,y-42,3,C.green,.2+.5*sin(t*.35+i));
+  dot(d,x2,y-42,3,C.orange,.2+.5*sin(t*.35+i));
+ }
+ txt(d,"ASCORBIC ACID",300,585,22,C.green,"mono",out(seg(l,3,4)),"center");
+ txt(d,"FUMARIC ACID",942,585,22,C.orange,"mono",out(seg(l,4,5)),"center");
+ txt(d,"Plasma-initiated grafting · conceptual surface attachment",93,629,18,C.gray,"mono",out(seg(l,6,7)));
+ hud(d,t,3);
+}
+function scene4(d,t){
+ bg(d,t,true);let l=t-60;reveal(d,"What does the surface contain?",89,137,54,t,60.2,C.dark);
+ sourceCard(d,1,181,182,918,393,"FIGURE 4 / XPS");
+ // Source spectra immutable: small moving locator outside the graph surface.
+ let cursor=199+850*ease(seg(l,2.0,13));
+ line(d,[[cursor,595],[cursor,632]],C.orange,3,.75);
+ txt(d,"UNALTERED XPS SPECTRA / C1s · O1s",86,651,16,C.dark,"mono");
+ hud(d,t,4,true);
+}
+function scene5(d,t){
+ bg(d,t);let l=t-75;reveal(d,"The water droplet answers.",89,147,60,t,75.3);
+ let values=[70.2,55.1,49.6],names=["UNTREATED","PLASMA ONLY","PLASMA + FA"];
+ for(let k=0;k<3;k++){
+  let x=261+k*373,activated=out(seg(l,.8+k*1.1,2.3+k*1.1));
+  filmSurface(d,t,470,k===0?"untreated":k===1?"plasma":"fa",x-143,x+147);
+  droplet(d,x,472,t,values[k],.84);
+  txt(d,names[k],x,567,k===2?16:18,C.mint,"mono",activated,"center");
+  txt(d,values[k].toFixed(1)+"°",x,623,34,k===2?C.orange:C.white,"serif",activated,"center");
+ }
+ txt(d,"MEASURED WATER CONTACT ANGLES / NOT SIMULATED EXPERIMENT",88,654,15,C.gray,"mono",out(seg(l,6,7)));
+ hud(d,t,5);
+}
+function scene6(d,t){
+ bg(d,t);let l=t-90;reveal(d,"Adhesion is a different test.",87,147,56,t,90.2);
+ peelFilm(d,t,160,398,790,99,.39);
+ line(d,[[972,399],[1088,399]],C.orange,4,.8);
+ for(let k=0;k<9;k++){let q=(t*.16+k/9)%1;dot(d,972+116*q,399,3,C.orange,.28+.6*sin(PI*q))}
+ txt(d,"PLA / ALUMINUM LAMINATE",158,552,18,C.gray,"mono",out(seg(l,3,4)));
+ txt(d,"UNTREATED  ≈74 N/m",160,602,24,C.mint,"mono",out(seg(l,4,5)));
+ txt(d,"PLASMA + FA  211 N/m",159,644,24,C.orange,"mono",out(seg(l,7,8)));
+ hud(d,t,6);
+}
+function scene7(d,t){
+ bg(d,t,true);let l=t-105;reveal(d,"The control reveals the cause.",87,144,53,t,105.2,C.dark);
+ sourceCard(d,2,180,180,920,382,"FIGURE 8 / PEEL");
+ txt(d,"FA without plasma ≈87 N/m",98,629,19,C.dark,"mono",out(seg(l,5,6)));
+ txt(d,"FA after plasma = 211 N/m",800,629,18,C.red,"mono",out(seg(l,6,7)));
+ // Do not conflate better peel resistance with biocompatibility or clinical success.
+ hud(d,t,7,true);
+}
+const scenes=[scene0,scene1,scene2,scene3,scene4,scene5,scene6,scene7];
+function drawScene(d,i,t){d.save();scenes[i](d,t);d.restore()}
+function draw(t){t=clamp(t,0,DURATION-1/FPS);let i=7;for(let j=0;j<8;j++)if(t>=B[j]&&t<B[j+1]){i=j;break;}
+ let transition=-1;for(let j=1;j<8;j++)if(t>=B[j]-.37&&t<B[j]+.37){transition=j;break;}
+ view.setTransform(1.5,0,0,1.5,0,0);
+ if(transition<0){drawScene(dc[0],i,t);view.drawImage(buf[0],0,0);return;}
+ drawScene(dc[0],transition-1,t);drawScene(dc[1],transition,t);let p=ease(seg(t,B[transition]-.37,B[transition]+.37));
+ view.drawImage(buf[0],0,0);view.save();view.beginPath();
+ if(transition===4||transition===7)view.arc(634,383,Math.hypot(W,H)*p,0,TAU);
+ else{let x=(W+170)*p-90;view.moveTo(0,0);view.lineTo(x,0);view.lineTo(x-93,H);view.lineTo(0,H);view.closePath();}
+ view.clip();view.drawImage(buf[1],0,0);view.restore();}
+window.__meta={W:1920,H:1080,FPS,DURATION,title:"The Surface Is Not the Material",doi:"10.3390/polym13213717"};
+window.__draw=(t)=>{draw(t);return t};window.__ready=false;
+Promise.all([document.fonts.ready,...source.map(img=>new Promise((ok,fail)=>{if(img.complete&&img.naturalWidth>0)return ok();img.addEventListener("load",ok,{once:true});img.addEventListener("error",()=>fail(Error("Published source figure unavailable: "+img.id)),{once:true})}))])
+.then(()=>{window.__ready=true;draw(0)}).catch(err=>window.__renderError=String(err));
+let playing=false,origin=0;function tick(now){if(!playing)return;let t=(now-origin)/1000;if(t>=DURATION){playing=false;draw(DURATION-.1);return}draw(t);requestAnimationFrame(tick);}
+document.addEventListener("click",()=>{playing=!playing;if(playing){origin=performance.now();requestAnimationFrame(tick)}});
+</script></body></html>
