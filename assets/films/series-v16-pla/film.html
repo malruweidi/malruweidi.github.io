@@ -159,6 +159,9 @@ function scene5(d,t){
   txt(d,values[k].toFixed(1)+"°",x,623,34,k===2?C.orange:C.white,"serif",activated,"center");
  }
  txt(d,"MEASURED WATER CONTACT ANGLES / NOT SIMULATED EXPERIMENT",88,654,15,C.gray,"mono",out(seg(l,6,7)));
+ if(l>10.35){const a=out(seg(l,10.35,10.9));d.save();d.globalAlpha=a;
+  rect(d,66,74,1148,590,C.ink);sourceCard(d,0,152,147,971,420,"FIGURE 1 / WETTING");
+  txt(d,"Published figure and axes kept complete",154,634,15,C.gray,"mono");d.restore();}
  hud(d,t,5);
 }
 function scene6(d,t){
