@@ -1,0 +1,98 @@
+name: Film 07 | Moving heart and temporal AI cinema
+
+on:
+  push:
+    branches:
+      - cinema/echo-v15-temporal-cinema-review
+    paths:
+      - assets/films/series-v15-echo/film.html
+      - scripts/render-echo-v15.py
+      - tests/echo-v15.test.py
+      - .github/workflows/render-echo-v15.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: echo-film07-v15-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  animate-one-film:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Check out actual film archive and research dossier
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up free open-source cinematic compositor
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Chromium, Pillow, FFmpeg and reproducible original-score tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check pillow playwright numpy soundfile
+          python -m playwright install --with-deps chromium
+      - name: Scientific preflight, meaningful motion and deterministic random access
+        run: |
+          python -m py_compile scripts/render-echo-v15.py tests/echo-v15.test.py
+          python scripts/render-echo-v15.py --validate-only
+          python tests/echo-v15.test.py
+      - name: Render only Film 07 at 1920x1080 24fps
+        run: python -u scripts/render-echo-v15.py
+      - name: Independently audit output video, source claims and audio loudness
+        run: |
+          python - <<'PY'
+          import hashlib,json,subprocess
+          from pathlib import Path
+          root=Path('assets/films/series-v15-echo')
+          mp4=root/'echo-cnn-lstm.mp4'
+          meta=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_format','-show_streams','-of','json',str(mp4)]))
+          src=json.loads((root/'echo-cnn-lstm.json').read_text())
+          assert abs(float(meta['format']['duration'])-84)<.15
+          assert {'video','audio'}<={s['codec_type'] for s in meta['streams']}
+          assert any(s.get('codec_name')=='h264' and s.get('width')==1920 and s.get('height')==1080 for s in meta['streams'])
+          assert src['film_index']==7
+          assert src['peer_reviewed_paper']['doi']=='10.1109/ACCESS.2023.3316719'
+          assert src['verified_pilot_counts']=={'congenital_heart_disease_subjects':13,'controls':9,'reported_stacking_model_subject_wise_accuracy_percent':91.0}
+          assert src['website_unchanged'] is True and src['prior_versions_preserved'] is True
+          assert hashlib.sha256(mp4.read_bytes()).hexdigest()==src['sha256']
+          assert (root/'echo-cnn-lstm.vtt').read_text().count('-->')==12
+          assert (root/'echo-cnn-lstm.webp').stat().st_size>5000
+          assert (root/'echo-cnn-lstm.contact.webp').stat().st_size>18000
+          assert len(list(root.glob('chapter-??.jpg')))==6
+          output=subprocess.check_output(['ffmpeg','-v','error','-i',str(mp4),
+               '-map','0:v:0','-an','-vf','fps=1','-f','framemd5','-'],text=True)
+          hashes=[x.rsplit(',',1)[-1].strip() for x in output.splitlines() if x and not x.startswith('#')]
+          assert 83<=len(hashes)<=85,len(hashes)
+          assert len(set(hashes))>=81, f'Insufficient independently moving frames: {len(set(hashes))}'
+          print('FILM07 VIDEO MOTION PASS',len(set(hashes)),'of',len(hashes))
+          audio=subprocess.run(['ffmpeg','-hide_banner','-i',str(mp4),'-map','0:a:0',
+            '-filter_complex','ebur128=peak=true','-f','null','-'],capture_output=True,text=True)
+          assert audio.returncode==0
+          print('FILM07 AUDIO QC',audio.stderr[-1550:])
+          PY
+      - name: Publish review master to this branch, never the website
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Ruwaidix Research Cinema"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          render_source_hash="$(git hash-object scripts/render-echo-v15.py)"
+          mkdir -p /tmp/echo-v15-render
+          cp -a assets/films/series-v15-echo/. /tmp/echo-v15-render/
+          git fetch origin cinema/echo-v15-temporal-cinema-review
+          upstream_hash="$(git show origin/cinema/echo-v15-temporal-cinema-review:scripts/render-echo-v15.py | git hash-object --stdin)"
+          if [ "$render_source_hash" != "$upstream_hash" ]; then
+            echo "A newer film renderer superseded this job. No stale output published."
+            exit 0
+          fi
+          git reset --hard origin/cinema/echo-v15-temporal-cinema-review
+          cp -a /tmp/echo-v15-render/. assets/films/series-v15-echo/
+          git add assets/films/series-v15-echo/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Export Film07 temporal-cardiac AI cinema for human review [echo-v15-output]"
+          git push origin HEAD:cinema/echo-v15-temporal-cinema-review
