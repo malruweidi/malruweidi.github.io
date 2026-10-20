@@ -310,8 +310,30 @@ def actual_frame(t,background,figure,archive_frames,bounds):
 def frame_for_scene(scene,local,frames):
  series=frames.get(scene)
  if not series:return None
- # Each extracted frame samples a real continuous recording at 12Hz.
- index=min(len(series)-1,max(0,int((local+.07)*12)))
+ # Preserve original recording direction. We do not freeze the last frame
+ # or reverse microscopic motion (which would misstate flow direction).
+ duration=len(series)/12.
+ other=frames.get(4 if scene==1 else 1)
+ if other and local>duration-.35:
+  q=ease((local-(duration-.35))/.65)
+  if q<1:
+   a=series[min(len(series)-1,max(0,int(local*12)))]
+   b=other[min(len(other)-1,max(0,int((local-duration+.35)*12)))]
+   # Brief cinematic dissolve between two REAL recordings, each contained.
+   canvas=[]
+   for source in (a,b):
+    mat=Image.new("RGB",(1000,540),INK)
+    original=source.copy()
+    original.thumbnail((1000,540),Image.Resampling.BICUBIC)
+    mat.paste(original,((1000-original.width)//2,(540-original.height)//2))
+    canvas.append(mat)
+   return Image.blend(canvas[0],canvas[1],q)
+  # Continue moving forward in the other archive without reverse playback.
+  index=int(max(0,local-duration+.35)*12)%len(other)
+  return other[index]
+ # If only one original source is retrievable, loop its authentic frames.
+ # This is a visible archive replay, never synthetic experimental evidence.
+ index=max(0,int(local*12))%len(series)
  return series[index]
 
 def prepare_clips(workspace,with_clips=True):
@@ -427,6 +449,7 @@ def render(skip_archive=False):
    "source_figure_policy":"Original scientific image contained; axes and labels unmodified",
    "archival_microscopy_sources":sources,
    "used_genuine_microscopy":bool(sources),
+   "archival_continuity":"Only forward playback; cross-dissolve between genuine recordings if both available; no frozen last frames",
    "fallback":"Purely editorial animation if archived video not available; no counterfeit footage",
    "scene_bounds":bounds,
    "scenes":SCENE_TITLES,
