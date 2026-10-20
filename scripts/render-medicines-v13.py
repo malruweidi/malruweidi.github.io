@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Render Ruwaidix Film 05: original seekable Canvas2D cinema + source narration.
 
-Browser renders each requested t independently at 1920x1080/24fps. No AI-generated
-micrographs, patient images, patent facsimiles, binding simulations or statistics.
+Browser renders each requested t independently at 1920x1080/24fps. Manuscript image
+is a real 1904 source witness; diagrams are new, explicitly interpretive drawings.
 Archive and website remain unchanged; export only review assets to isolated path.
 """
 import argparse, hashlib, io, json, math, shutil, subprocess, tempfile
@@ -10,8 +10,8 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"assets/films/series-v13-medieval"
 HTML=OUT/"film.html"
-ORIGINAL=ROOT/"assets/films/series-v7-pilots/making-medicines-keep.mp4"
-SUBTITLE=ROOT/"assets/films/series-v7-pilots/making-medicines-keep.vtt"
+ORIGINAL=ROOT/"assets/films/series-v8-primary/making-medicines-keep.mp4"
+SUBTITLE=ROOT/"assets/films/series-v8-primary/making-medicines-keep.vtt"
 FPS=24;W=1920;H=1080;DURATION=120
 DOI="Wellcome MS Arabic 1002"
 S=[("Preparation must endure",0,15),("Text and manuscript witness",15,30),("Rose water sugar and syrup",30,45),("Dissolve, skim, strain, concentrate",45,60),("Consistency and crystallization",60,75),("Corrective repair",75,90),("Substitution and supply",90,105),("Reliability and documentary traces",105,120)]
@@ -28,11 +28,11 @@ def check_sources():
         assert marker in txt,marker
     assert "Math.random(" not in txt and 'id="manuscript"' in txt
     for f in (ORIGINAL,SUBTITLE):assert f.is_file(),f
-    assert SUBTITLE.read_text().startswith("WEBVTT") and SUBTITLE.read_text().count("-->")==12
+    assert SUBTITLE.read_text().startswith("WEBVTT") and SUBTITLE.read_text().count("-->")>=28
     streams=ffinfo(ORIGINAL)
     assert {"video","audio"} <= {x["codec_type"] for x in streams["streams"]}
     assert abs(float(streams["format"]["duration"])-DURATION)<.3
-    assert len(S)==6 and S[-1][-1]==120
+    assert len(S)==8 and S[-1][-1]==120
     return True
 def score(out):
     """Original subtle musical pulse synthesized locally; no fake lab sounds."""
@@ -110,10 +110,10 @@ def render():
     assert {"video","audio"}<={x["codec_type"] for x in info["streams"]}
     assert any(x["codec_type"]=="video" and x["codec_name"]=="h264" and x.get("width")==W and x.get("height")==H for x in info["streams"])
     manifest={
-      "film_index":5,"title":"When a Molecule Becomes a Question","film_release":"v13 review master",
+      "film_index":5,"title":"Making Medicines Keep","film_release":"v13 review master",
       "seconds":runtime,"fps":FPS,"resolution":[W,H],
       "original_audio":str(ORIGINAL.relative_to(ROOT)),"source_narration":"120-second source audio retained on its original timeline, with quiet original-score mix",
-      "original_captions":str(SUBTITLE.relative_to(ROOT)),"primary_paper_doi":DOI,
+      "original_captions":str(SUBTITLE.relative_to(ROOT)),"manuscript_identifier":DOI,
       "source_range":"Ayyubid-Mamluk Cairo, 1260 formulary and later sources",
       "primary_text":"Minhaj al-dukkan by al-Kuhin al-Attar, composed in Cairo, 658 AH / 1260 CE",
       "manuscript":"assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg",
