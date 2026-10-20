@@ -11,6 +11,10 @@ test("plain-language search recovers relevant original evidence", () => {
   assert.ok(ranked("mechanical lung injury").includes("/research/pulmonary-epithelial-injury.html"));
   assert.ok(ranked("chemical target degradation").includes("/doctoral-concepts.html"));
 });
+test("targeted biologics are findable as future research interests, not claimed completed work", () => {
+  assert.ok(ranked("ADC").includes("/molecular-therapeutics.html"));
+  assert.ok(ranked("antibody drug conjugates").includes("/molecular-therapeutics.html"));
+});
 test("Arabic discovery finds the same scientific record", () => {
   assert.ok(ranked("الاستنشاق").includes("/research/inhalable-vesicles.html"));
   assert.ok(ranked("إصابة الرئة").includes("/research/pulmonary-epithelial-injury.html"));
