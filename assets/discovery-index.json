@@ -7,7 +7,8 @@
     "Methods & evidence",
     "Archive & people",
     "Stories",
-    "Writing & society"
+    "Writing & society",
+    "Recommended reading"
   ],
   "items": [
     {
@@ -681,6 +682,30 @@
       "url": "/doctoral-concepts.html",
       "summary": "Falsifiable doctoral proposals on PROTAC/degrader pharmacology and aptamer-guided circular-RNA delivery with microfluidic engineering.",
       "keywords": "future doctoral research click chemistry PROTAC BRD4 aptamers circular RNA microfluidics pharmacology PKPD research proposals مقترحات دكتوراه كيمياء حيوية رنا دائري ابتامرات هندسة توصيل أدوية"
+    },
+    {
+      "id": 85,
+      "title": "Recommended reading · Books and essays",
+      "category": "Recommended reading",
+      "url": "/recommendations.html",
+      "summary": "An editorial shelf of books and essays about scientific integrity, cognitive bias, deep work, flow and chemistry in fiction.",
+      "keywords": "books essays readings recommendations feynman cargo cult science deep work flow chemistry bibliography قراءات كتب مقالات موصى بها"
+    },
+    {
+      "id": 86,
+      "title": "Recommended books · A reading shelf",
+      "category": "Recommended reading",
+      "url": "/recommended-books.html",
+      "summary": "Books by Bonnie Garmus, David McRaney, Cal Newport and Mihaly Csikszentmihalyi, with critical notes and publisher links.",
+      "keywords": "Lessons in Chemistry You Are Not So Smart Deep Work Flow Csikszentmihalyi Garmus Newport McRaney كتب ترشيحات"
+    },
+    {
+      "id": 87,
+      "title": "Recommended essays · Cargo Cult Science",
+      "category": "Recommended reading",
+      "url": "/recommended-essays.html",
+      "summary": "Richard P. Feynman’s 1974 essay Cargo Cult Science, the integrity of experiments and scholarly self-deception.",
+      "keywords": "Richard Feynman cargo cult science scientific honesty scientific method experimentation مقال فاينمان النزاهة العلمية"
     }
   ]
 }
