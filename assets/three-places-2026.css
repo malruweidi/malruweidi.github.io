@@ -32,15 +32,15 @@
 .geographies .geo-place{min-width:0;display:flex;flex-direction:column;gap:0;background:#fbfaf4;text-align:left;border:0;outline-offset:-4px;padding:26px 26px 25px;color:#223a3b;cursor:pointer;transition:background .2s,box-shadow .2s}
 .geographies .geo-place:hover,.geographies .geo-place:focus-visible,.geographies .geo-place[aria-pressed="true"]{background:#e8eee6;box-shadow:inset 0 4px #af6b50}
 .geographies .geo-place .geo-index{color:#a35c44;font:10px/1.4 var(--mono,monospace);letter-spacing:.13em}
-.geographies .geo-place h3{font:400 32px/1.1 var(--serif,Georgia,serif);letter-spacing:-.02em;margin:14px 0 4px}
+.geographies .geo-place .geo-name{font:400 32px/1.1 var(--serif,Georgia,serif);letter-spacing:-.02em;margin:14px 0 4px}
 .geographies .geo-place .geo-role{font:600 10px/1.5 var(--mono,monospace);letter-spacing:.08em;text-transform:uppercase;color:#7c4f42}
-.geographies .geo-place p{margin:12px 0 0;color:#556969;font:12px/1.8 var(--sans,Arial,sans-serif)}
+.geographies .geo-place .geo-description{margin:12px 0 0;color:#556969;font:12px/1.8 var(--sans,Arial,sans-serif)}
 .geographies .geo-afterword{display:flex;gap:32px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-top:18px}
 .geographies .geo-afterword p{margin:0;max-width:700px;color:#657774;font:11px/1.75 var(--sans,Arial,sans-serif)}
 .geographies .geo-afterword a{color:#95533e;text-decoration:underline;text-underline-offset:5px;font:600 12px var(--sans,Arial,sans-serif)}
 .geographies [data-selected="egypt"] .geo-arc--us-qatar,.geographies [data-selected="qatar"] .geo-arc--us-egypt{opacity:.22}
 .geographies [data-selected="usa"] .geo-arc--egypt-qatar{opacity:.22}
 .geographies [data-selected="egypt"] .geo-arc--us-egypt,.geographies [data-selected="qatar"] .geo-arc--us-qatar,.geographies [data-selected="usa"] .geo-arc--us-qatar{stroke-width:4;opacity:1}
-@media(max-width:900px){.geographies{padding:74px 0 80px}.geographies .geo-heading{grid-template-columns:1fr;gap:22px}.geographies .geo-map-topline{left:15px;top:14px;font-size:9px}.geographies .geo-places{grid-template-columns:1fr}.geographies .geo-place{padding:20px 22px}.geographies .geo-place h3{margin-top:7px}.geographies .geo-place p{margin-top:6px}.geographies .geo-lead{font-size:14px}}
+@media(max-width:900px){.geographies{padding:74px 0 80px}.geographies .geo-heading{grid-template-columns:1fr;gap:22px}.geographies .geo-map-topline{left:15px;top:14px;font-size:9px}.geographies .geo-places{grid-template-columns:1fr}.geographies .geo-place{padding:20px 22px}.geographies .geo-place .geo-name{margin-top:7px}.geographies .geo-place .geo-description{margin-top:6px}.geographies .geo-lead{font-size:14px}}
 @media(max-width:550px){.geographies .geo-heading h2{font-size:48px}.geographies .geo-map-footer{padding:14px;font-size:9px}.geographies .geo-legend{gap:10px}}
 @media(prefers-reduced-motion:reduce){.geographies *{transition:none!important;animation:none!important}}
