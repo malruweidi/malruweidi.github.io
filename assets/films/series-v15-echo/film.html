@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Can an Algorithm Read a Moving Heart? — Film 07</title>
+<style>
+html,body{margin:0;background:#070f1b;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.archival{position:absolute;left:-9999px;width:1px;height:1px}
+</style></head><body>
+<h1 class="sr-only">Can an Algorithm Read a Moving Heart? — original research film about fetal echocardiography and temporal AI</h1>
+<img class="archival" id="workstation" src="../../research-archive-2026/echocardiography-spectral-doppler-workstation.webp" alt="Original echocardiography workstation archival photograph, not a fetal scan from the published pilot study">
+<canvas id="screen" width="1920" height="1080" role="img" aria-label="Cinematic data-driven scientific illustration: a moving stylized cardiac ultrasound diagram, sequence preparation, CNN and LSTM model architecture, pilot-study result and clinical validation caveats"></canvas>
+<script>
+"use strict";
+// Film 07: all geometry, gating and simulated pulses are editorial illustrations.
+// NO generated scene is a genuine sonogram, patient image, model heatmap, measured
+// echocardiogram, confusion matrix or an exact reconstruction of network topology.
+// Only numbers included are verified 2023 publication-level figures.
+const W=1280,H=720,FPS=24,DURATION=84;
+const B=[0,14.55,27.4,41.0,55.05,69.75,84];
+const P={night:"#081321",field:"#0f2530",ink:"#1a2d38",phosphor:"#b7d5ce",muted:"#8ea8ab",
+ pale:"#eef2ea",aqua:"#8bcbbf",blue:"#648cb7",warm:"#e0a37a",amber:"#e5bb75",
+ red:"#bd6a68",ghost:"#537e8a",navy:"#0d1d2a",cream:"#e9e5db",dark:"#101925"};
+const canvas=document.getElementById("screen"),view=canvas.getContext("2d",{alpha:false}),archive=document.getElementById("workstation");
+const buffers=[document.createElement("canvas"),document.createElement("canvas")];buffers.forEach(x=>{x.width=W;x.height=H});
+const dc=buffers.map(x=>x.getContext("2d",{alpha:false}));
+const PI=Math.PI,TAU=PI*2,sin=Math.sin,cos=Math.cos,abs=Math.abs;
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),seg=(t,a,b)=>clamp((t-a)/(b-a)),ease=u=>{u=clamp(u);return u*u*(3-2*u)},out=u=>1-Math.pow(1-clamp(u),3),lerp=(a,b,p)=>a+(b-a)*p;
+function rect(d,x,y,w,h,c){d.fillStyle=c;d.fillRect(x,y,w,h)}
+function line(d,p,c,w=2,a=1){d.save();d.globalAlpha=a;d.beginPath();d.moveTo(...p[0]);for(let i=1;i<p.length;i++)d.lineTo(...p[i]);d.lineWidth=w;d.lineCap="round";d.lineJoin="round";d.strokeStyle=c;d.stroke();d.restore()}
+function circle(d,x,y,r,c,a=1){d.save();d.globalAlpha=a;d.fillStyle=c;d.beginPath();d.arc(x,y,Math.max(1,r),0,TAU);d.fill();d.restore()}
+function ring(d,x,y,r,c,w=2,a=1){d.save();d.globalAlpha=a;d.beginPath();d.arc(x,y,Math.max(1,r),0,TAU);d.lineWidth=w;d.strokeStyle=c;d.stroke();d.restore()}
+function round(d,x,y,w,h,r,c){d.beginPath();d.roundRect(x,y,w,h,r);d.fillStyle=c;d.fill()}
+function text(d,s,x,y,z=23,c=P.pale,f="sans",a=1,align="left"){d.save();d.globalAlpha=clamp(a);d.fillStyle=c;d.textBaseline="alphabetic";d.textAlign=align;d.font=z+"px "+(f==="serif"?"Georgia,serif":f==="mono"?"monospace":"Arial,sans-serif");d.fillText(s,x,y);d.restore()}
+function reveal(d,s,x,y,z,t,at,c=P.pale){let p=out(seg(t,at,at+.85));d.save();d.beginPath();d.rect(x-3,y-z*1.4,1190,(z+30)*p);d.clip();text(d,s,x,y+14*(1-p),z,c,"serif");d.restore()}
+function bg(d,t,light=false){rect(d,0,0,W,H,light?P.cream:P.night);let g=d.createRadialGradient(light?290:960,light?260:280,15,light?290:960,300,780);g.addColorStop(0,light?"rgba(171,152,118,.10)":"rgba(81,144,151,.12)");g.addColorStop(1,"rgba(0,0,0,0)");rect(d,0,0,W,H,g);
+ for(let i=0;i<7;i++){let x=125+i*189+7*sin(t*.19+i);line(d,[[x,68],[x-12,662]],light?"#c0b6a8":"#426674",1,.1)}
+}
+function frame(d,t,j,light=false){let c=light?"#556367":P.muted;
+ line(d,[[74,58],[1206,58]],c,1,.25);text(d,"RUWAIDIX  /  RESEARCH CINEMA",78,42,13,c,"mono");
+ text(d,"07 / FETAL ECHOCARDIOGRAPHY",1200,42,13,c,"mono",1,"right");
+ line(d,[[76,681],[1202,681]],c,1,.22);line(d,[[76,681],[76+1126*t/84,681]],light?P.red:P.amber,3);
+ text(d,String(j+1).padStart(2,"0")+" / 06",79,660,14,c,"mono");
+}
+function grid(d,x,y,w,h,c=P.ghost,n=8){for(let k=0;k<=n;k++){let xx=x+k*w/n;line(d,[[xx,y],[xx,y+h]],c,1,.12);let yy=y+k*h/n;line(d,[[x,yy],[x+w,yy]],c,1,.12)}}
+// Ultrasound sector is obviously graphical: no manufactured granular "real scan".
+function sector(d,x,y,w,h,t,subtle=false){
+ const apexX=x+w*.5,apexY=y+20,left=x+12,right=x+w-12,bottom=y+h-14;
+ d.save();d.beginPath();d.moveTo(apexX,apexY);d.lineTo(right-23,bottom-12);
+ d.quadraticCurveTo(apexX,bottom+52,left+23,bottom-12);d.closePath();d.clip();
+ let f=d.createLinearGradient(x,y,x+w,y+h);f.addColorStop(0,"#1a303d");f.addColorStop(.65,"#24434b");f.addColorStop(1,"#101e2a");rect(d,x,y,w,h,f);
+ for(let k=1;k<6;k++){let r=(h-30)*k/6;d.beginPath();d.arc(apexX,apexY,r,.35,PI-.35);d.lineWidth=1.3;d.strokeStyle="rgba(147,181,180,.12)";d.stroke()}
+ const wave=sin(t*TAU*1.18),pulse=1-.09*(.5+.5*wave),cx=apexX,cy=y+h*.60;
+ d.save();d.translate(cx,cy);d.rotate(-.12+sin(t*.36)*.035);d.scale(pulse,1+.055*wave);
+ const cells=[[-67,-44,39,31],[60,-48,37,30],[-56,47,38,60],[58,47,33,63]];
+ d.lineWidth=4.8;d.strokeStyle=P.phosphor;d.fillStyle="rgba(10,31,41,.68)";
+ for(let k=0;k<4;k++){const [xx,yy,rx,ry]=cells[k];d.beginPath();d.ellipse(xx,yy,rx,ry,xx<0?.17:-.13,0,TAU);d.fill();d.stroke()}
+ line(d,[[-4,-84],[0,116]],P.aqua,4,.8);line(d,[[-110,-2],[112,1]],P.aqua,2,.7);d.restore();
+ // Coherent moving ultrasonic sweep, visually distinct from source footage.
+ let sweep=((t*.25)%1),angle=PI*.18+sweep*PI*.64;
+ let r=Math.min(h*1.1,w*.9);line(d,[[apexX,apexY],[apexX+r*cos(angle),apexY+r*sin(angle)]],P.aqua,3,subtle?.15:.4);
+ d.restore();line(d,[[apexX,apexY],[right-23,bottom-12]],P.phosphor,2,.6);
+ line(d,[[apexX,apexY],[left+23,bottom-12]],P.phosphor,2,.6);
+ text(d,"SCHEMATIC · NOT PATIENT ULTRASOUND",x+23,y+h-4,13,P.muted,"mono");
+}
+function ecg(d,t,x,y,w,level=.85){const points=[];for(let k=0;k<=190;k++){let p=k/190,s=(p*4-t*1.15)%1;if(s<0)s+=1;
+ let pulse=Math.exp(-Math.pow((s-.43)*32,2))*-27+Math.exp(-Math.pow((s-.51)*43,2))*95-Math.exp(-Math.pow((s-.565)*37,2))*35;
+ points.push([x+p*w,y+level*(pulse*.36+3*sin(s*TAU))]);}
+ line(d,points,P.aqua,2,.72)}
+function frameThumbnail(d,x,y,w,h,t,idx=0){
+ round(d,x,y,w,h,9,"#112532");d.save();d.beginPath();d.roundRect(x+3,y+3,w-6,h-6,8);d.clip();
+ sector(d,x+9,y+7,w-18,h-25,t+idx*.17,true);d.restore();
+}
+function sliding(d,t,x,y,w,h){let q=(t*.095)%1;d.save();d.strokeStyle=P.amber;d.lineWidth=2;d.strokeRect(x+w*q,y+h*.18,w*.22,h*.25);d.restore()}
+function archPhoto(d,t){let img=archive;let x=128,y=210,w=967,h=350;
+ d.save();d.beginPath();d.roundRect(x,y,w,h,12);d.clip();
+ let scale=Math.max(w/img.naturalWidth,h/img.naturalHeight)*1.03,ww=img.naturalWidth*scale,hh=img.naturalHeight*scale;
+ d.drawImage(img,x+(w-ww)/2+11*sin(t*.2),y+(h-hh)/2+4*cos(t*.27),ww,hh);
+ let g=d.createLinearGradient(0,y,0,y+h);g.addColorStop(0,"rgba(4,19,30,.1)");g.addColorStop(1,"rgba(4,19,30,.58)");rect(d,x,y,w,h,g);
+ d.restore();text(d,"ARCHIVAL ULTRASOUND WORKSTATION · NOT A PILOT-STUDY FETAL IMAGE",150,544,17,P.pale,"mono");
+}
+function send(d,x1,y1,x2,y2,t,offset=0,c=P.amber){
+ line(d,[[x1,y1],[x2,y2]],c,2,.4);
+ for(let k=0;k<4;k++){let p=((t*.22+offset+k/4)%1);circle(d,lerp(x1,x2,p),lerp(y1,y2,p),4,c,.15+.8*sin(p*PI));}
+}
+function layerNodes(d,x,y,t,cols,rows){let z=cols*rows;for(let j=0;j<z;j++){let ix=j%cols,iy=Math.floor(j/cols),xx=x+ix*30,yy=y+iy*35;
+ let power=.35+.65*(.5+.5*sin(t*1.2+ix*.5+iy*.7));round(d,xx,yy,22,23,3,power>.7?P.aqua:P.ghost);}}
+function scene0(d,t){
+ bg(d,t);sector(d,640,162,508,428,t);
+ reveal(d,"A heart is",90,156,77,t,.2);
+ reveal(d,"not a still image.",90,247,67,t,1.4,P.amber);
+ ecg(d,t,103,500,480,1.08);text(d,"ANATOMY MOVES BETWEEN FRAMES",100,567,21,P.phosphor,"mono",out(seg(t,4.5,5.6)));
+ for(let k=0;k<5;k++){let p=(t*.11+k/5)%1;circle(d,699+p*432,593,3,P.amber,.25+.5*sin(PI*p));}
+ text(d,"Illustrative contraction · not patient footage",98,624,18,P.muted,"serif",out(seg(t,8,9)));
+ frame(d,t,0);
+}
+function scene1(d,t){
+ bg(d,t);let l=t-B[1];reveal(d,"The data has a history.",91,147,61,t,B[1]+.25);
+ if(l<6.8){archPhoto(d,t);}
+ else{
+  let p=out(seg(l,6.4,8));for(let k=0;k<6;k++){
+    let x=100+k*183,y=237+14*sin(t*.4+k);
+    frameThumbnail(d,x,y,155,224,t,k);
+    let alpha=.2+.8*out(seg(l,7+k*.3,8+k*.3));
+    line(d,[[x+75,y+232],[x+75,533]],P.amber,2,alpha);
+  }
+  text(d,"FRAME 1        FRAME 2        FRAME 3        FRAME 4        FRAME 5        FRAME 6",115,580,15,P.muted,"mono");
+ }
+ text(d,"ACQUISITION  →  SELECTION  →  PREPROCESSING  →  PATIENT ID",88,632,18,P.phosphor,"mono",out(seg(l,8.6,9.7)));
+ frame(d,t,1);
+}
+function scene2(d,t){
+ bg(d,t);let l=t-B[2];reveal(d,"Space meets time.",87,143,69,t,B[2]+.2);
+ const fw=132,fx=86,fy=265;
+ for(let k=0;k<4;k++){frameThumbnail(d,fx+k*145,fy,fw,194,t,k);let u=(t*.15+k*.17)%1;line(d,[[fx+18+k*145,470],[fx+105+k*145,470]],P.muted,2,.45);circle(d,fx+18+k*145+u*87,470,4,P.amber);}
+ send(d,645,352,715,352,t,0,P.amber);
+ round(d,718,245,194,241,14,"#193741");
+ layerNodes(d,750,284,t,5,4);sliding(d,t,732,253,160,203);
+ text(d,"CNN",815,521,22,P.phosphor,"mono",1,"center");
+ send(d,914,351,983,351,t,.5,P.amber);
+ for(let k=0;k<4;k++){round(d,988,245+k*61,153,52,11,"#28444e");
+  circle(d,1008+k*2,270+k*61,7,P.aqua);
+  let p=(t*.16+k*.21)%1;line(d,[[1019,270+k*61],[1050+p*61,270+k*61]],P.amber,3,.75);}
+ text(d,"LSTM",1064,541,22,P.phosphor,"mono",1,"center");
+ text(d,"FEATURE EXTRACTION",744,589,18,P.muted,"mono");
+ text(d,"SEQUENCE MEMORY",973,622,18,P.muted,"mono");
+ text(d,"Illustrative architecture · not an exact exported network topology",87,646,15,P.muted,"mono");
+ frame(d,t,2);
+}
+function scene3(d,t){
+ bg(d,t);let l=t-B[3];reveal(d,"An ensemble has a limit.",87,145,63,t,B[3]+.18);
+ const bases=["CNN–LSTM A","CNN–LSTM B","CNN–LSTM C","CNN–LSTM D","CNN–LSTM E"];
+ for(let i=0;i<5;i++){
+  let x=102+i*222,y=264+8*sin(t*.3+i*.6),appear=out(seg(l,1+i*.36,2+i*.36));
+  round(d,x,y,195,90,10,P.ink);text(d,bases[i],x+18,y+35,16,P.phosphor,"mono",appear);
+  for(let k=0;k<5;k++){let q=.5+.5*sin(t*.83+i*.5+k*.85);circle(d,x+22+k*30,y+64,4+2*q,i%2?P.aqua:P.blue,q*appear);}
+  send(d,x+97,y+92,642,500,t,i*.15,P.amber);
+ }
+ round(d,490,464,307,107,15,P.field);
+ for(let i=0;i<7;i++)circle(d,537+i*35,514,7,P.aqua,.4+.6*sin(t*.42+i));
+ text(d,"STACKING MODEL",643,554,19,P.phosphor,"mono",1,"center");
+ text(d,"Model comparison ≠ prospective clinical deployment",91,629,21,P.muted,"serif",out(seg(l,7.5,8.5)));
+ frame(d,t,3);
+}
+function person(d,x,y,r,c){circle(d,x,y,r*.3,c,.75);round(d,x-r*.24,y+r*.4,r*.48,r*.7,r*.16,c);}
+function scene4(d,t){
+ bg(d,t,true);let l=t-B[4];
+ reveal(d,"What does 91% mean?",88,143,61,t,B[4]+.2,P.navy);
+ text(d,"PUBLISHED PILOT: SUBJECT-WISE ACCURACY",96,204,17,"#556670","mono",out(seg(l,1.5,2.7)));
+ let p=out(seg(l,2,7));
+ text(d,"91%",110,391,127,P.red,"serif",p);
+ line(d,[[106,417],[505,417]],P.red,5,.65);line(d,[[106,417],[106+399*.91*p,417]],P.navy,5);
+ text(d,"Reported stacking-model accuracy",108,455,18,P.navy,"sans",p);
+ round(d,669,202,485,323,12,"#e0dfd8");
+ text(d,"PILOT COHORT",695,245,20,P.navy,"mono");
+ for(let i=0;i<22;i++){let c=i<13?P.red:P.blue,x=728+i%11*34,y=286+Math.floor(i/11)*72;
+ person(d,x,y,24,c);}
+ text(d,"13 CHD subjects",697,455,17,P.red,"mono");
+ text(d,"9 controls",982,455,17,P.blue,"mono");
+ text(d,"Subject-level counts, not video-frame counts",695,499,14,"#5a6268","mono");
+ text(d,"Small study  ·  evaluation design matters  ·  external validation not established here",88,616,18,P.navy,"sans",out(seg(l,7,8)));
+ frame(d,t,4,true);
+}
+function scene5(d,t){
+ bg(d,t);let l=t-B[5];reveal(d,"The clinician remains.",84,153,65,t,B[5]+.2);
+ sector(d,800,202,326,295,t);
+ const count=6;for(let k=0;k<count;k++){let x=108+k*116,y=349+8*sin(t*.27+k);round(d,x,y,96,70,7,P.ink);
+  let p=(t*.1+k*.2)%1;line(d,[[x+13,y+25],[x+81,y+25]],P.aqua,3,.5);
+  circle(d,x+13+68*p,y+25,5,P.amber,.8);}
+ text(d,"MODEL SUGGESTION",108,293,17,P.amber,"mono",out(seg(l,3,4)));
+ text(d,"CLINICAL INTERPRETATION",830,541,17,P.phosphor,"mono",out(seg(l,4,5)));
+ line(d,[[622,388],[797,388]],P.amber,3,.75);
+ for(let i=0;i<6;i++){let p=(t*.17+i/6)%1;circle(d,622+175*p,388,3,P.amber,.2+.6*sin(PI*p));}
+ text(d,"Exploratory 2023 IEEE Access study",91,591,23,P.phosphor,"serif",out(seg(l,6,7)));
+ text(d,"DOI 10.1109/ACCESS.2023.3316719",91,628,17,P.muted,"mono",out(seg(l,7,8)));
+ frame(d,t,5);
+}
+const scenes=[scene0,scene1,scene2,scene3,scene4,scene5];
+function drawScene(d,j,t){d.save();scenes[j](d,t);d.restore()}
+function render(t){t=clamp(t,0,DURATION-1/FPS);let which=5;
+ for(let i=0;i<6;i++)if(t>=B[i]&&t<B[i+1]){which=i;break}
+ let tr=-1;for(let k=1;k<6;k++)if(t>=B[k]-.39&&t<B[k]+.39){tr=k;break}
+ view.setTransform(1.5,0,0,1.5,0,0);
+ if(tr<0){drawScene(dc[0],which,t);view.drawImage(buffers[0],0,0);return;}
+ drawScene(dc[0],tr-1,t);drawScene(dc[1],tr,t);let p=ease(seg(t,B[tr]-.39,B[tr]+.39));
+ view.drawImage(buffers[0],0,0);view.save();view.beginPath();
+ if(tr%2){view.arc(618,390,Math.hypot(W,H)*p,0,TAU)}
+ else{let x=(W+170)*p-80;view.moveTo(0,0);view.lineTo(x,0);view.lineTo(x-98,H);view.lineTo(0,H);view.closePath()}
+ view.clip();view.drawImage(buffers[1],0,0);view.restore();}
+window.__meta={W:1920,H:1080,FPS,DURATION,title:"Can an Algorithm Read a Moving Heart?",source:"IEEE Access (2023), DOI 10.1109/ACCESS.2023.3316719"};
+window.__draw=t=>{render(t);return t};window.__ready=false;
+Promise.all([document.fonts.ready,new Promise((ok,fail)=>{if(archive.complete&&archive.naturalWidth>0)return ok();archive.addEventListener("load",ok,{once:true});archive.addEventListener("error",()=>fail(Error("Contextual ultrasound workstation photo missing")),{once:true})})])
+.then(()=>{window.__ready=true;render(0)}).catch(e=>window.__renderError=String(e));
+let playing=false,started=0;function tick(now){if(!playing)return;let t=(now-started)/1000;if(t>=DURATION){playing=false;render(DURATION-.1);return}render(t);requestAnimationFrame(tick)}
+document.addEventListener("click",()=>{playing=!playing;if(playing){started=performance.now();requestAnimationFrame(tick)}});
+</script></body></html>
