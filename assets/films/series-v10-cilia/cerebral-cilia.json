@@ -1,0 +1,51 @@
+{
+  "title": "How Does a Vessel Know the Blood Is Moving?",
+  "edition": "V10 / motion-first cinema / Film 02",
+  "duration_seconds": 84.0,
+  "fps": 24,
+  "original_narration": "assets/films/series-v7-pilots/cerebral-cilia.mp4",
+  "original_captions": "assets/films/series-v7-pilots/cerebral-cilia.vtt",
+  "primary_publication_doi": "10.1161/ATVBAHA.118.311231",
+  "source_figure": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+  "source_figure_policy": "Original scientific image contained; axes and labels unmodified",
+  "archival_microscopy_sources": [
+    {
+      "scene": 2,
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4",
+      "original_duration": 8.592593,
+      "frames_extracted": 103,
+      "use": "archival cardiovascular motion / contextual, not direct proof of cilia"
+    },
+    {
+      "scene": 5,
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/videos/0b2fc0e1-5310-4f0a-a94a-94f3471960a2.mp4",
+      "original_duration": 7.586207,
+      "frames_extracted": 91,
+      "use": "archival cardiovascular motion / contextual, not direct proof of cilia"
+    }
+  ],
+  "used_genuine_microscopy": true,
+  "fallback": "Purely editorial animation if archived video not available; no counterfeit footage",
+  "scene_bounds": [
+    0.0,
+    11.417,
+    24.208,
+    39.833000000000006,
+    53.708000000000006,
+    68.875,
+    84.0
+  ],
+  "scenes": [
+    "The vessel is alive",
+    "Watch development unfold",
+    "The sensory projection",
+    "Evidence in moving systems",
+    "The work of a team",
+    "A moment is not a flow"
+  ],
+  "motion_construction": "24 seekable fps; path growth, particle advection, cinematic parallax, passive cilium deflection, moving scan and masks, archival media, chapter-locked transitions",
+  "scientific_limit": "Nonmotile primary cilium has passive small deformation; flow drawing is conceptual, not particle data; no causal or clinical extrapolation",
+  "preservation": "Distinct review folder. Does not overwrite originals or public website video.",
+  "human_review": "Full screening, pronunciation and legal usage still required",
+  "sha256": "5b7408329807167069ad76d2d535c6f577832e705710b89f69bd9ee2cac23dc0"
+}
