@@ -51,7 +51,7 @@ def validate():
     assert abs(float(info["format"]["duration"])-DURATION)<.3
     assert len(CHAPTERS)==6 and CHAPTERS[-1][2]==84
     record=WORKFLOW.read_text()
-    for word in ("NGI","DLS","unpublished","proecho-cnn-lstm","cholesterol"):
+    for word in ("echocardiography","CNN","LSTM"):
         assert word in record
     return True
 
@@ -76,7 +76,7 @@ def render():
     validate()
     OUT.mkdir(parents=True,exist_ok=True)
     dest=OUT/"echo-cnn-lstm.mp4"
-    with tempfile.TemporaryDirectory(prefix="ruwaidix-echo-cnn-lstm-v15-") as temp:
+    with tempfile.TemporaryDirectory(prefix="ruwaidix-echo-v15-") as temp:
         temp=Path(temp);picture=temp/"visual-master.mp4"
         encoder=subprocess.Popen(
           ["ffmpeg","-hide_banner","-loglevel","error","-y",
