@@ -26,7 +26,7 @@ test("Leadership destination documents The Youth Company, ACS and quality withou
  assert.ok(page.includes('href="/stories.html#community-before-lab"'));
  assert.ok(page.includes('href="/engagement.html#acs-2019"'));
  assert.ok(page.includes('href="/cv.html#quality-credentials"'));
- assert.doesNotMatch(page,/\\bYVE\\b|id="yve"/,"YVE was a typo, not a documented organisation");
+ assert.doesNotMatch(page,/\bYVE\b|id="yve"/,"YVE was a typo, not a documented organisation");
  assert.ok(!page.includes('Chem Squad quality management'),"keep independent scientific circle separate");
 });
 test("New leadership category is a visible, accessible and bilingual destination",()=>{
