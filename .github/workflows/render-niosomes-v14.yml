@@ -1,0 +1,97 @@
+name: Film 06 | Niosomes motion-first research film
+
+on:
+  push:
+    branches:
+      - cinema/niosomes-v14-nebulizer-motion
+    paths:
+      - assets/films/series-v14-niosomes/film.html
+      - scripts/render-niosomes-v14.py
+      - tests/niosomes-v14.test.py
+      - .github/workflows/render-niosomes-v14.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: niosomes-v14-one-film-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  scientific-animation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout original narration, source photos and research dossier
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Prepare Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free open-source compositor and video encoding dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check pillow playwright numpy soundfile
+          python -m playwright install --with-deps chromium
+      - name: Fail-fast preflight for six genuinely moving scenes and original assets
+        run: |
+          python -m py_compile scripts/render-niosomes-v14.py tests/niosomes-v14.test.py
+          python scripts/render-niosomes-v14.py --validate-only
+          python tests/niosomes-v14.test.py
+      - name: Render the single 84-second Film 06 in native 1080p
+        run: python -u scripts/render-niosomes-v14.py
+      - name: Independently verify MP4, captions, source manifest and 1fps motion
+        run: |
+          python - <<'PY'
+          import hashlib,json,subprocess
+          from pathlib import Path
+          root=Path('assets/films/series-v14-niosomes')
+          mp4=root/'niosomes.mp4'
+          manifest=json.loads((root/'niosomes.json').read_text())
+          meta=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_format','-show_streams','-of','json',str(mp4)]))
+          streams=meta['streams']
+          assert {'video','audio'} <= {s['codec_type'] for s in streams}
+          assert abs(float(meta['format']['duration'])-84)<.15
+          assert any(s.get('codec_name')=='h264' and s.get('width')==1920 and s.get('height')==1080 for s in streams)
+          assert manifest['film_index']==6 and manifest['source']=='research/inhalable-vesicles.html'
+          assert manifest['old_versions_preserved'] and manifest['live_site_modified'] is False
+          assert len(manifest['scenes'])==6 and len(manifest['scientific_boundary'])>=4
+          assert hashlib.sha256(mp4.read_bytes()).hexdigest()==manifest['sha256']
+          assert (root/'niosomes.vtt').read_text().count('-->')==12
+          assert (root/'niosomes.webp').stat().st_size>7000
+          assert (root/'niosomes.contact.webp').stat().st_size>15000
+          assert len(list(root.glob('chapter-??.jpg')))==6
+          frame_md5=subprocess.check_output(['ffmpeg','-v','error','-i',str(mp4),
+             '-map','0:v:0','-an','-vf','fps=1','-f','framemd5','-'],text=True)
+          hashes=[v.rsplit(',',1)[-1].strip() for v in frame_md5.splitlines() if v and not v.startswith('#')]
+          assert 83<=len(hashes)<=85,len(hashes)
+          assert len(set(hashes))>=81,(len(set(hashes)),len(hashes))
+          print('FILM06 VERIFIED VIDEO-ONLY TEMPORAL MOTION',len(set(hashes)),'of',len(hashes))
+          p=subprocess.run(['ffmpeg','-hide_banner','-i',str(mp4),'-map','0:a:0',
+            '-filter_complex','ebur128=peak=true','-f','null','-'],capture_output=True,text=True)
+          assert p.returncode==0
+          print('FILM06 LOUDNESS QC:',p.stderr[-1500:])
+          PY
+      - name: Commit only the final review assets, protecting newer source revisions
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Ruwaidix Research Cinema"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rendered_hash="$(git hash-object scripts/render-niosomes-v14.py)"
+          mkdir -p /tmp/niosomes-v14-review
+          cp -a assets/films/series-v14-niosomes/. /tmp/niosomes-v14-review/
+          git fetch origin cinema/niosomes-v14-nebulizer-motion
+          upstream_hash="$(git show origin/cinema/niosomes-v14-nebulizer-motion:scripts/render-niosomes-v14.py | git hash-object --stdin)"
+          if [ "$rendered_hash" != "$upstream_hash" ]; then
+            echo "Newer renderer exists; decline to publish stale video"; exit 0
+          fi
+          git reset --hard origin/cinema/niosomes-v14-nebulizer-motion
+          cp -a /tmp/niosomes-v14-review/. assets/films/series-v14-niosomes/
+          git add assets/films/series-v14-niosomes/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Export Film 06 1080p vesicle and nebulization review master [niosomes-v14-output]"
+          git push origin HEAD:cinema/niosomes-v14-nebulizer-motion
