@@ -1,0 +1,74 @@
+name: Airway Cinema V9 - one-film review render
+
+on:
+  push:
+    branches:
+      - cinema/airway-reopening-v9-review
+    paths:
+      - scripts/render-airway-v9.py
+      - tests/airway-v9.test.py
+      - .github/workflows/render-airway-v9.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: airway-v9-review-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  cinematic-first-film:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - name: Check out preserved source repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+      - name: Set up open-source filmmaking tools
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow and FFmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check Pillow
+      - name: Check shot reproducibility and primary-source integrity
+        run: |
+          python -m py_compile scripts/render-airway-v9.py
+          python scripts/render-airway-v9.py --validate-only
+          python tests/airway-v9.test.py
+      - name: Render only A Breath Can Injure
+        run: python scripts/render-airway-v9.py
+      - name: Playback-stream, caption and visual-master QA
+        run: |
+          python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          d=Path("assets/films/series-v9-airway")
+          movie=d/"airway-reopening.mp4"
+          meta=json.loads((d/"airway-reopening.json").read_text())
+          streams=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_format","-show_streams","-of","json",str(movie)]))
+          types={s["codec_type"] for s in streams["streams"]}
+          assert types >= {"audio","video"}, types
+          assert abs(float(streams["format"]["duration"])-84.0)<.15
+          assert any(s.get("codec_name")=="h264" and s.get("width")==1280 and s.get("height")==720 for s in streams["streams"])
+          assert (d/"airway-reopening.vtt").read_text().count("-->")==12
+          assert (d/"airway-reopening.contact.webp").stat().st_size>10_000
+          assert meta["primary_paper_doi"]=="10.1152/japplphysiol.00574.2020"
+          assert meta["review_status"].startswith("cinematic REVIEW")
+          print("V9 MASTER VERIFIED",movie.stat().st_size)
+          PY
+      - name: Commit newly rendered review master (not previous films)
+        run: |
+          git config user.name "Ruwaidix Cinema Production"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/series-v9-airway/
+          if ! git diff --cached --quiet; then
+            git commit -m "Render first cinematic scientific film for review [airway-v9-output]"
+            git fetch origin cinema/airway-reopening-v9-review
+            git rebase origin/cinema/airway-reopening-v9-review
+            git push origin HEAD:cinema/airway-reopening-v9-review
+          fi
