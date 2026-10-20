@@ -14,7 +14,7 @@ ORIGINAL=ROOT/"assets/films/series-v7-pilots/curcumin-cyanide.mp4"
 SUBTITLE=ROOT/"assets/films/series-v7-pilots/curcumin-cyanide.vtt"
 FPS=24;W=1920;H=1080;DURATION=84
 DOI="10.1039/C9AY01557D"
-S=[("Contradictory biological context",0,12.875),("Curcumin Cyanide binding interface",12.875,27.542),("Patent review: claims and support",27.542,42.875),("Intervention modalities",42.875,59.833),("Selecting tumor context",59.833,71.708),("When?",71.708,84)]
+S=[("Can color explain the chemistry?",0,12.5),("Conjugation enables optical readout",12.5,25.75),("Solvent context: acetonitrile–water",25.75,40.42),("Reported 421→520 nm absorption shift",40.42,55.08),("Cell imaging and analytical limits",55.08,69.83),("The primary research evidence",69.83,84)]
 def call(*args):
     r=subprocess.run([str(x) for x in args],capture_output=True,text=True)
     if r.returncode:raise RuntimeError(" ".join(map(str,args))+"\n"+r.stderr[-2500:])
@@ -55,7 +55,7 @@ def render():
     OUT.mkdir(parents=True,exist_ok=True)
     master=OUT/"curcumin-cyanide.mp4"
     poster=OUT/"curcumin-cyanide.webp"
-    with tempfile.TemporaryDirectory(prefix="ruwaidix-slit2-v11-") as tmp:
+    with tempfile.TemporaryDirectory(prefix="ruwaidix-curcumin-v12-") as tmp:
         tmp=Path(tmp);silent=tmp/"visual-master.mp4"
         cmd=["ffmpeg","-hide_banner","-loglevel","error","-y",
             "-f","image2pipe","-framerate",str(FPS),"-vcodec","mjpeg","-i","pipe:0",
