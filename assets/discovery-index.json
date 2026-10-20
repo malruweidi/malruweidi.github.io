@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-18",
+  "version": "2026-10-20",
   "description": "Additive, source-grounded site discovery; links only to existing Ruwaidix public pages and headings.",
   "categories": [
     "Orientation",
@@ -706,6 +706,30 @@
       "url": "/recommended-essays.html",
       "summary": "Richard P. Feynman’s 1974 essay Cargo Cult Science, the integrity of experiments and scholarly self-deception.",
       "keywords": "Richard Feynman cargo cult science scientific honesty scientific method experimentation مقال فاينمان النزاهة العلمية"
+    },
+    {
+      "id": 88,
+      "title": "On Screen · Films and television about science",
+      "category": "Recommended reading",
+      "url": "/recommended-screen.html",
+      "summary": "Curated films and television series on discovery, medicine, mortality and the responsibilities of scientific knowledge.",
+      "keywords": "screen movies films television cinema recommendations Ikiru science medicine ethics discovery سينما أفلام مسلسلات ترشيحات طب علم"
+    },
+    {
+      "id": 89,
+      "title": "Research training & professional development",
+      "category": "Methods & evidence",
+      "url": "/training.html",
+      "summary": "Dated course-completion records in research integrity, preclinical animal models, quality improvement and science teaching, with verification links and clear scope limits.",
+      "keywords": "training CITI certificates research ethics responsible conduct animals zebrafish mice six sigma quality teaching development تدريب أبحاث شهادات أخلاقيات البحث جودة تدريس"
+    },
+    {
+      "id": 90,
+      "title": "Research methods & evidence · Original sources",
+      "category": "Methods & evidence",
+      "url": "/methods-evidence.html",
+      "summary": "Evidence-linked research methods across experiments and publications, with archival photographs, scientific figures, original sources and differentiated contributions.",
+      "keywords": "laboratory methods evidence protocols original sources photography published figures contributions experimental methodology منهجية البحث طرق تجريبية أدلة تجارب صور مختبر مصادر أولية"
     }
   ]
 }
