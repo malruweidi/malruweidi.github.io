@@ -3,7 +3,7 @@ name: Film 04 | Curcumin optical motion-cinema master
 on:
   push:
     branches:
-      - cinema/curcumin-v12-kinetic-review
+      - cinema/curcumin-cyanide-v12-spectral-film
     paths:
       - assets/films/series-v12-curcumin/film.html
       - scripts/render-curcumin-v12.py
@@ -85,17 +85,17 @@ jobs:
           git config user.name "Ruwaidix Research Cinema"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           source_hash="$(git hash-object scripts/render-curcumin-v12.py)"
-          mkdir -p /tmp/slit2-v11-render
-          cp -a assets/films/series-v12-curcumin/. /tmp/slit2-v11-render/
-          git fetch origin cinema/curcumin-v12-kinetic-review
-          upstream_hash="$(git show origin/cinema/curcumin-v12-kinetic-review:scripts/render-curcumin-v12.py | git hash-object --stdin)"
+          mkdir -p /tmp/curcumin-v12-render
+          cp -a assets/films/series-v12-curcumin/. /tmp/curcumin-v12-render/
+          git fetch origin cinema/curcumin-cyanide-v12-spectral-film
+          upstream_hash="$(git show origin/cinema/curcumin-cyanide-v12-spectral-film:scripts/render-curcumin-v12.py | git hash-object --stdin)"
           if [ "$source_hash" != "$upstream_hash" ]; then
             echo "Newer renderer exists; skip stale binary export"
             exit 0
           fi
-          git reset --hard origin/cinema/curcumin-v12-kinetic-review
-          cp -a /tmp/slit2-v11-render/. assets/films/series-v12-curcumin/
+          git reset --hard origin/cinema/curcumin-cyanide-v12-spectral-film
+          cp -a /tmp/curcumin-v12-render/. assets/films/series-v12-curcumin/
           git add assets/films/series-v12-curcumin/
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Publish Film 04 cinematic full-HD review master [slit2-v11-output]"
-          git push origin HEAD:cinema/curcumin-v12-kinetic-review
+          git commit -m "Publish Film 04 cinematic full-HD review master [curcumin-v12-output]"
+          git push origin HEAD:cinema/curcumin-cyanide-v12-spectral-film
