@@ -149,6 +149,16 @@ if(require.main===module)(async()=>{
      dir:document.documentElement.dir,arabic:document.querySelectorAll("[lang='ar']").length}));
    if(state.lang!=="ar"||state.dir!=="rtl")throw Error("Arabic did not set html lang/dir: "+JSON.stringify(state));
    if(!state.arabic)throw Error("No Arabic content retained");
+   const ar=await page.evaluate(()=>({inner:innerWidth,scroll:document.documentElement.scrollWidth}));
+   if(ar.scroll>ar.inner+5)throw Error("Arabic layout overflows viewport: "+JSON.stringify(ar));
+   const filename="illness-arabic-375.jpg";
+   await page.screenshot({path:path.join(artifact,filename),type:"jpeg",quality:78,animations:"disabled"});
+   report.screenshots.push(filename);
+  });
+  await runCheck("existing evidence-page Find link is not duplicated by discovery enhancement",async()=>{
+   await page.goto(base+"/evidence-viewer.html",{waitUntil:"domcontentloaded"});
+   const count=await page.locator(".ev-nav nav a[href='/search.html']").count();
+   if(count!==1)throw Error("Expected one preserved Find link; found "+count);
   });
   await runCheck("Research search returns navigable results",async()=>{
    await page.goto(base+"/search.html",{waitUntil:"domcontentloaded"});
@@ -177,6 +187,23 @@ if(require.main===module)(async()=>{
    });
    if(!status.src||!status.poster||status.tracks<1)throw Error("video source/poster/caption incomplete: "+JSON.stringify(status));
    if(!Number.isFinite(status.duration)||status.duration<=0)throw Error("Chrome could not decode local MP4 metadata: "+JSON.stringify(status));
+   // Two representative documentary frames for manual screening; a frame is
+   // evidence of rendering, not approval of pacing, sound or scientific claims.
+   for(const second of [1,30,60]){
+    if(second>=status.duration-1)continue;
+    try{
+     await page.locator("video").first().evaluate(async(video,target)=>{
+      await new Promise((resolve,reject)=>{
+       const timeout=setTimeout(()=>reject(new Error("seek timeout")),6500);
+       video.addEventListener("seeked",()=>{clearTimeout(timeout);resolve()},{once:true});
+       video.currentTime=target;
+      });
+     },second);
+     const shot="film-what-a-bubble-"+second+"s.jpg";
+     await page.locator("video").first().screenshot({path:path.join(artifact,shot),type:"jpeg",quality:82,animations:"disabled"});
+     report.screenshots.push(shot);
+    }catch(e){warn("Film seek/frame preview at "+second+"s could not be captured: "+String(e.message||e).slice(0,200))}
+   }
    return status;
   });
   await page.close();await context.close();
