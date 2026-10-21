@@ -15,6 +15,7 @@ html[data-rx-page="home"] .geo-source{
 }
 html[data-rx-page="stories"] .rx26-figures > figure > figcaption{
   color:#435e60 !important;
+  opacity:1 !important;
 }
 html[data-rx-page="archive"] .rx-oct12-note{
   color:#465b56;
@@ -73,6 +74,7 @@ html[data-rx-page="illness-evidence"] .sequence.ar article small{
 html[data-rx-page="illness-evidence"] #rx16-diagnosis-photo > .rx16-heading > .rx16-kicker,
 html[data-rx-page="illness-evidence"] #rx16-diagnosis-photo-ar > .rx16-heading > .rx16-kicker{
   color:#465b56 !important;
+  opacity:1 !important;
 }
 html[data-rx-page="illness-evidence"] .narrative > .side > span,
 html[data-rx-page="illness-evidence"] .sequence.ar article small{
