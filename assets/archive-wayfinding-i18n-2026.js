@@ -25,5 +25,9 @@
   "Archival image from an unsuccessful zebrafish paraffin-sectioning attempt": "صورة أرشيفية من محاولة لم تنجح لتقطيع عينات الزرد المطمورة في البرافين",
   "Archival photograph of an event associated with the fifth Chemistry Festival": "صورة أرشيفية من فعالية مرتبطة بمهرجان الكيمياء الخامس"
   ,"Read the standalone account":"اقرأ الحكاية المستقلة"
+,
+  "Open archived photograph ↗": "افتح الصورة الأرشيفية ↗",
+  "See reverse label ↗": "شاهد الملصق الخلفي ↗",
+  "See front label ↗": "شاهد الملصق الأمامي ↗"
 });
 })();
