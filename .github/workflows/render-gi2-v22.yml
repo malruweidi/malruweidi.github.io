@@ -1,0 +1,110 @@
+name: Film 14 | Diagnostic reasoning and emerging therapies cinema
+
+on:
+  push:
+    branches:
+      - cinema/gi-autoimmunity-v22-diagnostic-navigation
+    paths:
+      - assets/films/series-v22-gi2/film.html
+      - scripts/render-gi2-v22.py
+      - tests/gi2-v22.test.py
+      - .github/workflows/render-gi2-v22.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: single-film14-gi2-v22-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  film14-review-cut:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - name: Check out open-access GI Part II chapter context and original 84s narration
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install reproducible no-cost Chromium FFmpeg rendering stack
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check pillow playwright numpy soundfile
+          python -m playwright install --with-deps chromium
+      - name: Validate differential diagnosis pathways and 6 genuine moving chapters
+        run: |
+          python -m py_compile scripts/render-gi2-v22.py tests/gi2-v22.test.py
+          python scripts/render-gi2-v22.py --validate-only
+          python tests/gi2-v22.test.py
+      - name: Render full 84-second film at native 1920x1080 24fps
+        run: python -u scripts/render-gi2-v22.py
+      - name: Independent check of source claims, encoded motion, captions and loudness
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib,subprocess,re
+          root=Path("assets/films/series-v22-gi2")
+          master=root/"gi-autoimmunity-2.mp4"
+          data=json.loads((root/"gi-autoimmunity-2.json").read_text())
+          ff=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(master)]))
+          assert abs(float(ff["format"]["duration"])-84)<.15
+          assert {"video","audio"}<={x["codec_type"] for x in ff["streams"]}
+          assert any(x.get("codec_name")=="h264" and x.get("width")==1920 and x.get("height")==1080 for x in ff["streams"])
+          assert data["film_index"]==14 and data["source"]["doi"]=="10.5772/intechopen.106185"
+          assert "2022 narrative review" in data["source"]["scope"]
+          assert "Attribution 3.0" in data["source"]["license"]
+          assert data["source"]["published"]=="2022-11-29"
+          assert len(data["selected_evidence"])==5
+          assert any("not a validated trained model" in x["limit"] for x in data["selected_evidence"])
+          assert any("not a current recommendation" in x for x in data["scientific_limits"])
+          assert data["live_site_unchanged"] and data["prior_versions_preserved"]
+          assert hashlib.sha256(master.read_bytes()).hexdigest()==data["sha256"]
+          for src in data["archival_images"]:
+            assert hashlib.sha256(Path(src["path"]).read_bytes()).hexdigest()==src["sha256"]
+          assert (root/"gi-autoimmunity-2.vtt").read_text().count("-->")==12
+          assert (root/"gi-autoimmunity-2.contact.webp").stat().st_size>14000
+          assert (root/"gi-autoimmunity-2.webp").stat().st_size>4000
+          assert len(list(root.glob("chapter-??.jpg")))==6
+          frames=subprocess.check_output(["ffmpeg","-v","error","-i",str(master),
+            "-map","0:v:0","-an","-vf","fps=1","-f","framemd5","-"],text=True)
+          hashes=[q.rsplit(",",1)[-1].strip() for q in frames.splitlines() if q and not q.startswith("#")]
+          assert 83<=len(hashes)<=85,len(hashes)
+          assert len(set(hashes))>=80,(len(set(hashes)),len(hashes))
+          print("FILM14 VERIFIED VIDEO-ONLY TEMPORAL FRAMES",len(set(hashes)),"/",len(hashes))
+          audio=subprocess.run(["ffmpeg","-hide_banner","-i",str(master),
+            "-map","0:a:0","-filter_complex","ebur128=peak=true","-f","null","-"],
+            capture_output=True,text=True)
+          assert audio.returncode==0
+          import re
+          samples=[float(x) for x in re.findall(r"TPK:\s*([-+]?\d+(?:\.\d+)?)\s*dBFS",audio.stderr)]
+          assert samples, "True-peak samples missing from EBU R128 measurement"
+          worst=max(samples)
+          assert worst <= -1.0, f"True peak over mastering ceiling: {worst:.1f} dBTP"
+          print("FILM14 VERIFIED TRUE PEAK",worst,"dBTP")
+          print("FILM14 EBU R128",audio.stderr[-1500:])
+          PY
+      - name: Commit verified review master to isolated branch and retain all existing films
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Ruwaidix Research Cinema"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          render_source_hash="$(git hash-object scripts/render-gi2-v22.py)"
+          mkdir -p /tmp/gi2-v22-output
+          cp -a assets/films/series-v22-gi2/. /tmp/gi2-v22-output/
+          git fetch origin cinema/gi-autoimmunity-v22-diagnostic-navigation
+          current_hash="$(git show origin/cinema/gi-autoimmunity-v22-diagnostic-navigation:scripts/render-gi2-v22.py | git hash-object --stdin)"
+          if [ "$render_source_hash" != "$current_hash" ]; then
+            echo "Newer source renderer exists; do not push a stale binary"; exit 0
+          fi
+          git reset --hard origin/cinema/gi-autoimmunity-v22-diagnostic-navigation
+          cp -a /tmp/gi2-v22-output/. assets/films/series-v22-gi2/
+          git add assets/films/series-v22-gi2/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Film 14: export clinical diagnostic and therapeutic evidence 1080p review master"
+          git push origin HEAD:cinema/gi-autoimmunity-v22-diagnostic-navigation
