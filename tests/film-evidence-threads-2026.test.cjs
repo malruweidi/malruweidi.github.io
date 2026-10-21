@@ -74,3 +74,14 @@ test('No grades, false publication status or synthetic source media added in the
   const record = read('molecular-therapeutics.html');
   assert.doesNotMatch(record, /\(ADCs\)\s+\./, 'punctuation-only editorial correction');
 });
+
+test('The public academic profile has one main landmark after its introductory header', () => {
+  const html = read('cv.html');
+  assert.equal((html.match(/<main\b/g) || []).length, 1, 'exactly one main');
+  assert.match(html, /<main id="main">/);
+  assert.ok(html.indexOf('</header>') < html.indexOf('<main id="main">'));
+  assert.ok(html.indexOf('<main id="main">') < html.indexOf('<h2 class="label">Research direction'));
+  assert.ok(html.indexOf('</main>') < html.indexOf('<footer>'));
+  assert.match(html, /This public version intentionally omits private telephone numbers/);
+  assert.match(html, /<h2 class="label">Scientific engagement<\/h2>/);
+});
