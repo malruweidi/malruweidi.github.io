@@ -1,0 +1,9 @@
+/* Persistent control for the six original homepage scientific figures. */
+.rx-motion-controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px 18px;margin:18px 0 15px}
+.rx-motion-controls button{border:1px solid #9cac9e;background:#f9faf4;color:#17343b;padding:9px 14px;font:600 12px/1.5 "DM Sans",Arial,sans-serif;cursor:pointer;border-radius:3px}
+.rx-motion-controls button:hover{background:#e4eae6}
+.rx-motion-controls button:focus-visible{outline:3px solid #b35e42;outline-offset:3px}
+.rx-motion-controls span{font:12px/1.6 "DM Sans",Arial,sans-serif;color:#526663}
+.moving-gallery[data-motion-paused="true"]{overflow-x:auto;mask-image:none;-webkit-mask-image:none;overscroll-behavior-inline:contain}
+.moving-gallery[data-motion-paused="true"] .moving-track{animation:none!important;transform:none!important}
+@media(prefers-reduced-motion:reduce){.rx-motion-controls{display:none}.moving-gallery{overflow-x:auto;mask-image:none;-webkit-mask-image:none}}
