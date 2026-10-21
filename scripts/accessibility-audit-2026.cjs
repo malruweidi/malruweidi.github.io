@@ -82,6 +82,18 @@ if(require.main===module)(async()=>{
       nodes:x.nodes.map(n=>({target:n.target}))
      })),
      incomplete:result.incomplete.map(x=>({id:x.id,impact:x.impact,nodes:x.nodes.length})),
+     contrastDiagnostics:[
+      ".rx26-figures > figure > figcaption",
+      "#rx16-diagnosis-photo > .rx16-heading > .rx16-kicker"
+     ].map(selector=>{
+      const e=document.querySelector(selector);
+      if(!e)return {selector,present:false};
+      const css=getComputedStyle(e),parent=getComputedStyle(e.parentElement);
+      return {selector,present:true,color:css.color,
+       background:css.backgroundColor,parentBackground:parent.backgroundColor,
+       directPriority:e.style.getPropertyPriority("color"),
+       stylesheetPresent:[...document.styleSheets].some(ss=>String(ss.href||"").includes("wcag-contrast-2026.css"))};
+     }),
      passes:result.passes.length,testsTotal:result.violations.length+result.incomplete.length+result.passes.length
     };
    },TAGS);
@@ -90,6 +102,7 @@ if(require.main===module)(async()=>{
     page:route,width:page.viewportSize()?.width||0,language,
     rule:x.id,impact:x.impact,affectedElements:x.nodes
    });
+   if(data.contrastDiagnostics.some(x=>x.present))report.contrastDiagnostics=(report.contrastDiagnostics||[]).concat(data.contrastDiagnostics.filter(x=>x.present).map(x=>({...x,route,language,width:page.viewportSize()?.width||0})));
    report.pages.push({route,width:page.viewportSize()?.width||0,language,
     action:action||"initial",passes:data.passes,violations:data.violations.length,
     incomplete:data.incomplete.length,testsTotal:data.testsTotal});
@@ -129,6 +142,7 @@ if(require.main===module)(async()=>{
    "",...report.findings.map(f=>"- "+f.impact+" "+f.rule+" | "+f.page+" "+f.width+"px "+f.language+
     " | "+f.affectedElements+" elements | "+f.targets.slice(0,2).join(", ")),
    "",...report.browserFailures.map(f=>"- Browser failure: "+f.route+" "+f.details),
+   "",...(report.contrastDiagnostics||[]).map(d=>"- Computed text: "+d.route+" "+d.language+" "+d.width+"px "+d.selector+" "+d.color+" / "+d.background+" parent="+d.parentBackground+" local-important="+d.directPriority+" CSS="+d.stylesheetPresent),
    "", "No automatic WCAG scan verifies full accessibility, screen-reader behavior or clinical narrative comprehension."
   ].join("\n");
   fs.writeFileSync(path.join(out,"summary.md"),summary+"\n");
