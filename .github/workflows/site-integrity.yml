@@ -87,3 +87,5 @@ jobs:
         run: node --test tests/home-gallery-motion.test.cjs
       - name: Confirm photographed Stories routes and original archive image access
         run: node --test tests/stories-archive-visual-continuity-2026.test.cjs
+      - name: Check scientific figures and distinguish image attribution from published research
+        run: node --test tests/scientific-figure-source-boundaries-2026.test.cjs
