@@ -1,0 +1,101 @@
+name: Film 08 | PLA surface-interface research cinema
+
+on:
+  push:
+    branches:
+      - cinema/pla-grafting-v16-interface-cinema
+    paths:
+      - assets/films/series-v16-pla/film.html
+      - scripts/render-pla-v16.py
+      - tests/pla-v16.test.py
+      - .github/workflows/render-pla-v16.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pla-v16-one-film-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  experimental-documentary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Retrieve unchanged source narration, captions and published figures
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Prepare free open-source video rendering tools
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Chromium, Playwright, FFmpeg and original-score dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check pillow playwright numpy soundfile
+          python -m playwright install --with-deps chromium
+      - name: Verify figures, research context, all moving scenes and seekable frames
+        run: |
+          python -m py_compile scripts/render-pla-v16.py tests/pla-v16.test.py
+          python scripts/render-pla-v16.py --validate-only
+          python tests/pla-v16.test.py
+      - name: Render Film08 only, 120 seconds Full HD
+        run: python -u scripts/render-pla-v16.py
+      - name: Validate full video duration, H264, caption integrity, motion and EBU R128
+        run: |
+          python - <<'PY'
+          import hashlib,json,subprocess
+          from pathlib import Path
+          root=Path("assets/films/series-v16-pla")
+          film=root/"pla-grafting.mp4"
+          data=json.loads((root/"pla-grafting.json").read_text())
+          meta=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_format","-show_streams","-of","json",str(film)]))
+          assert abs(float(meta['format']['duration'])-120)<.15
+          assert {'video','audio'}<={v['codec_type'] for v in meta['streams']}
+          assert any(v.get('codec_name')=='h264' and v.get('width')==1920 and v.get('height')==1080 for v in meta['streams'])
+          assert data['film']==8 and data['paper']['doi']=='10.3390/polym13213717'
+          assert len(data['unaltered_original_figures'])==3
+          assert data['published_values']['water_contact_angle_degrees']=={'untreated':70.2,'plasma':55.1,'plasma_fumaric_acid':49.6}
+          assert data['published_values']['peel_resistance_newtons_per_meter']['fumaric_acid_plasma']==211
+          assert data['earlier_masters_preserved'] and data['live_site_unchanged']
+          assert hashlib.sha256(film.read_bytes()).hexdigest()==data['sha256']
+          assert (root/"pla-grafting.vtt").read_text().count("-->")>=30
+          assert (root/"pla-grafting.contact.webp").stat().st_size>20000
+          assert (root/"pla-grafting.webp").stat().st_size>7000
+          assert len(list(root.glob("chapter-??.jpg")))==8
+          md5=subprocess.check_output(["ffmpeg","-v","error","-i",str(film),
+             "-map","0:v:0","-an","-vf","fps=1","-f","framemd5","-"],text=True)
+          hashes=[s.rsplit(",",1)[-1].strip() for s in md5.splitlines() if s and not s.startswith("#")]
+          assert 119<=len(hashes)<=121,len(hashes)
+          assert len(set(hashes))>=116,("Not sufficiently moving",len(set(hashes)))
+          print("FILM08 VIDEO-ONLY FRAME MOTION",len(set(hashes)),"/",len(hashes))
+          q=subprocess.run(["ffmpeg","-hide_banner","-i",str(film),"-map","0:a:0",
+              "-filter_complex","ebur128=peak=true","-f","null","-"],capture_output=True,text=True)
+          assert q.returncode==0
+          print("FILM08 EBU R128 LOUDNESS",q.stderr[-1500:])
+          PY
+      - name: Publish only review master to its own draft branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Ruwaidix Research Cinema"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          source_hash="$(git hash-object scripts/render-pla-v16.py)"
+          mkdir -p /tmp/pla-v16-review
+          cp -a assets/films/series-v16-pla/. /tmp/pla-v16-review/
+          git fetch origin cinema/pla-grafting-v16-interface-cinema
+          current="$(git show origin/cinema/pla-grafting-v16-interface-cinema:scripts/render-pla-v16.py | git hash-object --stdin)"
+          if [ "$source_hash" != "$current" ]; then
+            echo "Newer renderer revision detected; prevent stale output"
+            exit 0
+          fi
+          git reset --hard origin/cinema/pla-grafting-v16-interface-cinema
+          cp -a /tmp/pla-v16-review/. assets/films/series-v16-pla/
+          git add assets/films/series-v16-pla/
+          if git diff --cached --quiet; then
+            echo "Identical film already committed"; exit 0
+          fi
+          git commit -m "Export Film 08 original 2-minute moving polymer-interface documentary [pla-v16]"
+          git push origin HEAD:cinema/pla-grafting-v16-interface-cinema

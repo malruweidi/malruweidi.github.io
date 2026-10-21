@@ -1,0 +1,111 @@
+{
+  "film": 8,
+  "title": "The Surface Is Not the Material",
+  "edition": "V16 / kinetic experimental interface film",
+  "runtime_seconds": 120.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "paper": {
+    "doi": "10.3390/polym13213717",
+    "title": "Surface Modification of Poly(lactic acid) Film via Cold Plasma Assisted Grafting of Fumaric and Ascorbic Acid",
+    "journal": "Polymers (2021) 13(21), 3717",
+    "scope": "poly(lactic acid) surface wettability and PLA/aluminum laminate adhesion, packaging materials",
+    "license": "CC BY 4.0"
+  },
+  "source_narration": "assets/films/series-v8-primary/pla-grafting.mp4",
+  "source_captions": "assets/films/series-v8-primary/pla-grafting.vtt",
+  "published_values": {
+    "water_contact_angle_degrees": {
+      "untreated": 70.2,
+      "plasma": 55.1,
+      "plasma_fumaric_acid": 49.6
+    },
+    "peel_resistance_newtons_per_meter": {
+      "untreated_approx": 74.4,
+      "fumaric_acid_no_plasma_approx": 87.2,
+      "fumaric_acid_plasma": 211
+    }
+  },
+  "unaltered_original_figures": [
+    {
+      "figure": 1,
+      "title": "(a) The contact angles of the testing liquids on the PLA samples, (b) The surface free energy of the PLA samples.",
+      "path": "assets/films/source-figures/v3/pla-grafting-figure-01.jpg",
+      "sha256": "fc3cb0b1526dca9d73d7e5ec133d2552028fbcb6aa3e97ba7f2243528bc9efd8",
+      "license": "Creative Commons Attribution 4.0 (source JATS verified); retain citation and original panel identity",
+      "treatment": "shown intact, never transformed into a synthetic measurement"
+    },
+    {
+      "figure": 4,
+      "title": "X-ray photoelectron spectroscopy (XPS) spectra of PLA samples.",
+      "path": "assets/films/source-figures/v3/pla-grafting-figure-04.jpg",
+      "sha256": "053a349f280dbd8f8d080ae6cd38329949b349bd78bc38ef95e6c7a3d9e45c49",
+      "license": "Creative Commons Attribution 4.0 (source JATS verified); retain citation and original panel identity",
+      "treatment": "shown intact, never transformed into a synthetic measurement"
+    },
+    {
+      "figure": 8,
+      "title": "Peel resistance of PLA/Al laminate.",
+      "path": "assets/films/source-figures/v3/pla-grafting-figure-08.jpg",
+      "sha256": "13188cdc0317eb158126558a9a0f8cba3166f2ce3054cc29e3a770bc316b28ed",
+      "license": "Creative Commons Attribution 4.0 (source JATS verified); retain citation and original panel identity",
+      "treatment": "shown intact, never transformed into a synthetic measurement"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Two visually identical sheets",
+      "start": 0,
+      "end": 15
+    },
+    {
+      "name": "A contact-angle baseline",
+      "start": 15,
+      "end": 30
+    },
+    {
+      "name": "Plasma activation",
+      "start": 30,
+      "end": 45
+    },
+    {
+      "name": "Ascorbic versus fumaric grafting",
+      "start": 45,
+      "end": 60
+    },
+    {
+      "name": "Elemental surface chemistry",
+      "start": 60,
+      "end": 75
+    },
+    {
+      "name": "Measured wetting changes",
+      "start": 75,
+      "end": 90
+    },
+    {
+      "name": "The laminate peel experiment",
+      "start": 90,
+      "end": 105
+    },
+    {
+      "name": "Controls and sequence dependence",
+      "start": 105,
+      "end": 120
+    }
+  ],
+  "motion": "Frame-seekable 24fps Canvas2D polymer interface, plasma trajectories, grafts, wetting and peel separation plus unaltered scientific chart dwell",
+  "evidence_limits": [
+    "Plasma particles, activated bonds, chemical graft icons, droplets and peeling laminate are interpretive illustrations, NOT observed video or actual molecular positions.",
+    "Original XPS, contact-angle and peel charts remain complete and unmodified; scientific values are transcribed from the 2021 paper.",
+    "Wettability and PLA/Al peel improvements do not establish clinical biocompatibility, antimicrobial efficacy, or performance inside a patient.",
+    "No claim of an effect in the distinct 2020 PLA scaffold study; this film is only about the 2021 PLA film-grafting study."
+  ],
+  "earlier_masters_preserved": true,
+  "live_site_unchanged": true,
+  "review_state": "Technical review export; final audiovisual, caption, scientific and attribution sign-off pending",
+  "sha256": "d65b49acea383b38c48887a7e65a7e7ae8f3a2368864c4beef77861ca211dbc3"
+}
