@@ -1,0 +1,179 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>A Scaffold Meets Its Environment — Film 09 | Ruwaidix Cinema</title>
+<style>html,body{margin:0;background:#09171b;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.archive{position:absolute;left:-9999px;width:1px;height:1px}</style></head><body>
+<h1 class="sr-only">A Scaffold Meets Its Environment — Electrospun PLA and antimicrobial surface modification</h1>
+<img class="archive" id="sem" src="../source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg" alt="Unaltered published SEM Figure 5, four experimental conditions with original three micrometre scale bars">
+<img class="archive" id="afm" src="source-afm-from-v5.jpg" alt="Frame extracted from archived V5 research film showing the AFM study figure as originally presented, rather than a direct full-resolution publisher image">
+<img class="archive" id="ftir" src="source-ftir-from-v5.jpg" alt="Frame extracted from archived V5 research film showing the FTIR study figure as originally presented, rather than a direct full-resolution publisher image">
+<canvas id="screen" width="1920" height="1080" role="img" aria-label="Film with continuously moving electrospun fiber world, plasma activation, SEM and archival AFM/FTIR evidence, antimicrobial results and limits"></canvas>
+<script>"use strict";
+const W=1280,H=720,FPS=24,DURATION=120,B=[0,15,30,45,60,75,90,105,120];
+const col={night:"#0a1b1f",deep:"#112a30",slate:"#2b4b51",graphite:"#132329",aqua:"#85beb9",frost:"#e7f0e5",
+ pearl:"#c4d6cb",smoke:"#96ada9",copper:"#e0a071",brick:"#be715e",gold:"#d0bb80",green:"#83b395",
+ paper:"#f1eee7",ink:"#29343a",blue:"#7a9db0",warm:"#e6c7a5"};
+const sem=document.getElementById("sem"),afm=document.getElementById("afm"),ftir=document.getElementById("ftir");
+const canvas=document.getElementById("screen"),out=canvas.getContext("2d",{alpha:false}),buf=[document.createElement("canvas"),document.createElement("canvas")];
+buf.forEach(b=>{b.width=W;b.height=H});const ctx=buf.map(c=>c.getContext("2d",{alpha:false}));
+const PI=Math.PI,TAU=2*PI,cos=Math.cos,sin=Math.sin;
+const clamp=(q,a=0,b=1)=>Math.max(a,Math.min(b,q)),seg=(t,a,b)=>clamp((t-a)/(b-a));
+const ease=q=>{q=clamp(q);return q*q*(3-2*q)},outEase=q=>1-Math.pow(1-clamp(q),3),mix=(a,b,p)=>a+(b-a)*p;
+function rect(d,x,y,w,h,c){d.fillStyle=c;d.fillRect(x,y,w,h)}
+function line(d,pts,c,w=2,a=1){d.save();d.globalAlpha=clamp(a);d.lineWidth=w;d.lineJoin="round";d.lineCap="round";d.strokeStyle=c;d.beginPath();d.moveTo(...pts[0]);for(let k=1;k<pts.length;k++)d.lineTo(...pts[k]);d.stroke();d.restore()}
+function dot(d,x,y,r,c,a=1){d.save();d.globalAlpha=clamp(a);d.beginPath();d.arc(x,y,Math.max(.1,r),0,TAU);d.fillStyle=c;d.fill();d.restore()}
+function ring(d,x,y,r,c,w=2,a=1){d.save();d.globalAlpha=clamp(a);d.beginPath();d.arc(x,y,Math.max(1,r),0,TAU);d.strokeStyle=c;d.lineWidth=w;d.stroke();d.restore()}
+function rounded(d,x,y,w,h,r,c){d.beginPath();d.roundRect(x,y,w,h,r);d.fillStyle=c;d.fill()}
+function text(d,s,x,y,z=20,c=col.frost,f="sans",a=1,align="left"){d.save();d.globalAlpha=clamp(a);d.fillStyle=c;d.font=z+"px "+(f==="serif"?"Georgia,serif":f==="mono"?"monospace":"Arial,sans-serif");d.textAlign=align;d.textBaseline="alphabetic";d.fillText(s,x,y);d.restore()}
+function title(d,s,x,y,z,t,at,c=col.frost){let q=outEase(seg(t,at,at+.85));d.save();d.beginPath();d.rect(x-3,y-z*1.28,1160,(z+34)*q);d.clip();text(d,s,x,y+16*(1-q),z,c,"serif");d.restore()}
+function backdrop(d,t,light=false){rect(d,0,0,W,H,light?col.paper:col.night);
+ let g=d.createRadialGradient(light?460:865,light?265:285,25,light?460:865,270,880);
+ g.addColorStop(0,light?"rgba(192,163,127,.13)":"rgba(86,168,165,.13)");g.addColorStop(1,"rgba(0,0,0,0)");rect(d,0,0,W,H,g);
+ d.save();d.translate(6*sin(t*.2),3*cos(t*.25));for(let j=0;j<8;j++)line(d,[[100+j*163,60],[100+j*163,674]],light?"#c0b8a8":"#345d5d",1,.13);d.restore();}
+function frame(d,t,j,light=false){const c=light?col.slate:col.smoke;line(d,[[73,57],[1205,57]],c,1,.28);
+ text(d,"RUWAIDIX / RESEARCH CINEMA",76,42,13,c,"mono");
+ text(d,"09 / ELECTROSPUN SCAFFOLDS",1203,42,13,c,"mono",1,"right");
+ line(d,[[73,683],[1206,683]],c,1,.28);line(d,[[73,683],[73+1133*t/120,683]],light?col.brick:col.copper,3);
+ text(d,String(j+1).padStart(2,"0")+" / 08",76,663,15,c,"mono");}
+function fiber(d,t,x0,y0,length=930,thickness=18,seed=0,depth=1){
+ // Soft 2.5D rope cylinders: moving light and parallax, NOT an SEM micrograph.
+ const N=62,pts=[];
+ let angle=.075*sin(seed*2.2)+.19*cos(seed*.93);
+ const xx=x0+8*sin(t*.21+seed)*depth,yy=y0+7*cos(t*.17+seed)*depth;
+ for(let k=0;k<=N;k++){let q=k/N;
+  pts.push([xx+q*length, yy+q*length*angle+10*sin(q*TAU*2+t*.11+seed)])}
+ line(d,pts,col.graphite,thickness+10,depth*.6);
+ line(d,pts,depth>.65?col.pearl:col.slate,thickness,depth*.66+.19);
+ const shine=pts.map((v,i)=>[v[0],v[1]-thickness*.16+1.7*sin(i*.53+t*.38)]);
+ line(d,shine,col.frost,2.1,.10+.18*depth);}
+function fibermat(d,t,x,y,w=1000,h=280,density=20){
+ d.save();d.beginPath();d.roundRect(x,y,w,h,14);d.clip();
+ for(let k=0;k<density;k++){let yy=y-120+(k*37)% (h+230),xx=x-120+18*sin(k*2+t*.09),
+ length=w+210,th=8+(k%6)*2;
+  fiber(d,t,xx,yy,length,th,k,.3+.6*(k%5)/4);}
+ d.restore();}
+function collectors(d,t){let cx=888,cy=464,r=135; // Schematic cylindrical collector
+ d.save();d.translate(cx,cy);d.scale(1,.42);
+ let g=d.createRadialGradient(0,0,36,0,0,r);g.addColorStop(0,col.slate);g.addColorStop(.5,col.deep);g.addColorStop(1,col.aqua);
+ dot(d,0,0,r,g,.85);ring(d,0,0,r,col.pearl,5,.66);
+ for(let k=0;k<18;k++){let q=k*TAU/18+t*.7;line(d,[[0,0],[r*cos(q),r*sin(q)]],col.smoke,2,.22);}
+ d.restore();}
+function electrojet(d,t){let X=401,Y=266;
+ line(d,[[X,Y-112],[X,Y]],col.frost,11,.9);dot(d,X,Y,8,col.warm);
+ let points=[];for(let k=0;k<120;k++){let p=k/119;points.push([X+449*p+27*sin(p*32+t*1.62)*p,Y+172*p+46*sin(p*27+t*2.22)*p])}
+ line(d,points,col.copper,3.3,.85);
+ for(let k=0;k<22;k++){let p=(t*.20+k/22)%1,xx=X+449*p+27*sin(p*32+t*1.62)*p,yy=Y+172*p+46*sin(p*27+t*2.22)*p;
+ dot(d,xx,yy,2.5,col.frost,.2+.65*sin(p*PI));}}
+function sourceImg(d,img,x,y,w,h,caption,light=true){
+ if(!img.naturalWidth||!img.naturalHeight)return;
+ rounded(d,x-14,y-14,w+28,h+28,10,light?col.paper:col.ink);
+ let iw=img.naturalWidth,ih=img.naturalHeight,r=Math.min(w/iw,h/ih),ww=iw*r,hh=ih*r;
+ d.drawImage(img,x+(w-ww)/2,y+(h-hh)/2,ww,hh);
+ text(d,caption,x,y+h+43,14,light?col.slate:col.pearl,"mono");}
+function electrons(d,t,x,y,w,h){
+ for(let i=0;i<105;i++){let u=(t*.108+i*.61803398)%1,xx=x+u*w,yy=y+((i*87)%h)+21*sin(t*.62+i*2);
+  dot(d,xx,yy,1.4+(i%4)*.6,i%4?col.blue:col.copper,.15+.45*sin(PI*u));}}
+function grafts(d,t,x,y,w,n=28){
+ for(let k=0;k<n;k++){let q=k/(n-1),xx=x+q*w+4*sin(k*.55+t*.48),yy=y+8*sin(k*.6+t*.35);
+  line(d,[[xx,yy+21],[xx,yy-18]],col.copper,2,.63);
+  ring(d,xx,yy-22,5+(k%3),k%2?col.brick:col.green,2,.61);
+  if(k%5===0)dot(d,xx,yy-25,3,col.frost,.7);}}
+function biomicro(d,t,x,y,w,h){
+ for(let j=0;j<28;j++){let xx=x+(j*.618033988749895%1)*w+4*sin(t*.14+j),yy=y+(j*.754877666%1)*h;
+  let rad=7+(j%5)*2;dot(d,xx,yy,rad,col.brick,.25);ring(d,xx,yy,rad+3,col.gold,1,.36);}
+}
+function chapter0(d,t){backdrop(d,t);
+ title(d,"A scaffold is",90,147,67,t,.15);title(d,"not an inert shape.",90,225,61,t,1.16,col.copper);
+ fibermat(d,t,106,316,1060,254,26);
+ biomicro(d,t,104,290,1030,290);
+ text(d,"ELECTROSPUN PLA FIBRE MAT",95,622,20,col.pearl,"mono",outEase(seg(t,5,6)));
+ text(d,"Surface contact determines the next question.",95,652,18,col.smoke,"serif",outEase(seg(t,8,9)));
+ frame(d,t,0);}
+function chapter1(d,t){backdrop(d,t);let l=t-15;
+ title(d,"An electric field makes fibres.",88,151,57,t,15.16);
+ collectors(d,t);electrojet(d,t);electrons(d,t,344,298,735,242);
+ text(d,"POLYMER SOLUTION → CHARGED JET → COLLECTOR",89,614,20,col.pearl,"mono",outEase(seg(l,5,6)));
+ text(d,"Mechanical depiction is schematic · not experimental footage",90,644,16,col.smoke,"mono",outEase(seg(l,7,8)));
+ frame(d,t,1);}
+function chapter2(d,t){backdrop(d,t);let l=t-30;
+ title(d,"Thirty seconds of plasma.",88,143,60,t,30.2);
+ fibermat(d,t,93,354,1091,205,24);
+ electrons(d,t,104,178,1070,340);
+ const activated=outEase(seg(l,4,10));
+ grafts(d,t,110,359,1050,36);
+ text(d,"RF PLASMA · WETTABILITY · HYDROPEROXIDE FORMATION",90,611,19,col.pearl,"mono",activated);
+ text(d,"30 s was selected for subsequent grafting in the study",90,643,17,col.copper,"mono",outEase(seg(l,7,8)));
+ frame(d,t,2);}
+function chapter3(d,t){backdrop(d,t,true);let l=t-45;
+ title(d,"Let the micrographs answer.",84,132,55,t,45.2,col.ink);
+ sourceImg(d,sem,144,181,987,401,"PUBLISHED FIGURE 5 / SEM · ALL FOUR CONDITIONS · 3 μm SCALE BARS");
+ // Intrusive overlays never cross the evidence raster.
+ const x=173+908*ease(seg(l,1,13));line(d,[[x,623],[x+48,623]],col.brick,4,.7);
+ frame(d,t,3,true);}
+function chapter4(d,t){backdrop(d,t,true);let l=t-60;
+ title(d,"Surface topology changes.",84,133,60,t,60.17,col.ink);
+ // Original V5 film frame, contextual evidence image; not replaced with a fabricated AFM topography.
+ sourceImg(d,afm,178,188,927,369,"ARCHIVED V5 FRAME OF PUBLISHED FIGURE 6 · AFM STUDY");
+ text(d,"Morphology needs scale, controls and the original figure.",92,634,19,col.slate,"serif");
+ const x=154+953*ease(seg(l,3,12));line(d,[[x,586],[x,604]],col.brick,3,.8);
+ frame(d,t,4,true);}
+function chapter5(d,t){backdrop(d,t,true);let l=t-75;
+ title(d,"Bands can support a mechanism.",83,134,54,t,75.24,col.ink);
+ sourceImg(d,ftir,185,198,921,351,"ARCHIVED V5 FRAME OF PUBLISHED FIGURE 7 · FTIR-ATR");
+ for(let k=0;k<8;k++){let x=118+k*138;dot(d,x,601+9*sin(t*.54+k),4,col.brick,.25);
+ line(d,[[x,601],[x+22,601+11*sin(t*.81+k)]],col.blue,1.7,.55);}
+ text(d,"Spectral change does not, by itself, prove a unique mechanism.",92,653,16,col.slate,"mono");
+ frame(d,t,5,true);}
+function chapter6(d,t){backdrop(d,t);let l=t-90;
+ title(d,"Count what grew.",86,144,69,t,90.18);
+ // Original Table 3 ordinal plate assessment. 0 means no growth in the assay,
+ // NOT an absolute 0 CFU/mL detection limit or a clinical endpoint.
+ const rows=[["UNTREATED","5 / 5 / 4–5","5 / 5 / 5"],
+ ["PLASMA ONLY","0 / 0 / 0–1","3–4 / 3 / 3"],
+ ["ASA GRAFTED","0 / 0 / 0","0 / 0 / 0"],
+ ["FA GRAFTED","0 / 0 / 0","0 / 0 / 0"]];
+ text(d,"SOURCE TABLE 3 / ORDINAL COLONY SCORES",98,209,19,col.copper,"mono");
+ text(d,"MATERIAL",115,258,17,col.smoke,"mono");
+ text(d,"S. AUREUS",626,258,17,col.smoke,"mono",1,"center");
+ text(d,"E. COLI",1025,258,17,col.smoke,"mono",1,"center");
+ for(let k=0;k<rows.length;k++){let y=285+k*78,p=outEase(seg(l,1+k*.85,2.1+k*.85));
+  rounded(d,97,y,1086,63,9,k%2?col.deep:col.graphite);
+  line(d,[[100,y+61],[1180,y+61]],col.aqua,1,.2*p);
+  text(d,rows[k][0],111,y+40,19,col.pearl,"mono",p);
+  text(d,rows[k][1],620,y+40,21,k>=2?col.aqua:col.warm,"mono",p,"center");
+  text(d,rows[k][2],1027,y+40,21,k>=2?col.aqua:col.warm,"mono",p,"center");
+ }
+ text(d,"0 = NO GROWTH IN THIS ASSAY · NOT A CLINICAL INFECTION OUTCOME",101,645,17,col.smoke,"mono",outEase(seg(l,7,8)));
+ frame(d,t,6);}
+function chapter7(d,t){backdrop(d,t);let l=t-105;
+ title(d,"An antimicrobial surface.",83,143,65,t,105.2);
+ title(d,"Not a clinical implant.",83,219,57,t,106.2,col.copper);
+ // Final camera pulls away from source SEM into a continuously moving physical fiber world.
+ fibermat(d,t,102,320,1086,228,26);
+ electrons(d,t,109,306,1060,225);
+ const p=outEase(seg(l,4,9));line(d,[[114,583],[114+1017*p,583]],col.gold,3);
+ text(d,"Surface properties · in-vitro antimicrobial assessment",104,628,20,col.pearl,"serif",outEase(seg(l,6,7)));
+ text(d,"Popelka et al. (2020) · DOI 10.1016/j.surfcoat.2020.126216",104,660,15,col.smoke,"mono",outEase(seg(l,8,9)));
+ frame(d,t,7);}
+const scenes=[chapter0,chapter1,chapter2,chapter3,chapter4,chapter5,chapter6,chapter7];
+function paint(d,i,t){d.save();scenes[i](d,t);d.restore()}
+function draw(t){t=clamp(t,0,DURATION-1/FPS);let chapter=7;
+ for(let i=0;i<8;i++)if(t>=B[i]&&t<B[i+1]){chapter=i;break}
+ let tr=-1;for(let i=1;i<8;i++)if(t>=B[i]-.38&&t<B[i]+.38){tr=i;break}
+ out.setTransform(1.5,0,0,1.5,0,0);
+ if(tr<0){paint(ctx[0],chapter,t);out.drawImage(buf[0],0,0);return}
+ paint(ctx[0],tr-1,t);paint(ctx[1],tr,t);const p=ease(seg(t,B[tr]-.38,B[tr]+.38));
+ out.drawImage(buf[0],0,0);out.save();out.beginPath();
+ if(tr===3||tr===6){out.arc(648,366,Math.hypot(W,H)*p,0,TAU)}
+ else{let x=(W+180)*p-90;out.moveTo(0,0);out.lineTo(x,0);out.lineTo(x-85,H);out.lineTo(0,H);out.closePath()}
+ out.clip();out.drawImage(buf[1],0,0);out.restore();}
+window.__meta={W:1920,H:1080,FPS,DURATION,title:"A Scaffold Meets Its Environment",doi:"10.1016/j.surfcoat.2020.126216"};
+window.__draw=(t)=>{draw(t);return t};window.__ready=false;
+Promise.all([document.fonts.ready,...[sem,afm,ftir].map(img=>new Promise((ok,fail)=>{
+ if(img.complete&&img.naturalWidth>0)return ok();
+ img.addEventListener("load",ok,{once:true});
+ img.addEventListener("error",()=>fail(Error("Required source image missing: "+img.id)),{once:true});
+}))]).then(()=>{window.__ready=true;draw(0)}).catch(e=>window.__renderError=String(e));
+let playing=false,start=0;function tick(now){if(!playing)return;const t=(now-start)/1000;if(t>=DURATION){playing=false;draw(DURATION-.1);return;}draw(t);requestAnimationFrame(tick)}
+document.addEventListener("click",()=>{playing=!playing;if(playing){start=performance.now();requestAnimationFrame(tick)}});
+</script></body></html>

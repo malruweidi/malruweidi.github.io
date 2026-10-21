@@ -1,0 +1,153 @@
+{
+  "film_index": 9,
+  "title": "A Scaffold Meets Its Environment",
+  "edition": "V17 electrospun fiber-world research cinema",
+  "duration_seconds": 120.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "primary_study": {
+    "doi": "10.1016/j.surfcoat.2020.126216",
+    "title": "Antimicrobial modification of PLA scaffolds with ascorbic and fumaric acids via plasma treatment",
+    "venue": "Surface and Coatings Technology, volume 400, 126216 (2020)",
+    "license": "CC BY 4.0",
+    "scope": "Electrospun PLA mat characterization and in vitro bacterial growth"
+  },
+  "original_narration": "assets/films/series-v8-primary/pla-scaffolds.mp4",
+  "original_webvtt": "assets/films/series-v8-primary/pla-scaffolds.vtt",
+  "original_SEM": {
+    "path": "assets/films/source-figures/v4/pla-scaffolds/pla-scaffolds-figure-05.jpg",
+    "source_figure": 5,
+    "sha256": "ae667164eb915dff5f5198f73115b45c987f7e515124b26e635478a6dc96a18a",
+    "display": "complete four-panel source with original 3 µm bars"
+  },
+  "additional_source_frames": [
+    {
+      "path": "assets/films/series-v17-scaffolds/source-afm-from-v5.jpg",
+      "from_archived_film": "assets/films/series-v5/pla-scaffolds.mp4",
+      "at_second": 67.2,
+      "role": "archived screenshot of research AFM figure; not direct original pixel master",
+      "sha256": "6db1a56687e3f95fa4ec154eb180681e53a98bac6bc190e912254d886c8b05af"
+    },
+    {
+      "path": "assets/films/series-v17-scaffolds/source-ftir-from-v5.jpg",
+      "from_archived_film": "assets/films/series-v5/pla-scaffolds.mp4",
+      "at_second": 82.3,
+      "role": "archived screenshot of FTIR figure; not direct original pixel master",
+      "sha256": "b7fed373daac458de64b72ad8f3acc9de27cbc0fe436351da488e158fbcd65fb"
+    }
+  ],
+  "published_laboratory_results": {
+    "plasma_pretreatment_seconds": 30,
+    "tested_organisms": [
+      "Staphylococcus aureus",
+      "Escherichia coli"
+    ],
+    "ordinal_colony_score_scale": "0 no growth, 5 overgrown; not colony-forming-unit counts",
+    "table_3_scores": {
+      "untreated": {
+        "S_aureus": [
+          "5",
+          "5",
+          "4–5"
+        ],
+        "E_coli": [
+          "5",
+          "5",
+          "5"
+        ]
+      },
+      "plasma_only": {
+        "S_aureus": [
+          "0",
+          "0",
+          "0–1"
+        ],
+        "E_coli": [
+          "3–4",
+          "3",
+          "3"
+        ]
+      },
+      "ascorbic_acid_grafted": {
+        "S_aureus": [
+          "0",
+          "0",
+          "0"
+        ],
+        "E_coli": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "fumaric_acid_grafted": {
+        "S_aureus": [
+          "0",
+          "0",
+          "0"
+        ],
+        "E_coli": [
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    }
+  },
+  "scenes": [
+    {
+      "title": "An interface in a fibrous scaffold",
+      "start": 0,
+      "end": 15
+    },
+    {
+      "title": "Electrospinning: a charged polymer jet and collector",
+      "start": 15,
+      "end": 30
+    },
+    {
+      "title": "30-second RF plasma pretreatment",
+      "start": 30,
+      "end": 45
+    },
+    {
+      "title": "Four original SEM conditions",
+      "start": 45,
+      "end": 60
+    },
+    {
+      "title": "AFM surface characterization",
+      "start": 60,
+      "end": 75
+    },
+    {
+      "title": "FTIR-ATR comparative spectra",
+      "start": 75,
+      "end": 90
+    },
+    {
+      "title": "Table 3: ordinal antimicrobial growth scores",
+      "start": 90,
+      "end": 105
+    },
+    {
+      "title": "Limits of in-vitro antimicrobial evidence",
+      "start": 105,
+      "end": 120
+    }
+  ],
+  "evidence_boundaries": [
+    "Electrospinning jet, cylindrical collector, material fiber layers, plasma reactive centers, graft icons and bacterial particles are interpretive animation, not source experiment video.",
+    "SEM is an original published research figure and preserved in full with its four condition labels and three-micrometre scale bars.",
+    "AFM and FTIR footage consists of extracts from the earlier source-based V5 film, with that lower-fidelity reuse declared explicitly.",
+    "The original Table 3 plate-growth scores are ordinal, not colony-forming units, infection rates, or implant efficacy.",
+    "The in-vitro antimicrobial findings do not demonstrate long-term implantation safety or efficacy. Distinct 2021 PLA packaging study is not conflated."
+  ],
+  "earlier_versions_preserved": true,
+  "live_website_unchanged": true,
+  "human_approval": "Not completed: must review the whole audiovisual master, original chart legibility, source attribution and artistic finish.",
+  "sha256": "33c3164f46fd713152eaa0e4f688d72ecb3f137e4e5e2994969525ee5465993f"
+}
