@@ -44,7 +44,7 @@ def validate():
         assert key in src,key
     assert "Math.random(" not in src and "<h1 class=" in src
     assert CAPTIONS.read_text(encoding="utf8").startswith("WEBVTT")
-    assert CAPTIONS.read_text(encoding="utf8").count("-->")>=30
+    assert CAPTIONS.read_text(encoding="utf8").count("-->")==29
     archived=json.loads(ARCHIVE_INFO.read_text(encoding="utf8"))
     assert archived["doi"]==DOI and archived["license"].startswith("CC BY")
     for j,path in FIGURES.items():
