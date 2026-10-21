@@ -23,5 +23,9 @@ jobs:
           node --test tests/figure-context-accessibility-2026.test.cjs
           node scripts/audit-figure-archive-2026.cjs --summary
           node scripts/audit-figure-archive-2026.cjs --issues
+      - name: Inspect embedded historical figure context without exposing binary payloads
+        run: |
+          node --test tests/legacy-figure-context-2026.test.cjs
+          node scripts/legacy-figure-context-audit-2026.cjs --unresolved
       - name: Preserve captioned archive and bilingual histology records
         run: node --test tests/stories-archive-visual-continuity-2026.test.cjs
