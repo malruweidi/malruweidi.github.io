@@ -15,7 +15,6 @@ html[data-rx-page="evidence-reader"] .ev-source-status[data-verification="pendin
 html[data-rx-page="evidence-reader"] .ev-source-note{
   margin:9px 0 18px;padding:0 0 0 16px;
   border-inline-start:3px solid #9fbcb0;
-  border-left:0;
   max-width:65ch;
   font:400 13px/1.78 "DM Sans",system-ui,sans-serif;
   color:#49615c;
