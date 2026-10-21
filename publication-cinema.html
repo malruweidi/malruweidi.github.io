@@ -85,12 +85,22 @@
   if(filter==="Public essay")return x.category==="Public essay"||x.category==="Drug discovery column";
   return !["Original research","Methods","Book chapters","Accepted chapter","Patent review","Reviews","Public essay","Drug discovery column"].includes(x.category);
  };
+ // Release registry: 14 original cinematic masters. Older V7/V8 films are retained as fallback.
  const verifiedFilmMasters=Object.freeze({
-  "pla-scaffolds":{edition:"series-v8-primary",duration:120,poster:"/assets/films/series-v8-primary/pla-scaffolds.webp"},
-  "microfluidic-virus":{edition:"series-v8-primary",duration:120,poster:"/assets/films/series-v8-primary/microfluidic-virus.webp"},
-  "making-medicines-keep":{edition:"series-v8-primary",duration:120,poster:"/assets/films/series-v8-primary/making-medicines-keep.webp"},
-  "pla-grafting":{edition:"series-v8-primary",duration:120,poster:"/assets/films/series-v8-primary/pla-grafting.webp"},
-  "flow-chamber-method":{edition:"series-v8-primary",duration:120,poster:"/assets/films/series-v8-primary/flow-chamber-method.webp"}
+  "airway-reopening":{edition:"series-v9-airway",duration:84,poster:"/assets/films/series-v9-airway/airway-reopening.webp"},
+  "cerebral-cilia":{edition:"series-v10-cilia",duration:84,poster:"/assets/films/series-v10-cilia/cerebral-cilia.webp"},
+  "slit2-robo":{edition:"series-v11-slit2-robo",duration:84,poster:"/assets/films/series-v11-slit2-robo/slit2-robo.webp"},
+  "curcumin-cyanide":{edition:"series-v12-curcumin",duration:84,poster:"/assets/films/series-v12-curcumin/curcumin-cyanide.webp"},
+  "making-medicines-keep":{edition:"series-v13-medieval",duration:120,poster:"/assets/films/series-v13-medieval/making-medicines-keep.webp"},
+  "niosomes":{edition:"series-v14-niosomes",duration:84,poster:"/assets/films/series-v14-niosomes/niosomes.webp"},
+  "echo-cnn-lstm":{edition:"series-v15-echo",duration:84,poster:"/assets/films/series-v15-echo/echo-cnn-lstm.webp"},
+  "pla-grafting":{edition:"series-v16-pla",duration:120,poster:"/assets/films/series-v16-pla/pla-grafting.webp"},
+  "pla-scaffolds":{edition:"series-v17-scaffolds",duration:120,poster:"/assets/films/series-v17-scaffolds/pla-scaffolds.webp"},
+  "flow-chamber-method":{edition:"series-v18-flow",duration:120,poster:"/assets/films/series-v18-flow/flow-chamber-method.webp"},
+  "zebrafish-hemodynamics":{edition:"series-v19-zebrafish",duration:84,poster:"/assets/films/series-v19-zebrafish/zebrafish-hemodynamics.webp"},
+  "ace2-covid-drugs":{edition:"series-v20-ace2",duration:84,poster:"/assets/films/series-v20-ace2/ace2-covid-drugs.webp"},
+  "gi-autoimmunity-1":{edition:"series-v21-gi1",duration:84,poster:"/assets/films/series-v21-gi1/gi-autoimmunity-1.webp"},
+  "gi-autoimmunity-2":{edition:"series-v22-gi2",duration:84,poster:"/assets/films/series-v22-gi2/gi-autoimmunity-2.webp"}
  });
  // Read a single checksum-validated release index rather than probing every MP4.
  // The first editions are all preserved, so a missing index is not a blank film.
