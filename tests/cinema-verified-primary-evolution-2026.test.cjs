@@ -3,7 +3,7 @@ const {test}=require("node:test");
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const path=require("node:path");
-const {readVerifiedFilmMasters,validateVerifiedFilmMasters}=require("../scripts/cinema-verified-masters-integrity.cjs");
+const {readVerifiedFilmMasters,validateVerifiedFilmMasters,verifySelectedMediaHashes}=require("../scripts/cinema-verified-masters-integrity.cjs");
 const root=path.resolve(__dirname,"..");
 const v8=[
  "pla-scaffolds","microfluidic-virus","making-medicines-keep","pla-grafting","flow-chamber-method"
@@ -55,4 +55,35 @@ test("the actual site preserves all five V8 releases and keeps every selected pr
   }
  }
  assert.match(html,/const selectedEdition=verifiedResearchEdition \|\|/);
+});
+
+test("every selected release manifest must identify the actual MP4 SHA256",()=>{
+ const crypto=require("node:crypto");
+ const bytes=Buffer.from("a finite test movie binary","utf8");
+ const hash=crypto.createHash("sha256").update(bytes).digest("hex");
+ const release=[{id:"sample",edition:"series-v42-example",duration:120,poster:"/assets/films/series-v42-example/sample.webp"}];
+ const ok=verifySelectedMediaHashes(release,{
+  readBinary:()=>bytes,
+  readManifest:()=>JSON.stringify({sha256:hash,seconds:120})
+ });
+ assert.deepEqual(ok,[]);
+ const bad=verifySelectedMediaHashes(release,{
+  readBinary:()=>Buffer.from("tampered bytes"),
+  readManifest:()=>JSON.stringify({movie_sha256:hash,duration_seconds:120})
+ });
+ assert.ok(bad.some(x=>x.includes("checksum")));
+ const missing=verifySelectedMediaHashes(release,{
+  readBinary:()=>bytes,
+  readManifest:()=>JSON.stringify({seconds:120})
+ });
+ assert.ok(missing.some(x=>x.includes("SHA256")));
+});
+test("actual selected primaries match their existing review-master checksum manifests",()=>{
+ const html=fs.readFileSync(path.join(root,"publication-cinema.html"),"utf8");
+ const selected=readVerifiedFilmMasters(html);
+ const errors=verifySelectedMediaHashes(selected,{
+  readBinary:p=>fs.readFileSync(path.join(root,p)),
+  readManifest:p=>fs.readFileSync(path.join(root,p),"utf8")
+ });
+ assert.deepEqual(errors,[]);
 });
