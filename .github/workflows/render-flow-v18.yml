@@ -81,7 +81,7 @@ jobs:
             capture_output=True,text=True)
           assert audio.returncode==0
           import re
-          samples=[float(x) for x in re.findall(r"TPK:\\s*([-+]?\\d+(?:\\.\\d+)?)\\s*dBFS",audio.stderr)]
+          samples=[float(x) for x in re.findall(r"TPK:\s*([-+]?\d+(?:\.\d+)?)\s*dBFS",audio.stderr)]
           assert samples, "True-peak samples missing from EBU R128 measurement"
           worst=max(samples)
           assert worst <= -1.0, f"True peak over mastering ceiling: {worst:.1f} dBTP"
