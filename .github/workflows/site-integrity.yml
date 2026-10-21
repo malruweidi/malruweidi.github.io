@@ -96,3 +96,5 @@ jobs:
           node --test tests/figure-archive-audit-2026.test.cjs
           node scripts/audit-figure-archive-2026.cjs --summary
           node scripts/audit-figure-archive-2026.cjs --issues
+      - name: Verify visible title continuity for accessible archival figures
+        run: node --test tests/figure-context-accessibility-2026.test.cjs
