@@ -1,0 +1,103 @@
+{
+  "film_index": 10,
+  "title": "How to Make a Reproducible Injury",
+  "edition": "V18 advancing-air-liquid interface motion cinema",
+  "duration_seconds": 120.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "primary_study": {
+    "doi": "10.3390/mps3040065",
+    "title": "Application of a Flow-Induced Stress Wave and Investigation of Associated Injuries on Cell Monolayers Using a Parallel Plate Flow Chamber",
+    "journal": "Methods and Protocols 2020, 3(4), 65",
+    "license": "CC BY 4.0"
+  },
+  "original_narration": "assets/films/series-v8-primary/flow-chamber-method.mp4",
+  "original_webvtt": "assets/films/series-v8-primary/flow-chamber-method.vtt",
+  "complete_source_figures": [
+    {
+      "figure": 1,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-01.jpg",
+      "sha256": "d86c0d8854ae32b83b33d4e02b1da3013b86f3a91de3986f410f5d6aba521692",
+      "display": "unaltered original paper raster shown in full"
+    },
+    {
+      "figure": 5,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-05.jpg",
+      "sha256": "43bb54073801952f0e29f4cf95f5f7dd95688f8b146cb078606943c6646f984c",
+      "display": "unaltered original paper raster shown in full"
+    },
+    {
+      "figure": 6,
+      "path": "assets/films/source-figures/v3/flow-chamber-method-figure-06.jpg",
+      "sha256": "c07761e43a405320c1dbb12806d742fa6cd9d02f43eb0b086918f0d2da72b220",
+      "display": "unaltered original paper raster shown in full"
+    }
+  ],
+  "published_results": {
+    "cell_model": "149 L2 lung epithelial cell monolayer",
+    "death_control_percent_range": [
+      0,
+      0.2
+    ],
+    "death_after_bubble_percent_approx": 53,
+    "experimental_repetitions": 7,
+    "live_dead_t_test_p_less_than": 0.01,
+    "single_bubble_actin_organization_significant": false
+  },
+  "scenes": [
+    {
+      "name": "The air–liquid interface and epithelial monolayer",
+      "start": 0,
+      "end": 15
+    },
+    {
+      "name": "Real parallel-plate apparatus",
+      "start": 15,
+      "end": 30
+    },
+    {
+      "name": "Moving bubble as illustrative stress event",
+      "start": 30,
+      "end": 45
+    },
+    {
+      "name": "Fluorescent viability measurements from Figure 5",
+      "start": 45,
+      "end": 60
+    },
+    {
+      "name": "53 percent exposed death versus near-zero control, seven repetitions",
+      "start": 60,
+      "end": 75
+    },
+    {
+      "name": "Original Figure 6 F-actin and nuclei",
+      "start": 75,
+      "end": 90
+    },
+    {
+      "name": "No significant change of actin organization after a single bubble",
+      "start": 90,
+      "end": 105
+    },
+    {
+      "name": "Experiment boundary versus clinical ventilation",
+      "start": 105,
+      "end": 120
+    }
+  ],
+  "evidence_boundaries": [
+    "Fluid/air interface, cell cartoons, stress-wave lines and cytoskeletal animations are conceptual editorial geometry; not measured flow, velocity, stress distribution, patient data or live experimental footage.",
+    "Figure 1 actual apparatus, Figure 5 fluorescence and source bar chart, Figure 6 F-actin/blue nuclei are the unaltered primary figures, with verified source SHA values.",
+    "Reported 53 percent exposed-group death versus 0 to 0.2 percent control and seven experiment repeats are source values; they do not generalize directly to in-vivo lungs.",
+    "Single-bubble actin reorganization did not achieve significance, even if examples look visually different.",
+    "In-vitro epithelial cell model is not clinical ventilation outcome; no human safety, treatment, or unmeasured mechanical stress is inferred."
+  ],
+  "earlier_versions_preserved": true,
+  "live_website_unchanged": true,
+  "human_approval": "Full audiovisual, microscopy legibility, source attribution and interpretive science screening pending; draft only.",
+  "sha256": "b6f8d45810dc59332c8359ba57d8ae0eec118b1a2160e1bcfa14e2c43ffef17c"
+}
