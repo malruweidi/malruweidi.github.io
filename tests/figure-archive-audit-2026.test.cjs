@@ -13,7 +13,9 @@ test("scientific figure audit covers the enormous original atlas and related evi
  assert.ok(d.pages["research/zebrafish-vascular-cilia.html"]);
  assert.equal(d.pages["evidence-viewer.html"].figures.length,4,"all four viewer figures counted");
  assert.ok(d.stats.figureElements>=8,"all covered figure elements");
- assert.equal(d.stats.pagesExamined,4);
+ assert.ok(d.stats.pagesExamined>=62,"all original HTML routes included");
+ assert.ok(d.stats.figureElements>=14,"no figure losses");
+ assert.ok(d.pages["stories.html"] && d.pages["archive.html"],"Stories and archives included");
  assert.ok(d.notes.includes("not an image-pixel review"));
 });
 
