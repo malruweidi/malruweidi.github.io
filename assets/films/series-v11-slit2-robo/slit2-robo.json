@@ -1,0 +1,54 @@
+{
+  "film_index": 3,
+  "title": "The Target That Can Change Sides",
+  "film_release": "v11 review master",
+  "seconds": 84.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "original_audio": "assets/films/series-v7-pilots/slit2-robo.mp4",
+  "source_narration": "84-second source audio retained on its original timeline, with quiet original-score mix",
+  "original_captions": "assets/films/series-v7-pilots/slit2-robo.vtt",
+  "primary_paper_doi": "10.1080/13543776.2026.2690118",
+  "source_range": "patents discussed in review, 2020–2026",
+  "scenes": [
+    {
+      "name": "Contradictory biological context",
+      "start": 0,
+      "end": 12.875
+    },
+    {
+      "name": "SLIT2–ROBO binding interface",
+      "start": 12.875,
+      "end": 27.542
+    },
+    {
+      "name": "Patent review: claims and support",
+      "start": 27.542,
+      "end": 42.875
+    },
+    {
+      "name": "Intervention modalities",
+      "start": 42.875,
+      "end": 59.833
+    },
+    {
+      "name": "Selecting tumor context",
+      "start": 59.833,
+      "end": 71.708
+    },
+    {
+      "name": "When?",
+      "start": 71.708,
+      "end": 84
+    }
+  ],
+  "animation_system": "deterministic time-seekable Canvas2D via Chromium Playwright, FFmpeg, 24fps native 1920x1080",
+  "visual_status": "Self-produced interpretive graphics only; no invented molecular structures, binding measurements, biological experiments or real patent facsimiles.",
+  "originals_preserved": true,
+  "live_site_modified": false,
+  "human_signoff": "Not yet completed; user screening, scholarly check, legal review and listening required",
+  "sha256": "7cbce63d9dcaba1534defd02974afc3d10b629429645f7a14085dde9f909788d"
+}
