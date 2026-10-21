@@ -62,6 +62,21 @@ jobs:
         run: |
           node --test tests/axe-accessibility-report-2026.test.cjs
           node scripts/axe-accessibility-audit-2026.cjs
+      - name: Check all 10 historical MP4 audio streams without publishing conversations
+        if: success() || failure()
+        env:
+          BROWSER_QA_OUTPUT: browser-qa-artifacts
+        run: |
+          node --test tests/archival-video-audio-2026.test.cjs
+          node scripts/audit-archival-video-audio-2026.cjs
+      - name: Test keyboard-only flows and 320px equivalent-width reflow
+        if: success() || failure()
+        env:
+          SITE_BASE_URL: http://127.0.0.1:8765
+          BROWSER_QA_OUTPUT: browser-qa-artifacts
+        run: |
+          node --test tests/keyboard-reflow-qa-2026.test.cjs
+          node scripts/keyboard-reflow-qa-2026.cjs
       - name: Upload actual browser screenshots and issue report
         if: always()
         uses: actions/upload-artifact@v4
