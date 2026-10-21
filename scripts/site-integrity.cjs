@@ -157,11 +157,15 @@ try{
 // released editions. Validate the actual registry and every selected binary;
 // preserve all five historical V8 masters as verifiable archival sources.
 try {
- const {readVerifiedFilmMasters,validateVerifiedFilmMasters}=require("./cinema-verified-masters-integrity.cjs");
+ const {readVerifiedFilmMasters,validateVerifiedFilmMasters,verifySelectedMediaHashes}=require("./cinema-verified-masters-integrity.cjs");
  const selected=readVerifiedFilmMasters(cinema);
  for(const problem of validateVerifiedFilmMasters(selected,{
    fileExists:p=>known.has(p),
    captionText:p=>fs.readFileSync(path.join(root,p),"utf8")
+ }))error("cinema",problem);
+ for(const problem of verifySelectedMediaHashes(selected,{
+   readBinary:p=>fs.readFileSync(path.join(root,p)),
+   readManifest:p=>fs.readFileSync(path.join(root,p),"utf8")
  }))error("cinema",problem);
  for(const id of ["pla-scaffolds","microfluidic-virus","making-medicines-keep","pla-grafting","flow-chamber-method"]){
   for(const ext of ["mp4","vtt","webp"])requireFile("assets/films/series-v8-primary/"+id+"."+ext);
