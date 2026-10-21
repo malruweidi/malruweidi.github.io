@@ -65,8 +65,9 @@ test("captions, methods and scientific provenance remain intact", () => {
 });
 
 test("HTML remains bounded while preserving the expanding public research archive", () => {
-  // Allow measured growth for named Chem Squad contributors, publication links and owner-provided archival photographs; keep binary media external.
-  assert.ok(statSync(join(root,"archive.html")).size < 26000);
+  // Accessible original-image links are kept in source HTML; the existing archive layout CSS was moved verbatim to an external file.
+  // Retain the original strict 26 KB HTML source ceiling and the byte-for-byte media integrity checks above.
+  assert.ok(statSync(join(root,"archive.html")).size < 26000, "Archive HTML exceeded the original 26 KB source budget");
   assert.ok(statSync(join(root,"imaging.html")).size < 20000);
   assert.ok(statSync(join(root,"chem-squad.html")).size < 65000, "Chem Squad HTML exceeded the documented editorial-growth budget");
   assert.ok(existsSync(join(root,"stories.html")));

@@ -1,0 +1,31 @@
+name: Scientific figures and archive source integrity
+on:
+  pull_request:
+  push:
+    branches: [audit-2026-10-21-editorial-evidence-pass1]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect-figures:
+    name: Inspect figure provenance and original media
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Verify all four original evidence images and bounded scientific claims
+        run: |
+          node --test tests/scientific-figure-source-boundaries-2026.test.cjs
+          node --test tests/scientific-figure-binary-preservation-2026.test.cjs
+          node --test tests/evidence-viewer.test.cjs
+      - name: Inspect figures throughout every checked-in HTML page
+        run: |
+          node --test tests/figure-archive-audit-2026.test.cjs
+          node --test tests/figure-context-accessibility-2026.test.cjs
+          node scripts/audit-figure-archive-2026.cjs --summary
+          node scripts/audit-figure-archive-2026.cjs --issues
+      - name: Inspect embedded historical figure context without exposing binary payloads
+        run: |
+          node --test tests/legacy-figure-context-2026.test.cjs
+          node scripts/legacy-figure-context-audit-2026.cjs --unresolved
+      - name: Preserve captioned archive and bilingual histology records
+        run: node --test tests/stories-archive-visual-continuity-2026.test.cjs

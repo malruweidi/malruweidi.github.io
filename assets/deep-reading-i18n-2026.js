@@ -132,5 +132,8 @@
 "Particle properties, drug assay and aerosol deposition":"خصائص الجسيمات وتحليل الدواء وترسيب الرذاذ",
 "The planned analytical endpoints include DLS measurements of dispersed vesicle size and polydispersity, chromatographic drug assay, and post-nebulization evaluation. NGI testing would characterize aerodynamic deposition under specified in vitro device conditions, if and when those measurements are obtained.":"تشمل نقاط القياس المخطط لها استخدام تشتت الضوء الديناميكي DLS لتحديد حجم الحويصلات المشتتة وتعدد أحجامها، والتحليل الكروماتوغرافي للدواء، والتقييم بعد التذرية. ويمكن أن يصف اختبار NGI الترسيب الهوائي في ظروف مختبرية محددة للجهاز إذا أُجريت هذه القياسات بالفعل.",
 "DLS particle size is not aerodynamic deposition, and in vitro NGI deposition is not clinical delivery or efficacy. Encapsulation efficiency, post-nebulization stability and pulmonary performance are not established findings for this ongoing thesis; these remain planned or unverified endpoints.":"حجم الجسيمات المقاس بتشتت الضوء الديناميكي ليس مرادفًا للترسيب الهوائي، كما أن الترسيب داخل جهاز NGI لا يثبت التوصيل السريري أو الفاعلية العلاجية. ولا تعد كفاءة الاحتواء أو الثبات بعد التذرية أو الأداء الرئوي نتائج مثبتة لهذه الرسالة الجارية؛ فهي قياسات مخطط لها أو لم تُتحقق بعد."
+,
+  "Original photograph of the sectioning attempt": "الصورة الأصلية لمحاولة التقطيع",
+  "The archived copolymer sample": "عينة البوليمر المشترك في الأرشيف"
 });
 })();

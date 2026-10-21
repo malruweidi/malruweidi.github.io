@@ -1,0 +1,47 @@
+/* Ruwaidix photographic archive — additive source access.
+ * Original objects, source images, display crops and captions remain intact.
+ */
+html[data-rx-page="archive"] .rx-archive-object[id]{scroll-margin-block-start:104px}
+html[data-rx-page="archive"] .rx-archive-object:target{
+  outline:2px solid #ad6a4e;outline-offset:4px;
+}
+html[data-rx-page="archive"] .rx-archive-object-copy .rx-object-source-link{
+  display:inline-flex;align-items:center;
+  margin-block-start:13px;padding-block:5px;
+  color:#17343b;border-bottom:1px solid #9eafa8;
+  font:600 12px/1.55 "DM Sans",Arial,sans-serif;
+  text-decoration:none;
+}
+html[data-rx-page="archive"] .rx-archive-object-copy .rx-object-paired-link{
+  display:inline-block;margin-block-start:9px;
+  padding-inline-end:13px;
+  font:600 12px/1.55 "DM Sans",Arial,sans-serif;
+  text-decoration:underline;text-underline-offset:4px;
+}
+html[data-rx-page="archive"] .rx-object-source-link:hover,
+html[data-rx-page="archive"] .rx-object-paired-link:hover{
+  color:#884632;border-color:#884632;
+}
+html[data-rx-page="archive"] .rx-object-source-link:focus-visible,
+html[data-rx-page="archive"] .rx-object-paired-link:focus-visible{
+  outline:3px solid #994c36;outline-offset:4px;
+}
+html[data-rx-page="archive"] .rx-object-source-sr{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+html[dir="rtl"][data-rx-page="archive"] .rx-object-source-link,
+html[dir="rtl"][data-rx-page="archive"] .rx-object-paired-link{
+  font-family:"Noto Naskh Arabic",serif;font-size:17px;
+}
+@media(max-width:560px){
+  html[data-rx-page="archive"] .rx-archive-object-copy .rx-object-source-link{
+    min-height:44px;align-items:center;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  html[data-rx-page="archive"] .rx-archive-object,
+  html[data-rx-page="archive"] .rx-archive-object-copy a{
+    animation:none!important;transition:none!important;scroll-behavior:auto!important;
+  }
+}

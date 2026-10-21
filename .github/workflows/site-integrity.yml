@@ -77,3 +77,34 @@ jobs:
         run: node --test tests/third-pass-film-reader-experience.test.mjs
       - name: Check public film collection language against playable destinations
         run: node --test tests/fourth-pass-film-navigation.test.mjs
+      - name: Check research status and source-linked film reading paths
+        run: node --test tests/film-evidence-threads-2026.test.cjs
+      - name: Verify reproducible source-level photographic and video placement inventory
+        run: node --test tests/media-placement-inventory.test.cjs
+      - name: Guard original story photographs and source-context routes
+        run: node --test tests/story-archive-photographic-context.test.cjs
+      - name: Check user-controlled motion for homepage research figures
+        run: node --test tests/home-gallery-motion.test.cjs
+      - name: Confirm photographed Stories routes and original archive image access
+        run: node --test tests/stories-archive-visual-continuity-2026.test.cjs
+      - name: Check scientific figures and distinguish image attribution from published research
+        run: node --test tests/scientific-figure-source-boundaries-2026.test.cjs
+      - name: Lock original figure binaries and source-boundary audit metadata
+        run: node --test tests/scientific-figure-binary-preservation-2026.test.cjs
+      - name: Inventory the complete scientific figure atlas without media transformations
+        run: |
+          node --test tests/figure-archive-audit-2026.test.cjs
+          node scripts/audit-figure-archive-2026.cjs --summary
+          node scripts/audit-figure-archive-2026.cjs --issues
+      - name: Verify visible title continuity for accessible archival figures
+        run: node --test tests/figure-context-accessibility-2026.test.cjs
+      - name: Verify film primary-release evolution and preservation of historical V8 masters
+        run: node --test tests/cinema-verified-primary-evolution-2026.test.cjs
+      - name: Keep one Find link in existing page headers while preserving keyboard search
+        run: node --test tests/discovery-single-search-link-2026.test.cjs
+      - name: Guard WCAG legibility of restrained archival colors across seven existing pages
+        run: node --test tests/wcag-contrast-tokens-2026.test.cjs
+      - name: Verify original page titles remain legible with WCAG-safe foregrounds
+        run: node --test tests/wcag-contrast-2026.test.cjs
+      - name: Guard named semantic filter groups in publications and cinema
+        run: node --test tests/filter-group-accessibility-2026.test.cjs

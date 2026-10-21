@@ -153,12 +153,27 @@ try{
   for(const key of ["video","captions","poster"]){const ref=film[key];if(!ref||!known.has((String(ref).startsWith("/")?String(ref).slice(1):String(ref))))error("cinema","V7 missing "+key+" for "+film.id);}
  }
 }catch(err){error("cinema","V7 verification failed "+err.message);}
-for(const id of ["pla-scaffolds","microfluidic-virus","making-medicines-keep","pla-grafting","flow-chamber-method"]){
- if(!cinema.includes('"'+id+'":{edition:"series-v8-primary"'))error("cinema","primary verified film not selected "+id);
- for(const ext of ["mp4","vtt","webp"])requireFile("assets/films/series-v8-primary/"+id+"."+ext);
- const vtt=fs.readFileSync(path.join(root,"assets/films/series-v8-primary/"+id+".vtt"),"utf8");
- if(!vtt.startsWith("WEBVTT")||/date not verified|production note|shot list|review checklist|manifests? for the editor/i.test(vtt))error("cinema","subtitle release contamination "+id);
-}
+// Selected verified primary films may progress from V8 to later explicitly
+// released editions. Validate the actual registry and every selected binary;
+// preserve all five historical V8 masters as verifiable archival sources.
+try {
+ const {readVerifiedFilmMasters,validateVerifiedFilmMasters,verifySelectedMediaHashes}=require("./cinema-verified-masters-integrity.cjs");
+ const selected=readVerifiedFilmMasters(cinema);
+ for(const problem of validateVerifiedFilmMasters(selected,{
+   fileExists:p=>known.has(p),
+   captionText:p=>fs.readFileSync(path.join(root,p),"utf8")
+ }))error("cinema",problem);
+ for(const problem of verifySelectedMediaHashes(selected,{
+   readBinary:p=>fs.readFileSync(path.join(root,p)),
+   readManifest:p=>fs.readFileSync(path.join(root,p),"utf8")
+ }))error("cinema",problem);
+ for(const id of ["pla-scaffolds","microfluidic-virus","making-medicines-keep","pla-grafting","flow-chamber-method"]){
+  for(const ext of ["mp4","vtt","webp"])requireFile("assets/films/series-v8-primary/"+id+"."+ext);
+  const vtt=fs.readFileSync(path.join(root,"assets/films/series-v8-primary/"+id+".vtt"),"utf8");
+  if(!vtt.startsWith("WEBVTT")||/date not verified|production note|shot list|review checklist|manifests? for the editor/i.test(vtt))
+   error("cinema","archived V8 subtitle release contamination "+id);
+ }
+}catch(e){error("cinema","verified primary release validation failed: "+e.message);}
 const discovery=JSON.parse(fs.readFileSync(path.join(root,"assets/discovery-index.json"),"utf8"));
 for(const route of ["/research.html","/publications.html","/doctoral-concepts.html","/research/high-speed-zebrafish-imaging.html","/research/plasma-modified-pla.html"])if(!(discovery.items||[]).some(x=>x.url===route))error("discovery","new hub missing from discovery index: "+route);
 if(!(discovery.items||[]).some(x=>x.url==="/molecular-therapeutics.html"))error("discovery","faculty page absent from search index");
