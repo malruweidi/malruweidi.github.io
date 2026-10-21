@@ -102,3 +102,5 @@ jobs:
         run: node --test tests/cinema-verified-primary-evolution-2026.test.cjs
       - name: Keep one Find link in existing page headers while preserving keyboard search
         run: node --test tests/discovery-single-search-link-2026.test.cjs
+      - name: Guard WCAG legibility of restrained archival colors across seven existing pages
+        run: node --test tests/wcag-contrast-tokens-2026.test.cjs
