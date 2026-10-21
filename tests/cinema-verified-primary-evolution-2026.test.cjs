@@ -32,7 +32,7 @@ test("a valid newer primary master is accepted without reverting to a V8 primary
 
 test("a missing release binary, mismatched poster, duplicate ID or contaminated captions fails",()=>{
  const original=readVerifiedFilmMasters(v8Fixture);
- assert.throws(()=>readVerifiedFilmMasters(v8Fixture.replace('"pla-scaffolds":','"pla-grafting":')),/duplicate/i);
+ assert.throws(()=>readVerifiedFilmMasters(v8Fixture.replace('"pla-scaffolds":{edition:"series-v8-primary",duration:120,poster:"/assets/films/series-v8-primary/pla-scaffolds.webp"}','"pla-grafting":{edition:"series-v8-primary",duration:120,poster:"/assets/films/series-v8-primary/pla-grafting.webp"}')),/duplicate/i);
  assert.throws(()=>readVerifiedFilmMasters(v8Fixture.replace('series-v8-primary/pla-scaffolds.webp','series-v8-primary/mislabel.webp')),/poster/i);
  const missing=validateVerifiedFilmMasters(original,{fileExists:p=>!p.endsWith("/pla-scaffolds.mp4"),captionText:()=>"WEBVTT\n"});
  assert.ok(missing.some(x=>x.includes("pla-scaffolds.mp4")));
