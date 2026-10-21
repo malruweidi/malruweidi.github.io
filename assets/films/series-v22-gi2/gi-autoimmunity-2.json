@@ -1,0 +1,112 @@
+{
+  "film_index": 14,
+  "title": "The Diagnostic Problem",
+  "edition": "V22 cinematic differential diagnosis and interpretation research film",
+  "duration_seconds": 84.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "source": {
+    "doi": "10.5772/intechopen.106185",
+    "title": "Autoimmune Diseases of the GI Tract Part II: Emergence of Diagnostic Tools and Treatments",
+    "authors": [
+      "Mahmoud Khatib A.A. Al-Ruweidi",
+      "Nada Khater",
+      "Haya Rashid Alkaabi",
+      "Maram Hasan",
+      "Mohammed Murtaza",
+      "Huseyin C. Yalcin"
+    ],
+    "publisher": "IntechOpen",
+    "published": "2022-11-29",
+    "chapter_url": "https://www.intechopen.com/chapters/84957",
+    "license": "Creative Commons Attribution 3.0, with credit",
+    "scope": "2022 narrative review of autoantibody markers, emerging AI-assisted GI diagnosis, nutritional implications and condition-specific treatments"
+  },
+  "original_narration": "assets/films/series-v7-pilots/gi-autoimmunity-2.mp4",
+  "original_webvtt": "assets/films/series-v7-pilots/gi-autoimmunity-2.vtt",
+  "archival_images": [
+    {
+      "path": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "sha256": "b490cfcb1f5ac3e159b8d1bf9cc5184ca711f8e7cd1e9b7aa40a14b89d29bfb2",
+      "role": "Genuine contextual laboratory photograph; NOT a GI biopsy, endoscopic image, serum biomarker, patient or AI training set"
+    },
+    {
+      "path": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "sha256": "6c07854f54053ec318524c9c6ec7fdb04bff204872284901b0393e0828745b73",
+      "role": "Genuine contextual laboratory photograph; NOT a GI biopsy, endoscopic image, serum biomarker, patient or AI training set"
+    },
+    {
+      "path": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "sha256": "80c8b6a33bd0b7c6ee0aa0fcd3ba80da6dea0500434a50dfb3d634d05172efd3",
+      "role": "Genuine contextual laboratory photograph; NOT a GI biopsy, endoscopic image, serum biomarker, patient or AI training set"
+    }
+  ],
+  "selected_evidence": [
+    {
+      "topic": "autoantibodies",
+      "limit": "Anti-parietal-cell, anti-intrinsic-factor and tissue-transglutaminase antibodies can be context-specific indicators; serology is not sufficient for every GI condition or every patient"
+    },
+    {
+      "topic": "endoscopy_and_tissue",
+      "limit": "Illustrations are non-diagnostic; site, test quality, symptoms and histologic context determine interpretation"
+    },
+    {
+      "topic": "artificial_intelligence",
+      "limit": "2022 narrative overview of ML potential; the animation is not a validated trained model, actual heatmap or patient prediction"
+    },
+    {
+      "topic": "diet_and_treatment",
+      "limit": "Food avoidance, nutritional monitoring, anti-inflammatory drugs and structural interventions serve different disease mechanisms; film is not a prescription"
+    },
+    {
+      "topic": "current_evidence",
+      "limit": "Historic 2022 chapter may be superseded; current 2026 clinical guidance and specialist review are necessary"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Symptoms overlap across immune, inflammatory, infectious and functional disease",
+      "start": 0,
+      "end": 14
+    },
+    {
+      "name": "Serological markers, endoscopic appearances and context-dependent pathology",
+      "start": 14,
+      "end": 28
+    },
+    {
+      "name": "Emerging AI-assisted GI interpretation, limitations and source lab archive",
+      "start": 28,
+      "end": 42
+    },
+    {
+      "name": "Condition-specific diet, inflammation management and structural interventions",
+      "start": 42,
+      "end": 56
+    },
+    {
+      "name": "Sensitivity, specificity, generalizability and real-world clinical proof",
+      "start": 56,
+      "end": 70
+    },
+    {
+      "name": "Evidence snapshot from 2022, no medication recommendations",
+      "start": 70,
+      "end": 84
+    }
+  ],
+  "scientific_limits": [
+    "Animated antibodies, lumen rings, tissue-like fields, image-features and model nodes are illustrative and are not clinical assay readouts, microscope slides, biopsies or patient endoscopy.",
+    "The animation does not assign any diagnosis to an individual, nor invent test sensitivity, specificity, prevalence, patient records, immune-cell measures or treatment efficacy.",
+    "Eosinophilic esophagitis is type-2 immune-mediated, and IBD is immune-mediated; these labels are not flattened into a single classical autoimmune mechanism.",
+    "Treatment choices remain indication-specific, and the 2022 review is not a current recommendation to begin, switch or cease any medication or restricted diet.",
+    "No authored illustrative network or particle track is a model-validated clinical result."
+  ],
+  "prior_versions_preserved": true,
+  "live_site_unchanged": true,
+  "human_review": "Pending full-length listening and viewing, specialist scientific sign-off, readable text at mobile size and image rights review",
+  "sha256": "91606bb8fa3dcee5787cec639f2067e6f0c33def496baff80446b9c373b74f9f"
+}
