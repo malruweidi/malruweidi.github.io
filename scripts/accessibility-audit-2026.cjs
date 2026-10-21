@@ -85,12 +85,12 @@ if(require.main===module)(async()=>{
      passes:result.passes.length,testsTotal:result.violations.length+result.incomplete.length+result.passes.length
     };
    },TAGS);
-   for(const x of data.violations)report.findings.push(asFinding(x,route,context.viewportSize()?.width||0,language));
+   for(const x of data.violations)report.findings.push(asFinding(x,route,page.viewportSize()?.width||0,language));
    for(const x of data.incomplete)report.incomplete.push({
-    page:route,width:context.viewportSize()?.width||0,language,
+    page:route,width:page.viewportSize()?.width||0,language,
     rule:x.id,impact:x.impact,affectedElements:x.nodes
    });
-   report.pages.push({route,width:context.viewportSize()?.width||0,language,
+   report.pages.push({route,width:page.viewportSize()?.width||0,language,
     action:action||"initial",passes:data.passes,violations:data.violations.length,
     incomplete:data.incomplete.length,testsTotal:data.testsTotal});
   }catch(e){
