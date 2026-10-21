@@ -106,3 +106,5 @@ jobs:
         run: node --test tests/wcag-contrast-tokens-2026.test.cjs
       - name: Verify original page titles remain legible with WCAG-safe foregrounds
         run: node --test tests/wcag-contrast-2026.test.cjs
+      - name: Guard named semantic filter groups in publications and cinema
+        run: node --test tests/filter-group-accessibility-2026.test.cjs
