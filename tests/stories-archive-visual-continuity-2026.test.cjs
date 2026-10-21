@@ -40,7 +40,7 @@ test('All eight original object photos open their own stored image while retaini
   '/assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp'
  ];
  const start=s.indexOf('id="rxOctoberPhotoArchive"'),end=s.indexOf('</section>',start);
- const items=s.slice(start,end).match(/<article class="rx-archive-object">[\s\S]*?<\/article>/g)||[];
+ const items=s.slice(start,end).match(/<article class="rx-archive-object"(?:\s+id="[^"]+")?>[\s\S]*?<\/article>/g)||[];
  assert.equal(items.length,8);
  for(let i=0;i<items.length;i++){
   const item=items[i],file=paths[i];
