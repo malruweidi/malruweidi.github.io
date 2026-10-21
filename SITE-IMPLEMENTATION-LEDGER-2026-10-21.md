@@ -29,6 +29,20 @@
 - `scripts/build-media-placement-inventory.cjs`: enumerates source-visible `img`, `video`, `source`, `track` and posters by page, source line, nearest heading and file existence; **does not establish image provenance, visual position or film fidelity**.
 - `tests/film-evidence-threads-2026.test.cjs`, `tests/media-placement-inventory.test.cjs`, `.github/workflows/site-integrity.yml`: regression and source-preservation gates.
 
+## Pass II / Stories and photographic archive (source implementation)
+
+The Stories landing page retains **all four original photographic route cards**, the long chapter sequence, original photographs and disclosure sections. Two mismatched covers were corrected: the actual Cairo microscope photograph now opens `#personal-microscope`, and the unsuccessful histology photograph opens `#zebrafish-histology-materials`. Its conceptual zebrafish image now explicitly says it is not experimental microscopy.
+
+The eight `archive.html#rxOctoberPhotoArchive` object cards retain the same stored image assets, original descriptive text, chapter links and full archive beneath the catalogue. New stable card IDs (`object-cairo-microscope`, `object-molecular-model`, `object-zebrafish-histology`, `object-chemistry-festival`, `object-reagent-front`, `object-copolymer-sample`, `object-reagent-reverse`, `object-culture-hood`) permit citations directly to the correct photograph. Each original is linked for full inspection, with a secondary explicit text link and accessible focus state. The front and rear views of the same reagent bottle link to each other.
+
+Five historic gallery photos are separately inspectable without removal or substitution. The three unsuccessful zebrafish histology photographs retain their distinct captions and can be opened at original resolution in **both** the Stories page and the standalone article. The standalone chapter must always remain an exact copy of the parent chapter: `tests/deep-reading.test.mjs` enforces this and was reconciled after photo-link insertion. Contextual material clearly distinguishes experimental failure, original photographic records and conceptual illustration.
+
+`stories/cairo-microscope.html`, `stories/failed-zebrafish-histology.html` and `stories/unfortunate-copolymer-trials.html` include exact links to their archival objects, with newly added reader-visible Arabic translation entries. The approved Newsreader/DM Sans/DM Mono type choices, colors and responsive presentation remain.
+
+The archive's **existing 4,324-character inline stylesheet was transferred verbatim** to `assets/archive-original-layout-2026.css`, with its reference occupying the original `<style>` position. This reduced archive HTML below the original 26 KB source-size test budget without cutting a photograph or sentence. The stylesheet contains no relative `url(...)` imports to break when relocated. The new `assets/story-archive-photo-access-2026.css` and `assets/story-archive-image-inspection-2026.css` add narrowly scoped source access and keyboard presentation.
+
+The change set is guarded by `tests/story-archive-photographic-context.test.cjs`, `tests/stories-archive-visual-continuity-2026.test.cjs`, the pre-existing exact chapter preservation checks and the archival binary checks. **Source tests do not certify visual crop, color accuracy, photographer credit, identity, privacy consent or historical capture date.** Those still need original-file and real browser review before merging.
+
 ## Full HTML page-by-page review queue
 An [x] means the source-level change is committed in draft PR #84, **not** that rendered-page visual QA, scientific source audit or final copyediting has been completed. Unchanged pages remain unchecked.
 
@@ -39,7 +53,7 @@ An [x] means the source-level change is committed in draft PR #84, **not** that 
 - [ ] `reading-map.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [x] `research.html` — source change and regression guard in PR #84; visual approval pending
 - [ ] `search.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
-- [ ] `stories.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
+- [x] `stories.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [ ] `writing.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 
 ### Research, grant and scientific evidence (20 files)
@@ -65,7 +79,7 @@ An [x] means the source-level change is committed in draft PR #84, **not** that 
 - [ ] `techniques.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 
 ### Storytelling, people, learning and historical archive (14 files)
-- [ ] `archive.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
+- [x] `archive.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [ ] `behind-the-record.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [ ] `chem-squad.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [ ] `engagement.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
@@ -73,11 +87,11 @@ An [x] means the source-level change is committed in draft PR #84, **not** that 
 - [ ] `leadership.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [ ] `major-revisions.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [ ] `scientific-fieldnotes-2026.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
-- [ ] `stories/cairo-microscope.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
-- [ ] `stories/failed-zebrafish-histology.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
+- [x] `stories/cairo-microscope.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
+- [x] `stories/failed-zebrafish-histology.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [ ] `stories/ramadan-microscope.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [ ] `stories/the-ring-that-never-closed.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
-- [ ] `stories/unfortunate-copolymer-trials.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
+- [x] `stories/unfortunate-copolymer-trials.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [ ] `training.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 
 ### Film and cinematography (12 files)
