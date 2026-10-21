@@ -100,3 +100,5 @@ jobs:
         run: node --test tests/figure-context-accessibility-2026.test.cjs
       - name: Verify film primary-release evolution and preservation of historical V8 masters
         run: node --test tests/cinema-verified-primary-evolution-2026.test.cjs
+      - name: Keep one Find link in existing page headers while preserving keyboard search
+        run: node --test tests/discovery-single-search-link-2026.test.cjs
