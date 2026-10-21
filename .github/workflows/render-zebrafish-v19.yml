@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: single-film11-flow-v18-${{ github.ref }}
+  group: single-film11-zebrafish-v19-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -51,6 +51,10 @@ jobs:
           root=Path("assets/films/series-v19-zebrafish")
           master=root/"zebrafish-hemodynamics.mp4"
           data=json.loads((root/"zebrafish-hemodynamics.json").read_text())
+          ff=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(master)]))
+          assert abs(float(ff["format"]["duration"])-84)<.15
+          assert {"video","audio"}<={x["codec_type"] for x in ff["streams"]}
+          assert any(x.get("codec_name")=="h264" and x.get("width")==1920 and x.get("height")==1080 for x in ff["streams"])
           assert data["film_index"]==11 and data["paper"]["doi"]=="10.1016/j.micron.2020.102876"
           assert data["published_method"]["recording_seconds"]==10
           assert data["published_method"]["analysis_software"]==["MicroZebraLab","ImageJ"]
@@ -88,15 +92,15 @@ jobs:
           git config user.name "Ruwaidix Research Cinema"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           render_source_hash="$(git hash-object scripts/render-zebrafish-v19.py)"
-          mkdir -p /tmp/flow-v18-output
-          cp -a assets/films/series-v19-zebrafish/. /tmp/flow-v18-output/
+          mkdir -p /tmp/zebrafish-v19-output
+          cp -a assets/films/series-v19-zebrafish/. /tmp/zebrafish-v19-output/
           git fetch origin cinema/zebrafish-v19-highspeed-observation
           current_hash="$(git show origin/cinema/zebrafish-v19-highspeed-observation:scripts/render-zebrafish-v19.py | git hash-object --stdin)"
           if [ "$render_source_hash" != "$current_hash" ]; then
             echo "Newer source renderer exists; do not push a stale binary"; exit 0
           fi
           git reset --hard origin/cinema/zebrafish-v19-highspeed-observation
-          cp -a /tmp/flow-v18-output/. assets/films/series-v19-zebrafish/
+          cp -a /tmp/zebrafish-v19-output/. assets/films/series-v19-zebrafish/
           git add assets/films/series-v19-zebrafish/
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Film 10: reproduce the airway-reopening flow chamber in native 1080p cinematic motion"
