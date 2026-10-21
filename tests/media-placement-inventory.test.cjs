@@ -46,3 +46,14 @@ test('inventory is read-only and distinguishes embedded and remote images withou
   assert.ok(i.scope.includes('not a photographic provenance'));
   assert.ok(i.counts.htmlFiles >= 60);
 });
+
+test('minified HTML positions retain precise character offsets and stable document order', () => {
+  const i=buildInventory(root);
+  const records=i.pages['cv.html'];
+  assert.ok(records.length > 0);
+  for(let j=0;j<records.length;j++){
+    assert.ok(Number.isInteger(records[j].characterOffset) && records[j].characterOffset>=0);
+    assert.equal(records[j].ordinalOnPage,j+1);
+    if(j>0)assert.ok(records[j].characterOffset>=records[j-1].characterOffset);
+  }
+});
