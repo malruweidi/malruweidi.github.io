@@ -1,0 +1,91 @@
+{
+  "film_index": 12,
+  "title": "An Enzyme, a Receptor, a Clinical Question",
+  "edition": "V20 causal-caution molecular/clinical documentary",
+  "duration_seconds": 84.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "paper": {
+    "doi": "10.1080/08037051.2022.2055530",
+    "title": "Soluble ACE2 and angiotensin II levels are modulated in hypertensive COVID-19 patients treated with different antihypertension drugs",
+    "journal": "Blood Pressure 31 (2022) 80–90",
+    "type": "Multicenter cross-sectional observational study, not a randomized experiment",
+    "source": "https://doi.org/10.1080/08037051.2022.2055530"
+  },
+  "source_narration": "assets/films/series-v7-pilots/ace2-covid-drugs.mp4",
+  "source_captions": "assets/films/series-v7-pilots/ace2-covid-drugs.vtt",
+  "published_numbers": {
+    "total_participants": 200,
+    "cohorts": {
+      "ACEi": 57,
+      "ARB": 68,
+      "beta_blocker": 15,
+      "calcium_channel_blocker": 30,
+      "unknown_medication_class": 30
+    },
+    "biomarker_assay": "Commercial ELISA for soluble ACE2 and angiotensin II",
+    "soluble_ACE2_severe_vs_mild_fold_approx": 1.9,
+    "angiotensin_II_mild_vs_severe_fold_approx": 1.2,
+    "ACE2_hospital_stay_correlation_r": 0.3,
+    "ACE2_hospital_stay_correlation_p": 0.003
+  },
+  "data_quality_note": "Publication reports severity category counts whose sum differs from the 200 enrolled participants; this film deliberately does not plot that unresolved breakdown.",
+  "contextual_images": [
+    {
+      "file": "assets/evidence-pulmonary.webp",
+      "sha256": "960566f19371541ae45a5846e7d5ec5edb9fd6cd63b2a5db373c23c6a4ee77d7",
+      "role": "contextual graphic or healthcare workstation photograph, not the clinical cohort and not an ELISA output"
+    },
+    {
+      "file": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "sha256": "606cfa7d1bd860a92f49b1ec06bb42d786d365e234dfff32ef92e1eb534e453e",
+      "role": "contextual graphic or healthcare workstation photograph, not the clinical cohort and not an ELISA output"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "The clinical question behind COVID-19 and hypertension",
+      "start": 0,
+      "end": 14
+    },
+    {
+      "name": "Membrane and soluble ACE2, angiotensin II signaling",
+      "start": 14,
+      "end": 28
+    },
+    {
+      "name": "Nonrandomized medication groups and missing drug classification",
+      "start": 28,
+      "end": 42
+    },
+    {
+      "name": "Study-reported relative differences by disease severity",
+      "start": 42,
+      "end": 56
+    },
+    {
+      "name": "Confounding and cross-sectional limitations",
+      "start": 56,
+      "end": 70
+    },
+    {
+      "name": "Evidence and safety before treatment advice",
+      "start": 70,
+      "end": 84
+    }
+  ],
+  "limitations": [
+    "Cell membrane, enzyme conformation, protein transport and AngII conversion are artistic explanatory depictions, not structure models or patient-level mechanisms.",
+    "Five groups represent recorded antihypertensive medication categories and the 30 missing classifications; no random treatment allocation is claimed.",
+    "Study-reported biomarker ratios and correlation are labeled; no fabricated raw concentration data, confidence intervals or patient profiles are graphed.",
+    "Medication class, disease severity and outcomes are confounded in cross-sectional observational comparisons. Beta blocker n=15 is a small subgroup.",
+    "The film is not a drug recommendation: patients should not stop or change ACEi, ARB, beta blockers or CCB on the basis of this study."
+  ],
+  "live_website_unchanged": true,
+  "older_film_masters_preserved": true,
+  "human_review": "Full viewing/listening and medical/scholarly review pending; no clinical or release approval claimed.",
+  "sha256": "bcbf5da46aa12a04fd915610af3734e6b6b9d0e00872a8c3d84047ba485180c0"
+}
