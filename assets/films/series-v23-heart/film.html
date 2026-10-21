@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Listening for a Failing Heart — Film 15</title><style>html,body{margin:0;background:#0a1823;overflow:hidden}canvas{width:100vw;height:100vh;object-fit:contain;display:block}.sr,.archive{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}</style></head><body>
+<h1 class="sr">Listening for a failing heart — sensor technologies and the limits of clinical prediction</h1>
+<img id="workstation" class="archive" src="../../research-archive-2026/echocardiography-spectral-doppler-workstation.webp" alt="Original cardiac imaging workstation; not a patient or original study dataset">
+<canvas width="1920" height="1080" id="screen"></canvas><script>"use strict";
+const W=1280,H=720,FPS=24,DURATION=84,T=Math.PI*2,B=[0,14,28,42,56,70,84];
+const C={bg:"#0a1823",deep:"#142b37",blue:"#74b9cb",mint:"#a0d8c6",paper:"#f1ebdf",amber:"#e7b678",red:"#d98785",white:"#f3f3e9",muted:"#a5bbc0",violet:"#b5a3d6"};
+const cv=document.getElementById("screen"),d=cv.getContext("2d",{alpha:false}),im=document.getElementById("workstation");
+const clamp=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=clamp(x);return x*x*(3-2*x)},sin=Math.sin,cos=Math.cos;
+function box(x,y,w,h,c,r=10){d.fillStyle=c;d.beginPath();d.roundRect(x,y,w,h,r);d.fill()}
+function txt(s,x,y,z=20,c=C.white,serif=false,align="left"){d.font=z+"px "+(serif?"Georgia,serif":"Arial,sans-serif");d.fillStyle=c;d.textAlign=align;d.fillText(s,x,y)}
+function stroke(p,c,w=2,a=1){d.save();d.globalAlpha=a;d.strokeStyle=c;d.lineWidth=w;d.lineJoin="round";d.lineCap="round";d.beginPath();d.moveTo(...p[0]);for(let i=1;i<p.length;i++)d.lineTo(...p[i]);d.stroke();d.restore()}
+function dot(x,y,r,c,a=1){d.save();d.globalAlpha=a;d.fillStyle=c;d.beginPath();d.arc(x,y,r,0,T);d.fill();d.restore()}
+function ring(x,y,r,c,a=.5,w=2){d.save();d.globalAlpha=a;d.strokeStyle=c;d.lineWidth=w;d.beginPath();d.arc(x,y,r,0,T);d.stroke();d.restore()}
+function background(t,light=false){d.fillStyle=light?C.paper:C.bg;d.fillRect(0,0,W,H);for(let i=0;i<14;i++)stroke([[0,95+i*43+sin(t*.14+i)*4],[W,95+i*43+sin(t*.14+i)*4]],light?C.blue:C.blue,1,.045)}
+function frame(t,n,light=false){let col=light?"#35505a":C.muted;txt("RUWAIDIX  /  CARDIAC SIGNALS",68,43,13,col);txt("FILM 15 / SENSOR TECHNOLOGIES",1190,43,13,col,false,"right");stroke([[70,60],[1210,60]],col,1,.28);stroke([[70,685],[1210,685]],col,1,.25);stroke([[70,685],[70+1140*t/84,685]],C.amber,3);txt(String(n+1).padStart(2,"0")+" / 06",73,659,14,col)}
+function title(s,t,a=0){d.save();d.beginPath();d.rect(70,100,1120,100*ease((t-a)/1.0));d.clip();txt(s,80,172,62,C.white,true);d.restore()}
+function wave(x,y,w,h,t,f=1,kind=0,color=C.mint){
+ const pts=[];for(let j=0;j<=220;j++){let p=j/220,q=(p*6+t*.20)*f;
+ let val=kind===0?sin(q*T)*.45+Math.pow(Math.max(0,sin((q+.04)*T)),14)*.9:
+ kind===1?sin(q*T)*.55+.19*sin(q*T*3.4):
+ kind===2?sin(q*T)*.18+Math.pow(Math.max(0,sin(q*T)),30)*1.05:
+ sin(q*T)*.3+.14*sin(q*T*4);
+ pts.push([x+p*w,y-val*h]);}
+ stroke(pts,color,2.4,.86);
+ for(let k=0;k<6;k++){let p=((t*.08+k/6)%1),i=Math.round(p*220);dot(...pts[i],3.2,C.amber,.85);}
+}
+function heart(x,y,t,s=1){
+ d.save();d.translate(x,y);d.scale(s,s);let p=1+.05*sin(t*6.28);d.scale(p,p);
+ d.beginPath();d.moveTo(0,52);d.bezierCurveTo(-93,-5,-70,-64,-25,-47);d.bezierCurveTo(-5,-41,0,-21,0,-21);d.bezierCurveTo(20,-62,79,-59,80,-11);d.bezierCurveTo(83,22,31,59,0,75);d.closePath();d.fillStyle="#b05e69";d.fill();d.strokeStyle=C.red;d.lineWidth=3;d.stroke();
+ d.beginPath();d.moveTo(-24,-23);d.bezierCurveTo(-15,3,-10,25,3,45);d.moveTo(0,-21);d.bezierCurveTo(10,2,30,18,36,29);d.strokeStyle="#f3b5aa";d.lineWidth=3;d.stroke();d.restore();
+}
+function photo(t,x,y,w,h){let iw=im.naturalWidth,ih=im.naturalHeight;if(!iw)return;d.save();d.beginPath();d.roundRect(x,y,w,h,12);d.clip();let sc=Math.max(w/iw,h/ih)*1.06;d.drawImage(im,x+(w-iw*sc)/2+8*sin(t*.17),y+(h-ih*sc)/2+5*cos(t*.13),iw*sc,ih*sc);d.restore()}
+function disclaimer(s,light=false){txt(s,80,642,16,light?"#53656a":C.muted)}
+function scene0(t){background(t);title("Can the heart warn us early?",t);heart(337,389,t,1.6);ring(337,392,172,C.red,.23);ring(337,392,207,C.red,.12);box(655,254,534,272,C.deep);txt("A SIGNAL IS NOT A DIAGNOSIS",685,295,20,C.amber);wave(685,384,465,75,t,1.1,0);wave(685,472,465,42,t,1.4,1,C.blue);disclaimer("Conceptual heartbeat and waveform; no patient measurements");frame(t,0)}
+function scene1(t){background(t);title("The body becomes an instrument.",t,14);const labs=["ECG","ACTIVITY","BIOIMPEDANCE","PPG","LUNG ULTRASOUND"];for(let i=0;i<5;i++){let x=75+i*232;box(x,245,213,300,C.deep);txt(labs[i],x+106,294,i===2?17:19,C.mint,false,"center");wave(x+15,412,183,63,t+i*.6,1+i*.11,i%4,i%2?C.blue:C.mint);txt(["ELECTRICAL","MOTION","THORACIC","OPTICAL","IMAGING"][i],x+106,511,15,C.muted,false,"center")}disclaimer("Conceptual sensor outputs · methods have different endpoints and limitations");frame(t,1)}
+function scene2(t){background(t);title("A measurement enters a model.",t,28);photo(t,81,234,433,307);txt("ORIGINAL CARDIAC WORKSTATION · CONTEXT ONLY",81,571,14,C.muted);for(let i=0;i<3;i++){let x=578+i*210;box(x,281,186,210,C.deep);txt(["SIGNAL","FEATURE","RISK REVIEW"][i],x+93,318,18,i===2?C.amber:C.mint,false,"center");wave(x+16,425,154,63,t+i*.7,1.4,i,C.blue);if(i<2){stroke([[x+186,387],[x+209,387]],C.amber,2);dot(x+187+22*((t*.25)%1),387,4,C.amber)}}disclaimer("A research review, not a validated prediction algorithm or patient dataset");frame(t,2)}
+function scene3(t){background(t);title("Noise can resemble change.",t,42);box(88,233,1096,324,C.deep);txt("PHYSIOLOGICAL SIGNAL",116,275,18,C.mint);wave(117,360,1038,77,t,1.4,1,C.blue);txt("MOTION + MEASUREMENT ARTIFACT",116,445,18,C.amber);wave(117,525,1038,66,t*1.13,1.7,3,C.red);for(let i=0;i<18;i++){let x=132+i*57;dot(x,472+27*sin(t*.8+i*2.4),2+(i%4),C.amber,.7)}disclaimer("Synthetic signals; no diagnostic performance or clinical waveform claimed");frame(t,3)}
+function scene4(t){background(t);title("A promising sensor must be tested.",t,56);let labels=["ACCURACY","REPRODUCIBILITY","EXTERNAL TEST","CLINICAL UTILITY"];for(let i=0;i<4;i++){let x=86+i*300;box(x,268,268,206,C.deep);txt(labels[i],x+134,328,19,i===3?C.amber:C.mint,false,"center");ring(x+134,401,36+4*sin(t*.4+i),i===3?C.amber:C.blue,.6,3);dot(x+134+30*cos(t*.8+i),401+30*sin(t*.8+i),5,C.mint);if(i<3)stroke([[x+269,371],[x+300,371]],C.amber,3)}txt("SIGNAL QUALITY ≠ PROVEN IMPROVEMENT IN PATIENT OUTCOMES",89,563,20,C.white);disclaimer("Clinical adoption needs suitable trials and patient-centered endpoints");frame(t,4)}
+function scene5(t){background(t,true);d.save();d.beginPath();d.rect(70,105,1140,115*ease((t-70)/1));d.clip();txt("The instrument is only the beginning.",80,181,54,"#203943",true);d.restore();photo(t,85,249,476,299);box(611,257,583,289,"#dce6df");txt("WILEY · 2022 REVIEW",641,310,21,"#24454d");for(let i=0;i<3;i++){dot(652,365+i*64,7,[C.blue,C.red,C.amber][i]);txt(["Signal quality and clinical context","Trials, outcomes and generalizability","No device replaces clinical judgment"][i],673,372+i*64,18,"#24454d")}txt("Salman · Al-Ruweidi · Ouakad · Yalcin",85,596,19,"#24454d",true);txt("DOI 10.1002/9781119813040.ch5",85,630,16,"#53656a");frame(t,5,true)}
+const scenes=[scene0,scene1,scene2,scene3,scene4,scene5];
+function draw(t){t=Math.max(0,Math.min(83.999,t));let i=Math.min(5,Math.floor(t/14));d.setTransform(1.5,0,0,1.5,0,0);scenes[i](t)}
+window.__draw=draw;window.__meta={W:1920,H:1080,FPS,DURATION};window.__ready=false;
+Promise.all([document.fonts.ready,new Promise((ok,no)=>{if(im.complete&&im.naturalWidth)return ok();im.addEventListener("load",ok,{once:true});im.addEventListener("error",()=>no(Error("Missing archival workstation")),{once:true})})]).then(()=>{window.__ready=true;draw(0)}).catch(e=>window.__renderError=String(e));
+</script></body></html>
