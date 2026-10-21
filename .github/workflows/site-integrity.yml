@@ -98,3 +98,5 @@ jobs:
           node scripts/audit-figure-archive-2026.cjs --issues
       - name: Verify visible title continuity for accessible archival figures
         run: node --test tests/figure-context-accessibility-2026.test.cjs
+      - name: Verify film primary-release evolution and preservation of historical V8 masters
+        run: node --test tests/cinema-verified-primary-evolution-2026.test.cjs
