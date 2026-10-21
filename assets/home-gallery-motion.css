@@ -7,3 +7,5 @@
 .moving-gallery[data-motion-paused="true"]{overflow-x:auto;mask-image:none;-webkit-mask-image:none;overscroll-behavior-inline:contain}
 .moving-gallery[data-motion-paused="true"] .moving-track{animation:none!important;transform:none!important}
 @media(prefers-reduced-motion:reduce){.rx-motion-controls{display:none}.moving-gallery{overflow-x:auto;mask-image:none;-webkit-mask-image:none}}
+.moving-gallery[data-motion-paused="true"] .moving-track>[aria-hidden="true"]{display:none}
+@media(prefers-reduced-motion:reduce){.moving-gallery .moving-track>[aria-hidden="true"]{display:none}}
