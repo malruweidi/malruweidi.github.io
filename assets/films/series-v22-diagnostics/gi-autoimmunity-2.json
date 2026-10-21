@@ -1,0 +1,64 @@
+{
+  "film_index": 14,
+  "title": "The Diagnostic Problem",
+  "edition": "V22 kinetic GI diagnostics / conceptual clinical-evidence documentary",
+  "duration_seconds": 84.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "source_chapter": {
+    "title": "Autoimmune Diseases of the GI Tract Part II: Emergence of Diagnostic Tools and Treatments",
+    "doi": "10.5772/intechopen.106185",
+    "type": "Narrative review chapter, 2022, not primary trial data",
+    "source": "https://doi.org/10.5772/intechopen.106185"
+  },
+  "source_narration": "assets/films/series-v6/gi-autoimmunity-2.mp4",
+  "source_mp4_sha256": "29a8200472150666052b90a11fee6a8c1cbfe5641469eb69f6897313ad55d793",
+  "source_captions": "assets/films/series-v6/gi-autoimmunity-2.vtt",
+  "captions_count": 12,
+  "visual_provenance": "Original deterministic Canvas2D explanatory schematics. No real histology, patient image, clinical outcome data or experimental recording.",
+  "scenes": [
+    {
+      "title": "Overlapping gastrointestinal presentations",
+      "start": 0,
+      "end": 14
+    },
+    {
+      "title": "Four diagnostic evidence layers",
+      "start": 14,
+      "end": 28
+    },
+    {
+      "title": "Disease-specific criteria",
+      "start": 28,
+      "end": 42
+    },
+    {
+      "title": "Treatment mechanisms versus clinical benefit",
+      "start": 42,
+      "end": 56
+    },
+    {
+      "title": "Emerging tests and therapeutics",
+      "start": 56,
+      "end": 70
+    },
+    {
+      "title": "2022 evidence limits and current guidelines",
+      "start": 70,
+      "end": 84
+    }
+  ],
+  "scientific_limitations": [
+    "2022 narrative review, not current clinical practice guideline.",
+    "Different GI disorders require different diagnostic criteria; no single test is universal.",
+    "Treatment mechanism is not a clinical efficacy estimate.",
+    "All tissues, assays, trial and molecular motifs are conceptual, not patient or study data."
+  ],
+  "live_website_unchanged": true,
+  "older_film_masters_preserved": true,
+  "release": "Review-only until personal scholarly, audiovisual and accessibility approval.",
+  "sha256": "0abc9914482a8ea586ee1cc6aede40a23c2f3fab616afcc574dd5be2fa8186c9"
+}
