@@ -1,0 +1,136 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>An Enzyme, a Receptor, a Clinical Question — Film 12</title>
+<style>html,body{margin:0;background:#0b1420;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}.sr{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.src{position:absolute;left:-9999px;width:1px;height:1px}</style></head><body>
+<h1 class="sr">An Enzyme, a Receptor, a Clinical Question — observational research on hypertension medicines and COVID-19</h1>
+<img id="pulmonary" class="src" src="../../evidence-pulmonary.webp" alt="Contextual pulmonary medical illustration; not a COVID-19 participant or the study's patient image">
+<img id="workstation" class="src" src="../../research-archive-2026/echocardiography-spectral-doppler-workstation.webp" alt="Contextual archival cardiac imaging workstation, not a COVID-19 study apparatus or measurement">
+<canvas id="screen" width="1920" height="1080" role="img" aria-label="A motion documentary of ACE2, angiotensin II, 200 observed hypertensive COVID-19 patients, nonrandom medication groups, measured associations, causal uncertainty and safe interpretation"></canvas>
+<script>"use strict";
+// Scientific boundary: this is explanatory motion, NOT patient footage, measured
+// protein trajectories, a causal drug-effect model, actual ELISA chromatograms
+// or randomized data. The only numeric outcomes are sourced to the 2022 paper.
+const W=1280,H=720,FPS=24,DURATION=84,B=[0,14,28,42,56,70,84];
+const P={night:"#0c1822",navy:"#122a33",slate:"#213944",shadow:"#1a2d35",frost:"#e8f2ed",fog:"#b1c5c3",
+mint:"#8fd4c5",cyan:"#70b3c4",orange:"#ebb47b",coral:"#dc8272",violet:"#b0a2c9",steel:"#789ba7",ink:"#23383d",paper:"#efefe9",green:"#8eb89e"};
+const photos=[document.getElementById("pulmonary"),document.getElementById("workstation")];
+const screen=document.getElementById("screen"),v=screen.getContext("2d",{alpha:false}),back=[document.createElement("canvas"),document.createElement("canvas")];back.forEach(x=>{x.width=W;x.height=H});const d=back.map(x=>x.getContext("2d",{alpha:false}));
+const PI=Math.PI,TAU=2*PI,sin=Math.sin,cos=Math.cos,clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const seg=(t,a,b)=>clamp((t-a)/(b-a)),ease=x=>{x=clamp(x);return x*x*(3-2*x)},rise=x=>1-Math.pow(1-clamp(x),3),lerp=(a,b,p)=>a+(b-a)*p;
+function rect(g,x,y,w,h,c){g.fillStyle=c;g.fillRect(x,y,w,h)}
+function path(g,pts,c,w=2,a=1){g.save();g.globalAlpha=clamp(a);g.beginPath();g.moveTo(...pts[0]);for(let i=1;i<pts.length;i++)g.lineTo(...pts[i]);g.strokeStyle=c;g.lineWidth=w;g.lineCap="round";g.lineJoin="round";g.stroke();g.restore()}
+function dot(g,x,y,r,c,a=1){g.save();g.globalAlpha=clamp(a);g.beginPath();g.arc(x,y,Math.max(.2,r),0,TAU);g.fillStyle=c;g.fill();g.restore()}
+function ring(g,x,y,r,c,w=2,a=1){g.save();g.globalAlpha=clamp(a);g.beginPath();g.arc(x,y,Math.max(1,r),0,TAU);g.strokeStyle=c;g.lineWidth=w;g.stroke();g.restore()}
+function round(g,x,y,w,h,r,c){g.fillStyle=c;g.beginPath();g.roundRect(x,y,w,h,r);g.fill()}
+function text(g,s,x,y,z=19,c=P.frost,style="sans",a=1,align="left"){g.save();g.globalAlpha=clamp(a);g.fillStyle=c;g.textAlign=align;g.textBaseline="alphabetic";g.font=z+"px "+(style==="serif"?"Georgia,serif":style==="mono"?"monospace":"Arial,sans-serif");g.fillText(s,x,y);g.restore()}
+function head(g,s,x,y,z,t,start,c=P.frost){let p=rise(seg(t,start,start+.8));g.save();g.beginPath();g.rect(x-4,y-z*1.3,1170,(z+30)*p);g.clip();text(g,s,x,y+17*(1-p),z,c,"serif");g.restore()}
+function bg(g,t,light=false){rect(g,0,0,W,H,light?P.paper:P.night);let r=g.createRadialGradient(light?300:895,310,30,light?300:895,310,780);r.addColorStop(0,light?"rgba(158,145,126,.12)":"rgba(91,164,160,.14)");r.addColorStop(1,"rgba(0,0,0,0)");rect(g,0,0,W,H,r);
+for(let i=0;i<8;i++){let xx=91+i*159+7*sin(t*.13+i);path(g,[[xx,61],[xx-9,678]],light?P.steel:P.cyan,1,.08)}}
+function hud(g,t,j,light=false){let c=light?P.ink:P.steel;path(g,[[72,60],[1207,60]],c,1,.29);text(g,"RUWAIDIX / CLINICAL EVIDENCE",75,42,13,c,"mono");text(g,"FILM 12 / BLOOD PRESSURE 2022",1204,42,13,c,"mono",1,"right");
+path(g,[[74,682],[1207,682]],c,1,.25);path(g,[[74,682],[74+1133*t/84,682]],light?P.coral:P.orange,3,.96);text(g,String(j+1).padStart(2,"0")+" / 06",78,663,14,c,"mono")}
+function photo(g,img,x,y,w,h,t,caption){const iw=img.naturalWidth,ih=img.naturalHeight;if(!iw)return;
+g.save();g.beginPath();g.roundRect(x,y,w,h,12);g.clip();let scale=Math.max(w/iw,h/ih)*1.05,rw=iw*scale,rh=ih*scale;g.drawImage(img,x+(w-rw)/2+10*sin(t*.17),y+(h-rh)/2+6*cos(t*.24),rw,rh);rect(g,x,y,w,h,"rgba(11,28,34,.23)");g.restore();text(g,caption,x,y+h+31,14,P.fog,"mono");}
+function molecule(g,x,y,t,r=32,c=P.mint){g.save();g.translate(x,y);g.rotate(t*.08);for(let k=0;k<7;k++){let a=k*TAU/7;let q=r*(.67+.1*sin(k*2+t*.45));dot(g,q*cos(a),q*sin(a),7+(k%3)*2,c,.75);if(k>0)path(g,[[0,0],[q*cos(a),q*sin(a)]],c,2,.17)}dot(g,0,0,r*.31,P.orange,.58);g.restore();}
+function membrane(g,t,x,y,w){
+const nodes=[];for(let k=0;k<47;k++){let xx=x+w*k/46,yy=y+11*sin(k*.43+t*.41);nodes.push([xx,yy]);dot(g,xx,yy,5.8,P.mint,.55);path(g,[[xx,yy+6],[xx+4*sin(t*.4+k),yy+23]],P.orange,2,.38);}
+path(g,nodes,P.cyan,3,.46);const lower=nodes.map(p=>[p[0],p[1]+31]);path(g,lower,P.cyan,3,.5);
+for(let k=0;k<47;k++)dot(g,lower[k][0],lower[k][1],5.7,P.mint,.5);
+}
+function enzyme(g,x,y,t,scale=1,c=P.cyan){g.save();g.translate(x,y);g.rotate(.1*sin(t*.43));g.scale(scale,scale);g.beginPath();g.moveTo(-35,-36);g.bezierCurveTo(-63,-7,-42,35,-13,36);g.bezierCurveTo(8,46,23,13,45,12);g.bezierCurveTo(71,-2,38,-44,17,-41);g.bezierCurveTo(-9,-49,-18,-8,-35,-36);g.closePath();g.fillStyle="rgba(77,148,159,.33)";g.fill();g.lineWidth=4;g.strokeStyle=c;g.stroke();dot(g,13,-1,9,P.orange,.9);g.restore()}
+function particles(g,t,x,y,w,h,count=24){for(let k=0;k<count;k++){let p=(t*.082+(k*.61803398875)%1)%1;dot(g,x+p*w,y+h*(.15+.7*((k*.45793)%1))+5*sin(t*.67+k),2.4+(k%3),k%4?P.mint:P.orange,.12+.4*sin(PI*p))}}
+function flow(g,t,x1,y1,x2,y2,c=P.orange,count=10){path(g,[[x1,y1],[x2,y2]],c,2,.35);for(let i=0;i<count;i++){let p=(t*.12+i/count)%1;dot(g,lerp(x1,x2,p),lerp(y1,y2,p)+8*sin(p*PI*2+t*.7+i),3.4,c,.16+.75*sin(PI*p));}}
+function diagramNode(g,x,y,label,c=P.mint,w=182){round(g,x,y,w,55,9,P.slate);dot(g,x+20,y+27,8,c,.78);text(g,label,x+39,y+34,16,P.frost,"mono")}
+function person(g,x,y,r,c,a=1){dot(g,x,y-r*.23,r*.21,c,a);round(g,x-r*.20,y+r*.03,r*.4,r*.51,r*.12,c);}
+function network(g,t){
+const positions=[[135,359],[432,270],[432,450],[790,274],[790,453],[1050,360]];
+for(let i=0;i<5;i++){const a=positions[Math.floor(i/2)],b=positions[2+Math.floor(i/2)],n=Math.min(5,i+3);flow(g,t,a[0]+70,a[1],b[0]-40,b[1],i%2?P.orange:P.cyan,n)}
+}
+function scene0(g,t){bg(g,t);head(g,"An enzyme. A receptor.",84,153,64,t,.2);head(g,"A clinical question.",84,239,67,t,1.2,P.orange);
+photo(g,photos[0],761,184,401,360,t,"ARCHIVE · CONTEXT, NOT A STUDY PARTICIPANT");
+for(let k=0;k<12;k++){let a=k*TAU/12+t*.22;dot(g,505+122*cos(a),391+91*sin(a),4+(k%3),k%2?P.cyan:P.orange,.24);}
+enzyme(g,518,385,t,1.16);
+text(g,"HYPERTENSION  /  COVID-19  /  MEDICATION EXPOSURE",85,606,20,P.mint,"mono",rise(seg(t,4,5)));
+text(g,"Observed together. Not necessarily caused by one another.",85,645,20,P.fog,"serif",rise(seg(t,7,8)));hud(g,t,0)}
+function scene1(g,t){bg(g,t);let l=t-14;head(g,"Same pathway. Different signals.",86,147,56,t,14.3);
+membrane(g,t,100,478,1080);enzyme(g,354,451,t,1.15);
+text(g,"MEMBRANE ACE2",249,560,18,P.mint,"mono",rise(seg(l,2,3)));
+for(let k=0;k<6;k++){const p=(l*.08+k/6)%1;enzyme(g,747+120*sin(k*2),289+70*cos(k*2)+12*sin(l*.53+k),l+k,.37,P.violet);}
+text(g,"SOLUBLE ACE2",714,190,21,P.violet,"mono",rise(seg(l,3,4)));
+for(let k=0;k<10;k++){let p=(t*.13+k/10)%1;molecule(g,96+p*1042,348+22*sin(p*TAU+k),t,.20*32,P.orange);}
+text(g,"ANGIOTENSIN II",104,308,18,P.orange,"mono",rise(seg(l,4,5)));
+flow(g,t,292,340,611,340,P.orange,9);
+text(g,"ACE2 CAN CLEAVE ANG II → ANG-(1–7)",103,632,22,P.fog,"serif",rise(seg(l,7,8)));
+text(g,"Conceptual molecules, not patient-derived structures",105,657,14,P.steel,"mono");
+hud(g,t,1)}
+function scene2(g,t){bg(g,t);let l=t-28;head(g,"The cohort was not randomized.",87,143,56,t,28.2);
+text(g,"200 ADMITTED HYPERTENSIVE COVID-19 PATIENTS",93,198,21,P.fog,"mono",rise(seg(l,1,2)));
+const groups=[["ACEi",57,P.mint],["ARB",68,P.cyan],["BB",15,P.orange],["CCB",30,P.violet],["NOT RECORDED",30,P.steel]];
+let pos=0;
+for(let k=0;k<groups.length;k++){
+ let [label,n,c]=groups[k],xx=104+k*228,yy=274,show=rise(seg(l,1.1+k*.35,2.2+k*.35));
+ text(g,label,xx,yy-18,16,c,"mono",show);
+ round(g,xx-10,yy,200,279,13,P.slate);
+ for(let m=0;m<n;m++){let p=rise(seg(l,2+k*.29+m*.012,3+k*.29+m*.012));
+ let row=Math.floor(m/10),col=m%10;
+ dot(g,xx+5+col*18.1,yy+22+row*27+(m%3)*2,5.6,c,(.22+.69*p)*show);
+ }
+ text(g,String(n),xx+10,yy+246,29,P.frost,"serif",show);
+ pos+=n;
+}
+text(g,"ACE inhibitor / ARB / beta-blocker / calcium-channel blocker",94,607,17,P.fog,"mono",rise(seg(l,8,9)));
+text(g,"Medication class known for 170; unavailable in 30 records",95,642,17,P.orange,"mono",rise(seg(l,9,10)));
+hud(g,t,2)}
+function scene3(g,t){bg(g,t);let l=t-42;head(g,"Measured association is not mechanism.",80,139,52,t,42.2);
+const left=[["sACE2","SEVERE vs MILD","≈1.9×",P.mint],["ANGIOTENSIN II","MILD vs SEVERE","≈1.2×",P.orange]];
+for(let k=0;k<2;k++){
+ const y=248+k*155,p=rise(seg(l,1.3+k*1.0,3.2+k));
+ round(g,93,y,1093,129,15,P.slate);
+ text(g,left[k][0],120,y+40,22,left[k][3],"mono",p);
+ text(g,left[k][1],428,y+42,20,P.fog,"mono",p);
+ text(g,left[k][2],1122,y+91,57,left[k][3],"serif",p,"right");
+ for(let q=0;q<18;q++){const xx=151+q*49,amp=8+16*sin(q*.55+t*.58);
+ dot(g,xx,y+93+amp*.18,2.4+(q%3),left[k][3],.16+.36*sin(t*.6+q));}
+}
+text(g,"ACE2 vs length of hospitalization: r = 0.30 (observed correlation)",98,622,18,P.fog,"mono",rise(seg(l,7,8)));
+text(g,"Relative comparisons reproduced from the 2022 paper · no individual data plotted",98,649,14,P.steel,"mono",rise(seg(l,9,10)));
+hud(g,t,3)}
+function scene4(g,t){bg(g,t);let l=t-56;head(g,"A clinical association has other paths.",81,143,53,t,56.2);
+diagramNode(g,100,285,"MEDICATION",P.orange,225);
+diagramNode(g,400,203,"COMORBIDITY",P.cyan,210);
+diagramNode(g,400,395,"SEVERITY",P.coral,210);
+diagramNode(g,730,285,"sACE2 / ANG II",P.mint,238);
+diagramNode(g,1008,285,"OUTCOME",P.violet,175);
+const E=[[326,314,395,231],[326,314,397,422],[612,231,727,310],[612,420,727,314],[968,313,1006,313],[617,419,1037,337]];
+for(let i=0;i<E.length;i++){let [x,y,x2,y2]=E[i],p=rise(seg(l,2+i*.65,3+i*.65));path(g,[[x,y],[x2,y2]],i%2?P.cyan:P.orange,2,.55*p);let q=(t*.12+i*.17)%1;dot(g,lerp(x,x2,q),lerp(y,y2,q),4,P.frost,.18+.65*p*sin(PI*q));}
+text(g,"OBSERVATIONAL · CROSS-SECTIONAL",103,570,22,P.orange,"mono",rise(seg(l,6,7)));
+text(g,"Arrows illustrate possible confounding, not estimated causal effects.",103,611,20,P.fog,"serif",rise(seg(l,8,9)));
+text(g,"Small beta-blocker group (n = 15); no randomized treatment allocation",103,647,15,P.steel,"mono",rise(seg(l,9,10)));
+hud(g,t,4)}
+function scene5(g,t){bg(g,t,true);let l=t-70;head(g,"Evidence before advice.",84,143,69,t,70.2,P.ink);
+photo(g,photos[1],105,242,425,280,t,"ARCHIVAL WORKSTATION · NOT AN ELISA READOUT");
+round(g,584,237,573,315,16,P.ink);
+const messages=["Measured concentration ≠ causation","An observed cohort ≠ a clinical trial","Never stop medicines from this film"];
+for(let i=0;i<messages.length;i++){
+ let yy=317+i*81,p=rise(seg(l,2.0+i*1.3,3+i*1.3));
+ dot(g,615,yy-6,7,i===2?P.orange:P.mint,p);
+ text(g,messages[i],643,yy,20,P.frost,"sans",p);
+ path(g,[[608,yy+18],[1128,yy+18]],P.cyan,1,.25*p);
+}
+text(g,"Elrayess et al. · Blood Pressure 31:80–90 (2022)",94,618,21,P.ink,"serif",rise(seg(l,7,8)));
+text(g,"DOI 10.1080/08037051.2022.2055530",95,655,17,P.ink,"mono",rise(seg(l,8,9)));
+hud(g,t,5,true)}
+const scenes=[scene0,scene1,scene2,scene3,scene4,scene5];
+function draw(t){t=clamp(t,0,DURATION-1/FPS);let current=5;for(let j=0;j<6;j++)if(t>=B[j]&&t<B[j+1]){current=j;break;}
+let transition=-1;for(let i=1;i<6;i++)if(t>=B[i]-.39&&t<B[i]+.39){transition=i;break;}
+v.setTransform(1.5,0,0,1.5,0,0);
+if(transition<0){scenes[current](d[0],t);v.drawImage(back[0],0,0);return}
+scenes[transition-1](d[0],t);scenes[transition](d[1],t);
+const p=ease(seg(t,B[transition]-.39,B[transition]+.39));
+v.drawImage(back[0],0,0);v.save();v.beginPath();if(transition%2){v.arc(634,375,Math.hypot(W,H)*p,0,TAU)}
+else{const x=(W+110)*p-65;v.moveTo(0,0);v.lineTo(x,0);v.lineTo(x-86,H);v.lineTo(0,H);v.closePath();}
+v.clip();v.drawImage(back[1],0,0);v.restore();}
+window.__meta={W:1920,H:1080,FPS,DURATION,title:"An Enzyme, a Receptor, a Clinical Question",doi:"10.1080/08037051.2022.2055530"};
+window.__draw=t=>{draw(t);return t};window.__ready=false;
+Promise.all([document.fonts.ready,...photos.map(im=>new Promise((yes,no)=>{if(im.complete&&im.naturalWidth>0)return yes();im.addEventListener("load",yes,{once:true});im.addEventListener("error",()=>no(Error("Contextual archive absent "+im.id)),{once:true})}))])
+.then(()=>{window.__ready=true;draw(0)}).catch(e=>window.__renderError=String(e));
+let playing=false,started=0;function tick(now){if(!playing)return;let q=(now-started)/1000;if(q>=DURATION){playing=false;draw(DURATION-.1);return}draw(q);requestAnimationFrame(tick)}
+document.addEventListener("click",()=>{playing=!playing;if(playing){started=performance.now();requestAnimationFrame(tick)}});
+</script></body></html>
