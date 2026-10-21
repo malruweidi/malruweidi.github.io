@@ -83,3 +83,5 @@ jobs:
         run: node --test tests/media-placement-inventory.test.cjs
       - name: Guard original story photographs and source-context routes
         run: node --test tests/story-archive-photographic-context.test.cjs
+      - name: Check user-controlled motion for homepage research figures
+        run: node --test tests/home-gallery-motion.test.cjs
