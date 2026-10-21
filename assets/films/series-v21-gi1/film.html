@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<title>What Happens When Immunity Turns on the Gut? — Film 13</title>
+<style>html,body{margin:0;background:#101c22;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}
+.sr{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.archive{position:absolute;left:-9999px;width:1px;height:1px}</style></head><body>
+<h1 class="sr">What Happens When Immunity Turns on the Gut? — a mechanistic story about immunology of the gastrointestinal tract</h1>
+<img id="lab" class="archive" src="../../research-archive-2026/molecular-biology-pipette-workbench.webp" alt="Genuine laboratory-workbench archive; not an intestine specimen or patient pathology">
+<img id="flask" class="archive" src="../../owner-archive-2026-10-16/cell-culture-flask-archive.webp" alt="Owner's original cell-culture laboratory archive; not a diagnostic GI sample">
+<canvas id="screen" width="1920" height="1080" role="img" aria-label="A cinematic animated intestinal epithelial barrier, protective immune tolerance, different GI inflammatory conditions, laboratory evidence, gut-brain communication and diagnostic caution"></canvas>
+<script>"use strict";
+// All biological shapes are nonquantitative editorial diagrams. No tissue,
+// histology, laboratory measurement, biopsy, patient or immune-cell photograph
+// is simulated and represented as an actual specimen. EoE and IBD are explicitly
+// labelled immune-mediated, not equated to classical autoantibody autoimmune disease.
+const W=1280,H=720,FPS=24,DURATION=84,B=[0,14,28,42,56,70,84],PI=Math.PI,TAU=2*Math.PI;
+const Q={night:"#0d1b22",blue:"#102932",deep:"#183d40",sea:"#3d6b6b",mint:"#9cdbc0",jade:"#6cbfae",
+ cream:"#f2ede2",soft:"#d4e0d6",muted:"#97b5b0",ochre:"#efbe85",salmon:"#d98477",red:"#b95e62",
+ violet:"#b8a2c6",mauve:"#795675",sand:"#d6c0a4",paper:"#f0e9d9",ink:"#293b42",gold:"#d6ae79"};
+const c=document.getElementById("screen"),o=c.getContext("2d",{alpha:false}),layers=[document.createElement("canvas"),document.createElement("canvas")];layers.forEach(z=>{z.width=W;z.height=H});const z=layers.map(p=>p.getContext("2d",{alpha:false}));
+const photos=[document.getElementById("lab"),document.getElementById("flask")];
+const sin=Math.sin,cos=Math.cos,clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),seg=(x,a,b)=>clamp((x-a)/(b-a));
+const ease=x=>{x=clamp(x);return x*x*(3-2*x)},out=x=>1-(1-clamp(x))**3,mix=(a,b,p)=>a+(b-a)*p;
+function rect(d,x,y,w,h,color){d.fillStyle=color;d.fillRect(x,y,w,h)}
+function path(d,points,color,w=2,opacity=1){d.save();d.globalAlpha=clamp(opacity);d.strokeStyle=color;d.lineWidth=w;d.lineCap="round";d.lineJoin="round";d.beginPath();d.moveTo(...points[0]);for(let k=1;k<points.length;k++)d.lineTo(...points[k]);d.stroke();d.restore()}
+function dot(d,x,y,r,color,opacity=1){d.save();d.globalAlpha=clamp(opacity);d.fillStyle=color;d.beginPath();d.arc(x,y,Math.max(.3,r),0,TAU);d.fill();d.restore()}
+function ring(d,x,y,r,color,w=2,opacity=1){d.save();d.globalAlpha=clamp(opacity);d.beginPath();d.arc(x,y,Math.max(1,r),0,TAU);d.lineWidth=w;d.strokeStyle=color;d.stroke();d.restore()}
+function oval(d,x,y,rx,ry,color,opacity=1){d.save();d.globalAlpha=clamp(opacity);d.beginPath();d.ellipse(x,y,Math.max(1,rx),Math.max(1,ry),0,0,TAU);d.fillStyle=color;d.fill();d.restore()}
+function card(d,x,y,w,h,r,color){d.beginPath();d.roundRect(x,y,w,h,r);d.fillStyle=color;d.fill()}
+function txt(d,s,x,y,size=20,color=Q.cream,font="sans",opacity=1,align="left"){d.save();d.globalAlpha=clamp(opacity);d.fillStyle=color;d.textAlign=align;d.textBaseline="alphabetic";d.font=size+"px "+(font==="serif"?"Georgia,serif":font==="mono"?"monospace":"Arial,sans-serif");d.fillText(s,x,y);d.restore()}
+function title(d,s,x,y,size,t,at,color=Q.cream){let p=out(seg(t,at,at+.7));d.save();d.beginPath();d.rect(x-5,y-size*1.3,1170,(size+32)*p);d.clip();txt(d,s,x,y+15*(1-p),size,color,"serif");d.restore()}
+function background(d,t,light=false){rect(d,0,0,W,H,light?Q.paper:Q.night);const gradient=d.createRadialGradient(light?310:861,300,40,light?310:861,300,850);
+gradient.addColorStop(0,light?"rgba(188,145,115,.15)":"rgba(96,173,147,.14)");gradient.addColorStop(1,"rgba(0,0,0,0)");rect(d,0,0,W,H,gradient);
+for(let i=0;i<9;i++){let xx=120+i*148+8*sin(t*.19+i);path(d,[[xx,62],[xx-20,672]],light?Q.sand:Q.sea,1,.12)}}
+function hud(d,t,i,light=false){let col=light?Q.ink:Q.muted;path(d,[[74,61],[1206,61]],col,1,.33);txt(d,"RUWAIDIX  /  IMMUNE LANDSCAPES",76,44,13,col,"mono");txt(d,"13 / GI AUTOIMMUNITY, PART I",1204,44,13,col,"mono",1,"right");path(d,[[75,684],[1204,684]],col,1,.29);path(d,[[75,684],[75+1129*t/84,684]],light?Q.red:Q.ochre,3);txt(d,String(i+1).padStart(2,"0")+" / 06",76,663,14,col,"mono")}
+function arrow(d,x,y,X,Y,t,color=Q.mint,n=5){path(d,[[x,y],[X,Y]],color,2,.35);for(let i=0;i<n;i++){let p=(t*.14+i/n)%1;dot(d,mix(x,X,p),mix(y,Y,p)+3*sin(p*TAU+t*.43+i),3,color,.2+.65*sin(PI*p));}}
+function microbe(d,x,y,t,k,opacity=1){d.save();d.translate(x,y);d.rotate(.2*sin(t*.42+k));oval(d,0,0,15,7,k%3?Q.jade:Q.violet,opacity*.68);for(let i=0;i<5;i++){let a=i*TAU/5+t*.15;path(d,[[13*cos(a),6*sin(a)],[21*cos(a),13*sin(a)]],Q.mint,1,opacity*.45)}d.restore()}
+function epithelialCell(d,x,y,w,h,t,i,fade=1){
+ const sway=3*sin(t*.44+i*.72),height=h+4*sin(t*.32+i);
+ d.save();d.globalAlpha=fade;
+ d.beginPath();d.moveTo(x+2,y+10+sway);d.quadraticCurveTo(x+w*.48,y-11+sway,x+w-2,y+10-sway*.3);
+ d.lineTo(x+w-2,y+height-3);d.quadraticCurveTo(x+w*.5,y+height+4,x+2,y+height-3);d.closePath();
+ d.fillStyle=i%3===0?"#508c85":i%3===1?"#487d7d":"#467d73";d.fill();d.lineWidth=2;d.strokeStyle="#b3dfc6";d.globalAlpha=.72*fade;d.stroke();
+ oval(d,x+w*.50,y+height*.63+sway*.3,9,13,Q.violet,.58*fade);
+ for(let k=0;k<5;k++){let xx=x+6+k*(w-12)/4;path(d,[[xx,y+5+sway],[xx+1,y-7+sway]],Q.mint,1.3,.3*fade)}
+ d.restore();
+}
+function epithelium(d,t,x,y,width,n=22,height=106,fade=1){
+ const w=width/n;for(let i=0;i<n;i++)epithelialCell(d,x+i*w,y,w,height,t,i,fade);
+ for(let i=1;i<n;i++){let xx=x+i*w,yy=y+16+2*sin(t*.45+i*.72);dot(d,xx,yy,2.3,Q.ochre,.78*fade)}
+ path(d,[[x,y+height+7],[x+width,y+height+7]],Q.ochre,3,.65*fade);
+}
+function antigens(d,t,x,y,w,h,n=18,opacity=1){for(let k=0;k<n;k++){let p=(t*.08+k*.6180339887)%1;let xx=x+p*w,yy=y+h*(.20+.62*((k*.38197)%1))+9*sin(t*.7+k);dot(d,xx,yy,2.4+(k%4),k%3?Q.ochre:Q.salmon,(.1+.5*sin(PI*p))*opacity)}}
+function dendritic(d,x,y,t,s=1,color=Q.ochre){d.save();d.translate(x,y);d.scale(s,s);dot(d,0,0,26,color,.75);ring(d,0,0,20,Q.cream,2,.4);for(let k=0;k<10;k++){let a=k*TAU/10+t*.055;let outer=43+7*sin(t*.53+k);path(d,[[19*cos(a),19*sin(a)],[outer*cos(a),outer*sin(a)]],color,3,.52)}dot(d,2,0,8,Q.deep,.55);d.restore()}
+function lymphocyte(d,x,y,t,r=18,color=Q.violet){dot(d,x,y,r,color,.75);ring(d,x,y,r,Q.cream,2,.29);dot(d,x+3*sin(t*.5),y,Math.max(4,r*.62),Q.deep,.58)}
+function photo(d,img,x,y,w,h,t){const iw=img.naturalWidth,ih=img.naturalHeight;if(!iw||!ih)return;
+ d.save();d.beginPath();d.roundRect(x,y,w,h,10);d.clip();let s=Math.max(w/iw,h/ih)*1.06,ww=iw*s,hh=ih*s;d.drawImage(img,x+(w-ww)/2+10*sin(t*.21),y+(h-hh)/2+7*cos(t*.17),ww,hh);rect(d,x,y,w,h,"rgba(10,27,35,.20)");d.restore()}
+function villus(d,x,y,t,scale=1,phase=0){d.save();d.translate(x,y);d.scale(scale,scale);
+ const swell=4*sin(t*.55+phase),points=[];for(let k=0;k<=32;k++){let a=PI+(k/32)*PI,xx=52*cos(a)+9*sin(t*.18+phase),yy=-80+94*sin(a)+swell;points.push([xx,yy])}
+ path(d,points,Q.mint,5,.8);for(let i=0;i<15;i++){let q=i/14,xx=-43+i*6.0+7*sin(t*.18+phase),yy=-15-53*sin(q*PI)+2*sin(t*.43+i+phase);oval(d,xx,yy,10,20,i%2?Q.jade:Q.sea,.6);}
+ d.restore();}
+function immuneFlow(d,t,originX,originY){dendritic(d,originX,originY,t,.75);
+ for(let i=0;i<12;i++){let a=i*TAU/12+t*.12;dot(d,originX+70*cos(a),originY+52*sin(a),3.5,i%2?Q.ochre:Q.mint,.24+.34*sin(t+i))}
+}
+function panelMechanism(d,x,y,w,h,label,description,kind,t,index){
+ card(d,x,y,w,h,12,Q.deep);
+ const headings=label==="Autoimmune gastritis"?["Autoimmune","gastritis"]:
+   label==="Eosinophilic esophagitis"?["Eosinophilic","esophagitis"]:
+   label==="Inflammatory bowel disease"?["Inflammatory","bowel disease"]:[label];
+ for(let j=0;j<headings.length;j++)txt(d,headings[j],x+17,y+32+j*25,19,Q.cream,"serif");
+ txt(d,description,x+19,y+h-18,14,Q.muted,"mono");
+ const xx=x+w*.50,yy=y+h*.60;
+ if(kind===0){ // Achalasia, neural signaling only
+   path(d,[[x+24,yy],[x+w-24,yy]],Q.mint,4,.5);for(let k=0;k<7;k++){let a=k/7*TAU+t*.1;dot(d,xx+46*cos(a),yy+17*sin(a),4,Q.ochre,.6);}
+   for(let k=0;k<8;k++){dot(d,x+40+k*15,yy+25+3*sin(k+t*.3),3,Q.red,.27)}
+ }else if(kind===1){ // Autoimmune atrophic gastritis
+   for(let k=0;k<10;k++){let bx=x+25+k*(w-50)/9;oval(d,bx,yy+11*sin(t*.27+k),8,23,Q.jade,.66);}
+   for(let k=0;k<6;k++){let p=(t*.09+k/6)%1;dot(d,x+20+(w-40)*p,yy-21,5,Q.coral||Q.salmon,.8)}
+ }else if(kind===2){ // Celiac
+   for(let k=0;k<6;k++){let bx=x+25+k*(w-50)/5;villus(d,bx,yy+37,t,.35,k*.4)}
+ }else if(kind===3){ // EoE type 2 eosinophilic, not classic autoimmune
+   for(let k=0;k<13;k++){let bx=x+18+(k*67)%(w-32),by=yy+((k*31)%57)-17;
+    dot(d,bx,by,6,Q.salmon,.63);dot(d,bx+1,by,2,Q.cream,.53);}
+ }else{ // IBD Crohn/UC differential
+   path(d,[[x+28,yy-10],[x+78,yy+7],[x+124,yy-9],[x+w-27,yy+5]],Q.mint,5,.8);
+   for(let k=0;k<11;k++){let bx=x+19+k*(w-39)/10;dot(d,bx,yy+29+7*sin(t*.3+k),5,k%2?Q.salmon:Q.ochre,.55)}
+ }
+}
+function s0(d,t){background(d,t);title(d,"The intestine is",78,149,72,t,.2);title(d,"an immune frontier.",78,237,70,t,1.6,Q.ochre);
+ // Organ-scale view moves into the wall, with several independently moving layers
+ const zoom=out(seg(t,5,12));const x=78-13*zoom,y=340+19*sin(t*.16);
+ for(let k=0;k<6;k++)villus(d,x+75+k*186,y+85,t,1.0+.06*zoom,k*.28);
+ epithelium(d,t,101,453,1055,27,112);
+ antigens(d,t,97,257,1057,140,45);
+ for(let k=0;k<12;k++)microbe(d,137+(k*83)%1000,300+(k*37)%90+4*sin(t*.2+k),t,k,.65);
+ for(let k=0;k<8;k++)lymphocyte(d,140+k*137,624+8*sin(t*.45+k),t,12,k%2?Q.violet:Q.jade);
+ txt(d,"LUMEN",104,321,16,Q.muted,"mono",out(seg(t,3,4)));
+ txt(d,"EPITHELIUM / TIGHT JUNCTIONS / IMMUNE CELLS",101,648,18,Q.mint,"mono",out(seg(t,7,8)));
+ txt(d,"SCHEMATIC · NOT PATIENT TISSUE",101,675,12,Q.muted,"mono",out(seg(t,9,10)));
+ hud(d,t,0)}
+function s1(d,t){background(d,t);let l=t-14;title(d,"Tolerance is active work.",85,150,68,t,14.25);
+ antigens(d,t,96,217,1084,129,38);
+ for(let k=0;k<9;k++)microbe(d,125+k*131,317+16*sin(t*.28+k),t,k,.8);
+ epithelium(d,t,107,392,1068,23,101);
+ const p=out(seg(l,3,8));
+ // selective sampling as illustration, no depiction of actual barrier failure or universal causal relationship
+ arrow(d,545,337,597,535,t,Q.ochre,7);immuneFlow(d,t,600,562);
+ lymphocyte(d,842+10*sin(t*.22),570,t,29,Q.violet);
+ lymphocyte(d,1005+11*cos(t*.19),574,t,29,Q.jade);
+ arrow(d,660,567,807,567,t,Q.mint,8);
+ txt(d,"LUMINAL ANTIGENS",96,240,18,Q.ochre,"mono",out(seg(l,1,2)));
+ txt(d,"BARRIER / ANTIGEN SAMPLING",99,521,17,Q.mint,"mono",out(seg(l,3,4)));
+ txt(d,"REGULATORY SIGNALS",820,635,18,Q.violet,"mono",out(seg(l,6,7)));
+ txt(d,"Barrier permeability is not sufficient evidence of autoimmunity.",85,666,16,Q.muted,"serif",p);
+ hud(d,t,1)}
+function s2(d,t){background(d,t);let l=t-28;title(d,"Different organs.",83,145,64,t,28.2);title(d,"Different mechanisms.",83,214,56,t,29,Q.ochre);
+ const specs=[["Achalasia","NEURON LOSS","neural"],["Autoimmune gastritis","PARIETAL-CELL LOSS","stomach"],
+ ["Celiac disease","GLUTEN-SPECIFIC IMMUNITY","celiac"],["Eosinophilic esophagitis","TYPE-2 / EOSINOPHILIC","eoe"],
+ ["Inflammatory bowel disease","CROHN / ULCERATIVE COLITIS","ibd"]];
+ for(let k=0;k<5;k++){let x=70+k*236,p=out(seg(l,1.5+k*.28,3.2+k*.28));
+ d.save();d.globalAlpha=p;panelMechanism(d,x,272,218,299,specs[k][0],specs[k][1],k,t,k);d.restore();}
+ txt(d,"A CHAPTER GROUPING IS NOT A SHARED AUTOIMMUNE MECHANISM",76,618,18,Q.ochre,"mono",out(seg(l,6.8,8)));
+ txt(d,"EoE and IBD are immune-mediated; their pathways are not identical.",76,652,18,Q.muted,"serif",out(seg(l,8,9)));
+ hud(d,t,2)}
+function s3(d,t){background(d,t,true);let l=t-42;title(d,"Tissue offers clues.",79,140,67,t,42.3,Q.ink);
+ photo(d,photos[0],95,214,400,319,t);
+ txt(d,"ORIGINAL LAB ARCHIVE",100,562,14,Q.ink,"mono");
+ txt(d,"NOT A GI BIOPSY",102,591,15,Q.red,"mono");
+ card(d,541,212,635,365,13,"#dae2d9");
+ // Illustrative "sections" not histology
+ for(let j=0;j<4;j++){let x=578+j*139,y=306;
+ card(d,x,273,108,236,9,j%2?"#d6c7b2":"#b7d4ca");
+ for(let k=0;k<12;k++){let p=(t*.17+k*.6180339)%1,xx=x+10+(k*17)%87,yy=y+(k*41)%158+3*sin(t*.4+k);
+ oval(d,xx,yy,4,8,k%3?Q.violet:Q.salmon,.38);}
+ path(d,[[x+12,484],[x+87,484]],Q.ink,2,.25);
+ txt(d,["BARRIER","CELLS","SIGNALS","PATTERNS"][j],x+54,530,12,Q.ink,"mono",1,"center");
+ }
+ txt(d,"ILLUSTRATIVE FIELD · NOT HISTOLOGY",553,562,15,Q.ink,"mono");
+ const x=556+583*((l*.08)%1);path(d,[[x,260],[x,504]],Q.salmon,2,.3);
+ txt(d,"Histology, molecular context and symptoms require concordance.",83,646,20,Q.ink,"serif",out(seg(l,6.5,7.5)));
+ hud(d,t,3,true)}
+function s4(d,t){background(d,t);let l=t-56;title(d,"Mechanism is not proof.",82,142,67,t,56.2);
+ const nodes=[["GENETIC SUSCEPTIBILITY",235,302,Q.mint],["ENVIRONMENT / DIET",590,249,Q.ochre],
+ ["MICROBIOME",1014,307,Q.violet],["TISSUE RESPONSE",430,507,Q.salmon],["CLINICAL PHENOTYPE",911,522,Q.jade]];
+ for(let i=0;i<nodes.length;i++){let [s,x,y,col]=nodes[i],p=out(seg(l,1+i*.6,2+i*.6));card(d,x-123,y-34,247,70,13,Q.deep);dot(d,x-101,y,7,col,p);txt(d,s,x-83,y+6,s.length>18?13:16,Q.cream,"mono",p)}
+ const es=[[0,3],[1,3],[2,4],[3,4],[1,2]];for(let i=0;i<es.length;i++){let [j,k]=es[i],[aa,x,y,col]=nodes[j],[bb,X,Y,col2]=nodes[k];
+ let p=out(seg(l,2+i*.43,3+i*.43));path(d,[[x,y+33],[X,Y-33]],Q.ochre,2,.26*p);
+ for(let n=0;n<5;n++){let q=(t*.1+n/5)%1;dot(d,mix(x,X,q),mix(y+33,Y-33,q),2.5,col,.16+.4*p*sin(PI*q))}
+ }
+ txt(d,"MULTIFACTORIAL ASSOCIATIONS · NOT A CAUSAL MAP",90,639,18,Q.ochre,"mono",out(seg(l,7,8)));
+ txt(d,"Evidence is condition-specific and must be independently tested.",89,665,15,Q.muted,"serif",out(seg(l,8,9)));
+ hud(d,t,4)}
+function s5(d,t){background(d,t);let l=t-70;title(d,"Before a diagnosis,",81,139,68,t,70.2);title(d,"understand the process.",81,215,62,t,71.3,Q.ochre);
+ epithelium(d,t,95,429,1067,27,117);antigens(d,t,120,274,1020,122,36);
+ for(let i=0;i<9;i++){let xx=130+i*130,yy=597+7*sin(t*.36+i);
+ lymphocyte(d,xx,yy,t,13,i%2?Q.violet:Q.jade)}
+ // conceptually trace gut-brain communication without claiming proof of psychiatric causation
+ const xx=958,yy=300;for(let k=0;k<8;k++){let a=k*TAU/8+t*.18;dot(d,xx+30*cos(a),yy+26*sin(a),5,Q.ochre,.48);}
+ arrow(d,818,298,1079,298,t,Q.mint,7);
+ txt(d,"GUT–BRAIN COMMUNICATION · ONE RESEARCH DIMENSION",86,635,16,Q.muted,"mono",out(seg(l,6,7)));
+ txt(d,"Al-Ruweidi et al. · IntechOpen (2022) · 10.5772/intechopen.106184",86,668,15,Q.mint,"mono",out(seg(l,8,9)));
+ hud(d,t,5)}
+const scenes=[s0,s1,s2,s3,s4,s5];
+function draw(t){t=clamp(t,0,DURATION-1/FPS);let current=5;for(let k=0;k<6;k++)if(t>=B[k]&&t<B[k+1]){current=k;break}
+let transition=-1;for(let k=1;k<6;k++)if(t>=B[k]-.40&&t<B[k]+.40){transition=k;break}
+o.setTransform(1.5,0,0,1.5,0,0);
+if(transition<0){scenes[current](z[0],t);o.drawImage(layers[0],0,0);return}
+scenes[transition-1](z[0],t);scenes[transition](z[1],t);
+let p=ease(seg(t,B[transition]-.40,B[transition]+.40));o.drawImage(layers[0],0,0);o.save();o.beginPath();
+if(transition%2){o.arc(623,361,Math.hypot(W,H)*p,0,TAU)}
+else{let xx=(W+140)*p-80;o.moveTo(0,0);o.lineTo(xx,0);o.lineTo(xx-100,H);o.lineTo(0,H);o.closePath();}
+o.clip();o.drawImage(layers[1],0,0);o.restore();}
+window.__meta={W:1920,H:1080,FPS,DURATION,title:"What Happens When Immunity Turns on the Gut?",doi:"10.5772/intechopen.106184"};
+window.__draw=t=>{draw(t);return t};window.__ready=false;
+Promise.all([document.fonts.ready,...photos.map(im=>new Promise((resolve,reject)=>{if(im.complete&&im.naturalWidth>0)return resolve();im.addEventListener("load",resolve,{once:true});im.addEventListener("error",()=>reject(Error("Missing original laboratory context "+im.id)),{once:true})}))])
+.then(()=>{window.__ready=true;draw(0)}).catch(e=>window.__renderError=String(e));
+let playing=false,start=0;function tick(now){if(!playing)return;const t=(now-start)/1000;if(t>=DURATION){playing=false;draw(DURATION-.1);return}draw(t);requestAnimationFrame(tick)}
+document.addEventListener("click",()=>{playing=!playing;if(playing){start=performance.now();requestAnimationFrame(tick)}});
+</script></body></html>

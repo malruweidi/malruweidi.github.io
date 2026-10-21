@@ -1,0 +1,106 @@
+{
+  "film_index": 13,
+  "title": "What Happens When Immunity Turns on the Gut?",
+  "edition": "V21 cinematic intestinal barrier and immune-differential research film",
+  "duration_seconds": 84.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "source": {
+    "doi": "10.5772/intechopen.106184",
+    "title": "Autoimmune Diseases of the GI Tract Part I: Etiology and Pathophysiology",
+    "authors": [
+      "Mahmoud Khatib A.A. Al-Ruweidi",
+      "Nada Khater",
+      "Haya Rashid Alkaabi",
+      "Maram Hasan",
+      "Huseyin C. Yalcin"
+    ],
+    "publisher": "IntechOpen",
+    "year": 2022,
+    "chapter_url": "https://www.intechopen.com/chapters/83241",
+    "scope": "Narrative review of mucosal/immune mechanisms, selected GI conditions and gut-brain research, not an experiment or patient series"
+  },
+  "original_narration": "assets/films/series-v7-pilots/gi-autoimmunity-1.mp4",
+  "original_webvtt": "assets/films/series-v7-pilots/gi-autoimmunity-1.vtt",
+  "archival_images": [
+    {
+      "path": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "sha256": "80c8b6a33bd0b7c6ee0aa0fcd3ba80da6dea0500434a50dfb3d634d05172efd3",
+      "role": "Genuine owner laboratory-context image; NOT patient intestine, biopsy, original microscopy result or disease phenotype"
+    },
+    {
+      "path": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "sha256": "6c07854f54053ec318524c9c6ec7fdb04bff204872284901b0393e0828745b73",
+      "role": "Genuine owner laboratory-context image; NOT patient intestine, biopsy, original microscopy result or disease phenotype"
+    }
+  ],
+  "illustrated_mechanisms": [
+    {
+      "category": "achalasia",
+      "boundary": "Oesophageal motility and myenteric neuronal loss; autoimmune etiology remains heterogeneous and partly proposed"
+    },
+    {
+      "category": "autoimmune_atrophic_gastritis",
+      "boundary": "Immune-mediated gastric parietal-cell loss; do not equate B12 deficiency with primary etiologic cause"
+    },
+    {
+      "category": "celiac_disease",
+      "boundary": "HLA-associated, gluten-triggered adaptive immunity and enteropathy"
+    },
+    {
+      "category": "eosinophilic_esophagitis",
+      "boundary": "Type-2 immune-mediated eosinophilic esophageal disease, NOT generally categorized as classical autoimmune disease"
+    },
+    {
+      "category": "inflammatory_bowel_disease",
+      "boundary": "Crohn's disease and ulcerative colitis are chronic immune-mediated inflammatory phenotypes, not a single autoantibody disease"
+    }
+  ],
+  "chapters": [
+    {
+      "name": "Intestinal barrier and nonquantitative epithelial movement",
+      "start": 0,
+      "end": 14
+    },
+    {
+      "name": "Immune tolerance, luminal antigen handling and barrier communication",
+      "start": 14,
+      "end": 28
+    },
+    {
+      "name": "Five categories of GI disease with distinct immune mechanisms",
+      "start": 28,
+      "end": 42
+    },
+    {
+      "name": "Archival laboratory context and non-diagnostic tissue illustration",
+      "start": 42,
+      "end": 56
+    },
+    {
+      "name": "Multifactorial pathogenesis and limits of mechanistic inference",
+      "start": 56,
+      "end": 70
+    },
+    {
+      "name": "Gut-brain as one hypothesis in a broader evidence-led overview",
+      "start": 70,
+      "end": 84
+    }
+  ],
+  "scientific_boundaries": [
+    "Moving villi, tight junctions, epithelial cells, macrophage/dendritic icons, B/T-cell motifs and microbes are nonquantitative mathematical cartoons, NOT clinical GI tissue.",
+    "The film depicts a few pathways conceptually; it does not claim antigen permeability directly establishes autoimmunity or histology is diagnostic without clinicopathologic context.",
+    "Distinct conditions in the 2022 overview are not all classical autoimmunity: EoE is type-2 immune mediated and IBD is immune mediated without a universal autoantibody etiology.",
+    "Laboratory archive imagery is context only; the generated panel of colored cells is labeled NOT HISTOLOGY and contains zero fabricated slides.",
+    "Gut-brain communication is presented as an investigational dimension of disease rather than clinical proof of psychiatric causation.",
+    "This historical narrative review is not a personalized diagnosis, prognosis, definitive mechanistic proof or a 2026 treatment guideline."
+  ],
+  "older_film_masters_preserved": true,
+  "live_website_unchanged": true,
+  "human_review": "Full audiovisual playback, scientific mechanism and on-screen mobile legibility sign-off required before release",
+  "sha256": "79867416a1a31243c701c99b12f30b92be0ee97682b3c9964ff35848155bef51"
+}
