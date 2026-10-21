@@ -91,3 +91,7 @@ jobs:
         run: node --test tests/scientific-figure-source-boundaries-2026.test.cjs
       - name: Lock original figure binaries and source-boundary audit metadata
         run: node --test tests/scientific-figure-binary-preservation-2026.test.cjs
+      - name: Inventory the complete scientific figure atlas without media transformations
+        run: |
+          node --test tests/figure-archive-audit-2026.test.cjs
+          node scripts/audit-figure-archive-2026.cjs --summary
