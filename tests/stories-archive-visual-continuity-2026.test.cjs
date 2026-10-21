@@ -48,7 +48,7 @@ test('All eight original object photos open their own stored image while retaini
   assert.ok(item.includes('href="'+file+'"'),file+' inspection href');
   assert.ok(item.includes('class="rx-archive-image-link"'),file+' clickable image');
   assert.match(item,/aria-label="Open stored archive image:/);
-  assert.match(item,/<h3>[\s\S]*?<\/h3>/);
+  assert.match(item,/<h3\b[^>]*>[\s\S]*?<\/h3>/);
   assert.match(item,/<p>[\s\S]*?<\/p>/);
  }
 });
