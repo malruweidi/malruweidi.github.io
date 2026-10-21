@@ -12,7 +12,7 @@ m.validate()
 src=HTML.read_text(encoding="utf8")
 for key in ("ARCHIVAL LARVA","ARCHIVAL EMBRYO","PUBLISHED FIGURE",
  "SAMPLED FRAMES","FRAME RATE / OPTICAL SCALE",
- "Illustrative","No synthetic outputs"):
+ "Interpretive","No synthetic outputs"):
     assert key in src,key
 assert "Math.random(" not in src
 with sync_playwright() as p:
