@@ -120,6 +120,20 @@ An [x] means the source-level change is committed in draft PR #84, **not** that 
 - [ ] `for-supervisors.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [ ] `preview-rx23.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 
+## Scientific figure source audit and release boundaries
+
+**Scientific evidence reader:** Four unmodified image files on `evidence-viewer.html` now have individual scientific-source notes. The source is verified by the cited publication DOI for the 2021 pulmonary cell-injury paper, the 2018 vascular-cilia study, and the 2021 PLA surface-modification paper. **That verification does not establish an exact match between the stored website JPEG and any specific paper figure/panel**, because the original high-resolution image, publisher caption and usage rights have not yet been compared. The PLA paper presents a four-panel SEM comparison in its Figure 5; the website does not claim its archived JPEG is definitely one specific panel.
+
+**Chemical-sensing attribution:** `figure-cyanide-sensor.jpg` remains associated on the website with the UREP23 imine project. A separate 2019 *Analytical Methods* study, DOI `10.1039/C9AY01557D`, investigated curcumin and cyanide. The matching analyte alone cannot justify reassigning the local JPEG to either paper; the viewer therefore marks its **image-to-publication attribution unresolved** rather than publishing a fabricated precise legend or conflating the two experiments.
+
+**Source integrity:** `assets/scientific-figure-integrity-2026.json` records the four original JPEG sizes and exact checked-in Git blob SHA1 fingerprints, plus the distinct status of published papers, original image identities and figure legends. `tests/scientific-figure-binary-preservation-2026.test.cjs` checks the images remain bitwise identical. These fingerprints guard accidental replacement; they do **not** prove acquisition settings, scale bars, scientific ownership, reproduction license or image-panel provenance.
+
+**Inspecting original material:** `evidence-viewer.html` retains each figure's displayed caption and provides a direct stored-image link. `imaging.html` now exposes the original MicroZebraLab image independently from its primary journal DOI and figures index. The existing zebrafish staging references retain their own linked source and full-image views.
+
+**Atlas coverage:** `scripts/audit-figure-archive-2026.cjs` performs a deterministic, non-mutating audit over **every static HTML route** (including the large `figures.html` file). The audit records figure positions, associated image paths, alt text, caption presence and local file existence; CI displays the coverage summary. Dynamic JS galleries, CSS backgrounds, actual pixel content, magnification, spatial crop, image rights and publisher figure authentication are **outside** that structural test.
+
+**Required before any public scientific source certification:** Visually compare each stored JPEG with the actual original paper figure and complete legend; verify panel labels, controls, axes, microscopy scales and image permissions; confirm correct research-contributor claims. These are intentionally flagged as pending rather than silently passed.
+
 ## Photo-by-photo acceptance protocol
 - Identify the original binary and document who or what the image depicts, using source evidence and firsthand identification where appropriate.
 - Record every checked-in HTML usage through `node scripts/build-media-placement-inventory.cjs --output /tmp/ruwaidix-media.json`.
