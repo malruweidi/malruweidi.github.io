@@ -14,7 +14,7 @@ jobs:
       - name: Verify browser QA contract without a browser
         run: node --test tests/browser-release-contract-2026.test.cjs
       - name: Install pinned open-source browser driver
-        run: npm install --no-save --no-package-lock --ignore-scripts playwright-core@1.56.1
+        run: npm install --no-save --no-package-lock --ignore-scripts playwright-core@1.56.1 axe-core@4.10.3
       - name: Detect preinstalled Chrome
         run: |
           if command -v google-chrome >/dev/null; then
@@ -50,6 +50,14 @@ jobs:
           command -v ffmpeg
           command -v ffprobe
           node scripts/sample-film-frames-2026.cjs
+      - name: Run real Chrome WCAG 2.1 AA baseline and redact page content from report
+        if: success() || failure()
+        env:
+          SITE_BASE_URL: http://127.0.0.1:8765
+          BROWSER_QA_OUTPUT: browser-qa-artifacts
+        run: |
+          node --test tests/axe-accessibility-report-2026.test.cjs
+          node scripts/axe-accessibility-audit-2026.cjs
       - name: Upload actual browser screenshots and issue report
         if: always()
         uses: actions/upload-artifact@v4
