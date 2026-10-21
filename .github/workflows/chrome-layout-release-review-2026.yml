@@ -47,6 +47,10 @@ jobs:
         if: success() || failure()
         run: |
           node --test tests/film-frame-sampling-2026.test.cjs
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq ffmpeg
+          fi
           command -v ffmpeg
           command -v ffprobe
           node scripts/sample-film-frames-2026.cjs
