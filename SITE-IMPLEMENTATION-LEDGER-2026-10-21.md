@@ -12,7 +12,7 @@
 ## Three passes and their current state
 - **Pass I (source inspection):** inventory of 62 HTML files, checked-in WebP/MP4 source families, main routes, past audit documents and central navigation/testing systems. Visual and cinema review remains incomplete.
 - **Pass II (adversarial review):** preserve the nine-chapter homepage and full archived record; prefer links from finished films to their verified evidence; do not fabricate scientific media or turn recorded failure into success; leave ongoing film PRs unmerged.
-- **Pass III (current corrective branch):** PR #84 adds seven film-to-source reading trails, four distinctions in the research index, a meaningful main landmark in the CV, improved H1/film order in the histology standalone film, shared responsive styles and a deterministic media-placement source tool.
+- **Pass III (current corrective branch):** PR #84 adds seven film-to-source reading trails, four distinctions in the research index, a meaningful main landmark in the CV, improved H1/film order in the histology standalone film, shared responsive styles and a deterministic media-placement source tool. A subsequent accessibility increment adds persistent motion control for the original homepage scientific-figure gallery.
 
 ## Changes staged
 - `films/airway-reopening-evidence.html` and `films/what-a-bubble-can-do.html`: direct experimental dossier, original DOI and film comparison.
@@ -23,6 +23,8 @@
 - `films/two-materials-no-section.html`: H1 before film in DOM order, source-linked unsuccessful histology and explicit separation from related research.
 - `research.html`: compact reader-oriented evidence status distinctions, without changing any original research card.
 - `cv.html`: add a unique `<main id="main">` landmark around the existing substantive profile.
+- `index.html`, `assets/home-gallery-motion.css`, `assets/home-gallery-motion.js`: add a keyboard-operable, persistent pause-and-browse option for the six original scientific figures, without rewriting a caption, removing a figure, or altering the nine homepage chapters. Existing hover/focus pause and reduced-motion behavior remain; stopped motion exposes horizontal scrolling.
+- `tests/home-gallery-motion.test.cjs`: acceptance checks for motion controls, toggle semantics, and original six-figure preservation, executed by site-integrity CI.
 - `assets/evidence-threads-2026.css`: restrained, responsive, keyboard-visible source path styles.
 - `scripts/build-media-placement-inventory.cjs`: enumerates source-visible `img`, `video`, `source`, `track` and posters by page, source line, nearest heading and file existence; **does not establish image provenance, visual position or film fidelity**.
 - `tests/film-evidence-threads-2026.test.cjs`, `tests/media-placement-inventory.test.cjs`, `.github/workflows/site-integrity.yml`: regression and source-preservation gates.
@@ -32,7 +34,7 @@ An [x] means the source-level change is committed in draft PR #84, **not** that 
 
 ### Home and principal orientation (8 files)
 - [x] `cv.html` — source change and regression guard in PR #84; visual approval pending
-- [ ] `index.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
+- [x] `index.html` — motion accessibility pass: readers can stop the figure-strip animation and browse the existing six links manually; visual and full copy review remain
 - [ ] `publications.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [ ] `reading-map.html` — no edit in this pass; page-by-page editorial, visual and evidence review remains
 - [x] `research.html` — source change and regression guard in PR #84; visual approval pending
