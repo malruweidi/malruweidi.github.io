@@ -79,3 +79,5 @@ jobs:
         run: node --test tests/fourth-pass-film-navigation.test.mjs
       - name: Check research status and source-linked film reading paths
         run: node --test tests/film-evidence-threads-2026.test.cjs
+      - name: Verify reproducible source-level photographic and video placement inventory
+        run: node --test tests/media-placement-inventory.test.cjs
