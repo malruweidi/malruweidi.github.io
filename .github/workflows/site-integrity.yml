@@ -89,3 +89,5 @@ jobs:
         run: node --test tests/stories-archive-visual-continuity-2026.test.cjs
       - name: Check scientific figures and distinguish image attribution from published research
         run: node --test tests/scientific-figure-source-boundaries-2026.test.cjs
+      - name: Lock original figure binaries and source-boundary audit metadata
+        run: node --test tests/scientific-figure-binary-preservation-2026.test.cjs
