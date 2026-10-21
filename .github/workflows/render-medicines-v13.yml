@@ -1,0 +1,101 @@
+name: Film 05 | Making Medicines Keep historical motion cinema
+
+on:
+  push:
+    branches:
+      - cinema/making-medicines-v13-motion
+    paths:
+      - assets/films/series-v13-medieval/film.html
+      - scripts/render-medicines-v13.py
+      - tests/medicines-v13.test.py
+      - .github/workflows/render-medicines-v13.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: medicines-v13-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  make-single-documentary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - name: Checkout source manuscript image and production code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Free video compositor dependencies and headless Chromium
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check pillow playwright numpy soundfile
+          python -m playwright install --with-deps chromium
+      - name: Verify source manuscript, narration and frame-seekable motion
+        run: |
+          python -m py_compile scripts/render-medicines-v13.py tests/medicines-v13.test.py
+          python scripts/render-medicines-v13.py --validate-only
+          python tests/medicines-v13.test.py
+      - name: Render only Film 05 in native full HD
+        run: python -u scripts/render-medicines-v13.py
+      - name: Independently verify MP4, captions, motion and source manifest
+        run: |
+          python - <<'PY'
+          import hashlib,json,subprocess
+          from pathlib import Path
+          root=Path('assets/films/series-v13-medieval')
+          mp4=root/'making-medicines-keep.mp4'
+          record=json.loads((root/'making-medicines-keep.json').read_text())
+          metadata=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_format','-show_streams','-of','json',str(mp4)]))
+          streams=metadata['streams']
+          assert {'video','audio'}<={s['codec_type'] for s in streams}
+          assert abs(float(metadata['format']['duration'])-120)<.15
+          assert any(x.get('codec_name')=='h264' and x.get('width')==1920 and x.get('height')==1080 for x in streams)
+          assert record['manuscript_identifier']=='Wellcome MS Arabic 1002'
+          assert record['manuscript_witness_date'].startswith('Egypt 1904')
+          assert record['manuscript_page_verification']=='Page not verified as particular syrup instructions'
+          assert len(record['scenes'])==8
+          assert hashlib.sha256(mp4.read_bytes()).hexdigest()==record['sha256']
+          assert (root/'making-medicines-keep.vtt').read_text().count('-->')>=28
+          assert (root/'making-medicines-keep.webp').stat().st_size>6000
+          assert (root/'making-medicines-keep.contact.webp').stat().st_size>15000
+          assert len(list(root.glob('chapter-??.jpg')))==8
+          # Audio packets must NOT contaminate the video-only motion test.
+          report=subprocess.check_output(['ffmpeg','-v','error','-i',str(mp4),'-map','0:v:0',
+             '-an','-vf','fps=1','-f','framemd5','-'],text=True)
+          hashes=[q.rsplit(',',1)[-1].strip() for q in report.splitlines() if q and not q.startswith('#')]
+          assert 119<=len(hashes)<=121,len(hashes)
+          assert len(set(hashes))>=115, f'Static-motion regression: {len(set(hashes))} distinct'
+          print('FILM05 INDEPENDENT VIDEO MOTION PASS:',len(set(hashes)),'of',len(hashes),'distinct sampled video frames')
+          # Measure actual output loudness, but listening remains a human creative gate.
+          audio=subprocess.run(['ffmpeg','-hide_banner','-i',str(mp4),'-map','0:a:0',
+             '-filter_complex','ebur128=peak=true','-f','null','-'],capture_output=True,text=True)
+          assert audio.returncode==0
+          print('FILM05 LOUDNESS QC tail:',audio.stderr[-1300:])
+          PY
+      - name: Publish isolated review artifacts to this branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Ruwaidix Research Cinema"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          source_hash="$(git hash-object scripts/render-medicines-v13.py)"
+          mkdir -p /tmp/medicines-v13-render
+          cp -a assets/films/series-v13-medieval/. /tmp/medicines-v13-render/
+          git fetch origin cinema/making-medicines-v13-motion
+          upstream_hash="$(git show origin/cinema/making-medicines-v13-motion:scripts/render-medicines-v13.py | git hash-object --stdin)"
+          if [ "$source_hash" != "$upstream_hash" ]; then
+            echo "Newer renderer exists; skip stale binary export"
+            exit 0
+          fi
+          git reset --hard origin/cinema/making-medicines-v13-motion
+          cp -a /tmp/medicines-v13-render/. assets/films/series-v13-medieval/
+          git add assets/films/series-v13-medieval/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publish Film 05 cinematic full-HD review master [medicines-v13-output]"
+          git push origin HEAD:cinema/making-medicines-v13-motion

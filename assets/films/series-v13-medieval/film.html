@@ -1,0 +1,153 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Making Medicines Keep — Film 05 | Ruwaidix Research Cinema</title><style>
+html,body{margin:0;background:#211b18;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+#manuscript{position:absolute;left:-9999px;width:1px;height:1px}
+</style></head><body><h1 class="sr-only">Making Medicines Keep — syrups, substitutions, and pharmacy in medieval Cairo</h1>
+<img id="manuscript" src="../source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg" alt="Historical manuscript page from a copy of Minhaj al-dukkan, copied in Egypt in 1904; page topic not independently verified">
+<canvas id="film" width="1920" height="1080" role="img" aria-label="Animated research documentary with a genuine later historical manuscript, interpretive pharmacy vessels and process diagrams"></canvas>
+<script>
+"use strict";
+const W=1280,H=720,FPS=24,DURATION=120,B=[0,15,30,45,60,75,90,105,120];
+const P={ink:"#28201d",deep:"#1c1a18",coffee:"#3e2b23",earth:"#654133",light:"#f3e9d4",paper:"#e8ddc8",aged:"#d7bf94",ochre:"#c79958",amber:"#b76e37",red:"#a64736",green:"#58756b",river:"#79a49c",glass:"#c7d4c0",muted:"#b6a38b",gold:"#e3b671"};
+const film=document.getElementById("film"),out=film.getContext("2d",{alpha:false});
+const buf=[document.createElement("canvas"),document.createElement("canvas")];buf.forEach(v=>{v.width=W;v.height=H});const dctx=buf.map(v=>v.getContext("2d",{alpha:false}));
+const ms=document.getElementById("manuscript");
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),seg=(t,a,b)=>clamp((t-a)/(b-a)),ease=q=>{q=clamp(q);return q*q*(3-2*q)},outEase=q=>1-Math.pow(1-clamp(q),3),mix=(a,b,p)=>a+(b-a)*p;
+const sin=Math.sin,cos=Math.cos,PI=Math.PI;
+let rng=2848;function rand(){rng=(Math.imul(rng,1664525)+1013904223)>>>0;return rng/4294967296}
+const paper=document.createElement("canvas");paper.width=W;paper.height=H;let pd=paper.getContext("2d");pd.fillStyle=P.paper;pd.fillRect(0,0,W,H);
+for(let j=0;j<23000;j++){let x=rand()*W,y=rand()*H;pd.fillStyle=j%2?"rgba(87,54,42,.035)":"rgba(255,255,244,.09)";pd.fillRect(x,y,1+2*rand(),1+2*rand())}
+function rect(d,x,y,w,h,color){d.fillStyle=color;d.fillRect(x,y,w,h)}
+function line(d,p,color,width=2,alpha=1){d.save();d.globalAlpha=alpha;d.beginPath();d.moveTo(...p[0]);for(let j=1;j<p.length;j++)d.lineTo(...p[j]);d.lineWidth=width;d.lineCap="round";d.lineJoin="round";d.strokeStyle=color;d.stroke();d.restore()}
+function dot(d,x,y,r,c,a=1){d.save();d.globalAlpha=a;d.beginPath();d.arc(x,y,Math.max(1,r),0,PI*2);d.fillStyle=c;d.fill();d.restore()}
+function stroke(d,x,y,r,c,w=2,a=1){d.save();d.globalAlpha=a;d.beginPath();d.arc(x,y,Math.max(1,r),0,PI*2);d.strokeStyle=c;d.lineWidth=w;d.stroke();d.restore()}
+function rr(d,x,y,w,h,r,c){d.fillStyle=c;d.beginPath();d.roundRect(x,y,w,h,r);d.fill()}
+function txt(d,text,x,y,size=20,color=P.light,family="sans",alpha=1,align="left"){
+ d.save();d.globalAlpha=clamp(alpha);d.fillStyle=color;d.textAlign=align;d.textBaseline="alphabetic";
+ d.font=(family==="serif"?"normal ":family==="mono"?"normal ":"normal ")+size+"px "+(family==="serif"?"Georgia,serif":family==="mono"?"monospace":"Arial,sans-serif");d.fillText(text,x,y);d.restore();
+}
+function title(d,text,x,y,size,t,start,c=P.light){let p=outEase(seg(t,start,start+.75));d.save();d.beginPath();d.rect(x-2,y-size*1.24,1130,(size+26)*p);d.clip();txt(d,text,x,y+14*(1-p),size,c,"serif");d.restore()}
+function backdrop(d,t,light=false){if(light)d.drawImage(paper,0,0);else{rect(d,0,0,W,H,P.deep);let g=d.createRadialGradient(860,360,30,860,360,770);g.addColorStop(0,"rgba(188,103,53,.16)");g.addColorStop(1,"rgba(0,0,0,0)");rect(d,0,0,W,H,g)}d.save();d.translate(5*sin(t*.32),3*cos(t*.27));for(let j=0;j<6;j++)line(d,[[114+214*j,0],[114+214*j,H]],light?"#ccbaa2":"#684733",1,.19);d.restore()}
+function hud(d,t,j,light=false){let c=light?P.coffee:P.muted;line(d,[[73,65],[1202,65]],c,1,.32);txt(d,"RUWAIDIX  /  HISTORICAL PHARMACY",76,47,13,c,"mono");txt(d,"FILM 05 / CAIRO",1200,47,13,c,"mono",1,"right");line(d,[[77,683],[1200,683]],c,1,.34);line(d,[[77,683],[77+1123*t/120,683]],light?P.red:P.gold,3);txt(d,String(j+1).padStart(2,"0")+" / 08",80,660,15,c,"mono");}
+function vessel(d,x,y,t,scale=1,liquid=.6){
+ d.save();d.translate(x,y);d.scale(scale,scale);
+ d.fillStyle="rgba(235,224,196,.08)";d.beginPath();d.moveTo(-36,-105);d.lineTo(-38,-48);d.bezierCurveTo(-119,-11,-111,113,0,117);d.bezierCurveTo(111,113,119,-11,38,-48);d.lineTo(36,-105);d.closePath();d.fill();d.strokeStyle=P.aged;d.lineWidth=5;d.stroke();
+ d.beginPath();d.ellipse(0,-106,36,9,0,0,2*PI);d.stroke();
+ d.save();d.beginPath();d.moveTo(-32,-53);d.bezierCurveTo(-110,-12,-109,113,0,114);d.bezierCurveTo(109,113,110,-12,32,-53);d.closePath();d.clip();
+ let surface=70-132*liquid+4*sin(t*.83+x*.001);let g=d.createLinearGradient(-120,surface,110,105);
+ g.addColorStop(0,"#87502b");g.addColorStop(.55,"#be7d3d");g.addColorStop(1,"#6c4428");
+ d.globalAlpha=.93;d.fillStyle=g;d.fillRect(-120,surface,240,230);
+ for(let n=0;n<7;n++){let xx=-75+n*22+3*sin(t*.43+n),yy=surface+29+(n*51)%95+4*cos(t*.53+n);dot(d,xx,yy,1.7,P.gold,.36)}
+ d.restore();line(d,[[-35,-63],[-27,91]],P.light,3,.35);d.restore();
+}
+function fire(d,t,x,y,power=1){for(let k=0;k<7;k++){let xx=x+(k-3)*17+8*sin(t*1.2+k),s=.77+.3*sin(t*1.71+k);d.save();d.globalAlpha=.34+.46*power;d.beginPath();d.moveTo(xx+14,y+2);d.quadraticCurveTo(xx-18,y-48*s,xx+7,y-64*s);d.quadraticCurveTo(xx+29,y-28*s,xx+7,y+2);d.fillStyle=k%2?P.amber:P.gold;d.fill();d.restore();}}
+function flameToDroplet(d,t,x,y){let q=ease(seg(t,4.4,10.8));fire(d,t,x,y+150,1-q);dot(d,x+105*q,y+61-180*q,9+2*sin(t*2),P.gold,.3+.7*q);}
+function syrup(d,t,x,y,w=540,h=190,visc=.48,heated=false){d.save();d.translate(x,y);
+ rr(d,0,0,w,h,14,"#4d342b");rect(d,9,16,w-18,h-30,"#674431");let top=h*(.52-.28*visc);
+ d.beginPath();d.moveTo(9,top);for(let xx=9;xx<w-9;xx+=14)d.lineTo(xx,top+4*sin(xx/47+t*.52));d.lineTo(w-9,h-14);d.lineTo(9,h-14);d.closePath();
+ let g=d.createLinearGradient(0,top,w,h);g.addColorStop(0,"#b26c2e");g.addColorStop(.4,"#d59b4d");g.addColorStop(1,"#8c522e");d.fillStyle=g;d.fill();
+ for(let i=0;i<(heated?18:8);i++){let q=(t*(heated?.16:.06)+i/19)%1;let px=30+(i*79)%(w-60);let py=top+(h-top)*q;stroke(d,px,py,1.5+2*(1-q),P.aged,1.5,.18+.6*(1-q))}
+ d.restore();}
+function movingSpoon(d,t,x,y){d.save();d.translate(x,y);d.rotate(.4*sin(t*.8));line(d,[[-3,-160],[4,33]],P.light,11);d.strokeStyle=P.aged;d.lineWidth=4;d.beginPath();d.ellipse(0,38,25,13,0,0,2*PI);d.stroke();d.restore();}
+function manuscript(d,x,y,w,h,t,caption=true){ // FULL manuscript, no forged transcription or inferred page contents
+ let iw=ms.naturalWidth,ih=ms.naturalHeight;
+ if(!iw)return;
+ let ww=Math.min(w,h*iw/ih),hh=ww*ih/iw,px=x+(w-ww)/2,py=y+(h-hh)/2;
+ d.fillStyle="#f9f0df";d.fillRect(px-14,py-14,ww+28,hh+28);
+ d.drawImage(ms,px,py,ww,hh);d.strokeStyle="#9c8267";d.strokeRect(px-14,py-14,ww+28,hh+28);
+ if(caption){txt(d,"Wellcome MS Arabic 1002 · Egyptian copy, 1904",x+5,y+h+25,16,P.coffee,"mono");
+ txt(d,"This page is not verified as the syrup passage.",x+5,y+h+49,15,P.red,"mono");}}
+function path(d,coords,t,a,b,col,width=4){let p=ease(seg(t,a,b)),n=Math.max(2,Math.round((coords.length-1)*p));line(d,coords.slice(0,n),col,width,p)}
+function scene0(d,t){backdrop(d,t,false);title(d,"After the fire went out.",87,160,66,t,.3);title(d,"What would remain?",87,245,54,t,2,P.gold);
+ vessel(d,690,403,t,1.0,.59);flameToDroplet(d,t,690,510);
+ txt(d,"CAIRO  /  THIRTEENTH CENTURY",91,585,20,P.muted,"mono",outEase(seg(t,5,6)));
+ txt(d,"A preparation still had to endure.",91,628,20,P.light,"serif",outEase(seg(t,8,9)));hud(d,t,0);}
+function scene1(d,t){backdrop(d,t,true);let l=t-15;
+ title(d,"A pharmacy in the text.",78,139,55,t,15.4,P.ink);
+ manuscript(d,348,174,568,365,t);
+ let progress=ease(seg(l,1,10));line(d,[[210,580],[1000,580]],P.coffee,2,.3);line(d,[[210,580],[210+790*progress,580]],P.red,3);
+ txt(d,"Minhāj al-dukkān  /  al-Kūhīn al-ʿAṭṭār",78,623,23,P.coffee,"serif",outEase(seg(l,4,5)));
+ txt(d,"Composed in Cairo, 1260  ·  Later copy: 1904",78,653,16,P.red,"mono",outEase(seg(l,8,9)));hud(d,t,1,true);}
+function scene2(d,t){backdrop(d,t,false);let l=t-30;
+ title(d,"A base. Many syrups.",89,145,62,t,30.4);
+ let names=["ROSE WATER","SUGAR","ADDITIONAL MATERIAL"];let x0=[208,608,1002];
+ for(let k=0;k<3;k++){let q=outEase(seg(l,1.1+k*.5,2+k*.5));txt(d,names[k],x0[k],235,k===2?15:19,P.muted,"mono",q,"center");
+  let xx=x0[k],yy=328;
+  if(k===0){for(let i=0;i<6;i++)dot(d,xx+22*cos(t*.65+i*PI/3),yy+19*sin(t*.51+i*PI/3),11,P.river,.45)}
+  if(k===1){for(let i=0;i<11;i++){let sy=yy-21+(i%4)*15+5*sin(t*.48+i),sx=xx-40+(Math.floor(i/4))*29;rect(d,sx,sy,11,11,P.light);}}
+  if(k===2){for(let i=0;i<7;i++)dot(d,xx+24*cos(i+.3*t),yy+30*sin(i+.2*t),9,i%2?P.red:P.green,.75)}}
+ for(let k=0;k<3;k++){let p=ease(seg(l,4+k*.8,8+k*.8));let x=x0[k],y=353;
+ line(d,[[x,y],[mix(x,624,p),mix(y,456,p)]],k===0?P.river:k===1?P.gold:P.red,3,p);
+ dot(d,mix(x,624,p),mix(y,456,p),6,k===0?P.river:k===1?P.gold:P.red,p);}
+ vessel(d,624,518,t,.6,.58+ .07*sin(t*.48));
+ txt(d,"The formulation is material, not merely verbal.",103,627,20,P.muted,"serif",outEase(seg(l,9,10)));hud(d,t,2);}
+function scene3(d,t){backdrop(d,t,false);let l=t-45;title(d,"The work of keeping.",89,145,58,t,45.35);
+ syrup(d,t,288,309,690,190,.63,true);movingSpoon(d,t,638,318);
+ fire(d,t,644,542,.7);
+ const steps=[["01","DISSOLVE"],["02","SKIM"],["03","STRAIN"],["04","RECONCENTRATE"]];
+ for(let k=0;k<4;k++){let x=135+k*278,p=outEase(seg(l,1.1+k*2,2+k*2));
+   rr(d,x,582,250,55,7,"#3c3027");txt(d,steps[k][0],x+13,616,17,P.gold,"mono",p);
+   txt(d,steps[k][1],x+55,616,16,P.light,"mono",p);}
+ // mesh, skimmer and falling droplets are conceptual process visualization.
+ for(let i=0;i<17;i++){let x=306+i*41,y=294+4*sin(i*.61);dot(d,x,y,2.6,P.light,.25+.5*sin(l*.5+i))}
+ txt(d,"Illustrative process · no reconstructed historical apparatus",88,663,12,P.muted,"mono");hud(d,t,3);}
+function scene4(d,t){backdrop(d,t,false);let l=t-60;
+ title(d,"Consistency was the endpoint.",88,143,55,t,60.4);
+ let v=ease(seg(l,1,9));syrup(d,t,243,267,760,249,.23+.58*v,true);
+ // Right side conceptual discrete crystal nuclei, no quantitative kinetics.
+ for(let k=0;k<23;k++){let x=770+(k%6)*32,y=375+Math.floor(k/6)*33;
+ let p=ease(seg(l,7.2+k*.18,9.2+k*.18));if(p>.001){
+  d.save();d.translate(x+3*sin(t*.17+k),y);d.rotate(PI/4);
+  d.globalAlpha=p*.8;rect(d,-5,-5,10,10,P.light);d.restore();}}
+ txt(d,"Too little control",126,578,26,P.light,"serif",outEase(seg(l,4,5)));
+ txt(d,"Too much concentration",746,578,26,P.gold,"serif",outEase(seg(l,7,8)));
+ line(d,[[135,605],[1161,605]],P.ochre,4,.55);
+ let x=mix(255,1050,.1+.8*v);dot(d,x,605,10,P.red,.95);
+ txt(d,"A descriptive endpoint, not an instrument reading",124,647,18,P.muted,"mono",outEase(seg(l,9,10)));hud(d,t,4);}
+function scene5(d,t){backdrop(d,t,false);let l=t-75;
+ title(d,"And when a syrup failed?",84,140,60,t,75.45);
+ let before=ease(seg(l,1,5)),repair=ease(seg(l,7,12));vessel(d,398,386,t,.93,.7);vessel(d,930,386,t,.93,.6);
+ for(let k=0;k<22;k++){let ang=k*2.399,rr=15+3*(k%9);let x=398+43*cos(ang),y=408+62*sin(ang);dot(d,x,y,3,P.light,1-repair)}
+ let flow=ease(seg(l,5.5,10)),dx=mix(528,785,flow),dy=435-92*sin(flow*PI);
+ line(d,[[529,422],[600,383],[722,385],[788,421]],P.river,3,flow);for(let k=0;k<7;k++){let p=(t*.09+k/7)%1;dot(d,mix(548,773,p),394-33*sin(p*PI),3,P.river,.2+.7*repair)}
+ txt(d,"Warm water  /  adjustment toward intended consistency",85,597,20,P.light,"mono",outEase(seg(l,8,9)));
+ txt(d,"A described corrective practice, not a validated modern stability test",85,638,17,P.muted,"mono",outEase(seg(l,10,11)));hud(d,t,5);}
+function scene6(d,t){backdrop(d,t,true);let l=t-90;title(d,"When an ingredient was missing.",76,136,54,t,90.2,P.ink);
+ // Supply vs substitutions shown as decisions, not pharmacological bioequivalence
+ rr(d,106,228,400,298,13,"#efe4ce");rr(d,730,228,400,298,13,"#efe4ce");
+ txt(d,"PRESCRIPTION",306,281,22,P.ink,"mono",1,"center");
+ txt(d,"AVAILABLE MATERIAL",930,281,19,P.ink,"mono",1,"center");
+ for(let k=0;k<5;k++){let y=329+k*32;line(d,[[154,y],[452-(k%2)*54,y]],P.coffee,3,.22);line(d,[[773,y],[1074-(k%3)*46,y]],P.coffee,3,.22);}
+ let q=ease(seg(l,4,10));line(d,[[530,368],[710,368]],P.red,4,q);dot(d,530+180*q,368,8,P.red,q);
+ txt(d,"FUNCTION?   PREPARATION?   ADULTERATION?",131,602,19,P.red,"mono",outEase(seg(l,8,9)));
+ txt(d,"Genizah records can inform supply; not modern efficacy trials.",130,635,18,P.coffee,"serif",outEase(seg(l,10,11)));
+ hud(d,t,6,true);}
+function scene7(d,t){backdrop(d,t,true);let l=t-105;
+ manuscript(d,635,119,515,390,t,false);
+ title(d,"Reliability was made.",78,173,59,t,105.4,P.ink);
+ title(d,"Not presumed.",78,243,55,t,107,P.red);
+ const steps=["PREPARATION","REPAIR","SUBSTITUTION","DOCUMENTARY TRACE"];
+ for(let k=0;k<4;k++){let p=outEase(seg(l,3.2+k*.9,4+k*.9));txt(d,steps[k],85,334+k*52,19,P.coffee,"mono",p);line(d,[[80,349+k*52],[215+130*p,349+k*52]],P.red,2,p);}
+ txt(d,"Making Medicines Keep",92,578,27,P.ink,"serif",outEase(seg(l,7,8)));
+ txt(d,"Syrups, Substitution, and Pharmaceutical Reliability",92,612,18,P.coffee,"serif",outEase(seg(l,8,9)));
+ txt(d,"Ayyubid–Mamluk Cairo  /  Accepted manuscript (2026)",92,641,17,P.red,"mono",outEase(seg(l,9,10)));
+ hud(d,t,7,true);}
+const SCENES=[scene0,scene1,scene2,scene3,scene4,scene5,scene6,scene7];
+function paint(d,j,t){d.save();SCENES[j](d,t);d.restore();}
+function draw(t){t=clamp(t,0,DURATION-1/FPS);let scene=7;
+ for(let j=0;j<8;j++)if(t>=B[j]&&t<B[j+1]){scene=j;break}
+ let transition=-1;for(let j=1;j<8;j++)if(t>=B[j]-.37&&t<B[j]+.37){transition=j;break}
+ out.setTransform(1.5,0,0,1.5,0,0);
+ if(transition<0){paint(dctx[0],scene,t);out.drawImage(buf[0],0,0);return;}
+ paint(dctx[0],transition-1,t);paint(dctx[1],transition,t);let p=ease(seg(t,B[transition]-.37,B[transition]+.37));
+ out.drawImage(buf[0],0,0);out.save();out.beginPath();
+ if(transition===1||transition===7){out.arc(640,380,Math.hypot(W,H)*p,0,2*PI);}
+ else{let x=(W+180)*p-90;out.moveTo(0,0);out.lineTo(x,0);out.lineTo(x-70,H);out.lineTo(0,H);out.closePath();}
+ out.clip();out.drawImage(buf[1],0,0);out.restore();}
+window.__meta={W:1920,H:1080,FPS,DURATION,film:"Making Medicines Keep",source:"Minhaj al-dukkan, Cairo 1260; Wellcome 1904 manuscript copy"};
+window.__draw=t=>{draw(t);return t};window.__ready=false;
+Promise.all([document.fonts.ready,new Promise((ok,fail)=>{if(ms.complete&&ms.naturalWidth>0)return ok();ms.addEventListener("load",ok,{once:true});ms.addEventListener("error",()=>fail(Error("Original manuscript image did not load")),{once:true})})])
+.then(()=>{window.__ready=true;draw(0)}).catch(e=>window.__renderError=String(e));
+let playing=false,t0=0;function tick(now){if(!playing)return;let t=(now-t0)/1000;if(t>=DURATION){playing=false;draw(DURATION-0.1);return;}draw(t);requestAnimationFrame(tick)}
+document.addEventListener("click",()=>{playing=!playing;if(playing){t0=performance.now();requestAnimationFrame(tick)}});
+</script></body></html>

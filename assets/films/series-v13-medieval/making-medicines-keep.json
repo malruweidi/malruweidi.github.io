@@ -1,0 +1,70 @@
+{
+  "film_index": 5,
+  "title": "Making Medicines Keep",
+  "film_release": "v13 review master",
+  "seconds": 120.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "original_audio": "assets/films/series-v8-primary/making-medicines-keep.mp4",
+  "source_narration": "120-second source audio retained on its original timeline, with quiet original-score mix",
+  "original_captions": "assets/films/series-v8-primary/making-medicines-keep.vtt",
+  "manuscript_identifier": "Wellcome MS Arabic 1002",
+  "source_range": "Ayyubid-Mamluk Cairo, 1260 formulary and later sources",
+  "primary_text": "Minhaj al-dukkan by al-Kuhin al-Attar, composed in Cairo, 658 AH / 1260 CE",
+  "manuscript": "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg",
+  "manuscript_witness_date": "Egypt 1904 (later copy, not original 1260 autograph)",
+  "manuscript_page_verification": "Page not verified as particular syrup instructions",
+  "manuscript_source_register": "assets/films/source-manuscripts/wellcome-ms-arabic-1002/source-register.json",
+  "source_IIIF": "https://iiif.wellcomecollection.org/presentation/v2/b21417283",
+  "scenes": [
+    {
+      "name": "Preparation must endure",
+      "start": 0,
+      "end": 15
+    },
+    {
+      "name": "Text and manuscript witness",
+      "start": 15,
+      "end": 30
+    },
+    {
+      "name": "Rose water sugar and syrup",
+      "start": 30,
+      "end": 45
+    },
+    {
+      "name": "Dissolve, skim, strain, concentrate",
+      "start": 45,
+      "end": 60
+    },
+    {
+      "name": "Consistency and crystallization",
+      "start": 60,
+      "end": 75
+    },
+    {
+      "name": "Corrective repair",
+      "start": 75,
+      "end": 90
+    },
+    {
+      "name": "Substitution and supply",
+      "start": 90,
+      "end": 105
+    },
+    {
+      "name": "Reliability and documentary traces",
+      "start": 105,
+      "end": 120
+    }
+  ],
+  "animation_system": "deterministic time-seekable Canvas2D via Chromium Playwright, FFmpeg, 24fps native 1920x1080",
+  "visual_status": "Later 1904 manuscript page shown unaltered and explicitly distinguished from 1260 composition. All other process and apparatus imagery is modern interpretive illustration, not period footage, actual equipment, or a medieval clinical efficacy claim.",
+  "originals_preserved": true,
+  "live_site_modified": false,
+  "human_signoff": "Not yet completed; user screening, scholarly check, legal review and listening required",
+  "sha256": "2f7699abe7622142427331f84d6c95904655044385f458d2ed7e9e36642db2c4"
+}
