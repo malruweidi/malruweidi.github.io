@@ -34,6 +34,7 @@ test('activating motion control toggles announcement and the persistent static g
   const button = {
     attrs: { 'aria-pressed': 'false' },
     textContent: 'Pause moving figures',
+    hidden: true,
     addEventListener(name, cb) { listeners[name] = cb; },
     setAttribute(key, val) { this.attrs[key] = val; }
   };
@@ -45,6 +46,7 @@ test('activating motion control toggles announcement and the persistent static g
   };
   vm.runInNewContext(js(), { document });
   assert.equal(typeof listeners.click, 'function');
+  assert.equal(button.hidden, false, 'functional control is revealed only when JavaScript is active');
   listeners.click();
   assert.equal(gallery.dataset.motionPaused, 'true');
   assert.equal(button.attrs['aria-pressed'], 'true');
