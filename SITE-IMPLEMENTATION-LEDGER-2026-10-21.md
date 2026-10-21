@@ -164,6 +164,24 @@ The 14 candidates were triaged rather than automatically given duplicate visible
 
 **Merge-integration limitation:** The public `main` branch has concurrent filmmaking updates, with new V9–V22 primary cinema selections. The existing site-wide integrity script retains an older five-film V8-only selection assertion. As a result, GitHub's synthetic PR merge fails that **film-release rule** even when the preservation and scientific-figure checks succeed. This is not a reason to overwrite the newer films or weaken factual checks. A separate `.github/workflows/scientific-figure-source-integrity-2026.yml` runs scientific/figure integrity independently against the proposed merge. The main-integrity failure must be reconciled using the correct canonical movie editions before this draft PR can merge.
 
+### Historical inline figures identified (read-only review, 21 October 2026)
+
+The three previously unresolved `full-record.html` figures are **personal university-era photographs, not unidentified experimental charts**. Source-context extraction in the GitHub Actions runner identified their existing on-page title and personal-archive date, without transmitting their binary contents:
+
+- **At the beginning** — inline photo described as a university-era lab-coat photograph; original page shows **5 January 2015**.
+- **Learning in public** — inline photo described as a university-era photograph near a chalkboard; original page shows **19 October 2015**.
+- **Asking questions** — inline photo described as a speaker with a microphone at an academic event; original page shows **6 May 2015**.
+
+These titles and dates are **existing website labels**, not an independently confirmed EXIF/source provenance claim. All three carry descriptive image `alt` text and existing visible headings/date prose inside their figure elements. Their `<figure>` wrappers lack a literal `<figcaption>` or semantic `aria-labelledby` reference, so the automated source audit still flags the *semantic association*, even though visitors are not missing the visible titles. No duplicate captions, invented dates, new affiliations, binary transformations, or other edits were made to the roughly 1.9 MB historical original. `scripts/legacy-figure-context-audit-2026.cjs` and its tests now document their exact location and safely redact the embedded image payloads.
+
+**Follow-up QA:** compare the existing photograph/date labels with original owner archive files before treating them as authenticated timestamps; optionally add semantic references *in the original source* using a checked and reversible edit if needed. Do not replace originals or add a synthetic research-paper source attribution to personal photographs.
+
+### Verified film release compatibility and checksum checks
+
+The old site-integrity assertion that five V8 masters **must remain the selected primary editions** was no longer valid after `main` adopted newer cinematic revisions (V9–V22). `scripts/cinema-verified-masters-integrity.cjs` now validates **the selected registered edition**, including the matching MP4, WebVTT and poster paths, caption hygiene, manifest runtime and MP4 SHA-256, without evaluating arbitrary page JavaScript. It also requires all five historical V8 movie, subtitle and poster binaries to be retained. The separate regression test `tests/cinema-verified-primary-evolution-2026.test.cjs` exercises legacy and newer edition formats, tampered checksum, missing media, duplicate identifiers and contaminated subtitle handling.
+
+A matching SHA-256 verifies the checked-in video bytes; it **does not** constitute approval of editorial content, voiceover, frame accuracy, music rights, or scientific claims. Several newer release manifests explicitly identify themselves as *review masters* requiring final listening and human scientific/rights checks. Avoid labeling them human-approved solely because they are currently selected on the website.
+
 ## Required release gates before merging
 1. CI: existing site-integrity checks plus the new editorial/media inventory tests pass on the **latest head SHA**.
 2. Browser: real views at 320, 375, 768, 1024 and 1440px; keyboard, touch, zoom, EN/Arabic RTL, reduced motion, video fallback, direct anchor navigation and screen-reader landmarks.
