@@ -77,3 +77,5 @@ jobs:
         run: node --test tests/third-pass-film-reader-experience.test.mjs
       - name: Check public film collection language against playable destinations
         run: node --test tests/fourth-pass-film-navigation.test.mjs
+      - name: Check research status and source-linked film reading paths
+        run: node --test tests/film-evidence-threads-2026.test.cjs
