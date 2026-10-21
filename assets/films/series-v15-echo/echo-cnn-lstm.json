@@ -1,0 +1,75 @@
+{
+  "film_index": 7,
+  "title": "Can an Algorithm Read a Moving Heart?",
+  "release": "v15 kinetic fetal-cardiac AI documentary review",
+  "seconds": 84.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "source": "computing.html",
+  "peer_reviewed_paper": {
+    "doi": "10.1109/ACCESS.2023.3316719",
+    "venue": "IEEE Access",
+    "year": 2023,
+    "license": "CC BY 4.0 per indexed paper (no published patient image reproduced)"
+  },
+  "verified_pilot_counts": {
+    "congenital_heart_disease_subjects": 13,
+    "controls": 9,
+    "reported_stacking_model_subject_wise_accuracy_percent": 91.0
+  },
+  "limitations": "Pilot cohort; published subject-wise result is not proof of externally validated deployment or clinical safety.",
+  "original_audio": "assets/films/series-v7-pilots/echo-cnn-lstm.mp4",
+  "original_captions": "assets/films/series-v7-pilots/echo-cnn-lstm.vtt",
+  "image_sources": [
+    {
+      "file": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "use": "Owner archival echocardiography-workstation photograph, context only; not an identifiable pilot participant scan."
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Cardiac anatomy changes from frame to frame",
+      "start": 0,
+      "end": 14.55
+    },
+    {
+      "name": "Acquisition, annotation and patient-frame identity",
+      "start": 14.55,
+      "end": 27.4
+    },
+    {
+      "name": "Spatial CNN features and temporal LSTM memory",
+      "start": 27.4,
+      "end": 41.0
+    },
+    {
+      "name": "Stacked CNN-LSTM model evaluation",
+      "start": 41.0,
+      "end": 55.05
+    },
+    {
+      "name": "Pilot cohort and subject-wise test result",
+      "start": 55.05,
+      "end": 69.75
+    },
+    {
+      "name": "Exploratory science remains clinician supervised",
+      "start": 69.75,
+      "end": 84
+    }
+  ],
+  "evidence_boundaries": [
+    "Synthetic moving heart illustrations are intentionally geometric diagrams, not ultrasound, measured patient anatomy or a specific diagnostic state.",
+    "Neural network node weights, trajectories, CNN feature masks and LSTM sequence states are illustrative, not exported study model parameters.",
+    "Published pilot 91 percent accuracy is specifically reported for subject-wise stacking model classification, not external or prospective clinical validation.",
+    "No fake individual medical histories, image diagnoses, subjects, performance plots or claimed patient benefit."
+  ],
+  "render_system": "Deterministic frame=f(t), Canvas2D and local headless Chromium with FFmpeg at Full HD 24fps",
+  "prior_versions_preserved": true,
+  "website_unchanged": true,
+  "human_review": "Requires full sound audition, scientific editorial review, study-attribution and original-asset rights approval",
+  "sha256": "b443f9b360e684a4f8e23d3af2a084154e9bf048eb714b4b6950ac2af96f4de8"
+}
