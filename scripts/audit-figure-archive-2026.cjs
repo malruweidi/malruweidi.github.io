@@ -106,6 +106,19 @@ if(require.main===module){
  if(ix!==-1){
   if(!args[ix+1])throw Error("--output requires a file path");
   fs.writeFileSync(path.resolve(args[ix+1]),JSON.stringify(data,null,2)+"\n");
+ } else if(args.includes("--issues")){
+  const issues=[];
+  for(const [page,entry] of Object.entries(data.pages)){
+   for(const figure of entry.figures){
+    const problems=[];
+    if(!figure.captionPresent)problems.push("figure-without-figcaption");
+    if(figure.figureImages.some(x=>x.altText===null))problems.push("image-missing-alt-attribute");
+    if(figure.figureImages.some(x=>x.availability==="local-missing"))problems.push("missing-local-image-file");
+    if(problems.length)issues.push({page,ordinal:figure.figureOrdinal,line:figure.sourceLine,
+      images:figure.figureImages.map(x=>x.url),problems});
+   }
+  }
+  process.stdout.write(JSON.stringify({notes:data.notes,issues},null,2)+"\\n");
  } else if(args.includes("--summary")){
   process.stdout.write(JSON.stringify({notes:data.notes,stats:data.stats,
     pages:Object.fromEntries(Object.entries(data.pages).map(([k,v])=>[k,
