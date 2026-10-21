@@ -10,6 +10,10 @@
       document.querySelector(".map-header nav") ||
       document.querySelector("header nav");
     if (!nav) return;
+    // Honor an existing direct search destination; the global shortcut below
+    // remains active. Avoid duplicate Find controls in original page headers.
+    const existingSearch = nav.querySelector(":scope > a[href=\'/search.html\']");
+    if (existingSearch) return;
     const link = document.createElement("a");
     link.id = "rx-global-search-link";
     link.className = "rx-discovery-link";
