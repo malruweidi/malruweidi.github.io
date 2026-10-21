@@ -61,7 +61,11 @@ function immuneFlow(d,t,originX,originY){dendritic(d,originX,originY,t,.75);
  for(let i=0;i<12;i++){let a=i*TAU/12+t*.12;dot(d,originX+70*cos(a),originY+52*sin(a),3.5,i%2?Q.ochre:Q.mint,.24+.34*sin(t+i))}
 }
 function panelMechanism(d,x,y,w,h,label,description,kind,t,index){
- card(d,x,y,w,h,12,Q.deep);txt(d,label,x+19,y+35,20,Q.cream,"serif");
+ card(d,x,y,w,h,12,Q.deep);
+ const headings=label==="Autoimmune gastritis"?["Autoimmune","gastritis"]:
+   label==="Eosinophilic esophagitis"?["Eosinophilic","esophagitis"]:
+   label==="Inflammatory bowel disease"?["Inflammatory","bowel disease"]:[label];
+ for(let j=0;j<headings.length;j++)txt(d,headings[j],x+17,y+32+j*25,19,Q.cream,"serif");
  txt(d,description,x+19,y+h-18,14,Q.muted,"mono");
  const xx=x+w*.50,yy=y+h*.60;
  if(kind===0){ // Achalasia, neural signaling only
