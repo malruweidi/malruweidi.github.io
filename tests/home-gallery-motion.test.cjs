@@ -24,6 +24,8 @@ test('motion-off still retains all six original scientific figure links and labe
   assert.equal((gallery[1].match(/<img\b/g) || []).length, 6);
   assert.match(css(), /\.moving-gallery\[data-motion-paused="true"\]/);
   assert.match(css(), /overflow-x:\s*auto/);
+  assert.match(css(), /\.moving-gallery\[data-motion-paused="true"\] \.moving-track>\[aria-hidden="true"\]/);
+  assert.match(css(), /@media\(prefers-reduced-motion:reduce\)[\s\S]*?\[aria-hidden="true"\]/);
   assert.match(css(), /animation:\s*none\s*!important/);
   assert.match(css(), /prefers-reduced-motion:\s*reduce/);
 });
