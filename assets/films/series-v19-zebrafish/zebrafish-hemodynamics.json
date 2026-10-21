@@ -1,0 +1,92 @@
+{
+  "film_index": 11,
+  "title": "A Heartbeat in High-Speed Frames",
+  "edition": "V19 zebrafish high-speed imaging research cinema",
+  "duration_seconds": 84.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "paper": {
+    "doi": "10.1016/j.micron.2020.102876",
+    "title": "Cardiac function and blood flow hemodynamics assessment of zebrafish (Danio rerio) using high-speed video microscopy",
+    "journal": "Micron 136 (2020) 102876",
+    "rights": "Publisher permissions for expanded public movie reuse of figure require independent verification."
+  },
+  "published_method": {
+    "recording_seconds": 10,
+    "age_dpf_upper_bound_exclusive": 5,
+    "representative_age_dpf": 3,
+    "analysis_software": [
+      "MicroZebraLab",
+      "ImageJ"
+    ],
+    "measurements_scope": [
+      "cardiac function",
+      "blood-flow hemodynamics"
+    ]
+  },
+  "original_narration": "assets/films/series-v7-pilots/zebrafish-hemodynamics.mp4",
+  "original_captions": "assets/films/series-v7-pilots/zebrafish-hemodynamics.vtt",
+  "paper_figure": {
+    "path": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+    "sha256": "ac49056c72fad7bce1f257a8b412964034e3193bab39de9c60794a704c69a42f",
+    "rendering": "Shown intact; no artificial values or modified data graphs."
+  },
+  "archival_context_images": [
+    {
+      "path": "assets/zebrafish-larva-microscopy.webp",
+      "sha256": "62fbba2ee4d905736bc205e9363cbe0b2da198da6dc3c7b50929a250091457e3",
+      "purpose": "Unassigned independent specimen context; not necessarily from analyzed 2020 recording"
+    },
+    {
+      "path": "assets/zebrafish-embryo-microscopy.webp",
+      "sha256": "2e698a50cf4fa13bdab6fad5d24a014a85cdb233d2f107eac88643e7d4e618ef",
+      "purpose": "Unassigned independent specimen context; not necessarily from analyzed 2020 recording"
+    }
+  ],
+  "scenes": [
+    {
+      "title": "Heart and vessel motion, conceptual illustration",
+      "start": 0,
+      "end": 14
+    },
+    {
+      "title": "Recording moving biology frame by frame",
+      "start": 14,
+      "end": 28
+    },
+    {
+      "title": "Unmodified published blood-flow figure",
+      "start": 28,
+      "end": 42
+    },
+    {
+      "title": "Sampling assumptions and possible aliasing",
+      "start": 42,
+      "end": 56
+    },
+    {
+      "title": "Vessel geometry and moving illustrative red cells",
+      "start": 56,
+      "end": 70
+    },
+    {
+      "title": "From original image to quantified physiological parameter",
+      "start": 70,
+      "end": 84
+    }
+  ],
+  "evidence_boundaries": [
+    "Beating stylized heart, drifting blood cell icons, animated vessels and drawn waveforms are interpretive motion graphics, not recovered experimental moving microscopy.",
+    "Original published figure is shown as an intact archive image; copyright/reproduction permission for a new film has not been established.",
+    "Archived larva and embryo stills have uncertain specimen-to-paper identity and are explicitly labelled contextual.",
+    "The film does not invent heart rate, cardiac output, ventricular volume, blood velocity, shear stress or measurement precision.",
+    "Published protocol demonstrates laboratory methods with normal zebrafish embryos, not diagnosis of disease in humans."
+  ],
+  "live_website_unchanged": true,
+  "older_film_masters_preserved": true,
+  "human_review": "Full viewing/listening, on-screen legibility, publication-figure rights and formal scientific sign-off remain outstanding.",
+  "sha256": "2ff963e2c234ca3c718c83f0e8a98c458674f058d525ddd59770a4a92caa74a1"
+}
