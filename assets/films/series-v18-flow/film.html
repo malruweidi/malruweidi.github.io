@@ -1,0 +1,139 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>How to Make a Reproducible Injury | Film 10 · Ruwaidix</title>
+<style>html,body{margin:0;background:#07181e;overflow:hidden}
+canvas{width:100vw;height:100vh;object-fit:contain;display:block}
+.sr-only{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.primary{position:absolute;left:-10000px;width:1px;height:1px}</style></head><body>
+<h1 class="sr-only">How to Make a Reproducible Injury: bubble propagation through a parallel-plate chamber</h1>
+<img class="primary" id="figure1" src="../source-figures/v3/flow-chamber-method-figure-01.jpg" alt="Complete unmodified 2020 paper Figure 1 depicting the real parallel plate chamber experimental apparatus and air bubble">
+<img class="primary" id="figure5" src="../source-figures/v3/flow-chamber-method-figure-05.jpg" alt="Complete unmodified 2020 Figure 5 showing live and dead cell staining and group means with standard errors">
+<img class="primary" id="figure6" src="../source-figures/v3/flow-chamber-method-figure-06.jpg" alt="Complete unmodified 2020 Figure 6 showing actual immunofluorescence image of F-actin and nuclei">
+<canvas id="screen" width="1920" height="1080" role="img" aria-label="A moving science documentary showing a conceptual air-liquid interface crossing epithelial cells, unaltered published experiment figures, and limited method conclusions"></canvas>
+<script>"use strict";
+const W=1280,H=720,FPS=24,DURATION=120,PI=Math.PI,TAU=2*PI;
+const B=[0,15,30,45,60,75,90,105,120],f1=document.getElementById("figure1"),f5=document.getElementById("figure5"),f6=document.getElementById("figure6");
+const C={deep:"#0a1920",night:"#101f25",blue:"#3c8795",aqua:"#86cccb",mint:"#b9e7dc",
+ paper:"#e9eee8",pale:"#f4f3e9",muted:"#9dadae",gold:"#dbad79",copper:"#c27865",
+ red:"#cf7869",green:"#79a995",ink:"#28353a",soft:"#e6e3da",slate:"#1b343a"};
+const main=document.getElementById("screen"),o=main.getContext("2d",{alpha:false});
+const buffers=[document.createElement("canvas"),document.createElement("canvas")];buffers.forEach(v=>{v.width=W;v.height=H});
+const ctx=buffers.map(v=>v.getContext("2d",{alpha:false}));
+const sin=Math.sin,cos=Math.cos,clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
+const seg=(t,a,b)=>clamp((t-a)/(b-a)),ease=t=>{t=clamp(t);return t*t*(3-2*t)},out=t=>1-Math.pow(1-clamp(t),3),mix=(a,b,p)=>a+(b-a)*p;
+function rect(d,x,y,w,h,c){d.fillStyle=c;d.fillRect(x,y,w,h)}
+function line(d,p,c,w=2,a=1){d.save();d.globalAlpha=clamp(a);d.strokeStyle=c;d.lineWidth=w;d.lineCap="round";d.lineJoin="round";
+d.beginPath();d.moveTo(...p[0]);for(let i=1;i<p.length;i++)d.lineTo(...p[i]);d.stroke();d.restore()}
+function dot(d,x,y,r,c,a=1){d.save();d.globalAlpha=clamp(a);d.fillStyle=c;d.beginPath();d.arc(x,y,Math.max(1,r),0,TAU);d.fill();d.restore()}
+function ring(d,x,y,r,c,w=2,a=1){d.save();d.globalAlpha=clamp(a);d.strokeStyle=c;d.lineWidth=w;d.beginPath();d.arc(x,y,Math.max(1,r),0,TAU);d.stroke();d.restore()}
+function round(d,x,y,w,h,r,c){d.fillStyle=c;d.beginPath();d.roundRect(x,y,w,h,r);d.fill()}
+function txt(d,str,x,y,size=20,c=C.pale,f="sans",a=1,align="left"){d.save();d.globalAlpha=clamp(a);d.fillStyle=c;d.textAlign=align;d.textBaseline="alphabetic";d.font=size+"px "+(f==="serif"?"Georgia,serif":f==="mono"?"monospace":"Arial,sans-serif");d.fillText(str,x,y);d.restore()}
+function title(d,str,x,y,size,t,at,c=C.pale){let p=out(seg(t,at,at+.95));d.save();d.beginPath();d.rect(x-4,y-size*1.4,1155,(size+29)*p);d.clip();txt(d,str,x,y+15*(1-p),size,c,"serif");d.restore()}
+function bg(d,t,light=false){rect(d,0,0,W,H,light?C.soft:C.deep);let gr=d.createRadialGradient(light?280:815,280,40,light?280:815,280,760);gr.addColorStop(0,light?"rgba(183,170,150,.14)":"rgba(78,169,179,.13)");gr.addColorStop(1,"rgba(0,0,0,0)");rect(d,0,0,W,H,gr);
+for(let j=0;j<9;j++){let x=78+j*157+6*sin(t*.2+j);line(d,[[x,65],[x-5,673]],light?"#aebcba":C.blue,1,.09)}}
+function hud(d,t,j,light=false){const c=light?C.ink:C.muted;line(d,[[73,59],[1207,59]],c,1,.28);
+txt(d,"RUWAIDIX / METHOD AS CINEMA",77,43,13,c,"mono");txt(d,"FILM 10 / AIRWAY REOPENING",1204,43,13,c,"mono",1,"right");
+line(d,[[73,683],[1207,683]],c,1,.25);line(d,[[73,683],[73+1134*t/120,683]],light?C.copper:C.gold,3);
+txt(d,String(j+1).padStart(2,"0")+" / 08",76,662,14,c,"mono")}
+function cells(d,t,y=484,x0=116,x1=1150,kmax=18,alive=true){
+for(let k=0;k<kmax;k++){let x=mix(x0,x1,k/(kmax-1))+3*sin(t*.27+k*.7),rx=25+(k%3)*2,ry=14;
+d.save();d.beginPath();d.ellipse(x,y+3*sin(k+t*.14),rx,ry,.1*sin(k),0,TAU);d.fillStyle=alive?C.green:C.copper;d.globalAlpha=.5;d.fill();d.restore();
+ring(d,x,y,8,alive?C.aqua:C.red,2,.45);dot(d,x+2*sin(t*.4+k),y,4,C.pale,.35)}
+}
+function plate(d,t,x,y,w,h,front=0){
+round(d,x,y,w,h,15,"#203a45");round(d,x+8,y+14,w-16,h-30,6,"#17303b");
+line(d,[[x+8,y+18],[x+w-8,y+18]],C.aqua,3,.6);line(d,[[x+8,y+h-18],[x+w-8,y+h-18]],C.gold,4,.7);
+cells(d,t,y+h-36,x+24,x+w-24,Math.max(5,Math.floor(w/38)));
+const air=clamp(front),interfaceX=x+25+(w-50)*air;
+d.save();d.beginPath();d.rect(x+10,y+20,Math.max(0,interfaceX-(x+10)),h-60);d.clip();rect(d,x+10,y+23,w-20,h-61,"rgba(87,158,165,.32)");d.restore();
+let pts=[];for(let j=0;j<30;j++){let yy=y+26+(h-60)*j/29;pts.push([interfaceX+16*sin(j/29*PI*1.35+t*.67),yy])}line(d,pts,C.gold,4,.86);
+for(let k=0;k<19;k++){let q=(t*.13+(k*.618033988749)%1)%1;
+dot(d,x+16+(w-32)*q,y+66+(k%4)*24+10*sin(t*.7+k),2.1,C.mint,.12+.35*sin(PI*q))}
+}
+function waves(d,t,x0,y0,x1){
+for(let j=0;j<8;j++){const a=[];for(let k=0;k<80;k++){let q=k/79; a.push([mix(x0,x1,q),y0+j*28+15*sin(q*TAU*2-t*1.17+j*.29)])}
+line(d,a,j%2?C.aqua:C.blue,2,.16+.03*sin(t+j))}
+}
+function original(d,img,x,y,w,h,label,light=true){
+if(!img.naturalWidth)return;round(d,x-16,y-16,w+32,h+32,12,light?C.pale:C.night);
+const s=Math.min(w/img.naturalWidth,h/img.naturalHeight),rw=img.naturalWidth*s,rh=img.naturalHeight*s;
+d.drawImage(img,x+(w-rw)/2,y+(h-rh)/2,rw,rh);
+txt(d,label,x,y+h+43,15,light?C.ink:C.mint,"mono");
+}
+function flow(d,t,x,y,w,h){
+let y1=y+h*.50;waves(d,t,x,y+10,x+w);
+for(let k=0;k<36;k++){let q=(t*.135+(k*.61803398875)%1)%1;let xx=mix(x,x+w,q),yy=y1+50*sin(q*PI*3+t*.4+k*.33);
+dot(d,xx,yy,2.1+(k%3)*.4,C.aqua,.2+.46*sin(PI*q))}
+}
+function stresser(d,t,x,y,w,h){
+const p=(t*.18)%1;plate(d,t,x,y,w,h,p);let cx=x+25+(w-50)*p;dot(d,cx,y+35,7,C.gold,.5);
+line(d,[[cx,y+16],[cx,y-31]],C.copper,2,.5);txt(d,"AIR–LIQUID INTERFACE",cx,y-46,16,C.gold,"mono",.65,"center");
+}
+function s0(d,t){bg(d,t);title(d,"The invisible injury",87,152,65,t,.2);title(d,"has a moving boundary.",87,228,58,t,1.35,C.gold);
+stresser(d,t,112,348,1048,190);txt(d,"A CULTURED CELL MONOLAYER · NOT A HUMAN LUNG",104,617,18,C.muted,"mono",out(seg(t,5,6)));
+txt(d,"The challenge crosses a surface in seconds.",103,653,20,C.pale,"serif",out(seg(t,8,9)));hud(d,t,0)}
+function s1(d,t){bg(d,t,true);let l=t-15;title(d,"Build a reproducible chamber.",79,145,56,t,15.2,C.ink);
+original(d,f1,150,184,975,368,"PUBLISHED FIGURE 1 / ORIGINAL CHAMBER, SYRINGE PUMP AND SCHEMATIC");
+let x=137+990*ease(seg(l,2,13));line(d,[[x,615],[x+50,615]],C.copper,4,.85);
+txt(d,"Upper coverslip · cell-seeded lower coverslip · spacer",100,650,16,C.ink,"mono",out(seg(l,5,6)));
+hud(d,t,1,true)}
+function s2(d,t){bg(d,t);let l=t-30;title(d,"The experiment is a moving interface.",80,142,51,t,30.2);
+flow(d,t,129,235,1022,233);stresser(d,t,132,327,1013,214);
+txt(d,"INTERFACE ADVANCES OVER 149 L2 EPITHELIAL CELLS",105,620,18,C.mint,"mono",out(seg(l,5,6)));
+txt(d,"Motion is conceptual · no calculated shear stress or velocity",104,653,16,C.muted,"mono",out(seg(l,8,9)));
+hud(d,t,2)}
+function s3(d,t){bg(d,t,true);let l=t-45;title(d,"Observe what survives.",87,145,62,t,45.2,C.ink);
+original(d,f5,113,242,1054,244,"ORIGINAL FIGURE 5 / CALCEIN GREEN, ETHIDIUM RED, ORIGINAL BAR GRAPH");
+let p=out(seg(l,2,8));line(d,[[164,522],[164+926*p,522]],C.copper,3,.7);
+txt(d,"CONTROL",132,593,21,C.green,"mono",out(seg(l,3,4)));
+txt(d,"BUBBLE EXPOSURE",756,593,21,C.copper,"mono",out(seg(l,4,5)));
+txt(d,"Real microscopy; the film does not create synthetic cell photographs.",95,648,16,C.ink,"serif");
+hud(d,t,3,true)}
+function s4(d,t){bg(d,t);let l=t-60;title(d,"The injury was measurable.",85,151,61,t,60.15);
+let p=out(seg(l,2,7));txt(d,"~53%",112,369,127,C.copper,"serif",p);txt(d,"bubble-exposed cell death",119,414,23,C.mint,"serif",p);
+line(d,[[622,223],[622,527]],C.muted,2,.5);
+txt(d,"0–0.2%",714,346,72,C.aqua,"serif",p);txt(d,"control cell death",718,398,23,C.pale,"serif",p);
+txt(d,"n = 7 EXPERIMENTS",114,554,21,C.gold,"mono",out(seg(l,6,7)));
+txt(d,"p < 0.01 (REPORTED T-TEST)",114,592,18,C.muted,"mono",out(seg(l,7,8)));
+txt(d,"Actual observed means are in the source Figure 5",108,647,18,C.mint,"serif",out(seg(l,8,9)));
+waves(d,t,815,455,1105);hud(d,t,4)}
+function s5(d,t){bg(d,t,true);let l=t-75;title(d,"Inside the cell.",86,143,64,t,75.2,C.ink);
+original(d,f6,130,211,1019,367,"ORIGINAL FIGURE 6 / F-ACTIN GREEN, DAPI NUCLEI BLUE");
+txt(d,"CONTROL AND BUBBLE-EXPOSED 149 L2 CELLS",107,648,16,C.ink,"mono",out(seg(l,5,6)));
+let x=136+1008*ease(seg(l,1,13));line(d,[[x,616],[x+36,616]],C.copper,4,.8);
+hud(d,t,5,true)}
+function s6(d,t){bg(d,t);let l=t-90;title(d,"Not every pattern is significant.",89,153,53,t,90.3);
+const left=173,right=845;for(let s=0;s<2;s++){let bx=s?right:left;
+round(d,bx,253,299,268,13,C.slate);
+for(let k=0;k<16;k++){let px=bx+26+k*17.3;
+ const q=(t*.21+k*.1)%1;line(d,[[px,294],[px+4*sin(t*.3+k),482]],C.green,3,.25+.28*q)}
+for(let k=0;k<8;k++){let px=bx+25+k*34,yy=365+16*sin(k+t*.16);dot(d,px,yy,12,C.blue,.44)}
+txt(d,s?"BUBBLE":"CONTROL",bx+149,558,19,C.mint,"mono",1,"center");
+}
+txt(d,"NO STATISTICALLY SIGNIFICANT DIFFERENCE IN ACTIN ORGANIZATION",92,617,19,C.gold,"mono",out(seg(l,5,6)));
+txt(d,"Conceptual actin illustration; actual results are in Figure 6",93,651,15,C.muted,"mono",out(seg(l,8,9)));
+hud(d,t,6)}
+function s7(d,t){bg(d,t);let l=t-105;title(d,"The chamber captures an event.",89,150,55,t,105.2);
+title(d,"Not the entire lung.",89,227,58,t,106.3,C.gold);
+stresser(d,t,147,357,978,169);
+txt(d,"REPRODUCIBLE IN-VITRO MODEL ≠ CLINICAL VENTILATION PREDICTION",97,614,17,C.muted,"mono",out(seg(l,5,6)));
+txt(d,"Shurbaji et al. · Methods and Protocols (2020) · 10.3390/mps3040065",98,652,15,C.mint,"mono",out(seg(l,7,8)));
+hud(d,t,7)}
+const scenes=[s0,s1,s2,s3,s4,s5,s6,s7];
+function paint(c,i,t){c.save();scenes[i](c,t);c.restore()}
+function draw(t){t=clamp(t,0,DURATION-1/FPS);let i=7;for(let k=0;k<8;k++)if(t>=B[k]&&t<B[k+1]){i=k;break}
+let tr=-1;for(let k=1;k<8;k++)if(t>=B[k]-.38&&t<B[k]+.38){tr=k;break}
+o.setTransform(1.5,0,0,1.5,0,0);if(tr<0){paint(ctx[0],i,t);o.drawImage(buffers[0],0,0);return}
+paint(ctx[0],tr-1,t);paint(ctx[1],tr,t);let p=ease(seg(t,B[tr]-.38,B[tr]+.38));
+o.drawImage(buffers[0],0,0);o.save();o.beginPath();
+if(tr%2)o.arc(640,370,Math.hypot(W,H)*p,0,TAU);
+else{let xx=(W+150)*p-75;o.moveTo(0,0);o.lineTo(xx,0);o.lineTo(xx-110,H);o.lineTo(0,H);o.closePath()}
+o.clip();o.drawImage(buffers[1],0,0);o.restore()}
+window.__meta={W:1920,H:1080,FPS,DURATION,title:"How to Make a Reproducible Injury",doi:"10.3390/mps3040065"};
+window.__draw=t=>{draw(t);return t};window.__ready=false;
+Promise.all([document.fonts.ready,...[f1,f5,f6].map(img=>new Promise((ok,fail)=>{
+if(img.complete&&img.naturalWidth>0)return ok();img.addEventListener("load",ok,{once:true});img.addEventListener("error",()=>fail(Error("Primary figure missing "+img.id)),{once:true})}))])
+.then(()=>{window.__ready=true;draw(0)}).catch(e=>window.__renderError=String(e));
+let playing=false,started=0;function tick(now){if(!playing)return;let t=(now-started)/1000;
+if(t>=DURATION){playing=false;draw(DURATION-.1);return}draw(t);requestAnimationFrame(tick)}
+document.addEventListener("click",()=>{playing=!playing;if(playing){started=performance.now();requestAnimationFrame(tick)}});
+</script></body></html>
