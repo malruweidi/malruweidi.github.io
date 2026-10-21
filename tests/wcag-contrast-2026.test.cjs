@@ -15,7 +15,8 @@ test("contrast fixes are source-preserving opt-in CSS shared by the seven affect
   assert.ok(page.includes("<main"),"main unchanged on "+p);
  }
  const css=read("assets/wcag-contrast-2026.css");
- for(const s of [".geo-source",".rx26-figures > figure > figcaption",
+ assert.match(css,/html\[data-rx-page="archive"\]/,"styles are page-scoped");
+ for(const s of [".geo-source",".rx26-figures figure figcaption",
   ".rx-freshman-archive-inner > .mini",".rx-result-category",
   ".rx16-kicker","#count",".rx-series-kicker"]){
   assert.ok(css.includes(s),"source-specified accessibility selector "+s);
@@ -24,11 +25,11 @@ test("contrast fixes are source-preserving opt-in CSS shared by the seven affect
 });
 test("audited text colors achieve at least 4.5:1 against measured light backgrounds",()=>{
  for(const [fg,bg] of [
-  ["#8a4a37","#f6f3eb"],["#87513b","#e8eee6"],["#4b605b","#f6f3eb"],
-  ["#50655e","#f6f3eb"],["#3e595b","#e3e8e1"],["#465f61","#f7f5ee"],
-  ["#425e5d","#ecf0e8"],["#7d4231","#edf0e9"],["#854a36","#f4f1e9"],
-  ["#486164","#f5f3ea"],["#52615e","#f5f3ea"],["#83452e","#e6ece5"],
-  ["#4e655d","#f7f5ee"],["#87533d","#f7f5ee"]]){
+  ["#87412f","#f6f3eb"],["#864a35","#e8eee6"],["#465b56","#f6f3eb"],
+  ["#435e60","#e3e8e1"],["#465b56","#f7f5ee"],
+  ["#355653","#ecf0e8"],["#87412f","#edf0e9"],["#87412f","#f4f1e9"],
+  ["#465b56","#f5f3ea"],["#7c4232","#e6ece5"],
+  ["#465b56","#f7f5ee"],["#87412f","#f7f5ee"]]){
   assert.ok(contrast(fg,bg)>=4.5,fg+" / "+bg+" is too faint");
  }
 });
