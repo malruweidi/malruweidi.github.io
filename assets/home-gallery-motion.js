@@ -10,6 +10,7 @@
       toggle.setAttribute('aria-pressed', String(paused));
       toggle.textContent = paused ? 'Resume moving figures' : 'Pause moving figures';
     });
+    toggle.hidden = false;
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init, {once:true});
