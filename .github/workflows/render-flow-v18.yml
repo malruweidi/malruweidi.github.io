@@ -1,0 +1,104 @@
+name: Film 10 | Moving airway interface documentary
+
+on:
+  push:
+    branches:
+      - cinema/flow-chamber-v18-airway-interface
+    paths:
+      - assets/films/series-v18-flow/film.html
+      - scripts/render-flow-v18.py
+      - tests/flow-v18.test.py
+      - .github/workflows/render-flow-v18.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: single-film10-flow-v18-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  film10-review-cut:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - name: Check out original 2020 paper figures and preserved 120s narration
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install reproducible no-cost Chromium FFmpeg rendering stack
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check pillow playwright numpy soundfile
+          python -m playwright install --with-deps chromium
+      - name: Validate original figure integrity and 8 moving reproducible chapters
+        run: |
+          python -m py_compile scripts/render-flow-v18.py tests/flow-v18.test.py
+          python scripts/render-flow-v18.py --validate-only
+          python tests/flow-v18.test.py
+      - name: Render full 120-second film at native 1920x1080 24fps
+        run: python -u scripts/render-flow-v18.py
+      - name: Independent check of source claims, encoded motion, captions and loudness
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib,subprocess
+          root=Path("assets/films/series-v18-flow")
+          master=root/"flow-chamber-method.mp4"
+          data=json.loads((root/"flow-chamber-method.json").read_text())
+          ff=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(master)]))
+          assert abs(float(ff["format"]["duration"])-120)<.15
+          assert {"video","audio"}<={s["codec_type"] for s in ff["streams"]}
+          assert any(s.get("codec_name")=="h264" and s.get("width")==1920 and s.get("height")==1080 for s in ff["streams"])
+          assert data["film_index"]==10 and data["primary_study"]["doi"]=="10.3390/mps3040065"
+          assert [p["figure"] for p in data["complete_source_figures"]]==[1,5,6]
+          for p in data["complete_source_figures"]:
+            assert hashlib.sha256(Path(p["path"]).read_bytes()).hexdigest()==p["sha256"]
+          exp=data["published_results"]
+          assert exp["death_after_bubble_percent_approx"]==53
+          assert exp["death_control_percent_range"]==[0,0.2]
+          assert exp["experimental_repetitions"]==7
+          assert exp["single_bubble_actin_organization_significant"] is False
+          assert data["earlier_versions_preserved"] and data["live_website_unchanged"]
+          assert hashlib.sha256(master.read_bytes()).hexdigest()==data["sha256"]
+          assert (root/"flow-chamber-method.vtt").read_text().count("-->")>=30
+          assert (root/"flow-chamber-method.contact.webp").stat().st_size>25000
+          assert (root/"flow-chamber-method.webp").stat().st_size>7000
+          assert len(list(root.glob("chapter-??.jpg")))==8
+          frames=subprocess.check_output(["ffmpeg","-v","error","-i",str(master),
+            "-map","0:v:0","-an","-vf","fps=1","-f","framemd5","-"],text=True)
+          hashes=[q.rsplit(",",1)[-1].strip() for q in frames.splitlines() if q and not q.startswith("#")]
+          assert 119<=len(hashes)<=121,len(hashes)
+          assert len(set(hashes))>=115,(len(set(hashes)),len(hashes))
+          print("FILM10 VERIFIED VIDEO-ONLY TEMPORAL FRAMES",len(set(hashes)),"/",len(hashes))
+          audio=subprocess.run(["ffmpeg","-hide_banner","-i",str(master),
+            "-map","0:a:0","-filter_complex","ebur128=peak=true","-f","null","-"],
+            capture_output=True,text=True)
+          assert audio.returncode==0
+          print("FILM10 EBU R128",audio.stderr[-1500:])
+          PY
+      - name: Commit verified review master to isolated branch and retain all existing films
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Ruwaidix Research Cinema"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          render_source_hash="$(git hash-object scripts/render-flow-v18.py)"
+          mkdir -p /tmp/flow-v18-output
+          cp -a assets/films/series-v18-flow/. /tmp/flow-v18-output/
+          git fetch origin cinema/flow-chamber-v18-airway-interface
+          current_hash="$(git show origin/cinema/flow-chamber-v18-airway-interface:scripts/render-flow-v18.py | git hash-object --stdin)"
+          if [ "$render_source_hash" != "$current_hash" ]; then
+            echo "Newer source renderer exists; do not push a stale binary"; exit 0
+          fi
+          git reset --hard origin/cinema/flow-chamber-v18-airway-interface
+          cp -a /tmp/flow-v18-output/. assets/films/series-v18-flow/
+          git add assets/films/series-v18-flow/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Film 10: reproduce the airway-reopening flow chamber in native 1080p cinematic motion"
+          git push origin HEAD:cinema/flow-chamber-v18-airway-interface
