@@ -62,7 +62,7 @@ function resolveUrl(root,page,url){
 function auditFigures(root){
  const pages={};
  const stats={pagesExamined:0,figureElements:0,figureImages:0,missingAltAttributes:0,
-  decorativeEmptyAlt:0,figuresWithoutCaptions:0,missingLocalImageReferences:0};
+  decorativeEmptyAlt:0,figuresWithoutCaptions:0,figuresWithoutCaptionsOrAccessibleLabels:0,missingLocalImageReferences:0};
  for(const page of htmlFiles(root)){
   const html=fs.readFileSync(path.join(root,page),"utf8");
   const offsets=lines(html);
@@ -81,13 +81,17 @@ function auditFigures(root){
     if(resolveUrl(root,page,u)==="local-missing")stats.missingLocalImageReferences++;
    }
    const cap=/<figcaption\b[^>]*>([\s\S]*?)<\/figcaption>/i.exec(chunk);
+   const firstTag=chunk.match(/^<figure\b[^>]*>/i)?.[0]||"";
+   const labelledBy=attr(firstTag,"aria-labelledby"),directLabel=attr(firstTag,"aria-label");
+   const equivalent=Boolean((labelledBy&&labelledBy.split(/\s+/).every(id=>source.includes('id="'+id+'"')))||(directLabel&&directLabel.trim()));
    if(!cap)stats.figuresWithoutCaptions++;
+   if(!cap&&!equivalent)stats.figuresWithoutCaptionsOrAccessibleLabels++;
    const doi=[...chunk.matchAll(/https?:\/\/doi\.org\/(10\.[0-9]{4,9}\/[^\s"'<>]+)/gi)]
     .map(d=>d[1].replace(/&amp;/g,"&").replace(/[.,;]$/,""));
    const anchorCount=(chunk.match(/<a\b/g)||[]).length;
    figures.push({
     figureOrdinal:figures.length+1,sourceOffset:m.index,sourceLine:lineAt(m.index,offsets),
-    captionPresent:!!cap,captionExcerpt:cap?cleanse(cap[1]):null,
+    captionPresent:!!cap,hasEquivalentLabel:equivalent,captionExcerpt:cap?cleanse(cap[1]):null,
     figureImages:imgs,paperIdentifiers:[...new Set(doi)],
     contextLinkCount:anchorCount
    });
@@ -111,7 +115,7 @@ if(require.main===module){
   for(const [page,entry] of Object.entries(data.pages)){
    for(const figure of entry.figures){
     const problems=[];
-    if(!figure.captionPresent)problems.push("figure-without-figcaption");
+    if(!figure.captionPresent&&!figure.hasEquivalentLabel)problems.push("figure-without-caption-or-accessible-label");
     if(figure.figureImages.some(x=>x.altText===null))problems.push("image-missing-alt-attribute");
     if(figure.figureImages.some(x=>x.availability==="local-missing"))problems.push("missing-local-image-file");
     if(problems.length)issues.push({page,ordinal:figure.figureOrdinal,line:figure.sourceLine,
