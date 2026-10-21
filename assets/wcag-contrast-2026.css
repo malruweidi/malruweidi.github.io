@@ -58,6 +58,7 @@ html[data-rx-page="film"] .rx-series-kicker{
  */
 html[data-rx-page="stories"] .rx26-figures > figure > figcaption{
   color:#435e60!important;
+  opacity:1 !important;
 }
 html[data-rx-page="illness-evidence"] #rx16-diagnosis-photo .rx16-heading > .rx16-kicker{
   color:#465b56!important;
