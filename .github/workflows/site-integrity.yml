@@ -81,3 +81,5 @@ jobs:
         run: node --test tests/film-evidence-threads-2026.test.cjs
       - name: Verify reproducible source-level photographic and video placement inventory
         run: node --test tests/media-placement-inventory.test.cjs
+      - name: Guard original story photographs and source-context routes
+        run: node --test tests/story-archive-photographic-context.test.cjs
