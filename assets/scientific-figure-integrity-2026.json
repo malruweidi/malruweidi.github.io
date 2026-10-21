@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "created": "2026-10-21",
+  "scope": "SHA identities from source repository tree protect stored bytes; this is not a figure-level scientific provenance, license, permissions, raw-data, microscopy authentication, exact-publisher-panel, or reproduction-rights verification. Do not imply that a paper DOI proves an identical local figure.",
+  "entries": [
+    {
+      "id": "pulmonary",
+      "path": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "size_bytes": 355119,
+      "git_blob_sha1": "d1f6b32e3591a7e88207ea9b713fac6805f4aca8",
+      "image_role": "Archived research image contextualizing the flow chamber and airway reopening",
+      "cited_paper_identified": true,
+      "paper_doi": "10.1152/japplphysiol.00574.2020",
+      "source_context": "2021 Journal of Applied Physiology in-vitro alveolar epithelial cell work, parallel-plate chamber and single bubble propagation",
+      "citation_status": "Source publication independently identifiable; stored image-to-figure/panel correspondence pending",
+      "panel_provenance_verified": false,
+      "exact_figure_legend_checked": false
+    },
+    {
+      "id": "zebrafish",
+      "path": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "size_bytes": 312037,
+      "git_blob_sha1": "70712d36ea9a2fc50e530a9ace5471d4a5f9aeeb",
+      "image_role": "Archived microscopy image in vascular-development context, not proof of a particular Ramadan laboratory session",
+      "cited_paper_identified": true,
+      "paper_doi": "10.1161/ATVBAHA.118.311231",
+      "source_context": "2018 ATVB collaborative endothelial cilia and developing cerebral vasculature study",
+      "citation_status": "Source publication independently identifiable; stored image-to-figure/panel correspondence pending",
+      "panel_provenance_verified": false,
+      "exact_figure_legend_checked": false
+    },
+    {
+      "id": "surfaces",
+      "path": "assets/home-archive/figure-pla-surface.jpg",
+      "size_bytes": 269662,
+      "git_blob_sha1": "b4bd72b0f57e8004d0cbf82d6dcd92e5cb2a82eb",
+      "image_role": "Archived PLA surface morphology research image",
+      "cited_paper_identified": true,
+      "paper_doi": "10.3390/polym13213717",
+      "source_context": "2021 Polymers paper's Figure 5 reports comparative SEM panels of untreated, plasma-treated, ASA- and FA-grafted PLA",
+      "citation_status": "Paper and SEM figure numbered 5 verified; exact local-image panel composition remains unchecked",
+      "panel_provenance_verified": false,
+      "exact_figure_legend_checked": false
+    },
+    {
+      "id": "chemistry",
+      "path": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "size_bytes": 68915,
+      "git_blob_sha1": "05f658f81f63fe0811699dd686955a232be97e36",
+      "image_role": "Archived optical sensing image associated by the website with imine research",
+      "cited_paper_identified": false,
+      "paper_doi": null,
+      "project_record": "/grants/urep23.html",
+      "separate_related_paper": "10.1039/C9AY01557D",
+      "source_context": "Separate 2019 RSC Analytical Methods paper concerns curcumin and cyanide, not an established attribution for this stored image",
+      "citation_status": "Image-to-publication assignment unverified; no unique figure/panel identification or rights inference",
+      "panel_provenance_verified": false,
+      "exact_figure_legend_checked": false
+    }
+  ]
+}
