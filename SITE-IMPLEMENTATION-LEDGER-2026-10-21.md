@@ -150,6 +150,20 @@ An [x] means the source-level change is committed in draft PR #84, **not** that 
 - Preserve all older editions in the source archive; choose the public edition only after visual and scientific review and a working fallback.
 - Do not merge competing film PRs en masse: there are many overlapping open editions. Evaluate one title at a time and record the chosen canonical cut.
 
+### Full-site figure scan and accessible context triage
+
+The 21 October source audit covered **62 HTML pages, 180 `<figure>` elements and 152 `<img>` references inside figures** at its recorded branch snapshot. It found **zero** missing local image references, **zero** missing `alt` attributes in figure images, and **14** figures without a literal `<figcaption>` element. This is structural coverage, not pixel-level inspection or a comprehensive accessibility certification.
+
+The 14 candidates were triaged rather than automatically given duplicate visible captions:
+
+- Eight archive objects already had real headings and descriptive paragraphs immediately alongside their images. Those figures now use compact `aria-labelledby` references to their **unchanged** adjacent `<h3>` headings.
+- Three homepage 2015 photographic records already had descriptive titles and dated archive text **inside the existing figure cards**. The `<figure>` elements now reference those unchanged visible titles using `aria-labelledby`; no new text or layout change was introduced.
+- Three older embedded figures in `full-record.html` remain without a confirmed equivalent caption. They are not silently rewritten: their inline data, source figure provenance and location must first be inspected at the actual rendered pixel level. The image-specific review is explicitly outstanding.
+
+`scripts/audit-figure-archive-2026.cjs --issues` now distinguishes figures that have neither `<figcaption>` **nor** an accessible figure label from figures using a valid nearby heading. Its output is non-mutating, source-position-aware and safe to inspect without exposing long inline image data.
+
+**Merge-integration limitation:** The public `main` branch has concurrent filmmaking updates, with new V9–V22 primary cinema selections. The existing site-wide integrity script retains an older five-film V8-only selection assertion. As a result, GitHub's synthetic PR merge fails that **film-release rule** even when the preservation and scientific-figure checks succeed. This is not a reason to overwrite the newer films or weaken factual checks. A separate `.github/workflows/scientific-figure-source-integrity-2026.yml` runs scientific/figure integrity independently against the proposed merge. The main-integrity failure must be reconciled using the correct canonical movie editions before this draft PR can merge.
+
 ## Required release gates before merging
 1. CI: existing site-integrity checks plus the new editorial/media inventory tests pass on the **latest head SHA**.
 2. Browser: real views at 320, 375, 768, 1024 and 1440px; keyboard, touch, zoom, EN/Arabic RTL, reduced motion, video fallback, direct anchor navigation and screen-reader landmarks.
