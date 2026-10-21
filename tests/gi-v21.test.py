@@ -24,7 +24,7 @@ with sync_playwright() as p:
     page.on("pageerror",lambda e:errors.append(str(e)))
     page.goto(HTML.resolve().as_uri(),wait_until="load")
     page.wait_for_function("window.__ready === true",timeout=30000)
-    dims=page.evaluate("[...document.querySelectorAll('.src')].map(x=>[x.id,x.naturalWidth,x.naturalHeight])")
+    dims=page.evaluate("[...document.querySelectorAll('.archive')].map(x=>[x.id,x.naturalWidth,x.naturalHeight])")
     assert len(dims)==2 and all(w>200 and h>130 for _,w,h in dims),dims
     md=page.evaluate("window.__meta")
     assert [md[k] for k in ("W","H","FPS","DURATION")]==[1920,1080,24,84]
