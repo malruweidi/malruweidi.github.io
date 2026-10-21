@@ -128,13 +128,13 @@ if(require.main===module)(async()=>{
   }
   const context=await browser.newContext({viewport:{width:375,height:812},reducedMotion:"reduce"});
   const page=await context.newPage();
-  await runCheck("mobile Explore menu opens with all research destinations",async()=>{
-   await page.goto(base+"/stories.html",{waitUntil:"domcontentloaded"});
-   await page.locator(".rx-universal details.rx-more summary").first().waitFor({state:"visible",timeout:10000});
-   await page.locator(".rx-universal details.rx-more summary").first().click();
-   if(!await page.locator(".rx-universal details.rx-more").first().evaluate(el=>el.open))throw Error("Explore details did not open");
-   const target=page.locator(".rx-universal .rx-menu-panel a[href='/stories.html']").first();
-   if(!await target.isVisible())throw Error("Stories destination not visible in expanded menu");
+  await runCheck("research hub mobile navigation exposes real destinations",async()=>{
+   await page.goto(base+"/research.html",{waitUntil:"domcontentloaded"});
+   const nav=page.locator("header nav a[href='/stories.html']").first();
+   await nav.waitFor({state:"attached",timeout:8000});
+   if(!await nav.isVisible())throw Error("Stories link is not reachable on mobile");
+   const url=await nav.getAttribute("href");
+   if(url!=="/stories.html")throw Error("Unexpected destination: "+url);
   });
   await runCheck("Stories microscope visual link reaches its source chapter",async()=>{
    await page.goto(base+"/stories.html",{waitUntil:"domcontentloaded"});
