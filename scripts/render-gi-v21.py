@@ -98,7 +98,7 @@ def render():
                 page.wait_for_function("window.__ready === true",timeout=30000)
                 meta=page.evaluate("window.__meta")
                 assert (meta["W"],meta["H"],meta["FPS"],meta["DURATION"])==(W,H,FPS,DURATION)
-                images=page.evaluate("[...document.querySelectorAll('.src')].map(i=>[i.id,i.naturalWidth,i.naturalHeight])")
+                images=page.evaluate("[...document.querySelectorAll('.archive')].map(i=>[i.id,i.naturalWidth,i.naturalHeight])")
                 assert len(images)==2 and all(x>220 and y>100 for _,x,y in images),images
                 for n in range(FPS*DURATION):
                     t=n/FPS
