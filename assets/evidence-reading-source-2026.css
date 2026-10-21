@@ -1,0 +1,61 @@
+/* Scientific figure provenance, 21 October 2026.
+ * Additive, scoped to the existing image reader and approved Ruwaidix palette.
+ * The original photos and figures remain unchanged; no overlays on data.
+ */
+html[data-rx-page="evidence-reader"] .ev-source-status{
+  display:inline-flex;gap:9px;align-items:baseline;flex-wrap:wrap;
+  margin:0 0 9px;padding:6px 10px;
+  border:1px solid #b7c8bf;background:#f2f5ed;color:#274b46;
+  font:600 11px/1.55 "DM Mono",ui-monospace,monospace;
+  letter-spacing:.01em;
+}
+html[data-rx-page="evidence-reader"] .ev-source-status[data-verification="pending"]{
+  background:#f8f1e9;color:#774b34;border-color:#d5b99e;
+}
+html[data-rx-page="evidence-reader"] .ev-source-note{
+  margin:9px 0 18px;padding:0 0 0 16px;
+  border-inline-start:3px solid #9fbcb0;
+  border-left:0;
+  max-width:65ch;
+  font:400 13px/1.78 "DM Sans",system-ui,sans-serif;
+  color:#49615c;
+}
+html[data-rx-page="evidence-reader"] .ev-source-note[data-verification="pending"]{
+  border-inline-start-color:#bb9a7f;
+}
+html[data-rx-page="evidence-reader"] .ev-source-note a,
+html[data-rx-page="evidence-reader"] .ev-verify-link,
+html[data-rx-page="evidence-reader"] .ev-open-original{
+  color:#914833;text-decoration:underline;text-underline-offset:4px;
+  overflow-wrap:anywhere;
+}
+html[data-rx-page="evidence-reader"] .ev-source-note a:hover,
+html[data-rx-page="evidence-reader"] .ev-open-original:hover,
+html[data-rx-page="evidence-reader"] .ev-verify-link:hover{color:#17343b}
+html[data-rx-page="evidence-reader"] .ev-source-note a:focus-visible,
+html[data-rx-page="evidence-reader"] .ev-open-original:focus-visible,
+html[data-rx-page="evidence-reader"] .ev-verify-link:focus-visible{
+  outline:3px solid #994c36;outline-offset:4px;
+}
+html[data-rx-page="evidence-reader"] .ev-verify-link{
+  display:inline-block;margin-top:8px;font-weight:650;
+}
+html[data-rx-page="evidence-reader"] .ev-caution .ev-source-scope{
+  max-width:76ch;border-top:1px solid #c3d3c9;
+  padding-top:18px;margin-top:22px;
+  font:400 14px/1.82 "DM Sans",system-ui,sans-serif;
+}
+@media(max-width:600px){
+  html[data-rx-page="evidence-reader"] .ev-source-note{
+    font-size:13px;padding-inline-start:12px;margin:10px 0 18px;
+  }
+  html[data-rx-page="evidence-reader"] .ev-source-status{
+    display:flex;max-width:100%;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  html[data-rx-page="evidence-reader"] .ev-source-status,
+  html[data-rx-page="evidence-reader"] .ev-source-note{
+    transition:none!important;
+  }
+}
