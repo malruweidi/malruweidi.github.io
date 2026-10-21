@@ -1,4 +1,4 @@
-name: Film 15 | Immune Interface V21
+name: Film 15 | Heart Failure Sensors V23
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - assets/films/series-v23-heart/SOURCE_NOTES.md
       - scripts/render-heart-v23.py
       - tests/heart-v23.test.py
-      - .github/workflows/render-gut-diagnostics-v22.yml
+      - .github/workflows/render-heart-v23.yml
 
 permissions:
   contents: write
@@ -19,7 +19,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  film13:
+  film15:
     runs-on: ubuntu-latest
     timeout-minutes: 65
     steps:
