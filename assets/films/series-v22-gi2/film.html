@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>The Diagnostic Problem — Film 14 | Ruwaidix Cinema</title>
+<style>html,body{margin:0;background:#0b1925;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}.sr{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.archive{position:absolute;left:-9999px;width:1px;height:1px}</style></head><body>
+<h1 class="sr">The Diagnostic Problem — chapter two of gastrointestinal autoimmune and immune-mediated disorders, diagnostic markers and treatment evidence</h1>
+<img id="bench" class="archive" src="../../research-archive-2026/biological-safety-cabinet-workspace.webp" alt="Genuine research laboratory image, not endoscopy or patient diagnostic imaging">
+<img id="flask" class="archive" src="../../owner-archive-2026-10-16/cell-culture-flask-archive.webp" alt="Owner lab archive photo, not a patient biopsy or GI clinical specimen">
+<img id="pipette" class="archive" src="../../research-archive-2026/molecular-biology-pipette-workbench.webp" alt="Research workbench, not an original endoscopy or test result">
+<canvas id="screen" width="1920" height="1080" role="img" aria-label="Time-based animated documentary of differential GI diagnostics, autoantibody markers and test limits, conceptual AI image interpretation, food interventions and condition-specific treatments; no patient footage or individual medical advice"></canvas>
+<script>"use strict";
+// Film14: 2022 narrative review, not contemporary clinical guideline.
+// All biological, serological, artificial-intelligence and endoscopy graphics
+// are nonquantitative *illustrations*, never real patient data or measured traces.
+// No simulated image is claimed as a source clinical scan or pathology specimen.
+const W=1280,H=720,FPS=24,DURATION=84,PI=Math.PI,TAU=PI*2,B=[0,14,28,42,56,70,84];
+const C={ink:"#0b1925",night:"#122a35",deep:"#1c3540",mid:"#274853",
+ mint:"#99d9c2",aqua:"#7bb8c8",white:"#f5f1e7",soft:"#d2ddd6",muted:"#a2b8b9",
+ amber:"#e6b57b",copper:"#d78270",violet:"#b4a2d4",rose:"#e2a6a5",
+ paper:"#ede9dc",dark:"#273a42",stone:"#66818a",red:"#af5963",green:"#7aa997"};
+const im=[document.getElementById("bench"),document.getElementById("flask"),document.getElementById("pipette")];
+const canvas=document.getElementById("screen"),v=canvas.getContext("2d",{alpha:false}),
+buffers=[document.createElement("canvas"),document.createElement("canvas")];buffers.forEach(b=>{b.width=W;b.height=H});const G=buffers.map(b=>b.getContext("2d",{alpha:false}));
+const sin=Math.sin,cos=Math.cos,clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),mix=(x,y,p)=>x+(y-x)*p,seg=(t,a,b)=>clamp((t-a)/(b-a)),ease=p=>{p=clamp(p);return p*p*(3-2*p)},out=p=>1-Math.pow(1-clamp(p),3);
+function rect(d,x,y,w,h,c){d.fillStyle=c;d.fillRect(x,y,w,h)}
+function line(d,points,c,w=2,a=1){d.save();d.globalAlpha=clamp(a);d.beginPath();d.moveTo(...points[0]);for(let j=1;j<points.length;j++)d.lineTo(...points[j]);d.strokeStyle=c;d.lineWidth=w;d.lineCap="round";d.lineJoin="round";d.stroke();d.restore()}
+function dot(d,x,y,r,c,a=1){d.save();d.globalAlpha=clamp(a);d.beginPath();d.arc(x,y,Math.max(.2,r),0,TAU);d.fillStyle=c;d.fill();d.restore()}
+function circle(d,x,y,r,c,w=2,a=1){d.save();d.globalAlpha=clamp(a);d.beginPath();d.arc(x,y,Math.max(1,r),0,TAU);d.strokeStyle=c;d.lineWidth=w;d.stroke();d.restore()}
+function round(d,x,y,w,h,r,c){d.beginPath();d.roundRect(x,y,w,h,r);d.fillStyle=c;d.fill()}
+function text(d,s,x,y,size=19,color=C.white,kind="sans",alpha=1,align="left"){d.save();d.globalAlpha=clamp(alpha);d.font=size+"px "+(kind==="serif"?"Georgia,serif":kind==="mono"?"monospace":"Arial,sans-serif");d.fillStyle=color;d.textAlign=align;d.textBaseline="alphabetic";d.fillText(s,x,y);d.restore()}
+function heading(d,s,x,y,size,t,start,col=C.white){const p=out(seg(t,start,start+.9));d.save();d.beginPath();d.rect(x-2,y-size*1.4,1100,(size+36)*p);d.clip();text(d,s,x,y+15*(1-p),size,col,"serif");d.restore()}
+function bg(d,t,light=false){rect(d,0,0,W,H,light?C.paper:C.ink);const gr=d.createRadialGradient(light?280:860,285,30,light?280:860,285,860);gr.addColorStop(0,light?"rgba(177,150,129,.12)":"rgba(102,176,174,.13)");gr.addColorStop(1,"rgba(0,0,0,0)");rect(d,0,0,W,H,gr);for(let i=0;i<8;i++){let x=99+i*159+8*sin(t*.18+i);line(d,[[x,60],[x-9,674]],light?C.stone:C.mid,1,.1)}}
+function footer(d,t,scene,light=false){const c=light?C.dark:C.muted;line(d,[[70,62],[1208,62]],c,1,.26);text(d,"RUWAIDIX / DIAGNOSIS & UNCERTAINTY",73,43,13,c,"mono");text(d,"FILM 14 / GI AUTOIMMUNITY PART II",1205,43,13,c,"mono",1,"right");line(d,[[72,685],[1205,685]],c,1,.30);line(d,[[72,685],[72+1133*t/84,685]],light?C.copper:C.amber,3);text(d,('0'+(scene+1)).slice(-2)+" / 06",76,661,14,c,"mono")}
+function tracer(d,x,y,X,Y,t,c=C.mint,count=7,sp=.15){line(d,[[x,y],[X,Y]],c,1.8,.4);for(let i=0;i<count;i++){let p=(t*sp+i/count)%1;dot(d,mix(x,X,p),mix(y,Y,p)+5*sin(p*TAU+t*.42+i),3,c,.14+.67*sin(PI*p))}}
+function microscopy(d,t,cx,cy,w,h,injury=.1){
+ // Clearly labelled *conceptual pattern only*, not histology/endoscopy.
+ round(d,cx-w/2,cy-h/2,w,h,16,C.deep);
+ d.save();d.beginPath();d.roundRect(cx-w/2+8,cy-h/2+8,w-16,h-16,13);d.clip();
+ for(let k=0;k<26;k++){let ang=k*2.3999632297,rr=(k*47)%Math.min(w/2,h/2),x=cx+rr*cos(ang)+3*sin(t*.24+k),y=cy+rr*sin(ang)+2*cos(t*.27+k);
+ dot(d,x,y,8+(k%5)*2,k%3?C.mint:C.violet,.18+.25*sin(t*.4+k));
+ if(k%4===0)circle(d,x,y,14,C.rose,1,.22);}
+ for(let j=0;j<7;j++){const yy=cy-h*.26+j*h*.09;let p=[];for(let a=0;a<48;a++){let q=a/47;p.push([cx-w*.46+w*.92*q,yy+7*sin(q*TAU*2+t*.11+j)])}line(d,p,injury>.5?C.copper:C.aqua,3,.3);}
+ d.restore();}
+function endoscopic(d,t,x,y,r=120){
+ // An abstract lumen ring, NOT a generated actual clinical image.
+ d.save();d.translate(x,y);
+ for(let k=5;k>=0;k--){let rr=r*(.22+k*.165),angle=t*.28+k*.19;circle(d,11*sin(angle),8*cos(angle),rr,k%2?C.rose:C.amber,4,.12+.09*(5-k));}
+ const p=t*.13;for(let k=0;k<38;k++){let q=(p+(k*.61803399)%1)%1,a=k*TAU/38+t*.10;
+ dot(d,cos(a)*r*q,sin(a)*r*q,2.1+(k%3),C.mint,.08+.44*sin(PI*q));}
+ circle(d,0,0,r*.93,C.mint,2,.58);circle(d,0,0,r*.31,C.rose,5,.55);
+ d.restore();
+}
+function microIcon(d,x,y,t,kind){
+ if(kind===0){for(let k=0;k<6;k++){let a=k*TAU/6+t*.07;dot(d,x+29*cos(a),y+29*sin(a),5,C.violet,.45);}circle(d,x,y,21,C.mint,3,.6)}
+ else if(kind===1){endoscopic(d,t,x,y,34)}
+ else if(kind===2){microscopy(d,t,x,y,97,70,.35)}
+}
+function photo(d,img,x,y,w,h,t,caption){
+ let iw=img.naturalWidth,ih=img.naturalHeight;if(!iw||!ih)return;
+ d.save();d.beginPath();d.roundRect(x,y,w,h,10);d.clip();let s=Math.max(w/iw,h/ih)*1.035,ww=iw*s,hh=ih*s;d.drawImage(img,x+(w-ww)/2+7*sin(t*.23),y+(h-hh)/2+5*cos(t*.19),ww,hh);rect(d,x,y,w,h,"rgba(9,25,31,.22)");d.restore();text(d,caption,x,y+h+28,13,C.muted,"mono");
+}
+function antibody(d,x,y,t,s=1,c=C.amber){
+ d.save();d.translate(x,y);d.scale(s,s);d.rotate(.12*sin(t*.27+x*.03));
+ line(d,[[0,22],[0,-2],[-19,-25]],c,5,.85);line(d,[[0,-2],[19,-25]],c,5,.85);
+ dot(d,-20,-27,4,C.mint,.85);dot(d,20,-27,4,C.mint,.85);d.restore();
+}
+function pathNodes(d,t,nodes,connections){
+ for(let [a,b] of connections){let A=nodes[a],B=nodes[b];tracer(d,A.x,A.y,B.x,B.y,t,C.amber,5,.13)}
+ for(let n of nodes){round(d,n.x-n.w/2,n.y-35,n.w,70,11,C.deep);dot(d,n.x-n.w/2+19,n.y,7,n.c,.86);text(d,n.title,n.x-n.w/2+36,n.y+7,n.size||17,C.white,"mono");}}
+function scene0(d,t){
+ bg(d,t);heading(d,"One symptom.",85,148,74,t,.2);heading(d,"Many possible causes.",85,231,69,t,1.25,C.amber);
+ const names=["IMMUNE","INFLAMMATORY","INFECTIOUS","FUNCTIONAL"],colors=[C.mint,C.copper,C.violet,C.aqua];
+ for(let k=0;k<4;k++){
+ let x=91+k*299,q=out(seg(t,2.3+k*.43,3.5+k*.43));
+ round(d,x,331,272,221,12,C.deep);
+ microIcon(d,x+136,402,t+k,k%3);
+ text(d,names[k],x+136,508,17,colors[k],"mono",q,"center");
+ tracer(d,633,269,x+136,323,t,colors[k],6,.1);
+ }
+ text(d,"OVERLAPPING PRESENTATION ≠ IDENTICAL DIAGNOSIS",86,608,19,C.muted,"mono",out(seg(t,7,8)));
+ text(d,"Schematic categories, not diagnoses assigned to a person",87,651,16,C.muted,"serif",out(seg(t,9,10)));
+ footer(d,t,0);
+}
+function scene1(d,t){
+ bg(d,t,true);let l=t-14;
+ heading(d,"Choose evidence. Interpret limits.",85,150,59,t,14.25,C.dark);
+ // Multiple independent modalities not represented as real patient readout.
+ const xs=[247,639,1031],labels=["SEROLOGY","ENDOSCOPY","TISSUE CONTEXT"],subs=["Marker ≠ universal proof","Location and pattern","Expert interpretation"];
+ for(let k=0;k<3;k++){
+ let x=xs[k],q=out(seg(l,1.2+k*.7,2.7+k*.7));
+ round(d,x-171,242,342,326,13,k%2?"#d3e0d8":"#d9e3df");
+ text(d,labels[k],x,287,21,C.dark,"mono",q,"center");
+ if(k===0){for(let j=0;j<7;j++){const px=x-122+j*41;antibody(d,px,426+6*sin(t*.4+j),t,.8,j%2?C.copper:C.aqua);}
+ }else if(k===1){d.save();d.translate(x,429);endoscopic(d,t,0,0,93);d.restore();}
+ else microscopy(d,t,x,430,298,209);
+ text(d,subs[k],x,537,17,C.dark,"serif",q,"center");
+ }
+ text(d,"SIMULATED VISUALS · NOT ENDOSCOPY, BIOPSY OR LAB RESULTS",84,625,15,C.dark,"mono",out(seg(l,8,9)));
+ text(d,"Diagnostic sensitivity and specificity depend on the condition and testing context.",84,654,17,C.dark,"serif",out(seg(l,9,10)));
+ footer(d,t,1,true);
+}
+function scene2(d,t){
+ bg(d,t);let l=t-28;heading(d,"From microscopy to algorithms.",82,140,59,t,28.3);
+ photo(d,im[2],81,223,362,272,t,"OWNER LAB ARCHIVE · NOT TRAINING DATA");
+ // 3-step graphic with sliding abstract scan tiles, never a validated medical ML system
+ for(let k=0;k<3;k++){
+ let x=486+k*232,q=out(seg(l,1+k*.85,2.5+k*.85));
+ round(d,x,228,209,271,11,C.deep);
+ text(d,["IMAGE","FEATURES","MODEL REVIEW"][k],x+104,272,16,k===2?C.amber:C.mint,"mono",q,"center");
+ for(let j=0;j<12;j++){
+ let px=x+26+(j%4)*44,py=314+Math.floor(j/4)*50;
+ dot(d,px+12*sin(t*.33+j*.11),py+8*cos(t*.29+j),6+(j%3),k===0?C.aqua:k===1?C.rose:C.violet,.22+.35*sin(t*.3+j));
+ }
+ if(k<2)tracer(d,x+208,360,x+230,360,t,C.amber,3,.19);
+ }
+ text(d,"AI CAN SUPPORT INTERPRETATION; VALIDATION IS CONDITION-SPECIFIC",98,573,18,C.mint,"mono",out(seg(l,6,7)));
+ text(d,"Illustrative model features are not measured activations or clinical predictions",98,621,16,C.muted,"serif",out(seg(l,8,9)));
+ text(d,"A 2022 overview, not a deployed diagnostic model",98,648,15,C.muted,"mono");
+ footer(d,t,2);
+}
+function scene3(d,t){
+ bg(d,t);let l=t-42;heading(d,"Treatment follows the mechanism.",81,144,59,t,42.2);
+ const disease=[
+ ["CELIAC","GLUTEN-FREE DIET",C.mint],
+ ["EoE","DIET / ANTI-INFLAMMATORY",C.rose],
+ ["ACHALASIA","MOTILITY INTERVENTION",C.amber],
+ ["AAG","DEFICIENCY MONITORING",C.aqua],
+ ["IBD","DISEASE-SPECIFIC THERAPY",C.violet]
+ ];
+ for(let k=0;k<disease.length;k++){
+ const [name,care,col]=disease[k],y=230+k*75,p=out(seg(l,1.0+k*.57,2.0+k*.57));
+ round(d,86,y,1116,61,9,C.deep);
+ dot(d,116,y+31,9,col,.7*p);text(d,name,138,y+38,20,col,"mono",p);
+ tracer(d,335,y+31,553,y+31,t,col,9,.12);
+ text(d,care,596,y+38,20,C.white,"mono",p);
+ }
+ text(d,"SCHEMATIC EXAMPLES · NOT ONE-SIZE-FITS-ALL PRESCRIPTIONS",86,652,16,C.muted,"mono",out(seg(l,7,8)));
+ footer(d,t,3);
+}
+function scene4(d,t){
+ bg(d,t);let l=t-56;heading(d,"A new tool still needs proof.",83,144,67,t,56.2);
+ const nodes=[
+ {x:178,y:325,w:215,title:"ASSAY",c:C.mint},
+ {x:475,y:250,w:225,title:"BIOMARKER",c:C.rose},
+ {x:475,y:437,w:225,title:"ALGORITHM",c:C.aqua},
+ {x:806,y:342,w:265,title:"CLINICAL TEST",c:C.amber},
+ {x:1119,y:342,w:157,title:"USE",c:C.violet,size:18}
+ ];
+ const con=[[0,1],[0,2],[1,3],[2,3],[3,4]];
+ for(let i=0;i<con.length;i++){let [a,b]=con[i],A=nodes[a],B=nodes[b],p=out(seg(l,1.2+i*.45,2+i*.45));
+ line(d,[[A.x+A.w*.4,A.y],[B.x-B.w*.45,B.y]],C.mint,2,.31*p);
+ let q=(t*.13+i*.31)%1;dot(d,mix(A.x+A.w*.4,B.x-B.w*.45,q),mix(A.y,B.y,q),4,C.amber,.8*p*sin(PI*q));}
+ for(let k=0;k<nodes.length;k++){let n=nodes[k],p=out(seg(l,1+k*.5,2+k*.5));round(d,n.x-n.w/2,n.y-38,n.w,77,11,C.deep);dot(d,n.x-n.w/2+21,n.y,8,n.c,p);text(d,n.title,n.x-n.w/2+40,n.y+8,n.size||17,C.white,"mono",p);}
+ text(d,"SENSITIVITY / SPECIFICITY / EXTERNAL VALIDATION / REAL-WORLD USE",87,594,17,C.amber,"mono",out(seg(l,6.3,7.2)));
+ text(d,"AI accuracy in one dataset is not established general clinical utility.",89,639,19,C.muted,"serif",out(seg(l,8,9)));
+ footer(d,t,4);
+}
+function scene5(d,t){
+ bg(d,t,true);let l=t-70;heading(d,"An evolving map.",83,142,74,t,70.2,C.dark);heading(d,"Not a prescription.",83,225,67,t,71.2,C.copper);
+ photo(d,im[0],96,280,411,255,t,"GENUINE RESEARCH ARCHIVE · NOT PATIENT DATA");
+ const right=["2022 NARRATIVE REVIEW","COMPARE WITH UPDATED GUIDELINES","CONTEXT + SPECIALIST EVALUATION"];
+ for(let k=0;k<3;k++){
+ const y=313+k*80,p=out(seg(l,2+k*1.3,3+k*1.3));
+ round(d,551,y-25,634,67,11,"#d8e2da");
+ dot(d,574,y+8,7,k===0?C.aqua:k===1?C.copper:C.green,p);
+ text(d,right[k],601,y+15,19,C.dark,"mono",p);
+ }
+ text(d,"Al-Ruweidi et al. · IntechOpen, 2022",92,617,20,C.dark,"serif",out(seg(l,7,8)));
+ text(d,"DOI 10.5772/intechopen.106185 · CC BY 3.0",93,649,16,C.dark,"mono",out(seg(l,8,9)));
+ footer(d,t,5,true);
+}
+const scenes=[scene0,scene1,scene2,scene3,scene4,scene5];
+function draw(t){t=clamp(t,0,DURATION-1/FPS);let i=5;for(let j=0;j<6;j++)if(t>=B[j]&&t<B[j+1]){i=j;break}
+let tr=-1;for(let j=1;j<6;j++)if(t>=B[j]-.4&&t<B[j]+.4){tr=j;break}
+v.setTransform(1.5,0,0,1.5,0,0);
+if(tr<0){scenes[i](G[0],t);v.drawImage(buffers[0],0,0);return}
+scenes[tr-1](G[0],t);scenes[tr](G[1],t);
+let p=ease(seg(t,B[tr]-.4,B[tr]+.4));v.drawImage(buffers[0],0,0);v.save();v.beginPath();
+if(tr%2){v.arc(620,358,Math.hypot(W,H)*p,0,TAU)}
+else{let x=(W+120)*p-75;v.moveTo(0,0);v.lineTo(x,0);v.lineTo(x-105,H);v.lineTo(0,H);v.closePath()}
+v.clip();v.drawImage(buffers[1],0,0);v.restore();}
+window.__meta={W:1920,H:1080,FPS,DURATION,title:"The Diagnostic Problem",doi:"10.5772/intechopen.106185"};
+window.__draw=t=>{draw(t);return t};window.__ready=false;
+Promise.all([document.fonts.ready,...im.map(img=>new Promise((yes,no)=>{if(img.complete&&img.naturalWidth>0)return yes();img.addEventListener("load",yes,{once:true});img.addEventListener("error",()=>no(Error("Missing contextual source "+img.id)),{once:true})}))])
+.then(()=>{window.__ready=true;draw(0)}).catch(e=>window.__renderError=String(e));
+let playing=false,origin=0;function tick(now){if(!playing)return;let t=(now-origin)/1000;if(t>=DURATION){playing=false;draw(DURATION-.1);return;}draw(t);requestAnimationFrame(tick)}
+document.addEventListener("click",()=>{playing=!playing;if(playing){origin=performance.now();requestAnimationFrame(tick)}});
+</script></body></html>
