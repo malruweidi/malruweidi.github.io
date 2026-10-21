@@ -129,7 +129,7 @@ if(require.main===module)(async()=>{
   const context=await browser.newContext({viewport:{width:375,height:812},reducedMotion:"reduce"});
   const page=await context.newPage();
   await runCheck("mobile Explore menu opens with all research destinations",async()=>{
-   await page.goto(base+"/research.html",{waitUntil:"domcontentloaded"});
+   await page.goto(base+"/stories.html",{waitUntil:"domcontentloaded"});
    await page.locator(".rx-universal details.rx-more summary").first().waitFor({state:"visible",timeout:10000});
    await page.locator(".rx-universal details.rx-more summary").first().click();
    if(!await page.locator(".rx-universal details.rx-more").first().evaluate(el=>el.open))throw Error("Explore details did not open");
