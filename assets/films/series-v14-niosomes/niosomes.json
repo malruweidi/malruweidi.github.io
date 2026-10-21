@@ -1,0 +1,68 @@
+{
+  "film_index": 6,
+  "title": "Will the Medicine Survive the Nebulizer?",
+  "release": "v14 cinematic research-workflow review",
+  "seconds": 84.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "source": "research/inhalable-vesicles.html",
+  "research_status": "ongoing MSc, October 2026; no unpublished quantified results released",
+  "original_audio": "assets/films/series-v7-pilots/niosomes.mp4",
+  "original_captions": "assets/films/series-v7-pilots/niosomes.vtt",
+  "image_sources": [
+    {
+      "file": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "use": "real contextual laboratory-workbench photograph; not a niosome experiment"
+    },
+    {
+      "file": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "use": "real contextual research-workstation archive; loaded but not exposed as experimental data"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "The vial is not the lung",
+      "start": 0,
+      "end": 12.4
+    },
+    {
+      "name": "Surfactant and cholesterol in vesicle design",
+      "start": 12.4,
+      "end": 27.7
+    },
+    {
+      "name": "Establish particle, formulation and drug assay",
+      "start": 27.7,
+      "end": 42.55
+    },
+    {
+      "name": "Mechanical challenge: nebulization",
+      "start": 42.55,
+      "end": 53.8
+    },
+    {
+      "name": "Aerosol distribution and deposition questions",
+      "start": 53.8,
+      "end": 69.05
+    },
+    {
+      "name": "Research design without premature performance claims",
+      "start": 69.05,
+      "end": 84
+    }
+  ],
+  "scientific_boundary": [
+    "All bilayer geometries, droplet shapes, particles and transport trajectories are conceptual moving illustrations.",
+    "No measured DLS distribution, chromatographic output, encapsulation percentage, post-nebulization membrane stability or NGI deposition data are displayed.",
+    "NGI stage question marks do not signify measured regional deposition, clinical efficacy or achieved therapeutic dose.",
+    "The moving vesicle in jet and droplet sequences illustrates a question, not a photographed or confirmed surviving carrier."
+  ],
+  "render_system": "deterministic frame=f(time) Canvas2D, Chromium Playwright, FFmpeg native Full HD/24fps",
+  "old_versions_preserved": true,
+  "live_site_modified": false,
+  "human_review": "Scientific, audiovisual, editorial and rights review pending before approval.",
+  "sha256": "a2cb324f1de7b45766a92fad490319c62bce8ed7af50b0c0ee6e6876ed9e1915"
+}
