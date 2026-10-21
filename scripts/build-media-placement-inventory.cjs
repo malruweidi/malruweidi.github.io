@@ -94,6 +94,7 @@ function buildInventory(root) {
         const state=availability(root,page,url);
         records.push({
           tag:kind,url:url && url.startsWith('data:')?'[inline data URI]':url,
+          ordinalOnPage:records.length+1,characterOffset:m.index,
           line:atLine(m.index,lineStarts),
           contextHeading:hi>=0?headings[hi].text:'Opening/navigation',
           imageAlt:tag==='img'?attr(source,'alt'):null,
