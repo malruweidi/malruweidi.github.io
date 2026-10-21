@@ -1,0 +1,29 @@
+{
+  "title": "A Breath Can Injure",
+  "edition": "V9 / original cinematic animated research cut",
+  "seconds": 84.0,
+  "fps": 24,
+  "pixel_dimensions": [
+    1280,
+    720
+  ],
+  "original_audio": "assets/films/series-v7-pilots/airway-reopening.mp4",
+  "audio_timing": "original untouched timeline; loudness re-master only",
+  "original_captions": "assets/films/series-v7-pilots/airway-reopening.vtt",
+  "primary_paper_doi": "10.1152/japplphysiol.00574.2020",
+  "original_figure": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+  "figure_policy": "entire archival figure contained without cropping or replaced evidence",
+  "scenes": [
+    "An unseen force",
+    "An advancing bubble",
+    "The experimental chamber",
+    "Preconditioning cells",
+    "The observed result",
+    "Not a patient"
+  ],
+  "source_boundary": "Original authored diagrams are illustrative; no invented data or clinical effect sizes",
+  "music_policy": "preserve original program sound; no stock library or fake experiment sounds",
+  "motion_engine": "deterministic frame=f(time); no temporal randomness; all math-based",
+  "review_status": "cinematic REVIEW master \u2014 human listening and rights check pending",
+  "mp4_sha256": "19f47aaad5272678477fe7f34286bc511f20f93f45107ab1edb9268269b0d0d3"
+}
