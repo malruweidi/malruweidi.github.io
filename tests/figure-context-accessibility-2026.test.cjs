@@ -10,7 +10,7 @@ test("eight archived object photographs reference the adjacent object title with
  const items=[...block.matchAll(/<article class="rx-archive-object" id="([^"]+)"[\s\S]*?<\/article>/g)];
  assert.equal(items.length,8,"original eight-object archive is unchanged");
  for(let i=0;i<items.length;i++){
-  const [,id,body]=items[i];
+  const id=items[i][1],body=items[i][0];
   const label="rxo"+(i+1);
   assert.ok(body.includes('<figure aria-labelledby="'+label+'">'),id+" accessible caption context");
   assert.ok(body.includes('<h3 id="'+label+'">'),id+" existing heading becomes caption label");
