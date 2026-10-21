@@ -43,6 +43,13 @@ jobs:
           SITE_BASE_URL: http://127.0.0.1:8765
           BROWSER_QA_OUTPUT: browser-qa-artifacts
         run: node scripts/browser-release-qa-2026.cjs
+      - name: Sample real film frames with FFmpeg, independently of Chrome controls
+        if: success() || failure()
+        run: |
+          node --test tests/film-frame-sampling-2026.test.cjs
+          command -v ffmpeg
+          command -v ffprobe
+          node scripts/sample-film-frames-2026.cjs
       - name: Upload actual browser screenshots and issue report
         if: always()
         uses: actions/upload-artifact@v4
