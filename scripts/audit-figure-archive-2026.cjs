@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-/* Read-only structural inventory of the main scientific figure atlas and nearby
- * published-evidence routes. This tool does NOT verify the image pixels,
+/* Read-only structural inventory across all HTML routes, including the large
+ * scientific figure atlas. This tool does NOT verify the image pixels,
  * provenance, the paper's figure legend or permission to redistribute.
  *
  * node scripts/audit-figure-archive-2026.cjs --summary
@@ -8,12 +8,19 @@
  */
 "use strict";
 const fs=require("node:fs"),path=require("node:path");
-const paths=[
- "figures.html",
- "evidence-viewer.html",
- "research/zebrafish-vascular-cilia.html",
- "imaging.html"
-];
+function htmlFiles(root){
+ const files=[];
+ function walk(dir){
+  for(const e of fs.readdirSync(dir,{withFileTypes:true})){
+   if(e.name===".git" || e.name==="node_modules")continue;
+   const abs=path.join(dir,e.name);
+   if(e.isDirectory())walk(abs);
+   else if(e.isFile()&&e.name.endsWith(".html"))files.push(path.relative(root,abs).split(path.sep).join("/"));
+  }
+ }
+ walk(root);
+ return files.sort();
+}
 function attr(t,k){
  const m=t.match(new RegExp("(?:^|\\s)"+k+"\\s*=\\s*(?:\"([^\"]*)\"|'([^']*)')","i"));
  return m ? (m[1]===undefined?m[2]:m[1]):null;
@@ -56,7 +63,7 @@ function auditFigures(root){
  const pages={};
  const stats={pagesExamined:0,figureElements:0,figureImages:0,missingAltAttributes:0,
   decorativeEmptyAlt:0,figuresWithoutCaptions:0,missingLocalImageReferences:0};
- for(const page of paths){
+ for(const page of htmlFiles(root)){
   const html=fs.readFileSync(path.join(root,page),"utf8");
   const offsets=lines(html);
   const figures=[],source=html.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi,
