@@ -95,3 +95,4 @@ jobs:
         run: |
           node --test tests/figure-archive-audit-2026.test.cjs
           node scripts/audit-figure-archive-2026.cjs --summary
+          node scripts/audit-figure-archive-2026.cjs --issues
