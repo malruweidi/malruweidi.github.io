@@ -36,3 +36,9 @@ test("dynamic figure captions and both Arabic timelines keep the readable pine/c
  }
  assert.match(css,/html\[data-rx-page="stories"\][\s\S]*?figcaption\s*\{\s*color:\s*#435e60\s*!important/);
 });
+
+test("dynamic scientific captions and early medical photo labels cannot fade their measured color",()=>{
+ const css=read("assets/wcag-contrast-2026.css");
+ assert.match(css,/\.rx26-figures\s*>\s*figure\s*>\s*figcaption\s*\{[^}]*opacity:\s*1\s*!important/s);
+ assert.match(css,/#rx16-diagnosis-photo\s*>\s*\.rx16-heading\s*>\s*\.rx16-kicker[\s\S]*?\{[^}]*opacity:\s*1\s*!important/);
+});
