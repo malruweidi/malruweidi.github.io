@@ -16,7 +16,7 @@ test("contrast fixes are source-preserving opt-in CSS shared by the seven affect
  }
  const css=read("assets/wcag-contrast-2026.css");
  assert.match(css,/html\[data-rx-page="archive"\]/,"styles are page-scoped");
- for(const s of [".geo-source",".rx26-figures figure figcaption",
+ for(const s of [".geo-source",".rx26-figures > figure > figcaption",
   ".rx-freshman-archive-inner > .mini",".rx-result-category",
   ".rx16-kicker","#count",".rx-series-kicker"]){
   assert.ok(css.includes(s),"source-specified accessibility selector "+s);
