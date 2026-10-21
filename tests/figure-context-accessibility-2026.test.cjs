@@ -9,9 +9,9 @@ test("eight archived object photographs reference the adjacent object title with
  const block=html.slice(html.indexOf('id="rxOctoberPhotoArchive"'),html.indexOf('</section>',html.indexOf('id="rxOctoberPhotoArchive"')));
  const items=[...block.matchAll(/<article class="rx-archive-object" id="([^"]+)"[\s\S]*?<\/article>/g)];
  assert.equal(items.length,8,"original eight-object archive is unchanged");
- for(const item of items){
-  const [,id,body]=item;
-  const label=id+"-title";
+ for(let i=0;i<items.length;i++){
+  const [,id,body]=items[i];
+  const label="rxo"+(i+1);
   assert.ok(body.includes('<figure aria-labelledby="'+label+'">'),id+" accessible caption context");
   assert.ok(body.includes('<h3 id="'+label+'">'),id+" existing heading becomes caption label");
   assert.match(body,/<img\b/);
