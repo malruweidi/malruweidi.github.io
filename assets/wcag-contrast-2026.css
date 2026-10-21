@@ -49,3 +49,19 @@ html[data-rx-page="publication-cinema"] #count{
 html[data-rx-page="film"] .rx-series-kicker{
   color:#87412f;
 }
+
+/* Targeted high-specificity WCAG follow-up from the live browser report.
+ * The injected Stories figure and clinical archive's preexisting selectors can
+ * outrank ordinary stylesheet rules. Limit !important to foreground colors:
+ * no photos, positioning, animation or typography are changed.
+ */
+html[data-rx-page="stories"] .rx26-figures > figure > figcaption{
+  color:#435e60!important;
+}
+html[data-rx-page="illness-evidence"] #rx16-diagnosis-photo .rx16-heading > .rx16-kicker{
+  color:#465b56!important;
+}
+html[data-rx-page="illness-evidence"] .narrative > .side > span,
+html[data-rx-page="illness-evidence"] .sequence.ar article small{
+  color:#7c4232!important;
+}
