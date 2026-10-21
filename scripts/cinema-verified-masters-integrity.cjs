@@ -47,4 +47,27 @@ function validateVerifiedFilmMasters(masters,{fileExists,captionText}){
  }
  return errors;
 }
-module.exports={readVerifiedFilmMasters,validateVerifiedFilmMasters};
+
+function verifySelectedMediaHashes(masters,{readBinary,readManifest}){
+ if(typeof readBinary!=="function"||typeof readManifest!=="function")throw TypeError("Provide readBinary and readManifest");
+ const crypto=require("node:crypto"),errors=[];
+ for(const film of masters){
+  const base="assets/films/"+film.edition+"/"+film.id;
+  let manifest,actual;
+  try{manifest=JSON.parse(readManifest(base+".json"));}
+  catch(e){errors.push("missing or invalid movie checksum manifest "+base+".json");continue;}
+  const checksum=manifest.mp4_sha256||manifest.movie_sha256||manifest.sha256;
+  if(typeof checksum!=="string"||!/^[a-f0-9]{64}$/.test(checksum)){
+   errors.push("missing verified MP4 SHA256 in manifest "+base+".json");continue;
+  }
+  try{actual=crypto.createHash("sha256").update(readBinary(base+".mp4")).digest("hex");}
+  catch(e){errors.push("unreadable primary movie "+base+".mp4");continue;}
+  if(actual!==checksum)errors.push("MP4 checksum mismatch "+base+".mp4");
+  const duration=manifest.seconds??manifest.duration_seconds??manifest.runtime_seconds;
+  if(duration!==undefined&&Math.abs(Number(duration)-film.duration)>.51)
+   errors.push("primary movie manifest duration mismatch "+base+".json");
+ }
+ return errors;
+}
+
+module.exports={readVerifiedFilmMasters,validateVerifiedFilmMasters,verifySelectedMediaHashes};
