@@ -119,7 +119,7 @@ def render():
         except BaseException:
             encode.kill();raise
         original_score=tmp/"original-score.wav";score(original_score)
-        filtergraph="[1:a]aresample=48000[voice];[2:a]aresample=48000,volume=0.42[music];[voice][music]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-18:LRA=9:TP=-2[a]"
+        filtergraph="[1:a]aresample=48000[voice];[2:a]aresample=48000,volume=0.42[music];[voice][music]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-18:LRA=9:TP=-2,alimiter=limit=0.65:attack=5:release=90:level=false[a]"
         run("ffmpeg","-hide_banner","-loglevel","error","-y",
             "-i",picture,"-i",MASTER,"-i",original_score,
             "-filter_complex",filtergraph,"-map","0:v:0","-map","[a]",
