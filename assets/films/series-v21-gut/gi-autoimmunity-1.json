@@ -1,0 +1,65 @@
+{
+  "film_index": 13,
+  "title": "What Happens When Immunity Turns on the Gut?",
+  "edition": "V21 kinetic mucosal immunology / conceptual clinical-evidence documentary",
+  "duration_seconds": 84.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "source_chapter": {
+    "title": "Autoimmune Diseases of the GI Tract Part I: Etiology and Pathophysiology",
+    "doi": "10.5772/intechopen.106184",
+    "type": "Narrative review chapter, 2022, not primary trial data",
+    "source": "https://doi.org/10.5772/intechopen.106184"
+  },
+  "source_narration": "assets/films/series-v6/gi-autoimmunity-1.mp4",
+  "source_mp4_sha256": "07b74717b4430e0b0202554668ce7c9b26e87fbb414d450783dc8df1b41f983a",
+  "source_captions": "assets/films/series-v6/gi-autoimmunity-1.vtt",
+  "captions_count": 12,
+  "visual_provenance": "Original deterministic Canvas2D explanatory schematics. No real histology, patient image, clinical outcome data or experimental recording.",
+  "scenes": [
+    {
+      "title": "A living barrier and intestinal immune interface",
+      "start": 0,
+      "end": 14
+    },
+    {
+      "title": "Threat discrimination and mucosal immune tolerance",
+      "start": 14,
+      "end": 28
+    },
+    {
+      "title": "Innate-adaptive continuum: not one immune pathway",
+      "start": 28,
+      "end": 42
+    },
+    {
+      "title": "Five distinct diseases and careful autoimmune labeling",
+      "start": 42,
+      "end": 56
+    },
+    {
+      "title": "Reconcile symptoms, tissue findings and specific criteria",
+      "start": 56,
+      "end": 70
+    },
+    {
+      "title": "Scientific limits of a 2022 pathophysiology review",
+      "start": 70,
+      "end": 84
+    }
+  ],
+  "scientific_limitations": [
+    "Eosinophilic oesophagitis is type-2 immune-mediated, not established as classical autoimmunity; ACG 2025 guideline DOI 10.14309/ajg.0000000000003194.",
+    "Inflammatory bowel disease is heterogeneous chronic immune-mediated inflammation, not interchangeable with an autoantibody-defined autoimmune disorder.",
+    "Coeliac disease and autoimmune atrophic gastritis have better-characterised autoimmune components; achalasia's immune mechanisms are etiologically heterogeneous.",
+    "Drawn barrier, leukocyte interactions and histology-like patterns are conceptual illustrations, not data or a diagnosis.",
+    "Intestinal permeability, microbiome signatures and the gut-brain axis are not portrayed as universal confirmed causes of disease."
+  ],
+  "live_website_unchanged": true,
+  "older_film_masters_preserved": true,
+  "release": "Review-only until personal scholarly, audiovisual and accessibility approval.",
+  "sha256": "7acf7dba88af6e0581155d3900da75e9f0ddbc4ee8b83fa4ed6c5d5b7a81bf1b"
+}
