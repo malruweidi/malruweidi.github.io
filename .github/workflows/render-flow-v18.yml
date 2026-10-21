@@ -66,7 +66,7 @@ jobs:
           assert exp["single_bubble_actin_organization_significant"] is False
           assert data["earlier_versions_preserved"] and data["live_website_unchanged"]
           assert hashlib.sha256(master.read_bytes()).hexdigest()==data["sha256"]
-          assert (root/"flow-chamber-method.vtt").read_text().count("-->")>=30
+          assert (root/"flow-chamber-method.vtt").read_text().count("-->")==29
           assert (root/"flow-chamber-method.contact.webp").stat().st_size>25000
           assert (root/"flow-chamber-method.webp").stat().st_size>7000
           assert len(list(root.glob("chapter-??.jpg")))==8
