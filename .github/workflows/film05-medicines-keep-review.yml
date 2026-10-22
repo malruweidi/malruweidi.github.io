@@ -1,0 +1,107 @@
+name: Film 05 - source-first historical pharmacy narration review
+on:
+  push:
+    branches: [film05-medicines-keep-voice-review-20261022]
+    paths: ['.github/workflows/film05-medicines-keep-review.yml']
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install zero-cost audio environment
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg espeak-ng
+          python -m pip install -q 'kokoro-onnx>=0.4,<1' 'numpy>=1.25,<3' 'soundfile>=0.12'
+      - name: Download Kokoro open neural voice
+        run: |
+          mkdir -p voice_model
+          curl -fLsS --retry 3 -o voice_model/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx
+          curl -fLsS --retry 3 -o voice_model/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
+          test "$(stat -c%s voice_model/kokoro-v1.0.fp16.onnx)" -gt 90000000
+      - name: Generate eight complete timed English chapters, make original quiet score and subtitles
+        run: |
+          python - <<'PY'
+          import numpy as np, soundfile as sf, json, re, math
+          from pathlib import Path
+          from kokoro_onnx import Kokoro
+          texts=["In medieval Cairo, a medicine could fail long after compounding. A syrup might sour, crystallize, or lose the consistency that made it usable. Reliability was a practical craft.","Our clearest shop-facing witness is Minhaj al-dukkan, compiled in Cairo in twelve sixty. The manuscript shown here is a later Egyptian copy from nineteen oh four, not the author's original.","Sugar and rosewater were more than flavours. They formed vehicles whose concentration and handling helped determine how a medicine could be stored, dispensed, and recognized.","A druggist dissolved ingredients, skimmed foam, strained suspended material, and watched the liquid thicken. The important endpoint was qiwam, a usable material consistency judged through skilled observation.","No thermometer or modern microbial assay guided this work. Instead, repeated sensory observation and procedural judgement helped practitioners recognize burning, unwanted crystallization, or the signs of a changing preparation.","Recipes also offered ways to correct material deviations. Yet the surviving manual documents procedures and professional ideals. It does not measure the outcome of every batch actually sold.","When a drug was unavailable, substitution posed another challenge. Names, source, freshness, and functional resemblance mattered. An acknowledged replacement was different from undisclosed adulteration.","Shop manuals, hospital formularies, Genizah documents, and market oversight texts show different parts of the story. They reveal efforts at dependability, not proof of clinical efficacy or modern GMP."]
+          engine=Kokoro('voice_model/kokoro-v1.0.fp16.onnx','voice_model/voices-v1.0.bin')
+          sr=None;full=None;events=[]
+          for i,txt in enumerate(texts):
+            for speed in (1.04,1.09,1.14,1.19,1.24,1.30):
+              arr,rate=engine.create(txt,voice='af_bella',speed=speed,lang='en-us')
+              arr=np.asarray(arr,dtype=np.float32).reshape(-1)
+              if len(arr)/rate<=14.25:break
+            if len(arr)/rate>14.25:raise RuntimeError(f'Chapter {i+1} exceeds 15s; do not truncate speech')
+            if sr is None:sr=rate;full=np.zeros(120*sr,dtype=np.float32)
+            assert rate==sr
+            start=15*i+0.35;off=round(sr*start)
+            full[off:off+len(arr)]+=arr
+            sf.write(f'chapter-{i+1:02}.wav',arr,sr,subtype='PCM_16')
+            events.append({'chapter':i+1,'start':start,'end':start+len(arr)/sr,'text':txt,'speed':speed})
+            print(f'CHAPTER {i+1}: {len(arr)/sr:.2f}s / 15s',flush=True)
+          peak=float(np.max(np.abs(full))); assert .005<peak<2
+          sf.write('Film_05_Kokoro_Narration.wav',full*.8/peak,sr,subtype='PCM_16')
+          Path('Film_05_Narration_Timings.json').write_text(json.dumps({'voice':'Kokoro ONNX af_bella','source':'user-authored historical pharmacy manuscript, cross-checked with cited primary sources','events':events},indent=2))
+          srscore=48000;t=np.arange(srscore*120,dtype=np.float32)/srscore
+          a=np.zeros_like(t)
+          chords=[[110,164.81,196],[98,146.83,174.61],[123.47,164.81,220],[110,146.83,196]]
+          for i,(f1,f2,f3) in enumerate(chords):
+            sl=slice(i*30*srscore,(i+1)*30*srscore)
+            tt=t[sl]-i*30
+            env=np.clip(tt/4,0,1)*np.clip((30-tt)/4,0,1)
+            a[sl]+=(.007*np.sin(2*math.pi*f1*tt)+.004*np.sin(2*math.pi*f2*tt)+.003*np.sin(2*math.pi*f3*tt))*env
+          sf.write('Film_05_Original_Score.wav',a,srscore,subtype='PCM_16')
+          def stamp(t):
+            x=round(1000*t);return f'{x//3600000:02}:{(x//60000)%60:02}:{(x//1000)%60:02}.{x%1000:03}'
+          cues=['WEBVTT','']
+          for e in events:
+            sentences=[s.strip() for s in re.split(r'(?<=[.!?])\s+',e['text']) if s.strip()]
+            n=sum(len(s) for s in sentences);elapsed=e['end']-e['start'];cursor=e['start']
+            for k,s in enumerate(sentences):
+              end=e['end'] if k==len(sentences)-1 else cursor+elapsed*len(s)/n
+              cues.extend([f'{stamp(cursor)} --> {stamp(end)}',s,'']);cursor=end
+          Path('Film_05_Captions_DRAFT.vtt').write_text('\n'.join(cues)+'\n')
+          print('VOICE+SCORE+CAPTIONS DONE',flush=True)
+          PY
+      - name: Source-check movie and prepare archival rights credits
+        run: |
+          set -e
+          f=assets/films/series-v13-medieval/making-medicines-keep.mp4
+          test -s "$f"
+          ffprobe -v error -show_entries format=duration:stream=codec_name,codec_type,width,height,r_frame_rate -of json "$f"
+          test -s assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg
+          python - <<'PY'
+          import json
+          j=json.load(open('assets/films/source-manuscripts/wellcome-ms-arabic-1002/source-register.json'))
+          assert j['rights']=='Public Domain Mark, Wellcome Collection'
+          assert '1904' in j['copy_date']
+          assert 'UNVERIFIED PAGE' in j['staged_pages'][2]['subject_identification']
+          print('Verified rights and historical context of later manuscript witness')
+          PY
+      - name: Mix narration in front of music, replace older speech and keep picture unchanged
+        run: |
+          set -e
+          ffmpeg -hide_banner -loglevel error -y -i assets/films/series-v13-medieval/making-medicines-keep.mp4 -i Film_05_Kokoro_Narration.wav -i Film_05_Original_Score.wav -i Film_05_Captions_DRAFT.vtt -filter_complex '[1:a]aresample=48000,pan=stereo|c0=c0|c1=c0,highpass=f=75,acompressor=threshold=0.08:ratio=2:attack=12:release=170[spoken];[2:a]volume=0.35[music];[spoken][music]amix=inputs=2:normalize=0,loudnorm=I=-18:LRA=9:TP=-2[a]' -map 0:v:0 -map '[a]' -map 3:s:0 -c:v copy -c:a aac -b:a 192k -ac 2 -ar 48000 -c:s mov_text -t 120 -movflags +faststart Film_05_Making_Medicines_Keep_Narrated_Review.mp4
+          ffmpeg -hide_banner -loglevel error -i Film_05_Making_Medicines_Keep_Narrated_Review.mp4 -f null -
+          ffprobe -v error -show_entries format=duration,size:stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate -of json Film_05_Making_Medicines_Keep_Narrated_Review.mp4 > Film_05_QC.json
+          ffmpeg -hide_banner -loglevel error -y -ss 25 -i Film_05_Making_Medicines_Keep_Narrated_Review.mp4 -frames:v 1 Film_05_Poster.jpg
+      - uses: actions/upload-artifact@v4
+        with:
+          name: film05-medieval-medicines-narrated-review
+          path: |
+            Film_05_Making_Medicines_Keep_Narrated_Review.mp4
+            Film_05_Kokoro_Narration.wav
+            Film_05_Narration_Timings.json
+            Film_05_Captions_DRAFT.vtt
+            Film_05_QC.json
+            Film_05_Poster.jpg
+            chapter-*.wav
+          retention-days: 7
