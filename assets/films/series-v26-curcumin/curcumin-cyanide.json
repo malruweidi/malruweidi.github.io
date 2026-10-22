@@ -1,0 +1,17 @@
+{
+  "film_id": "curcumin-cyanide",
+  "edition": "v26 web-optimized approved picture and sound",
+  "duration_seconds": 120,
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 24,
+  "sha256": "bc5dc1fd77d534d2030352ba245ddb472b9d9f447ac92499ea136eca35e93c45",
+  "original_master_sha256": "5c1730a7f460ed10b5391225d721efd97fc529992302d0770ec2f954a38f368e",
+  "web_optimization": "H264 CRF26 from approved source master, audio AAC 160k; full decode verified, subtitles carried from original file",
+  "narration": "Kokoro ONNX af_bella, 12 scenes, audible speech validated in original review",
+  "research_doi": "10.1039/C9AY01557D",
+  "reuse": "Author reusing individual paper figures with correct acknowledgement, RSC author rights; no full-paper republication",
+  "original_v6_preserved": true
+}
