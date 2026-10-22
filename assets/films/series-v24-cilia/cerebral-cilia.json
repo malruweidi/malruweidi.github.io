@@ -1,0 +1,18 @@
+{
+  "film_id": "cerebral-cilia",
+  "edition": "series-v24-cilia",
+  "duration_seconds": 120,
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 24,
+  "sha256": "04ccce05c43c382a99c6771142f006513ec61247759faf4bb636ad9ac0353190",
+  "narrator": "Kokoro ONNX af_bella, 12 timed passages, mixed with original score",
+  "source": "https://doi.org/10.1161/ATVBAHA.118.311231",
+  "source_figure_rights": "User affirms ATVB figure-reuse approval; exact grant terms are not held in this repository.",
+  "captions": "cerebral-cilia.vtt",
+  "editorial_boundary": "Original microscopy vs labeled illustrative animation; no invented quantitative findings",
+  "replaces_player_only": true,
+  "original_v6_preserved": true
+}

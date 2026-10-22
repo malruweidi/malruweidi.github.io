@@ -1,0 +1,94 @@
+name: Film 02 - exact approved director cut - staging
+on:
+  push:
+    branches: [film02-approved-v2-site-release-20261022]
+    paths: ['.github/workflows/film02-exact-site-deploy.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install free video verification tools
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Reconstruct the exact reviewed film, SHA-256 gated
+        run: |
+          python - <<'PY'
+          import pathlib,base64,hashlib
+          src=pathlib.Path('production/film02-transfer')
+          parts=sorted(src.glob('part-*.txt'))
+          assert len(parts)==19, f'Expected 19 chunks, got {len(parts)}'
+          txt=''.join(x.read_text(encoding='ascii') for x in parts)
+          assert len(txt)==7528896, f'Base64 transfer length: {len(txt)}'
+          raw=base64.b64decode(txt,validate=True)
+          assert len(raw)==5646672, f'Unexpected MP4 length: {len(raw)}'
+          h=hashlib.sha256(raw).hexdigest()
+          assert h=='04ccce05c43c382a99c6771142f006513ec61247759faf4bb636ad9ac0353190', h
+          dst=pathlib.Path('assets/films/series-v24-cilia/cerebral-cilia.mp4')
+          dst.parent.mkdir(parents=True,exist_ok=True)
+          dst.write_bytes(raw)
+          print('EXACT FILM 02 MASTER RESTORED',h,len(raw),flush=True)
+          PY
+      - name: Validate picture and audible streams, produce poster
+        run: |
+          set -e
+          f=assets/films/series-v24-cilia/cerebral-cilia.mp4
+          ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels -of json "$f" | tee /tmp/film02-probe.json
+          ffmpeg -v error -i "$f" -f null -
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/film02-probe.json'))
+          assert abs(float(p['format']['duration'])-120.0)<0.03
+          video=next(s for s in p['streams'] if s['codec_type']=='video')
+          audio=next(s for s in p['streams'] if s['codec_type']=='audio')
+          assert video['codec_name']=='h264' and (video['width'],video['height'])==(1280,720) and video['r_frame_rate']=='24/1'
+          assert audio['codec_name']=='aac' and int(audio['sample_rate'])==48000 and int(audio['channels'])==2
+          print('FULL DECODE OK, AUDIO PRESENT',flush=True)
+          PY
+          ffmpeg -y -hide_banner -loglevel error -ss 3 -i "$f" -frames:v 1 -quality 85 assets/films/series-v24-cilia/cerebral-cilia.webp
+          cp production/film-02-sourcefirst/film02-v2.vtt assets/films/series-v24-cilia/cerebral-cilia.vtt
+          test "$(grep -c '\-\->' assets/films/series-v24-cilia/cerebral-cilia.vtt)" -ge 20
+      - name: Update only Film 02 player and provenance
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          p=Path('publication-cinema.html')
+          h=p.read_text(encoding='utf8')
+          start=h.index('<article class="piece" id="film-cerebral-cilia"')
+          end=h.index('</article>',start)+len('</article>')
+          before=h[start:end]
+          a='/assets/films/series-v6/cerebral-cilia.'
+          b='/assets/films/series-v24-cilia/cerebral-cilia.'
+          assert before.count(a+'mp4')==2
+          assert before.count(a+'webp')==1 and before.count(a+'vtt')==1
+          after=before.replace(a,b)
+          assert before!=after
+          h=h[:start]+after+h[end:]
+          p.write_text(h,encoding='utf8')
+          target=Path('assets/films/series-v24-cilia/cerebral-cilia.mp4')
+          manifest={
+            'film_id':'cerebral-cilia','edition':'series-v24-cilia',
+            'duration_seconds':120,'resolution':[1280,720],'fps':24,
+            'sha256':hashlib.sha256(target.read_bytes()).hexdigest(),
+            'narrator':'Kokoro ONNX af_bella, 12 timed passages, mixed with original score',
+            'source':'https://doi.org/10.1161/ATVBAHA.118.311231',
+            'source_figure_rights':'User affirms ATVB figure-reuse approval; exact grant terms are not held in this repository.',
+            'captions':'cerebral-cilia.vtt','editorial_boundary':'Original microscopy vs labeled illustrative animation; no invented quantitative findings',
+            'replaces_player_only':True,'original_v6_preserved':True
+          }
+          Path('assets/films/series-v24-cilia/cerebral-cilia.json').write_text(json.dumps(manifest,indent=2)+'\n')
+          print('Film 02 player only updated',flush=True)
+          PY
+      - name: Commit verified movie and preserve old V6, remove transient chunks
+        run: |
+          git config user.name "Ruwaidix Science Film Builder"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r production/film02-transfer
+          git add publication-cinema.html assets/films/series-v24-cilia
+          git commit -m "Stage exact narrated Film 02 V2 as website movie; preserve original V6"
+          git push origin HEAD:film02-approved-v2-site-release-20261022
