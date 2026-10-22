@@ -1,0 +1,69 @@
+name: Film 02 — director's narration V2
+on:
+  push:
+    branches: [film02-narration-directors-v2-20261022]
+    paths: ['.github/workflows/film02-narration-directors-v2.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install open-source Kokoro
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y espeak-ng ffmpeg
+          python -m pip install -q 'kokoro-onnx>=0.4,<1' 'numpy>=1.25,<3' 'soundfile>=0.12'
+      - name: Download open model
+        run: |
+          mkdir -p model
+          curl -fLsS --retry 3 -o model/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx
+          curl -fLsS --retry 3 -o model/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
+          test "$(stat -c%s model/kokoro-v1.0.fp16.onnx)" -gt 90000000
+      - name: Make twelve source-aligned voice passages
+        run: |
+          python - <<'PY'
+          from kokoro_onnx import Kokoro
+          import json, numpy as np,soundfile as sf
+          from pathlib import Path
+          texts=["Before the zebrafish brain has working circulation, its first blood vessels are already forming. Along their walls, some endothelial cells carry tiny projections called primary cilia.","The team used fluorescent zebrafish to make these structures visible. These images come from the published experiments, not from an artificial reconstruction.","At about twenty-four hours after fertilization, cilia cluster around spaces emerging inside early cranial vessels. Green marks ciliary structures; red outlines the endothelial tissue.","The first vessels develop their inner spaces before steady cranial circulation begins. This illustration explains vessel formation; the fluorescence photographs provide the direct observations.","Then came an important test. By disrupting cardiac troponin, the researchers stopped embryonic heart contractions and circulation, isolating what happens without normal blood flow.","And the early endothelial cilia were still there, in much the same pattern. Their initial distribution did not depend on a beating heart.","Development continued. In the hindbrain, capillary sprouts formed connections, and primary cilia appeared near the new intravascular spaces. These panels document the tissue itself.","Here is a simplified reconstruction of branching and reconnection. The moving lines are explanatory, not a fabricated recording of a living zebrafish.","As the vessels matured and blood began to move, cilia were seen along bends and branch points. Their possible roles were changing with development.","The study also disrupted genes needed for intraflagellar transport. Cranial hemorrhages increased, suggesting that normal ciliary function mattered for vessel integrity.","Another experiment increased circulatory shear stress. Cilia were lost earlier, alongside vascular instability. Association does not identify the entire molecular cause.","The central finding is more subtle than flow sensing alone: endothelial cilia appear before flow, respond to later conditions, and help support vascular stability."]
+          model=Kokoro('model/kokoro-v1.0.fp16.onnx','model/voices-v1.0.bin')
+          sr=None;mix=None;events=[]
+          for i,txt in enumerate(texts):
+              arr,rate=model.create(txt,voice='af_bella',speed=1.03,lang='en-us')
+              arr=np.asarray(arr,dtype=np.float32).reshape(-1)
+              if sr is None:
+                  sr=rate;mix=np.zeros(120*sr,dtype=np.float32)
+              assert sr==rate
+              dur=len(arr)/sr
+              print('SHOT',i+1,'DURATION',round(dur,2),flush=True)
+              if dur>9.6:
+                  print('WARNING: shot too long',i+1,flush=True)
+                  raise RuntimeError('Shot '+str(i+1)+' overran; adjust words, no truncation allowed.')
+              start=i*10+0.18
+              pos=round(start*sr)
+              mix[pos:pos+len(arr)]+=arr
+              sf.write(f'scene-{i+1:02}.wav',arr,sr,subtype='PCM_16')
+              events.append(dict(shot=i+1,start=start,end=start+dur,text=txt))
+          peak=float(np.max(np.abs(mix)))
+          mix*=0.84/peak
+          sf.write('Film_02_Directors_Cut_V2_Voice.wav',mix,sr,subtype='PCM_16')
+          Path('Film_02_Directors_Cut_V2_Timings.json').write_text(json.dumps(dict(voice='af_bella',source='Kokoro ONNX',state='synthetic voice review required',events=events),indent=2))
+          print('COMPLETE',sr, len(events),flush=True)
+          PY
+      - name: Check voice file
+        run: ffprobe -v error -show_entries format=duration:stream=sample_rate,channels -of default=noprint_wrappers=1 Film_02_Directors_Cut_V2_Voice.wav
+      - uses: actions/upload-artifact@v4
+        with:
+          name: film02-directors-narration-v2
+          path: |
+            Film_02_Directors_Cut_V2_Voice.wav
+            Film_02_Directors_Cut_V2_Timings.json
+            scene-*.wav
+          retention-days: 7
