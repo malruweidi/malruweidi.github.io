@@ -1,0 +1,65 @@
+name: Film 04 free Kokoro voiceover audition
+on:
+  push:
+    branches: [film04-curcumin-kokoro-review-20261022]
+    paths: ['.github/workflows/film04-kokoro-review.yml']
+permissions:
+  contents: read
+jobs:
+  synthesize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Free local speech toolchain
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y espeak-ng
+          python -m pip install -q 'kokoro-onnx>=0.4,<1' 'numpy>=1.25,<3' 'soundfile>=0.12'
+      - name: Fetch permissively licensed voice model
+        run: |
+          mkdir -p model
+          curl -fLsS --retry 3 -o model/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx
+          curl -fLsS --retry 3 -o model/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
+          test "$(stat -c%s model/kokoro-v1.0.fp16.onnx)" -gt 90000000
+      - name: Render twelve aligned full-length passages without speech truncation
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,numpy as np,soundfile as sf
+          from kokoro_onnx import Kokoro
+          lines=["Curcumin is the yellow pigment of turmeric. In this study, it became an optical probe for cyanide.","Researchers combined curcumin and cyanide, then measured the solution's colour, absorption spectrum, and fluorescence.","The solvent matters: ninety percent acetonitrile, ten percent water. This was not a pure-water drinking test.","In the reported tubes, yellow shifted toward dark orange. These are the original experimental photographs.","The absorption band near four hundred twenty-one nanometres fell; a new feature appeared around five hundred twenty.","The reported red shift was ninety-nine nanometres. These curves come from the paper's measurements.","Controls matter. Several other anions showed little response, but hydroxide produced a similar, stronger colour change.","The lower detection limit was two point three micromolar in the test medium, not a drinking-water validation.","Fluorescence near five hundred twenty nanometres was quenched after cyanide was added. This provided another optical readout.","The researchers examined living cultured cells. These are the original fluorescence micrographs, not synthetic microscopy.","Cellular fluorescence gradually decreased after cyanide exposure. The paper did not establish clinical diagnostic performance.","A useful sensor needs known conditions, interference controls, and reproducible measurements. The boundary of its claim matters."]
+          model=Kokoro('model/kokoro-v1.0.fp16.onnx','model/voices-v1.0.bin')
+          sr=None;mix=None;events=[]
+          for i,txt in enumerate(lines):
+            for speed in (1.08,1.14,1.20,1.26):
+              a,rate=model.create(txt,voice='af_bella',speed=speed,lang='en-us')
+              a=np.asarray(a,dtype=np.float32).reshape(-1)
+              if len(a)/rate<=9.65:break
+            sec=len(a)/rate
+            print('SHOT',i+1,'duration',round(sec,2),'speed',speed,flush=True)
+            if sec>9.65:raise RuntimeError(f'Voice exceeds scene {i+1}: {sec:.2f}s')
+            if sr is None:
+              sr=rate;mix=np.zeros(120*sr,dtype=np.float32)
+            assert rate==sr
+            start=i*10+0.16
+            off=round(start*sr)
+            mix[off:off+len(a)]+=a
+            sf.write(f'chapter-{i+1:02}.wav',a,sr,subtype='PCM_16')
+            events.append(dict(shot=i+1,start=start,end=start+sec,words=txt,speed=speed))
+          peak=float(np.max(np.abs(mix))); assert 0.01<peak<3
+          mix*=0.81/peak
+          sf.write('Film_04_Kokoro_English_Narration.wav',mix,sr,subtype='PCM_16')
+          Path('Film_04_Narration_Timing.json').write_text(json.dumps(dict(voice='Kokoro af_bella',source='Open source neural TTS',status='Narrator requires creative audition',events=events),indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: film04-open-kokoro-narration
+          path: |
+            Film_04_Kokoro_English_Narration.wav
+            Film_04_Narration_Timing.json
+            chapter-*.wav
+          retention-days: 7
