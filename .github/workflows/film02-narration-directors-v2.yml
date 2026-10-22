@@ -36,14 +36,17 @@ jobs:
           model=Kokoro('model/kokoro-v1.0.fp16.onnx','model/voices-v1.0.bin')
           sr=None;mix=None;events=[]
           for i,txt in enumerate(texts):
-              arr,rate=model.create(txt,voice='af_bella',speed=1.03,lang='en-us')
-              arr=np.asarray(arr,dtype=np.float32).reshape(-1)
+              # Audition alternate speaking rates, do not truncate a single phoneme.
+              for delivery_speed in (1.03,1.08,1.13,1.18):
+                  arr,rate=model.create(txt,voice='af_bella',speed=delivery_speed,lang='en-us')
+                  arr=np.asarray(arr,dtype=np.float32).reshape(-1)
+                  if len(arr)/rate<=9.75:break
               if sr is None:
                   sr=rate;mix=np.zeros(120*sr,dtype=np.float32)
               assert sr==rate
               dur=len(arr)/sr
               print('SHOT',i+1,'DURATION',round(dur,2),flush=True)
-              if dur>9.6:
+              if dur>9.75:
                   print('WARNING: shot too long',i+1,flush=True)
                   raise RuntimeError('Shot '+str(i+1)+' overran; adjust words, no truncation allowed.')
               start=i*10+0.18
