@@ -1,0 +1,17 @@
+{
+  "film_id": "pla-grafting",
+  "version": "v30 motion-led source-first narrated review",
+  "sha256": "dcc7148fa4f97a8694a26d83eef59ef5f84942eacc46af38c510770a06b2e5b8",
+  "duration_seconds": 120,
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 24,
+  "voice": "Kokoro ONNX af_bella \u2014 twelve voiced sequences",
+  "figures": "Source Polymers 2021, 13, 3717 DOI 10.3390/polym13213717; CC BY 4.0",
+  "visual_materials": "Original CGI plasma and material surface animations plus unaltered published research images; animations labelled conceptual",
+  "captions": "Corrected 24-cue English VTT; precise per-word audio alignment not claimed",
+  "old_version_preserved": true,
+  "only_player_changed": "film-pla-grafting"
+}
