@@ -14,7 +14,11 @@ jobs:
         with:
           persist-credentials: true
       - name: Free video verification
-        run: sudo apt-get install -y ffmpeg && command -v ffmpeg && command -v ffprobe
+        run: |
+          python -m pip install -q imageio-ffmpeg av
+          exe=$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')
+          sudo ln -sf "$exe" /usr/local/bin/ffmpeg
+          ffmpeg -version | head -2
       - name: Recover Film 04 website H264 from lossless transfer
         run: |
           python - <<'PY'
@@ -37,19 +41,18 @@ jobs:
           set -e
           d=assets/films/series-v26-curcumin
           f=$d/curcumin-cyanide.mp4
-          ffprobe -v error -show_entries stream=index,codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels:format=duration -of json "$f" > /tmp/film04meta.json
           ffmpeg -v error -i "$f" -f null -
           python - <<'PY'
-          import json
-          j=json.load(open('/tmp/film04meta.json'))
-          assert abs(float(j['format']['duration'])-120)<.1
-          v=next(x for x in j['streams'] if x['codec_type']=='video')
-          a=next(x for x in j['streams'] if x['codec_type']=='audio')
-          s=next(x for x in j['streams'] if x['codec_type']=='subtitle')
-          assert v['codec_name']=='h264' and (v['width'],v['height'])==(1280,720) and v['r_frame_rate']=='24/1'
-          assert a['codec_name']=='aac' and a['sample_rate']=='48000'
-          assert s['codec_name']=='mov_text'
-          print('Film 04 decodes and includes narration and subtitles stream')
+          import av
+          with av.open('assets/films/series-v26-curcumin/curcumin-cyanide.mp4') as c:
+            v=next(x for x in c.streams if x.type=='video')
+            a=next(x for x in c.streams if x.type=='audio')
+            s=next(x for x in c.streams if x.type=='subtitle')
+            assert abs(c.duration/av.time_base - 120) < .1
+            assert v.codec_context.name=='h264' and (v.width,v.height)==(1280,720) and v.average_rate.numerator/v.average_rate.denominator==24
+            assert a.codec_context.name=='aac' and a.rate==48000
+            assert s.codec_context.name=='mov_text'
+          print('Film04 full-decode and embedded speech/subtitle streams passed')
           PY
           ffmpeg -hide_banner -loglevel error -y -i "$f" -map 0:s:0 -c:s webvtt $d/curcumin-cyanide.vtt
           test "$(grep -c '\-\->' $d/curcumin-cyanide.vtt)" -ge 20
