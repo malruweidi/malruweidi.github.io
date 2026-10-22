@@ -1,0 +1,30 @@
+name: Film 02 / verify original zebrafish archival context clips
+on:
+  push:
+    branches: [film02-source-first-20261022]
+    paths: ['.github/workflows/film02-archive-intake.yml']
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  original-zebrafish-archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Source-aware download and media inspection
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+          mkdir -p output
+          curl -fL --retry 2 --max-time 35 -o output/archival_zebrafish_1.mp4 https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4
+          curl -fL --retry 2 --max-time 35 -o output/archival_zebrafish_2.mp4 https://cdn.creativeclaw.co/u/8a002dd8/videos/0b2fc0e1-5310-4f0a-a94a-94f3471960a2.mp4
+          for f in output/*.mp4; do
+            test "$(stat -c%s "$f")" -gt 20000
+            ffprobe -v error -show_entries format=duration -of default=nw=1 "$f"
+            ffmpeg -v error -i "$f" -f null -
+          done
+          printf "These are author's original zebrafish cardiovascular archive clips. They do NOT depict paper-matched endothelial cilia and may be used only as contextual footage.\n" > output/PROVENANCE.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: film02-original-zebrafish-archive-context
+          path: output/
+          retention-days: 7
