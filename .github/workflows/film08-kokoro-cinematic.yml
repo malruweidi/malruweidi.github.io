@@ -1,0 +1,60 @@
+name: Film 08 — open Kokoro cinema voice
+on:
+  push:
+    branches: [film08-materials-cinematic-20261023]
+    paths: ['.github/workflows/film08-kokoro-cinematic.yml']
+permissions:
+  contents: read
+jobs:
+  narration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install open-source Kokoro speech
+        run: |
+          sudo apt-get install -y espeak-ng
+          python -m pip install -q --disable-pip-version-check 'kokoro-onnx>=0.4,<1' 'numpy>=1.25,<3' 'soundfile>=0.12'
+      - name: Download open licensed weights
+        run: |
+          mkdir -p voice_model
+          curl -fLsS --retry 3 -o voice_model/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx
+          curl -fLsS --retry 3 -o voice_model/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
+      - name: Generate aligned narration
+        run: |
+          python - <<'PY'
+          import json,numpy as np,soundfile as sf
+          from pathlib import Path
+          from kokoro_onnx import Kokoro
+          lines=["A film can be chemically familiar, yet behave differently at its surface. We tested that idea with biodegradable poly-lactic acid.","Untreated PLA is often difficult to bond. The challenge is changing what touches another material without replacing the bulk polymer.","Cold plasma prepares the outer surface. In this explanatory animation, reactive species reach the interface and create opportunities for grafting.","We then explored two familiar organic acids: fumaric acid and ascorbic acid. Their surface attachment changes the available polar chemistry.","The paper measured wettability. Water contact angle fell from seventy point two degrees on untreated PLA to forty-nine point six after fumaric grafting.","Changing the contact angle is only one clue. The original graph also records increased surface free energy after these modifications.","Infrared and X-ray photoelectron spectroscopy provide chemical evidence. The published spectra are measurements, not animations of individual bonds.","Scanning electron micrographs reveal a different texture after plasma processing and grafting. These are the actual experimental surfaces.","Atomic force microscopy examined nanoscale topography. The measured roughness changed, but the two grafting chemistries produced different patterns.","Then came the adhesion test. Peeling the PLA and aluminum laminate measured how strongly the interface resisted separation.","Untreated PLA reached seventy-four point four newtons per metre. Fumaric grafting reached two hundred eleven: about one hundred eighty-four percent higher.","The lesson is physical and chemical. A thin modified surface can change adhesion substantially, while the underlying polymer remains PLA."]
+          model=Kokoro('voice_model/kokoro-v1.0.fp16.onnx','voice_model/voices-v1.0.bin')
+          sr=None;mix=None;events=[]
+          for i,text in enumerate(lines):
+            for speed in (1.10,1.15,1.20,1.25,1.30):
+              wav,rate=model.create(text,voice='af_bella',speed=speed,lang='en-us')
+              wav=np.asarray(wav,dtype=np.float32).ravel()
+              if len(wav)/rate<=9.62:break
+            duration=len(wav)/rate
+            if duration>9.62:raise RuntimeError('Narration overrun shot '+str(i+1)+' '+str(duration))
+            if sr is None:sr=rate;mix=np.zeros(120*rate,dtype=np.float32)
+            assert rate==sr
+            start=i*10+.18;offset=int(round(start*sr))
+            mix[offset:offset+len(wav)]+=wav
+            sf.write(f'shot-{i+1:02}.wav',wav,sr,subtype='PCM_16')
+            events.append(dict(shot=i+1,start=start,end=start+duration,text=text,speed=speed))
+            print('SHOT',i+1,'VOICE_SEC',round(duration,2),'SPEED',speed,flush=True)
+          peak=float(np.max(np.abs(mix)));assert peak>.01
+          sf.write('Film_08_Kokoro_Narration.wav',mix*(.83/peak),sr,subtype='PCM_16')
+          Path('Film_08_Narration_Timings.json').write_text(json.dumps(dict(voice='af_bella Kokoro ONNX',status='review only',events=events),indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: film08-open-narration
+          path: |
+            Film_08_Kokoro_Narration.wav
+            Film_08_Narration_Timings.json
+            shot-*.wav
+          retention-days: 7
