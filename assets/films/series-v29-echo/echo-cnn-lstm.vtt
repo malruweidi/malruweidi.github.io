@@ -1,0 +1,64 @@
+WEBVTT
+
+00:00.200 --> 00:02.947
+An ultrasound film shows a heart in motion.
+
+00:02.947 --> 00:07.356
+Before birth, that motion can reveal how the chambers are developing.
+
+00:10.200 --> 00:19.030
+Our pilot study examined fetal echocardiograms from nine healthy pregnancies and thirteen with hypoplastic left heart syndrome.
+
+00:20.200 --> 00:25.355
+The published figures show how raw ultrasound frames were cleaned and cropped.
+
+00:25.355 --> 00:28.923
+Those images are research data, not invented examples.
+
+00:30.200 --> 00:31.868
+A heartbeat is a sequence.
+
+00:31.868 --> 00:37.835
+The study separated videos by cardiac cycle and prepared them as inputs for machine learning.
+
+00:40.200 --> 00:43.888
+Convolutional networks extracted features from the frames.
+
+00:43.888 --> 00:48.465
+Long short-term memory networks modeled information across the sequence.
+
+00:50.200 --> 00:56.479
+Five pretrained architectures were evaluated: MobileNet, two ResNets, DenseNet, and GoogLeNet.
+
+00:56.479 --> 00:59.819
+The strongest candidates informed a stacked model.
+
+01:00.200 --> 01:03.099
+The stacking framework combined three models.
+
+01:03.099 --> 01:09.798
+Here is the original architecture, alongside our explanatory animation of how predictions are assembled.
+
+01:10.200 --> 01:19.532
+These are genuine images from the article: healthy and hypoplastic left-heart ultrasound examples, displayed without invented abnormalities.
+
+01:20.200 --> 01:27.379
+Across five-fold cross-validation, the authors reported approximately ninety-point-five percent accuracy.
+
+01:27.379 --> 01:29.361
+The pilot's cohort was small.
+
+01:30.200 --> 01:36.031
+The comparison tables also report sensitivity, precision, specificity, and F-one score.
+
+01:36.031 --> 01:39.650
+A single accuracy number cannot replace those details.
+
+01:40.200 --> 01:49.253
+Patient selection, validation design, and missed cases matter enormously before an algorithm can be considered for prenatal clinical use.
+
+01:50.200 --> 01:56.320
+The promise is real, but limited: a research model found patterns in this pilot dataset.
+
+01:56.320 --> 01:59.659
+It was not validated as an autonomous diagnosis.

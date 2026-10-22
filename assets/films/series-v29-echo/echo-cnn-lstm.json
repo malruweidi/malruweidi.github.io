@@ -1,0 +1,10 @@
+{
+  "film": "echo-cnn-lstm",
+  "release": "series-v29-echo",
+  "duration_seconds": 120,
+  "sha256": "407cc27a91b69a19fc4b0219c358a2a04d30edd595abe1779f1d3ad87b5dfebd",
+  "narrator": "Kokoro ONNX af_bella with twelve timed passages",
+  "study": "10.1109/ACCESS.2023.3316719; 22 fetuses (9 healthy, 13 HLHS); pilot only",
+  "original_v6_preserved": true,
+  "changes": "Film07 player only"
+}
