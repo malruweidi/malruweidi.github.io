@@ -1,0 +1,90 @@
+name: Film 03 exact narrated master staging
+on:
+  push:
+    branches: [film03-narrated-site-release-20261022]
+    paths: ['.github/workflows/film03-exact-deploy.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install free FFmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Restore exact Film 03 review master
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,base64
+          parts=sorted(Path('production/film03-transfer').glob('part-*.txt'))
+          assert len(parts)==54,len(parts)
+          b64=''.join(p.read_text(encoding='ascii') for p in parts)
+          assert len(b64)==21556308,len(b64)
+          raw=base64.b64decode(b64,validate=True)
+          assert len(raw)==16167229,len(raw)
+          h=hashlib.sha256(raw).hexdigest()
+          assert h=='7cd945b152c7c254ba163d4c69469daa2c8f33bfebb176ee8a1fb4855b76d14e',h
+          p=Path('assets/films/series-v25-slit2/ slit2-robo.mp4'.replace('/ ','/'))
+          p.parent.mkdir(parents=True,exist_ok=True)
+          p.write_bytes(raw)
+          print('EXACT APPROVED FILM03',h,flush=True)
+          PY
+      - name: Technical decode, captions and poster
+        run: |
+          set -e
+          f=assets/films/series-v25-slit2/slit2-robo.mp4
+          ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels -of json "$f" > /tmp/film03.json
+          ffmpeg -v error -i "$f" -f null -
+          python - <<'PY'
+          import json
+          j=json.load(open('/tmp/film03.json'))
+          assert abs(float(j['format']['duration'])-120)<0.05
+          v=next(x for x in j['streams'] if x['codec_type']=='video')
+          a=next(x for x in j['streams'] if x['codec_type']=='audio')
+          assert (v['width'],v['height'])==(1280,720) and v['r_frame_rate']=='24/1'
+          assert v['codec_name']=='h264' and a['codec_name']=='aac'
+          assert a['sample_rate']=='48000' and a['channels']==2
+          PY
+          ffmpeg -hide_banner -loglevel error -y -ss 5 -i "$f" -frames:v 1 -quality 88 assets/films/series-v25-slit2/slit2-robo.webp
+          cp production/film-03-sourcefirst/film03-captions.vtt assets/films/series-v25-slit2/slit2-robo.vtt
+          test "$(grep -c -- '-->' assets/films/series-v25-slit2/slit2-robo.vtt)" -ge 20
+      - name: Change only Film 03 player, record provenance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          p=Path('publication-cinema.html')
+          h=p.read_text(encoding='utf8')
+          start=h.index('<article class="piece" id="film-slit2-robo"')
+          end=h.index('</article>',start)+len('</article>')
+          original=h[start:end]
+          old='/assets/films/series-v6/slit2-robo.'
+          new='/assets/films/series-v25-slit2/slit2-robo.'
+          assert original.count(old+'mp4')==2 and original.count(old+'vtt')==1 and original.count(old+'webp')==1
+          updated=original.replace(old,new)
+          assert updated!=original
+          h=h[:start]+updated+h[end:]
+          p.write_text(h,encoding='utf8')
+          f=Path('assets/films/series-v25-slit2/slit2-robo.mp4')
+          m={'id':'slit2-robo','edition':'v25 source-first narrated review','duration_seconds':120,
+             'resolution':[1280,720],'fps':24,'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),
+             'narration':'Kokoro ONNX af_bella, 12 scene-synced passages, review-approved progression',
+             'source_doi':'10.1080/13543776.2026.2690118',
+             'content':'Original article framework, original figures, concept animations; patents distinct from proof of efficacy',
+             'figure_rights':'Author has approved progressing the series; publisher figure rights not independently verified',
+             'old_v6_preserved':True,'captions':'slit2-robo.vtt'}
+          f.with_suffix('.json').write_text(json.dumps(m,indent=2)+'\n')
+          print('Only Film 03 player changed',flush=True)
+          PY
+      - name: Commit verified assets and remove private transfer
+        run: |
+          git config user.name "Ruwaidix Science Video Lab"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r production/film03-transfer
+          git add assets/films/series-v25-slit2 publication-cinema.html
+          git commit -m "Publish exact narrated SLIT2 ROBO Film 03 on staging, preserve V6"
+          git push origin HEAD:film03-narrated-site-release-20261022
