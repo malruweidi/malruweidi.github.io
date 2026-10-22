@@ -1,0 +1,84 @@
+name: Film 05 - exact source-first narrated master release
+on:
+  push:
+    branches: [film05-source-narrated-publish-20261022]
+    paths: ['.github/workflows/film05-exact-deploy.yml']
+permissions:
+  contents: write
+jobs:
+  reconstruct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install zero-cost verification encoder
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Reconstruct and verify source-approved Film 05
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64,hashlib
+          files=sorted(Path('production/film05-transfer').glob('part-*.txt'))
+          assert len(files)==29, len(files)
+          b64=''.join(f.read_text(encoding='ascii') for f in files)
+          assert len(b64)==11463788,len(b64)
+          data=base64.b64decode(b64,validate=True)
+          assert len(data)==8597841,len(data)
+          sha=hashlib.sha256(data).hexdigest()
+          assert sha=='23dc36e546b7419c3c3bd1122951e203aadd918c6603183cc755f64873a5582e',sha
+          f=Path('assets/films/series-v27-medieval/making-medicines-keep.mp4')
+          f.parent.mkdir(parents=True,exist_ok=True)
+          f.write_bytes(data)
+          print('Exact narrated Film 05 restored',sha)
+          PY
+      - name: Validate media and create source poster and captions
+        run: |
+          set -e
+          film=assets/films/series-v27-medieval/making-medicines-keep.mp4
+          ffmpeg -nostdin -v error -i "$film" -f null -
+          ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels -of json "$film" > /tmp/film05-probe.json
+          python - <<'PY'
+          import json
+          j=json.load(open('/tmp/film05-probe.json'))
+          assert abs(float(j['format']['duration'])-120)<.02
+          v=next(s for s in j['streams'] if s['codec_type']=='video')
+          a=next(s for s in j['streams'] if s['codec_type']=='audio')
+          assert (v['width'],v['height'],v['codec_name'],v['r_frame_rate'])==(1920,1080,'h264','24/1')
+          assert a['codec_name']=='aac' and a['sample_rate']=='48000' and a['channels']==2
+          print('Full audio and video decode verified')
+          PY
+          ffmpeg -nostdin -y -v error -ss 5 -i "$film" -frames:v 1 -vf "scale=960:-2" -quality 85 assets/films/series-v27-medieval/making-medicines-keep.webp
+          cp production/film05-source-narrated/film05-captions.vtt assets/films/series-v27-medieval/making-medicines-keep.vtt
+          test "$(grep -c -- '-->' assets/films/series-v27-medieval/making-medicines-keep.vtt)" -ge 15
+      - name: Replace only Film 05 player references
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          p=Path('publication-cinema.html')
+          s=p.read_text(encoding='utf-8')
+          start=s.index('<article class="piece" id="film-making-medicines-keep"')
+          end=s.index('</article>',start)+len('</article>')
+          old=s[start:end]
+          a='/assets/films/series-v8-primary/making-medicines-keep.'
+          b='/assets/films/series-v27-medieval/making-medicines-keep.'
+          assert old.count(a+'mp4')==2,(old.count(a+'mp4'),old[:700])
+          assert old.count(a+'vtt')==1
+          assert 'poster="/assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"' in old
+          revised=old.replace(a,b).replace('poster="/assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"','poster="'+b+'webp"')
+          assert revised!=old
+          p.write_text(s[:start]+revised+s[end:],encoding='utf-8')
+          f=Path('assets/films/series-v27-medieval/making-medicines-keep.mp4')
+          meta={'film_id':'making-medicines-keep','version':'v27 source-first narrated 120s','sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'seconds':120,'resolution':[1920,1080],'voice':'Kokoro ONNX English - eight passages','source':'Manuscript of Minhaj al-dukkān, 1904 Egyptian copy of an earlier Cairo treatise, marked clearly; author historical research','old_v8_preserved':True,'reference_rights':'Wellcome scanned manuscript identified as public domain','site_change':'only film05 player references'}
+          Path('assets/films/series-v27-medieval/making-medicines-keep.json').write_text(json.dumps(meta,indent=2)+'\n')
+          PY
+      - name: Commit staged website release, remove private transfer chunks
+        run: |
+          git config user.name "Ruwaidix Science Film Builder"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r production/film05-transfer
+          git add publication-cinema.html assets/films/series-v27-medieval
+          git commit -m "Publish exact Film 05 narrated source-first edition and preserve V8"
+          git push origin HEAD:film05-source-narrated-publish-20261022
