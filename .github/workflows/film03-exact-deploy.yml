@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Install free FFmpeg
-        run: ffmpeg -version && ffprobe -version
+      - name: Install self-contained free Python video decoder
+        run: python -m pip install -q av pillow
       - name: Restore exact Film 03 review master
         run: |
           python - <<'PY'
@@ -33,23 +33,37 @@ jobs:
           p.write_bytes(raw)
           print('EXACT APPROVED FILM03',h,flush=True)
           PY
-      - name: Technical decode, captions and poster
+      - name: Decode video and spoken audio; verify metadata; produce poster
         run: |
-          set -e
-          f=assets/films/series-v25-slit2/slit2-robo.mp4
-          ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels -of json "$f" > /tmp/film03.json
-          ffmpeg -v error -i "$f" -f null -
           python - <<'PY'
-          import json
-          j=json.load(open('/tmp/film03.json'))
-          assert abs(float(j['format']['duration'])-120)<0.05
-          v=next(x for x in j['streams'] if x['codec_type']=='video')
-          a=next(x for x in j['streams'] if x['codec_type']=='audio')
-          assert (v['width'],v['height'])==(1280,720) and v['r_frame_rate']=='24/1'
-          assert v['codec_name']=='h264' and a['codec_name']=='aac'
-          assert a['sample_rate']=='48000' and a['channels']==2
+          import av,json
+          from pathlib import Path
+          from PIL import Image
+          f=Path('assets/films/series-v25-slit2/slit2-robo.mp4')
+          container=av.open(str(f))
+          video=next(x for x in container.streams if x.type=='video')
+          audio=next(x for x in container.streams if x.type=='audio')
+          print('AV:',video.codec_context.name,video.width,video.height,video.average_rate,audio.codec_context.name,audio.rate,flush=True)
+          assert video.codec_context.name=='h264' and (video.width,video.height)==(1280,720)
+          assert abs(float(video.average_rate)-24)<.01
+          assert audio.codec_context.name=='aac' and audio.rate==48000
+          assert abs(float(container.duration/1e6)-120)<.05
+          frames=0;audioframes=0;has_energy=False;poster=None
+          for packet in container.demux():
+              if packet.stream.type not in ('video','audio'):continue
+              for frame in packet.decode():
+                  if packet.stream.type=='video':
+                      frames+=1
+                      if frames==120:poster=frame.to_image()
+                  elif packet.stream.type=='audio':
+                      audioframes+=1
+                      if audioframes>5:has_energy=True
+          assert frames==2880,frames
+          assert audioframes>50 and has_energy,audioframes
+          assert poster is not None
+          poster.save('assets/films/series-v25-slit2/slit2-robo.webp',format='WEBP',quality=86)
+          print('Fully decoded',frames,'picture frames,',audioframes,'audio frames; poster ready',flush=True)
           PY
-          ffmpeg -hide_banner -loglevel error -y -ss 5 -i "$f" -frames:v 1 -quality 88 assets/films/series-v25-slit2/slit2-robo.webp
           cp production/film-03-sourcefirst/film03-captions.vtt assets/films/series-v25-slit2/slit2-robo.vtt
           test "$(grep -c -- '-->' assets/films/series-v25-slit2/slit2-robo.vtt)" -ge 20
       - name: Change only Film 03 player, record provenance
