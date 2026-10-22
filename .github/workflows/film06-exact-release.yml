@@ -1,0 +1,90 @@
+name: Film 06 exact narrated master site release
+on:
+  push:
+    branches: [film06-sourcefirst-publish-20261022]
+    paths: ['.github/workflows/film06-exact-release.yml']
+permissions:
+  contents: write
+jobs:
+  verify-and-stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Free film verification tools
+        run: sudo apt-get install -y ffmpeg
+      - name: Recover exact narrated Film 06 and validate checksum
+        run: |
+          python - <<'PY'
+          import hashlib,base64
+          from pathlib import Path
+          paths=sorted(Path('production/film06-transfer').glob('part-*.txt'))
+          assert len(paths)==62,len(paths)
+          b64=''.join(p.read_text(encoding='ascii') for p in paths)
+          assert len(b64)==24423548,len(b64)
+          raw=base64.b64decode(b64,validate=True)
+          assert len(raw)==18317660,len(raw)
+          digest=hashlib.sha256(raw).hexdigest()
+          assert digest=='b44a50e81af55d447d048989fc575053ea3030ff71ba61d54422a4c29b3d8348',digest
+          path=Path('assets/films/series-v28-niosomes/niosomes.mp4')
+          path.parent.mkdir(parents=True,exist_ok=True)
+          path.write_bytes(raw)
+          print('Exact master reconstructed and SHA verified:',digest,flush=True)
+          PY
+      - name: Validate 120-second audio and video, make poster
+        run: |
+          set -e
+          f=assets/films/series-v28-niosomes/niosomes.mp4
+          ffmpeg -nostdin -v error -i "$f" -f null -
+          ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels -of json "$f" >/tmp/film06-media.json
+          python - <<'PY'
+          import json
+          d=json.load(open('/tmp/film06-media.json'))
+          assert abs(float(d['format']['duration'])-120)<.05
+          v=next(x for x in d['streams'] if x['codec_type']=='video')
+          a=next(x for x in d['streams'] if x['codec_type']=='audio')
+          assert (v['codec_name'],v['width'],v['height'],v['r_frame_rate'])==('h264',1280,720,'24/1')
+          assert (a['codec_name'],a['sample_rate'],a['channels'])==('aac','48000',2)
+          print('Full video/audio decode passed')
+          PY
+          ffmpeg -nostdin -y -v error -ss 4 -i "$f" -frames:v 1 -vf scale=960:-2 -quality 86 assets/films/series-v28-niosomes/niosomes.webp
+          cp production/film06-sourcefirst/film06-captions.vtt assets/films/series-v28-niosomes/niosomes.vtt
+          test "$(grep -c -- '-->' assets/films/series-v28-niosomes/niosomes.vtt)" -ge 20
+      - name: Update only Film 06 player, retain old master and provenance
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          page=Path('publication-cinema.html')
+          html=page.read_text(encoding='utf-8')
+          a=html.index('<article class="piece" id="film-niosomes"')
+          b=html.index('</article>',a)+len('</article>')
+          card=html[a:b]
+          old='/assets/films/series-v6/niosomes.'
+          new='/assets/films/series-v28-niosomes/niosomes.'
+          assert card.count(old+'mp4')==2
+          assert card.count(old+'vtt')==1 and card.count(old+'webp')==1
+          result=card.replace(old,new)
+          page.write_text(html[:a]+result+html[b:],encoding='utf-8')
+          f=Path('assets/films/series-v28-niosomes/niosomes.mp4')
+          meta={
+            'film':'niosomes','release':'series-v28-niosomes','duration_seconds':120,
+            'source':'User 2026 MSc thesis defense and manuscript; provenance marked throughout film',
+            'results':'Internal preliminary research; no independently reviewed therapeutic efficacy claimed',
+            'voice':'Kokoro ONNX af_bella, 12 audible passages','original_v6_preserved':True,
+            'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),
+            'changes':'Only Film06 player MP4, poster and caption references'
+          }
+          Path('assets/films/series-v28-niosomes/niosomes.json').write_text(json.dumps(meta,indent=2)+'\n')
+          print('Single film player updated')
+          PY
+      - name: Commit staged public-ready assets, drop transfer chunks
+        run: |
+          git config user.name "Ruwaidix Science Film Builder"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r production/film06-transfer
+          git add publication-cinema.html assets/films/series-v28-niosomes
+          git commit -m "Stage verified narrated Film 06 and retain previous V6 film"
+          git push origin HEAD:film06-sourcefirst-publish-20261022
