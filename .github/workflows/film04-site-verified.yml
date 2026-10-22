@@ -1,0 +1,88 @@
+name: Film 04 exact-content web release from optimized master
+on:
+  push:
+    branches: [film04-curcumin-site-release-20261022]
+    paths: ['.github/workflows/film04-site-verified.yml']
+permissions:
+  contents: write
+jobs:
+  movie:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Free video verification
+        run: |
+          python -m pip install -q imageio-ffmpeg av
+          exe=$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')
+          sudo ln -sf "$exe" /usr/local/bin/ffmpeg
+          ffmpeg -version | head -2
+      - name: Recover Film 04 website H264 from lossless transfer
+        run: |
+          python - <<'PY'
+          import pathlib,base64,hashlib
+          blobs=sorted(pathlib.Path('production/film04-transfer').glob('part-*.txt'))
+          assert len(blobs)==16,len(blobs)
+          txt=''.join(f.read_text(encoding='ascii') for f in blobs)
+          assert len(txt)==9027948,len(txt)
+          raw=base64.b64decode(txt,validate=True)
+          assert len(raw)==6770961,len(raw)
+          digest=hashlib.sha256(raw).hexdigest()
+          assert digest=='bc5dc1fd77d534d2030352ba245ddb472b9d9f447ac92499ea136eca35e93c45',digest
+          dst=pathlib.Path('assets/films/series-v26-curcumin/curcumin-cyanide.mp4')
+          dst.parent.mkdir(parents=True,exist_ok=True)
+          dst.write_bytes(raw)
+          print('Verified Film 04 optimized MP4',dst.stat().st_size,digest)
+          PY
+      - name: Decode, verify narration stream, extract embedded subtitles and poster
+        run: |
+          set -e
+          d=assets/films/series-v26-curcumin
+          f=$d/curcumin-cyanide.mp4
+          ffmpeg -v error -i "$f" -f null -
+          python - <<'PY'
+          import av
+          with av.open('assets/films/series-v26-curcumin/curcumin-cyanide.mp4') as c:
+            v=next(x for x in c.streams if x.type=='video')
+            a=next(x for x in c.streams if x.type=='audio')
+            s=next(x for x in c.streams if x.type=='subtitle')
+            assert abs(c.duration/av.time_base - 120) < .1
+            assert v.codec_context.name=='h264' and (v.width,v.height)==(1280,720) and v.average_rate.numerator/v.average_rate.denominator==24
+            assert a.codec_context.name=='aac' and a.rate==48000
+            assert s.codec_context.name=='mov_text'
+          print('Film04 full-decode and embedded speech/subtitle streams passed')
+          PY
+          ffmpeg -hide_banner -loglevel error -y -i "$f" -map 0:s:0 -c:s webvtt $d/curcumin-cyanide.vtt
+          test "$(grep -c '\-\->' $d/curcumin-cyanide.vtt)" -ge 20
+          ffmpeg -hide_banner -loglevel error -y -ss 20 -i "$f" -frames:v 1 $d/curcumin-cyanide.webp
+      - name: Update only Film 04 player with original source credit
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          p=Path('publication-cinema.html');old=p.read_text(encoding='utf-8')
+          a=old.index('<article class="piece" id="film-curcumin-cyanide"')
+          b=old.index('</article>',a)+len('</article>')
+          block=old[a:b]
+          before='/assets/films/series-v6/curcumin-cyanide.'
+          after='/assets/films/series-v26-curcumin/curcumin-cyanide.'
+          assert block.count(before+'mp4')==2
+          assert block.count(before+'webp')==1 and block.count(before+'vtt')==1
+          out=block.replace(before,after)
+          credit=' <span class="source-figure-credit">Research figures: Hijji et al., Analytical Methods 2019, DOI 10.1039/C9AY01557D. Reused by an author with acknowledgement under RSC author rights.</span>'
+          out=out.replace('</article>',credit+'</article>')
+          p.write_text(old[:a]+out+old[b:],encoding='utf-8')
+          target=Path('assets/films/series-v26-curcumin/curcumin-cyanide.mp4')
+          info={'film_id':'curcumin-cyanide','edition':'v26 web-optimized approved picture and sound','duration_seconds':120,'resolution':[1280,720],'fps':24,'sha256':hashlib.sha256(target.read_bytes()).hexdigest(),'original_master_sha256':'5c1730a7f460ed10b5391225d721efd97fc529992302d0770ec2f954a38f368e','web_optimization':'H264 CRF26 from approved source master, audio AAC 160k; full decode verified, subtitles carried from original file','narration':'Kokoro ONNX af_bella, 12 scenes, audible speech validated in original review','research_doi':'10.1039/C9AY01557D','reuse':'Author reusing individual paper figures with correct acknowledgement, RSC author rights; no full-paper republication','original_v6_preserved':True}
+          Path('assets/films/series-v26-curcumin/curcumin-cyanide.json').write_text(json.dumps(info,indent=2)+'\n')
+          PY
+      - name: Commit only Film 04 website assets and remove transfer staging
+        run: |
+          git config user.name "Ruwaidix Science Film Builder"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r production/film04-transfer
+          git add publication-cinema.html assets/films/series-v26-curcumin
+          git commit -m "Stage Film 04 narrated web version and science figure credit; preserve V6"
+          git push origin HEAD:film04-curcumin-site-release-20261022
