@@ -1,0 +1,62 @@
+name: Film 04 free Kokoro voice audition
+on:
+  push:
+    branches: [film04-kokoro-narration-20261022]
+    paths: ['.github/workflows/film04-kokoro.yml']
+permissions:
+  contents: read
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Kokoro and free phonemizer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y espeak-ng
+          python -m pip install -q 'kokoro-onnx>=0.4,<1' 'numpy>=1.25,<3' 'soundfile>=0.12'
+      - name: Download model weights
+        run: |
+          mkdir -p model
+          curl -fLsS --retry 3 -o model/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx
+          curl -fLsS --retry 3 -o model/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
+          test "$(stat -c%s model/kokoro-v1.0.fp16.onnx)" -gt 90000000
+      - name: Render twelve source-verified voice scenes
+        run: |
+          python - <<'PY'
+          import numpy as np,soundfile as sf,json
+          from pathlib import Path
+          from kokoro_onnx import Kokoro
+          lines=["Curcumin is the familiar yellow pigment of turmeric. But in the laboratory, its colour can become a chemical measurement.","Our study asked whether cyanide changes curcumin's optical signature. Here is the compound itself, from the original paper.","In the tested solvent mixture, nine parts acetonitrile to one part water, the yellow solution became dark orange.","The absorption maximum shifted from four hundred twenty-one to five hundred twenty nanometres. These are the actual published spectra.","As cyanide concentration increased, one absorption band diminished while another grew. The paper records that titration in detail.","The authors reported a detection limit of two point three micromolar under the specified experimental conditions.","Other tested anions produced much smaller changes. But hydroxide also generated a strong response, an important selectivity caveat.","Fluorescence behaved differently. Adding cyanide quenched curcumin's emission near five hundred twenty nanometres.","The researchers then introduced curcumin into cultured H E K two nine three T cells, producing visible fluorescence.","These are real fluorescence micrographs from the publication. Cyanide reduced the cellular signal progressively over time.","Cell images demonstrate an optical response in culture. They do not establish a field-ready water test or clinical diagnosis.","The larger lesson is that a familiar molecule can become a probe when its response, limits and interferences are measured."]
+          model=Kokoro('model/kokoro-v1.0.fp16.onnx','model/voices-v1.0.bin')
+          mix=None;sr=None;events=[]
+          for i,sentence in enumerate(lines):
+            for speed in (1.08,1.13,1.18,1.23,1.28):
+              a,rate=model.create(sentence,voice='af_bella',speed=speed,lang='en-us')
+              a=np.asarray(a,dtype=np.float32).flatten()
+              if len(a)/rate<=9.50: break
+            duration=len(a)/rate
+            if duration>9.50:raise RuntimeError(f'Scene {i+1} exceeds timing: {duration:.2f}s; text must be edited, not clipped')
+            if sr is None:sr=rate;mix=np.zeros(120*sr,dtype=np.float32)
+            assert sr==rate
+            offset=(i*10+.18);start=round(offset*sr)
+            mix[start:start+len(a)]+=a
+            sf.write(f'shot-{i+1:02d}.wav',a,sr,subtype='PCM_16')
+            events.append(dict(shot=i+1,start=offset,end=offset+duration,words=sentence,speed=speed))
+            print('OK',i+1,round(duration,2),speed,flush=True)
+          peak=float(np.max(np.abs(mix)));assert peak>0.01
+          sf.write('Film_04_Kokoro_Narration.wav',mix*(.76/peak),sr,subtype='PCM_16')
+          Path('Film_04_Narration_Timings.json').write_text(json.dumps(dict(voice='af_bella; open-source Kokoro ONNX',review='Human listening not completed',events=events),indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: film04-kokoro-narration
+          path: |
+            Film_04_Kokoro_Narration.wav
+            Film_04_Narration_Timings.json
+            shot-*.wav
+          retention-days: 7
