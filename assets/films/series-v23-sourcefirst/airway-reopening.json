@@ -1,0 +1,18 @@
+{
+  "film_id": "airway-reopening",
+  "edition": "series-v23-sourcefirst",
+  "seconds": 120,
+  "fps": 24,
+  "resolution": [
+    1600,
+    900
+  ],
+  "sha256": "46b7d4591b27a6ce61471b47852eec43af50bcc85af2e62e513eec2488c2fd7d",
+  "narrator": "Kokoro ONNX af_bella; generated using open-source toolchain",
+  "research": "https://doi.org/10.1152/japplphysiol.00574.2020",
+  "source_images": "Original study Figures 1-5, attribution preserved",
+  "original_v6_preserved": true,
+  "source_renderer": "production/film-01-source-first/render_film.py",
+  "captions": "airway-reopening.vtt",
+  "voice_and_science_review": "User approved this exact narrated cut. Figure rights must be checked for public redistribution."
+}
