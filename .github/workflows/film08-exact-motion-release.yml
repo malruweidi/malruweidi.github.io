@@ -1,0 +1,99 @@
+name: Film 08 — publish exact narrated motion-led PLA film
+on:
+  push:
+    branches: [film08-approved-motion-site-release-20261023]
+    paths: ['.github/workflows/film08-exact-motion-release.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install free FFmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Reconstruct identical narrated Film 08, gate on checksum
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64,hashlib
+          files=sorted(Path('production/film08-transfer').glob('part-*.txt'))
+          assert len(files)==37,f'Expected 37 transferred chunks, received {len(files)}'
+          b64=''.join(x.read_text(encoding='ascii') for x in files)
+          assert len(b64)==14447036, len(b64)
+          raw=base64.b64decode(b64,validate=True)
+          assert len(raw)==10835277,len(raw)
+          sha=hashlib.sha256(raw).hexdigest()
+          assert sha=='dcc7148fa4f97a8694a26d83eef59ef5f84942eacc46af38c510770a06b2e5b8',sha
+          p=Path('assets/films/series-v30-pla-motion/pla-grafting.mp4')
+          p.parent.mkdir(parents=True,exist_ok=True)
+          p.write_bytes(raw)
+          print('Reconstructed Film 08:',sha,p.stat().st_size)
+          PY
+      - name: Confirm full audio-video decoding and create matching poster
+        run: |
+          set -e
+          movie=assets/films/series-v30-pla-motion/pla-grafting.mp4
+          ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels -of json "$movie" | tee /tmp/film08-probe.json
+          ffmpeg -v error -i "$movie" -f null -
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/film08-probe.json'))
+          assert abs(float(p['format']['duration'])-120)<.05
+          v=next(s for s in p['streams'] if s['codec_type']=='video')
+          a=next(s for s in p['streams'] if s['codec_type']=='audio')
+          assert (v['codec_name'],v['width'],v['height'],v['r_frame_rate'])==('h264',1280,720,'24/1')
+          assert a['codec_name']=='aac' and int(a['sample_rate'])==48000 and a['channels']==2
+          print('Full H264/AAC decode passed')
+          PY
+          ffmpeg -y -v error -ss 4 -i "$movie" -frames:v 1 -vf scale=960:-2 -quality 86 assets/films/series-v30-pla-motion/pla-grafting.webp
+          cp production/film08-sourcefirst/Film08_Corrected_English_Captions.vtt assets/films/series-v30-pla-motion/pla-grafting.vtt
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('assets/films/series-v30-pla-motion/pla-grafting.vtt')
+          content=p.read_text()
+          stamps=re.findall(r'(\d\d:\d\d:\d\d\.\d\d\d) --> (\d\d:\d\d:\d\d\.\d\d\d)',content)
+          assert len(stamps)==24,len(stamps)
+          def sec(x):
+            h,m,s=x.split(':')
+            return 3600*int(h)+60*int(m)+float(s)
+          prev=-1
+          for a,b in stamps:
+            assert sec(a)>=prev and sec(b)>sec(a) and sec(b)<=120,(a,b)
+            prev=sec(b)
+          print('Monotonic corrected 24-cue captions verified')
+          PY
+      - name: Update Film 08 and no other website player
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          p=Path('publication-cinema.html')
+          html=p.read_text(encoding='utf-8')
+          start=html.index('<article class="piece" id="film-pla-grafting"')
+          end=html.index('</article>',start)+len('</article>')
+          old=html[start:end]
+          src='/assets/films/series-v8-primary/pla-grafting.'
+          dst='/assets/films/series-v30-pla-motion/pla-grafting.'
+          assert old.count(src+'mp4')==2
+          assert old.count(src+'vtt')==1
+          assert old.count('poster="/assets/films/source-figures/v3/pla-grafting-figure-08.jpg"')==1
+          new=old.replace(src,dst).replace('poster="/assets/films/source-figures/v3/pla-grafting-figure-08.jpg"','poster="'+dst+'webp"')
+          assert old!=new
+          p.write_text(html[:start]+new+html[end:],encoding='utf-8')
+          film=Path('assets/films/series-v30-pla-motion/pla-grafting.mp4')
+          manifest={'film_id':'pla-grafting','version':'v30 motion-led source-first narrated review','sha256':hashlib.sha256(film.read_bytes()).hexdigest(),'duration_seconds':120,'resolution':[1280,720],'fps':24,'voice':'Kokoro ONNX af_bella — twelve voiced sequences','figures':'Source Polymers 2021, 13, 3717 DOI 10.3390/polym13213717; CC BY 4.0','visual_materials':'Original CGI plasma and material surface animations plus unaltered published research images; animations labelled conceptual','captions':'Corrected 24-cue English VTT; precise per-word audio alignment not claimed','old_version_preserved':True,'only_player_changed':'film-pla-grafting'}
+          Path('assets/films/series-v30-pla-motion/pla-grafting.json').write_text(json.dumps(manifest,indent=2)+'\n')
+          PY
+      - name: Commit verified film and remove temporary transport
+        run: |
+          git config user.name "Ruwaidix Science Film Builder"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r production/film08-transfer
+          git add publication-cinema.html assets/films/series-v30-pla-motion
+          git commit -m "Publish exact Film 08 motion-led PLA narrated review, preserve V8"
+          git push origin HEAD:film08-approved-motion-site-release-20261023
