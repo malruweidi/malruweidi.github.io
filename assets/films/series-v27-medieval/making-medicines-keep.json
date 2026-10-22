@@ -1,0 +1,15 @@
+{
+  "film_id": "making-medicines-keep",
+  "version": "v27 source-first narrated 120s",
+  "sha256": "23dc36e546b7419c3c3bd1122951e203aadd918c6603183cc755f64873a5582e",
+  "seconds": 120,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "voice": "Kokoro ONNX English - eight passages",
+  "source": "Manuscript of Minhaj al-dukk\u0101n, 1904 Egyptian copy of an earlier Cairo treatise, marked clearly; author historical research",
+  "old_v8_preserved": true,
+  "reference_rights": "Wellcome scanned manuscript identified as public domain",
+  "site_change": "only film05 player references"
+}
