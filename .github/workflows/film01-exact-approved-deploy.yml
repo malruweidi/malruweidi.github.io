@@ -1,0 +1,88 @@
+name: Film 01 / exact approved master / staging release
+on:
+  push:
+    branches: [film01-approved-rebuild-and-film02-prep-20261022]
+    paths: ['.github/workflows/film01-exact-approved-deploy.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  verify-and-stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+      - name: Install audio/video validation
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Restore exact approved film from lossless transport
+        run: |
+          python - <<'PY'
+          import pathlib,base64,hashlib
+          src=pathlib.Path('production/film-01-source-first/transfer')
+          parts=sorted(src.glob('part-*.txt'))
+          assert len(parts)==21, f'Expected 21 transfer parts; got {len(parts)}'
+          b64=''.join(p.read_text(encoding='ascii').replace('\n','').replace('\r','') for p in parts)
+          assert len(b64)==31326368,len(b64)
+          raw=base64.b64decode(b64,validate=True)
+          digest=hashlib.sha256(raw).hexdigest()
+          expected='46b7d4591b27a6ce61471b47852eec43af50bcc85af2e62e513eec2488c2fd7d'
+          assert digest==expected,f'SHA-256 mismatch {digest}'
+          out=pathlib.Path('assets/films/series-v23-sourcefirst/airway-reopening.mp4')
+          out.parent.mkdir(parents=True,exist_ok=True)
+          out.write_bytes(raw)
+          print('EXACT FILM 01 MASTER VERIFIED:',digest,len(raw),flush=True)
+          PY
+      - name: Decode and verify all video and audio
+        run: |
+          set -e
+          f=assets/films/series-v23-sourcefirst/airway-reopening.mp4
+          ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels -of json "$f" | tee film01-ffprobe.json
+          ffmpeg -v error -i "$f" -f null -
+          python - <<'PY'
+          import json
+          x=json.load(open('film01-ffprobe.json'))
+          assert abs(float(x['format']['duration'])-120)<0.02
+          streams=x['streams'];v=next(s for s in streams if s['codec_type']=='video')
+          a=next(s for s in streams if s['codec_type']=='audio')
+          assert (v['width'],v['height'])==(1600,900)
+          assert v['codec_name']=='h264' and v['r_frame_rate']=='24/1'
+          assert a['codec_name']=='aac' and a['sample_rate']=='48000'
+          print('FILM 01 AV DECODES PASS')
+          PY
+          ffmpeg -hide_banner -loglevel error -y -ss 1.2 -i "$f" -frames:v 1 -quality 84 assets/films/series-v23-sourcefirst/airway-reopening.webp
+      - name: Update only Film 01 player, keeping V6 intact
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          p=Path('publication-cinema.html')
+          s=p.read_text()
+          old='/assets/films/series-v6/airway-reopening.'
+          new='/assets/films/series-v23-sourcefirst/airway-reopening.'
+          assert s.count(old+'mp4')==2, s.count(old+'mp4')
+          assert s.count(old+'vtt')==1
+          assert s.count(old+'webp')==1
+          s=s.replace(old,new)
+          p.write_text(s)
+          f=Path('assets/films/series-v23-sourcefirst/airway-reopening.mp4')
+          rec={'film_id':'airway-reopening','edition':'series-v23-sourcefirst','seconds':120,'fps':24,
+            'resolution':[1600,900],'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),
+            'narrator':'Kokoro ONNX af_bella; generated using open-source toolchain',
+            'research':'https://doi.org/10.1152/japplphysiol.00574.2020',
+            'source_images':'Original study Figures 1-5, attribution preserved',
+            'original_v6_preserved':True,'source_renderer':'production/film-01-source-first/render_film.py',
+            'captions':'airway-reopening.vtt','voice_and_science_review':'User approved this exact narrated cut. Figure rights must be checked for public redistribution.'}
+          Path('assets/films/series-v23-sourcefirst/airway-reopening.json').write_text(json.dumps(rec,indent=2)+'\n')
+          print('PLAYER CHANGED: ONLY FILM 01')
+          PY
+      - name: Commit exact movie, subtitles, poster, and updated player to staging
+        run: |
+          git config user.name "Ruwaidix Film Release Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r production/film-01-source-first/transfer
+          git add publication-cinema.html assets/films/series-v23-sourcefirst
+          git commit -m "Stage exact approved narrated Film 01 in publication cinema; archive old video"
+          git push origin HEAD:film01-approved-rebuild-and-film02-prep-20261022
