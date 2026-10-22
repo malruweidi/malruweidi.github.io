@@ -1,0 +1,85 @@
+name: Film 07 - checksum verified narrated release
+on:
+  push:
+    branches: [film07-narrated-website-release-20261023]
+    paths: ['.github/workflows/film07-exact-website.yml']
+permissions:
+  contents: write
+jobs:
+  publish-on-staging-branch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install open-source media audit
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Reconstruct and verify exact approved Film 07
+        run: |
+          python - <<'PY'
+          import base64,hashlib
+          from pathlib import Path
+          ps=sorted(Path('production/film07-transfer').glob('part-*.txt'))
+          assert len(ps)==53,len(ps)
+          encoded=''.join(p.read_text('ascii') for p in ps)
+          assert len(encoded)==20627288,len(encoded)
+          video=base64.b64decode(encoded,validate=True)
+          assert len(video)==15470464,len(video)
+          digest=hashlib.sha256(video).hexdigest()
+          assert digest=='407cc27a91b69a19fc4b0219c358a2a04d30edd595abe1779f1d3ad87b5dfebd',digest
+          f=Path('assets/films/series-v29-echo/echo-cnn-lstm.mp4')
+          f.parent.mkdir(parents=True,exist_ok=True)
+          f.write_bytes(video)
+          print('Film07 exact master verified',digest,len(video),flush=True)
+          PY
+      - name: Decode all frames and extract embedded English captions and poster
+        run: |
+          set -e
+          f=assets/films/series-v29-echo/echo-cnn-lstm.mp4
+          ffmpeg -nostdin -v error -i "$f" -f null -
+          ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels -of json "$f" >/tmp/probe07.json
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/probe07.json'))
+          assert abs(float(p['format']['duration'])-120)<0.04
+          video=next(s for s in p['streams'] if s['codec_type']=='video')
+          audio=next(s for s in p['streams'] if s['codec_type']=='audio')
+          subs=next(s for s in p['streams'] if s['codec_type']=='subtitle')
+          assert (video['width'],video['height'],video['codec_name'],video['r_frame_rate'])==(1280,720,'h264','24/1')
+          assert audio['codec_name']=='aac' and audio['sample_rate']=='48000' and audio['channels']==2
+          assert subs['codec_name']=='mov_text'
+          print('Full picture/audio/captions streams verified',flush=True)
+          PY
+          ffmpeg -nostdin -y -v error -i "$f" -map 0:s:0 -c:s webvtt assets/films/series-v29-echo/echo-cnn-lstm.vtt
+          test "$(grep -c -- '-->' assets/films/series-v29-echo/echo-cnn-lstm.vtt)" -ge 12
+          ffmpeg -nostdin -y -v error -ss 4 -i "$f" -frames:v 1 -vf 'scale=960:-2' -quality 85 assets/films/series-v29-echo/echo-cnn-lstm.webp
+      - name: Update Film 07 references only
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          p=Path('publication-cinema.html');h=p.read_text(encoding='utf8')
+          start=h.index('<article class="piece" id="film-echo-cnn-lstm"')
+          end=h.index('</article>',start)+len('</article>')
+          old=h[start:end]
+          a='/assets/films/series-v6/echo-cnn-lstm.'
+          b='/assets/films/series-v29-echo/echo-cnn-lstm.'
+          assert old.count(a+'mp4')==2 and old.count(a+'vtt')==1 and old.count(a+'webp')==1
+          new=old.replace(a,b)
+          p.write_text(h[:start]+new+h[end:],encoding='utf8')
+          m={'film':'echo-cnn-lstm','release':'series-v29-echo','duration_seconds':120,
+            'sha256':hashlib.sha256(Path('assets/films/series-v29-echo/echo-cnn-lstm.mp4').read_bytes()).hexdigest(),
+            'narrator':'Kokoro ONNX af_bella with twelve timed passages',
+            'study':'10.1109/ACCESS.2023.3316719; 22 fetuses (9 healthy, 13 HLHS); pilot only',
+            'original_v6_preserved':True,'changes':'Film07 player only'}
+          Path('assets/films/series-v29-echo/echo-cnn-lstm.json').write_text(json.dumps(m,indent=2)+'\n')
+          PY
+      - name: Commit verified staged release and remove temporary chunks
+        run: |
+          git config user.name "Ruwaidix Science Film Builder"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r production/film07-transfer
+          git add publication-cinema.html assets/films/series-v29-echo
+          git commit -m "Stage exact narrated Film07; preserve older film and other routes"
+          git push origin HEAD:film07-narrated-website-release-20261023
