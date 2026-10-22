@@ -1,0 +1,17 @@
+{
+  "id": "slit2-robo",
+  "edition": "v25 source-first narrated review",
+  "duration_seconds": 120,
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 24,
+  "sha256": "7cd945b152c7c254ba163d4c69469daa2c8f33bfebb176ee8a1fb4855b76d14e",
+  "narration": "Kokoro ONNX af_bella, 12 scene-synced passages, review-approved progression",
+  "source_doi": "10.1080/13543776.2026.2690118",
+  "content": "Original article framework, original figures, concept animations; patents distinct from proof of efficacy",
+  "figure_rights": "Author has approved progressing the series; publisher figure rights not independently verified",
+  "old_v6_preserved": true,
+  "captions": "slit2-robo.vtt"
+}
