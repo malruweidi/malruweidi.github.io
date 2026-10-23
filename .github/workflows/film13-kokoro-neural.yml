@@ -1,0 +1,83 @@
+name: Film13 free open-source Kokoro narration
+on:
+  push:
+    branches: [film13-kokoro-neural-20261023]
+    paths: ['.github/workflows/film13-kokoro-neural.yml']
+permissions:
+  contents: read
+jobs:
+  synthesize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install zero-cost Kokoro-ONNX and FFmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y espeak-ng ffmpeg
+          python -m pip install -q 'kokoro-onnx>=0.4,<1' 'numpy>=1.25,<3' 'soundfile>=0.12'
+      - name: Download Apache-2.0 free neural model and open voices
+        run: |
+          mkdir -p model
+          curl -fLsS --retry 3 -o model/kokoro-v1.0.fp16.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.fp16.onnx
+          curl -fLsS --retry 3 -o model/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
+      - name: Synthesize 12 chapter-aligned documentary passages
+        run: |
+          import json,subprocess,numpy as np,soundfile as sf
+          from pathlib import Path
+          from kokoro_onnx import Kokoro
+          
+          scenes=["Every meal brings the outside world into contact with the gut. A single layer of cells must choose what passes through, and what remains outside.","These epithelial cells form a living border. Mucus, tight junctions, and signals from neighboring cells help regulate the passage of molecules.","Under that border, immune cells patrol without declaring war on every meal or microbe. Tolerance is an active biological achievement.","Our review considered several gastrointestinal disorders. Their symptoms can overlap, but the underlying mechanisms differ, and those differences matter.","In autoimmune gastritis, immune reactions target the stomach's acid-producing parietal cells. Intrinsic factor may decline, making vitamin B twelve harder to absorb.","In genetically susceptible people, gluten triggers the immune response of celiac disease. Damage to intestinal villi can reduce the surface for nutrient absorption.","Eosinophilic esophagitis involves type two immune inflammation. Eosinophils accumulate in the esophagus, but it is not a classic autoantibody-driven disease.","Crohn's disease can affect separated portions of the digestive tract. Inflammation may also extend through deeper layers of the intestinal wall.","Ulcerative colitis follows a different pattern. Inflammation typically begins at the rectum and extends continuously through the colon's inner lining.","Achalasia is primarily a disorder of esophageal movement. The lower sphincter fails to relax normally, and the precise cause of nerve loss remains uncertain.","The gut and brain exchange signals through nerves, hormones, and immune pathways. Their connection is real, but it cannot reduce these diseases to stress.","The important question is not simply where inflammation appears. It is what mechanism caused injury, and which evidence can distinguish it from another explanation."]
+          starts=[0.50,13.50,27.50,41.50,53.50,67.50,82.50,95.50,110.50,123.50,137.50,151.50]
+          ends=[12.50,26.50,40.50,52.50,66.50,81.50,94.50,109.50,122.50,136.50,150.50,162.40]
+          assert len(scenes)==len(starts)==len(ends)==12
+          engine=Kokoro('model/kokoro-v1.0.fp16.onnx','model/voices-v1.0.bin')
+          voice='af_bella';out=None;sr=None;events=[]
+          for i,(spoken,start,end) in enumerate(zip(scenes,starts,ends)):
+              a,rate=engine.create(spoken,voice=voice,speed=1.10,lang='en-us')
+              a=np.asarray(a,dtype=np.float32).ravel()
+              assert len(a)>5000
+              duration=len(a)/rate
+              window=end-start
+              tempo=1.0
+              if duration>window:
+                  tempo=duration/window*1.015
+                  if tempo>1.35: print('WARNING fast spoken segment',i+1,tempo,flush=True)
+                  sf.write('temp_input.wav',a,rate)
+                  subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-i','temp_input.wav','-af',f'atempo={min(2.0,tempo):.4f}','-ac','1','-ar',str(rate),'temp_output.wav'],check=True)
+                  a,_=sf.read('temp_output.wav',dtype='float32')
+                  a=np.asarray(a,dtype=np.float32).ravel()
+                  duration=len(a)/rate
+              if duration>window+0.05:
+                  raise RuntimeError(f'Cannot fit shot {i+1}: {duration:.2f}s > {window:.2f}s')
+              if sr is None:
+                  sr=rate
+                  out=np.zeros(int(sr*163),dtype=np.float32)
+              assert sr==rate
+              # smooth voice start/end fades, but do not clip content
+              fade=min(int(rate*0.035),len(a)//8)
+              if fade>0:
+                  a[:fade]*=np.linspace(0,1,fade)
+                  a[-fade:]*=np.linspace(1,0,fade)
+              off=int(round(start*sr));out[off:off+len(a)]+=a
+              sf.write(f'shot_{i+1:02d}.wav',a,sr)
+              events.append(dict(shot=i+1,start=start,end=start+duration,slot_end=end,spoken_words=len(spoken.split()),tempo_correction=round(tempo,3),text=spoken))
+              print(f'SCENE {i+1}/12 start={start:.1f} audible={duration:.2f}s window={window:.1f}s tempo={tempo:.2f}',flush=True)
+          out *= min(1.0,0.88/max(float(np.max(np.abs(out))),0.01))
+          sf.write('Film13_Kokoro_Narration.wav',out,sr,subtype='PCM_16')
+          Path('Film13_Kokoro_Timing.json').write_text(json.dumps(events,ensure_ascii=False,indent=2))
+          Path('Film13_Kokoro_Narration_Script.txt').write_text('\n\n'.join(scenes),encoding='utf-8')
+          assert sf.info('Film13_Kokoro_Narration.wav').duration>=162.9
+          print('SUCCESS: generated 163-second genuine neural WAV, 12 spoken segments, no paid services',flush=True)
+          
+      - uses: actions/upload-artifact@v4
+        with:
+          name: film13-free-neural-narration
+          path: |
+            Film13_Kokoro_Narration.wav
+            Film13_Kokoro_Timing.json
+            Film13_Kokoro_Narration_Script.txt
+          retention-days: 7
