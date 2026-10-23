@@ -1,0 +1,28 @@
+{
+  "film": 14,
+  "slug": "gi-autoimmunity-2",
+  "status": "picture_review_not_narrated",
+  "picture_export_name": "Film_14_Diagnostic_Problem_Picture_Review_NO_NARRATION.mp4",
+  "duration_seconds": 165,
+  "resolution": "960x540",
+  "frame_rate": 24,
+  "codec": "H.264",
+  "audio": "AAC original instrumental only",
+  "audio_has_spoken_narration": false,
+  "source": "https://doi.org/10.5772/intechopen.106185",
+  "material": "Original conceptual animations, simulated diagrams; not clinical figures or medical advice",
+  "local_artifact_sha256": "38f8e8b78974401a9e0791df238d1738faa2920d912d40ef2a7be839cd21cd43",
+  "qc": {
+    "decode": "passed",
+    "full_audio_audition": "not performed",
+    "scientific_human_signoff": false,
+    "release_approved": false
+  },
+  "public_website_modified": false,
+  "release_blockers": [
+    "natural narrated recording embedded in MP4",
+    "word-synced captions from actual recording",
+    "human listening and mobile review",
+    "final science and rights signoff"
+  ]
+}
