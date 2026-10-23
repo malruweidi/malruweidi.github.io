@@ -25,6 +25,7 @@ jobs:
           curl -fLsS --retry 3 -o model/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
       - name: Synthesize 12 chapter-aligned documentary passages
         run: |
+          python - <<'PY'
           import json,subprocess,numpy as np,soundfile as sf
           from pathlib import Path
           from kokoro_onnx import Kokoro
@@ -72,6 +73,7 @@ jobs:
           assert sf.info('Film13_Kokoro_Narration.wav').duration>=162.9
           print('SUCCESS: generated 163-second genuine neural WAV, 12 spoken segments, no paid services',flush=True)
           
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: film13-free-neural-narration
