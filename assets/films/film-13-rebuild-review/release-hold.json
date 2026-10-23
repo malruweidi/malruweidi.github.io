@@ -1,0 +1,23 @@
+{
+  "film": 13,
+  "slug": "gi-autoimmunity-1",
+  "status": "draft-voice-not-yet-accepted",
+  "branch": "film-13-cinematic-rebuild-review-20261023",
+  "date": "2026-10-23",
+  "target_seconds": 163,
+  "fps": 24,
+  "source_doi": "10.5772/intechopen.106184",
+  "contextual_guideline_doi": "10.1097/MPG.0000000000003877",
+  "new_work": "original procedural 8-scene motion concept, source-checked narration and generated original instrumental sound bed",
+  "footage": "all illustrations are conceptual; never depict them as genuine histology or actual source footage",
+  "release_criteria": [
+    "Natural human-approved narration embedded in the exact final MP4",
+    "Audio transcript aligns with VTT cues",
+    "Scientific fact check to published chapters and later guidelines",
+    "Asset licenses and rights reviewed",
+    "Mobile/fullsize visual and auditory QC signed off",
+    "User authorizes final publish"
+  ],
+  "public_paths_unchanged": true,
+  "public_primary": "/assets/films/series-v6/gi-autoimmunity-1.mp4"
+}
