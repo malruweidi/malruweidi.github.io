@@ -88,3 +88,40 @@ html[dir=rtl] .rx-context .rx-context-inner{direction:rtl}
   .rx-universal .rx-menu-panel>a{font-size:13px;min-height:42px;padding:10px 0}
   .rx-context .rx-context-inner{flex-wrap:wrap}
 }
+
+
+/* 24 October 2026: measured 320px header overflow and mobile Explore placement.
+ * Narrow-screen adjustments only; the scholarly palette, content and routes
+ * remain unchanged. A closed details menu has no off-canvas layout footprint.
+ */
+.rx-universal details.rx-more:not([open]) > .rx-menu-panel {
+  display:none;
+}
+@media (max-width:420px) {
+  .rx-universal details.rx-more[open] > .rx-menu-panel {
+    position:fixed;
+    top:70px;
+    left:12px;
+    right:12px;
+    width:auto;
+    max-width:none;
+  }
+  html[dir="rtl"] .rx-universal details.rx-more[open] > .rx-menu-panel {
+    left:12px;
+    right:12px;
+  }
+}
+@media (max-width:360px) {
+  .rx-universal .rx-inner {gap:4px;}
+  .rx-universal .rx-identity {gap:6px;}
+  .rx-universal .rx-primary {gap:5px;}
+  .rx-universal .rx-brand {white-space:normal;}
+  .rx-universal .rx-brand strong {
+    font-size:11px;
+    line-height:1.24;
+    overflow-wrap:normal;
+  }
+  .rx-universal #rx-global-search-link.rx-discovery-link {
+    padding-inline:6px;
+  }
+}
