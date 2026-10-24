@@ -1,0 +1,52 @@
+{
+  "title": "Film 19: When Food Becomes a Printable Material",
+  "author_source": "Author-owned 2026 citation-audited, accepted/forthcoming literature review, not a recorded original experiment",
+  "duration_seconds": 170,
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 17,
+      "text": "On the screen, the printer follows a perfect path. But the edible paste begins to slump before the next layer is finished. Its geometry was precise. Its material behaviour was not."
+    },
+    {
+      "start": 17,
+      "duration": 19,
+      "text": "An edible ink may contain starch granules, protein networks, droplets of fat, and water held with different degrees of freedom. The ingredients form a structure that a recipe alone cannot fully describe."
+    },
+    {
+      "start": 36,
+      "duration": 18,
+      "text": "Under pressure, a suitable ink yields and flows through a narrow nozzle. Its apparent viscosity may fall as the shear rate rises. But flow alone is an incomplete success: the strand must also leave the nozzle continuously."
+    },
+    {
+      "start": 54,
+      "duration": 20,
+      "text": "After deposition, the material faces gravity. Too little structure and the printed wall spreads. Too much and extrusion becomes difficult, sometimes breaking the filament. The useful region depends on formulation and printer settings, not on one universal viscosity number."
+    },
+    {
+      "start": 74,
+      "duration": 19,
+      "text": "The next layer arrives before the material has all day to recover. Its post-shear network must rebuild quickly enough to support the load. This is why a rheometer reading without a relevant time history can be misleading."
+    },
+    {
+      "start": 93,
+      "duration": 19,
+      "text": "Inside the paste, water migrates and particles reorganize. Layers may bond, separate or shrink as conditions change. A structure that looks stable just after printing can still fail during cooling, storage or handling."
+    },
+    {
+      "start": 112,
+      "duration": 21,
+      "text": "A four-dimensional food structure is designed to change under a stimulus such as moisture or temperature. Curved-path and multiaxis fabrication can alter how layers are deposited. The labels five-D and six-D remain under-standardized; a name is not evidence of function."
+    },
+    {
+      "start": 133,
+      "duration": 18,
+      "text": "A successful object must also be edible, acceptable and safe. For texture-modified food, swallowing properties demand appropriate testing. Microbial safety, water activity and storage stability cannot be inferred from a visually convincing print."
+    },
+    {
+      "start": 151,
+      "duration": 19,
+      "text": "The chapter argues for a reproducible material–process–function window. Record the formulation, measure how it flows and recovers, report the actual printing conditions, then test the final food. Only then can programmable geometry become reliable manufacturing."
+    }
+  ]
+}
