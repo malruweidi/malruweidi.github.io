@@ -28,3 +28,9 @@ test("the translation observer notices dynamically replaced ARIA labels", () => 
     assert.match(source, new RegExp("attributeFilter:[^\\n]*" + attribute));
   }
 });
+
+test("approved header logo is not reassigned when the URL is already correct", () => {
+  const source = read("assets/site-enhancements.js");
+  assert.match(source, /img\.getAttribute\(["']src["']\)\s*!==\s*approvedLogo/);
+  assert.doesNotMatch(source, /img\.src\s*!==\s*approvedLogo/);
+});
