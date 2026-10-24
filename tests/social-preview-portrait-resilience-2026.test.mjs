@@ -42,7 +42,7 @@ test("Stories Arabic portrait caption matches the clean English public descripti
 import {runInNewContext} from "node:vm";
 
 function simulateHomepagePortrait({failed=false}={}) {
-  const original="https://cdn.creativeclaw.co/u/8a002dd8/images/5e4b3ffb-a810-4d3-99c9-cc38782d7b4d.jpg";
+  const original="https://cdn.creativeclaw.co/u/8a002dd8/images/5e4b3ffb-a810-4d3c-99c9-cc38782d7b4d.jpg";
   const attributes={src:original,alt:"Original photo",width:"1536",height:"2048"};
   const listeners=new Map();
   const homePortrait={
