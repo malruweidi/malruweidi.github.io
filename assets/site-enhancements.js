@@ -19,6 +19,24 @@
     document.querySelectorAll('header a.logo > img:first-child, header a.brand > img:first-child, header a.wordmark > img:first-child, header .cv-branding > img:not(.cv-portrait)').forEach(img => {
       if (img.getAttribute("src") !== approvedLogo) img.setAttribute("src", approvedLogo);
     });
+    // Retain the owner's approved homepage photograph. Its original host is
+    // external; if it fails, show the already published owner-supplied local
+    // portrait rather than a broken image. Normal loads are never changed.
+    const homePortrait = root.dataset.rxPage === "home" ?
+      document.querySelector(".rx-portrait-mat > img") : null;
+    if (homePortrait && homePortrait.getAttribute("src") ===
+      "https://cdn.creativeclaw.co/u/8a002dd8/images/5e4b3ffb-a810-4d3c-99c9-cc38782d7b4d.jpg") {
+      const fallbackPortrait = "/assets/2026-10-13-new-photos/research-portrait-calligraphy.webp";
+      const restorePortrait = () => {
+        homePortrait.removeEventListener("error", restorePortrait);
+        homePortrait.setAttribute("alt", "Mahmoud wearing a white coat in front of Arabic calligraphy, from a separate occasion");
+        homePortrait.setAttribute("width", "710");
+        homePortrait.setAttribute("height", "960");
+        homePortrait.setAttribute("src", fallbackPortrait);
+      };
+      homePortrait.addEventListener("error", restorePortrait, {once:true});
+      if (homePortrait.complete && homePortrait.naturalWidth === 0) restorePortrait();
+    }
     const homeNav = document.getElementById("navlinks");
 
     // Homepage: navigation is an index, not a second CV.
