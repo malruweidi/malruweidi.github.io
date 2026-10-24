@@ -23,3 +23,5 @@ jobs:
           for i in $(seq 1 20); do curl -sf http://127.0.0.1:8765/stories.html >/dev/null && break; sleep .5; done
       - name: Diagnose actual Stories EN/AR reflow at mobile widths
         run: node scripts/audit-stories-mobile-reflow.cjs
+      - name: Verify deployed GitHub Pages instead of assuming branch equals production
+        run: node scripts/check-live-pages-2026.cjs
