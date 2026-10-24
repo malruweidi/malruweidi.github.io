@@ -38,3 +38,56 @@ test("Stories Arabic portrait caption matches the clean English public descripti
   assert.match(figure,/صورة شخصية أمام لوحة من الخط العربي، في مناسبة أخرى/);
   assert.doesNotMatch(figure,/لم يُتحقق/);
 });
+
+import {runInNewContext} from "node:vm";
+
+function simulateHomepagePortrait({failed=false}={}) {
+  const original="https://cdn.creativeclaw.co/u/8a002dd8/images/5e4b3ffb-a810-4d3-99c9-cc38782d7b4d.jpg";
+  const attributes={src:original,alt:"Original photo",width:"1536",height:"2048"};
+  const listeners=new Map();
+  const homePortrait={
+    complete:failed,
+    naturalWidth:failed?0:1536,
+    getAttribute: name=>attributes[name]??null,
+    setAttribute:(name,value)=>{attributes[name]=value;},
+    addEventListener:(name,handler)=>listeners.set(name,handler),
+    removeEventListener:name=>listeners.delete(name)
+  };
+  const document={
+    readyState:"complete",
+    documentElement:{dataset:{rxPage:"home"}},
+    querySelector:selector=>selector===".rx-portrait-mat > img"?homePortrait:null,
+    querySelectorAll:()=>[],
+    getElementById:()=>null,
+    addEventListener:()=>{},
+    head:{appendChild:()=>{},querySelectorAll:()=>{}},
+    createElement:()=>({setAttribute:()=>{}})
+  };
+  const source=read("assets/site-enhancements.js").toString("utf8");
+  const navigationLayer=source.split("/* Restored long-form homepage only:")[0];
+  runInNewContext(navigationLayer,{document,window:{},MutationObserver:function(){},console}, {timeout:1000});
+  return {attributes,listeners};
+}
+
+test("healthy original hero photo keeps its original source and alt text", () => {
+  const state=simulateHomepagePortrait();
+  assert.match(state.attributes.src,/^https:\/\/cdn\.creativeclaw\.co\//);
+  assert.equal(state.attributes.alt,"Original photo");
+  assert.equal(typeof state.listeners.get("error"),"function");
+});
+
+test("portrait fallback activates only after a failure and cannot loop", () => {
+  const state=simulateHomepagePortrait();
+  state.listeners.get("error")();
+  assert.equal(state.attributes.src,"/assets/2026-10-13-new-photos/research-portrait-calligraphy.webp");
+  assert.match(state.attributes.alt,/Arabic calligraphy/);
+  assert.equal(state.attributes.width,"710");
+  assert.equal(state.attributes.height,"960");
+  assert.equal(state.listeners.has("error"),false);
+});
+
+test("portrait that has already failed by DOM ready switches to the local asset", () => {
+  const state=simulateHomepagePortrait({failed:true});
+  assert.equal(state.attributes.src,"/assets/2026-10-13-new-photos/research-portrait-calligraphy.webp");
+  assert.equal(state.listeners.has("error"),false);
+});
