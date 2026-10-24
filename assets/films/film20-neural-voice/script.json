@@ -6,47 +6,47 @@
     {
       "start": 0,
       "duration": 17,
-      "text": "The scan gives us a boundary. A patient has lost bone, and the missing shape is unlike anyone else's. Digital design can reproduce that contour. But a ceramic implant must do more than fit an image."
+      "text": "The scan gives us a boundary. Bone is missing, and the shape of that absence belongs to one patient. Digital design can reproduce the contour. But an implant must do more than fit an image."
     },
     {
       "start": 17,
       "duration": 19,
-      "text": "Hydroxyapatite and calcium phosphates served medicine before three-dimensional printing. Additive manufacturing changes the architecture: connected pores, tailored outer surfaces, and fixation features. We must separate the material's inherent properties from any advantage introduced by the manufacturing method."
+      "text": "Hydroxyapatite and calcium phosphates were used in medicine before three-dimensional printing. Printing adds controlled pores, tailored surfaces, and fixation features. We must distinguish a ceramic's material properties from advantages caused by its manufacture."
     },
     {
       "start": 36,
       "duration": 18,
-      "text": "A lattice emerges from a ceramic slurry, layer by layer. It may look complete, yet still contain binder or uncured material. Cleaning, binder removal, and sintering help determine the final dimensions and properties. A digital model is only the beginning."
+      "text": "A ceramic lattice emerges layer by layer. It can look complete while still containing binder or uncured material. Cleaning, binder removal, and sintering determine the final object. The digital model is only a beginning."
     },
     {
       "start": 54,
       "duration": 20,
-      "text": "Inside the furnace, a printed ceramic can shrink. Its grains and pores change. A small flaw may initiate fracture in a brittle, flaw-sensitive material. Dimensional accuracy, density, and strength must be evaluated after processing, not assumed from the printer's precision."
+      "text": "Inside the furnace, the printed ceramic shrinks. Grains and pores evolve. A tiny flaw can initiate fracture in a brittle material. Dimensions and strength must be measured after processing, never assumed from printer precision."
     },
     {
       "start": 74,
       "duration": 20,
-      "text": "Open pores can support tissue infiltration, yet a highly porous architecture may sacrifice mechanical strength. The useful balance depends on connectivity, load, composition, and the location of each defect. The curves on screen are conceptual, not results from a patient or test rig."
+      "text": "Open pores may help tissue enter, but can also weaken the structure. Their connectivity, geometry, and local loading matter. The relationship shown here is an illustration, not a measured threshold for any implant."
     },
     {
       "start": 94,
       "duration": 19,
-      "text": "At the bone interface, tissue responds over time. Histology, imaging, mechanical tests, and patient outcomes answer different questions. Finding bone near an implant is encouraging, but it cannot by itself establish that the manufacturing method improves clinical care."
+      "text": "At the bone interface, tissues respond over time. Histology, imaging, mechanical testing, and patient outcomes answer different questions. Bone near a scaffold alone cannot prove that printing improves clinical care."
     },
     {
       "start": 113,
       "duration": 20,
-      "text": "Some dental applications now have randomized human evidence. A twelve-month trial found broadly comparable performance for printed and milled zirconia crowns. This supports a specific comparison under studied conditions. It cannot establish decades of durability or prove that every printable ceramic works."
+      "text": "Dentistry now has randomized human evidence. A twelve-month study found broadly comparable performance for printed and milled zirconia crowns. This applies to those specific devices and conditions, not to every ceramic or a lifetime of use."
     },
     {
       "start": 133,
       "duration": 19,
-      "text": "Before implantation comes another test: consistent manufacturing, detection of defects, cleaning, sterilization, and biological risk assessment. These requirements depend on the device and its intended use. Regulatory guidance addresses them because a convincing shape alone is never enough."
+      "text": "Before implantation, manufacturers must assess defects, consistency, cleaning, sterilization, and biological risks. Testing depends on intended use. Regulatory guidance is explicit about evaluating these concerns. A beautiful lattice cannot meet them by itself."
     },
     {
       "start": 152,
       "duration": 18,
-      "text": "The clinical question is where printed geometry improves a patient's treatment, beyond the ceramic's known properties. Fit, safety, durability, and meaningful outcomes must carry the argument. This chapter follows that evidence, including where the answer remains uncertain."
+      "text": "The real clinical question is where printed geometry improves treatment. Fit matters. So do safety, durability, and patient outcomes. Our chapter follows those measures and acknowledges where the evidence is still uncertain."
     }
   ]
 }
