@@ -102,6 +102,10 @@ jobs:
         run: node --test tests/cinema-verified-primary-evolution-2026.test.cjs
       - name: Keep one Find link in existing page headers while preserving keyboard search
         run: node --test tests/discovery-single-search-link-2026.test.cjs
+      - name: Test Arabic navigation and dynamically changed accessibility labels
+        run: node --test tests/arabic-navigation-accessibility-2026.test.mjs
+      - name: Guard early homepage research links and preserved editorial content
+        run: node --test tests/homepage-hero-reading-order-2026.test.mjs
       - name: Guard WCAG legibility of restrained archival colors across seven existing pages
         run: node --test tests/wcag-contrast-tokens-2026.test.cjs
       - name: Verify original page titles remain legible with WCAG-safe foregrounds

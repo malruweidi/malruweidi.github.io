@@ -1245,3 +1245,13 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Qatar's Ministry of Sports and Youth issued a certificate of appreciation recognizing my active participation.": "وقد أصدرت وزارة الرياضة والشباب في قطر شهادة شكر وتقدير لمشاركتي الفعالة.",
   "Certificate of appreciation issued in Arabic. The supplied certificate is undated.": "شهادة شكر وتقدير صادرة باللغة العربية. ولا يظهر تاريخ إصدارها في النسخة المتاحة."
 });
+
+
+/* Contextual navigation labels for the dynamically created Sections menu.
+   Additive translation layer; original editorial translations remain intact. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "Sections +": "الأقسام +",
+  "Open site navigation": "فتح قائمة أقسام الموقع",
+  "Close site navigation": "إغلاق قائمة أقسام الموقع",
+  "Primary navigation": "التنقل الرئيسي"
+});

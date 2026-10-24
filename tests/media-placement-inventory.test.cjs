@@ -25,7 +25,7 @@ test('inventory connects original images and movie editions to their exact ownin
     ['stories.html', '/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp', 'img'],
     ['stories.html', '/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp', 'img'],
     ['films/what-a-bubble-can-do.html', '/assets/films/what-a-bubble-can-do-evidence-v2.mp4', 'source'],
-    ['publication-cinema.html', '/assets/films/series-v6/airway-reopening.vtt', 'track']
+    ['publication-cinema.html', '/assets/films/series-v23-sourcefirst/airway-reopening.vtt', 'track']
   ];
   for (const [page, value, tag] of examples) {
     const record = inventory.pages[page].find(x => x.url === value && x.tag === tag);
