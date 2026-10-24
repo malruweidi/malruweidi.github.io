@@ -159,9 +159,10 @@
       changes.forEach(function (change) {
         if (change.type === "characterData") localizeNode(change.target);
         if (change.type === "childList") change.addedNodes.forEach(localizeNode);
+        if (change.type === "attributes") localizeAttributes(change.target);
       });
     });
-    observer.observe(document.body, {childList:true, characterData:true, subtree:true});
+    observer.observe(document.body, {childList:true, characterData:true, attributes:true, attributeFilter:["aria-label","placeholder","title"], subtree:true});
     window.addEventListener("popstate", function () { setLanguage(readStoredLanguage(), false); });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initialize);
