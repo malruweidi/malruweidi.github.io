@@ -1,0 +1,52 @@
+{
+  "title": "The Difficult Promise of a Cubic Carrier",
+  "duration_seconds": 152,
+  "source": "Author-corrected theranostic cubosomes chapter, Chapter 9",
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 16,
+      "text": "A cubosome is not a tiny solid cube. Its lipid bilayer folds through space, separating two interpenetrating networks of water-filled channels. Geometry offers possibilities; it does not supply proof of delivery."
+    },
+    {
+      "start": 16,
+      "duration": 16,
+      "text": "A water-soluble molecule may occupy aqueous channels, while lipophilic cargo associates with the bilayer. A fluorescent or radioactive label can travel with the carrier. Co-loading does not ensure identical fate."
+    },
+    {
+      "start": 32,
+      "duration": 17,
+      "text": "Particle size alone cannot distinguish cubosomes from vesicles or other dispersions. Small-angle X-ray scattering can index the internal lattice; cryogenic microscopy offers complementary evidence. Those measurements determine what structure we are actually studying."
+    },
+    {
+      "start": 49,
+      "duration": 17,
+      "text": "An imaging reporter may reveal where a labeled particle accumulates. A drug must still be released, remain available, and reach its site of action. Carrier location and pharmacologically meaningful exposure can diverge."
+    },
+    {
+      "start": 66,
+      "duration": 17,
+      "text": "In blood, proteins adsorb onto nanocarriers and change how biological systems recognize them. Some particles may reach a tumour; others distribute elsewhere. A targeting ligand does not by itself establish selectivity in vivo."
+    },
+    {
+      "start": 83,
+      "duration": 18,
+      "text": "Imagine a bright imaging signal while the freely available drug concentration has already declined. This is a conceptual example, not a measured dataset. Without calibration, image intensity cannot automatically become a drug exposure curve."
+    },
+    {
+      "start": 101,
+      "duration": 18,
+      "text": "Our chapter distinguishes four levels: carrier location, cargo release, pharmacodynamic effect, and a calibrated relationship between signal and drug exposure. Each level requires evidence that the preceding one cannot provide."
+    },
+    {
+      "start": 119,
+      "duration": 18,
+      "text": "Phase stability, reproducible manufacture, protein corona, biodistribution, safety, and validated exposure-response are separate barriers. Attractive nanostructure and encouraging cell studies are not clinical success."
+    },
+    {
+      "start": 137,
+      "duration": 15,
+      "text": "The difficult promise of a cubic carrier is to make an image that tells us something trustworthy about treatment. Until that link is measured, beauty inside a nanoparticle remains a starting point, not an outcome."
+    }
+  ]
+}
