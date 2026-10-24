@@ -33,12 +33,12 @@
     {
       "start": 81,
       "duration": 19,
-      "text": "At room temperature, reported micelle concentration thresholds were about four point five micromolar for P E O P M M A, and two hundred seventy micromolar for Poloxamer four oh seven."
+      "text": "One polymer assembled near four point five micromolar. Poloxamer four oh seven required about two hundred seventy micromolar."
     },
     {
       "start": 100,
       "duration": 17,
-      "text": "A related P E O P P O diblock showed roughly one micromolar. Lower critical concentration suggests persistence on dilution, but does not alone prove environmental stability."
+      "text": "A related diblock formed micelles near one micromolar. Lower thresholds may favor persistence on dilution, though stability still requires testing."
     },
     {
       "start": 117,
@@ -48,12 +48,12 @@
     {
       "start": 135,
       "duration": 17,
-      "text": "For Poloxamer, reported pyrene fell from zero point six one to zero point one four micromolar after two hours, reaching a reported zero at four hours. The P M M A system took longer."
+      "text": "Poloxamer's measured pyrene fell from zero point six one to zero point one four micromolar in two hours, reaching reported zero at four."
     },
     {
       "start": 152,
       "duration": 16,
-      "text": "The work demonstrated promising laboratory transfer of pyrene out of the measured water phase. Real-world cleanup still demands recovery, controls, mass balance, and field testing."
+      "text": "The P E O P M M A system took eight hours. These results show laboratory uptake, not verified field remediation or mass balance."
     }
   ]
 }
