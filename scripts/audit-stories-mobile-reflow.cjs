@@ -38,7 +38,7 @@ const widths = [320,375,768];
         }
       }
       overflowing.sort((a,b)=>b.overshoot-a.overshoot);
-      return {innerWidth:window.innerWidth,clientWidth:viewport,docScrollWidth:root.scrollWidth,bodyScrollWidth:document.body.scrollWidth,htmlDir:root.dir,topOverflow:overflowing.slice(0,12)};
+      return {innerWidth:window.innerWidth,clientWidth:viewport,docScrollWidth:root.scrollWidth,bodyScrollWidth:document.body.scrollWidth,htmlDir:root.dir,topOverflow:overflowing.slice(0,14),rightOverflow:overflowing.filter(x=>x.right>viewport+0.7).slice(0,25),scrollingElements:[...document.querySelectorAll("*")].filter(el=>el.clientWidth>0 && el.scrollWidth>el.clientWidth+1).map(el=>({selector:el.tagName.toLowerCase()+(el.id?"#"+el.id:"")+(typeof el.className==="string"?"."+el.className.trim().replace(/\\s+/g,".").slice(0,80):""),client:el.clientWidth,scroll:el.scrollWidth})).slice(0,25)};
     });
     const overflow=Math.max(0,measurement.docScrollWidth-measurement.clientWidth);
     const failing=overflow>1;
