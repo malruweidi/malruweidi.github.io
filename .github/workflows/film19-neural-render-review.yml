@@ -1,0 +1,52 @@
+name: Film19 zero-cash neural narration audition
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches: [main]
+    paths:
+      - "assets/films/film19-neural-voice/**"
+      - ".github/workflows/film19-neural-render-review.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  produce-scene-wavs:
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'film19-neural-narration-open-review-20261024')
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout Film 19 review script
+        uses: actions/checkout@v4
+        with:
+          ref: film19-neural-narration-open-review-20261024
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install open-source synthesis dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng libespeak-ng1 libsndfile1 ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install "kokoro-onnx==0.6.1" "numpy<3" "scipy<2" soundfile
+      - name: Fetch licensed Kokoro ONNX weights and voice embeddings
+        working-directory: assets/films/film19-neural-voice
+        run: |
+          curl --fail --location --retry 3 --output kokoro-v1.0.int8.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.int8.onnx
+          curl --fail --location --retry 3 --output voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
+          test "$(stat -c %s kokoro-v1.0.int8.onnx)" -gt 70000000
+          test "$(stat -c %s voices-v1.0.bin)" -gt 10000000
+      - name: Synthesize nine natural-voice audition scenes (no clipping)
+        working-directory: assets/films/film19-neural-voice
+        run: |
+          OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 python synthesize.py
+          ffprobe -v error -show_entries format=duration -of default=nw=1 generated/full_170s_narration.wav
+      - name: Upload review-only audio files
+        uses: actions/upload-artifact@v4
+        with:
+          name: Film19-Neural-Voice-Audition-WAV-Only
+          path: assets/films/film19-neural-voice/generated/
+          if-no-files-found: error
+          retention-days: 30
