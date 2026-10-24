@@ -44,6 +44,20 @@ const widths = [320,375,768];
     const failing=overflow>1;
     if(failing)violations++;
     console.log(JSON.stringify({route:"stories",lang,requestedWidth:width,overflowPixels:overflow,pass:!failing,...measurement}));
+    const toggle=page.locator(".rx-universal details.rx-more > summary");
+    if(await toggle.count()){
+      await toggle.click();
+      const opened=await page.evaluate(()=>{
+        const details=document.querySelector(".rx-universal details.rx-more");
+        const menu=details?.querySelector(".rx-menu-panel");
+        const rect=menu?.getBoundingClientRect();
+        const viewport=document.documentElement.clientWidth;
+        return {open:!!details?.open,left:rect?.left,right:rect?.right,viewport,inside:!!rect&&rect.left>=-1&&rect.right<=viewport+1};
+      });
+      if(!opened.open||!opened.inside)violations++;
+      console.log(JSON.stringify({route:"stories",lang,requestedWidth:width,openMenu:opened,pass:opened.open&&opened.inside}));
+      await page.keyboard.press("Escape");
+    }
     await page.close();
    }
   }
