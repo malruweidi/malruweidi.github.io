@@ -6,47 +6,47 @@
     {
       "start": 0,
       "duration": 16,
-      "text": "A cubosome is not a tiny solid cube. Its lipid bilayer folds through space, separating two interpenetrating networks of water-filled channels. Geometry offers possibilities; it does not supply proof of delivery."
+      "text": "A cubosome is no solid cube. A continuous lipid bilayer separates two intertwined water channels. Geometry alone proves nothing about delivery."
     },
     {
       "start": 16,
       "duration": 16,
-      "text": "A water-soluble molecule may occupy aqueous channels, while lipophilic cargo associates with the bilayer. A fluorescent or radioactive label can travel with the carrier. Co-loading does not ensure identical fate."
+      "text": "Water-soluble cargo enters channels; lipophilic cargo associates with the bilayer. An imaging label can accompany the carrier without sharing the drug's fate."
     },
     {
       "start": 32,
       "duration": 17,
-      "text": "Particle size alone cannot distinguish cubosomes from vesicles or other dispersions. Small-angle X-ray scattering can index the internal lattice; cryogenic microscopy offers complementary evidence. Those measurements determine what structure we are actually studying."
+      "text": "Particle size cannot establish cubic structure. Small-angle X-ray scattering identifies lattice order, with cryogenic microscopy providing complementary structural evidence."
     },
     {
       "start": 49,
       "duration": 17,
-      "text": "An imaging reporter may reveal where a labeled particle accumulates. A drug must still be released, remain available, and reach its site of action. Carrier location and pharmacologically meaningful exposure can diverge."
+      "text": "An imaging signal can locate a labeled carrier. The drug must also be released and reach its biological target. These are different measurements."
     },
     {
       "start": 66,
       "duration": 17,
-      "text": "In blood, proteins adsorb onto nanocarriers and change how biological systems recognize them. Some particles may reach a tumour; others distribute elsewhere. A targeting ligand does not by itself establish selectivity in vivo."
+      "text": "Blood proteins change a particle's biological identity. Distribution becomes complex; a targeting ligand alone cannot demonstrate selective delivery to tumors."
     },
     {
       "start": 83,
       "duration": 18,
-      "text": "Imagine a bright imaging signal while the freely available drug concentration has already declined. This is a conceptual example, not a measured dataset. Without calibration, image intensity cannot automatically become a drug exposure curve."
+      "text": "A bright scan may coexist with declining available drug. This is conceptual, not measured data. Calibration is essential before inferring drug exposure."
     },
     {
       "start": 101,
       "duration": 18,
-      "text": "Our chapter distinguishes four levels: carrier location, cargo release, pharmacodynamic effect, and a calibrated relationship between signal and drug exposure. Each level requires evidence that the preceding one cannot provide."
+      "text": "Our chapter separates carrier localization, release reporting, pharmacodynamic effects, and calibrated signal-to-exposure relationships. Each level demands stronger evidence."
     },
     {
       "start": 119,
       "duration": 18,
-      "text": "Phase stability, reproducible manufacture, protein corona, biodistribution, safety, and validated exposure-response are separate barriers. Attractive nanostructure and encouraging cell studies are not clinical success."
+      "text": "Structural stability, manufacturing consistency, biodistribution, and safety remain formidable hurdles. Promising cells and beautiful microscopy cannot establish clinical efficacy."
     },
     {
       "start": 137,
       "duration": 15,
-      "text": "The difficult promise of a cubic carrier is to make an image that tells us something trustworthy about treatment. Until that link is measured, beauty inside a nanoparticle remains a starting point, not an outcome."
+      "text": "The promise is an image that reveals meaningful treatment exposure. Until that link is validated, cubic geometry remains a beginning, not an outcome."
     }
   ]
 }
