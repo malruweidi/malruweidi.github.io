@@ -194,6 +194,18 @@ h2 em{font-weight:400;color:var(--warm)}
 .cs-work-context{margin:28px 0 0;padding:20px 23px;border-left:3px solid #a96f52;background:#f7f4ec;color:#365452;font-size:13px;line-height:1.86;max-width:1000px}
 @media(max-width:720px){.cs-work-grid{grid-template-columns:1fr}.cs-work-card{padding:22px}.cs-work-group{margin-top:29px}}
 
+
+/* October 2026 gathering — additive feature inside the existing Chem Squad photo archive. */
+.cs-archive-card--october-2026{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,.78fr);align-items:center;overflow:hidden;padding:0}
+.cs-archive-card--october-2026 .cs-october-photo{display:block;align-self:stretch;min-width:0;background:#183034}
+.cs-archive-card--october-2026 .cs-october-photo img{display:block;width:100%;height:auto;max-height:740px;object-fit:contain;object-position:center}
+.cs-archive-card--october-2026 figcaption{padding:clamp(24px,4vw,54px);align-self:center}
+.cs-archive-card--october-2026 .cs-october-date{font:11px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#e9b190}
+.cs-archive-card--october-2026 h4{font:400 clamp(29px,3vw,44px)/1.13 var(--serif);margin:17px 0 15px}
+.cs-archive-card--october-2026 figcaption p{max-width:34ch;font-size:14px;line-height:1.8}
+.cs-archive-card--october-2026 .cs-october-original{display:inline-block;margin-top:23px;color:#e9b190;border-bottom:1px solid currentColor;font:11px/1.8 var(--mono)}
+@media(max-width:720px){.cs-archive-card--october-2026{grid-template-columns:1fr}.cs-archive-card--october-2026 figcaption{padding:24px}.cs-archive-card--october-2026 .cs-october-photo img{max-height:none}}
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"AboutPage","name":"Chem Squad — Independent Chemistry Circle","url":"https://malruweidi.github.io/chem-squad.html","description":"An informal group of seven chemistry graduates whose independent scientific collaborations and conversations began in an organic chemistry laboratory in 2016.","isPartOf":{"@type":"WebSite","url":"https://malruweidi.github.io/"}}
@@ -282,6 +294,18 @@ h2 em{font-weight:400;color:var(--warm)}
         <div class="cs-archive-image r2" role="img" aria-label="Mahmoud Al-Ruweidi and Rakan Al-Zu'Bi wearing laboratory coats"></div>
       </div>
       <figcaption><h4>Rakan Al-Zu'Bi</h4><p>With Mahmoud K. Al-Ruweidi · Two photographs</p></figcaption>
+    </figure>
+
+    <figure class="cs-archive-card cs-archive-card--october-2026" id="cs-photo-october-2026">
+      <a class="cs-october-photo" href="/assets/chem-squad-october-2026.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the October 2026 Chem Squad gathering photograph at full resolution">
+        <img src="/assets/chem-squad-october-2026.jpg" alt="Five men seated together around a café table with drinks during an October 2026 Chem Squad gathering." width="1170" height="2080" loading="lazy" decoding="async">
+      </a>
+      <figcaption>
+        <span class="cs-october-date">Photo archive / October 2026</span>
+        <h4>Still around the table.</h4>
+        <p>A gathering in October 2026. Ten years after the first conversations in the organic chemistry laboratory, we are still finding time to meet.</p>
+        <a class="cs-october-original" href="/assets/chem-squad-october-2026.jpg" target="_blank" rel="noopener noreferrer">View original photograph ↗</a>
+      </figcaption>
     </figure>
   </div>
 </div>
