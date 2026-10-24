@@ -17,7 +17,7 @@
       document.head.appendChild(icon);
     }
     document.querySelectorAll('header a.logo > img:first-child, header a.brand > img:first-child, header a.wordmark > img:first-child, header .cv-branding > img:not(.cv-portrait)').forEach(img => {
-      if (img.src !== approvedLogo) img.src = approvedLogo;
+      if (img.getAttribute("src") !== approvedLogo) img.setAttribute("src", approvedLogo);
     });
     const homeNav = document.getElementById("navlinks");
 
