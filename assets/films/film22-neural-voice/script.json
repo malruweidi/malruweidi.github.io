@@ -1,0 +1,59 @@
+{
+  "title": "A Polymer Meets an Insoluble Problem",
+  "project": "UREP19-110-1-014",
+  "duration_seconds": 168,
+  "source": "QNRF final UREP report dated 31 December 2017",
+  "editorial_status": "NARRATION AUDITION ONLY; no deployment",
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 14,
+      "text": "Pyrene does not mix willingly with water. Could a polymer give this stubborn aromatic molecule somewhere else to go?"
+    },
+    {
+      "start": 14,
+      "duration": 17,
+      "text": "Polycyclic aromatic hydrocarbons can contaminate water and sediments. Capturing a model compound in a laboratory vessel is a first test, not field remediation."
+    },
+    {
+      "start": 31,
+      "duration": 17,
+      "text": "Amphiphilic block copolymers carry both water-loving and water-avoiding segments. Above a threshold, they can assemble into micelles with compatible inner domains."
+    },
+    {
+      "start": 48,
+      "duration": 17,
+      "text": "The team compared seventeen candidate polymer blocks against ten aromatic hydrocarbons. Flory–Huggins compatibility calculations favored methyl methacrylate and propylene oxide segments."
+    },
+    {
+      "start": 65,
+      "duration": 16,
+      "text": "Experiments were less obliging than diagrams. The intended fluorescence assay was limited by the instrument, so the researchers switched to ultraviolet–visible measurements."
+    },
+    {
+      "start": 81,
+      "duration": 19,
+      "text": "One polymer assembled near four point five micromolar. Poloxamer four oh seven required about two hundred seventy micromolar."
+    },
+    {
+      "start": 100,
+      "duration": 17,
+      "text": "A related diblock formed micelles near one micromolar. Lower thresholds may favor persistence on dilution, though stability still requires testing."
+    },
+    {
+      "start": 117,
+      "duration": 18,
+      "text": "To test uptake, researchers followed pyrene remaining in the surrounding water using liquid chromatography. A change in measured bulk concentration became the readout."
+    },
+    {
+      "start": 135,
+      "duration": 17,
+      "text": "Poloxamer's measured pyrene fell from zero point six one to zero point one four micromolar in two hours, reaching reported zero at four."
+    },
+    {
+      "start": 152,
+      "duration": 16,
+      "text": "The P E O P M M A system took eight hours. These results show laboratory uptake, not verified field remediation or mass balance."
+    }
+  ]
+}
