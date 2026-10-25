@@ -28,9 +28,10 @@ test("Homepage removes embedded HeyGen watermark source without deleting primary
 });
 test("Film page provides accessible script, scientific source links, and graceful fallback",()=>{
  const film=get("film.html");
- assert.match(film,/id="transcript"/);
+ const sourcebook=get("film-sourcebook.html");
+ assert.match(film,/film-sourcebook\.html#portrait/);
  assert.match(film,/id="film-fallback"/);
  assert.match(film,/kind="captions"/);
- for(const s of plan.scenes)assert.ok(film.includes(s.narration),s.id);
- assert.match(film,/original scientific/i);
+ for(const s of plan.scenes)assert.ok(sourcebook.includes(s.narration),s.id);
+ assert.match(sourcebook,/Original footage/i);
 });
