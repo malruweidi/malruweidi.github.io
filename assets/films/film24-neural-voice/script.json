@@ -1,0 +1,59 @@
+{
+  "title": "Two Materials. No Section.",
+  "project": "Zebrafish agarose–paraffin histology attempt, late 2025",
+  "duration_seconds": 168,
+  "source": "stories/failed-zebrafish-histology.html; firsthand account and archive",
+  "review_status": "AUDITION ONLY — NOT RELEASE APPROVED",
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 17,
+      "text": "Under a microscope, a zebrafish embryo may look clear. But cutting a meaningful histological section begins long before the blade touches tissue."
+    },
+    {
+      "start": 17,
+      "duration": 17,
+      "text": "The specimen's orientation matters. A small change in angle can place the brain, heart, or other anatomy outside the section you hoped to examine."
+    },
+    {
+      "start": 34,
+      "duration": 17,
+      "text": "My approach used two percent agarose as a temporary support. It held the tiny zebrafish specimens in a chosen orientation for subsequent processing."
+    },
+    {
+      "start": 51,
+      "duration": 16,
+      "text": "After dehydration and clearing, paraffin was supposed to provide the support needed for microtomy. Each material had a different task in the proposed sequence."
+    },
+    {
+      "start": 67,
+      "duration": 16,
+      "text": "Then came the decisive moment. The agarose and paraffin did not behave as one coherent block: the interface separated when sectioning was attempted."
+    },
+    {
+      "start": 83,
+      "duration": 17,
+      "text": "Instead of a ribbon of thin, interpretable tissue sections, fragments accumulated. These archival photographs document that result, not a successful histology slide."
+    },
+    {
+      "start": 100,
+      "duration": 18,
+      "text": "The microtome did not establish the cause of the failure. The immediate observation was separation between the two materials during processing and sectioning."
+    },
+    {
+      "start": 118,
+      "duration": 17,
+      "text": "Agarose is a water-loving gel; paraffin is hydrophobic. Their contrasting properties suggest an interface problem, but the exact mechanism was not demonstrated."
+    },
+    {
+      "start": 135,
+      "duration": 17,
+      "text": "A different agarose grade or revised processing conditions could be tested. Those remain possibilities, not solutions verified by this experiment."
+    },
+    {
+      "start": 152,
+      "duration": 16,
+      "text": "I kept the unsuccessful photographs. They show where a plausible method stopped yielding interpretable evidence. A failed preparation can still define a rigorous next question."
+    }
+  ]
+}
