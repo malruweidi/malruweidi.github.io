@@ -14,10 +14,11 @@ test('Major Revisions retains its standalone coming-soon book page and original 
   assert.match(book, /\/assets\/major-revisions-cover\.svg/);
 });
 
-test('primary homepage navigation points directly to the book', () => {
+test('the book remains in Explore without displacing the main reader routes', () => {
   const nav = home.match(/<nav class="navlinks"[^>]*>([\s\S]*?)<\/nav>/);
   assert.ok(nav, 'primary navigation not found');
-  assert.match(nav[1], /<a href="\/major-revisions\.html"[^>]*>Book<\/a>/);
+  assert.match(nav[1], /<div class="rx-more-panel">[\s\S]*?<a href="\/major-revisions\.html">Major Revisions \(book in progress\)<\/a>/);
+  assert.doesNotMatch(nav[1].split('<details class="rx-more">')[0], /major-revisions\.html/);
 });
 
 test('the expanded homepage chapter index includes a visible Major Revisions card', () => {

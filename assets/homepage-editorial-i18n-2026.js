@@ -172,3 +172,16 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "I organized my first school chemistry exhibition at Doha Independent School in 2009. Before I had access to university laboratories, chemistry had already become something I wanted to investigate rather than simply study. The fox specimen in a later anatomy lesson opened a different set of questions about how living structures worked together. My first research project began in 2015 with curcumin-based sensing of cyanide, work that later contributed to a study published in ": "نظّمت أول معرض للكيمياء في مدرسة الدوحة المستقلة عام ٢٠٠٩. قبل وصولي إلى المختبرات الجامعية، كانت الكيمياء قد أصبحت عندي مجالاً للبحث لا مجرد مادة للدراسة. ثم فتح درس تشريح لعينة من الثعلب باباً لأسئلة جديدة عن طريقة عمل البنى الحية معاً. بدأ أول مشروع بحثي لي عام ٢٠١٥ باستخدام الكركمين لاستشعار السيانيد، وأسهم هذا العمل لاحقاً في دراسة نشرت في ",
   " in 2019. At university I pursued plant extracts, imines and molecular sensing, learning to distinguish a plausible explanation from what an experiment could establish.": " عام ٢٠١٩. وفي الجامعة بحثت في المستخلصات النباتية والإيمينات والاستشعار الجزيئي، وتعلّمت أن أميّز بين التفسير المحتمل وما تستطيع التجربة إثباته."
 });
+
+/* Editorial release: preserve the shorter homepage invitation and translate the
+   full scientific direction now housed in the optional backstory. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "Curcumin sensing led me into zebrafish vessels, injured lung cells and inhalable formulations. One question endured: what can experiments establish about the response of a living system?": "قادني البحث في استشعار السيانيد بالكركمين إلى دراسة أوعية أسماك الزرد وإصابة خلايا الرئة والمستحضرات المستنشقة. وبقي سؤال واحد: ما الذي تستطيع التجربة إثباته بشأن استجابة النظام الحي؟",
+  "How I got here and where the work leads": "كيف وصلت إلى هنا، وإلى أين يتجه البحث",
+  "The question guiding my future research:": "السؤال الذي يوجّه بحثي المستقبلي:",
+  "How can therapeutic interventions be designed to act selectively in diseased tissues, overcome biological barriers and produce measurable, predictable changes in cellular function? I want to investigate this through drug discovery, drug delivery and molecular pharmacology, building on my experimental work in chemistry, biomaterials, epithelial injury and inhalable formulations.": "كيف يمكن تصميم تدخلات علاجية تعمل انتقائيًا في الأنسجة المصابة، وتتجاوز الحواجز البيولوجية، وتُحدث تغيرات خلوية قابلة للقياس والتنبؤ؟ أريد بحث هذه المسألة من خلال اكتشاف الأدوية وتوصيلها وعلم الأدوية الجزيئي، انطلاقًا من عملي التجريبي في الكيمياء والمواد الحيوية وإصابة الظهارة الرئوية والمستحضرات المستنشقة.",
+  "Read my research direction ↗": "اقرأ توجهي البحثي ↗",
+  "Major Revisions (book in progress)": "المراجعات الكبرى (كتاب قيد الكتابة)",
+  "More from the archive": "المزيد من الأرشيف",
+  "Five additional chapters, including patient experience, community, leadership and a book in progress.": "خمسة فصول إضافية تشمل تجربة المريض والمجتمع والقيادة وكتابًا قيد الكتابة."
+});

@@ -38,11 +38,15 @@ html.rx-site-theme body>.rx-legacy-nav{display:none!important}
 .rx-context .rx-context-inner{width:min(1220px,calc(100% - 64px));margin:auto;padding:10px 0;display:flex;gap:9px;align-items:center}
 .rx-context a{color:var(--rx-copper);text-decoration:none}
 .rx-context .rx-delimiter{color:#9cacaa}
+.rx-language-note{width:min(1220px,calc(100% - 64px));margin:18px auto 0;padding:16px 20px;border-inline-start:3px solid var(--rx-copper);background:#eef3f1;color:#17343b;font:14px/1.85 Tahoma,Arial,sans-serif}
+.rx-language-note p{margin:0 0 8px}
+.rx-language-note a{color:#17564e;font-weight:700;text-decoration:underline;text-underline-offset:4px}
 html.rx-site-theme :where(section[id],article[id],main[id]){scroll-margin-top:110px}
 html.rx-site-theme :where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #a1533b;outline-offset:4px}
 html.rx-site-theme img{max-width:100%}
 @media(max-width:1100px){.rx-universal .rx-primary>a{display:none}.rx-universal .rx-inner{justify-content:space-between}.rx-universal .rx-primary{margin-left:auto}.rx-universal .rx-menu-panel .rx-mobile-route{display:block}}
 @media(max-width:580px){.rx-universal .rx-inner,.rx-context .rx-context-inner{width:calc(100% - 32px)}.rx-universal .rx-inner{min-height:70px;gap:7px}.rx-universal .rx-mark{width:38px;height:38px}.rx-universal .rx-identity{gap:8px}.rx-universal .rx-brand strong{font-size:clamp(11px,3.4vw,15px)}.rx-universal .rx-brand small{font-size:8px;line-height:1.25;white-space:normal;max-width:170px}.rx-universal details.rx-more>summary{padding:10px;min-width:70px}.rx-universal .rx-menu-panel{right:-6px;top:calc(100% + 13px);grid-template-columns:1fr 1fr;padding:16px;gap:7px 12px}.rx-universal .rx-menu-panel>a{font-size:12px}.rx-context .rx-context-inner{padding:7px 0}}
+@media(max-width:580px){.rx-language-note{width:calc(100% - 32px);margin-top:12px;padding:12px 14px}}
 @media(prefers-reduced-motion:reduce){html.rx-site-theme{scroll-behavior:auto}.rx-universal *{transition:none!important}}
 @media print{.rx-universal,.rx-context{display:none!important}html.rx-site-theme body>.rx-legacy-header,html.rx-site-theme body>.rx-legacy-nav{display:block!important}}
 
