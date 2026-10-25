@@ -25,10 +25,8 @@ jobs:
           python-version: '3.12'
       - name: Install local, open-source voice engine
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq espeak-ng libespeak-ng1 ffmpeg libsndfile1
-          python -m pip install --upgrade pip
-          python -m pip install "kokoro-onnx==0.6.1" "numpy<3" "scipy<2" soundfile
+          sudo apt-get install -y --no-install-recommends espeak-ng libespeak-ng1 libsndfile1
+          python -m pip install --disable-pip-version-check "kokoro-onnx==0.6.1" "numpy<3" "scipy<2" soundfile
       - name: Download Apache-2.0 pretrained Kokoro weights
         working-directory: assets/films/film30-neural-voice
         run: |
