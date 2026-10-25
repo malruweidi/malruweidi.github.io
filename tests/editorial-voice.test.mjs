@@ -60,7 +60,7 @@ test('avoid mirrored defensive biography across homepage and complete archive', 
   }
   assert.match(home, /I have worked on molecular sensors, polymers, vascular imaging and pulmonary drug delivery/);
   assert.match(complete, /My work moved through chemistry, materials, imaging and pharmaceutics/);
-  assert.match(horizon, /Those experiments pushed me towards three connected scientific questions/);
+  assert.match(horizon, /what a material is at preparation is not necessarily what a biological system encounters/);
 });
 
 test('illness and historical photographs avoid invented editorial defenses', () => {
