@@ -2,12 +2,12 @@ name: Film 23 neural voice — review only
 on:
   push:
     branches:
-      - film23-micelles-neural-review-20261024
+      - film23-heterocycle-neural-review-20261025
   pull_request:
     branches: [main]
     paths:
       - "assets/films/film23-neural-voice/**"
-      - ".github/workflows/film20-neural-review.yml"
+      - ".github/workflows/film23-neural-review.yml"
   workflow_dispatch:
 
 permissions:
