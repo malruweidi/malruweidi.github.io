@@ -1,0 +1,61 @@
+name: Film 26 neural voice — review only
+on:
+  push:
+    branches:
+      - film26-private-narrative-audition-20261025
+  pull_request:
+    branches: [main]
+    paths:
+      - "assets/films/film26-private-review/**"
+      - ".github/workflows/film26-private-review-voice.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  create-voice-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - name: Checkout immutable review branch
+        uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install local, open-source voice engine
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng libespeak-ng1 ffmpeg libsndfile1
+          python -m pip install --upgrade pip
+          python -m pip install "kokoro-onnx==0.6.1" "numpy<3" "scipy<2" soundfile
+      - name: Download Apache-2.0 pretrained Kokoro weights
+        working-directory: assets/films/film26-private-review
+        run: |
+          curl -fL --retry 3 --output kokoro-v1.0.int8.onnx \
+            https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.int8.onnx
+          curl -fL --retry 3 --output voices-v1.0.bin \
+            https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
+          test "$(stat -c %s kokoro-v1.0.int8.onnx)" -gt 70000000
+          test "$(stat -c %s voices-v1.0.bin)" -gt 10000000
+      - name: Generate 10 separate timed speech segments and 140s narration mix
+        working-directory: assets/films/film26-private-review
+        run: |
+          OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 python synthesize.py
+          ffprobe -v error -show_entries format=duration -of default=nw=1 generated/full_140s_narration.wav
+
+      - name: Collect verified personal archive photographs
+        run: |
+          mkdir -p assets/films/film26-private-review/generated/source_photos
+          cp assets/home-archive/childhood-portrait.jpg assets/films/film26-private-review/generated/source_photos/
+          cp assets/2026-10-13-new-photos/august-2025-hospital-research.webp assets/films/film26-private-review/generated/source_photos/
+          cp assets/2026-10-13-new-photos/research-portrait-calligraphy.webp assets/films/film26-private-review/generated/source_photos/
+          cp assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp assets/films/film26-private-review/generated/source_photos/
+          sha256sum assets/films/film26-private-review/generated/source_photos/*.webp > assets/films/film26-private-review/generated/source_photos/SHA256SUMS.txt
+      - name: Package narrated audition WAVs, approximate captions and timings
+        uses: actions/upload-artifact@v4
+        with:
+          name: Film26-New-Story-Voice-And-Archive-AUDITION-ONLY
+          path: assets/films/film26-private-review/generated/
+          if-no-files-found: error
+          retention-days: 30
