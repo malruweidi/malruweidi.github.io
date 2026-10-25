@@ -110,6 +110,8 @@ jobs:
         run: node --test tests/homepage-hero-reading-order-2026.test.mjs
       - name: Guard bilingual, intent-led scientific wayfinding and original archive
         run: node --test tests/research-fastpaths-2026.test.mjs
+      - name: Verify publication-to-method evidence trails and search recovery
+        run: node --test tests/publications-evidence-journeys-2026.test.mjs
       - name: Guard WCAG legibility of restrained archival colors across seven existing pages
         run: node --test tests/wcag-contrast-tokens-2026.test.cjs
       - name: Verify original page titles remain legible with WCAG-safe foregrounds

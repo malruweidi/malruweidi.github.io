@@ -1,0 +1,33 @@
+/* A compact read-by-status aid on the established research-directions page. */
+.rx-evidence-status-nav {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  padding: 18px 0 20px;
+  margin-top: 12px;
+  border-block: 1px solid var(--line, #d5ded7);
+  color: var(--ink, #17343b);
+}
+.rx-evidence-status-nav strong {
+  font-size: 12px;
+  font-weight: 700;
+  margin-inline-end: 3px;
+}
+.rx-evidence-status-nav a {
+  font-size: 13px;
+  font-weight: 600;
+  color: inherit;
+  text-underline-offset: 5px;
+}
+.rx-evidence-status-nav a:hover,
+.rx-evidence-status-nav a:focus-visible {
+  color: var(--copper, #995c45);
+}
+@media (max-width: 680px) {
+  .rx-evidence-status-nav {
+    display: grid;
+    gap: 10px;
+    padding-block: 17px;
+  }
+}
