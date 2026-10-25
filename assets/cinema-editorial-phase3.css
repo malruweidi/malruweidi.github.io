@@ -1,0 +1,16 @@
+/* Publication Cinema: read the source type before treating a cinematic sequence as evidence. */
+.cinema-skip{position:fixed;left:12px;top:-100px;z-index:1000;padding:11px 17px;background:#fffdf8;color:#17343b;border:2px solid #99543f;font-weight:700}
+.cinema-skip:focus,.cinema-skip:focus-visible{top:12px}
+.cinema-begin{display:inline-flex;align-items:center;min-height:44px;margin-top:26px;padding:8px 0;border-bottom:1px solid #91543f;text-decoration:none;color:#854631;font-weight:700;font-size:13px}
+.cinema-source-guide{background:#17343b;color:#f7f5ee;padding:27px 0;border-bottom:1px solid #526e67}
+.cinema-source-guide>.wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.cinema-source-guide p{padding:0 22px;margin:0;border-right:1px solid #708981;min-width:0}
+.cinema-source-guide p:first-child{padding-left:0}
+.cinema-source-guide p:last-child{border-right:0}
+.cinema-source-guide strong{display:block;font-size:12px;letter-spacing:.04em;line-height:1.5;color:#efb69a;margin-bottom:8px}
+.cinema-source-guide span{display:block;color:#d1e0d7;font-size:13px;line-height:1.7}
+.piece[hidden]{display:none!important}
+.piece:target{outline:3px solid #99543f;outline-offset:5px;scroll-margin-top:30px}
+.index{scroll-margin-top:20px}
+.cinema-static-note{font-size:13px;color:#47615c;margin:-9px 0 25px}
+@media(max-width:760px){.cinema-source-guide>.wrap{grid-template-columns:1fr}.cinema-source-guide p,.cinema-source-guide p:first-child{border-right:0;border-bottom:1px solid #708981;padding:15px 0}.cinema-source-guide p:last-child{border-bottom:0}}

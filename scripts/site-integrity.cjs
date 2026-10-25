@@ -75,8 +75,10 @@ if(!supervisor.includes('<details class="research-deepdive evidence-archive">'))
 if(!supervisor.includes('<details class="research-deepdive research-future-details">'))error("research agenda","renal and related research materials must remain available in optional reading");
 
 const profilePrimaryLinks=supervisor.match(/<div class="actionlinks">([\s\S]*?)<\/div>/)?.[1]||"";
-if([...profilePrimaryLinks.matchAll(/<a\b/g)].length!==4)error("research profile","first screen should retain four focused primary reading paths");
-for(const destination of ["#research-entry-points","#selected-experiments","#present-work","#research-programmes"])if(!profilePrimaryLinks.includes('href="'+destination+'"'))error("research profile","primary reading path missing "+destination);
+if([...profilePrimaryLinks.matchAll(/<a\b/g)].length!==2)error("research profile","first screen should expose two focused primary reading paths");
+for(const destination of ["#research-entry-points","#selected-experiments"])if(!profilePrimaryLinks.includes('href="'+destination+'"'))error("research profile","primary reading path missing "+destination);
+const profileSecondaryLinks=supervisor.match(/<details class="research-hero-routes">([\s\S]*?)<\/details>/)?.[1]||"";
+for(const destination of ["#present-work","#research-agenda","#research-programmes","/cv.html"])if(!profileSecondaryLinks.includes('href="'+destination+'"'))error("research profile","supporting reading path missing "+destination);
 if((supervisor.match(/class="research-deepdive"/g)||[]).length!==3)error("research profile","expected three expandable advanced-literature panels");
 if(!supervisor.includes('<details class="research-archive">'))error("research profile","archival disciplinary grid no longer available by disclosure");
 const profileIds=new Set([...supervisor.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]));

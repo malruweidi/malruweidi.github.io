@@ -21,7 +21,7 @@ test('primary entry points tell scientific stories rather than reveal editorial 
   assert.equal((read('index.html').match(/class="rx26-portal-card"/g)||[]).length, 9);
   assert.match(read('films.html'), /The film begins where/);
   assert.match(read('chem-squad.html'), /Ten years of talking chemistry/);
-  assert.match(read('publication-cinema.html'), /Research questions, on screen/);
+  assert.match(read('publication-cinema.html'), /Choose the question\. Inspect the source/);
 });
 
 test('research evidence and contribution limits survive public copy-editing', () => {

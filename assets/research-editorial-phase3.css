@@ -1,0 +1,20 @@
+/* The long-form research essay and the project agenda serve different readers.
+   Both distinguish archived work from ongoing investigation and prospective designs. */
+html[data-rx-page="molecular-therapeutics"] .research-claim-boundary{max-width:740px;margin:20px 0 0;padding:12px 16px;border-left:3px solid #dca58e;color:#e5eee6;font-size:13px;line-height:1.75;background:#23434a}
+html[data-rx-page="molecular-therapeutics"] .research-hero-routes{max-width:760px;margin-top:18px;border-top:1px solid #627d76;border-bottom:1px solid #627d76}
+html[data-rx-page="molecular-therapeutics"] .research-hero-routes>summary{cursor:pointer;padding:13px 0;min-height:44px;color:#f3d0bd;font:700 13px/1.5 "DM Sans",sans-serif}
+html[data-rx-page="molecular-therapeutics"] .research-hero-routes nav{display:flex;gap:13px 21px;flex-wrap:wrap;padding:0 0 19px}
+html[data-rx-page="molecular-therapeutics"] .research-hero-routes nav a{color:#f2eee6;font-size:13px;font-weight:700}
+html[data-rx-page="molecular-therapeutics"] .research-agenda-decision{background:#e7eee8;border:1px solid #b2c5b8;border-left:4px solid #995c45;padding:21px 23px;margin:23px 0 26px;max-width:760px;font-size:15px;line-height:1.86;color:#264b4a}
+html[data-rx-page="molecular-therapeutics"] .research-agenda-decision strong{color:#733b2c}
+html[data-rx-page="molecular-therapeutics"] details.discovery-loop{padding-top:15px}
+html[data-rx-page="molecular-therapeutics"] details.discovery-loop>summary{min-height:44px;padding:9px 0}
+html[data-rx-page="molecular-therapeutics"] details.discovery-loop[open]>summary{margin-bottom:15px}
+html[data-rx-page="research-horizon"] .rh-intro+.rh-intro{margin-top:16px}
+html[data-rx-page="research-horizon"] .rh-claim-boundary{padding:12px 18px;border-left:3px solid #a36147;background:#ecf0e8;color:#385957}
+html[data-rx-page="research-horizon"] .rh-more-routes{border-top:1px solid #b6c8ba;border-bottom:1px solid #b6c8ba;margin-top:24px;max-width:635px}
+html[data-rx-page="research-horizon"] .rh-more-routes>summary{cursor:pointer;min-height:44px;padding:13px 0;color:#7d4636;font-size:13px;font-weight:700}
+html[data-rx-page="research-horizon"] .rh-more-routes nav{display:flex;gap:12px 20px;flex-wrap:wrap;padding:0 0 18px}
+html[data-rx-page="research-horizon"] .rh-more-routes nav a{color:#345b59;font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+html[data-rx-page="research-horizon"] .rh-actions{gap:16px}
+html[data-rx-page="molecular-therapeutics"] .research-hero-routes summary:focus-visible,html[data-rx-page="research-horizon"] .rh-more-routes summary:focus-visible{outline:3px solid #c67d59;outline-offset:3px}

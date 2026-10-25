@@ -77,10 +77,27 @@ test("saved 35-piece cinema page remains playable while progressively verifying 
  assert.equal(sources.length,35);
  const captions=[...staticHtml.matchAll(/<track kind="captions" src="(\/assets\/films\/[^"]+\.vtt)"/g)].map(m=>m[1]);
  assert.equal(captions.length,35);
+ const currentMasters={
+  "airway-reopening":"series-v23-sourcefirst",
+  "cerebral-cilia":"series-v24-cilia",
+  "slit2-robo":"series-v25-slit2",
+  "curcumin-cyanide":"series-v26-curcumin",
+  "making-medicines-keep":"series-v27-medieval",
+  "niosomes":"series-v28-niosomes",
+  "echo-cnn-lstm":"series-v29-echo",
+  "pla-grafting":"series-v30-pla-motion"
+ };
  for(let i=0;i<rows.length;i++){
-  const edition=(fs.existsSync(path.join(root,"assets/films/series-v8-primary/releases.json")) && special[rows[i]]) ? "series-v8-primary" : special[rows[i]]||"series-v6";
-  assert.equal(sources[i],"/assets/films/"+edition+"/"+rows[i]+".mp4");
-  assert.equal(captions[i],"/assets/films/"+edition+"/"+rows[i]+".vtt");
+  const edition=currentMasters[rows[i]];
+  if(edition){
+   assert.equal(sources[i],"/assets/films/"+edition+"/"+rows[i]+".mp4");
+   assert.equal(captions[i],"/assets/films/"+edition+"/"+rows[i]+".vtt");
+  }else{
+   assert.match(sources[i],new RegExp("/"+rows[i]+"\\.mp4$"));
+   assert.match(captions[i],new RegExp("/"+rows[i]+"\\.vtt$"));
+  }
+  assert(fs.existsSync(path.join(root,sources[i])),"current public MP4 missing: "+rows[i]);
+  assert(fs.existsSync(path.join(root,captions[i])),"current public captions missing: "+rows[i]);
  }
  assert.match(html,/series-v7-pilots\/releases\.json/);
  assert.match(html,/const selectedEdition=verifiedResearchEdition \|\| \(isV7\?/);
