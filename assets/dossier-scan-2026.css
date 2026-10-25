@@ -1,0 +1,79 @@
+/* Evidence summaries for the existing research dossiers. Original text,
+   figures, photographs, and source records are retained below each summary. */
+html[data-rx-page="research-detail"] .rx-dossier-scan {
+  background: #17343b;
+  color: #f5f4ec;
+  border-top: 1px solid #48636a;
+  border-bottom: 1px solid #48636a;
+}
+html[data-rx-page="research-detail"] .rx-dossier-scan .rx-deep-shell {
+  padding-block: 21px 31px;
+}
+html[data-rx-page="research-detail"] .rx-dossier-scan-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+}
+html[data-rx-page="research-detail"] .rx-dossier-scan h2 {
+  margin: 0;
+  font: 400 clamp(26px, 3.2vw, 37px)/1.18 "Newsreader", Georgia, serif;
+}
+html[data-rx-page="research-detail"] .rx-dossier-scan-head a {
+  font: 650 13px/1.5 "DM Sans", sans-serif;
+  color: #f4ccb5;
+  text-underline-offset: 5px;
+}
+html[data-rx-page="research-detail"] .rx-dossier-scan-head a:focus-visible {
+  outline: 3px solid #f0b68f;
+  outline-offset: 4px;
+}
+html[data-rx-page="research-detail"] .rx-dossier-scan dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 42px;
+  margin: 19px 0 0;
+}
+html[data-rx-page="research-detail"] .rx-dossier-scan dl > div {
+  padding: 15px 0 12px;
+  border-top: 1px solid #547078;
+}
+html[data-rx-page="research-detail"] .rx-dossier-scan dt {
+  font: 500 11px/1.6 "DM Mono", monospace;
+  color: #e2ad90;
+  letter-spacing: .035em;
+}
+html[data-rx-page="research-detail"] .rx-dossier-scan dd {
+  margin: 7px 0 0;
+  max-width: 62ch;
+  font: 400 14px/1.7 "DM Sans", sans-serif;
+  color: #e1eae5;
+}
+html[lang="ar"][data-rx-page="research-detail"] .rx-dossier-scan dt,
+html[lang="ar"][data-rx-page="research-detail"] .rx-dossier-scan dd,
+html[lang="ar"][data-rx-page="research-detail"] .rx-dossier-scan-head a {
+  font-family: "Noto Naskh Arabic", Tahoma, sans-serif;
+  letter-spacing: 0;
+  line-height: 1.8;
+}
+@media(max-width: 700px) {
+  html[data-rx-page="research-detail"] .rx-dossier-scan dl {
+    grid-template-columns: 1fr;
+  }
+  html[data-rx-page="research-detail"] .rx-dossier-scan .rx-deep-shell {
+    padding-block: 20px 25px;
+  }
+}
+@media print {
+  html[data-rx-page="research-detail"] .rx-dossier-scan {
+    background: white !important;
+    color: #111 !important;
+    border-color: #777;
+  }
+  html[data-rx-page="research-detail"] .rx-dossier-scan dd,
+  html[data-rx-page="research-detail"] .rx-dossier-scan dt,
+  html[data-rx-page="research-detail"] .rx-dossier-scan a {
+    color: #111 !important;
+  }
+}
