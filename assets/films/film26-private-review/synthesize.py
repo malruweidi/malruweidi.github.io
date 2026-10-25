@@ -12,7 +12,7 @@ SR=48000
 model=os.environ.get("KOKORO_MODEL","kokoro-v1.0.int8.onnx")
 voices=os.environ.get("KOKORO_VOICES","voices-v1.0.bin")
 kokoro=Kokoro(model, voices)
-timeline=np.zeros((140*SR,),dtype=np.float32)
+timeline=np.zeros((197*SR,),dtype=np.float32)
 qc=[]
 for i,s in enumerate(SCENES,1):
     target=float(s["duration"])
@@ -37,8 +37,8 @@ for i,s in enumerate(SCENES,1):
     if end>len(timeline):raise RuntimeError("Timeline overflow")
     timeline[begin:end]+=generated
     qc.append({"scene":i,"start_seconds":s["start"],"allocation_seconds":target,"spoken_seconds":round(len(generated)/SR,3),"speed":used_speed,"peak":round(peak,4),"first_word_estimate":s["text"].split()[0]})
-sf.write(OUT/"full_140s_narration.wav",np.clip(timeline,-.94,.94),SR,subtype="PCM_24")
-(OUT/"narration_audit.json").write_text(json.dumps({"review_status":"SYNTHETIC_AUDITION_ONLY_NOT_APPROVED","word_count":sum(len(s["text"].split()) for s in SCENES),"duration_seconds":140,"sample_rate":SR,"model":model,"voice":"am_michael","scenes":qc},indent=2))
+sf.write(OUT/"full_197s_narration.wav",np.clip(timeline,-.94,.94),SR,subtype="PCM_24")
+(OUT/"narration_audit.json").write_text(json.dumps({"review_status":"SYNTHETIC_AUDITION_ONLY_NOT_APPROVED","word_count":sum(len(s["text"].split()) for s in SCENES),"duration_seconds":197,"sample_rate":SR,"model":model,"voice":"am_michael","scenes":qc},indent=2))
 vtt=["WEBVTT",""]
 def stamp(t):
     ms=round(t*1000);h=ms//3600000;ms%=3600000;m=ms//60000;ms%=60000;sec=ms//1000;ms%=1000
