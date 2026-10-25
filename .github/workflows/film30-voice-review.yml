@@ -40,7 +40,7 @@ jobs:
         working-directory: assets/films/film30-neural-voice
         run: |
           OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 python synthesize.py
-          ffprobe -v error -show_entries format=duration -of default=nw=1 generated/full_192s_narration.wav
+          python -c "import soundfile as sf; f=sf.info('generated/full_192s_narration.wav'); assert abs(f.duration-192)<.01; print(f.duration)"
 
       - name: Collect attributed original repository contextual photographs
         run: |
