@@ -1,0 +1,17 @@
+.pub-empty[hidden] { display: none; }
+.pub-empty { line-height: 1.7; margin: 18px 0 30px; background: #fcfaf5; }
+.pub-empty button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #85452f;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+.pub-empty button:focus-visible {
+  outline: 3px solid var(--pub-terra, #99563e);
+  outline-offset: 4px;
+}
