@@ -1,0 +1,68 @@
+{
+  "title": "The Target Has More Than One Shape",
+  "duration_seconds": 180,
+  "source": "Al-Ruweidi, Target Transcription Factor States, Not Pockets, Drug Discovery Online, August 21 2026",
+  "production_status": "REVIEW AUDITION ONLY",
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 15,
+      "text": "Every transcription factor is more than a folded structure. In the cell, it samples shapes, partners, and chromatin contexts that decide which genes respond."
+    },
+    {
+      "start": 15,
+      "duration": 15,
+      "text": "A screen against one purified domain may find a binder. It cannot prove that a ligand redirects the regulatory state sustaining disease."
+    },
+    {
+      "start": 30,
+      "duration": 15,
+      "text": "An allosteric site may appear briefly as a protein moves. A static structure suggests possibility; experiments must establish whether that opening controls function."
+    },
+    {
+      "start": 45,
+      "duration": 15,
+      "text": "First, specify the proposed event. Break a dimer, exclude a coactivator, rescue a mutant fold, or change residence on DNA. These are different outcomes."
+    },
+    {
+      "start": 60,
+      "duration": 15,
+      "text": "Then trace causality: engagement in living cells, a change in protein state, chromatin occupancy, target gene response, and a phenotype that survives rigorous controls."
+    },
+    {
+      "start": 75,
+      "duration": 15,
+      "text": "Belzutifan binds H I F two alpha and disrupts its partnership with A R N T. This is a clinically validated mechanism, not simply a pocket discovered in isolation."
+    },
+    {
+      "start": 90,
+      "duration": 15,
+      "text": "T E A D offers another regulatory pocket: a lipid-binding cavity. Palmitoylation inhibitors can suppress YAP T E A D signaling, but the mechanism and safety questions differ."
+    },
+    {
+      "start": 105,
+      "duration": 15,
+      "text": "Mutant p fifty three reverses the objective. The Y two twenty C substitution creates a crevice and destabilizes the protein. Rezatapopt seeks to restore activity, not inhibit it."
+    },
+    {
+      "start": 120,
+      "duration": 15,
+      "text": "Binding alone may still mislead. A related p fifty three mutation can bind the stabilizer without recovering cellular function under the conditions tested."
+    },
+    {
+      "start": 135,
+      "duration": 15,
+      "text": "Reporter signals can fall because cells are stressed. Target-null controls, resistant alleles, and orthogonal measurements help distinguish a real mechanism from a persuasive false positive."
+    },
+    {
+      "start": 150,
+      "duration": 15,
+      "text": "Effective unbound exposure matters. A beautiful affinity result is not enough if cells cannot reach the needed concentration, or if an alternative pathway restores signaling."
+    },
+    {
+      "start": 165,
+      "duration": 15,
+      "text": "The question is not only whether a protein contains a pocket. It is which disease-sustaining regulatory state can be shifted, measured, and falsified."
+    }
+  ]
+}
