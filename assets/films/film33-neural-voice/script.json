@@ -22,22 +22,22 @@
     {
       "start": 42,
       "duration": 14,
-      "text": "Consider METTL one. It can alter the methylation of transfer R N A, but a 2025 study found an additional role in aminoacylation that did not require its methyltransferase activity."
+      "text": "METTL one adds chemical marks to transfer R N A. But a 2025 study also found a separate aminoacylation role, independent of methyltransferase activity."
     },
     {
       "start": 56,
       "duration": 14,
-      "text": "An enzyme inhibitor, therefore, might silence one action and leave another untouched. To establish mechanism, measure target engagement, the R N A state, protein output, and phenotype."
+      "text": "Blocking an enzyme's catalytic action may leave other functions untouched. Test engagement, the transfer R N A state, selective protein output, and the resulting phenotype."
     },
     {
       "start": 70,
       "duration": 14,
-      "text": "Halofuginone provides another lesson. In experimental systems, inhibition of prolyl transfer R N A synthetase increases uncharged transfer R N A and activates amino acid stress signaling."
+      "text": "Halofuginone inhibits prolyl transfer R N A synthetase in experimental systems. Uncharged transfer R N A then accumulates and can activate amino acid stress signaling."
     },
     {
       "start": 84,
       "duration": 14,
-      "text": "Tavaborole shows a selective antimicrobial route. In fungi, it traps leucine transfer R N A in the editing site of leucyl transfer R N A synthetase, disrupting the charging cycle."
+      "text": "In fungi, tavaborole traps leucine transfer R N A at the editing site of leucyl transfer R N A synthetase. This interrupts the charging cycle."
     },
     {
       "start": 98,
@@ -52,12 +52,12 @@
     {
       "start": 126,
       "duration": 14,
-      "text": "These approaches still need proof of the inserted amino acid, functional protein restoration, tissue delivery, and safety at natural stop codons. A bright reporter alone cannot deliver that proof."
+      "text": "These treatments require proof of the inserted amino acid, restored functional protein, tissue delivery, and normal stop-codon safety. A reporter alone proves little."
     },
     {
       "start": 140,
       "duration": 14,
-      "text": "Outside the cell, some synthetase-derived proteins act as signaling agents. Efzofitimod explored this biology in pulmonary sarcoidosis, but its 268-patient Phase Three trial missed the primary steroid-dose endpoint."
+      "text": "Efzofitimod explores extracellular signaling from a synthetase domain. Its Phase Three sarcoidosis trial enrolled 268 patients but missed the primary steroid-dose endpoint."
     },
     {
       "start": 154,
