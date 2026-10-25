@@ -246,7 +246,18 @@
   "Read Beginnings and questions": "اقرأ عن البدايات والأسئلة",
   "Read Experiments that resisted": "اقرأ عن التجارب التي قاومت التوقعات",
   "Read Living systems and delivery": "اقرأ عن الأنظمة الحية وتوصيل الدواء",
-  "Read People and scientific exchange": "اقرأ عن الناس والتبادل العلمي"
+  "Read People and scientific exchange": "اقرأ عن الناس والتبادل العلمي",
+  "These chapters preserve a different kind of record: memories of the people and decisions around an experiment. Where a scientific claim is at stake, the paper, measurements and source notes remain the place to examine it.": "تحفظ هذه الفصول نوعًا آخر من السجلات: ذاكرة الأشخاص والقرارات المحيطة بالتجربة. أما الادعاء العلمي فيُرجع فيه إلى البحث وقياساته وملاحظاته المصدرية.",
+  "Begin where the question changed.": "ابدأ من اللحظة التي تغيّر فيها السؤال.",
+  "The chapters remain below in full. These four entrances group scenes by the tension they reveal rather than simply by year.": "تبقى الفصول كاملة أدناه. وتجمع هذه المداخل الأربعة المشاهد بحسب الأسئلة التي أثارتها، لا بحسب ترتيب السنوات وحده.",
+  "A fox on a table, models built by hand and a microscope brought home. What could I now observe for myself?": "ثعلب على طاولة التشريح، ونماذج صنعتها بيدي، ومجهر أحضرته إلى المنزل. ما الذي أصبح بوسعي أن أراه بنفسي؟",
+  "A ring would not close, a polymer would not dissolve and two embedding materials separated. Each result forced a more precise question.": "حلقة كيميائية لم تكتمل، وبوليمر لم يذب، ومادتان للتضمين انفصلتا. فرضت كل نتيجة سؤالًا أشد تحديدًا.",
+  "A vessel can be filmed without its cause being settled. A carrier can be prepared without knowing how it behaves after nebulization. What must we measure?": "قد نصوّر وعاءً دمويًا دون أن نحسم سبب ما نرصده فيه. وقد نحضّر حاملًا دوائيًا دون أن نعرف سلوكه بعد الإرذاذ. فما الذي يجب قياسه؟",
+  "Teachers, classmates, collaborators and scientific communities belong to this record too. Their contribution cannot be reduced to names in a caption.": "للمعلمين والزملاء والمتعاونين والمجتمعات العلمية مكان في هذا السجل. ولا تختزل مساهماتهم أسماءً في تعليق على صورة.",
+  "Every chapter retains its original photographs, scientific figures and source notes.": "يحتفظ كل فصل بصوره الأصلية وأشكاله العلمية وملاحظات مصادره.",
+  "For a five-scene route across the entire website, open the Reader’s Map ↗": "لرحلة من خمسة مشاهد عبر الموقع، افتح خريطة القراءة ↗",
+  "All 18 chapter stops": "فهرس المحطات الثماني عشرة",
+  "Open the complete index ↓": "افتح الفهرس الكامل ↓"
 });
 })();
 /* Storytelling revisions, 16 October 2026. Original translations retained for legacy pages. */

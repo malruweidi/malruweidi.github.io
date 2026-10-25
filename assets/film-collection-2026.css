@@ -48,3 +48,24 @@
 .fc-versions summary{display:inline-flex;align-items:center;min-height:44px;cursor:pointer;font:500 13px/1.5 "DM Sans",sans-serif;text-decoration:underline;text-underline-offset:4px}
 .fc-versions summary:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 .fc-versions .fc-inline{margin-top:6px}
+
+/* Story / observation / evidence: expose the boundary before the reader presses play. */
+.fc-reading-key{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid #a6b8ac;margin-top:34px;padding-top:20px;max-width:1020px}
+.fc-reading-key p{margin:0;padding:0 20px;border-right:1px solid #a6b8ac;font-size:13px;line-height:1.7}
+.fc-reading-key p:first-child{padding-left:0}
+.fc-reading-key p:last-child{border-right:0}
+.fc-reading-key strong{display:block;margin-bottom:6px;color:#713f32;font-size:12px;text-transform:uppercase;letter-spacing:.045em}
+.fc-reading-key span{display:block;color:#355a57}
+.fc-screening-note{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center;background:#e7eee8;border:1px solid var(--fc-line);margin-top:32px;padding:clamp(24px,3vw,40px)}
+.fc-screening-note h3{font:400 clamp(28px,3vw,42px)/1.13 "Newsreader",Georgia,serif;margin:10px 0}
+.fc-screening-note p:not(.fc-kicker){font-size:14px;line-height:1.8;color:var(--fc-muted)}
+.fc-screening-note a{color:#874431;font-weight:700;font-size:13px}
+.fc-screening-note details{border-top:1px solid #afc2b5;border-bottom:1px solid #afc2b5}
+.fc-screening-note summary{cursor:pointer;font-size:14px;font-weight:700;min-height:48px;padding:10px 0}
+.fc-screening-note ol{padding:0 0 12px 23px;margin:0}
+.fc-screening-note li{padding:6px 0}
+.fc-companion-index{border-top:1px solid #bbcbbf;border-bottom:1px solid #bbcbbf}
+.fc-companion-index>summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:15px;font:700 16px/1.5 "DM Sans",sans-serif;padding:23px 0;min-height:60px}
+.fc-companion-index>summary span{color:#914a36}
+.fc-companion-content{padding:10px 0 27px}
+@media(max-width:800px){.fc-reading-key{grid-template-columns:1fr}.fc-reading-key p,.fc-reading-key p:first-child{border-right:0;border-bottom:1px solid #a6b8ac;padding:12px 0}.fc-reading-key p:last-child{border-bottom:0}.fc-screening-note{grid-template-columns:1fr;gap:12px}}
