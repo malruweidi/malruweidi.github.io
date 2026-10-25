@@ -2,7 +2,7 @@ name: Film 26 neural voice — review only
 on:
   push:
     branches:
-      - film26-private-narrative-audition-20261025
+      - film26-197s-storyboard-narration-review-20261025
   pull_request:
     branches: [main]
     paths:
@@ -38,11 +38,11 @@ jobs:
             https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
           test "$(stat -c %s kokoro-v1.0.int8.onnx)" -gt 70000000
           test "$(stat -c %s voices-v1.0.bin)" -gt 10000000
-      - name: Generate 10 separate timed speech segments and 140s narration mix
+      - name: Generate 12 separate timed speech segments and 197s narration mix
         working-directory: assets/films/film26-private-review
         run: |
           OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 python synthesize.py
-          ffprobe -v error -show_entries format=duration -of default=nw=1 generated/full_140s_narration.wav
+          ffprobe -v error -show_entries format=duration -of default=nw=1 generated/full_197s_narration.wav
 
       - name: Collect verified personal archive photographs
         run: |
