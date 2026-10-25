@@ -2,7 +2,7 @@ name: Film 31 neural voice — review only
 on:
   push:
     branches:
-      - film31-scientific-credit-historical-review-20261025
+      - film31-target-states-narration-review-20261025
   pull_request:
     branches: [main]
     paths:
