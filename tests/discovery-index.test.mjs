@@ -60,6 +60,9 @@ test("every indexed page exists and every anchored route resolves", () => {
 test("search finds concrete experimental topics in both languages", () => {
   for (const [query, expected] of [
     ["niosomes", "Inhalable drug carriers"],
+    ["curcumin", "Curcumin as a cyanide probe · Analytical Methods (2019)"],
+    ["الكركمين", "Curcumin as a cyanide probe · Analytical Methods (2019)"],
+    ["cyanide", "Curcumin as a cyanide probe · Analytical Methods (2019)"],
     ["agarose", "A histology embedding failure"],
     ["SPION", "At Zewail City"],
     ["Ramadan", "The Ramadan microscope"],

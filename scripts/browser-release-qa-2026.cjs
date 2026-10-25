@@ -130,8 +130,13 @@ if(require.main===module)(async()=>{
   const page=await context.newPage();
   await runCheck("research hub mobile navigation exposes real destinations",async()=>{
    await page.goto(base+"/research.html",{waitUntil:"domcontentloaded"});
-   const nav=page.locator("header nav a[href='/stories.html']").first();
-   await nav.waitFor({state:"attached",timeout:8000});
+   // Canonical navigation uses a disclosure on mobile; hidden legacy links
+   // are not a valid accessibility target.
+   const explore=page.locator(".rx-universal details.rx-more > summary").first();
+   await explore.waitFor({state:"visible",timeout:8000});
+   await explore.click();
+   const nav=page.locator(".rx-universal .rx-menu-panel a.rx-mobile-route[href='/stories.html']").first();
+   await nav.waitFor({state:"visible",timeout:8000});
    if(!await nav.isVisible())throw Error("Stories link is not reachable on mobile");
    const url=await nav.getAttribute("href");
    if(url!=="/stories.html")throw Error("Unexpected destination: "+url);

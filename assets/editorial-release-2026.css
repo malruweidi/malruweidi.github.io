@@ -1,0 +1,32 @@
+/* The complete chapter directory is retained, with four primary choices. */
+html[data-rx-page="home"] .rx26-portal-more {
+  margin-top:24px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:0 0 20px;
+}
+html[data-rx-page="home"] .rx26-portal-more > summary {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  cursor:pointer;
+  list-style:none;
+  padding:20px 0;
+  color:var(--ink);
+  font:600 15px/1.5 var(--sans);
+}
+html[data-rx-page="home"] .rx26-portal-more > summary::-webkit-details-marker {display:none}
+html[data-rx-page="home"] .rx26-portal-more > summary::after {
+  content:"+";
+  font:400 26px/1 var(--serif);
+  color:var(--terra);
+}
+html[data-rx-page="home"] .rx26-portal-more[open] > summary::after {content:"−"}
+html[data-rx-page="home"] .rx26-portal-more > summary:focus-visible {outline:3px solid var(--terra);outline-offset:3px}
+html[data-rx-page="home"] .rx26-portal-more-intro {margin:0 0 20px;max-width:64ch;color:var(--muted);font-size:13px;line-height:1.7}
+html[data-rx-page="home"] .rx26-portal-grid-more {grid-template-columns:repeat(3,minmax(0,1fr))}
+html[data-rx-page="home"] .rx26-portal-grid-more .rx26-portal-card {min-height:215px}
+html[data-rx-page="home"] .rx-hero-backstory a {color:var(--home-accent);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:900px){html[data-rx-page="home"] .rx26-portal-grid-more{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:610px){html[data-rx-page="home"] .rx26-portal-grid-more{grid-template-columns:1fr}}

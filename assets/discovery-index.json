@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-20",
+  "version": "2026-10-25",
   "description": "Additive, source-grounded site discovery; links only to existing Ruwaidix public pages and headings.",
   "categories": [
     "Orientation",
@@ -55,9 +55,17 @@
       "id": 5,
       "title": "Publications",
       "category": "Research",
-      "url": "/#publications",
+      "url": "/publications.html",
       "summary": "Published research and scholarship with links to the underlying record.",
       "keywords": "articles papers journal manuscript bibliography DOI publications منشورات مقالات أبحاث"
+    },
+    {
+      "id": 91,
+      "title": "Curcumin as a cyanide probe · Analytical Methods (2019)",
+      "category": "Research",
+      "url": "/publications.html#work-13",
+      "summary": "The published colorimetric and fluorimetric curcumin-based cyanide sensing study. Experimental contribution and publication status are documented in the bibliography.",
+      "keywords": "curcumin cyanide colorimetric fluorimetric optical chemical sensing Analytical Methods 2019 10.1039/C9AY01557D كركمين الكركمين السيانيد استشعار كشف كيميائي مجس بصري"
     },
     {
       "id": 6,

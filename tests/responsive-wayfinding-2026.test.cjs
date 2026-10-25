@@ -6,10 +6,10 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 
-test('mobile Explore preserves the same five primary destinations', () => {
+test('mobile Explore preserves the six canonical primary destinations', () => {
   const js = read('assets/unified-pages.js');
   const css = read('assets/unified-pages.css');
-  assert.match(js, /items\.slice\(0,5\)\.map\(entry=>link\(entry,"rx-mobile-route"\)\)/);
+  assert.match(js, /items\.slice\(0,6\)\.map\(entry=>link\(entry,"rx-mobile-route"\)\)/);
   assert.match(js, /rx-menu-panel/);
   assert.match(css, /\.rx-universal \.rx-menu-panel \.rx-mobile-route\s*\{\s*display:none/);
   assert.match(css, /@media\(max-width:1100px\)[\s\S]*?\.rx-universal \.rx-menu-panel \.rx-mobile-route\s*\{\s*display:block/);
@@ -43,12 +43,12 @@ test('very narrow and RTL layouts keep the Explore panel reachable', () => {
   assert.match(css, /max-height:.*vh/);
 });
 
-test('content and public routes remain unchanged by navigation repair', () => {
+test('canonical destinations and expanded archival routes remain available', () => {
   const home = read('index.html');
   const js = read('assets/unified-pages.js');
-  for (const route of ['full-record.html#research','full-record.html#publications',
-    'full-record.html#writing','full-record.html#history','/archive.html',
-    '/stories.html','/techniques.html']) assert.ok(js.includes(route),route);
+  for (const route of ['/research.html','/publications.html','/writing.html',
+    'full-record.html#history','/full-record.html','/archive.html',
+    '/stories.html','/films.html','/techniques.html']) assert.ok(js.includes(route),route);
   for (const marker of ['id="research"','id="publications"','id="rx-home-complete-record"'])
     assert.ok(home.includes(marker),marker);
 });
