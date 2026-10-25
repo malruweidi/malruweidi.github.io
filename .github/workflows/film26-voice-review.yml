@@ -7,7 +7,7 @@ on:
     branches: [main]
     paths:
       - "assets/films/film26-private-review/**"
-      - ".github/workflows/film26-private-review-voice.yml"
+      - ".github/workflows/film26-voice-review.yml"
   workflow_dispatch:
 
 permissions:
@@ -51,7 +51,7 @@ jobs:
           cp assets/2026-10-13-new-photos/august-2025-hospital-research.webp assets/films/film26-private-review/generated/source_photos/
           cp assets/2026-10-13-new-photos/research-portrait-calligraphy.webp assets/films/film26-private-review/generated/source_photos/
           cp assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp assets/films/film26-private-review/generated/source_photos/
-          sha256sum assets/films/film26-private-review/generated/source_photos/*.webp > assets/films/film26-private-review/generated/source_photos/SHA256SUMS.txt
+          sha256sum assets/films/film26-private-review/generated/source_photos/*.{webp,jpg} > assets/films/film26-private-review/generated/source_photos/SHA256SUMS.txt
       - name: Package narrated audition WAVs, approximate captions and timings
         uses: actions/upload-artifact@v4
         with:
