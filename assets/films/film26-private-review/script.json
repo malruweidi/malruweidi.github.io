@@ -1,58 +1,68 @@
 {
   "title": "When the Count Could Not Describe the Pain",
-  "duration_seconds": 140,
-  "source": "Published author's essay The Life Between Diagnoses, editorial revision 15 Oct 2026",
-  "status": "PRIVATE REVIEW — DO NOT PUBLISH",
+  "duration_seconds": 197,
+  "source": "Author's The Life Between Diagnoses, revised 15 October 2026",
+  "status": "REVIEW ONLY — NOT FOR WEBSITE",
   "scenes": [
     {
       "start": 0,
-      "duration": 14,
-      "text": "There were mornings when even water refused to stay down. A blood count might describe part of the illness. It could not describe that morning."
+      "duration": 15,
+      "text": "The worst mornings could begin with a glass of water. I needed to drink. Sometimes my stomach would not let me keep even that down."
     },
     {
-      "start": 14,
-      "duration": 14,
-      "text": "I finished high school at sixteen. My father had died, and illness had already interrupted much of my last year. I still graduated, but not with the results I needed for medical school."
+      "start": 15,
+      "duration": 15,
+      "text": "After enough attacks I thought I could predict the eosinophil count from the pain. I knew the guess was not a blood test. But I knew the feeling."
     },
     {
-      "start": 28,
-      "duration": 14,
-      "text": "The examination paper recorded the marks accurately. It did not record the hospital days behind them. I wanted to study medicine. Instead, I was learning what it meant to be a patient."
+      "start": 30,
+      "duration": 17,
+      "text": "I was sixteen when I finished high school. My father had died, and I had missed much of the year through illness. Medicine was the course I wanted. My grades would not take me there."
     },
     {
-      "start": 42,
-      "duration": 14,
-      "text": "Doctors and medical students found my case interesting. I understood why they needed to ask questions. I also learned that the patient remains when the students leave the room."
+      "start": 47,
+      "duration": 16,
+      "text": "At the hospital, medical students came to ask about my case. I did not resent their questions. But when a teaching session ended, I was still the patient in the bed."
     },
     {
-      "start": 56,
-      "duration": 14,
-      "text": "I began to recognize a flare before any laboratory report appeared. That was not a diagnostic talent. It was experience purchased through too many difficult days."
+      "start": 63,
+      "duration": 16,
+      "text": "A blood count could be precise and still leave things out. Tissue inflammation, a laboratory result, and the ability to eat breakfast are three different questions."
     },
     {
-      "start": 70,
-      "duration": 14,
-      "text": "Eventually I studied chemistry. It became work I cared deeply about, not a prize that illness had thoughtfully chosen for me. There were experiments and questions I wanted to pursue on my own terms."
+      "start": 79,
+      "duration": 16,
+      "text": "I went on to study chemistry. It became serious work that I chose, not some carefully arranged gift from an illness I would rather not have had."
     },
     {
-      "start": 84,
-      "duration": 14,
-      "text": "A week before travelling to the United States, another attack meant an endoscopy and treatment. I wanted to think about the journey. My body had other plans."
-    },
-    {
-      "start": 98,
-      "duration": 14,
-      "text": "Over time I learned the pharmacology of treatments that could help and could also create their own burdens. Understanding their mechanisms did not make the decisions simple."
+      "start": 95,
+      "duration": 17,
+      "text": "In 2012 I wrote about the disease online. Years later other people found those words and asked whether ordinary life with an eosinophilic illness could be possible."
     },
     {
       "start": 112,
-      "duration": 14,
-      "text": "As a researcher, I know the value of measurements. Yet a blood count, a biopsy, and the ability to drink water answer different questions. None cancels the others."
+      "duration": 17,
+      "text": "Medical names changed as research improved. At one point, serious blood diseases were investigated and later excluded. Relief did not mean the eosinophilic illness had disappeared."
     },
     {
-      "start": 126,
-      "duration": 14,
-      "text": "I do not want my life reduced to a laboratory result, or the illness turned into a lesson I was meant to learn. I want the ordinary freedom to plan tomorrow without counting on it being interrupted."
+      "start": 129,
+      "duration": 17,
+      "text": "One week before a trip to the United States, another flare brought me to an endoscopy and systemic treatment. Those were responses to an actual attack, not precautions for travelling."
+    },
+    {
+      "start": 146,
+      "duration": 17,
+      "text": "Glucocorticoids could control inflammation, but long treatment had burdens of its own. When I stopped them too abruptly, I developed adrenal insufficiency. My adrenal function later recovered."
+    },
+    {
+      "start": 163,
+      "duration": 17,
+      "text": "I read studies with the training of a pharmaceutical scientist and the memory of those mornings. Histology, symptoms and real-world function belong together; no single endpoint can replace the others."
+    },
+    {
+      "start": 180,
+      "duration": 17,
+      "text": "I do not need my illness turned into a motivational lesson. I want time for the work I choose—and an ordinary morning when a glass of water is only a glass of water."
     }
   ]
 }
