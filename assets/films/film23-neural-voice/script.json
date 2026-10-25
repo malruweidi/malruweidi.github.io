@@ -1,0 +1,59 @@
+{
+  "title": "Build the Heterocycle, Then Challenge the Hypothesis",
+  "project": "UREP23-133-1-028",
+  "duration_seconds": 168,
+  "editorial_status": "VOICE AUDITION ONLY",
+  "source": "2021 QNRF final report, 46 pages",
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 16,
+      "text": "One reaction was designed to build a fused heterocyclic ring. But the most important result was not the structure the chemists originally intended."
+    },
+    {
+      "start": 16,
+      "duration": 16,
+      "text": "The proposed route moved through pyridinium intermediates, condensation, cyclization, and oxidation. This was the hypothesis on paper, not a validated product sequence."
+    },
+    {
+      "start": 32,
+      "duration": 17,
+      "text": "The final project report records that the targeted imidazopyridine was not obtained. Rather than inventing a success, the team studied the intermediates."
+    },
+    {
+      "start": 49,
+      "duration": 17,
+      "text": "Schiff-base products opened a different experimental path. Infrared, nuclear magnetic resonance, and mass spectrometry were used to investigate chemical identity."
+    },
+    {
+      "start": 66,
+      "duration": 17,
+      "text": "For one reported product, mass spectrometry gave a principal signal around two hundred one. An imine band was also reported by infrared analysis."
+    },
+    {
+      "start": 83,
+      "duration": 17,
+      "text": "One sensor compound responded to cyanide with a yellow-to-orange change. Its absorption changed around three hundred eighty and four hundred fifty nanometers."
+    },
+    {
+      "start": 100,
+      "duration": 17,
+      "text": "Other Schiff-base candidates, called C M P five and C M P B, were studied in two triple-negative breast cancer cell lines."
+    },
+    {
+      "start": 117,
+      "duration": 17,
+      "text": "The report describes reduced cell migration with C M P five under the tested conditions. C M P B did not show a comparable migration effect."
+    },
+    {
+      "start": 134,
+      "duration": 17,
+      "text": "Gene-expression observations complicated the mechanism. Survivin transcripts decreased in reported conditions, while C M Y C expression could rise. A pathway hypothesis remained unproven."
+    },
+    {
+      "start": 151,
+      "duration": 17,
+      "text": "These are chemical and cell-model findings, not a cancer treatment. The original target failed, but the project generated testable questions—and documented its limits."
+    }
+  ]
+}
