@@ -44,12 +44,13 @@ jobs:
           OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 python synthesize.py
           ffprobe -v error -show_entries format=duration -of default=nw=1 generated/full_143s_narration.wav
 
-      - name: Collect exactly the three first-person research photographs
+      - name: Collect verified personal archive photographs
         run: |
           mkdir -p assets/films/film25-neural-voice/generated/source_photos
           cp assets/photos-2017-2019/microscope-morning-still-life-2017.webp assets/films/film25-neural-voice/generated/source_photos/
           cp assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp assets/films/film25-neural-voice/generated/source_photos/
-          cp assets/archival-2026-10-12/chemistry-library-2016.webp assets/films/film25-neural-voice/generated/source_photos/\n          cp assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp assets/films/film25-neural-voice/generated/source_photos/
+          cp assets/archival-2026-10-12/chemistry-library-2016.webp assets/films/film25-neural-voice/generated/source_photos/
+          cp assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp assets/films/film25-neural-voice/generated/source_photos/
           sha256sum assets/films/film25-neural-voice/generated/source_photos/*.webp > assets/films/film25-neural-voice/generated/source_photos/SHA256SUMS.txt
       - name: Package narrated audition WAVs, approximate captions and timings
         uses: actions/upload-artifact@v4
