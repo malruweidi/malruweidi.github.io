@@ -2,7 +2,7 @@ name: Film 28 neural voice — review only
 on:
   push:
     branches:
-      - film28-evidence-led-narrated-review-20261025
+      - film28-source-first-cinematic-review-20261025
   pull_request:
     branches: [main]
     paths:
