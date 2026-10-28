@@ -1,0 +1,145 @@
+{
+  "source_statement": "Original archival photographs and research figures are credited to Mahmoud Al-Ruweidi's existing public site. External microscopy clips originate from the original footage page. Historical manuscript is a 1904 Egyptian copy of Minhaj al-dukkan, Wellcome MS Arabic 1002; its particular page is not identified as a syrup passage.",
+  "assets": [
+    {
+      "name": "2009_school.webp",
+      "repo_path": "assets/owner-archive-2026-10-17/grade10-chemistry-festival-aref-elahmad.webp",
+      "sha256": "df6f945d777550debb3a4db80b6e151802a21061ca1e6ec2b9fe726210055283"
+    },
+    {
+      "name": "2017_lab.webp",
+      "repo_path": "assets/2017-tatar-lab-internship.webp",
+      "sha256": "487ba365ab9f7fd35edf96b3be735e547fbdb75722ec58370d5aee6f051de5b7"
+    },
+    {
+      "name": "acs_chapter.webp",
+      "repo_path": "assets/2017-acs-chapter-appreciation.webp",
+      "sha256": "d67652ff1e966f292a9a057ea9a3a7ed8e5c24b29980bfcf6785e05f5b9e9859"
+    },
+    {
+      "name": "anatomy.jpg",
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/images/0883596d-c252-4b4e-826f-ec8f01ef9fac.jpg",
+      "sha256": "7c8b8d0afd93c1bfa906fbce31413d802ad72dfe8b44dcb8ab56b88258c3d7e8"
+    },
+    {
+      "name": "between_exams.jpg",
+      "repo_path": "archive/archive-7885.jpg",
+      "sha256": "f6a3cabfab969f85ebcb8f439ca3243163306a0d8a935e1236eee926eb8fb0b2"
+    },
+    {
+      "name": "cairo_sunset.webp",
+      "repo_path": "archive/mokattam-cairo-sunset.webp",
+      "sha256": "98477e19e62d0748cbf9671fb35545c3f5a559ec34dd5a12ac6da763b74e1645"
+    },
+    {
+      "name": "calligraphy_portrait.webp",
+      "repo_path": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "sha256": "61753312337932c9f44bd06288780419ea6354361bf8c8016a7cfd5947ab7006"
+    },
+    {
+      "name": "cell_culture.webp",
+      "repo_path": "assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp",
+      "sha256": "8d2e98faa6122636bd61130ac25164b2a17ced1053c99397aada56f09eb69db6"
+    },
+    {
+      "name": "copolymer.webp",
+      "repo_path": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+      "sha256": "c924e2c0f950f9f9b006dba9a8709f353f0f91d86283d5d6e1be81f6ead41ca9"
+    },
+    {
+      "name": "curcumin.jpg",
+      "repo_path": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "sha256": "a0dc1964459068d93e1afd2135f11b331e70a8e66d5a26898611ae4662de2c70"
+    },
+    {
+      "name": "eosinophilic.webp",
+      "repo_path": "assets/owner-archive-2026-10-16/eosinophilic-diagnosis-dr-elsheikh-abdelrahim.webp",
+      "sha256": "daafbec70e09d5a0f6b9d161a761918cabf80021182ccb3fa5c1b22a6af294c9"
+    },
+    {
+      "name": "festival_host.webp",
+      "repo_path": "archive/fifth-chemistry-festival-host.webp",
+      "sha256": "8a1616c0fe9421189834a5331209886ba8beb72b42fad49e3a2e0eeb8b23fc68"
+    },
+    {
+      "name": "graduation.webp",
+      "repo_path": "assets/owner-archive-2026-10-17/high-school-graduation-jameel-al-shamarri.webp",
+      "sha256": "97cb4a1e410a344234df36042d58fc0fe032799a718f802fbae8a71cb696831a"
+    },
+    {
+      "name": "histology_failure.webp",
+      "repo_path": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "sha256": "5da3dccaa2f23217178e8bce47b9ea2342581d5a4e8b5467d4acb507b45a275a"
+    },
+    {
+      "name": "histology_processing.webp",
+      "repo_path": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "sha256": "38dfe5e525ad510403245e708462408b9c5de09170d973fa71d74e8418a445e7"
+    },
+    {
+      "name": "imine_reagent.webp",
+      "repo_path": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "sha256": "8ecb82c839034a72406d60b1ebb61641af5e1858a04ccb5cf7aa6a92c348576b"
+    },
+    {
+      "name": "lab_pump.mp4",
+      "repo_path": "assets/research-archive-2026/laboratory-vacuum-pump-archival-clip.mp4",
+      "sha256": "d190c1ec756a38404ac59e5985ed826ce516801e800adf4622d1ae91e15b0e8c"
+    },
+    {
+      "name": "manuscript_original.jpg",
+      "repo_path": "assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg",
+      "sha256": "367e261054b09d568c4abe3ecf17386fd45c9efed6b2e6e5405b1a569a903036"
+    },
+    {
+      "name": "manuscript_wellcome.webp",
+      "repo_path": "assets/films/visual-sources/wellcome-arabic-medical-manuscript-15c.webp",
+      "sha256": "681205182bc044bef24a7b46ab4efc729508717bb62180b3f1366501e6e0e1de"
+    },
+    {
+      "name": "micro_setup.webp",
+      "repo_path": "assets/research-archive-2026/stereo-microscope-micromanipulator-setup.webp",
+      "sha256": "b10f5b00fd0b5862fc2d9d23ef4fecfeaab0844e7d1acadc85320c6d73ffa692"
+    },
+    {
+      "name": "microscope.webp",
+      "repo_path": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "sha256": "fc7b1d95ac02bee32461d5c89bad1ea0657786d843215ef81da04da7e30e2fac"
+    },
+    {
+      "name": "portrait.jpg",
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/images/5e4b3ffb-a810-4d3c-99c9-cc38782d7b4d.jpg",
+      "sha256": "9b943ec196559be498194b096820a64acda6635a0d0765fc2b6e01cc00dd4801"
+    },
+    {
+      "name": "pulmonary_figure.jpg",
+      "repo_path": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "sha256": "6e8e1de3139851129166eede71f8fa4bee2e4cb255519d54eabd61be3648a222"
+    },
+    {
+      "name": "trials.webp",
+      "repo_path": "assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp",
+      "sha256": "b522af2c9f99244d108f5687fe9e8bf6cfe1a4661bb8d119b4d7456b950f8847"
+    },
+    {
+      "name": "zebrafish_data.jpg",
+      "repo_path": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "sha256": "ac49056c72fad7bce1f257a8b412964034e3193bab39de9c60794a704c69a42f"
+    },
+    {
+      "name": "zfish_heart3.mp4",
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/videos/0b2fc0e1-5310-4f0a-a94a-94f3471960a2.mp4",
+      "sha256": "0e5b8d84466876abe98ff955a2dbeaa7d705bca7abdd3d3046ad757a82a066df"
+    },
+    {
+      "name": "zfish_heart4.mp4",
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4",
+      "sha256": "e1b60c4afcc210ac6912bd6c53973c927a4a174de9322a1b436f4e9177da0b66"
+    },
+    {
+      "name": "zfish_lens.mp4",
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/videos/bbf2d9f7-8032-4eb1-a1ec-f669c155dc23.mp4",
+      "sha256": "e876ef9f6bf02bb9c418a89fb02ecbe881a08916632b92617ed9d6690c0fbc0b"
+    }
+  ]
+}
