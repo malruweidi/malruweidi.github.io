@@ -1,0 +1,356 @@
+{
+  "duration": 386,
+  "shots": [
+    {
+      "in": 0,
+      "out": 10,
+      "shot": "01_origin",
+      "asset": "2009_school.webp",
+      "sha256": "df6f945d777550debb3a4db80b6e151802a21061ca1e6ec2b9fe726210055283",
+      "mode": "archive",
+      "narration": "The photograph survives because someone thought to take it. Doha, 2009. Mahmoud stands beside his chemistry teacher, Aref Elahmad, holding a certificate."
+    },
+    {
+      "in": 10,
+      "out": 18,
+      "shot": "02_certificate",
+      "asset": "2009_school.webp",
+      "sha256": "df6f945d777550debb3a4db80b6e151802a21061ca1e6ec2b9fe726210055283",
+      "mode": "detail",
+      "narration": "An ordinary scene. A student, a teacher, and an early attempt to ask a question about matter."
+    },
+    {
+      "in": 18,
+      "out": 27,
+      "shot": "03_anatomy",
+      "asset": "anatomy.jpg",
+      "sha256": "7c8b8d0afd93c1bfa906fbce31413d802ad72dfe8b44dcb8ab56b88258c3d7e8",
+      "mode": "archive",
+      "narration": "Two years later, in school anatomy, a fox lies on the table. A textbook had made the organs seem separate."
+    },
+    {
+      "in": 27,
+      "out": 35,
+      "shot": "04_whole_body",
+      "asset": "anatomy.jpg",
+      "sha256": "7c8b8d0afd93c1bfa906fbce31413d802ad72dfe8b44dcb8ab56b88258c3d7e8",
+      "mode": "detail",
+      "narration": "The real body is less easily divided. Its parts occupy the same space and depend on one another."
+    },
+    {
+      "in": 35,
+      "out": 46,
+      "shot": "05_interruption",
+      "asset": "graduation.webp",
+      "sha256": "97cb4a1e410a344234df36042d58fc0fe032799a718f802fbae8a71cb696831a",
+      "mode": "portrait",
+      "narration": "Around the same years, recurrent illness begins interrupting his education. Hospital stays enter a life that had already turned toward science."
+    },
+    {
+      "in": 46,
+      "out": 57,
+      "shot": "06_route",
+      "asset": "eosinophilic.webp",
+      "sha256": "daafbec70e09d5a0f6b9d161a761918cabf80021182ccb3fa5c1b22a6af294c9",
+      "mode": "portrait",
+      "narration": "His final examinations suffer. Medical school, the route he wanted, falls away. He graduates and enters chemistry instead."
+    },
+    {
+      "in": 57,
+      "out": 66,
+      "shot": "07_not_a_origin",
+      "asset": "2009_school.webp",
+      "sha256": "df6f945d777550debb3a4db80b6e151802a21061ca1e6ec2b9fe726210055283",
+      "mode": "archive",
+      "narration": "The seductive version would say illness made him a scientist. But the photograph from 2009 contradicts it."
+    },
+    {
+      "in": 66,
+      "out": 76,
+      "shot": "08_community",
+      "asset": "acs_chapter.webp",
+      "sha256": "d67652ff1e966f292a9a057ea9a3a7ed8e5c24b29980bfcf6785e05f5b9e9859",
+      "mode": "portrait",
+      "narration": "From 2015 onward, university research becomes shared work. He helps build a student chemistry community alongside his colleagues."
+    },
+    {
+      "in": 76,
+      "out": 86,
+      "shot": "09_public_chemistry",
+      "asset": "festival_host.webp",
+      "sha256": "8a1616c0fe9421189834a5331209886ba8beb72b42fad49e3a2e0eeb8b23fc68",
+      "mode": "portrait",
+      "narration": "Workshops and festivals make methods public. Other people bring questions, and the equipment does not always cooperate."
+    },
+    {
+      "in": 86,
+      "out": 95,
+      "shot": "10_imine",
+      "asset": "imine_reagent.webp",
+      "sha256": "8ecb82c839034a72406d60b1ebb61641af5e1858a04ccb5cf7aa6a92c348576b",
+      "mode": "portrait",
+      "narration": "An imine reaction looks plausible on paper. A hoped-for ring closure does not follow. Chemistry answers the procedure, not the intention."
+    },
+    {
+      "in": 95,
+      "out": 104,
+      "shot": "11_polymer",
+      "asset": "copolymer.webp",
+      "sha256": "c924e2c0f950f9f9b006dba9a8709f353f0f91d86283d5d6e1be81f6ead41ca9",
+      "mode": "portrait",
+      "narration": "A polymer refuses to dissolve. Crosslinking is a hypothesis, not a finding; several causes could produce the same failure."
+    },
+    {
+      "in": 104,
+      "out": 114,
+      "shot": "12_notebook",
+      "asset": "trials.webp",
+      "sha256": "b522af2c9f99244d108f5687fe9e8bf6cfe1a4661bb8d119b4d7456b950f8847",
+      "mode": "archive",
+      "narration": "He calls the notebook A Series of Unfortunate Trials. A joke, perhaps. Still, the conditions of each unsuccessful attempt matter."
+    },
+    {
+      "in": 114,
+      "out": 124,
+      "shot": "13_color",
+      "asset": "curcumin.jpg",
+      "sha256": "a0dc1964459068d93e1afd2135f11b331e70a8e66d5a26898611ae4662de2c70",
+      "mode": "data",
+      "narration": "Another collaboration gives chemistry a striking colour: curcumin responds to cyanide under defined experimental conditions."
+    },
+    {
+      "in": 124,
+      "out": 134,
+      "shot": "14_color_limit",
+      "asset": "curcumin.jpg",
+      "sha256": "a0dc1964459068d93e1afd2135f11b331e70a8e66d5a26898611ae4662de2c70",
+      "mode": "data_detail",
+      "narration": "But colour is not a theory. Selectivity, sensitivity and alternative reactions still require measurements and suitable comparisons."
+    },
+    {
+      "in": 134,
+      "out": 145,
+      "shot": "15_cairo",
+      "asset": "cairo_sunset.webp",
+      "sha256": "98477e19e62d0748cbf9671fb35545c3f5a559ec34dd5a12ac6da763b74e1645",
+      "mode": "archive",
+      "narration": "In 2017, Mahmoud buys a small microscope near Qasr El Einy in Cairo. The city recedes. The instrument comes home with him."
+    },
+    {
+      "in": 145,
+      "out": 155,
+      "shot": "16_instrument",
+      "asset": "microscope.webp",
+      "sha256": "fc7b1d95ac02bee32461d5c89bad1ea0657786d843215ef81da04da7e30e2fac",
+      "mode": "archive",
+      "narration": "On his desk among books and cups, the microscope makes room for questions after the laboratory doors have closed."
+    },
+    {
+      "in": 155,
+      "out": 164,
+      "shot": "17_change_of_scale",
+      "asset": "micro_setup.webp",
+      "sha256": "b10f5b00fd0b5862fc2d9d23ef4fecfeaab0844e7d1acadc85320c6d73ffa692",
+      "mode": "portrait",
+      "narration": "Then the scale changes. In developing zebrafish, blood flow, vascular cells and primary cilia interact in time."
+    },
+    {
+      "in": 164,
+      "out": 172,
+      "shot": "18_moving_life",
+      "asset": "zfish_heart4.mp4",
+      "sha256": "e1b60c4afcc210ac6912bd6c53973c927a4a174de9322a1b436f4e9177da0b66",
+      "mode": "footage",
+      "narration": "The living specimen moves. Video records an event. It cannot, on its own, identify a cause."
+    },
+    {
+      "in": 172,
+      "out": 181,
+      "shot": "19_ramada",
+      "asset": "zfish_heart3.mp4",
+      "sha256": "0e5b8d84466876abe98ff955a2dbeaa7d705bca7abdd3d3046ad757a82a066df",
+      "mode": "footage",
+      "narration": "During Ramadan, the work continues after iftar. Laboratory hours extend. Prayers are missed, and people wait at home."
+    },
+    {
+      "in": 181,
+      "out": 190,
+      "shot": "20_guests",
+      "asset": "zfish_lens.mp4",
+      "sha256": "e876ef9f6bf02bb9c418a89fb02ecbe881a08916632b92617ed9d6690c0fbc0b",
+      "mode": "footage",
+      "narration": "One evening, guests are waiting while Mahmoud is still at the microscope. They do not appear in the paper."
+    },
+    {
+      "in": 190,
+      "out": 200,
+      "shot": "21_cilia_paper",
+      "asset": "zebrafish_data.jpg",
+      "sha256": "ac49056c72fad7bce1f257a8b412964034e3193bab39de9c60794a704c69a42f",
+      "mode": "data",
+      "narration": "The vascular study enters the scientific record. Its figures show methods and observations. The obligations around them remain outside the frame."
+    },
+    {
+      "in": 200,
+      "out": 211,
+      "shot": "22_pulmonary",
+      "asset": "pulmonary_figure.jpg",
+      "sha256": "6e8e1de3139851129166eede71f8fa4bee2e4cb255519d54eabd61be3648a222",
+      "mode": "data",
+      "narration": "In pulmonary research, a moving air-liquid boundary injures cultured epithelial cells. A chamber makes that physical exposure measurable."
+    },
+    {
+      "in": 211,
+      "out": 221,
+      "shot": "23_interface",
+      "asset": null,
+      "sha256": null,
+      "mode": "concept_airway",
+      "narration": "A model achieves clarity by simplifying the world. That is its scientific strength, and also its boundary."
+    },
+    {
+      "in": 221,
+      "out": 229,
+      "shot": "24_laboratory_pump",
+      "asset": "lab_pump.mp4",
+      "sha256": "d190c1ec756a38404ac59e5985ed826ce516801e800adf4622d1ae91e15b0e8c",
+      "mode": "footage",
+      "narration": "An effect in a controlled laboratory system is not automatically a clinical outcome. The living lung is more complicated."
+    },
+    {
+      "in": 229,
+      "out": 239,
+      "shot": "25_between_exams",
+      "asset": "between_exams.jpg",
+      "sha256": "f6a3cabfab969f85ebcb8f439ca3243163306a0d8a935e1236eee926eb8fb0b2",
+      "mode": "archive",
+      "narration": "Meanwhile, the researcher has never stopped being a patient. In 2017, someone photographs him asleep between examinations."
+    },
+    {
+      "in": 239,
+      "out": 249,
+      "shot": "26_lockdown",
+      "asset": null,
+      "sha256": null,
+      "mode": "illness_black",
+      "narration": "Then comes 2020. During lockdown, another severe attack begins. He is vomiting while access to treatment is disrupted."
+    },
+    {
+      "in": 249,
+      "out": 261,
+      "shot": "27_fourteen_days",
+      "asset": "eosinophilic.webp",
+      "sha256": "daafbec70e09d5a0f6b9d161a761918cabf80021182ccb3fa5c1b22a6af294c9",
+      "mode": "portrait",
+      "narration": "Fourteen days pass before he obtains a prescription. Doctors fear immunosuppression during the pandemic. He is enduring an illness already present."
+    },
+    {
+      "in": 261,
+      "out": 271,
+      "shot": "28_no_heroism",
+      "asset": "between_exams.jpg",
+      "sha256": "f6a3cabfab969f85ebcb8f439ca3243163306a0d8a935e1236eee926eb8fb0b2",
+      "mode": "archive",
+      "narration": "A record can state duration. It cannot convey each hour. There is no moral lesson to extract from the pain."
+    },
+    {
+      "in": 271,
+      "out": 282,
+      "shot": "29_archive",
+      "asset": "manuscript_original.jpg",
+      "sha256": "367e261054b09d568c4abe3ecf17386fd45c9efed6b2e6e5405b1a569a903036",
+      "mode": "source",
+      "narration": "His historical work opens another kind of laboratory, made of texts. How did pharmacists prepare, substitute and preserve medicines in Cairo?"
+    },
+    {
+      "in": 282,
+      "out": 293,
+      "shot": "30_manuscript_copy",
+      "asset": "manuscript_original.jpg",
+      "sha256": "367e261054b09d568c4abe3ecf17386fd45c9efed6b2e6e5405b1a569a903036",
+      "mode": "source_detail",
+      "narration": "This Egyptian copy, dated 1904, preserves an older pharmacy text. It is a witness to transmission, not direct proof of medieval practice."
+    },
+    {
+      "in": 293,
+      "out": 303,
+      "shot": "31_written_practice",
+      "asset": "calligraphy_portrait.webp",
+      "sha256": "61753312337932c9f44bd06288780419ea6354361bf8c8016a7cfd5947ab7006",
+      "mode": "portrait",
+      "narration": "A recipe says what an author recorded. It cannot establish how widely a preparation was used, or by whom."
+    },
+    {
+      "in": 303,
+      "out": 313,
+      "shot": "32_limits_of_text",
+      "asset": "manuscript_wellcome.webp",
+      "sha256": "681205182bc044bef24a7b46ab4efc729508717bb62180b3f1366501e6e0e1de",
+      "mode": "source",
+      "narration": "The historian must compare sources and contexts without pretending that every lost voice can be recovered."
+    },
+    {
+      "in": 313,
+      "out": 323,
+      "shot": "33_failed_section",
+      "asset": "histology_failure.webp",
+      "sha256": "5da3dccaa2f23217178e8bce47b9ea2342581d5a4e8b5467d4acb507b45a275a",
+      "mode": "portrait",
+      "narration": "Back in the laboratory, an agarose-and-paraffin histology attempt separates before a useful section can be produced."
+    },
+    {
+      "in": 323,
+      "out": 333,
+      "shot": "34_process_record",
+      "asset": "histology_processing.webp",
+      "sha256": "38dfe5e525ad510403245e708462408b9c5de09170d973fa71d74e8418a445e7",
+      "mode": "portrait",
+      "narration": "The damaged material remains in the record: evidence that this attempt failed, not evidence that its cause was established."
+    },
+    {
+      "in": 333,
+      "out": 343,
+      "shot": "35_delivery_question",
+      "asset": "cell_culture.webp",
+      "sha256": "8d2e98faa6122636bd61130ac25164b2a17ced1053c99397aada56f09eb69db6",
+      "mode": "portrait",
+      "narration": "He keeps returning to a practical question: what becomes of a treatment when its physical delivery system changes?"
+    },
+    {
+      "in": 343,
+      "out": 355,
+      "shot": "36_current_project",
+      "asset": "2017_lab.webp",
+      "sha256": "487ba365ab9f7fd35edf96b3be735e547fbdb75722ec58370d5aee6f051de5b7",
+      "mode": "portrait",
+      "narration": "His current master's research investigates inhaled dexamethasone niosomes and proniosomes. Formulation integrity, nebulization and aerosol behaviour still need experimental answers."
+    },
+    {
+      "in": 355,
+      "out": 365,
+      "shot": "37_unfinished",
+      "asset": "portrait.jpg",
+      "sha256": "9b943ec196559be498194b096820a64acda6635a0d0765fc2b6e01cc00dd4801",
+      "mode": "portrait",
+      "narration": "It is not a finished medicine. It is work in progress, asking the next experiment to distinguish between alternatives."
+    },
+    {
+      "in": 365,
+      "out": 376,
+      "shot": "38_discipline",
+      "asset": "portrait.jpg",
+      "sha256": "9b943ec196559be498194b096820a64acda6635a0d0765fc2b6e01cc00dd4801",
+      "mode": "portrait_detail",
+      "narration": "Since 2009, the subjects have multiplied. The discipline has not: distinguish what was seen, what may be inferred, and what remains unknown."
+    },
+    {
+      "in": 376,
+      "out": 386,
+      "shot": "39_title",
+      "asset": null,
+      "sha256": null,
+      "mode": "title",
+      "narration": ""
+    }
+  ]
+}
