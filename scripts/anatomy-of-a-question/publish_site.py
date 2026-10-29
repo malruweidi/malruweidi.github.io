@@ -15,7 +15,8 @@ from pathlib import Path
 
 HERE=Path(__file__).resolve().parent
 OLD="/assets/films/what-survives-the-experiment"
-NEW="/assets/films/anatomy-of-a-question-2026"
+PREVIOUS="/assets/films/anatomy-of-a-question-2026"
+NEW="/assets/films/anatomy-of-a-question-2026-v2"
 DESC=("A 6-minute-26-second documentary portrait of Mahmoud Al-Ruweidi, from school chemistry in "
       "2009 through experimental research, chronic illness, the history of pharmacy and unfinished questions.")
 
@@ -27,9 +28,29 @@ def replace(s:str,old:str,new:str,count:int=1)->str:
     return s.replace(old,new)
 
 
+def replace_film_asset_version(s:str)->str:
+    """Change only exact media filenames, never prefixes of newer versions."""
+    for suffix in (".mp4",".vtt",".webp","-source.json"):
+        s=s.replace(PREVIOUS+suffix,NEW+suffix)
+    return s
+
+
 def film_page(site:Path,shots:list[dict])->None:
     p=site/"film.html"
     s=p.read_text(encoding="utf-8")
+    # Subsequent editions use the existing page and change the film references
+    # and the exact transcript without duplicating its editorial/source blocks.
+    if '<title>Anatomy of a Question | A Mahmoud Al-Ruweidi Documentary</title>' in s:
+        if PREVIOUS+".mp4" in s:
+            s=replace_film_asset_version(s)
+        elif NEW+".mp4" not in s:
+            raise ValueError("Unexpected documentary media path on film.html")
+        paragraphs="\n".join(f'<p>{html.escape(shot["voice"])}</p>' for shot in shots if shot["voice"])
+        s,count=re.subn(r'<div class="transcript">.*?</div>',
+                        lambda _: '<div class="transcript">'+paragraphs+'</div>',s,flags=re.S)
+        if count!=1:raise ValueError(f"Expected one existing transcript, found {count}")
+        p.write_text(s,encoding="utf-8")
+        return
     s=replace(s,"<title>What Survives the Experiment | A Ruwaidix Research Film</title>",
               "<title>Anatomy of a Question | A Mahmoud Al-Ruweidi Documentary</title>")
     s=replace(s,'<meta name="description" content="A two-minute documentary told through original photographs, microscopy, published scientific figures and the experiments behind Mahmoud K. Al-Ruweidi\'s research.">',
@@ -97,6 +118,13 @@ def film_page(site:Path,shots:list[dict])->None:
 def homepage(site:Path)->None:
     p=site/"index.html"
     s=p.read_text(encoding="utf-8")
+    if PREVIOUS+".mp4" in s or NEW+".mp4" in s:
+        s=replace_film_asset_version(s)
+        s=s.replace(
+            'Beginning in 2009, this documentary follows chemistry, the living body, experiments that failed, chronic illness and the history of medicine. It asks what can be known from an observation, and where the evidence stops.',
+            'Beginning in 2009, this documentary follows chemistry, experimental failure, history, and the continuing struggle of working and living with illness. It asks what the evidence permits us to know, and where it stops.')
+        p.write_text(s,encoding="utf-8")
+        return
     s=replace(s,'Watch my two-minute film <span aria-hidden="true">↘</span>',
               'Watch the research documentary <span aria-hidden="true">↘</span>')
     start=s.index('<section class="rx-home-film" id="film"')
@@ -120,6 +148,13 @@ def homepage(site:Path)->None:
 def film_catalogue(site:Path)->None:
     p=site/"films.html"
     s=p.read_text(encoding="utf-8")
+    if PREVIOUS+".mp4" in s or NEW+".mp4" in s:
+        s=replace_film_asset_version(s)
+        s=s.replace(
+            'A research documentary about Mahmoud Al-Ruweidi: 2009 beginnings, experimental uncertainty, illness, medieval pharmacy and ongoing drug-delivery research.',
+            'A research documentary about Mahmoud Al-Ruweidi: 2009 beginnings, experimental uncertainty, an illness that remains with him, pharmacy history and ongoing drug-delivery research.')
+        p.write_text(s,encoding="utf-8")
+        return
     start=s.index('<div class="fc-heading"><div><p class="fc-kicker">01 / released documentaries')
     end=s.index('<div class="fc-release" style="margin-top:24px">',start)
     frag=s[start:end]
@@ -141,13 +176,13 @@ def film_catalogue(site:Path)->None:
 def publish(site:Path,media:Path,shots:Path)->None:
     assets=site/"assets"/"films"
     assets.mkdir(parents=True,exist_ok=True)
-    for name in ["anatomy-of-a-question-2026.mp4","anatomy-of-a-question-2026.vtt",
-                 "anatomy-of-a-question-2026.webp"]:
-        from_name=("anatomy-of-a-question.vtt" if name.endswith(".vtt") else name)
-        src=media/from_name
+    for suffix,source in [("mp4","anatomy-of-a-question-2026.mp4"),
+                          ("vtt","anatomy-of-a-question.vtt"),
+                          ("webp","anatomy-of-a-question-2026.webp")]:
+        src=media/source
         if not src.exists() or src.stat().st_size==0:raise FileNotFoundError(src)
-        shutil.copy2(src,assets/name)
-    shutil.copy2(media/"source_manifest.json",assets/"anatomy-of-a-question-2026-source.json")
+        shutil.copy2(src,assets/(NEW.split("/")[-1]+"."+suffix))
+    shutil.copy2(media/"source_manifest.json",assets/(NEW.split("/")[-1]+"-source.json"))
     scenes=json.loads(shots.read_text(encoding="utf-8"))
     film_page(site,scenes)
     homepage(site)

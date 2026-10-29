@@ -241,7 +241,7 @@ def compose_score(out: Path) -> Path:
         noise=rng.standard_normal(stop-pos).astype(np.float32)
         noise=sosfilt(butter(2,[70,450],fs=SR,btype="bandpass",output="sos"),noise)
         scores[pos:stop]+=noise*.010
-    # 2020 passage deliberately withdraws the music.
+    # The ongoing-illness passage deliberately withdraws the music.
     t=np.arange(n,dtype=np.float32)/SR
     illness=((t>=239)&(t<274))
     scores[illness]*=.15
