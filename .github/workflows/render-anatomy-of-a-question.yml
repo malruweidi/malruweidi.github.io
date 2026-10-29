@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: anatomy-of-a-question-release
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   render-and-release:
@@ -81,12 +81,12 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html film.html films.html
-          git add assets/films/anatomy-of-a-question-2026.mp4
-          git add assets/films/anatomy-of-a-question-2026.vtt
-          git add assets/films/anatomy-of-a-question-2026.webp
-          git add assets/films/anatomy-of-a-question-2026-source.json
+          git add assets/films/anatomy-of-a-question-2026-v2.mp4
+          git add assets/films/anatomy-of-a-question-2026-v2.vtt
+          git add assets/films/anatomy-of-a-question-2026-v2.webp
+          git add assets/films/anatomy-of-a-question-2026-v2-source.json
           git diff --cached --check
-          git commit -m 'Publish Anatomy of a Question 6:26 documentary [anatomy-film-output]'
+          git commit -m 'Publish revised Anatomy of a Question documentary [anatomy-film-output]'
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
