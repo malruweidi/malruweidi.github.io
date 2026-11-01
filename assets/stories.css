@@ -1,64 +1,64 @@
 /* Stories: an additive chapter to the approved October 2026 Ruwaidix editorial design. */
-html[data-rx-page="stories"]{scroll-behavior:smooth;scroll-padding-top:105px;background:#f7f5ee}
-html[data-rx-page="stories"] body{margin:0;color:#17343b;background:#f7f5ee;font-family:"DM Sans",Arial,sans-serif;line-height:1.65}
+html[data-rx-page="stories"]{scroll-behavior:smooth;scroll-padding-top:105px;background:#F4F0E8}
+html[data-rx-page="stories"] body{margin:0;color:#2D4C6B;background:#F4F0E8;font-family:"DM Sans",Arial,sans-serif;line-height:1.65}
 html[data-rx-page="stories"] *{box-sizing:border-box}
 html[data-rx-page="stories"] img{max-width:100%}
 html[data-rx-page="stories"] .stories-container{width:min(1160px,calc(100% - 56px));margin-inline:auto;min-width:0}
-html[data-rx-page="stories"] .stories-masthead{border-bottom:1px solid #cdd7d1;background:#f7f5ee}
+html[data-rx-page="stories"] .stories-masthead{border-bottom:1px solid #D7CFCC;background:#F4F0E8}
 html[data-rx-page="stories"] .stories-masthead>.stories-container{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px 0}
-html[data-rx-page="stories"] .stories-brand{display:inline-flex;align-items:center;gap:10px;font:400 26px/1.3 Newsreader,Georgia,serif;color:#17343b;text-decoration:none}
+html[data-rx-page="stories"] .stories-brand{display:inline-flex;align-items:center;gap:10px;font:400 26px/1.3 Newsreader,Georgia,serif;color:#2D4C6B;text-decoration:none}
 html[data-rx-page="stories"] .stories-masthead nav{display:flex;gap:20px;flex-wrap:wrap}
-html[data-rx-page="stories"] .stories-masthead nav a{font-size:12px;font-weight:650;text-decoration:none;color:#31564f}
-html[data-rx-page="stories"] .stories-hero{background:#17343b;color:#f7f5ee;padding:clamp(65px,7.5vw,120px) 0 clamp(58px,6vw,94px)}
+html[data-rx-page="stories"] .stories-masthead nav a{font-size:12px;font-weight:650;text-decoration:none;color:#476481}
+html[data-rx-page="stories"] .stories-hero{background:#2D4C6B;color:#F4F0E8;padding:clamp(65px,7.5vw,120px) 0 clamp(58px,6vw,94px)}
 html[data-rx-page="stories"] .stories-hero-grid{display:grid;grid-template-columns:minmax(0,1.07fr) minmax(0,.93fr);gap:clamp(34px,6.5vw,100px);align-items:center}
 html[data-rx-page="stories"] .stories-kicker,html[data-rx-page="stories"] .stories-index-label,html[data-rx-page="stories"] .stories-era{font:500 10px/1.7 "DM Mono",monospace;letter-spacing:.14em;text-transform:uppercase}
-html[data-rx-page="stories"] .stories-kicker{color:#f1b995}
+html[data-rx-page="stories"] .stories-kicker{color:#E6BFC7}
 /* The interlude is a warm-paper panel, unlike the dark chapter hero. */
-html[data-rx-page="stories"] .stories-interlude .stories-kicker{color:#994c36}
+html[data-rx-page="stories"] .stories-interlude .stories-kicker{color:#71394C}
 html[data-rx-page="stories"] h1,html[data-rx-page="stories"] h2{font-family:Newsreader,Georgia,serif;font-weight:400;letter-spacing:-.033em}
 html[data-rx-page="stories"] h1{font-size:clamp(52px,6.5vw,98px);line-height:1.02;max-width:12ch;margin:25px 0 28px}
-html[data-rx-page="stories"] h1 em{font-weight:400;color:#efb99a}
-html[data-rx-page="stories"] .stories-hero-intro{font-size:clamp(18px,1.7vw,23px);line-height:1.55;color:#f5f0e6;max-width:34em;margin:0 0 20px}
-html[data-rx-page="stories"] .stories-hero-note{font-size:14px;line-height:1.95;color:#c8d8d1;max-width:56ch;margin:0 0 28px}
-html[data-rx-page="stories"] .stories-hero-link{display:inline-block;border-bottom:1px solid #efb99a;padding:0 0 7px;color:#efb99a;text-decoration:none;font-size:13px;font-weight:700}
-html[data-rx-page="stories"] .stories-hero-photo{margin:0;background:#234248;padding:10px}
-html[data-rx-page="stories"] .stories-hero-photo img{display:block;width:100%;max-height:520px;aspect-ratio:4/3;object-fit:contain;background:#12272e}
-html[data-rx-page="stories"] .stories-hero-photo figcaption{font:12px/1.65 "DM Sans",sans-serif;color:#d5e2dc;padding:12px 5px 5px}
-html[data-rx-page="stories"] .stories-contents{background:#e6ece6;border-bottom:1px solid #bfcfc5}
+html[data-rx-page="stories"] h1 em{font-weight:400;color:#E6BFC7}
+html[data-rx-page="stories"] .stories-hero-intro{font-size:clamp(18px,1.7vw,23px);line-height:1.55;color:#F4F0E8;max-width:34em;margin:0 0 20px}
+html[data-rx-page="stories"] .stories-hero-note{font-size:14px;line-height:1.95;color:#D7CFCC;max-width:56ch;margin:0 0 28px}
+html[data-rx-page="stories"] .stories-hero-link{display:inline-block;border-bottom:1px solid #E6BFC7;padding:0 0 7px;color:#E6BFC7;text-decoration:none;font-size:13px;font-weight:700}
+html[data-rx-page="stories"] .stories-hero-photo{margin:0;background:#2D4C6B;padding:10px}
+html[data-rx-page="stories"] .stories-hero-photo img{display:block;width:100%;max-height:520px;aspect-ratio:4/3;object-fit:contain;background:#263B55}
+html[data-rx-page="stories"] .stories-hero-photo figcaption{font:12px/1.65 "DM Sans",sans-serif;color:#D7CFCC;padding:12px 5px 5px}
+html[data-rx-page="stories"] .stories-contents{background:#EEE7E4;border-bottom:1px solid #bfcfc5}
 html[data-rx-page="stories"] .stories-contents-inner{display:flex;gap:24px;align-items:center;flex-wrap:wrap;padding:20px 0}
-html[data-rx-page="stories"] .stories-index-label{color:#95543e;margin-inline-end:12px}
-html[data-rx-page="stories"] .stories-contents a{font-size:13px;color:#234e4c;text-underline-offset:5px}
+html[data-rx-page="stories"] .stories-index-label{color:#71394C;margin-inline-end:12px}
+html[data-rx-page="stories"] .stories-contents a{font-size:13px;color:#2D4C6B;text-underline-offset:5px}
 html[data-rx-page="stories"] .stories-chapter{padding:clamp(64px,8vw,125px) 0;border-bottom:1px solid #d2d8cf;scroll-margin-top:100px}
-html[data-rx-page="stories"] .stories-chapter-tinted{background:#ecefe8}
+html[data-rx-page="stories"] .stories-chapter-tinted{background:#EEE7E4}
 html[data-rx-page="stories"] .stories-chapter-grid{display:grid;grid-template-columns:minmax(160px,.32fr) minmax(0,1fr);gap:clamp(36px,8vw,135px);align-items:start}
-html[data-rx-page="stories"] .stories-chapter-meta{display:flex;flex-direction:column;align-items:flex-start;gap:12px;color:#526b65}
-html[data-rx-page="stories"] .stories-number{font:400 clamp(68px,8vw,116px)/.9 Newsreader,Georgia,serif;color:#b56b4f}
-html[data-rx-page="stories"] .stories-era{color:#8e513f}
+html[data-rx-page="stories"] .stories-chapter-meta{display:flex;flex-direction:column;align-items:flex-start;gap:12px;color:#53677D}
+html[data-rx-page="stories"] .stories-number{font:400 clamp(68px,8vw,116px)/.9 Newsreader,Georgia,serif;color:#71394C}
+html[data-rx-page="stories"] .stories-era{color:#71394C}
 html[data-rx-page="stories"] .stories-chapter-meta p{font-size:13px;line-height:1.7;margin:0}
 html[data-rx-page="stories"] .stories-chapter-text{min-width:0}
-html[data-rx-page="stories"] .stories-chapter-text h2{font-size:clamp(40px,5vw,70px);line-height:1.06;max-width:14ch;margin:0 0 28px;color:#17343b}
-html[data-rx-page="stories"] .stories-chapter-text>p{max-width:70ch;color:#375557;font-size:16px;line-height:1.93;margin:0 0 22px}
-html[data-rx-page="stories"] .stories-chapter-text>p.stories-opening{font:400 clamp(21px,2.3vw,28px)/1.55 Newsreader,Georgia,serif;color:#224347;max-width:49ch;margin-bottom:27px}
+html[data-rx-page="stories"] .stories-chapter-text h2{font-size:clamp(40px,5vw,70px);line-height:1.06;max-width:14ch;margin:0 0 28px;color:#2D4C6B}
+html[data-rx-page="stories"] .stories-chapter-text>p{max-width:70ch;color:#476481;font-size:16px;line-height:1.93;margin:0 0 22px}
+html[data-rx-page="stories"] .stories-chapter-text>p.stories-opening{font:400 clamp(21px,2.3vw,28px)/1.55 Newsreader,Georgia,serif;color:#2D4C6B;max-width:49ch;margin-bottom:27px}
 html[data-rx-page="stories"] .stories-media-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:40px 0 27px}
-html[data-rx-page="stories"] .stories-media-duo figure,html[data-rx-page="stories"] .stories-single-figure{margin:0;padding:10px;background:#fffdf7;border:1px solid #cbd5ca}
-html[data-rx-page="stories"] .stories-media-duo img{display:block;width:100%;height:260px;object-fit:contain;background:#e6eae4}
+html[data-rx-page="stories"] .stories-media-duo figure,html[data-rx-page="stories"] .stories-single-figure{margin:0;padding:10px;background:#FFFCF7;border:1px solid #cbd5ca}
+html[data-rx-page="stories"] .stories-media-duo img{display:block;width:100%;height:260px;object-fit:contain;background:#EEE7E4}
 html[data-rx-page="stories"] .stories-single-figure{margin:37px 0 25px}
-html[data-rx-page="stories"] .stories-single-figure img{display:block;width:100%;max-height:360px;object-fit:contain;background:#e5eee9}
+html[data-rx-page="stories"] .stories-single-figure img{display:block;width:100%;max-height:360px;object-fit:contain;background:#EEE7E4}
 html[data-rx-page="stories"] figure figcaption{font-size:12px;line-height:1.7;color:#426165;padding:11px 5px 3px}
 html[data-rx-page="stories"] .stories-source{border-top:1px solid #aebfb3;padding:23px 0 0;margin:35px 0 0}
-html[data-rx-page="stories"] .stories-source strong{display:block;font:500 11px/1.5 "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:#95553b;margin-bottom:10px}
+html[data-rx-page="stories"] .stories-source strong{display:block;font:500 11px/1.5 "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:#71394C;margin-bottom:10px}
 html[data-rx-page="stories"] .stories-source p{max-width:72ch;font-size:13px;line-height:1.85;color:#546d68;margin:0 0 12px}
 html[data-rx-page="stories"] .stories-source a{font-size:13px;color:#995439;font-weight:700;text-underline-offset:5px;display:inline-block;margin-inline-end:22px;margin-bottom:8px}
-html[data-rx-page="stories"] .stories-afterword{background:#1c383b;color:#f7f5ee;padding:clamp(65px,7vw,110px) 0}
+html[data-rx-page="stories"] .stories-afterword{background:#1c383b;color:#F4F0E8;padding:clamp(65px,7vw,110px) 0}
 html[data-rx-page="stories"] .stories-afterword-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,7vw,100px)}
 html[data-rx-page="stories"] .stories-afterword h2{font-size:clamp(38px,4.7vw,66px);line-height:1.08;margin:20px 0;max-width:13ch;color:#f5f2eb}
 html[data-rx-page="stories"] .stories-afterword-grid>div>p{color:#d4e1dc;font-size:15px;line-height:1.9;margin:0 0 20px}
 html[data-rx-page="stories"] .stories-afterword-links{display:flex;gap:22px;flex-wrap:wrap;margin-top:27px}
 html[data-rx-page="stories"] .stories-afterword a{color:#f0b999;font-size:13px;text-underline-offset:5px}
-html[data-rx-page="stories"] .stories-footer{background:#122f34;color:#dae5df;padding:24px 0}
+html[data-rx-page="stories"] .stories-footer{background:#122f34;color:#D7CFCC;padding:24px 0}
 html[data-rx-page="stories"] .stories-footer>.stories-container{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}
 html[data-rx-page="stories"] .stories-footer span:last-child{display:flex;gap:20px}
-html[data-rx-page="stories"] .stories-footer a{color:#dae5df;text-decoration:none}
+html[data-rx-page="stories"] .stories-footer a{color:#D7CFCC;text-decoration:none}
 html[data-rx-page="stories"] a:focus-visible{outline:3px solid #c57551;outline-offset:4px;border-radius:2px}
 html[dir="rtl"][data-rx-page="stories"] .stories-chapter-text>p,html[dir="rtl"][data-rx-page="stories"] .stories-afterword-grid p{font-family:"Noto Naskh Arabic",serif;font-size:19px;line-height:1.9}
 html[dir="rtl"][data-rx-page="stories"] .stories-chapter-text>p.stories-opening{font-family:"Noto Naskh Arabic",serif;font-size:clamp(23px,2.4vw,30px)}
@@ -69,14 +69,14 @@ html[dir="rtl"][data-rx-page="stories"] .stories-hero-intro,html[dir="rtl"][data
 @media(prefers-reduced-motion:reduce){html[data-rx-page="stories"]{scroll-behavior:auto}}
 
 /* Source video is opt-in, contained and visually faithful to the approved Stories design. */
-html[data-rx-page="stories"] .stories-original-video video{display:block;width:100%;max-height:390px;object-fit:contain;background:#17343b}
+html[data-rx-page="stories"] .stories-original-video video{display:block;width:100%;max-height:390px;object-fit:contain;background:#2D4C6B}
 html[data-rx-page="stories"] .stories-contents-inner>a{white-space:nowrap}
 
 /* Ramadan field-note bridge: typographic emphasis in the existing editorial palette. */
 html[data-rx-page="stories"] .stories-memory-bridge{
   margin:34px 0 24px;
   padding:10px 0;
-  border-inline-start:2px solid #b56b4f;
+  border-inline-start:2px solid #71394C;
   padding-inline-start:clamp(16px,2.2vw,26px);
 }
 html[data-rx-page="stories"] .stories-memory-bridge p{
@@ -87,7 +87,7 @@ html[data-rx-page="stories"] .stories-memory-bridge p{
 }
 html[data-rx-page="stories"] .stories-memory-bridge a{
   display:inline-block;
-  color:#95543e;
+  color:#71394C;
   font-weight:700;
   font-size:13px;
   text-decoration-thickness:1px;
@@ -106,7 +106,7 @@ html[lang="ar"][data-rx-page="stories"] .rx-story-ar{display:block!important}
 html[data-rx-page="stories"] .rx25-photo-grid{display:grid;gap:15px;margin:36px 0 30px;align-items:start}
 html[data-rx-page="stories"] .rx25-photo-grid-three{grid-template-columns:repeat(3,minmax(0,1fr))}
 html[data-rx-page="stories"] .rx25-photo-grid-two{grid-template-columns:repeat(2,minmax(0,1fr))}
-html[data-rx-page="stories"] .rx25-photo-grid figure{margin:0;border:1px solid #d8d7ca;background:#fffdf8;padding:9px;min-width:0}
+html[data-rx-page="stories"] .rx25-photo-grid figure{margin:0;border:1px solid #d8d7ca;background:#FFFCF7;padding:9px;min-width:0}
 html[data-rx-page="stories"] .rx25-photo-grid img{width:100%;height:260px;object-fit:contain;background:#e8ece7}
 html[data-rx-page="stories"] .rx25-photo-grid figcaption{padding:11px 6px 5px;font:12px/1.68 "DM Sans",Arial,sans-serif;color:#4b6463}
 html[dir="rtl"][data-rx-page="stories"] .rx25-photo-grid figcaption{font-family:"Noto Naskh Arabic",serif;font-size:17px;line-height:1.8}
