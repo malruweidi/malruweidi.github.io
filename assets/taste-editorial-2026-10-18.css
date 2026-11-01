@@ -5,12 +5,12 @@
    To roll back, remove the link from index.html; previous CSS remains intact.
 */
 html[data-rx-page="home"] {
-  --taste-ink:#17343b;
-  --taste-accent:#88452f;
-  --taste-rule:#c7d2ca;
-  --taste-paper:#f7f5ee;
-  --taste-paper-light:#fffdf8;
-  --taste-mist:#e7eee8;
+  --taste-ink:#2D4C6B;
+  --taste-accent:#71394C;
+  --taste-rule:#D7CFCC;
+  --taste-paper:#F4F0E8;
+  --taste-paper-light:#FFFCF7;
+  --taste-mist:#EEE7E4;
 }
 
 /* Editorial navigation: one strong action, the rest a quiet reading index. */
@@ -35,14 +35,14 @@ html[data-rx-page="home"] .header .rx-more>summary:hover {
 }
 html[data-rx-page="home"] .header .navlinks .contactbutton {
   background:var(--taste-ink);
-  color:#fffdf8;
+  color:#FFFCF7;
   min-height:44px;
   display:inline-flex;
   align-items:center;
 }
 html[data-rx-page="home"] .header .navlinks .contactbutton:hover {
-  background:#315b53;
-  color:#fffdf8;
+  background:#476481;
+  color:#FFFCF7;
 }
 
 /* The two distinct halves of the opening should read like a journal cover,
@@ -85,7 +85,7 @@ html[data-rx-page="home"] .rx-hero-lead {
 html[data-rx-page="home"] .rx-hero-detail {
   max-width:67ch;
   line-height:1.83;
-  color:#3c5657;
+  color:#53677D;
 }
 html[data-rx-page="home"] .rx-hero-links {
   gap:9px 21px;
@@ -101,19 +101,19 @@ html[data-rx-page="home"] .rx-hero-secondary {
   min-height:38px;
   display:inline-flex;
   align-items:center;
-  border-bottom-color:#9f6b59;
+  border-bottom-color:#71394C;
 }
 html[data-rx-page="home"] .rx-hero-secondary:hover {
-  color:#642f22;
-  border-bottom-color:#642f22;
+  color:#71394C;
+  border-bottom-color:#71394C;
 }
 html[data-rx-page="home"] .rx-hero-portrait {
   max-width:100%;
 }
 html[data-rx-page="home"] .rx-portrait-mat {
   padding:9px;
-  background:#e4ebe5;
-  border-color:#c5d2c9;
+  background:#EEE7E4;
+  border-color:#D7CFCC;
   box-shadow:0 24px 52px rgba(23,52,59,.09);
 }
 html[data-rx-page="home"] .rx-portrait-mat img {
@@ -123,7 +123,7 @@ html[data-rx-page="home"] .rx-portrait-mat img {
 html[data-rx-page="home"] .rx-portrait-detail {
   left:-16px;
   bottom:58px;
-  background:#fffdf8;
+  background:#FFFCF7;
   box-shadow:none;
   border-left:3px solid var(--taste-accent);
 }
@@ -142,7 +142,7 @@ html[data-rx-page="home"] .rx-home-film-title {
   text-wrap:balance;
 }
 html[data-rx-page="home"] .rx-home-film-media {
-  border-color:#a9bdb4;
+  border-color:#D7CFCC;
   box-shadow:0 14px 39px rgba(12,43,43,.09);
 }
 
@@ -176,7 +176,7 @@ html[data-rx-page="home"] .rx26-portal-head h2 {
 html[data-rx-page="home"] .rx26-portal-card {
   overflow:hidden;
   border:1px solid var(--taste-rule);
-  background:#f5f5ee;
+  background:#F4F0E8;
   border-radius:0;
   box-shadow:none;
   padding:clamp(18px,2.05vw,26px);
@@ -187,12 +187,12 @@ html[data-rx-page="home"] .rx26-portal-card:nth-child(3),
 html[data-rx-page="home"] .rx26-portal-card:nth-child(5),
 html[data-rx-page="home"] .rx26-portal-card:nth-child(7),
 html[data-rx-page="home"] .rx26-portal-card:nth-child(8) {
-  background:#eaf0ea;
+  background:#EEE7E4;
 }
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1) {
-  background:#193c40;
-  color:#f7f5ee;
-  border-color:#193c40;
+  background:#2D4C6B;
+  color:#F4F0E8;
+  border-color:#2D4C6B;
 }
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-top,
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-arrow,
@@ -200,10 +200,10 @@ html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-action {
   color:#fff1df;
 }
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1) p {
-  color:#dfe9e1;
+  color:#EEE7E4;
 }
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-action {
-  border-top-color:#6d9189;
+  border-top-color:#53677D;
 }
 html[data-rx-page="home"] .rx26-portal-card:nth-child(9) {
   background:#eee8dd;
@@ -227,7 +227,7 @@ html[data-rx-page="home"] .rx26-card-top {
 }
 html[data-rx-page="home"] .rx26-card-action {
   margin-top:auto;
-  border-top-color:#bdcbc1;
+  border-top-color:#D7CFCC;
   text-decoration:underline;
   text-decoration-color:transparent;
   text-underline-offset:4px;
@@ -236,18 +236,18 @@ html[data-rx-page="home"] .rx26-card-action {
 html[data-rx-page="home"] .rx26-portal-card:hover {
   transform:none;
   box-shadow:none;
-  border-color:#597d70;
+  border-color:#53677D;
 }
 html[data-rx-page="home"] .rx26-portal-card:hover .rx26-card-action,
 html[data-rx-page="home"] .rx26-portal-card:focus-visible .rx26-card-action {
   text-decoration-color:currentColor;
 }
 html[data-rx-page="home"] .rx26-portal-card:focus-visible {
-  outline:3px solid #88452f;
+  outline:3px solid #71394C;
   outline-offset:3px;
 }
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1):focus-visible {
-  outline-color:#f2b68a;
+  outline-color:#E6BFC7;
 }
 html[data-rx-page="home"] .rx26-portal-paths {
   margin-top:30px;
@@ -261,7 +261,7 @@ html[data-rx-page="home"] .rx-home-complete-summary {
   min-height:76px;
 }
 html[data-rx-page="home"] .rx-home-complete-summary:hover {
-  background:#ebece5;
+  background:#EEE7E4;
 }
 
 /* The record must remain a real disclosure, never visually removed.
