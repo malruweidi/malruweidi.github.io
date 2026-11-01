@@ -61,3 +61,21 @@ test('palette pass changes neither editorial structure nor remote dependencies',
     assert.doesNotMatch(read(file), /@import\s+url\(https?:/i, file);
   }
 });
+
+test('homepage requests fresh versioned styles after the new palette deployment', () => {
+  const html = read('index.html');
+  for (const asset of [
+    'design-system.css',
+    'narrative-journey.css',
+    'aesthetic-integrity-2026.css',
+    'homepage-editorial-2026.css',
+    'home-film-2026.css',
+    'editorial-wayfinding-2026.css',
+    'taste-editorial-2026-10-18.css',
+    'three-places-2026.css'
+  ]) {
+    const link = '/assets/' + asset + '?v=20261101-navy2';
+    assert.equal(html.split(link).length - 1, 1, 'One fresh stylesheet link expected for ' + asset);
+  }
+  assert.ok(html.includes('--ruwaidix-navy:#2D4C6B'), 'Homepage branding must not retain old midnight blue');
+});

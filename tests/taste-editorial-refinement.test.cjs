@@ -9,7 +9,7 @@ const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 test('Taste refinement is loaded last and remains a reversible stylesheet', () => {
   const html = read('index.html');
   const css = read('assets/taste-editorial-2026-10-18.css');
-  const link = '<link rel="stylesheet" href="/assets/taste-editorial-2026-10-18.css?v=1">';
+  const link = '<link rel="stylesheet" href="/assets/taste-editorial-2026-10-18.css?v=20261101-navy2">';
   assert.equal(html.split(link).length - 1, 1, 'Exactly one homepage style import');
   assert.ok(html.indexOf(link) > html.indexOf('rx26-home-portal-style'), 'Taste should override existing chapter CSS');
   assert.ok(html.indexOf(link) < html.indexOf('</head>'), 'Stylesheet belongs in head');
