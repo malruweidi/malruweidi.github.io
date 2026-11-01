@@ -65,15 +65,15 @@ html[lang="ar"] .editorial-story .story-research-trail,html[lang="ar"] .editoria
    with legible warm type, and preserve the light photographic cards. */
 html[data-rx-page="home"] section.story.editorial-story,
 section.story.editorial-story {
-  background:#17363B;
-  color:#F7F4EC;
+  background:#2D4C6B;
+  color:#F4F0E8;
 }
 section.story.editorial-story .story-prologue h2,
 section.story.editorial-story .story-rewind h3,
 section.story.editorial-story .story-bridge h3,
 section.story.editorial-story .story-prose h3,
 section.story.editorial-story .trail-scene h4 {
-  color:#F7F4EC;
+  color:#F4F0E8;
 }
 section.story.editorial-story .eyebrow,
 section.story.editorial-story .story-rewind span,
@@ -102,20 +102,20 @@ section.story.editorial-story .trail-scene {
   border-top-color:#9BB6AD;
 }
 section.story.editorial-story .photo-opening figure {
-  background:#F5F2E9;
-  color:#17363B;
+  background:#F4F0E8;
+  color:#2D4C6B;
 }
-section.story.editorial-story .photo-opening h3 {color:#17363B;}
+section.story.editorial-story .photo-opening h3 {color:#2D4C6B;}
 section.story.editorial-story .photo-opening p {color:#4A6062;}
 section.story.editorial-story .anatomy-marker {
   background:#E8EDE6;
-  color:#17363B;
+  color:#2D4C6B;
 }
 section.story.editorial-story .anatomy-marker p {color:#274649;}
 section.story.editorial-story .anatomy-marker small {color:#405E5D;}
 section.story.editorial-story .story-arrival {
   background:#102C33;
-  color:#F7F4EC;
+  color:#F4F0E8;
 }
 section.story.editorial-story .story-arrival .eyebrow {color:#F1BA99;}
 section.story.editorial-story .story-arrival p {color:#E1E9E4;}
@@ -124,17 +124,17 @@ section.story.editorial-story .story-arrival p {color:#E1E9E4;}
 @media(max-width:760px) {
   html[data-rx-page="home"] .header {
     background:#F6F4ED;
-    color:#17343B;
+    color:#2D4C6B;
   }
   html[data-rx-page="home"] .header .brandline {color:#385459;}
   html[data-rx-page="home"] .header .menu {
-    color:#17343B;
-    background:#FFFCF6;
+    color:#2D4C6B;
+    background:#FFFCF7;
     border-color:#B8CBC4;
   }
   html[data-rx-page="home"] .header .navlinks.open {
-    background:#FFFCF6;
-    color:#17343B;
+    background:#FFFCF7;
+    color:#2D4C6B;
   }
 }
 
@@ -185,7 +185,7 @@ html[data-rx-page="home"] section.story.editorial-story .story-anatomy .anatomy-
   opacity:1;
 }
 html[data-rx-page="home"] section.story.editorial-story .photo-opening figure {
-  background:#F5F2E9 !important;
+  background:#F4F0E8 !important;
   color:#19383C !important;
 }
 html[data-rx-page="home"] section.story.editorial-story .photo-opening figure h3 {
@@ -332,7 +332,7 @@ html[data-rx-page="home"] section.story.editorial-story .photo-opening figure fi
     min-height:0;
     align-items:stretch;
     justify-content:flex-start;
-    background:#f5f2e9;
+    background:#F4F0E8;
   }
   html[data-rx-page="home"] section.story.editorial-story .photo-opening > figure.archiveitem:nth-child(3) > img {
     grid-column:auto;

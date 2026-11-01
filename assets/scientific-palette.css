@@ -2,15 +2,15 @@
    A color-only identity layer. Original microscopy, photos, figures, logos and layout stay intact. */
 :root {
   color-scheme:light;
-  --rx-midnight:#112F3A;
-  --rx-mineral:#315D61;
-  --rx-copper:#995039;
-  --rx-parchment:#F5F3EC;
-  --rx-paper:#FFFDF8;
-  --rx-muted:#50686B;
-  --rx-line:#D2DCD5;
-  --rx-mist:#E9EFEB;
-  --rx-copper-light:#E6B7A1;
+  --rx-midnight:#2D4C6B;
+  --rx-mineral:#476481;
+  --rx-copper:#71394C;
+  --rx-parchment:#F4F0E8;
+  --rx-paper:#FFFCF7;
+  --rx-muted:#53677D;
+  --rx-line:#D7CFCC;
+  --rx-mist:#EEE7E4;
+  --rx-copper-light:#E6BFC7;
   --bg:var(--rx-parchment);
   --dark:var(--rx-midnight);
   --rust:var(--rx-copper);
@@ -31,12 +31,12 @@
   --pine:var(--rx-mineral);
   --mist:var(--rx-mist);
   --cloud:var(--rx-mist);
-  --sage:#DCE6DF;
+  --sage:#EEE7E4;
   --peach:var(--rx-copper-light);
 }
 html { accent-color:var(--rx-copper); }
 body { background:var(--rx-parchment); color:var(--rx-midnight); }
-::selection { background:#C9DDD3; color:var(--rx-midnight); }
+::selection { background:#D7CFCC; color:var(--rx-midnight); }
 :where(a,button,input,select,textarea,summary):focus-visible {
   outline:3px solid var(--rx-copper); outline-offset:3px;
 }
@@ -69,7 +69,7 @@ html[data-rx-page="home"] .header .navlinks > .contactbutton:hover {
 }
 html[data-rx-page="home"] .header .rx-more-panel,
 html[data-rx-page="home"] .header .navlinks.open { background:var(--rx-paper); border-color:var(--rx-line); }
-html[data-rx-page="home"] .timeline { background:#ECEDE6; }
+html[data-rx-page="home"] .timeline { background:#EEE7E4; }
 html[data-rx-page="home"] .hero-copy .lead { color:var(--rx-mineral); }
 html:not([data-rx-page="home"]) .nav { background:rgba(245,243,236,.97); border-bottom-color:var(--rx-line); }
 html[data-rx-page="archive"] header { background:rgba(245,243,236,.97); border-bottom-color:var(--rx-line); }
@@ -96,8 +96,8 @@ html[data-rx-page="figures"] .hero h1 em,
 html[data-rx-page="chem-squad"] .hero h1 span { color:var(--rx-copper-light); }
 html[data-rx-page="archive"] .hero p,
 html[data-rx-page="figures"] .hero p,
-html[data-rx-page="chem-squad"] .hero .intro { color:#D1DEDA; }
-:where(.footer):not(.light) { background:var(--rx-midnight); color:#E7F0EB; }
+html[data-rx-page="chem-squad"] .hero .intro { color:#D7CFCC; }
+:where(.footer):not(.light) { background:var(--rx-midnight); color:#EEE7E4; }
 :where(.footer):not(.light) a { color:var(--rx-copper-light); }
 @media(max-width:1100px) {
   header.rx-has-menu nav.rx-submenu { background:var(--rx-paper); border-color:var(--rx-line); }

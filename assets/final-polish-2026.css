@@ -1,25 +1,25 @@
 /* Final editorial QA: shared, last-loaded corrections. Preserve source media and documents. */
 :root {
-  --rx-qa-ink:#17363b;
-  --rx-qa-muted:#3f595b;
-  --rx-qa-paper:#fffdf8;
-  --rx-qa-dark:#15363c;
-  --rx-qa-light:#f7f6ee;
-  --rx-qa-warm:#f4c3a4;
+  --rx-qa-ink:#2D4C6B;
+  --rx-qa-muted:#53677D;
+  --rx-qa-paper:#FFFCF7;
+  --rx-qa-dark:#263B55;
+  --rx-qa-light:#F4F0E8;
+  --rx-qa-warm:#E6BFC7;
 }
 html {scroll-padding-top:clamp(76px,7.5vw,108px)}
 body {max-width:100%;overflow-x:clip}
 :where(main,section,article,.wrap,.container,.rx-field-wrap,.rx-inner,.secondary-grid,.secondary-card,.text){min-width:0}
 :where(img,video,iframe,canvas){max-width:100%}
-:where(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #ae563b;outline-offset:3px}
+:where(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #71394C;outline-offset:3px}
 :where(p,li,figcaption){hyphens:auto}
 :where(a[href^="http"], .doi){overflow-wrap:anywhere}
 html[data-rx-page="home"] .hero-copy .subtitle {
   font-size:clamp(15.5px,1.12vw,17px)!important;
   line-height:1.77!important;
-  color:#334f52!important;
+  color:#476481!important;
 }
-html[data-rx-page="home"] .hero-copy .identityline small{font-size:12.5px!important;color:#335052!important}
+html[data-rx-page="home"] .hero-copy .identityline small{font-size:12.5px!important;color:#476481!important}
 html[data-rx-page="home"] .hero-copy h1{overflow-wrap:normal}
 html[data-rx-page="home"] .hero-copy .buttonrow :is(a,summary){font-size:max(13px, .875rem);min-height:44px}
 html[data-rx-page="home"] .numbers p,
@@ -38,34 +38,34 @@ html[data-rx-page="home"] .secondary-grid .secondary-card img{min-width:0;max-wi
 html[data-rx-page="home"] .story.editorial-story{background:var(--rx-qa-dark);color:var(--rx-qa-light)}
 html[data-rx-page="home"] .story.editorial-story :is(.story-prologue,.story-rewind,.story-bridge,.story-prose,.trail-scene) :is(h2,h3,h4){color:#f8f8f2}
 html[data-rx-page="home"] .story.editorial-story :is(.story-prologue,.story-rewind,.story-bridge,.story-prose,.trail-scene)>p:not(.eyebrow),
-html[data-rx-page="home"] .story.editorial-story :is(.story-childhood,.story-anatomy,.story-arrival) .story-prose p{color:#e2ebe5}
+html[data-rx-page="home"] .story.editorial-story :is(.story-childhood,.story-anatomy,.story-arrival) .story-prose p{color:#EEE7E4}
 html[data-rx-page="home"] .story.editorial-story :is(.story-childhood,.story-anatomy) .story-photo figcaption{font-size:12px!important;line-height:1.55}
-html[data-rx-page="home"] .story.editorial-story .photo-opening figure{background:#f5f2e9!important;color:#17363b!important}
-html[data-rx-page="home"] .story.editorial-story .photo-opening figure :is(h3,p,figcaption){color:#294b4e!important}
+html[data-rx-page="home"] .story.editorial-story .photo-opening figure{background:#F4F0E8!important;color:#2D4C6B!important}
+html[data-rx-page="home"] .story.editorial-story .photo-opening figure :is(h3,p,figcaption){color:#476481!important}
 html[data-rx-page="home"] .story.editorial-story .photo-opening figure p{font-size:12px!important;line-height:1.6}
-html[data-rx-page="home"] .story.editorial-story .anatomy-marker{background:#e6ede5!important;color:#17363b!important}
-html[data-rx-page="home"] .story.editorial-story .anatomy-marker :is(p,small){color:#244649!important}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker{background:#EEE7E4!important;color:#2D4C6B!important}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker :is(p,small){color:#2D4C6B!important}
 html[data-rx-page="home"] .story.editorial-story .story-arrival :is(h3,h4,p){color:#edf4ed!important}
 html[data-rx-page="home"] :is(.technique-footage-preview,.quality-figure,.infrastructure-feature){color:var(--rx-qa-light)}
 html[data-rx-page="home"] .technique-footage-preview :is(h2,h3,h4){color:#f8f8f2!important}
-html[data-rx-page="home"] .technique-footage-preview :is(p,figcaption,small){color:#e0ebe5!important}
+html[data-rx-page="home"] .technique-footage-preview :is(p,figcaption,small){color:#EEE7E4!important}
 html[data-rx-page="home"] .rx-at-home-science :is(p,figcaption>span){font-size:14px;line-height:1.75}
 html[data-rx-page="home"] .rx-at-home-science figcaption>small{font-size:12px}
 .rx-field-photo{min-width:0}
-.rx-field-photo .rx-field-caption{min-width:0;background:#fffdf8;color:#17363b}
-.rx-field-photo .rx-field-caption :is(.rx-field-title,.rx-field-desc,.rx-field-meta){color:#284b4d}
+.rx-field-photo .rx-field-caption{min-width:0;background:#FFFCF7;color:#2D4C6B}
+.rx-field-photo .rx-field-caption :is(.rx-field-title,.rx-field-desc,.rx-field-meta){color:#476481}
 .rx-field-photo .rx-field-caption .rx-field-meta{font-size:11.5px;line-height:1.6;letter-spacing:.02em}
 .rx-field-photo .rx-field-caption .rx-field-desc{font-size:14px;line-height:1.72}
 .rx-field-photo .rx-field-frame img{width:100%;height:100%;object-fit:cover;object-position:center}
 .rx-field-section :is(.rx-field-source,.rx-field-kicker){font-size:11px!important;line-height:1.6}
-html.rx-site-theme .rx-universal .rx-brand strong{color:#17363b}
+html.rx-site-theme .rx-universal .rx-brand strong{color:#2D4C6B}
 html.rx-site-theme .rx-universal .rx-menu-panel a{font-size:13px;line-height:1.55}
 html.rx-site-theme .rx-context{font-size:12px}
 html.rx-site-theme :where(.card,.figure-card,.photo-card,.panel,.field,.era):not(.dark) :is(p,li,figcaption){font-size:max(14px, .875rem);line-height:1.7}
-html.rx-site-theme :where(.card,.figure-card,.photo-card,.panel,.field,.era):not(.dark) a{color:#7a392a}
+html.rx-site-theme :where(.card,.figure-card,.photo-card,.panel,.field,.era):not(.dark) a{color:#71394C}
 html.rx-site-theme :is(.dark,.hero.dark) :is(h1,h2,h3,h4){color:#f8f7f0}
-html.rx-site-theme :is(.dark,.hero.dark) :is(p,li,figcaption,small){color:#e4ebe5}
-html.rx-site-theme :is(.dark,.hero.dark) :is(a,.eyebrow,.brow){color:#f2bd9e}
+html.rx-site-theme :is(.dark,.hero.dark) :is(p,li,figcaption,small){color:#EEE7E4}
+html.rx-site-theme :is(.dark,.hero.dark) :is(a,.eyebrow,.brow){color:#E6BFC7}
 html[data-rx-page="illness-evidence"] .prose{font-size:16px;line-height:1.85}
 html[lang="ar"] :where(p,li,figcaption){line-height:1.95}
 html[lang="ar"] :where(.rx-field-title,.rx-field-desc,.rx-field-meta){letter-spacing:0!important;font-family:"Noto Sans Arabic",Tahoma,Arial,sans-serif}
@@ -76,7 +76,7 @@ html[dir="rtl"] :where(.rx-field-caption,.rx-field-heading,.story-prose){text-al
 }
 @media(max-width:640px){
   html[data-rx-page="home"] .secondary-grid .secondary-card{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:0!important;overflow:hidden}
-  html[data-rx-page="home"] .secondary-grid .secondary-card>img{display:block;width:100%!important;height:clamp(155px,44vw,215px)!important;object-fit:contain!important;padding:14px;background:#e9efeb}
+  html[data-rx-page="home"] .secondary-grid .secondary-card>img{display:block;width:100%!important;height:clamp(155px,44vw,215px)!important;object-fit:contain!important;padding:14px;background:#EEE7E4}
   html[data-rx-page="home"] .secondary-grid .secondary-card>.text{display:flex;flex-direction:column;align-items:flex-start;gap:9px;padding:18px!important}
   html[data-rx-page="home"] .secondary-grid .secondary-card>.text :is(h3,p){max-width:100%;margin:0}
   html[data-rx-page="home"] .secondary-grid .secondary-card button{max-width:100%;white-space:normal;text-align:start}
@@ -115,7 +115,7 @@ html[dir="rtl"] :where(.rx-field-caption,.rx-field-heading,.story-prose){text-al
 
 /* First impression: a photographed scientist, not a startup landing page. */
 html[data-rx-page="home"] .hero{
-  background:linear-gradient(122deg,#f7f5ee 0%,#f4f2eb 58%,#e8ede8 100%);
+  background:linear-gradient(122deg,#F4F0E8 0%,#F4F0E8 58%,#EEE7E4 100%);
 }
 html[data-rx-page="home"] .hero-copy h1{
   letter-spacing:-.042em;
@@ -234,7 +234,7 @@ html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child str
   }
 }
 @media(max-width:760px){
-  html[data-rx-page="home"] .hero{background:#f7f5ee}
+  html[data-rx-page="home"] .hero{background:#F4F0E8}
   html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a{
     aspect-ratio:1.35;
   }
@@ -277,12 +277,12 @@ html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child str
 
 /* Provenance-safe final refinements: uncropped featured records and Arabic type. */
 html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a{
-  background:#e5ebe4;
+  background:#EEE7E4;
 }
 html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a img,
 .rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-frame img{
   object-fit:contain;
-  background:#e5ebe4;
+  background:#EEE7E4;
 }
 html[lang="ar"][data-rx-page="home"] .hero-copy h1{
   letter-spacing:0;
@@ -295,7 +295,7 @@ html[lang="ar"] .rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx
 
 /* Evidence-first homepage, actual editorial selectors, 13 October 2026. */
 html[data-rx-page="home"] .rx-editorial-hero{
-  background:linear-gradient(123deg,#f7f4ec 0%,#f7f4ec 56%,#eaf0e9 100%);
+  background:linear-gradient(123deg,#F4F0E8 0%,#F4F0E8 56%,#eaf0e9 100%);
 }
 html[data-rx-page="home"] .rx-hero-title{
   text-wrap:balance;
@@ -315,10 +315,10 @@ html[data-rx-page="home"] .rx-chapter-card:focus-visible{
   box-shadow:0 0 0 3px rgba(137,81,63,.12);
 }
 html[data-rx-page="home"] #research .primary-card{
-  color:#17363b;
+  color:#2D4C6B;
 }
 html[data-rx-page="home"] #research .primary-card .work-body h3{
-  color:#17363b;
+  color:#2D4C6B;
 }
 html[data-rx-page="home"] #research .primary-card .work-body .work-meta{
   color:#914a36;
@@ -362,7 +362,7 @@ html[data-rx-page="home"] .rx-evidence-label{
 html[data-rx-page="home"] .rx-evidence-intro p{
   font:400 clamp(24px,2.15vw,34px)/1.1 var(--serif);
   margin:9px 0 0;
-  color:#f9f6ee;
+  color:#F4F0E8;
 }
 html[data-rx-page="home"] .rx-evidence-links{
   display:grid;
@@ -377,7 +377,7 @@ html[data-rx-page="home"] .rx-evidence-links>a{
   justify-content:center;
   gap:9px;
   padding:7px clamp(11px,1.5vw,24px);
-  border-inline-start:1px solid #54716d;
+  border-inline-start:1px solid #53677D;
   color:#f7f5ec;
   text-decoration:none;
   transition:background .2s ease;
@@ -389,7 +389,7 @@ html[data-rx-page="home"] .rx-evidence-links>a>span{
 }
 html[data-rx-page="home"] .rx-evidence-links>a>strong{
   font:500 clamp(15px,1.25vw,18px)/1.3 var(--sans);
-  color:#fffdf7;
+  color:#FFFCF7;
 }
 html[data-rx-page="home"] .rx-evidence-links>a>strong span{
   color:#f1bd9c;
@@ -431,7 +431,7 @@ html[lang="ar"][data-rx-page="home"] .rx-evidence-links>a>strong{
 }
 @media(max-width:620px){
   html[data-rx-page="home"] .rx-editorial-hero{
-    background:#f7f4ec;
+    background:#F4F0E8;
   }
   html[data-rx-page="home"] .rx-evidence-inner{
     padding-block:28px;
@@ -439,16 +439,16 @@ html[lang="ar"][data-rx-page="home"] .rx-evidence-links>a>strong{
   html[data-rx-page="home"] .rx-evidence-links{
     grid-template-columns:repeat(2,minmax(0,1fr));
     gap:0;
-    border-block-start:1px solid #54716d;
+    border-block-start:1px solid #53677D;
   }
   html[data-rx-page="home"] .rx-evidence-links>a{
     min-height:89px;
     border-inline-start:0;
-    border-block-end:1px solid #54716d;
+    border-block-end:1px solid #53677D;
     padding:12px 13px;
   }
   html[data-rx-page="home"] .rx-evidence-links>a:nth-child(even){
-    border-inline-start:1px solid #54716d;
+    border-inline-start:1px solid #53677D;
   }
   html[data-rx-page="home"] .rx-evidence-links>a>strong{
     font-size:15px;
@@ -467,29 +467,29 @@ html[lang="ar"][data-rx-page="home"] .rx-evidence-links>a>strong{
    Scope to evidence plates and archival labels; leave the visual identity intact. */
 html[data-rx-page="home"] .story.editorial-story .anatomy-photo figcaption {
   background:#e6ebe4;
-  color:#284b4d!important;
+  color:#476481!important;
   font-size:12px;
 }
 html[data-rx-page="home"] .story.editorial-story .anatomy-photo figcaption span {
-  color:#284b4d!important;
+  color:#476481!important;
 }
 html[data-rx-page="home"] .rx-field-photo .rx-field-caption {
-  background:#fffdf8;
-  color:#284b4d!important;
+  background:#FFFCF7;
+  color:#476481!important;
 }
 html[data-rx-page="home"] .rx-field-photo .rx-field-caption :is(p,small,span,a) {
-  color:#284b4d!important;
+  color:#476481!important;
 }
 html[data-rx-page="home"] .rx-field-photo .rx-field-caption .rx-field-meta {
   font-size:12px;
 }
 html[data-rx-page="home"] .archive-photo-pair figcaption {
-  color:#526b65;
+  color:#53677D;
   font-size:12px;
   line-height:1.65;
 }
 html[data-rx-page="home"] .quacs-feature .quacs-foot {
-  color:#4b635d;
+  color:#53677D;
   font-size:12px;
 }
 html[data-rx-page="home"] .quacs-feature .rx-science-eyebrow {
@@ -500,38 +500,38 @@ html[data-rx-page="home"] .quacs-feature .rx-provenance {
   font-size:12px;
 }
 html[data-rx-page="home"] .quacs-feature a:not(.button):not(.contactbutton) {
-  color:#87412f;
+  color:#71394C;
 }
 html[data-rx-page="home"] .methodlegend {
-  color:#4b635d;
+  color:#53677D;
   font-size:12px;
 }
 html[data-rx-page="home"] .chem-squad-teaser-link {
-  color:#87412f;
+  color:#71394C;
 }
 html[data-rx-page="archive"] .filmstrip .eyebrow {
   color:#f0b999;
 }
 html[data-rx-page="archive"] .rx-field-source {
-  color:#4b6562;
+  color:#53677D;
   font-size:12px;
 }
 html[data-rx-page="archive"] .current-era figcaption,
 html[data-rx-page="archive"] .photo-section .footnote {
-  color:#4b6562;
+  color:#53677D;
   font-size:12px;
 }
 html[data-rx-page="archive"] .rx-labcoat2016-eyebrow,
 html[data-rx-page="archive"] .rx-labcoat2016-link,
 html[data-rx-page="archive"] .current-era .now-grid a {
-  color:#87412f;
+  color:#71394C;
 }
 
 /* Final homepage contrast sweep, 16 October 2026: specific document links
    and research-horizon label only. No layout, media, or content changes. */
 html[data-rx-page="home"] .rx-home-science-links a {
-  color:#87412f;
+  color:#71394C;
 }
 html[data-rx-page="home"] .rh-home-entry .rh-home-kicker {
-  color:#87412f;
+  color:#71394C;
 }
