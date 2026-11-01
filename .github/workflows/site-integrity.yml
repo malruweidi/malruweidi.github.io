@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - name: Verify navy-and-oxblood identity and palette contrast
+        run: node --test tests/navy-oxblood-identity-2026.test.cjs
       - name: Check links, media, JavaScript and scientific attribution
         run: node scripts/site-integrity.cjs
       - name: Verify restored archival binary bytes and photo/video provenance
