@@ -139,9 +139,9 @@ const OrbitVisual: React.FC<{frame: number}> = ({frame}) => {
 export const MolecularTransport: React.FC = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const s1 = visible(frame, 0, 20, 114, 143);
-  const s2 = visible(frame, 122, 149, 270, 302);
-  const s3 = visible(frame, 281, 313, 436, 449);
+  const s1 = visible(frame, 0, 20, 115, 133);
+  const s2 = visible(frame, 133, 151, 267, 288);
+  const s3 = visible(frame, 288, 311, 436, 449);
   const progress = interpolate(frame, [0, 449], [0, 100], clip);
 
   return (
@@ -182,11 +182,11 @@ export const MolecularTransport: React.FC = () => {
         kicker="MOLECULAR PHARMACEUTICS"
         a="A MOLECULE" b="IN MOTION"
         description="Every therapeutic has a journey. Engineer what happens along the way."/>
-      <Scene opacity={s2} shift={(1 - enter(frame, fps, 130)) * 35}
+      <Scene opacity={s2} shift={(1 - enter(frame, fps, 133)) * 35}
         kicker="FROM DELIVERY TO RESPONSE"
         a="CONTROL THE" b="JOURNEY"
         description="Deposition, transport, tissue interaction. One connected design problem."/>
-      <Scene opacity={s3} shift={(1 - enter(frame, fps, 295)) * 35}
+      <Scene opacity={s3} shift={(1 - enter(frame, fps, 288)) * 35}
         kicker="RESEARCH / DESIGN / MECHANISM"
         a="DESIGN THE" b="DESTINATION"
         description="A translational approach to nanocarriers, pulmonary therapeutics and living systems."/>
