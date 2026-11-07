@@ -31,8 +31,8 @@
     "An embryonic zebrafish phenotype cannot be directly generalized to adult human vascular disease.": "لا يمكن تعميم نمط ظاهري في أجنة أسماك الزرد مباشرة على أمراض الأوعية الدموية لدى الإنسان البالغ.",
 
     "Dexamethasone-loaded niosomes and proniosomes, preformulation calculations, physicochemical characterization and planned nebulization/deposition testing.": "نيوسومات وبرونيوسومات محمّلة بالديكساميثازون، وحسابات ما قبل الصياغة، وتوصيف فيزيائي كيميائي، واختبارات مخطط لها للتذرية والترسيب.",
-    "The MSc project is ongoing. Documented calculations and software are not yet quantitative proof of aerosol performance or therapeutic efficacy.": "مشروع الماجستير مستمر. ولا تمثل الحسابات والبرمجيات الموثقة حتى الآن دليلًا كميًا على أداء الرذاذ أو الفاعلية العلاجية.",
-    "I work on formulation preparation, physicochemical testing workflows, research analysis and thesis development.": "أعمل على تحضير المستحضرات ومسارات الاختبار الفيزيائي الكيميائي والتحليل البحثي وتطوير الرسالة العلمية.",
-    "No encapsulation efficiencies, aerosol-deposition results, clinical effects or published thesis outcomes are claimed.": "لا أقدّم ادعاءات بشأن كفاءة احتواء الدواء أو نتائج ترسيب الرذاذ أو التأثيرات السريرية أو نتائج رسالة منشورة.",
+    "The project is ongoing. Documented calculations and software are not yet quantitative proof of aerosol performance or therapeutic efficacy.": "المشروع البحثي مستمر. ولا تمثل الحسابات والبرمجيات الموثقة حتى الآن دليلًا كميًا على أداء الرذاذ أو الفاعلية العلاجية.",
+    "I work on formulation preparation, physicochemical testing workflows, research analysis and experimental documentation.": "أعمل على تحضير المستحضرات ومسارات الاختبار الفيزيائي الكيميائي والتحليل البحثي وتوثيق العمل التجريبي.",
+    "No encapsulation efficiencies, aerosol-deposition results, clinical effects or published experimental outcomes are claimed.": "لا أقدّم ادعاءات بشأن كفاءة احتواء الدواء أو نتائج ترسيب الرذاذ أو التأثيرات السريرية أو نتائج تجريبية منشورة.",
   });
 })();
