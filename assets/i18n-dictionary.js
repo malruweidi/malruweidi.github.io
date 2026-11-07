@@ -815,7 +815,7 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "disciplines.": "متعددة.",
   "Read academic CV": "اقرأ السيرة الأكاديمية",
   "Pharmaceutical sciences research": "أبحاث العلوم الصيدلانية",
-  "": "",
+  
   "BSc Chemistry": "بكالوريوس الكيمياء",
   "Qatar University · 2021": "جامعة قطر · 2021",
   "Minor: History of Arab and Islamic Civilization": "تخصص فرعي: تاريخ الحضارة العربية والإسلامية",
@@ -942,7 +942,7 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Protocol development, instrument readiness, image documentation and training connect individual studies to an enduring research environment.": "يربط تطوير البروتوكولات وتجهيز الأجهزة وتوثيق الصور والتدريب الدراسات الفردية ببيئة بحثية مستدامة.",
   "Scholarly publications generally use the name Mahmoud K. Al-Ruweidi.": "تظهر منشوراتي العلمية عادةً باسم Mahmoud K. Al-Ruweidi.",
   "Chemistry-trained pharmaceutical sciences researcher investigating how molecular structure and engineered materials translate into biological function and therapeutic performance.": "باحث في العلوم الصيدلانية بخلفية كيميائية، أدرس كيف تتحول البنية الجزيئية والمواد المهندسة إلى وظائف حيوية وأداء علاجي.",
-  "": "",
+  
   "Inhalable dexamethasone-loaded niosomal / proniosomal systems for pulmonary delivery.": "أنظمة نيووسومية وبرونيووسومية محملة بالديكساميثازون وقابلة للاستنشاق لتوصيل الدواء رئوياً.",
   "Qatar University · 2021 · Organic chemistry and biochemistry · Minor in the history of Arab and Islamic civilization": "جامعة قطر · 2021 · الكيمياء العضوية والكيمياء الحيوية · تخصص فرعي في تاريخ الحضارة العربية والإسلامية",
   "Undergraduate thesis: Synthesis and Characterization of Imines as Chemical Sensors.": "رسالة البكالوريوس: تخليق الإيمينات وتوصيفها بوصفها حساسات كيميائية.",
