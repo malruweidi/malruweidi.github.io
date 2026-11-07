@@ -1,0 +1,25 @@
+{
+  "name": "alruweidi-ai-video-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts MolecularTransport out/molecular-transport.mp4 --codec h264 --crf 18",
+    "still": "remotion still src/index.ts MolecularTransport out/cover.png --frame 75",
+    "compositions": "remotion compositions src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "skills": "remotion skills add"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.541",
+    "remotion": "4.0.541",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "typescript": "^5.9.3"
+  }
+}
