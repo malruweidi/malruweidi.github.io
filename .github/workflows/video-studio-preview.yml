@@ -1,6 +1,10 @@
 name: Render AI Video Studio sample
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - 'video-studio/**'
+      - '.github/workflows/video-studio-preview.yml'
   push:
     branches:
       - feature/ai-video-studio
