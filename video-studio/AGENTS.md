@@ -3,7 +3,7 @@
 Always treat the output as a professional designed film, not an automated slide deck.
 
 ## Production standard
-- Build compositions in Remotion. Run \`npx remotion skills add\` and consult the installed official Remotion skills before generating new scenes.
+- Build compositions in Remotion. Run `npx remotion skills add` and consult the installed official Remotion skills before generating new scenes.
 - Work from a storyboard and clear timing. Each shot must have one visual focal point.
 - Typography: deliberate hierarchy, consistent tracking, readable sizes. No arbitrary drop shadows or bouncing text.
 - Motion: prefer subtle spring movement, masked reveals, continuous paths, expressive easing. Avoid decorative effects without narrative purpose.
