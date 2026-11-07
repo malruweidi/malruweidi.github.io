@@ -1,0 +1,50 @@
+name: Render AI Video Studio sample
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'video-studio/**'
+      - '.github/workflows/video-studio-preview.yml'
+  push:
+    branches:
+      - feature/ai-video-studio
+    paths:
+      - 'video-studio/**'
+      - '.github/workflows/video-studio-preview.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: video-studio
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Install FFmpeg tools
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Type-check scenes
+        run: npm run typecheck
+      - name: Render sample MP4
+        run: npm run render
+      - name: Render preview image
+        run: npm run still
+      - name: Inspect metadata
+        run: ffprobe -v error -show_entries format=duration:stream=codec_name,width,height,r_frame_rate -of json out/molecular-transport.mp4
+      - name: Upload output video
+        uses: actions/upload-artifact@v4
+        with:
+          name: molecular-transport-demo
+          path: |
+            video-studio/out/molecular-transport.mp4
+            video-studio/out/cover.png
+          if-no-files-found: error
