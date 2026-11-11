@@ -1,0 +1,104 @@
+name: Film 15 | Cardiac sensor and physiological signal cinema
+
+on:
+  push:
+    branches:
+      - cinema/heart-failure-sensors-v23-signal-world
+    paths:
+      - assets/films/series-v23-heart/film.html
+      - scripts/render-heart-v23.py
+      - tests/heart-v23.test.py
+      - .github/workflows/render-heart-v23.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: single-film15-heart-v23-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  film15-review-cut:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - name: Check out open-access GI Part II chapter context and original 84s narration
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install reproducible no-cost Chromium FFmpeg rendering stack
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check pillow playwright numpy soundfile
+          python -m playwright install --with-deps chromium
+      - name: Validate differential diagnosis pathways and 6 genuine moving chapters
+        run: |
+          python -m py_compile scripts/render-heart-v23.py tests/heart-v23.test.py
+          python scripts/render-heart-v23.py --validate-only
+          python tests/heart-v23.test.py
+      - name: Render full 84-second film at native 1920x1080 24fps
+        run: python -u scripts/render-heart-v23.py
+      - name: Independent check of source claims, encoded motion, captions and loudness
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib,subprocess,re
+          root=Path("assets/films/series-v23-heart")
+          master=root/"heart-failure-sensors.mp4"
+          data=json.loads((root/"heart-failure-sensors.json").read_text())
+          ff=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(master)]))
+          assert abs(float(ff["format"]["duration"])-84)<.15
+          assert {"video","audio"}<={x["codec_type"] for x in ff["streams"]}
+          assert any(x.get("codec_name")=="h264" and x.get("width")==1920 and x.get("height")==1080 for x in ff["streams"])
+          assert data["film_index"]==15 and data["source"]["doi"]=="10.1002/9781119813040.ch5"
+          assert data["source"]["publisher"]=="Wiley"
+          assert len(data["scenes"])==6
+          assert data["live_site_unchanged"] and data["prior_versions_preserved"]
+          assert hashlib.sha256(master.read_bytes()).hexdigest()==data["sha256"]
+          assert (root/"heart-failure-sensors.vtt").read_text().count("-->")==12
+          assert (root/"heart-failure-sensors.contact.webp").stat().st_size>14000
+          assert (root/"heart-failure-sensors.webp").stat().st_size>4000
+          assert len(list(root.glob("chapter-??.jpg")))==6
+          frames=subprocess.check_output(["ffmpeg","-v","error","-i",str(master),
+            "-map","0:v:0","-an","-vf","fps=1","-f","framemd5","-"],text=True)
+          hashes=[q.rsplit(",",1)[-1].strip() for q in frames.splitlines() if q and not q.startswith("#")]
+          assert 83<=len(hashes)<=85,len(hashes)
+          assert len(set(hashes))>=80,(len(set(hashes)),len(hashes))
+          print("FILM15 VERIFIED VIDEO-ONLY TEMPORAL FRAMES",len(set(hashes)),"/",len(hashes))
+          audio=subprocess.run(["ffmpeg","-hide_banner","-i",str(master),
+            "-map","0:a:0","-filter_complex","ebur128=peak=true","-f","null","-"],
+            capture_output=True,text=True)
+          assert audio.returncode==0
+          import re
+          samples=[float(x) for x in re.findall(r"TPK:\s*([-+]?\d+(?:\.\d+)?)\s*dBFS",audio.stderr)]
+          assert samples, "True-peak samples missing from EBU R128 measurement"
+          worst=max(samples)
+          assert worst <= -1.0, f"True peak over mastering ceiling: {worst:.1f} dBTP"
+          print("FILM15 VERIFIED TRUE PEAK",worst,"dBTP")
+          print("FILM15 EBU R128",audio.stderr[-1500:])
+          PY
+      - name: Commit verified review master to isolated branch and retain all existing films
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Ruwaidix Research Cinema"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          render_source_hash="$(git hash-object scripts/render-heart-v23.py)"
+          mkdir -p /tmp/heart-v23-output
+          cp -a assets/films/series-v23-heart/. /tmp/heart-v23-output/
+          git fetch origin cinema/heart-failure-sensors-v23-signal-world
+          current_hash="$(git show origin/cinema/heart-failure-sensors-v23-signal-world:scripts/render-heart-v23.py | git hash-object --stdin)"
+          if [ "$render_source_hash" != "$current_hash" ]; then
+            echo "Newer source renderer exists; do not push a stale binary"; exit 0
+          fi
+          git reset --hard origin/cinema/heart-failure-sensors-v23-signal-world
+          cp -a /tmp/heart-v23-output/. assets/films/series-v23-heart/
+          git add assets/films/series-v23-heart/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Film 14: export clinical diagnostic and therapeutic evidence 1080p review master"
+          git push origin HEAD:cinema/heart-failure-sensors-v23-signal-world
