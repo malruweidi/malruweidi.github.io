@@ -1,0 +1,68 @@
+{
+  "title": "The Molecule Behind Every Protein",
+  "duration_seconds": 168,
+  "source": "Drugging the tRNA Control System, final audited author manuscript; primary citations",
+  "status": "PRIVATE AUDITION ONLY",
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 14,
+      "text": "Before a protein exists, a ribosome must translate a message. Transfer R N A delivers each amino acid. But someone must first attach the right cargo."
+    },
+    {
+      "start": 14,
+      "duration": 14,
+      "text": "Aminoacyl transfer R N A synthetases do that charging. They match amino acids with their corresponding transfer R N A molecules, making accurate translation possible."
+    },
+    {
+      "start": 28,
+      "duration": 14,
+      "text": "That essential machinery is not one drug target. Catalytic enzymes, chemical R N A modifications, fragments, and extracellular signals present very different pharmacological questions."
+    },
+    {
+      "start": 42,
+      "duration": 14,
+      "text": "METTL one adds chemical marks to transfer R N A. But a 2025 study also found a separate aminoacylation role, independent of methyltransferase activity."
+    },
+    {
+      "start": 56,
+      "duration": 14,
+      "text": "Blocking an enzyme's catalytic action may leave other functions untouched. Test engagement, the transfer R N A state, selective protein output, and the resulting phenotype."
+    },
+    {
+      "start": 70,
+      "duration": 14,
+      "text": "Halofuginone inhibits prolyl transfer R N A synthetase in experimental systems. Uncharged transfer R N A then accumulates and can activate amino acid stress signaling."
+    },
+    {
+      "start": 84,
+      "duration": 14,
+      "text": "In fungi, tavaborole traps leucine transfer R N A at the editing site of leucyl transfer R N A synthetase. This interrupts the charging cycle."
+    },
+    {
+      "start": 98,
+      "duration": 14,
+      "text": "But essentiality creates danger too. A useful treatment needs a vulnerability in the pathogen or disease state that healthy tissue does not share."
+    },
+    {
+      "start": 112,
+      "duration": 14,
+      "text": "Sometimes intervention means repairing translation, not inhibiting it. Engineered suppressor transfer R N A can read through a premature stop signal in experimental disease models."
+    },
+    {
+      "start": 126,
+      "duration": 14,
+      "text": "These treatments require proof of the inserted amino acid, restored functional protein, tissue delivery, and normal stop-codon safety. A reporter alone proves little."
+    },
+    {
+      "start": 140,
+      "duration": 14,
+      "text": "Efzofitimod explores extracellular signaling from a synthetase domain. Its Phase Three sarcoidosis trial enrolled 268 patients but missed the primary steroid-dose endpoint."
+    },
+    {
+      "start": 154,
+      "duration": 14,
+      "text": "The scientific opportunity is precise, not universal: identify the disease-dependent translation state, intervene through the right modality, and prove the entire causal chain."
+    }
+  ]
+}
