@@ -1,0 +1,169 @@
+{
+  "edition": "Director's cut pilot / editorial preview / 17 October 2026",
+  "id": "making-medicines-keep",
+  "title": "Making Medicines Keep",
+  "seconds": 120,
+  "story_question": "How could a customer in thirteenth-century Cairo judge whether a prepared medicine would remain dependable?",
+  "scientific_status": "Historical interpretation; archival comparison images are NOT the Cairo manuscript itself.",
+  "source": "Making Medicines Keep: Syrups, Substitution, and Pharmaceutical Reliability in Ayyubid-Mamluk Cairo; accepted by History of Pharmacy and Pharmaceuticals on 15 October 2026.",
+  "narrator": "kokoro-onnx / male and female audition exports; not author voice, never voice-cloned",
+  "music": "Original room tone and restrained non-melodramatic drone; keep consonants clear and leave the opening nearly silent.",
+  "shots_per_chapter": 2,
+  "chapters": [
+    {
+      "id": "01",
+      "title": "After the fire",
+      "narration": "A syrup can look ready when it leaves the fire. Tomorrow it may crystallize or change consistency. The person buying it cannot watch what happened in the shop.",
+      "shots": [
+        {
+          "image": "assets/films/plates/making-medicines-keep-01.webp",
+          "type": "EDITORIAL",
+          "credit": "Original editorial depiction of syrup failure; not an artifact",
+          "composition": "extreme macro-like crop, static type"
+        },
+        {
+          "image": "assets/films/plates/making-medicines-keep-04.webp",
+          "type": "EDITORIAL",
+          "credit": "Original interpretive illustration of crystallization; not a measurement",
+          "composition": "slow push toward crystalline detail"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "The city and the shop",
+      "narration": "The problem leads us to medieval Cairo, where medicinal preparation belonged to daily trade. Recipes and judgments about workmanship entered the same written record.",
+      "shots": [
+        {
+          "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Qalawun_complex_12.jpg",
+          "type": "MODERN CONTEXT",
+          "credit": "Qalawun complex, present-day photograph, Wikimedia Commons CC BY 4.0; architecture, not period footage",
+          "source": "https://commons.wikimedia.org/wiki/File:Qalawun_complex_12.jpg",
+          "composition": "slow horizontal reveal of architecture"
+        },
+        {
+          "image": "assets/films/plates/making-medicines-keep-02.webp",
+          "type": "EDITORIAL",
+          "credit": "Original editorial reconstruction, not a photographed medieval shop",
+          "composition": "static manuscript-style study"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "A base called julab",
+      "narration": "The pharmacy manual Minhaj al-dukkan begins its discussion of syrups with julab, made from sugar and rose water. The ingredients are named, but making them behave takes work.",
+      "shots": [
+        {
+          "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Illuminated_single_leaf%2C_Two_doctors_preparing_medicine%2C_Walters_Art_Museum_Ms._W.675a.jpg",
+          "type": "COMPARATIVE PERIOD ART",
+          "credit": "Walters Art Museum, Arabic Dioscorides manuscript made in Baghdad, 1224, CC0; NOT an illustration of Cairo or of Minhaj al-dukkan",
+          "source": "https://commons.wikimedia.org/wiki/File:Illuminated_single_leaf,_Two_doctors_preparing_medicine,_Walters_Art_Museum_Ms._W.675a.jpg",
+          "composition": "hold whole leaf readable"
+        },
+        {
+          "image": "assets/films/plates/making-medicines-keep-02.webp",
+          "type": "EDITORIAL",
+          "credit": "Illustration of a sugar and rose-water base; not a documentary vessel",
+          "composition": "ingredient detail with pull focus"
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "The endpoint is not a number",
+      "narration": "Heat. Remove the foam. Strain. Then judge the qiwam, the achieved consistency. It was a practical decision made at the vessel, not a numerical reading from an instrument.",
+      "shots": [
+        {
+          "image": "assets/films/plates/making-medicines-keep-03.webp",
+          "type": "EXPLANATORY DIAGRAM",
+          "credit": "Reconstructed preparation sequence, not a record of a historical experiment",
+          "composition": "precise progressive highlights"
+        },
+        {
+          "image": "assets/films/plates/making-medicines-keep-04.webp",
+          "type": "EDITORIAL",
+          "credit": "Syrup consistency interpretation; no quantitative viscosity values are implied",
+          "composition": "slow close-up"
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "title": "Instructions for what went wrong",
+      "narration": "The manual even considers preparations that do not turn out as expected. Its advice is revealing: pharmaceutical knowledge included recognizing failure and deciding what might be repaired.",
+      "shots": [
+        {
+          "image": "assets/films/plates/making-medicines-keep-04.webp",
+          "type": "EDITORIAL",
+          "credit": "Original illustration of crystallization; symbolic, not sampled material",
+          "composition": "static analytical view"
+        },
+        {
+          "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Materia_Medica_%28Arabic_translation%2C_leaf%29.jpg",
+          "type": "COMPARATIVE PERIOD ART",
+          "credit": "Metropolitan Museum of Art, Baghdad-school Dioscorides leaf, 1224, public domain; contextual rather than a source for Cairo text",
+          "source": "https://commons.wikimedia.org/wiki/File:Materia_Medica_(Arabic_translation,_leaf).jpg",
+          "composition": "full archival leaf; quiet hold"
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "title": "A different surviving voice",
+      "narration": "A Cairo Genizah prescription offers another kind of evidence: powdered ingredients kneaded with rose syrup. It records an instruction, not proof that every dose was made as written.",
+      "shots": [
+        {
+          "image": "assets/films/plates/making-medicines-keep-05.webp",
+          "type": "EDITORIAL TRANSCRIPTION",
+          "credit": "Typeset interpretation of Cambridge Genizah Or.1081 J39; original leaf not reproduced",
+          "composition": "readable source detail"
+        },
+        {
+          "image": "assets/films/plates/making-medicines-keep-02.webp",
+          "type": "EDITORIAL",
+          "credit": "Original editorial illustration; not a Cairo Genizah scan",
+          "composition": "contrast prescription and syrup"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "title": "Substitution has rules",
+      "narration": "If an ingredient was unavailable, substitution could be discussed openly. That is different from hiding a cheaper ingredient. Market-oversight writings asked how deception could be detected.",
+      "shots": [
+        {
+          "image": "assets/films/plates/making-medicines-keep-06.webp",
+          "type": "CONCEPT DIAGRAM",
+          "credit": "Conceptual explanation of historically discussed substitution; NOT modern bioequivalence",
+          "composition": "lateral reveal"
+        },
+        {
+          "image": "assets/films/plates/making-medicines-keep-07.webp",
+          "type": "CONCEPT DIAGRAM",
+          "credit": "Interpretation of market oversight; not evidence of inspections at one named shop",
+          "composition": "static contrast with subtle motion"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "title": "What could be relied upon?",
+      "narration": "The question behind my article is what counted as dependable medicine under those conditions. Not modern quality control in disguise, but a historically specific craft with its own limits.",
+      "shots": [
+        {
+          "image": "assets/films/plates/making-medicines-keep-08.webp",
+          "type": "ACCEPTED MANUSCRIPT",
+          "credit": "Original film title card; article accepted 15 October 2026, not yet labelled published",
+          "composition": "unhurried end card"
+        },
+        {
+          "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+          "type": "CONTEMPORARY PORTRAIT",
+          "credit": "Author's contemporary portrait; not a historical manuscript",
+          "composition": "deliberate final portrait"
+        }
+      ]
+    }
+  ]
+}

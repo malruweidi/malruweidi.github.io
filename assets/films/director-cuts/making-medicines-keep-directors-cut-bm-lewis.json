@@ -1,0 +1,106 @@
+{
+  "id": "making-medicines-keep",
+  "edition": "Director's cut pilot / editorial preview / 17 October 2026",
+  "seconds": 120.0,
+  "voice": "bm_lewis",
+  "sha256": "eec9d896448b62f46ecc3eb19388da8eadd948de100a9cb2cb0df8c7bb97dc32",
+  "shots": [
+    {
+      "chapter": "01",
+      "type": "EDITORIAL",
+      "credit": "Original editorial depiction of syrup failure; not an artifact",
+      "source": "assets/films/plates/making-medicines-keep-01.webp"
+    },
+    {
+      "chapter": "01",
+      "type": "EDITORIAL",
+      "credit": "Original interpretive illustration of crystallization; not a measurement",
+      "source": "assets/films/plates/making-medicines-keep-04.webp"
+    },
+    {
+      "chapter": "02",
+      "type": "MODERN CONTEXT",
+      "credit": "Qalawun complex, present-day photograph, Wikimedia Commons CC BY 4.0; architecture, not period footage",
+      "source": "https://commons.wikimedia.org/wiki/File:Qalawun_complex_12.jpg"
+    },
+    {
+      "chapter": "02",
+      "type": "EDITORIAL",
+      "credit": "Original editorial reconstruction, not a photographed medieval shop",
+      "source": "assets/films/plates/making-medicines-keep-02.webp"
+    },
+    {
+      "chapter": "03",
+      "type": "COMPARATIVE PERIOD ART",
+      "credit": "Walters Art Museum, Arabic Dioscorides manuscript made in Baghdad, 1224, CC0; NOT an illustration of Cairo or of Minhaj al-dukkan",
+      "source": "https://commons.wikimedia.org/wiki/File:Illuminated_single_leaf,_Two_doctors_preparing_medicine,_Walters_Art_Museum_Ms._W.675a.jpg"
+    },
+    {
+      "chapter": "03",
+      "type": "EDITORIAL",
+      "credit": "Illustration of a sugar and rose-water base; not a documentary vessel",
+      "source": "assets/films/plates/making-medicines-keep-02.webp"
+    },
+    {
+      "chapter": "04",
+      "type": "EXPLANATORY DIAGRAM",
+      "credit": "Reconstructed preparation sequence, not a record of a historical experiment",
+      "source": "assets/films/plates/making-medicines-keep-03.webp"
+    },
+    {
+      "chapter": "04",
+      "type": "EDITORIAL",
+      "credit": "Syrup consistency interpretation; no quantitative viscosity values are implied",
+      "source": "assets/films/plates/making-medicines-keep-04.webp"
+    },
+    {
+      "chapter": "05",
+      "type": "EDITORIAL",
+      "credit": "Original illustration of crystallization; symbolic, not sampled material",
+      "source": "assets/films/plates/making-medicines-keep-04.webp"
+    },
+    {
+      "chapter": "05",
+      "type": "COMPARATIVE PERIOD ART",
+      "credit": "Metropolitan Museum of Art, Baghdad-school Dioscorides leaf, 1224, public domain; contextual rather than a source for Cairo text",
+      "source": "https://commons.wikimedia.org/wiki/File:Materia_Medica_(Arabic_translation,_leaf).jpg"
+    },
+    {
+      "chapter": "06",
+      "type": "EDITORIAL TRANSCRIPTION",
+      "credit": "Typeset interpretation of Cambridge Genizah Or.1081 J39; original leaf not reproduced",
+      "source": "assets/films/plates/making-medicines-keep-05.webp"
+    },
+    {
+      "chapter": "06",
+      "type": "EDITORIAL",
+      "credit": "Original editorial illustration; not a Cairo Genizah scan",
+      "source": "assets/films/plates/making-medicines-keep-02.webp"
+    },
+    {
+      "chapter": "07",
+      "type": "CONCEPT DIAGRAM",
+      "credit": "Conceptual explanation of historically discussed substitution; NOT modern bioequivalence",
+      "source": "assets/films/plates/making-medicines-keep-06.webp"
+    },
+    {
+      "chapter": "07",
+      "type": "CONCEPT DIAGRAM",
+      "credit": "Interpretation of market oversight; not evidence of inspections at one named shop",
+      "source": "assets/films/plates/making-medicines-keep-07.webp"
+    },
+    {
+      "chapter": "08",
+      "type": "ACCEPTED MANUSCRIPT",
+      "credit": "Original film title card; article accepted 15 October 2026, not yet labelled published",
+      "source": "assets/films/plates/making-medicines-keep-08.webp"
+    },
+    {
+      "chapter": "08",
+      "type": "CONTEMPORARY PORTRAIT",
+      "credit": "Author's contemporary portrait; not a historical manuscript",
+      "source": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp"
+    }
+  ],
+  "rights_note": "Public-domain/CC museum and architectural images are context, not representations of the author's historical sources. Creative reconstruction is identified. Human audio approval required."
+}
