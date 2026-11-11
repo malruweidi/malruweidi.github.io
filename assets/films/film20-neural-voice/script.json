@@ -1,0 +1,52 @@
+{
+  "title": "Film 20: A Structure the Body Must Tolerate",
+  "source": "Author-owned Clinical Applications of Additively Manufactured Biomedical Ceramics manuscript, accepted/forthcoming; FDA 2017 AM guidance, FDA 2023 ISO 10993 guidance, 2025 J Dent RCT 10.1016/j.jdent.2025.106069",
+  "duration_seconds": 170,
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 17,
+      "text": "The scan gives us a boundary. Bone is missing, and the shape of that absence belongs to one patient. Digital design can reproduce the contour. But an implant must do more than fit an image."
+    },
+    {
+      "start": 17,
+      "duration": 19,
+      "text": "Hydroxyapatite and calcium phosphates were used in medicine before three-dimensional printing. Printing adds controlled pores, tailored surfaces, and fixation features. We must distinguish a ceramic's material properties from advantages caused by its manufacture."
+    },
+    {
+      "start": 36,
+      "duration": 18,
+      "text": "A ceramic lattice emerges layer by layer. It can look complete while still containing binder or uncured material. Cleaning, binder removal, and sintering determine the final object. The digital model is only a beginning."
+    },
+    {
+      "start": 54,
+      "duration": 20,
+      "text": "Inside the furnace, the printed ceramic shrinks. Grains and pores evolve. A tiny flaw can initiate fracture in a brittle material. Dimensions and strength must be measured after processing, never assumed from printer precision."
+    },
+    {
+      "start": 74,
+      "duration": 20,
+      "text": "Open pores may help tissue enter, but can also weaken the structure. Their connectivity, geometry, and local loading matter. The relationship shown here is an illustration, not a measured threshold for any implant."
+    },
+    {
+      "start": 94,
+      "duration": 19,
+      "text": "At the bone interface, tissues respond over time. Histology, imaging, mechanical testing, and patient outcomes answer different questions. Bone near a scaffold alone cannot prove that printing improves clinical care."
+    },
+    {
+      "start": 113,
+      "duration": 20,
+      "text": "Dentistry now has randomized human evidence. A twelve-month study found broadly comparable performance for printed and milled zirconia crowns. This applies to those specific devices and conditions, not to every ceramic or a lifetime of use."
+    },
+    {
+      "start": 133,
+      "duration": 19,
+      "text": "Before implantation, manufacturers must assess defects, consistency, cleaning, sterilization, and biological risks. Testing depends on intended use. Regulatory guidance is explicit about evaluating these concerns. A beautiful lattice cannot meet them by itself."
+    },
+    {
+      "start": 152,
+      "duration": 18,
+      "text": "The real clinical question is where printed geometry improves treatment. Fit matters. So do safety, durability, and patient outcomes. Our chapter follows those measures and acknowledges where the evidence is still uncertain."
+    }
+  ]
+}
