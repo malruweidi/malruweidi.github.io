@@ -1,0 +1,64 @@
+{
+  "film_index": 15,
+  "title": "Listening for a Failing Heart",
+  "edition": "V23 kinetic heart failure sensors / conceptual clinical-evidence documentary",
+  "duration_seconds": 84.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "source_chapter": {
+    "title": "Minimally Invasive and Non-Invasive Sensor Technologies for Predicting Heart Failure: An Overview",
+    "doi": "10.1002/9781119813040.ch5",
+    "type": "Narrative review chapter, 2022, not primary trial data",
+    "source": "https://doi.org/10.1002/9781119813040.ch5"
+  },
+  "source_narration": "assets/films/series-v6/heart-failure-sensors.mp4",
+  "source_mp4_sha256": "a5071e75cf771e8cd24e95796c665fe8f4ea6aa228b7d3f92ddf42ef784a2280",
+  "source_captions": "assets/films/series-v6/heart-failure-sensors.vtt",
+  "captions_count": 12,
+  "visual_provenance": "Original deterministic Canvas2D explanatory schematics. No real histology, patient image, clinical outcome data or experimental recording.",
+  "scenes": [
+    {
+      "title": "Physiological trajectories and waveforms",
+      "start": 0,
+      "end": 14
+    },
+    {
+      "title": "Wearable, implantable and clinical sensors",
+      "start": 14,
+      "end": 28
+    },
+    {
+      "title": "Signal processing and risk estimation",
+      "start": 28,
+      "end": 42
+    },
+    {
+      "title": "Artefacts, noise and patient variability",
+      "start": 42,
+      "end": 56
+    },
+    {
+      "title": "External validation and clinical utility",
+      "start": 56,
+      "end": 70
+    },
+    {
+      "title": "2022 overview, provenance and limitations",
+      "start": 70,
+      "end": 84
+    }
+  ],
+  "scientific_limitations": [
+    "2022 technology overview, not a validated device or guideline.",
+    "Predictive accuracy does not establish clinical utility or improved outcomes.",
+    "No actual physiological data or patient measurements appear in the animation.",
+    "Device performance requires population-specific external validation."
+  ],
+  "live_website_unchanged": true,
+  "older_film_masters_preserved": true,
+  "release": "Review-only until personal scholarly, audiovisual and accessibility approval.",
+  "sha256": "27fbb39c0f7002b6918558a183475317879a0edafeb837163fb4250191b2ab09"
+}
