@@ -1,0 +1,12 @@
+{
+  "shots": [
+    {
+      "id": "syrup-macro-01",
+      "prompt_node": "6",
+      "seed_node": "3",
+      "seed": 72011,
+      "prompt": "Cinema macro of transparent syrup flowing over glass, soft studio backlighting, restrained liquid movement, no words or logos",
+      "provenance": "CONCEPTUAL illustration of a modern liquid, not experimental or historical footage"
+    }
+  ]
+}
