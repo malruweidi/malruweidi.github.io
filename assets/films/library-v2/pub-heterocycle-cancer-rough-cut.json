@@ -1,0 +1,78 @@
+{
+  "slug": "pub-heterocycle-cancer",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "bb39623f1bc5199a5346d470e925aa676b8802c553ae706cee2a4b3e8d0ae867",
+  "shots": [
+    {
+      "title": "Build the heterocycle, then challenge the hypothesis",
+      "kind": "Original archival chemistry photograph, not a recording of microwave synthesis",
+      "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+      "museum": null,
+      "credit": "Original archival chemistry photograph, not a recording of microwave synthesis"
+    },
+    {
+      "title": "A ring is an intention until it exists",
+      "kind": "Actual archived organic chemistry reagent photo; not proof of the project product",
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "museum": null,
+      "credit": "Actual archived organic chemistry reagent photo; not proof of the project product"
+    },
+    {
+      "title": "Microwave chemistry accelerates the problem",
+      "kind": "Original archival chemistry photograph, not a recording of microwave synthesis",
+      "image": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+      "museum": null,
+      "credit": "Original archival chemistry photograph, not a recording of microwave synthesis"
+    },
+    {
+      "title": "Identity before biological activity",
+      "kind": "Original reagent photo, not NMR spectral evidence",
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp",
+      "museum": null,
+      "credit": "Original reagent photo, not NMR spectral evidence"
+    },
+    {
+      "title": "A screen is a question, not a treatment",
+      "kind": "Original laboratory-group photo related to medicinal chemistry programme",
+      "image": "assets/oct12-owner-photos/yousef-hijji-anticancer-group-2019.webp",
+      "museum": null,
+      "credit": "Original laboratory-group photo related to medicinal chemistry programme"
+    },
+    {
+      "title": "The difficulty: Separate intent, result and interpretation",
+      "kind": "Author's early laboratory photograph; illustrative context",
+      "image": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
+      "museum": null,
+      "credit": "Author's early laboratory photograph; illustrative context"
+    },
+    {
+      "title": "Separate intent, result and interpretation",
+      "kind": "Author's early laboratory photograph; illustrative context",
+      "image": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
+      "museum": null,
+      "credit": "Author's early laboratory photograph; illustrative context"
+    },
+    {
+      "title": "The chemistry has the final word",
+      "kind": "Original research-context chemical photograph",
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "museum": null,
+      "credit": "Original research-context chemical photograph"
+    }
+  ],
+  "film_title": "Build the heterocycle, then challenge the hypothesis",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/grants/urep23.html",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "ec03bd3a1e28c9c24dcefad561df44ac2f80642a7e966c28df05b3246adc978a"
+}

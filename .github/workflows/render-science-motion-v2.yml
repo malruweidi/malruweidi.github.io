@@ -1,0 +1,52 @@
+name: Build four original science motion inserts
+on:
+  push:
+    branches:
+      - cinematic-remake-20261017
+    paths:
+      - scripts/render-science-motion-v2.py
+      - .github/workflows/render-science-motion-v2.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[science-motion]')
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install open motion drawing toolkit
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install pillow
+      - name: Validate animation frames and source boundaries
+        run: python scripts/render-science-motion-v2.py --validate-only
+      - name: Render four source-labeled moving diagrams
+        run: python scripts/render-science-motion-v2.py
+      - name: Validate MP4 and accompanying technical provenance
+        run: |
+          for clip in assets/films/animations-v2/*.mp4; do
+            ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1 "$clip" | grep -q h264
+            stem="$(basename "$clip" .mp4)"
+            test -s "assets/films/animations-v2/$stem.json"
+          done
+      - name: Save only protected new science animations
+        run: |
+          git config user.name "Ruwaidix Scientific Motion"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/animations-v2/
+          if ! git diff --cached --quiet; then
+            git commit -m "Render four concept animations [science-motion]"
+            for n in 1 2 3 4 5 6; do
+              git fetch origin cinematic-remake-20261017
+              git rebase FETCH_HEAD
+              if git push origin HEAD:cinematic-remake-20261017; then exit 0; fi
+              sleep 4
+            done
+            exit 1
+          fi

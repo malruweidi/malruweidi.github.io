@@ -1,0 +1,134 @@
+[
+  {
+    "film": "making-medicines-keep",
+    "voice": "bm_george",
+    "language": "en-gb",
+    "speech_seconds": 17.8,
+    "file": "making-medicines-keep-bm_george.mp3",
+    "sha256": "83c5d8557d36b8d71f6e525f01ac9b11cce7cdeea2df450bf19991c29331ac8b",
+    "source_text": "A jar of syrup can look trustworthy while concealing an unstable preparation. That difficulty was familiar to pharmacists long before industrial manufacturing. Recipes described heat, consistency and substitutions. The question is what could be relied upon.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  },
+  {
+    "film": "making-medicines-keep",
+    "voice": "bm_fable",
+    "language": "en-gb",
+    "speech_seconds": 16.0,
+    "file": "making-medicines-keep-bm_fable.mp3",
+    "sha256": "497b8990299185060e24dcaf76958a46146046a847600d634f1526ee4538840d",
+    "source_text": "A jar of syrup can look trustworthy while concealing an unstable preparation. That difficulty was familiar to pharmacists long before industrial manufacturing. Recipes described heat, consistency and substitutions. The question is what could be relied upon.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  },
+  {
+    "film": "making-medicines-keep",
+    "voice": "am_michael",
+    "language": "en-us",
+    "speech_seconds": 18.7,
+    "file": "making-medicines-keep-am_michael.mp3",
+    "sha256": "613560153aa799606ab4651b60ae8fbfb1f97c8925687a70fc66dccb88a19754",
+    "source_text": "A jar of syrup can look trustworthy while concealing an unstable preparation. That difficulty was familiar to pharmacists long before industrial manufacturing. Recipes described heat, consistency and substitutions. The question is what could be relied upon.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  },
+  {
+    "film": "making-medicines-keep",
+    "voice": "bf_emma",
+    "language": "en-gb",
+    "speech_seconds": 15.4,
+    "file": "making-medicines-keep-bf_emma.mp3",
+    "sha256": "7b39523798a63aa207f0263b953b9ffd0880d007b8fe681e29eef24ad1c68f9e",
+    "source_text": "A jar of syrup can look trustworthy while concealing an unstable preparation. That difficulty was familiar to pharmacists long before industrial manufacturing. Recipes described heat, consistency and substitutions. The question is what could be relied upon.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  },
+  {
+    "film": "two-materials-no-section",
+    "voice": "bm_george",
+    "language": "en-gb",
+    "speech_seconds": 14.0,
+    "file": "two-materials-no-section-bm_george.mp3",
+    "sha256": "e82e458cf397d77c8f6e9d0addbe9070a206871b9ddff6f29896e013ed2925f7",
+    "source_text": "The blade passed through the block, but no useful section formed. What fell away was fragmented material. I photographed it because that was the result. The exact mechanism of the separation was still a question.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  },
+  {
+    "film": "two-materials-no-section",
+    "voice": "bm_fable",
+    "language": "en-gb",
+    "speech_seconds": 12.7,
+    "file": "two-materials-no-section-bm_fable.mp3",
+    "sha256": "af58346c1bbf9f19a677a5555e240ac30849cf240e3a27cf41d7f864118419bf",
+    "source_text": "The blade passed through the block, but no useful section formed. What fell away was fragmented material. I photographed it because that was the result. The exact mechanism of the separation was still a question.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  },
+  {
+    "film": "two-materials-no-section",
+    "voice": "am_michael",
+    "language": "en-us",
+    "speech_seconds": 14.9,
+    "file": "two-materials-no-section-am_michael.mp3",
+    "sha256": "b0899e1c49c3e78ec58b4d6695ad17e2c0a9729894df3ca761be6c6f7b26bae1",
+    "source_text": "The blade passed through the block, but no useful section formed. What fell away was fragmented material. I photographed it because that was the result. The exact mechanism of the separation was still a question.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  },
+  {
+    "film": "two-materials-no-section",
+    "voice": "bf_emma",
+    "language": "en-gb",
+    "speech_seconds": 12.1,
+    "file": "two-materials-no-section-bf_emma.mp3",
+    "sha256": "99413304ebb2e5b8b71f73a106a81fe803226c180bf2633c0e92124e5ae9aac8",
+    "source_text": "The blade passed through the block, but no useful section formed. What fell away was fragmented material. I photographed it because that was the result. The exact mechanism of the separation was still a question.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  },
+  {
+    "film": "what-a-bubble-can-do",
+    "voice": "bm_george",
+    "language": "en-gb",
+    "speech_seconds": 16.2,
+    "file": "what-a-bubble-can-do-bm_george.mp3",
+    "sha256": "8256bf87d5dd6227bee6c8df45b7119d61054f019d78bc387eb1f1d7f154e336",
+    "source_text": "An airway can reopen and still be injured. A moving air–liquid boundary passes across epithelial cells. Our experiment used a parallel-plate flow chamber, not a miniature human lung. The measurements tell us what happened under those conditions.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  },
+  {
+    "film": "what-a-bubble-can-do",
+    "voice": "bm_fable",
+    "language": "en-gb",
+    "speech_seconds": 14.4,
+    "file": "what-a-bubble-can-do-bm_fable.mp3",
+    "sha256": "5ed6fa5dce0a15a688b63ddf96f5879020fda1e20a101a90a9da56e0b9b908cb",
+    "source_text": "An airway can reopen and still be injured. A moving air–liquid boundary passes across epithelial cells. Our experiment used a parallel-plate flow chamber, not a miniature human lung. The measurements tell us what happened under those conditions.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  },
+  {
+    "film": "what-a-bubble-can-do",
+    "voice": "am_michael",
+    "language": "en-us",
+    "speech_seconds": 17.5,
+    "file": "what-a-bubble-can-do-am_michael.mp3",
+    "sha256": "72d59c024755da5e2499d466aa5da40d89abaa9f458603152e4f4e68f78aca5e",
+    "source_text": "An airway can reopen and still be injured. A moving air–liquid boundary passes across epithelial cells. Our experiment used a parallel-plate flow chamber, not a miniature human lung. The measurements tell us what happened under those conditions.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  },
+  {
+    "film": "what-a-bubble-can-do",
+    "voice": "bf_emma",
+    "language": "en-gb",
+    "speech_seconds": 13.9,
+    "file": "what-a-bubble-can-do-bf_emma.mp3",
+    "sha256": "cf9fe79617fda270b8393931cc17112106d3f8a08d4efdfc83416e6de8bfcc02",
+    "source_text": "An airway can reopen and still be injured. A moving air–liquid boundary passes across epithelial cells. Our experiment used a parallel-plate flow chamber, not a miniature human lung. The measurements tell us what happened under those conditions.",
+    "auditory_human_review": false,
+    "approved_for_release": false
+  }
+]

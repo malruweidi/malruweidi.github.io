@@ -1,0 +1,70 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.089
+A sensor records a signal. Calling that signal an early
+
+00:00:04.089 --> 00:00:07.364
+warning of heart failure is a much larger claim.
+
+00:00:15.450 --> 00:00:19.443
+Heart failure is not a single signal. Physiological
+
+00:00:19.443 --> 00:00:22.438
+changes appear through movements, rhythms and
+
+00:00:22.438 --> 00:00:24.435
+measurements interpreted in context.
+
+00:00:30.450 --> 00:00:34.805
+Non-invasive and minimally invasive sensors can produce
+
+00:00:34.805 --> 00:00:38.538
+information about cardiac and circulatory physiology
+
+00:00:38.538 --> 00:00:41.649
+without requiring identical clinical procedures.
+
+00:00:45.450 --> 00:00:49.496
+The chapter surveys sensor technologies intended to
+
+00:00:49.496 --> 00:00:52.965
+help identify or predict heart-failure trajectories,
+
+00:00:52.965 --> 00:00:55.277
+with different technological trade-offs.
+
+00:01:00.450 --> 00:01:04.408
+Motion, noise, timing and patient variability all
+
+00:01:04.408 --> 00:01:08.366
+influence interpretation. A useful measurement is not
+
+00:01:08.366 --> 00:01:11.193
+automatically a useful clinical decision.
+
+00:01:15.450 --> 00:01:18.616
+Performance depends on the patient population,
+
+00:01:18.616 --> 00:01:21.782
+reference standard and timing. Distinguish a
+
+00:01:21.782 --> 00:01:24.948
+physiological measurement from a validated prediction.
+
+00:01:30.450 --> 00:01:34.465
+Predictive performance needs evidence from realistic
+
+00:01:34.465 --> 00:01:38.481
+populations and robust external testing; practical
+
+00:01:38.481 --> 00:01:41.157
+accessibility matters alongside technical
+
+00:01:41.157 --> 00:01:41.827
+sophistication.
+
+00:01:45.450 --> 00:01:48.365
+A device becomes clinically useful through evidence,
+
+00:01:48.365 --> 00:01:51.280
+not through the elegance of its dashboard.

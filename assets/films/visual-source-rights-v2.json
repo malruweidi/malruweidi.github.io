@@ -1,0 +1,1729 @@
+{
+  "version": "rights-review-2026-10-17",
+  "status": "PENDING RIGHTS AND EVIDENCE REVIEW, NOT CLEARED FOR RELEASE",
+  "original_records_preserved": true,
+  "films": 44,
+  "unique_visual_assets": 127,
+  "source_role_counts": {
+    "original_explanatory_art": 70,
+    "museum_comparative_art": 2,
+    "owner_or_lab_archive": 30,
+    "published_figure_or_research_visual": 7,
+    "conceptual_diagram": 6,
+    "supporting_context_unverified": 12
+  },
+  "remote_clips": [
+    {
+      "film": "pub-cerebral-cilia",
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4",
+      "rights": "unverified_context_footage_not_release_approved",
+      "credit": "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed."
+    },
+    {
+      "film": "pub-cerebral-cilia",
+      "url": "https://cdn.creativeclaw.co/u/8a002dd8/videos/a36572cf-79ea-4108-83c1-66794c061732.mp4",
+      "rights": "unverified_context_footage_not_release_approved",
+      "credit": "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed."
+    }
+  ],
+  "policy": "Published scientific figures and museum art may be shown only when reuse is allowed; no image is automatically licensed merely because its URL is public. Owner-supplied archival photos require subject/privacy context for public use. Original conceptual art is not primary scientific or historical evidence.",
+  "visuals": [
+    {
+      "asset": "assets/films/plates/making-medicines-keep-01.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "making-medicines-keep",
+        "pub-making-medicines-keep"
+      ],
+      "credit_examples": [
+        "Editorial reconstruction; not a photographed historical preparation",
+        "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+      ]
+    },
+    {
+      "asset": "met:451400",
+      "role": "museum_comparative_art",
+      "rights": "met_public_domain_verified_by_renderer",
+      "scene_count": 1,
+      "films": [
+        "making-medicines-keep"
+      ],
+      "credit_examples": [
+        "The Metropolitan Museum of Art, Baghdad, 1224; comparative manuscript, not a Cairo document"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/making-medicines-keep-02.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "making-medicines-keep",
+        "pub-making-medicines-keep"
+      ],
+      "credit_examples": [
+        "Editorial reconstruction of textual description; not a period manuscript",
+        "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+      ]
+    },
+    {
+      "asset": "met:446288",
+      "role": "museum_comparative_art",
+      "rights": "met_public_domain_verified_by_renderer",
+      "scene_count": 1,
+      "films": [
+        "making-medicines-keep"
+      ],
+      "credit_examples": [
+        "The Metropolitan Museum of Art, Baghdad, 1224; illustrative contemporary comparison, not a depiction of qiwām"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/making-medicines-keep-04.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "making-medicines-keep",
+        "pub-making-medicines-keep"
+      ],
+      "credit_examples": [
+        "Modern illustrative interpretation; crystallization is not a laboratory measurement from medieval Cairo",
+        "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/making-medicines-keep-05.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "making-medicines-keep",
+        "pub-making-medicines-keep"
+      ],
+      "credit_examples": [
+        "Typeset interpretation of Cairo Genizah Or.1081 J39; not a manuscript scan",
+        "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/making-medicines-keep-06.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "making-medicines-keep",
+        "pub-making-medicines-keep"
+      ],
+      "credit_examples": [
+        "Editorial conceptual diagram; historical substitution is not modern bioequivalence",
+        "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/making-medicines-keep-07.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "making-medicines-keep",
+        "pub-making-medicines-keep"
+      ],
+      "credit_examples": [
+        "Editorial interpretation of hisba discussions; not a contemporary depiction of inspections",
+        "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/making-medicines-keep-08.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "making-medicines-keep",
+        "pub-making-medicines-keep"
+      ],
+      "credit_examples": [
+        "Editorial acceptance card: article accepted by History of Pharmacy and Pharmaceuticals on 15 October 2026; not a fabricated journal cover",
+        "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+      ]
+    },
+    {
+      "asset": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 8,
+      "films": [
+        "two-materials-no-section",
+        "pub-histology-failure",
+        "feature-what-survives-the-experiment",
+        "feature-two-materials-no-section-evidence-cut"
+      ],
+      "credit_examples": [
+        "Owner's actual unsuccessful attempt",
+        "Actual failed section attempt"
+      ]
+    },
+    {
+      "asset": "assets/2026-10-13-new-photos/zebrafish-orientation-specimens.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 5,
+      "films": [
+        "two-materials-no-section",
+        "pub-histology-failure",
+        "feature-two-materials-no-section-evidence-cut"
+      ],
+      "credit_examples": [
+        "Owner-supplied original zebrafish specimens",
+        "Authentic specimen photograph; no successful histological outcome claimed"
+      ]
+    },
+    {
+      "asset": "assets/2026-10-13-new-photos/zebrafish-histology-processing.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 5,
+      "films": [
+        "two-materials-no-section",
+        "pub-histology-failure",
+        "feature-two-materials-no-section-evidence-cut"
+      ],
+      "credit_examples": [
+        "Owner-supplied original histology-processing photograph",
+        "Original preparation photograph; proposed remedies untested here"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/two-materials-no-section-03.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "two-materials-no-section",
+        "pub-histology-failure"
+      ],
+      "credit_examples": [
+        "Explanatory schematic, not an image of the actual interface",
+        "Source-bound editorial reconstruction, not an interpretable histological section"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/two-materials-no-section-06.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 3,
+      "films": [
+        "two-materials-no-section",
+        "pub-histology-failure",
+        "feature-two-materials-no-section-evidence-cut"
+      ],
+      "credit_examples": [
+        "Material-behavior hypothesis; not proof of molecular mechanism",
+        "Source-bound editorial reconstruction, not an interpretable histological section"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/what-a-bubble-can-do-01.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "what-a-bubble-can-do",
+        "feature-airway-reopening-evidence-cut"
+      ],
+      "credit_examples": [
+        "Conceptual drawing, not pulmonary patient footage",
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "role": "published_figure_or_research_visual",
+      "rights": "publisher_reuse_terms_not_yet_confirmed",
+      "scene_count": 13,
+      "films": [
+        "what-a-bubble-can-do",
+        "pub-airway-reopening",
+        "pub-flow-chamber-method",
+        "feature-what-survives-the-experiment",
+        "feature-airway-reopening-evidence-cut"
+      ],
+      "credit_examples": [
+        "Published research figure; experimental geometry",
+        "Research context from primary publication"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/what-a-bubble-can-do-02.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "what-a-bubble-can-do",
+        "feature-airway-reopening-evidence-cut"
+      ],
+      "credit_examples": [
+        "Mechanistic illustration without fabricated parameters",
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/what-a-bubble-can-do-04.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "what-a-bubble-can-do",
+        "feature-airway-reopening-evidence-cut"
+      ],
+      "credit_examples": [
+        "Illustrated readout; original data in linked paper",
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/what-a-bubble-can-do-05.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "what-a-bubble-can-do",
+        "feature-airway-reopening-evidence-cut"
+      ],
+      "credit_examples": [
+        "Conceptual comparison; consult paper for results and controls",
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/what-a-bubble-can-do-06.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "what-a-bubble-can-do",
+        "feature-airway-reopening-evidence-cut"
+      ],
+      "credit_examples": [
+        "Conceptual interpretation of scientific inference limits; no therapeutic recommendation",
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 8,
+      "films": [
+        "what-a-bubble-can-do",
+        "pub-airway-reopening",
+        "pub-gi-autoimmunity-1",
+        "pub-gi-autoimmunity-2",
+        "pub-ace2-forms",
+        "pub-microfluidic-virus",
+        "pub-cubosome-theranostics"
+      ],
+      "credit_examples": [
+        "Archival laboratory workspace; not necessarily a recording of this specific experiment",
+        "Archival laboratory workspace, not a recording of the drug exposure"
+      ]
+    },
+    {
+      "asset": "assets/lung-concept.svg",
+      "role": "conceptual_diagram",
+      "rights": "editorially_created_according_to_catalogue",
+      "scene_count": 4,
+      "films": [
+        "pub-airway-reopening",
+        "pub-flow-chamber-method"
+      ],
+      "credit_examples": [
+        "Original diagram, conceptual only",
+        "Original conceptual diagram, not the paper's exact hardware"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/airway-injury-measured.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "pub-airway-reopening"
+      ],
+      "credit_examples": [
+        "Al-Ruweidi et al., J Appl Physiol 130 (2021), DOI 10.1152/japplphysiol.00574.2020. Only reported means redrawn; the original source's variability is not assigned an unverified error-bar type."
+      ]
+    },
+    {
+      "asset": "assets/evidence-zebrafish.webp",
+      "role": "published_figure_or_research_visual",
+      "rights": "publisher_reuse_terms_not_yet_confirmed",
+      "scene_count": 4,
+      "films": [
+        "pub-cerebral-cilia",
+        "pub-zebrafish-hemodynamics",
+        "feature-what-survives-the-experiment"
+      ],
+      "credit_examples": [
+        "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed.",
+        "Zebrafish context image; the original footage is linked separately"
+      ]
+    },
+    {
+      "asset": "assets/home-archive/figure-zebrafish-microscopy.jpg",
+      "role": "published_figure_or_research_visual",
+      "rights": "publisher_reuse_terms_not_yet_confirmed",
+      "scene_count": 7,
+      "films": [
+        "pub-cerebral-cilia",
+        "pub-zebrafish-hemodynamics",
+        "pub-essay-scientific-credit"
+      ],
+      "credit_examples": [
+        "Published zebrafish research imagery",
+        "Published figure in research archive"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/cerebral-cilia-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-cerebral-cilia"
+      ],
+      "credit_examples": [
+        "Hosted CreativeClaw clip, original research-footage status unverified. Do not identify it as observed study footage or primary microscopy evidence until the source and rights are confirmed."
+      ]
+    },
+    {
+      "asset": "assets/zebrafish-concept.svg",
+      "role": "conceptual_diagram",
+      "rights": "editorially_created_according_to_catalogue",
+      "scene_count": 2,
+      "films": [
+        "pub-cerebral-cilia",
+        "pub-zebrafish-hemodynamics"
+      ],
+      "credit_examples": [
+        "Original editorial concept diagram",
+        "Original conceptual biological schematic"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/cerebral-cilia-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-cerebral-cilia"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/robo-concept.svg",
+      "role": "conceptual_diagram",
+      "rights": "editorially_created_according_to_catalogue",
+      "scene_count": 11,
+      "films": [
+        "pub-slit2-robo",
+        "pub-essay-tf-states",
+        "pub-essay-trna",
+        "pub-essay-proximity",
+        "pub-essay-adc"
+      ],
+      "credit_examples": [
+        "Simplified pathway illustration, not experimental structure",
+        "Original conceptual pathway diagram"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/slit2-robo-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-slit2-robo"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 1,
+      "films": [
+        "pub-slit2-robo"
+      ],
+      "credit_examples": [
+        "Research workspace photograph, not a patent experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/slit2-robo-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-slit2-robo"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 11,
+      "films": [
+        "pub-slit2-robo",
+        "pub-essay-life-between-diagnoses",
+        "pub-essay-ai-email",
+        "pub-essay-machine-language",
+        "pub-essay-academic-mental-health",
+        "pub-essay-scientific-credit",
+        "pub-essay-tf-states",
+        "pub-essay-trna",
+        "pub-essay-proximity",
+        "pub-essay-adc",
+        "feature-what-survives-the-experiment"
+      ],
+      "credit_examples": [
+        "Personal editorial portrait, not patent or molecular data",
+        "Contemporary author's portrait"
+      ]
+    },
+    {
+      "asset": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "role": "published_figure_or_research_visual",
+      "rights": "publisher_reuse_terms_not_yet_confirmed",
+      "scene_count": 14,
+      "films": [
+        "pub-curcumin-cyanide",
+        "pub-essay-machine-language",
+        "pub-essay-tf-states",
+        "pub-essay-potency-exposure",
+        "feature-what-survives-the-experiment",
+        "feature-ring-that-never-closed"
+      ],
+      "credit_examples": [
+        "Published study figure",
+        "Published cyanide sensor figure"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/curcumin-cyanide-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-curcumin-cyanide"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 4,
+      "films": [
+        "pub-curcumin-cyanide",
+        "pub-heterocycle-cancer",
+        "feature-ring-that-never-closed"
+      ],
+      "credit_examples": [
+        "Contemporary laboratory chemical photograph; not curcumin sample",
+        "Actual archived organic chemistry reagent photo; not proof of the project product"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/curcumin-cyanide-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-curcumin-cyanide"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/making-medicines-keep-03.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-making-medicines-keep"
+      ],
+      "credit_examples": [
+        "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+      ]
+    },
+    {
+      "asset": "assets/niosomes-concept.svg",
+      "role": "conceptual_diagram",
+      "rights": "editorially_created_according_to_catalogue",
+      "scene_count": 14,
+      "films": [
+        "pub-niosomes",
+        "pub-drug-release-twins",
+        "pub-essay-potency-exposure",
+        "pub-essay-trna",
+        "pub-essay-proximity",
+        "pub-essay-adc"
+      ],
+      "credit_examples": [
+        "Illustrative vesicle, not measured morphology",
+        "Conceptual vesicular carrier, no measured data"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/niosomes-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-niosomes"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 11,
+      "films": [
+        "pub-niosomes",
+        "pub-gi-autoimmunity-1",
+        "pub-gi-autoimmunity-2",
+        "pub-microfluidic-virus",
+        "pub-essay-tf-states",
+        "pub-essay-trna",
+        "pub-essay-proximity",
+        "feature-ring-that-never-closed"
+      ],
+      "credit_examples": [
+        "Original laboratory workspace photograph, not an assay result",
+        "Original laboratory workspace, not intestinal pathology"
+      ]
+    },
+    {
+      "asset": "assets/evidence-pulmonary.webp",
+      "role": "published_figure_or_research_visual",
+      "rights": "publisher_reuse_terms_not_yet_confirmed",
+      "scene_count": 11,
+      "films": [
+        "pub-niosomes",
+        "pub-flow-chamber-method",
+        "pub-ace2-covid-drugs",
+        "pub-gi-autoimmunity-1",
+        "pub-ace2-forms",
+        "pub-essay-potency-exposure",
+        "feature-what-survives-the-experiment"
+      ],
+      "credit_examples": [
+        "Pulmonary research-context illustration",
+        "Pulmonary research figure context; consult methods paper for exact protocols"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/niosomes-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-niosomes"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 10,
+      "films": [
+        "pub-niosomes",
+        "pub-drug-release-twins",
+        "pub-essay-ai-email",
+        "pub-essay-machine-language",
+        "pub-essay-academic-mental-health",
+        "pub-essay-potency-exposure"
+      ],
+      "credit_examples": [
+        "Original research workspace photograph",
+        "Original research workstation, not the book chapter's simulation screenshot"
+      ]
+    },
+    {
+      "asset": "assets/echo-concept.svg",
+      "role": "conceptual_diagram",
+      "rights": "editorially_created_according_to_catalogue",
+      "scene_count": 11,
+      "films": [
+        "pub-echo-cnn-lstm",
+        "pub-ace2-covid-drugs",
+        "pub-gi-autoimmunity-2",
+        "pub-heart-failure-sensors",
+        "pub-ace2-forms"
+      ],
+      "credit_examples": [
+        "Original explanatory diagram, not diagnostic clinical data",
+        "Conceptual model architecture, not the exact published CNN-LSTM figure"
+      ]
+    },
+    {
+      "asset": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 7,
+      "films": [
+        "pub-echo-cnn-lstm",
+        "pub-ace2-covid-drugs",
+        "pub-heart-failure-sensors"
+      ],
+      "credit_examples": [
+        "Original echocardiography workspace archive, not an identified pilot-study fetal image",
+        "Original workspace photo; not the study performance data"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/echo-cnn-lstm-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-echo-cnn-lstm"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/echo-cnn-lstm-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-echo-cnn-lstm"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/polymer-concept.svg",
+      "role": "conceptual_diagram",
+      "rights": "editorially_created_according_to_catalogue",
+      "scene_count": 7,
+      "films": [
+        "pub-pla-grafting",
+        "pub-pla-scaffolds",
+        "pub-micelles-pahs"
+      ],
+      "credit_examples": [
+        "Original conceptual surface-treatment diagram",
+        "Conceptual concluding illustration"
+      ]
+    },
+    {
+      "asset": "assets/home-archive/figure-pla-surface.jpg",
+      "role": "published_figure_or_research_visual",
+      "rights": "publisher_reuse_terms_not_yet_confirmed",
+      "scene_count": 6,
+      "films": [
+        "pub-pla-grafting",
+        "pub-pla-scaffolds",
+        "feature-what-survives-the-experiment"
+      ],
+      "credit_examples": [
+        "Published polymer surface research imagery; see source DOI",
+        "Study-related scientific figure; not a movie of plasma treatment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/pla-grafting-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-pla-grafting"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/evidence-biomaterials.webp",
+      "role": "published_figure_or_research_visual",
+      "rights": "publisher_reuse_terms_not_yet_confirmed",
+      "scene_count": 8,
+      "films": [
+        "pub-pla-grafting",
+        "pub-pla-scaffolds",
+        "pub-cubosome-theranostics",
+        "pub-essay-adc"
+      ],
+      "credit_examples": [
+        "Biomaterials research context, not a substitute for specific data",
+        "Existing scientific biomaterials research visual"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/pla-grafting-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-pla-grafting"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/pla-scaffolds-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-pla-scaffolds"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/pla-scaffolds-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-pla-scaffolds"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/flow-chamber-method-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-flow-chamber-method"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/flow-chamber-method-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-flow-chamber-method"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/zebrafish-larva-microscopy.webp",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 1,
+      "films": [
+        "pub-zebrafish-hemodynamics"
+      ],
+      "credit_examples": [
+        "Original zebrafish microscopy contextual still"
+      ]
+    },
+    {
+      "asset": "assets/zebrafish-embryo-microscopy.webp",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 1,
+      "films": [
+        "pub-zebrafish-hemodynamics"
+      ],
+      "credit_examples": [
+        "Zebrafish microscopy archive, specimen context must not be assigned to a specific figure"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/zebrafish-hemodynamics-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-zebrafish-hemodynamics"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/zebrafish-hemodynamics-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-zebrafish-hemodynamics"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/ace2-covid-drugs-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-ace2-covid-drugs"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/ace2-covid-drugs-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-ace2-covid-drugs"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 8,
+      "films": [
+        "pub-gi-autoimmunity-1",
+        "pub-gi-autoimmunity-2",
+        "pub-essay-machine-language",
+        "pub-essay-trna",
+        "pub-essay-adc"
+      ],
+      "credit_examples": [
+        "Original laboratory photograph, not tissue from this chapter",
+        "Laboratory context"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/gi-autoimmunity-1-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-gi-autoimmunity-1"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/gi-autoimmunity-1-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-gi-autoimmunity-1"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/gi-autoimmunity-2-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-gi-autoimmunity-2"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/gi-autoimmunity-2-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-gi-autoimmunity-2"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/heart-failure-sensors-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-heart-failure-sensors"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/heart-failure-sensors-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-heart-failure-sensors"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/ace2-forms-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-ace2-forms"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/ace2-forms-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-ace2-forms"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art/microfluidic-sensing.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 4,
+      "films": [
+        "pub-microfluidic-virus"
+      ],
+      "credit_examples": [
+        "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/microfluidic-virus-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-microfluidic-virus"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/microfluidic-virus-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-microfluidic-virus"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/drug-release-twins-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-drug-release-twins"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/drug-release-twins-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-drug-release-twins"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art/edible-printing.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 5,
+      "films": [
+        "pub-food-printing"
+      ],
+      "credit_examples": [
+        "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/food-printing-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-food-printing"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 2,
+      "films": [
+        "pub-food-printing",
+        "pub-micelles-pahs"
+      ],
+      "credit_examples": [
+        "Unrelated polymer material photograph, labelled as analogy",
+        "Original documented copolymer specimen, not proof of PAH loading"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/food-printing-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-food-printing"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art/bioceramic-lattice.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 4,
+      "films": [
+        "pub-ceramics-printing"
+      ],
+      "credit_examples": [
+        "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/ceramics-printing-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-ceramics-printing"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/ceramics-sintering-constraints.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-ceramics-printing"
+      ],
+      "credit_examples": [
+        "Ruwaidix original interpretive visual about material processing and translation; no measured test outcomes or clinical results depicted"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/ceramics-printing-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-ceramics-printing"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/ceramics-translational-gates.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-ceramics-printing"
+      ],
+      "credit_examples": [
+        "Ruwaidix original interpretive visual about material processing and translation; no measured test outcomes or clinical results depicted"
+      ]
+    },
+    {
+      "asset": "assets/films/art/cubosome-topology.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 3,
+      "films": [
+        "pub-cubosome-theranostics"
+      ],
+      "credit_examples": [
+        "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/cubosome-theranostics-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-cubosome-theranostics"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/cubosome-theranostics-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-cubosome-theranostics"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 4,
+      "films": [
+        "pub-micelles-pahs",
+        "feature-what-survives-the-experiment"
+      ],
+      "credit_examples": [
+        "Documented unsuccessful original polymer trial photo",
+        "Original failed-materials archive"
+      ]
+    },
+    {
+      "asset": "assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 1,
+      "films": [
+        "pub-micelles-pahs"
+      ],
+      "credit_examples": [
+        "Original documented unsuccessful trials, not a successful micelle synthesis"
+      ]
+    },
+    {
+      "asset": "assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 4,
+      "films": [
+        "pub-heterocycle-cancer",
+        "pub-essay-life-between-diagnoses"
+      ],
+      "credit_examples": [
+        "Original archival chemistry photograph, not a recording of microwave synthesis",
+        "Original freshman chemistry photograph, not clinical data"
+      ]
+    },
+    {
+      "asset": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 2,
+      "films": [
+        "pub-heterocycle-cancer",
+        "feature-ring-that-never-closed"
+      ],
+      "credit_examples": [
+        "Original reagent photo, not NMR spectral evidence",
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/oct12-owner-photos/yousef-hijji-anticancer-group-2019.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 2,
+      "films": [
+        "pub-heterocycle-cancer",
+        "feature-ring-that-never-closed"
+      ],
+      "credit_examples": [
+        "Original laboratory-group photo related to medicinal chemistry programme",
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 3,
+      "films": [
+        "pub-heterocycle-cancer",
+        "feature-ring-that-never-closed"
+      ],
+      "credit_examples": [
+        "Author's early laboratory photograph; illustrative context",
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/two-materials-no-section-05.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 2,
+      "films": [
+        "pub-histology-failure",
+        "feature-two-materials-no-section-evidence-cut"
+      ],
+      "credit_examples": [
+        "Source-bound editorial reconstruction, not an interpretable histological section",
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/archival-2026-10-12/cairo-mokattam-sunset-2026.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 2,
+      "films": [
+        "pub-cairo-microscope"
+      ],
+      "credit_examples": [
+        "Personal Cairo archival photograph, not a photograph of the microscope transport"
+      ]
+    },
+    {
+      "asset": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 6,
+      "films": [
+        "pub-cairo-microscope",
+        "feature-what-survives-the-experiment",
+        "feature-cairo-microscope"
+      ],
+      "credit_examples": [
+        "Original archival photograph of the user's own microscope",
+        "Original personal microscope photograph"
+      ]
+    },
+    {
+      "asset": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 5,
+      "films": [
+        "pub-cairo-microscope",
+        "feature-cairo-microscope"
+      ],
+      "credit_examples": [
+        "Original photograph of personal microscopy context",
+        "Original personal microscope-era archive"
+      ]
+    },
+    {
+      "asset": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 9,
+      "films": [
+        "pub-cairo-microscope",
+        "pub-essay-ai-email",
+        "pub-essay-machine-language",
+        "pub-essay-academic-mental-health"
+      ],
+      "credit_examples": [
+        "Original archival university context photo",
+        "Author's archival university library photo, not the recipient"
+      ]
+    },
+    {
+      "asset": "assets/2026-10-13-new-photos/august-2025-hospital-research.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 3,
+      "films": [
+        "pub-essay-life-between-diagnoses"
+      ],
+      "credit_examples": [
+        "Personal 2025 medical archive; not an image of every earlier attack",
+        "Personal 2025 illness archive; not a substitute for medical records"
+      ]
+    },
+    {
+      "asset": "assets/home-archive/childhood-portrait.jpg",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 1,
+      "films": [
+        "pub-essay-life-between-diagnoses"
+      ],
+      "credit_examples": [
+        "Archival childhood portrait, not a photograph of the later school examinations"
+      ]
+    },
+    {
+      "asset": "assets/owner-archive-2026-10-16/eosinophilic-diagnosis-dr-elsheikh-abdelrahim.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 1,
+      "films": [
+        "pub-essay-life-between-diagnoses"
+      ],
+      "credit_examples": [
+        "Personal clinical history portrait; not a dated record of the specific pre-travel event"
+      ]
+    },
+    {
+      "asset": "assets/archival-2026-10-12/university-podium-talk-2017.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 1,
+      "films": [
+        "pub-essay-ai-email"
+      ],
+      "credit_examples": [
+        "Original author presentation image, not a reenactment of the anecdote"
+      ]
+    },
+    {
+      "asset": "assets/home-archive/chemistry-chalkboard.jpg",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 8,
+      "films": [
+        "pub-essay-ai-email",
+        "pub-essay-machine-language",
+        "pub-essay-tf-states",
+        "pub-essay-potency-exposure",
+        "pub-essay-trna",
+        "pub-essay-proximity"
+      ],
+      "credit_examples": [
+        "Original chemistry chalkboard archive, metaphorical context",
+        "Archival chalkboard photograph, not text of an identified academic abstract"
+      ]
+    },
+    {
+      "asset": "assets/oct12-owner-photos/acs-chapter-recognition-2017.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 1,
+      "films": [
+        "pub-essay-academic-mental-health"
+      ],
+      "credit_examples": [
+        "Archived recognition photo, not proof of any specific mentorship interaction"
+      ]
+    },
+    {
+      "asset": "assets/home-archive/university-lab-coat.jpg",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 1,
+      "films": [
+        "pub-essay-academic-mental-health"
+      ],
+      "credit_examples": [
+        "Original author's university laboratory-coat photograph"
+      ]
+    },
+    {
+      "asset": "assets/home-archive/early-science-talk.jpg",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 3,
+      "films": [
+        "pub-essay-scientific-credit",
+        "feature-what-survives-the-experiment"
+      ],
+      "credit_examples": [
+        "Original early science presentation photo, not an image of the discovery discussed",
+        "Personal photographic archive; school anatomy lesson, 2011"
+      ]
+    },
+    {
+      "asset": "assets/2017-acs-el-sayed-group.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 3,
+      "films": [
+        "pub-essay-scientific-credit",
+        "feature-what-survives-the-experiment"
+      ],
+      "credit_examples": [
+        "Personal research-community photograph; no claim that its subjects are Nobel recipients for the essay",
+        "Archival encounter with Professor Elmostafa El-Sayed, unrelated to prize claim"
+      ]
+    },
+    {
+      "asset": "assets/photos-2017-2019/chem-squad-abdelgalil-colleagues-2019.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 1,
+      "films": [
+        "pub-essay-scientific-credit"
+      ],
+      "credit_examples": [
+        "Personal scientific colleagues photograph, general context not Nobel provenance"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/essay-potency-exposure-1.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-essay-potency-exposure"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/essay-potency-exposure-2.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "pub-essay-potency-exposure"
+      ],
+      "credit_examples": [
+        "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+      ]
+    },
+    {
+      "asset": "assets/owner-archive-2026-10-16/chem-squad-lab-medicinal-plant-extracts.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 3,
+      "films": [
+        "feature-the-laboratory-we-carried-with-us",
+        "feature-what-survives-the-experiment"
+      ],
+      "credit_examples": [
+        "Owner-supplied Chem Squad laboratory photograph; does not prove a particular extraction outcome.",
+        "Illustrative chemical interpretation. No drug efficacy implied."
+      ]
+    },
+    {
+      "asset": "assets/chem-squad-khaled-jama-mohamoud.webp",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 1,
+      "films": [
+        "feature-the-laboratory-we-carried-with-us"
+      ],
+      "credit_examples": [
+        "Verified Chem Squad member photo archive; group is independent, not an institutional laboratory."
+      ]
+    },
+    {
+      "asset": "archive/archive-7887.jpg",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 1,
+      "films": [
+        "feature-the-laboratory-we-carried-with-us"
+      ],
+      "credit_examples": [
+        "Qatar University ACS chapter archive; Chem Squad and ACS are distinct initiatives."
+      ]
+    },
+    {
+      "asset": "archive/archive-7888.jpg",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 1,
+      "films": [
+        "feature-the-laboratory-we-carried-with-us"
+      ],
+      "credit_examples": [
+        "Collective ACS activity; no photograph is attributed to a specific 29-student training session without evidence."
+      ]
+    },
+    {
+      "asset": "archive/fifth-chemistry-festival-host.webp",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 1,
+      "films": [
+        "feature-the-laboratory-we-carried-with-us"
+      ],
+      "credit_examples": [
+        "Original photograph of Mahmoud hosting the fifth Chemistry Festival."
+      ]
+    },
+    {
+      "asset": "assets/chem-squad-abdelrahman-adel-mahmoud-01.webp",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 1,
+      "films": [
+        "feature-the-laboratory-we-carried-with-us"
+      ],
+      "credit_examples": [
+        "Member photograph is a personal archive, not footage of the weekly meetings."
+      ]
+    },
+    {
+      "asset": "archive/archive-7886.jpg",
+      "role": "supporting_context_unverified",
+      "rights": "evidence_or_license_review_required",
+      "scene_count": 1,
+      "films": [
+        "feature-the-laboratory-we-carried-with-us"
+      ],
+      "credit_examples": [
+        "Chemistry gathering archive; respect equal credit and distinct scientific roles."
+      ]
+    },
+    {
+      "asset": "assets/films/art-v2/cairo-microscope-journey.svg",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "feature-cairo-microscope"
+      ],
+      "credit_examples": [
+        "Editorial geography of microscope purchase near Qasr El Einy, Cairo, and its later use at home in Qatar; not a verified exact journey path"
+      ]
+    },
+    {
+      "asset": "assets/2017-tatar-lab-internship.webp",
+      "role": "owner_or_lab_archive",
+      "rights": "ownership_or_subject_permissions_must_be_confirmed",
+      "scene_count": 2,
+      "films": [
+        "feature-cairo-microscope"
+      ],
+      "credit_examples": [
+        "Separate laboratory internship photograph · contextual only",
+        "Scientific interpretation · no measurement implied"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/what-a-bubble-can-do-03.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "feature-airway-reopening-evidence-cut"
+      ],
+      "credit_examples": [
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/what-a-bubble-can-do-07.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "feature-airway-reopening-evidence-cut"
+      ],
+      "credit_examples": [
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/what-a-bubble-can-do-08.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "feature-airway-reopening-evidence-cut"
+      ],
+      "credit_examples": [
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/two-materials-no-section-02.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "feature-two-materials-no-section-evidence-cut"
+      ],
+      "credit_examples": [
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/two-materials-no-section-07.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "feature-two-materials-no-section-evidence-cut"
+      ],
+      "credit_examples": [
+        "Editorial explanation; original context archive"
+      ]
+    },
+    {
+      "asset": "assets/films/plates/two-materials-no-section-08.webp",
+      "role": "original_explanatory_art",
+      "rights": "editorially_authored_not_primary_data",
+      "scene_count": 1,
+      "films": [
+        "feature-two-materials-no-section-evidence-cut"
+      ],
+      "credit_examples": [
+        "Editorial explanation; original context archive"
+      ]
+    }
+  ]
+}

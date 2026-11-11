@@ -1,0 +1,175 @@
+{
+  "status": "BLIND VOICE AUDITION; NO SOUND APPROVED",
+  "engine": "Kokoro ONNX",
+  "candidate_map": "Stored in this private editorial source register; do not infer actor identity.",
+  "auditions": [
+    {
+      "subject": "historical",
+      "blind_id": "A",
+      "voice": "bm_george",
+      "language": "en-gb",
+      "speed": 0.96,
+      "duration_seconds": 10.367,
+      "file": "assets/films/voice-audition-v2/historical-A.wav",
+      "sha256": "1b6a95e6662426b8163cabef6303c70120a8f7950041af85ca74afec9af1febf",
+      "pronunciation_checks": [
+        "Minhāj al-dukkān",
+        "julāb",
+        "qiwām"
+      ],
+      "script_source": "Making Medicines Keep; transliteration for listening, not an authenticated Arabic pronunciation.",
+      "transcript": "In Minhāj al-dukkān, the discussion of syrups begins with julāb, sugar and rose water. The maker judged qiwām, the desired consistency.",
+      "approval": "NOT TESTED BY HUMAN LISTENER"
+    },
+    {
+      "subject": "historical",
+      "blind_id": "B",
+      "voice": "am_michael",
+      "language": "en-us",
+      "speed": 0.99,
+      "duration_seconds": 10.135,
+      "file": "assets/films/voice-audition-v2/historical-B.wav",
+      "sha256": "d5825d9ea90f689d8f7a5aeb02297ffe5d019bf28751a932b6b55c41c7581e48",
+      "pronunciation_checks": [
+        "Minhāj al-dukkān",
+        "julāb",
+        "qiwām"
+      ],
+      "script_source": "Making Medicines Keep; transliteration for listening, not an authenticated Arabic pronunciation.",
+      "transcript": "In Minhāj al-dukkān, the discussion of syrups begins with julāb, sugar and rose water. The maker judged qiwām, the desired consistency.",
+      "approval": "NOT TESTED BY HUMAN LISTENER"
+    },
+    {
+      "subject": "historical",
+      "blind_id": "C",
+      "voice": "af_sarah",
+      "language": "en-us",
+      "speed": 0.97,
+      "duration_seconds": 8.853,
+      "file": "assets/films/voice-audition-v2/historical-C.wav",
+      "sha256": "31b53ef63308e0fd213e11f1d67d4b721fcd054511182d0254a2af21f9f9df08",
+      "pronunciation_checks": [
+        "Minhāj al-dukkān",
+        "julāb",
+        "qiwām"
+      ],
+      "script_source": "Making Medicines Keep; transliteration for listening, not an authenticated Arabic pronunciation.",
+      "transcript": "In Minhāj al-dukkān, the discussion of syrups begins with julāb, sugar and rose water. The maker judged qiwām, the desired consistency.",
+      "approval": "NOT TESTED BY HUMAN LISTENER"
+    },
+    {
+      "subject": "mechanobiology",
+      "blind_id": "A",
+      "voice": "bm_george",
+      "language": "en-gb",
+      "speed": 0.96,
+      "duration_seconds": 11.093,
+      "file": "assets/films/voice-audition-v2/mechanobiology-A.wav",
+      "sha256": "5fe3f20cac301c522c6995628b6db7ac17fef0307ee207148886232f6a1e4a26",
+      "pronunciation_checks": [
+        "L2",
+        "dexamethasone",
+        "transdehydroandrosterone"
+      ],
+      "script_source": "Dexamethasone and transdehydroandrosterone study; reported in-vitro experiment, not clinical care.",
+      "transcript": "In rat L two alveolar epithelial cells, dexamethasone and transdehydroandrosterone reduced measured injury after a single advancing bubble.",
+      "approval": "NOT TESTED BY HUMAN LISTENER"
+    },
+    {
+      "subject": "mechanobiology",
+      "blind_id": "B",
+      "voice": "am_michael",
+      "language": "en-us",
+      "speed": 0.99,
+      "duration_seconds": 11.101,
+      "file": "assets/films/voice-audition-v2/mechanobiology-B.wav",
+      "sha256": "3a78eafb1e54f2763d4d895218ac676f83adfe167e876687dbb02c172d90ec17",
+      "pronunciation_checks": [
+        "L2",
+        "dexamethasone",
+        "transdehydroandrosterone"
+      ],
+      "script_source": "Dexamethasone and transdehydroandrosterone study; reported in-vitro experiment, not clinical care.",
+      "transcript": "In rat L two alveolar epithelial cells, dexamethasone and transdehydroandrosterone reduced measured injury after a single advancing bubble.",
+      "approval": "NOT TESTED BY HUMAN LISTENER"
+    },
+    {
+      "subject": "mechanobiology",
+      "blind_id": "C",
+      "voice": "af_sarah",
+      "language": "en-us",
+      "speed": 0.97,
+      "duration_seconds": 9.919,
+      "file": "assets/films/voice-audition-v2/mechanobiology-C.wav",
+      "sha256": "44af725256ea740ce7125461f85c1e486ec8c62857d0e9ed7a984942196f09c4",
+      "pronunciation_checks": [
+        "L2",
+        "dexamethasone",
+        "transdehydroandrosterone"
+      ],
+      "script_source": "Dexamethasone and transdehydroandrosterone study; reported in-vitro experiment, not clinical care.",
+      "transcript": "In rat L two alveolar epithelial cells, dexamethasone and transdehydroandrosterone reduced measured injury after a single advancing bubble.",
+      "approval": "NOT TESTED BY HUMAN LISTENER"
+    },
+    {
+      "subject": "personal",
+      "blind_id": "A",
+      "voice": "bm_george",
+      "language": "en-gb",
+      "speed": 0.96,
+      "duration_seconds": 8.628,
+      "file": "assets/films/voice-audition-v2/personal-A.wav",
+      "sha256": "ec4c9c180a8e22d9ba1daecc6c5b6d7e9c5d09afb2b88795e39e0597c91db95a",
+      "pronunciation_checks": [
+        "microtome",
+        "agarose",
+        "paraffin"
+      ],
+      "script_source": "Owner's unsuccessful zebrafish histopathology attempt.",
+      "transcript": "At the microtome, the agarose and paraffin layers separated. I kept the photograph. There was no useful section to interpret.",
+      "approval": "NOT TESTED BY HUMAN LISTENER"
+    },
+    {
+      "subject": "personal",
+      "blind_id": "B",
+      "voice": "am_michael",
+      "language": "en-us",
+      "speed": 0.99,
+      "duration_seconds": 9.042,
+      "file": "assets/films/voice-audition-v2/personal-B.wav",
+      "sha256": "f8fc14d1bfe57d33b2646e394f9395a9a0280a9ed2d07679ceef933b9cf11fe8",
+      "pronunciation_checks": [
+        "microtome",
+        "agarose",
+        "paraffin"
+      ],
+      "script_source": "Owner's unsuccessful zebrafish histopathology attempt.",
+      "transcript": "At the microtome, the agarose and paraffin layers separated. I kept the photograph. There was no useful section to interpret.",
+      "approval": "NOT TESTED BY HUMAN LISTENER"
+    },
+    {
+      "subject": "personal",
+      "blind_id": "C",
+      "voice": "af_sarah",
+      "language": "en-us",
+      "speed": 0.97,
+      "duration_seconds": 8.085,
+      "file": "assets/films/voice-audition-v2/personal-C.wav",
+      "sha256": "54403387e9aa09c084a9a13238339e0a1a3a3c958067d6efc82832ecbf30a7ab",
+      "pronunciation_checks": [
+        "microtome",
+        "agarose",
+        "paraffin"
+      ],
+      "script_source": "Owner's unsuccessful zebrafish histopathology attempt.",
+      "transcript": "At the microtome, the agarose and paraffin layers separated. I kept the photograph. There was no useful section to interpret.",
+      "approval": "NOT TESTED BY HUMAN LISTENER"
+    }
+  ],
+  "quality_gate": {
+    "scientific_pronunciation": "NOT REVIEWED",
+    "arabic_terms": "NOT REVIEWED",
+    "emotional_delivery": "NOT REVIEWED",
+    "technical_loudness": "PRELIMINARY ONLY"
+  }
+}

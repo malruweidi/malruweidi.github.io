@@ -1,0 +1,12 @@
+{
+  "name": "microfluidic-transport",
+  "duration": 16,
+  "frame_rate": 24,
+  "size": [
+    1280,
+    720
+  ],
+  "evidence_status": "ORIGINAL CONCEPTUAL ANIMATION; NOT EXPERIMENTAL FOOTAGE",
+  "source": "scripts/render-science-motion-v2.py",
+  "sha256": "59ef50c9abd6c3a67f36955c302eb86460393df1d16bad338fb97b61b5670697"
+}

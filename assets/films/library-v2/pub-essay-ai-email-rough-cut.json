@@ -1,0 +1,78 @@
+{
+  "slug": "pub-essay-ai-email",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "72888ac2845da6e1c3469868f504ffba4a3cf668e5d0bb8554f4c808975434b4",
+  "shots": [
+    {
+      "title": "The Email That Became an Accusation",
+      "kind": "Author's archival university library photo, not the recipient",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "museum": null,
+      "credit": "Author's archival university library photo, not the recipient"
+    },
+    {
+      "title": "The crime was a polished email",
+      "kind": "Original research workstation, not the correspondence being discussed",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "museum": null,
+      "credit": "Original research workstation, not the correspondence being discussed"
+    },
+    {
+      "title": "A peculiar new etiquette",
+      "kind": "Author's archival university library photo, not the recipient",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "museum": null,
+      "credit": "Author's archival university library photo, not the recipient"
+    },
+    {
+      "title": "Aim the accusation upward",
+      "kind": "Original author presentation image, not a reenactment of the anecdote",
+      "image": "assets/archival-2026-10-12/university-podium-talk-2017.webp",
+      "museum": null,
+      "credit": "Original author presentation image, not a reenactment of the anecdote"
+    },
+    {
+      "title": "The old industry had a different name",
+      "kind": "Archival author research workspace, no actual editor invoices implied",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "museum": null,
+      "credit": "Archival author research workspace, no actual editor invoices implied"
+    },
+    {
+      "title": "The difficulty: Ideas are not grammar templates",
+      "kind": "Original chemistry chalkboard archive, metaphorical context",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "museum": null,
+      "credit": "Original chemistry chalkboard archive, metaphorical context"
+    },
+    {
+      "title": "Ideas are not grammar templates",
+      "kind": "Original chemistry chalkboard archive, metaphorical context",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "museum": null,
+      "credit": "Original chemistry chalkboard archive, metaphorical context"
+    },
+    {
+      "title": "Judge the argument",
+      "kind": "Actual editorial portrait of the author",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "museum": null,
+      "credit": "Actual editorial portrait of the author"
+    }
+  ],
+  "film_title": "The Email That Became an Accusation",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "b36805833072164579d19f861f52e96a33ee32f35d28210f6dab7b6ae24fc606"
+}

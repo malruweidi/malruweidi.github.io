@@ -1,0 +1,78 @@
+{
+  "slug": "feature-the-laboratory-we-carried-with-us",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "2f0e9ed30f24bf423401db3cbcb0ba89a0d6cc893f12c68e9ef39f559effe310",
+  "shots": [
+    {
+      "title": "An organic chemistry bench",
+      "kind": "OWNER-SUPPLIED ARCHIVE",
+      "image": "assets/owner-archive-2026-10-16/chem-squad-lab-medicinal-plant-extracts.webp",
+      "museum": null,
+      "credit": "Owner-supplied Chem Squad laboratory photograph; does not prove a particular extraction outcome."
+    },
+    {
+      "title": "From extract to evidence",
+      "kind": "EDITORIAL EXPLANATION",
+      "image": "assets/owner-archive-2026-10-16/chem-squad-lab-medicinal-plant-extracts.webp",
+      "museum": null,
+      "credit": "Illustrative chemical interpretation. No drug efficacy implied."
+    },
+    {
+      "title": "Seven chemists",
+      "kind": "COLLECTIVE ARCHIVE",
+      "image": "assets/chem-squad-khaled-jama-mohamoud.webp",
+      "museum": null,
+      "credit": "Verified Chem Squad member photo archive; group is independent, not an institutional laboratory."
+    },
+    {
+      "title": "An ACS chapter of our own",
+      "kind": "ARCHIVAL PHOTOGRAPH",
+      "image": "archive/archive-7887.jpg",
+      "museum": null,
+      "credit": "Qatar University ACS chapter archive; Chem Squad and ACS are distinct initiatives."
+    },
+    {
+      "title": "Other people learning",
+      "kind": "COMMUNITY DOCUMENTATION",
+      "image": "archive/archive-7888.jpg",
+      "museum": null,
+      "credit": "Collective ACS activity; no photograph is attributed to a specific 29-student training session without evidence."
+    },
+    {
+      "title": "The chemistry festival",
+      "kind": "PERSONAL ARCHIVE",
+      "image": "archive/fifth-chemistry-festival-host.webp",
+      "museum": null,
+      "credit": "Original photograph of Mahmoud hosting the fifth Chemistry Festival."
+    },
+    {
+      "title": "The conversations continue",
+      "kind": "CHEM SQUAD MEMBER ARCHIVE",
+      "image": "assets/chem-squad-abdelrahman-adel-mahmoud-01.webp",
+      "museum": null,
+      "credit": "Member photograph is a personal archive, not footage of the weekly meetings."
+    },
+    {
+      "title": "A shared beginning",
+      "kind": "COLLECTIVE ARCHIVE",
+      "image": "archive/archive-7886.jpg",
+      "museum": null,
+      "credit": "Chemistry gathering archive; respect equal credit and distinct scientific roles."
+    }
+  ],
+  "film_title": "The Laboratory We Carried With Us",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/evidence-in-motion.json",
+  "primary_reference": "/chem-squad.html",
+  "source_collection": "feature",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "b4389e0e15b564238d4ec07562877fdd5992b54bf74402e86fb32d125a018f9c"
+}

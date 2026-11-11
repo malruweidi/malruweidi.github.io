@@ -1,0 +1,12 @@
+{
+  "name": "ace2-shedding",
+  "duration": 16,
+  "frame_rate": 24,
+  "size": [
+    1280,
+    720
+  ],
+  "evidence_status": "ORIGINAL CONCEPTUAL ANIMATION; NOT EXPERIMENTAL FOOTAGE",
+  "source": "scripts/render-science-motion-v2.py",
+  "sha256": "c64bf3fdac1f9dc1af730f929cf5e2a09a18dae9dc388732d8b961775e260416"
+}

@@ -1,0 +1,89 @@
+{
+  "slug": "pub-food-printing",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "42b949df165e78a8776c1c550d4827d0e8a3e034edc61d7d22467c0941545fb0",
+  "shots": [
+    {
+      "title": "When food becomes a printable material",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-food-deposition.svg",
+      "museum": null,
+      "credit": "Qualitative schematic of extrusion and sagging edible filament; not laboratory footage"
+    },
+    {
+      "title": "Edible material meets geometry",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/edible-printing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "Flow first, shape second",
+      "kind": "Original scientific concept animation (not experimental data)",
+      "image": "assets/films/art-v2/food-printing-1.svg",
+      "museum": null,
+      "credit": "Qualitative edible material extrusion and sagging animation; no actual filmed printing experiment"
+    },
+    {
+      "title": "The design space expands",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-food-rheology.svg",
+      "museum": null,
+      "credit": "Generic schematic of a possible shear-thinning edible ink response; not experimental rheometry"
+    },
+    {
+      "title": "Microstructure is invisible to the recipe",
+      "kind": "Unrelated polymer material photograph, labelled as analogy",
+      "image": "assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp",
+      "museum": null,
+      "credit": "Unrelated polymer material photograph, labelled as analogy"
+    },
+    {
+      "title": "The difficulty: Do not mistake possibility for validation",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/food-printing-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Do not mistake possibility for validation",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/edible-printing.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    },
+    {
+      "title": "An architecture has to survive deposition",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-food-shape.svg",
+      "museum": null,
+      "credit": "Conceptual comparison of printed shape retention and slumping; not study measurements"
+    }
+  ],
+  "film_title": "When food becomes a printable material",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/#publications",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [
+    {
+      "scene": 3,
+      "video": "assets/films/animations-v2/edible-extrusion.mp4",
+      "credit": "Qualitative edible material extrusion and sagging animation; no actual filmed printing experiment",
+      "kind": "Original scientific concept animation (not experimental data)",
+      "source_sha256": "cc7bbdb61f9375d66baf3dd5764de66324bd67648920c11ef796f6e4bea2dd84"
+    }
+  ],
+  "input_sha256": "54c4c540749e77b39e83a380fbad830bccddf3dfe7f1be760b326761056ebb47"
+}

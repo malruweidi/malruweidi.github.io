@@ -1,0 +1,85 @@
+{
+  "slug": "feature-cairo-microscope",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "e92a9d95cb48856a72186285bd28af0aa049bcd42882844de9bc83bbe64b21e6",
+  "shots": [
+    {
+      "title": "An ordinary morning",
+      "kind": "archive",
+      "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "museum": null,
+      "credit": "Original personal photograph · full image"
+    },
+    {
+      "title": "Qasr El Einy → Qatar",
+      "kind": "Original geographic context diagram",
+      "image": "assets/films/art-v2/cairo-microscope-journey.svg",
+      "museum": null,
+      "credit": "Editorial geography of microscope purchase near Qasr El Einy, Cairo, and its later use at home in Qatar; not a verified exact journey path"
+    },
+    {
+      "title": "A microscope of my own",
+      "kind": "archive",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "museum": null,
+      "credit": "Personal microscope photograph · original archive"
+    },
+    {
+      "title": "Inside the scheduled laboratory",
+      "kind": "context",
+      "image": "assets/2017-tatar-lab-internship.webp",
+      "museum": null,
+      "credit": "Separate laboratory internship photograph · contextual only"
+    },
+    {
+      "title": "No assigned experiment",
+      "kind": "archive",
+      "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "museum": null,
+      "credit": "Original personal photograph · editorial detail composition"
+    },
+    {
+      "title": "The freedom to return",
+      "kind": "typography",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "museum": null,
+      "credit": "First-person recollection · editorial typography"
+    },
+    {
+      "title": "Seeing is not knowing",
+      "kind": "typography",
+      "image": "assets/2017-tatar-lab-internship.webp",
+      "museum": null,
+      "credit": "Scientific interpretation · no measurement implied"
+    },
+    {
+      "title": "Among ordinary things",
+      "kind": "archive",
+      "image": "assets/photos-2017-2019/microscope-morning-still-life-2017.webp",
+      "museum": null,
+      "credit": "Personal microscope photograph · full source retained"
+    },
+    {
+      "title": "The microscope from Cairo",
+      "kind": "archive",
+      "image": "assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+      "museum": null,
+      "credit": "Original personal photograph · no experiment claimed"
+    }
+  ],
+  "film_title": "The Microscope I Brought From Cairo",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/cairo-microscope-scenes.json",
+  "primary_reference": "/stories.html#personal-microscope",
+  "source_collection": "feature",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "c23349fb4330e975d0c76f3a4086cbc19fabd43166b0a02641ad3dd1f2a5f6d2"
+}

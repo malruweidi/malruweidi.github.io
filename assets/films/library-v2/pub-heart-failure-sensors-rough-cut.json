@@ -1,0 +1,81 @@
+{
+  "slug": "pub-heart-failure-sensors",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "a1ee442483da39a183ffef5980b72cf7d048acaf6726cc4b9df39967fcb6c950",
+  "shots": [
+    {
+      "title": "Listening for a failing heart",
+      "kind": "Conceptual cardiac detection diagram",
+      "image": "assets/echo-concept.svg",
+      "museum": null,
+      "credit": "Conceptual cardiac detection diagram"
+    },
+    {
+      "title": "Can the heart warn us early?",
+      "kind": "Original cardiac imaging workstation, not data used in the review",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "museum": null,
+      "credit": "Original cardiac imaging workstation, not data used in the review"
+    },
+    {
+      "title": "Signals outside the operating room",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/heart-failure-sensors-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "From measurement to prediction",
+      "kind": "Archival Doppler apparatus, not heart-failure sensor comparison",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "museum": null,
+      "credit": "Archival Doppler apparatus, not heart-failure sensor comparison"
+    },
+    {
+      "title": "A signal can mislead",
+      "kind": "Original explanatory depiction, not validated sensor output",
+      "image": "assets/echo-concept.svg",
+      "museum": null,
+      "credit": "Original explanatory depiction, not validated sensor output"
+    },
+    {
+      "title": "The difficulty: The validation question",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/heart-failure-sensors-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The validation question",
+      "kind": "Imaging-context photograph",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "museum": null,
+      "credit": "Imaging-context photograph"
+    },
+    {
+      "title": "A technology belongs to its use",
+      "kind": "Conceptual technology animation source",
+      "image": "assets/echo-concept.svg",
+      "museum": null,
+      "credit": "Conceptual technology animation source"
+    }
+  ],
+  "film_title": "Listening for a failing heart",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1002/9781119813040.ch5",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [],
+  "input_sha256": "efcbf3a9126a6b14d4203589b3ca32b649be99fa71ea2c172837965d1acc9a67"
+}

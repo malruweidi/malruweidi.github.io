@@ -1,0 +1,32 @@
+name: Validate free local Chatterbox Nano narration planning
+on:
+  push:
+    branches:
+      - cinematic-remake-20261017
+    paths:
+      - scripts/voice-chatterbox-nano-v3.py
+      - tests/voice-chatterbox-nano-v3.test.cjs
+      - .github/workflows/film-narration-nano-v3.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  cpu-narration-plan-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test evidence-locked scripts without downloading speech models
+        run: |
+          python -m py_compile scripts/voice-chatterbox-nano-v3.py
+          node --test tests/voice-chatterbox-nano-v3.test.cjs
+      - name: Confirm protected local voice plan
+        run: |
+          python scripts/voice-chatterbox-nano-v3.py --film pub-airway-reopening --plan-only > /tmp/voice-plan.json
+          python -c "import json; p=json.load(open('/tmp/voice-plan.json')); assert p['never_auto_publish'] and p['no_voice_identity_assumed']; print('LOCAL CPU AUDITION PLAN VALID / NO API OR MODEL PURCHASE')"

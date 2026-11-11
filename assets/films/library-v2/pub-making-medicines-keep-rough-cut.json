@@ -1,0 +1,89 @@
+{
+  "slug": "pub-making-medicines-keep",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_lewis",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "6bf7a5eda32a566d07327a0afc1d22fd4f8f072993d6926347a1d7564355ea80",
+  "shots": [
+    {
+      "title": "How did medieval medicines keep?",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-01.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "The medicine had to last",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-02.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "A handbook for a working pharmacy",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-03.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "Why syrup matters",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "image": "assets/films/plates/making-medicines-keep-04.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography. Animation: Illustrative material sequence, not period footage, a recipe reconstruction, chemical time-lapse, or evidence of a particular Cairo shop. Historical preparation logic; not filmed medieval compounding."
+    },
+    {
+      "title": "Substitution is a serious decision",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-05.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "The difficulty: Reading against the temptation to romanticise",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-06.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "Reading against the temptation to romanticise",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-07.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    },
+    {
+      "title": "What a medicine could keep",
+      "kind": "Original editorial reconstruction; explicitly not a primary manuscript or historical photograph",
+      "image": "assets/films/plates/making-medicines-keep-08.webp",
+      "museum": null,
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography"
+    }
+  ],
+  "film_title": "How did medieval medicines keep?",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/#history",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [
+    {
+      "scene": 4,
+      "video": "assets/films/motion-v2/historical-syrup.mp4",
+      "credit": "Author-created interpretation of written medieval pharmacy evidence. No fabricated manuscript scan or period photography. Animation: Illustrative material sequence, not period footage, a recipe reconstruction, chemical time-lapse, or evidence of a particular Cairo shop. Historical preparation logic; not filmed medieval compounding.",
+      "kind": "Source-based editorial animated explanation; not an observed experiment or period recording",
+      "source_sha256": "edbe1104307f771fbb3bb38ba66f41f888af7fc3bf71d3b10b299046679a8367"
+    }
+  ],
+  "input_sha256": "2cf5a032b69762a2bcfe2f2f591d9a60efb485200da1391018d78b09ef2d4edd"
+}

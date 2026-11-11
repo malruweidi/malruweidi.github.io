@@ -1,0 +1,81 @@
+{
+  "slug": "pub-echo-cnn-lstm",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bf_emma",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "e61248e8d25f8b3f35aefe761c60202ead38775963828db4e914acb0814ae5d7",
+  "shots": [
+    {
+      "title": "Can an algorithm read a moving heart?",
+      "kind": "Original explanatory diagram, not diagnostic clinical data",
+      "image": "assets/echo-concept.svg",
+      "museum": null,
+      "credit": "Original explanatory diagram, not diagnostic clinical data"
+    },
+    {
+      "title": "A heart before birth",
+      "kind": "Original echocardiography workspace archive, not an identified pilot-study fetal image",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "museum": null,
+      "credit": "Original echocardiography workspace archive, not an identified pilot-study fetal image"
+    },
+    {
+      "title": "The data must be prepared",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/echo-cnn-lstm-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Space and time",
+      "kind": "Conceptual model architecture, not the exact published CNN-LSTM figure",
+      "image": "assets/echo-concept.svg",
+      "museum": null,
+      "credit": "Conceptual model architecture, not the exact published CNN-LSTM figure"
+    },
+    {
+      "title": "A pilot, not a hospital device",
+      "kind": "Original workspace photo; not the study performance data",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "museum": null,
+      "credit": "Original workspace photo; not the study performance data"
+    },
+    {
+      "title": "The difficulty: What counts as success?",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/echo-cnn-lstm-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "What counts as success?",
+      "kind": "Editorial machine-learning interpretation; see original paper for actual metrics",
+      "image": "assets/echo-concept.svg",
+      "museum": null,
+      "credit": "Editorial machine-learning interpretation; see original paper for actual metrics"
+    },
+    {
+      "title": "The clinician stays in the picture",
+      "kind": "Archived imaging instrumentation; published paper linked separately",
+      "image": "assets/research-archive-2026/echocardiography-spectral-doppler-workstation.webp",
+      "museum": null,
+      "credit": "Archived imaging instrumentation; published paper linked separately"
+    }
+  ],
+  "film_title": "Can an algorithm read a moving heart?",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.1109/ACCESS.2023.3316719",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [],
+  "input_sha256": "8004d2ca2d7b4fb7c2f4d173fef8311ff28bf35f1c6ac1ab8bec8a4598032f0c"
+}

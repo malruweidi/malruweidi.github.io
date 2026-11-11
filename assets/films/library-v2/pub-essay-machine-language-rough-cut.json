@@ -1,0 +1,78 @@
+{
+  "slug": "pub-essay-machine-language",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "f51230f4d1092b061e7dd0a1cf519d5b192465907a8156a5e405e702f1c994fa",
+  "shots": [
+    {
+      "title": "Who Taught Humans to Write Like Machines?",
+      "kind": "Author's university library archive, not an institutional policy document",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "museum": null,
+      "credit": "Author's university library archive, not an institutional policy document"
+    },
+    {
+      "title": "The style existed before the chatbot",
+      "kind": "Archival chalkboard photograph, not text of an identified academic abstract",
+      "image": "assets/home-archive/chemistry-chalkboard.jpg",
+      "museum": null,
+      "credit": "Archival chalkboard photograph, not text of an identified academic abstract"
+    },
+    {
+      "title": "Train a person to sound acceptable",
+      "kind": "Author's university library archive, not an institutional policy document",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "museum": null,
+      "credit": "Author's university library archive, not an institutional policy document"
+    },
+    {
+      "title": "Then punish the imitation",
+      "kind": "Research computer workspace used as editorial context",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "museum": null,
+      "credit": "Research computer workspace used as editorial context"
+    },
+    {
+      "title": "A detector cannot read a mind",
+      "kind": "Scientific figure used to evoke actual measurable evidence, not an AI-detection assay",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Scientific figure used to evoke actual measurable evidence, not an AI-detection assay"
+    },
+    {
+      "title": "The difficulty: Ask a more difficult question",
+      "kind": "Original laboratory image; methodological metaphor rather than evidence of AI authorship",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "museum": null,
+      "credit": "Original laboratory image; methodological metaphor rather than evidence of AI authorship"
+    },
+    {
+      "title": "Ask a more difficult question",
+      "kind": "Original laboratory image; methodological metaphor rather than evidence of AI authorship",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "museum": null,
+      "credit": "Original laboratory image; methodological metaphor rather than evidence of AI authorship"
+    },
+    {
+      "title": "Restore the right standard",
+      "kind": "Author's editorial portrait",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "museum": null,
+      "credit": "Author's editorial portrait"
+    }
+  ],
+  "film_title": "Who Taught Humans to Write Like Machines?",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "91bdf2c9f3570a37a82ab03a15430ef11d35a525f0f6d9bb110d7ecf5b11b022"
+}

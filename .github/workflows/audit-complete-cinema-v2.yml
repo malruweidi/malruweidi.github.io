@@ -1,0 +1,58 @@
+name: Technical screening and real-frame audit of all 44 films
+on:
+  push:
+    branches:
+      - cinematic-remake-20261017
+    paths:
+      - assets/films/cinematic-library-v2.json
+      - assets/films/library-v2/**
+      - scripts/render-contact-sheet-v2.py
+      - .github/workflows/audit-complete-cinema-v2.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ruwaidix-film-v2-audit
+  cancel-in-progress: false
+jobs:
+  actual-screening:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[v2-qa]')
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install frame decoder and typography
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install pillow
+      - name: Decode and independently screen actual audio-video files
+        run: python scripts/render-contact-sheet-v2.py
+      - name: Preserve actual contact frames and objective QA findings
+        run: |
+          git config user.name "Ruwaidix Film Auditor"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/films/visual-audit-v2/
+          if ! git diff --cached --quiet; then
+            git commit -m "Screen 44 actual MP4s with storyboard freshness checks [v2-qa]"
+            for n in 1 2 3 4 5 6; do
+              git fetch origin cinematic-remake-20261017
+              git rebase FETCH_HEAD
+              if git push origin HEAD:cinematic-remake-20261017; then break; fi
+              sleep 3
+            done
+          fi
+      - name: Refuse false technical approval or incomplete output inventory
+        run: |
+          python - <<'PY'
+          import json
+          report=json.load(open("assets/films/visual-audit-v2/screening-results.json"))
+          assert report["exports_examined"]==44,report["exports_examined"]
+          failures=[(x["slug"],x["issues"]) for x in report["films"] if x["issues"]]
+          assert not failures,failures
+          assert report["status"]=="TECHNICAL AUDIT ONLY, NOT ARTISTIC APPROVAL"
+          print("Technical check of all 44 MP4s passed. No artistic, narrator or rights approval asserted.")
+          PY

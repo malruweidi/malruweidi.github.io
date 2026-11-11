@@ -1,0 +1,1047 @@
+{
+  "status": "TECHNICAL SCREENING; NOT FINAL ARTISTIC APPROVAL",
+  "date_utc": "2026-10-16T23:29:59Z",
+  "expected": 44,
+  "export_files": 44,
+  "current": 38,
+  "outdated_or_invalid": 6,
+  "human_approved": 0,
+  "failed": [
+    "pub-food-printing",
+    "pub-ceramics-printing",
+    "feature-what-survives-the-experiment",
+    "feature-ring-that-never-closed",
+    "feature-airway-reopening-evidence-cut",
+    "feature-two-materials-no-section-evidence-cut"
+  ],
+  "films": [
+    {
+      "id": "making-medicines-keep",
+      "title": "The Medicine in the Jar",
+      "duration_expected": 120,
+      "source_script": "assets/films/directors-cuts-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "f263c874022e6b98709976cefb4458b47902c740b73f237fc41fa7e8dddda718",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "two-materials-no-section",
+      "title": "No Section Came Off the Blade",
+      "duration_expected": 120,
+      "source_script": "assets/films/directors-cuts-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "b3abde265b13259700b494f8771e6043b6ed691a59963853444bf9c64e13f27c",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "what-a-bubble-can-do",
+      "title": "The Moment an Airway Reopens",
+      "duration_expected": 120,
+      "source_script": "assets/films/directors-cuts-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "c5e78b0e51bf6f5f94cabe1faf8e738969111461585920ffac381c6ccecf135a",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-airway-reopening",
+      "title": "A breath can injure",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "a8ff9dc437430889339ac8f36300deb1d0cf966f51998f5183740ce460d0d407",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-cerebral-cilia",
+      "title": "How does a vessel know the blood is moving?",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "4ac8c67d344ff47d95087fb546e43e895ed2615615741b278bd75144fdaeec2a",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-slit2-robo",
+      "title": "The target that can change sides",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "f9acc6c9364a55ff9b23b71347be3e60721645aeefca53605e62caba5f6580bd",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-curcumin-cyanide",
+      "title": "When a molecule becomes a question",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "32db4f8d5d50a6848f9d7df397a66fde3dc5ac315a36491c563567298a31c0eb",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-making-medicines-keep",
+      "title": "How did medieval medicines keep?",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "d7304feb48a04492866f3ebcbdaed828ad4299ad2660d4623e0efa092d38b57a",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-niosomes",
+      "title": "Will the medicine survive the nebulizer?",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "21b98a9e239e5eb5b8a6e2e877803f66e7c450b0fb5cae65ff2fe0c87d9a0656",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-echo-cnn-lstm",
+      "title": "Can an algorithm read a moving heart?",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "e787ef0b5c7767be3a5318dc81a7e056847b4854f42df5d05734b15299083ff1",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-pla-grafting",
+      "title": "The surface is not the material",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "127c454da82001f999373220c7b37bcc56420c8e9d3b585577546114d6420446",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-pla-scaffolds",
+      "title": "A scaffold meets its environment",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "d8e17161cde308ce1dd686ce93bd9d21ddfa5b1b8c12d4f2a01293d5ae24954c",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-flow-chamber-method",
+      "title": "How to make a reproducible injury",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "83967dea76bdabc0524f81e71b2d747e2ca998ea33d53f57cab968b8d2e8b6ef",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-zebrafish-hemodynamics",
+      "title": "A heartbeat in high-speed frames",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "c4291c280a732a00b5418e8c6509d6b34a4e9070e66b6a779a7c28033bf3909a",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-ace2-covid-drugs",
+      "title": "An enzyme, a receptor, a clinical question",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "1873f53b188ecda98c77219a5b2886c0fd8a3082bc5d32893432ccf060d8db3b",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-gi-autoimmunity-1",
+      "title": "What happens when immunity turns on the gut?",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "c9fd9bc1bbf902e729077ba7b09133006555f90435f0126d5886864579561f76",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-gi-autoimmunity-2",
+      "title": "The diagnostic problem",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "984f367f80b143d04a826e85f9ba79839980d5cb7a06313df13293db721459e8",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-heart-failure-sensors",
+      "title": "Listening for a failing heart",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "8ccff23674be1ee7ab81f2645f73ad65a36de355097b9ae2d15d9d9e5c8c4aa5",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-ace2-forms",
+      "title": "Two lives of ACE2",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "a048c075cf44188e31e745327ab87f9b9640a4e20793d40097eeadc533e5012e",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-microfluidic-virus",
+      "title": "A laboratory shrunk into a channel",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "a3143017034b8c30cb9c44522466c742d5f1244d8051f3053f7be88b46352745",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-drug-release-twins",
+      "title": "What can a digital twin predict?",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "e04ad4a4e2f31c11e6ebb420da34b2d31d68dc52af0aa97d6170085d6cea4d84",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-food-printing",
+      "title": "When food becomes a printable material",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [
+        "Old source digest: render must be regenerated"
+      ],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "63a0e5abd1a288a69e021db04ab7e53bc21ebdad39674039833a6cbd278d344b",
+      "voice_mode": "kokoro-preview",
+      "technical_current": false
+    },
+    {
+      "id": "pub-ceramics-printing",
+      "title": "A structure the body must tolerate",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [
+        "Old source digest: render must be regenerated"
+      ],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "6864673f1871443c87caf23ab6adbb5853827b9e398c63fd25ccbbebcae6d231",
+      "voice_mode": "kokoro-preview",
+      "technical_current": false
+    },
+    {
+      "id": "pub-cubosome-theranostics",
+      "title": "The difficult promise of a cubic carrier",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "b6226bf23852a70233064a4ba6847e7f229173abb9d1aa8288ebf3d25122c430",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-micelles-pahs",
+      "title": "A polymer meets an insoluble problem",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "8905dc07650c15ae1378e112b96f74d44818ffb15166550bdeb17eedd2dc209c",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-heterocycle-cancer",
+      "title": "Build the heterocycle, then challenge the hypothesis",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "bb39623f1bc5199a5346d470e925aa676b8802c553ae706cee2a4b3e8d0ae867",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-histology-failure",
+      "title": "Two materials. No section.",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "3c32217a2ed8b15e074ab76335389f011a6703b2a4ccf2d4775cdc117e22e176",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-cairo-microscope",
+      "title": "The microscope that made curiosity independent",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "16d890aa7be15c08da81c2d31536c28b2c2924de1ab590bef08973411dec77d2",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-essay-life-between-diagnoses",
+      "title": "When the Count Could Not Describe the Pain",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "2f0e0e46e036f0bda6b2f0428e45d601f971f2a5ca460eaa39749349e4020919",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-essay-ai-email",
+      "title": "The Email That Became an Accusation",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "72888ac2845da6e1c3469868f504ffba4a3cf668e5d0bb8554f4c808975434b4",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-essay-machine-language",
+      "title": "Who Taught Humans to Write Like Machines?",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "f51230f4d1092b061e7dd0a1cf519d5b192465907a8156a5e405e702f1c994fa",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-essay-academic-mental-health",
+      "title": "The Things an Academic CV Cannot Hold",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "6d1f492d821169cb80c2248671ed7f7ef198406406b4316876bef584af25030c",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-essay-scientific-credit",
+      "title": "Three Names on the Medal, Hundreds in the Record",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "22f90ec9620e15152df64b69291d9590f158847c66d7ba7d6609f765652cfe75",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-essay-tf-states",
+      "title": "The Target Has More Than One Shape",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "cede8e4671d7c3c02a3e80b343c585a94c15d96c820d0413fa1438760005a569",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-essay-potency-exposure",
+      "title": "The Nanomolar Mirage",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "86a3c50f8031c85d1dbcb257552fc21b3b598768b681815eb1b36b2af100a163",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-essay-trna",
+      "title": "The Molecule Behind Every Protein",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "9d7d221e2b8b3a354e09ce9febcbc7ef6d29d2609acd4bf31d46f8917ed8cbd0",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-essay-proximity",
+      "title": "When a Drug Makes Two Proteins Meet",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "a592ac448b2cf893acddb4f088cbc24f431308448248665627765dc0b9174dce",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "pub-essay-adc",
+      "title": "The Antibody Is Only the Beginning",
+      "duration_expected": 120,
+      "source_script": "assets/films/publication-series-directors-v2.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "3aead23b03f56e42426468689b0e0601c34c82649f7ad72d94e94cb42512caad",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "feature-the-laboratory-we-carried-with-us",
+      "title": "The Laboratory We Carried With Us",
+      "duration_expected": 120,
+      "source_script": "assets/films/evidence-in-motion.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "2f0e9ed30f24bf423401db3cbcb0ba89a0d6cc893f12c68e9ef39f559effe310",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "feature-what-survives-the-experiment",
+      "title": "What Survives the Experiment",
+      "duration_expected": 156,
+      "source_script": "assets/films/what-survives-scenes.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [
+        "Old source digest: render must be regenerated",
+        "Export length contradicts approved scene plan"
+      ],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 168.0,
+      "sha256": "0a1541e3eb3416bc217fc749977b40005704213e3a13960cbc4939c7f728f81d",
+      "voice_mode": "kokoro-preview",
+      "technical_current": false
+    },
+    {
+      "id": "feature-cairo-microscope",
+      "title": "The Microscope I Brought From Cairo",
+      "duration_expected": 120,
+      "source_script": "assets/films/cairo-microscope-scenes.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "e92a9d95cb48856a72186285bd28af0aa049bcd42882844de9bc83bbe64b21e6",
+      "voice_mode": "kokoro-preview",
+      "technical_current": true
+    },
+    {
+      "id": "feature-ring-that-never-closed",
+      "title": "The Ring That Never Closed",
+      "duration_expected": 150,
+      "source_script": "assets/films/ring-that-never-closed-scenes.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [
+        "Old source digest: render must be regenerated",
+        "Export length contradicts approved scene plan"
+      ],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 131.0,
+      "sha256": "a27e115cdb4489f2877d07cf95b200059e7567f1bad538f0a07b4ddb2f0ad76c",
+      "voice_mode": "kokoro-preview",
+      "technical_current": false
+    },
+    {
+      "id": "feature-airway-reopening-evidence-cut",
+      "title": "A Bubble Against an Epithelium: What the Numbers Show",
+      "duration_expected": 153,
+      "source_script": "assets/films/airway-reopening-evidence-scenes.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [
+        "Old source digest: render must be regenerated",
+        "Export length contradicts approved scene plan"
+      ],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 138.0,
+      "sha256": "1103fd1c0c0c83b7253a78f439b9e04949633033bff50fe68fa02aa018e14a07",
+      "voice_mode": "kokoro-preview",
+      "technical_current": false
+    },
+    {
+      "id": "feature-two-materials-no-section-evidence-cut",
+      "title": "The Material Boundary: An Unsuccessful Histology Attempt",
+      "duration_expected": 150,
+      "source_script": "assets/films/two-materials-scenes.json",
+      "release_status": "NOT APPROVED",
+      "approval": {
+        "image_rights": false,
+        "scientific_readthrough": false,
+        "voice_pronunciation": false,
+        "picture_edit": false,
+        "caption_listening": false,
+        "mobile_playback": false
+      },
+      "errors": [
+        "Old source digest: render must be regenerated",
+        "Export length contradicts approved scene plan"
+      ],
+      "warnings": [
+        "Audition-only synthetic voice; not the approved final narrator"
+      ],
+      "duration_actual": 120.0,
+      "sha256": "8f50c5fe102e381970f056f6430330c38e405c01de2b3612ef6cb7181853085d",
+      "voice_mode": "kokoro-preview",
+      "technical_current": false
+    }
+  ]
+}

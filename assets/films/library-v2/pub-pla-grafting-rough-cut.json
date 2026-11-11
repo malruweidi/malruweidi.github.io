@@ -1,0 +1,81 @@
+{
+  "slug": "pub-pla-grafting",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "am_michael",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "5882833d0c64a9de479197b0fe1d01f3b3fac6751c117ee683f46507debb4aa7",
+  "shots": [
+    {
+      "title": "The surface is not the material",
+      "kind": "Original conceptual surface-treatment diagram",
+      "image": "assets/polymer-concept.svg",
+      "museum": null,
+      "credit": "Original conceptual surface-treatment diagram"
+    },
+    {
+      "title": "One material, two surfaces",
+      "kind": "Published polymer surface research imagery; see source DOI",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "museum": null,
+      "credit": "Published polymer surface research imagery; see source DOI"
+    },
+    {
+      "title": "What plasma does",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/pla-grafting-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Choose the groups",
+      "kind": "Study-related scientific figure; not a movie of plasma treatment",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "museum": null,
+      "credit": "Study-related scientific figure; not a movie of plasma treatment"
+    },
+    {
+      "title": "The instrument tests the story",
+      "kind": "Biomaterials research context, not a substitute for specific data",
+      "image": "assets/evidence-biomaterials.webp",
+      "museum": null,
+      "credit": "Biomaterials research context, not a substitute for specific data"
+    },
+    {
+      "title": "The difficulty: A surface is a boundary",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/pla-grafting-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "A surface is a boundary",
+      "kind": "Published surface characterization imagery",
+      "image": "assets/home-archive/figure-pla-surface.jpg",
+      "museum": null,
+      "credit": "Published surface characterization imagery"
+    },
+    {
+      "title": "Why the outside matters",
+      "kind": "Conceptual concluding illustration",
+      "image": "assets/polymer-concept.svg",
+      "museum": null,
+      "credit": "Conceptual concluding illustration"
+    }
+  ],
+  "film_title": "The surface is not the material",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.3390/polym13213717",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [],
+  "input_sha256": "c00eb0294ff07202a8f7f9c8b56f61d39563c6d02d18405a644d7c929bd53dfa"
+}

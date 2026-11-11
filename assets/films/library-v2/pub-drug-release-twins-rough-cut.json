@@ -1,0 +1,81 @@
+{
+  "slug": "pub-drug-release-twins",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bf_emma",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "38ccb1f7b9be32abba937c565af01f3e342e4855415eab2dd171b2365657c366",
+  "shots": [
+    {
+      "title": "What can a digital twin predict?",
+      "kind": "Original research workstation, not the book chapter's simulation screenshot",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "museum": null,
+      "credit": "Original research workstation, not the book chapter's simulation screenshot"
+    },
+    {
+      "title": "A medicine can have a second life in a model",
+      "kind": "Original conceptual drug-carrier drawing",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Original conceptual drug-carrier drawing"
+    },
+    {
+      "title": "Begin with the variables",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/drug-release-twins-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "What is being predicted?",
+      "kind": "Conceptual carrier visual, not computed simulation output",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Conceptual carrier visual, not computed simulation output"
+    },
+    {
+      "title": "A digital twin is accountable to reality",
+      "kind": "Actual computer/research workspace; no claims of model-validation success",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "museum": null,
+      "credit": "Actual computer/research workspace; no claims of model-validation success"
+    },
+    {
+      "title": "The difficulty: Ask where the prediction breaks",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/drug-release-twins-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Ask where the prediction breaks",
+      "kind": "Editorial illustration, not measured release profile",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "Editorial illustration, not measured release profile"
+    },
+    {
+      "title": "The point is better experiments",
+      "kind": "Archival computational research context",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "museum": null,
+      "credit": "Archival computational research context"
+    }
+  ],
+  "film_title": "What can a digital twin predict?",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.70593/978-93-7185-824-3",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [],
+  "input_sha256": "6b19f973512e27e38f83478a645d05a561f98a805c6e075f90a0c41de275194e"
+}

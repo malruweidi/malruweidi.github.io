@@ -1,0 +1,183 @@
+{
+  "status": "AUDIO AUDITIONS ONLY - NOT RELEASED",
+  "engine": "Kokoro ONNX v1.0; no voice cloning",
+  "decision_rule": "A person must listen, verify technical pronunciation and select a voice before full rerecording",
+  "auditions": [
+    {
+      "sample": "pub-airway-reopening-01-bm_lewis",
+      "narrator": "bm_lewis",
+      "voice_type": "British male",
+      "film": "pub-airway-reopening",
+      "scene": 1,
+      "transcript": "An airway reopening sounds like relief. On the scale of an epithelial monolayer, the arriving air–liquid interface can be an injury event.",
+      "file": "pub-airway-reopening-01-bm_lewis.m4a",
+      "sha256": "de6719ce8113370e141552704374adc1054ce0588359d9678111ec71284a10da",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "pub-airway-reopening-01-am_michael",
+      "narrator": "am_michael",
+      "voice_type": "American male",
+      "film": "pub-airway-reopening",
+      "scene": 1,
+      "transcript": "An airway reopening sounds like relief. On the scale of an epithelial monolayer, the arriving air–liquid interface can be an injury event.",
+      "file": "pub-airway-reopening-01-am_michael.m4a",
+      "sha256": "4e3a4febea3c4fe1f27cc76d42039b56221447a2d9ed264ffd87dfe31bc1531d",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "pub-airway-reopening-01-bm_george",
+      "narrator": "bm_george",
+      "voice_type": "British male (legacy comparison)",
+      "film": "pub-airway-reopening",
+      "scene": 1,
+      "transcript": "An airway reopening sounds like relief. On the scale of an epithelial monolayer, the arriving air–liquid interface can be an injury event.",
+      "file": "pub-airway-reopening-01-bm_george.m4a",
+      "sha256": "e48a017f1e80bc05ac6c8992cefdb435dd6bab7e46a1d4f622410322d50d69c6",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "pub-airway-reopening-01-bf_emma",
+      "narrator": "bf_emma",
+      "voice_type": "British female (voicecasting comparison)",
+      "film": "pub-airway-reopening",
+      "scene": 1,
+      "transcript": "An airway reopening sounds like relief. On the scale of an epithelial monolayer, the arriving air–liquid interface can be an injury event.",
+      "file": "pub-airway-reopening-01-bf_emma.m4a",
+      "sha256": "46fc23b7819776c5cadad228975f2800dd1356554c15b7191f276bc7591613c9",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "pub-airway-reopening-06-bm_lewis",
+      "narrator": "bm_lewis",
+      "voice_type": "British male",
+      "film": "pub-airway-reopening",
+      "scene": 6,
+      "transcript": "In the untreated bubble-exposed group, 54.7 percent of cells were dead. With dexamethasone pretreatment, it was 15.1 percent.",
+      "file": "pub-airway-reopening-06-bm_lewis.m4a",
+      "sha256": "772147f6957648f5ce651b06eae35ccc47723e5e9d048ac78d715fc92766e223",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "pub-airway-reopening-06-am_michael",
+      "narrator": "am_michael",
+      "voice_type": "American male",
+      "film": "pub-airway-reopening",
+      "scene": 6,
+      "transcript": "In the untreated bubble-exposed group, 54.7 percent of cells were dead. With dexamethasone pretreatment, it was 15.1 percent.",
+      "file": "pub-airway-reopening-06-am_michael.m4a",
+      "sha256": "0ead027c6b7995f4a0beb4708b7167f44deacccaf98a4795c8a229d655d4354a",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "pub-airway-reopening-06-bm_george",
+      "narrator": "bm_george",
+      "voice_type": "British male (legacy comparison)",
+      "film": "pub-airway-reopening",
+      "scene": 6,
+      "transcript": "In the untreated bubble-exposed group, 54.7 percent of cells were dead. With dexamethasone pretreatment, it was 15.1 percent.",
+      "file": "pub-airway-reopening-06-bm_george.m4a",
+      "sha256": "af0e63a3c67abafe8b1c5e981edfd03ace869e84d20132bd10a8a358bb8f5624",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "pub-airway-reopening-06-bf_emma",
+      "narrator": "bf_emma",
+      "voice_type": "British female (voicecasting comparison)",
+      "film": "pub-airway-reopening",
+      "scene": 6,
+      "transcript": "In the untreated bubble-exposed group, 54.7 percent of cells were dead. With dexamethasone pretreatment, it was 15.1 percent.",
+      "file": "pub-airway-reopening-06-bf_emma.m4a",
+      "sha256": "ca730fc288d7acda182f0b540eac720f62308160adbc2f4711995ff0951fe0bc",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "making-medicines-keep-01-bm_lewis",
+      "narrator": "bm_lewis",
+      "voice_type": "British male",
+      "film": "making-medicines-keep",
+      "scene": 1,
+      "transcript": "A syrup might look sound and change before it was used. Sugar could crystallize. Its consistency could shift. The jar revealed little about the work that produced it.",
+      "file": "making-medicines-keep-01-bm_lewis.m4a",
+      "sha256": "d8cc0a65e77ff41abf8ef018a0c11d4ebd707899b619a5db60fed875a80fd500",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "making-medicines-keep-01-am_michael",
+      "narrator": "am_michael",
+      "voice_type": "American male",
+      "film": "making-medicines-keep",
+      "scene": 1,
+      "transcript": "A syrup might look sound and change before it was used. Sugar could crystallize. Its consistency could shift. The jar revealed little about the work that produced it.",
+      "file": "making-medicines-keep-01-am_michael.m4a",
+      "sha256": "3c8acaf083377d8708ef7e20f074d96365de6f13b3aba92abfc717fc1efd93dc",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "making-medicines-keep-01-bm_george",
+      "narrator": "bm_george",
+      "voice_type": "British male (legacy comparison)",
+      "film": "making-medicines-keep",
+      "scene": 1,
+      "transcript": "A syrup might look sound and change before it was used. Sugar could crystallize. Its consistency could shift. The jar revealed little about the work that produced it.",
+      "file": "making-medicines-keep-01-bm_george.m4a",
+      "sha256": "884e3c8bb64d7c5b78f85b6278708e21a4de2dab16e55ec6d5951261ec5038aa",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "making-medicines-keep-01-bf_emma",
+      "narrator": "bf_emma",
+      "voice_type": "British female (voicecasting comparison)",
+      "film": "making-medicines-keep",
+      "scene": 1,
+      "transcript": "A syrup might look sound and change before it was used. Sugar could crystallize. Its consistency could shift. The jar revealed little about the work that produced it.",
+      "file": "making-medicines-keep-01-bf_emma.m4a",
+      "sha256": "40bbe0395037efff3ad14621281a9c412a8bcccce202ee2febe47190f8a5fe2e",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "making-medicines-keep-03-bm_lewis",
+      "narrator": "bm_lewis",
+      "voice_type": "British male",
+      "film": "making-medicines-keep",
+      "scene": 3,
+      "transcript": "In Minhāj al-dukkān, the discussion of syrups begins with julāb, sugar and rose water. The base was familiar; producing a dependable preparation was another matter.",
+      "file": "making-medicines-keep-03-bm_lewis.m4a",
+      "sha256": "e95760c7c4c81bc49eef994fa0af9b21c26d6180a5b03661a91edba6fbf8ced2",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "making-medicines-keep-03-am_michael",
+      "narrator": "am_michael",
+      "voice_type": "American male",
+      "film": "making-medicines-keep",
+      "scene": 3,
+      "transcript": "In Minhāj al-dukkān, the discussion of syrups begins with julāb, sugar and rose water. The base was familiar; producing a dependable preparation was another matter.",
+      "file": "making-medicines-keep-03-am_michael.m4a",
+      "sha256": "8a5f867c570cbf15dd10df11257b9f01233bffc0cec164b834274bf7872991f4",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "making-medicines-keep-03-bm_george",
+      "narrator": "bm_george",
+      "voice_type": "British male (legacy comparison)",
+      "film": "making-medicines-keep",
+      "scene": 3,
+      "transcript": "In Minhāj al-dukkān, the discussion of syrups begins with julāb, sugar and rose water. The base was familiar; producing a dependable preparation was another matter.",
+      "file": "making-medicines-keep-03-bm_george.m4a",
+      "sha256": "4f9765b029d896ed7082133062ded4b43b4d11609208b1518e081fbb031fa477",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    },
+    {
+      "sample": "making-medicines-keep-03-bf_emma",
+      "narrator": "bf_emma",
+      "voice_type": "British female (voicecasting comparison)",
+      "film": "making-medicines-keep",
+      "scene": 3,
+      "transcript": "In Minhāj al-dukkān, the discussion of syrups begins with julāb, sugar and rose water. The base was familiar; producing a dependable preparation was another matter.",
+      "file": "making-medicines-keep-03-bf_emma.m4a",
+      "sha256": "1ea0734914323166f33b8d4a01d9521a353bd024ccbf02e7b06f2e100e84096e",
+      "approval": "NEEDS FULL CONTINUOUS HUMAN AUDITION"
+    }
+  ]
+}

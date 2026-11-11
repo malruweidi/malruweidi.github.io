@@ -1,0 +1,88 @@
+{
+  "version": "2026-10-17",
+  "status": "PLACEMENT PLAN; NOT YET EDITED INTO FINAL MP4S",
+  "film_count": 44,
+  "motion_clips_available": 4,
+  "notes": "Only visually explanatory use is authorized. All clips are original silent digital diagrams, not the author's actual filmed studies, microscopic observations or medieval reenactments. Existing research media is retained.",
+  "assignments": [
+    {
+      "film_slug": "pub-airway-reopening",
+      "scene_number": 3,
+      "scene_title": "An airway reopens",
+      "current_duration": 15,
+      "original_visual": "assets/lung-concept.svg",
+      "proposed_insert": "assets/films/motion-v2/airway-interface.mp4",
+      "type": "CLEARLY LABELLED CONCEPTUAL MOTION",
+      "edit_note": "Never overlay synthetic motion on the paper's actual measured figure. Cut insert to scene duration and preserve original frame elsewhere."
+    },
+    {
+      "film_slug": "pub-niosomes",
+      "scene_number": 3,
+      "scene_title": "Design the membrane",
+      "current_duration": 15,
+      "original_visual": "assets/films/art-v2/niosomes-1.svg",
+      "proposed_insert": "assets/films/motion-v2/niosomes-nebulization.mp4",
+      "type": "CLEARLY LABELLED CONCEPTUAL MOTION",
+      "edit_note": "Never overlay synthetic motion on the paper's actual measured figure. Cut insert to scene duration and preserve original frame elsewhere."
+    },
+    {
+      "film_slug": "pub-histology-failure",
+      "scene_number": 4,
+      "scene_title": "The block did not behave as one",
+      "current_duration": 15,
+      "original_visual": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "proposed_insert": "assets/films/motion-v2/histology-interface.mp4",
+      "type": "CLEARLY LABELLED CONCEPTUAL MOTION",
+      "edit_note": "Never overlay synthetic motion on the paper's actual measured figure. Cut insert to scene duration and preserve original frame elsewhere."
+    },
+    {
+      "film_slug": "pub-making-medicines-keep",
+      "scene_number": 3,
+      "scene_title": "A handbook for a working pharmacy",
+      "current_duration": 15,
+      "original_visual": "assets/films/plates/making-medicines-keep-03.webp",
+      "proposed_insert": "assets/films/motion-v2/historical-syrup.mp4",
+      "type": "CLEARLY LABELLED CONCEPTUAL MOTION",
+      "edit_note": "Never overlay synthetic motion on the paper's actual measured figure. Cut insert to scene duration and preserve original frame elsewhere."
+    },
+    {
+      "film_slug": "feature-what-survives-the-experiment",
+      "scene_number": 8,
+      "scene_title": "The section that failed",
+      "current_duration": 10,
+      "original_visual": "assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+      "proposed_insert": "assets/films/motion-v2/histology-interface.mp4",
+      "type": "CLEARLY LABELLED CONCEPTUAL MOTION",
+      "edit_note": "Never overlay synthetic motion on the paper's actual measured figure. Cut insert to scene duration and preserve original frame elsewhere."
+    },
+    {
+      "film_slug": "feature-airway-reopening-evidence-cut",
+      "scene_number": 2,
+      "scene_title": "A boundary that moves",
+      "current_duration": 15,
+      "original_visual": "assets/films/plates/what-a-bubble-can-do-02.webp",
+      "proposed_insert": "assets/films/motion-v2/airway-interface.mp4",
+      "type": "CLEARLY LABELLED CONCEPTUAL MOTION",
+      "edit_note": "Never overlay synthetic motion on the paper's actual measured figure. Cut insert to scene duration and preserve original frame elsewhere."
+    },
+    {
+      "film_slug": "feature-two-materials-no-section-evidence-cut",
+      "scene_number": 5,
+      "scene_title": "The material boundary",
+      "current_duration": 10,
+      "original_visual": "assets/films/plates/two-materials-no-section-05.webp",
+      "proposed_insert": "assets/films/motion-v2/histology-interface.mp4",
+      "type": "CLEARLY LABELLED CONCEPTUAL MOTION",
+      "edit_note": "Never overlay synthetic motion on the paper's actual measured figure. Cut insert to scene duration and preserve original frame elsewhere."
+    },
+    {
+      "film_slug": "making-medicines-keep",
+      "scene_number": 4,
+      "scene_title": "Under heat",
+      "current_duration": 13,
+      "proposed_insert": "assets/films/motion-v2/historical-syrup.mp4",
+      "type": "CLEARLY LABELLED CONCEPTUAL MOTION",
+      "edit_note": "Never overlay synthetic motion on the paper's actual measured figure. Cut insert to scene duration and preserve original frame elsewhere."
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "status": "TECHNICAL AUDIT ONLY, NOT ARTISTIC APPROVAL",
+  "films_expected": 44,
+  "exports_examined": 44,
+  "exports_remaining": 0,
+  "films": [
+    {
+      "slug": "making-medicines-keep",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/making-medicines-keep-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "two-materials-no-section",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/two-materials-no-section-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "what-a-bubble-can-do",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/what-a-bubble-can-do-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-airway-reopening",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-airway-reopening-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-cerebral-cilia",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-cerebral-cilia-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-slit2-robo",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-slit2-robo-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-curcumin-cyanide",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-curcumin-cyanide-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-making-medicines-keep",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-making-medicines-keep-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-niosomes",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-niosomes-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-echo-cnn-lstm",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-echo-cnn-lstm-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-pla-grafting",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-pla-grafting-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-pla-scaffolds",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-pla-scaffolds-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-flow-chamber-method",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-flow-chamber-method-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-zebrafish-hemodynamics",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-zebrafish-hemodynamics-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-ace2-covid-drugs",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-ace2-covid-drugs-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-gi-autoimmunity-1",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-gi-autoimmunity-1-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-gi-autoimmunity-2",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-gi-autoimmunity-2-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-heart-failure-sensors",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-heart-failure-sensors-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-ace2-forms",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-ace2-forms-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-microfluidic-virus",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-microfluidic-virus-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-drug-release-twins",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-drug-release-twins-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-food-printing",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-food-printing-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-ceramics-printing",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-ceramics-printing-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-cubosome-theranostics",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-cubosome-theranostics-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-micelles-pahs",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-micelles-pahs-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-heterocycle-cancer",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-heterocycle-cancer-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-histology-failure",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-histology-failure-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-cairo-microscope",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-cairo-microscope-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-life-between-diagnoses",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-life-between-diagnoses-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-ai-email",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-ai-email-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-machine-language",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-machine-language-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-academic-mental-health",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-academic-mental-health-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-scientific-credit",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-scientific-credit-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-tf-states",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-tf-states-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-potency-exposure",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-potency-exposure-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-trna",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-trna-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-proximity",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-proximity-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "pub-essay-adc",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/pub-essay-adc-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "feature-the-laboratory-we-carried-with-us",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/feature-the-laboratory-we-carried-with-us-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "feature-what-survives-the-experiment",
+      "seconds": 156.0,
+      "expected": 156,
+      "source": "assets/films/library-v2/feature-what-survives-the-experiment-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "feature-cairo-microscope",
+      "seconds": 120.0,
+      "expected": 120,
+      "source": "assets/films/library-v2/feature-cairo-microscope-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "feature-ring-that-never-closed",
+      "seconds": 150.0,
+      "expected": 150,
+      "source": "assets/films/library-v2/feature-ring-that-never-closed-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "feature-airway-reopening-evidence-cut",
+      "seconds": 153.0,
+      "expected": 153,
+      "source": "assets/films/library-v2/feature-airway-reopening-evidence-cut-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    },
+    {
+      "slug": "feature-two-materials-no-section-evidence-cut",
+      "seconds": 150.0,
+      "expected": 150,
+      "source": "assets/films/library-v2/feature-two-materials-no-section-evidence-cut-rough-cut.mp4",
+      "issues": [
+        "Export is stale relative to revised storyboard; rerender required"
+      ],
+      "technical_check": "needs attention",
+      "aesthetic_check": "NOT HUMAN-REVIEWED",
+      "voice_check": "NOT HUMAN-REVIEWED"
+    }
+  ]
+}

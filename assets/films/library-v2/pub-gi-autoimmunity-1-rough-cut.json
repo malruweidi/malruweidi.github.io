@@ -1,0 +1,81 @@
+{
+  "slug": "pub-gi-autoimmunity-1",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bf_emma",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "7e28b8c2d40f1dcaa7c21a8e42cb9e1247efe924384721e026d47ed8ea95e301",
+  "shots": [
+    {
+      "title": "What happens when immunity turns on the gut?",
+      "kind": "Original laboratory workspace, not intestinal pathology",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Original laboratory workspace, not intestinal pathology"
+    },
+    {
+      "title": "The intestine is not simply a tube",
+      "kind": "Original laboratory photograph, not tissue from this chapter",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "museum": null,
+      "credit": "Original laboratory photograph, not tissue from this chapter"
+    },
+    {
+      "title": "What makes tolerance possible?",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/gi-autoimmunity-1-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Disease names conceal different mechanisms",
+      "kind": "General scientific research-context image, not GI histopathology",
+      "image": "assets/evidence-pulmonary.webp",
+      "museum": null,
+      "credit": "General scientific research-context image, not GI histopathology"
+    },
+    {
+      "title": "Tissue tells part of the story",
+      "kind": "Original laboratory image, not patient diagnostic specimen",
+      "image": "assets/research-archive-2026/biological-safety-cabinet-workspace.webp",
+      "museum": null,
+      "credit": "Original laboratory image, not patient diagnostic specimen"
+    },
+    {
+      "title": "The difficulty: Complexity is not a license to guess",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/gi-autoimmunity-1-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "Complexity is not a license to guess",
+      "kind": "Laboratory context",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "museum": null,
+      "credit": "Laboratory context"
+    },
+    {
+      "title": "Before treatment, understand the process",
+      "kind": "Editorial research context",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Editorial research context"
+    }
+  ],
+  "film_title": "What happens when immunity turns on the gut?",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://doi.org/10.5772/intechopen.106184",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [],
+  "input_sha256": "77183f348cdb16d4e787f8044ca4f7ae76c34df521d7a531b7b46662231d9192"
+}

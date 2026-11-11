@@ -1,0 +1,89 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ruwaidix Film Screening Room | 44 Director's Cuts</title>
+<style>
+:root{color-scheme:dark;--bg:#0d2027;--panel:#17353b;--paper:#f1eee7;--pale:#c3d3cb;--gold:#d5a77d}
+*{box-sizing:border-box}body{margin:0;color:var(--paper);background:var(--bg);font:16px/1.58 system-ui,-apple-system,sans-serif}
+header,main,footer{max-width:1400px;margin:auto;padding:26px clamp(14px,3vw,44px)}
+header{border-bottom:1px solid #3f5956}.mark{letter-spacing:.16em;font-size:.8rem;color:var(--gold)}
+h1{font:normal clamp(2rem,5vw,4.2rem)/1.13 Georgia,serif;letter-spacing:-.04em;margin:15px 0}
+p{color:var(--pale);max-width:840px}a{color:var(--gold)}
+.notice{border-left:3px solid #d2a172;padding:14px 20px;background:var(--panel)}
+.search{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+input,select,button{font:inherit;color:var(--paper);background:#19373c;border:1px solid #4e6868;border-radius:5px;padding:11px}
+input{min-width:240px;flex:1}button{cursor:pointer}button:hover{border-color:var(--gold)}
+button[aria-current=true]{background:#304d50;border-color:#d4a676}
+.count{font-size:.85rem;color:#abc1b9}
+.screen{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);gap:24px;margin:20px 0}
+@media(max-width:850px){.screen{grid-template-columns:1fr}}
+video{width:100%;aspect-ratio:16/9;background:#000;display:block}
+.panel{border:1px solid #385658;border-radius:6px;background:#122b31;padding:18px}
+h2{font:normal clamp(1.35rem,3vw,2.2rem) Georgia,serif;margin:8px 0}
+.meta{color:#d4bd9d;font-size:.85rem;letter-spacing:.035em}
+.catalog{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:8px;max-height:410px;overflow:auto}
+.catalog button{text-align:left;font-size:.9rem;min-height:68px}
+.catalog small{display:block;font-size:.72rem;opacity:.7}
+audio{width:100%}.voice{margin:12px 0;padding:10px;background:#15363b;border-radius:6px}
+footer{border-top:1px solid #385658;font-size:.84rem;color:var(--pale)}
+</style></head><body><header><div class="mark">RUWAIDIX / UNPUBLISHED CINEMA WORKROOM</div>
+<h1>Forty-four films. One critical viewing room.</h1>
+<p class="notice">All files shown here are technical director's-cut rough drafts. No narrator, scientific interpretation, archival licensing, or cinematic mix has been marked human-approved. The published site and original film archive remain unchanged.</p></header>
+<main><div class="search"><input type="search" id="search" placeholder="Search film subjects, research titles, or slugs" aria-label="Search films"/>
+<select id="cat" aria-label="Film type"><option value="">All films</option><option value="publication">35 publication and essay films</option><option value="feature">9 feature and alternate cuts</option></select></div>
+<div class="count" id="count"></div>
+<div class="screen"><div><video id="video" controls playsinline preload="none" crossorigin="anonymous"></video>
+<p class="meta" id="clipstatus"></p>
+<p><a id="direct" href="#" target="_blank" rel="noopener">Open this MP4 in GitHub</a> · <a id="caption" href="#" target="_blank" rel="noopener">Caption file</a></p>
+</div><div class="panel"><div class="mark">DIRECTOR'S CUT / EDITORIAL PREVIEW</div><h2 id="film">Select a movie</h2><div class="meta" id="runtime"></div>
+<p id="source"></p><p id="state"></p><hr style="border:0;border-top:1px solid #3f5c5b">
+<h2 style="font-size:1.4rem">Voice auditions</h2><p>Different open-source voice actors reading the same passage. Compare pronunciation, timbre, pacing and naturalness, not just accent.</p>
+<label for="actor">Narrator</label> <select id="actor"><option value="bm_lewis">Lewis · British male</option><option value="am_michael">Michael · American male</option><option value="bm_george">George · previous voice</option><option value="bf_emma">Emma · British female</option></select>
+<div class="voice"><audio id="audio" controls preload="none"></audio><p class="meta">Historical pharmacy passage, voice not approved.</p></div></div></div>
+<div class="mark" style="margin-bottom:14px">REVISED FILM REGISTER</div><div class="catalog" id="catalog"></div>
+<p><a href="https://github.com/malruweidi/malruweidi.github.io/pull/47" target="_blank" rel="noopener">View source-controlled film rebuild and release checks</a></p></main>
+<footer>Source footage and images retain their separate provenance. Scientific diagrams are interpretations unless identified as published figures. Test results and experimental limitations must match the linked publication before public release.</footer>
+<script>
+"use strict";
+const BRANCH="cinematic-remake-20261017";
+const BASE="https://raw.githubusercontent.com/malruweidi/malruweidi.github.io/"+BRANCH+"/assets/films/";
+const GH="https://github.com/malruweidi/malruweidi.github.io/blob/"+BRANCH+"/assets/films/";
+const ITEMS=[{"slug":"making-medicines-keep","title":"The Medicine in the Jar","source":"Accepted article 15 October 2026, Making Medicines Keep","section":"feature","duration":120,"technical_current":true,"unique_images":9},{"slug":"two-materials-no-section","title":"No Section Came Off the Blade","source":"Personal original failed zebrafish histology attempt; source photographs in Stories archive","section":"feature","duration":120,"technical_current":true,"unique_images":5},{"slug":"what-a-bubble-can-do","title":"The Moment an Airway Reopens","source":"Journal of Applied Physiology primary paper doi:10.1152/japplphysiol.00574.2020","section":"feature","duration":120,"technical_current":true,"unique_images":7},{"slug":"pub-airway-reopening","title":"A breath can injure","source":"https://doi.org/10.1152/japplphysiol.00574.2020","section":"publication","duration":120,"technical_current":true,"unique_images":4},{"slug":"pub-cerebral-cilia","title":"How does a vessel know the blood is moving?","source":"https://doi.org/10.1161/ATVBAHA.118.311231","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-slit2-robo","title":"The target that can change sides","source":"https://doi.org/10.1080/13543776.2026.2690118","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-curcumin-cyanide","title":"When a molecule becomes a question","source":"https://doi.org/10.1039/C9AY01557D","section":"publication","duration":120,"technical_current":true,"unique_images":4},{"slug":"pub-making-medicines-keep","title":"How did medieval medicines keep?","source":"/#history","section":"publication","duration":120,"technical_current":true,"unique_images":8},{"slug":"pub-niosomes","title":"Will the medicine survive the nebulizer?","source":"/research/inhalable-vesicles.html","section":"publication","duration":120,"technical_current":true,"unique_images":6},{"slug":"pub-echo-cnn-lstm","title":"Can an algorithm read a moving heart?","source":"https://doi.org/10.1109/ACCESS.2023.3316719","section":"publication","duration":120,"technical_current":true,"unique_images":4},{"slug":"pub-pla-grafting","title":"The surface is not the material","source":"https://doi.org/10.3390/polym13213717","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-pla-scaffolds","title":"A scaffold meets its environment","source":"https://doi.org/10.1016/j.surfcoat.2020.126216","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-flow-chamber-method","title":"How to make a reproducible injury","source":"https://doi.org/10.3390/mps3040065","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-zebrafish-hemodynamics","title":"A heartbeat in high-speed frames","source":"https://doi.org/10.1016/j.micron.2020.102876","section":"publication","duration":120,"technical_current":true,"unique_images":7},{"slug":"pub-ace2-covid-drugs","title":"An enzyme, a receptor, a clinical question","source":"https://doi.org/10.1080/08037051.2022.2055530","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-gi-autoimmunity-1","title":"What happens when immunity turns on the gut?","source":"https://doi.org/10.5772/intechopen.106184","section":"publication","duration":120,"technical_current":true,"unique_images":6},{"slug":"pub-gi-autoimmunity-2","title":"The diagnostic problem","source":"https://doi.org/10.5772/intechopen.106185","section":"publication","duration":120,"technical_current":true,"unique_images":6},{"slug":"pub-heart-failure-sensors","title":"Listening for a failing heart","source":"https://doi.org/10.1002/9781119813040.ch5","section":"publication","duration":120,"technical_current":true,"unique_images":4},{"slug":"pub-ace2-forms","title":"Two lives of ACE2","source":"https://doi.org/10.3390/ijms22136703","section":"publication","duration":120,"technical_current":false,"unique_images":7},{"slug":"pub-microfluidic-virus","title":"A laboratory shrunk into a channel","source":"https://doi.org/10.1007/s42247-021-00169-7","section":"publication","duration":120,"technical_current":false,"unique_images":7},{"slug":"pub-drug-release-twins","title":"What can a digital twin predict?","source":"https://doi.org/10.70593/978-93-7185-824-3","section":"publication","duration":120,"technical_current":true,"unique_images":4},{"slug":"pub-food-printing","title":"When food becomes a printable material","source":"/#publications","section":"publication","duration":120,"technical_current":false,"unique_images":7},{"slug":"pub-ceramics-printing","title":"A structure the body must tolerate","source":"/#publications","section":"publication","duration":120,"technical_current":false,"unique_images":8},{"slug":"pub-cubosome-theranostics","title":"The difficult promise of a cubic carrier","source":"/#publications","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-micelles-pahs","title":"A polymer meets an insoluble problem","source":"/grants/urep19.html","section":"publication","duration":120,"technical_current":true,"unique_images":4},{"slug":"pub-heterocycle-cancer","title":"Build the heterocycle, then challenge the hypothesis","source":"/grants/urep23.html","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-histology-failure","title":"Two materials. No section.","source":"/films/two-materials-no-section.html","section":"publication","duration":120,"technical_current":true,"unique_images":6},{"slug":"pub-cairo-microscope","title":"The microscope that made curiosity independent","source":"/stories/cairo-microscope.html","section":"publication","duration":120,"technical_current":true,"unique_images":4},{"slug":"pub-essay-life-between-diagnoses","title":"When the Count Could Not Describe the Pain","source":"https://malruweidi.substack.com/p/the-life-between-diagnoses","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-essay-ai-email","title":"The Email That Became an Accusation","source":"https://malruweidi.substack.com/p/sorry-my-first-email-to-you-was-probably","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-essay-machine-language","title":"Who Taught Humans to Write Like Machines?","source":"https://malruweidi.substack.com/p/we-taught-people-to-sound-like-machines","section":"publication","duration":120,"technical_current":true,"unique_images":6},{"slug":"pub-essay-academic-mental-health","title":"The Things an Academic CV Cannot Hold","source":"https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-essay-scientific-credit","title":"Three Names on the Medal, Hundreds in the Record","source":"https://malruweidi.substack.com/p/the-nobel-prize-has-room-for-three","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-essay-tf-states","title":"The Target Has More Than One Shape","source":"https://www.drugdiscoveryonline.com/doc/target-transcription-factor-states-not-pockets-0001","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-essay-potency-exposure","title":"The Nanomolar Mirage","source":"https://www.drugdiscoveryonline.com/doc/potency-is-not-an-exposure-strategy-0001","section":"publication","duration":120,"technical_current":true,"unique_images":7},{"slug":"pub-essay-trna","title":"The Molecule Behind Every Protein","source":"https://www.drugdiscoveryonline.com/doc/drugging-the-trna-control-system-0001","section":"publication","duration":120,"technical_current":true,"unique_images":6},{"slug":"pub-essay-proximity","title":"When a Drug Makes Two Proteins Meet","source":"https://www.drugdiscoveryonline.com/doc/the-matchmaker-modality-engineering-event-driven-pharmacology-with-induced-proximity-0001","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"pub-essay-adc","title":"The Antibody Is Only the Beginning","source":"https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001","section":"publication","duration":120,"technical_current":true,"unique_images":5},{"slug":"feature-the-laboratory-we-carried-with-us","title":"The Laboratory We Carried With Us","source":"/chem-squad.html","section":"feature","duration":120,"technical_current":true,"unique_images":7},{"slug":"feature-what-survives-the-experiment","title":"What Survives the Experiment","source":"/films.html","section":"feature","duration":156,"technical_current":false,"unique_images":12},{"slug":"feature-cairo-microscope","title":"The Microscope I Brought From Cairo","source":"/stories.html#personal-microscope","section":"feature","duration":120,"technical_current":true,"unique_images":4},{"slug":"feature-ring-that-never-closed","title":"The Ring That Never Closed","source":"/research.html","section":"feature","duration":150,"technical_current":false,"unique_images":6},{"slug":"feature-airway-reopening-evidence-cut","title":"A Bubble Against an Epithelium: What the Numbers Show","source":"https://doi.org/10.1152/japplphysiol.00574.2020","section":"feature","duration":153,"technical_current":false,"unique_images":9},{"slug":"feature-two-materials-no-section-evidence-cut","title":"The Material Boundary: An Unsuccessful Histology Attempt","source":"/stories/failed-zebrafish-histology.html","section":"feature","duration":150,"technical_current":false,"unique_images":8}];
+const state={active:null};
+const el=id=>document.getElementById(id);
+const secure=(x)=>String(x??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function choose(f) {
+ state.active=f;
+ const stem="library-v2/"+encodeURIComponent(f.slug)+"-rough-cut";
+ const v=el("video");
+ v.pause();v.removeAttribute("src");v.innerHTML="";
+ v.appendChild(Object.assign(document.createElement("source"),{src:BASE+stem+".mp4",type:"video/mp4"}));
+ const track=document.createElement("track");track.kind="captions";track.srclang="en";track.label="English";track.src=BASE+stem+".vtt";v.appendChild(track);v.load();
+ el("direct").href=GH+stem+".mp4";el("caption").href=GH+stem+".vtt";
+ el("film").textContent=f.title;el("runtime").textContent=f.duration+" seconds · "+f.unique_images+" distinct image references · "+f.section;
+ el("source").textContent="Primary/source reference: "+f.source;
+ el("state").textContent=f.technical_current?"Technically current at last stored audit; still requires human approval.":"Last recorded audit marked this edition outdated; regeneration or a fresh audit is required.";
+ el("clipstatus").textContent="UNAPPROVED DRAFT — audition narration; not the released website movie";
+ document.querySelectorAll("#catalog button").forEach(b=>b.setAttribute("aria-current",String(b.dataset.slug===f.slug)));
+}
+function display(){
+ const q=el("search").value.toLowerCase(),cat=el("cat").value;
+ const filtered=ITEMS.filter(f=>(!cat||f.section===cat)&&(f.title.toLowerCase().includes(q)||f.slug.includes(q)));
+ el("count").textContent=filtered.length+" films in view · "+ITEMS.length+" authored and exported technical drafts";
+ const root=el("catalog");root.replaceChildren();
+ for(const f of filtered){
+  const btn=document.createElement("button");
+  btn.dataset.slug=f.slug;btn.type="button";btn.textContent=f.title;
+  const mini=document.createElement("small");mini.textContent=f.section+" · "+f.duration+" seconds";
+  btn.appendChild(mini);btn.addEventListener("click",()=>choose(f));root.appendChild(btn);
+ }
+}
+function actor(){
+ const id=el("actor").value;
+ const name="voice-auditions-v2/making-medicines-keep-01-"+id+".m4a";
+ const a=el("audio");a.pause();a.src=BASE+name;a.load();
+}
+el("search").addEventListener("input",display);el("cat").addEventListener("change",display);
+el("actor").addEventListener("change",actor);
+display();choose(ITEMS.find(f=>f.slug==="making-medicines-keep")||ITEMS[0]);actor();
+</script></body></html>

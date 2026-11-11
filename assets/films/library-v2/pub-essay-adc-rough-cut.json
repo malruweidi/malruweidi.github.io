@@ -1,0 +1,78 @@
+{
+  "slug": "pub-essay-adc",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "3aead23b03f56e42426468689b0e0601c34c82649f7ad72d94e94cb42512caad",
+  "shots": [
+    {
+      "title": "The Antibody Is Only the Beginning",
+      "kind": "General carrier visual, not an ADC structure",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "General carrier visual, not an ADC structure"
+    },
+    {
+      "title": "A guided payload still travels through a body",
+      "kind": "Generic scientific visual; not an antibody-drug conjugate micrograph",
+      "image": "assets/evidence-biomaterials.webp",
+      "museum": null,
+      "credit": "Generic scientific visual; not an antibody-drug conjugate micrograph"
+    },
+    {
+      "title": "Linker chemistry decides where",
+      "kind": "General carrier visual, not an ADC structure",
+      "image": "assets/niosomes-concept.svg",
+      "museum": null,
+      "credit": "General carrier visual, not an ADC structure"
+    },
+    {
+      "title": "A ratio reshapes a drug",
+      "kind": "General molecular graphic, not a conjugated antibody",
+      "image": "assets/robo-concept.svg",
+      "museum": null,
+      "credit": "General molecular graphic, not a conjugated antibody"
+    },
+    {
+      "title": "The payload brings its own risks",
+      "kind": "Original lab flask context, not clinical adverse-event footage",
+      "image": "assets/owner-archive-2026-10-16/cell-culture-flask-archive.webp",
+      "museum": null,
+      "credit": "Original lab flask context, not clinical adverse-event footage"
+    },
+    {
+      "title": "The difficulty: Bystander effects are conditional",
+      "kind": "Generic materials context visual",
+      "image": "assets/evidence-biomaterials.webp",
+      "museum": null,
+      "credit": "Generic materials context visual"
+    },
+    {
+      "title": "Bystander effects are conditional",
+      "kind": "Generic materials context visual",
+      "image": "assets/evidence-biomaterials.webp",
+      "museum": null,
+      "credit": "Generic materials context visual"
+    },
+    {
+      "title": "Safety begins in molecular design",
+      "kind": "Author's editorial portrait",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "museum": null,
+      "credit": "Author's editorial portrait"
+    }
+  ],
+  "film_title": "The Antibody Is Only the Beginning",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://www.drugdiscoveryonline.com/doc/antibody-drug-conjugates-a-new-era-of-precision-engineering-in-oncology-0001",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "bf94294688959f09033673409ac0e95caa485a41476e6f8c58599180da87a563"
+}

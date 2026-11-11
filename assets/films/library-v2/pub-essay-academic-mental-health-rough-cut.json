@@ -1,0 +1,78 @@
+{
+  "slug": "pub-essay-academic-mental-health",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "6d1f492d821169cb80c2248671ed7f7ef198406406b4316876bef584af25030c",
+  "shots": [
+    {
+      "title": "The Things an Academic CV Cannot Hold",
+      "kind": "Original late research workspace, no asserted capture hour",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "museum": null,
+      "credit": "Original late research workspace, no asserted capture hour"
+    },
+    {
+      "title": "A CV tells the wrong kind of time",
+      "kind": "Original academic archive, not a clinical record",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "museum": null,
+      "credit": "Original academic archive, not a clinical record"
+    },
+    {
+      "title": "There is always one more condition",
+      "kind": "Original late research workspace, no asserted capture hour",
+      "image": "assets/research-archive-2026/qatar-university-research-workstation.webp",
+      "museum": null,
+      "credit": "Original late research workspace, no asserted capture hour"
+    },
+    {
+      "title": "Mentorship changes the experience",
+      "kind": "Archived recognition photo, not proof of any specific mentorship interaction",
+      "image": "assets/oct12-owner-photos/acs-chapter-recognition-2017.webp",
+      "museum": null,
+      "credit": "Archived recognition photo, not proof of any specific mentorship interaction"
+    },
+    {
+      "title": "Exhaustion does not prove dedication",
+      "kind": "Original author's university laboratory-coat photograph",
+      "image": "assets/home-archive/university-lab-coat.jpg",
+      "museum": null,
+      "credit": "Original author's university laboratory-coat photograph"
+    },
+    {
+      "title": "The difficulty: Mental health is not a footnote",
+      "kind": "Archival university photo used as general context",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "museum": null,
+      "credit": "Archival university photo used as general context"
+    },
+    {
+      "title": "Mental health is not a footnote",
+      "kind": "Archival university photo used as general context",
+      "image": "assets/archival-2026-10-12/chemistry-library-2016.webp",
+      "museum": null,
+      "credit": "Archival university photo used as general context"
+    },
+    {
+      "title": "Keep the scientist alive",
+      "kind": "Personal editorial portrait",
+      "image": "assets/2026-10-13-new-photos/research-portrait-calligraphy.webp",
+      "museum": null,
+      "credit": "Personal editorial portrait"
+    }
+  ],
+  "film_title": "The Things an Academic CV Cannot Hold",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "https://malruweidi.substack.com/p/fifteen-things-i-wish-young-academics",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "input_sha256": "288e06528c74c26c7da98fb4a3f8ba51272783be24e4f4e759b91e87bfabebde"
+}

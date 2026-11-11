@@ -1,0 +1,93 @@
+{
+  "slug": "feature-ring-that-never-closed",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 150.0,
+  "voice_mode": "kokoro-preview",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "dfa795b3b8712faf43592145e89378e59914ac5c444e70ae3f04f0763cb41e71",
+  "shots": [
+    {
+      "title": "An unfinished drawing",
+      "kind": "RESEARCH PROPOSAL / 2018",
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "Two routes, one ambition",
+      "kind": "PLANNED HETEROCYCLIC SYNTHESIS",
+      "image": "assets/archival-2026-10-13/early-chemistry-flask-2014.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "The closure did not happen",
+      "kind": "OBSERVED PROJECT OUTCOME / 2021",
+      "image": "assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "What we could isolate",
+      "kind": "SCHIFF BASES / RECORDED INTERMEDIATES",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "A different question",
+      "kind": "ANION SENSING / LABORATORY REPORT",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "From yellow to orange",
+      "kind": "OBSERVED COLOUR RESPONSE / EXPLANATORY COLOURS",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "Where the bands moved",
+      "kind": "REPORTED UV–VISIBLE FEATURES / NOT A DIGITIZED SPECTRUM",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "Beyond the flask",
+      "kind": "EXPLORATORY COLLABORATIVE CELL WORK",
+      "image": "assets/oct12-owner-photos/yousef-hijji-anticancer-group-2019.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "The unanswered mechanism",
+      "kind": "GENE EXPRESSION / INCOMPLETE FOLLOW-UP",
+      "image": "assets/research-archive-2026/molecular-biology-pipette-workbench.webp",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    },
+    {
+      "title": "What the report could say",
+      "kind": "FINAL REPORT / 2021 / ACCESS RESTRICTIONS",
+      "image": "assets/home-archive/figure-cyanide-sensor.jpg",
+      "museum": null,
+      "credit": "Editorial explanation; original context archive"
+    }
+  ],
+  "film_title": "The Ring That Never Closed",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/ring-that-never-closed-scenes.json",
+  "primary_reference": "/research.html",
+  "source_collection": "feature",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [],
+  "input_sha256": "5039cf476595ab49658c9354e93c9efe10aaf6140e01527ad6aa1e5192be621c"
+}

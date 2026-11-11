@@ -1,0 +1,81 @@
+{
+  "slug": "pub-ceramics-printing",
+  "status": "UNAPPROVED ROUGH CUT; NOT A PUBLIC FILM",
+  "duration": 120.0,
+  "voice_mode": "kokoro-preview",
+  "director_audition_voice": "bm_lewis",
+  "director_ledger": "assets/films/directors-ledger-v3.json",
+  "voice_approved": false,
+  "sound_mix_approved": false,
+  "source_rights_approved": false,
+  "continuous_playback_approved": false,
+  "sha256": "e7fbf5e4f8e187342eb0952b408d4dfbccad410a50395f65f203598eb6415a27",
+  "shots": [
+    {
+      "title": "A structure the body must tolerate",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ceramic-lattice.svg",
+      "museum": null,
+      "credit": "Original conceptual depiction of ceramic scaffold porosity; not a CT scan"
+    },
+    {
+      "title": "A patient will live with the material",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ceramic-processing.svg",
+      "museum": null,
+      "credit": "Illustrative thermal-processing geometry; no measured shrinkage or dimensions"
+    },
+    {
+      "title": "Geometry is only the beginning",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/ceramics-printing-1.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "The furnace has a vote",
+      "kind": "Original conceptual scientific illustration, not a published experimental figure",
+      "image": "assets/films/art-v2/ceramics-sintering-constraints.svg",
+      "museum": null,
+      "credit": "Ruwaidix original interpretive visual about material processing and translation; no measured test outcomes or clinical results depicted"
+    },
+    {
+      "title": "Biology tests the promise",
+      "kind": "Original scientific illustration, conceptual only",
+      "image": "assets/films/art/v2-ceramic-load.svg",
+      "museum": null,
+      "credit": "Conceptual mechanical and biological evaluation of printed ceramic, not an implant result"
+    },
+    {
+      "title": "The difficulty: From bench to clinic",
+      "kind": "Original, source-bounded explanatory graphic; not a research image or observed result",
+      "image": "assets/films/art-v2/ceramics-printing-2.svg",
+      "museum": null,
+      "credit": "Ruwaidix original illustrative schematic, 2026; conceptual interpretation only; no numerical results or depicted experiment"
+    },
+    {
+      "title": "From bench to clinic",
+      "kind": "Original conceptual scientific illustration, not a published experimental figure",
+      "image": "assets/films/art-v2/ceramics-translational-gates.svg",
+      "museum": null,
+      "credit": "Ruwaidix original interpretive visual about material processing and translation; no measured test outcomes or clinical results depicted"
+    },
+    {
+      "title": "More than a shape",
+      "kind": "Original editorial schematic; conceptual only, not primary scientific or historical evidence",
+      "image": "assets/films/art/bioceramic-lattice.svg",
+      "museum": null,
+      "credit": "Original editorial schematic; conceptual only, not primary scientific or historical evidence"
+    }
+  ],
+  "film_title": "A structure the body must tolerate",
+  "source_manifest": "assets/films/cinematic-library-v2.json",
+  "source_script": "assets/films/publication-series-directors-v2.json",
+  "primary_reference": "/#publications",
+  "source_collection": "publication",
+  "needs_human_narration_review": true,
+  "needs_visual_composition_review": true,
+  "never_auto_publish": true,
+  "motion_shots": [],
+  "input_sha256": "15b6cf32075c767ae6bb3b8a7f72de6f125b757fbfa2ff378b94b1d039012519"
+}
