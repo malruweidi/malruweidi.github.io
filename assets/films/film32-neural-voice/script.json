@@ -1,0 +1,69 @@
+{
+  "title": "The Nanomolar Mirage",
+  "duration_seconds": 192,
+  "source": "Potency Is Not An Exposure Strategy (Drug Discovery Online, 20 Aug 2026); author-audited manuscript and Figure 1",
+  "figure_caution": "Figure contains illustrative 1 nM IC50, not measured assay data",
+  "status": "PRIVATE VOICE REVIEW ONLY",
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 16,
+      "text": "On the assay plate, one molecule looks extraordinary. Its potency sits in the nanomolar range. It wins the screen. But the screen is not a patient."
+    },
+    {
+      "start": 16,
+      "duration": 16,
+      "text": "Biochemical potency tells us what happens under controlled conditions. It does not tell us whether a realistic dose can deliver enough unbound drug to the relevant tissue."
+    },
+    {
+      "start": 32,
+      "duration": 16,
+      "text": "Before the target, a molecule faces dissolution, membranes, metabolism and clearance. Each barrier can change what eventually remains free to engage the target."
+    },
+    {
+      "start": 48,
+      "duration": 16,
+      "text": "Total drug in blood is not the same as free drug at the site of action. Binding and transport can make those numbers diverge."
+    },
+    {
+      "start": 64,
+      "duration": 16,
+      "text": "The question is not simply how low an I C fifty can go. It is whether sufficient unbound concentration can be sustained for the duration required by the mechanism."
+    },
+    {
+      "start": 80,
+      "duration": 16,
+      "text": "A central nervous system project may depend on brain penetration and efflux. An infection program may depend on time above an organism-specific threshold. Context decides."
+    },
+    {
+      "start": 96,
+      "duration": 16,
+      "text": "First confirm the hit is real. Aggregation, fluorescence interference, and reactive chemistry can manufacture persuasive-looking potency. An orthogonal assay is the first defense."
+    },
+    {
+      "start": 112,
+      "duration": 16,
+      "text": "Then test a family of analogs, not one exceptional molecule. Ask whether changes in chemistry improve solubility and exposure, or merely drive potency with increasing lipophilicity."
+    },
+    {
+      "start": 128,
+      "duration": 16,
+      "text": "Consider two hypothetical series. The most potent binds beautifully, but cannot plausibly reach the target. The other starts weaker, yet has a credible path to improvement."
+    },
+    {
+      "start": 144,
+      "duration": 16,
+      "text": "Predictive models should expose uncertainty, not disguise it. If a small change in assumed clearance reverses a decision, measure clearance before making that decision."
+    },
+    {
+      "start": 160,
+      "duration": 16,
+      "text": "A useful development hypothesis names the route, the tissue, the required free concentration, the duration of coverage, and the safety margin. Those are design constraints."
+    },
+    {
+      "start": 176,
+      "duration": 16,
+      "text": "The winning hit is not always the one with the smallest number. It is the series in which potency and disposition can improve together, and the exposure hypothesis can survive experiment."
+    }
+  ]
+}
