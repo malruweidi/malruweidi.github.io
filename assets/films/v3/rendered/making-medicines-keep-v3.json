@@ -1,0 +1,82 @@
+{
+  "movie": "making-medicines-keep-v3.mp4",
+  "status": "DRAFT—human scientific, Arabic pronunciation, image and creative review pending",
+  "sha256": "2786c5f4e39cad110fbd8fadc98517944cf0f6679429a214d575a81c6920f485",
+  "runtime_seconds": 128,
+  "image_policy": "NONE of the authentic manuscript photographs has been sourced or silently fabricated; typeset source quotations and analytical diagrams only",
+  "visuals": [
+    {
+      "scene": "the-problem",
+      "method": "temporal-friction",
+      "source": [
+        "author-submitted-HoPP-manuscript-p2-p4"
+      ],
+      "disclaimer": "An interpretative opening, not a reconstruction of an observed thirteenth-century pharmacy."
+    },
+    {
+      "scene": "four-witnesses",
+      "method": "documents",
+      "source": [
+        "Minhaj-al-dukkan",
+        "al-Dustur-al-bimaristani",
+        "Cairo-Genizah",
+        "hisba"
+      ],
+      "disclaimer": "Textual genres are not equivalent documentary evidence; preserve the distinction between instructions and observed shop transactions."
+    },
+    {
+      "scene": "julab",
+      "method": "arabic-quote",
+      "source": [
+        "Minhaj-1870-print"
+      ],
+      "disclaimer": "Arabic excerpt typeset from quoted printed passage in the accepted manuscript; this is NOT a manuscript-page photograph."
+    },
+    {
+      "scene": "process",
+      "method": "process",
+      "source": [
+        "Minhaj-1870-print",
+        "author-submitted-HoPP-manuscript-p15-p17"
+      ],
+      "disclaimer": "Schematic based on primary-text instructions; not footage of an actual medieval preparation."
+    },
+    {
+      "scene": "failure-repair",
+      "method": "repair",
+      "source": [
+        "Minhaj-1870-print",
+        "author-submitted-HoPP-manuscript-p18"
+      ],
+      "disclaimer": "Schematic of the stated repair instruction. Not a historical experiment, validated stability method or modern pharmaceutical reprocessing."
+    },
+    {
+      "scene": "substitution",
+      "method": "substitution",
+      "source": [
+        "author-submitted-HoPP-manuscript-p10-p11"
+      ],
+      "disclaimer": "Conceptual decision diagram; no medieval ingredient approved as clinically bioequivalent."
+    },
+    {
+      "scene": "genizah",
+      "method": "two-documents",
+      "source": [
+        "Genizah-Or1081-J39",
+        "author-submitted-HoPP-manuscript-p20-p21"
+      ],
+      "disclaimer": "Document identifier and reported sequence from scholarly analysis; no original Genizah photograph is reproduced without Cambridge permission."
+    },
+    {
+      "scene": "conclusion",
+      "method": "reliability",
+      "source": [
+        "author-submitted-HoPP-manuscript-abstract",
+        "ICH-Q8-contrast"
+      ],
+      "disclaimer": "Modern concepts are used analytically; no historical genealogy to GMP claimed. Manuscript accepted 15 October 2026; not yet published."
+    }
+  ],
+  "narration": "Kokoro open synthetic voice, per-scene time bounds; sentence subtitles approximate acoustic timing",
+  "link": "https://www.qdl.qa/en/archive/81055/vdc_100023441781.0x000001"
+}

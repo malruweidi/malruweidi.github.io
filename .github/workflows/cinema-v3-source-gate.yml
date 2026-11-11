@@ -1,0 +1,23 @@
+name: Cinema V3 source-first editorial gate
+on:
+  push:
+    branches: [cinema-v3-evidence-first]
+    paths:
+      - scripts/audit-cinema-v3-provenance.py
+      - assets/films/cinema-v3-shot-bible.json
+      - assets/films/v3/nine-feature-shot-bible.json
+      - assets/films/v3/primary-figure-source-register.json
+      - .github/workflows/cinema-v3-source-gate.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scientific-storyboard-coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test every research film has unique source-locked editorial plan
+        run: |
+          python -m py_compile scripts/audit-cinema-v3-provenance.py
+          python scripts/audit-cinema-v3-provenance.py

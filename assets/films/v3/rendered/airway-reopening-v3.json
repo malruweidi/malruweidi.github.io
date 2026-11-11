@@ -1,0 +1,34 @@
+{
+  "id": "airway-reopening",
+  "duration": 128,
+  "sha256": "5fae88573a22ff0cad2fa5ed0da4450c17be9bc1656e7a1548868f8a3d0de025",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8384562/",
+  "reported_values": {
+    "bubble_control": {
+      "mean": 54.7,
+      "sem": 3.94
+    },
+    "lat": {
+      "mean": 20.9,
+      "sem": 12
+    },
+    "dexamethasone": {
+      "mean": 15.1,
+      "sem": 3.43
+    },
+    "dhea": {
+      "mean": 16.1,
+      "sem": 2.9
+    }
+  },
+  "source_figure": [
+    {
+      "image": "assets/home-archive/figure-pulmonary-flow-chamber.jpg",
+      "paper": "2021 J Appl Physiol study",
+      "figure": "Figure 1, panels A\u2013D",
+      "status": "Visually checked original image matches the article's figure arrangement; show whole frame and source attribution."
+    }
+  ],
+  "status": "DRAFT, needs artistic and spoken-term audition, publisher figure rights confirmation",
+  "evidence_boundary": "2021 rat L2 chamber experiment only; original exact Fig.1 included, all other cell pictures explicitly schematic"
+}
