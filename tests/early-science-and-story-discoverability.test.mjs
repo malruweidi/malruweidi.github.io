@@ -6,7 +6,7 @@ import {resolve,dirname,join} from 'node:path';
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const read=path=>readFileSync(join(root,path),'utf8');
-const home=read('index.html');
+const home=read('home-legacy-2026.html');
 const stories=read('stories.html');
 const archive=read('archive.html');
 const illness=read('illness-and-evidence.html');
@@ -15,7 +15,7 @@ const image='assets/owner-archive-2026-10-17/grade10-chemistry-festival-aref-ela
 
 test('first chemistry teacher is visible without JavaScript on all three archival paths',()=>{
   assert.ok(existsSync(join(root,image)));
-  for(const [path,html] of [['index.html',home],['stories.html',stories],['archive.html',archive]]){
+  for(const [path,html] of [['home-legacy-2026.html',home],['stories.html',stories],['archive.html',archive]]){
     assert.ok(html.includes(image),path);
     assert.ok(html.includes('Mr. Aref Elahmad'),path);
   }
