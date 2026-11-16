@@ -2,7 +2,7 @@
 const {test}=require("node:test"),assert=require("node:assert/strict");
 const fs=require("node:fs"),path=require("node:path");
 const root=path.resolve(__dirname,".."),read=f=>fs.readFileSync(path.join(root,f),"utf8");
-const pages=["index.html","stories.html","archive.html","search.html",
+const pages=["home-legacy-2026.html","stories.html","archive.html","search.html",
  "illness-and-evidence.html","publication-cinema.html","films/what-a-bubble-can-do.html"];
 function lum(hex){const c=hex.slice(1).match(/.{2}/g).map(x=>parseInt(x,16)/255);
  const [r,g,b]=c.map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return .2126*r+.7152*g+.0722*b;}
