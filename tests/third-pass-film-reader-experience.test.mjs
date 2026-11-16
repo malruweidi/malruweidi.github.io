@@ -24,7 +24,7 @@ test("film library introduces playable films rather than exposing production tra
 });
 
 test("homepage historical pharmacy film uses the released documentary cut and tells readers where it leads",()=>{
- const home=read("index.html"),article=read("films/making-medicines-keep.html");
+ const home=read("home-legacy-2026.html"),article=read("films/making-medicines-keep.html");
  assert.match(home,/source src="\/assets\/films\/series-v8-primary\/making-medicines-keep\.mp4"/);
  assert.match(home,/src="\/assets\/films\/series-v8-primary\/making-medicines-keep\.vtt"/);
  assert.match(article,/source src="\/assets\/films\/series-v8-primary\/making-medicines-keep\.mp4"/);
