@@ -1,20 +1,29 @@
-# Living Research Desk — concept preview
+# Ruwaidix — Living Research Desk release
 
-This branch adds a **standalone, non-indexed prototype** at `living-desk-preview.html`; it does **not** alter `index.html` or any existing archive page.
+## Production homepage redesign — 17 November 2026
 
-## Concept delivered
-- New editorial opening based on approved Ruwaidix identity (Newsreader / DM Sans / DM Mono, navy, archival paper, terracotta).
-- Six visual doorways to existing original research, fieldnotes, history, films, personal stories and future research questions.
-- Audience-sensitive curated navigation for prospective supervisors, researchers, and curious readers.
-- Three intellectual connections that are explicitly editorial, not experimental findings.
-- English/Arabic content switching, RTL layout support, client-side search, keyboard shortcuts and reduced-motion styling.
-- Original public-site photos and figures; conceptual illustration explicitly identified as such; in-progress research is not presented as published.
+The redesigned **index.html** presents a concise, bilingual, original photographic research desk. All existing scientific, historical, and documentary pages are retained. The prior homepage is preserved as an unaltered snapshot at **home-legacy-2026.html**, linked in the complete collection section and footer.
 
-## Before considering production use
-1. Visually test at 320, 375, 768, 1024 and 1440px in actual browsers.
-2. Confirm all reused asset captions and photograph permissions with the owner.
-3. Review Arabic typography/RTL and keyboard/screen-reader behavior.
-4. Review research-status wording against the current publication record.
-5. Perform Lighthouse / Core Web Vitals / axe checks. The local restricted Chromium runtime blocked browser navigation, so these have **not** been signed off.
+### What is new
+- Six expressive, source-grounded doorways to laboratory methods, fieldnotes, historical writing, documentary films, personal archives, and research horizons
+- Three accessible visitor profiles, linking supervisors, fellow researchers, and curious readers to relevant primary pages
+- Three explicit *editorial* intellectual threads, not new claims of scientific results
+- Four research threads with clear research-stage/status labels
+- English/Arabic switching, mobile navigation, keyboard-invoked local search, source-linked photography, and reduced-motion support
+- Dedicated directory linking all nine previously prominent chapters plus the old complete homepage
+- Canonical, Open Graph, and Twitter card metadata; no tracking or paid API
+- A new regression test for the redesigned homepage; existing old-home tests now inspect the preserved archive
 
-The preview is intended for review only. No main-branch files have been changed.
+### Preserved
+- Original media, scientific figures, clinical/personal narratives, bylines, author contributions and historic source references
+- Every existing internal page and its deep links
+- Existing English/Arabic archival translation scripts on older pages
+- The approved Ruwaidix palette and typography
+
+### Verification
+- New homepage release contract passes in GitHub Actions.
+- Repository site-integrity script passed on the PR with original source pages preserved.
+- Chrome workflow captured screenshots at 375 and 1440px and checked overall reflow at 320/375/768/1024/1440px; 0 page errors or blocking layout issues in first PR run.
+- Publication film test was updated to match the site's already released 06:26 film, *Anatomy of a Question*, without changing source media.
+
+Browser automation provides evidence about tested interactions and source responses, **not** a full manual screen-reader certification, exhaustive media-rights review, or proof of publication-science accuracy.
