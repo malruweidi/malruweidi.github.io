@@ -19,7 +19,7 @@ test("The film is two minutes, twelve traceable scenes and actual archival media
  }
 });
 test("Homepage removes embedded HeyGen watermark source without deleting primary record",()=>{
- const home=get("index.html");
+ const home=get("home-legacy-2026.html");
  assert.doesNotMatch(home,/caption_83dd291755454eed969cbd6228446288|app\.heygen\.com\/videos/);
  assert.match(home,/id="film"/);
  assert.match(home,/what-survives-the-experiment\.mp4/);
