@@ -4,7 +4,7 @@ import {fileURLToPath} from "node:url";
 import test from "node:test";
 import assert from "node:assert/strict";
 const root=resolve(dirname(fileURLToPath(import.meta.url)),".."),read=p=>readFileSync(join(root,p),"utf8");
-const posts=JSON.parse(read("assets/current-substack.json")), home=read("index.html"),full=read("full-record.html"),page=read("writing.html");
+const posts=JSON.parse(read("assets/current-substack.json")), home=read("home-legacy-2026.html"),full=read("full-record.html"),page=read("writing.html");
 const dead=["the-apocalypse-will-have-plenty-of","oh-captain-my-captain","to-transmit-life-without-knowing","/p/16c"];
 test("verified Substack corpus is the exact current five-article public archive",()=>{
  assert.equal(posts.source_archive,"https://malruweidi.substack.com/archive");
@@ -39,7 +39,7 @@ test("homepage, complete record, and writing hub match live public Substack arti
  assert.ok(page.includes('href="https://malruweidi.substack.com/archive"'));
 });
 test("deleted Substack links are no longer presented on public webpages",()=>{
- for(const p of ["index.html","full-record.html","writing.html","reading-map.html"]){
+ for(const p of ["home-legacy-2026.html","full-record.html","writing.html","reading-map.html"]){
   const html=read(p);for(const slug of dead)assert.ok(!html.includes("malruweidi.substack.com/p/"+slug.replace(/^\/p\//,"")),p+" still links removed "+slug);
  }
 });
