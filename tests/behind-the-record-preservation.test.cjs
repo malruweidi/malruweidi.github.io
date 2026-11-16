@@ -21,7 +21,7 @@ test('overlooked archival and personal sources receive their own edited doorway'
 });
 
 test('homepage remains concise while revealing preserved archival collections',()=>{
-  const home=read('index.html');
+  const home=read('home-legacy-2026.html');
   const visible=home.split('<details class="rx-home-complete-record"')[0];
   assert.match(visible,/href="\/behind-the-record\.html"/);
   assert.equal((visible.match(/class="rx26-portal-card"/g)||[]).length,9,'Do not lengthen the main chapter grid');
