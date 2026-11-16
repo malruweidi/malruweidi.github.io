@@ -12,13 +12,13 @@ const visible = name => read(name)
   .replace(/<!--[\s\S]*?-->/g, '');
 
 test('primary entry points tell scientific stories rather than reveal editorial workflow', () => {
-  for (const page of ['index.html','stories.html','chem-squad.html','films.html','reading-map.html','moving-evidence.html','behind-the-record.html','publication-cinema.html']) {
+  for (const page of ['home-legacy-2026.html','stories.html','chem-squad.html','films.html','reading-map.html','moving-evidence.html','behind-the-record.html','publication-cinema.html']) {
     const html = visible(page);
     assert.doesNotMatch(html, /original (?:capture )?date unverified|DATE UNVERIFIED|date not verified|owner-supplied original|source-aware film library|archival originals of already featured streams|not counted as extra films/i, page);
     assert.equal((html.match(/<h1\b/g)||[]).length, 1, page);
   }
-  assert.match(read('index.html'), /class="rx26-portal-grid"/);
-  assert.equal((read('index.html').match(/class="rx26-portal-card"/g)||[]).length, 9);
+  assert.match(read('home-legacy-2026.html'), /class="rx26-portal-grid"/);
+  assert.equal((read('home-legacy-2026.html').match(/class="rx26-portal-card"/g)||[]).length, 9);
   assert.match(read('films.html'), /The film begins where/);
   assert.match(read('chem-squad.html'), /Ten years of talking chemistry/);
   assert.match(read('publication-cinema.html'), /Research questions, on screen/);
