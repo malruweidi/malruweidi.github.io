@@ -8,7 +8,7 @@ function luminance(h){return .2126*linear(h.slice(1,3))+.7152*linear(h.slice(3,5
 function contrast(f,b){const a=luminance(f),c=luminance(b);return (Math.max(a,c)+.05)/(Math.min(a,c)+.05)}
 test("contrast fixes are source-preserving opt-in CSS shared by the seven affected routes",()=>{
  const href='<link rel="stylesheet" href="/assets/wcag-contrast-2026.css?v=1">';
- for(const p of ["index.html","stories.html","archive.html","search.html",
+ for(const p of ["home-legacy-2026.html","stories.html","archive.html","search.html",
  "illness-and-evidence.html","publication-cinema.html","films/what-a-bubble-can-do.html"]){
   const page=read(p);
   assert.ok(page.includes(href),"contrast audit CSS must be loaded on "+p);
