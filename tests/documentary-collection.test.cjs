@@ -12,8 +12,8 @@ test("documentary hub separates released films, original observations and preser
   assert.match(html, /id="released"/);
   assert.match(html, /id="observations"/);
   assert.match(html, /id="film-notebooks"/);
-  assert.match(html, /what-survives-the-experiment\.mp4/);
-  assert.match(html, /Released · two-minute documentary/);
+  assert.match(html, /anatomy-of-a-question-2026-v2\.mp4/);
+  assert.match(html, /Released · 06:26 research documentary/);
   assert.doesNotMatch(html, /In development · no film released/);
   assert.match(html, /Watch the source-linked historical edition/);
   assert.match(html, /Watch the formulation film/);
