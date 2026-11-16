@@ -44,7 +44,7 @@ test("the published video is an actual signed-off binary with aligned captions",
 test("existing failed experiment story and original film remain intact",()=>{
  const original=read("stories/failed-zebrafish-histology.html");
  const film=read("film.html");
- const home=read("index.html");
+ const home=read("home-legacy-2026.html");
  assert.match(original,/I did not obtain the reliable, interpretable sections/);
  assert.match(original,/(?:agarose grade and thermal behaviour|grade and thermal behaviour of (?:the )?agarose)/);
  assert.match(film,/what-survives-the-experiment.mp4/);
