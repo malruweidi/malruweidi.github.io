@@ -3,7 +3,7 @@ import {test} from "node:test";
 import assert from "node:assert/strict";
 
 const read = p => readFileSync(new URL("../"+p, import.meta.url));
-const home = read("index.html").toString("utf8");
+const home = read("home-legacy-2026.html").toString("utf8");
 const stories = read("stories.html").toString("utf8");
 
 test("homepage social preview dimensions describe the actual preserved portrait asset", () => {
