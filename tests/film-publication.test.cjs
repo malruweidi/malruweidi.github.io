@@ -69,7 +69,7 @@ test("public film page plays the preserved release without exposing production t
   assert.ok(film.includes('kind="captions"'));
   assert.ok(film.includes('href="/assets/films/anatomy-of-a-question-2026-v2.mp4"'));
   assert.ok(film.includes('https://schema.org'));
-  assert.ok(film.includes("PT2M"));
+  assert.ok(film.includes("PT6M26S"));
   assert.doesNotMatch(film, /class="film-arabic-num"/);
   assert.doesNotMatch(film, /<details class="film-arabic"/);
   assert.doesNotMatch(film, /href="writing.html"/);
