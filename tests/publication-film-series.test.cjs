@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const catalog = JSON.parse(fs.readFileSync(path.join(root, 'assets/films/publication-series.json'), 'utf8'));
-const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const html = fs.readFileSync(path.join(root, 'home-legacy-2026.html'), 'utf8');
 const cinema = fs.readFileSync(path.join(root, 'publication-cinema.html'), 'utf8');
 const films = fs.readFileSync(path.join(root, 'films.html'), 'utf8');
 const file = src => path.resolve(root, src.replace(/^\//, ''));
