@@ -5,7 +5,7 @@ import assert from "node:assert/strict";
 const read = path => readFileSync(new URL("../" + path, import.meta.url), "utf8");
 
 test("geographic identity exists exactly once without replacing the existing homepage", () => {
-  const html = read("index.html");
+  const html = read("home-legacy-2026.html");
   assert.equal((html.match(/id="three-places"/g) || []).length, 1);
   assert.match(html, /id="about"/);
   assert.match(html, /id="story"/);
@@ -17,7 +17,7 @@ test("geographic identity exists exactly once without replacing the existing hom
 });
 
 test("three places use accessible controls and distinguish real formation from future prospects", () => {
-  const html = read("index.html");
+  const html = read("home-legacy-2026.html");
   const start = html.indexOf('<section class="geographies"');
   const stop = html.indexOf("</section>", start);
   const map = html.slice(start, stop);
