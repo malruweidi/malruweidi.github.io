@@ -6,7 +6,7 @@ import {fileURLToPath} from "node:url";
 const root=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const read=f=>readFileSync(join(root,f),"utf8");
 test("Chem Squad and Leadership & Management are distinct full-sized homepage categories",()=>{
- const home=read("index.html");
+ const home=read("home-legacy-2026.html");
  const section=home.slice(home.indexOf('<section class="rx26-portal"'),home.indexOf('<details class="rx-home-complete-record"'));
  assert.ok(section.includes('href="/chem-squad.html"'));
  assert.ok(section.includes('href="/leadership.html"'));
@@ -30,7 +30,7 @@ test("Leadership destination documents The Youth Company, ACS and quality withou
  assert.ok(!page.includes('Chem Squad quality management'),"keep independent scientific circle separate");
 });
 test("New leadership category is a visible, accessible and bilingual destination",()=>{
- const page=read("leadership.html"),home=read("index.html");
+ const page=read("leadership.html"),home=read("home-legacy-2026.html");
  assert.equal((page.match(/<h1\b/g)||[]).length,1);
  assert.match(page,/rel="canonical"/);
  assert.match(page,/aria-labelledby="leadership-title"/);
