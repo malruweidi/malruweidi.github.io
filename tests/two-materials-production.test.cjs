@@ -47,7 +47,7 @@ test("existing failed experiment story and original film remain intact",()=>{
  const home=read("home-legacy-2026.html");
  assert.match(original,/I did not obtain the reliable, interpretable sections/);
  assert.match(original,/(?:agarose grade and thermal behaviour|grade and thermal behaviour of (?:the )?agarose)/);
- assert.match(film,/what-survives-the-experiment.mp4/);
+ assert.match(film,/anatomy-of-a-question-2026-v2.mp4/);
  assert.match(home,/rx-feature-film/);
 });
 test("the released reader-first evidence cut remains playable while earlier release and captions stay in the source archive",()=>{
