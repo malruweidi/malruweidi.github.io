@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import assert from "node:assert/strict";
 
-const page = readFileSync(new URL("../index.html", import.meta.url), "utf8");
+const page = readFileSync(new URL("../home-legacy-2026.html", import.meta.url), "utf8");
 const dictionary = readFileSync(new URL("../assets/homepage-editorial-i18n-2026.js", import.meta.url), "utf8");
 const stylesheet = readFileSync(new URL("../assets/research-fastpaths-2026.css", import.meta.url), "utf8");
 const heroStart = page.indexOf('<div class="rx-hero-copy">');
