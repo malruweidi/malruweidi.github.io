@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import assert from "node:assert/strict";
 
-const html = readFileSync(new URL("../index.html", import.meta.url), "utf8");
+const html = readFileSync(new URL("../home-legacy-2026.html", import.meta.url), "utf8");
 const start = html.indexOf('class="rx-hero-copy"');
 const end = html.indexOf('class="rx-hero-portrait"', start);
 const hero = html.slice(start, end);
