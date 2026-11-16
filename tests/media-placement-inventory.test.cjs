@@ -37,7 +37,7 @@ test('inventory connects original images and movie editions to their exact ownin
 
 test('inventory is read-only and distinguishes embedded and remote images without guessing provenance', () => {
   const i = buildInventory(root);
-  const homePortrait = i.pages['index.html'].find(x => x.tag === 'img' && x.url.startsWith('https://cdn.creativeclaw.co/'));
+  const homePortrait = i.pages['home-legacy-2026.html'].find(x => x.tag === 'img' && x.url.startsWith('https://cdn.creativeclaw.co/'));
   assert.equal(homePortrait.availability, 'external-unverified');
   const inline = i.pages['illness-and-evidence.html'].find(x => x.tag === 'img' && x.url === '[inline data URI]');
   assert.ok(inline);
