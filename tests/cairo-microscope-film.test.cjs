@@ -35,7 +35,7 @@ test("rendered film is an authenticated MP4 with score and caption manifest",()=
 });
 test("film collection adds the microscope without removing or rewriting previous documentaries",()=>{
  const hub=read("films.html"),page=read("films/cairo-microscope.html"),story=read("stories.html");
- const site=read("index.html"),index=JSON.parse(read("assets/discovery-index.json"));
+ const site=read("home-legacy-2026.html"),index=JSON.parse(read("assets/discovery-index.json"));
  for(const h of [hub,page]) {
   assert.ok(h.includes("/assets/films/cairo-microscope.mp4"));
   assert.ok(h.includes("/assets/films/cairo-microscope.vtt"));
