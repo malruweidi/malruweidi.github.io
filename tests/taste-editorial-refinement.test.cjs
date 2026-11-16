@@ -7,7 +7,7 @@ const root = path.resolve(__dirname, '..');
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 
 test('Taste refinement is loaded last and remains a reversible stylesheet', () => {
-  const html = read('index.html');
+  const html = read('home-legacy-2026.html');
   const css = read('assets/taste-editorial-2026-10-18.css');
   const link = '<link rel="stylesheet" href="/assets/taste-editorial-2026-10-18.css?v=20261101-navy2">';
   assert.equal(html.split(link).length - 1, 1, 'Exactly one homepage style import');
@@ -22,7 +22,7 @@ test('Taste refinement is loaded last and remains a reversible stylesheet', () =
 });
 
 test('nine curated home chapters and original academic record remain accessible', () => {
-  const home = read('index.html');
+  const home = read('home-legacy-2026.html');
   const aboveRecord = home.split('<details class="rx-home-complete-record"')[0];
   const urls = [
     '/research.html', '/publications.html', '/films.html', '/stories.html',
