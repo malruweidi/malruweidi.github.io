@@ -43,7 +43,7 @@ test("histology documentary stays reader-first while three experimental photogra
 });
 
 test("new collection is additive and searchable without removing published footage", () => {
-  const home = read("index.html");
+  const home = read("home-legacy-2026.html");
   const oldFilms = read("moving-evidence.html");
   const legacyFilm = read("film.html");
   const story = read("stories.html");
