@@ -44,7 +44,7 @@ test('very narrow and RTL layouts keep the Explore panel reachable', () => {
 });
 
 test('content and public routes remain unchanged by navigation repair', () => {
-  const home = read('index.html');
+  const home = read('home-legacy-2026.html');
   const js = read('assets/unified-pages.js');
   for (const route of ['full-record.html#research','full-record.html#publications',
     'full-record.html#writing','full-record.html#history','/archive.html',

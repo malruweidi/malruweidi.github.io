@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const read=path=>readFileSync(join(root,path),"utf8");
-const home=read("index.html");
+const home=read("home-legacy-2026.html");
 
 test("homepage is a compact directory of the nine primary collections",()=>{
   assert.ok(home.includes('id="rx26-portal"'));

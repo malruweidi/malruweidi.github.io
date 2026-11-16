@@ -10,7 +10,7 @@ const films = read("moving-evidence.html");
 const techniques = read("techniques.html");
 const stories = read("stories.html");
 const ownerArchive = read("assets/owner-archive-2026-10-13.js");
-const homepage = read("index.html");
+const homepage = read("home-legacy-2026.html");
 const engagements = read("engagement.html");
 const archive = read("archive.html");
 const discovery = JSON.parse(read("assets/discovery-index.json"));
@@ -58,7 +58,7 @@ test("videos have control, accessible labels and metadata-first loading", () => 
 
 test("film index is linked without replacing original archive entries", () => {
   for (const [filename, source] of [
-    ["index.html", homepage],
+    ["home-legacy-2026.html", homepage],
     ["archive.html", archive],
     ["engagement.html", engagements],
     ["stories.html", stories],

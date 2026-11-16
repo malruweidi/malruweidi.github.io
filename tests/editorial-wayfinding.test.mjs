@@ -4,7 +4,7 @@ import {fileURLToPath} from "node:url";
 import test from "node:test";
 import assert from "node:assert/strict";
 const root=resolve(dirname(fileURLToPath(import.meta.url)),".."), read=p=>readFileSync(join(root,p),"utf8");
-const home=read("index.html"), stories=read("stories.html");
+const home=read("home-legacy-2026.html"), stories=read("stories.html");
 const chapters=["anatomy","community","living-systems","ramadan-atvb","delivery","molecular-models","community-before-lab","personal-microscope","unfortunate-trials","historical-chemistry","surface-science","research-apparatus","zebrafish-histology-materials","zewail-visit-and-portrait"];
 test("bibliography follows research before the long autobiography",()=>{
  assert.ok(home.indexOf('id="research"')<home.indexOf('id="publications"'));

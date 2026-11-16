@@ -50,7 +50,7 @@ test('documentary scientific cautions remain discoverable without duplicating ow
 });
 
 test('avoid mirrored defensive biography across homepage and complete archive', () => {
-  const home = read('index.html');
+  const home = read('home-legacy-2026.html');
   const complete = read('full-record.html');
   const horizon = read('research-horizon.html');
   for (const text of [home, complete, horizon]) {

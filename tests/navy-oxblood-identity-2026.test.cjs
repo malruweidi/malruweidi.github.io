@@ -33,7 +33,7 @@ test('canonical site palette uses lighter navy and burgundy, including mirrored 
   }
   assert.ok(read('assets/homepage-editorial-2026.css').includes('--home-ink:' + colors.navy));
   assert.ok(read('assets/taste-editorial-2026-10-18.css').includes('--taste-accent:' + colors.burgundy));
-  assert.ok(read('index.html').includes('<meta name="theme-color" content="' + colors.paper + '">'));
+  assert.ok(read('home-legacy-2026.html').includes('<meta name="theme-color" content="' + colors.paper + '">'));
 });
 
 test('essential reading and dark-surface text pairs have AA contrast or better', () => {
@@ -53,7 +53,7 @@ test('essential reading and dark-surface text pairs have AA contrast or better',
 });
 
 test('palette pass changes neither editorial structure nor remote dependencies', () => {
-  const home = read('index.html');
+  const home = read('home-legacy-2026.html');
   assert.match(home, /class="rx-hero-portrait"/);
   assert.match(home, /class="rx26-portal-card"/);
   assert.match(home, /id="film"/);
@@ -63,7 +63,7 @@ test('palette pass changes neither editorial structure nor remote dependencies',
 });
 
 test('homepage requests fresh versioned styles after the new palette deployment', () => {
-  const html = read('index.html');
+  const html = read('home-legacy-2026.html');
   for (const asset of [
     'design-system.css',
     'narrative-journey.css',

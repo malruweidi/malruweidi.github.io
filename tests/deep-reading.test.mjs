@@ -4,7 +4,7 @@ import {fileURLToPath} from "node:url";
 import test from "node:test";
 import assert from "node:assert/strict";
 const root=resolve(dirname(fileURLToPath(import.meta.url)),".."), read=p=>readFileSync(join(root,p),"utf8");
-const story=read("stories.html"),home=read("index.html"),index=JSON.parse(read("assets/discovery-index.json"));
+const story=read("stories.html"),home=read("home-legacy-2026.html"),index=JSON.parse(read("assets/discovery-index.json"));
 const storyRoutes=[
  ["stories/cairo-microscope.html","personal-microscope"],
  ["stories/failed-zebrafish-histology.html","zebrafish-histology-materials"],

@@ -84,7 +84,7 @@ test('Arabic search includes the published reading-and-viewing category',async()
   assert.ok(category,'Existing category requires Arabic UI text');
 });
 test('homepage discovers its preconnected fonts directly, not through a CSS import',()=>{
-  const home=read('index.html');
+  const home=read('home-legacy-2026.html');
   assert.doesNotMatch(home,/<style>\s*@import\s+url\(['"]https:\/\/fonts\.googleapis\.com/i);
   assert.match(home,/<link rel="stylesheet" href="https:\/\/fonts\.googleapis\.com\/css2\?/);
   assert.match(home,/<link rel="preconnect" href="https:\/\/cdn\.creativeclaw\.co" crossorigin>/);

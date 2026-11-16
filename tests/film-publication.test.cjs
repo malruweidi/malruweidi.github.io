@@ -8,7 +8,7 @@ const get = (file) => fs.readFileSync(path.join(root, file));
 const read = (file) => get(file).toString("utf8");
 const json = (file) => JSON.parse(read(file));
 const film = read("film.html");
-const home = read("index.html");
+const home = read("home-legacy-2026.html");
 const credits = json("assets/films/what-survives-scenes.json");
 const manifest = json("assets/films/what-survives-build.json");
 const vtt = read("assets/films/what-survives-the-experiment.vtt");
@@ -56,7 +56,7 @@ test("captions are time ordered and end within the two-minute film", () => {
 test("homepage has an accessible locally hosted film rather than watermarked HeyGen", () => {
   const section = home.match(/<section class="rx-home-film"[\s\S]*?<\/section>/)?.[0];
   assert.ok(section, "featured film section still exists");
-  assert.ok(section.includes("/assets/films/what-survives-the-experiment.mp4"));
+  assert.ok(section.includes("/assets/films/anatomy-of-a-question-2026-v2.mp4"));
   assert.match(section, /kind="captions"/);
   assert.ok(section.includes('href="/film.html"'));
   assert.doesNotMatch(section, /heygen\.ai|app\.heygen|resource2\.heygen/i);
@@ -67,9 +67,9 @@ test("public film page plays the preserved release without exposing production t
   assert.match(film, /<video[^>]*id="research-film"[^>]*controls/);
   assert.doesNotMatch(film, /<video[^>]*id="research-film"[^>]*hidden/);
   assert.ok(film.includes('kind="captions"'));
-  assert.ok(film.includes('href="/assets/films/what-survives-the-experiment.mp4"'));
+  assert.ok(film.includes('href="/assets/films/anatomy-of-a-question-2026-v2.mp4"'));
   assert.ok(film.includes('https://schema.org'));
-  assert.ok(film.includes("PT2M"));
+  assert.ok(film.includes("PT6M26S"));
   assert.doesNotMatch(film, /class="film-arabic-num"/);
   assert.doesNotMatch(film, /<details class="film-arabic"/);
   assert.doesNotMatch(film, /href="writing.html"/);

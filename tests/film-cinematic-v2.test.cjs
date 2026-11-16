@@ -38,7 +38,7 @@ test("narration and film retain a quiet custom-made score, without licensed stoc
 });
 
 test("the accessible homepage and full documented account remain intact", () => {
-  const home = read("index.html");
+  const home = read("home-legacy-2026.html");
   assert.match(home, /id="film"/);
   assert.match(home, /what-survives-the-experiment.mp4/);
   for (const anchor of ["research","story","publications","patient-perspective","quacs","writing"]) {

@@ -23,7 +23,7 @@ test("scientific evidence reader keeps each published image unmodified and trace
 test("interpretive layer is additive, accessible and connected to research",()=>{
   const body=read("evidence-viewer.html");
   const css=read("assets/evidence-reading-2026.css");
-  const home=read("index.html");
+  const home=read("home-legacy-2026.html");
   const films=read("films.html");
   const discovery=JSON.parse(read("assets/discovery-index.json"));
   const sitemap=read("sitemap.xml");

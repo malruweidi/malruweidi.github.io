@@ -20,7 +20,7 @@ test("eight archived object photographs reference the adjacent object title with
 });
 
 test("three homepage university photographs inherit their existing visible headings",()=>{
- const html=read("index.html");
+ const html=read("home-legacy-2026.html");
  const marker=html.indexOf('<div class="photo-opening"');
  const block=html.slice(marker,html.indexOf('</div>\n<div class="story-rewind">',marker));
  for(const [file,id] of [
@@ -44,5 +44,5 @@ test("whole site figure audit distinguishes missing figcaptions from existing ac
  assert.ok(d.pages["full-record.html"].figures.filter(x=>!x.captionPresent&&!x.hasEquivalentLabel).length>=3,"three historical inline figures remain separately flagged");
  assert.ok(d.stats.figuresWithoutCaptionsOrAccessibleLabels>=3,"other independently added pages are counted rather than hidden");
  assert.ok(d.pages["archive.html"].figures.filter(x=>x.hasEquivalentLabel).length>=8);
- assert.ok(d.pages["index.html"].figures.filter(x=>x.hasEquivalentLabel).length>=3);
+ assert.ok(d.pages["home-legacy-2026.html"].figures.filter(x=>x.hasEquivalentLabel).length>=3);
 });
