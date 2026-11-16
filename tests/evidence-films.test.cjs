@@ -59,7 +59,7 @@ test("the production workflow and four original editorial pages actually exist",
     assert.match(load(page),/rx-film-chapter/,page);
   }
   assert.match(load("engagement.html"),/the-laboratory-we-carried-with-us/);
-  assert.match(load("index.html"),/films\/making-medicines-keep\.html/);
+  assert.match(load("home-legacy-2026.html"),/films\/making-medicines-keep\.html/);
 });
 
 test("artwork varies with its historical scene and film labels fit their safe areas",()=>{
