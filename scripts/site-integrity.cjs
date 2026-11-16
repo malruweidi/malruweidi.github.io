@@ -47,7 +47,7 @@ for(const f of paths.filter(x=>x.endsWith(".js"))){const p=cp.spawnSync(process.
 const pending=JSON.parse(fs.readFileSync(path.join(root,"assets/archival-2019-2020-provenance.json")));const absent=(pending.assets||[]).filter(x=>!known.has(x.path));
 if(absent.length)warnings.push(absent.length+" owner-identified 2019-2020 images still lack publishable binaries; cards hidden");
 // Ruwaidix editorial architecture invariants: prevent loss of reader paths and release regressions.
-const home=html.get("index.html")||"";
+const home=html.get("home-legacy-2026.html")||"";
 // The approved two-minute introduction screens first; research follows, with its record intact.
 const checkpoints=['id="film"','class="rx-evidence-index"','id="rx26-portal"','id="research"','id="publications"','class="rh-home-entry"','class="rx-chapters"','id="story"'];
 const positions=checkpoints.map(x=>home.indexOf(x));
