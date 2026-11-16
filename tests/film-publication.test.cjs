@@ -8,7 +8,7 @@ const get = (file) => fs.readFileSync(path.join(root, file));
 const read = (file) => get(file).toString("utf8");
 const json = (file) => JSON.parse(read(file));
 const film = read("film.html");
-const home = read("index.html");
+const home = read("home-legacy-2026.html");
 const credits = json("assets/films/what-survives-scenes.json");
 const manifest = json("assets/films/what-survives-build.json");
 const vtt = read("assets/films/what-survives-the-experiment.vtt");
