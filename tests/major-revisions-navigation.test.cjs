@@ -4,7 +4,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const read = file => fs.readFileSync(path.join(__dirname, '..', file), 'utf8');
-const home = read('index.html');
+const home = read('home-legacy-2026.html');
 const writing = read('writing.html');
 const book = read('major-revisions.html');
 
