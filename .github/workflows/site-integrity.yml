@@ -11,6 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - name: Diagnose full Node test suite migration regressions
+        continue-on-error: true
+        timeout-minutes: 8
+        run: |
+          set +e
+          node --test --test-concurrency=4 tests/*.test.cjs tests/*.test.mjs > /tmp/full-test-diagnostics.txt 2>&1
+          result=$?
+          echo "Complete Node test suite exit code: $result"
+          grep -E '✖|not ok [0-9]|AssertionError|Error \[' /tmp/full-test-diagnostics.txt | head -160 || true
+          tail -12 /tmp/full-test-diagnostics.txt
+          exit $result
       - name: Verify Living Research Desk release and complete legacy preservation
         run: node --test tests/living-desk-home-2026.test.cjs
       - name: Verify navy-and-oxblood identity and palette contrast
