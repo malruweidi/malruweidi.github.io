@@ -41,7 +41,7 @@ test("film collection adds the microscope without removing or rewriting previous
   assert.ok(h.includes("/assets/films/cairo-microscope.vtt"));
   assert.ok(h.includes('kind="captions"'));
  }
- assert.ok(hub.includes("what-survives-the-experiment.mp4"));
+ assert.ok(hub.includes("anatomy-of-a-question-2026-v2.mp4"),"Preserve the currently published six-minute documentary");
  assert.ok(hub.includes("two-materials-no-section.mp4"));
  assert.match(page,/posted on 1 July 2017/);
  assert.ok(page.includes('href="/stories/cairo-microscope.html"'));
