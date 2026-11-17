@@ -12,15 +12,15 @@ test('the approved original homepage is restored byte for byte', () => {
     'Do not replace the approved homepage with an experimental landing page');
   assert.match(home, /data-rx-page="home"/);
   assert.doesNotMatch(home, /data-rx-page="living-home"/);
-  assert.equal((home.match(/<h1\\b/g)||[]).length,1);
+  assert.equal((home.match(/<h1\b/g)||[]).length,1);
 });
 
 test('the original 06:26 documentary is prominently available with captions', () => {
   assert.match(home, /<section class="rx-home-film" id="film"/);
   assert.match(home, /id="rx-feature-film"/);
-  assert.match(home, /src="\\/assets\\/films\\/anatomy-of-a-question-2026-v2\\.mp4"/);
-  assert.match(home, /kind="captions" src="\\/assets\\/films\\/anatomy-of-a-question-2026-v2\\.vtt"/);
-  assert.match(home, /Anatomy <em>of a Question\\.<\\/em>/);
+  assert.match(home, /src="\/assets\/films\/anatomy-of-a-question-2026-v2\.mp4"/);
+  assert.match(home, /kind="captions" src="\/assets\/films\/anatomy-of-a-question-2026-v2\.vtt"/);
+  assert.match(home, /Anatomy <em>of a Question\.<\/em>/);
   assert.ok(fs.existsSync(path.join(root,'assets/films/anatomy-of-a-question-2026-v2.mp4')));
   assert.ok(fs.existsSync(path.join(root,'assets/films/anatomy-of-a-question-2026-v2.vtt')));
 });
