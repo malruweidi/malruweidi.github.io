@@ -86,7 +86,7 @@ function trigger(title,klass){const b=E("button",klass,title);b.type="button";b.
 function currentSections(){
 const main=document.querySelector("main");if(!main)return [];
 return [...main.querySelectorAll("h2")].filter(h=>!h.closest("details:not([open]),.rx-atlas-home,.rx-atlas-afterword")).slice(0,8).map((h,i)=>{
-let id=h.id||h.closest("[id]")?.id;
+let id=h.id||h.parentElement?.id||h.closest("section[id]")?.id;
 if(!id){id="rx-atlas-heading-"+i;if(!document.getElementById(id))h.id=id;}
 return {id,title:h.textContent.replace(/\s+/g," ").trim().slice(0,100)};
 }).filter(x=>x.title);
@@ -139,7 +139,7 @@ wrap.append(top,interact,foot);section.append(wrap);portal.insertAdjacentElement
 const more=document.querySelector(".rx-more-panel");if(more&&!more.querySelector('[href="#question-atlas"]'))more.prepend(A("#question-atlas",T("Interactive question atlas","أطلس الأسئلة التفاعلي")));
 }
 function buildSecondary(){
-const k=key(),targets=related[k],main=document.querySelector("main");if(!targets||!main)return;
+const k=key(),targets=related[k]||["research.html","publications.html","stories.html"],main=document.querySelector("main");if(!main)return;
 const bar=E("nav","rx-atlas-bar");bar.setAttribute("aria-label",L(T("Explore connected work","استكشف الأعمال المترابطة")));
 const inner=E("div","rx-atlas-bar-inner"),crumb=E("span","rx-atlas-bar-eyebrow",T("In the archive /","في الأرشيف /"));crumb.append(E("strong",null,pages[k]));
 const nav=E("div","rx-atlas-bar-links");targets.slice(0,2).forEach(t=>nav.append(A(t,pages[t])));nav.append(trigger(T("Explore the index +","استكشف الفهرس +"),"rx-atlas-open"));
