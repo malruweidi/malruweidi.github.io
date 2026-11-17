@@ -1,28 +1,48 @@
 'use strict';
-const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
-const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'index.html'),'utf8');
-test('living desk is production home with source-led metadata',()=>{
- assert.match(html,/<link rel="canonical" href="https:\/\/malruweidi.github.io\/">/);
- assert.doesNotMatch(html,/noindex,nofollow|CONCEPT PREVIEW/);
- assert.equal((html.match(/<h1\b/g)||[]).length,1);
- assert.match(html,/data-rx-page="living-home"/);
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const root = path.resolve(__dirname, '..');
+const read = file => fs.readFileSync(path.join(root,file),'utf8');
+const home = read('index.html');
+
+test('the approved original homepage is restored byte for byte', () => {
+  assert.equal(home, read('home-legacy-2026.html'),
+    'Do not replace the approved homepage with an experimental landing page');
+  assert.match(home, /data-rx-page="home"/);
+  assert.doesNotMatch(home, /data-rx-page="living-home"/);
+  assert.equal((home.match(/<h1\\b/g)||[]).length,1);
 });
-test('preserve archive and all nine original destinations',()=>{
- assert.ok(fs.existsSync(path.join(root,'home-legacy-2026.html')));
- const legacy=fs.readFileSync(path.join(root,'home-legacy-2026.html'),'utf8');
- assert.match(legacy,/id="rx26-portal"/);
- const portion=html.slice(html.indexOf('id="directory"'),html.indexOf('<footer'));
- for(const route of ['research','publications','films','stories','illness-and-evidence','writing','chem-squad','leadership','major-revisions'])
-  assert.ok(portion.includes('href="/'+route+'.html"'),route);
- assert.match(html,/href="\/home-legacy-2026.html"/);
+
+test('the original 06:26 documentary is prominently available with captions', () => {
+  assert.match(home, /<section class="rx-home-film" id="film"/);
+  assert.match(home, /id="rx-feature-film"/);
+  assert.match(home, /src="\\/assets\\/films\\/anatomy-of-a-question-2026-v2\\.mp4"/);
+  assert.match(home, /kind="captions" src="\\/assets\\/films\\/anatomy-of-a-question-2026-v2\\.vtt"/);
+  assert.match(home, /Anatomy <em>of a Question\\.<\\/em>/);
+  assert.ok(fs.existsSync(path.join(root,'assets/films/anatomy-of-a-question-2026-v2.mp4')));
+  assert.ok(fs.existsSync(path.join(root,'assets/films/anatomy-of-a-question-2026-v2.vtt')));
 });
-test('six desks, scientific status boundaries and bilingual accessible navigation',()=>{
- for(const part of ['card-lab','card-notes','card-history','card-film','card-people','card-future'])
-  assert.ok(html.includes('class="desk-card '+part+'"'),part);
- for(const part of ['id="search-layer"','aria-modal="true"','id="menu-toggle"','aria-expanded="false"','id="mobile-nav"'])
-  assert.ok(html.includes(part),part);
- assert.match(html,/function closeMobileNav\(\)/);
- assert.match(html,/RESEARCH IN PROGRESS/);
- assert.match(html,/Conceptual vesicle illustration, not an experimental result/);
- assert.match(html,/document.documentElement.dir=next==='ar'\?'rtl':'ltr'/);
+
+test('all nine original collections and the historical record remain on the homepage', () => {
+  assert.match(home,/id="rx26-portal"/);
+  assert.equal((home.match(/class="rx26-portal-card"/g)||[]).length,9);
+  for(const page of ['research','publications','films','stories','illness-and-evidence',
+                     'writing','chem-squad','leadership','major-revisions']) {
+    assert.ok(home.includes('href="/'+page+'.html"'),page);
+  }
+  for(const section of ['research','publications','film','story','patient-perspective',
+                        'framework','methods','imaging','quality','history','writing',
+                        'community','quacs','about','three-places']) {
+    assert.ok(home.includes('id="'+section+'"'),section);
+  }
+  assert.match(home,/id="rx-home-complete-record"/);
+  assert.match(home,/rxOpenDeepLink/);
+  assert.match(home,/hashchange/);
+});
+
+test('experimental prototype stays separate and cannot replace the approved homepage', () => {
+  assert.ok(fs.existsSync(path.join(root,'living-desk-preview.html')));
+  assert.notEqual(home, read('living-desk-preview.html'));
 });
