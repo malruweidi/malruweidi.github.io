@@ -7,9 +7,11 @@ const root = path.resolve(__dirname, '..');
 const read = file => fs.readFileSync(path.join(root,file),'utf8');
 const home = read('index.html');
 
-test('the approved original homepage is restored byte for byte', () => {
-  assert.equal(home, read('home-legacy-2026.html'),
-    'Do not replace the approved homepage with an experimental landing page');
+test('the approved original homepage is preserved byte for byte beneath additive navigation', () => {
+  const atlasAssets = '<link rel="stylesheet" href="/assets/atlas-of-questions-2026.css?v=20261118"><script src="/assets/atlas-of-questions-2026.js?v=20261118" defer></script>';
+  assert.equal(home.split(atlasAssets).length, 2, 'The navigation enhancement must be added exactly once');
+  assert.equal(home.replace(atlasAssets, ''), read('home-legacy-2026.html'),
+    'Do not replace or edit the approved homepage; only additive navigation is permitted');
   assert.match(home, /data-rx-page="home"/);
   assert.doesNotMatch(home, /data-rx-page="living-home"/);
   assert.equal((home.match(/<h1\b/g)||[]).length,1);
