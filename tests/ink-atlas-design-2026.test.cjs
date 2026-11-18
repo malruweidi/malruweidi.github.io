@@ -10,7 +10,7 @@ const home = read('index.html');
 
 test('the blue site loads one revised editorial composition layer, without stacking another stylesheet', () => {
  const blue=read('assets/ruwaidix-one-blue-2026.css');
- const active='/assets/ruwaidix-ink-atlas-2026.css?v=20261118-a1';
+ const active='/assets/ruwaidix-ink-atlas-2026.css?v=20261118-a2';
  assert.equal(blue.split(active).length-1,1);
  assert.ok(blue.indexOf(active)>blue.indexOf('/assets/ruwaidix-blue-home-compat-2026.css'));
  assert.ok(blue.indexOf(active)<blue.indexOf(':root'));
@@ -19,16 +19,15 @@ test('the blue site loads one revised editorial composition layer, without stack
   assert.ok(blue.includes(token),'retained existing blue token: '+token);
 });
 
-test('a drawn arrow appears only on the primary Research chapter destination', () => {
- assert.equal((css.match(/ruwaidix-ink-arrow-2026\.svg/g)||[]).length,1);
- assert.match(css,/\.rx26-portal-card:nth-child\(1\) \.rx26-card-arrow/);
- assert.doesNotMatch(css,/ruwaidix-ink-orbit-2026\.svg/);
- assert.doesNotMatch(css,/content:\s*["\u0027]/);
- assert.match(css,/No generic ::before\/::after arrow graphics appear/);
- const arrow=read('assets/ruwaidix-ink-arrow-2026.svg');
- assert.match(arrow,/^<svg\b/);
- assert.match(arrow,/<path\b/);
- assert.doesNotMatch(arrow,/<script|<image\b|(?:href|src)=["\u0027]https?:\/\//i);
+test('the gallery has no decorative arrow or orbit graphics in its chapter headers', () => {
+ const home=read('index.html');
+ const gallery=home.slice(home.indexOf('class="rx26-portal-grid"'),home.indexOf('class="rx26-portal-paths"'));
+ assert.doesNotMatch(gallery,/class="rx26-card-arrow"/);
+ assert.equal((gallery.match(/class="rx26-card-action"/g)||[]).length,9);
+ assert.doesNotMatch(css,/ruwaidix-ink-arrow-2026\\.svg/);
+ assert.doesNotMatch(css,/ruwaidix-ink-orbit-2026\\.svg/);
+ assert.match(css,/\\.rx26-portal-card::after/);
+ assert.match(css,/content:none!important/);
 });
 
 test('creative composition alters real layouts and uses distinct visual treatments', () => {
