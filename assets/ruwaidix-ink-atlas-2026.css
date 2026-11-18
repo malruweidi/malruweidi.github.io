@@ -1,0 +1,357 @@
+/* RUWAIDIX / Annotated Research Atlas / 18 November 2026
+   A restrained, original vector-ink layer over the approved one-blue identity.
+   Pure decoration: no source images, documentary video, content or links modified.
+   Loaded from ruwaidix-one-blue-2026.css; remove that import to roll back.
+*/
+:root {
+  --rx-ink-stroke:var(--blue-600,#456fa6);
+  --rx-ink-soft:var(--blue-300,#b7cbe4);
+  --rx-ink-rule:var(--blue-line,#cdd8e7);
+  --rx-ink-paper:var(--blue-paper,#fbfcfe);
+}
+
+/* 1. Home: a line of inquiry travels from the thesis to the portrait.
+   Decorative assets never intercept links, keyboard focus or film controls. */
+html[data-rx-page="home"] .rx-hero-grid,
+html[data-rx-page="home"] .rx-hero-copy,
+html[data-rx-page="home"] .rx-home-film-copy {
+  position:relative;
+}
+html[data-rx-page="home"] .rx-hero-title em {
+  text-decoration:underline;
+  text-decoration-color:rgba(69,111,166,.37);
+  text-decoration-thickness:.035em;
+  text-underline-offset:.115em;
+}
+html[data-rx-page="home"] .rx-hero-kicker {
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+html[data-rx-page="home"] .rx-hero-kicker::before {
+  content:"";display:inline-block;width:13px;height:13px;flex:none;
+  border:1.5px solid var(--rx-ink-stroke);border-radius:50%;
+  box-shadow:inset 0 0 0 3px var(--rx-ink-paper);
+  background:var(--rx-ink-stroke);
+}
+@media (min-width:1171px) {
+  html[data-rx-page="home"] .rx-hero-copy::after {
+    content:"";pointer-events:none;position:absolute;z-index:3;
+    width:clamp(115px,11vw,172px);height:128px;
+    right:clamp(-145px,-10vw,-118px);top:20%;
+    background:url("/assets/ruwaidix-ink-arrow-2026.svg") center/contain no-repeat;
+    opacity:.9;transform:rotate(-10deg);
+  }
+  html[data-rx-page="home"] .rx-home-film-copy::after {
+    content:"";pointer-events:none;position:absolute;z-index:2;
+    width:125px;height:95px;right:-58px;bottom:4%;
+    background:url("/assets/ruwaidix-ink-arrow-2026.svg") center/contain no-repeat;
+    opacity:.8;transform:rotate(-13deg);
+  }
+}
+html[data-rx-page="home"] .rx-hero-portrait figcaption {
+  border-top:1px solid var(--rx-ink-rule);
+}
+html[data-rx-page="home"] .rx-home-film-media {
+  position:relative;
+  outline:1px solid var(--rx-ink-soft);
+  outline-offset:9px;
+  box-shadow:14px 14px 0 rgba(113,147,191,.12),0 14px 39px rgba(16,30,53,.10);
+}
+html[data-rx-page="home"] .rx-home-film-media figcaption {
+  border-top:1px solid var(--rx-ink-rule);
+  letter-spacing:.025em;
+}
+html[data-rx-page="home"] .rx-home-film-kicker {
+  display:inline-flex;align-items:center;gap:12px;
+}
+html[data-rx-page="home"] .rx-home-film-kicker::before {
+  content:"";width:28px;height:1px;flex:none;background:var(--rx-ink-stroke);
+}
+
+/* 2. A library of hand-drawn chapter pointers, not nine identical glyphs. */
+html[data-rx-page="home"] .rx26-portal {
+  position:relative;isolation:isolate;
+}
+html[data-rx-page="home"] .rx26-portal-head {
+  position:relative;
+}
+html[data-rx-page="home"] .rx26-portal-head::after {
+  content:"";position:absolute;right:0;top:-17px;width:104px;height:89px;pointer-events:none;
+  background:url("/assets/ruwaidix-ink-orbit-2026.svg") center/contain no-repeat;
+  opacity:.6;
+}
+html[data-rx-page="home"] .rx26-portal-card {
+  position:relative;isolation:isolate;overflow:hidden;
+  transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;
+}
+html[data-rx-page="home"] .rx26-portal-card::after {
+  content:"";pointer-events:none;position:absolute;z-index:0;
+  width:150px;height:150px;right:-88px;bottom:-89px;
+  border:1px solid var(--rx-ink-stroke);border-radius:50%;
+  box-shadow:0 0 0 19px rgba(113,147,191,.08),0 0 0 44px rgba(113,147,191,.045);
+  opacity:.43;
+}
+html[data-rx-page="home"] .rx26-portal-card > * {
+  position:relative;z-index:1;
+}
+html[data-rx-page="home"] .rx26-portal-card .rx26-card-arrow {
+  display:inline-block;flex:none;width:48px;height:37px;font-size:0;line-height:0;
+  background:url("/assets/ruwaidix-ink-arrow-2026.svg") center/contain no-repeat;
+  transition:transform .22s ease;
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-arrow {
+  filter:brightness(0) invert(1);opacity:.94;
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(2n) .rx26-card-arrow {
+  transform:rotate(-12deg);
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(3n) .rx26-card-arrow {
+  transform:rotate(12deg);
+}
+html[data-rx-page="home"] .rx26-portal-card:is(:hover,:focus-visible) .rx26-card-arrow {
+  transform:translate(5px,-4px) rotate(-7deg);
+}
+html[data-rx-page="home"] .rx26-portal-card:is(:hover,:focus-visible) {
+  box-shadow:8px 10px 0 rgba(113,147,191,.13);
+}
+html[data-rx-page="home"] .rx26-portal-paths {
+  border-top:1px solid var(--rx-ink-rule);
+}
+
+/* 3. Home: the large research headlines read like folios in a field journal. */
+html[data-rx-page="home"] :is(.sectiontop,.rx-chapters-heading) h2 {
+  text-wrap:balance;
+}
+html[data-rx-page="home"] .sectiontop {
+  position:relative;
+}
+html[data-rx-page="home"] .sectiontop::before {
+  content:"";pointer-events:none;position:absolute;top:-28px;left:0;
+  width:68px;height:2px;background:var(--rx-ink-stroke);
+}
+html[data-rx-page="home"] .rx-chapters-heading {
+  position:relative;
+}
+html[data-rx-page="home"] .rx-chapters-heading::after {
+  content:"";pointer-events:none;position:absolute;right:0;top:-14px;
+  width:82px;height:70px;opacity:.5;
+  background:url("/assets/ruwaidix-ink-orbit-2026.svg") center/contain no-repeat;
+}
+html[data-rx-page="home"] .rx-chapter-card {
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+html[data-rx-page="home"] .rx-chapter-card:is(:hover,:focus-visible) {
+  transform:translateY(-3px);box-shadow:7px 7px 0 rgba(113,147,191,.13);
+}
+
+/* 4. Research: scientific index, margin marks and responsive fine rules.
+   Do not decorate or crop actual evidence figures. */
+html[data-rx-page="research-hub"] .rs-hero,
+html[data-rx-page="research-hub"] .rs-hero .rs-wrap {
+  position:relative;
+}
+html[data-rx-page="research-hub"] .rs-hero .rs-wrap::after {
+  content:"";position:absolute;right:0;top:16px;
+  width:130px;height:110px;pointer-events:none;opacity:.55;
+  background:url("/assets/ruwaidix-ink-orbit-2026.svg") center/contain no-repeat;
+}
+html[data-rx-page="research-hub"] .rs-hero h1 {
+  position:relative;max-width:16ch;text-wrap:balance;
+}
+html[data-rx-page="research-hub"] .rs-hero h1::after {
+  content:"";display:block;width:100px;height:2px;margin-top:23px;
+  background:var(--rx-ink-stroke);
+}
+html[data-rx-page="research-hub"] .rs-card {
+  transition:box-shadow .22s ease,transform .22s ease;
+}
+html[data-rx-page="research-hub"] .rs-card:is(:hover,:focus-within) {
+  box-shadow:7px 8px 0 rgba(113,147,191,.12);
+  transform:translateY(-2px);
+}
+
+/* 5. Publications: typographic rules, not ornamental overlays on papers. */
+html[data-rx-page="publications"] .pub-hero h1 {
+  max-width:18ch;text-wrap:balance;
+}
+html[data-rx-page="publications"] .pub-hero h1::after {
+  content:"";display:block;width:110px;height:2px;
+  margin:24px 0 0;background:var(--rx-ink-stroke);
+}
+html[data-rx-page="publications"] .pub-card {
+  position:relative;
+  transition:background-color .18s ease,box-shadow .18s ease;
+}
+html[data-rx-page="publications"] .pub-card:is(:hover,:focus-within) {
+  box-shadow:inset 4px 0 var(--rx-ink-soft);
+}
+
+/* 6. Cinema: a graphic film-frame treatment without touching video players. */
+html[data-rx-page="films"] .fc-hero {
+  position:relative;isolation:isolate;overflow:hidden;
+}
+html[data-rx-page="films"] .fc-hero::after {
+  content:"";position:absolute;right:3%;top:7%;z-index:0;
+  width:170px;height:140px;opacity:.42;pointer-events:none;
+  background:url("/assets/ruwaidix-ink-orbit-2026.svg") center/contain no-repeat;
+}
+html[data-rx-page="films"] .fc-hero .fc-wrap {
+  position:relative;z-index:1;
+}
+html[data-rx-page="films"] .fc-player {
+  outline:1px solid var(--rx-ink-soft);outline-offset:7px;
+}
+html[data-rx-page="films"] .fc-card {
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+html[data-rx-page="films"] .fc-card:is(:hover,:focus-within) {
+  transform:translateY(-3px);
+  box-shadow:8px 8px 0 rgba(113,147,191,.12);
+}
+
+/* 7. Personal histories: photographic artefacts and quiet marginalia. */
+html[data-rx-page="stories"] .stories-hero-grid {
+  position:relative;
+}
+html[data-rx-page="stories"] .stories-hero-grid::after {
+  content:"";pointer-events:none;position:absolute;
+  right:0;bottom:0;width:120px;height:100px;opacity:.52;
+  background:url("/assets/ruwaidix-ink-orbit-2026.svg") center/contain no-repeat;
+}
+html[data-rx-page="stories"] .stories-chapter-text h2::after,
+html[data-rx-page="stories"] .stories-chapter-text h3::after {
+  content:"";display:block;width:55px;height:1px;
+  margin-top:17px;background:var(--rx-ink-stroke);opacity:.8;
+}
+html[data-rx-page="stories"] .stories-single-figure,
+html[data-rx-page="stories"] .stories-media-duo figure {
+  box-shadow:7px 8px 0 rgba(113,147,191,.1);
+}
+html[data-rx-page="archive"] .photo-card {
+  box-shadow:7px 8px 0 rgba(113,147,191,.1);
+  transition:box-shadow .2s ease,transform .2s ease;
+}
+html[data-rx-page="archive"] .photo-card:is(:hover,:focus-within) {
+  box-shadow:11px 11px 0 rgba(113,147,191,.16);
+  transform:translateY(-2px);
+}
+html[data-rx-page="archive"] .photo-section h2::after {
+  content:"";display:block;width:66px;height:1px;margin-top:16px;
+  background:var(--rx-ink-stroke);
+}
+
+/* 8. Essays and the novel: literary ornament rather than scientific decoration. */
+html[data-rx-page="writing"] .rxw-hero-inner {
+  position:relative;
+}
+html[data-rx-page="writing"] .rxw-hero-inner::after {
+  content:"";pointer-events:none;position:absolute;right:0;bottom:0;
+  width:110px;height:90px;opacity:.38;
+  background:url("/assets/ruwaidix-ink-orbit-2026.svg") center/contain no-repeat;
+}
+html[data-rx-page="writing"] .rxw-hero h1::after {
+  content:"";display:block;width:80px;height:2px;margin:22px 0 0;
+  background:var(--rx-ink-stroke);
+}
+html[data-rx-page="writing"] .rxw-essay {
+  transition:border-color .18s ease,box-shadow .18s ease;
+}
+html[data-rx-page="writing"] .rxw-essay:is(:hover,:focus-within) {
+  box-shadow:6px 7px 0 rgba(113,147,191,.09);
+}
+html[data-rx-page="major-revisions"] .rx-book-hero {
+  position:relative;isolation:isolate;
+}
+html[data-rx-page="major-revisions"] .rx-book-copy {
+  position:relative;
+}
+html[data-rx-page="major-revisions"] .rx-book-copy::after {
+  content:"";pointer-events:none;position:absolute;right:-50px;bottom:34px;
+  width:105px;height:85px;opacity:.55;
+  background:url("/assets/ruwaidix-ink-arrow-2026.svg") center/contain no-repeat;
+}
+
+/* 9. Reading map: the visual language carries into the existing routes. */
+html[data-rx-page="reading-map"] .map-hero {
+  position:relative;
+}
+html[data-rx-page="reading-map"] .map-introduction {
+  position:relative;
+}
+html[data-rx-page="reading-map"] .map-introduction::after {
+  content:"";pointer-events:none;position:absolute;right:0;bottom:0;
+  width:110px;height:95px;opacity:.43;
+  background:url("/assets/ruwaidix-ink-orbit-2026.svg") center/contain no-repeat;
+}
+html[data-rx-page="reading-map"] .map-route {
+  transition:box-shadow .2s ease;
+}
+html[data-rx-page="reading-map"] .map-route:is(:hover,:focus-within) {
+  box-shadow:8px 8px 0 rgba(113,147,191,.12);
+}
+
+/* 10. Responsive and bilingual safety. Images and film geometry are unchanged. */
+html[dir="rtl"][data-rx-page="home"] .rx-hero-copy::after {
+  right:auto;left:-122px;transform:scaleX(-1) rotate(-10deg);
+}
+html[dir="rtl"][data-rx-page="home"] .rx26-portal-head::after {
+  right:auto;left:0;
+}
+html[dir="rtl"][data-rx-page="home"] .rx26-portal-card::after {
+  right:auto;left:-88px;
+}
+html[dir="rtl"][data-rx-page="home"] .rx26-portal-card .rx26-card-arrow {
+  transform:scaleX(-1);
+}
+html[dir="rtl"][data-rx-page="home"] .sectiontop::before {
+  left:auto;right:0;
+}
+html[dir="rtl"][data-rx-page="home"] .rx-chapters-heading::after,
+html[dir="rtl"][data-rx-page="research-hub"] .rs-hero .rs-wrap::after,
+html[dir="rtl"][data-rx-page="films"] .fc-hero::after,
+html[dir="rtl"][data-rx-page="stories"] .stories-hero-grid::after,
+html[dir="rtl"][data-rx-page="writing"] .rxw-hero-inner::after,
+html[dir="rtl"][data-rx-page="reading-map"] .map-introduction::after {
+  right:auto;left:0;
+}
+html[dir="rtl"][data-rx-page="major-revisions"] .rx-book-copy::after {
+  right:auto;left:-50px;transform:scaleX(-1);
+}
+@media (max-width:1169px) {
+  html[data-rx-page="home"] .rx26-portal-head::after {
+    width:74px;height:66px;opacity:.42;
+  }
+}
+@media (max-width:767px) {
+  html[data-rx-page="home"] .rx-hero-copy::after,
+  html[data-rx-page="home"] .rx-home-film-copy::after,
+  html[data-rx-page="home"] .rx-chapters-heading::after,
+  html[data-rx-page="research-hub"] .rs-hero .rs-wrap::after,
+  html[data-rx-page="films"] .fc-hero::after,
+  html[data-rx-page="stories"] .stories-hero-grid::after,
+  html[data-rx-page="writing"] .rxw-hero-inner::after,
+  html[data-rx-page="major-revisions"] .rx-book-copy::after,
+  html[data-rx-page="reading-map"] .map-introduction::after {display:none;}
+  html[data-rx-page="home"] .rx26-portal-head::after {display:none;}
+  html[data-rx-page="home"] .rx26-portal-card .rx26-card-arrow {width:36px;height:29px;}
+  html[data-rx-page="home"] .rx26-portal-card::after {width:90px;height:90px;right:-60px;bottom:-58px;}
+  html[data-rx-page="home"] .rx-home-film-media {outline-offset:3px;box-shadow:4px 5px 0 rgba(113,147,191,.13);}
+  html[data-rx-page="archive"] .photo-card {box-shadow:4px 5px 0 rgba(113,147,191,.1);}
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-rx-page="home"] :is(.rx26-portal-card,.rx26-card-arrow,.rx-chapter-card),
+  html[data-rx-page="research-hub"] .rs-card,
+  html[data-rx-page="publications"] .pub-card,
+  html[data-rx-page="films"] .fc-card,
+  html[data-rx-page="archive"] .photo-card,
+  html[data-rx-page="writing"] .rxw-essay,
+  html[data-rx-page="reading-map"] .map-route {
+    transition:none!important;
+  }
+  html[data-rx-page="home"] .rx26-portal-card:is(:hover,:focus-visible) .rx26-card-arrow,
+  html[data-rx-page="home"] .rx-chapter-card:is(:hover,:focus-visible),
+  html[data-rx-page="research-hub"] .rs-card:is(:hover,:focus-within),
+  html[data-rx-page="films"] .fc-card:is(:hover,:focus-within),
+  html[data-rx-page="archive"] .photo-card:is(:hover,:focus-within) {
+    transform:none!important;
+  }
+}

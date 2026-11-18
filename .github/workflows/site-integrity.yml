@@ -17,6 +17,8 @@ jobs:
         run: node --test tests/atlas-of-questions-2026.test.mjs
       - name: Verify site-wide navy palette and fully blue geographic map
         run: node --test tests/one-blue-identity-2026.test.mjs
+      - name: Verify annotated-atlas editorial artwork and preservation
+        run: node --test tests/ink-atlas-design-2026.test.cjs
       - name: Verify navy-and-oxblood identity and palette contrast
         run: node --test tests/navy-oxblood-identity-2026.test.cjs
       - name: Check links, media, JavaScript and scientific attribution
