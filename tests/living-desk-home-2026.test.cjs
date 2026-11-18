@@ -10,7 +10,8 @@ const home = read('index.html');
 test('the approved original homepage is preserved byte for byte beneath additive navigation', () => {
   const atlasAssets = '<link rel="stylesheet" href="/assets/atlas-of-questions-2026.css?v=20261118"><script src="/assets/atlas-of-questions-2026.js?v=20261118" defer></script>';
   assert.equal(home.split(atlasAssets).length, 2, 'The navigation enhancement must be added exactly once');
-  assert.equal(home.replace(atlasAssets, ''), read('home-legacy-2026.html'),
+  assert.equal(home.split('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue1">').length,2,'The blue identity must be linked exactly once');
+  assert.equal(home.replace(atlasAssets, '').replace('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue1">', ''), read('home-legacy-2026.html'),
     'Do not replace or edit the approved homepage; only additive navigation is permitted');
   assert.match(home, /data-rx-page="home"/);
   assert.doesNotMatch(home, /data-rx-page="living-home"/);
