@@ -138,16 +138,77 @@ const foot=E("div","rx-atlas-foot");foot.append(E("span",null,T("Four paths into
 wrap.append(top,interact,foot);section.append(wrap);portal.insertAdjacentElement("beforebegin",section);drawTrack(detail,selected);
 const more=document.querySelector(".rx-more-panel");if(more&&!more.querySelector('[href="#question-atlas"]'))more.prepend(A("#question-atlas",T("Interactive question atlas","أطلس الأسئلة التفاعلي")));
 }
+const readingFeatures = [
+  {
+    pages: ["research.html", "molecular-therapeutics.html", "grants.html", "publication-cinema.html"],
+    path: "films/what-a-bubble-can-do.html",
+    image: "/assets/films/what-a-bubble-can-do-poster.webp",
+    kind: T("Watch the experiment", "شاهد التجربة"),
+    title: T("What a Bubble Can Do", "ما الذي يمكن أن تفعله فقاعة؟"),
+    description: T("Follow a moving air–liquid interface across a layer of lung cells in a flow chamber.", "تتبّع حركة السطح الفاصل بين الهواء والسائل فوق طبقة من خلايا الرئة داخل حجرة تدفّق.")
+  },
+  {
+    pages: ["publications.html", "writing.html"],
+    path: "films/making-medicines-keep.html",
+    image: "/assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg",
+    kind: T("From paper to film", "من البحث إلى الفيلم"),
+    title: T("Making Medicines Keep", "كيف حفظ الصيادلة أدويتهم؟"),
+    description: T("Enter an apothecary’s world in Ayyubid and Mamluk Cairo through the preparation of syrups and the choice of substitutes.", "ادخل عالم الصيدلة في القاهرة الأيوبية والمملوكية من خلال تحضير الأشربة واختيار الأبدال.")
+  },
+  {
+    pages: ["stories.html", "archive.html", "major-revisions.html", "imaging.html"],
+    path: "stories/cairo-microscope.html",
+    image: "/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",
+    kind: T("Read the story behind the photograph", "اقرأ الحكاية وراء الصورة"),
+    title: T("A microscope of my own", "مجهر خاص بي"),
+    description: T("Bought near Qasr El Einy in Cairo, the microscope found a place among the books on my desk in Qatar.", "اشتريت المجهر قرب قصر العيني في القاهرة، ثم وجدت له مكانًا بين الكتب على مكتبي في قطر.")
+  },
+  {
+    pages: ["techniques.html", "figures.html", "methods-evidence.html", "moving-evidence.html", "films.html"],
+    path: "stories/failed-zebrafish-histology.html",
+    image: "/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp",
+    kind: T("Read the laboratory account", "اقرأ ما جرى في المختبر"),
+    title: T("Two materials. No section.", "مادتان لم تصبحا قالبًا واحدًا."),
+    description: T("The zebrafish specimen had to stay in position for sectioning. The agarose and paraffin separated before I could obtain a usable section.", "كان ينبغي أن تبقى عيّنة سمك الزرد ثابتة أثناء التقطيع. لكنّ الأغاروز انفصل عن البارافين قبل أن أتمكّن من الحصول على مقطع صالح للفحص.")
+  },
+  {
+    pages: ["chem-squad.html", "engagement.html", "leadership.html"],
+    path: "films/the-laboratory-we-carried-with-us.html",
+    image: "/assets/films/the-laboratory-we-carried-with-us-poster.webp",
+    kind: T("Watch the group’s story", "شاهد حكاية المجموعة"),
+    title: T("The Laboratory We Carried With Us", "المختبر الذي حملناه معنا"),
+    description: T("Seven chemists kept meeting after their course ended. The film follows the conversations that grew out of that laboratory.", "واصل سبعة كيميائيين لقاءاتهم بعد انتهاء المقرّر. يتتبّع الفيلم الحوارات التي بدأت في ذلك المختبر.")
+  }
+];
+
+function readingFeature(page) {
+  const feature = readingFeatures.find(item => item.pages.includes(page));
+  if (!feature) return null;
+  const link = A(feature.path);
+  link.className = "rx-atlas-feature";
+  const image = E("img");
+  image.src = feature.image;
+  image.alt = "";
+  image.loading = "lazy";
+  image.decoding = "async";
+  const copy = E("span", "rx-atlas-feature-copy");
+  copy.append(E("small", null, feature.kind), E("strong", null, feature.title), E("span", null, feature.description));
+  link.append(image, copy);
+  return link;
+}
+
 function buildSecondary(){
 const k=key(),targets=related[k]||["research.html","publications.html","stories.html"],main=document.querySelector("main");if(!main)return;
 const bar=E("nav","rx-atlas-bar");bar.setAttribute("aria-label",L(T("Explore connected work","استكشف الأعمال المترابطة")));
-const inner=E("div","rx-atlas-bar-inner"),crumb=E("span","rx-atlas-bar-eyebrow",T("In the archive /","في الأرشيف /"));crumb.append(E("strong",null,pages[k]));
+const inner=E("div","rx-atlas-bar-inner"),crumb=E("span","rx-atlas-bar-eyebrow",T("In the archive /","في الأرشيف /"));crumb.append(E("strong",null,pages[k] || main.querySelector("h1")?.innerText.trim()));
 const nav=E("div","rx-atlas-bar-links");targets.slice(0,2).forEach(t=>nav.append(A(t,pages[t])));nav.append(trigger(T("Explore the index +","استكشف الفهرس +"),"rx-atlas-open"));
 inner.append(crumb,nav);bar.append(inner);main.insertAdjacentElement("beforebegin",bar);
 const after=E("section","rx-atlas-afterword"),body=E("div","rx-atlas-afterword-inner");
 body.append(E("span","rx-atlas-kicker",T("Continue the investigation","أكمل الاستكشاف")),E("h2",null,T("One record leads to another.","كل سجل يقود إلى آخر.")),E("p",null,T("Move between primary research, evidence, documentary material and personal context without losing the full record.","انتقل بين الأبحاث الأصلية والأدلة والأفلام والسياق الشخصي مع بقاء السجل الكامل متاحاً.")));
 const grid=E("nav","rx-atlas-afterword-grid");grid.setAttribute("aria-label",L(T("Related collections","مجموعات مرتبطة")));
 targets.forEach((t,i)=>{const a=A(t,pages[t]);a.prepend(E("small",null,String(i+1).padStart(2,"0")+" / "+L(T("Continue","متابعة"))));grid.append(a);});
+const feature=readingFeature(k);
+if(feature)body.append(feature);
 body.append(grid);after.append(body);main.insertAdjacentElement("afterend",after);
 }
 function render(){

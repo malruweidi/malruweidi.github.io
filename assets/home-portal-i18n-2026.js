@@ -79,6 +79,8 @@
 
 /* Navigation to the consolidated research agenda. */
 (function(){const d=window.RuwaidixArabicDictionary||(window.RuwaidixArabicDictionary={});Object.assign(d,{
+  "Follow the story in four scenes":"تتبّع الحكاية في أربعة مشاهد",
+  "Watch the documentary":"شاهد الفيلم الوثائقي",
   "Research agenda":"الأجندة البحثية",
   "Research agenda ↗":"الأجندة البحثية ↗",
   "Explore my research agenda ↗":"استكشف خطتي البحثية ↗",
