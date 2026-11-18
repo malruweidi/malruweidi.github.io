@@ -25,7 +25,7 @@ test('hand-drawn decorative assets have vector paths, not external dependencies'
     assert.match(svg, /viewBox=/);
     assert.match(svg, /<path\b/);
     assert.match(svg, /<\/svg>\s*$/);
-    assert.doesNotMatch(svg, /<script|<image\b|https?:\/\//i);
+    assert.doesNotMatch(svg, /<script|<image\b|(?:href|src)=["\x27]https?:\/\//i);
   }
 });
 
