@@ -1,0 +1,215 @@
+/* Ruwaidix unified blue public-home, research and geography surfaces. */
+/* Source: assets/home-film-2026.css */
+html[data-rx-page="home"] .rx-home-film{background:#eaf0f8;border-top:1px solid #d7e3f1;border-bottom:1px solid #d7e3f1}
+html[data-rx-page="home"] .rx-home-film-kicker{color:#263f66}
+html[data-rx-page="home"] .rx-home-film-title{color:#345b8e}
+html[data-rx-page="home"] .rx-home-film-title em{color:#263f66}
+html[data-rx-page="home"] .rx-home-film-desc{color:#345b8e}
+html[data-rx-page="home"] .rx-home-film-meta{color:#345b8e}
+html[data-rx-page="home"] .rx-home-film-media{background:#263f66;border:1px solid #d7e3f1}
+html[data-rx-page="home"] .rx-home-film-media figcaption{background:#fbfcfe;color:#345b8e;border-top:1px solid #d7e3f1}
+html[data-rx-page="home"] .rx-home-film-media figcaption a{color:#263f66}
+html[data-rx-page="home"] .rx-home-film-media a:focus-visible{outline:3px solid #263f66}
+html[data-rx-page="home"] .rx-featured-film-frame{background:#263f66}
+html[data-rx-page="home"] .rx-featured-related{border-top:1px solid #d7e3f1}
+html[data-rx-page="home"] .rx-featured-related summary{color:#263f66}
+html[data-rx-page="home"] .rx-featured-related-list a:hover{color:#263f66}
+/* Source: assets/homepage-editorial-2026.css */
+html[data-rx-page="home"] .header .brandline{color:#345b8e}
+html[data-rx-page="home"] .rx-hero-topline{color:#345b8e}
+html[data-rx-page="home"] .rx-hero-title em{color:#263f66}
+html[data-rx-page="home"] .rx-hero-lead{color:#345b8e}
+html[data-rx-page="home"] .rx-hero-detail{color:#345b8e}
+html[data-rx-page="home"] .rx-hero-primary{background:#345b8e;color:#fbfcfe!important;border:1px solid #345b8e}
+html[data-rx-page="home"] .rx-hero-primary:hover{background:#345b8e}
+html[data-rx-page="home"] .rx-hero-secondary{color:#263f66;border-bottom:1px solid #263f66}
+html[data-rx-page="home"] .rx-hero-footnote{color:#345b8e}
+html[data-rx-page="home"] .rx-hero-footnote span[lang="ar"]{color:#345b8e}
+html[data-rx-page="home"] .rx-portrait-mat{background:#eaf0f8;border:1px solid #d7e3f1}
+html[data-rx-page="home"] .rx-portrait-mat img{background:#d7e3f1}
+html[data-rx-page="home"] .rx-hero-portrait figcaption{color:#345b8e}
+html[data-rx-page="home"] .rx-portrait-detail{background:#eaf0f8;border-left:3px solid #263f66;box-shadow:0 9px 32px #263f6620}
+html[data-rx-page="home"] .rx-portrait-detail strong{color:#345b8e}
+html[data-rx-page="home"] .rx-portrait-detail span{color:#345b8e}
+html[data-rx-page="home"] .rx-chapters{background:#fbfcfe;border-bottom:1px solid #d7e3f1}
+html[data-rx-page="home"] .rx-chapters-label{color:#263f66}
+html[data-rx-page="home"] .rx-chapters-heading h2{color:#263f66}
+html[data-rx-page="home"] .rx-chapters-heading>p{color:#345b8e}
+html[data-rx-page="home"] .rx-chapter-card{background:#eaf0f8;border:1px solid #d7e3f1;color:#263f66}
+html[data-rx-page="home"] .rx-chapter-card:hover{border-color:#7193bf;box-shadow:0 12px 28px #263f6613}
+html[data-rx-page="home"] .rx-chapter-image{background:#d7e3f1}
+html[data-rx-page="home"] .rx-chapter-card:nth-child(3) img{background:#263f66}
+html[data-rx-page="home"] .rx-chapter-num{color:#345b8e}
+html[data-rx-page="home"] .rx-chapter-card h3{color:#263f66}
+html[data-rx-page="home"] .rx-chapter-card p{color:#345b8e}
+html[data-rx-page="home"] .rx-chapter-action{color:#345b8e}
+html[data-rx-page="home"] .rx-bridge{border-top:1px solid #d7e3f1}
+html[data-rx-page="home"] .rx-bridge p{color:#345b8e}
+html[data-rx-page="home"] .rx-bridge a{color:#263f66;border-bottom:1px solid #263f66}
+html[data-rx-page="home"] #research{background:#eaf0f8;border-bottom:1px solid #d7e3f1}
+html[data-rx-page="home"] #research .section-title{color:#345b8e}
+html[data-rx-page="home"] #research .sectiontop .intro{color:#345b8e}
+html[data-rx-page="home"] #research .work-card{background:#fbfcfe;border:1px solid #d7e3f1}
+html[data-rx-page="home"] #research .secondary-card{border:1px solid #d7e3f1}
+html[data-rx-page="home"] #research .work-body p,html[data-rx-page="home"] #research .secondary-card p{color:#345b8e}
+html[data-rx-page="home"] .research-identity{background:#eaf0f8}
+html[data-rx-page="home"] .framework-grid article{background:#fbfcfe}
+html[data-rx-page="home"] .framework-grid p{color:#345b8e}
+html[data-rx-page="home"] .quality-section{background:#eaf0f8}
+html[data-rx-page="home"] .rx-hero-primary:focus-visible,html[data-rx-page="home"] .rx-chapter-card:focus-visible,html[data-rx-page="home"] .rx-hero-secondary:focus-visible{outline:3px solid #345b8e}
+html[lang="ar"][data-rx-page="home"] .rx-portrait-detail{border-right:3px solid #263f66}
+/* Source: assets/three-places-2026.css */
+.geographies{background:#eaf0f8;color:#263f66;border-top:1px solid #d7e3f1;border-bottom:1px solid #d7e3f1}
+.geographies .geo-heading .eyebrow{color:#263f66}
+.geographies .geo-heading h2 em{color:#263f66}
+.geographies .geo-lead{color:#345b8e}
+.geographies .geo-panel{background:#263f66;border:1px solid #345b8e;box-shadow:0 24px 48px #263f6617}
+.geographies .geo-land{fill:#345b8e;stroke:#7193bf}
+.geographies .geo-triangle{fill:#d7e3f1;stroke:#d7e3f1}
+.geographies .geo-arc{stroke:#b7cbe4}
+.geographies .geo-arc--us-egypt{stroke:#b7cbe4}
+.geographies .geo-arc--us-qatar{stroke:#d7e3f1}
+.geographies .geo-arc--egypt-qatar{stroke:#b7cbe4}
+.geographies .geo-point .geo-ring{fill:#d7e3f1;stroke:#d7e3f1}
+.geographies .geo-point .geo-dot{fill:#eaf0f8;stroke:#b7cbe4}
+.geographies .geo-point .geo-label{fill:#eaf0f8;stroke:#263f66}
+.geographies .geo-point .geo-label-sub{fill:#d7e3f1;stroke:#263f66}
+.geographies .geo-key{border-top:2px solid #b7cbe4}
+.geographies .geo-key--dotted{border-color:#d7e3f1}
+.geographies .geo-places{background:#d7e3f1;border:1px solid #d7e3f1}
+.geographies .geo-place{background:#fbfcfe;color:#263f66}
+.geographies .geo-place:hover,.geographies .geo-place:focus-visible,.geographies .geo-place[aria-pressed="true"]{background:#eaf0f8;box-shadow:inset 0 4px #345b8e}
+.geographies .geo-place .geo-index{color:#345b8e}
+.geographies .geo-place .geo-role{color:#345b8e}
+.geographies .geo-place .geo-description{color:#345b8e}
+.geographies .geo-afterword p{color:#345b8e}
+.geographies .geo-afterword a{color:#345b8e}
+.geographies .geo-source{color:#7193bf}
+.geographies .geo-source a{color:#345b8e}
+/* Source: assets/research-media-2026.css */
+.rx-research26-section{background:#eaf0f8;color:#263f66}
+.rx-research26-label,.rx-research26-card small{color:#345b8e}
+.rx-research26-section h2{color:#263f66}
+.rx-research26-intro{color:#345b8e}
+.rx-research26-card{border:1px solid #d7e3f1}
+.rx-research26-photo{background:#eaf0f8}
+.rx-research26-card strong{color:#263f66}
+.rx-research26-card p,.rx-research26-note{color:#345b8e}
+/* Source: assets/home-gallery-motion.css */
+.rx-motion-controls button{border:1px solid #b7cbe4;background:#fbfcfe;color:#263f66}
+.rx-motion-controls button:hover{background:#eaf0f8}
+.rx-motion-controls button:focus-visible{outline:3px solid #345b8e}
+.rx-motion-controls span{color:#345b8e}
+/* Source: assets/restored-home-media.css */
+html[data-rx-page="home"] .technique-footage-grid .rx-film{background:#263f66;border:1px solid #7193bf;color:#eaf0f8}
+html[data-rx-page="home"] .technique-footage-grid .rx-film p{color:#d7e3f1}
+html[data-rx-page="home"] .technique-footage-grid .rx-film .rx-kind{color:#b7cbe4}
+html[data-rx-page="home"] .technique-footage-grid .rx-film a{color:#d7e3f1}
+html[data-rx-page="home"] .rx-source-note{border-top:1px solid #345b8e;color:#d7e3f1}
+html[data-rx-page="home"] .moving-gallery:focus-within{outline:2px solid #345b8e}
+/* Source: assets/attention-home.css */
+html[data-rx-page="editorial-home"] .brand-type small{color:#345b8e}
+html[data-rx-page="editorial-home"] .hero .lead{color:#263f66}
+html[data-rx-page="editorial-home"] .hero .primary-btn:hover{background:#345b8e}
+html[data-rx-page="editorial-home"] .hero-bottom{color:#345b8e}
+html[data-rx-page="editorial-home"] .hero-portrait-photo{background:#eaf0f8}
+html[data-rx-page="editorial-home"] .works{background:#eaf0f8}
+html[data-rx-page="editorial-home"] .quality{background:#eaf0f8}
+html[data-rx-page="editorial-home"] .history{background:#eaf0f8}
+html[data-rx-page="editorial-home"] .patient{background:#eaf0f8}
+html[data-rx-page="editorial-home"] .contact{background:#eaf0f8}
+/* Source: assets/editorial-home.css */
+.strap{color:#d7e3f1}
+.header{background:#eaf0f8ee}
+.lead{color:#345b8e}
+.portrait{background:#eaf0f8}
+.portrait-gradient{background:linear-gradient(180deg,transparent 50%,#263f66c9)}
+.portrait-brand{color:#eaf0f8}
+.portrait-foot{color:#eaf0f8}
+.statement{color:#eaf0f8}
+.statement .eyebrow{color:#b7cbe4}
+.statement p:not(.eyebrow){color:#d7e3f1}
+.principles{border-top:1px solid #345b8e;color:#d7e3f1}
+.stages li:hover{background:#fbfcfe}
+.works{background:#eaf0f8}
+.work{background:#fbfcfe}
+.work-image{background:#eaf0f8}
+.quality{background:#d7e3f1}
+.split p{color:#345b8e}
+.dir:hover{background:#fbfcfe}
+.dir.featured{background:#eaf0f8}
+.history{background:#eaf0f8}
+.beyond{background:#263f66;color:#eaf0f8}
+.beyond .eyebrow{color:#b7cbe4}
+.beyond .section-intro>p{color:#d7e3f1}
+.beyond-grid{border-top:1px solid #7193bf}
+.beyond article{border-right:1px solid #345b8e}
+.beyond article small{color:#b7cbe4}
+.beyond article p{color:#d7e3f1}
+.beyond article a{border-bottom:1px solid #b7cbe4}
+.patient{background:#eaf0f8}
+.contact{background:#eaf0f8}
+footer{color:#eaf0f8}
+.footer-brand small{color:#b7cbe4}
+.footer small{color:#b7cbe4}
+@media(max-width:670px){.beyond article{border-bottom:1px solid #345b8e}}
+.portrait-brand img{box-shadow:0 10px 35px #192d4b3d}
+.hero-visual{background:#eaf0f8;border:1px solid #d7e3f1;color:#263f66}
+.hero-visual-top{border-bottom:1px solid #d7e3f1;color:#345b8e}
+.hero-steps{border-top:1px solid #b7cbe4}
+.hero-steps a{border-bottom:1px solid #d7e3f1}
+.hero-steps small{color:#345b8e}
+.hero-visual-foot{background:#eaf0f8;color:#345b8e}
+.hero-photo{background:#d7e3f1}
+.hero-photo-caption{color:#fbfcfe;text-shadow:0 1px 4px #263f6666}
+/* Source: assets/portfolio.css */
+.evidence-band{background:#eaf0f8}
+.film-section .eyebrow{color:#d7e3f1}
+.film-section .section-intro>p{color:#d7e3f1}
+.film p{color:#d7e3f1}
+.film-section .underline{border-color:#b7cbe4}
+.statement{background:#eaf0f8}
+.quality{background:#eaf0f8}
+.dir.featured{background:#eaf0f8}
+.beyond .eyebrow,.beyond article small{color:#d7e3f1}
+.beyond article a{border-color:#d7e3f1}
+.patient{background:#eaf0f8}
+/* Source: assets/recommendations.css */
+.rr-skip{color:#263f66}
+.rr-kicker{color:#b7cbe4}
+.rr-hero{color:#fbfcfe}
+.rr-hero h1 em{color:#b7cbe4}
+.rr-hero p.rr-lead{color:#eaf0f8}
+.rr-aside{border-left:1px solid #345b8e;color:#d7e3f1}
+.rr-aside strong{color:#b7cbe4}
+.rr-switch{background:#eaf0f8}
+.rr-switch a{border:1px solid #d7e3f1}
+.rr-meta{color:#345b8e}
+.rr-link{color:#345b8e;text-decoration-color:#7193bf}
+.rr-feature:hover{border-color:#345b8e}
+.rr-footer{color:#d7e3f1}
+@media print{.rr-hero{color:#263f66}}
+@media print{.rr-hero p.rr-lead,.rr-aside{color:#263f66}}
+/* Source: assets/recommendations-artwork.css */
+.rr-art-frame{background:#eaf0f8;border:1px solid #d7e3f1;box-shadow:0 8px 22px #263f6617}
+.rr-art-image{background:#eaf0f8}
+.rr-art-fallback{background:linear-gradient(155deg,#263f66,#263f66 62%,#345b8e)}
+.rr-art-fallback-type{color:#b7cbe4}
+.rr-art-fallback-byline{color:#d7e3f1}
+.rr-art-essay .rr-art-fallback{background:linear-gradient(160deg,#eaf0f8,#eaf0f8 56%,#d7e3f1);color:#263f66}
+.rr-art-essay .rr-art-fallback-type{color:#345b8e;border-bottom:1px solid #b7cbe4}
+.rr-art-essay .rr-art-fallback-byline{color:#345b8e}
+.rr-art-credit{color:#345b8e}
+.rr-feature-art-label{color:#345b8e!important}
+.rr-feature-art img{box-shadow:0 5px 15px #263f661d;background:#eaf0f8}
+.rr-feature-art-essay{color:#263f66!important}
+.rr-feature-art-foot{color:#345b8e!important}
+/* Source: assets/public-science-home.css */
+.rx-home-science{border-top:1px solid #d7e3f1}
+.rx-home-science .rx-science-eyebrow{color:#345b8e}
+.rx-home-science .rx-science-body{color:#345b8e}
+.rx-home-science-photos a{background:#d7e3f1}
+.rx-home-science-photos figcaption{color:#345b8e}
+.rx-home-science-photos figcaption strong{color:#263f66}
+.rx-home-science-links a{color:#345b8e!important}
+.rx-home-science .rx-provenance{color:#345b8e}
