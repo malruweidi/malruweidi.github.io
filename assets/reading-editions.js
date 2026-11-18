@@ -366,3 +366,9 @@ function localize() {
 localize();
 new MutationObserver(localize).observe(document.documentElement, {attributes:true,attributeFilter:["lang"]});
 })();
+
+if (document.querySelector("main figure > figcaption")) {
+  const viewer = document.createElement("script");
+  viewer.src = "/assets/archive-image-viewer.js";
+  document.head.append(viewer);
+}

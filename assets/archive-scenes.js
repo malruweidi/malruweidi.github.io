@@ -59,7 +59,7 @@
     copy.append(card, note, link);
     panel.append(photo, copy);
     grid.append(panel);
-    tab.addEventListener("click", () => select(index));
+    tab.addEventListener("click", () => select(index, true));
     tab.addEventListener("keydown", event => {
       let target;
       const direction = document.documentElement.dir === "rtl" ? -1 : 1;
@@ -69,12 +69,13 @@
       else if (event.key === "End") target = entries.length - 1;
       else return;
       event.preventDefault();
-      select((target + entries.length) % entries.length);
+      select((target + entries.length) % entries.length, true);
       entries[active].tab.focus();
     });
     return {tab, panel, label, note, link};
   });
-  function select(index) {
+  function select(index, remember = false) {
+    if (remember) history.replaceState({...history.state, archiveScene: index}, "");
     active = index;
     entries.forEach(({tab, panel}, i) => {
       const current = i === index;
@@ -92,6 +93,86 @@
   grid.classList.add("rx-scene-stage");
   grid.before(tabs);
   localize();
-  select(0);
+  const saved = history.state?.archiveScene;
+  select(Number.isInteger(saved) && saved >= 0 && saved < entries.length ? saved : 0);
   new MutationObserver(localize).observe(document.documentElement, {attributes: true, attributeFilter: ["lang"]});
 })();
+
+/* Display the existing chapter links as an illustrated catalogue. */
+(() => {
+  const grid = document.querySelector(".rx26-portal-grid");
+  if (!grid) return;
+  const entries = {
+    "research.html": ["lab", "/archive/archive-7884.jpg"],
+    "publications.html": ["lab", "/assets/home-archive/figure-pulmonary-flow-chamber.jpg", "plate"],
+    "films.html": ["lab", "/assets/films/anatomy-of-a-question-2026-v2.webp"],
+    "stories.html": ["people", "/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp"],
+    "illness-and-evidence.html": ["people", "/archive/archive-7885.jpg"],
+    "writing.html": ["writing", "/assets/films/source-manuscripts/wellcome-ms-arabic-1002/canvas-013.jpg"],
+    "chem-squad.html": ["people", "/assets/chem-squad-october-2026.jpg"],
+    "leadership.html": ["people", "/archive/fifth-chemistry-festival-host.webp"],
+    "major-revisions.html": ["writing", "/assets/major-revisions-cover.svg", "plate"]
+  };
+  const cards = [...grid.querySelectorAll(".rx26-portal-card")];
+  const records = cards.map(a => entries[new URL(a.href).pathname.slice(1)]);
+  if (!cards.length || records.some(record => !record)) return;
+  cards.forEach((a,i) => {
+    const [,source,mode] = records[i];
+    const frame = document.createElement("div");
+    frame.className = "rx-cover-art" + (mode ? " rx-cover-plate" : "");
+    const img = document.createElement("img");
+    img.src = source;
+    img.alt = "";
+    img.loading = "lazy";
+    img.decoding = "async";
+    frame.append(img);
+    a.querySelector(".rx26-card-top").after(frame);
+  });
+  const filters = [
+    ["all","All chapters","جميع الفصول"],
+    ["lab","Research & films","البحث والأفلام"],
+    ["people","People & experience","الأشخاص والتجارب"],
+    ["writing","Writing & history","الكتابة والتاريخ"]
+  ];
+  const controls = document.createElement("div");
+  controls.className = "rx-cover-controls";
+  controls.setAttribute("role","group");
+  controls.setAttribute("aria-labelledby","rx26-portal-title");
+  grid.id ||= "rx-chapter-catalogue";
+  const status = document.createElement("span");
+  status.className = "rx-cover-count";
+  status.setAttribute("role","status");
+  let active = "all";
+  function draw() {
+    const arabic = document.documentElement.lang.startsWith("ar");
+    const number = new Intl.NumberFormat(arabic ? "ar" : "en");
+    let count = 0;
+    cards.forEach((card,i) => {
+      card.hidden = active !== "all" && active !== records[i][0];
+      if (!card.hidden) count++;
+    });
+    buttons.forEach((b,i) => {
+      b.textContent = filters[i][arabic ? 2 : 1];
+      b.setAttribute("aria-pressed",String(active === filters[i][0]));
+    });
+    status.textContent = arabic ? number.format(count)+" من "+number.format(cards.length) : number.format(count)+" of "+number.format(cards.length);
+    grid.classList.toggle("rx-cover-filtered",active !== "all");
+  }
+  const buttons = filters.map(([id]) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.setAttribute("aria-controls",grid.id);
+    b.addEventListener("click",() => { active=id; draw(); });
+    controls.append(b);
+    return b;
+  });
+  controls.append(status);
+  grid.before(controls);
+  grid.classList.add("rx-cover-catalogue");
+  draw();
+  new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
+})();
+
+const archiveViewerScript = document.createElement("script");
+archiveViewerScript.src = "/assets/archive-image-viewer.js";
+document.head.append(archiveViewerScript);
