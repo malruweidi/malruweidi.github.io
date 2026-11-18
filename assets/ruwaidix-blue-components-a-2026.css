@@ -1,0 +1,324 @@
+/* Ruwaidix blue-only component colors; no layout or media changes. */
+/* Source: assets/design-system.css */
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #263f66}
+::selection{background:#d7e3f1;color:#345b8e}
+.header .rx-more-panel{background:#fbfcfe}
+.rx-submenu-toggle{background:#fbfcfe}
+@media (max-width:1100px){header.rx-has-menu nav.rx-submenu{background:#fbfcfe}}
+html[data-rx-page="home"] .header .brandline{color:#345b8e}
+html[data-rx-page="home"] .header .navlinks > a,
+html[data-rx-page="home"] .header .rx-more > summary{color:#345b8e}
+html[data-rx-page="home"] .header .navlinks > .contactbutton{background:#345b8e}
+html[data-rx-page="home"] .header .rx-more-panel{border:1px solid #d7e3f1;background:#fbfcfe}
+html[data-rx-page="home"] .header .rx-more-panel a:hover,
+html[data-rx-page="home"] .header .rx-more-panel a:focus-visible{background:#eaf0f8}
+html[data-rx-page="home"] .header .site-lang-switch{border:1px solid #d7e3f1;background:#eaf0f8}
+html[data-rx-page="home"] .header .site-lang-switch button.active{background:#345b8e}
+@media (max-width:1100px){html[data-rx-page="home"] .header .menu{border:1px solid #d7e3f1;background:#fbfcfe}}
+@media (max-width:1100px){html[data-rx-page="home"] .header .navlinks{border:1px solid #d7e3f1;background:#fbfcfe}}
+@media (max-width:1100px){html[data-rx-page="home"] .header .navlinks > a{border-bottom:1px solid #eaf0f8}}
+::selection{background:#d7e3f1}
+html[data-rx-page="home"] .timeline{background:#eaf0f8}
+html[data-rx-page="archive"] .hero p,
+html[data-rx-page="figures"] .hero p,
+html[data-rx-page="chem-squad"] .hero .intro{color:#d7e3f1}
+:where(.footer):not(.light){color:#eaf0f8}
+.rx-skip-link{background:#fbfcfe;color:#345b8e;border:2px solid #263f66}
+.rx-skip-link:focus,.rx-skip-link:focus-visible{outline:3px solid #263f66}
+/* Source: assets/unified-pages.css */
+.rx-universal details.rx-more>summary{color:#fbfcfe}
+.rx-context .rx-delimiter{color:#b7cbe4}
+html.rx-site-theme :where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #345b8e}
+html.rx-site-theme .rx-context{background:#eaf0f8}
+/* Source: assets/aesthetic-integrity-2026.css */
+:where(button,a,summary):focus-visible{outline:3px solid #263f66}
+::selection{background:#d7e3f1;color:#263f66}
+html[data-rx-page="home"] .hero-copy .lead{color:#345b8e}
+html[data-rx-page="home"] .hero-copy .identityline small{color:#345b8e}
+html[data-rx-page="home"] .numbers p{color:#345b8e}
+html[data-rx-page="home"] .framework-grid p{color:#345b8e}
+html[data-rx-page="home"] .framework-head>p{color:#345b8e}
+html[data-rx-page="home"] .quality-copy p{color:#345b8e}
+html[data-rx-page="home"] .quality-flow p{color:#eaf0f8}
+html[data-rx-page="home"] .quality-credential p{color:#345b8e}
+html[data-rx-page="home"] .quality-credentials .q-kind{color:#345b8e}
+html[data-rx-page="home"] .quality-notes p{color:#345b8e}
+html[data-rx-page="home"] .grant-teaser p{color:#345b8e}
+html[data-rx-page="home"] .portrait-heading,
+html[data-rx-page="home"] .portrait-overlay small{color:#345b8e}
+html[data-rx-page="home"] .plate-below{color:#345b8e}
+html[data-rx-page="home"] .hero-note{color:#345b8e}
+html[data-rx-page="home"] .header .brandline{color:#345b8e}
+html[data-rx-page="home"] .buttonrow .textlink{color:#345b8e}
+html[data-rx-page="home"] .hero-copy .buttonrow>.button{background:#263f66;color:#fbfcfe}
+html[data-rx-page="home"] .hero-copy .buttonrow>.button:hover{background:#345b8e;color:#fbfcfe}
+html[data-rx-page="home"] .story.editorial-story :is(.story-prologue h2,.story-rewind h3,.story-bridge h3,.story-prose h3,.trail-scene h4){color:#fbfcfe}
+html[data-rx-page="home"] .story.editorial-story :is(.story-prologue p:not(.eyebrow),.story-rewind p,.story-bridge p,.story-prose p,.trail-scene p){color:#eaf0f8}
+html[data-rx-page="home"] .story.editorial-story :is(.story-photo figcaption,.story-prose small,.trail-scene small){color:#d7e3f1}
+html[data-rx-page="home"] .story.editorial-story :is(.story-prose a,.trail-scene a,.arrival-links a){color:#d7e3f1}
+html[data-rx-page="home"] .story.editorial-story .photo-opening figure{background:#fbfcfe;color:#345b8e}
+html[data-rx-page="home"] .story.editorial-story .photo-opening h3{color:#345b8e}
+html[data-rx-page="home"] .story.editorial-story .photo-opening p{color:#345b8e}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker{background:#eaf0f8;color:#263f66}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker p{color:#263f66}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker small{color:#345b8e}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker strong{color:#b7cbe4}
+html[data-rx-page="home"] .story.editorial-story .story-arrival{background:#263f66;color:#fbfcfe}
+html[data-rx-page="home"] .story.editorial-story .story-arrival p{color:#eaf0f8}
+html[data-rx-page="home"] :is(.technique-footage-preview,.infrastructure-feature,.quality-figure){color:#eaf0f8}
+html[data-rx-page="home"] .technique-footage-preview :is(h2,h3){color:#eaf0f8}
+html[data-rx-page="home"] .technique-footage-preview :is(p,.technique-footage-grid>a>span){color:#eaf0f8}
+html[data-rx-page="home"] .technique-footage-preview .technique-footage-grid>a{background:#263f66;color:#eaf0f8;border-color:#7193bf}
+html[data-rx-page="home"] .quality-figure h3{color:#fbfcfe}
+html[data-rx-page="home"] .infrastructure-feature :is(h2,h3,p){color:#eaf0f8}
+html[data-rx-page="home"] .infrastructure-feature a{color:#d7e3f1}
+html.rx-site-theme .rx-universal{background:#fbfcfe;color:#263f66}
+html.rx-site-theme .rx-universal .rx-brand strong{color:#263f66}
+html.rx-site-theme .rx-universal .rx-brand small{color:#345b8e}
+html.rx-site-theme .rx-universal .rx-primary>a{color:#263f66}
+html.rx-site-theme .rx-universal .rx-primary>a[aria-current="page"]{color:#345b8e;border-bottom-color:#345b8e}
+html.rx-site-theme .rx-universal .rx-menu-panel{background:#fbfcfe;color:#263f66}
+html.rx-site-theme .rx-universal .rx-menu-panel a{color:#263f66}
+html.rx-site-theme .rx-universal .rx-menu-panel :is(a:hover,a[aria-current="page"]){color:#345b8e}
+html.rx-site-theme .rx-context{background:#eaf0f8;color:#345b8e}
+html.rx-site-theme .rx-context a{color:#345b8e}
+html.rx-site-theme :is(.card,.figure-card,.photo-card,.field,.era,.resource,.panel):not(.dark) a{color:#345b8e}
+html.rx-site-theme :is(.dark,.hero):is(.dark) :is(p,li,small,figcaption){color:#eaf0f8}
+html[data-rx-page="chem-squad"] :is(.hero,.dark,.bridge){color:#eaf0f8}
+html[data-rx-page="chem-squad"] :is(.hero,.dark,.bridge) :is(.brow,.arrowlink,.hero h1 span){color:#d7e3f1}
+html[data-rx-page="chem-squad"] .labnote{color:#263f66;background:#eaf0f8}
+html[data-rx-page="chem-squad"] .labnote :is(p,small,li){color:#345b8e}
+html[data-rx-page="engagement"] header:not(.rx-universal){background:#263f66;color:#eaf0f8}
+html[data-rx-page="engagement"] header:not(.rx-universal) a{color:#eaf0f8}
+html[data-rx-page="engagement"] .story p{color:#345b8e}
+html[data-rx-page="engagement"] .photo figcaption{color:#345b8e}
+html[data-rx-page="illness-evidence"] .prose{color:#345b8e}
+html[data-rx-page="illness-evidence"] .hero{color:#eaf0f8}
+html[data-rx-page="illness-evidence"] .hero :is(.intro,aside){color:#eaf0f8}
+html[data-rx-page="illness-evidence"] .sequence p{color:#345b8e}
+/* Source: assets/scientific-palette.css */
+::selection{background:#d7e3f1}
+html[data-rx-page="home"] .timeline{background:#eaf0f8}
+html[data-rx-page="archive"] .hero p,
+html[data-rx-page="figures"] .hero p,
+html[data-rx-page="chem-squad"] .hero .intro{color:#d7e3f1}
+:where(.footer):not(.light){color:#eaf0f8}
+/* Source: assets/discovery-global.css */
+#rx-global-search-link.rx-discovery-link::before{color:#345b8e}
+#rx-global-search-link.rx-discovery-link:hover{border-color:#345b8e}
+#rx-global-search-link.rx-discovery-link:focus-visible{outline:3px solid #7193bf}
+.rx-universal #rx-global-search-link.rx-discovery-link{color:#263f66;background:#fbfcfe}
+.rx-reading-progress{background:#345b8e}
+html[data-rx-page="home"] .navlinks>a[aria-current="location"]{color:#345b8e}
+@media (hover:hover) and (pointer:fine){html[data-rx-page="home"] .work-card:hover{border-color:#b7cbe4}}
+html[data-rx-page="home"] #navlinks > .site-lang-switch{border:1px solid #d7e3f1;background:#eaf0f8}
+.rx-universal .rx-langs.rx-langs-integrated > .site-lang-switch{border:1px solid #d7e3f1;background:#eaf0f8}
+/* Source: assets/editorial-wayfinding-2026.css */
+#research .rx-dossier-links{border-top:1px solid #d7e3f1}
+#research .rx-dossier-links>span{color:#345b8e}
+#research .rx-dossier-links a{color:#345b8e;text-decoration-color:#b7cbe4}
+#research .rx-dossier-links a:hover{color:#263f66}
+#research .rx-research-connection{background:#eaf0f8;color:#345b8e}
+#research .rx-research-connection h3{color:#345b8e}
+#research .rx-research-connection p{color:#345b8e}
+#research .rx-connection-kicker{color:#263f66}
+#research .rx-research-connection nav a{color:#345b8e}
+html[data-rx-page="stories"] .rx-story-pathways{background:#eaf0f8;color:#345b8e;border-bottom:1px solid #d7e3f1}
+html[data-rx-page="stories"] .rx-pathways-kicker{color:#263f66}
+html[data-rx-page="stories"] .rx-pathways-heading h2{color:#345b8e}
+html[data-rx-page="stories"] .rx-pathways-heading>p{color:#345b8e}
+html[data-rx-page="stories"] .rx-story-route{background:#fbfcfe;border:1px solid #d7e3f1}
+html[data-rx-page="stories"] .rx-story-route-image{background:#eaf0f8}
+html[data-rx-page="stories"] .rx-story-route-number{color:#263f66}
+html[data-rx-page="stories"] .rx-story-route h3{color:#345b8e}
+html[data-rx-page="stories"] .rx-story-route p{color:#345b8e}
+html[data-rx-page="stories"] .rx-story-route nav a{color:#345b8e;text-decoration-color:#b7cbe4}
+html[data-rx-page="stories"] .rx-story-pathways-footnote{color:#345b8e}
+html[data-rx-page="stories"] .rx-story-route a:hover{color:#263f66}
+#research .rx-dossier-links a:focus-visible,#research .rx-research-connection a:focus-visible,html[data-rx-page="stories"] .rx-story-pathways a:focus-visible{outline:3px solid #263f66}
+@media(max-width:860px){#research .rx-research-connection nav{border-top:1px solid #d7e3f1}}
+html[data-rx-page="archive"] .rx-archive-objects{background:#eaf0f8;border-top:1px solid #d7e3f1;border-bottom:1px solid #d7e3f1;color:#345b8e}
+html[data-rx-page="archive"] .rx-archive-kicker{color:#263f66}
+html[data-rx-page="archive"] .rx-archive-objects-intro h2{color:#345b8e}
+html[data-rx-page="archive"] .rx-archive-objects-intro>p{color:#345b8e}
+html[data-rx-page="archive"] .rx-archive-object{border:1px solid #d7e3f1;background:#fbfcfe}
+html[data-rx-page="archive"] .rx-archive-object figure{background:#eaf0f8}
+html[data-rx-page="archive"] .rx-archive-object-copy>span{color:#263f66}
+html[data-rx-page="archive"] .rx-archive-object h3{color:#345b8e}
+html[data-rx-page="archive"] .rx-archive-object p{color:#345b8e}
+html[data-rx-page="archive"] .rx-archive-object a{color:#345b8e}
+html[data-rx-page="archive"] .rx-archive-note{color:#345b8e}
+html[data-rx-page="archive"] .rx-archive-object a:focus-visible{outline:3px solid #263f66}
+#writing .essayrow:focus-visible,#writing .rx-writing-browse a:focus-visible{outline:3px solid #263f66}
+/* Source: assets/contrast-refinement-2026-10-16.css */
+html[data-rx-page="home"] .rx-field-caption,
+html[data-rx-page="home"] .quacs-foot,
+html[data-rx-page="home"] .quacs-foot a,
+html[data-rx-page="home"] .rx-provenance,
+html[data-rx-page="home"] .methodlegend{color:#345b8e}
+html[data-rx-page="home"] .quacs-feature .rx-science-eyebrow,
+html[data-rx-page="home"] .quacs-feature a,
+html[data-rx-page="home"] .chem-squad-teaser-link{color:#345b8e}
+html[data-rx-page="home"] .archive-callout figcaption{color:#345b8e}
+html[data-rx-page="home"] figcaption:not([class]){color:#345b8e}
+html[data-rx-page="stories"] .stories-chapter-tinted p,
+html[data-rx-page="stories"] .stories-chapter p{color:#345b8e}
+html[data-rx-page="stories"] .stories-kicker{color:#345b8e}
+html[data-rx-page="archive"] .filmstrip .eyebrow{color:#eaf0f8}
+html[data-rx-page="archive"] .rx-field-source,
+html[data-rx-page="archive"] .current-era figcaption,
+html[data-rx-page="archive"] .footnote,
+html[data-rx-page="archive"] .rx-heritage-disclaimer{color:#345b8e}
+html[data-rx-page="archive"] .rx-labcoat2016-eyebrow,
+html[data-rx-page="archive"] .rx-labcoat2016-link,
+html[data-rx-page="archive"] .current-era a{color:#345b8e}
+html[data-rx-page="writing"] .rxw-kicker{color:#345b8e}
+html[data-rx-page="writing"] .rxw-book-announcement a{color:#345b8e}
+html[data-rx-page="research-detail"] .rx-deep-kicker{color:#345b8e}
+html[data-rx-page="reading-map"] .map-hero a{color:#d7e3f1}
+html[data-rx-page="home"] .quality-figure figcaption{color:#eaf0f8}
+html[data-rx-page="home"] .rx-home-science-links a{color:#345b8e}
+html[data-rx-page="stories"] .stories-hero .stories-kicker,
+html[data-rx-page="stories"] .stories-kicker:first-child{color:#b7cbe4}
+html[data-rx-page="writing"] .rxw-hero .rxw-kicker,
+html[data-rx-page="writing"] header .rxw-kicker{color:#b7cbe4}
+html[data-rx-page="research-detail"] .rx-deep-hero .rx-deep-kicker,
+html[data-rx-page="research-detail"] header .rx-deep-kicker{color:#b7cbe4}
+html[data-rx-page="stories"] .stories-kicker:first-child{color:#345b8e}
+html[data-rx-page="stories"] .stories-hero .stories-kicker{color:#b7cbe4}
+html[data-rx-page="research-detail"] .rx-deep-kicker{color:#345b8e}
+html[data-rx-page="research-detail"] .rx-deep-hero .rx-deep-kicker{color:#b7cbe4}
+html[data-rx-page="home"] .rx-home-science-links a{color:#345b8e !important}
+html[data-rx-page="stories"] .stories-afterword .stories-kicker{color:#b7cbe4}
+html[data-rx-page="research-detail"] .rx-research-intro .rx-deep-kicker{color:#345b8e}
+html[data-rx-page="home"] .rh-home-entry .rh-home-kicker{color:#345b8e}
+html[data-rx-page="home"] .work-card .work-footer button{color:#345b8e}
+/* Source: assets/wcag-contrast-2026.css */
+html[data-rx-page="home"] .geo-heading .eyebrow.mono{color:#345b8e}
+html[data-rx-page="home"] .geo-place[data-place="qatar"] .geo-index{color:#345b8e}
+html[data-rx-page="home"] .geo-afterword > p,
+html[data-rx-page="home"] .geo-source{color:#345b8e}
+html[data-rx-page="stories"] .rx26-figures > figure > figcaption{color:#345b8e !important}
+html[data-rx-page="archive"] .rx-oct12-note{color:#345b8e}
+html[data-rx-page="archive"] .rx-freshman-archive-inner > .mini{color:#345b8e}
+html[data-rx-page="archive"] .rx-field-kicker,
+html[data-rx-page="archive"] .rx1920-inner > .rx1920-kicker{color:#345b8e}
+html[data-rx-page="discovery"] h3[data-en="BROWSE THE INDEX"],
+html[data-rx-page="discovery"] .is-active,
+html[data-rx-page="discovery"] .rx-result-category,
+html[data-rx-page="discovery"] span[data-en="THE RECORD STAYS WHOLE"]{color:#345b8e}
+html[data-rx-page="illness-evidence"] .rx16-heading > .rx16-kicker,
+html[data-rx-page="illness-evidence"] #labcoat-2016-memory figcaption > small,
+html[data-rx-page="illness-evidence"] .exam-archive figcaption > small,
+html[data-rx-page="illness-evidence"] #hospital-2020 figcaption > small,
+html[data-rx-page="illness-evidence"] #hospital-2025 figcaption > small{color:#345b8e}
+html[data-rx-page="illness-evidence"] .narrative > .side > span:first-child,
+html[data-rx-page="illness-evidence"] .sequence.en article small{color:#345b8e}
+html[data-rx-page="publication-cinema"] #count{color:#345b8e}
+html[data-rx-page="film"] .rx-series-kicker{color:#345b8e}
+html[data-rx-page="stories"] .rx26-figures > figure > figcaption{color:#345b8e!important}
+html[data-rx-page="illness-evidence"] #rx16-diagnosis-photo .rx16-heading > .rx16-kicker{color:#345b8e!important}
+html[data-rx-page="illness-evidence"] .narrative > .side > span,
+html[data-rx-page="illness-evidence"] .sequence.ar article small{color:#345b8e!important}
+html[data-rx-page="illness-evidence"] #rx16-diagnosis-photo > .rx16-heading > .rx16-kicker,
+html[data-rx-page="illness-evidence"] #rx16-diagnosis-photo-ar > .rx16-heading > .rx16-kicker{color:#345b8e !important}
+html[data-rx-page="illness-evidence"] .narrative > .side > span,
+html[data-rx-page="illness-evidence"] .sequence.ar article small{color:#345b8e !important}
+/* Source: assets/final-polish-2026.css */
+:where(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #263f66}
+html[data-rx-page="home"] .hero-copy .subtitle{color:#345b8e!important}
+html[data-rx-page="home"] .hero-copy .identityline small{color:#345b8e!important}
+html[data-rx-page="home"] .story.editorial-story :is(.story-prologue,.story-rewind,.story-bridge,.story-prose,.trail-scene) :is(h2,h3,h4){color:#fbfcfe}
+html[data-rx-page="home"] .story.editorial-story :is(.story-prologue,.story-rewind,.story-bridge,.story-prose,.trail-scene)>p:not(.eyebrow),
+html[data-rx-page="home"] .story.editorial-story :is(.story-childhood,.story-anatomy,.story-arrival) .story-prose p{color:#eaf0f8}
+html[data-rx-page="home"] .story.editorial-story .photo-opening figure{background:#eaf0f8!important;color:#345b8e!important}
+html[data-rx-page="home"] .story.editorial-story .photo-opening figure :is(h3,p,figcaption){color:#345b8e!important}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker{background:#eaf0f8!important;color:#345b8e!important}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker :is(p,small){color:#345b8e!important}
+html[data-rx-page="home"] .story.editorial-story .story-arrival :is(h3,h4,p){color:#eaf0f8!important}
+html[data-rx-page="home"] .technique-footage-preview :is(h2,h3,h4){color:#fbfcfe!important}
+html[data-rx-page="home"] .technique-footage-preview :is(p,figcaption,small){color:#eaf0f8!important}
+.rx-field-photo .rx-field-caption{background:#fbfcfe;color:#345b8e}
+.rx-field-photo .rx-field-caption :is(.rx-field-title,.rx-field-desc,.rx-field-meta){color:#345b8e}
+html.rx-site-theme .rx-universal .rx-brand strong{color:#345b8e}
+html.rx-site-theme :where(.card,.figure-card,.photo-card,.panel,.field,.era):not(.dark) a{color:#263f66}
+html.rx-site-theme :is(.dark,.hero.dark) :is(h1,h2,h3,h4){color:#fbfcfe}
+html.rx-site-theme :is(.dark,.hero.dark) :is(p,li,figcaption,small){color:#eaf0f8}
+html.rx-site-theme :is(.dark,.hero.dark) :is(a,.eyebrow,.brow){color:#d7e3f1}
+@media(max-width:640px){html[data-rx-page="home"] .secondary-grid .secondary-card>img{background:#eaf0f8}}
+html[data-rx-page="home"] .hero{background:linear-gradient(122deg,#eaf0f8 0%,#eaf0f8 58%,#eaf0f8 100%)}
+html[data-rx-page="home"] .hero-art .profile-photo-frame{border-color:#d7e3f1}
+html[data-rx-page="home"] .hero-note{border-top-color:#d7e3f1}
+html[data-rx-page="home"] :is(.work-card,.secondary-card,.methodcol){border-color:#d7e3f1}
+html[data-rx-page="home"] .work-card .work-img{background:#eaf0f8}
+#rx-research26-cardio .rx-research26-photo{background:#eaf0f8}
+@media(max-width:760px){html[data-rx-page="home"] .hero{background:#eaf0f8}}
+html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a{background:#eaf0f8}
+html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a img,
+.rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-frame img{background:#eaf0f8}
+html[data-rx-page="home"] .rx-editorial-hero{background:linear-gradient(123deg,#eaf0f8 0%,#eaf0f8 56%,#eaf0f8 100%)}
+html[data-rx-page="home"] .rx-portrait-mat{border-color:#b7cbe4}
+html[data-rx-page="home"] .rx-chapter-card:focus-visible{border-color:#345b8e}
+html[data-rx-page="home"] #research .primary-card{color:#345b8e}
+html[data-rx-page="home"] #research .primary-card .work-body h3{color:#345b8e}
+html[data-rx-page="home"] #research .primary-card .work-body .work-meta{color:#345b8e}
+html[data-rx-page="home"] #research .primary-card .work-footer{border-top-color:#d7e3f1}
+html[data-rx-page="home"] #research .primary-card .work-footer span{color:#345b8e}
+html[data-rx-page="home"] #research .primary-card .work-footer button{color:#345b8e}
+html[data-rx-page="home"] .rx-evidence-index{color:#eaf0f8;background:#263f66}
+html[data-rx-page="home"] .rx-evidence-label{color:#b7cbe4}
+html[data-rx-page="home"] .rx-evidence-intro p{color:#eaf0f8}
+html[data-rx-page="home"] .rx-evidence-links>a{color:#eaf0f8}
+html[data-rx-page="home"] .rx-evidence-links>a>span{color:#d7e3f1}
+html[data-rx-page="home"] .rx-evidence-links>a>strong{color:#fbfcfe}
+html[data-rx-page="home"] .rx-evidence-links>a>strong span{color:#d7e3f1}
+html[data-rx-page="home"] .rx-evidence-links>a:hover,
+html[data-rx-page="home"] .rx-evidence-links>a:focus-visible{background:#345b8e}
+html[data-rx-page="home"] .rx-evidence-links>a:focus-visible{outline:3px solid #b7cbe4}
+@media(max-width:620px){html[data-rx-page="home"] .rx-editorial-hero{background:#eaf0f8}}
+html[data-rx-page="home"] .story.editorial-story .anatomy-photo figcaption{background:#eaf0f8;color:#345b8e!important}
+html[data-rx-page="home"] .story.editorial-story .anatomy-photo figcaption span{color:#345b8e!important}
+html[data-rx-page="home"] .rx-field-photo .rx-field-caption{background:#fbfcfe;color:#345b8e!important}
+html[data-rx-page="home"] .rx-field-photo .rx-field-caption :is(p,small,span,a){color:#345b8e!important}
+html[data-rx-page="home"] .archive-photo-pair figcaption{color:#345b8e}
+html[data-rx-page="home"] .quacs-feature .quacs-foot{color:#345b8e}
+html[data-rx-page="home"] .quacs-feature .rx-science-eyebrow{color:#345b8e}
+html[data-rx-page="home"] .quacs-feature .rx-provenance{color:#345b8e}
+html[data-rx-page="home"] .quacs-feature a:not(.button):not(.contactbutton){color:#263f66}
+html[data-rx-page="home"] .methodlegend{color:#345b8e}
+html[data-rx-page="home"] .chem-squad-teaser-link{color:#263f66}
+html[data-rx-page="archive"] .filmstrip .eyebrow{color:#b7cbe4}
+html[data-rx-page="archive"] .rx-field-source{color:#345b8e}
+html[data-rx-page="archive"] .current-era figcaption,
+html[data-rx-page="archive"] .photo-section .footnote{color:#345b8e}
+html[data-rx-page="archive"] .rx-labcoat2016-eyebrow,
+html[data-rx-page="archive"] .rx-labcoat2016-link,
+html[data-rx-page="archive"] .current-era .now-grid a{color:#263f66}
+html[data-rx-page="home"] .rx-home-science-links a{color:#263f66}
+html[data-rx-page="home"] .rh-home-entry .rh-home-kicker{color:#263f66}
+/* Source: assets/taste-editorial-2026-10-18.css */
+html[data-rx-page="home"] .header .navlinks .contactbutton{color:#fbfcfe}
+html[data-rx-page="home"] .header .navlinks .contactbutton:hover{background:#345b8e;color:#fbfcfe}
+html[data-rx-page="home"] .rx-hero-detail{color:#345b8e}
+html[data-rx-page="home"] .rx-hero-secondary{border-bottom-color:#263f66}
+html[data-rx-page="home"] .rx-hero-secondary:hover{color:#263f66;border-bottom-color:#263f66}
+html[data-rx-page="home"] .rx-portrait-mat{background:#eaf0f8;border-color:#d7e3f1}
+html[data-rx-page="home"] .rx-portrait-detail{background:#fbfcfe}
+html[data-rx-page="home"] .rx-home-film-media{border-color:#d7e3f1}
+html[data-rx-page="home"] .rx26-portal-card{background:#eaf0f8}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(3),
+html[data-rx-page="home"] .rx26-portal-card:nth-child(5),
+html[data-rx-page="home"] .rx26-portal-card:nth-child(7),
+html[data-rx-page="home"] .rx26-portal-card:nth-child(8){background:#eaf0f8}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1){background:#345b8e;color:#eaf0f8;border-color:#345b8e}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-top,
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-arrow,
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-action{color:#eaf0f8}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) p{color:#eaf0f8}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-action{border-top-color:#345b8e}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(9){background:#eaf0f8}
+html[data-rx-page="home"] .rx26-card-action{border-top-color:#d7e3f1}
+html[data-rx-page="home"] .rx26-portal-card:hover{border-color:#345b8e}
+html[data-rx-page="home"] .rx26-portal-card:focus-visible{outline:3px solid #263f66}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(1):focus-visible{outline-color:#d7e3f1}
+html[data-rx-page="home"] .rx-home-complete-summary:hover{background:#eaf0f8}
