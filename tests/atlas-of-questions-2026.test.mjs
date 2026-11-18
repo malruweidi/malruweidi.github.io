@@ -1,3 +1,4 @@
+import preservation from "./homepage-preservation.cjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {readFileSync,existsSync} from "node:fs";
@@ -10,11 +11,11 @@ const read=p=>readFileSync(join(root,p),"utf8");
 const tags='<link rel="stylesheet" href="/assets/atlas-of-questions-2026.css?v=20261118"><script src="/assets/atlas-of-questions-2026.js?v=20261118" defer></script>';
 const pagePaths=["index.html","research.html","publications.html","films.html","stories.html","writing.html","archive.html","chem-squad.html","leadership.html","molecular-therapeutics.html","methods-evidence.html","computing.html","illness-and-evidence.html","major-revisions.html","engagement.html","publication-cinema.html","moving-evidence.html","cv.html","grants.html","reading-map.html","search.html","for-supervisors.html","training.html","film.html","research-horizon.html"];
 
-test("homepage is identical to its preserved source apart from additive asset references",()=>{
+test("homepage preserves the full original record across editorial rearrangement",()=>{
  const original=read("home-legacy-2026.html"),enhanced=read("index.html");
- assert.equal(enhanced.split(tags).length,2,"only one atlas reference pair");
- assert.equal(enhanced.split('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue2">').length,2,"single blue stylesheet required");
- assert.equal(enhanced.replace(tags,"").replace('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue2">',""),original.split('<span class="rx26-card-arrow" aria-hidden="true">↗</span>').join(""),"original content and film must be unchanged except nine repeated decorative spans");
+ assert.equal(enhanced.split(tags.replace("js?v=20261118", "js?v=20261118-scenes")).length,2,"only one atlas reference pair");
+ assert.equal(enhanced.split('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-contactsheet">').length,2,"single blue stylesheet required");
+ preservation.assertHomepagePreserved(original,enhanced);
  assert.match(enhanced,/anatomy-of-a-question-2026-v2\.mp4/);
  assert.match(enhanced,/anatomy-of-a-question-2026-v2\.vtt/);
  for(const route of ["research.html","publications.html","films.html","stories.html","illness-and-evidence.html","writing.html","chem-squad.html","leadership.html","major-revisions.html"]){
@@ -24,7 +25,7 @@ test("homepage is identical to its preserved source apart from additive asset re
 test("all enhanced collections load exactly one pair of additive assets",()=>{
  for(const page of pagePaths){
    const source=read(page);
-   assert.equal(source.split(tags).length,2,"missing or duplicated asset pair: "+page);
+   assert.equal(source.split(page === "index.html" ? tags.replace("js?v=20261118", "js?v=20261118-scenes") : tags).length,2,"missing or duplicated asset pair: "+page);
  }
 });
 test("atlas script parses and provides bilingual keyboard-accessible navigation",()=>{

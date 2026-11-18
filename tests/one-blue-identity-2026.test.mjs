@@ -1,3 +1,4 @@
+import preservation from "./homepage-preservation.cjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {existsSync,readFileSync,readdirSync} from "node:fs";
@@ -6,7 +7,7 @@ import {fileURLToPath} from "node:url";
 const root=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const read=p=>readFileSync(join(root,p),"utf8");
 const link='<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue1">';
-const homeLink='<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue2">';
+const homeLink='<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-contactsheet">';
 const omitted=new Set(["home-legacy-2026.html","living-desk-preview.html","cinema-quality-preview.html","cinema-research-preview.html","preview-rx23.html"]);
 function htmlFiles(dir=""){
   return readdirSync(join(root,dir),{withFileTypes:true}).flatMap(e=>{
@@ -38,5 +39,5 @@ test("Egypt–Qatar–US map is entirely blue by CSS, preserving original SVG ge
    assert.ok(css.includes(key),"map color layer missing: "+key);
  }
  const old=read("home-legacy-2026.html"),now=read("index.html");
- assert.equal(now.replace(homeLink,"").replace('<link rel="stylesheet" href="/assets/atlas-of-questions-2026.css?v=20261118"><script src="/assets/atlas-of-questions-2026.js?v=20261118" defer></script>',""),old.split('<span class="rx26-card-arrow" aria-hidden="true">↗</span>').join(""),"geographical paths, text and video must not change, except removing decorative arrow spans");
+ preservation.assertHomepagePreserved(old,now);
 });

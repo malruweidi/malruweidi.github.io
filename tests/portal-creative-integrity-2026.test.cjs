@@ -29,9 +29,9 @@ test('actual research photograph and existing film poster drive two intentional 
 });
 test('browser refresh loads a new versioned CSS chain instead of its cached predecessor',()=>{
  const home=read('index.html'),blue=read('assets/ruwaidix-one-blue-2026.css');
- assert.ok(home.includes('ruwaidix-one-blue-2026.css?v=20261118-blue2'));
+ assert.ok(home.includes('ruwaidix-one-blue-2026.css?v=20261118-contactsheet'));
  assert.ok(blue.includes('ruwaidix-ink-atlas-2026.css?v=20261118-a2'));
- assert.equal(home.split('ruwaidix-one-blue-2026.css?v=20261118-blue2').length,2);
+ assert.equal(home.split('ruwaidix-one-blue-2026.css?v=20261118-contactsheet').length,2);
 });
 test('film source, video captions, source routes and original science survive the repair',()=>{
  const html=read('index.html');

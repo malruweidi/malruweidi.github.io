@@ -7,12 +7,12 @@ const root = path.resolve(__dirname, '..');
 const read = file => fs.readFileSync(path.join(root,file),'utf8');
 const home = read('index.html');
 
-test('the original homepage is preserved except removal of nine redundant card-header arrows', () => {
-  const atlasAssets = '<link rel="stylesheet" href="/assets/atlas-of-questions-2026.css?v=20261118"><script src="/assets/atlas-of-questions-2026.js?v=20261118" defer></script>';
+test('the homepage preserves the source record and opens the photographic sequence', () => {
+  const atlasAssets = '<link rel="stylesheet" href="/assets/atlas-of-questions-2026.css?v=20261118"><script src="/assets/atlas-of-questions-2026.js?v=20261118-scenes" defer></script>';
   assert.equal(home.split(atlasAssets).length, 2, 'The navigation enhancement must be added exactly once');
-  assert.equal(home.split('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue2">').length,2,'The blue identity must be linked exactly once');
-  assert.equal(home.replace(atlasAssets, '').replace('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue2">', ''), read('home-legacy-2026.html').split('<span class="rx26-card-arrow" aria-hidden="true">↗</span>').join(''),
-    'Preserve the original content, video and routes while removing only repeated ornamental arrows');
+  assert.equal(home.split('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-contactsheet">').length,2,'The blue identity must be linked exactly once');
+  require('./homepage-preservation.cjs').assertHomepagePreserved(read('home-legacy-2026.html'),home);
+  assert.ok(home.indexOf('<section class="rx-chapters"') < home.indexOf('<details class="rx-home-complete-record"'));
   assert.match(home, /data-rx-page="home"/);
   assert.doesNotMatch(home, /data-rx-page="living-home"/);
   assert.equal((home.match(/<h1\b/g)||[]).length,1);

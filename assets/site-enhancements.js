@@ -342,3 +342,10 @@
   script.setAttribute('data-rx17-archive','');
   document.head.appendChild(script);
 })();
+
+/* Entry points that use the shared header without the collection atlas. */
+if (["/figures.html","/full-record.html","/techniques.html","/grants/urep19.html","/grants/urep21.html","/grants/urep22.html","/grants/urep23.html"].includes(location.pathname)) {
+  const reader = document.createElement("script");
+  reader.src = "/assets/reading-editions.js?v=1";
+  document.head.append(reader);
+}
