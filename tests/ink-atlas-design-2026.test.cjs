@@ -24,9 +24,9 @@ test('the gallery has no decorative arrow or orbit graphics in its chapter heade
  const gallery=home.slice(home.indexOf('class="rx26-portal-grid"'),home.indexOf('class="rx26-portal-paths"'));
  assert.doesNotMatch(gallery,/class="rx26-card-arrow"/);
  assert.equal((gallery.match(/class="rx26-card-action"/g)||[]).length,9);
- assert.doesNotMatch(css,/ruwaidix-ink-arrow-2026\\.svg/);
- assert.doesNotMatch(css,/ruwaidix-ink-orbit-2026\\.svg/);
- assert.match(css,/\\.rx26-portal-card::after/);
+ assert.ok(!css.includes('ruwaidix-ink-arrow-2026.svg'));
+ assert.ok(!css.includes('ruwaidix-ink-orbit-2026.svg'));
+ assert.ok(css.includes('.rx26-portal-card::after'));
  assert.match(css,/content:none!important/);
 });
 
