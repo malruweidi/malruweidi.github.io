@@ -13,8 +13,8 @@ const pagePaths=["index.html","research.html","publications.html","films.html","
 test("homepage is identical to its preserved source apart from additive asset references",()=>{
  const original=read("home-legacy-2026.html"),enhanced=read("index.html");
  assert.equal(enhanced.split(tags).length,2,"only one atlas reference pair");
- assert.equal(enhanced.split('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue1">').length,2,"single blue stylesheet required");
- assert.equal(enhanced.replace(tags,"").replace('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue1">',""),original,"original content and film must be unchanged");
+ assert.equal(enhanced.split('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue2">').length,2,"single blue stylesheet required");
+ assert.equal(enhanced.replace(tags,"").replace('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue2">',""),original.split('<span class="rx26-card-arrow" aria-hidden="true">↗</span>').join(""),"original content and film must be unchanged except nine repeated decorative spans");
  assert.match(enhanced,/anatomy-of-a-question-2026-v2\.mp4/);
  assert.match(enhanced,/anatomy-of-a-question-2026-v2\.vtt/);
  for(const route of ["research.html","publications.html","films.html","stories.html","illness-and-evidence.html","writing.html","chem-squad.html","leadership.html","major-revisions.html"]){
