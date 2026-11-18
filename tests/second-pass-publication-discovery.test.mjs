@@ -16,7 +16,7 @@ test('archive overview dates its coverage from the first documented 2009 school 
 
 test('public film and original research notebook pages supply meaningful social previews',()=>{
  const pages=[
-  ['film.html','/assets/photos-2017-2019/microscope-morning-still-life-2017.webp'],
+  ['film.html','/assets/films/anatomy-of-a-question-2026-v2.webp'],
   ['films/index.html','/assets/films/what-a-bubble-can-do-poster.webp'],
   ['publication-cinema.html','/assets/home-archive/figure-pulmonary-flow-chamber.jpg'],
   ['scientific-fieldnotes-2026.html','/assets/owner-archive-2026-10-17/laboratory-portrait-poster.webp']
