@@ -3,8 +3,7 @@
   "use strict";
   const photos=[
     {src:"/assets/archival-2026-10-13/early-chemistry-flask-2014.webp",title:"First-year chemistry laboratory",alt:"Mahmoud in a white laboratory coat holding up a flask containing a dark liquid in a university chemistry laboratory",caption:"Mahmoud in the chemistry laboratory, freshman year, circa 2014. Sample contents not documented."},
-    {src:"/assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",title:"At the chemistry bench",alt:"Black-and-white laboratory photograph of Mahmoud in a white laboratory coat holding a glass test tube",caption:"Mahmoud with a test tube during his early undergraduate chemistry training, circa 2014. Sample identity unverified."},
-    {src:"/assets/archival-2026-10-13/abdelgalil-chemistry-lab-tablet.webp",title:"Abdelgalil in the laboratory",alt:"Abdelgalil Khalaf Ahmed seated at a chemistry laboratory bench wearing a white coat and gloves and holding a tablet",caption:"Abdelgalil Khalaf Ahmed in the chemistry laboratory. Date, sample and procedure not established."}
+    {src:"/assets/archival-2026-10-13/freshman-chemistry-testtube-2014.webp",title:"At the chemistry bench",alt:"Black-and-white laboratory photograph of Mahmoud in a white laboratory coat holding a glass test tube",caption:"Mahmoud with a test tube during his early undergraduate chemistry training, circa 2014. Sample identity unverified."}
   ];
   function imageExists(src){return new Promise(resolve=>{const image=new Image();image.onload=()=>resolve(true);image.onerror=()=>resolve(false);image.src=src;});}
   function figure(photo){const f=document.createElement("figure");const a=document.createElement("a");a.href=photo.src;a.target="_blank";a.rel="noopener noreferrer";a.setAttribute("aria-label",photo.title+" (full image)");const img=document.createElement("img");img.src=photo.src;img.alt=photo.alt;img.loading="lazy";img.decoding="async";a.append(img);const cap=document.createElement("figcaption");cap.textContent=photo.caption;f.append(a,cap);return f;}
@@ -16,7 +15,7 @@
   }
   async function apply(){
     const page=document.documentElement.dataset.rxPage;
-    if(!["stories","archive","chem-squad"].includes(page))return;
+    if(!["stories","archive"].includes(page))return;
     const ready=await Promise.all(photos.map(p=>imageExists(p.src)));
     if(!ready.some(Boolean))return;
     styles();
@@ -34,21 +33,13 @@
         const inner=document.createElement("div");inner.className="rx-freshman-archive-inner";
         const kicker=document.createElement("span");kicker.className="mini";kicker.textContent="FROM THE PERSONAL ARCHIVE / UNIVERSITY LABORATORIES";
         const title=document.createElement("h2");title.id="rxFreshmanChemistryTitle";title.textContent="The chemistry bench, before the research papers.";
-        const intro=document.createElement("p");intro.textContent=document.documentElement.lang==='ar'?"صورتان لي في مختبر الكيمياء خلال السنة الجامعية الأولى، إلى جانب صورة مستقلة لعبدالجليل خلف أحمد في المختبر.":"Two photographs of me at the chemistry bench in my freshman year, alongside a separate laboratory portrait of Abdelgalil Khalaf Ahmed.";
+        const intro=document.createElement("p");intro.textContent=document.documentElement.lang==='ar'?"صورتان لي في مختبر الكيمياء خلال السنة الجامعية الأولى.":"Two photographs of me at the chemistry bench in my freshman year.";
         const group=document.createElement("div");group.className="rx-freshman-gallery";
         photos.forEach((p,i)=>{if(ready[i])group.append(figure(p));});
         inner.append(kicker,title,intro,group);section.append(inner);anchor.insertAdjacentElement("afterend",section);
       }
     }
-    if(page==="chem-squad"&&ready[2]){
-      const member=Array.from(document.querySelectorAll("#people .person")).find(el=>/Abdelgalil Khalaf/i.test(el.textContent));
-      if(member&&!member.querySelector(".archive-photo")){
-        const pic=document.createElement("img");pic.className="archive-photo";pic.src=photos[2].src;pic.alt=photos[2].alt;pic.loading="lazy";pic.decoding="async";
-        const detail=member.querySelector(":scope > div");if(detail)detail.classList.add("archive-person-info");
-        member.classList.add("archive-person");member.insertBefore(pic,member.firstChild);
-        const citation=document.createElement("span");citation.className="sr-only";citation.textContent=photos[2].caption;member.append(citation);
-      }
-    }
+
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",apply,{once:true});else apply();
 })();
