@@ -1,0 +1,524 @@
+/*
+ * RUWAIDIX — ANNOTATED ATLAS / art direction, 18 November 2026.
+ * Presentation only: never relabel figures, mutate video, replace photographs,
+ * change clinical/scientific claims, crop scientific diagrams or change routes.
+ * The parent "one blue" stylesheet is the public palette authority.
+ * Deliberate visual vocabulary: blue ink, marginal annotation, folio dividers,
+ * a drawn connecting thread and original photography.
+ */
+
+/* 01 / The paper, ink and vector vocabulary */
+:root {
+  --rx-art-ink:#192d4b;
+  --rx-art-mid:#345b8e;
+  --rx-art-light:#7193bf;
+  --rx-art-pale:#eaf0f8;
+  --rx-art-rule:#cdd8e7;
+  --rx-art-paper:#fbfcfe;
+  --rx-art-serif:'Newsreader',Georgia,serif;
+  --rx-art-mono:'DM Mono',ui-monospace,monospace;
+  --rx-ink-swoop:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 170 90' fill='none'%3E%3Cpath d='M6 9 C26 12 27 60 68 58 S119 5 157 65' stroke='%23345b8e' stroke-width='2.3' stroke-linecap='round'/%3E%3Cpath d='m146 58 12 9-1-17' stroke='%23345b8e' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --rx-ink-arrow:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 78 39' fill='none'%3E%3Cpath d='M3 31 C28 27 36 5 70 8' stroke='%23345b8e' stroke-width='2.2' stroke-linecap='round'/%3E%3Cpath d='m59 2 12 6-9 10' stroke='%23345b8e' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --rx-ink-curve:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 140' fill='none'%3E%3Cpath d='M9 58 C49 4 91 102 143 60 S233 24 284 91' stroke='%237193bf' stroke-width='2' stroke-dasharray='3 8' stroke-linecap='round'/%3E%3Cpath d='m269 89 16 3-2-15' stroke='%237193bf' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='11' cy='56' r='5' fill='%23fbfcfe' stroke='%23345b8e' stroke-width='2'/%3E%3C/svg%3E");
+}
+html[data-rx-page] body { text-rendering:optimizeLegibility; }
+html[data-rx-page] :is(h1,h2,h3) { text-wrap:balance; }
+html[data-rx-page] :is(.mono,.eyebrow,.smallcaps,.kicker) { font-variant-numeric:tabular-nums; }
+html[data-rx-page] :is(a,button,summary):focus-visible {
+  outline:3px solid var(--rx-art-mid);outline-offset:4px;
+}
+html[data-rx-page] :is(.sectiontop,.rx-chapters-heading,.rs-intro,.pub-hero,.fc-hero,.rxw-hero,.stories-hero,.rh-hero,.rr-hero,.map-hero,.research-section) {
+  isolation:isolate;
+}
+@supports selector(::selection) {
+  html[data-rx-page] ::selection { background:#b7cbe4;color:#192d4b; }
+}
+
+/* 02 / A consistent folio line and handwritten section punctuation */
+html[data-rx-page="home"] .sectiontop,
+html[data-rx-page="research-hub"] .research-section > :is(h2,.rs-section-head,.rs-intro),
+html[data-rx-page="publications"] .pub-hero,
+html[data-rx-page="films"] .fc-hero,
+html[data-rx-page="stories"] .stories-hero,
+html[data-rx-page="writing"] .rxw-hero,
+html[data-rx-page="archive"] .hero,
+html[data-rx-page="reading-map"] .map-hero,
+html[data-rx-page="research-horizon"] .rh-hero,
+html[data-rx-page="recommendations"] .rr-hero {
+  position:relative;
+}
+html[data-rx-page="home"] .sectiontop::before,
+html[data-rx-page="research-hub"] .research-section > h2::before,
+html[data-rx-page="publications"] .pub-hero::before,
+html[data-rx-page="films"] .fc-hero::before,
+html[data-rx-page="stories"] .stories-hero::before,
+html[data-rx-page="writing"] .rxw-hero::before,
+html[data-rx-page="archive"] .hero::before,
+html[data-rx-page="reading-map"] .map-hero::before,
+html[data-rx-page="research-horizon"] .rh-hero::before,
+html[data-rx-page="recommendations"] .rr-hero::before {
+  content:"";position:absolute;pointer-events:none;top:-22px;inset-inline-start:0;
+  width:48px;height:2px;border-radius:2px;background:var(--rx-art-light);
+  box-shadow:57px 0 0 -0.4px var(--rx-art-rule),70px 0 0 -0.4px var(--rx-art-rule);
+}
+html[data-rx-page="home"] .sectiontop .section-title,
+html[data-rx-page="research-hub"] .research-section h2,
+html[data-rx-page="writing"] .rxw-hero h1,
+html[data-rx-page="films"] .fc-hero h1,
+html[data-rx-page="archive"] .hero h1,
+html[data-rx-page="stories"] .stories-hero h1 {
+  letter-spacing:-.035em;
+}
+
+/* 03 / Hand-drawn navigation and subtle call-to-action choreography */
+html[data-rx-page="home"] .rx26-card-arrow {
+  display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--rx-art-serif);font-size:26px;
+  transform-origin:center;transition:transform .22s ease;
+}
+html[data-rx-page="home"] .rx26-portal-card:hover .rx26-card-arrow,
+html[data-rx-page="home"] .rx26-portal-card:focus-visible .rx26-card-arrow {
+  transform:translate(4px,-4px) rotate(-8deg);
+}
+html[data-rx-page="home"] .rx26-portal-card,
+html[data-rx-page="research-hub"] .rs-card,
+html[data-rx-page="films"] .fc-card,
+html[data-rx-page="writing"] .rxw-essay,
+html[data-rx-page="publications"] .pub-card {
+  position:relative;isolation:isolate;
+}
+html[data-rx-page="home"] .rx26-portal-card::after,
+html[data-rx-page="research-hub"] .rs-card::after,
+html[data-rx-page="films"] .fc-notebook::after,
+html[data-rx-page="writing"] .rxw-essay::after {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:12px;bottom:10px;
+  width:53px;height:26px;background-image:var(--rx-ink-arrow);
+  background-size:contain;background-repeat:no-repeat;background-position:center;
+  opacity:.5;transform:translateY(4px) rotate(-5deg);
+  transition:opacity .22s ease,transform .22s ease;
+}
+html[data-rx-page="home"] .rx26-portal-card:hover::after,
+html[data-rx-page="research-hub"] .rs-card:hover::after,
+html[data-rx-page="films"] .fc-notebook:hover::after,
+html[data-rx-page="writing"] .rxw-essay:hover::after {
+  opacity:1;transform:translateY(0) rotate(0);
+}
+html[data-rx-page] :is(.rx-atlas-links a,.rx-atlas-afterword-grid a,.rx-evidence-thread__links>a) {
+  position:relative;overflow:hidden;
+  transition:background-color .22s ease,border-color .22s ease,transform .22s ease;
+}
+html[data-rx-page] :is(.rx-atlas-links a,.rx-atlas-afterword-grid a,.rx-evidence-thread__links>a):hover {
+  transform:translateY(-3px);
+}
+html[data-rx-page] :is(.rx-atlas-links a,.rx-atlas-afterword-grid a):focus-visible {
+  outline-offset:1px;
+}
+
+/* 04 / Homepage: authored chapter index, not nine equivalent product tiles */
+html[data-rx-page="home"] .rx26-portal-card {
+  overflow:hidden;border-top:2px solid var(--rx-art-mid);
+  box-shadow:0 16px 38px #192d4b08;
+  transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease;
+}
+html[data-rx-page="home"] .rx26-portal-card:hover {
+  border-top-color:#7193bf;box-shadow:0 22px 43px #192d4b1a;
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(3n+2)::before {
+  content:"";pointer-events:none;position:absolute;inset-inline-end:-34px;top:-30px;
+  width:110px;height:110px;border:1px solid #7193bf45;border-radius:50%;
+  box-shadow:0 0 0 16px #7193bf0d,0 0 0 32px #7193bf0a;
+}
+html[data-rx-page="home"] .rx26-portal-card:nth-child(3n) {
+  border-top-style:dotted;border-top-width:3px;
+}
+html[data-rx-page="home"] .rx26-card-top {
+  border-bottom:1px solid #7193bf45;padding-bottom:14px;
+}
+html[data-rx-page="home"] .rx26-card-body h3 {
+  max-width:23ch;text-wrap:balance;
+}
+html[data-rx-page="home"] .rx26-portal {
+  position:relative;
+}
+html[data-rx-page="home"] .rx26-portal::after {
+  content:"";pointer-events:none;position:absolute;inset-inline-end:3%;bottom:-32px;
+  width:130px;height:65px;background:var(--rx-ink-swoop) center/contain no-repeat;
+  opacity:.6;transform:rotate(-4deg);
+}
+html[data-rx-page="home"] .rx-editorial-hero,
+html[data-rx-page="home"] .rx26-portal,
+html[data-rx-page="home"] .rx-chapters {
+  background-image:radial-gradient(#7193bf13 .7px,transparent .8px);
+  background-size:25px 25px;
+}
+html[data-rx-page="home"] .rx-hero-portrait,
+html[data-rx-page="home"] .rx-portrait-mat {
+  position:relative;
+}
+html[data-rx-page="home"] .rx-hero-portrait::after {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:-7px;bottom:20px;
+  width:55px;height:55px;border:1px solid #7193bf91;border-radius:50%;
+  box-shadow:0 0 0 6px #f4f7fb,0 0 0 7px #7193bf55;opacity:.85;
+}
+html[data-rx-page="home"] .rx-editorial-hero .rx-hero-title em {
+  text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:8px;
+  text-decoration-color:#7193bf80;
+}
+
+/* 05 / The Thread of Inquiry: a bridge between chapters, never a data figure */
+html[data-rx-page="home"] .rx-bridge,
+html[data-rx-page="home"] .story-bridge,
+html[data-rx-page="home"] .rh-home-entry {
+  position:relative;isolation:isolate;
+}
+html[data-rx-page="home"] .rx-bridge::before,
+html[data-rx-page="home"] .story-bridge::before {
+  content:"";position:absolute;pointer-events:none;
+  width:170px;height:85px;inset-inline-end:2%;top:-39px;
+  background:var(--rx-ink-swoop) center/contain no-repeat;
+  opacity:.64;transform:rotate(-5deg);
+}
+html[data-rx-page="home"] .rh-home-entry::before {
+  content:"";position:absolute;pointer-events:none;
+  inset-inline-end:4%;top:15px;width:170px;height:82px;
+  background:var(--rx-ink-swoop) center/contain no-repeat;opacity:.37;
+}
+html[data-rx-page="home"] .editorial-story .story-research-trail {
+  position:relative;
+}
+html[data-rx-page="home"] .editorial-story .trail-scene {
+  border-top:2px solid #7193bf;
+}
+html[data-rx-page="home"] .editorial-story .trail-scene .chapter-num {
+  display:inline-flex;align-items:center;gap:9px;
+}
+html[data-rx-page="home"] .editorial-story .trail-scene .chapter-num::before {
+  content:"";display:inline-block;width:8px;height:8px;border:1.5px solid #345b8e;border-radius:50%;
+  box-shadow:0 0 0 4px #b7cbe443;
+}
+
+/* 06 / Research: margins, annotated specimens, a navigable investigative record */
+html[data-rx-page="research-hub"] .research-section {
+  position:relative;
+  border-block-start:1px solid var(--rx-art-rule);
+}
+html[data-rx-page="research-hub"] .rs-card {
+  border-inline-start:2px solid #7193bf78;
+  transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease;
+}
+html[data-rx-page="research-hub"] .rs-card:hover {
+  border-inline-start-color:var(--rx-art-mid);
+  box-shadow:12px 14px 30px #192d4b10;
+}
+html[data-rx-page="research-hub"] .rs-card h3 {
+  font-family:var(--rx-art-serif);letter-spacing:-.02em;
+}
+html[data-rx-page="research-hub"] .research-section:nth-of-type(even) .rs-card:nth-of-type(2n) {
+  border-top:2px dashed #7193bf75;
+}
+html[data-rx-page="research-detail"] :is(main section,main article) {
+  scroll-margin-top:110px;
+}
+html[data-rx-page="research-detail"] :is(main section,main article) > h2 {
+  border-bottom:1px solid var(--rx-art-rule);padding-bottom:14px;
+}
+html[data-rx-page="research-detail"] :is(figure,figcaption) {
+  min-width:0;
+}
+html[data-rx-page="research-detail"] figcaption {
+  padding-block:10px;border-block-start:1px solid var(--rx-art-rule);
+  font-family:var(--rx-art-mono);font-size:.77em;line-height:1.8;
+}
+
+/* 07 / Publications: bibliography as a readable, indexed journal */
+html[data-rx-page="publications"] .pub-card {
+  border-inline-start:3px solid transparent;
+  transition:border-color .18s ease,background-color .18s ease;
+}
+html[data-rx-page="publications"] .pub-card:hover,
+html[data-rx-page="publications"] .pub-card:focus-within {
+  border-inline-start-color:var(--rx-art-mid);
+}
+html[data-rx-page="publications"] .pub-card h3 {
+  font-family:var(--rx-art-serif);letter-spacing:-.02em;
+  text-wrap:pretty;
+}
+html[data-rx-page="publications"] .pub-hero::after {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:4%;top:10%;
+  width:120px;height:64px;background:var(--rx-ink-arrow) center/contain no-repeat;
+  opacity:.3;transform:rotate(-18deg);
+}
+html[data-rx-page="publications"] :is(.pub-filter,.pub-search,.pub-filtergroup) {
+  accent-color:var(--rx-art-mid);
+}
+
+/* 08 / Film collection: documentary contact sheets, not moving-page gimmicks */
+html[data-rx-page="films"] .fc-card,
+html[data-rx-page="films"] .fc-notebook,
+html[data-rx-page="films"] .fc-notebook-feature {
+  position:relative;
+}
+html[data-rx-page="films"] .fc-card {
+  border-top:3px solid #7193bf;box-shadow:0 17px 42px #192d4b16;
+}
+html[data-rx-page="films"] .fc-card::before {
+  content:"";position:absolute;pointer-events:none;z-index:2;
+  width:30px;height:20px;inset-inline-start:13px;top:13px;
+  border-top:1px solid #fbfcfe;border-inline-start:1px solid #fbfcfe;
+  filter:drop-shadow(0 1px 2px #192d4b88);
+}
+html[data-rx-page="films"] .fc-card::after {
+  content:"";position:absolute;pointer-events:none;z-index:2;
+  width:30px;height:20px;inset-inline-end:13px;top:13px;
+  border-top:1px solid #fbfcfe;border-inline-end:1px solid #fbfcfe;
+  filter:drop-shadow(0 1px 2px #192d4b88);
+}
+html[data-rx-page="films"] .fc-notebook {
+  border-inline-start:2px solid #7193bf95;
+}
+html[data-rx-page="films"] .fc-notebook h3,
+html[data-rx-page="films"] .fc-card h3 {
+  font-family:var(--rx-art-serif);
+}
+html[data-rx-page="films"] .fc-hero::after {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:2%;top:2%;
+  width:155px;height:76px;background:var(--rx-ink-curve) center/contain no-repeat;opacity:.38;
+}
+/* Deliberately leave <video>, <track>, film posters and their controls untouched. */
+
+/* 09 / Stories and archives: photographic exhibitions with provenance intact */
+html[data-rx-page="stories"] .stories-chapter {
+  position:relative;isolation:isolate;
+}
+html[data-rx-page="stories"] .stories-chapter::before {
+  content:"";position:absolute;pointer-events:none;inset-inline-start:0;top:18px;
+  width:26px;height:2px;background:#7193bf;
+}
+html[data-rx-page="stories"] .stories-chapter:nth-of-type(3n)::before {
+  width:52px;background:linear-gradient(90deg,#345b8e 33%,transparent 33%,transparent 66%,#7193bf 66%);
+}
+html[data-rx-page="stories"] :is(.stories-single-figure,.rx26-school-figure),
+html[data-rx-page="archive"] :is(.photo-card,.rx-archive-object) {
+  position:relative;
+}
+html[data-rx-page="stories"] .stories-single-figure figcaption,
+html[data-rx-page="archive"] :is(.photo-card figcaption,.rx-archive-object figcaption) {
+  border-block-start:1px solid var(--rx-art-rule);padding-block:12px;
+  letter-spacing:.01em;
+}
+html[data-rx-page="stories"] .rx-story-route {
+  border-inline-start:2px solid #7193bf80;
+  transition:border-color .2s ease;
+}
+html[data-rx-page="stories"] .rx-story-route:hover {
+  border-inline-start-color:#345b8e;
+}
+html[data-rx-page="archive"] .rx-archive-object {
+  box-shadow:0 14px 27px #192d4b0b;border-color:#cdd8e7;
+}
+html[data-rx-page="archive"] .rx-archive-object::before {
+  content:"";position:absolute;pointer-events:none;inset-inline-start:12px;top:12px;
+  width:22px;height:22px;border-inline-start:1px solid #7193bf;border-top:1px solid #7193bf;
+}
+html[data-rx-page="archive"] .timeline {
+  background-image:linear-gradient(90deg,transparent calc(50% - .5px),#7193bf24 50%,transparent calc(50% + .5px));
+}
+html[data-rx-page="archive"] .filmstrip {
+  border-block:2px solid var(--rx-art-rule);
+}
+
+/* 10 / Writing and the book: typography with room for the sentence */
+html[data-rx-page="writing"] .rxw-essay {
+  border-top:2px solid #7193bf99;transition:border-color .2s ease;
+}
+html[data-rx-page="writing"] .rxw-essay:hover {border-top-color:var(--rx-art-mid);}
+html[data-rx-page="writing"] :is(.rxw-essay h3,.rxw-book-announcement h2,.rxw-feature h2) {
+  font-family:var(--rx-art-serif);letter-spacing:-.03em;
+}
+html[data-rx-page="writing"] .rxw-book-announcement {
+  position:relative;isolation:isolate;
+}
+html[data-rx-page="writing"] .rxw-book-announcement::after {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:5%;bottom:12%;
+  width:125px;height:62px;background:var(--rx-ink-swoop) center/contain no-repeat;opacity:.28;
+}
+html[data-rx-page="major-revisions"] .rx-book-hero {
+  position:relative;isolation:isolate;
+}
+html[data-rx-page="major-revisions"] .rx-book-hero::after {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:4%;top:4%;
+  width:150px;height:72px;background:var(--rx-ink-curve) center/contain no-repeat;opacity:.45;
+}
+html[data-rx-page="writing"] blockquote,
+html[data-rx-page="major-revisions"] blockquote,
+html[data-rx-page="stories"] blockquote {
+  border-inline-start:2px solid var(--rx-art-light);
+  padding-inline-start:clamp(19px,3vw,37px);
+  font-family:var(--rx-art-serif);font-style:italic;
+}
+
+/* 11 / Research horizon, methods and cross-disciplinary inquiry */
+html[data-rx-page="research-horizon"] .rh-question {
+  position:relative;border-top:1px solid #7193bf88;
+}
+html[data-rx-page="research-horizon"] .rh-question::after {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:0;top:12px;
+  width:54px;height:27px;background:var(--rx-ink-arrow) center/contain no-repeat;opacity:.32;
+}
+html[data-rx-page="reading-map"] .map-route {
+  position:relative;isolation:isolate;
+  border-top:2px dotted var(--rx-art-light);
+}
+html[data-rx-page="reading-map"] .map-route::after {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:2%;top:10px;
+  width:76px;height:40px;background:var(--rx-ink-arrow) center/contain no-repeat;opacity:.58;
+}
+html[data-rx-page="reading-map"] .map-paths {
+  position:relative;
+}
+html[data-rx-page="reading-map"] .map-paths::before {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:2%;top:-30px;
+  width:185px;height:87px;background:var(--rx-ink-curve) center/contain no-repeat;opacity:.45;
+}
+html[data-rx-page="methods-evidence"] :is(section,article) > h2,
+html[data-rx-page="molecular-therapeutics"] :is(section,article) > h2,
+html[data-rx-page="imaging"] :is(section,article) > h2 {
+  text-decoration:underline;text-decoration-thickness:1px;
+  text-underline-offset:12px;text-decoration-color:#7193bf75;
+}
+
+/* 12 / Grants, collaboration, technical practice, personal credentials */
+html[data-rx-page="grants"] .card,
+html[data-rx-page^="grants-"] .card {
+  position:relative;border-top:2px solid #7193bf;
+}
+html[data-rx-page="grants"] .card::after {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:18px;bottom:12px;
+  width:66px;height:32px;background:var(--rx-ink-arrow) center/contain no-repeat;opacity:.3;
+}
+html[data-rx-page="cv"] .block,
+html[data-rx-page="leadership"] :is(.card,.entry,.panel),
+html[data-rx-page="supervisors"] :is(.card,.entry,.panel) {
+  border-inline-start:2px solid #7193bf66;
+}
+html[data-rx-page="cv"] .block > h2 {
+  border-bottom:1px solid var(--rx-art-rule);padding-block-end:12px;
+}
+html[data-rx-page="engagement"] :is(.photo,.card,.event),
+html[data-rx-page="computing"] :is(.card,.panel,.project),
+html[data-rx-page="training"] :is(.card,.entry,.panel) {
+  position:relative;
+}
+html[data-rx-page="engagement"] :is(.photo,.card,.event)::after,
+html[data-rx-page="computing"] :is(.card,.panel,.project)::after {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:8px;bottom:8px;
+  width:43px;height:25px;background:var(--rx-ink-arrow) center/contain no-repeat;opacity:.25;
+}
+
+/* 13 / Reading, recommendations and discovery: a curated library index */
+html[data-rx-page="recommendations"] .rr-entry,
+html[data-rx-page="recommendations"] .rr-section,
+html[data-rx-page="discovery"] :is(.result,.result-card,.search-result) {
+  position:relative;
+}
+html[data-rx-page="recommendations"] .rr-entry {
+  border-inline-start:2px solid #7193bf88;
+  transition:border-color .18s ease;
+}
+html[data-rx-page="recommendations"] .rr-entry:hover {
+  border-inline-start-color:var(--rx-art-mid);
+}
+html[data-rx-page="recommendations"] .rr-hero::after {
+  content:"";position:absolute;pointer-events:none;inset-inline-end:3%;top:15%;
+  width:116px;height:56px;background:var(--rx-ink-swoop) center/contain no-repeat;opacity:.34;
+}
+html[data-rx-page="discovery"] :is(input[type="search"],input[type="text"]):focus {
+  border-color:#456fa6;box-shadow:0 0 0 3px #7193bf25;
+}
+html[data-rx-page="evidence-reader"] :is(figure,figcaption),
+html[data-rx-page="research-detail"] :is(figure,figcaption) {
+  overflow-wrap:break-word;
+}
+/* Manuscript, chart, image and microscopy fidelity are controlled by source pages. */
+
+/* 14 / Folio endings and helpful quiet motion */
+html[data-rx-page] :is(.footer,.rx-footer,footer):not(.rx-film-controls) {
+  position:relative;
+}
+html[data-rx-page] :is(.footer,.rx-footer,footer):not(.rx-film-controls)::before {
+  content:"";pointer-events:none;position:absolute;inset-inline-start:4%;top:0;
+  width:72px;height:3px;background:linear-gradient(90deg,#7193bf 0 35%,#b7cbe4 35% 70%,#345b8e 70% 100%);
+}
+html[data-rx-page] a[href^="#"]:not([class*="skip"]) {
+  scroll-margin-top:90px;
+}
+html[data-rx-page] :is(.rx-atlas-links a,.rx-atlas-afterword-grid a,.rx26-portal-card,.rs-card,.fc-card,.rxw-essay,.pub-card) {
+  -webkit-tap-highlight-color:transparent;
+}
+
+/* 15 / Responsive, Arabic and accessibility contracts */
+@media (max-width:900px) {
+  html[data-rx-page="home"] .rx26-portal::after,
+  html[data-rx-page="home"] .story-bridge::before,
+  html[data-rx-page="home"] .rh-home-entry::before {
+    width:95px;height:52px;opacity:.28;
+  }
+  html[data-rx-page="home"] .rx-hero-portrait::after {
+    width:35px;height:35px;inset-inline-end:6px;
+  }
+  html[data-rx-page="films"] .fc-hero::after,
+  html[data-rx-page="writing"] .rxw-book-announcement::after,
+  html[data-rx-page="major-revisions"] .rx-book-hero::after {
+    opacity:.2;
+  }
+}
+@media (max-width:650px) {
+  html[data-rx-page="home"] .rx-bridge::before,
+  html[data-rx-page="home"] .story-bridge::before,
+  html[data-rx-page="home"] .rx26-portal::after,
+  html[data-rx-page="home"] .rh-home-entry::before,
+  html[data-rx-page="publications"] .pub-hero::after,
+  html[data-rx-page="films"] .fc-hero::after,
+  html[data-rx-page="writing"] .rxw-book-announcement::after,
+  html[data-rx-page="reading-map"] .map-paths::before,
+  html[data-rx-page="major-revisions"] .rx-book-hero::after {
+    display:none;
+  }
+  html[data-rx-page="home"] .rx26-portal-card::after,
+  html[data-rx-page="research-hub"] .rs-card::after,
+  html[data-rx-page="writing"] .rxw-essay::after,
+  html[data-rx-page="films"] .fc-notebook::after {
+    width:35px;height:19px;inset-inline-end:8px;bottom:7px;opacity:.25;
+  }
+  html[data-rx-page] :is(.sectiontop,.rx-chapters-heading) {
+    max-width:100%;
+  }
+}
+@media (forced-colors:active) {
+  html[data-rx-page] :is(.rx26-portal-card,.rs-card,.pub-card,.fc-card,.rxw-essay) {
+    border:1px solid CanvasText;
+  }
+  html[data-rx-page] :is(.rx26-portal-card,.rs-card,.fc-notebook,.rxw-essay)::after {
+    display:none;
+  }
+}
+/* rx-art-rtl: drawn arrows follow reading direction without reversing words/images */
+html[dir="rtl"][data-rx-page] :is(.rx26-portal-card,.rs-card,.fc-notebook,.rxw-essay)::after,
+html[lang="ar"][data-rx-page] :is(.rx26-portal-card,.rs-card,.fc-notebook,.rxw-essay)::after {
+  transform:scaleX(-1);transform-origin:center;
+}
+html[dir="rtl"][data-rx-page="home"] .rx26-portal-card:nth-child(3n+2)::before {
+  inset-inline-end:-34px;
+}
+html[dir="rtl"][data-rx-page] :is(.rx-bridge,.story-bridge,.rh-home-entry,.map-paths)::before {
+  transform:scaleX(-1);
+}
+/* rx-art-reduced-motion: all expressive links remain fully usable without motion */
+@media (prefers-reduced-motion:reduce) {
+  html[data-rx-page] :is(.rx26-portal-card,.rx26-card-arrow,.rs-card,.fc-card,.rxw-essay,.pub-card,.rx-atlas-links a,.rx-atlas-afterword-grid a) {
+    transition:none!important;animation:none!important;
+  }
+  html[data-rx-page] :is(.rx26-portal-card,.rs-card,.fc-notebook,.rxw-essay)::after {
+    transition:none!important;
+  }
+}
