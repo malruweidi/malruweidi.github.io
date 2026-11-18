@@ -42,7 +42,7 @@ test("the released film is playable, source-linked and preserves the scientific 
  assert.equal(m.chemical_observations.detection_limit_molar,1.42e-5);
  assert.ok(story.includes("1.42"));
  assert.ok(hub.includes('href="/films/the-ring-that-never-closed.html"'));
- assert.ok(hub.includes("what-survives-the-experiment.mp4"));
+ assert.ok(hub.includes("anatomy-of-a-question-2026-v2.mp4"),"Guard the actual published main documentary without inventing removed release names");
  assert.ok(hub.includes("cairo-microscope.mp4"));
  assert.ok(hub.includes("airway-reopening-evidence-cut.mp4"));
  assert.ok(story.includes("The final report describes three such compounds"));
