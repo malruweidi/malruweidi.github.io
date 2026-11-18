@@ -10,7 +10,7 @@ const omitted=new Set(["home-legacy-2026.html","living-desk-preview.html","cinem
 function htmlFiles(dir=""){
   return readdirSync(join(root,dir),{withFileTypes:true}).flatMap(e=>{
     const name=dir?dir+"/"+e.name:e.name;
-    if(e.isDirectory()){return ([".github","node_modules"].includes(e.name)||name.startsWith("assets/")&&!name.startsWith("assets/films/"))?[]:htmlFiles(name);}
+    if(e.isDirectory()){return ([".github","node_modules"].includes(e.name)||name.startsWith("assets/")&&name!=="assets/films"&&!name.startsWith("assets/films/"))?[]:htmlFiles(name);}
     return e.isFile()&&name.endsWith(".html")&&!omitted.has(name)?[name]:[];
   });
 }
