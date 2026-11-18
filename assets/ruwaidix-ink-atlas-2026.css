@@ -122,88 +122,220 @@ html[data-rx-page="home"] .rx-home-film-media figcaption {
  border-top-color:var(--rx-compose-rule);
 }
 
-/* C. Nine actual destinations, grouped by intellectual purpose.
-   Research / publication / film; lived record / writing;
-   teaching / leadership / novel. The existing asymmetrical grid stays.
-   Only the primary research entry receives the hand-drawn arrow. */
+/* C. Chapter index as a nine-piece editorial gallery.
+   The cards must communicate different kinds of work, not wear the same
+   ornamental arrow and loop. All original card texts, links and order remain.
+   Research uses its real laboratory photo; Films uses its actual documentary
+   poster. The other chapters rely on type, proportion and paper treatments. */
 html[data-rx-page="home"] .rx26-portal {
- background:var(--rx-compose-paper);
+ background:#fbfcfe;
 }
 html[data-rx-page="home"] .rx26-portal-head {
- align-items:end;
- border-bottom:1px solid var(--rx-compose-rule);
- padding-block-end:22px;
+ display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);
+ gap:clamp(22px,5vw,80px);
+ align-items:end;border-bottom:1px solid #b7cbe4;
+ padding-block-end:clamp(20px,3vw,38px);
 }
 html[data-rx-page="home"] .rx26-portal-head h2 {
- max-width:13ch;
- letter-spacing:-.055em;
+ font-size:clamp(54px,6.3vw,94px);
+ line-height:.94;letter-spacing:-.063em;max-width:12ch;
+}
+html[data-rx-page="home"] .rx26-portal-head .rx26-portal-intro {
+ max-width:38ch;font-size:clamp(14px,1.3vw,17px);
+ line-height:1.77;color:#4c6282;
+}
+html[data-rx-page="home"] .rx26-portal-grid {
+ column-gap:clamp(10px,1.15vw,17px);
+ row-gap:clamp(10px,1.15vw,17px);
 }
 html[data-rx-page="home"] .rx26-portal-card {
- position:relative;
- border-radius:0;
- box-shadow:none;
- border-top-width:2px;
- border-top-color:var(--rx-compose-rule);
- transition:border-color .2s ease,transform .2s ease;
+ position:relative;isolation:isolate;min-width:0;
+ border:1px solid #cdd8e7;border-radius:0;
+ padding:clamp(20px,2.25vw,33px);
+ box-shadow:none;overflow:hidden;
+ transition:background-color .22s ease,border-color .22s ease,transform .22s ease;
 }
-html[data-rx-page="home"] .rx26-portal-card:hover {
- border-top-color:var(--rx-compose-accent);
- transform:translateY(-2px);
+html[data-rx-page="home"] .rx26-portal-card::before,
+html[data-rx-page="home"] .rx26-portal-card::after,
+html[data-rx-page="home"] .rx26-portal-head::after,
+html[data-rx-page="home"] .rx26-portal::after {
+ content:none!important;display:none!important;background:none!important;
 }
-html[data-rx-page="home"] .rx26-portal-card .rx26-card-top {
- letter-spacing:.08em;
- padding-bottom:14px;
- border-bottom:1px solid #7193bf3b;
-}
+/* Even under stale components, never show the old top-right decorative glyphs. */
 html[data-rx-page="home"] .rx26-portal-card .rx26-card-arrow {
- display:inline-block;
- background:none;
- width:auto;height:auto;
- font-size:23px;line-height:1;
- color:inherit;
- transition:none;
- transform:none;
+ display:none!important;background:none!important;
 }
-html[data-rx-page="home"] .rx26-portal-card:nth-child(1) {
- background:var(--rx-compose-ink);
- border-top-color:#a6c0df;
+html[data-rx-page="home"] .rx26-portal-card:hover,
+html[data-rx-page="home"] .rx26-portal-card:focus-visible {
+ transform:translateY(-2px);
+ border-color:#7193bf;
+}
+html[data-rx-page="home"] .rx26-card-top {
+ padding-bottom:16px;
+ border-bottom:1px solid #b7cbe45c;
+ font-family:var(--rx-compose-mono);
+ font-size:11px;letter-spacing:.12em;
+}
+html[data-rx-page="home"] .rx26-card-body {
+ position:relative;z-index:1;
+ margin:auto 0 16px;padding-top:clamp(25px,3vw,55px);
+}
+html[data-rx-page="home"] .rx26-portal-card h3 {
+ font-family:var(--rx-compose-serif);
+ font-weight:400;
+ font-size:clamp(33px,3.2vw,48px);
+ line-height:1.035;
+ letter-spacing:-.045em;
+ max-width:18ch;
+ margin-block:0 21px;
+}
+html[data-rx-page="home"] .rx26-portal-card p {
+ font-size:clamp(13px,1.13vw,15px);
+ line-height:1.76;
+ max-width:43ch;
+}
+html[data-rx-page="home"] .rx26-card-action {
+ position:relative;z-index:1;
+ padding-block-start:16px;
+ font-size:12px;letter-spacing:.01em;
+ border-top:1px solid #b7cbe499;
+ text-underline-offset:5px;
+}
+
+/* Research: an archival lab photograph appears only where it belongs.
+   The blue overlay protects text, and no scientific figure is transformed. */
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(1) {
+ background-color:#345b8e;
+ background-image:
+  linear-gradient(90deg,#345b8e 0%,#345b8e 49%,rgba(52,91,142,.94) 70%,rgba(52,91,142,.57) 100%),
+  url("/archive/archive-7884.jpg");
+ background-repeat:no-repeat;
+ background-position:left center,right center;
+ background-size:cover,58% 100%;
+ border-color:#345b8e;
+ color:#fbfcfe;
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(1) :is(.rx26-card-top,.rx26-card-action) {
+ color:#fbfcfe;border-color:#d7e3f166;
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(1) h3 {
+ max-width:17ch;font-size:clamp(39px,3.5vw,57px);
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(1) p {
  color:#f4f7fb;
+ max-width:40ch;
 }
-html[data-rx-page="home"] .rx26-portal-card:nth-child(1) h3 {
- font-size:clamp(34px,3.7vw,52px);
- line-height:1.02;
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(1):hover {
+ border-color:#7193bf;
+}
+
+/* Bibliography: generous reading room, strict rules, no clip art. */
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(2) {
+ background:#f4f7fb;
+ border-top:3px solid #345b8e;
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(2) h3 {
  max-width:13ch;
 }
-html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-arrow {
- /* The sole expressive drawn arrow, on an actual navigation link. */
- width:50px;height:37px;flex:none;
- font-size:0;
- background:url("/assets/ruwaidix-ink-arrow-2026.svg") center/contain no-repeat;
- filter:brightness(0) invert(1);
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(2) p {
+ color:#4c6282;
 }
-html[data-rx-page="home"] .rx26-portal-card:nth-child(1):hover .rx26-card-arrow,
-html[data-rx-page="home"] .rx26-portal-card:nth-child(1):focus-visible .rx26-card-arrow {
- transform:translate(3px,-3px);
+
+/* Film: the REAL documentary poster, cropped only as this chapter thumbnail. */
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(3) {
+ background-color:#101e35;
+ background-image:
+  linear-gradient(180deg,rgba(16,30,53,.77),rgba(16,30,53,.94)),
+  url("/assets/films/anatomy-of-a-question-2026-v2.webp");
+ background-repeat:no-repeat;background-size:cover,cover;
+ background-position:center,center;
+ border-color:#345b8e;
+ color:#fbfcfe;
 }
-html[data-rx-page="home"] .rx26-portal-card:is(:nth-child(2),:nth-child(3)) {
- background:#eaf0f8;
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(3) :is(.rx26-card-top,.rx26-card-action) {
+ color:#fbfcfe;border-color:#b7cbe466;
 }
-html[data-rx-page="home"] .rx26-portal-card:is(:nth-child(4),:nth-child(5),:nth-child(6)) {
- background:#f4f7fb;
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(3) p {
+ color:#f4f7fb;
 }
-html[data-rx-page="home"] .rx26-portal-card:is(:nth-child(7),:nth-child(8),:nth-child(9)) {
- background:#fbfcfe;
- border-inline-start:3px solid #b7cbe4;
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(3) h3 {
+ font-size:clamp(34px,3vw,46px);
 }
-html[data-rx-page="home"] .rx26-portal-card:nth-child(9) h3 {
- font-style:italic;
+
+/* The lived record: distinct chapters with quiet paper and narrative margins. */
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(4) {
+ background:#eaf0f8;border-inline-start:4px solid #456fa6;
 }
-html[data-rx-page="home"] .rx26-card-body h3 {
- letter-spacing:-.027em;
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(4) h3 {
+ max-width:10ch;
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(5) {
+ background:#f4f7fb;border-inline-start:2px solid #7193bf;
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(5) h3 {
+ max-width:14ch;
+}
+
+/* Writing: typographic contrast, not a decorative quotation bubble. */
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(6) {
+ background:#fbfcfe;border-block-start:3px solid #192d4b;
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(6) h3 {
+ font-size:clamp(38px,3.5vw,54px);
+ max-width:11ch;
+}
+
+/* Community is human-scale; leadership is orderly; the novel is a book. */
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(7) {
+ background:#eef3f9;
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(7) h3 {
+ max-width:13ch;
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(8) {
+ background:#f4f7fb;border-block-start:3px solid #7193bf;
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(9) {
+ background:#263f66;color:#fbfcfe;border-color:#263f66;
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(9) h3 {
+ font-style:italic;font-size:clamp(42px,4.2vw,66px);
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(9) p,
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(9) :is(.rx26-card-top,.rx26-card-action) {
+ color:#f4f7fb;
+}
+html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(9) :is(.rx26-card-top,.rx26-card-action) {
+ border-color:#b7cbe45e;
 }
 html[data-rx-page="home"] .rx26-portal-paths {
  border-top:1px solid var(--rx-compose-rule);
- padding-top:19px;
+ padding-block-start:24px;
+}
+
+/* Keep the nine chapters readable on tablets and very small screens. */
+@media(max-width:1170px) {
+ html[data-rx-page="home"] .rx26-portal-head {
+  grid-template-columns:1fr;
+ }
+ html[data-rx-page="home"] .rx26-portal-card h3 {
+  font-size:clamp(30px,4vw,45px);
+ }
+}
+@media(max-width:610px) {
+ html[data-rx-page="home"] .rx26-portal-head h2 {
+  font-size:clamp(48px,11vw,70px);
+ }
+ html[data-rx-page="home"] .rx26-card-body {
+  padding-block-start:22px;
+ }
+ html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(1) {
+  background-image:linear-gradient(90deg,rgba(52,91,142,.93),rgba(52,91,142,.86)),url("/archive/archive-7884.jpg");
+  background-size:cover,cover;
+ }
+ html[data-rx-page="home"] .rx26-portal-grid>.rx26-portal-card:nth-child(3) {
+  background-image:linear-gradient(180deg,rgba(16,30,53,.85),rgba(16,30,53,.93)),url("/assets/films/anatomy-of-a-question-2026-v2.webp");
+ }
 }
 
 /* D. Research home: a lab notebook's indexed questions, not product cards.
