@@ -1,0 +1,203 @@
+/* Ruwaidix / Homepage blue compatibility colors, 2026-11-18.
+ * Automatically extracted color-only overrides from original homepage styles.
+ * No dimension, typography, placement, media, animation or geographic data rules. */
+::selection{background:#b7cbe4}
+.pill{border:1px solid #b7cbe4;color:#345b8e}
+.preview-strip{background:#345b8e;color:#d7e3f1}
+.header{background:#eaf0f8ed}
+.hero-copy .lead{color:#345b8e}
+.hero-note{color:#7193bf}
+.plate{background:#eaf0f8;border:1px solid #d7e3f1}
+.plate-top{color:#345b8e}
+.plate-main{box-shadow:15px 15px 0 #eaf0f8}
+.plate-detail{border:10px solid #fbfcfe;box-shadow:0 12px 35px #263f6629}
+.plate-label{color:#345b8e}
+.plate-caption{background:#fbfcfe}
+.story{background:#263f66;color:#eaf0f8}
+.story .eyebrow{color:#b7cbe4}
+.story h2 em{color:#b7cbe4}
+.story p{color:#d7e3f1}
+.story .narrative{border-left:1px solid #7193bf}
+.archiveitem{background:#345b8e}
+.archiveitem p{color:#b7cbe4}
+.timeline{background:#eaf0f8}
+.work-card:hover{box-shadow:0 8px 30px #192d4b16}
+.work-img{background:#d7e3f1}
+.work-img .flag{background:#fbfcfeef;color:#345b8e}
+.primary-card .work-meta{color:#b7cbe4}
+.primary-card .work-body p{color:#d7e3f1}
+.primary-card .work-footer{border-top-color:#345b8e}
+.primary-card .work-footer span{color:#b7cbe4}
+.primary-card .work-footer button{color:#b7cbe4}
+.methodband{background:#eaf0f8}
+.methodcol{background:#fbfcfe;border:1px solid #d7e3f1}
+.methodrow{border-top:1px solid #d7e3f1;color:#345b8e}
+.methodrow em{color:#345b8e}
+.methodlegend{color:#345b8e}
+.filter{border:1px solid #d7e3f1}
+.search{border:1px solid #d7e3f1;background:#fbfcfe}
+.pubitem .nolink{color:#7193bf}
+.history{background:#eaf0f8}
+.history p{color:#345b8e}
+.history .chapter{background:#fbfcfe;border:1px solid #d7e3f1;box-shadow:23px 23px 0 #d7e3f1}
+.chapter .arabic{color:#263f66}
+.writing{background:#eaf0f8}
+.press{background:#eaf0f8}
+.presscard{background:#fbfcfe}
+.presscard .pressdate{color:#7193bf}
+.ventures{background:#263f66;color:#eaf0f8}
+.venturegrid p{color:#d7e3f1}
+.venture-panel{border:1px solid #345b8e;background:radial-gradient(circle at right top,#345b8e,#263f66 70%)}
+.venture-panel:before,.venture-panel:after{border:1px solid #7193bf88}
+.venture-panel .tag{color:#d7e3f1}
+.venture-panel .bottom{border-top:1px solid #345b8e;color:#d7e3f1}
+.leadership{background:#eaf0f8}
+.about{background:#eaf0f8}
+.aboutcard{background:#fbfcfe;border:1px solid #d7e3f1}
+.footer{background:#263f66;color:#eaf0f8}
+.footer p{color:#d7e3f1}
+.footerlinks a{border-bottom:1px solid #345b8e}
+.footerlinks a:hover{color:#b7cbe4}
+.copyright{border-top:1px solid #345b8e;color:#b7cbe4}
+.dialog{border:1px solid #d7e3f1;background:#fbfcfe;box-shadow:0 20px 65px #192d4b66}
+.dialog::backdrop{background:#192d4bb8}
+.figure-credit{color:#7193bf}
+@media(max-width:850px){.navlinks{background:#eaf0f8}}
+@media(max-width:850px){.history .chapter{box-shadow:12px 12px 0 #d7e3f1}}
+.patient-perspective{background:#eaf0f8}
+.patient-quote{color:#345b8e}
+.patient-main>p{color:#345b8e}
+.patient-chapter{background:#eaf0f8}
+.patient-donation{background:#263f66}
+.patient-donation .eyebrow{color:#b7cbe4}
+.patient-donation>p:not(.eyebrow){color:#d7e3f1}
+.patient-donate-card{background:#eaf0f8}
+.patient-donate-card .patient-donate-full{color:#345b8e}
+.patient-donate-card>p:not(.patient-donate-full){color:#345b8e}
+.patient-donate-card>a:not(.patient-donate-evidence){background:#263f66}
+.patient-donate-card>a:not(.patient-donate-evidence):hover,.patient-donate-card>a:not(.patient-donate-evidence):focus-visible{background:#263f66}
+.patient-donation .patient-giving-transparency,.patient-donation .patient-giving-else{color:#d7e3f1}
+.patient-donation .patient-giving-transparency{border-top:1px solid #345b8e}
+.patient-commitment{border-top:1px solid #b7cbe4}
+.patient-commitment>p:not(.mono){color:#345b8e}
+.patient-resources>p:not(.eyebrow){color:#345b8e}
+.patient-related-cause{background:#eaf0f8}
+.patient-related-cause>p:not(.mono){color:#345b8e}
+.archive-callout{background:#eaf0f8;border-top:1px solid #d7e3f1;border-bottom:1px solid #d7e3f1}
+.archive-callout p{color:#345b8e}
+.archive-photo-pair figcaption{color:#7193bf}
+.archive-browse{background:#263f66}
+.archive-browse:hover{background:#7193bf}
+.quacs-feature{background:#eaf0f8}
+.quacs-top p:not(.eyebrow){color:#345b8e}
+.quacs-grid article{background:#fbfcfe;border:1px solid #d7e3f1}
+.quacs-foot{color:#7193bf}
+.research-stage{background:#eaf0f8;border:1px solid #d7e3f1;box-shadow:0 16px 38px #263f6618}
+.stage-top,.stage-bottom{color:#345b8e}
+.stage-field{background:radial-gradient(circle at 75% 30%,#345b8e,#263f66 68%)}
+.stage-field:before{border:1px solid #d7e3f177}
+.stage-kicker{color:#d7e3f1}
+.stage-tag{background:#263f66e0;border:1px solid #b7cbe4ad;color:#eaf0f8}
+.stage-profile{background:#fbfcfe;border-top:1px solid #d7e3f1}
+.stage-profile img{background:#d7e3f1}
+.stage-profile small{color:#345b8e}
+.stage-profile a,.stage-bottom a{color:#345b8e}
+.method-showcase{background:#eaf0f8}
+.method-feature-title em,.infrastructure-feature h2 em,.grant-teaser h2 em{color:#7193bf}
+.method-feature-deck{color:#345b8e}
+.moving-track a{border:1px solid #d7e3f1}
+.moving-track img{background:#eaf0f8}
+.infrastructure-feature{background:#263f66;color:#eaf0f8}
+.infrastructure-feature p{color:#d7e3f1}
+.infrastructure-feature .textlink{color:#d7e3f1}
+.infra-visual{background:#345b8e;border:1px solid #7193bf}
+.infra-visual small{color:#d7e3f1}
+.grant-teaser{background:#eaf0f8}
+.grant-teaser p{color:#345b8e}
+.grant-projects{border-top:1px solid #345b8e}
+.grant-projects a{border-bottom:1px solid #d7e3f1}
+.grant-projects b{color:#345b8e}
+@media(max-width:1220px){.navlinks{background:#eaf0f8;border-bottom:1px solid #d7e3f1}}
+.research-identity{background:#eaf0f8;border-top:1px solid #d7e3f1;border-bottom:1px solid #d7e3f1}
+.framework-head>p{color:#345b8e}
+.framework-grid article{background:#fbfcfe;border:1px solid #d7e3f1}
+.framework-grid p{color:#345b8e}
+.framework-foot{color:#345b8e}
+.framework-link{color:#345b8e}
+.ruwaidix-mark{border:1px solid #b7cbe4}
+.profile-photo-frame{border:1px solid #d7e3f1;background:#eaf0f8;box-shadow:0 17px 44px #263f6624}
+.portrait-heading{background:#fbfcfe;color:#263f66;border-bottom:1px solid #d7e3f1}
+.current-portrait{background:#eaf0f8}
+.portrait-overlay{background:#fbfcfe;border-top:1px solid #d7e3f1}
+.portrait-overlay small{color:#345b8e}
+.technique-footage-preview{background:#263f66;color:#eaf0f8;border-top:1px solid #345b8e}
+.technique-footage-intro h2 em{color:#b7cbe4}
+.technique-footage-intro>p{color:#d7e3f1}
+.technique-footage-grid>a{border:1px solid #7193bf;color:#eaf0f8;background:#263f66}
+.technique-footage-image{background:#192d4b}
+.technique-footage-image:after{background:#263f66cf;border:1px solid #eaf0f8}
+.quality-section{background:#eaf0f8;border-top:1px solid #d7e3f1;border-bottom:1px solid #d7e3f1}
+.quality-copy p{color:#345b8e}
+.quality-figure{background:#263f66;color:#eaf0f8}
+.quality-figure-head span{color:#d7e3f1}
+.quality-flow li{background:#263f66;border-top:2px solid #b7cbe4}
+.quality-flow li:nth-child(2){border-color:#b7cbe4}
+.quality-flow li:nth-child(3){border-color:#7193bf}
+.quality-flow li:nth-child(4){border-color:#b7cbe4}
+.quality-flow li:nth-child(5){border-color:#b7cbe4}
+.quality-flow .quality-step{color:#b7cbe4}
+.quality-flow p{color:#d7e3f1}
+.quality-figure figcaption{color:#d7e3f1}
+.quality-credential{border:1px solid #d7e3f1;background:#fbfcfe}
+.quality-credential.primary{background:#eaf0f8;border-color:#d7e3f1}
+.quality-credential .q-kind{color:#345b8e}
+.quality-credential h4{color:#263f66}
+.quality-credential p{color:#345b8e}
+.quality-belts span{border:1px solid #b7cbe4;color:#263f66;background:#fbfcfe}
+.quality-belts .yellow{background:#d7e3f1;border-color:#b7cbe4}
+.quality-belts .green{background:#345b8e;border-color:#345b8e}
+.quality-notes p{color:#345b8e}
+.quality-notes a{color:#345b8e}
+.chem-squad-teaser{background:#eaf0f8;border-top:1px solid #d7e3f1;border-bottom:1px solid #b7cbe4}
+.chem-squad-teaser h2{color:#263f66}
+.chem-squad-teaser h2 em{color:#7193bf}
+.chem-squad-notes span{border:1px solid #d7e3f1;color:#345b8e}
+.chem-squad-teaser-intro{color:#263f66!important}
+.chem-squad-teaser-grid p:not(.chem-squad-teaser-intro){color:#345b8e}
+.chem-squad-teaser-link{color:#345b8e}
+.editorial-story .anatomy-photo{border-left:4px solid #345b8e;background:#eaf0f8}
+.editorial-story .anatomy-photo img{background:#263f66}
+.editorial-story .anatomy-photo figcaption{color:#263f66;background:#eaf0f8}
+.editorial-story .anatomy-photo figcaption span:last-child{color:#345b8e}
+.rh-home-entry{background:#eaf0f8;border-top:1px solid #d7e3f1;border-bottom:1px solid #d7e3f1}
+.rh-home-kicker{color:#345b8e}
+.rh-home-entry h2 em{color:#345b8e}
+.rh-home-entry p:not(.rh-home-kicker){color:#345b8e}
+.rh-home-entry a{border-bottom:1px solid #345b8e;color:#345b8e}
+.rh-featured-papers{border-top:1px solid #d7e3f1}
+.rh-featured-heading span{color:#345b8e}
+.rh-featured-heading>p{color:#345b8e}
+.rh-featured-grid{border-top:1px solid #d7e3f1;border-left:1px solid #d7e3f1}
+.rh-featured-grid>a{background:#fbfcfe;border-right:1px solid #d7e3f1;border-bottom:1px solid #d7e3f1}
+.rh-featured-grid>a:hover{background:#eaf0f8}
+.rh-featured-grid span{color:#345b8e}
+.rh-featured-grid small{color:#345b8e}
+.rh-featured-grid em{color:#345b8e}
+.rh-featured-note{color:#345b8e}
+.rh-featured-note a{color:#345b8e;border-bottom:1px solid #345b8e}
+.rx26-home-milestones{background:#eaf0f8;color:#263f66}
+.rx26-home-milestones figure>a{background:#263f66}
+.rx26-home-milestones figcaption{color:#345b8e}
+.rx26-home-milestones .rx26-early-kicker{color:#345b8e}
+.rx26-home-milestones h2{color:#345b8e}
+.rx26-home-milestones a.rx26-early-read{color:#345b8e}
+.rx26-life-essay-route{border-left:3px solid #345b8e}
+.rx26-portal-card:hover{background:#eaf0f8}
+.rx26-portal-card:nth-child(1){background:#eaf0f8}
+.rx26-portal-card:nth-child(5){background:#eaf0f8}
+.rx26-portal-card:nth-child(3){background:#eaf0f8}
+.rx26-portal-card:nth-child(7){background:#eaf0f8}
+.rx26-portal-card:nth-child(8){background:#eaf0f8}
+.rx26-portal-card p{color:#345b8e}
+.rx26-card-action{border-top:1px solid #b7cbe4}
+.rx26-route-link{text-decoration-color:#b7cbe4}
