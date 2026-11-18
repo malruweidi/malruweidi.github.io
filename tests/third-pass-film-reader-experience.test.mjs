@@ -12,8 +12,8 @@ test("original two-minute film is not hidden by a preliminary HTTP HEAD check",(
   assert.ok(tag,"film player present");
   assert.doesNotMatch(tag,/\bhidden\b/,"film player is not hidden until a HEAD response");
   assert.doesNotMatch(html,/fetch\([^;]*method:\s*["']HEAD["']/);
-  assert.ok(html.includes("what-survives-the-experiment.mp4"));
-  assert.ok(existsSync(join(root,"assets/films/what-survives-the-experiment.mp4")));
+  assert.ok(html.includes("anatomy-of-a-question-2026-v2.mp4"));
+  assert.ok(existsSync(join(root,"assets/films/anatomy-of-a-question-2026-v2.mp4")));
   assert.doesNotMatch(html,/·\s*·/,"reader-visible empty link separators");
 });
 test("film library introduces playable films rather than exposing production transcripts",()=>{
