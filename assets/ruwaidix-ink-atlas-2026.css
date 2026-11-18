@@ -728,6 +728,177 @@ html[data-rx-page="writing"] blockquote {
  padding-inline-start:22px;
 }
 
+
+/* M. Supporting chapters, individually composed rather than painted with
+   a common decorative motif. The actual semantics determine the treatment. */
+
+/* Behind the record: a written field diary, alternating short exhibits. */
+html[data-rx-page="behind-the-record"] .hero-copy h1 {
+ letter-spacing:-.047em;
+ max-width:15ch;
+}
+html[data-rx-page="behind-the-record"] .chapter {
+ border-block-start:1px solid var(--rx-compose-rule);
+}
+html[data-rx-page="behind-the-record"] .chapter-head {
+ border-inline-start:2px solid #7193bf;
+ padding-inline-start:clamp(17px,3vw,28px);
+}
+html[data-rx-page="behind-the-record"] .cards .card {
+ border:1px solid var(--rx-compose-rule);
+ background:var(--rx-compose-paper);
+}
+html[data-rx-page="behind-the-record"] .chapter-tint .cards .card {
+ background:#eaf0f8;
+}
+
+/* Chem Squad: a more approachable visual cadence, without trivializing
+   the underlying teaching and research record. */
+html[data-rx-page="chem-squad"] .labnote {
+ border-inline-start:4px solid var(--rx-compose-accent);
+ background:#eaf0f8;
+}
+html[data-rx-page="chem-squad"] .labnote h2,
+html[data-rx-page="chem-squad"] .hero h1 {
+ letter-spacing:-.043em;
+}
+html[data-rx-page="chem-squad"] .section h2 {
+ text-wrap:balance;
+}
+
+/* Computational research: let code and methodological clarity carry
+   the composition, not invented matrix/radar illustrations. */
+html[data-rx-page="computing"] .hero h1 {
+ max-width:13ch;
+ letter-spacing:-.047em;
+}
+html[data-rx-page="computing"] .section {
+ border-block-start:1px solid var(--rx-compose-rule);
+}
+html[data-rx-page="computing"] .grid>.card {
+ background:var(--rx-compose-paper);
+ border-block-start:2px solid #7193bf;
+}
+html[data-rx-page="computing"] .subgrid {
+ gap:clamp(14px,2.5vw,27px);
+}
+
+/* Doctoral concepts: explicitly prospective questions, not result displays. */
+html[data-rx-page="doctoral-concepts"] .hero h1 {
+ letter-spacing:-.049em;
+}
+html[data-rx-page="doctoral-concepts"] .section h2 {
+ max-width:20ch;
+}
+html[data-rx-page="doctoral-concepts"] .section {
+ border-block-start:1px solid var(--rx-compose-rule);
+}
+
+/* Scientific method chapters: index each method with layout, no fake graphs. */
+html[data-rx-page="methods-evidence"] .method-grid {
+ gap:clamp(12px,2vw,25px);
+}
+html[data-rx-page="methods-evidence"] .method-card {
+ border:1px solid var(--rx-compose-rule);
+ border-block-start:2px solid #7193bf;
+ background:var(--rx-compose-paper);
+}
+html[data-rx-page="methods-evidence"] .chapter {
+ border-block-end:1px solid var(--rx-compose-rule);
+}
+html[data-rx-page="molecular-therapeutics"] :is(.core-card,.route-card,.evidence-card) {
+ border:1px solid var(--rx-compose-rule);
+ background:var(--rx-compose-paper);
+}
+html[data-rx-page="molecular-therapeutics"] .core-grid>.core-card:first-child,
+html[data-rx-page="molecular-therapeutics"] .route-grid>.route-card:first-child {
+ border-block-start:3px solid var(--rx-compose-accent);
+ background:#eaf0f8;
+}
+html[data-rx-page="molecular-therapeutics"] .section {
+ border-block-end:1px solid var(--rx-compose-rule);
+}
+
+/* The moving-evidence and research-film index remain real screening
+   surfaces, while their explanatory text takes an editorial treatment. */
+html[data-rx-page="film"] .film-hero,
+html[data-rx-page="moving-evidence"] .film-hero,
+html[data-rx-page="publication-cinema"] .hero {
+ border-block-end:2px solid #7193bf;
+}
+html[data-rx-page="film"] .film-section,
+html[data-rx-page="moving-evidence"] .film-section {
+ border-block-start:1px solid var(--rx-compose-rule);
+}
+html[data-rx-page="film"] .film-section h2,
+html[data-rx-page="moving-evidence"] .film-section h2,
+html[data-rx-page="publication-cinema"] .hero h1 {
+ letter-spacing:-.042em;
+}
+html[data-rx-page="publication-cinema"] .heronotes {
+ border-inline-start:2px solid #7193bf;
+ padding-inline-start:20px;
+}
+
+/* A grant is a documented project: an ordered source record, not a card ad. */
+html[data-rx-page^="grants-"] .section {
+ border-block-top:1px solid var(--rx-compose-rule);
+}
+html[data-rx-page^="grants-"] .section h2 {
+ max-width:24ch;
+}
+
+/* Community evidence: use spacious photographic storytelling. */
+html[data-rx-page="engagement"] .story-grid {
+ gap:clamp(23px,5vw,65px);
+}
+html[data-rx-page="engagement"] .story h2 {
+ max-width:19ch;
+ letter-spacing:-.045em;
+}
+html[data-rx-page="engagement"] .story figure figcaption {
+ border-block-start:1px solid var(--rx-compose-rule);
+ padding-block-start:12px;
+}
+
+/* Leadership/training: biographical and certification records carry
+   clear chapter labels rather than unrelated sketches. */
+html[data-rx-page="leadership"] .chapter,
+html[data-rx-page="training"] .chapter {
+ border-block-start:1px solid var(--rx-compose-rule);
+}
+html[data-rx-page="leadership"] .chapter-layout,
+html[data-rx-page="training"] .chapter-intro {
+ gap:clamp(20px,5vw,70px);
+}
+html[data-rx-page="leadership"] .chapter h2,
+html[data-rx-page="training"] .chapter h2 {
+ max-width:21ch;
+ letter-spacing:-.041em;
+}
+html[data-rx-page="supervisors"] .cards .card {
+ background:var(--rx-compose-paper);
+ border-block-start:2px solid #7193bf;
+}
+
+/* Evidence viewer: distinguish measurements and claims typographically,
+   never by embellishing an underlying figure or microscopy image. */
+html[data-rx-page="evidence-reader"] .ev-study-grid {
+ gap:clamp(20px,3vw,45px);
+}
+html[data-rx-page="evidence-reader"] .ev-hero h1 {
+ max-width:15ch;
+ letter-spacing:-.045em;
+}
+
+/* Professional and public routes can be dense; add reading-room rhythm
+   without applying decorations to tables, citations or figures. */
+html[data-rx-page="imaging"] .section,
+html[data-rx-page="training"] .chapter,
+html[data-rx-page="cv"] .block {
+ scroll-margin-top:110px;
+}
+
 /* L. Quiet screens, RTL, touch, and accessibility.
    Real figure/media geometry is untouched, and no new content is required. */
 @media(max-width:959px) {
