@@ -97,3 +97,37 @@ html video,html img,html picture,html canvas,html .scientific-figure,html .publi
 html video{background-color:#101e35}
 @media(max-width:840px){.rx-atlas-home .rx-atlas-choice button[aria-pressed=true]{box-shadow:inset 0 -4px #456fa6}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Homepage: quiet alternating powder-blue paper, no sage, no terracotta. */
+html .rx26-portal{background:#fbfcfe}
+html .rx26-portal-card,html .rx26-portal-card:nth-child(n){background:#f4f7fb;border-color:#cdd8e7}
+html .rx26-portal-card:nth-child(3n+1){background:#eaf0f8}
+html .rx26-portal-card:nth-child(3n+2){background:#f4f7fb}
+html .rx26-portal-card:nth-child(3n){background:#fbfcfe}
+html .rx26-portal-card:hover{background:#d7e3f1;border-color:#7193bf}
+html :is(.methodband,.method-showcase,.patient-perspective,.quacs-feature,.research-identity,.archive-callout,.rx26-home-milestones,.grant-teaser,.quality-section,.wisconsin-video-section,.story-prologue){background:#eaf0f8;color:#192d4b;border-color:#cdd8e7}
+html :is(.methodband,.quality-section,.quacs-feature,.patient-perspective){background:#f4f7fb}
+html :is(.archive-callout p,.rx26-home-milestones figcaption,.grant-teaser p,.research-identity p,.geo-lead){color:#4c6282}
+html :is(.rx26-home-milestones .rx26-early-kicker,.research-identity .eyebrow,.archive-callout .eyebrow,.grant-teaser h2 em,.infrastructure-feature h2 em){color:#456fa6}
+html .rx26-home-milestones figure>a{background:#263f66}
+html .infrastructure-feature{background:#192d4b;color:#f4f7fb}
+html .infrastructure-feature p{color:#d7e3f1}
+html .infrastructure-feature .textlink{color:#bdd4ef}
+html .ventures{background:#263f66;color:#f4f7fb}
+html .ventures a{color:#d7e3f1}
+html .rx-editorial-hero{background:#f4f7fb}
+html .rx26-home-milestones :is(h2,h3),html .research-identity :is(h2,h3){color:#192d4b}
+html .rx-home-film{background:#192d4b}
+html .rx-home-film :is(h2,h3){color:#f4f7fb}
+html .rx-home-film a{color:#d7e3f1}
+html :is(.rx26-portal-card,.rx-atlas-home,.geographies,.archive-callout,.methodband) a:focus-visible,
+html :is(.rx26-portal-card,.rx-atlas-home,.geographies,.archive-callout,.methodband) button:focus-visible{outline:3px solid #345b8e;outline-offset:3px}
+/* Footer/ordinary content shadows and quiet blue boundaries. */
+html .footer{background:#192d4b;color:#f4f7fb}
+html .footer a{color:#d7e3f1}
+html .footer :is(.eyebrow,.mono){color:#b7cbe4}
+html .brandline{color:#4c6282}
+html .rx-more-panel{background:#fbfcfe;border-color:#cdd8e7}
+html .navlinks>a:hover{color:#345b8e}
+html .hero-note .line,html .eyebrow:before{background:#7193bf}
+html :is(.rx-chapters,.methodband,.rx26-portal,.research-identity,.rx-evidence-index,.geographies) :is(.eyebrow,.mono){color:#456fa6}
+/* Keep original field images, photographic crops, player aspect ratios and SVG path coordinates intact. */
