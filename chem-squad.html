@@ -34,6 +34,13 @@
 .cs-archive-card h4{font:400 25px/1.2 var(--serif);margin:16px 0 5px;color:#f7f1e8}
 .cs-archive-card p{font:12px/1.7 var(--sans);color:#b9d1c9;margin:0}
 .cs-photo-jump{display:inline-block;position:relative;z-index:2;margin-top:12px;font:10px var(--mono);color:#e9b190;border-bottom:1px solid #e9b190}
+.cs-archive-card--abdelgalil{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(20px,4vw,52px);align-items:center;padding:clamp(18px,3vw,34px)}
+.cs-abdelgalil-photo{display:flex;justify-content:center;align-items:center;background:#173438;border:1px solid #55716b;min-height:275px;padding:12px}
+.cs-abdelgalil-photo img{display:block;width:100%;max-width:350px;max-height:460px;height:auto;object-fit:contain}
+.cs-archive-label{font:10px/1.7 var(--mono);text-transform:uppercase;letter-spacing:.12em;color:#e9b190}
+.cs-archive-card--abdelgalil figcaption h4{font-size:clamp(27px,3vw,37px);margin:15px 0}
+.cs-archive-card--abdelgalil figcaption p{font-size:14px;line-height:1.8;max-width:48ch}
+@media(max-width:720px){.cs-archive-card--abdelgalil{grid-template-columns:1fr}.cs-abdelgalil-photo{min-height:0}.cs-abdelgalil-photo img{max-height:370px}}
 @media(max-width:680px){.cs-archive-grid{grid-template-columns:1fr}.cs-archive-card{padding:15px}.cs-archive-images{max-width:320px}.cs-archive-title{align-items:start}}
 
 
@@ -296,6 +303,18 @@ h2 em{font-weight:400;color:var(--warm)}
       <figcaption><h4>Rakan Al-Zu'Bi</h4><p>With Mahmoud K. Al-Ruweidi · Two photographs</p></figcaption>
     </figure>
 
+    <figure class="cs-archive-card cs-archive-card--abdelgalil" id="cs-photo-abdelgalil">
+      <a class="cs-abdelgalil-photo" href="/assets/archival-2026-10-13/abdelgalil-chemistry-lab-tablet.webp" target="_blank" rel="noopener noreferrer" aria-label="Open Abdelgalil Khalaf Ahmed's original chemistry laboratory photograph">
+        <img src="/assets/archival-2026-10-13/abdelgalil-chemistry-lab-tablet.webp" alt="Abdelgalil Khalaf Ahmed seated at a chemistry laboratory bench in a white coat and gloves, holding a tablet" width="350" loading="lazy" decoding="async">
+      </a>
+      <figcaption>
+        <span class="cs-archive-label">Chem Squad / Laboratory archive</span>
+        <h4>Abdelgalil Khalaf Ahmed</h4>
+        <p>Abdelgalil Khalaf Ahmed in the chemistry laboratory. Date, sample and procedure not established.</p>
+        <a class="cs-photo-jump" href="/assets/archival-2026-10-13/abdelgalil-chemistry-lab-tablet.webp" target="_blank" rel="noopener noreferrer">View photograph ↗</a>
+      </figcaption>
+    </figure>
+
     <figure class="cs-archive-card cs-archive-card--october-2026" id="cs-photo-october-2026">
       <a class="cs-october-photo" href="/assets/chem-squad-october-2026.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the October 2026 Chem Squad gathering photograph at full resolution">
         <img src="/assets/chem-squad-october-2026.jpg" alt="Five men seated together around a café table with drinks during an October 2026 Chem Squad gathering." width="1170" height="2080" loading="lazy" decoding="async">
@@ -481,7 +500,7 @@ h2 em{font-weight:400;color:var(--warm)}
 <div class="legal">© 2026 Mahmoud K. Al-Ruweidi · Chem Squad · Collective history and equal recognition · Original illustrative artwork; no historical laboratory photo is implied</div>
 </div></footer>
 <script id="chem-squad-archival-image-loader">(()=>{const source="/assets/archival-inline/chem-squad-sprite.webp";for(const el of document.querySelectorAll(".cs-archive-image, .member-photo-sprite")){el.style.backgroundImage="url("+source+")";}})();</script>
-<script src="/assets/archive-moments-2026-10-12.js?v=20261012" defer></script><script src="/assets/freshman-lab-photos-2026.js" defer></script>
+<script src="/assets/archive-moments-2026-10-12.js?v=20261012" defer></script>
 <script src="/assets/owner-archive-2026-10-13.js" defer></script>
 <script src="/assets/owner-photo-placements-2026-10-16.js?v=20261016" defer></script>
 </body></html>
