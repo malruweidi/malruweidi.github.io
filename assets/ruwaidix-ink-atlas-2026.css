@@ -75,7 +75,7 @@ html[data-rx-page="home"] .rx26-portal-head {
   position:relative;
 }
 html[data-rx-page="home"] .rx26-portal-head::after {
-  content:"";width:104px;height:89px;flex:none;pointer-events:none;
+  content:"";position:absolute;right:0;top:-17px;width:104px;height:89px;pointer-events:none;
   background:url("/assets/ruwaidix-ink-orbit-2026.svg") center/contain no-repeat;
   opacity:.6;
 }
@@ -292,6 +292,9 @@ html[data-rx-page="reading-map"] .map-route:is(:hover,:focus-within) {
 /* 10. Responsive and bilingual safety. Images and film geometry are unchanged. */
 html[dir="rtl"][data-rx-page="home"] .rx-hero-copy::after {
   right:auto;left:-122px;transform:scaleX(-1) rotate(-10deg);
+}
+html[dir="rtl"][data-rx-page="home"] .rx26-portal-head::after {
+  right:auto;left:0;
 }
 html[dir="rtl"][data-rx-page="home"] .rx26-portal-card::after {
   right:auto;left:-88px;
