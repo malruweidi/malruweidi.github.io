@@ -20,17 +20,16 @@
     {id:'0321',kind:'video',file:'room-0321.mp4',poster:'room-0321-poster.webp',label:caption('03:21 / in the room','٠٣:٢١ / في الغرفة'),alt:'Informal short room video showing several people; the recording itself has a 03:21 time overlay.'},
     {id:'conversation',kind:'video',file:'informal-conversation.mp4',poster:'informal-conversation-poster.webp',label:caption('A conversation','حديث'),alt:'Informal indoor phone video of a person in a striped shirt speaking with others nearby.'},
     {id:'football',kind:'video',file:'football-jersey-moment.mp4',poster:'football-jersey-moment-poster.webp',label:caption('A football-shirt moment','لقطة بقميص كرة القدم'),alt:'Brief informal video of a person in an AC Milan football shirt, with an object held up near him like a microphone.'},
-    {id:'screen',kind:'video',file:'desk-screen-break.mp4',poster:'desk-screen-break-poster.webp',label:caption('A break at the screen','استراحة أمام الشاشة'),alt:'Short phone video of a person at a desk watching a humorous video on a desktop screen.'}
   ];
   const map = Object.fromEntries(records.map(x => [x.id, x]));
   const sets = {
-    archive: ['waters','friends','table','0411','cold','board','0321','conversation','football','screen'],
+    archive: ['waters','friends','table','0411','cold','board','0321','conversation','football'],
     stories: ['0411','table','board'],
     'chem-squad': ['friends','table','0321','board','conversation'],
     techniques: ['waters','cold']
   };
   const headings = {
-    archive: [caption('FROM THE PERSONAL ARCHIVE','من الأرشيف الشخصي'),caption('Not in the papers','ما لا يظهر في الأبحاث'),caption('Four photographs and six brief recordings. The visible clock overlays are kept as photographed.','أربع صور وستة مقاطع قصيرة. تظل الأوقات الظاهرة ضمن اللقطات كما وردت في الأصل.')],
+    archive: [caption('FROM THE PERSONAL ARCHIVE','من الأرشيف الشخصي'),caption('Not in the papers','ما لا يظهر في الأبحاث'),caption('Four photographs and five brief recordings. The visible clock overlays are kept as photographed.','أربع صور وخمسة مقاطع قصيرة. تظل الأوقات الظاهرة ضمن اللقطات كما وردت في الأصل.')],
     stories: [caption('IN BETWEEN CHAPTERS','بين الفصول'),caption('04:11','٠٤:١١'),caption('','')],
     'chem-squad': [caption('THE PEOPLE AROUND THE CHEMISTRY','الناس حول الكيمياء'),caption('Outside the experiments','خارج التجارب'),caption('','')],
     techniques: [caption('INSTRUMENT ARCHIVE','أرشيف الأجهزة'),caption('The apparatus','الأجهزة'),caption('','')]
