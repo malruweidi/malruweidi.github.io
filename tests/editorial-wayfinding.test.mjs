@@ -31,7 +31,9 @@ test("four editorial index photographs are preserved repository files",()=>{
 test("new styles retain palette, RTL, focus visibility and reduced-motion",()=>{
  const css=read("assets/editorial-wayfinding-2026.css");
  assert.match(home,/editorial-wayfinding-2026\.css/);assert.match(stories,/editorial-wayfinding-2026\.css/);
- for(const v of ["#17343b","prefers-reduced-motion",'dir="rtl"',"focus-visible"]) assert.ok(css.includes(v),v);
+ for(const v of ["prefers-reduced-motion",'dir="rtl"',"focus-visible"]) assert.ok(css.includes(v),v);
+ const blue=read("assets/ruwaidix-one-blue-2026.css");
+ assert.ok(blue.includes("#192d4b")&&blue.includes("#345b8e"),"Current approved identity is Atlantic blue, not the retired green");
 });
 test("homepage and story index routes are translated into Arabic",()=>{
  const a=read("assets/homepage-editorial-i18n-2026.js"),b=read("assets/stories-i18n.js");
