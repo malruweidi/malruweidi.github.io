@@ -27,7 +27,8 @@ test("original cinema and source workbench remain; duplicate photo cards are opt
 });
 
 test("legacy homepage deep links open the collapsed gallery without changing URLs",()=>{
-  assert.match(home,/href="#rx-chapter-heading"/);
+  assert.match(home,/href="#rx-moving-moments"/);
+  assert.match(home,/id="rx-chapter-heading"/);
   assert.match(js,/hashchange/);
   assert.match(js,/disclosure\.open = true/);
   assert.match(js,/requestAnimationFrame/);
@@ -39,6 +40,7 @@ test("new gallery works on small screens and without visual animations",()=>{
   assert.match(home,/ruwaidix-audit-behavior-2026\.js/);
   assert.match(css,/max-width:990px/);
   assert.match(css,/max-width:650px/);
+  assert.match(css,/#rx26-portal \.rx26-portal-grid\.rx-cover-catalogue/);
   assert.match(css,/max-width:375px/);
   assert.match(css,/prefers-reduced-motion:reduce/);
   assert.match(css,/min-width:0/);
