@@ -4,51 +4,51 @@
  * structure remain untouched. Deliberately scoped to seven pages.
  */
 html[data-rx-page="home"] .geo-heading .eyebrow.mono{
-  color:#87412f;
+  color:#32558b;
 }
 html[data-rx-page="home"] .geo-place[data-place="qatar"] .geo-index{
-  color:#864a35;
+  color:#355a93;
 }
 html[data-rx-page="home"] .geo-afterword > p,
 html[data-rx-page="home"] .geo-source{
-  color:#465b56;
+  color:#33578e;
 }
 html[data-rx-page="stories"] .rx26-figures > figure > figcaption{
-  color:#435e60 !important;
+  color:#345991 !important;
   opacity:1 !important;
 }
 html[data-rx-page="archive"] .rx-oct12-note{
-  color:#465b56;
+  color:#33578e;
 }
 html[data-rx-page="archive"] .rx-freshman-archive-inner > .mini{
-  color:#355653;
+  color:#2f5183;
 }
 html[data-rx-page="archive"] .rx-field-kicker,
 html[data-rx-page="archive"] .rx1920-inner > .rx1920-kicker{
-  color:#87412f;
+  color:#32558b;
 }
 html[data-rx-page="discovery"] h3[data-en="BROWSE THE INDEX"],
 html[data-rx-page="discovery"] .is-active,
 html[data-rx-page="discovery"] .rx-result-category,
 html[data-rx-page="discovery"] span[data-en="THE RECORD STAYS WHOLE"]{
-  color:#87412f;
+  color:#32558b;
 }
 html[data-rx-page="illness-evidence"] .rx16-heading > .rx16-kicker,
 html[data-rx-page="illness-evidence"] #labcoat-2016-memory figcaption > small,
 html[data-rx-page="illness-evidence"] .exam-archive figcaption > small,
 html[data-rx-page="illness-evidence"] #hospital-2020 figcaption > small,
 html[data-rx-page="illness-evidence"] #hospital-2025 figcaption > small{
-  color:#465b56;
+  color:#33578e;
 }
 html[data-rx-page="illness-evidence"] .narrative > .side > span:first-child,
 html[data-rx-page="illness-evidence"] .sequence.en article small{
-  color:#7c4232;
+  color:#305286;
 }
 html[data-rx-page="publication-cinema"] #count{
-  color:#465b56;
+  color:#33578e;
 }
 html[data-rx-page="film"] .rx-series-kicker{
-  color:#87412f;
+  color:#32558b;
 }
 
 /* Targeted high-specificity WCAG follow-up from the live browser report.
@@ -57,15 +57,15 @@ html[data-rx-page="film"] .rx-series-kicker{
  * no photos, positioning, animation or typography are changed.
  */
 html[data-rx-page="stories"] .rx26-figures > figure > figcaption{
-  color:#435e60!important;
+  color:#345991!important;
   opacity:1 !important;
 }
 html[data-rx-page="illness-evidence"] #rx16-diagnosis-photo .rx16-heading > .rx16-kicker{
-  color:#465b56!important;
+  color:#33578e!important;
 }
 html[data-rx-page="illness-evidence"] .narrative > .side > span,
 html[data-rx-page="illness-evidence"] .sequence.ar article small{
-  color:#7c4232!important;
+  color:#305286!important;
 }
 
 /* These content components inject a later inline <style> after the link
@@ -74,10 +74,10 @@ html[data-rx-page="illness-evidence"] .sequence.ar article small{
  * text labels confirmed by the live WCAG browser scan; never reposition media. */
 html[data-rx-page="illness-evidence"] #rx16-diagnosis-photo > .rx16-heading > .rx16-kicker,
 html[data-rx-page="illness-evidence"] #rx16-diagnosis-photo-ar > .rx16-heading > .rx16-kicker{
-  color:#465b56 !important;
+  color:#33578e !important;
   opacity:1 !important;
 }
 html[data-rx-page="illness-evidence"] .narrative > .side > span,
 html[data-rx-page="illness-evidence"] .sequence.ar article small{
-  color:#7c4232 !important;
+  color:#305286 !important;
 }

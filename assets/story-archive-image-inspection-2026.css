@@ -6,14 +6,14 @@ html[data-rx-page="stories"] .rx-route-photo-note{
   display:block;
   margin:5px 0 0;
   font:500 10px/1.65 "DM Mono",ui-monospace,monospace;
-  color:#745843;
+  color:#375e99;
   letter-spacing:.01em;
 }
 html[data-rx-page="stories"] .rx-story-route-image:focus-visible,
 html[data-rx-page="archive"] .rx-archive-image-link:focus-visible,
 html[data-rx-page="archive"] .rx-archive-gallery-link:focus-visible,
 html[data-rx-page="stories"] .rx-photo-source-link:focus-visible{
-  outline:3px solid #a6573c;
+  outline:3px solid #406eb2;
   outline-offset:4px;
   position:relative;
   z-index:2;
@@ -31,7 +31,7 @@ html[data-rx-page="archive"] .rx-archive-image-link::after,
 html[data-rx-page="archive"] .rx-archive-gallery-link::after{
   content:"View image ↗";
   position:absolute;inset:auto 10px 10px auto;
-  background:#17343be8;color:#faf6ec;
+  background:#1c304fe8;color:#faf6ec;
   padding:7px 10px;border:1px solid #faf6ec9c;
   font:600 11px/1.4 "DM Sans",system-ui,sans-serif;
   pointer-events:none;
@@ -46,11 +46,11 @@ html[data-rx-page="archive"] .rx-archive-gallery-link img{
 html[data-rx-page="stories"] .rx-photo-source-link{
   display:inline-flex;align-items:center;
   margin-top:10px;padding:5px 0;
-  color:#8c4736;
+  color:#355b93;
   font:600 12px/1.6 "DM Sans",Arial,sans-serif;
   text-decoration:underline;text-underline-offset:4px;
 }
-html[data-rx-page="stories"] .rx-photo-source-link:hover{color:#17343b}
+html[data-rx-page="stories"] .rx-photo-source-link:hover{color:#1c304f}
 html[lang="ar"][data-rx-page="stories"] .rx-photo-source-link,
 html[dir="rtl"][data-rx-page="stories"] .rx-route-photo-note{
   font-family:"Noto Naskh Arabic",serif;font-size:16px;line-height:1.8;

@@ -134,7 +134,7 @@ ready(async function(){
   const firstLink=document.querySelector(".hero .mini");
   if(firstLink&&!document.getElementById("rxJumpArchive")){
     const jump=el("a",null,ar?"عرض الأرشيف المصور الكامل ↓":"See all 30 restored photographs ↓");
-    jump.href="#rxRecoveredGallery";jump.id="rxJumpArchive";jump.style.cssText="display:inline-block;color:#f4d7c8;border-bottom:1px solid currentColor;margin-top:13px;font-size:13px";
+    jump.href="#rxRecoveredGallery";jump.id="rxJumpArchive";jump.style.cssText="display:inline-block;color:#e7dbc7;border-bottom:1px solid currentColor;margin-top:13px;font-size:13px";
     firstLink.insertAdjacentElement("afterend",jump);
   }
 });

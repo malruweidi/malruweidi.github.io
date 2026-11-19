@@ -4,7 +4,7 @@
   border: 0;
   padding: 0;
   background: transparent;
-  color: #85452f;
+  color: #33578e;
   font: inherit;
   font-weight: 700;
   text-decoration: underline;
@@ -12,6 +12,6 @@
   cursor: pointer;
 }
 .pub-empty button:focus-visible {
-  outline: 3px solid var(--pub-terra, #99563e);
+  outline: 3px solid var(--pub-terra, #3d68aa);
   outline-offset: 4px;
 }

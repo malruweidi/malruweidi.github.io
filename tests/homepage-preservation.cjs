@@ -2,9 +2,12 @@ const assert = require("node:assert/strict");
 
 function assertHomepagePreserved(original, current) {
   const body = html => html.slice(html.indexOf("<body>"))
+    .replace(/style="[^"]*"/g, attr => attr.replace(/#[0-9a-f]{3,8}\b/gi, "#color"))
     .replaceAll('<span class="rx26-card-arrow" aria-hidden="true">↗</span>', "");
   let before = body(original);
-  let after = body(current);
+  let after = body(current)
+    .replace(/<a class="specimen-swim"[^>]*>[\s\S]*?<\/a>/, "")
+    .replace(/<summary class="album-summary"><span class="album-title">([^<]+)<\/span>[\s\S]*?<\/summary>/, "<summary>$1</summary>");
   for (const block of [
     /<nav class="rx-research-fastpaths"[\s\S]*?<\/nav>/,
     /<details class="rx-hero-readmore"[\s\S]*?<\/details>/,

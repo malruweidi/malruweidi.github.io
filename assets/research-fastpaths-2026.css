@@ -5,7 +5,7 @@ html[data-rx-page="home"] .rx-research-fastpaths {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0 20px;
   margin: 29px 0 16px;
-  border-top: 1px solid var(--home-rule, #cbd5cd);
+  border-top: 1px solid var(--home-rule, #e0d0b6);
 }
 html[data-rx-page="home"] .rx-research-fastpaths a {
   position: relative;
@@ -14,8 +14,8 @@ html[data-rx-page="home"] .rx-research-fastpaths a {
   gap: 4px;
   min-width: 0;
   padding: 17px 23px 17px 0;
-  border-bottom: 1px solid var(--home-rule, #cbd5cd);
-  color: var(--home-ink, #142e34);
+  border-bottom: 1px solid var(--home-rule, #e0d0b6);
+  color: var(--home-ink, #192b45);
   text-decoration: none;
 }
 html[data-rx-page="home"] .rx-research-fastpaths a::after {
@@ -23,12 +23,12 @@ html[data-rx-page="home"] .rx-research-fastpaths a::after {
   position: absolute;
   inset-inline-end: 2px;
   top: 19px;
-  color: var(--home-accent, #92513a);
+  color: var(--home-accent, #3a63a0);
   font-size: 15px;
 }
 html[data-rx-page="home"] .rx-research-fastpaths a:hover strong,
 html[data-rx-page="home"] .rx-research-fastpaths a:focus-visible strong {
-  color: var(--home-accent, #92513a);
+  color: var(--home-accent, #3a63a0);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -38,7 +38,7 @@ html[data-rx-page="home"] .rx-research-fastpaths strong {
 }
 html[data-rx-page="home"] .rx-research-fastpaths span {
   font: 400 12.5px/1.55 var(--sans);
-  color: #455d5e;
+  color: #345990;
 }
 html[data-rx-page="home"] .rx-hero-readmore {
   margin: 12px 0 15px;
@@ -48,7 +48,7 @@ html[data-rx-page="home"] .rx-hero-readmore > summary {
   width: fit-content;
   cursor: pointer;
   padding: 7px 0;
-  color: var(--home-accent, #92513a);
+  color: var(--home-accent, #3a63a0);
   font-size: 13px;
   font-weight: 700;
   text-decoration: underline;
@@ -56,7 +56,7 @@ html[data-rx-page="home"] .rx-hero-readmore > summary {
 }
 html[data-rx-page="home"] .rx-hero-readmore[open] {
   padding-bottom: 18px;
-  border-bottom: 1px solid var(--home-rule, #cbd5cd);
+  border-bottom: 1px solid var(--home-rule, #e0d0b6);
 }
 html[data-rx-page="home"] .rx-hero-readmore .rx-hero-links {
   margin: 14px 0 23px;

@@ -2,16 +2,16 @@
 :root {
   --rx-qa-ink:#2D4C6B;
   --rx-qa-muted:#53677D;
-  --rx-qa-paper:#FFFCF7;
+  --rx-qa-paper:#fdfdfb;
   --rx-qa-dark:#263B55;
   --rx-qa-light:#F4F0E8;
-  --rx-qa-warm:#E6BFC7;
+  --rx-qa-warm:#d9c7a6;
 }
 html {scroll-padding-top:clamp(76px,7.5vw,108px)}
 body {max-width:100%;overflow-x:clip}
 :where(main,section,article,.wrap,.container,.rx-field-wrap,.rx-inner,.secondary-grid,.secondary-card,.text){min-width:0}
 :where(img,video,iframe,canvas){max-width:100%}
-:where(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #71394C;outline-offset:3px}
+:where(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #2c4b79;outline-offset:3px}
 :where(p,li,figcaption){hyphens:auto}
 :where(a[href^="http"], .doi){overflow-wrap:anywhere}
 html[data-rx-page="home"] .hero-copy .subtitle {
@@ -36,23 +36,23 @@ html[data-rx-page="home"] .secondary-grid .secondary-card>.text h3{overflow-wrap
 html[data-rx-page="home"] .secondary-grid .secondary-card>.text p{font-size:14px!important;line-height:1.65}
 html[data-rx-page="home"] .secondary-grid .secondary-card img{min-width:0;max-width:100%;object-fit:contain}
 html[data-rx-page="home"] .story.editorial-story{background:var(--rx-qa-dark);color:var(--rx-qa-light)}
-html[data-rx-page="home"] .story.editorial-story :is(.story-prologue,.story-rewind,.story-bridge,.story-prose,.trail-scene) :is(h2,h3,h4){color:#f8f8f2}
+html[data-rx-page="home"] .story.editorial-story :is(.story-prologue,.story-rewind,.story-bridge,.story-prose,.trail-scene) :is(h2,h3,h4){color:#faf8f3}
 html[data-rx-page="home"] .story.editorial-story :is(.story-prologue,.story-rewind,.story-bridge,.story-prose,.trail-scene)>p:not(.eyebrow),
-html[data-rx-page="home"] .story.editorial-story :is(.story-childhood,.story-anatomy,.story-arrival) .story-prose p{color:#EEE7E4}
+html[data-rx-page="home"] .story.editorial-story :is(.story-childhood,.story-anatomy,.story-arrival) .story-prose p{color:#efe8da}
 html[data-rx-page="home"] .story.editorial-story :is(.story-childhood,.story-anatomy) .story-photo figcaption{font-size:12px!important;line-height:1.55}
 html[data-rx-page="home"] .story.editorial-story .photo-opening figure{background:#F4F0E8!important;color:#2D4C6B!important}
 html[data-rx-page="home"] .story.editorial-story .photo-opening figure :is(h3,p,figcaption){color:#476481!important}
 html[data-rx-page="home"] .story.editorial-story .photo-opening figure p{font-size:12px!important;line-height:1.6}
-html[data-rx-page="home"] .story.editorial-story .anatomy-marker{background:#EEE7E4!important;color:#2D4C6B!important}
+html[data-rx-page="home"] .story.editorial-story .anatomy-marker{background:#efe8da!important;color:#2D4C6B!important}
 html[data-rx-page="home"] .story.editorial-story .anatomy-marker :is(p,small){color:#2D4C6B!important}
-html[data-rx-page="home"] .story.editorial-story .story-arrival :is(h3,h4,p){color:#edf4ed!important}
+html[data-rx-page="home"] .story.editorial-story .story-arrival :is(h3,h4,p){color:#f6f2ea!important}
 html[data-rx-page="home"] :is(.technique-footage-preview,.quality-figure,.infrastructure-feature){color:var(--rx-qa-light)}
-html[data-rx-page="home"] .technique-footage-preview :is(h2,h3,h4){color:#f8f8f2!important}
-html[data-rx-page="home"] .technique-footage-preview :is(p,figcaption,small){color:#EEE7E4!important}
+html[data-rx-page="home"] .technique-footage-preview :is(h2,h3,h4){color:#faf8f3!important}
+html[data-rx-page="home"] .technique-footage-preview :is(p,figcaption,small){color:#efe8da!important}
 html[data-rx-page="home"] .rx-at-home-science :is(p,figcaption>span){font-size:14px;line-height:1.75}
 html[data-rx-page="home"] .rx-at-home-science figcaption>small{font-size:12px}
 .rx-field-photo{min-width:0}
-.rx-field-photo .rx-field-caption{min-width:0;background:#FFFCF7;color:#2D4C6B}
+.rx-field-photo .rx-field-caption{min-width:0;background:#fdfdfb;color:#2D4C6B}
 .rx-field-photo .rx-field-caption :is(.rx-field-title,.rx-field-desc,.rx-field-meta){color:#476481}
 .rx-field-photo .rx-field-caption .rx-field-meta{font-size:11.5px;line-height:1.6;letter-spacing:.02em}
 .rx-field-photo .rx-field-caption .rx-field-desc{font-size:14px;line-height:1.72}
@@ -62,10 +62,10 @@ html.rx-site-theme .rx-universal .rx-brand strong{color:#2D4C6B}
 html.rx-site-theme .rx-universal .rx-menu-panel a{font-size:13px;line-height:1.55}
 html.rx-site-theme .rx-context{font-size:12px}
 html.rx-site-theme :where(.card,.figure-card,.photo-card,.panel,.field,.era):not(.dark) :is(p,li,figcaption){font-size:max(14px, .875rem);line-height:1.7}
-html.rx-site-theme :where(.card,.figure-card,.photo-card,.panel,.field,.era):not(.dark) a{color:#71394C}
+html.rx-site-theme :where(.card,.figure-card,.photo-card,.panel,.field,.era):not(.dark) a{color:#2c4b79}
 html.rx-site-theme :is(.dark,.hero.dark) :is(h1,h2,h3,h4){color:#f8f7f0}
-html.rx-site-theme :is(.dark,.hero.dark) :is(p,li,figcaption,small){color:#EEE7E4}
-html.rx-site-theme :is(.dark,.hero.dark) :is(a,.eyebrow,.brow){color:#E6BFC7}
+html.rx-site-theme :is(.dark,.hero.dark) :is(p,li,figcaption,small){color:#efe8da}
+html.rx-site-theme :is(.dark,.hero.dark) :is(a,.eyebrow,.brow){color:#d9c7a6}
 html[data-rx-page="illness-evidence"] .prose{font-size:16px;line-height:1.85}
 html[lang="ar"] :where(p,li,figcaption){line-height:1.95}
 html[lang="ar"] :where(.rx-field-title,.rx-field-desc,.rx-field-meta){letter-spacing:0!important;font-family:"Noto Sans Arabic",Tahoma,Arial,sans-serif}
@@ -76,7 +76,7 @@ html[dir="rtl"] :where(.rx-field-caption,.rx-field-heading,.story-prose){text-al
 }
 @media(max-width:640px){
   html[data-rx-page="home"] .secondary-grid .secondary-card{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:0!important;overflow:hidden}
-  html[data-rx-page="home"] .secondary-grid .secondary-card>img{display:block;width:100%!important;height:clamp(155px,44vw,215px)!important;object-fit:contain!important;padding:14px;background:#EEE7E4}
+  html[data-rx-page="home"] .secondary-grid .secondary-card>img{display:block;width:100%!important;height:clamp(155px,44vw,215px)!important;object-fit:contain!important;padding:14px;background:#efe8da}
   html[data-rx-page="home"] .secondary-grid .secondary-card>.text{display:flex;flex-direction:column;align-items:flex-start;gap:9px;padding:18px!important}
   html[data-rx-page="home"] .secondary-grid .secondary-card>.text :is(h3,p){max-width:100%;margin:0}
   html[data-rx-page="home"] .secondary-grid .secondary-card button{max-width:100%;white-space:normal;text-align:start}
@@ -115,15 +115,15 @@ html[dir="rtl"] :where(.rx-field-caption,.rx-field-heading,.story-prose){text-al
 
 /* First impression: a photographed scientist, not a startup landing page. */
 html[data-rx-page="home"] .hero{
-  background:linear-gradient(122deg,#F4F0E8 0%,#F4F0E8 58%,#EEE7E4 100%);
+  background:linear-gradient(122deg,#F4F0E8 0%,#F4F0E8 58%,#efe8da 100%);
 }
 html[data-rx-page="home"] .hero-copy h1{
   letter-spacing:-.042em;
   text-wrap:balance;
 }
 html[data-rx-page="home"] .hero-art .profile-photo-frame{
-  border-color:#b8cac2;
-  box-shadow:0 22px 68px rgba(22,48,47,.16);
+  border-color:#d7c4a2;
+  box-shadow:0 22px 68px rgba(26,44,72,.16);
   isolation:isolate;
 }
 html[data-rx-page="home"] .hero-art .profile-photo-frame img.current-portrait{
@@ -135,7 +135,7 @@ html[data-rx-page="home"] .portrait-overlay{
   z-index:1;
 }
 html[data-rx-page="home"] .hero-note{
-  border-top-color:#b8c9c1;
+  border-top-color:#d6c3a0;
 }
 
 /* Clear editorial pacing: large photographs, shorter reading measures,
@@ -148,11 +148,11 @@ html[data-rx-page="home"] .rx-at-home-science img{
   display:block;
 }
 html[data-rx-page="home"] :is(.work-card,.secondary-card,.methodcol){
-  border-color:#c7d4cb;
+  border-color:#decfb3;
 }
 html[data-rx-page="home"] .work-card .work-img{
   overflow:hidden;
-  background:#dce5de;
+  background:#ebe1d1;
 }
 html[data-rx-page="home"] .work-card .work-img img{
   transition:transform .55s cubic-bezier(.22,1,.36,1);
@@ -202,7 +202,7 @@ html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child str
 /* Scientific image fidelity takes precedence over spectacle.
    Do not crop Doppler screenshots, traces or their labeling. */
 #rx-research26-cardio .rx-research26-photo{
-  background:#dce6e0;
+  background:#ece2d2;
   padding:7px;
 }
 #rx-research26-cardio .rx-research26-photo img{
@@ -277,12 +277,12 @@ html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child str
 
 /* Provenance-safe final refinements: uncropped featured records and Arabic type. */
 html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a{
-  background:#EEE7E4;
+  background:#efe8da;
 }
 html[data-rx-page="archive"] .rx-restored-grid>.rx-restored-card:first-child>a img,
 .rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx-field-frame img{
   object-fit:contain;
-  background:#EEE7E4;
+  background:#efe8da;
 }
 html[lang="ar"][data-rx-page="home"] .hero-copy h1{
   letter-spacing:0;
@@ -295,7 +295,7 @@ html[lang="ar"] .rx-field-section .rx-field-grid>.rx-field-photo:first-child .rx
 
 /* Evidence-first homepage, actual editorial selectors, 13 October 2026. */
 html[data-rx-page="home"] .rx-editorial-hero{
-  background:linear-gradient(123deg,#F4F0E8 0%,#F4F0E8 56%,#eaf0e9 100%);
+  background:linear-gradient(123deg,#F4F0E8 0%,#F4F0E8 56%,#f3eee4 100%);
 }
 html[data-rx-page="home"] .rx-hero-title{
   text-wrap:balance;
@@ -304,15 +304,15 @@ html[data-rx-page="home"] .rx-hero-kicker{
   letter-spacing:.105em;
 }
 html[data-rx-page="home"] .rx-portrait-mat{
-  border-color:#b5c8bf;
-  box-shadow:0 24px 72px rgba(23,48,47,.15);
+  border-color:#d5c19e;
+  box-shadow:0 24px 72px rgba(26,44,72,.15);
 }
 html[data-rx-page="home"] .rx-portrait-mat img{
   object-position:center 33%;
 }
 html[data-rx-page="home"] .rx-chapter-card:focus-visible{
-  border-color:#89513f;
-  box-shadow:0 0 0 3px rgba(137,81,63,.12);
+  border-color:#38609b;
+  box-shadow:0 0 0 3px rgba(56,96,155,.12);
 }
 html[data-rx-page="home"] #research .primary-card{
   color:#2D4C6B;
@@ -321,16 +321,16 @@ html[data-rx-page="home"] #research .primary-card .work-body h3{
   color:#2D4C6B;
 }
 html[data-rx-page="home"] #research .primary-card .work-body .work-meta{
-  color:#914a36;
+  color:#375f99;
 }
 html[data-rx-page="home"] #research .primary-card .work-footer{
-  border-top-color:#cad6cf;
+  border-top-color:#e0d1b8;
 }
 html[data-rx-page="home"] #research .primary-card .work-footer span{
-  color:#456064;
+  color:#365c94;
 }
 html[data-rx-page="home"] #research .primary-card .work-footer button{
-  color:#86412e;
+  color:#32558b;
 }
 html[data-rx-page="home"] #research .primary-card .work-footer button:hover{
   text-decoration:underline;
@@ -339,8 +339,8 @@ html[data-rx-page="home"] #research .primary-card .work-footer button:hover{
 /* Academic record is a quiet quick-reference strip, not a second site menu. */
 html[data-rx-page="home"] .rx-evidence-index{
   color:#f8f5ec;
-  background:#18383e;
-  border-block:1px solid #294e50;
+  background:#1e3454;
+  border-block:1px solid #2a4976;
 }
 html[data-rx-page="home"] .rx-evidence-inner{
   padding-block:clamp(28px,3.2vw,43px);
@@ -357,7 +357,7 @@ html[data-rx-page="home"] .rx-evidence-label{
   font:500 10px/1.6 var(--mono);
   text-transform:uppercase;
   letter-spacing:.095em;
-  color:#e6b69b;
+  color:#acc2e1;
 }
 html[data-rx-page="home"] .rx-evidence-intro p{
   font:400 clamp(24px,2.15vw,34px)/1.1 var(--serif);
@@ -385,23 +385,23 @@ html[data-rx-page="home"] .rx-evidence-links>a{
 html[data-rx-page="home"] .rx-evidence-links>a>span{
   font:500 10px/1.5 var(--mono);
   letter-spacing:.025em;
-  color:#c9ddd5;
+  color:#e4d7c0;
 }
 html[data-rx-page="home"] .rx-evidence-links>a>strong{
   font:500 clamp(15px,1.25vw,18px)/1.3 var(--sans);
-  color:#FFFCF7;
+  color:#fdfdfb;
 }
 html[data-rx-page="home"] .rx-evidence-links>a>strong span{
-  color:#f1bd9c;
+  color:#d8c6a5;
   margin-inline-start:4px;
   font-weight:400;
 }
 html[data-rx-page="home"] .rx-evidence-links>a:hover,
 html[data-rx-page="home"] .rx-evidence-links>a:focus-visible{
-  background:#295158;
+  background:#2c4b7a;
 }
 html[data-rx-page="home"] .rx-evidence-links>a:focus-visible{
-  outline:3px solid #f1b994;
+  outline:3px solid #d6c3a0;
   outline-offset:-3px;
 }
 html[lang="ar"][data-rx-page="home"] .rx-evidence-intro p,
@@ -466,7 +466,7 @@ html[lang="ar"][data-rx-page="home"] .rx-evidence-links>a>strong{
 /* Contrast and metadata legibility corrections — 16 October 2026.
    Scope to evidence plates and archival labels; leave the visual identity intact. */
 html[data-rx-page="home"] .story.editorial-story .anatomy-photo figcaption {
-  background:#e6ebe4;
+  background:#f0e9dc;
   color:#476481!important;
   font-size:12px;
 }
@@ -474,7 +474,7 @@ html[data-rx-page="home"] .story.editorial-story .anatomy-photo figcaption span 
   color:#476481!important;
 }
 html[data-rx-page="home"] .rx-field-photo .rx-field-caption {
-  background:#FFFCF7;
+  background:#fdfdfb;
   color:#476481!important;
 }
 html[data-rx-page="home"] .rx-field-photo .rx-field-caption :is(p,small,span,a) {
@@ -493,24 +493,24 @@ html[data-rx-page="home"] .quacs-feature .quacs-foot {
   font-size:12px;
 }
 html[data-rx-page="home"] .quacs-feature .rx-science-eyebrow {
-  color:#91472f;
+  color:#365c96;
 }
 html[data-rx-page="home"] .quacs-feature .rx-provenance {
-  color:#4b6261;
+  color:#375e99;
   font-size:12px;
 }
 html[data-rx-page="home"] .quacs-feature a:not(.button):not(.contactbutton) {
-  color:#71394C;
+  color:#2c4b79;
 }
 html[data-rx-page="home"] .methodlegend {
   color:#53677D;
   font-size:12px;
 }
 html[data-rx-page="home"] .chem-squad-teaser-link {
-  color:#71394C;
+  color:#2c4b79;
 }
 html[data-rx-page="archive"] .filmstrip .eyebrow {
-  color:#f0b999;
+  color:#d6c3a0;
 }
 html[data-rx-page="archive"] .rx-field-source {
   color:#53677D;
@@ -524,14 +524,14 @@ html[data-rx-page="archive"] .photo-section .footnote {
 html[data-rx-page="archive"] .rx-labcoat2016-eyebrow,
 html[data-rx-page="archive"] .rx-labcoat2016-link,
 html[data-rx-page="archive"] .current-era .now-grid a {
-  color:#71394C;
+  color:#2c4b79;
 }
 
 /* Final homepage contrast sweep, 16 October 2026: specific document links
    and research-horizon label only. No layout, media, or content changes. */
 html[data-rx-page="home"] .rx-home-science-links a {
-  color:#71394C;
+  color:#2c4b79;
 }
 html[data-rx-page="home"] .rh-home-entry .rh-home-kicker {
-  color:#71394C;
+  color:#2c4b79;
 }

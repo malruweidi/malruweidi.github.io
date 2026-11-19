@@ -26,7 +26,7 @@ test("new restrained copper and pine labels meet WCAG 4.5:1 on all documented or
  for(const [fg,bg] of pairs)assert.ok(contrast(fg,bg)>=4.5,fg+" against "+bg+" = "+contrast(fg,bg).toFixed(2));
 });
 
-test("dynamic figure captions and both Arabic timelines keep the readable pine/copper contrast",()=>{
+test("dynamic figure captions and both Arabic timelines keep the readable blue caption contrast",()=>{
  const css=read("assets/wcag-contrast-2026.css");
  for(const selector of ['.rx26-figures > figure > figcaption',
    '#rx16-diagnosis-photo > .rx16-heading > .rx16-kicker',
@@ -34,7 +34,7 @@ test("dynamic figure captions and both Arabic timelines keep the readable pine/c
    '.narrative > .side > span']){
    assert.ok(css.includes(selector),"missing dynamic accessibility selector "+selector);
  }
- assert.match(css,/html\[data-rx-page="stories"\][\s\S]*?figcaption\s*\{\s*color:\s*#435e60\s*!important/);
+ assert.match(css,/html\[data-rx-page="stories"\][\s\S]*?figcaption\s*\{\s*color:\s*#345991\s*!important/);
 });
 
 test("dynamic scientific captions and early medical photo labels cannot fade their measured color",()=>{

@@ -3,48 +3,48 @@ html[data-rx-page="home"] .rx-field-caption,
 html[data-rx-page="home"] .quacs-foot,
 html[data-rx-page="home"] .quacs-foot a,
 html[data-rx-page="home"] .rx-provenance,
-html[data-rx-page="home"] .methodlegend { color:#435B55; }
+html[data-rx-page="home"] .methodlegend { color:#33568c; }
 html[data-rx-page="home"] .quacs-feature .rx-science-eyebrow,
 html[data-rx-page="home"] .quacs-feature a,
-html[data-rx-page="home"] .chem-squad-teaser-link { color:#88452F; }
-html[data-rx-page="home"] .archive-callout figcaption { color:#435B55; }
-html[data-rx-page="home"] figcaption:not([class]) { color:#435B55; }
+html[data-rx-page="home"] .chem-squad-teaser-link { color:#345890; }
+html[data-rx-page="home"] .archive-callout figcaption { color:#33568c; }
+html[data-rx-page="home"] figcaption:not([class]) { color:#33568c; }
 html[data-rx-page="stories"] .stories-chapter-tinted p,
-html[data-rx-page="stories"] .stories-chapter p { color:#435B55; }
-html[data-rx-page="stories"] .stories-kicker { color:#88452F; }
+html[data-rx-page="stories"] .stories-chapter p { color:#33568c; }
+html[data-rx-page="stories"] .stories-kicker { color:#345890; }
 html[data-rx-page="archive"] .filmstrip .eyebrow { color:#F3EDE1; }
 html[data-rx-page="archive"] .rx-field-source,
 html[data-rx-page="archive"] .current-era figcaption,
 html[data-rx-page="archive"] .footnote,
-html[data-rx-page="archive"] .rx-heritage-disclaimer { color:#435B55; }
+html[data-rx-page="archive"] .rx-heritage-disclaimer { color:#33568c; }
 html[data-rx-page="archive"] .rx-labcoat2016-eyebrow,
 html[data-rx-page="archive"] .rx-labcoat2016-link,
-html[data-rx-page="archive"] .current-era a { color:#88452F; }
-html[data-rx-page="writing"] .rxw-kicker { color:#88452F; }
-html[data-rx-page="writing"] .rxw-book-announcement a { color:#88452F; }
-html[data-rx-page="research-detail"] .rx-deep-kicker { color:#88452F; }
-html[data-rx-page="reading-map"] .map-hero a { color:#F3D0B6; }
+html[data-rx-page="archive"] .current-era a { color:#345890; }
+html[data-rx-page="writing"] .rxw-kicker { color:#345890; }
+html[data-rx-page="writing"] .rxw-book-announcement a { color:#345890; }
+html[data-rx-page="research-detail"] .rx-deep-kicker { color:#345890; }
+html[data-rx-page="reading-map"] .map-hero a { color:#e3d5bd; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
 
 /* Second-pass fixes from live desktop/mobile computed contrast audit. */
-html[data-rx-page="home"] .quality-figure figcaption { color:#E7EDE7; }
-html[data-rx-page="home"] .rx-home-science-links a { color:#88452F; }
+html[data-rx-page="home"] .quality-figure figcaption { color:#f1ebdf; }
+html[data-rx-page="home"] .rx-home-science-links a { color:#345890; }
 html[data-rx-page="stories"] .stories-hero .stories-kicker,
-html[data-rx-page="stories"] .stories-kicker:first-child { color:#F1B995; }
+html[data-rx-page="stories"] .stories-kicker:first-child { color:#d6c3a0; }
 html[data-rx-page="writing"] .rxw-hero .rxw-kicker,
-html[data-rx-page="writing"] header .rxw-kicker { color:#F1B995; }
+html[data-rx-page="writing"] header .rxw-kicker { color:#d6c3a0; }
 html[data-rx-page="research-detail"] .rx-deep-hero .rx-deep-kicker,
-html[data-rx-page="research-detail"] header .rx-deep-kicker { color:#F1B995; }
+html[data-rx-page="research-detail"] header .rx-deep-kicker { color:#d6c3a0; }
 
 /* Third pass: scope warm accent to dark surfaces, not every kicker. */
-html[data-rx-page="stories"] .stories-kicker:first-child { color:#88452F; }
-html[data-rx-page="stories"] .stories-hero .stories-kicker { color:#F1B995; }
-html[data-rx-page="research-detail"] .rx-deep-kicker { color:#88452F; }
-html[data-rx-page="research-detail"] .rx-deep-hero .rx-deep-kicker { color:#F1B995; }
-html[data-rx-page="home"] .rx-home-science-links a { color:#88452F !important; }
+html[data-rx-page="stories"] .stories-kicker:first-child { color:#345890; }
+html[data-rx-page="stories"] .stories-hero .stories-kicker { color:#d6c3a0; }
+html[data-rx-page="research-detail"] .rx-deep-kicker { color:#345890; }
+html[data-rx-page="research-detail"] .rx-deep-hero .rx-deep-kicker { color:#d6c3a0; }
+html[data-rx-page="home"] .rx-home-science-links a { color:#345890 !important; }
 
 /* Fourth pass: context-specific contrast, confirmed against actual DOM. */
-html[data-rx-page="stories"] .stories-afterword .stories-kicker { color:#F1B995; }
-html[data-rx-page="research-detail"] .rx-research-intro .rx-deep-kicker { color:#88452F; }
-html[data-rx-page="home"] .rh-home-entry .rh-home-kicker { color:#88452F; }
-html[data-rx-page="home"] .work-card .work-footer button { color:#88452F; }
+html[data-rx-page="stories"] .stories-afterword .stories-kicker { color:#d6c3a0; }
+html[data-rx-page="research-detail"] .rx-research-intro .rx-deep-kicker { color:#345890; }
+html[data-rx-page="home"] .rh-home-entry .rh-home-kicker { color:#345890; }
+html[data-rx-page="home"] .work-card .work-footer button { color:#345890; }

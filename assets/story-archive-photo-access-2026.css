@@ -3,12 +3,12 @@
  */
 html[data-rx-page="archive"] .rx-archive-object[id]{scroll-margin-block-start:104px}
 html[data-rx-page="archive"] .rx-archive-object:target{
-  outline:2px solid #ad6a4e;outline-offset:4px;
+  outline:2px solid #4e7cbf;outline-offset:4px;
 }
 html[data-rx-page="archive"] .rx-archive-object-copy .rx-object-source-link{
   display:inline-flex;align-items:center;
   margin-block-start:13px;padding-block:5px;
-  color:#17343b;border-bottom:1px solid #9eafa8;
+  color:#1c304f;border-bottom:1px solid #90add7;
   font:600 12px/1.55 "DM Sans",Arial,sans-serif;
   text-decoration:none;
 }
@@ -20,11 +20,11 @@ html[data-rx-page="archive"] .rx-archive-object-copy .rx-object-paired-link{
 }
 html[data-rx-page="archive"] .rx-object-source-link:hover,
 html[data-rx-page="archive"] .rx-object-paired-link:hover{
-  color:#884632;border-color:#884632;
+  color:#345990;border-color:#345990;
 }
 html[data-rx-page="archive"] .rx-object-source-link:focus-visible,
 html[data-rx-page="archive"] .rx-object-paired-link:focus-visible{
-  outline:3px solid #994c36;outline-offset:4px;
+  outline:3px solid #3a63a0;outline-offset:4px;
 }
 html[data-rx-page="archive"] .rx-object-source-sr{
   position:absolute;width:1px;height:1px;padding:0;margin:-1px;

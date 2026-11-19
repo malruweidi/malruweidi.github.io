@@ -28,10 +28,10 @@ test("all public HTML pages use the same versioned blue identity",()=>{
 });
 test("the blue palette is the explicit primary identity and passes AA contrast for text",()=>{
  const css=read("assets/ruwaidix-one-blue-2026.css");
- for(const color of ["#192d4b","#263f66","#345b8e","#eaf0f8","#d7e3f1","#fbfcfe"]){assert.ok(css.includes(color),color);}
- assert.ok(contrast("#345b8e","#fbfcfe")>=4.5);
+ for(const color of ["#192d4b","#263f66","#345b8e","#eaf0f8","#d7e3f1","#fffbf3"]){assert.ok(css.includes(color),color);}
+ assert.ok(contrast("#345b8e","#fffbf3")>=4.5);
  assert.ok(contrast("#4c6282","#eaf0f8")>=4.5);
- assert.ok(contrast("#fbfcfe","#263f66")>=4.5);
+ assert.ok(contrast("#fffbf3","#263f66")>=4.5);
 });
 test("Egypt–Qatar–US map is entirely blue by CSS, preserving original SVG geometry",()=>{
  const css=read("assets/ruwaidix-one-blue-2026.css");

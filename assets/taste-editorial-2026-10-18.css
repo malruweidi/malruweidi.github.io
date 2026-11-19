@@ -7,10 +7,10 @@
 html[data-rx-page="home"] {
   --taste-ink:#2D4C6B;
   --taste-accent:#71394C;
-  --taste-rule:#D7CFCC;
+  --taste-rule:#decfb3;
   --taste-paper:#F4F0E8;
-  --taste-paper-light:#FFFCF7;
-  --taste-mist:#EEE7E4;
+  --taste-paper-light:#fdfdfb;
+  --taste-mist:#efe8da;
 }
 
 /* Editorial navigation: one strong action, the rest a quiet reading index. */
@@ -35,14 +35,14 @@ html[data-rx-page="home"] .header .rx-more>summary:hover {
 }
 html[data-rx-page="home"] .header .navlinks .contactbutton {
   background:var(--taste-ink);
-  color:#FFFCF7;
+  color:#fdfdfb;
   min-height:44px;
   display:inline-flex;
   align-items:center;
 }
 html[data-rx-page="home"] .header .navlinks .contactbutton:hover {
   background:#476481;
-  color:#FFFCF7;
+  color:#fdfdfb;
 }
 
 /* The two distinct halves of the opening should read like a journal cover,
@@ -101,20 +101,20 @@ html[data-rx-page="home"] .rx-hero-secondary {
   min-height:38px;
   display:inline-flex;
   align-items:center;
-  border-bottom-color:#71394C;
+  border-bottom-color:#2c4b79;
 }
 html[data-rx-page="home"] .rx-hero-secondary:hover {
-  color:#71394C;
-  border-bottom-color:#71394C;
+  color:#2c4b79;
+  border-bottom-color:#2c4b79;
 }
 html[data-rx-page="home"] .rx-hero-portrait {
   max-width:100%;
 }
 html[data-rx-page="home"] .rx-portrait-mat {
   padding:9px;
-  background:#EEE7E4;
-  border-color:#D7CFCC;
-  box-shadow:0 24px 52px rgba(23,52,59,.09);
+  background:#efe8da;
+  border-color:#decfb3;
+  box-shadow:0 24px 52px rgba(28,48,79,.09);
 }
 html[data-rx-page="home"] .rx-portrait-mat img {
   height:clamp(420px,50vw,660px);
@@ -123,7 +123,7 @@ html[data-rx-page="home"] .rx-portrait-mat img {
 html[data-rx-page="home"] .rx-portrait-detail {
   left:-16px;
   bottom:58px;
-  background:#FFFCF7;
+  background:#fdfdfb;
   box-shadow:none;
   border-left:3px solid var(--taste-accent);
 }
@@ -142,8 +142,8 @@ html[data-rx-page="home"] .rx-home-film-title {
   text-wrap:balance;
 }
 html[data-rx-page="home"] .rx-home-film-media {
-  border-color:#D7CFCC;
-  box-shadow:0 14px 39px rgba(12,43,43,.09);
+  border-color:#decfb3;
+  box-shadow:0 14px 39px rgba(23,38,62,.09);
 }
 
 /* An asymmetrical index with documented priority, never nine cloned tiles.
@@ -187,7 +187,7 @@ html[data-rx-page="home"] .rx26-portal-card:nth-child(3),
 html[data-rx-page="home"] .rx26-portal-card:nth-child(5),
 html[data-rx-page="home"] .rx26-portal-card:nth-child(7),
 html[data-rx-page="home"] .rx26-portal-card:nth-child(8) {
-  background:#EEE7E4;
+  background:#efe8da;
 }
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1) {
   background:#2D4C6B;
@@ -197,10 +197,10 @@ html[data-rx-page="home"] .rx26-portal-card:nth-child(1) {
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-top,
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-arrow,
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-action {
-  color:#fff1df;
+  color:#f7f3eb;
 }
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1) p {
-  color:#EEE7E4;
+  color:#efe8da;
 }
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1) .rx26-card-action {
   border-top-color:#53677D;
@@ -227,7 +227,7 @@ html[data-rx-page="home"] .rx26-card-top {
 }
 html[data-rx-page="home"] .rx26-card-action {
   margin-top:auto;
-  border-top-color:#D7CFCC;
+  border-top-color:#decfb3;
   text-decoration:underline;
   text-decoration-color:transparent;
   text-underline-offset:4px;
@@ -243,11 +243,11 @@ html[data-rx-page="home"] .rx26-portal-card:focus-visible .rx26-card-action {
   text-decoration-color:currentColor;
 }
 html[data-rx-page="home"] .rx26-portal-card:focus-visible {
-  outline:3px solid #71394C;
+  outline:3px solid #2c4b79;
   outline-offset:3px;
 }
 html[data-rx-page="home"] .rx26-portal-card:nth-child(1):focus-visible {
-  outline-color:#E6BFC7;
+  outline-color:#d9c7a6;
 }
 html[data-rx-page="home"] .rx26-portal-paths {
   margin-top:30px;
@@ -261,7 +261,7 @@ html[data-rx-page="home"] .rx-home-complete-summary {
   min-height:76px;
 }
 html[data-rx-page="home"] .rx-home-complete-summary:hover {
-  background:#EEE7E4;
+  background:#efe8da;
 }
 
 /* The record must remain a real disclosure, never visually removed.

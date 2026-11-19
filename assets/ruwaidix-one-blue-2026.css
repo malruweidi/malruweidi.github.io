@@ -1,4 +1,5 @@
-@import url("/assets/archive-workroom.css?v=1");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap");
+@import url("/assets/archive-workroom.css?v=20261119-navy");
 @import url("/assets/ruwaidix-blue-components-a-2026.css?v=20261118-b1");
 @import url("/assets/ruwaidix-blue-components-b-2026.css?v=20261118-b1");
 @import url("/assets/ruwaidix-blue-components-c-2026.css?v=20261118-b1");
@@ -10,20 +11,20 @@
 :root,html,html.rx-site-theme{
 color-scheme:light;
 --blue-950:#101e35;--blue-900:#192d4b;--blue-800:#263f66;--blue-700:#345b8e;--blue-600:#456fa6;
---blue-500:#7193bf;--blue-300:#b7cbe4;--blue-200:#d7e3f1;--blue-100:#eaf0f8;--blue-050:#f4f7fb;
---blue-paper:#fbfcfe;--blue-muted:#4c6282;--blue-line:#cdd8e7;
+--blue-500:#7193bf;--blue-300:#b7cbe4;--blue-200:#d7e3f1;--blue-100:#eaf0f8;--blue-050:#f6f1e8;
+--blue-paper:#fffbf3;--blue-muted:#4c6282;--blue-line:#cdd8e7;
 --ink:#192d4b;--dark:#192d4b;--night:#192d4b;--night2:#263f66;
---bg:#f4f7fb;--cream:#f4f7fb;--paper:#fbfcfe;--white:#fbfcfe;--light:#fbfcfe;
+--bg:#f6f1e8;--cream:#f6f1e8;--paper:#fffbf3;--white:#fffbf3;--light:#fffbf3;
 --muted:#4c6282;--line:#cdd8e7;--stroke:#cdd8e7;--terra:#345b8e;--warm:#345b8e;
 --rust:#345b8e;--accent:#345b8e;--pine:#456fa6;--mist:#eaf0f8;--cloud:#eaf0f8;--sage:#eaf0f8;--peach:#d7e3f1;
---rx-midnight:#192d4b;--rx-mineral:#456fa6;--rx-copper:#345b8e;--rx-parchment:#f4f7fb;
---rx-paper:#fbfcfe;--rx-muted:#4c6282;--rx-line:#cdd8e7;--rx-mist:#eaf0f8;--rx-copper-light:#d7e3f1;
---ra-ink:#192d4b;--ra-deep:#263f66;--ra-paper:#fbfcfe;--ra-cream:#f4f7fb;
+--rx-midnight:#192d4b;--rx-mineral:#456fa6;--rx-copper:#345b8e;--rx-parchment:#f6f1e8;
+--rx-paper:#fffbf3;--rx-muted:#4c6282;--rx-line:#cdd8e7;--rx-mist:#eaf0f8;--rx-copper-light:#d7e3f1;
+--ra-ink:#192d4b;--ra-deep:#263f66;--ra-paper:#fffbf3;--ra-cream:#f6f1e8;
 --ra-terracotta:#345b8e;--ra-line:#cdd8e7;--ra-muted:#4c6282;
 }
-html body{background:#f4f7fb;color:#192d4b}
-html :is(.header,.rs-header,.pub-header,.fc-header,.nav-shell,.site-header,.rx-site-header){background-color:#f4f7fbea;border-color:#cdd8e7}
-html :is(.preview-strip,.rx-site-banner,.site-ribbon){background-color:#192d4b;color:#f4f7fb}
+html body{background:#f6f1e8;color:#192d4b}
+html :is(.header,.rs-header,.pub-header,.fc-header,.nav-shell,.site-header,.rx-site-header){background-color:#f6f1e8f0;border-color:#cdd8e7}
+html :is(.preview-strip,.rx-site-banner,.site-ribbon){background-color:#192d4b;color:#f6f1e8}
 html :is(.rx-editorial-hero,.rx26-portal,.rx-chapters,.timeline,.section,.archive-callout,.history,.geo-heading,.rx-home-complete-record){border-color:#cdd8e7}
 html :is(.rx-atlas-home,.rx-atlas-bar,.rx-atlas-afterword){color:#192d4b}
 .rx-atlas-home{background:#eaf0f8;border-color:#cdd8e7}
@@ -32,27 +33,27 @@ html :is(.rx-atlas-home,.rx-atlas-bar,.rx-atlas-afterword){color:#192d4b}
 .rx-atlas-overlay .rx-atlas-kicker,.rx-atlas-overlay .rx-atlas-drawer-group h3{color:#345b8e}
 .rx-atlas-home h2,.rx-atlas-detail h3,.rx-atlas-afterword h2,.rx-atlas-panel-head h2{color:#192d4b}
 .rx-atlas-home h2 em{color:#456fa6}
-.rx-atlas-interact{background:#fbfcfe;border-color:#b7cbe4;box-shadow:18px 23px 0 #192d4b0a}
+.rx-atlas-interact{background:#fffbf3;border-color:#b7cbe4;box-shadow:18px 23px 0 #192d4b0a}
 .rx-atlas-choice{background:#192d4b}
 .rx-atlas-choice button[aria-pressed=true]{background:#d7e3f1;color:#192d4b;box-shadow:inset 4px 0 #456fa6}
 .rx-atlas-detail:before{border-color:#b7cbe4;box-shadow:0 0 0 34px #d7e3f127,0 0 0 72px #d7e3f11b}
-.rx-atlas-links a{border-color:#cdd8e7;background:#fbfcfe;color:#263f66}
+.rx-atlas-links a{border-color:#cdd8e7;background:#fffbf3;color:#263f66}
 .rx-atlas-links a:hover{background:#eaf0f8}
 .rx-atlas-links a span,.rx-atlas-foot button{color:#345b8e;border-color:#345b8e}
 .rx-atlas-bar{background:#eaf0f8;border-color:#cdd8e7}
 .rx-atlas-bar .rx-atlas-open{background:#263f66;border-color:#263f66;color:#fff}
 .rx-atlas-bar .rx-atlas-open:hover{background:#345b8e;border-color:#345b8e}
-.rx-atlas-afterword{background:#f4f7fb;border-color:#cdd8e7}
-.rx-atlas-afterword-grid a{background:#fbfcfe;border-color:#cdd8e7;color:#192d4b}
+.rx-atlas-afterword{background:#f6f1e8;border-color:#cdd8e7}
+.rx-atlas-afterword-grid a{background:#fffbf3;border-color:#cdd8e7;color:#192d4b}
 .rx-atlas-afterword-grid a:hover{background:#eaf0f8}
 .rx-atlas-afterword-grid a small{color:#345b8e}
-.rx-atlas-panel{background:#fbfcfe}
+.rx-atlas-panel{background:#fffbf3}
 .rx-atlas-drawer-grid a{background:#eaf0f8;border-color:#cdd8e7;color:#263f66}
 .rx-atlas-drawer-grid a:hover,.rx-atlas-drawer-grid a[aria-current=page]{background:#192d4b;border-color:#192d4b;color:#fff}
 .rx-atlas-close{background:#eaf0f8;border-color:#cdd8e7}
 .rx-atlas-overlay .rx-atlas-shade{background:#101e35dd}
 /* Geographic map: blue water, blue land, three blue route tones, blue markers. */
-.geographies{background:#f4f7fb!important;color:#192d4b!important;border-color:#cdd8e7!important}
+.geographies{background:#f6f1e8!important;color:#192d4b!important;border-color:#cdd8e7!important}
 .geographies .geo-heading h2,.geographies .geo-heading h2 em{color:#192d4b}
 .geographies .geo-heading .eyebrow{color:#345b8e!important}
 .geographies .geo-lead,.geographies .geo-afterword p,.geographies .geo-source{color:#4c6282}
@@ -68,7 +69,7 @@ html :is(.rx-atlas-home,.rx-atlas-bar,.rx-atlas-afterword){color:#192d4b}
 .geographies .geo-arc--us-qatar{stroke:#88b1e5!important}
 .geographies .geo-arc--egypt-qatar{stroke:#5f99dd!important}
 .geographies .geo-ring{fill:#90b9e8!important;stroke:#c5daf2!important}
-.geographies .geo-dot{fill:#fbfcfe!important;stroke:#7bace4!important}
+.geographies .geo-dot{fill:#fffbf3!important;stroke:#7bace4!important}
 .geographies .geo-label{fill:#fff!important;stroke:#192d4b!important}
 .geographies .geo-label-sub{fill:#d7e3f1!important;stroke:#192d4b!important}
 .geographies .geo-map-topline{color:#d7e3f1!important}
@@ -76,7 +77,7 @@ html :is(.rx-atlas-home,.rx-atlas-bar,.rx-atlas-afterword){color:#192d4b}
 .geographies .geo-key{border-color:#a9c4e7!important}
 .geographies .geo-key--dotted{border-color:#88b1e5!important}
 .geographies .geo-places{background:#cdd8e7!important;border-color:#cdd8e7!important}
-.geographies .geo-place{background:#fbfcfe!important;color:#192d4b!important}
+.geographies .geo-place{background:#fffbf3!important;color:#192d4b!important}
 .geographies .geo-place:is(:hover,:focus-visible,[aria-pressed="true"]){background:#eaf0f8!important;box-shadow:inset 0 4px #456fa6!important}
 .geographies .geo-place .geo-index,.geographies .geo-place .geo-role,.geographies .geo-afterword a,.geographies .geo-source a{color:#345b8e!important}
 .geographies .geo-place .geo-description{color:#4c6282!important}
@@ -105,35 +106,35 @@ html video{background-color:#101e35}
 @media(max-width:840px){.rx-atlas-home .rx-atlas-choice button[aria-pressed=true]{box-shadow:inset 0 -4px #456fa6}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 /* Homepage: quiet alternating powder-blue paper, no sage, no terracotta. */
-html .rx26-portal{background:#fbfcfe}
-html .rx26-portal-card,html .rx26-portal-card:nth-child(n){background:#f4f7fb;border-color:#cdd8e7}
+html .rx26-portal{background:#fffbf3}
+html .rx26-portal-card,html .rx26-portal-card:nth-child(n){background:#f6f1e8;border-color:#cdd8e7}
 html .rx26-portal-card:nth-child(3n+1){background:#eaf0f8}
-html .rx26-portal-card:nth-child(3n+2){background:#f4f7fb}
-html .rx26-portal-card:nth-child(3n){background:#fbfcfe}
+html .rx26-portal-card:nth-child(3n+2){background:#f6f1e8}
+html .rx26-portal-card:nth-child(3n){background:#fffbf3}
 html .rx26-portal-card:hover{background:#d7e3f1;border-color:#7193bf}
 html :is(.methodband,.method-showcase,.patient-perspective,.quacs-feature,.research-identity,.archive-callout,.rx26-home-milestones,.grant-teaser,.quality-section,.wisconsin-video-section,.story-prologue){background:#eaf0f8;color:#192d4b;border-color:#cdd8e7}
-html :is(.methodband,.quality-section,.quacs-feature,.patient-perspective){background:#f4f7fb}
+html :is(.methodband,.quality-section,.quacs-feature,.patient-perspective){background:#f6f1e8}
 html :is(.archive-callout p,.rx26-home-milestones figcaption,.grant-teaser p,.research-identity p,.geo-lead){color:#4c6282}
 html :is(.rx26-home-milestones .rx26-early-kicker,.research-identity .eyebrow,.archive-callout .eyebrow,.grant-teaser h2 em,.infrastructure-feature h2 em){color:#456fa6}
 html .rx26-home-milestones figure>a{background:#263f66}
-html .infrastructure-feature{background:#192d4b;color:#f4f7fb}
+html .infrastructure-feature{background:#192d4b;color:#f6f1e8}
 html .infrastructure-feature p{color:#d7e3f1}
 html .infrastructure-feature .textlink{color:#bdd4ef}
-html .ventures{background:#263f66;color:#f4f7fb}
+html .ventures{background:#263f66;color:#f6f1e8}
 html .ventures a{color:#d7e3f1}
-html .rx-editorial-hero{background:#f4f7fb}
+html .rx-editorial-hero{background:#f6f1e8}
 html .rx26-home-milestones :is(h2,h3),html .research-identity :is(h2,h3){color:#192d4b}
 html .rx-home-film{background:#192d4b}
-html .rx-home-film :is(h2,h3){color:#f4f7fb}
+html .rx-home-film :is(h2,h3){color:#f6f1e8}
 html .rx-home-film a{color:#d7e3f1}
 html :is(.rx26-portal-card,.rx-atlas-home,.geographies,.archive-callout,.methodband) a:focus-visible,
 html :is(.rx26-portal-card,.rx-atlas-home,.geographies,.archive-callout,.methodband) button:focus-visible{outline:3px solid #345b8e;outline-offset:3px}
 /* Footer/ordinary content shadows and quiet blue boundaries. */
-html .footer{background:#192d4b;color:#f4f7fb}
+html .footer{background:#192d4b;color:#f6f1e8}
 html .footer a{color:#d7e3f1}
 html .footer :is(.eyebrow,.mono){color:#b7cbe4}
 html .brandline{color:#4c6282}
-html .rx-more-panel{background:#fbfcfe;border-color:#cdd8e7}
+html .rx-more-panel{background:#fffbf3;border-color:#cdd8e7}
 html .navlinks>a:hover{color:#345b8e}
 html .hero-note .line,html .eyebrow:before{background:#7193bf}
 html :is(.rx-chapters,.methodband,.rx26-portal,.research-identity,.rx-evidence-index,.geographies) :is(.eyebrow,.mono){color:#456fa6}
@@ -142,7 +143,7 @@ html :is(.rx-chapters,.methodband,.rx26-portal,.research-identity,.rx-evidence-i
 /* The opening pairs the introduction with the portrait. Research shortcuts follow the spread. */
 html[data-rx-page="home"] .rx-editorial-hero {
   padding-block: clamp(22px, 2.4vw, 38px) clamp(28px, 3.5vw, 48px);
-  background: #f4f7fb;
+  background: #f6f1e8;
 }
 html[data-rx-page="home"] .rx-hero-topline { margin-bottom: clamp(24px, 3vw, 44px); }
 html[data-rx-page="home"] .rx-hero-grid { align-items: center; }
@@ -204,7 +205,7 @@ html[data-rx-page="home"] .rx-opening-notes details p { max-width: 62ch; }
    Small scientific images remain visible in their original proportions. */
 html[data-rx-page="home"] .rx-chapters {
   padding-block: clamp(42px, 6vw, 88px);
-  background: #fbfcfe;
+  background: #fffbf3;
 }
 html[data-rx-page="home"] #rx-chapter-heading { scroll-margin-block-start: 110px; }
 html[data-rx-page="home"] .rx-chapters-heading {
@@ -281,7 +282,7 @@ html[data-rx-page="home"] .rx-chapter-grid .rx-chapter-image {
 html[data-rx-page="home"] .rx-chapter-grid.rx-scene-stage { display: block; }
 .rx-scene-page {
   display: grid; grid-template-columns: minmax(0,1.18fr) minmax(0,1fr); align-items: stretch;
-  background: #192d4b; color: #fbfcfe; border-block-end: 5px solid #7193bf;
+  background: #192d4b; color: #fffbf3; border-block-end: 5px solid #7193bf;
 }
 .rx-scene-page[hidden] { display: none; }
 html[data-rx-page="home"] .rx-scene-stage .rx-scene-page > .rx-chapter-image {
@@ -301,7 +302,7 @@ html[data-rx-page="home"] .rx-scene-stage .rx-scene-copy .rx-chapter-card h3 {
 html[data-rx-page="home"] .rx-scene-stage .rx-scene-copy .rx-chapter-card p { color: #dfebfb; }
 html[data-rx-page="home"] .rx-scene-stage .rx-scene-copy :is(.rx-chapter-num,.rx-chapter-action) { color: #c9def9; }
 html[data-rx-page="home"] .rx-scene-stage .rx-scene-note {
-  max-width: 42ch; color: #f4f7fb; border-block-start: 1px solid #6680a5;
+  max-width: 42ch; color: #f6f1e8; border-block-start: 1px solid #6680a5;
   margin: 20px 0 10px; padding-top: 18px; font: 400 clamp(18px,1.5vw,23px)/1.45 var(--serif,Georgia,serif);
 }
 .rx-scene-link { display: inline-block; padding-block: 9px; color: #fff; font-weight: 600; text-decoration: underline; text-underline-offset: .22em; }
@@ -338,7 +339,7 @@ html[data-rx-page="home"] .rx-scene-stage a:focus-visible { outline: 3px solid #
 .rx-reading-spread .rx-reading-item {
   display: grid; grid-template-columns: minmax(90px,.64fr) minmax(0,1fr); align-items: stretch;
   text-align: start; text-decoration: none; padding: 0; margin: 0;
-  color: #192d4b; background: #fbfcfe; border: 1px solid #b7cbe4; min-width: 0;
+  color: #192d4b; background: #fffbf3; border: 1px solid #b7cbe4; min-width: 0;
 }
 .rx-reading-mat { display: grid; align-items: center; background: #eaf0f8; min-width: 0; padding: 8px; }
 .rx-reading-mat .rx-reading-image {
@@ -386,7 +387,7 @@ html[lang="ar"] .rx-reading-spread :is(.rx-reading-name,.rx-reading-title,.rx-re
 [data-reading-edition="narrative"] .stories-chapter-text > p { max-inline-size: 65ch; }
 [data-reading-edition="narrative"] .stories-single-figure figcaption { text-align: start; border-inline-start: 2px solid #7193bf; padding-inline-start: 12px; }
 
-main > .rx-reading-spread { background: #fbfcfe; padding: clamp(14px,2.6vw,32px); }
+main > .rx-reading-spread { background: #fffbf3; padding: clamp(14px,2.6vw,32px); }
 
 /* Chapter covers: full-width archive photography with type on its own sheet. */
 #rx26-portal .rx-cover-controls { display:flex; align-items:center; flex-wrap:wrap; gap:6px; margin:0 0 20px; }
@@ -395,7 +396,7 @@ main > .rx-reading-spread { background: #fbfcfe; padding: clamp(14px,2.6vw,32px)
 }
 #rx26-portal .rx-cover-controls button {
   min-height:44px; padding:8px 15px; border:1px solid #b7cbe4; border-radius:32px;
-  color:#263f66; background:#fbfcfe;
+  color:#263f66; background:#fffbf3;
 }
 #rx26-portal .rx-cover-controls button[aria-pressed="true"] { background:#192d4b; border-color:#192d4b; color:white; }
 .rx-cover-count { margin-inline-start:auto; color:#405773; font:500 13px/1.5 'DM Mono',monospace; }
@@ -404,7 +405,7 @@ main > .rx-reading-spread { background: #fbfcfe; padding: clamp(14px,2.6vw,32px)
 }
 #rx26-portal .rx-cover-catalogue > a.rx26-portal-card:nth-child(n) {
   display:flex;flex-direction:column; grid-column:auto; grid-row:auto; min-height:0; min-width:0;
-  border:1px solid #c7d4e4; padding:0; background:#fbfcfe; color:#192d4b; box-shadow:none; isolation:isolate;
+  border:1px solid #c7d4e4; padding:0; background:#fffbf3; color:#192d4b; box-shadow:none; isolation:isolate;
 }
 #rx26-portal .rx-cover-catalogue > a[hidden] { display:none!important; }
 #rx26-portal .rx-cover-catalogue .rx26-portal-card:nth-child(n) .rx26-card-top {
@@ -449,10 +450,10 @@ main > .rx-reading-spread { background: #fbfcfe; padding: clamp(14px,2.6vw,32px)
 }
 .rx-photo-trigger {
   display:inline-flex;align-items:center;min-height:40px; margin:6px 0; padding:4px 12px;
-  background:#fbfcfe; border:1px solid #a9bdd5; border-radius:2px; color:#263f66;
+  background:#fffbf3; border:1px solid #a9bdd5; border-radius:2px; color:#263f66;
 }
 .rx-photo-dialog {
-  background:#101e31; color:#f4f7fb; border:1px solid #7391b5;
+  background:#101e31; color:#f6f1e8; border:1px solid #7391b5;
   box-sizing:border-box; padding:0; width:min(1100px,96vw); max-width:96vw; max-height:94dvh;
 }
 .rx-photo-dialog[open] {display:grid; grid-template-rows:auto minmax(0,1fr) auto; height:min(850px,92dvh);}
@@ -467,7 +468,7 @@ main > .rx-reading-spread { background: #fbfcfe; padding: clamp(14px,2.6vw,32px)
 .rx-photo-stage .rx-photo-full {width:100%; height:100%;min-height:0;max-height:100%;object-fit:contain;display:block;}
 .rx-photo-stage.rx-photo-actual {display:block;}
 .rx-photo-stage.rx-photo-actual img { width:auto; height:auto; max-width:none; max-height:none; margin:auto;}
-.rx-photo-dialog .rx-photo-caption {margin:0; padding:13px 20px;color:#f4f7fb;font:400 17px/1.5 'Newsreader',Georgia,serif;overflow:auto;max-height:17dvh;}
+.rx-photo-dialog .rx-photo-caption {margin:0; padding:13px 20px;color:#f6f1e8;font:400 17px/1.5 'Newsreader',Georgia,serif;overflow:auto;max-height:17dvh;}
 @media(max-width:520px){ .rx-photo-dialog button{padding-inline:8px;font-size:13px;} .rx-photo-tools{gap:4px;padding:6px;} }
 @media(prefers-reduced-motion:no-preference) {
   .rx-cover-art img {transition:transform .36s ease;}
@@ -499,4 +500,102 @@ main > .rx-reading-spread .rx-reading-pair {gap:clamp(14px,2vw,28px);}
 @media(min-width:980px) {#rx26-portal .rx-cover-catalogue:not(.rx-cover-filtered) > a:last-child {grid-column:1/-1;grid-template-columns:1.25fr 1fr;}}
 @media(max-width:560px) {
   [data-reading-edition] main > .rx-reading-spread {width:calc(100% - 24px);padding:14px;}
+}
+
+/* Reading colors follow the surface the text actually appears on. */
+@media screen {
+  html {
+    --reading-ink: #294363;
+    --reading-light: #f1f5ff;
+  }
+  html body .rx-atlas-bar .rx-atlas-bar-eyebrow,
+  html body .rx-context .rx-context-inner .rx-delimiter,
+  html body main :is(.framework-head .eyebrow, .archive-callout .eyebrow, .rx-illness-overline,
+    .rx26-early-kicker, .chem-squad-teaser .brow, .method-feature-title em, .pressdate,
+    .rx-book-home-teaser .wrap > div > span, .rx-oct12-note, .rx1920-kicker,
+    .pubitem .nolink, .factstrip .fact small, .cs-work-group-head p, .feature .txtlink,
+    .figure-card .fig-kicker, .wrap.article .fact b, .wrap.article .footnotes,
+    .animal-movie-label span, .animal-videos-footer a, .rx-provenance-link,
+    .chapter > .wrap > .eyebrow, .rh-cycle-no, .rh-section .rh-kicker,
+    .rh-footnote, .rh-footnote a, .rh-footnote em, .map-orientation-grid h2 em,
+    .rx-result-arrow, .rx-heritage-caption .rx-heritage-desc),
+  html body .story .story-prologue :is(.eyebrow,h2,p),
+  html body main .figcap, html body main .figcap :is(strong,a) {
+    color: var(--reading-ink) !important;
+  }
+  html body .rx-atlas-afterword .rx-atlas-afterword-grid a,
+  html body .rx-atlas-bar .rx-atlas-bar-links a,
+  html body .fc-header .fc-nav .rx-discovery-link,
+  html body .rx-inner .rx-primary .rx-more summary {
+    color: var(--reading-ink) !important;
+    background-color: #f6f1e8 !important;
+  }
+  html body .rx-atlas-bar .rx-atlas-bar-links a:is(:hover,:focus-visible,[aria-current="page"]),
+  html body .rx-atlas-afterword .rx-atlas-afterword-grid a:is(:hover,:focus-visible) {
+    color: white !important; background-color: #254b85 !important;
+  }
+  html body main .rs-hero :is(h1,.rs-kicker),
+  html body main :is(.infra-grid h2 em, .section.dark h2 em, .rh-end-grid h2 em,
+    .hero .heronotes span, .rx-at-home-science figcaption small,
+    .rx-featured-related summary, .fc-hero .fc-bilingual),
+  html[data-rx-page="behind-the-record"] main .hero :is(.kicker,figcaption),
+  html[data-rx-page="training"] main .hero :is(.kicker,.summary span),
+  html[data-rx-page="computing"] main .hero figcaption,
+  html[data-rx-page="engagement"] main :is(.hero .eyebrow,.story-grid .linkrow a,
+    .story-grid .meta,.rx-heritage-festival-highlight h3,.rx-oct-story h3) {
+    color: var(--reading-light) !important;
+  }
+  html body .pub-footer, html body .rx-film-footer.rx-series-wrap {
+    color: var(--reading-light) !important; background-color: #192d4b !important;
+  }
+  html body :is(.pub-footer,.rx-film-footer) :is(.pub-wrap,span,a) { color: var(--reading-light) !important; }
+  html[data-rx-page="film-notebook"] main .fc-hero .rx-room-heading em,
+  html[data-rx-page="films"] main .rx-series-hero .rx-series-kicker,
+  html body main :is(.rx-film-card-copy .rx-series-kicker,.ae-hero .ae-kicker) { color: var(--reading-ink) !important; }
+  html[data-rx-page="home"] #rx26-portal .rx-cover-catalogue > a:is(:nth-child(1),:nth-child(3),:nth-child(9)) :is(.rx26-card-top,span,h3,p,.rx26-card-action) {
+    color: #fff !important;
+  }
+  html[data-rx-page="home"] main .rx-hero-portrait :is(figcaption,.rx-portrait-detail span) {
+    font-size: .8rem; line-height: 1.45;
+  }
+  html[lang="ar"] body :is(nav a,button,summary,label,figcaption,.rx-hero-title em,
+    .rx-room-heading,.rx-room-heading em,.rx-hero-kicker,.rx-hero-topline,.rx-room-print-label,
+    .rx-hero-lead,.rx-optics h2,.rx-optics p,.rx-scope-tag):lang(ar) {
+    font-family: "Noto Sans Arabic",Tahoma,Arial,sans-serif !important;
+    font-style: normal; letter-spacing: normal !important; line-height: 1.55;
+  }
+}
+@media screen and (max-width: 600px) {
+  html[data-rx-page="home"] main .rx-hero-topline,
+  html[data-rx-page="home"] main .rx-hero-kicker { font-size: .77rem; }
+  html[data-rx-page="home"] main .rx-opening-links a,
+  html[data-rx-page="home"] main .rx-hero-portrait .rx-photo-trigger {
+    display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box;
+  }
+  html body main :is(.hero-grid,.bridge-grid) { grid-template-columns: minmax(0,1fr); }
+  html body main :is(.hero-grid,.bridge-grid) > * { min-inline-size: 0; overflow-wrap: break-word; }
+}
+@media screen {
+  html { --folio-paper: #f8f3e8; --folio-sheet: #fdfbf9; }
+  html body { background-color: var(--folio-paper); }
+  html body :is(.rx-atlas-bar,nav.rx-context,.rx-atlas-afterword) { background-color: var(--folio-paper); }
+  html body .rx1920 .rx1920-kicker,
+  html[data-rx-page="film-notebook"] main .fc-hero .fc-bilingual { color: var(--reading-ink) !important; }
+  html[data-rx-page="home"] main .wrap > .hero .hero-copy :is(h1,.eyebrow,.rx-illness-hero-link a,.identityline strong,.identityline span) {
+    color: var(--reading-ink) !important;
+  }
+  html[data-rx-page="home"] main .wrap > .hero .hero-copy { background-color: var(--folio-paper); }
+  html[data-rx-page="home"] #rx26-portal .rx-cover-catalogue > a:is(:nth-child(1),:nth-child(3),:nth-child(9)) {
+    background-color: #263f66 !important;
+  }
+  /* The skip link must occupy its focus position without extending an RTL page. */
+  html[dir="rtl"] body > a.skip:not(:focus) {
+    position: absolute; inset: 0 auto auto 0; width: 1px; height: 1px;
+    margin: 0; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+  }
+}
+
+@media screen {
+  html[data-rx-page="computing"] main a.txtlink,
+  html body main .rx-field-heading .rx-field-kicker { color: var(--reading-ink) !important; }
 }

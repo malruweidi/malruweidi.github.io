@@ -42,17 +42,17 @@ function styles(){
  if(document.getElementById("rxLabcoat2016Style"))return;
 const st=make("style");st.id="rxLabcoat2016Style";
 st.textContent=`
-.rx-labcoat2016{background:#e9eee7;color:#183d3b;padding:58px 0 75px;scroll-margin-top:80px}
+.rx-labcoat2016{background:#f2ece0;color:#20375a;padding:58px 0 75px;scroll-margin-top:80px}
 .rx-labcoat2016-inner{max-width:1150px;width:calc(100% - 44px);margin:auto;display:grid;grid-template-columns:minmax(250px,.9fr) minmax(300px,1.1fr);gap:clamp(26px,5vw,80px);align-items:center}
-.rx-labcoat2016-photo{margin:0}.rx-labcoat2016-photo img{width:100%;height:auto;max-height:485px;object-fit:contain;display:block;background:#d9ddd4;box-shadow:0 18px 42px rgba(26,45,40,.15)}
-.rx-labcoat2016-source{font:11px/1.55 system-ui,sans-serif;color:#51625d;margin-top:12px}
-.rx-labcoat2016-eyebrow{font:600 11px/1.3 system-ui,sans-serif;letter-spacing:.13em;color:#9c644b}
+.rx-labcoat2016-photo{margin:0}.rx-labcoat2016-photo img{width:100%;height:auto;max-height:485px;object-fit:contain;display:block;background:#e6dac6;box-shadow:0 18px 42px rgba(24,41,67,.15)}
+.rx-labcoat2016-source{font:11px/1.55 system-ui,sans-serif;color:#375f99;margin-top:12px}
+.rx-labcoat2016-eyebrow{font:600 11px/1.3 system-ui,sans-serif;letter-spacing:.13em;color:#4372b9}
 .rx-labcoat2016-text h2{font:400 clamp(31px,4vw,50px)/1.12 Georgia,serif;margin:12px 0 20px}
 .rx-labcoat2016-text>p:not(.rx-labcoat2016-eyebrow){font:16px/1.83 system-ui,sans-serif}
-.rx-labcoat2016-link{display:inline-block;margin-top:13px;color:#9c644b;font-weight:600;text-underline-offset:4px}
+.rx-labcoat2016-link{display:inline-block;margin-top:13px;color:#4372b9;font-weight:600;text-underline-offset:4px}
 .rx-labcoat2016-essay{scroll-margin-top:100px}
 .rx-labcoat2016-essay img{object-fit:cover;object-position:center;width:100%;max-height:430px}
-.rx-labcoat2016-essay small{display:block;color:#6d7774;margin-top:9px}
+.rx-labcoat2016-essay small{display:block;color:#4676bc;margin-top:9px}
 html[lang="ar"] .rx-labcoat2016 .en,html[lang="ar"] .rx-labcoat2016-essay .en{display:none}
 html:not([lang="ar"]) .rx-labcoat2016 .ar,html:not([lang="ar"]) .rx-labcoat2016-essay .ar{display:none}
 @media(max-width:700px){.rx-labcoat2016-inner{grid-template-columns:1fr}.rx-labcoat2016-photo img{max-height:410px}.rx-labcoat2016{padding:34px 0 48px}.rx-labcoat2016-essay{grid-template-columns:1fr}}

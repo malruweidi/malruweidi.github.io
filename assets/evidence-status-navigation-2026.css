@@ -6,8 +6,8 @@
   gap: 10px 26px;
   padding: 18px 0 20px;
   margin-top: 12px;
-  border-block: 1px solid var(--line, #d5ded7);
-  color: var(--ink, #17343b);
+  border-block: 1px solid var(--line, #e6dac6);
+  color: var(--ink, #1c304f);
 }
 .rx-evidence-status-nav strong {
   font-size: 12px;
@@ -22,7 +22,7 @@
 }
 .rx-evidence-status-nav a:hover,
 .rx-evidence-status-nav a:focus-visible {
-  color: var(--copper, #995c45);
+  color: var(--copper, #3f6cae);
 }
 @media (max-width: 680px) {
   .rx-evidence-status-nav {

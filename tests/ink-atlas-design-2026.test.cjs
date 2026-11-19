@@ -15,7 +15,7 @@ test('the blue site loads one revised editorial composition layer, without stack
  assert.ok(blue.indexOf(active)>blue.indexOf('/assets/ruwaidix-blue-home-compat-2026.css'));
  assert.ok(blue.indexOf(active)<blue.indexOf(':root'));
  assert.doesNotMatch(blue,/ruwaidix-art-direction-2026\.css/);
- for(const token of ['--blue-950:#101e35','--blue-700:#345b8e','--blue-050:#f4f7fb'])
+ for(const token of ['--blue-950:#101e35','--blue-700:#345b8e','--blue-050:#f6f1e8'])
   assert.ok(blue.includes(token),'retained existing blue token: '+token);
 });
 

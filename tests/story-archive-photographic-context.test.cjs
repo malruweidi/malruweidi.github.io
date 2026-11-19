@@ -73,7 +73,7 @@ test('Reader-facing source links are styled within the existing palette and loca
  const archive=read('archive.html');
  assert.match(archive,/\/assets\/story-archive-photo-access-2026\.css/);
  const css=read('assets/story-archive-photo-access-2026.css');
- for(const text of ['rx-object-source-link','focus-visible','prefers-reduced-motion','#17343b'])assert.ok(css.includes(text),text);
+ for(const text of ['rx-object-source-link','focus-visible','prefers-reduced-motion','#1c304f'])assert.ok(css.includes(text),text);
  const ar=read('assets/archive-wayfinding-i18n-2026.js');
  for(const label of ['Open archived photograph ↗','See reverse label ↗','See front label ↗'])assert.ok(ar.includes('"'+label+'"'),label);
 });
