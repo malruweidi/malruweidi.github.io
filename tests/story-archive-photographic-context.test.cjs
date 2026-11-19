@@ -8,14 +8,13 @@ const root=path.join(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'
 const objects=[
  ['object-cairo-microscope','/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp'],
  ['object-molecular-model','/archive/molecular-model-aged-19.webp'],
- ['object-zebrafish-histology','/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp'],
  ['object-chemistry-festival','/archive/fifth-chemistry-festival-host.webp'],
  ['object-reagent-front','/assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp'],
  ['object-copolymer-sample','/assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp'],
  ['object-reagent-reverse','/assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-rear-2018.webp'],
  ['object-culture-hood','/assets/2026-10-15-lab-photos/cell-culture-safety-cabinet-archive.webp']
 ];
-test('Eight archive object photographs are directly inspectable, individually anchored and preserve context',()=>{
+test('Seven remaining public archive objects are inspectable, anchored and preserve context',()=>{
  const html=read('archive.html');
  for(const [id,asset] of objects){
   assert.equal((html.match(new RegExp('id="'+id+'"','g'))||[]).length,1,id);
@@ -47,8 +46,8 @@ test('Story photographs lead to the chapter actually depicted',()=>{
  assert.equal(routes.length,4,'original four groups preserved');
  assert.match(routes[0],/href="#personal-microscope"/);
  assert.match(routes[0],/microscopy-vacation-morning-2017\.webp/);
- assert.match(routes[1],/href="#zebrafish-histology-materials"/);
- assert.match(routes[1],/zebrafish-paraffin-microtomy-failure\.webp/);
+ assert.match(routes[1],/href="#unfortunate-trials"/);
+ assert.match(routes[1],/copolymer-sample-qatar-university-2017\.webp/);
  assert.match(routes[2],/href="#living-systems"/);
  assert.match(routes[2],/not an experimental micrograph/);
  assert.match(routes[3],/href="#community"/);
@@ -56,12 +55,11 @@ test('Story photographs lead to the chapter actually depicted',()=>{
   const id=(route.match(/href="#([^"]+)"/)||[])[1];
   assert.ok(html.includes('id="'+id+'"'),id+' deep link resolves');
  }
- for(const id of ['anatomy','unfortunate-trials','personal-microscope','zebrafish-histology-materials'])assert.ok(html.includes('href="#'+id+'"'),id);
+ for(const id of ['anatomy','unfortunate-trials','personal-microscope'])assert.ok(html.includes('href="#'+id+'"'),id);
 });
 test('Standalone stories reach exact original photograph rather than only generic archive landing',()=>{
  for(const [page,id] of [
   ['stories/cairo-microscope.html','object-cairo-microscope'],
-  ['stories/failed-zebrafish-histology.html','object-zebrafish-histology'],
   ['stories/unfortunate-copolymer-trials.html','object-copolymer-sample']
  ]){
    const html=read(page);
