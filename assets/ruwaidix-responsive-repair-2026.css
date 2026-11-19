@@ -1,0 +1,162 @@
+/* RUWAIDIX responsive integrity · 2026-11-19.
+   Fixes are deliberately limited to containment, legibility, controls and alignment.
+   Desktop composition, original content, photographs and source links remain intact. */
+
+/* In narrow grids, min-content width is often the source of accidental sideways scroll.
+   Respect text and original image proportions instead of applying overflow:hidden to body. */
+:where(.rx-moments-inner,.rx-moments-header,.rx-moments-panel,.rx-moments-copy,
+       .rx-moments-visual,.rx-moments-scenes,.rx-moments-scenes button,
+       .rx-observation-grid,.rx-observation-panel,.rx-observation-heading,
+       .rx-atelier-inner,.rx-atelier-head,.rx-atelier-panel,.rx-atelier-detail,
+       .rx-prism-inner,.rx-prism-heading,.rx-prism-panel,.rx-prism-summary,
+       .rx-letterpress-shell,.rx-letterpress-heading,.rx-letterpress-panel,
+       .rx-letterpress-copy,.rxw-shell,.rxw-hero-inner,.rxw-topic-links,
+       .stories-container,.stories-chapter-grid,.stories-chapter-text,
+       .rx-archive-object-grid,.rx-archive-object,.rx-archive-object-copy,
+       .rs-wrap,.rs-content,.rs-grid,.rs-card,.pub-wrap,.pub-nav,.fc-wrap,.fc-nav,
+       .rx26-portal-grid,.rx26-portal-card) { min-width:0; }
+
+:where(.rx-moments,.rx-observation,.rx-atelier,.rx-prism,.rx-letterpress) {
+ max-width:100%;
+ overflow-x:clip;
+}
+:where(.rx-moments,.rx-observation,.rx-atelier,.rx-prism,.rx-letterpress)
+ :is(img,video,svg) {max-width:100%;}
+:where(.rx-moments-copy,.rx-observation-copy,.rx-atelier-detail,.rx-prism-summary,
+       .rx-letterpress-copy,.rxw-shell,.stories-chapter-text,.rs-content,
+       .pub-card,.pub-item,.fc-card,.rx-archive-object-copy)
+ :is(p,a,h2,h3,small,figcaption,dd) {overflow-wrap:anywhere;word-break:normal;}
+:where(.rx-moments,.rx-observation,.rx-atelier,.rx-prism,.rx-letterpress)
+ :is(a,button,summary,[tabindex]):focus-visible {
+ outline:3px solid #7193bf;outline-offset:3px;
+}
+:where(.rx-moments,.rx-observation,.rx-atelier,.rx-prism,.rx-letterpress)
+ button {touch-action:manipulation;}
+:where(.rx-moments,.rx-observation,.rx-atelier,.rx-prism,.rx-letterpress)
+ :is(p,figcaption,h2,h3) {text-wrap:pretty;}
+:where(.rx-moments,.rx-observation,.rx-atelier,.rx-prism,.rx-letterpress)[id] {
+ scroll-margin-top:clamp(70px,9vw,120px);
+}
+html[lang="ar"] :where(.rx-moments,.rx-observation,.rx-atelier,.rx-prism,.rx-letterpress)
+ :is(p,h2,h3) {letter-spacing:normal;}
+
+/* Avoid hiding navigation at tablet widths: let the already-existing mobile
+   menu implementation handle that transition, with enough physical space. */
+@media(max-width:900px) {
+ html[data-rx-page="home"] .header .nav {max-width:calc(100% - 28px);}
+ html[data-rx-page="home"] .header .brand,
+ html[data-rx-page="home"] .header .brand > span:last-child {min-width:0;}
+ html[data-rx-page="home"] .header .brandname,
+ html[data-rx-page="home"] .header .brandline {
+   max-width:calc(100vw - 155px);white-space:normal;overflow-wrap:break-word;
+ }
+ html[data-rx-page="home"] .header .navlinks {max-width:100%;min-width:0;}
+ .rx-moments-inner,.rx-observation>.wrap,.rx-atelier-inner,.rx-prism-inner,
+ .rx-letterpress-shell {max-width:calc(100% - 36px);}
+ .rx-moments-panel,.rx-observation-grid,.rx-atelier-panel,
+ .rx-prism-panel,.rx-letterpress [data-rx-press-panel]{
+   grid-template-columns:minmax(0,1fr);
+ }
+ .rx-letterpress [data-rx-press-panel]{grid-column:1/-1;}
+ .rx-letterpress-art{min-height:285px;}
+ .rx-letterpress-rings i:first-child{width:min(72%,305px);}
+ .rx-prism .rx-prism-visual img{width:100%;height:auto;object-fit:contain;}
+ .rx-atelier .rx-atelier-image img {object-fit:contain;}
+ .rxw-topic-links nav,.rs-jump nav,.pub-nav,.fc-nav {
+   flex-wrap:wrap;min-width:0;max-width:100%;gap:10px 12px;
+ }
+ .rx26-portal-grid,.rx-chapter-grid,.rx-archive-object-grid{min-width:0;}
+}
+@media(max-width:600px) {
+ :where(.rx-moments-inner,.rx-observation>.wrap,.rx-atelier-inner,.rx-prism-inner,
+        .rx-letterpress-shell) {width:calc(100% - 30px);max-width:none;margin-inline:auto;}
+ html[data-rx-page="home"] .header .nav {width:calc(100% - 30px);}
+ html[data-rx-page="home"] .header .brand {max-width:calc(100% - 76px);gap:8px;}
+ html[data-rx-page="home"] .header .brandname {font-size:clamp(13px,3.8vw,17px);line-height:1.2;}
+ html[data-rx-page="home"] .header .brandline {font-size:9px;line-height:1.3;}
+ html[data-rx-page="home"] .header .menu {min-height:44px;min-width:44px;}
+ .rx-moments-header,.rx-observation-heading,.rx-atelier-head,
+ .rx-prism-heading,.rx-letterpress-heading {grid-template-columns:minmax(0,1fr);}
+ .rx-moments-header h2,.rx-observation-heading h2,.rx-atelier-head h2,
+ .rx-prism-heading h2,.rx-letterpress-heading h2 {max-width:100%;text-wrap:balance;}
+ .rx-moments-header h2{font-size:clamp(42px,10vw,57px);line-height:1.05;}
+ .rx-moments-visual{min-height:255px;height:auto;aspect-ratio:1.26;}
+ .rx-moments-panel[data-moment="01"] .rx-moments-art img{
+    width:min(95%,390px);object-fit:contain;
+ }
+ .rx-moments-art{padding:clamp(10px,3vw,20px);}
+ .rx-moments-copy{padding:clamp(20px,6vw,30px);}
+ .rx-moments-copy h3{font-size:clamp(34px,8.8vw,49px);}
+ .rx-moments-scenes{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;}
+ .rx-moments-scenes button{white-space:normal;min-height:44px;gap:6px;}
+ .rx-moments-nav{padding:14px;}
+ .rx-moments-transport{justify-content:space-between;flex-wrap:wrap;gap:7px;}
+ .rx-moments-transport button{min-height:44px;}
+ .rx-observation-stage{height:245px;min-height:0;}
+ .rx-observation-toolbar{gap:8px;}
+ .rx-observation-toolbar output{margin-left:0;width:100%;}
+ .rx-atelier .rx-atelier-tabs{gap:4px;}
+ .rx-atelier .rx-atelier-tab{min-height:48px;white-space:normal;}
+ .rx-atelier-image{min-height:240px;}
+ .rx-atelier-detail{padding:23px;}
+ .rx-prism-tabs{grid-template-columns:repeat(2,minmax(0,1fr));}
+ .rx-prism .rx-prism-tab{min-height:68px;white-space:normal;}
+ .rx-prism-summary{padding:23px;}
+ .rx-letterpress-stage,.rx-letterpress [data-rx-press-panel]{
+   grid-template-columns:minmax(0,1fr);
+ }
+ .rx-letterpress-art{min-height:245px;}
+ .rx-letterpress-word{font-size:clamp(94px,25vw,150px);}
+ .rx-letterpress[data-enhanced="true"] .rx-letterpress-tabs{
+   grid-template-columns:repeat(2,minmax(0,1fr));
+ }
+ .rx-letterpress-tab{min-height:55px;overflow-wrap:anywhere;}
+ .rx-letterpress-copy{padding:23px;}
+ .rxw-topic-links nav,.rs-jump nav,.pub-nav,.fc-nav{
+   gap:7px;min-width:0;
+ }
+ .rxw-topic-links a,.rs-jump a,.pub-nav a,.fc-nav a{min-height:40px;}
+ .rs-wrap,.pub-wrap,.fc-wrap {width:calc(100% - 32px);margin-inline:auto;}
+ .rs-header-row,.pub-header-inner {gap:10px;}
+ .rs-nav,.pub-nav,.fc-nav{flex-wrap:wrap;gap:8px;}
+ .rs-hero h1,.pub-hero h1{overflow-wrap:normal;hyphens:auto;}
+ .stories-container,.rx26-school-inner{max-width:calc(100% - 32px);margin-inline:auto;}
+ .stories-chapter-grid{grid-template-columns:minmax(0,1fr);}
+ .rx-archive-object-grid{grid-template-columns:minmax(0,1fr);}
+ .rx-moments-glyph{font-size:clamp(88px,24vw,145px);}
+ /* Prevent language selection from covering the final text on iOS. */
+ .site-lang-switch {
+   bottom:calc(11px + env(safe-area-inset-bottom,0px));
+   inset-inline-end:calc(11px + env(safe-area-inset-right,0px));
+   max-width:calc(100vw - 22px);
+ }
+ .site-lang-switch button {min-height:44px;line-height:1.4;padding:8px 12px;}
+ :where(.rxw-footer,.fc-footer,.rs-footer,.pub-footer,footer):last-child{
+   padding-bottom:max(78px,calc(35px + env(safe-area-inset-bottom,0px)));
+ }
+ .rx-atelier :where(.rx-atelier-tab,.rx-atelier-link),
+ .rx-letterpress :where(.rx-letterpress-tab,.rx-letterpress-copy a){
+   -webkit-tap-highlight-color:#d7e3f170;
+ }
+}
+@media(max-width:360px) {
+ html[data-rx-page="home"] .header .brandname{font-size:13px;}
+ html[data-rx-page="home"] .header .brandline{font-size:8px;}
+ .rx-moments-visual{aspect-ratio:1.15;}
+ .rx-moments-super{font-size:8px;}
+ .rx-moments-copy h3{font-size:33px;}
+ .rx-moments-scenes button {font-size:11px;}
+ .rx-atelier-head h2,.rx-prism-heading h2,.rx-letterpress-heading h2{font-size:clamp(37px,11vw,44px);}
+ .rx-prism .rx-prism-tab {font-size:11px;padding:9px;}
+ .rx-letterpress-tab{font-size:11px;padding:9px;}
+ .rx-letterpress-art{min-height:222px;}
+ .rx-letterpress-word{font-size:92px;}
+}
+@media(prefers-reduced-motion:reduce) {
+ html{scroll-behavior:auto;}
+ :where(.rx-moments,.rx-observation,.rx-atelier,.rx-prism,.rx-letterpress) *,
+ :where(.rx-moments,.rx-observation,.rx-atelier,.rx-prism,.rx-letterpress) *::before,
+ :where(.rx-moments,.rx-observation,.rx-atelier,.rx-prism,.rx-letterpress) *::after{
+   animation-duration:.01ms!important;transition-duration:.01ms!important;
+ }
+}
