@@ -86,11 +86,11 @@ test("retired histology story and film are not promoted by main landing pages",(
 test("original card contents and image descriptions have equivalent Arabic entries",()=>{
   const at=home.indexOf('id="more-scientific-scenes"');
   const block=home.slice(at,home.indexOf("</details>",at));
-  const normalize=t=>t.replace(/&amp;/g,"&").replace(/&nbsp;/g," ").replace(/&#39;/g,"'").replace(/\\s+/g," ").trim();
-  const mapped=new Set([...translations.matchAll(/^\\s*"((?:\\\\.|[^"\\\\])*)"\\s*:/gm)]
+  const normalize=t=>t.replace(/&amp;/g,"&").replace(/&nbsp;/g," ").replace(/&#39;/g,"'").replace(/\s+/g," ").trim();
+  const mapped=new Set([...translations.matchAll(/^\s*"((?:\\.|[^"\\])*)"\s*:/gm)]
     .map(m=>normalize(JSON.parse('"'+m[1]+'"'))));
   const visible=[...block.matchAll(/>([^<>]+)</g)].map(m=>normalize(m[1]));
-  const accessible=[...block.matchAll(/\\b(?:alt|aria-label|title)="([^"]+)"/g)].map(m=>normalize(m[1]));
+  const accessible=[...block.matchAll(/\b(?:alt|aria-label|title)="([^"]+)"/g)].map(m=>normalize(m[1]));
   const english=[...new Set([...visible,...accessible].filter(x=>/[A-Za-z]{3,}/.test(x)&&x.length>4))];
   const missing=english.filter(x=>!mapped.has(x));
   assert.deepEqual(missing,[],"untranslated optional-gallery copy: "+missing.join(" / "));
