@@ -340,14 +340,6 @@
       "keywords": "instrumentation microscope devices scientific measurement الأجهزة العلمية"
     },
     {
-      "id": 41,
-      "title": "A histology embedding failure",
-      "category": "Stories",
-      "url": "/stories.html#chapter-zebrafish-histology-materials",
-      "summary": "A zebrafish histopathology attempt defeated by incompatibility between agarose pre-embedding and paraffin sectioning.",
-      "keywords": "zebrafish histology agarose paraffin embedding microtome sectioning materials الأنسجة أجاروز برافين سمك الزرد"
-    },
-    {
       "id": 42,
       "title": "At Zewail City",
       "category": "Stories",
@@ -370,14 +362,6 @@
       "url": "/stories/cairo-microscope.html",
       "summary": "A firsthand account of buying a microscope near Qasr El Einy in Cairo, bringing it to Qatar, and observing independently.",
       "keywords": "microscope Cairo Qasr El Einy 2017 مجهر القاهرة القصر العيني ملاحظات"
-    },
-    {
-      "id": 45,
-      "title": "Two materials. No section. · Complete story",
-      "category": "Stories",
-      "url": "/stories/failed-zebrafish-histology.html",
-      "summary": "The failed zebrafish histology attempt: 2% agarose pre-embedding, paraffin sectioning and its material interface.",
-      "keywords": "zebrafish histology agarose paraffin microtome failure نسيج أجاروز برافين سمك الزرد"
     },
     {
       "id": 46,
@@ -498,14 +482,6 @@
       "url": "/films.html",
       "summary": "Three released scientific and personal documentaries with original archival footage, accessible captions, and other films still in development, all linked to scientific or firsthand source records.",
       "keywords": "scientific films documentary released originals footage filmmaking scientific film collection وثائقي أفلام علمية أصلية تجارب مختبر histology documentary released short film"
-    },
-    {
-      "id": 61,
-      "title": "Two Materials. No Section. · released film and archive",
-      "category": "Stories",
-      "url": "/films/two-materials-no-section.html",
-      "summary": "A completed 150-second research film examining an unsuccessful agarose–paraffin zebrafish histology attempt, with original photographs, full narration, director's storyboard and the unanswered materials question.",
-      "keywords": "histology failed experiment agarose paraffin zebrafish microtome film notebook storyboard معالجة نسيجية فاشلة الزرد أغاروز بارافين فيلم published completed documentary 150 seconds 2:30 narration الفيلم المنشور"
     },
     {
       "id": 62,
