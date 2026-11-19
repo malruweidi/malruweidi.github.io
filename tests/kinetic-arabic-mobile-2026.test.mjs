@@ -17,8 +17,12 @@ test("bilingual editorial exhibit adds routes but preserves writing content",()=
  assert.match(writing,/class="rxw-hero"/);
  assert.match(writing,/id="main"/);
  assert.equal((writing.match(/data-rx-press-panel/g)||[]).length,4);
- assert.equal((writing.match(/class="rx-press-ar"/g)||[]).length,15);
- assert.match(writing,/data-i18n-ignore/);
+ const press=writing.slice(writing.indexOf('id="rx-letterpress"'),writing.indexOf('</section>',writing.indexOf('id="rx-letterpress"')));
+ const en=(press.match(/class="rx-press-en"/g)||[]).length;
+ const ar=(press.match(/class="rx-press-ar"/g)||[]).length;
+ assert.equal(en,ar,'every label and pull-quote has a language counterpart');
+ assert.ok(en>=36);
+ assert.doesNotMatch(press,/data-i18n-ignore/,'shared translation of accessibility text remains enabled');
 });
 test("Arabic letterforms use distinct editorial and interface fonts with real fallbacks",()=>{
  assert.match(arabic,/IBM Plex Sans Arabic/);
