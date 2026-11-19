@@ -1,0 +1,70 @@
+/* Ruwaidix Arabic type standard · 19 November 2026.
+   Primary face: Amiri (the photographed moving-essay heading).
+   Interface: IBM Plex Sans Arabic; occasional display accent: Aref Ruqaa.
+   English layout, source text and language-switch behavior are unchanged. */
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Aref+Ruqaa:wght@400;700&display=swap");
+
+:root{
+ --rx-ar-literary:"Amiri","Noto Naskh Arabic",serif;
+ --rx-ar-interface:"IBM Plex Sans Arabic","Noto Sans Arabic",Tahoma,Arial,sans-serif;
+ --rx-ar-calligraphy:"Aref Ruqaa","Amiri",serif;
+}
+html[lang="ar"] body,
+html[dir="rtl"] body{
+ font-family:var(--rx-ar-literary)!important;
+ letter-spacing:normal;
+ font-feature-settings:"kern" 1;
+}
+html[lang="ar"] :is(h1,h2,h3,h4,h5,h6),
+html[dir="rtl"] :is(h1,h2,h3,h4,h5,h6){
+ font-family:var(--rx-ar-literary)!important;
+ font-style:normal;
+ letter-spacing:normal!important;
+ text-transform:none;
+ text-wrap:balance;
+ overflow-wrap:break-word;
+}
+html[lang="ar"] :is(h1,h2){line-height:1.32!important}
+html[lang="ar"] :is(h3,h4,h5,h6){line-height:1.42}
+html[lang="ar"] :is(main,article,section) :is(p,li,blockquote,figcaption,dt,dd),
+html[dir="rtl"] :is(main,article,section) :is(p,li,blockquote,figcaption,dt,dd){
+ font-family:var(--rx-ar-literary)!important;
+ letter-spacing:normal!important;
+ line-height:1.85;
+}
+html[lang="ar"] :is(main,article,section) :is(.story-prose,.rx-moments-copy,.rx-atelier-detail,.rx-prism-summary,.rx-letterpress-copy,.rx-hero-lead) :is(p,blockquote){
+ font-family:var(--rx-ar-literary)!important;
+ line-height:1.9;
+}
+html[lang="ar"] :is(.rx-room-heading,.rx-hero-title,.rx-reading-title,.rx-reading-name,.drawer-heading strong),
+html[dir="rtl"] :is(.rx-room-heading,.rx-hero-title,.rx-reading-title,.rx-reading-name,.drawer-heading strong){
+ font-family:var(--rx-ar-literary)!important;
+ letter-spacing:normal!important;
+}
+/* UI requires a denser, highly legible typeface and reliable 44px targets. */
+html[lang="ar"] :is(button,input,textarea,select,label,nav,summary,[role="tab"],[role="button"],[role="menuitem"],.badge,.tag,.mono,.eyebrow,.kicker,.frame-count,time,small),
+html[dir="rtl"] :is(button,input,textarea,select,label,nav,summary,[role="tab"],[role="button"],[role="menuitem"],.badge,.tag,.mono,.eyebrow,.kicker,.frame-count,time,small){
+ font-family:var(--rx-ar-interface)!important;
+ letter-spacing:normal!important;
+ text-transform:none;
+}
+html[lang="ar"] :is(nav,[role="tablist"],.rx-universal) :is(a,span,small,strong,li){
+ font-family:var(--rx-ar-interface)!important;
+ letter-spacing:normal!important;
+}
+html[lang="ar"] :is(code,pre,kbd,samp,.doi,.orcid,[lang="en"],[dir="ltr"]){
+ direction:ltr;unicode-bidi:isolate;
+}
+html[lang="ar"] :is(.rx-moments-glyph,.rx-letterpress-word){
+ font-family:var(--rx-ar-calligraphy);
+ letter-spacing:normal;
+}
+html[lang="en"] :is(h1,h2,h3,h4,h5,h6,p,blockquote,figcaption,span)[lang="ar"]:not(.rx-moments-glyph):not(.rx-letterpress-word){
+ font-family:var(--rx-ar-literary);
+ letter-spacing:normal;
+}
+@media(max-width:700px){
+ html[lang="ar"] :is(h1,h2,h3,h4,h5,h6){max-inline-size:100%;min-inline-size:0}
+ html[lang="ar"] :is(main,article,section) :is(p,li,blockquote){overflow-wrap:break-word}
+ html[lang="ar"] :is(.rx-moments-copy,.rx-atelier-detail,.rx-letterpress-copy){min-inline-size:0}
+}
