@@ -1505,4 +1505,6 @@ Object.assign(window.RuwaidixArabicDictionary, {
 });
 
 /* Initial image-zoom status, matching the live bilingual readout. */
-Object.assign(window.RuwaidixArabicDictionary, {"2.0× illustration zoom":"2.0× تكبير توضيحي"});
+Object.assign(window.RuwaidixArabicDictionary, {
+  "2.0× illustration zoom": "2.0× تكبير توضيحي"
+});
