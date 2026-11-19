@@ -17,6 +17,8 @@ test("bilingual editorial exhibit adds routes but preserves writing content",()=
  assert.match(writing,/class="rxw-hero"/);
  assert.match(writing,/id="main"/);
  assert.equal((writing.match(/data-rx-press-panel/g)||[]).length,4);
+ assert.equal((writing.match(/class="rx-press-ar"/g)||[]).length,15);
+ assert.match(writing,/data-i18n-ignore/);
 });
 test("Arabic letterforms use distinct editorial and interface fonts with real fallbacks",()=>{
  assert.match(arabic,/IBM Plex Sans Arabic/);
