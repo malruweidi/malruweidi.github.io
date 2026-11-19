@@ -1545,3 +1545,29 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Zebrafish larval cardiovascular anatomy recorded during original microscopy work": "تشريح الجهاز القلبي الوعائي ليرقات سمك الزرد كما سُجّل أثناء العمل المجهري الأصلي",
   "Pulmonary epithelial research evidence figure from the existing research archive": "شكل علمي توثيقي لبحوث ظهارة الرئة من الأرشيف البحثي القائم"
 });
+
+/* The six-photo archive drawer, paired labels and archival descriptions. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "Personal archive · six photographs": "الأرشيف الشخصي · ست صور",
+  "The family album": "ألبوم العائلة",
+  "Open the album and look closer": "افتح الألبوم وتأمّل التفاصيل",
+  "Dressed for the photograph": "متأنّقًا أمام الكاميرا",
+  "On the bookshelf": "أمام رفّ الكتب",
+  "A bear with a letter": "دبّ صغير ورسالة",
+  "Years later, still playing": "وبعد سنوات، ما زالت روح المرح",
+  "At the calculator": "أمام الآلة الحاسبة",
+  "At the laboratory bench": "عند طاولة المختبر",
+  "Look at the suspenders": "انظر إلى الحمّالات",
+  "Read the book spines": "اقرأ عناوين الكتب",
+  "Look at the toy": "تأمّل اللعبة",
+  "Look at the glasses": "تأمّل النظّارة",
+  "Look closer": "انظر عن قرب",
+  "Previous photograph": "الصورة السابقة",
+  "Next photograph": "الصورة التالية",
+  "Mahmoud smiling in a checked shirt and suspenders": "محمود مبتسمًا مرتديًا قميصًا مربّع النقوش وحمّالات",
+  "Mahmoud in a white thobe beside a shelf of books": "محمود مرتديًا الثوب الأبيض أمام رفّ من الكتب",
+  "Mahmoud laughing and holding a toy bear in a yellow jacket": "محمود ضاحكًا وهو يحمل لعبة على هيئة دبّ ويرتدي معطفًا أصفر",
+  "Mahmoud in sunglasses raising two fingers": "محمود يرتدي نظّارة شمسية ويرفع إصبعين",
+  "Mahmoud leaning over a calculator as a child": "محمود في طفولته منكبًّا على آلة حاسبة",
+  "Mahmoud in a lab coat writing at the bench": "محمود يرتدي معطف المختبر ويكتب عند طاولة العمل"
+});
