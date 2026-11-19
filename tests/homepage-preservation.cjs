@@ -6,6 +6,8 @@ function assertHomepagePreserved(original, current) {
     .replaceAll('<span class="rx26-card-arrow" aria-hidden="true">↗</span>', "");
   let before = body(original);
   let after = body(current)
+    .replace(/<details class="family-drawer" id="family-album">[\s\S]*?<\/details>/, "")
+    .replace('<a href="/leadership.html#acs-recognition">Watch the ACS recognition clip ↗</a>', "")
     .replace(/<a class="specimen-swim"[^>]*>[\s\S]*?<\/a>/, "")
     .replace(/<summary class="album-summary"><span class="album-title">([^<]+)<\/span>[\s\S]*?<\/summary>/, "<summary>$1</summary>");
   for (const block of [

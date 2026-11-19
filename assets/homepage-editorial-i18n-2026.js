@@ -4,6 +4,28 @@
   "use strict";
   var d = window.RuwaidixArabicDictionary || (window.RuwaidixArabicDictionary = {});
   Object.assign(d, {
+"Family photographs": "صور عائلية",
+  "Before the lab coat": "قبل معطف المختبر",
+  "Open the photo drawer": "افتح درج الصور",
+  "A bear with a letter": "دبّ يحمل رسالة",
+  "On the bookshelf": "على رف الكتب",
+  "Dressed for the photograph": "بملابس التصوير",
+  "Years later, still playing": "بعد سنوات، ما زلت أحبّ المزاح",
+  "Look at the toy": "تأمّل اللعبة",
+  "Read the book spines": "اقرأ عناوين الكتب",
+  "Look at the suspenders": "تأمّل حمّالات السروال",
+  "Look at the glasses": "تأمّل النظارة",
+  "Look closer": "كبّر الصورة",
+  "Previous photograph": "الصورة السابقة",
+  "Next photograph": "الصورة التالية",
+  "Watch the ACS recognition clip ↗": "شاهد مقطع التكريم من الجمعية الكيميائية الأمريكية ↗",
+  "Mahmoud laughing and holding a toy bear in a yellow jacket": "محمود يضحك مرتديًا سترة صفراء ويحمل دمية دب",
+  "Mahmoud in a white thobe beside a shelf of books": "محمود بثوب أبيض أمام رفّ الكتب",
+  "Mahmoud smiling in a checked shirt and suspenders": "محمود مبتسمًا بقميص مربعات وحمّالات سروال",
+  "Mahmoud in sunglasses raising two fingers": "محمود بنظارة شمسية يرفع إصبعين",
+  "Mahmoud leaning over a calculator as a child": "محمود طفلًا ينحني فوق آلة حاسبة",
+  "Mahmoud in a lab coat writing at the bench": "محمود يكتب عند منضدة المختبر مرتديًا معطفه",
+
     "Watch the film": "شاهد الفيلم",
     "Featured film / 00:55": "فيلم مختار / ٠٠:٥٥",
     "From molecules to": "من الجزيئات إلى",

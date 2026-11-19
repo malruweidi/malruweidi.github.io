@@ -1,5 +1,10 @@
 /* Bilingual editorial translation for the independent leadership collection. */
 (function(){"use strict";const d=window.RuwaidixArabicDictionary||(window.RuwaidixArabicDictionary={});Object.assign(d,{
+"ACS recognition at Qatar University": "تكريم الجمعية الكيميائية الأمريكية في جامعة قطر",
+  "Qatar University · Personal archive": "جامعة قطر · الأرشيف الشخصي",
+  "A five-second recording from the audience as I walk to the front of the lecture hall.": "تسجيل من بين الحضور مدته خمس ثوانٍ وأنا أتقدّم إلى مقدّمة قاعة المحاضرات.",
+  "Open the original footage": "افتح المقطع المصوّر",
+
   "Skip to content": "تجاوز إلى المحتوى",
   "Research · Practice · Community": "البحث العلمي · الممارسة · المجتمع",
   "Home": "الرئيسية",
