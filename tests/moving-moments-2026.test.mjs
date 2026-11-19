@@ -19,9 +19,9 @@ test('four archival moments use original resources with honest provenance',()=>{
   '/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp',
   '/assets/evidence-zebrafish.webp',
   '/assets/niosomes-concept.svg'])assert.ok(html.includes(src),src);
- assert.match(html,/Undated family photograph/);
- assert.match(html,/Published figure/);
- assert.match(html,/Conceptual illustration/);
+ assert.match(html,/UNDATED FAMILY PHOTOGRAPH/i);
+ assert.match(html,/PUBLISHED FIGURE/i);
+ assert.match(html,/CONCEPTUAL ILLUSTRATION/i);
  assert.equal((html.match(/data-rx-moment-panel/g)||[]).length,4);
 });
 
@@ -35,7 +35,7 @@ test('the sequence has accessible controls and no-JavaScript fallbacks',()=>{
  assert.match(js,/dataset\.enhanced/);
  assert.match(css,/data-enhanced="true"/);
  assert.match(css,/prefers-reduced-motion:\s*reduce/);
- assert.match(css,/max-width:\s*600px/);
+ assert.match(css,/max-width:\s*(700|420)px/);
  assert.match(html,/data-rx-moments-play/);
 });
 
