@@ -2,6 +2,9 @@
    Inspired by human-centered montage, never a copy of external footage. */
 html[data-rx-page="home"] .rx-moments{
   --mm-ink:#192d4b;--mm-ink2:#263f66;--mm-mid:#456fa6;--mm-mist:#cdd8e7;--mm-paper:#f6f1e8;--mm-white:#fffbf3;
+  --rx-moments-heading-ink:#192d4b;
+  --rx-moments-heading-paper:#f6f1e8;
+  --rx-moments-heading-accent:#345d91;
   position:relative;overflow:hidden;background:var(--mm-ink);color:var(--mm-paper);
   padding:clamp(64px,8vw,124px) 0;isolation:isolate;
   border-block:1px solid #526f98;
@@ -17,6 +20,57 @@ html[data-rx-page="home"] .rx-moments::before{
 .rx-moments-header h2{font:400 clamp(47px,5.6vw,83px)/.99 "Newsreader",Georgia,serif;letter-spacing:-.045em;color:#fff9ef;margin:16px 0 0;max-width:14ch}
 .rx-moments-header h2 em{color:#b6cce7;font-style:italic}
 .rx-moments-header p{color:#e0e8f1;font:14px/1.9 "DM Sans",Arial,sans-serif;max-width:49ch;margin:0 0 3px}
+/* The screenshot revealed a pale hero behind white lettering.
+   The introduction now owns its own paper and ink, independently of ancestor color layers.
+   Scoped high specificity prevents legacy homepage color effects leaking into this feature. */
+html[data-rx-page="home"] body .rx-moments-header{
+ background:var(--rx-moments-heading-paper)!important;
+ background-image:linear-gradient(115deg,#f9f6ee 4%,#e9eff7 100%)!important;
+ color:var(--rx-moments-heading-ink)!important;
+ border:1px solid #b5c7df;
+ padding:clamp(24px,3.2vw,47px);
+ margin-bottom:clamp(22px,3vw,38px);
+ grid-template-columns:minmax(0,1.1fr) minmax(250px,.9fr);
+ gap:clamp(20px,4vw,54px);
+ align-items:center;
+ min-height:0;
+ isolation:isolate;
+}
+html[data-rx-page="home"] body .rx-moments-header :is(h2,h2 em,p,.rx-moments-eyebrow){
+ text-shadow:none!important;mix-blend-mode:normal!important;
+}
+html[data-rx-page="home"] body .rx-moments-header h2{
+ color:var(--rx-moments-heading-ink)!important;
+ font-size:clamp(43px,4.5vw,69px);
+ line-height:1.075;
+ letter-spacing:-.037em;
+ max-width:19ch;
+ text-wrap:balance;
+}
+html[data-rx-page="home"] body .rx-moments-header h2 em{
+ color:var(--rx-moments-heading-accent)!important;
+}
+html[data-rx-page="home"] body .rx-moments-header p{
+ color:#304965!important;
+ font-size:clamp(14px,1.05vw,16px);
+ line-height:1.77;
+ max-width:49ch;
+ margin:0;
+}
+html[data-rx-page="home"] body .rx-moments-header .rx-moments-eyebrow{
+ color:#41689b!important;
+ font-size:10px;
+}
+@media(max-width:880px){
+ html[data-rx-page="home"] body .rx-moments-header{grid-template-columns:minmax(0,1fr);gap:12px;padding:clamp(21px,4vw,35px)}
+ html[data-rx-page="home"] body .rx-moments-header h2{max-width:100%;font-size:clamp(41px,6vw,62px)}
+ html[data-rx-page="home"] body .rx-moments-header p{max-width:65ch}
+}
+@media(max-width:480px){
+ html[data-rx-page="home"] body .rx-moments-header{padding:22px 19px;gap:15px}
+ html[data-rx-page="home"] body .rx-moments-header h2{font-size:clamp(38px,10vw,51px);line-height:1.12}
+ html[data-rx-page="home"] body .rx-moments-header p{font-size:14px;line-height:1.76}
+}
 .rx-moments-reel{position:relative;border:1px solid #7996bb;box-shadow:0 26px 80px #07132253}
 .rx-moments-reel::before{content:"";position:absolute;z-index:4;pointer-events:none;inset:-13px 15px auto 15px;border-top:1px solid #8daacd70}
 .rx-moments-panel{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr);min-height:clamp(405px,40vw,535px);background:var(--mm-paper);color:var(--mm-ink)}
