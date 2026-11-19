@@ -1503,3 +1503,6 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Increase image magnification": "زيادة تكبير الصورة",
   "Illustrative niosomal carrier and aerosol transport diagram, not measured formulation data": "رسم توضيحي لناقل حويصلي غير أيوني وانتقال الهباء، وليس بيانات تجريبية مقاسة عن الصيغة الدوائية"
 });
+
+/* Initial image-zoom status, matching the live bilingual readout. */
+Object.assign(window.RuwaidixArabicDictionary, {"2.0× illustration zoom":"2.0× تكبير توضيحي"});
