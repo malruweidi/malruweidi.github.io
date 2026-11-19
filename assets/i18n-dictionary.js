@@ -1516,3 +1516,32 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Explore the photographic notes": "استكشف الملاحظات المصوّرة",
   "Four archival photographs connect an early anatomy lesson to chemistry, quantitative zebrafish imaging and pulmonary epithelial research. Each card leads to the fuller account.": "تربط أربع صور أرشيفية بين درس مبكّر في التشريح، والكيمياء، والتصوير الكمي لسمك الزرد، والبحث في ظهارة الرئة. تقود كل بطاقة إلى الرواية العلمية أو الشخصية الأوسع."
 });
+
+/* Optional photographic gallery: complete visible copy and image descriptions. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "Scientific and personal record": "السجل العلمي والشخصي",
+  "A few scenes from the work.": "مشاهد من مسيرة العمل.",
+  "01 / The beginning": "٠١ / البداية",
+  "An anatomy lesson that stayed with me": "درس في التشريح ظلّ حاضرًا في ذاكرتي",
+  "A classroom specimen and the habit of looking closely, long before a research title.": "عيّنة في حصة دراسية، وعادة التأمّل الدقيق، قبل أن تصبح لديّ صفة بحثية.",
+  "Enter the story ↗": "اقرأ الحكاية ↗",
+  "02 / Chemistry": "٠٢ / الكيمياء",
+  "Learning what an experiment can tell us": "تعلُّم ما تستطيع التجربة أن تقوله",
+  "The laboratory, glassware and the slow work of finding out whether an idea survives a test.": "المختبر والزجاجيات والعمل المتأنّي لمعرفة ما إذا كانت الفكرة تصمد أمام الاختبار.",
+  "See the research ↗": "اطّلع على البحث ↗",
+  "03 / Living systems": "٠٣ / الأنظمة الحيّة",
+  "From materials to living organisms": "من المواد إلى الكائنات الحيّة",
+  "Zebrafish imaging brought biological development into focus and made observation a quantitative problem.": "جعل تصوير سمك الزرد التطوّر الحيوي موضع رؤية أدق، وحوّل الملاحظة إلى مسألة قياس كمي.",
+  "Watch the experiments ↗": "شاهد التجارب ↗",
+  "04 / Therapeutic transport": "٠٤ / النقل العلاجي",
+  "The difficult journey to the lung": "الرحلة الشاقّة إلى الرئة",
+  "Mechanical injury, aerosol delivery and the question of how formulation changes biological response.": "الإصابة الميكانيكية والتوصيل بالهباء، والسؤال عن أثر الصياغة الدوائية في الاستجابة الحيوية.",
+  "Investigate the science ↗": "استكشف الأساس العلمي ↗",
+  "Illness also changed how I understand uncertainty in medicine. It did not create the curiosity, but it changed the questions I brought to it.": "غيّر المرض أيضًا فهمي لعدم اليقين في الطب. لم يكن أصل فضولي، لكنه غيّر الأسئلة التي حملتها إلى عملي.",
+  "Read the patient perspective ↗": "اقرأ منظور المريض ↗",
+  "Or browse essays and ideas ↗": "أو تصفّح المقالات والأفكار ↗",
+  "School anatomy class examining a fox specimen, from Mahmoud's own archive": "حصة تشريح مدرسية لفحص عيّنة ثعلب، من الأرشيف الشخصي الأصلي",
+  "Original photograph of a rotary evaporator and laboratory glassware at Qatar University": "صورة أصلية لمبخّر دوّار وزجاجيات مخبرية في جامعة قطر",
+  "Zebrafish larval cardiovascular anatomy recorded during original microscopy work": "تشريح الجهاز القلبي الوعائي ليرقات سمك الزرد كما سُجّل أثناء العمل المجهري الأصلي",
+  "Pulmonary epithelial research evidence figure from the existing research archive": "شكل علمي توثيقي لبحوث ظهارة الرئة من الأرشيف البحثي القائم"
+});
