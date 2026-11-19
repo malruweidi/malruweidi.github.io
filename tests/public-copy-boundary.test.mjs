@@ -18,7 +18,6 @@ test('reader-facing archive captions never show verification placeholders', () =
 
 test('embedded documentaries link to real film pages without promising absent materials', () => {
   for (const [file, destination] of [
-    ['stories/failed-zebrafish-histology.html', '/films/two-materials-no-section.html'],
     ['chem-squad.html', '/films/the-laboratory-we-carried-with-us.html'],
     ['engagement.html', '/films/the-laboratory-we-carried-with-us.html'],
   ]) {
@@ -27,6 +26,14 @@ test('embedded documentaries link to real film pages without promising absent ma
     assert.doesNotMatch(html, /Film transcript, all eight original source plates and provenance|complete narration is available in the linked film transcript|Evidence Cut<\/small>/i, file);
     assert.match(html, /Watch the documentary ↗/);
   }
+});
+
+test('withdrawn histology pages are not promoted by the live documentary collection',()=>{
+ const hub=read('films.html'),stories=read('stories.html');
+ for(const html of [hub,stories]){
+  assert.doesNotMatch(html,/href="\/films\/two-materials-no-section\.html"/);
+  assert.doesNotMatch(html,/href="\/stories\/failed-zebrafish-histology\.html"/);
+ }
 });
 
 test('Ramadan story keeps a complete equivalent chapter on the standalone route', () => {
