@@ -9,8 +9,8 @@ function assertHomepagePreserved(original, current) {
   // body snapshot. Only these complete, anchored sections may be excluded;
   // all historical film, archive, links and chapters must still match byte-for-byte.
   let after = body(current)
-    .replace(/<section class="rx-observation" id="research-workbench"[\\s\\S]*?<\\/section>/, "")
-    .replace(/<section class="rx-moments" id="rx-moving-moments"[\\s\\S]*?<\\/section>/, "")
+    .replace(/<section class="rx-observation" id="research-workbench"[\s\S]*?<\/section>/, "")
+    .replace(/<section class="rx-moments" id="rx-moving-moments"[\s\S]*?<\/section>/, "")
     .replace(/<details class="family-drawer" id="family-album">[\s\S]*?<\/details>/, "")
     .replace('<a href="/leadership.html#acs-recognition">Watch the ACS recognition clip ↗</a>', "")
     .replace(/<a class="specimen-swim"[^>]*>[\s\S]*?<\/a>/, "")
