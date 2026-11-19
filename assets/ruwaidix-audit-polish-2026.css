@@ -2,6 +2,18 @@
    A compact optional gallery replaces an immediately repetitive homepage wall.
    Preserve every existing image, source link, and research note. */
 
+/* After the original six-minute film, remove redundant vertical ceremony.
+   Keep every interaction but bring the next chapter within normal scrolling distance. */
+html[data-rx-page="home"] .rx-moments{
+ padding-block:clamp(40px,5vw,78px);
+}
+html[data-rx-page="home"] body .rx-moments-header{
+ margin-bottom:clamp(18px,2.5vw,32px)!important;
+}
+html[data-rx-page="home"] #rx26-portal .rx26-portal-grid.rx-cover-catalogue{
+ min-width:0;
+}
+
 /* Native disclosure: no JS dependency, reduced-height overview by default. */
 html[data-rx-page="home"] .rx-chapters-expander {
   display:block;
@@ -151,7 +163,7 @@ html[lang="ar"] :is(.rx-moments-counter,.rx-moments-super,.rx-prism-step,
   grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr) auto;
  }
  html[data-rx-page="home"] .rx-chapters-expander .rx-expander-hint{display:none}
- html[data-rx-page="home"] .rx26-portal-grid{
+ html[data-rx-page="home"] #rx26-portal .rx26-portal-grid.rx-cover-catalogue{
   grid-template-columns:repeat(2,minmax(0,1fr));
  }
 }
@@ -175,7 +187,7 @@ html[lang="ar"] :is(.rx-moments-counter,.rx-moments-super,.rx-prism-step,
   grid-column:2;grid-row:1 / span 2;min-width:42px;width:42px;height:42px;
   justify-self:end;
  }
- html[data-rx-page="home"] .rx26-portal-grid{
+ html[data-rx-page="home"] #rx26-portal .rx26-portal-grid.rx-cover-catalogue{
   grid-template-columns:minmax(0,1fr);
  }
  html[data-rx-page="home"] .rx-chapters-expander .rx-chapter-grid{
