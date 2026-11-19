@@ -62,7 +62,7 @@
     }
   }
   function localizeAttributes(element) {
-    var attrs = ["aria-label", "placeholder", "title"];
+    var attrs = ["aria-label", "placeholder", "title", "alt"];
     var cache = attributeCache.get(element);
     if (!cache) { cache = {}; attributeCache.set(element, cache); }
     for (var i = 0; i < attrs.length; i++) {
@@ -88,7 +88,7 @@
       var walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
       var textNode;
       while ((textNode = walker.nextNode())) translateText(textNode);
-      var elements = node.querySelectorAll("[aria-label],[placeholder],[title]");
+      var elements = node.querySelectorAll("[aria-label],[placeholder],[title],[alt]");
       for (var i = 0; i < elements.length; i++) localizeAttributes(elements[i]);
     }
   }
@@ -115,6 +115,7 @@
     }
     localizeNode(document.body);
     updateButtons();
+    document.dispatchEvent(new CustomEvent("ruwaidix:languagechange", { detail:{ locale:locale } }));
   }
   function addControls() {
     if (document.querySelector(".site-lang-switch")) return;
@@ -162,7 +163,7 @@
         if (change.type === "attributes") localizeAttributes(change.target);
       });
     });
-    observer.observe(document.body, {childList:true, characterData:true, attributes:true, attributeFilter:["aria-label","placeholder","title"], subtree:true});
+    observer.observe(document.body, {childList:true, characterData:true, attributes:true, attributeFilter:["aria-label","placeholder","title","alt"], subtree:true});
     window.addEventListener("popstate", function () { setLanguage(readStoredLanguage(), false); });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initialize);
