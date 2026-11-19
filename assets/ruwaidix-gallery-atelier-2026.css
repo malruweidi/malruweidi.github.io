@@ -15,7 +15,7 @@
 .rx-atelier-head h2 em {color:#a9c6e9;font-style:italic}
 .rx-atelier-head p {color:#dce6f2;font:14px/1.9 "DM Sans",Arial,sans-serif;max-width:45ch;margin:0}
 .rx-atelier [data-rx-tabs] {display:none}
-.rx-atelier [data-enhanced="true"] [data-rx-tabs]{display:flex}
+.rx-atelier[data-enhanced="true"] [data-rx-tabs]{display:flex}
 .rx-atelier-tabs{display:flex;gap:5px;align-items:stretch;flex-wrap:wrap;margin:0 0 -1px;position:relative;z-index:2}
 .rx-atelier .rx-atelier-tab { flex:1 1 160px;min-width:0;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:10px;text-align:start;cursor:pointer;
  border:1px solid #5f7ca6;background:#284264;color:#e4e9ef;min-height:67px;padding:13px 16px;font:600 13px/1.35 "DM Sans",Arial,sans-serif;
