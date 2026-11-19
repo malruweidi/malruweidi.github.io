@@ -22,7 +22,7 @@ const contrast=(a,b)=>{
 };
 test("all public HTML pages use the same versioned blue identity",()=>{
   const files=htmlFiles();
-  assert.ok(files.length>=70,"expected main site, films, archived research, and long-form records");
+  // Two previously published archival links were deliberately retired at the user\u0027s request.\n  assert.ok(files.length>=69,"expected preserved main site, films, archived research, and long-form records after approved archival removals");
   for(const file of files){const content=read(file);assert.equal(content.split(file==="index.html"?homeLink:link).length,2,"missing or duplicate blue stylesheet: "+file);}
   for(const file of omitted)assert.doesNotMatch(read(file),/ruwaidix-one-blue-2026/,"preservation backups and previews remain independent: "+file);
 });
