@@ -190,3 +190,33 @@ html[lang="ar"] .rx-atelier .rx-atelier-head h2[lang="ar"] {line-height:1.5;}
  .rx-letterpress *, .rx-letterpress *::before, .rx-letterpress *::after,
  .rx-moments-glyph {animation:none!important;transition:none!important;}
 }
+
+/* Full bilingual edition of the original four-word visual index. */
+.rx-letterpress .rx-press-ar{display:none;}
+.rx-letterpress .rx-press-en{display:inline;}
+html[lang="ar"] .rx-letterpress .rx-press-en{display:none!important;}
+html[lang="ar"] .rx-letterpress .rx-press-ar{display:inline;}
+html[lang="ar"] .rx-letterpress :is(h2,h3,p) > .rx-press-ar{display:block;}
+html[lang="ar"] .rx-letterpress :is(h2,h3) > .rx-press-ar{
+ font-family:var(--rx-ar-literary)!important;
+ font-weight:400;line-height:1.5!important;letter-spacing:normal!important;
+}
+html[lang="ar"] .rx-letterpress :is(p,a,.rx-letterpress-tab) .rx-press-ar{
+ font-family:var(--rx-ar-interface)!important;line-height:1.85;letter-spacing:normal!important;
+}
+html[lang="ar"] .rx-letterpress :is(.rx-letterpress-heading,.rx-letterpress-copy){
+ direction:rtl;text-align:start;
+}
+html[lang="ar"] .rx-letterpress :is(.rx-letterpress-index,.rx-letterpress-kicker){
+ direction:ltr;unicode-bidi:isolate;
+}
+html[lang="ar"] .rx-letterpress .rx-letterpress-tab{direction:rtl;text-align:start;}
+/* Stable layout for older browsers that lack CSS subgrid support. */
+@supports not (grid-template-columns:subgrid){
+ .rx-letterpress [data-rx-press-panel]{
+  grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);
+ }
+}
+@media(max-width:900px){
+ .rx-letterpress [data-rx-press-panel]{grid-template-columns:minmax(0,1fr);}
+}
