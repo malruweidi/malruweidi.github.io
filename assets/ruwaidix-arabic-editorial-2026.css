@@ -2,11 +2,12 @@
    Two intentional families: a contemporary interface face and a classical reading/display face.
    Fonts remain remotely hosted by Google Fonts; no font binaries are embedded here.
    Loaded with display=swap and system fallbacks. */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap');
 
 :root {
  --rx-ar-interface:"IBM Plex Sans Arabic","Noto Sans Arabic",Tahoma,Arial,sans-serif;
  --rx-ar-literary:"Amiri","Noto Naskh Arabic",serif;
+ --rx-ar-calligraphy:"Aref Ruqaa","Amiri",serif;
  --rx-ar-ink:#192d4b; --rx-ar-paper:#f6f1e8; --rx-ar-line:#b4c9e1;
 }
 
@@ -48,7 +49,7 @@ html[lang="ar"] .rx-atelier .rx-atelier-head h2[lang="ar"] {line-height:1.5;}
  position:absolute;z-index:0;inset:auto 4% 2% auto;
  display:block;max-width:90%;white-space:nowrap;pointer-events:none;user-select:none;
  color:transparent;-webkit-text-stroke:1px #bfd6f382;
- font:400 clamp(110px,15vw,240px)/1.25 var(--rx-ar-literary);
+ font:400 clamp(105px,14.5vw,226px)/1.35 var(--rx-ar-calligraphy);
  letter-spacing:0;direction:rtl;opacity:.68;
  transform:rotate(-10deg);
 }
@@ -114,7 +115,7 @@ html[lang="ar"] .rx-atelier .rx-atelier-head h2[lang="ar"] {line-height:1.5;}
 .rx-letterpress-rings::before{content:"";width:1px;position:absolute;height:92%;background:#c4d8ed36;transform:rotate(-17deg)}
 .rx-letterpress-word {
  position:relative;z-index:2;display:block;color:#f6f1e8;
- font:400 clamp(99px,13vw,186px)/1.28 var(--rx-ar-literary);direction:rtl;
+ font:400 clamp(105px,13vw,192px)/1.3 var(--rx-ar-calligraphy);direction:rtl;
  text-align:center;text-shadow:1px 8px 27px #0814238c;letter-spacing:0;
  transform:translateY(-2px);
 }
@@ -219,4 +220,37 @@ html[lang="ar"] .rx-letterpress .rx-letterpress-tab{direction:rtl;text-align:sta
 }
 @media(max-width:900px){
  .rx-letterpress [data-rx-press-panel]{grid-template-columns:minmax(0,1fr);}
+}
+
+/* Intentional Arabic hierarchy, not a generic one-font substitution:
+   IBM Plex for controls, Amiri for extended editorial headings, Aref Ruqaa for art. */
+html[lang="ar"] .rx-moments-header h2,
+html[lang="ar"] .rx-moments-copy h3,
+html[lang="ar"] .rx-atelier-head h2,
+html[lang="ar"] .rx-atelier-detail h3,
+html[lang="ar"] .rx-prism-heading h2,
+html[lang="ar"] .rx-prism-summary h3,
+html[lang="ar"] .rx-letterpress-heading h2,
+html[lang="ar"] .rx-letterpress-copy h3{
+ font-family:var(--rx-ar-literary)!important;
+ font-style:normal!important;
+ letter-spacing:0!important;
+ line-height:1.34!important;
+ text-wrap:balance;
+}
+html[lang="ar"] .rx-moments-header h2{font-size:clamp(48px,5.2vw,78px)!important}
+html[lang="ar"] .rx-moments-copy h3{font-size:clamp(35px,4vw,57px)!important}
+html[lang="ar"] :is(.rx-moments-header,.rx-moments-copy,.rx-observation-heading,
+ .rx-atelier-head,.rx-atelier-detail,.rx-prism-heading,.rx-prism-summary){
+ direction:rtl;text-align:start;
+}
+html[lang="ar"] .rx-moments :is(.rx-moments-counter,.rx-moments-eyebrow,
+ .rx-moments-super,.rx-moments-stamp),
+html[lang="ar"] .rx-prism-idea{letter-spacing:0!important}
+html[lang="ar"] .rx-moments-visual .rx-moments-glyph{direction:rtl;}
+@media(max-width:600px){
+ html[lang="ar"] .rx-moments-header h2{font-size:clamp(40px,10vw,58px)!important}
+ html[lang="ar"] .rx-letterpress-heading h2{font-size:clamp(39px,10vw,58px)!important}
+ html[lang="ar"] .rx-moments-copy h3{font-size:clamp(34px,9vw,48px)!important}
+ .rx-letterpress-word{font-size:clamp(92px,22vw,148px)}
 }
