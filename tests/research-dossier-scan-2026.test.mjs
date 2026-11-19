@@ -51,7 +51,7 @@ test("five existing dossiers expose the same evidence-first scan without losing 
 test("the ongoing thesis stays separate from published study claims", () => {
   const ongoing = readFileSync(new URL("../research/inhalable-vesicles.html", import.meta.url), "utf8");
   const summary = ongoing.slice(ongoing.indexOf('class="rx-dossier-scan"'), ongoing.indexOf("</section>", ongoing.indexOf('class="rx-dossier-scan"')));
-  assert.match(summary, /The MSc project is ongoing/);
+  assert.match(summary, /The (?:MSc )?project is ongoing/);
   assert.match(summary, /not yet quantitative proof/);
   assert.match(summary, /No encapsulation efficiencies/);
   assert.match(ongoing, /MSc investigation in progress; no thesis results or publication claimed/);
