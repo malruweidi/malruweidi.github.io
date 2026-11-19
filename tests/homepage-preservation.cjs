@@ -30,8 +30,8 @@ function assertHomepagePreserved(original, current) {
   const earlierGalleryCopy = "I brought a microscope from Cairo to Qatar, struggled to dissolve a polymer, and watched an agarose-and-paraffin block fall apart while preparing zebrafish sections. Later, the problems of airway reopening took me into the mechanics of injury at the cell surface.";
   const currentGalleryCopy = "Four archival photographs connect an early anatomy lesson to chemistry, quantitative zebrafish imaging and pulmonary epithelial research. Each card leads to the fuller account.";
   assert.ok(after.includes('id="more-scientific-scenes"'), "Optional gallery disclosure missing");
-  after = after.replace(/<details class="rx-chapters-expander" id="more-scientific-scenes">[\\s\\S]*?<\\/summary>\\s*/, "")
-    .replace(/<\\/section>\\s*<\\/details>(?=\\s*<section class="rx-evidence-index")/, "</section>");
+  after = after.replace(/<details class="rx-chapters-expander" id="more-scientific-scenes">[\s\S]*?<\/summary>\s*/, "")
+    .replace(/<\/section>\s*<\/details>(?=\s*<section class="rx-evidence-index")/, "</section>");
   for (const block of [
     /<nav class="rx-research-fastpaths"[\s\S]*?<\/nav>/,
     /<details class="rx-hero-readmore"[\s\S]*?<\/details>/,
