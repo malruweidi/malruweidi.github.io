@@ -5,6 +5,14 @@ function assertHomepagePreserved(original, current) {
     .replace(/style="[^"]*"/g, attr => attr.replace(/#[0-9a-f]{3,8}\b/gi, "#color"))
     .replaceAll('<span class="rx26-card-arrow" aria-hidden="true">↗</span>', "");
   let before = body(original);
+  // The user explicitly withdrew the unsuccessful-histology film from the
+  // public homepage. Preserve that removal; don't restore a retired link just
+  // to satisfy the snapshot created before the editorial decision.
+  const retiredFilm = '<p class="rx-home-film-meta"><a href="/films/two-materials-no-section.html" style="color:inherit;text-decoration:underline;text-underline-offset:4px">New film: Two Materials. No Section. · 02:30 ↗</a></p>';
+  const retiredFilmMapping = ',"Zebrafish agarose–paraffin histopathology attempt":"histology-failure"';
+  assert.ok(!body(current).includes(retiredFilm), "Retired film must not return to the homepage");
+  assert.ok(!body(current).includes(retiredFilmMapping), "Retired film map must not return");
+  before = before.replace(retiredFilm, "").replace(retiredFilmMapping, "");
   // Additive, individually identified editorial exhibits are outside the original
   // body snapshot. Only these complete, anchored sections may be excluded;
   // all historical film, archive, links and chapters must still match byte-for-byte.
