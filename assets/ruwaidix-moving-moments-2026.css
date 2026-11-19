@@ -2,9 +2,6 @@
    Inspired by human-centered montage, never a copy of external footage. */
 html[data-rx-page="home"] .rx-moments{
   --mm-ink:#192d4b;--mm-ink2:#263f66;--mm-mid:#456fa6;--mm-mist:#cdd8e7;--mm-paper:#f6f1e8;--mm-white:#fffbf3;
-  --rx-moments-heading-ink:#192d4b;
-  --rx-moments-heading-paper:#f6f1e8;
-  --rx-moments-heading-accent:#345d91;
   position:relative;overflow:hidden;background:var(--mm-ink);color:var(--mm-paper);
   padding:clamp(64px,8vw,124px) 0;isolation:isolate;
   border-block:1px solid #526f98;
