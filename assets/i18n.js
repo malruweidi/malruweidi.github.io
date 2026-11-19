@@ -139,13 +139,13 @@
     updateButtons();
   }
   var styles = document.createElement("style");
-  styles.textContent = "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap');"+
+  styles.textContent = "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap');"+
     ".site-lang-switch{position:fixed;bottom:18px;inset-inline-end:18px;z-index:10000;display:flex;gap:3px;padding:4px;background:rgba(248,246,239,.97);border:1px solid rgba(34,58,93,.25);border-radius:999px;box-shadow:0 4px 18px rgba(0,0,0,.16);direction:ltr;backdrop-filter:blur(12px)}"+
-    ".site-lang-switch button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;min-width:46px;padding:7px 13px;color:#233b61;border:0;border-radius:999px;background:transparent;cursor:pointer;font:600 13px/1.4 'Noto Sans Arabic',Arial,sans-serif;white-space:nowrap}"+
+    ".site-lang-switch button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;min-width:46px;padding:7px 13px;color:#233b61;border:0;border-radius:999px;background:transparent;cursor:pointer;font:600 13px/1.4 'IBM Plex Sans Arabic','Noto Sans Arabic',Arial,sans-serif;white-space:nowrap}"+
     ".site-lang-switch button:hover{background:#eee6d7}.site-lang-switch button.active{background:#1e3454;color:#fff}"+
     ".site-lang-switch button:focus-visible{outline:3px solid #5983c3;outline-offset:2px}"+
-    "html[lang='ar'] body{font-family:'Noto Sans Arabic',Tahoma,Arial,sans-serif!important}"+
-    "html[lang='ar'] h1,html[lang='ar'] h2,html[lang='ar'] h3,html[lang='ar'] h4,html[lang='ar'] .display,html[lang='ar'] .lead,html[lang='ar'] .intro{font-family:'Noto Sans Arabic',Tahoma,Arial,sans-serif!important;letter-spacing:normal!important;line-height:1.5}"+
+    "html[lang='ar'] body{font-family:'IBM Plex Sans Arabic','Noto Sans Arabic',Tahoma,Arial,sans-serif!important}"+
+    "html[lang='ar'] h1,html[lang='ar'] h2,html[lang='ar'] h3,html[lang='ar'] h4,html[lang='ar'] .display,html[lang='ar'] .lead,html[lang='ar'] .intro{font-family:'IBM Plex Sans Arabic','Noto Sans Arabic',Tahoma,Arial,sans-serif!important;letter-spacing:normal!important;line-height:1.5}"+
     "html[lang='ar'] .eyebrow,html[lang='ar'] .mono,html[lang='ar'] .smallcaps{letter-spacing:normal!important}"+
     "html[lang='ar'] .site-lang-switch{direction:ltr}html[lang='ar'] input:not([type='number']),html[lang='ar'] textarea{text-align:right}"+
     "html[lang='ar'] pre,html[lang='ar'] code,html[lang='ar'] .doi,html[lang='ar'] .pubitem a[href^='https://doi.org']{direction:ltr;unicode-bidi:isolate}"+
