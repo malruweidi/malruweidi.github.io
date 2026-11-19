@@ -33,6 +33,10 @@ test("legacy homepage deep links open the collapsed gallery without changing URL
   assert.match(js,/disclosure\.open = true/);
   assert.match(js,/requestAnimationFrame/);
   assert.match(js,/disclosure\.contains\(target\)/);
+  assert.match(js,/event\.key !== "Escape"/);
+  assert.match(js,/pointerdown/);
+  assert.match(js,/min-width:1101px/);
+  assert.match(js,/menu\.setAttribute\("aria-expanded", "false"\)/);
 });
 
 test("new gallery works on small screens and without visual animations",()=>{
@@ -78,6 +82,19 @@ test("retired histology story and film are not promoted by main landing pages",(
   }
 });
 
+
+test("original card contents and image descriptions have equivalent Arabic entries",()=>{
+  const at=home.indexOf('id="more-scientific-scenes"');
+  const block=home.slice(at,home.indexOf("</details>",at));
+  const normalize=t=>t.replace(/&amp;/g,"&").replace(/&nbsp;/g," ").replace(/&#39;/g,"'").replace(/\\s+/g," ").trim();
+  const mapped=new Set([...translations.matchAll(/^\\s*"((?:\\\\.|[^"\\\\])*)"\\s*:/gm)]
+    .map(m=>normalize(JSON.parse('"'+m[1]+'"'))));
+  const visible=[...block.matchAll(/>([^<>]+)</g)].map(m=>normalize(m[1]));
+  const accessible=[...block.matchAll(/\\b(?:alt|aria-label|title)="([^"]+)"/g)].map(m=>normalize(m[1]));
+  const english=[...new Set([...visible,...accessible].filter(x=>/[A-Za-z]{3,}/.test(x)&&x.length>4))];
+  const missing=english.filter(x=>!mapped.has(x));
+  assert.deepEqual(missing,[],"untranslated optional-gallery copy: "+missing.join(" / "));
+});
 test("search index describes only the seven public archive objects and released films",()=>{
   const data=JSON.parse(read("assets/discovery-index.json"));
   const object=data.items.find(x=>x.url==="/archive.html#archive-objects");
