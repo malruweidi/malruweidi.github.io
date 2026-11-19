@@ -11,7 +11,7 @@ test('Stories pathway photos open the matching, existing chapter',()=>{
  const s=read('stories.html');
  const covers=[
   ['/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp','#personal-microscope'],
-  ['/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp','#zebrafish-histology-materials'],
+  ['/assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp','#unfortunate-trials'],
   ['/assets/evidence-zebrafish.webp','#living-systems'],
   ['/archive/fifth-chemistry-festival-host.webp','#community']
  ];
@@ -27,12 +27,11 @@ test('Stories pathway photos open the matching, existing chapter',()=>{
  assert.match(s,/The stories <em>between<\/em> the experiments/);
 });
 
-test('All eight original object photos open their own stored image while retaining context',()=>{
+test('All seven retained public object photos open their stored image while retaining context',()=>{
  const s=read('archive.html');
  const paths=[
   '/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp',
   '/archive/molecular-model-aged-19.webp',
-  '/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp',
   '/archive/fifth-chemistry-festival-host.webp',
   '/assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp',
   '/assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp',
@@ -41,7 +40,7 @@ test('All eight original object photos open their own stored image while retaini
  ];
  const start=s.indexOf('id="rxOctoberPhotoArchive"'),end=s.indexOf('</section>',start);
  const items=s.slice(start,end).match(/<article class="rx-archive-object"(?:\s+id="[^"]+")?>[\s\S]*?<\/article>/g)||[];
- assert.equal(items.length,8);
+ assert.equal(items.length,7);
  for(let i=0;i<items.length;i++){
   const item=items[i],file=paths[i];
   assert.ok(item.includes('src="'+file+'"'),file+' original unchanged');
@@ -64,17 +63,16 @@ test('Five original gallery photos are directly inspectable, not replaced',()=>{
  assert.equal((gallery.match(/class="rx-archive-gallery-link"/g)||[]).length,5);
 });
 
-test('Failed histology still documents failure, and all three image assets can be inspected',()=>{
- const s=read('stories.html');
- const section=s.slice(s.indexOf('id="zebrafish-histology-materials"'),s.indexOf('id="zewail-visit-and-portrait"'));
- for(const file of ['zebrafish-histology-processing.webp','zebrafish-orientation-specimens.webp','zebrafish-paraffin-microtomy-failure.webp']){
-  const url='/assets/2026-10-13-new-photos/'+file;
-  assert.ok(section.includes('src="'+url+'"'),file+' preserved');
-  assert.ok(section.includes('href="'+url+'"'),file+' source inspection');
+test('Withdrawn histology story is absent from reader-facing pages while original image binaries remain',()=>{
+ const s=read('stories.html'),archive=read('archive.html');
+ for(const slug of ['zebrafish-histology-materials','failed-zebrafish-histology.html']){
+  assert.ok(!s.includes(slug),'retired chapter not republished: '+slug);
  }
- assert.ok(section.includes('I did not obtain the reliable, interpretable sections'));
- assert.ok(section.includes('لم أحصل على مقاطع منتظمة تصلح للفحص النسيجي'));
- assert.match(section,/rx-photo-source-link/);
+ assert.ok(!archive.includes('id="object-zebrafish-histology"'));
+ for(const file of ['zebrafish-histology-processing.webp','zebrafish-orientation-specimens.webp','zebrafish-paraffin-microtomy-failure.webp']){
+   const pathName=path.join(__dirname,'..','assets/2026-10-13-new-photos',file);
+   assert.ok(fs.existsSync(pathName),'archival original preserved: '+file);
+ }
 });
 
 test('New media links have keyboard focus and respect reduced motion and Arabic',()=>{
