@@ -1508,3 +1508,11 @@ Object.assign(window.RuwaidixArabicDictionary, {
 Object.assign(window.RuwaidixArabicDictionary, {
   "2.0× illustration zoom": "2.0× تكبير توضيحي"
 });
+
+/* Homepage disclosure: identical navigation and editorial record in both languages. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "OPTIONAL PHOTO ESSAY · 4 SCENES": "مقالة مصوّرة إضافية · أربعة مشاهد",
+  "Four more moments from the work": "أربع لحظات أخرى من العمل",
+  "Explore the photographic notes": "استكشف الملاحظات المصوّرة",
+  "Four archival photographs connect an early anatomy lesson to chemistry, quantitative zebrafish imaging and pulmonary epithelial research. Each card leads to the fuller account.": "تربط أربع صور أرشيفية بين درس مبكّر في التشريح، والكيمياء، والتصوير الكمي لسمك الزرد، والبحث في ظهارة الرئة. تقود كل بطاقة إلى الرواية العلمية أو الشخصية الأوسع."
+});
