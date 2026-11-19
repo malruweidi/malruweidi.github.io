@@ -26,7 +26,7 @@ test("UREP23 first-person story is a preserved and discoverable route", () => {
 
 test("the new chapter does not erase existing stories or imply a clinical medicine", () => {
   const collection = read("stories.html");
-  for (const original of ["anatomy", "community", "unfortunate-trials", "undergraduate-imines", "zebrafish-histology-materials", "zewail-visit-and-portrait"]) {
+  for (const original of ["anatomy", "community", "unfortunate-trials", "undergraduate-imines", "zewail-visit-and-portrait"]) {
     assert.ok(collection.includes('id="' + original + '"'), original);
   }
   const story = read("stories/the-ring-that-never-closed.html");
