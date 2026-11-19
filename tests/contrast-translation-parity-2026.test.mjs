@@ -75,6 +75,28 @@ test('all newly introduced English scientific narratives have matching Arabic tr
  }
  assert.match(i18n,/\["aria-label",\s*"placeholder",\s*"title",\s*"alt"\]/);
 });
+test('all recent interactive scenes translate their visible words and accessible labels',()=>{
+ const normalize=text=>text.replace(/&amp;/g,'&').replace(/&nbsp;/g,' ').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/\\s+/g,' ').trim();
+ const keys=new Set([...dictionary.matchAll(/^\\s*"((?:\\\\.|[^"\\\\])*)"\\s*:/gm)].map(match=>normalize(JSON.parse('"'+match[1]+'"'))));
+ for(const [html,id] of [[page,'rx-moving-moments'],[page,'research-workbench'],[research,'rx-method-scale']]){
+   const at=html.indexOf('id="'+id+'"');
+   assert.ok(at>0,'section exists: '+id);
+   const from=html.lastIndexOf('<section',at),to=html.indexOf('</section>',at);
+   assert.ok(from>=0&&to>at,'section is bounded: '+id);
+   const region=html.slice(from,to);
+   const visible=[...region.matchAll(/>([^<>]+)</g)].map(match=>normalize(match[1]));
+   const attrs=[...region.matchAll(/\\b(?:aria-label|alt|title|placeholder)="([^"]+)"/g)].map(match=>normalize(match[1]));
+   const english=[...new Set([...visible,...attrs].filter(value=>/[A-Za-z]{3,}/.test(value)&&value.length>4))];
+   assert.ok(english.length>=10,'audit samples all content in '+id);
+   const gaps=english.filter(value=>!keys.has(value));
+   assert.deepEqual(gaps,[],'English content without an Arabic equivalent in '+id);
+ }
+});
+test('cinematic accessible playback labels stay synchronized in both languages',()=>{
+ const js=read('assets/ruwaidix-moving-moments-2026.js');
+ assert.match(js,/play\\.textContent=translatedLabel\\("Pause sequence"\\);\\s*play\\.setAttribute\\("aria-label",play\\.textContent\\)/);
+ assert.match(js,/document\\.addEventListener\\("ruwaidix:languagechange"/);
+});
 test('letterpress presents the same four essay panels in both languages',()=>{
  const cut=writing.slice(writing.indexOf('id="rx-letterpress"'),writing.indexOf('</section>',writing.indexOf('id="rx-letterpress"')));
  const en=(cut.match(/class="rx-press-en"/g)||[]).length;
