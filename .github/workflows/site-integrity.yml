@@ -17,6 +17,8 @@ jobs:
         run: node --test tests/moving-moments-2026.test.mjs
       - name: Verify Arabic typographic art and responsive page integrity
         run: node --test tests/kinetic-arabic-mobile-2026.test.mjs
+      - name: Verify screenshot contrast and English-Arabic translation parity
+        run: node --test tests/contrast-translation-parity-2026.test.mjs
       - name: Verify lossless atlas navigation, links, and original homepage film
         run: node --test tests/atlas-of-questions-2026.test.mjs
       - name: Verify site-wide navy palette and fully blue geographic map
