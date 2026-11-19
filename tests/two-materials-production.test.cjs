@@ -41,31 +41,23 @@ test("the published video is an actual signed-off binary with aligned captions",
  assert.match(captions,/^WEBVTT/);
  assert.ok((captions.match(/-->/g)||[]).length>=20);
 });
-test("existing failed experiment story and original film remain intact",()=>{
- const original=read("stories/failed-zebrafish-histology.html");
- const film=read("film.html");
- const home=read("home-legacy-2026.html");
- assert.match(original,/I did not obtain the reliable, interpretable sections/);
- assert.match(original,/(?:agarose grade and thermal behaviour|grade and thermal behaviour of (?:the )?agarose)/);
+test("the original source record and separate main documentary remain intact",()=>{
+ const film=read("film.html"),home=read("home-legacy-2026.html");
+ assert.match(data.evidentiary_rule,/No useful histological section/);
  assert.match(film,/anatomy-of-a-question-2026-v2.mp4/);
  assert.match(home,/rx-feature-film/);
+ assert.ok(!fs.existsSync(path.join(root,"stories/failed-zebrafish-histology.html")));
 });
-test("the released reader-first evidence cut remains playable while earlier release and captions stay in the source archive",()=>{
- const hub=read("films.html"),article=read("films/two-materials-no-section.html");
- for(const html of [hub,article]){
-  assert.ok(html.includes("/assets/films/two-materials-no-section-source-v2.mp4"));
-  assert.ok(html.includes("/assets/films/two-materials-no-section-source-v2.vtt"));
-  assert.match(html,/kind="captions"/);
- }
+
+test("all earlier film binaries remain in source storage without reintroducing the withdrawn page",()=>{
  for(const file of [
   "assets/films/two-materials-no-section-source-v2.mp4",
   "assets/films/two-materials-no-section-source-v2.vtt",
   "assets/films/two-materials-no-section.mp4",
   "assets/films/two-materials-no-section.vtt"
- ]) assert.ok(fs.existsSync(path.join(root,file)), "original or revised archival payload missing " + file);
- assert.ok(hub.includes("/assets/films/two-materials-no-section-evidence-cut.mp4"));
- assert.ok(article.includes('href="/stories/failed-zebrafish-histology.html"'));
- assert.doesNotMatch(article,/id="source-record"/);
- const index=JSON.parse(read("assets/discovery-index.json"));
- assert.ok(index.items.some(x=>x.url==="/films/two-materials-no-section.html"));
+ ])assert.ok(fs.existsSync(path.join(root,file)),"archival binary lost: "+file);
+ const hub=read("films.html"),index=JSON.parse(read("assets/discovery-index.json"));
+ assert.ok(!fs.existsSync(path.join(root,"films/two-materials-no-section.html")));
+ assert.ok(!hub.includes("/assets/films/two-materials-no-section-source-v2.mp4"));
+ assert.ok(!index.items.some(x=>x.url==="/films/two-materials-no-section.html"));
 });
