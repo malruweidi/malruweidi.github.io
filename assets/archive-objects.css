@@ -81,3 +81,21 @@ html main .vesicle-keys button[aria-pressed="true"] {background:#68394a;border-c
   html main .vesicle-study {grid-template-columns:minmax(0,1fr);}
   .vesicle-plate svg {max-width:172px;}
 }
+/* At tablet widths the microscope and portrait share most of the plate.
+   Give the swimming specimen its own line beneath the headline. */
+@media (min-width:521px) and (max-width:1140px) {
+  html[data-rx-page="home"] main .specimen-swim {
+    grid-area:fish; display:flex; gap:8px; width:auto; min-height:44px;
+    margin:8px 0 0; justify-self:start; align-items:center;
+  }
+  html[data-rx-page="home"] main .rx-hero-grid {
+    grid-template-areas:"by plate" "title plate" "fish plate" "actions plate" "intro credit";
+  }
+  html[data-rx-page="home"] main .rx-hero-grid::before {grid-row:1 / 5;}
+}
+@media (min-width:521px) and (max-width:780px) {
+  html[data-rx-page="home"] main .rx-hero-grid {
+    grid-template-areas:"by" "title" "fish" "plate" "actions" "intro" "credit";
+  }
+  html[data-rx-page="home"] main .rx-hero-grid::before {grid-row:1 / 6;}
+}
