@@ -5,7 +5,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 const root=resolve(dirname(fileURLToPath(import.meta.url)),".."), read=p=>readFileSync(join(root,p),"utf8");
 const home=read("home-legacy-2026.html"), stories=read("stories.html");
-const chapters=["anatomy","community","living-systems","ramadan-atvb","delivery","molecular-models","community-before-lab","personal-microscope","unfortunate-trials","historical-chemistry","surface-science","research-apparatus","zebrafish-histology-materials","zewail-visit-and-portrait"];
+const chapters=["anatomy","community","living-systems","ramadan-atvb","delivery","molecular-models","community-before-lab","personal-microscope","unfortunate-trials","historical-chemistry","surface-science","research-apparatus","zewail-visit-and-portrait"];
 test("bibliography follows research before the long autobiography",()=>{
  assert.ok(home.indexOf('id="research"')<home.indexOf('id="publications"'));
  assert.ok(home.indexOf('id="publications"')<home.indexOf('id="story"'));
@@ -18,7 +18,7 @@ test("six original study dialogs and direct supporting-record links coexist",()=
  for(const link of ["figures.html#pulmonary","figures.html#zebrafish","techniques.html#delivery","stories.html#surface-science"]) assert.ok(home.includes('href="'+link+'"'));
  assert.ok(home.includes('id="rx-research-connection"'));
 });
-test("themed story journeys retain all fourteen original chapters and index",()=>{
+test("themed story journeys retain the surviving owner-approved chapters and index",()=>{
  assert.ok(stories.includes('id="story-pathways"'));
  assert.equal((stories.match(/class="rx-story-route"/g)||[]).length,4);
  assert.ok((stories.match(/class="stories-chapter(?: stories-chapter-tinted)?"/g)||[]).length>=14, "Original chapters must survive additions");
@@ -26,7 +26,7 @@ test("themed story journeys retain all fourteen original chapters and index",()=
  for(const name of ["stories-contents","stories-afterword"]) assert.ok(stories.includes('class="'+name+'"'));
 });
 test("four editorial index photographs are preserved repository files",()=>{
- for(const p of ["assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp","assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp","assets/evidence-zebrafish.webp","archive/fifth-chemistry-festival-host.webp"]) assert.ok(existsSync(join(root,p)),p);
+ for(const p of ["assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp","assets/2026-10-15-lab-photos/copolymer-sample-qatar-university-2017.webp","assets/evidence-zebrafish.webp","archive/fifth-chemistry-festival-host.webp"]) assert.ok(existsSync(join(root,p)),p);
 });
 test("new styles retain palette, RTL, focus visibility and reduced-motion",()=>{
  const css=read("assets/editorial-wayfinding-2026.css");
@@ -49,7 +49,7 @@ test("archival object routes retain the existing chronology and photo collection
  const ar=read("archive.html");
  assert.ok(ar.includes('id="archive-objects"'));
  assert.ok((ar.match(/class="rx-archive-object"/g)||[]).length>=4, "Original archive objects must survive additions");
- for(const p of ["stories.html#personal-microscope","stories.html#molecular-models","stories.html#zebrafish-histology-materials","stories.html#community"])
+ for(const p of ["stories.html#personal-microscope","stories.html#molecular-models","stories.html#unfortunate-trials","stories.html#community"])
    assert.ok(ar.includes('href="'+p+'"'),p);
  for(const cls of ['class="timeline"','class="photo-section"','class="filmstrip"']) assert.ok(ar.includes(cls),cls);
  assert.match(ar,/editorial-wayfinding-2026\.css/);
