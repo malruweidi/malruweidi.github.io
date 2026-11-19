@@ -1,0 +1,192 @@
+/* RUWAIDIX Arabic / editorial identity · 2026-11-19
+   Two intentional families: a contemporary interface face and a classical reading/display face.
+   Fonts remain remotely hosted by Google Fonts; no font binaries are embedded here.
+   Loaded with display=swap and system fallbacks. */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap');
+
+:root {
+ --rx-ar-interface:"IBM Plex Sans Arabic","Noto Sans Arabic",Tahoma,Arial,sans-serif;
+ --rx-ar-literary:"Amiri","Noto Naskh Arabic",serif;
+ --rx-ar-ink:#192d4b; --rx-ar-paper:#f6f1e8; --rx-ar-line:#b4c9e1;
+}
+
+/* Original content and language switching are preserved.
+   Arabic is given suitable shaping and longer line heights instead of Latin tracking. */
+:where([lang="ar"],[dir="rtl"]) {
+ text-transform:none;
+ text-rendering:optimizeLegibility;
+}
+:where(span,p,blockquote,figcaption,strong,em,small)[lang="ar"] {
+ font-family:var(--rx-ar-interface);
+ font-feature-settings:"kern" 1;
+ letter-spacing:normal!important;
+ line-height:1.9;
+}
+html[lang="ar"] body { font-family:var(--rx-ar-interface)!important; letter-spacing:normal; }
+html[lang="ar"] :where(h1,h2,h3,h4,h5,h6,button,nav,summary,label) {
+ font-family:var(--rx-ar-interface)!important;letter-spacing:normal!important;
+}
+html[lang="ar"] :where(p,li,blockquote,figcaption) {line-height:1.9;letter-spacing:normal;}
+html[lang="ar"] :where(.mono,.eyebrow,.rx-moments-counter,.rx-prism-idea,.rx-atelier-kicker) {letter-spacing:0!important;}
+html[lang="ar"] :where(code,pre,kbd,.doi,[href^="https://doi.org"]) {direction:ltr;unicode-bidi:isolate;}
+html[lang="ar"] .rx-atelier-en{display:none!important;}
+html[lang="ar"] .rx-atelier-ar{display:initial;}
+html[lang="en"] .rx-atelier-ar{display:none;}
+html[lang="ar"] .rx-atelier .rx-atelier-head,
+html[lang="ar"] .rx-atelier .rx-atelier-detail,
+html[lang="ar"] .rx-atelier .rx-atelier-tab {text-align:start;}
+html[lang="ar"] .rx-atelier :is(h2,h3) [lang="ar"]{
+ font-family:var(--rx-ar-literary)!important;line-height:1.4;
+}
+html[lang="ar"] .rx-atelier .rx-atelier-detail [lang="ar"] {line-height:1.9;}
+html[lang="ar"] .rx-atelier .rx-atelier-head h2[lang="ar"] {line-height:1.5;}
+
+/* Kinetic Arabic shapes from the supplied typographic film: not decorative arrows.
+   Here the words name the four original research scenes. */
+.rx-moments-visual{isolation:isolate;}
+.rx-moments-glyph{
+ position:absolute;z-index:0;inset:auto 4% 2% auto;
+ display:block;max-width:90%;white-space:nowrap;pointer-events:none;user-select:none;
+ color:transparent;-webkit-text-stroke:1px #bfd6f382;
+ font:400 clamp(110px,15vw,240px)/1.25 var(--rx-ar-literary);
+ letter-spacing:0;direction:rtl;opacity:.68;
+ transform:rotate(-10deg);
+}
+.rx-moments-panel[data-moment="02"] .rx-moments-glyph{inset:4% auto auto 3%;transform:rotate(8deg)}
+.rx-moments-panel[data-moment="03"] .rx-moments-glyph{inset:auto 1% 0 auto;font-size:clamp(120px,14vw,230px)}
+.rx-moments-panel[data-moment="04"] .rx-moments-glyph{inset:0 auto auto 2%;transform:rotate(-6deg)}
+.rx-moments-panel .rx-moments-art{position:relative;z-index:1;}
+.rx-moments-panel .rx-moments-super,.rx-moments-panel .rx-moments-stamp{z-index:3;}
+@media (prefers-reduced-motion:no-preference) and (min-width:701px) {
+ .rx-moments[data-enhanced="true"] [data-current="true"] .rx-moments-glyph{
+  animation:rx-calligraphic-ink 1s cubic-bezier(.22,.69,.16,1) both;
+ }
+ @keyframes rx-calligraphic-ink {
+  from{opacity:0;filter:blur(5px);translate:0 18px;}
+  to{opacity:.68;filter:blur(0);translate:0 0;}
+ }
+}
+
+/* Original Arabic typographic essay: a visual index, not a new publication. */
+.rx-letterpress {
+ --rl-ink:#192d4b;--rl-paper:#f6f1e8;--rl-blue:#456fa6;
+ background:var(--rl-paper);color:var(--rl-ink);
+ padding:clamp(60px,8vw,106px) 0;
+ position:relative;isolation:isolate;overflow:clip;
+ border-block:1px solid #b7c9df;
+}
+.rx-letterpress-shell{width:min(1120px,calc(100% - 48px));margin:auto;position:relative;}
+.rx-letterpress-heading {display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(20px,6vw,85px);align-items:end;margin-bottom:clamp(26px,4vw,44px)}
+.rx-letterpress-kicker {
+ font:600 10px/1.5 "DM Mono",monospace;letter-spacing:.13em;text-transform:uppercase;
+ color:#41689b;display:block;
+}
+.rx-letterpress-heading h2{
+ font:400 clamp(42px,5.2vw,79px)/1.05 "Newsreader",Georgia,serif;
+ margin:15px 0 0;color:#192d4b;letter-spacing:-.045em;max-width:14ch;
+}
+.rx-letterpress-heading h2 em{color:#456fa6}
+.rx-letterpress-heading p{
+ max-width:50ch;color:#395b81;font:14px/1.85 "DM Sans",Arial,sans-serif;margin:0;
+}
+.rx-letterpress-stage {
+ position:relative;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);
+ border:1px solid #c0d1e3;background:#fffbf3;min-height:clamp(330px,33vw,470px);
+ box-shadow:15px 17px 0 #192d4b12;
+}
+.rx-letterpress-art{
+ position:relative;overflow:hidden;background:#192d4b;display:grid;
+ place-items:center;min-height:380px;isolation:isolate;
+}
+.rx-letterpress-art::before{
+ content:"";position:absolute;inset:0;
+ background:radial-gradient(circle at 50% 50%,#3c6093,#192d4b 68%);opacity:.76;
+}
+.rx-letterpress-rings{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;}
+.rx-letterpress-rings i{
+ display:block;position:absolute;aspect-ratio:1;width:min(85%,390px);border:1px solid #bdcee358;
+ border-radius:50%;
+}
+.rx-letterpress-rings i:nth-child(2){width:min(67%,300px)}
+.rx-letterpress-rings i:nth-child(3){width:min(49%,215px)}
+.rx-letterpress-rings i:nth-child(4){width:min(27%,120px)}
+.rx-letterpress-rings::after{content:"";height:1px;position:absolute;width:90%;background:#c4d8ed36;transform:rotate(-17deg)}
+.rx-letterpress-rings::before{content:"";width:1px;position:absolute;height:92%;background:#c4d8ed36;transform:rotate(-17deg)}
+.rx-letterpress-word {
+ position:relative;z-index:2;display:block;color:#f6f1e8;
+ font:400 clamp(99px,13vw,186px)/1.28 var(--rx-ar-literary);direction:rtl;
+ text-align:center;text-shadow:1px 8px 27px #0814238c;letter-spacing:0;
+ transform:translateY(-2px);
+}
+.rx-letterpress-number{
+ position:absolute;top:20px;inset-inline-start:22px;z-index:2;color:#d6e5f8;
+ font:500 10px/1.5 "DM Mono",monospace;letter-spacing:.12em;
+}
+.rx-letterpress-equator{
+ position:absolute;bottom:19px;inset-inline-start:22px;z-index:2;color:#bed0e8;
+ font:500 10px/1.5 "DM Mono",monospace;letter-spacing:.1em;
+}
+.rx-letterpress-copy{
+ padding:clamp(22px,4vw,56px);
+ display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-width:0;
+}
+.rx-letterpress-index{font:600 10px/1.5 "DM Mono",monospace;color:#456fa6;letter-spacing:.13em;}
+.rx-letterpress-copy h3{
+ color:#192d4b;font:400 clamp(35px,3.6vw,54px)/1.1 "Newsreader",Georgia,serif;
+ margin:14px 0 13px;
+}
+.rx-letterpress-copy p{font:14px/1.85 "DM Sans",Arial,sans-serif;color:#3f5d7e;max-width:47ch;margin:0 0 16px}
+.rx-letterpress-ar{
+ display:block;font:400 clamp(21px,2.35vw,31px)/1.55 var(--rx-ar-literary);
+ letter-spacing:0;direction:rtl;text-align:start;color:#345b8e;
+}
+.rx-letterpress-copy a{
+ color:#234a7c;border-bottom:1px solid #456fa6;padding:5px 0;
+ font:700 12px/1.5 "DM Sans",Arial,sans-serif;align-self:flex-start;margin-top:10px;
+ text-decoration:none;
+}
+.rx-letterpress-copy a:is(:hover,:focus-visible){border-bottom-width:2px;color:#456fa6}
+.rx-letterpress [data-rx-press-panel]{display:grid;grid-template-columns:subgrid;grid-column:1/-1;}
+.rx-letterpress[data-enhanced="true"] [data-rx-press-panel]:not([data-active="true"]){display:none!important}
+.rx-letterpress-tabs{display:none;align-items:stretch;gap:1px;background:#c7d6e6;border:1px solid #c7d6e6;margin-top:17px}
+.rx-letterpress[data-enhanced="true"] .rx-letterpress-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.rx-letterpress-tab {
+ min-width:0;border:none;background:#fffbf3;color:#294e7d;
+ display:flex;gap:11px;align-items:center;min-height:61px;padding:12px;
+ font:600 12px/1.4 "DM Sans",Arial,sans-serif;cursor:pointer;text-align:start;
+}
+.rx-letterpress-tab b{font:500 10px/1.5 "DM Mono",monospace;color:#5076aa}
+.rx-letterpress-tab[aria-selected="true"]{background:#192d4b;color:#fff8ed}
+.rx-letterpress-tab[aria-selected="true"] b{color:#d1e3f7}
+.rx-letterpress-tab:is(:hover,:focus-visible){outline:2px solid #7193bf;outline-offset:-4px}
+.rx-letterpress-notice{
+ padding-top:20px;color:#527199;font:11px/1.75 "DM Mono",monospace;max-width:75ch;
+}
+.rx-letterpress[data-enhanced="true"] [data-active="true"] .rx-letterpress-word{
+ animation:rx-letterpress-ink .4s ease-out both;
+}
+@keyframes rx-letterpress-ink{from{opacity:.35;scale:.9;filter:blur(2px)}to{opacity:1;scale:1;filter:none}}
+@media(max-width:900px){
+ .rx-letterpress-heading{grid-template-columns:1fr;gap:14px}
+ .rx-letterpress-heading h2{max-width:none}
+ .rx-letterpress-stage{grid-template-columns:1fr;min-height:0}
+ .rx-letterpress-art{min-height:310px}
+ .rx-letterpress [data-rx-press-panel]{grid-template-columns:1fr}
+ .rx-letterpress-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:600px){
+ .rx-letterpress{padding:58px 0}
+ .rx-letterpress-shell{width:calc(100% - 32px)}
+ .rx-letterpress-heading h2{font-size:clamp(39px,10vw,54px)}
+ .rx-letterpress-art{min-height:255px}
+ .rx-letterpress-word{font-size:clamp(105px,25vw,145px)}
+ .rx-letterpress-copy{padding:24px 20px 30px}
+ .rx-letterpress-copy h3{font-size:clamp(31px,9vw,43px)}
+ .rx-letterpress[data-enhanced="true"] .rx-letterpress-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .rx-letterpress-tab{min-height:54px;gap:8px}
+ .rx-moments-glyph{font-size:clamp(92px,25vw,138px);-webkit-text-stroke:1px #bed2ee65}
+}
+@media(prefers-reduced-motion:reduce){
+ .rx-letterpress *, .rx-letterpress *::before, .rx-letterpress *::after,
+ .rx-moments-glyph {animation:none!important;transition:none!important;}
+}
