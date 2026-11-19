@@ -14,7 +14,6 @@ const filmRecords = [
   ['films/making-medicines-keep.html', '/publication-cinema.html#film-making-medicines-keep', '/assets/films/series-v8-primary/making-medicines-keep.mp4'],
   ['films/the-laboratory-we-carried-with-us.html', '/chem-squad.html', '/assets/films/the-laboratory-we-carried-with-us.mp4'],
   ['films/the-ring-that-never-closed.html', '/stories/the-ring-that-never-closed.html', '/assets/films/ring-that-never-closed.mp4'],
-  ['films/two-materials-no-section.html', '/stories/failed-zebrafish-histology.html', '/assets/films/two-materials-no-section-source-v2.mp4'],
   ['films/what-a-bubble-can-do.html', '/research/pulmonary-epithelial-injury.html', '/assets/films/what-a-bubble-can-do-evidence-v2.mp4']
 ];
 
@@ -34,11 +33,16 @@ test('Every released standalone film preserves original player and adds an acces
   }
 });
 
-test('The histology film presents its H1 before the screening section without losing the original film', () => {
-  const html = read('films/two-materials-no-section.html');
-  assert.ok(html.indexOf('<h1') < html.indexOf('id="complete-film"'), 'story introduction comes first');
-  assert.match(html, /src="\/assets\/films\/two-materials-no-section-source-v2\.vtt"/);
-  assert.match(html, /The failure is documented\. Its exact cause was not conclusively established\./);
+test('The withdrawn histology film stays unavailable while its earlier source description remains archived', () => {
+  assert.ok(!fs.existsSync(path.join(root,'films/two-materials-no-section.html')));
+  assert.ok(!fs.existsSync(path.join(root,'stories/failed-zebrafish-histology.html')));
+  const records = read('assets/films/evidence-in-motion.json');
+  assert.match(records,/two-materials-no-section/,'internal source record remains for research provenance');
+  for(const page of ['films.html','stories.html','index.html']){
+    const html = read(page);
+    assert.ok(!html.includes('href="/films/two-materials-no-section.html"'));
+    assert.ok(!html.includes('href="/stories/failed-zebrafish-histology.html"'));
+  }
 });
 
 test('The scientific research index explains evidence status with existing, specific destinations', () => {
