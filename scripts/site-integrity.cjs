@@ -5,6 +5,15 @@ const root=path.resolve(__dirname,".."),paths=[],errors=[],warnings=[];
 function visit(p){for(const e of fs.readdirSync(p,{withFileTypes:true})){if([".git","node_modules"].includes(e.name))continue;const x=path.join(p,e.name);if(e.isDirectory())visit(x);else if(e.isFile())paths.push(path.relative(root,x).split(path.sep).join("/"));}}
 visit(root);
 const known=new Set(paths),htmls=paths.filter(x=>x.endsWith(".html")),html=new Map(htmls.map(p=>[p,fs.readFileSync(path.join(root,p),"utf8")]));
+/* Keep historical snapshots intact for source-preservation comparisons.
+   They are not public routes and may legitimately reference retired films.
+   Validate only publishable HTML pages for live links and media integrity. */
+const unpublishedSnapshots=new Set([
+  "home-legacy-2026.html","living-desk-preview.html","cinema-quality-preview.html",
+  "cinema-research-preview.html","preview-rx23.html"
+]);
+const publicHtmls=htmls.filter(p=>!unpublishedSnapshots.has(p));
+
 const error=(p,m)=>errors.push(p+": "+m);
 function attr(t,key){return new RegExp("(?:^|\\s)"+key+"\\s*=\\s*([\"'])(.*?)\\1","i").exec(t)?.[2]??null;}
 function resolve(f,u){
@@ -15,6 +24,7 @@ function resolve(f,u){
 }
 let linkCount=0,assetCount=0;
 for(const [file,original] of html){
+ if(unpublishedSnapshots.has(file))continue;
  const s=original.replace(/(<script\b[^>]*>)[\s\S]*?(<\/script>)/gi,"$1$2").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,"").replace(/<!--[\s\S]*?-->/g,"");
  const ids=new Set();
  for(const x of s.matchAll(/\bid\s*=\s*(["'])(.*?)\1/g)){if(ids.has(x[2]))error(file,"duplicate ID "+x[2]);ids.add(x[2]);}
@@ -177,7 +187,7 @@ try {
 const discovery=JSON.parse(fs.readFileSync(path.join(root,"assets/discovery-index.json"),"utf8"));
 for(const route of ["/research.html","/publications.html","/doctoral-concepts.html","/research/high-speed-zebrafish-imaging.html","/research/plasma-modified-pla.html"])if(!(discovery.items||[]).some(x=>x.url===route))error("discovery","new hub missing from discovery index: "+route);
 if(!(discovery.items||[]).some(x=>x.url==="/molecular-therapeutics.html"))error("discovery","faculty page absent from search index");
-console.log("Audited "+htmls.length+" HTML pages, "+paths.filter(x=>x.endsWith(".js")).length+" scripts, "+linkCount+" links, "+assetCount+" static references.");
+console.log("Audited "+publicHtmls.length+" public HTML pages, "+paths.filter(x=>x.endsWith(".js")).length+" scripts, "+linkCount+" links, "+assetCount+" static references.");
 for(const w of [...new Set(warnings)])console.warn("WARN "+w);
 for(const e of [...new Set(errors)])console.error("FAIL "+e);
 if(errors.length)process.exitCode=1;else console.log("PASS static integrity and scientific provenance checks.");
