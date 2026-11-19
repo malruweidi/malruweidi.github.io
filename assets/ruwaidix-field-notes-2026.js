@@ -15,8 +15,18 @@
 
   const clamp = (n, low, high) => Math.min(high, Math.max(low, n));
   let x = .54, y = .47, magnification = 2;
+  const ar = () => document.documentElement.lang === "ar";
+  const translatedLabel = source =>
+    ar() ? (window.RuwaidixArabicDictionary?.[source] || source) : source;
+  function renderText() {
+    output.textContent = magnification.toFixed(1) +
+      (ar() ? "× تكبير توضيحي" : "× illustration zoom");
+    const open = toggle.getAttribute("aria-pressed") === "true";
+    toggle.textContent = translatedLabel(open ? "Close the cutaway" : "Open the cutaway");
+  }
 
   function renderLens() {
+    renderText();
     const bounds = stage.getBoundingClientRect();
     if (!bounds.width || !bounds.height || !image.naturalWidth || !image.naturalHeight) return;
     const scale = Math.max(bounds.width / image.naturalWidth, bounds.height / image.naturalHeight);
@@ -31,7 +41,7 @@
     lens.style.backgroundPosition =
       (lensSize / 2 - (x * bounds.width + cropX) * magnification) + "px " +
       (lensSize / 2 - (y * bounds.height + cropY) * magnification) + "px";
-    output.textContent = magnification.toFixed(1) + "× illustration zoom";
+
   }
 
   function pointAt(clientX, clientY) {
@@ -72,10 +82,12 @@
     const opened = toggle.getAttribute("aria-pressed") !== "true";
     toggle.setAttribute("aria-pressed", String(opened));
     membrane.dataset.open = String(opened);
-    toggle.textContent = opened ? "Close the cutaway" : "Open the cutaway";
+    renderText();
   });
   if (image.complete && image.naturalWidth) renderLens();
   else image.addEventListener("load", renderLens, { once: true });
   window.addEventListener("resize", renderLens, { passive: true });
+  document.addEventListener("ruwaidix:languagechange", renderText);
+  renderText();
   root.dataset.ready = "true";
 })();
