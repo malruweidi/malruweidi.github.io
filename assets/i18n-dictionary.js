@@ -1492,3 +1492,14 @@ Object.assign(window.RuwaidixArabicDictionary,{
   "Complete record ↗": "السجلّ الكامل ↗",
   "Reader's map ↗": "خريطة القارئ ↗"
 });
+
+/* Accessibility parity: scientific figure descriptions and image controls. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "Childhood family portrait showing a laughing boy holding a colorful toy": "صورة عائلية من الطفولة لطفل يضحك ممسكًا بلعبة ملوّنة",
+  "Personal archival photograph associated with the microscope obtained near Qasr El Einy in Cairo": "صورة أرشيفية شخصية مرتبطة بالمجهر الذي اقتُني قرب القصر العيني في القاهرة",
+  "Existing scientific publication figure showing zebrafish blood-flow imaging and analytical traces": "شكل علمي منشور يُظهر تصوير تدفّق الدم في سمك الزرد ومنحنيات التحليل",
+  "Image magnification controls": "عناصر التحكم في تكبير الصورة",
+  "Reduce image magnification": "تقليل تكبير الصورة",
+  "Increase image magnification": "زيادة تكبير الصورة",
+  "Illustrative niosomal carrier and aerosol transport diagram, not measured formulation data": "رسم توضيحي لناقل حويصلي غير أيوني وانتقال الهباء، وليس بيانات تجريبية مقاسة عن الصيغة الدوائية"
+});
