@@ -1,0 +1,59 @@
+/* Ruwaidix: additive material details for three source-rich archives, 2026-11-19.
+   Retains all original images, prose, sources, dates, links, and document structure. */
+:root {--rx-note-blue:#192d4b;--rx-note-mid:#456fa6;--rx-note-paper:#f6f1e8;--rx-note-edge:#cdd8e7}
+a.rx-story-route-image,a.rx-archive-image-link {
+  position:relative;display:block;overflow:hidden;isolation:isolate;
+  box-shadow:0 16px 40px #142d4720;
+}
+a.rx-story-route-image::before,a.rx-archive-image-link::before {
+ content:"";position:absolute;z-index:2;inset:12px;
+ pointer-events:none;opacity:.76;
+ background:linear-gradient(var(--rx-note-paper),var(--rx-note-paper)) top left/22px 1px no-repeat,
+            linear-gradient(var(--rx-note-paper),var(--rx-note-paper)) top left/1px 22px no-repeat,
+            linear-gradient(var(--rx-note-paper),var(--rx-note-paper)) top right/22px 1px no-repeat,
+            linear-gradient(var(--rx-note-paper),var(--rx-note-paper)) top right/1px 22px no-repeat,
+            linear-gradient(var(--rx-note-paper),var(--rx-note-paper)) bottom left/22px 1px no-repeat,
+            linear-gradient(var(--rx-note-paper),var(--rx-note-paper)) bottom left/1px 22px no-repeat,
+            linear-gradient(var(--rx-note-paper),var(--rx-note-paper)) bottom right/22px 1px no-repeat,
+            linear-gradient(var(--rx-note-paper),var(--rx-note-paper)) bottom right/1px 22px no-repeat;
+}
+a.rx-story-route-image::after,a.rx-archive-image-link::after {
+ position:absolute;z-index:2;bottom:19px;right:18px;
+ padding:7px 10px;border:1px solid #d3e0f1a8;
+ background:#192d4bcd;color:#f6f1e8;
+ font:500 9px/1.4 "DM Mono",monospace;letter-spacing:.08em;
+ opacity:0;transform:translateY(7px);transition:opacity .3s,transform .3s;
+ pointer-events:none;
+}
+a.rx-story-route-image::after {content:"FOLLOW THIS STORY ↗"}
+a.rx-archive-image-link::after {content:"OPEN ARCHIVAL IMAGE ↗"}
+a.rx-story-route-image:is(:hover,:focus-visible)::after,a.rx-archive-image-link:is(:hover,:focus-visible)::after {opacity:1;transform:none}
+a.rx-story-route-image:is(:hover,:focus-visible),a.rx-archive-image-link:is(:hover,:focus-visible){outline:2px solid var(--rx-note-mid);outline-offset:4px}
+a.rx-story-route-image img,a.rx-archive-image-link img{transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s}
+a.rx-story-route-image:is(:hover,:focus-visible) img,a.rx-archive-image-link:is(:hover,:focus-visible) img{transform:scale(1.045);filter:saturate(1.05)}
+.rx-story-route,.rx-archive-object{transition:transform .35s,box-shadow .35s}
+.rx-story-route:hover,.rx-archive-object:hover{transform:translateY(-3px)}
+.rx-story-route .rx-story-route-number,.rx-archive-object-copy>span:first-child{letter-spacing:.12em}
+.rx-archive-object figure{position:relative;min-width:0}
+.rx-archive-object figure::after{content:"";position:absolute;inset:auto 12px -8px 12px;height:9px;background:#cdd8e766;z-index:-1;transform:skewX(-13deg);pointer-events:none}
+.rx-archive-object-copy a:is(:focus-visible,:hover),.rx-story-route-body nav a:is(:focus-visible,:hover){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.research-section .rs-side{position:relative}
+.research-section .rs-side::before{content:"";position:absolute;inset:0 auto 0 -12px;width:2px;background:linear-gradient(#456fa6,#cdd8e7 70%,transparent)}
+.research-section .rs-side .rs-no{font-variant-numeric:tabular-nums}
+.research-section .rs-card{position:relative;overflow:hidden;transition:border-color .25s,transform .25s,box-shadow .25s}
+.research-section .rs-card::before{content:"";position:absolute;inset:0 auto auto 0;width:37px;height:3px;background:#7193bf;pointer-events:none}
+.research-section .rs-card:hover{transform:translateY(-3px);border-color:#7193bf;box-shadow:0 15px 36px #192d4b13}
+.research-section .rs-card a:is(:focus-visible,:hover){text-decoration:underline;text-underline-offset:4px}
+@media(max-width:650px) {
+ a.rx-story-route-image::before,a.rx-archive-image-link::before{inset:9px}
+ .rx-archive-object:hover,.rx-story-route:hover,.research-section .rs-card:hover{transform:none}
+ .research-section .rs-side::before{left:-6px}
+}
+@media(hover:none) {
+ a.rx-story-route-image::after,a.rx-archive-image-link::after{opacity:.92;transform:none;bottom:12px;right:12px}
+}
+@media(prefers-reduced-motion:reduce){
+ a.rx-story-route-image img,a.rx-archive-image-link img,
+ a.rx-story-route-image::after,a.rx-archive-image-link::after,
+ .rx-story-route,.rx-archive-object,.research-section .rs-card{transition:none!important;transform:none!important}
+}
