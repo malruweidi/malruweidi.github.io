@@ -15,6 +15,10 @@
  let active=0;
  let timer=null;
  const DURATION=6500;
+ function translatedLabel(source){
+   const dict=window.RuwaidixArabicDictionary||{};
+   return document.documentElement.lang==="ar" && dict[source] ? dict[source] : source;
+ }
  const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
  const choose=(index,focus=false)=>{
    active=(index+panels.length)%panels.length;
@@ -34,7 +38,8 @@
    if(timer!==null)window.clearTimeout(timer);
    timer=null;
    root.dataset.playing="false";
-   play.textContent=active===panels.length-1?"Replay sequence":"Play the sequence";
+   const source=active===panels.length-1?"Replay sequence":"Play the sequence";
+   play.textContent=translatedLabel(source);
    play.setAttribute("aria-label",play.textContent);
  };
  const schedule=()=>{
@@ -42,7 +47,7 @@
    const progress=root.querySelector('.rx-moments-progress i');
    if(progress)void progress.offsetWidth;
    root.dataset.playing="true";
-   play.textContent="Pause sequence";
+   play.textContent=translatedLabel("Pause sequence");
    play.setAttribute("aria-label","Pause sequence");
    timer=window.setTimeout(()=>{
      timer=null;
@@ -74,6 +79,11 @@
  prev.addEventListener("click",()=>{stop();choose(active-1)});
  next.addEventListener("click",()=>{stop();choose(active+1)});
  play.addEventListener("click",start);
+ document.addEventListener("ruwaidix:languagechange",()=>{
+   const source=timer!==null?"Pause sequence":active===panels.length-1?"Replay sequence":"Play the sequence";
+   play.textContent=translatedLabel(source);
+   play.setAttribute("aria-label",play.textContent);
+ });
  document.addEventListener("visibilitychange",()=>{if(document.hidden)stop()});
  reducedMotion.addEventListener?.("change",()=>{if(reducedMotion.matches)stop()});
  root.dataset.enhanced="true";
