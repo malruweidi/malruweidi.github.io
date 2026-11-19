@@ -35,7 +35,7 @@ test("the decorative typography is integrated into the actual earlier cinematic 
  assert.match(home,/id="research-workbench"/);
 });
 test("every responsive repair has a small-screen override and preserves desktop frame proportions",()=>{
- for(const page of ["index.html","stories.html","archive.html","research.html","writing.html","films.html","publications.html"]){
+ for(const page of ["index.html","stories.html","archive.html","research.html","writing.html","films.html","publications.html","chem-squad.html","leadership.html","illness-and-evidence.html","major-revisions.html","cv.html","engagement.html","computing.html","molecular-therapeutics.html","methods-evidence.html","publication-cinema.html","moving-evidence.html","search.html","reading-map.html","grants.html"]){
    assert.match(file(page),/ruwaidix-responsive-repair-2026\.css/);
    assert.match(file(page),/ruwaidix-arabic-editorial-2026\.css/);
  }
