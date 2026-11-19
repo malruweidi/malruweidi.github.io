@@ -6,11 +6,12 @@ const source = p => readFileSync(new URL("../" + p, import.meta.url),"utf8");
 test("the original Stories route and chapters remain intact beside the new physical specimen drawer",()=>{
   const s=source("stories.html");
   assert.match(s,/id="story-pathways"/);
-  for(const id of ["personal-microscope","unfortunate-trials","zebrafish-histology-materials"]) assert.ok(s.includes('id="'+id+'"'));
+  for(const id of ["personal-microscope","unfortunate-trials"]) assert.ok(s.includes('id="'+id+'"'));
   assert.match(s,/id="rx-evidence-cabinet"/);
   assert.match(s,/data-rx-display="cabinet"/);
   assert.match(s,/copolymer-sample-qatar-university-2017\.webp/);
-  assert.match(s,/zebrafish-paraffin-microtomy-failure\.webp/);
+  assert.equal((s.match(/data-rx-panel/g)||[]).length,2,"the intentionally curated cabinet contains two original photographic records");
+  assert.doesNotMatch(s,/\/stories\/failed-zebrafish-histology\.html/);
   assert.match(s,/cairo-microscope\.html/);
 });
 test("method switcher uses distinguishable actual figure and conceptual drawings, links to dossiers",()=>{
