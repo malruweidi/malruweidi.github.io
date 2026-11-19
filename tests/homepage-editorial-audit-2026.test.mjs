@@ -77,3 +77,15 @@ test("retired histology story and film are not promoted by main landing pages",(
     assert.doesNotMatch(html,/href="\/stories\/failed-zebrafish-histology\.html"/);
   }
 });
+
+test("search index describes only the seven public archive objects and released films",()=>{
+  const data=JSON.parse(read("assets/discovery-index.json"));
+  const object=data.items.find(x=>x.url==="/archive.html#archive-objects");
+  const films=data.items.find(x=>x.url==="/films.html");
+  assert.ok(object?.summary.startsWith("Seven documented archival objects"));
+  assert.doesNotMatch(object.summary+" "+object.keywords,/unsuccessful histology|microtome/i);
+  assert.ok(films?.summary.includes("Three released scientific"));
+  assert.doesNotMatch(films.keywords,/histology documentary/i);
+  assert.ok(!data.items.some(x=>x.url==="/films/two-materials-no-section.html"));
+  assert.ok(!data.items.some(x=>x.url==="/stories/failed-zebrafish-histology.html"));
+});
