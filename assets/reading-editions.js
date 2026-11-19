@@ -353,8 +353,80 @@ const headings = {
   shelf: ["From my own shelves","من مكتبتي وأعمالي"],
   notebook: ["From the research archive","من أرشيف البحث"]
 };
+/* A title page can point straight to the photograph, document or film that
+   gives it meaning. Reuse the record's own media and its original destination. */
+const roomCaptions = [];
+function print(source, href, labels) {
+  const link = create("a", "rx-room-print");
+  link.href = href;
+  const img = create("img", "rx-room-print-image");
+  img.src = source;
+  img.alt = "";
+  img.decoding = "async";
+  const caption = create("span", "rx-room-print-label");
+  link.append(img, caption);
+  roomCaptions.push({caption, labels});
+  return link;
+}
+function placePrints() {
+  const heading = main.querySelector("h1");
+  if (!heading) return;
+  heading.classList.add("rx-room-heading");
+  const prints = create("div", "rx-room-prints");
+  const titlePage = heading.closest("section");
+  let mount = heading.parentElement;
+  if (key === "films") {
+    const programme = main.querySelector(':scope > section[aria-label="Four newly produced two-minute documentaries"]');
+    if (titlePage && programme) {
+      programme.classList.add("rx-room-programme");
+      titlePage.after(programme);
+    }
+  }
+  if (isFilm && titlePage && !titlePage.querySelector("video,img")) {
+    const movies = [...main.querySelectorAll("video[poster]")].slice(0,3);
+    movies.forEach((movie,i) => {
+      movie.id ||= "rx-screening-" + (i + 1);
+      const name = movie.closest("article,figure,.fc-release")?.querySelector("h2,h3");
+      const labels = name ? () => name.innerText.trim() : ["Go to the film", "انتقل إلى الفيلم"];
+      prints.append(print(movie.poster, "#" + movie.id, labels));
+    });
+    if (!movies.length && key === "films/index") {
+      main.querySelectorAll("a:has(img)").forEach(link => {
+        const name = link.querySelector("h2,h3");
+        if (name && prints.children.length < 3) prints.append(print(link.querySelector("img").src,link.href,() => name.innerText.trim()));
+      });
+    }
+    prints.classList.add("rx-room-reel");
+  } else if (key === "writing") {
+    mount = titlePage.querySelector(".rxw-hero-inner");
+    const entry = exhibits.history;
+    prints.append(print("/" + entry[1], "/" + entry[0], [entry[4],entry[5]]));
+  } else if (key.startsWith("research/") || key.startsWith("stories/") || key.startsWith("grants/")) {
+    const figure = [...main.querySelectorAll("figure")].find(f => f.querySelector("figcaption") && f.querySelector("img"));
+    if (figure) {
+      figure.id ||= "rx-opening-source";
+      prints.append(print(figure.querySelector("img").src, "#" + figure.id,
+        ["See the image in context", "شاهد الصورة في سياقها"]));
+    } else {
+      const sourceKeys = {
+        "research/plasma-modified-pla": "pla", "research/high-speed-zebrafish-imaging": "camera",
+        "stories/the-ring-that-never-closed": "grant"
+      };
+      const entry = exhibits[sourceKeys[key] || exhibitKeys[0]];
+      const target = ("/" + entry[0]) === location.pathname ? (main.querySelector("#sources") ? "#sources" : "/figures.html") : "/" + entry[0];
+      prints.append(print("/" + entry[1],target,(target === "#sources") ? ["Read the original study", "اقرأ الدراسة الأصلية"] : [entry[4],entry[5]]));
+    }
+  }
+  if (prints.children.length) {
+    mount.classList.add("rx-room-spread");
+    mount.append(prints);
+  }
+}
+placePrints();
+
 function localize() {
   const lang = language();
+  roomCaptions.forEach(({caption,labels}) => { caption.textContent = typeof labels === "function" ? labels() : labels[lang]; });
   title.textContent = headings[family][lang];
   items.forEach(({id,type,name,caption}) => {
     const record = exhibits[id];

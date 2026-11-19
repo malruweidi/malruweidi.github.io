@@ -176,3 +176,7 @@
 const archiveViewerScript = document.createElement("script");
 archiveViewerScript.src = "/assets/archive-image-viewer.js";
 document.head.append(archiveViewerScript);
+
+const eyepieceScript = document.createElement("script");
+eyepieceScript.src = "/assets/archive-eyepiece.js";
+document.head.append(eyepieceScript);

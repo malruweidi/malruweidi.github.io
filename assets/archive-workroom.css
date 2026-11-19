@@ -1,0 +1,267 @@
+/* The blue wall and bench use the original headline, portrait and opening links.
+   The introductory paragraph sits on the sheet of paper directly below them. */
+:root {
+  --room-blue: #1645bd;
+  --room-ink: #101f3b;
+  --room-paper: #fbfaf4;
+  --room-rule: #a6b6cf;
+  --room-sans: "DM Sans", Arial, sans-serif;
+  --room-serif: "Newsreader", Georgia, serif;
+}
+@media screen {
+  html[data-rx-page="home"] main .rx-editorial-hero {
+    background: var(--room-paper); padding-block: 0 clamp(30px,4vw,64px); overflow: clip;
+  }
+  html[data-rx-page="home"] main .rx-hero-topline {
+    isolation: isolate; position: relative; margin: 0; padding-block: 17px;
+    color: #edf1ff; border-color: #ffffff52; font-size: .75rem;
+  }
+  html[data-rx-page="home"] main .rx-hero-topline::before {
+    content: ""; position: absolute; z-index: -1; inset: 0 calc(50% - 50vw);
+    background: var(--room-blue);
+  }
+  html[data-rx-page="home"] main .rx-hero-grid {
+    position: relative; isolation: isolate; display: grid;
+    grid-template-columns: minmax(0,1.08fr) minmax(0,1fr);
+    grid-template-areas: "by plate" "title plate" "actions plate" "intro credit";
+    gap: 0 clamp(18px,4vw,68px);
+  }
+  html[data-rx-page="home"] main .rx-hero-grid::before {
+    content: ""; grid-area: 1 / 1 / 4 / -1; align-self: stretch; z-index: -1;
+    width: 100vw; margin-inline: calc(50% - 50vw); pointer-events: none;
+    background:
+      radial-gradient(ellipse at 80% 62%, #91aaff36, transparent 44%) 0 0 / 100% 81% no-repeat,
+      linear-gradient(to bottom, var(--room-blue) 0% 81%, #0e2c72 81%, #234c9a 83%, #4268ad 100%);
+  }
+  html[data-rx-page="home"] main .rx-hero-copy { display: contents; }
+  html[data-rx-page="home"] main .rx-hero-kicker {
+    grid-area: by; align-self: end; margin: 0; padding-block: clamp(38px,5vw,85px) 14px;
+    color: #edf2ff; font: 500 .77rem/1.55 "DM Mono",monospace; letter-spacing: .07em;
+  }
+  html[data-rx-page="home"] main .rx-hero-title {
+    grid-area: title; align-self: start; margin: 0; max-width: none;
+    font: 650 clamp(56px,6.7vw,114px)/.94 var(--room-sans);
+    color: #fffdf3; letter-spacing: -.073em; text-wrap: initial; hyphens: none;
+  }
+  html[data-rx-page="home"] main .rx-hero-title em {
+    color: #fffdf3; font: italic 400 1.03em/.99 var(--room-serif); letter-spacing: -.055em;
+  }
+  html[data-rx-page="home"] main .rx-opening-links {
+    grid-area: actions; align-self: end; gap: 8px 13px; margin: 0;
+    padding-block: clamp(24px,3.5vw,62px) clamp(26px,3.5vw,55px);
+  }
+  html[data-rx-page="home"] main .rx-opening-links a {
+    border-radius: 100px; padding: 10px 17px; color: #fff; border: 1px solid #b0c6fd;
+    background: #123b9c; text-decoration: none; font-size: .9rem;
+  }
+  html[data-rx-page="home"] main .rx-opening-links a:first-child {
+    color: #12347d; background: #fffdf3; border-color: #fffdf3;
+  }
+  html[data-rx-page="home"] main .rx-opening-links a:is(:hover,:focus-visible) { text-decoration: underline; text-underline-offset: .2em; }
+  html[data-rx-page="home"] main .rx-hero-lead {
+    grid-area: intro; align-self: start; margin: 0; padding-block-start: clamp(26px,3.3vw,52px);
+    max-width: 58ch; font: 400 clamp(19px,1.55vw,25px)/1.46 var(--room-serif); color: var(--room-ink);
+  }
+  html[data-rx-page="home"] main .rx-hero-footnote {
+    grid-area: credit; align-self: start; justify-self: end; width: min(100%,32ch);
+    margin-block-start: clamp(26px,3.4vw,53px); padding-block-start: 9px;
+    border-block-start: 2px solid #224bb0; color: #435570; font-size: .78rem;
+  }
+  html[data-rx-page="home"] main .rx-hero-portrait {
+    grid-area: plate; z-index: 1; align-self: center; justify-self: end;
+    width: min(78%,365px); margin: clamp(24px,3.2vw,50px) 2.5% clamp(32px,3.4vw,54px);
+    padding: clamp(8px,1vw,14px); background: #fffdf5; color: var(--room-ink);
+    box-shadow: 3px 5px 8px #06123c26, 14px 22px 30px #051b5559; rotate: 3deg;
+  }
+  html[data-rx-page="home"] main .rx-portrait-mat { background: #ccd9e9; box-shadow: none; padding: 0; border: 0; }
+  html[data-rx-page="home"] main .rx-portrait-mat img { display: block; width: 100%; height: auto; aspect-ratio: 1.12; object-fit: cover; object-position: 50% 56%; }
+  html[data-rx-page="home"] main .rx-portrait-detail { border: 0; margin: 0; padding: 10px 0 4px; }
+  html[data-rx-page="home"] main .rx-portrait-detail strong { color: var(--room-ink); font-size: clamp(19px,1.7vw,26px); }
+  html[data-rx-page="home"] main .rx-portrait-detail span { margin: 3px 0 0; color: #3e526f; font-size: .7rem; }
+  html[data-rx-page="home"] main .rx-hero-portrait figcaption { color: #344763; font-size: .67rem; gap: 8px; padding-block: 5px 0; }
+  html[data-rx-page="home"] main .rx-hero-portrait .rx-photo-trigger { padding: 3px 0; min-height: 28px; border: 0; background: transparent; margin: 0; color: #163b87; font-size: .78rem; text-decoration: underline; }
+  html[data-rx-page="home"] main .rx-research-fastpaths { margin-block-start: clamp(24px,3vw,44px); }
+  .rx-scope-object {
+    grid-area: plate; z-index: 2; align-self: end; justify-self: start; display: grid; justify-items: center;
+    width: clamp(128px,14vw,194px); margin: 0 0 13px; padding: 0; border: 0;
+    background: transparent; color: #132e69; cursor: pointer; font: 600 .87rem/1.25 var(--room-sans);
+  }
+  .rx-scope-shadow { width: 100%; filter: drop-shadow(5px 9px 4px #07163770); }
+  .rx-scope-silhouette { display: block; position: relative; width: 100%; aspect-ratio: 232/414; }
+  /* The outline follows the binocular microscope and ACS mug in the 2017 desk photograph. */
+  .rx-scope-silhouette::before {
+    content: ""; display: block; position: absolute; width: 280.1724%; aspect-ratio: 1;
+    left: -152.5862%; top: -39.1304%;
+    background: url("/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp") center / 100% 100%;
+    clip-path: polygon(69% 28.8%,72% 28.8%,72.6% 26.3%,74% 25.8%,75.7% 26%,76.8% 27%,76.8% 28.7%,79.7% 28.7%,80.6% 26.2%,82.1% 25.6%,83.9% 25.8%,84.6% 26.9%,84.2% 28.1%,86.1% 28.2%,87.1% 33.4%,86.5% 35.7%,84.5% 37.5%,81.1% 38.2%,82.4% 39.6%,81.4% 40.8%,83.2% 46.9%,82.7% 47.7%,80.8% 47.6%,79.4% 44.5%,79% 45.7%,76.6% 45.7%,75.1% 45.2%,73.6% 47.9%,87.1% 48.2%,87.2% 52.4%,83.5% 52.6%,83.5% 55.5%,83.4% 59.5%,81% 59.5%,80.7% 57.6%,77.8% 57.8%,77.8% 60.2%,81.9% 62%,89.6% 68.8%,89.5% 72.2%,88.7% 74.6%,74% 75.1%,73.1% 75.4%,73% 86.4%,71.2% 87.8%,66.1% 88.2%,61.6% 87.4%,59.9% 85.5%,59.9% 83.6%,57.2% 83.7%,55.4% 82.1%,54.6% 79.1%,55.4% 75.3%,57.2% 73.5%,60.2% 74.1%,60.3% 70.9%,61.5% 69.5%,66.1% 68.7%,66.4% 67.9%,64% 64.7%,63.5% 62.1%,66% 61.5%,67.7% 59.6%,67% 58.5%,64% 57.7%,63.5% 56.1%,63.8% 53.7%,65.9% 53.4%,66.6% 50.3%,65.6% 49.1%,65.7% 48.1%,70.4% 48%,70.5% 40.4%,72.3% 38.2%,71% 37.8%,69.3% 36.3%);
+  }
+  .rx-scope-tag { position: relative; margin-top: -.15em; padding: 9px 13px; border-radius: 3px; background: #edf0ff; box-shadow: 2px 4px 9px #08245766; }
+  .rx-scope-object:is(:hover,:focus-visible) .rx-scope-tag { background: white; text-decoration: underline; text-underline-offset: .18em; }
+  .rx-scope-object:focus-visible { outline: 3px solid white; outline-offset: 5px; }
+
+  /* A screening room, then a brighter contact sheet with the original four tabs. */
+  html[data-rx-page="home"] main .rx-home-film { background: #0c1428; border-block: 0; }
+  html[data-rx-page="home"] main .rx-home-film-title { font-size: clamp(44px,5vw,84px); }
+  html[data-rx-page="home"] main .rx-home-film-media { box-shadow: 0 16px 50px #0004; }
+  html[data-rx-page="home"] main .rx-chapters { background: var(--room-paper); }
+  html[data-rx-page="home"] main .rx-scene-page { border: 0; background: #153eaa; }
+  html[data-rx-page="home"] main .rx-scene-stage .rx-scene-page > .rx-chapter-image { background: #102c76; }
+  html[data-rx-page="home"] main .rx-scene-tab[aria-selected="true"] { background: #153eaa; }
+  html[data-rx-page="home"] main .rx-chapters-heading h2 { max-width: 15ch; font: 600 clamp(38px,4.9vw,76px)/1 var(--room-sans); letter-spacing: -.06em; }
+
+  @media (max-width: 780px) {
+    html[data-rx-page="home"] main .rx-hero-grid {
+      grid-template-columns: minmax(0,1fr); grid-template-areas: "by" "title" "plate" "actions" "intro" "credit";
+    }
+    html[data-rx-page="home"] main .rx-hero-grid::before { grid-row: 1 / 5; background: linear-gradient(to bottom,var(--room-blue) 0% 74%,#163781 74%,#446db6 100%); }
+    html[data-rx-page="home"] main .rx-hero-kicker { padding-block: 26px 12px; }
+    html[data-rx-page="home"] main .rx-hero-title { font-size: clamp(46px,9.9vw,74px); }
+    html[data-rx-page="home"] main .rx-hero-portrait { justify-self: center; width: min(62%,280px); margin: 24px 0 18px; margin-inline-start: 23%; }
+    html[data-rx-page="home"] main .rx-portrait-mat img { aspect-ratio: 1.38; }
+    html[data-rx-page="home"] main .rx-scope-object { width: clamp(99px,25vw,150px); margin-inline-start: max(0px,calc((100% - 470px)/2)); margin-block-end: 9px; }
+    html[data-rx-page="home"] main .rx-opening-links { padding-block: 13px 24px; }
+    html[data-rx-page="home"] main .rx-hero-footnote { width: 100%; justify-self: start; margin-block-start: 17px; }
+  }
+  @media (max-width: 520px) {
+    html[data-rx-page="home"] main .rx-hero-portrait { justify-self: end; margin-inline: 0 2%; }
+    html[data-rx-page="home"] main .rx-hero-portrait figcaption { display: grid; gap: 0; font-size: .66rem; }
+    html[data-rx-page="home"] main .rx-scope-object { width: clamp(78px,23vw,108px); }
+    html[data-rx-page="home"] main .rx-hero-topline { gap: 3px; font-size: .68rem; padding-block: 11px; }
+    html[data-rx-page="home"] main .rx-hero-kicker { font-size: .73rem; }
+    html[data-rx-page="home"] main .rx-opening-links a { padding: 8px 12px; font-size: .81rem; }
+    .rx-scope-tag { font-size: .78rem; }
+  }
+  html[dir="rtl"][data-rx-page="home"] main :is(.rx-hero-title,.rx-hero-title em,.rx-chapters-heading h2) { font-family: Tahoma,Arial,sans-serif; line-height: 1.25; letter-spacing: normal; }
+  html[dir="rtl"][data-rx-page="home"] main .rx-hero-lead { line-height: 1.8; }
+  @media (prefers-reduced-motion: no-preference) {
+    .rx-scope-shadow { transition: transform .24s ease; }
+    .rx-scope-object:is(:hover,:focus-visible) .rx-scope-shadow { transform: translateY(-5px) rotate(-2deg); }
+    @supports (animation-timeline: view()) {
+      html[data-rx-page="home"] main .rx-hero-portrait {
+        animation: room-print-settle linear both; animation-timeline: view(); animation-range: exit 0% exit 80%;
+      }
+      @keyframes room-print-settle { from { rotate: 3deg; } to { rotate: 0deg; } }
+    }
+  }
+}
+@media print { .rx-scope-object,.rx-optics,.rx-room-print { display: none !important; } }
+
+/* The physical object opens a viewing instrument. The slider changes display
+   scale only, leaving the complete source photographs linked alongside it. */
+.rx-optics {
+  position: fixed; inset: 0; margin: auto; width: min(780px,94vw); max-width: 94vw;
+  max-height: 90dvh; padding: 0; border: 1px solid #8399bb; border-radius: 6px;
+  color: var(--room-paper); background: #122348; box-shadow: 0 25px 80px #060b19a8; overscroll-behavior: contain;
+}
+.rx-optics::backdrop { background: #070f24d9; }
+.rx-optics-shell { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,.95fr); gap: 24px; padding: clamp(20px,4vw,42px); }
+.rx-optics-bar { grid-column: 1/-1; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid #7288aa; }
+.rx-optics .rx-optics-title { color: #fff; margin: 0; font: italic 400 clamp(34px,4vw,57px)/1.12 var(--room-serif); letter-spacing: -.04em; }
+.rx-optics button { min-height: 42px; padding: 8px 13px; margin: 0; color: #f9fcff; border-radius: 5px; border: 1px solid #91a4c5; background: #233a61; font: 600 .9rem/1.35 var(--room-sans); cursor: pointer; }
+.rx-optics button[aria-pressed="true"] { color: #12335c; background: #fafbf5; }
+.rx-optics .rx-optics-lens {
+  align-self: center; width: 100%; aspect-ratio: 1; overflow: hidden; display: grid; place-items: center;
+  background: #101417; border: 9px solid #0a132b; border-radius: 50%; outline: 1px solid #7184a1;
+  box-shadow: 0 0 0 6px #253958, 4px 7px 15px #050c1b65;
+}
+.rx-optics .rx-optics-image { display: block; width: 100%; max-width: none; height: 100%; object-fit: cover; }
+.rx-optics-notes { min-width: 0; align-self: center; }
+.rx-optics-tabs,.rx-optics-links { display: flex; flex-wrap: wrap; gap: 6px; }
+.rx-optics .rx-optics-caption { color: #eef2ff; font: 400 1.08rem/1.56 var(--room-serif); margin-block: 15px; }
+.rx-optics-controls { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; font: 500 .88rem/1.5 var(--room-sans); }
+.rx-optics-value { font-variant-numeric: tabular-nums; }
+.rx-optics-zoom { grid-column: 1/-1; accent-color: #b4caff; width: 100%; min-height: 30px; }
+.rx-optics-links { margin-top: 12px; flex-direction: column; align-items: flex-start; }
+.rx-optics .rx-optics-links a { color: #e3edff; font: 500 .9rem/1.45 var(--room-sans); text-decoration: underline; text-underline-offset: .19em; padding-block: 5px; }
+.rx-optics :is(a,button,input):focus-visible { outline: 3px solid #a8c4ff; outline-offset: 3px; }
+@media (max-width: 610px) {
+  .rx-optics-shell { grid-template-columns: 1fr; gap: 16px; }
+  .rx-optics .rx-optics-lens { width: min(54vw,210px); justify-self: center; }
+}
+html[dir="rtl"] .rx-optics :is(h2,p) { font-family: Tahoma,Arial,sans-serif; line-height: 1.7; letter-spacing: normal; }
+
+@media screen {
+  html[data-rx-page="home"] main .rx-hero-title em { font-size: .87em; }
+  @media (min-width: 781px) {
+    .rx-scope-object { position: relative; inset-inline-start: -24px; }
+  }
+  /* Story photographs keep their full frame. Film links carry the edge and
+     spacing of a strip of film; research plates sit on ruled paper. */
+  html[data-reading-edition] body .rx-room-prints {
+    align-self: center; justify-self: center; display: grid; gap: 11px;
+    width: min(100%,460px); box-sizing: border-box; min-width: 0;
+  }
+  html[data-reading-edition] .rx-room-print {
+    display: grid; align-content: start; box-sizing: border-box; min-width: 0;
+    padding: clamp(9px,1vw,15px); gap: 9px; background: #fffdf7; color: #152d56;
+    border: 1px solid #b5bfcd; box-shadow: 4px 7px 0 #a3b6d1, 13px 18px 27px #070e2426;
+    text-decoration: none;
+  }
+  html[data-reading-edition] .rx-room-print img { display: block; width: 100%; max-height: 320px; object-fit: contain; background: #f1f3f6; padding: 0; margin: 0; }
+  html[data-reading-edition] .rx-room-print-label { color: #173d83; font: 650 .9rem/1.5 var(--room-sans); text-decoration: underline; text-underline-offset: .22em; }
+  html[data-reading-edition] .rx-room-print:focus-visible { outline: 3px solid #6999ff; outline-offset: 5px; }
+  html[data-reading-edition] .rx-room-print:is(:hover,:focus-visible) .rx-room-print-label { text-decoration-thickness: 2px; }
+  html[data-reading-edition="narrative"] .rx-room-prints:not(.rx-room-reel) .rx-room-print { rotate: -2deg; box-shadow: 4px 6px 0 #e1e2db, 9px 16px 21px #050c294d; }
+  html[data-reading-edition] body .rx-room-reel {
+    align-content: center; gap: 0; padding: 17px 23px; background-color: #0b1225;
+    background-image: repeating-linear-gradient(to bottom,transparent 0 10px,#c6d4e7 10px 18px,transparent 18px 29px),repeating-linear-gradient(to bottom,transparent 0 10px,#c6d4e7 10px 18px,transparent 18px 29px);
+    background-position: left 6px top,right 6px top; background-repeat: repeat-y; background-size: 7px 29px;
+    box-shadow: 6px 12px 27px #020b2040; rotate: 1.5deg;
+  }
+  html[data-reading-edition] .rx-room-reel .rx-room-print { padding: 8px 0; border: 0; box-shadow: none; background: transparent; gap: 3px; }
+  html[data-reading-edition] .rx-room-reel .rx-room-print img { height: clamp(100px,12vw,160px); max-height: none; object-fit: contain; background: #060b16; }
+  html[data-reading-edition] .rx-room-reel .rx-room-print:only-child img { height: auto; max-height: 330px; }
+  html[data-reading-edition] .rx-room-reel .rx-room-print-label { color: #eff4ff; font-size: .82rem; }
+  html[data-reading-edition="notebook"] body .rx-room-heading {
+    letter-spacing: -.045em; text-wrap: balance; overflow-wrap: break-word;
+  }
+  html[data-reading-edition="cinema"] body .rx-room-heading {
+    font-family: var(--room-sans); font-weight: 600; letter-spacing: -.065em; line-height: 1.02;
+  }
+  html[data-reading-edition="cinema"] body .rx-room-heading em { font-family: var(--room-serif); font-weight: 400; }
+  html[data-reading-edition="shelf"] body .rx-room-heading { font-style: italic; line-height: 1.04; letter-spacing: -.045em; }
+  html[data-reading-edition="narrative"] .stories-hero-photo,
+  html[data-rx-page="major-revisions"] main .rx-book-visual img { rotate: 2deg; }
+  html[data-rx-page="major-revisions"] main .rx-book-visual img { box-shadow: 3px 3px 0 #f5efe4,5px 5px 0 #aab4c2,8px 8px 0 #f5efe4,11px 10px 0 #3a4d6d,18px 24px 35px #11213a36; }
+  html[data-reading-edition="notebook"] body .rx-illustrated-intro > .rx-reading-spread {
+    padding: 12px; background-color: #e8effa;
+    background-image: repeating-linear-gradient(0deg,transparent 0 21px,#c7d6ed 21px 22px);
+    border: 1px solid #9eafc9; box-shadow: 6px 7px 0 #becde1;
+  }
+  html[data-reading-edition="notebook"] body .rx-illustrated-intro .rx-reading-title {
+    background: #143e9a; color: #fff; margin-bottom: 7px; padding: 10px 13px;
+  }
+  @media (min-width: 880px) {
+    html[data-reading-edition] main .rx-room-spread {
+      display: grid; grid-template-columns: minmax(0,1.28fr) minmax(0,.75fr);
+      align-content: center; align-items: start; column-gap: clamp(38px,6vw,104px); row-gap: 0;
+    }
+    html[data-reading-edition] main .rx-room-spread > * { grid-column: 1; min-width: 0; }
+    html[data-reading-edition] main .rx-room-spread > .rx-room-prints { grid-area: 1 / 2 / span 8 / 3; }
+    html[data-reading-edition] main .rx-room-spread h1 { font-size: clamp(46px,5.4vw,84px); }
+    html[data-rx-page="writing"] main .rxw-hero-intro { margin-block-start: 18px; }
+  }
+  @media (max-width: 879px) {
+    html[data-reading-edition] main .rx-room-spread { display: block; }
+    html[data-reading-edition] main .rx-room-spread > .rx-room-prints { width: min(100%,460px); margin: 30px auto 4px; }
+    html[data-reading-edition] main .rx-room-reel:has(a:nth-child(2)) { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 6px; padding: 12px 18px; }
+    html[data-reading-edition] main .rx-room-reel:has(a:nth-child(2)) img { height: clamp(55px,12vw,100px); }
+    html[data-rx-page="writing"] main .rxw-hero-intro { margin-block-start: 16px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html[data-reading-edition] .rx-room-print { transition: translate .22s ease, rotate .22s ease; }
+    html[data-reading-edition] .rx-room-print:is(:hover,:focus-visible) { translate: 0 -3px; }
+    html[data-reading-edition="narrative"] .rx-room-prints:not(.rx-room-reel) .rx-room-print:is(:hover,:focus-visible) { rotate: 0deg; }
+    .rx-scene-page:not([hidden]) > .rx-chapter-image { animation: room-contact-in .36s ease-out; }
+    @keyframes room-contact-in { from { transform: translateY(7px); opacity: .78; } }
+  }
+  html[lang="ar"][data-reading-edition] body .rx-room-heading { letter-spacing: normal; line-height: 1.3; }
+}
+@media screen {
+  html[data-reading-edition="cinema"] body .fc-header { background: #f4f7fb; }
+  html[data-reading-edition="cinema"] .fc-header :is(.fc-mark,.fc-nav a) { color: #17335f; }
+  html[data-reading-edition="cinema"] main .fc-hero .rx-room-heading em { color: #c4d8ff; }
+  html[data-reading-edition="cinema"] main .rx-room-programme { background: #e4edfb !important; }
+  html[data-reading-edition="cinema"] main .rx-room-programme :is(h2,p,a) { color: #19365e !important; }
+  html[data-reading-edition="cinema"] main .rx-room-programme a { border-color: #859cbd !important; }
+}
