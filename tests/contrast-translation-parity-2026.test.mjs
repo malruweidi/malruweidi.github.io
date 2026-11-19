@@ -21,16 +21,29 @@ function contrast(fg,bg){
  const l1=lum(fg),l2=lum(bg);
  return (Math.max(l1,l2)+.05)/(Math.min(l1,l2)+.05);
 }
-test('Moving Moments uses explicit navy-on-parchment contrast instead of white on pale blue',()=>{
- const ink=moments.match(/--rx-moments-heading-ink:\s*(#[0-9a-f]{6})/i)?.[1];
- const bg=moments.match(/--rx-moments-heading-paper:\s*(#[0-9a-f]{6})/i)?.[1];
- const accent=moments.match(/--rx-moments-heading-accent:\s*(#[0-9a-f]{6})/i)?.[1];
- assert.ok(ink&&bg&&accent,'all three color tokens defined');
- assert.ok(contrast(ink,bg)>=7,'headline meets enhanced text contrast');
- assert.ok(contrast(accent,bg)>=4.5,'emphasized word remains legible');
- assert.match(moments,/\.rx-moments-header h2\s*\{/);
- assert.match(moments,/background:\s*var\(--rx-moments-heading-paper\)/);
- assert.match(moments,/color:\s*var\(--rx-moments-heading-ink\)/);
+test('Moving Moments has high-contrast ivory text against its darkest and lightest navy background',()=>{
+ const palette={
+  lightBackground:'#253f66',
+  mainBackground:'#1c324f',
+  darkBackground:'#162a44',
+  headline:'#fffaf0',
+  emphasis:'#bbd5f7',
+  paragraph:'#ecf1f7',
+  eyebrow:'#ead9b9'
+ };
+ const selectors=moments.slice(moments.indexOf('html[data-rx-page="home"] body .rx-moments-header{'));
+ for(const background of [palette.lightBackground,palette.mainBackground,palette.darkBackground]){
+  for(const foreground of [palette.headline,palette.emphasis,palette.paragraph,palette.eyebrow]){
+   assert.ok(contrast(foreground,background)>=7,
+    foreground+' should be readable on '+background);
+  }
+ }
+ assert.match(selectors,/background-image:linear-gradient\(125deg,#253f66 0%,#1c324f 70%,#162a44 100%\)!important/);
+ assert.match(selectors,/color:#fffaf0!important/);
+ assert.match(selectors,/-webkit-text-fill-color:#fffaf0!important/);
+ assert.match(selectors,/-webkit-text-fill-color:#bbd5f7!important/);
+ assert.match(selectors,/\.rx-moments-header p\{/);
+ assert.doesNotMatch(moments,/--rx-moments-heading-paper/,'discarded paper tokens must not hide the effective dark design');
 });
 test('Arabic calligraphy uses Ruqaa for artwork, Amiri for literary titles and IBM Plex for interface',()=>{
  assert.match(arabic,/Aref Ruqaa/);
