@@ -48,7 +48,7 @@
    if(progress)void progress.offsetWidth;
    root.dataset.playing="true";
    play.textContent=translatedLabel("Pause sequence");
-   play.setAttribute("aria-label","Pause sequence");
+   play.setAttribute("aria-label",play.textContent);
    timer=window.setTimeout(()=>{
      timer=null;
      if(active===panels.length-1){stop();return;}
