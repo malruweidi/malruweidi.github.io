@@ -2,10 +2,28 @@ html main .family-drawer {background:#152d46;color:#f7ecdc;border:1px solid #314
 html main .family-drawer summary {list-style:none;display:flex;align-items:center;gap:clamp(14px,4vw,62px);padding:0 5% 0 0;cursor:pointer;min-height:135px;color:#f7ecdc;background:#152d46}
 .family-drawer summary::-webkit-details-marker {display:none}
 html main .family-drawer summary::after {display:none}
-.drawer-cover {align-self:stretch;flex:0 0 clamp(110px,28%,230px);min-height:150px;background:url('/assets/personal-archive/toy.webp') center bottom / auto 100% no-repeat;position:relative;isolation:isolate;background-image:none}
-.drawer-cover::after {content:"";position:absolute;inset:0;margin:auto;width:min(100%,155px);aspect-ratio:1170/1138;max-height:100%;background:url('/assets/personal-archive/toy.webp') center/100% 100%;clip-path:polygon(5% 100%,7% 80%,12% 65%,19% 58%,31% 53%,37% 50%,34% 42%,32% 31%,34% 27%,36% 27%,35% 20%,37% 11%,42% 5%,53% 1%,61% 1%,68% 5%,71% 11%,72% 24%,70% 28%,72% 28%,71% 40%,68% 43%,66% 47%,70% 47%,74% 53%,81% 56%,87% 62%,92% 71%,99% 96%,98% 100%)}
+/* The gallery is now an archival print, deliberately distinct from Scene 01's silhouette portrait. */
+.drawer-cover {
+ align-self:stretch;flex:0 0 clamp(130px,27%,290px);
+ min-height:clamp(162px,19vw,234px);position:relative;isolation:isolate;
+ background:radial-gradient(ellipse at 48% 45%,#345477 0%,#1b3453 62%,#152a44 100%);
+}
+.drawer-cover::before {
+ content:"";position:absolute;left:50%;top:11px;
+ width:clamp(105px,67%,205px);height:calc(100% - 26px);max-height:220px;
+ background:#e9dcc7;border:1px solid #c9b18d;
+ box-shadow:0 8px 20px #061a3280,6px 7px 0 #4b6b8a30;
+ transform:translateX(-50%) rotate(-5deg);
+}
+.drawer-cover::after {
+ content:"";position:absolute;left:50%;top:18px;
+ width:clamp(95px,calc(67% - 12px),193px);height:calc(100% - 43px);max-height:203px;
+ background:#293b54 url('/assets/personal-archive/suspenders.webp') center 27% / cover no-repeat;
+ transform:translateX(-50%) rotate(-5deg);
+ box-shadow:inset 0 0 0 1px #f8efdb50;
+}
 .drawer-heading {display:grid;gap:6px;padding-block:18px;text-align:start}
-html main .drawer-heading strong {font:500 clamp(24px,4vw,50px)/1.06 Georgia,serif;color:#fff2dd}
+html main .drawer-heading strong {font:500 clamp(25px,3.1vw,42px)/1.12 Georgia,serif;color:#fff2dd}
 .drawer-heading small,.acs-reel small,.frame-count {font:500 .74rem/1.5 monospace;letter-spacing:.065em}
 .drawer-heading span {font:600 .88rem/1.5 system-ui;text-decoration:underline;text-underline-offset:4px}
 .drawer-inside {background:#e7ddcb;color:#172f46;padding:clamp(12px,3vw,34px)}
@@ -28,3 +46,14 @@ html .acs-reel figcaption h3 {font:500 clamp(22px,3vw,37px)/1.13 Georgia,serif;m
 html .acs-reel figcaption a {text-decoration:underline}
 @media(max-width:520px){html .acs-reel{grid-template-columns:1fr}.acs-reel video{max-height:50vh}.drawer-cover{min-height:125px}}
 @media(prefers-reduced-motion:reduce){html main .drawer-window img{transition:none}}
+
+/* Narrow and Arabic layouts: keep the original photo legible and the headline in bounds. */
+@media(max-width:520px){
+ .drawer-cover{flex:0 0 116px;min-height:142px}
+ .drawer-cover::before{width:104px;max-height:128px;top:10px;height:calc(100% - 20px)}
+ .drawer-cover::after{width:92px;max-height:113px;top:16px;height:calc(100% - 33px)}
+ html main .drawer-heading strong{font-size:clamp(22px,6vw,29px);line-height:1.15}
+ html main .family-drawer summary{gap:10px;padding-inline-end:10px}
+}
+html[lang="ar"] main .drawer-heading strong{font-family:var(--rx-ar-literary,"Amiri",serif);line-height:1.4}
+html[lang="ar"] main .drawer-heading :is(small,span){letter-spacing:0;line-height:1.65}
