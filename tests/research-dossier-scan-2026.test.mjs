@@ -54,7 +54,7 @@ test("the ongoing thesis stays separate from published study claims", () => {
   assert.match(summary, /The (?:MSc )?project is ongoing/);
   assert.match(summary, /not yet quantitative proof/);
   assert.match(summary, /No encapsulation efficiencies/);
-  assert.match(ongoing, /MSc investigation in progress; no thesis results or publication claimed/);
+  assert.match(ongoing, /Ongoing project\. No aerosol deposition, encapsulation efficiencies, clinical performance, or unpublished experimental outcomes are claimed/);
   assert.match(css, /@media\(max-width: 700px\)/);
   assert.match(css, /@media print/);
 });
