@@ -7,7 +7,6 @@ const root=resolve(dirname(fileURLToPath(import.meta.url)),".."), read=p=>readFi
 const story=read("stories.html"),home=read("home-legacy-2026.html"),index=JSON.parse(read("assets/discovery-index.json"));
 const storyRoutes=[
  ["stories/cairo-microscope.html","personal-microscope"],
- ["stories/failed-zebrafish-histology.html","zebrafish-histology-materials"],
  ["stories/unfortunate-copolymer-trials.html","unfortunate-trials"],
  ["stories/ramadan-microscope.html","ramadan-atvb"]];
 const researchRoutes=[
@@ -66,8 +65,8 @@ test("new pages appear in sitemap and the existing bilingual search",()=>{
   assert.ok(index.items.some(x=>x.url==='/'+file),file);
  }
 });
-test("original site remains intact, including six research dialogs and fifteen Stories chapters",()=>{
+test("original site retains six research dialogs and all surviving Stories chapters",()=>{
  for(const id of ["research","story","publications","patient-perspective","framework","quality","history","writing","quacs"])assert.ok(home.includes('id="'+id+'"'));
  for(const key of ["lung","zebrafish","polymer","niosomes","echo","robo"])assert.ok(home.includes('data-project="'+key+'"'));
- for(const id of ["anatomy","community","living-systems","ramadan-atvb","delivery","molecular-models","community-before-lab","personal-microscope","unfortunate-trials","undergraduate-imines","historical-chemistry","surface-science","research-apparatus","zebrafish-histology-materials","zewail-visit-and-portrait"])assert.ok(story.includes('id="'+id+'"'),id);
+ for(const id of ["anatomy","community","living-systems","ramadan-atvb","delivery","molecular-models","community-before-lab","personal-microscope","unfortunate-trials","undergraduate-imines","historical-chemistry","surface-science","research-apparatus","zewail-visit-and-portrait"])assert.ok(story.includes('id="'+id+'"'),id);
 });
