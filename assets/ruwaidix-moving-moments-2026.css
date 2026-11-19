@@ -20,27 +20,34 @@ html[data-rx-page="home"] .rx-moments::before{
 .rx-moments-header h2{font:400 clamp(47px,5.6vw,83px)/.99 "Newsreader",Georgia,serif;letter-spacing:-.045em;color:#fff9ef;margin:16px 0 0;max-width:14ch}
 .rx-moments-header h2 em{color:#b6cce7;font-style:italic}
 .rx-moments-header p{color:#e0e8f1;font:14px/1.9 "DM Sans",Arial,sans-serif;max-width:49ch;margin:0 0 3px}
-/* The screenshot revealed a pale hero behind white lettering.
-   The introduction now owns its own paper and ink, independently of ancestor color layers.
-   Scoped high specificity prevents legacy homepage color effects leaking into this feature. */
+/* Contrast-first editorial opening. A deep-blue photographic essay card, not
+   pale typography over pale paper. Works on iOS Safari/Chrome without hiding
+   selectable text. Blue + parchment only; all existing content is preserved. */
 html[data-rx-page="home"] body .rx-moments-header{
- background:var(--rx-moments-heading-paper)!important;
- background-image:linear-gradient(115deg,#f9f6ee 4%,#e9eff7 100%)!important;
- color:var(--rx-moments-heading-ink)!important;
- border:1px solid #b5c7df;
- padding:clamp(24px,3.2vw,47px);
+ background:#1c324f!important;
+ background-image:linear-gradient(125deg,#253f66 0%,#1c324f 70%,#162a44 100%)!important;
+ color:#fffaf0!important;
+ border:1px solid #7c9bc2;
+ box-shadow:inset 4px 0 #e1cfb0,0 18px 50px #0b172b35;
+ padding:clamp(26px,3.2vw,47px);
  margin-bottom:clamp(22px,3vw,38px);
  grid-template-columns:minmax(0,1.1fr) minmax(250px,.9fr);
  gap:clamp(20px,4vw,54px);
  align-items:center;
  min-height:0;
  isolation:isolate;
+ position:relative;
+ z-index:1;
 }
 html[data-rx-page="home"] body .rx-moments-header :is(h2,h2 em,p,.rx-moments-eyebrow){
- text-shadow:none!important;mix-blend-mode:normal!important;
+ text-shadow:none!important;
+ mix-blend-mode:normal!important;
+ opacity:1!important;
+ filter:none!important;
 }
 html[data-rx-page="home"] body .rx-moments-header h2{
- color:var(--rx-moments-heading-ink)!important;
+ color:#fffaf0!important;
+ -webkit-text-fill-color:#fffaf0!important;
  font-size:clamp(43px,4.5vw,69px);
  line-height:1.075;
  letter-spacing:-.037em;
@@ -48,29 +55,48 @@ html[data-rx-page="home"] body .rx-moments-header h2{
  text-wrap:balance;
 }
 html[data-rx-page="home"] body .rx-moments-header h2 em{
- color:var(--rx-moments-heading-accent)!important;
+ color:#bbd5f7!important;
+ -webkit-text-fill-color:#bbd5f7!important;
 }
 html[data-rx-page="home"] body .rx-moments-header p{
- color:#304965!important;
+ color:#ecf1f7!important;
+ -webkit-text-fill-color:#ecf1f7!important;
  font-size:clamp(14px,1.05vw,16px);
  line-height:1.77;
  max-width:49ch;
  margin:0;
 }
 html[data-rx-page="home"] body .rx-moments-header .rx-moments-eyebrow{
- color:#41689b!important;
+ color:#ead9b9!important;
+ -webkit-text-fill-color:#ead9b9!important;
  font-size:10px;
+ line-height:1.7;
+}
+html[data-rx-page="home"] body .rx-moments-header ::selection{
+ background:#dce9fa;
+ color:#142640;
+ -webkit-text-fill-color:#142640;
 }
 @media(max-width:880px){
- html[data-rx-page="home"] body .rx-moments-header{grid-template-columns:minmax(0,1fr);gap:12px;padding:clamp(21px,4vw,35px)}
- html[data-rx-page="home"] body .rx-moments-header h2{max-width:100%;font-size:clamp(41px,6vw,62px)}
+ html[data-rx-page="home"] body .rx-moments-header{
+  grid-template-columns:minmax(0,1fr);gap:14px;
+  padding:clamp(22px,4vw,35px);
+ }
+ html[data-rx-page="home"] body .rx-moments-header h2{
+  max-width:100%;font-size:clamp(41px,6vw,62px);
+ }
  html[data-rx-page="home"] body .rx-moments-header p{max-width:65ch}
 }
 @media(max-width:480px){
- html[data-rx-page="home"] body .rx-moments-header{padding:22px 19px;gap:15px}
- html[data-rx-page="home"] body .rx-moments-header h2{font-size:clamp(38px,10vw,51px);line-height:1.12}
- html[data-rx-page="home"] body .rx-moments-header p{font-size:14px;line-height:1.76}
+ html[data-rx-page="home"] body .rx-moments-header{padding:24px 21px;gap:17px}
+ html[data-rx-page="home"] body .rx-moments-header h2{
+  font-size:clamp(37px,9.2vw,49px);line-height:1.12;
+ }
+ html[data-rx-page="home"] body .rx-moments-header p{
+  font-size:14px;line-height:1.76;
+ }
 }
+
 .rx-moments-reel{position:relative;border:1px solid #7996bb;box-shadow:0 26px 80px #07132253}
 .rx-moments-reel::before{content:"";position:absolute;z-index:4;pointer-events:none;inset:-13px 15px auto 15px;border-top:1px solid #8daacd70}
 .rx-moments-panel{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr);min-height:clamp(405px,40vw,535px);background:var(--mm-paper);color:var(--mm-ink)}
