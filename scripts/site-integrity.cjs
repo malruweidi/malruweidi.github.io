@@ -23,7 +23,15 @@ function resolve(f,u){
  if(!p||p.endsWith("/"))p+="index.html";return path.posix.normalize(p);
 }
 let linkCount=0,assetCount=0;
+// Frozen snapshots and local prototypes are preserved for regression comparison,
+// but links inside them can legitimately point to intentionally retired material.
+// Continue auditing every public page and all publication/media manifests.
+const frozenSnapshots=new Set([
+ "home-legacy-2026.html","living-desk-preview.html",
+ "cinema-quality-preview.html","cinema-research-preview.html","preview-rx23.html"
+]);
 for(const [file,original] of html){
+ if(frozenSnapshots.has(file))continue;
  if(unpublishedSnapshots.has(file))continue;
  const s=original.replace(/(<script\b[^>]*>)[\s\S]*?(<\/script>)/gi,"$1$2").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,"").replace(/<!--[\s\S]*?-->/g,"");
  const ids=new Set();
