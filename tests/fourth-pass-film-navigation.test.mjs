@@ -6,26 +6,23 @@ import {fileURLToPath} from "node:url";
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const read=(p)=>readFileSync(join(root,p),"utf8");
-test("the four film links promise the experience the reader actually receives",()=>{
+test("the three retained film links promise the experience the reader actually receives",()=>{
  const page=read("films/index.html");
- assert.equal((page.match(/class="rx-film-index-tile"/g)||[]).length,4);
- assert.equal((page.match(/Watch the two-minute film ↗/g)||[]).length,4);
+ assert.equal((page.match(/class="rx-film-index-tile"/g)||[]).length,3);
+ assert.equal((page.match(/Watch the two-minute film ↗/g)||[]).length,3);
  assert.doesNotMatch(page,/source ledger|include an English transcript/i);
- for(const path of ["what-a-bubble-can-do","two-materials-no-section","the-laboratory-we-carried-with-us","making-medicines-keep"]){
+ for(const path of ["what-a-bubble-can-do","the-laboratory-we-carried-with-us","making-medicines-keep"]){
    assert.ok(page.includes('href="/films/'+path+'.html"'),path);
    assert.match(read("films/"+path+".html"),/<video\b[^>]*controls/);
  }
 });
 
-test("the histology documentary player is inside the main landmark and is reached by the skip link",()=>{
- const html=read("films/two-materials-no-section.html");
- const main=html.indexOf('<main id="main"');
- const film=html.indexOf('<section class="rx-film-chapter"');
- const player=html.indexOf('<video controls');
- const closing=html.indexOf('</main>',main);
- assert.ok(main!==-1&&film!==-1&&player!==-1);
- assert.ok(main<film&&film<player&&player<closing,"skip-to-main must include the actual film player");
- assert.ok(html.includes('href="#main"'));
- assert.ok(html.includes('href="/stories/failed-zebrafish-histology.html"'));
- assert.doesNotMatch(html,/Direct video ↗<\/a>\s*·\s*<\/p>/);
+test("the withdrawn histology documentary is not reintroduced as a public film",()=>{
+ const index=read("films/index.html");
+ const hub=read("films.html");
+ const stories=read("stories.html");
+ for(const html of [index,hub,stories]){
+   assert.doesNotMatch(html,/href="\/films\/two-materials-no-section\.html"/);
+   assert.doesNotMatch(html,/href="\/stories\/failed-zebrafish-histology\.html"/);
+ }
 });
