@@ -49,13 +49,17 @@ test("the production workflow and four original editorial pages actually exist",
   const action=load(".github/workflows/render-evidence-series.yml");
   assert.match(action,/render-evidence-series\.py/);
   for(const film of films){
+    if(film.slug==="two-materials-no-section"){
+      assert.ok(!fs.existsSync(path.join(root,"films/"+film.slug+".html")),"Withdrawn page must stay unpublished");
+      continue; // archival production record above is preserved, but this page was withdrawn
+    }
     const page=load("films/"+film.slug+".html");
     assert.ok(page.includes(film.title),film.slug);
     assert.match(page, /<source[^>]+src="\/assets\/films\/[^"]+\.mp4"/, film.slug+" needs a playable current edition");
     assert.match(page, /<video\b[^>]*controls/, film.slug+" should present a playable film");
     assert.ok(film.scenes.every(scene=>scene.narration&&scene.credit&&scene.link),"all eight source scenes retain complete archival metadata");
   }
-  for(const page of ["research/pulmonary-epithelial-injury.html","stories/failed-zebrafish-histology.html","chem-squad.html"]){
+  for(const page of ["research/pulmonary-epithelial-injury.html","chem-squad.html"]){
     assert.match(load(page),/rx-film-chapter/,page);
   }
   assert.match(load("engagement.html"),/the-laboratory-we-carried-with-us/);
@@ -71,6 +75,10 @@ test("artwork varies with its historical scene and film labels fit their safe ar
 });
 test("all scientific and archival source plates survive separately from the reader-facing film pages",()=>{
   for(const film of films){
+    if(film.slug==="two-materials-no-section"){
+      assert.ok(!fs.existsSync(path.join(root,"films/"+film.slug+".html")),"Withdrawn page must stay unpublished");
+      continue; // archival production record above is preserved, but this page was withdrawn
+    }
     const page=load("films/"+film.slug+".html");
     assert.match(page,/<video\b[^>]*controls/,film.slug+" playable page");
     for(const scene of film.scenes){
