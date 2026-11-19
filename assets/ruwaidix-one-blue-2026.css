@@ -6,6 +6,7 @@
 @import url("/assets/ruwaidix-blue-components-d-2026.css?v=20261118-b1");
 @import url("/assets/ruwaidix-blue-home-compat-2026.css?v=20261118-b1");
 @import url("/assets/ruwaidix-ink-atlas-2026.css?v=20261118-a2");
+@import url("/assets/ruwaidix-arabic-type-system-2026.css?v=20261119-amiri-1");
 /* RUWAIDIX — ONE BLUE, 2026-11-18. Presentation-only identity.
    Primary film, captions, scientific images, map geometry, written content stay intact. */
 :root,html,html.rx-site-theme{
@@ -359,7 +360,7 @@ html[data-rx-page="home"] .rx-scene-stage a:focus-visible { outline: 3px solid #
 [data-reading-edition="narrative"] .rx-reading-mat { padding: 12px; background: #edf2f8; }
 [data-reading-edition="shelf"] .rx-reading-item { border-inline-start: 5px solid #456fa6; }
 html[lang="ar"] .rx-reading-spread :is(.rx-reading-name,.rx-reading-title,.rx-reading-kind,.rx-reading-caption) {
-  font-family: 'Noto Sans Arabic',Tahoma,sans-serif; letter-spacing: normal; line-height: 1.65;
+  font-family:var(--rx-ar-literary);letter-spacing:normal;line-height:1.8;
 }
 @media(min-width: 1020px) {
   .rx-illustrated-intro { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(275px,.7fr); column-gap: clamp(24px,4vw,64px); align-content: center; }
@@ -558,11 +559,15 @@ main > .rx-reading-spread .rx-reading-pair {gap:clamp(14px,2vw,28px);}
   html[data-rx-page="home"] main .rx-hero-portrait :is(figcaption,.rx-portrait-detail span) {
     font-size: .8rem; line-height: 1.45;
   }
-  html[lang="ar"] body :is(nav a,button,summary,label,figcaption,.rx-hero-title em,
-    .rx-room-heading,.rx-room-heading em,.rx-hero-kicker,.rx-hero-topline,.rx-room-print-label,
-    .rx-hero-lead,.rx-optics h2,.rx-optics p,.rx-scope-tag):lang(ar) {
-    font-family: "Noto Sans Arabic",Tahoma,Arial,sans-serif !important;
-    font-style: normal; letter-spacing: normal !important; line-height: 1.55;
+  html[lang="ar"] body :is(nav a,button,summary,label,
+    .rx-hero-kicker,.rx-hero-topline,.rx-room-print-label,.rx-scope-tag):lang(ar) {
+    font-family:var(--rx-ar-interface)!important;
+    font-style:normal;letter-spacing:normal!important;line-height:1.65;
+  }
+  html[lang="ar"] body :is(figcaption,.rx-hero-title em,.rx-room-heading,
+    .rx-room-heading em,.rx-hero-lead,.rx-optics h2,.rx-optics p):lang(ar) {
+    font-family:var(--rx-ar-literary)!important;
+    font-style:normal;letter-spacing:normal!important;line-height:1.85;
   }
 }
 @media screen and (max-width: 600px) {
