@@ -38,15 +38,14 @@ test('Ramadan first-person narrative matches its available archive and Arabic so
   assert.match(dictionary, /أصبحت صورة غرفة المجهر معروضة في الأرشيف المرافق/);
 });
 
-test('documentary scientific cautions remain discoverable without duplicating owner notes in every scene', () => {
-  const film = read('films/two-materials-no-section.html');
-  assert.doesNotMatch(film, /Source designation: archival photograph; original owner-supplied photograph/);
-  assert.ok(film.includes('src="/assets/films/two-materials-no-section-source-v2.mp4"'), "released source-corrected video must remain playable");
-  assert.ok(film.includes('href="/stories/failed-zebrafish-histology.html"'), "full experimental account remains linked outside screening page");
-  assert.match(film, /unsuccessful attempt at zebrafish histology|not with interpretable tissue sections|did not form a stable sectioning block/i);
-  const stories = read('stories.html');
+test('documentary source cautions remain documented without re-publishing a withdrawn film', () => {
+  const source=read('assets/films/two-materials-scenes.json');
+  assert.match(source,/No useful histological section/);
+  const hub=read('films.html'),stories=read('stories.html');
+  assert.ok(!hub.includes('src="/assets/films/two-materials-no-section-source-v2.mp4"'));
+  assert.ok(!stories.includes('href="/stories/failed-zebrafish-histology.html"'));
   assert.ok((stories.match(/<details class="stories-source rx-source-fold">/g) || []).length >= 15,
-    'source documentation disclosures must remain accessible');
+    'source documentation disclosures for remaining chapters stay accessible');
 });
 
 test('avoid mirrored defensive biography across homepage and complete archive', () => {
