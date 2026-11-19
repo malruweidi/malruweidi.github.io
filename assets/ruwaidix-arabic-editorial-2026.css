@@ -18,13 +18,16 @@
  text-rendering:optimizeLegibility;
 }
 :where(span,p,blockquote,figcaption,strong,em,small)[lang="ar"] {
- font-family:var(--rx-ar-interface);
+ font-family:var(--rx-ar-literary);
  font-feature-settings:"kern" 1;
  letter-spacing:normal!important;
  line-height:1.9;
 }
-html[lang="ar"] body { font-family:var(--rx-ar-interface)!important; letter-spacing:normal; }
-html[lang="ar"] :where(h1,h2,h3,h4,h5,h6,button,nav,summary,label) {
+html[lang="ar"] body { font-family:var(--rx-ar-literary)!important; letter-spacing:normal; }
+html[lang="ar"] :where(h1,h2,h3,h4,h5,h6) {
+ font-family:var(--rx-ar-literary)!important;letter-spacing:normal!important;
+}
+html[lang="ar"] :where(button,nav,summary,label,input,select,textarea) {
  font-family:var(--rx-ar-interface)!important;letter-spacing:normal!important;
 }
 html[lang="ar"] :where(p,li,blockquote,figcaption) {line-height:1.9;letter-spacing:normal;}
@@ -202,8 +205,11 @@ html[lang="ar"] .rx-letterpress :is(h2,h3) > .rx-press-ar{
  font-family:var(--rx-ar-literary)!important;
  font-weight:400;line-height:1.5!important;letter-spacing:normal!important;
 }
-html[lang="ar"] .rx-letterpress :is(p,a,.rx-letterpress-tab) .rx-press-ar{
- font-family:var(--rx-ar-interface)!important;line-height:1.85;letter-spacing:normal!important;
+html[lang="ar"] .rx-letterpress :is(p,a) .rx-press-ar{
+ font-family:var(--rx-ar-literary)!important;line-height:1.85;letter-spacing:normal!important;
+}
+html[lang="ar"] .rx-letterpress .rx-letterpress-tab .rx-press-ar{
+ font-family:var(--rx-ar-interface)!important;line-height:1.65;letter-spacing:normal!important;
 }
 html[lang="ar"] .rx-letterpress :is(.rx-letterpress-heading,.rx-letterpress-copy){
  direction:rtl;text-align:start;
