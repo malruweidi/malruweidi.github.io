@@ -1,0 +1,219 @@
+/* Ruwaidix editorial audit — 2026-11-19.
+   A compact optional gallery replaces an immediately repetitive homepage wall.
+   Preserve every existing image, source link, and research note. */
+
+/* Native disclosure: no JS dependency, reduced-height overview by default. */
+html[data-rx-page="home"] .rx-chapters-expander {
+  display:block;
+  background:#f6f1e8;
+  border-block:1px solid #c5d3e3;
+  color:#192d4b;
+  margin:0;
+  padding:0;
+  contain:layout;
+}
+html[data-rx-page="home"] .rx-chapters-expander > summary {
+  cursor:pointer;
+  display:grid;
+  grid-template-columns:minmax(0,.82fr) minmax(0,1.2fr) auto auto;
+  align-items:center;
+  gap:clamp(8px,1.8vw,28px);
+  list-style:none;
+  width:min(1200px,calc(100% - 48px));
+  min-height:88px;
+  margin-inline:auto;
+  padding:17px 0;
+  color:#192d4b;
+  background:transparent;
+  text-align:start;
+  border:0;
+  -webkit-tap-highlight-color:transparent;
+}
+html[data-rx-page="home"] .rx-chapters-expander > summary::-webkit-details-marker{display:none}
+html[data-rx-page="home"] .rx-chapters-expander > summary::marker{content:""}
+html[data-rx-page="home"] .rx-chapters-expander .rx-expander-kicker{
+  display:block;
+  color:#3b638f;
+  font:500 10px/1.5 "DM Mono",monospace;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+html[data-rx-page="home"] .rx-chapters-expander > summary strong{
+  font:400 clamp(23px,2.2vw,36px)/1.12 "Newsreader",Georgia,serif;
+  letter-spacing:-.028em;
+  color:#192d4b;
+  text-wrap:balance;
+}
+html[data-rx-page="home"] .rx-chapters-expander .rx-expander-hint{
+  color:#456582;
+  font:500 12px/1.5 "DM Sans",Arial,sans-serif;
+}
+html[data-rx-page="home"] .rx-chapters-expander .rx-expander-mark{
+  width:44px;height:44px;
+  display:grid;place-items:center;
+  color:#fff9ec;background:#192d4b;
+  border-radius:50%;
+  font:400 26px/1 Georgia,serif;
+  transition:transform .22s ease,background .22s ease;
+}
+html[data-rx-page="home"] .rx-chapters-expander[open] .rx-expander-mark{
+  transform:rotate(45deg);
+  background:#345b8e;
+}
+html[data-rx-page="home"] .rx-chapters-expander > summary:is(:hover,:focus-visible) .rx-expander-mark{
+  background:#345b8e;
+}
+html[data-rx-page="home"] .rx-chapters-expander > summary:focus-visible{
+  outline:3px solid #456fa6;
+  outline-offset:-4px;
+}
+html[data-rx-page="home"] .rx-chapters-expander > section.rx-chapters{
+  width:100%;
+  margin:0;
+  border-block-start:1px solid #c5d3e3;
+}
+/* Keep the expanded story reading order readable on tablet and portrait mobile. */
+html[data-rx-page="home"] .rx-chapters-expander .rx-chapter-card{
+  min-width:0;
+}
+html[data-rx-page="home"] .rx-chapters-expander .rx-chapter-info{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+html[data-rx-page="home"] .rx-chapters-expander .rx-chapter-image img{
+  display:block;
+  max-width:100%;
+  height:auto;
+}
+html[lang="ar"][data-rx-page="home"] .rx-chapters-expander > summary strong{
+  font-family:"Amiri","Noto Naskh Arabic",serif!important;
+  font-size:clamp(26px,2.8vw,40px);
+  font-weight:400;
+  letter-spacing:normal!important;
+  line-height:1.4;
+}
+html[lang="ar"][data-rx-page="home"] .rx-chapters-expander > summary :is(.rx-expander-kicker,.rx-expander-hint){
+  font-family:"IBM Plex Sans Arabic",Tahoma,sans-serif!important;
+  letter-spacing:0!important;
+  line-height:1.7;
+}
+html[lang="ar"][data-rx-page="home"] .rx-chapters-expander > summary{
+  direction:rtl;
+}
+
+/* Protect key presentation components against narrow-grid overflow.
+   Do not hide content through blanket body overflow clipping. */
+html[data-rx-page="home"] :is(.rx-moments-inner,.rx-moments-reel,.rx-moments-film,
+.rx-moments-panel,.rx-moments-copy,.rx-moments-art,.rx26-portal-grid,
+.rx26-portal-card,.rx-observation-grid,.rx-observation-panel,
+.rx-evidence-inner,.rx-chapter-grid,.rx-chapters-heading){
+ min-width:0;
+}
+html[data-rx-page="home"] :is(.rx-moments-copy,.rx26-card-body,.rx-observation-copy,.rx-chapter-info)
+ :is(h2,h3,p,a,span){
+ overflow-wrap:break-word;
+}
+html[data-rx-page="home"] :is(.rx-moments-panel,.rx-observation-panel) img{
+ max-width:100%;
+ object-position:center;
+}
+html[data-rx-page="home"] .rx-moments-header{
+ min-width:0;
+}
+html[data-rx-page="home"] body .rx-moments-header h2{
+ overflow-wrap:normal!important;
+ word-break:normal!important;
+ hyphens:none;
+}
+/* Arabic is a typographic system, not a Latin font with substituted glyphs. */
+html[lang="ar"][data-rx-page="home"] body .rx-moments-header h2{
+ font-family:"Amiri","Noto Naskh Arabic",serif!important;
+ font-weight:400!important;
+ letter-spacing:normal!important;
+ line-height:1.25!important;
+ max-width:100%;
+}
+html[lang="ar"][data-rx-page="home"] body .rx-moments-header p{
+ font-family:"IBM Plex Sans Arabic",Tahoma,sans-serif!important;
+ letter-spacing:normal!important;
+ line-height:1.85!important;
+}
+/* Make scientific arrows, numbering and Latin citations stable within RTL. */
+html[lang="ar"] :is(.rx-moments-counter,.rx-moments-super,.rx-prism-step,
+.rx-atelier-kicker,.rx-expander-kicker){
+ unicode-bidi:isolate;
+}
+:where(#rx26-portal,#research-workbench,#rx-moving-moments,#more-scientific-scenes){
+ scroll-margin-top:100px;
+}
+@media(max-width:990px){
+ html[data-rx-page="home"] .rx-chapters-expander > summary{
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr) auto;
+ }
+ html[data-rx-page="home"] .rx-chapters-expander .rx-expander-hint{display:none}
+ html[data-rx-page="home"] .rx26-portal-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+ }
+}
+@media(max-width:650px){
+ html[data-rx-page="home"] .rx-chapters-expander > summary{
+  width:calc(100% - 32px);
+  grid-template-columns:minmax(0,1fr) 42px;
+  gap:5px 12px;
+  min-height:84px;
+  padding:13px 0;
+ }
+ html[data-rx-page="home"] .rx-chapters-expander .rx-expander-kicker{
+  grid-column:1;
+  font-size:9px;
+ }
+ html[data-rx-page="home"] .rx-chapters-expander > summary strong{
+  grid-column:1;
+  font-size:clamp(24px,6.3vw,32px);
+ }
+ html[data-rx-page="home"] .rx-chapters-expander .rx-expander-mark{
+  grid-column:2;grid-row:1 / span 2;min-width:42px;width:42px;height:42px;
+  justify-self:end;
+ }
+ html[data-rx-page="home"] .rx26-portal-grid{
+  grid-template-columns:minmax(0,1fr);
+ }
+ html[data-rx-page="home"] .rx-chapters-expander .rx-chapter-grid{
+  display:grid;grid-template-columns:minmax(0,1fr);gap:6px;
+ }
+ html[data-rx-page="home"] .rx-chapters-expander .rx-chapter-grid .rx-chapter-card:first-child{
+  grid-row:auto;align-self:stretch;
+ }
+ html[data-rx-page="home"] .rx-chapters-expander .rx-chapter-grid .rx-chapter-card{
+  grid-column:auto;
+  max-width:100%;
+ }
+ html[data-rx-page="home"] .rx-chapters-expander .rx-chapters-heading{
+  display:block;
+ }
+ html[data-rx-page="home"] .rx-moments-nav{
+  min-width:0;
+ }
+ html[data-rx-page="home"] .rx-moments-scenes button{
+  min-width:0;min-height:44px;
+ }
+ html[lang="ar"][data-rx-page="home"] body .rx-moments-header h2{
+  font-size:clamp(42px,10vw,62px)!important;
+  line-height:1.28!important;
+ }
+}
+@media(max-width:375px){
+ html[data-rx-page="home"] .rx-chapters-expander > summary strong{
+  font-size:23px;
+ }
+ html[data-rx-page="home"] .rx-chapters-expander .rx-chapter-grid .rx-chapter-card{
+  display:flex;flex-direction:column;align-items:stretch;
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ html[data-rx-page="home"] .rx-chapters-expander *,
+ html[data-rx-page="home"] .rx-chapters-expander *::before,
+ html[data-rx-page="home"] .rx-chapters-expander *::after{
+  animation:none!important;transition:none!important;
+ }
+}
