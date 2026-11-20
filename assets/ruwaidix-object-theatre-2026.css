@@ -1,0 +1,155 @@
+/* Ruwaidix Object Theatre — 2026-11-21
+   Replaces boxed infographic widgets with tactile, source-led editorial objects.
+   Blue and paper only. All original text/images remain in place. */
+html[data-rx-page="home"] .rx-theatre-workroom{position:relative;isolation:isolate;width:100%;margin:clamp(25px,4vw,55px) auto 14px;color:#f4ebdc;background:#132b47;border:1px solid #385d82;box-shadow:13px 14px 0 #abc0d228;overflow:hidden}
+.rx-theatre-workroom *{box-sizing:border-box}
+.rx-theatre-topline,.rx-theatre-bottomline{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:43px;padding:12px clamp(16px,3vw,35px);color:#bfd0e4;font:500 clamp(9px,.75vw,11px)/1.4 "DM Mono",monospace;letter-spacing:.075em}
+.rx-theatre-topline{border-bottom:1px solid #8eacc454}
+.rx-theatre-bottomline{border-top:1px solid #8eacc454;letter-spacing:.01em;font-size:9px}
+.rx-theatre-field{--rx-theatre-x:0px;--rx-theatre-y:0px;min-height:385px;position:relative;display:grid;grid-template-columns:32% minmax(0,1fr) 23%;align-items:center;padding:26px clamp(18px,3.8vw,48px);gap:clamp(10px,3vw,30px);background:radial-gradient(ellipse at 47% 52%,#2c4c70 0%,#172f4e 63%,#10263f 100%);isolation:isolate}
+.rx-theatre-field::before{content:"";position:absolute;inset:0;opacity:.55;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 51px,#cee0ef17 52px 53px),repeating-linear-gradient(0deg,transparent 0 51px,#cee0ef11 52px 53px);mask-image:linear-gradient(90deg,#000b,#0001)}
+.rx-theatre-diagram{position:absolute;pointer-events:none;inset:0;z-index:0;overflow:hidden}
+.rx-theatre-diagram i{position:absolute;left:59%;top:52%;display:block;width:clamp(240px,34vw,515px);aspect-ratio:1;transform:translate(-50%,-50%);border:1px solid #b8d0e051;border-radius:50%}
+.rx-theatre-diagram i:nth-child(2){width:clamp(180px,26vw,394px);border-style:dashed;opacity:.65}
+.rx-theatre-diagram i:nth-child(3){width:clamp(120px,18vw,264px);opacity:.52}
+.rx-theatre-diagram i:nth-child(4){width:2px;aspect-ratio:auto;height:100%;transform:translateX(-50%);border:0;background:#cee0ef17}
+.rx-theatre-microscope,.rx-theatre-fish,.rx-theatre-carrier{position:relative;z-index:2;color:#f6f0e4!important;text-decoration:none!important;outline-offset:6px;min-width:0}
+.rx-theatre-microscope{display:grid;align-items:center;justify-items:center;gap:15px;transform:translate3d(var(--rx-theatre-x),var(--rx-theatre-y),0) rotate(-5deg);transition:transform .42s cubic-bezier(.16,.72,.22,1);filter:drop-shadow(12px 17px 13px #081b30aa)}
+.rx-theatre-photo-mat{display:block;position:relative;width:min(100%,276px);aspect-ratio:4/4.8;padding:9px;background:#f4eddd;border:1px solid #e1d2bd;box-shadow:9px 10px 0 #14233588;clip-path:polygon(0 0,100% 0,100% 96%,96% 100%,0 100%);overflow:hidden}
+.rx-theatre-photo-mat img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 53%;filter:saturate(.85) contrast(1.05);transition:filter .45s,transform .8s}
+.rx-theatre-microscope:hover .rx-theatre-photo-mat img,.rx-theatre-microscope:focus-visible .rx-theatre-photo-mat img{filter:saturate(1.07);transform:scale(1.045)}
+.rx-theatre-microscope-tag{font:500 11px/1.45 "DM Sans",Arial,sans-serif;letter-spacing:.035em;background:#f4eddd;color:#1b3454;padding:7px 12px;transform:rotate(5deg);box-shadow:2px 4px 0 #192a3b}
+.rx-theatre-central{position:relative;z-index:3;align-self:center;max-width:460px;padding:19px 0}
+.rx-theatre-kicker{font:500 11px/1.5 "DM Mono",monospace;letter-spacing:.18em;color:#c5d8ea;margin-bottom:20px}
+.rx-theatre-central h2{margin:0 0 17px!important;font:400 clamp(37px,4.1vw,69px)/.97 "Newsreader",Georgia,serif!important;letter-spacing:-.036em!important;color:#f7eee0!important;text-wrap:balance}
+.rx-theatre-central p{font:400 clamp(14px,1.1vw,17px)/1.6 "DM Sans",Arial,sans-serif;color:#deebf7;margin:0 0 24px;max-width:32ch}
+.rx-theatre-inspect{cursor:pointer;display:inline-flex;align-items:center;gap:12px;justify-content:center;min-height:47px;border:1px solid #eadac3;background:#f6eddc;color:#182e4d;padding:12px 20px;border-radius:2px;font:600 12px/1.3 "DM Sans",Arial,sans-serif;box-shadow:6px 7px 0 #0d213a;transition:transform .2s,box-shadow .2s,background .2s}
+.rx-theatre-inspect:hover,.rx-theatre-inspect:focus-visible{background:#fff9f0;transform:translateY(-3px);box-shadow:6px 10px 0 #0d213a}
+.rx-theatre-inspect:focus-visible,.rx-theatre-workroom a:focus-visible{outline:3px solid #c3dcfa!important;outline-offset:5px}
+.rx-theatre-inspect[aria-pressed="true"]{background:#b7d0eb}
+.rx-theatre-lens-icon{font-size:20px;line-height:1}
+.rx-theatre-fish{position:absolute;right:4.5%;top:10%;width:clamp(105px,15vw,205px);display:grid;justify-items:center;gap:4px;transform:translate3d(calc(var(--rx-theatre-x) * -0.8),calc(var(--rx-theatre-y) * -0.5),0);transition:transform .42s;animation:rx-theatre-swim 8s ease-in-out infinite alternate}
+.rx-theatre-fish img{display:block;width:100%;height:auto;max-height:81px;object-fit:contain;filter:grayscale(.7) sepia(.23) contrast(1.16) brightness(1.35);mix-blend-mode:screen;opacity:.96}
+.rx-theatre-fish span,.rx-theatre-carrier span{font:500 10px/1.45 "DM Mono",monospace;letter-spacing:.015em;text-align:center;color:#f1e5d1}
+.rx-theatre-fish:hover img,.rx-theatre-fish:focus-visible img{filter:grayscale(0) contrast(1.2) brightness(1.5)}
+.rx-theatre-carrier{position:absolute;right:4%;bottom:8%;width:clamp(120px,17vw,229px);display:grid;justify-items:center;gap:3px;transform:translate3d(calc(var(--rx-theatre-x) * .6),calc(var(--rx-theatre-y) * -.8),0);transition:transform .4s}
+.rx-theatre-carrier svg{width:min(100%,170px);height:auto;overflow:visible;filter:drop-shadow(0 9px 13px #0a203eaa)}
+.rx-theatre-carrier .rx-theatre-membrane{transform-origin:95px 95px;animation:rx-theatre-rotate 38s linear infinite}
+.rx-theatre-carrier .rx-theatre-pulse{transform-origin:95px 95px;animation:rx-theatre-breathe 5s ease-in-out infinite}
+.rx-theatre-carrier:hover svg,.rx-theatre-carrier:focus-visible svg{transform:scale(1.07)}
+.rx-theatre-evidence{grid-column:1/-1;position:relative;z-index:6;border-top:1px solid #92b0d1;margin-top:15px;padding:20px 0 0;min-width:0}
+.rx-theatre-evidence[hidden]{display:none!important}
+.rx-theatre-evidence-inner{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(180px,.6fr);gap:clamp(14px,3vw,30px);align-items:center;background:#e9f0f7;color:#1a3659;padding:15px;border:1px solid #9bbad9}
+.rx-theatre-evidence-inner img{display:block;width:100%;max-height:330px;object-fit:contain;background:#152e4b;border:1px solid #456c9a}
+.rx-theatre-evidence-caption strong{font:500 25px/1.2 "Newsreader",Georgia,serif;color:#192d4b}
+.rx-theatre-evidence-caption p{font:400 13px/1.7 "DM Sans",Arial,sans-serif;color:#37516d;margin:15px 0}
+.rx-theatre-evidence-caption a{font:600 12px/1.5 "DM Sans",Arial,sans-serif;color:#1f497c!important;text-decoration:underline;text-underline-offset:4px}
+html[data-rx-page="home"] .rx-theatre-workroom .rx-theatre-ar{display:none!important}
+html[lang="ar"] .rx-theatre-workroom .rx-theatre-en{display:none!important}
+html[lang="ar"] .rx-theatre-workroom .rx-theatre-ar{display:inline!important}
+html[lang="ar"] .rx-theatre-workroom{direction:rtl}
+html[lang="ar"] .rx-theatre-workroom :is(h2,p,button,span,a){font-family:"Amiri","Noto Naskh Arabic",serif;letter-spacing:0}
+html[lang="ar"] .rx-theatre-workroom .rx-theatre-central h2{font-size:clamp(37px,4vw,66px)!important;line-height:1.35!important}
+html[lang="ar"] .rx-theatre-workroom .rx-theatre-central p{font-size:19px;line-height:1.7}
+html[lang="ar"] .rx-theatre-workroom .rx-theatre-microscope-tag,html[lang="ar"] .rx-theatre-workroom .rx-theatre-fish span,html[lang="ar"] .rx-theatre-workroom .rx-theatre-carrier span{font-size:14px}
+@keyframes rx-theatre-swim{0%,100%{translate:0 0}50%{translate:-17px 8px}}
+@keyframes rx-theatre-rotate{to{transform:rotate(360deg)}}
+@keyframes rx-theatre-breathe{0%,100%{opacity:.3;transform:scale(.9)}50%{opacity:.9;transform:scale(1.08)}}
+/* Eighteen pieces now read as freestanding editorial objects beside their associated source text. */
+html[data-rx-page] main .rx-z-scene {
+ float:inline-end!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;
+ width:min(38%,300px)!important;max-width:300px!important;min-width:175px!important;min-height:220px!important;
+ gap:3px!important;padding:0!important;margin:0 0 26px clamp(20px,3vw,42px)!important;
+ background:transparent !important;border:0 !important;box-shadow:none!important;
+ isolation:isolate;overflow:visible!important;transform:none!important;
+}
+html[data-rx-page] main .rx-z-scene::before{content:none!important}
+html[data-rx-page] main .rx-z-scene .rx-z-object{
+ flex:0 0 auto!important;width:min(100%,240px)!important;height:210px!important;
+ border:0!important;outline-offset:5px!important;border-radius:50%!important;
+ background:radial-gradient(circle at 48% 39%,#3b6294 0%,#192f50 60%,#14283f 100%)!important;
+ padding:20px!important;box-shadow:inset 0 0 0 1px #b9cbe370,0 14px 32px #142e4e33!important;
+ position:relative;transition:scale .3s,filter .3s,rotate .3s!important;
+}
+html[data-rx-page] main .rx-z-scene .rx-z-object::before{inset:13px!important;opacity:.42;border-style:dotted!important}
+html[data-rx-page] main .rx-z-scene .rx-z-object svg{width:100%!important;height:100%!important;filter:drop-shadow(0 5px 7px #08183188)}
+html[data-rx-page] main .rx-z-scene .rx-z-caption{
+ display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;
+ gap:3px!important;width:100%;padding:8px 0 0!important;background:transparent!important;border:0!important;box-shadow:none!important;
+}
+html[data-rx-page] main .rx-z-scene .rx-z-type{display:none!important}
+html[data-rx-page] main .rx-z-scene .rx-z-caption strong{font:500 17px/1.2 "Newsreader",Georgia,serif;color:#263f66;letter-spacing:-.005em}
+html[data-rx-page] main .rx-z-scene .rx-z-caption .rx-z-route{font:650 10px/1.5 "DM Sans",Arial,sans-serif;color:#3d6595!important;min-height:28px}
+html[data-rx-page] main .rx-z-scene .rx-z-caption .rx-z-explanation{font:400 12px/1.55 "DM Sans",Arial,sans-serif;text-align:center;max-width:260px;color:#395875}
+html[data-rx-page] main .rx-z-scene[data-material="navy"] .rx-z-caption strong{color:#f6f1e8}
+html[data-rx-page] main .rx-z-scene[data-material="navy"] .rx-z-caption :is(.rx-z-route,.rx-z-explanation){color:#d7e5f4!important}
+html[data-rx-page] main .rx-z-scene[data-active="true"] .rx-z-explanation{max-height:220px}
+html[data-rx-page] main .rx-z-scene .rx-z-object:hover{scale:1.06;filter:drop-shadow(0 18px 12px #142b4c33)}
+html[data-rx-page] main .rx-z-scene .rx-z-object:focus-visible{outline:3px solid #7193bf!important}
+html[data-rx-page] main .rx-z-scene .rx-z-mini{top:12px;right:11px;width:23px;height:23px;font-size:15px}
+/* Art-specific bodies; no repeated rectangular panel backgrounds. */
+html[data-rx-page] main .rx-z-scene[data-art="microscope"] .rx-z-object{border-radius:16% 16% 10% 10%!important;rotate:-7deg;background:linear-gradient(125deg,#ecdfc8,#cdb996)!important;box-shadow:10px 10px 0 #456fa638!important}
+html[data-rx-page] main .rx-z-scene[data-art="negative"] .rx-z-object,html[data-rx-page] main .rx-z-scene[data-art="drawer"] .rx-z-object{border-radius:3px!important;rotate:5deg;background:linear-gradient(#203957,#0d253d)!important;box-shadow:8px 10px 0 #d6c6a9!important}
+html[data-rx-page] main .rx-z-scene[data-art="negative"] .rx-z-object{rotate:-6deg}
+html[data-rx-page] main .rx-z-scene[data-art="bibliography"] .rx-z-object,html[data-rx-page] main .rx-z-scene[data-art="book"] .rx-z-object,html[data-rx-page] main .rx-z-scene[data-art="margins"] .rx-z-object{border-radius:2px!important;background:linear-gradient(137deg,#f7f0e4,#e5d7be)!important;box-shadow:9px 10px 0 #b6c5d4!important;rotate:4deg}
+html[data-rx-page] main .rx-z-scene[data-art="margins"] .rx-z-object{rotate:-4deg}
+html[data-rx-page] main .rx-z-scene[data-art="projector"] .rx-z-object,html[data-rx-page] main .rx-z-scene[data-art="reel"] .rx-z-object{border-radius:13% 13% 8% 8%!important;background:linear-gradient(145deg,#274669,#0d2339)!important;box-shadow:11px 10px 0 #8ba3c633!important}
+html[data-rx-page] main .rx-z-scene[data-art="nib"] .rx-z-object,html[data-rx-page] main .rx-z-scene[data-art="letterpress"] .rx-z-object{border-radius:34% 8% 32% 8%!important;rotate:-7deg;background:#183352!important}
+html[data-rx-page] main .rx-z-scene[data-art="flowcell"] .rx-z-object,html[data-rx-page] main .rx-z-scene[data-art="shear"] .rx-z-object{border-radius:5px!important;width:min(100%,278px)!important;background:linear-gradient(140deg,#254d79,#122e4d)!important;border:2px solid #b9d0e2!important;box-shadow:12px 11px 0 #a8bfda35!important}
+html[data-rx-page] main .rx-z-scene[data-art="echo"] .rx-z-object{border-radius:50% 50% 42% 42%!important;background:radial-gradient(circle at 48% 40%,#193a5e,#0a182c)!important}
+html[data-rx-page] main .rx-z-scene[data-art="network"] .rx-z-object,html[data-rx-page] main .rx-z-scene[data-art="heptagon"] .rx-z-object{border-radius:30%!important;background:linear-gradient(120deg,#284b74,#152c49)!important}
+html[data-rx-page] main .rx-z-scene[data-art="beaker"] .rx-z-object{border-radius:50% 50% 8% 8%!important;background:linear-gradient(142deg,#f6f0e2,#c8d7e8)!important;box-shadow:9px 12px 0 #d9c7aa!important}
+html[data-rx-page] main .rx-z-scene[data-art="governance"] .rx-z-object{border-radius:50%!important;border:8px double #d5c09d!important}
+html[data-rx-page] main .rx-z-scene[data-art="curcumin"] .rx-z-object,html[data-rx-page] main .rx-z-scene[data-art="neural"] .rx-z-object{border-radius:15px!important;background:linear-gradient(135deg,#153451,#335d89)!important}
+html[data-rx-page] main .rx-z-scene[data-art="frontier"] .rx-z-object{border-radius:44% 18% 50% 23%!important;background:linear-gradient(135deg,#263f68,#14273f)!important}
+html[data-rx-page] main .rx-z-scene[data-art="vesicle"] .rx-z-object{border-radius:50%!important;box-shadow:0 0 0 13px #d2dfec66,0 0 0 22px #92b0ca2e!important}
+html[data-rx-page] main .rx-z-scene[data-art="grants"] .rx-z-object{border-radius:8px 8px 43% 43%!important;background:linear-gradient(145deg,#203955,#4673a6)!important}
+html[data-rx-page="home"] main .rx-z-scene{width:min(46%,280px)!important}
+html[data-rx-page="home"] main .rx-z-scene[data-art="nib"]{width:min(40%,220px)!important}
+html[data-rx-page="home"] main .rx-z-scene .rx-z-object{width:min(100%,200px)!important;height:183px!important}
+html[lang="ar"] main .rx-z-scene .rx-z-caption{direction:rtl;text-align:center!important}
+html[lang="ar"] main .rx-z-scene .rx-z-caption strong{font:500 21px/1.4 "Amiri","Noto Naskh Arabic",serif}
+html[lang="ar"] main .rx-z-scene .rx-z-caption .rx-z-route{font:500 15px/1.4 "Amiri","Noto Naskh Arabic",serif}
+html[lang="ar"] main .rx-z-scene .rx-z-caption .rx-z-explanation{font:400 16px/1.5 "Amiri","Noto Naskh Arabic",serif}
+@media(max-width:1050px){.rx-theatre-field{grid-template-columns:28% minmax(0,1fr) 19%}.rx-theatre-photo-mat{aspect-ratio:4/5}.rx-theatre-fish{top:6%;right:2%}.rx-theatre-carrier{bottom:6%;right:2%}}
+@media(max-width:780px){
+ .rx-theatre-field{grid-template-columns:42% minmax(0,1fr);min-height:0;gap:15px;padding:25px 19px 44px}
+ .rx-theatre-microscope{transform:rotate(-4deg)}
+ .rx-theatre-central{max-width:none}
+ .rx-theatre-fish{position:absolute;top:auto;bottom:4px;right:20%;width:95px}
+ .rx-theatre-carrier{right:1%;bottom:0;width:104px}
+ .rx-theatre-carrier svg{max-width:76px}
+ .rx-theatre-fish img{max-height:40px}
+ .rx-theatre-fish span,.rx-theatre-carrier span{font-size:8px}
+ .rx-theatre-central h2{font-size:clamp(32px,5.3vw,54px)!important}
+ .rx-theatre-evidence-inner{grid-template-columns:1fr}
+ html[data-rx-page] main .rx-z-scene{width:min(43%,245px)!important;min-width:155px!important}
+}
+@media(max-width:650px){
+ .rx-theatre-workroom{margin-top:30px!important;box-shadow:5px 7px 0 #abc0d228!important}
+ .rx-theatre-topline,.rx-theatre-bottomline{font-size:8px;padding:10px 13px}
+ .rx-theatre-sequence,.rx-theatre-reading{display:none}
+ .rx-theatre-field{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding:21px 13px 135px;gap:14px;align-items:start}
+ .rx-theatre-microscope{grid-column:1;grid-row:1;align-self:start;transform:rotate(-5deg)}
+ .rx-theatre-photo-mat{width:100%;max-width:200px;aspect-ratio:4/4.5;padding:6px}
+ .rx-theatre-central{grid-column:2;grid-row:1;padding:8px 0}
+ .rx-theatre-central h2{font-size:clamp(28px,6vw,40px)!important;line-height:1.06!important}
+ .rx-theatre-central p{font-size:12px;line-height:1.55}
+ .rx-theatre-kicker{font-size:8px;margin-bottom:9px;letter-spacing:.06em}
+ .rx-theatre-inspect{font-size:10px;padding:8px 10px;min-height:44px;gap:6px}
+ .rx-theatre-fish{right:45%;bottom:14px;top:auto;width:132px}
+ .rx-theatre-carrier{right:5%;bottom:12px;top:auto;width:136px}
+ .rx-theatre-carrier svg{max-width:85px}
+ .rx-theatre-evidence{grid-row:2;grid-column:1/-1}
+ .rx-theatre-diagram i{left:55%}
+ html[data-rx-page] main .rx-z-scene{float:none!important;width:min(100%,360px)!important;max-width:360px!important;min-width:0!important;min-height:0!important;display:grid!important;grid-template-columns:140px minmax(0,1fr)!important;margin:20px auto 24px!important;align-items:center!important;gap:10px!important}
+ html[data-rx-page] main .rx-z-scene .rx-z-object{width:138px!important;height:137px!important;padding:10px!important;max-width:100%}
+ html[data-rx-page] main .rx-z-scene .rx-z-caption{align-items:start!important;text-align:start!important;padding:2px!important}
+ html[data-rx-page] main .rx-z-scene .rx-z-caption strong{font-size:17px}
+ html[lang="ar"] main .rx-z-scene .rx-z-caption{text-align:right!important}
+ html[data-rx-page="home"] main .rx-z-scene{width:min(100%,340px)!important}
+ html[data-rx-page="home"] main .rx-z-scene .rx-z-object{width:135px!important;height:135px!important}
+}
+@media(max-width:380px){.rx-theatre-field{grid-template-columns:1fr 1fr;gap:9px}.rx-theatre-central h2{font-size:28px!important}.rx-theatre-central p{font-size:11px}.rx-theatre-photo-mat{aspect-ratio:4/5}.rx-theatre-microscope-tag{font-size:8px;padding:5px}}
+@media(prefers-reduced-motion:reduce){.rx-theatre-workroom *,.rx-theatre-workroom *::before,.rx-theatre-workroom *::after{animation:none!important;transition:none!important;transform:none!important}.rx-z-scene .rx-z-object,.rx-z-scene .rx-z-object svg{animation:none!important;transition:none!important}.rx-theatre-fish{animation:none!important}}
+@media print{.rx-theatre-workroom{break-inside:avoid}.rx-z-scene{break-inside:avoid}}
