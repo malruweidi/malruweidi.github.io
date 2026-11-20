@@ -377,7 +377,7 @@ html[lang="ar"] .rx-world-orbit :is(span,button){font-family:"Amiri","Noto Naskh
 @media(max-width:650px){
  html[data-rx-page="home"] .rx-hero-portrait{overflow:visible!important}
  .rx-world-orbit{
-   position:relative;inset:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+   position:relative;inset:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
    gap:5px;padding:12px 0 1px;margin-top:4px;border-top:1px solid #b6c8d9;
  }
  .rx-world-orbit-rings{display:none}
@@ -387,8 +387,8 @@ html[lang="ar"] .rx-world-orbit :is(span,button){font-family:"Amiri","Noto Naskh
    margin:0;animation:none!important;
  }
  .rx-world-orbit-specimen{padding:7px 4px;box-shadow:none;rotate:0}
- .rx-world-orbit-specimen img{height:44px}
- .rx-world-orbit-specimen span{font-size:7px}
+ .rx-world-orbit-specimen img{height:58px;max-height:58px;object-fit:contain}
+ .rx-world-orbit-specimen span{font-size:10px}
  .rx-world-orbit-apparatus{display:grid;align-items:center;justify-items:center;gap:3px;filter:none}
  .rx-world-orbit-apparatus img{height:59px;width:64px;border-width:3px}
  .rx-world-orbit-apparatus span{font-size:7px;padding:3px;text-align:center}
@@ -397,7 +397,7 @@ html[lang="ar"] .rx-world-orbit :is(span,button){font-family:"Amiri","Noto Naskh
    background:#244c75;display:grid;align-content:center
  }
  .rx-world-orbit-glass{font-size:43px}
- .rx-world-orbit-lens [data-rxw-en],.rx-world-orbit-lens [data-rxw-ar]{font-size:8px;max-width:100%}
+ .rx-world-orbit-lens [data-rxw-en],.rx-world-orbit-lens [data-rxw-ar]{font-size:10px;max-width:100%}
  .rx-world-hero-sample{
    inset:auto 0 100% auto;z-index:20;width:min(95%,350px);
  }
