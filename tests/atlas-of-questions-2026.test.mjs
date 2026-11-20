@@ -14,7 +14,7 @@ const pagePaths=["index.html","research.html","publications.html","films.html","
 test("homepage preserves the full original record across editorial rearrangement",()=>{
  const original=read("home-legacy-2026.html"),enhanced=read("index.html");
  assert.equal(enhanced.split(tags.replace("js?v=20261118", "js?v=20261118-scenes")).length,2,"only one atlas reference pair");
- assert.equal(enhanced.split('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-contactsheet">').length,2,"single blue stylesheet required");
+ assert.equal(enhanced.match(/<link rel="stylesheet" href="\/assets\/ruwaidix-one-blue-2026\.css(?:\?[^"]*)?">/g)?.length,1,"single blue stylesheet required");
  preservation.assertHomepagePreserved(original,enhanced);
  assert.match(enhanced,/anatomy-of-a-question-2026-v2\.mp4/);
  assert.match(enhanced,/anatomy-of-a-question-2026-v2\.vtt/);

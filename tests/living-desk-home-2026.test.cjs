@@ -10,7 +10,7 @@ const home = read('index.html');
 test('the homepage preserves the source record and opens the photographic sequence', () => {
   const atlasAssets = '<link rel="stylesheet" href="/assets/atlas-of-questions-2026.css?v=20261118"><script src="/assets/atlas-of-questions-2026.js?v=20261118-scenes" defer></script>';
   assert.equal(home.split(atlasAssets).length, 2, 'The navigation enhancement must be added exactly once');
-  assert.equal(home.split('<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-contactsheet">').length,2,'The blue identity must be linked exactly once');
+  assert.equal(home.match(/<link rel="stylesheet" href="\/assets\/ruwaidix-one-blue-2026\.css(?:\?[^"]*)?">/g)?.length,1,'The blue identity must be linked exactly once');
   require('./homepage-preservation.cjs').assertHomepagePreserved(read('home-legacy-2026.html'),home);
   assert.ok(home.indexOf('<section class="rx-chapters"') < home.indexOf('<details class="rx-home-complete-record"'));
   assert.match(home, /data-rx-page="home"/);

@@ -79,6 +79,28 @@
  prev.addEventListener("click",()=>{stop();choose(active-1)});
  next.addEventListener("click",()=>{stop();choose(active+1)});
  play.addEventListener("click",start);
+ const film = root.querySelector(".rx-moments-film");
+ film.addEventListener("focusin", () => {
+   if (timer !== null) stop();
+ });
+ let swipe = null;
+ film.addEventListener("pointerdown", event => {
+   if (event.pointerType !== "touch" || !event.isPrimary || !event.target.closest(".rx-moments-art")) return;
+   swipe = {id: event.pointerId, x: event.clientX, y: event.clientY};
+ }, {passive: true});
+ film.addEventListener("pointercancel", event => {
+   if (swipe?.id === event.pointerId) swipe = null;
+ });
+ film.addEventListener("pointerup", event => {
+   if (swipe?.id !== event.pointerId) return;
+   const horizontal = event.clientX - swipe.x;
+   const vertical = event.clientY - swipe.y;
+   swipe = null;
+   if (Math.abs(horizontal) < 52 || Math.abs(horizontal) <= 1.4 * Math.abs(vertical)) return;
+   const forward = document.documentElement.dir === "rtl" ? horizontal > 0 : horizontal < 0;
+   stop();
+   choose(active + (forward ? 1 : -1));
+ }, {passive: true});
  document.addEventListener("ruwaidix:languagechange",()=>{
    const source=timer!==null?"Pause sequence":active===panels.length-1?"Replay sequence":"Play the sequence";
    play.textContent=translatedLabel(source);

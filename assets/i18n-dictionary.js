@@ -1290,6 +1290,8 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "Working on inhalable carriers brings the earlier questions together: materials, interfaces, living tissues, and whether a formulation remains useful after preparation and nebulization.": "يجمع العمل على النواقل الدوائية القابلة للاستنشاق أسئلة المراحل السابقة: المواد والواجهات والأنسجة الحيّة، وما إذا كانت الصيغة الدوائية تظلّ صالحة للغرض بعد التحضير والإرذاذ.",
   "Illustrative diagram, not to scale · Ongoing formulation research, not a demonstrated clinical outcome.": "رسم توضيحي غير مرسوم بمقياس · بحث مستمر في الصيغ الدوائية، وليس نتيجة سريرية مُثبتة.",
   "Explore the formulation investigation ↗": "استكشف بحث الصيغة الدوائية ↗",
+  "Research since 2015 / 11 years": "أبحاث منذ ٢٠١٥ / ١١ عامًا",
+  "Origin": "البداية",
   "The beginning": "البداية",
   "The instrument": "الأداة",
   "The measurement": "القياس",
