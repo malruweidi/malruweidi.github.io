@@ -87,7 +87,7 @@ if((supervisor.match(/class="route-card"/g)||[]).length!==6)error("research dire
 const researchQuestions = supervisor.match(/<section class="section" id="research-entry-points"[\s\S]*?<\/section>/)?.[0] || "";
 if((researchQuestions.match(/class="core-card"/g)||[]).length!==3)error("research identity","expected three evidence-backed questions inside research-entry-points");
 if((supervisor.match(/class="evidence-card"/g)||[]).length!==3)error("selected evidence","expected three experimental case studies");
-for(const evidence of ["54.7 ± 3.94%","15.1 ± 3.43%","74%","184%","H. C. Yalcin","formal analysis","firsthand account"])if(!supervisor.includes(evidence))error("selected evidence","numerical finding or role attribution missing "+evidence);
+for(const evidence of ["54.7 ± 3.94%","15.1 ± 3.43%","74%","184%","H. C. Yalcin","formal analysis","I implemented the high-speed camera"])if(!supervisor.includes(evidence))error("selected evidence","numerical finding or role attribution missing "+evidence);
 for(const doi of ["10.1152/japplphysiol.00574.2020","10.3390/polym13213717","10.1016/j.micron.2020.102876"])if(!supervisor.includes(doi))error("selected evidence","primary publication missing "+doi);
 if(!supervisor.includes('<details class="research-deepdive evidence-archive">'))error("selected evidence","longer contribution record is no longer available");
 if(!supervisor.includes('<details class="research-deepdive research-future-details">'))error("research agenda","renal and related research materials must remain available in optional reading");
@@ -116,17 +116,20 @@ if(!(html.get("doctoral-concepts.html")||"").includes("Katie Ryan")||!(html.get(
 if(!home.includes('href="/molecular-therapeutics.html"')||!academic.includes('href="/molecular-therapeutics.html"'))error("research navigation","research-directions link missing from homepage or public academic profile");
 if(!fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").includes("https://malruweidi.github.io/molecular-therapeutics.html"))error("sitemap.xml","research-directions canonical route missing");
 if(!([...bibliography.matchAll(/class="pub-contribution"/g)].length===20))error("publications.html","not every publication has a contribution note");
-for(const id of ["work-13","work-14"]){
+for(const [id,terms] of Object.entries({
+ "work-13":["I carried out experimental work","curcumin/cyanide"],
+ "work-14":["I conducted zebrafish imaging","laboratory experiments"]
+})){
  const card=bibliography.match(new RegExp('<article class="pub-card"[^>]*id="'+id+'"'+'[\\s\\S]*?<\\/article>'));
- if(!card||!card[0].includes("Experimental")||!card[0].includes("did not perform the paper's data analysis")||!card[0].includes("did not write the manuscript"))error("publications.html","experimental-only/no-analysis/no-writing exception missing "+id);
+ if(!card||terms.some(t=>!card[0].toLowerCase().includes(t.toLowerCase()))||/I (?:wrote|drafted) the manuscript/i.test(card[0]))error("publications.html","experimental research role inaccurate "+id);
 }
 for(const [id,terms] of Object.entries({
- "work-8":["Yalcin","original manuscript drafting"],
+ "work-8":["Yalcin","drafted the manuscript"],
  "work-12":["high-speed camera","wrote","protocol"],
- "work-6":["machine-learning research workflow","model evaluation","manuscript writing"],
- "work-7":["grant-acquisition","analysing","interpreting"],
- "work-18":["conceptual interpretation","wrote relevant manuscript sections"],
- "work-17":["second author"]
+ "work-6":["CNN–LSTM","model","manuscript writing"],
+ "work-7":["funding","analysis","manuscript writing"],
+ "work-18":["proposed interpretation","wrote"],
+ "work-17":["second-listed author"]
 })){
  const card=bibliography.match(new RegExp('<article class="pub-card"[^>]*id="'+id+'"'+'[\\s\\S]*?<\\/article>'));
  if(!card||terms.some(t=>!card[0].toLowerCase().includes(t.toLowerCase())))error("publications.html","contribution detail missing "+id);
@@ -151,15 +154,15 @@ for(const page of ["doctoral-concepts.html","research/high-speed-zebrafish-imagi
  if(!fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").includes("https://malruweidi.github.io/"+page))error("sitemap.xml","new research route missing "+page);
 }
 for(const [file,marker] of [
- ["research/high-speed-zebrafish-imaging.html","high-speed camera/acquisition system"],
- ["research/plasma-modified-pla.html","formal CRediT"],
+ ["research/high-speed-zebrafish-imaging.html","high-speed camera and acquisition system"],
+ ["research/plasma-modified-pla.html","experimental investigation"],
  ["research/pulmonary-epithelial-injury.html","CASE STUDY / WHAT THE EXPERIMENT ACTUALLY CONTROLLED"],
  ["doctoral-concepts.html","Working hypothesis."]
 ])if(!(html.get(file)||"").includes(marker))error(file,"source-led experimental/research content missing "+marker);
 if((html.get("research/pulmonary-epithelial-injury.html")||"").includes("complete transcript"))error("research dossier","production-facing transcript promoted on public film link");
 if(!(html.get("research.html")||"").includes("/research/high-speed-zebrafish-imaging.html")||!(html.get("research.html")||"").includes("/research/plasma-modified-pla.html"))error("research.html","dossier discovery links missing");
 const polymer=bibliography.match(/<article class="pub-card"[^>]*id="work-9"[^]*?<\/article>/);
-if(!polymer||!polymer[0].includes("CRediT")||!polymer[0].includes("investigation")&&!polymer[0].includes("Experimentation"))error("publications.html","formal and personal polymer credits not differentiated");
+if(!polymer||!polymer[0].includes("experimental investigation")||!polymer[0].includes("formal analysis")||/I (?:wrote|drafted) the manuscript/i.test(polymer[0]))error("publications.html","polymer investigation and analysis roles inaccurate");
 try{
  const v7=JSON.parse(fs.readFileSync(path.join(root,"assets/films/series-v7-pilots/releases.json"),"utf8"));
  if(v7.schema!=="ruwaidix-cinema-v7-registered-releases-v1"||v7.count!==v7.films.length)error("cinema","V7 release count/schema mismatch");
