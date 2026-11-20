@@ -21,12 +21,9 @@
     orbit.id="rx-world-orbit";
     orbit.innerHTML =
       '<span class="rx-world-orbit-rings" aria-hidden="true"><i></i><i></i><i></i></span>'+
-      '<a class="rx-world-orbit-specimen" href="/research/high-speed-zebrafish-imaging.html">'+
-        '<img src="/assets/zebrafish-larva-microscopy.webp" width="180" height="65" alt="Archived larval zebrafish microscopy image" loading="lazy"/>'+
-        '<span>'+both("LIVING SYSTEMS / IMAGING","النظم الحية / التصوير")+'</span></a>'+
-      '<a class="rx-world-orbit-apparatus" href="/stories/cairo-microscope.html">'+
-        '<img src="/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp" width="160" height="170" alt="The microscope from the personal archive" loading="lazy"/>'+
-        '<span>'+both("AN INSTRUMENT FROM CAIRO","مجهر من القاهرة")+'</span></a>'+
+      '<a class="rx-world-orbit-specimen" href="/grants/urep23.html">'+
+        '<img src="/assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp" width="180" height="65" alt="2018 archival chemistry reagent photograph" loading="lazy"/>'+
+        '<span>'+both("CHEMISTRY / 2018","الكيمياء / ٢٠١٨")+'</span></a>'+
       '<button type="button" class="rx-world-orbit-lens" aria-pressed="false" aria-controls="rx-world-hero-sample">'+
          '<span class="rx-world-orbit-glass" aria-hidden="true">⌕</span>'+both("VIEW A SPECIMEN","انظر إلى العينة")+'</button>'+
       '<div class="rx-world-hero-sample" id="rx-world-hero-sample" hidden>'+
