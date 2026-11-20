@@ -554,3 +554,34 @@ html[lang="ar"][data-rx-page="home"] .rx-world-archive-bridge-heading>span{
   animation:none!important;transition:none!important;
  }
 }
+
+
+/* The site's existing image-lightbox enhancer may append a direct figure button.
+   Keep its accessibility and zoom behavior, but integrate the control into the
+   paper photo mount instead of letting it become a full-width white bar. */
+html[data-rx-page="home"] main .rx-world-crossing-print > .rx-photo-trigger{
+ position:absolute!important;z-index:4;
+ inset:auto 17px 62px auto!important;
+ display:inline-flex!important;align-items:center;justify-content:center;
+ min-width:0!important;width:auto!important;max-width:calc(100% - 38px)!important;
+ min-height:38px!important;height:auto!important;
+ padding:8px 13px!important;margin:0!important;
+ background:#193b63!important;color:#f9f0e2!important;
+ border:1px solid #d5e0ed!important;border-radius:2px!important;
+ box-shadow:3px 4px 0 #152c4d66!important;
+ font:600 11px/1.25 "DM Sans",Arial,sans-serif!important;
+ white-space:normal!important;text-align:center!important;
+ cursor:pointer;
+}
+html[data-rx-page="home"] main .rx-world-crossing-print > .rx-photo-trigger:hover{
+ background:#365f8e!important;
+}
+html[data-rx-page="home"] main .rx-world-crossing-print > .rx-photo-trigger:focus-visible{
+ outline:3px solid #7fabe0!important;outline-offset:4px!important;
+}
+@media(max-width:650px){
+ html[data-rx-page="home"] main .rx-world-crossing-print > .rx-photo-trigger{
+  inset:auto 11px 56px auto!important;min-height:35px!important;
+  padding:6px 10px!important;font-size:10px!important;
+ }
+}
