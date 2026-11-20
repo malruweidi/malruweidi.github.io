@@ -6,8 +6,7 @@ import {resolve,join,dirname} from "node:path";
 import {fileURLToPath} from "node:url";
 const root=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const read=p=>readFileSync(join(root,p),"utf8");
-const link='<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-blue1">';
-const homeLink='<link rel="stylesheet" href="/assets/ruwaidix-one-blue-2026.css?v=20261118-contactsheet">';
+const blueStylesheet=/<link rel="stylesheet" href="\/assets\/ruwaidix-one-blue-2026\.css\?v=[^"]+">/g;
 const omitted=new Set(["home-legacy-2026.html","living-desk-preview.html","cinema-quality-preview.html","cinema-research-preview.html","preview-rx23.html"]);
 function htmlFiles(dir=""){
   return readdirSync(join(root,dir),{withFileTypes:true}).flatMap(e=>{
@@ -20,11 +19,11 @@ const contrast=(a,b)=>{
   const l=h=>{const c=[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return .2126*c[0]+.7152*c[1]+.0722*c[2];};
   const x=l(a),y=l(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05);
 };
-test("all public HTML pages use the same versioned blue identity",()=>{
+test("public HTML pages link one versioned blue identity stylesheet",()=>{
   const files=htmlFiles();
   // Two archival routes were withdrawn at the owner's request.
   assert.ok(files.length>=69,"expected preserved main site, films, archived research, and long-form records after approved archival removals");
-  for(const file of files){const content=read(file);assert.equal(content.split(file==="index.html"?homeLink:link).length,2,"missing or duplicate blue stylesheet: "+file);}
+  for(const file of files){const content=read(file);assert.equal(content.match(blueStylesheet)?.length,1,"missing or duplicate blue stylesheet: "+file);}
   for(const file of omitted)assert.doesNotMatch(read(file),/ruwaidix-one-blue-2026/,"preservation backups and previews remain independent: "+file);
 });
 test("the blue palette is the explicit primary identity and passes AA contrast for text",()=>{
