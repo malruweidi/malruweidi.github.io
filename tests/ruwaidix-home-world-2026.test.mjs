@@ -45,3 +45,14 @@ test("language, mobile, reduced motion and keyboard experience survive",()=>{
  assert.match(js,/data-rxw-en/);
  assert.match(js,/data-rxw-ar/);
 });
+
+test("new experiences are outside the closed complete-record archive",()=>{
+ const js=read("assets/ruwaidix-home-world-2026.js");
+ assert.match(js,/const directory=\$\("#rx26-portal"\)/);
+ assert.match(js,/const moments=\$\("#rx-moving-moments"\)/);
+ assert.match(js,/const complete=\$\("#rx-home-complete-record"\)/);
+ assert.match(js,/complete\.insertAdjacentElement\("beforebegin",bridge\)/);
+ assert.match(js,/rx-world-archive-bridge-cards/);
+ const css=read("assets/ruwaidix-home-world-2026.css");
+ assert.match(css,/\.rx-world-archive-bridge-cards\{/);
+});
