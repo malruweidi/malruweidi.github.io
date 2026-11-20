@@ -246,6 +246,9 @@
     stop();
     show(Number(button.dataset.position));
   }));
+  desk.querySelector(".airway-desk-notes").addEventListener("focusin", () => {
+    if (scanFrame !== null) stop();
+  });
   motion.addEventListener?.("change", () => { if (motion.matches) stop(); });
   document.addEventListener("visibilitychange", () => { if (document.hidden) stop(); });
   document.addEventListener("ruwaidix:languagechange", updateText);
