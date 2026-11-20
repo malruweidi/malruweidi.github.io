@@ -236,8 +236,8 @@ html[data-rx-page="home"] .rx-world-desk{
  height:390px;padding:12px 12px 16px;display:flex;flex-direction:column;gap:8px;
  background:#fcf7eb;color:#1b3656;border:1px solid #dcccb3;
  box-shadow:9px 17px 23px #233e5b47;
- transform:translateX(calc(-50% + var(--desk-order) * 38px))
-   translateY(calc(var(--desk-order) * 18px)) rotate(calc((var(--desk-order) - 1) * 8deg));
+ transform:translateX(calc(-50% + var(--desk-offset,0px)))
+   translateY(var(--desk-drop,0px)) rotate(var(--desk-tilt,0deg));
  z-index:calc(6 - var(--desk-order));
  transition:transform .52s cubic-bezier(.22,.78,.26,1),box-shadow .35s,opacity .32s;
  overflow:hidden;
