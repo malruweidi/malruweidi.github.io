@@ -60,7 +60,6 @@ test("every indexed page exists and every anchored route resolves", () => {
 test("search finds concrete experimental topics in both languages", () => {
   for (const [query, expected] of [
     ["niosomes", "Inhalable drug carriers"],
-    ["agarose", "A histology embedding failure"],
     ["SPION", "At Zewail City"],
     ["Ramadan", "The Ramadan microscope"],
     ["أرشيف", "Photographic & film archive"],
@@ -69,6 +68,8 @@ test("search finds concrete experimental topics in both languages", () => {
   ]) {
     assert.ok(search(query).some(entry => entry.title === expected), query + " should find " + expected);
   }
+  assert.ok(!index.items.some(entry => entry.title === "A histology embedding failure"),
+    "Withdrawn histology story must not return through discovery");
 });
 
 test("the source record and no-JavaScript fallback remain accessible", () => {

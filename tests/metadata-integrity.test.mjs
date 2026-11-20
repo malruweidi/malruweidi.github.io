@@ -48,6 +48,6 @@ test("improvements do not replace research content or existing routes", () => {
   }
   assert.match(read("archive.html"), /ARCHIVE 05/);
   assert.match(read("imaging.html"), /MicroZebraLab/);
-  assert.match(read("stories.html"), /chapter-zebrafish-histology-materials/);
+  assert.doesNotMatch(read("stories.html"), /chapter-zebrafish-histology-materials/, "Withdrawn histology chapter should remain absent");
   assert.match(read("engagement.html"), /Chemistry Festival/);
 });
