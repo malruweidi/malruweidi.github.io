@@ -110,7 +110,10 @@
          '</div></div></div>'+
        '<p class="rx-world-crossing-end">'+both("Move between subjects. The evidence is always in the original sources.","انتقل بين الموضوعات؛ والأدلة تبقى في مصادرها الأصلية.")+'</p>'+
       '</div>';
-    research.insertAdjacentElement("beforebegin",section);
+    // The detailed research section lives inside a collapsed archival <details>.
+    // Insert the panorama before the VISIBLE chapter directory instead.
+    const directory=$("#rx26-portal");
+    (directory||research.closest("details")||research).insertAdjacentElement("beforebegin",section);
     const print=$(".rx-world-crossing-print",section),img=$("img",print),caption=$("figcaption",print),
       heading=$("h2",section),kicker=$(".rx-world-crossing-kicker",section),deck=$(".rx-world-crossing-deck",section),
       link=$(".rx-world-crossing-link",section),index=$(".rx-world-crossing-index",section);
@@ -163,7 +166,10 @@
         '<span class="rx-world-desk-print-caption">'+both(p.en,p.ar)+'</span>'+
         '<a href="'+p.url+'" tabindex="'+(i===0?'0':'-1')+'">'+both("Read the story","اقرأ الحكاية")+' ↗</a></div>').join("")+
       '</div>';
-    story.insertAdjacentElement("afterend",desk);
+    // Story content is intentionally folded away in the complete record.
+    // The photographic desk belongs in the visible narrative after Moving Moments.
+    const moments=$("#rx-moving-moments");
+    (moments||story.closest("details")||story).insertAdjacentElement("afterend",desk);
     const cards=[...desk.querySelectorAll(".rx-world-desk-print")];
     const count=$(".rx-world-desk-count",desk);
     let active=0;
@@ -197,10 +203,29 @@
     observe(desk);
   }
 
+  // A visible historical afterword. The older long-form chapters remain
+  // safely folded inside the complete record; the interactive objects do not.
+  const complete=$("#rx-home-complete-record");
+  let bridge=null;
+  if(complete && !$("#rx-world-archive-bridge")){
+    bridge=make("section","rx-world-archive-bridge");
+    bridge.id="rx-world-archive-bridge";
+    bridge.setAttribute("aria-labelledby","rx-world-archive-bridge-title");
+    bridge.innerHTML='<div class="rx-world-archive-bridge-inner">'+
+      '<div class="rx-world-archive-bridge-heading"><span>'+
+        both("FROM THE MANUSCRIPT TO THE COMMUNITY","من المخطوط إلى المجتمع")+
+      '</span><h2 id="rx-world-archive-bridge-title">'+
+        both("Science has a life beyond the experiment.","للعلم حياة تتجاوز التجربة.")+
+      '</h2><p>'+both("Two objects from different parts of the record. Open each to follow its history.","مقتنيان من جانبين مختلفين من السجل؛ افتحهما لتتبع قصتيهما.")+
+      '</p></div><div class="rx-world-archive-bridge-cards"></div></div>';
+    complete.insertAdjacentElement("beforebegin",bridge);
+    observe(bridge);
+  }
+
   // A small, typographic manuscript leaf accompanies historical scholarship without
   // pretending to be an original Mamluk source or an archival reproduction.
   const history=$("#history .history-grid > div:first-child");
-  if(history&&!$("#rx-world-manuscript")){
+  if(history&&bridge&&!$("#rx-world-manuscript")){
     const paper=make("aside","rx-world-manuscript");paper.id="rx-world-manuscript";
     paper.innerHTML='<div class="rx-world-manuscript-inner">'+
       '<span class="rx-world-manuscript-brow">'+both("HISTORY OF PHARMACY / A WRITER’S NOTE","تاريخ الصيدلة / ملاحظة كاتب")+'</span>'+
@@ -212,7 +237,7 @@
       '<div class="rx-world-manuscript-reverse" hidden><p>'+both("The history of pharmacy depends on recipes, substitutions, preservation practices, and the conditions in which medicines were prepared.","يتطلّب تاريخ الصيدلة دراسة الوصفات والبدائل وطرائق الحفظ والظروف التي كانت تُحضَّر فيها الأدوية.")+'</p>'+
        '<a href="/writing.html">'+both("Explore the writing","استكشف الكتابات")+' ↗</a></div>'+
       '</div>';
-    history.appendChild(paper);
+    $(".rx-world-archive-bridge-cards",bridge).appendChild(paper);
     const btn=$(".rx-world-manuscript-turn",paper),reverse=$(".rx-world-manuscript-reverse",paper);
     btn.addEventListener("click",()=>{const on=btn.getAttribute("aria-pressed")!=="true";btn.setAttribute("aria-pressed",String(on));paper.dataset.open=String(on);reverse.hidden=!on;});
     observe(paper);
@@ -220,7 +245,7 @@
 
   // A real ACS photograph emerges from the community chapter, not synthetic confetti.
   const community=$("#community .leadgrid > div:first-child");
-  if(community&&!$("#rx-world-festival")){
+  if(community&&bridge&&!$("#rx-world-festival")){
     const event=make("aside","rx-world-festival");event.id="rx-world-festival";
     event.innerHTML='<div class="rx-world-festival-lead">'+
       '<span class="rx-world-festival-stamp">ACS / 2017</span>'+
@@ -229,7 +254,7 @@
       '<figure id="rx-world-festival-image" hidden><img src="/assets/oct12-owner-photos/acs-chapter-recognition-2017.webp" loading="lazy" alt="Archival image of ACS chapter recognition in 2017"/>'+
         '<figcaption>'+both("American Chemical Society student-chapter archive, 2017","أرشيف الفصل الطلابي للجمعية الكيميائية الأمريكية، ٢٠١٧")+
         ' · <a href="/engagement.html">'+both("Read the community record","اقرأ سجل الأنشطة")+' ↗</a></figcaption></figure>';
-    community.appendChild(event);
+    $(".rx-world-archive-bridge-cards",bridge).appendChild(event);
     const btn=$(".rx-world-festival-trigger",event),figure=$("figure",event);
     btn.addEventListener("click",()=>{const yes=btn.getAttribute("aria-pressed")!=="true";btn.setAttribute("aria-pressed",String(yes));figure.hidden=!yes;});
     observe(event);
