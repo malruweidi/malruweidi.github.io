@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - name: Verify immersive homepage scientific interactions and preserved archive content
+        run: node --test tests/ruwaidix-home-world-2026.test.mjs
       - name: Verify original homepage, documentary and all nine preserved chapters
         run: node --test tests/living-desk-home-2026.test.cjs
       - name: Verify four-scene cinematic archive and accessible playback
