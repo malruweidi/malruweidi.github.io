@@ -604,3 +604,9 @@ main > .rx-reading-spread .rx-reading-pair {gap:clamp(14px,2vw,28px);}
   html[data-rx-page="computing"] main a.txtlink,
   html body main .rx-field-heading .rx-field-kicker { color: var(--reading-ink) !important; }
 }
+
+/* 2026-11-21 Chrome axe review: substantive contrast correction on
+   pale Stories chapter panels (the hero's dark photographic gradient is separate). */
+html[data-rx-page="stories"] main .stories-source.rx-source-fold > summary {color:#2d507d!important}
+html[data-rx-page="stories"] main #rx26-festival-portrait > .rx26-eyebrow,
+html[data-rx-page="stories"] main #rx26-acs-2019-history > .rx26-eyebrow {color:#2d507d!important}
