@@ -47,3 +47,10 @@ test('motion, mobile layout, and both language directions are supported',()=>{
   assert.match(js,/data-rx-en/);
   assert.match(js,/data-rx-ar/);
 });
+
+test('screen-reader labels follow the visible language and magnifier scales with viewport',()=>{
+  const js=read('assets/ruwaidix-kinetic-objects-2026.js');
+  assert.match(js,/aria-labelledby/);
+  assert.doesNotMatch(js,/aria-label","Explore the original zebrafish/);
+  assert.match(js,/lens\.getBoundingClientRect\(\)\.width/);
+});
