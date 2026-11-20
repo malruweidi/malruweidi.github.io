@@ -456,3 +456,101 @@ html[lang="ar"] .rx-world-orbit :is(span,button){font-family:"Amiri","Noto Naskh
  .rx-world-desk-print:not([data-front="true"]){display:none}
  .rx-world-orbit{display:none}
 }
+
+
+/* Two visible archival objects, placed before (not within) the closed full record. */
+html[data-rx-page="home"] main .rx-world-archive-bridge{
+ position:relative;isolation:isolate;overflow:hidden;
+ padding:clamp(56px,7vw,98px) 0;
+ background:linear-gradient(150deg,#eaf0f8 0%,#f6f1e8 52%,#e6edf6 100%);
+ border-block:1px solid #bdcde1;color:#1b3456;
+}
+.rx-world-archive-bridge::before{
+ content:"";position:absolute;inset:10% -6% auto auto;width:min(54vw,730px);aspect-ratio:1;
+ border:1px solid #a3bad166;border-radius:50%;pointer-events:none;z-index:-1;
+ box-shadow:0 0 0 60px #9eb4ce11,0 0 0 118px #c6d6e60c;
+}
+.rx-world-archive-bridge-inner{width:min(1190px,calc(100% - 58px));margin:0 auto}
+.rx-world-archive-bridge-heading{
+ display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.6fr);
+ gap:clamp(18px,4vw,65px);align-items:end;
+ padding-bottom:30px;margin-bottom:20px;border-bottom:1px solid #b0c3d7;
+}
+.rx-world-archive-bridge-heading>span{
+ grid-column:1/-1;color:#345b8e;
+ font:600 10px/1.5 "DM Mono",ui-monospace,monospace;
+ letter-spacing:.13em;
+}
+.rx-world-archive-bridge-heading h2{
+ margin:0!important;max-width:14ch;
+ color:#1b3555!important;font:400 clamp(43px,5vw,76px)/1 "Newsreader",Georgia,serif!important;
+ letter-spacing:-.044em!important;
+}
+.rx-world-archive-bridge-heading p{
+ color:#365779;font:400 16px/1.75 "DM Sans",Arial,sans-serif;
+ margin:0;max-width:38ch;
+}
+.rx-world-archive-bridge-cards{
+ display:grid;grid-template-columns:minmax(230px,.7fr) minmax(0,1.3fr);
+ gap:clamp(28px,7vw,105px);align-items:center;
+ padding:30px clamp(10px,3vw,42px) 8px;
+ min-height:340px;
+}
+html[data-rx-page="home"] .rx-world-archive-bridge .rx-world-manuscript{
+ float:none;align-self:start;justify-self:center;
+ width:min(100%,285px);margin:0;transform:rotate(-4deg);
+}
+html[data-rx-page="home"] .rx-world-archive-bridge .rx-world-festival{
+ justify-self:stretch;align-self:center;
+ width:100%;max-width:580px;min-width:0;margin:0;
+ padding:18px 0;border-top:2px solid #5278a7;
+}
+.rx-world-archive-bridge .rx-world-festival-stamp{font-size:12px}
+.rx-world-archive-bridge .rx-world-festival-trigger{
+ font-size:14px;color:#214e7e;
+}
+html[data-rx-page="home"] .rx-world-archive-bridge .rx-world-festival figure{
+ max-width:520px;padding:11px 11px 8px;
+ transform:rotate(2deg);box-shadow:11px 13px 0 #7193bf27;
+}
+html[data-rx-page="home"] .rx-world-archive-bridge .rx-world-festival figure img{
+ max-height:330px;object-fit:contain;
+}
+html[lang="ar"][data-rx-page="home"] .rx-world-archive-bridge{direction:rtl}
+html[lang="ar"][data-rx-page="home"] .rx-world-archive-bridge-heading h2{
+ font:500 clamp(42px,5vw,77px)/1.32 "Amiri","Noto Naskh Arabic",serif!important;
+ letter-spacing:0!important;
+}
+html[lang="ar"][data-rx-page="home"] .rx-world-archive-bridge-heading p{
+ font:400 19px/1.75 "Amiri","Noto Naskh Arabic",serif;
+}
+html[lang="ar"][data-rx-page="home"] .rx-world-archive-bridge-heading>span{
+ font:500 16px/1.5 "Amiri","Noto Naskh Arabic",serif;letter-spacing:0;
+}
+@media(max-width:650px){
+ html[data-rx-page="home"] main .rx-world-archive-bridge{padding:45px 0}
+ .rx-world-archive-bridge-inner{width:calc(100% - 34px)}
+ .rx-world-archive-bridge-heading{grid-template-columns:1fr;gap:13px;padding-bottom:20px}
+ .rx-world-archive-bridge-heading h2{max-width:100%;font-size:clamp(43px,10vw,63px)!important}
+ .rx-world-archive-bridge-heading p{font-size:14px;line-height:1.7}
+ .rx-world-archive-bridge-cards{
+   grid-template-columns:1fr;gap:35px;min-height:0;
+   padding:15px 8px 0;
+ }
+ html[data-rx-page="home"] .rx-world-archive-bridge .rx-world-manuscript{
+   width:min(100%,270px);margin:auto;transform:rotate(-3deg);
+ }
+ html[data-rx-page="home"] .rx-world-archive-bridge .rx-world-festival{
+   margin-top:14px;padding-top:18px;
+ }
+ html[lang="ar"][data-rx-page="home"] .rx-world-archive-bridge-heading h2{
+   font-size:clamp(41px,9.2vw,57px)!important;
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ html[data-rx-page="home"] .rx-world-archive-bridge *,
+ html[data-rx-page="home"] .rx-world-archive-bridge *::before,
+ html[data-rx-page="home"] .rx-world-archive-bridge *::after{
+  animation:none!important;transition:none!important;
+ }
+}
