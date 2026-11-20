@@ -57,10 +57,11 @@ test('Arabic story dictionary includes new reader-facing corrections', () => {
 
 test('research attribution identifies different individual roles instead of a broad disclaimer', () => {
   const profile = read('molecular-therapeutics.html');
-  assert.match(profile, /My responsibilities differed across projects/);
-  assert.match(profile, /I performed experiments in collaborative vascular work/);
+  assert.match(profile, /My experimental experience spans polymer surfaces/);
+  assert.match(profile, /I conducted pulmonary epithelial-cell and flow-chamber experiments/);
   assert.doesNotMatch(profile, /rather than independent certification of author contributions/);
-  assert.match(read('methods-evidence.html'), /not authorship, data analysis for, or any other contribution to a resulting paper/);
+  assert.match(read('methods-evidence.html'), /In the QATAVI registry project, I helped define study variables/);
+  assert.doesNotMatch(read('methods-evidence.html'), /not authorship, data analysis for, or any other contribution/);
 });
 
 test('Stories captions separate reader context from production notes', () => {

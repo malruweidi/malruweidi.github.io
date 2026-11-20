@@ -17,7 +17,7 @@ runInNewContext(translations, { window });
 const dictionary = window.RuwaidixArabicDictionary;
 
 test("five existing dossiers expose the same evidence-first scan without losing scientific media", () => {
-  const labels = ["System and method", "Reported finding or status", "My contribution", "Interpretive boundary"];
+  const labels = ["System and method", "Reported finding or status", "My work", "Interpretive boundary"];
   for (const file of files) {
     const html = readFileSync(new URL(`../research/${file.name}.html`, import.meta.url), "utf8");
     const marker = '<section class="rx-dossier-scan"';

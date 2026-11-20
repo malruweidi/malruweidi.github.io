@@ -36,3 +36,9 @@
     "No encapsulation efficiencies, aerosol-deposition results, clinical effects or published experimental outcomes are claimed.": "لا أقدّم ادعاءات بشأن كفاءة احتواء الدواء أو نتائج ترسيب الرذاذ أو التأثيرات السريرية أو نتائج تجريبية منشورة.",
   });
 })();
+
+Object.assign(window.RuwaidixArabicDictionary, {
+"My work": "عملي البحثي",
+"I carried out the epithelial-cell and flow-chamber experiments, analysed and interpreted the results, prepared figures and drafted the manuscript. H. C. Yalcin conceived and designed the study.": "أجريت تجارب الخلايا الظهارية وحجرة التدفق، وحللت النتائج وفسرتها وأعددت الأشكال وكتبت مسودة المخطوط. وضع H. C. Yalcin فكرة الدراسة وتصميمها.",
+"I performed zebrafish imaging and laboratory experiments in the collaborative vascular-cilia study.": "أجريت التصوير والتجارب المختبرية على أسماك الزرد ضمن دراسة الأهداب الوعائية التعاونية."
+});
