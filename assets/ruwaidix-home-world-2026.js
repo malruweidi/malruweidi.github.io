@@ -178,6 +178,10 @@
       cards.forEach((c,i)=>{
         const order=(i-active+cards.length)%cards.length;
         c.style.setProperty("--desk-order",String(order));
+        const spacing=window.innerWidth<=900?18:33;
+        c.style.setProperty("--desk-offset",(order*spacing)+"px");
+        c.style.setProperty("--desk-drop",(order*16)+"px");
+        c.style.setProperty("--desk-tilt",((order-1)*6)+"deg");
         c.dataset.front=String(i===active);
         c.querySelector("a").tabIndex=i===active?0:-1;
         c.setAttribute("aria-hidden",String(i!==active));
@@ -200,6 +204,7 @@
     });
     stack.addEventListener("pointercancel",()=>{startX=null;});
     front(0);
+    window.addEventListener("resize",()=>front(active),{passive:true});
     observe(desk);
   }
 
