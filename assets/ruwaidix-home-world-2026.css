@@ -1,0 +1,458 @@
+/* Ruwaidix — a living scientific homepage / 21 November 2026
+   Editorial-scientific interactions, actual figures and personal source photography.
+   Never alter/crop the original figures; avoid added panels in the opening copy. */
+html[data-rx-page="home"] body{overflow-x:clip}
+html[data-rx-page="home"] [data-rxw-ar]{display:none!important}
+html[lang="ar"][data-rx-page="home"] [data-rxw-en]{display:none!important}
+html[lang="ar"][data-rx-page="home"] [data-rxw-ar]{display:inline!important}
+html[data-rx-page="home"] :is(.rx-world-crossing,.rx-world-desk,.rx-world-manuscript,.rx-world-festival,.rx-world-orbit) *{box-sizing:border-box}
+html[data-rx-page="home"] :is(.rx-world-crossing,.rx-world-desk,.rx-world-manuscript,.rx-world-festival,.rx-world-orbit) :is(a,button):focus-visible{
+  outline:3px solid #80a5d6!important;outline-offset:4px!important;
+}
+
+/* The portrait retains its unaltered photograph. The optical objects occupy
+   the edges and outside margins; they never overlay text or the subject's face. */
+html[data-rx-page="home"] .rx-hero-portrait{
+  isolation:isolate;position:relative;overflow:visible!important;
+}
+.rx-world-orbit{position:absolute;inset:0;z-index:5;pointer-events:none;color:#e9e0cf}
+.rx-world-orbit-rings{position:absolute;inset:-13% -9% -9%;z-index:-1;pointer-events:none}
+.rx-world-orbit-rings i{display:block;position:absolute;inset:1%;border-radius:50%;border:1px solid #456fa659;transform:rotate(-14deg)}
+.rx-world-orbit-rings i:nth-child(2){inset:15%;border-color:#7193bf73;border-style:dashed}
+.rx-world-orbit-rings i:nth-child(3){inset:29%;border-color:#d5c29f6b}
+.rx-world-orbit :is(a,button){pointer-events:auto}
+.rx-world-orbit-specimen{
+ position:absolute;inset:-8% -14% auto auto;width:clamp(115px,12vw,175px);
+ display:grid;justify-items:center;gap:4px;padding:9px 10px;
+ background:#142b49ed;border:1px solid #93b3d8;box-shadow:7px 8px 0 #192d4b2e;
+ transform:translate3d(calc(var(--rx-world-x,0px) * -.7),calc(var(--rx-world-y,0px) * -.7),0) rotate(5deg);
+ transition:transform .45s;z-index:6;color:#fcf3e3!important;text-decoration:none!important;
+}
+.rx-world-orbit-specimen img{display:block;width:100%;max-height:55px;object-fit:contain;filter:grayscale(.5) brightness(1.35);mix-blend-mode:screen}
+.rx-world-orbit-specimen span{font:600 9px/1.35 "DM Mono",monospace;letter-spacing:.025em;text-align:center;color:#f4f0e8}
+.rx-world-orbit-apparatus{
+ position:absolute;inset:auto auto 0 -11%;width:clamp(105px,10vw,140px);
+ display:grid;gap:7px;text-decoration:none!important;color:#203953!important;
+ transform:translate3d(var(--rx-world-x,0px),var(--rx-world-y,0px),0) rotate(-7deg);
+ transition:transform .4s;filter:drop-shadow(5px 7px 5px #17294438);z-index:7;
+}
+.rx-world-orbit-apparatus img{
+ width:100%;height:clamp(105px,11vw,142px);display:block;object-fit:cover;
+ border:7px solid #faf4e9;box-shadow:0 0 0 1px #cbbba2,5px 6px 0 #1d35514a;
+}
+.rx-world-orbit-apparatus span{background:#faf4e9;padding:5px 7px;font:600 9px/1.5 "DM Mono",monospace;text-align:center;letter-spacing:.02em}
+.rx-world-orbit-lens{
+ position:absolute;inset:38% -8% auto auto;width:clamp(70px,7.5vw,105px);aspect-ratio:1;
+ display:grid;place-items:center;align-content:center;gap:2px;border-radius:50%;
+ border:1px solid #ebd9b7;cursor:pointer;background:#1b385bcf;backdrop-filter:blur(4px);
+ color:#faf2e4;box-shadow:0 0 0 8px #d0e0ef24,0 9px 25px #11284159;
+ transform:translate3d(calc(var(--rx-world-x,0px) * -.4),calc(var(--rx-world-y,0px) * -.4),0);
+ transition:transform .4s,background .3s;z-index:8;
+}
+.rx-world-orbit-lens:hover,.rx-world-orbit-lens[aria-pressed="true"]{background:#2d5986}
+.rx-world-orbit-glass{font:500 clamp(35px,4vw,58px)/.7 Georgia,serif;transform:rotate(-20deg);color:#f4e1bd}
+.rx-world-orbit-lens [data-rxw-en],.rx-world-orbit-lens [data-rxw-ar]{font:600 8px/1.25 "DM Mono",monospace;text-align:center;max-width:65px}
+.rx-world-hero-sample{
+ position:absolute;inset:auto 2% 3% auto;z-index:15;width:min(80%,340px);
+ background:#f6f1e8;border:8px solid #f6f1e8;color:#1a3554;
+ box-shadow:0 18px 34px #0d213d9c,8px 8px 0 #d0bfa1;
+ display:grid;gap:5px;padding:0 0 10px;
+}
+.rx-world-hero-sample[hidden]{display:none!important}
+.rx-world-hero-sample img{width:100%;max-height:235px;object-fit:contain;background:#18324e}
+.rx-world-hero-sample span{font:500 10px/1.4 "DM Sans",Arial,sans-serif;color:#284d76}
+.rx-world-hero-sample a{font:650 11px/1.4 "DM Sans",Arial,sans-serif;color:#1d416f;text-decoration:underline}
+.rx-world-sample-close{position:absolute;inset:-18px -18px auto auto;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;border:1px solid #b4cbe7;background:#203b5b;color:#fff;cursor:pointer;font-size:23px}
+@media (prefers-reduced-motion:no-preference) {
+ @keyframes rx-world-fish-bob{0%,100%{translate:0 0}50%{translate:-6px -7px}}
+ .rx-world-orbit-specimen{animation:rx-world-fish-bob 8s ease-in-out infinite}
+ .rx-world-orbit-rings i:nth-child(2){animation:rx-world-ring 48s linear infinite}
+ @keyframes rx-world-ring{to{rotate:360deg}}
+}
+/* A four-chapter scientific panorama. The research images themselves remain
+   untouched and legible; animation is confined to the surrounding stage. */
+html[data-rx-page="home"] main .rx-world-crossing{
+ --world-navy:#102840;--world-ink:#f7efdf;--world-blue:#9fbce0;
+ position:relative;isolation:isolate;width:100%;overflow:hidden;
+ margin:0;padding:clamp(50px,7vw,110px) 0;
+ color:var(--world-ink);background:linear-gradient(146deg,#142e4c 0%,#1f3e60 48%,#122b46 100%);
+ border-block:1px solid #607da5;
+}
+.rx-world-crossing::before{
+ content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background:radial-gradient(ellipse at 0% 100%,#7da5cf20,transparent 54%),
+ repeating-linear-gradient(90deg,transparent 0 119px,#d5e5f00a 120px 121px);
+}
+.rx-world-crossing-frame{width:min(1230px,calc(100% - 58px));margin:auto}
+.rx-world-crossing-head{display:flex;justify-content:space-between;align-items:center;gap:18px;color:#c8d9ec;border-bottom:1px solid #97b4d05c;padding-bottom:19px}
+.rx-world-crossing-head p,.rx-world-crossing-head span{
+ margin:0;font:500 10px/1.5 "DM Mono",ui-monospace,monospace;letter-spacing:.12em
+}
+.rx-world-crossing-grid{
+ display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
+ align-items:center;gap:clamp(30px,6vw,95px);padding:clamp(28px,5vw,75px) 0;
+}
+.rx-world-crossing-visual{
+ position:relative;min-height:430px;display:grid;place-items:center;
+ isolation:isolate;
+}
+.rx-world-crossing-orbit{
+ position:absolute;inset:0;pointer-events:none;z-index:-1;
+ border:1px solid #adc7de4d;border-radius:50%;
+ transform:scale(.85);
+ box-shadow:0 0 0 50px #9cbce709,0 0 0 100px #9cbce707;
+}
+.rx-world-crossing-orbit::before,.rx-world-crossing-orbit::after{
+ content:"";display:block;position:absolute;inset:14%;border:1px dashed #e4ceb26b;border-radius:50%;
+}
+.rx-world-crossing-orbit::after{inset:31%;border-color:#b3d1f058;border-style:solid}
+.rx-world-crossing-print{
+ position:relative;z-index:1;margin:0;width:min(100%,495px);
+ min-height:340px;max-height:450px;display:grid;grid-template-rows:minmax(260px,1fr) auto;
+ align-content:stretch;padding:clamp(8px,1vw,14px);
+ background:#fbf8f0;color:#1e3d60;border:1px solid #fff5dd;
+ box-shadow:15px 18px 0 #060e1c5c,0 25px 42px #071b31b7;
+ transform:rotate(-2deg);transition:transform .5s ease;
+}
+.rx-world-crossing-print:hover{transform:rotate(0deg) translateY(-4px)}
+.rx-world-crossing-print img{
+ width:100%;height:100%;max-height:365px;min-height:260px;
+ object-fit:contain;object-position:center;background:#eef2f8;
+ filter:none!important;transform:none!important;
+}
+.rx-world-crossing-print[data-concept="true"] img{padding:23px;background:#132a45}
+.rx-world-crossing-print figcaption{
+ margin:0;padding:12px 5px 4px;color:#234467;
+ font:500 10px/1.5 "DM Mono",ui-monospace,monospace;
+}
+.rx-world-crossing-index{
+ position:absolute;z-index:2;inset:auto -1% -2% auto;
+ font:400 clamp(76px,11vw,168px)/1 "Newsreader",Georgia,serif;
+ color:#efe2c8;letter-spacing:-.07em;text-shadow:0 12px 20px #001428b3;
+ pointer-events:none;
+}
+.rx-world-crossing-index span{font:500 13px/1 "DM Mono",monospace;letter-spacing:0;color:#c0d2e8}
+.rx-world-crossing-story{min-width:0;position:relative;padding:10px 0 0}
+.rx-world-crossing-kicker{
+ color:#c6d9ee;font:500 11px/1.5 "DM Mono",monospace;
+ letter-spacing:.12em;text-transform:uppercase;padding-bottom:16px;
+}
+.rx-world-crossing-story h2{
+ max-width:12ch;margin:0 0 23px;color:#fff5e7!important;
+ font:400 clamp(43px,5vw,78px)/.99 "Newsreader",Georgia,serif!important;
+ letter-spacing:-.046em;text-wrap:balance;
+}
+.rx-world-crossing-deck{
+ max-width:47ch;margin:0 0 18px;color:#e4edf6;
+ font:400 clamp(15px,1.2vw,18px)/1.75 "DM Sans",Arial,sans-serif;
+}
+.rx-world-crossing-link{
+ display:inline-flex;gap:10px;align-items:center;min-height:44px;color:#f2e3c8!important;
+ font:600 13px/1.4 "DM Sans",Arial,sans-serif;text-decoration:underline!important;
+ text-underline-offset:4px;border:0;
+}
+.rx-world-crossing-steps{
+ display:grid;grid-template-columns:1fr 1fr;gap:5px 11px;
+ padding-top:24px;margin-top:18px;border-top:1px solid #aec4da61;position:relative;
+}
+.rx-world-crossing-steps::before{
+ content:"";position:absolute;top:-2px;left:0;width:25%;height:2px;
+ background:#ead3a7;transform:translateX(var(--rx-world-step-progress,0%));
+ transition:transform .5s;
+}
+.rx-world-crossing-steps button{
+ appearance:none;display:grid;grid-template-columns:auto minmax(0,1fr);
+ gap:3px 9px;align-items:center;text-align:start;padding:9px 8px;
+ min-height:64px;cursor:pointer;border:1px solid transparent;
+ color:#dde9f5;background:transparent;
+ font:500 12px/1.4 "DM Sans",Arial,sans-serif;
+ transition:background .2s,border-color .2s,transform .2s;
+}
+.rx-world-crossing-steps button .rx-world-step-no{
+ font:500 11px/1.5 "DM Mono",monospace;color:#d6bd91;align-self:start;
+}
+.rx-world-crossing-steps button small{
+ grid-column:2;color:#acc6e4;font:500 9px/1.5 "DM Mono",monospace
+}
+.rx-world-crossing-steps button:is(:hover,:focus-visible,[aria-pressed="true"]){
+ background:#a8c8e51d;border-color:#98b9df77;
+}
+.rx-world-crossing-steps button[aria-pressed="true"]{box-shadow:inset 3px 0 0 #eed0a2}
+.rx-world-crossing-end{
+ color:#b6cde5;font:500 10px/1.5 "DM Mono",monospace;
+ border-top:1px solid #9db7d457;padding-top:22px;margin:0;
+}
+@media(prefers-reduced-motion:no-preference){
+ @keyframes rx-world-orbit-sway{0%,100%{transform:scale(.85) rotate(-4deg)}50%{transform:scale(.88) rotate(4deg)}}
+ .rx-world-crossing[data-world-visible="true"] .rx-world-crossing-orbit{animation:rx-world-orbit-sway 17s ease-in-out infinite}
+}
+
+/* The personal archive is handled like a photographer's desk:
+   three actual photographs, physically stacked and draggable. */
+html[data-rx-page="home"] .rx-world-desk{
+ display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
+ gap:clamp(30px,5vw,82px);align-items:center;
+ min-height:520px;margin:clamp(30px,5vw,70px) 0;
+ padding:clamp(25px,4vw,55px) clamp(20px,4vw,55px);
+ background:radial-gradient(ellipse at 68% 40%,#e7d9c4 0%,#f4ecdf 54%,#f9f5ec 100%);
+ border-block:1px solid #cdbda5;color:#1d3c5d;
+ position:relative;isolation:isolate;
+}
+.rx-world-desk::before{
+ content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background:repeating-linear-gradient(0deg,transparent 0 37px,#bcaa8f10 38px 39px);
+}
+.rx-world-desk-copy{max-width:420px;position:relative;z-index:3}
+.rx-world-desk-copy>p:first-child{
+ color:#386391;font:600 10px/1.5 "DM Mono",monospace;letter-spacing:.09em;margin:0 0 20px;
+}
+.rx-world-desk-copy h3{
+ color:#1c3656!important;font:400 clamp(42px,4.2vw,72px)/1.02 "Newsreader",Georgia,serif!important;
+ letter-spacing:-.043em!important;margin:0 0 22px!important;
+}
+.rx-world-desk-copy>p:nth-of-type(2){
+ color:#405e7a;font:400 clamp(15px,1.1vw,17px)/1.7 "DM Sans",Arial,sans-serif;
+ margin:0 0 24px;max-width:38ch;
+}
+.rx-world-desk-controls{display:flex;align-items:center;gap:16px;margin-bottom:21px}
+.rx-world-desk-controls button{
+ width:48px;height:48px;border-radius:50%;border:1px solid #446d9d;
+ background:#f8f5ef;color:#183b61;cursor:pointer;
+ font:500 22px/1 Georgia,serif;transition:transform .2s,background .2s;
+}
+.rx-world-desk-controls button:hover{background:#d8e6f4;transform:scale(1.06)}
+.rx-world-desk-count{color:#456b95;font:500 12px/1.5 "DM Mono",monospace}
+.rx-world-desk-route{
+ color:#1d416b!important;font:650 13px/1.6 "DM Sans",Arial,sans-serif;
+ text-decoration:underline!important;text-underline-offset:4px;
+}
+.rx-world-desk-stack{
+ position:relative;min-height:440px;max-width:550px;width:100%;
+ touch-action:pan-y;cursor:grab;
+}
+.rx-world-desk-stack:active{cursor:grabbing}
+.rx-world-desk-print{
+ position:absolute;top:0;left:50%;width:min(70%,285px);
+ height:390px;padding:12px 12px 16px;display:flex;flex-direction:column;gap:8px;
+ background:#fcf7eb;color:#1b3656;border:1px solid #dcccb3;
+ box-shadow:9px 17px 23px #233e5b47;
+ transform:translateX(calc(-50% + var(--desk-order) * 38px))
+   translateY(calc(var(--desk-order) * 18px)) rotate(calc((var(--desk-order) - 1) * 8deg));
+ z-index:calc(6 - var(--desk-order));
+ transition:transform .52s cubic-bezier(.22,.78,.26,1),box-shadow .35s,opacity .32s;
+ overflow:hidden;
+}
+.rx-world-desk-print[data-front="true"]{
+ transform:translateX(-50%) translateY(-12px) rotate(-2deg);
+ box-shadow:15px 23px 34px #1b365a56;z-index:7;
+}
+.rx-world-desk-print:not([data-front="true"]){opacity:.79;pointer-events:none}
+.rx-world-desk-print img{
+ display:block;width:100%;height:295px;
+ object-fit:contain;object-position:center;
+ background:#ebdfcf;
+}
+.rx-world-desk-print-caption{
+ display:block;font:500 16px/1.25 "Newsreader",Georgia,serif;color:#203a5d;
+}
+.rx-world-desk-print a{
+ color:#335a8a;text-decoration:underline;text-underline-offset:3px;
+ font:600 10px/1.5 "DM Sans",Arial,sans-serif;
+}
+
+/* A movable typographic manuscript — clearly labelled as an illustration. */
+html[data-rx-page="home"] .rx-world-manuscript{
+ float:inline-end;width:min(100%,250px);
+ margin:12px 0 24px clamp(18px,3vw,40px);
+ padding:9px;background:linear-gradient(145deg,#e5d7bc,#f2e9d6);
+ border:1px solid #ba9e75;color:#183755;
+ box-shadow:9px 12px 0 #29497027;
+ transform:rotate(2deg);transition:transform .3s;
+}
+.rx-world-manuscript:hover{transform:rotate(0deg) translateY(-4px)}
+.rx-world-manuscript-inner{
+ position:relative;border:1px solid #9f8062;padding:12px 10px 14px;
+ background:repeating-linear-gradient(0deg,transparent 0 18px,#8f765f0b 19px 20px);
+}
+.rx-world-manuscript-brow{
+ display:block;color:#425575;font:500 9px/1.5 "DM Mono",monospace;
+ letter-spacing:.045em;text-align:center;
+}
+.rx-world-manuscript-turn{
+ display:grid;place-items:center;width:100%;padding:11px 3px;
+ border:0;background:transparent;cursor:pointer;appearance:none;
+}
+.rx-world-manuscript-word{
+ color:#254a79;font:500 75px/1.25 "Aref Ruqaa","Amiri",serif;transform:rotate(-5deg);
+ text-shadow:0 3px 0 #a7b5c8;
+}
+.rx-world-manuscript-title{color:#263d57;font:500 24px/1.15 "Newsreader",Georgia,serif;text-align:center}
+.rx-world-manuscript-turn-label{
+ color:#4a6280;font:600 10px/1.5 "DM Sans",Arial,sans-serif;
+ border-top:1px solid #a79277;margin-top:12px;padding-top:8px;
+}
+.rx-world-manuscript-note{
+ color:#576878;font:500 9px/1.6 "DM Sans",Arial,sans-serif!important;
+ margin:6px 0 0!important;text-align:center;
+}
+.rx-world-manuscript-reverse[hidden]{display:none!important}
+.rx-world-manuscript-reverse{
+ border-top:1px solid #a99880;padding:10px 2px 0;
+}
+.rx-world-manuscript-reverse p{
+ color:#284663;font:400 12px/1.75 "DM Sans",Arial,sans-serif;
+ margin:0 0 8px!important;
+}
+.rx-world-manuscript-reverse a{color:#274c81;font:600 11px/1.5 "DM Sans",Arial,sans-serif;text-decoration:underline}
+
+/* ACS recognition is a real historical photograph, disclosed on request. */
+html[data-rx-page="home"] .rx-world-festival{
+ margin:25px 0 5px;max-width:405px;border-top:1px solid #a3bcd7;
+ padding:16px 0 4px;clear:both;
+}
+.rx-world-festival-lead{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.rx-world-festival-stamp{
+ color:#356396;font:600 11px/1.5 "DM Mono",monospace;letter-spacing:.07em;
+}
+.rx-world-festival-trigger{
+ display:inline-flex;align-items:center;gap:8px;min-height:42px;
+ background:transparent;border:0;border-bottom:1px solid #365b89;cursor:pointer;
+ color:#254e81;font:650 12px/1.5 "DM Sans",Arial,sans-serif;
+}
+.rx-world-festival figure{
+ margin:12px 0 0;padding:12px;background:#f4eddf;
+ border:1px solid #c7b79f;box-shadow:6px 8px 0 #abc1d833;
+}
+.rx-world-festival figure[hidden]{display:none!important}
+.rx-world-festival img{display:block;width:100%;max-height:310px;object-fit:contain;background:#e4d8c8}
+.rx-world-festival figcaption{color:#254c78;font:500 10px/1.6 "DM Sans",Arial,sans-serif;margin-top:10px}
+.rx-world-festival figcaption a{color:#234a7a;text-decoration:underline;font-weight:650}
+.rx-world-film-light{
+ --rx-film-lamp:50%;position:relative;outline:1px solid #9fbbdb;
+ box-shadow:15px 19px 0 #6a8db536,0 25px 45px #0d243a3b;
+}
+.rx-world-film-light::after{
+ content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
+ background:linear-gradient(100deg,transparent 25%,#dce9fb26 var(--rx-film-lamp),transparent 77%);
+ opacity:.45;mix-blend-mode:screen;transition:opacity .35s;
+}
+.rx-world-film-light:hover::after{opacity:.8}
+html[lang="ar"] .rx-world-crossing,
+html[lang="ar"] .rx-world-desk,
+html[lang="ar"] .rx-world-manuscript,
+html[lang="ar"] .rx-world-festival{direction:rtl}
+html[lang="ar"] :is(.rx-world-crossing,.rx-world-desk,.rx-world-manuscript,.rx-world-festival) :is(h2,h3,strong,figcaption,button,p,a,small,span){
+ font-family:"Amiri","Noto Naskh Arabic",serif!important;letter-spacing:normal!important;
+}
+html[lang="ar"] .rx-world-crossing-story h2,
+html[lang="ar"] .rx-world-desk-copy h3{line-height:1.35!important;font-size:clamp(39px,4vw,69px)!important}
+html[lang="ar"] .rx-world-crossing-deck,
+html[lang="ar"] .rx-world-desk-copy>p:nth-of-type(2){font-size:19px;line-height:1.8}
+html[lang="ar"] .rx-world-crossing-steps button{font-size:16px}
+html[lang="ar"] .rx-world-manuscript-word{font-family:"Aref Ruqaa","Amiri",serif!important;font-size:77px!important}
+html[lang="ar"] .rx-world-orbit :is(span,button){font-family:"Amiri","Noto Naskh Arabic",serif!important;font-size:13px;letter-spacing:0}
+@media(max-width:1050px){
+ .rx-world-orbit-specimen{right:-3%;top:-5%;width:115px}
+ .rx-world-orbit-apparatus{left:-3%;width:108px;bottom:4%}
+ .rx-world-orbit-lens{right:-2%;width:81px}
+ .rx-world-crossing-grid{gap:32px}
+ .rx-world-crossing-visual{min-height:390px}
+ .rx-world-crossing-print{min-height:325px}
+ .rx-world-desk-stack{min-height:420px}
+}
+@media(max-width:799px){
+ .rx-world-orbit-rings{inset:-2% -1% 0}
+ .rx-world-orbit-specimen{top:0;right:0}
+ .rx-world-orbit-apparatus{left:0;bottom:4%}
+ .rx-world-orbit-lens{right:1%;top:48%}
+ .rx-world-crossing-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:25px}
+ .rx-world-crossing-print{min-height:280px;max-height:360px}
+ .rx-world-crossing-print img{min-height:230px;max-height:280px}
+ .rx-world-crossing-visual{min-height:360px}
+ .rx-world-crossing-story h2{font-size:clamp(39px,5.5vw,60px)!important}
+ .rx-world-crossing-steps{gap:3px}
+ .rx-world-crossing-steps button{font-size:11px}
+ .rx-world-desk{grid-template-columns:1fr 1.1fr;gap:16px}
+}
+@media(max-width:650px){
+ html[data-rx-page="home"] .rx-hero-portrait{overflow:visible!important}
+ .rx-world-orbit{
+   position:relative;inset:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+   gap:5px;padding:12px 0 1px;margin-top:4px;border-top:1px solid #b6c8d9;
+ }
+ .rx-world-orbit-rings{display:none}
+ .rx-world-orbit-specimen,.rx-world-orbit-apparatus,.rx-world-orbit-lens{
+   position:relative;inset:auto!important;transform:none!important;
+   width:100%;max-width:none;min-width:0;height:auto;min-height:85px;aspect-ratio:auto;
+   margin:0;animation:none!important;
+ }
+ .rx-world-orbit-specimen{padding:7px 4px;box-shadow:none;rotate:0}
+ .rx-world-orbit-specimen img{height:44px}
+ .rx-world-orbit-specimen span{font-size:7px}
+ .rx-world-orbit-apparatus{display:grid;align-items:center;justify-items:center;gap:3px;filter:none}
+ .rx-world-orbit-apparatus img{height:59px;width:64px;border-width:3px}
+ .rx-world-orbit-apparatus span{font-size:7px;padding:3px;text-align:center}
+ .rx-world-orbit-lens{
+   border-radius:5px;padding:7px 4px;box-shadow:none;
+   background:#244c75;display:grid;align-content:center
+ }
+ .rx-world-orbit-glass{font-size:43px}
+ .rx-world-orbit-lens [data-rxw-en],.rx-world-orbit-lens [data-rxw-ar]{font-size:8px;max-width:100%}
+ .rx-world-hero-sample{
+   inset:auto 0 100% auto;z-index:20;width:min(95%,350px);
+ }
+ .rx-world-crossing{padding:50px 0 46px!important}
+ .rx-world-crossing-frame{width:calc(100% - 34px)}
+ .rx-world-crossing-head{gap:12px;padding-bottom:14px}
+ .rx-world-crossing-head p{font-size:9px;letter-spacing:.04em}
+ .rx-world-crossing-head>span{display:none}
+ .rx-world-crossing-grid{grid-template-columns:1fr;gap:19px;padding:22px 0 27px}
+ .rx-world-crossing-visual{min-height:0;max-height:none;padding:5px 0 30px}
+ .rx-world-crossing-orbit{inset:2% 13%;transform:scale(.9)}
+ .rx-world-crossing-print{width:min(85%,345px);height:300px;min-height:0;max-height:none}
+ .rx-world-crossing-print img{min-height:0;max-height:250px;height:250px}
+ .rx-world-crossing-index{font-size:78px;bottom:2%;right:3%}
+ .rx-world-crossing-story h2{max-width:100%;font-size:clamp(42px,10.4vw,61px)!important;margin-bottom:13px}
+ .rx-world-crossing-deck{font-size:15px;line-height:1.65}
+ .rx-world-crossing-steps{grid-template-columns:1fr 1fr;padding-top:17px}
+ .rx-world-crossing-steps button{min-height:54px;padding:7px 3px;font-size:10px}
+ .rx-world-crossing-steps button .rx-world-step-no{font-size:10px}
+ .rx-world-crossing-steps button small{font-size:8px}
+ .rx-world-crossing-end{font-size:9px;letter-spacing:.02em;padding-top:17px}
+ html[data-rx-page="home"] .rx-world-desk{
+   grid-template-columns:1fr;min-height:0;
+   gap:17px;padding:28px 15px 20px;margin:29px 0;
+ }
+ .rx-world-desk-copy h3{font-size:clamp(40px,10vw,58px)!important;margin-bottom:12px!important}
+ .rx-world-desk-copy>p:nth-of-type(2){font-size:14px;line-height:1.6;margin-bottom:16px}
+ .rx-world-desk-controls{margin-bottom:12px}
+ .rx-world-desk-stack{min-height:365px;max-width:350px;justify-self:center}
+ .rx-world-desk-print{width:min(69%,225px);height:325px;padding:8px}
+ .rx-world-desk-print img{height:245px}
+ .rx-world-desk-print-caption{font-size:14px}
+ .rx-world-desk-print[data-front="true"]{transform:translateX(-50%) translateY(-6px) rotate(-2deg)}
+ html[data-rx-page="home"] .rx-world-manuscript{
+   float:none;width:min(100%,260px);margin:23px auto;transform:none;
+ }
+ .rx-world-film-light{box-shadow:4px 7px 0 #6a8db536}
+ .rx-world-film-light::after{display:none}
+}
+@media(max-width:370px){
+ .rx-world-crossing-steps button{font-size:9px;gap:3px}
+ .rx-world-orbit-specimen span,.rx-world-orbit-apparatus span{font-size:7px}
+ .rx-world-desk-print{width:min(64%,205px)}
+}
+@media(prefers-reduced-motion:reduce){
+ .rx-world-orbit *,.rx-world-crossing *,.rx-world-desk *,.rx-world-manuscript *,
+ .rx-world-festival *,.rx-world-film-light *{
+   animation:none!important;transition:none!important;scroll-behavior:auto!important;
+ }
+ .rx-world-crossing-orbit{transform:scale(.85)}
+ .rx-world-orbit :is(a,button){transform:none!important}
+}
+@media print{
+ .rx-world-orbit-lens,.rx-world-desk-controls,.rx-world-manuscript-turn{display:none!important}
+ .rx-world-crossing-steps{display:none}
+ .rx-world-desk-print:not([data-front="true"]){display:none}
+ .rx-world-orbit{display:none}
+}
