@@ -20,7 +20,7 @@ test("original research and methods papers link directly to their matching metho
     assert.ok(article.includes(`href="/methods-evidence.html#${chapter}"`), `${work} links to ${chapter}`);
     assert.ok(methods.includes(`id="${chapter}"`), `${chapter} is a real anchor`);
     assert.ok(article.includes('class="pub-contribution"'), `${work} retains its first-person research role`);
-    assert.match(article, /<p class="pub-contribution">I |<p class="pub-contribution">As an /, `${work} describes work directly`);
+    assert.match(article, /<p class="pub-contribution">(?:I\b|As (?:an? )?)/, `${work} describes work directly`);
   }
   assert.equal((publications.match(/class="pub-card"/g) || []).length, 20, "all selected publication entries remain");
 });
