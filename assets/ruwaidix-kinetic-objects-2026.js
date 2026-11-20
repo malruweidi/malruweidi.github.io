@@ -41,8 +41,8 @@
   if (home && !select(".rx-kinetic-shelf")) {
     const nav=document.createElement("nav");
     nav.className="rx-kinetic-shelf";
-    nav.setAttribute("aria-label","Scientific objects / navigate to research");
-    nav.innerHTML='<span class="rx-k-shelf-title">'+bilingual("AT THE WORKBENCH · SELECT AN OBJECT","على طاولة المختبر · اختر عنصرًا")+'</span>'+
+    nav.setAttribute("aria-labelledby","rx-kinetic-shelf-heading");
+    nav.innerHTML='<span id="rx-kinetic-shelf-heading" class="rx-k-shelf-title">'+bilingual("AT THE WORKBENCH · SELECT AN OBJECT","على طاولة المختبر · اختر عنصرًا")+'</span>'+
       '<div class="rx-k-objects">'+[
         {id:"molecule",url:"/research.html#molecular-chemistry",svg:molecular,en:"Molecular sensing",ar:"الاستشعار الجزيئي"},
         {id:"vessel",url:"/research/high-speed-zebrafish-imaging.html",svg:vessel,en:"Living vessels",ar:"الأوعية الدموية"},
@@ -77,7 +77,6 @@
     const link=document.createElement("a");
     link.className="rx-k-capillary";
     link.href="/research/high-speed-zebrafish-imaging.html";
-    link.setAttribute("aria-label","Explore the original zebrafish imaging methods");
     link.innerHTML='<span class="rx-k-capillary-art">'+vessel+'</span>'+
       '<span class="rx-k-capillary-copy"><strong>'+bilingual("Movement is a question.","الحركة تطرح سؤالًا.")+'</strong>'+
       '<small>'+bilingual("Schematic illustration · examine the actual imaging method","رسم توضيحي · اطّلع على طريقة التصوير الفعلية")+'</small></span>'+
@@ -103,10 +102,10 @@
       if(!open)return;
       const r=original.getBoundingClientRect(),outer=photo.getBoundingClientRect();
       if(!r.width||!r.height)return;
-      const px=x*r.width,py=y*r.height,size=144,zoom=2;
+      const px=x*r.width,py=y*r.height,size=lens.getBoundingClientRect().width||144,zoom=2;
       lens.style.left=(r.left-outer.left+px)+"px";
       lens.style.top=(r.top-outer.top+py)+"px";
-      lens.style.backgroundImage='url("'+original.currentSrc.replaceAll('"','%22')+'")';
+      lens.style.backgroundImage='url("'+(original.currentSrc||original.src).replaceAll('"','%22')+'")';
       lens.style.backgroundSize=(r.width*zoom)+"px "+(r.height*zoom)+"px";
       lens.style.backgroundPosition=(-px*zoom+size/2)+"px "+(-py*zoom+size/2)+"px";
     }
