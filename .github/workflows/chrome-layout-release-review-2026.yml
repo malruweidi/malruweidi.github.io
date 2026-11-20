@@ -2,6 +2,12 @@ name: Chrome layout and interaction release review
 on:
   pull_request:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "assets/ruwaidix-home-world-2026.js"
+      - "assets/ruwaidix-home-world-2026.css"
+      - ".github/workflows/chrome-layout-release-review-2026.yml"
 permissions:
   contents: read
 jobs:
