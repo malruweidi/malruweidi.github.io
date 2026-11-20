@@ -137,3 +137,10 @@
   "The archived copolymer sample": "عينة البوليمر المشترك في الأرشيف"
 });
 })();
+
+Object.assign(window.RuwaidixArabicDictionary, {
+  "Objects in What I kept": "محتويات ما احتفظت به",
+  "Mahmoud holding a school chemistry festival certificate beside his teacher, Aref Elahmad": "محمود يحمل شهادة مهرجان الكيمياء المدرسي إلى جوار معلّمه عارف الأحمد",
+  "Blue laboratory notebook with the handwritten title A Series of Unfortunate Trials": "دفتر مختبر أزرق يحمل عنوان سلسلة من التجارب المتعثّرة بخط اليد",
+  "Group photograph from a Qatar University visit with historian and philosopher of chemistry Eric Scerri": "صورة جماعية من زيارة مؤرّخ الكيمياء وفيلسوفها إريك سكيري لجامعة قطر"
+});

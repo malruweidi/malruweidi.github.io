@@ -1,0 +1,70 @@
+.cv-index-ar { display: none; }
+html[lang="ar"] .cv-index-ar { display: inline; }
+html[lang="ar"] .cv-index-en { display: none; }
+
+@media screen {
+  .cv-chapter-index {
+    display: grid;
+    grid-template-columns: minmax(135px, .69fr) minmax(0, 2.7fr);
+    gap: 14px 28px;
+    align-items: start;
+    margin-block: 0 25px;
+    padding: clamp(15px, 3vw, 31px);
+    border: 1px solid #bcb3a2;
+    border-inline-start: 5px double #7f96b4;
+    background: #f3e9d8;
+    color: #1a314c;
+  }
+
+  .cv-chapter-index h2 {
+    margin: 5px 0 0;
+    color: inherit;
+    font: 400 clamp(27px, 3.1vw, 42px)/1.1 Newsreader, Georgia, serif;
+    letter-spacing: -.025em;
+  }
+
+  .cv-chapter-index ul {
+    columns: 3 132px;
+    column-gap: 17px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cv-chapter-index li { break-inside: avoid; }
+
+  .cv-chapter-index a {
+    display: flex;
+    min-height: 44px;
+    align-items: center;
+    padding-block: 5px;
+    border-block-end: 1px solid #c7bdad;
+    color: #223f63;
+    text-decoration: none;
+    font: 600 .86rem/1.4 "DM Sans", Arial, sans-serif;
+  }
+
+  .cv-chapter-index a:is(:hover, :focus-visible) {
+    color: #122f53;
+    text-decoration: underline;
+    text-underline-offset: .24em;
+  }
+
+  .cv-chapter-index a:focus-visible { outline: 2px solid #36547c; outline-offset: 2px; }
+
+  html[data-rx-page="cv"] .block[id] { scroll-margin-block-start: 75px; }
+  html[data-rx-page="cv"] .block[id]:target .label { text-decoration: underline; text-underline-offset: .25em; }
+
+  html[lang="ar"] .cv-chapter-index h2 {
+    font-family: Amiri, "Noto Naskh Arabic", serif !important;
+    letter-spacing: normal !important;
+  }
+  html[lang="ar"] .cv-chapter-index a { font-family: "IBM Plex Sans Arabic", Tahoma, sans-serif !important; }
+
+  @media (max-width: 675px) {
+    .cv-chapter-index { grid-template-columns: 1fr; gap: 8px; }
+    .cv-chapter-index ul { columns: 2 111px; column-gap: 14px; }
+  }
+}
+
+@media print { .cv-chapter-index { display: none !important; } }

@@ -23,7 +23,7 @@ test('inventory connects original images and movie editions to their exact ownin
   const inventory = buildInventory(root);
   const examples = [
     ['stories.html', '/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp', 'img'],
-    ['stories.html', '/assets/2026-10-13-new-photos/zebrafish-paraffin-microtomy-failure.webp', 'img'],
+    ['stories.html', '/assets/photos-2017-2019/series-of-unfortunate-trials-diblock-2017.webp', 'img'],
     ['films/what-a-bubble-can-do.html', '/assets/films/what-a-bubble-can-do-evidence-v2.mp4', 'source'],
     ['publication-cinema.html', '/assets/films/series-v23-sourcefirst/airway-reopening.vtt', 'track']
   ];
