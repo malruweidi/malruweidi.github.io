@@ -1,0 +1,302 @@
+.airway-desk {
+  --ad-ink: #10223a;
+  --ad-navy: #183250;
+  --ad-paper: #f4ead7;
+  --ad-muted: #c3d4e9;
+  --ad-line: #577491;
+  --ad-mark: #ecd0a0;
+  background: var(--ad-ink);
+  color: var(--ad-paper);
+  padding-block: clamp(48px, 7vw, 108px);
+  scroll-margin-block-start: 95px;
+  border-block: 1px solid #446789;
+}
+
+.airway-desk [hidden] { display: none !important; }
+.airway-desk .ad-ar,
+html[lang="ar"] .airway-desk .ad-en { display: none; }
+html[lang="ar"] .airway-desk .ad-ar { display: initial; }
+
+.airway-desk-shell { width: min(1190px, calc(100% - 46px)); margin-inline: auto; }
+
+.airway-desk-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.34fr) minmax(0, .66fr);
+  gap: clamp(25px, 5vw, 78px);
+  align-items: end;
+  margin-block-end: clamp(24px, 4vw, 55px);
+}
+
+.airway-desk .airway-desk-kicker {
+  margin: 0 0 14px;
+  color: var(--ad-mark);
+  font: 500 .72rem/1.5 "DM Mono", monospace;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+html .airway-desk h2 {
+  margin: 0;
+  color: var(--ad-paper);
+  font: 400 clamp(51px, 7.1vw, 104px)/.91 Newsreader, Georgia, serif;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+
+.airway-desk h2 em { color: #b9cdeb; }
+
+.airway-desk .airway-desk-intro {
+  max-width: 35ch;
+  margin: 0;
+  color: var(--ad-muted);
+  font: 400 clamp(16px, 1.56vw, 21px)/1.66 Newsreader, Georgia, serif;
+}
+
+.airway-desk-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.95fr) minmax(0, 1fr);
+  align-items: stretch;
+  gap: clamp(16px, 2.8vw, 36px);
+}
+
+.airway-desk-instrument {
+  display: grid;
+  align-content: start;
+  gap: 0;
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--ad-line);
+  background: #132943;
+  box-shadow: 0 20px 44px #040c185c;
+}
+
+.airway-desk-bezel {
+  min-width: 0;
+  margin: 0;
+  padding: clamp(10px, 1.3vw, 18px);
+  background: #0e2037;
+  border-bottom: 1px solid var(--ad-line);
+}
+
+.airway-desk-window {
+  position: relative;
+  min-width: 0;
+  height: clamp(215px, 29vw, 330px);
+  background: radial-gradient(ellipse at 50% 46%, #1e4160, #102239 80%);
+  border: 1px solid #466581;
+  overflow: hidden;
+}
+
+.airway-desk-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: pan-y pinch-zoom;
+  cursor: grab;
+}
+
+.airway-desk-canvas:active { cursor: grabbing; }
+
+.airway-desk-fallback {
+  position: absolute;
+  inset: 24% 7%;
+  border-block: 6px double #93a9c3;
+  background: #35618b;
+  overflow: hidden;
+}
+
+.airway-desk-fallback::before {
+  content: "";
+  position: absolute;
+  inset: 7px 57% 7px 0;
+  background: #172e48;
+  border-radius: 0 50% 50% 0;
+  border-inline-end: 3px solid #f3e1be;
+}
+
+.airway-desk-fallback::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 12px;
+  background:
+    linear-gradient(#ecd0a0,#ecd0a0) center / 9% 100% no-repeat,
+    repeating-linear-gradient(90deg, #b4c9e2 0 15px, #54799e 15px 16px);
+  border-block-start: 1px solid #aac1da;
+}
+
+.airway-desk-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px clamp(12px, 2vw, 34px);
+  margin-block-start: 12px;
+  color: #e5eaf5;
+  font: 500 .71rem/1.5 "DM Mono", monospace;
+}
+
+.airway-desk-key { display: inline-flex; align-items: center; gap: 7px; }
+.airway-desk-key::before {
+  content: "";
+  width: 11px;
+  height: 8px;
+  border: 1px solid currentColor;
+  flex: none;
+}
+.airway-desk-key[data-medium="air"]::before { background: #172e48; }
+.airway-desk-key[data-medium="liquid"]::before { background: #4c77a1; }
+.airway-desk-key[data-medium="patch"]::before { background: var(--ad-mark); border-color: var(--ad-mark); }
+
+.airway-desk-controls { padding: 12px clamp(12px, 1.7vw, 24px) clamp(15px, 1.8vw, 23px); }
+.airway-desk-transport { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.airway-desk-transport label { color: var(--ad-paper); font: 600 .89rem/1.5 "DM Sans", Arial, sans-serif; }
+.airway-desk .airway-desk-hint {
+  margin: 3px 0 0;
+  color: var(--ad-muted);
+  font: 500 .75rem/1.5 "DM Sans", Arial, sans-serif;
+}
+
+.airway-desk-controls input {
+  display: block;
+  inline-size: 100%;
+  min-height: 44px;
+  margin: 1px 0 5px;
+  accent-color: var(--ad-mark);
+  cursor: ew-resize;
+}
+
+.airway-desk-controls button {
+  appearance: none;
+  min-height: 44px;
+  padding: 5px 10px;
+  border: 1px solid #6887a6;
+  border-radius: 2px;
+  background: #1b3653;
+  color: var(--ad-paper);
+  font: 600 .76rem/1.4 "DM Sans", Arial, sans-serif;
+  cursor: pointer;
+}
+
+.airway-desk-controls button:hover { background: #2e4a6d; }
+.airway-desk-controls button[aria-pressed="true"] { background: #ecd9b7; color: #142944; border-color: #ecd9b7; }
+.airway-desk-controls :is(button, input):focus-visible { outline: 2px solid #f1d7a9; outline-offset: 3px; }
+
+.airway-desk-stops { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.airway-desk-stops button { min-width: 0; }
+
+.airway-desk-reading {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+  padding: clamp(19px, 3.1vw, 47px);
+  min-width: 0;
+  background: var(--ad-paper);
+  color: var(--ad-ink);
+  border-top: 3px solid #8aa4c0;
+}
+
+.airway-desk-notes { align-content: center; min-width: 0; min-height: 16.8rem; }
+.airway-desk-notes article + article { margin-block-start: 16px; }
+.airway-desk-notes article[hidden] + article { margin-block-start: 0; }
+.airway-desk .airway-desk-notes h3 {
+  margin: 0 0 13px;
+  color: #112847;
+  font: 400 clamp(27px, 3.2vw, 48px)/1.04 Newsreader, Georgia, serif;
+  letter-spacing: -.024em;
+  text-wrap: balance;
+}
+
+.airway-desk .airway-desk-notes p {
+  margin: 0 0 13px;
+  color: #294462;
+  font: 400 clamp(15px, 1.3vw, 18px)/1.65 Newsreader, Georgia, serif;
+}
+
+.airway-desk-reading a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #234976;
+  text-decoration: underline;
+  text-underline-offset: .23em;
+  font: 650 .81rem/1.5 "DM Sans", Arial, sans-serif;
+}
+
+.airway-desk-reading a:focus-visible { outline: 2px solid #315a82; outline-offset: 3px; }
+.airway-desk .airway-desk-source { margin: 0; padding-block-start: 4px; border-top: 1px solid #b69f7f; }
+
+.airway-desk-published {
+  margin-block-start: 20px;
+  border-block: 1px solid #577491;
+}
+
+.airway-desk-published summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 6px 13px;
+  color: #e9d7b8;
+  font: 600 .89rem/1.5 "DM Sans", Arial, sans-serif;
+  cursor: pointer;
+  list-style: none;
+}
+
+.airway-desk-published summary::-webkit-details-marker { display: none; }
+.airway-desk-published summary::after { content: "+" / ""; font-size: 1.2em; }
+.airway-desk-published[open] summary::after { content: "−" / ""; }
+.airway-desk-published summary:focus-visible { outline: 2px solid #f1d7a9; outline-offset: -2px; }
+
+.airway-desk-published figure {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, .6fr);
+  align-items: center;
+  gap: clamp(15px, 3vw, 36px);
+  margin: 0 0 12px;
+  padding: clamp(13px, 2.5vw, 33px);
+  background: #f4ead7;
+  color: #193451;
+}
+
+.airway-desk-published figure img { display: block; width: 100%; height: auto; background: #fff; }
+.airway-desk-published figcaption { font: 500 .91rem/1.7 "DM Sans", Arial, sans-serif; }
+.airway-desk-published figcaption p { margin: 10px 0; }
+.airway-desk-published figcaption a { color: #234976; text-decoration: underline; text-underline-offset: .23em; }
+html[lang="ar"] .airway-desk-published :is(summary,figcaption) { font-family: "IBM Plex Sans Arabic", Tahoma, sans-serif !important; }
+
+html[lang="ar"] .airway-desk :is(h2,h3,.airway-desk-intro,.airway-desk-notes p) {
+  font-family: Amiri, "Noto Naskh Arabic", serif !important;
+  line-height: 1.4;
+  letter-spacing: normal !important;
+}
+
+html[lang="ar"] .airway-desk h2 em { font-style: normal; }
+
+html[lang="ar"] .airway-desk :is(.airway-desk-kicker,.airway-desk-legend,.airway-desk-hint,button,label,a) {
+  font-family: "IBM Plex Sans Arabic", Tahoma, sans-serif !important;
+  letter-spacing: normal !important;
+}
+
+@media (max-width: 880px) {
+  .airway-desk-layout { grid-template-columns: minmax(0, 1fr); }
+  .airway-desk-notes { min-height: 0; }
+}
+
+@media (max-width: 605px) {
+  .airway-desk-shell { width: calc(100% - 32px); }
+  .airway-desk-heading { grid-template-columns: minmax(0, 1fr); gap: 15px; }
+  .airway-desk-published figure { grid-template-columns: minmax(0, 1fr); }
+  .airway-desk-window { height: clamp(179px, 56vw, 250px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .airway-desk .airway-desk-play { display: none; }
+}
+
+@media print {
+  .airway-desk { background: white; color: black; }
+  .airway-desk-controls { display: none !important; }
+  .airway-desk-notes article[hidden] { display: block !important; }
+  .airway-desk :is(h2, h2 em,.airway-desk-kicker,.airway-desk-intro) { color: #192c45; }
+}

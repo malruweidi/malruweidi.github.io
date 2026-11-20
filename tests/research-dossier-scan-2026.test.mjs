@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import { runInNewContext } from "node:vm";
 
 const files = [
-  { name: "pulmonary-epithelial-injury", source: "primary-source", sections: 10, images: 2, videos: 1, localizes: true },
+  { name: "pulmonary-epithelial-injury", source: "primary-source", sections: 11, images: 3, videos: 1, localizes: true },
   { name: "plasma-modified-pla", source: "sources", sections: 7, images: 1, videos: 0, localizes: false },
   { name: "high-speed-zebrafish-imaging", source: "sources", sections: 7, images: 1, videos: 0, localizes: false },
   { name: "zebrafish-vascular-cilia", source: "primary-source", sections: 9, images: 5, videos: 0, localizes: true },
