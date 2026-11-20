@@ -585,3 +585,26 @@ html[data-rx-page="home"] main .rx-world-crossing-print > .rx-photo-trigger:focu
   padding:6px 10px!important;font-size:10px!important;
  }
 }
+
+
+/* Final visual review: keep the chapter index BELOW the paper figure and its
+   provenance. The old oversized numeral covered scientific captions at 390px. */
+html[data-rx-page="home"] .rx-world-crossing-index{
+ inset:auto 1% -5px auto;
+ font-size:clamp(31px,3vw,45px);
+ letter-spacing:-.015em;text-shadow:none;
+ background:#102840ec;
+ padding:2px 9px 4px;
+ border-top:1px solid #b5c8df70;
+ box-shadow:0 7px 15px #07152748;
+ white-space:nowrap;
+}
+html[data-rx-page="home"] .rx-world-crossing-index span{
+ font:500 10px/1 "DM Mono",ui-monospace,monospace;
+ color:#d5e3f2;
+}
+@media(max-width:650px){
+ html[data-rx-page="home"] .rx-world-crossing-index{
+  bottom:-7px;right:2%;font-size:33px;padding:3px 7px;
+ }
+}
