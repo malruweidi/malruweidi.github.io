@@ -11,7 +11,8 @@ test("seven preserved archive objects reference adjacent titles without duplicat
  assert.equal(items.length,7,"seven retained archive objects remain accessible after the withdrawn histology item");
  for(let i=0;i<items.length;i++){
   const id=items[i][1],body=items[i][0];
-  const label="rxo"+(i+1);
+  const label={"object-cairo-microscope":"rxo1","object-molecular-model":"rxo2","object-chemistry-festival":"rxo4","object-reagent-front":"rxo5","object-copolymer-sample":"rxo6","object-reagent-reverse":"rxo7","object-culture-hood":"rxo8"}[id];
+  assert.ok(label, "Unexpected archival object "+id);
   assert.ok(body.includes('<figure aria-labelledby="'+label+'">'),id+" accessible caption context");
   assert.ok(body.includes('<h3 id="'+label+'">'),id+" existing heading becomes caption label");
   assert.match(body,/<img\b/);
