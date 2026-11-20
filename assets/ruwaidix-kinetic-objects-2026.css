@@ -1,0 +1,179 @@
+/* Ruwaidix / kinetic scientific objects — 21 Nov 2026
+   Original schematic artwork with tactile movement, not decorative scientific claims.
+   Restrained navy/blue/cream; no changes to existing source photographs. */
+.rx-k-ar{display:none!important}
+html[lang="ar"] .rx-k-en{display:none!important}
+html[lang="ar"] .rx-k-ar{display:inline!important}
+html[lang="ar"] .rx-kinetic-shelf,
+html[lang="ar"] .rx-k-capillary,
+html[lang="ar"] .rx-k-loupe-toggle{font-family:"Amiri","Noto Naskh Arabic",Georgia,serif;letter-spacing:0}
+html[data-rx-page="home"] .rx-kinetic-shelf{
+  position:relative;isolation:isolate;margin:clamp(24px,3vw,35px) 0 8px;
+  padding:17px 20px 14px;border:1px solid #b8c9dc;
+  border-radius:4px;background:linear-gradient(150deg,#1c314e 0%,#213d61 65%,#28466a 100%);
+  color:#f6f1e8;max-width:650px;box-shadow:8px 10px 0 #7193bf17;
+  overflow:hidden;min-width:0;
+}
+html[data-rx-page="home"] .rx-kinetic-shelf::before{
+  content:"";pointer-events:none;position:absolute;inset:0;
+  opacity:.4;background:repeating-linear-gradient(90deg,transparent 0 49px,#c4d8ee12 50px 51px),
+   radial-gradient(circle at 40% 110%,#7296c54a,transparent 60%);
+  z-index:-1;
+}
+.rx-k-shelf-title,.rx-k-context{
+  display:block;color:#c6d9ee;
+  font:500 10px/1.6 "DM Mono",ui-monospace,monospace;
+  letter-spacing:.09em;text-transform:uppercase;
+}
+.rx-k-shelf-title{border-bottom:1px solid #88a6c254;padding-bottom:9px}
+.rx-k-context{border-top:1px solid #88a6c254;padding-top:9px;margin-top:2px;font-size:9px;letter-spacing:.025em;text-transform:none}
+.rx-k-objects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;align-items:stretch;padding:8px 0 3px}
+.rx-k-object{
+  position:relative;min-width:0;display:grid;justify-items:center;align-content:center;gap:4px;
+  text-align:center;color:#f6f1e8!important;text-decoration:none!important;
+  padding:5px 3px 7px;border-radius:4px;border:1px solid transparent;
+  transform-style:preserve-3d;perspective:600px;
+  transition:background .27s,border-color .27s,box-shadow .27s;
+}
+.rx-k-object + .rx-k-object::before{
+  content:"";position:absolute;inset:13% auto 13% -5px;width:1px;background:#7999b353;pointer-events:none;
+}
+.rx-k-object-art{
+  width:min(100%,118px);aspect-ratio:1;display:grid;place-items:center;
+  position:relative;filter:drop-shadow(0 8px 10px #030e1b50);
+  transform:perspective(480px) rotateX(var(--rx-k-tilt-x,0deg)) rotateY(var(--rx-k-tilt-y,0deg)) translateZ(0);
+  transition:transform .32s cubic-bezier(.16,.72,.32,1),filter .32s;
+}
+.rx-k-object-art svg{width:100%;height:100%;overflow:visible}
+.rx-k-object-name{font:500 clamp(10px,.95vw,12px)/1.5 "DM Sans",Arial,sans-serif;white-space:normal;max-width:18ch;color:#f6f1e8}
+.rx-k-object:hover,.rx-k-object:focus-visible{background:#48688f44;border-color:#9fb8d59a;box-shadow:0 0 0 2px #9fb8d516}
+.rx-k-object:hover .rx-k-object-art,.rx-k-object:focus-visible .rx-k-object-art{filter:drop-shadow(0 12px 12px #030e1b6b)}
+.rx-k-object:focus-visible{outline:3px solid #f1e0c1!important;outline-offset:2px}
+.rx-k-object:active .rx-k-object-art{transform:scale(.96)}
+.rx-k-halo,.rx-k-membrane{transform-origin:80px 80px}
+.rx-k-cell,.rx-k-spark,.rx-k-signal,.rx-k-vesicle-outer,.rx-k-pulse{transform-origin:80px 80px}
+@keyframes rx-k-orbit{to{transform:rotate(360deg)}}
+@keyframes rx-k-anti-orbit{to{transform:rotate(-360deg)}}
+@keyframes rx-k-light{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes rx-k-drift{0%,100%{translate:0 0}50%{translate:0 -6px}}
+@keyframes rx-k-cells{0%,100%{translate:-5px 5px}50%{translate:8px -8px}}
+@keyframes rx-k-breathe{0%,100%{transform:scale(.95);opacity:.48}50%{transform:scale(1.075);opacity:.9}}
+@media(prefers-reduced-motion:no-preference){
+ .rx-kinetic-shelf .rx-k-halo{animation:rx-k-orbit 35s linear infinite}
+ .rx-kinetic-shelf .rx-k-spark{animation:rx-k-drift 4s ease-in-out infinite}
+ .rx-kinetic-shelf .rx-k-signal{animation:rx-k-light 3.6s ease-in-out infinite}
+ .rx-kinetic-shelf .rx-k-vessel .rx-k-cell,
+ .rx-k-capillary .rx-k-cell{animation:rx-k-cells 4.5s ease-in-out infinite alternate}
+ .rx-kinetic-shelf .rx-k-vessel .rx-k-cell-b,
+ .rx-k-capillary .rx-k-cell-b{animation-delay:-2.2s}
+ .rx-kinetic-shelf .rx-k-membrane{animation:rx-k-anti-orbit 70s linear infinite}
+ .rx-kinetic-shelf .rx-k-pulse{animation:rx-k-breathe 5.2s ease-in-out infinite}
+ .rx-k-capillary .rx-k-capillary-art svg{animation:rx-k-drift 6.4s ease-in-out infinite}
+}
+.rx-kinetic-shelf[data-rx-k-visible="false"] *,
+.rx-k-capillary[data-rx-k-visible="false"] *{animation-play-state:paused!important}
+
+/* Research: a single capillary portrait, rather than a repeated three-object menu. */
+html[data-rx-page="research-hub"] .rx-k-capillary{
+  display:flex;align-items:center;gap:14px;min-width:0;width:min(450px,100%);
+  margin:28px 0 0 auto;padding:9px 18px 9px 8px;
+  background:#f6f1e8;color:#192d4b!important;text-decoration:none!important;
+  border:1px solid #b6c8db;border-radius:5px;position:relative;isolation:isolate;
+  box-shadow:10px 11px 0 #8ca6c127;
+  transition:transform .24s,border-color .24s,box-shadow .24s;
+}
+.rx-k-capillary-art{
+  flex:0 0 clamp(90px,10vw,118px);width:clamp(90px,10vw,118px);
+  background:#1c304f;border:1px solid #4e709b;border-radius:50%;padding:3px;
+  aspect-ratio:1;display:grid;place-items:center;overflow:hidden;
+}
+.rx-k-capillary-art svg{width:100%;height:100%;display:block}
+.rx-k-capillary-copy{display:grid;gap:7px;flex:1;min-width:0}
+.rx-k-capillary-copy strong{
+  display:block;color:#1c304f;font:400 clamp(19px,2vw,27px)/1.12 "Newsreader",Georgia,serif;
+}
+.rx-k-capillary-copy small{display:block;color:#385b85;font:500 11px/1.6 "DM Sans",Arial,sans-serif}
+.rx-k-capillary-arrow{font:400 23px/1 "Newsreader",Georgia,serif;color:#456fa6;align-self:flex-start}
+.rx-k-capillary:is(:hover,:focus-visible){transform:translateY(-4px);border-color:#456fa6;box-shadow:13px 17px 0 #8ca6c139}
+.rx-k-capillary:focus-visible{outline:3px solid #f0dcb7!important;outline-offset:4px}
+html[lang="ar"] .rx-k-capillary-copy strong{font:500 clamp(20px,2vw,29px)/1.5 "Amiri","Noto Naskh Arabic",serif}
+html[lang="ar"] .rx-k-capillary-copy small{font:400 15px/1.6 "Amiri","Noto Naskh Arabic",serif}
+
+/* Stories: an archival loupe that inspects the actual source photograph. */
+html[data-rx-page="stories"] .stories-hero-photo{position:relative;isolation:isolate}
+.rx-k-loupe-toggle{
+  position:absolute;z-index:7;inset:auto auto 46px 16px;
+  display:flex;align-items:center;gap:6px;min-height:42px;max-width:calc(100% - 24px);
+  padding:7px 14px;background:#f6f1e8;color:#192d4b;border:1px solid #7193bf;
+  border-radius:3px;box-shadow:3px 4px 0 #192d4b55;cursor:pointer;
+  font:600 11px/1.5 "DM Sans",Arial,sans-serif;
+  transition:transform .22s,background .22s,border-color .22s;
+}
+.rx-k-loupe-toggle:is(:hover,:focus-visible){transform:translateY(-3px);background:#fffaf1;border-color:#192d4b}
+.rx-k-loupe-toggle[aria-pressed="true"]{background:#203d60;color:#fff5e5;border-color:#fff5e5}
+.rx-k-loupe-toggle:focus-visible{outline:3px solid #7193bf!important;outline-offset:3px}
+.rx-k-loupe-icon{font:600 29px/1 Georgia,serif;display:inline-block;transform:rotate(-17deg)}
+.rx-k-photo-lens{
+  --rx-lens-size:144px;
+  position:absolute;z-index:6;left:50%;top:50%;width:var(--rx-lens-size);height:var(--rx-lens-size);
+  border:6px solid #f6f1e8;outline:2px solid #365f90;border-radius:50%;
+  background-color:#1c304f;background-repeat:no-repeat;
+  box-shadow:0 11px 25px #0a1c34a6,0 0 0 7px #9aadc144;
+  transform:translate(-50%,-50%) scale(.9);
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .2s,transform .2s,visibility .2s;
+}
+.rx-k-photo-lens::after{
+  content:"";position:absolute;inset:-9px;border-radius:50%;
+  border:1px dashed #e7d9bd99;pointer-events:none;
+}
+.stories-hero-photo.rx-k-loupe-open .rx-k-photo-lens{
+  opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1);
+}
+html[lang="ar"] .rx-k-loupe-toggle{font-size:16px;line-height:1.4}
+html[dir="rtl"] .rx-k-loupe-toggle{inset-inline-start:16px;inset-inline-end:auto}
+@media(max-width:900px){
+ html[data-rx-page="home"] .rx-kinetic-shelf{margin-top:23px}
+ html[data-rx-page="research-hub"] .rx-k-capillary{margin-inline-start:0}
+}
+@media(max-width:650px){
+ html[data-rx-page="home"] .rx-kinetic-shelf{
+   width:100%;margin:20px 0 0;padding:13px 10px 10px;box-shadow:4px 6px 0 #7193bf17;
+ }
+ .rx-k-objects{gap:0;padding:8px 0 3px}
+ .rx-k-object{padding:5px 0 7px;gap:2px}
+ .rx-k-object-art{width:min(100%,93px)}
+ .rx-k-object-name{font-size:10px;line-height:1.4}
+ .rx-k-context{font-size:8px}
+ html[data-rx-page="research-hub"] .rx-k-capillary{margin-block:24px 0;padding:8px}
+ .rx-k-capillary-art{flex-basis:92px;width:92px}
+ .rx-k-capillary-copy strong{font-size:21px}
+ .rx-k-capillary-copy small{font-size:10px}
+ .rx-k-loupe-toggle{bottom:40px;left:9px;min-height:44px;padding:8px 10px}
+ .rx-k-photo-lens{--rx-lens-size:120px}
+ .rx-k-photo-lens{border-width:4px}
+}
+@media(max-width:380px){
+ .rx-k-object-art{width:min(100%,74px)}
+ .rx-k-object-name{font-size:9px}
+ .rx-k-capillary-arrow{display:none}
+ .rx-k-shelf-title{font-size:9px}
+}
+@media(hover:none){
+ .rx-k-object-art{transform:none!important}
+ .rx-k-object:active .rx-k-object-art{transform:scale(.96)!important}
+ .rx-k-capillary:hover{transform:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .rx-kinetic-shelf *, .rx-kinetic-shelf *::before,.rx-kinetic-shelf *::after,
+ .rx-k-capillary *, .rx-k-capillary *::before,.rx-k-capillary *::after,
+ .rx-k-loupe-toggle,.rx-k-photo-lens{
+   animation:none!important;transition:none!important;transform:none!important;
+ }
+ .rx-k-object-art{transform:none!important}
+ .rx-k-photo-lens{transform:translate(-50%,-50%)!important}
+ .rx-k-capillary:hover{transform:none}
+}
+@media print{
+ .rx-kinetic-shelf,.rx-k-capillary,.rx-k-loupe-toggle,.rx-k-photo-lens{display:none!important}
+}
