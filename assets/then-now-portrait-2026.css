@@ -147,7 +147,7 @@ html[data-rx-page="home"] main .rx-hero-grid > #rx-then-now-open.rx-then-now-mic
   bottom:auto;
   margin:0;
   padding:0;
-  width:155px;
+  width:179px;
   min-height:0;
   height:auto;
   display:flex;
@@ -160,12 +160,12 @@ html[data-rx-page="home"] main .rx-hero-grid > #rx-then-now-open.rx-then-now-mic
   isolation:isolate;
 }
 html[data-rx-page="home"] main .rx-hero-grid > #rx-then-now-open img{
-  width:145px;height:145px;
+  width:173px;height:173px;
   max-width:none;display:block;object-fit:contain;
   filter:drop-shadow(3px 12px 9px #051528a6);
 }
 html[data-rx-page="home"] main .rx-hero-grid > #rx-then-now-open .rx-then-now-sticker{
-  display:block;max-width:155px;min-width:110px;
+  display:block;max-width:179px;min-width:120px;
   margin-top:-3px;
   background:#fff5df;
   color:#142f53;
