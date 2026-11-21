@@ -358,7 +358,7 @@ html[lang="ar"] .rx-world-manuscript-word{font-family:"Aref Ruqaa","Amiri",serif
    animation:none!important;transition:none!important;scroll-behavior:auto!important;
  }
  .rx-world-crossing-orbit{transform:scale(.85)}
- .rx-world-orbit :is(a,button){transform:none!important}
+ 
 }
 @media print{
  .rx-world-desk-controls,.rx-world-manuscript-turn{display:none!important}
