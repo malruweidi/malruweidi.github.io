@@ -3,7 +3,7 @@
  "use strict";
  if(document.documentElement.dataset.rxPage!=="home")return;
  const childCutout="/assets/yellow-childhood-cutout.svg";
- const childArchive="/archive/archive-7882.jpg";
+ const childArchive="/assets/yellow-childhood-cutout.svg";
  const isArabic=()=>document.documentElement.lang.toLowerCase().startsWith("ar");
  const both=(en,ar)=>'<span class="rx-then-now-en" lang="en">'+en+'</span><span class="rx-then-now-ar" lang="ar" dir="rtl">'+ar+'</span>';
  function init(){
@@ -26,7 +26,7 @@
    '<h2 id="rx-then-now-title">'+both("Before the lab coat.","قبل المعطف المخبري.")+'</h2>'+
    '<p id="rx-then-now-description" class="rx-then-now-intro">'+both("A childhood photograph from the family album, alongside a later research portrait at Qatar University. Two moments, separated by years of learning.", "صورة من ألبوم العائلة في الطفولة، إلى جانب صورة لاحقة خلال العمل البحثي في جامعة قطر. لحظتان تفصل بينهما سنوات من التعلّم.")+'</p>'+
    '<div class="rx-then-now-plates">'+
-    '<figure class="rx-then-now-plate rx-then-now-plate--then"><img src="'+childArchive+'" alt="Mahmoud as a laughing child holding a colorful toy, from the family album" width="750" height="606" loading="lazy"><figcaption><span>'+both("THEN","آنذاك")+'</span><span>'+both("Family album","ألبوم العائلة")+'</span></figcaption></figure>'+
+    '<figure class="rx-then-now-plate rx-then-now-plate--then"><div class="rx-then-now-child-stage"><span class="rx-then-now-child-annotation" aria-hidden="true">01 / '+both("CHILDHOOD","الطفولة")+'</span><img src="'+childArchive+'" alt="Enhanced background-free cutout from a childhood family photograph: a smiling child in an orange-and-yellow jacket holding a toy" width="160" height="160" loading="eager"></div><figcaption><span>'+both("THEN","آنذاك")+'</span><span>'+both("Digitally isolated from the family photograph","عُزلت الخلفية رقميًا من صورة العائلة")+'</span></figcaption></figure>'+
     '<figure class="rx-then-now-plate rx-then-now-plate--now"><img src="'+currentPortrait+'" alt="Mahmoud Al-Ruweidi in a laboratory coat at Qatar University" width="1536" height="2048" loading="lazy"><figcaption><span>'+both("NOW","لاحقًا")+'</span><span>'+both("Research portrait · 2026","صورة بحثية · ٢٠٢٦")+'</span></figcaption></figure>'+
    '</div>'+
    '<div class="rx-then-now-end"><p>'+both("The photographs are archival; the connection is personal.","الصورتان من الأرشيف؛ والرابط بينهما شخصي.")+'</p>'+
@@ -37,7 +37,7 @@
   function syncLabels(){
    open.setAttribute("aria-label",isArabic()?"افتح رحلة مصوّرة من الطفولة إلى البحث العلمي":"Open childhood-to-researcher photo story");
    close.setAttribute("aria-label",isArabic()?"إغلاق قصة الصور":"Close photo story");
-   dialog.querySelector(".rx-then-now-plate--then img").alt=isArabic()?"محمود في طفولته يضحك ممسكًا بلعبة ملوّنة من ألبوم العائلة":"Mahmoud as a laughing child holding a colorful toy, from the family album";
+   dialog.querySelector(".rx-then-now-plate--then img").alt=isArabic()?"صورة طفولة محسّنة بخلفية شفافة، لطفل يضحك ويرتدي معطفًا برتقاليًا وأصفر ممسكًا بلعبة":"Enhanced background-free childhood portrait of a laughing child in an orange-and-yellow jacket holding a toy";
    dialog.querySelector(".rx-then-now-plate--now img").alt=isArabic()?"محمود الرويدي مرتديًا المعطف المخبري في جامعة قطر":"Mahmoud Al-Ruweidi in a laboratory coat at Qatar University";
   }
   syncLabels();
