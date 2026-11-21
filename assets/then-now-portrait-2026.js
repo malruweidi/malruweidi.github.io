@@ -13,11 +13,8 @@
   const open=mat&&mat.querySelector("#rx-then-now-open");
   if(!hero||!mat||!original||!open)return;
   if(document.getElementById("rx-then-now-dialog"))return;
-  // The trigger is statically embedded within the photo itself.
-  // Positioning belongs exclusively to the photograph's relative CSS box:
-  // no microscope coordinates, viewport offsets, or inherited inline styles.
-  open.style.removeProperty("left");
-  open.style.removeProperty("top");
+  // The trigger is statically embedded inside the portrait photograph.
+  // Its coordinates are relative to the photo and remain untouched here.
   const currentPortrait=original.getAttribute("src");
   const dialog=document.createElement("dialog");
   dialog.id="rx-then-now-dialog";dialog.className="rx-then-now-dialog";
