@@ -1554,6 +1554,7 @@ Object.assign(window.RuwaidixArabicDictionary,{
 /* Accessibility parity: scientific figure descriptions and image controls. */
 Object.assign(window.RuwaidixArabicDictionary, {
   "Childhood family portrait showing a laughing boy holding a colorful toy": "صورة عائلية من الطفولة لطفل يضحك ممسكًا بلعبة ملوّنة",
+  "Early family portrait with a checked shirt and suspenders": "صورة عائلية مبكرة لطفل يرتدي قميصًا مربّع النقوش وحمّالات",
   "Personal archival photograph associated with the microscope obtained near Qasr El Einy in Cairo": "صورة أرشيفية شخصية مرتبطة بالمجهر الذي اقتُني قرب القصر العيني في القاهرة",
   "Existing scientific publication figure showing zebrafish blood-flow imaging and analytical traces": "شكل علمي منشور يُظهر تصوير تدفّق الدم في سمك الزرد ومنحنيات التحليل",
   "Image magnification controls": "عناصر التحكم في تكبير الصورة",
