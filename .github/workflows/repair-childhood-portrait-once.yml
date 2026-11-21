@@ -1,0 +1,53 @@
+name: Install corrected transparent childhood portrait (one time)
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/repair-childhood-portrait-once.yml
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Retrieve validated transparent portrait and correct homepage
+        env:
+          PORTRAIT_URL: https://media.viewmax.io/users/lrtquF0DXLj3RTOpkhKAGYmBiumIyZmZ/mcp/generation-inputs/ab73ca36-5c32-4dd6-873b-e50504644972.png
+        run: |
+          set -euo pipefail
+          mkdir -p assets/personal-archive
+          curl --fail --location --retry 4 --retry-delay 2 --silent --show-error "$PORTRAIT_URL" -o assets/personal-archive/suspenders-transparent.png
+          echo "db08c81fe2882159d653d5bf59bec46669bcbf9cce714805021a65c17367e1d1  assets/personal-archive/suspenders-transparent.png" | sha256sum --check
+          python3 - <<'PY'
+          from pathlib import Path
+          page = Path('index.html')
+          s = page.read_text(encoding='utf-8')
+          old = '/assets/personal-archive/suspenders.webp'
+          new = '/assets/personal-archive/suspenders-transparent.png'
+          assert s.count(old) == 1, f'Expected one Scene 01 portrait reference; found {s.count(old)}'
+          page.write_text(s.replace(old,new), encoding='utf-8')
+          style = Path('assets/ruwaidix-moving-moments-2026.css')
+          css = style.read_text(encoding='utf-8')
+          selector = '.rx-moments-panel[data-moment="01"] .rx-moments-art img{'
+          assert css.count(selector) == 1, f'Expected a unique Scene 01 image rule; found {css.count(selector)}'
+          start = css.index(selector)
+          end = css.index('}', start) + 1
+          corrected = '''.rx-moments-panel[data-moment="01"] .rx-moments-art img{
+           position:relative;z-index:1;width:auto;height:100%;max-width:min(100%,510px);max-height:100%;
+           aspect-ratio:auto;object-fit:contain;object-position:center bottom;
+           -webkit-mask-image:none;mask-image:none;
+           filter:drop-shadow(0 22px 25px #0916297a);
+          }'''
+          css = css[:start] + corrected + css[end:]
+          style.write_text(css, encoding='utf-8')
+          assert "suspenders-transparent.png" in page.read_text(encoding='utf-8')
+          PY
+          rm .github/workflows/repair-childhood-portrait-once.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html assets/ruwaidix-moving-moments-2026.css assets/personal-archive/suspenders-transparent.png .github/workflows/repair-childhood-portrait-once.yml
+          git commit -m "Fix Scene 01 childhood photo with true transparency and no silhouette mask"
+          git push origin HEAD:main
