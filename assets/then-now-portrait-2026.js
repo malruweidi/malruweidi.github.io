@@ -9,42 +9,52 @@
  function init(){
   const hero=document.querySelector(".rx-hero-portrait");
   const original=hero&&hero.querySelector(".rx-portrait-mat img");
-  if(!hero||!original||document.getElementById("rx-then-now-open"))return;
+  const scene=hero&&hero.closest(".rx-hero-grid");
+  const open=document.getElementById("rx-then-now-open");
+  if(!hero||!original||!scene||!open)return;
+  if(document.getElementById("rx-then-now-dialog"))return;
   const currentPortrait=original.getAttribute("src");
-  // Keep the scientific portrait and its existing lightbox, media and original caption untouched.
-  const open=document.createElement("button");
-  open.type="button";open.id="rx-then-now-open";open.className="rx-then-now-trigger";
-  open.setAttribute("aria-haspopup","dialog");
-  open.setAttribute("aria-controls","rx-then-now-dialog");
-  open.innerHTML='<img src="'+childCutout+'" alt="" width="160" height="160" decoding="async" aria-hidden="true">'+
-   '<span class="rx-then-now-sticker">'+both("Then → now · tap","من الطفولة إلى البحث · اضغط")+'</span>';
-  // The requested visual position is the navy science tableau: beside the
-  // microscope and to the LEFT of the polaroid, never atop the portrait.
-  const scene=hero.closest(".rx-hero-grid")||hero.parentElement;
+  // The visible cutout lives in the homepage HTML, and must be positioned
+  // relative to the REAL microscope object, not the research photograph.
   scene.classList.add("rx-then-now-scene");
-  scene.insertBefore(open,hero);
   function placeTrigger(){
-   if(window.matchMedia("(max-width: 799px)").matches){
-    open.style.removeProperty("left");
-    open.style.removeProperty("top");
-    return;
-   }
-   const card=hero.getBoundingClientRect();
+   const scope=document.querySelector(".rx-scope-object");
+   if(!scope||!scope.isConnected)return;
    const grid=scene.getBoundingClientRect();
-   if(!grid.width || !card.width)return;
-   const size=open.getBoundingClientRect().width||134;
-   // Center the child cutout immediately outside the portrait's left border.
-   // This places it in the microscope/archival-object zone of the reference.
-   const x=Math.max(0,card.left-grid.left-size+12);
-   const y=Math.max(0,card.top-grid.top+Math.min(160,card.height*.22));
-   open.style.left=Math.round(x)+"px";
-   open.style.top=Math.round(y)+"px";
+   const microscope=scope.getBoundingClientRect();
+   const cutout=open.getBoundingClientRect();
+   if(!grid.width||!microscope.width||!cutout.width)return;
+   const mobile=window.matchMedia("(max-width: 780px)").matches;
+   const left=mobile
+    ? microscope.left-grid.left-Math.min(24,cutout.width*.2)
+    : microscope.left-grid.left-cutout.width+5;
+   // Align the childhood photograph with the microscope's base on desktop,
+   // or with its lower half on smaller, single-column layouts.
+   const top=mobile
+    ? microscope.bottom-grid.top-cutout.height*.86
+    : microscope.bottom-grid.top-cutout.height+10;
+   open.style.left=Math.round(Math.min(Math.max(0,left),Math.max(0,grid.width-cutout.width)))+"px";
+   open.style.top=Math.round(Math.max(0,top))+"px";
   }
   placeTrigger();
   window.addEventListener("resize",placeTrigger,{passive:true});
+  window.addEventListener("load",placeTrigger,{once:true});
+  // The microscope is injected by the archival-object enhancement after
+  // the static hero is parsed. Observe that precise scene until it arrives.
+  if("MutationObserver" in window){
+   const sceneObserver=new MutationObserver(()=>{
+    if(document.querySelector(".rx-scope-object")){
+     placeTrigger();sceneObserver.disconnect();
+    }
+   });
+   if(!document.querySelector(".rx-scope-object"))
+    sceneObserver.observe(scene,{childList:true,subtree:true});
+  }
   if("ResizeObserver" in window){
-   const observer=new ResizeObserver(placeTrigger);
-   observer.observe(hero);
+   const sizeObserver=new ResizeObserver(placeTrigger);
+   sizeObserver.observe(scene);
+   const microscope=document.querySelector(".rx-scope-object");
+   if(microscope)sizeObserver.observe(microscope);
   }
   if(!original.complete)original.addEventListener("load",placeTrigger,{once:true});
   const dialog=document.createElement("dialog");
