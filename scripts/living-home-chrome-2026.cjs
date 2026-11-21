@@ -27,9 +27,17 @@ const path=require("node:path");
    await page.locator('[data-world-step="2"]').click();
    const src=await page.locator(".rx-world-crossing-print img").getAttribute("src");
    if(!src?.endsWith("/figure-pulmonary-flow-chamber.jpg"))throw Error(width+"px study switch failed: "+src);
+   if(await page.locator("#film .home-contact-sheet").count()!==0)throw Error(width+"px Find a scene is still inside film");
+   if(await page.locator("#rx-world-desk .home-contact-sheet").count()!==1)throw Error(width+"px Find a scene missing from Things I Kept");
+   if(await page.locator("#rx-world-desk .home-contact-sheet [data-film-time]").count()!==6)throw Error(width+"px documentary chapter links missing");
+   if(await page.locator(".rx-world-desk-print").count()!==8)throw Error(width+"px expected eight unique archival photographs");
+   if(await page.locator('.rx-world-desk-print img[src*="toy.webp"]').count())throw Error(width+"px repeated yellow-jacket image still in archive");
+   if(await page.locator("#rx-world-desk-title").innerText()!=="Things I kept.")throw Error(width+"px archive heading still says three things");
    await page.locator("[data-desk-next]").click();
    const front=await page.locator('.rx-world-desk-print[data-front="true"]').getAttribute("data-desk-print");
    if(front!=="1")throw Error(width+"px photo desk did not advance");
+   if(await page.locator(".rx-world-desk-count").innerText()!=="02 / 08")throw Error(width+"px archive count failed to update");
+
    await page.locator(".rx-world-manuscript-turn").click();
    if(!await page.locator(".rx-world-manuscript-reverse").isVisible())throw Error(width+"px manuscript didn't open");
    await page.locator(".rx-world-festival-trigger").click();
