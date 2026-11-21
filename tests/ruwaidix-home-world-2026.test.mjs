@@ -28,7 +28,8 @@ test("scientific dramaturgy uses linked original evidence without altering resea
 });
 test("homepage has multiple meaningfully different interactive environments",()=>{
  const js=read("assets/ruwaidix-home-world-2026.js");
- for(const scene of ["rx-world-orbit","rx-world-crossing","rx-world-desk","rx-world-manuscript","rx-world-festival"])assert.ok(js.includes(scene),scene);
+ for(const scene of ["rx-world-crossing","rx-world-desk","rx-world-manuscript","rx-world-festival"])assert.ok(js.includes(scene),scene);
+ assert.doesNotMatch(js,/rx-world-orbit-specimen|rx-world-orbit-lens|rx-world-hero-sample/);
  assert.match(js,/aria-pressed/);
  assert.match(js,/Escape/);
  assert.match(js,/scrollIntoView|IntersectionObserver/);
