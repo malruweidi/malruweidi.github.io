@@ -111,13 +111,9 @@ html[data-rx-page="home"] body .rx-moments-header ::selection{
  box-shadow:0 0 0 44px #9ab7dc0c,0 0 0 88px #9ab7dc06;pointer-events:none;
 }
 .rx-moments-panel[data-moment="01"] .rx-moments-art img{
- position:relative;z-index:1;width:min(100%,510px);height:auto;max-height:none;
- aspect-ratio:1170/1138;object-fit:contain;object-position:center bottom;
- -webkit-mask-image:url('/assets/personal-archive/toy-silhouette-mask.svg');
- mask-image:url('/assets/personal-archive/toy-silhouette-mask.svg');
- -webkit-mask-size:100% 100%;mask-size:100% 100%;
- -webkit-mask-position:center bottom;mask-position:center bottom;
- -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+ position:relative;z-index:1;width:auto;height:100%;max-width:min(100%,510px);max-height:100%;
+ aspect-ratio:auto;object-fit:contain;object-position:center bottom;
+ -webkit-mask-image:none;mask-image:none;
  filter:drop-shadow(0 22px 25px #0916297a);
 }
 .rx-moments-panel[data-moment="02"] .rx-moments-visual{background:linear-gradient(150deg,#243f65,#182d49)}
