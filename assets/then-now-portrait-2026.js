@@ -8,55 +8,17 @@
  const both=(en,ar)=>'<span class="rx-then-now-en" lang="en">'+en+'</span><span class="rx-then-now-ar" lang="ar" dir="rtl">'+ar+'</span>';
  function init(){
   const hero=document.querySelector(".rx-hero-portrait");
-  const original=hero&&hero.querySelector(".rx-portrait-mat img");
-  const scene=hero&&hero.closest(".rx-hero-grid");
-  const open=document.getElementById("rx-then-now-open");
-  if(!hero||!original||!scene||!open)return;
+  const mat=hero&&hero.querySelector(".rx-portrait-mat");
+  const original=mat&&mat.querySelector(":scope > img");
+  const open=mat&&mat.querySelector("#rx-then-now-open");
+  if(!hero||!mat||!original||!open)return;
   if(document.getElementById("rx-then-now-dialog"))return;
+  // The trigger is statically embedded within the photo itself.
+  // Positioning belongs exclusively to the photograph's relative CSS box:
+  // no microscope coordinates, viewport offsets, or inherited inline styles.
+  open.style.removeProperty("left");
+  open.style.removeProperty("top");
   const currentPortrait=original.getAttribute("src");
-  // The visible cutout lives in the homepage HTML, and must be positioned
-  // relative to the REAL microscope object, not the research photograph.
-  scene.classList.add("rx-then-now-scene");
-  function placeTrigger(){
-   const scope=document.querySelector(".rx-scope-object");
-   if(!scope||!scope.isConnected)return;
-   const grid=scene.getBoundingClientRect();
-   const microscope=scope.getBoundingClientRect();
-   const cutout=open.getBoundingClientRect();
-   if(!grid.width||!microscope.width||!cutout.width)return;
-   const mobile=window.matchMedia("(max-width: 780px)").matches;
-   const left=mobile
-    ? microscope.left-grid.left-Math.min(24,cutout.width*.2)
-    : microscope.left-grid.left-cutout.width+5;
-   // Align the childhood photograph with the microscope's base on desktop,
-   // or with its lower half on smaller, single-column layouts.
-   const top=mobile
-    ? microscope.bottom-grid.top-cutout.height*.86
-    : microscope.bottom-grid.top-cutout.height+10;
-   open.style.left=Math.round(Math.min(Math.max(0,left),Math.max(0,grid.width-cutout.width)))+"px";
-   open.style.top=Math.round(Math.max(0,top))+"px";
-  }
-  placeTrigger();
-  window.addEventListener("resize",placeTrigger,{passive:true});
-  window.addEventListener("load",placeTrigger,{once:true});
-  // The microscope is injected by the archival-object enhancement after
-  // the static hero is parsed. Observe that precise scene until it arrives.
-  if("MutationObserver" in window){
-   const sceneObserver=new MutationObserver(()=>{
-    if(document.querySelector(".rx-scope-object")){
-     placeTrigger();sceneObserver.disconnect();
-    }
-   });
-   if(!document.querySelector(".rx-scope-object"))
-    sceneObserver.observe(scene,{childList:true,subtree:true});
-  }
-  if("ResizeObserver" in window){
-   const sizeObserver=new ResizeObserver(placeTrigger);
-   sizeObserver.observe(scene);
-   const microscope=document.querySelector(".rx-scope-object");
-   if(microscope)sizeObserver.observe(microscope);
-  }
-  if(!original.complete)original.addEventListener("load",placeTrigger,{once:true});
   const dialog=document.createElement("dialog");
   dialog.id="rx-then-now-dialog";dialog.className="rx-then-now-dialog";
   dialog.setAttribute("aria-labelledby","rx-then-now-title");
