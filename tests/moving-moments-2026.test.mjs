@@ -9,13 +9,13 @@ test('the new moving-moments chapter preserves the existing homepage record',()=
  assert.match(html,/data-rx-moments/);
  assert.match(html,/anatomy-of-a-question-2026-v2\.mp4/);
  assert.match(html,/id="research-workbench"/);
- assert.match(html,/class="family-drawer"/);
+ assert.doesNotMatch(html,/class="family-drawer"/); // The oversized album was intentionally removed from the homepage.
  assert.match(html,/id="rx26-portal"/);
 });
 
 test('four archival moments use original resources with honest provenance',()=>{
  for(const src of [
-  '/assets/personal-archive/toy.webp',
+  '/assets/personal-archive/suspenders.webp',
   '/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp',
   '/assets/evidence-zebrafish.webp',
   '/assets/niosomes-concept.svg'])assert.ok(html.includes(src),src);
