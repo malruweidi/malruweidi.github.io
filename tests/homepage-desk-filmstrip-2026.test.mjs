@@ -31,5 +31,5 @@ test("both the photo desk and moved film chapter navigator stay responsive and a
  assert.match(css,/prefers-reduced-motion:reduce/);
  const js=read("assets/ruwaidix-home-world-2026.js");
  assert.match(js,/aria-hidden/);
- assert.match(js,/data-desk-depth/);
+ assert.match(js,/dataset\.deskDepth/);
 });
