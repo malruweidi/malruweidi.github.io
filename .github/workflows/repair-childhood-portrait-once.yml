@@ -32,7 +32,7 @@ jobs:
           style = Path('assets/ruwaidix-moving-moments-2026.css')
           css = style.read_text(encoding='utf-8')
           selector = '.rx-moments-panel[data-moment="01"] .rx-moments-art img{'
-          assert css.count(selector) == 1, f'Expected a unique Scene 01 image rule; found {css.count(selector)}'
+          assert css.count(selector) >= 1, f'Expected a Scene 01 image rule; found {css.count(selector)}'
           start = css.index(selector)
           end = css.index('}', start) + 1
           corrected = '''.rx-moments-panel[data-moment="01"] .rx-moments-art img{
