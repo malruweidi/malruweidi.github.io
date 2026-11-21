@@ -20,10 +20,10 @@ const path=require("node:path");
     await locator.scrollIntoViewIfNeeded();
     await locator.screenshot({path:path.join(output,"living-home-"+width+"-"+name+".png"),animations:"disabled",timeout:20000});
    }
-   await page.locator(".rx-world-orbit-lens").click();
-   if(!await page.locator("#rx-world-hero-sample").isVisible())throw Error(width+"px specimen viewer failed");
-   await page.keyboard.press("Escape");
-   if(await page.locator("#rx-world-hero-sample").isVisible())throw Error(width+"px specimen Escape failed");
+   const unwanted=".family-drawer,.rx-hero-backstory,.rx-world-orbit-specimen,.rx-world-orbit-lens,.rx-world-hero-sample";
+   if(await page.locator(unwanted).count())throw Error(width+"px rejected homepage panels still present");
+   if(await page.locator(".rx-hero-portrait").count()!==1)throw Error(width+"px original portrait missing");
+   if(await page.locator(".specimen-swim").count()!==1)throw Error(width+"px original zebrafish link missing");
    await page.locator('[data-world-step="2"]').click();
    const src=await page.locator(".rx-world-crossing-print img").getAttribute("src");
    if(!src?.endsWith("/figure-pulmonary-flow-chamber.jpg"))throw Error(width+"px study switch failed: "+src);
