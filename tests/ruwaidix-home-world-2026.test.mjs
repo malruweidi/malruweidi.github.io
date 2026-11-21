@@ -31,7 +31,7 @@ test("homepage has multiple meaningfully different interactive environments",()=
  for(const scene of ["rx-world-crossing","rx-world-desk","rx-world-manuscript","rx-world-festival"])assert.ok(js.includes(scene),scene);
  assert.doesNotMatch(js,/rx-world-orbit-specimen|rx-world-orbit-lens|rx-world-hero-sample/);
  assert.match(js,/aria-pressed/);
- assert.match(js,/Escape/);
+ assert.match(js,/ArrowRight|data-desk-next/);
  assert.match(js,/scrollIntoView|IntersectionObserver/);
 });
 test("language, mobile, reduced motion and keyboard experience survive",()=>{
