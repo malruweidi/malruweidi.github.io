@@ -43,6 +43,16 @@ function assertHomepagePreserved(original, current) {
     const preserved = before.match(block)?.[0];
     assert.ok(preserved, String(block));
     const actual = after.match(block)?.[0];
+    // Editorial removal requested by the owner: the long "How I got here"
+    // disclosure no longer belongs on the first screen. Its original text
+    // remains intact in home-legacy-2026.html, the source passed as original.
+    // Guard absence on the live homepage while preserving the archived copy.
+    if (String(block).includes("rx-hero-backstory")) {
+      assert.equal(actual, undefined, "Retired opening backstory must not return to the homepage");
+      assert.match(original, /I organized my first school chemistry exhibition at Doha Independent School in 2009/);
+      before = before.replace(block, "");
+      continue;
+    }
     if (String(block).includes("rx-chapters")) {
       assert.equal(actual?.replace(currentGalleryCopy, earlierGalleryCopy), preserved,
         "The original four archive cards and their links must remain intact");
