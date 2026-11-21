@@ -18,7 +18,35 @@
   open.setAttribute("aria-controls","rx-then-now-dialog");
   open.innerHTML='<img src="'+childCutout+'" alt="" width="160" height="160" decoding="async" aria-hidden="true">'+
    '<span class="rx-then-now-sticker">'+both("Then → now · tap","من الطفولة إلى البحث · اضغط")+'</span>';
-  hero.appendChild(open);
+  // The requested visual position is the navy science tableau: beside the
+  // microscope and to the LEFT of the polaroid, never atop the portrait.
+  const scene=hero.closest(".rx-hero-grid")||hero.parentElement;
+  scene.classList.add("rx-then-now-scene");
+  scene.insertBefore(open,hero);
+  function placeTrigger(){
+   if(window.matchMedia("(max-width: 799px)").matches){
+    open.style.removeProperty("left");
+    open.style.removeProperty("top");
+    return;
+   }
+   const card=hero.getBoundingClientRect();
+   const grid=scene.getBoundingClientRect();
+   if(!grid.width || !card.width)return;
+   const size=open.getBoundingClientRect().width||134;
+   // Center the child cutout immediately outside the portrait's left border.
+   // This places it in the microscope/archival-object zone of the reference.
+   const x=Math.max(0,card.left-grid.left-size+12);
+   const y=Math.max(0,card.top-grid.top+Math.min(160,card.height*.22));
+   open.style.left=Math.round(x)+"px";
+   open.style.top=Math.round(y)+"px";
+  }
+  placeTrigger();
+  window.addEventListener("resize",placeTrigger,{passive:true});
+  if("ResizeObserver" in window){
+   const observer=new ResizeObserver(placeTrigger);
+   observer.observe(hero);
+  }
+  if(!original.complete)original.addEventListener("load",placeTrigger,{once:true});
   const dialog=document.createElement("dialog");
   dialog.id="rx-then-now-dialog";dialog.className="rx-then-now-dialog";
   dialog.setAttribute("aria-labelledby","rx-then-now-title");
@@ -45,7 +73,14 @@
   }
   syncLabels();
   if("MutationObserver" in window)new MutationObserver(syncLabels).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
-  open.addEventListener("click",()=>{syncLabels();if(typeof dialog.showModal==="function")dialog.showModal();else dialog.setAttribute("open","");close.focus();});
+  open.addEventListener("click",()=>{syncLabels();
+   hero.classList.remove("rx-then-now-revealing");
+   void hero.offsetWidth;
+   hero.classList.add("rx-then-now-revealing");
+   if(typeof dialog.showModal==="function")dialog.showModal();
+   else dialog.setAttribute("open","");
+   close.focus();
+  });
   close.addEventListener("click",()=>dialog.close());
   dialog.addEventListener("click",event=>{if(event.target===dialog)dialog.close()});
   dialog.addEventListener("close",()=>open.focus({preventScroll:true}));
