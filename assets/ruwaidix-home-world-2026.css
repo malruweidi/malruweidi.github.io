@@ -517,3 +517,90 @@ html[data-rx-page="home"] .rx-world-crossing-index span{
   bottom:-7px;right:2%;font-size:33px;padding:3px 7px;
  }
 }
+
+
+/* Eight distinct archival photographs occupy one tactile desk; only the next
+   two prints fan behind the selected image. This prevents a long fan and
+   overflow on narrow screens, while all eight remain reachable with controls. */
+html[data-rx-page="home"] .rx-world-desk-print[data-desk-depth="far"]{
+ opacity:0!important;visibility:hidden!important;pointer-events:none!important;
+}
+html[data-rx-page="home"] .rx-world-desk-print[data-desk-depth="2"]{opacity:.62}
+html[data-rx-page="home"] .rx-world-desk-print[data-desk-depth="1"]{opacity:.82}
+html[data-rx-page="home"] .rx-world-desk-print[data-front="true"]{
+ opacity:1;visibility:visible;pointer-events:auto;
+}
+
+/* The film's original six-scene navigator is relocated under Things I Kept.
+   The video itself remains above, in the documentary chapter. Reuse the
+   established seek controls, but give them a quiet paper-bound filmstrip. */
+html[data-rx-page="home"] main .rx-world-desk .home-contact-sheet.rx-world-desk-scenes{
+ grid-column:1 / -1;
+ display:block;
+ width:100%;
+ min-width:0;
+ padding:clamp(16px,2.4vw,27px) 0 0!important;
+ margin:clamp(10px,2vw,23px) 0 0!important;
+ border:0!important;border-top:1px solid #b8aa94!important;
+ background:transparent!important;color:#1b3657!important;
+ box-shadow:none!important;
+}
+html[data-rx-page="home"] main .rx-world-desk-scenes h3{
+ color:#23456d!important;
+ font:400 clamp(24px,2.8vw,39px)/1.18 "Newsreader",Georgia,serif!important;
+ margin:0 0 13px!important;
+ letter-spacing:-.025em;
+}
+html[data-rx-page="home"] main .rx-world-desk-scenes ol{
+ border-block-start:1px solid #a4b6ca;
+ padding-top:11px;
+ gap:clamp(5px,.7vw,11px);
+}
+html[data-rx-page="home"] main .rx-world-desk-scenes ol::before{background:#365e8b}
+html[data-rx-page="home"] main .rx-world-desk-scenes a{
+ background:#1d3654!important;
+ color:#f8f0e5!important;
+ border:1px solid #6d8eb1!important;
+ border-radius:2px;
+ transition:transform .18s,background .18s;
+}
+html[data-rx-page="home"] main .rx-world-desk-scenes a:hover{
+ background:#345b82!important;transform:translateY(-3px);
+}
+html[data-rx-page="home"] main .rx-world-desk-scenes a[aria-current="true"]{
+ background:#f7f0e5!important;
+ color:#17395f!important;border-color:#365e8b!important;
+}
+html[data-rx-page="home"] main .rx-world-desk-scenes .home-contact-label{
+ font-size:clamp(10px,.74vw,12px);
+ min-height:62px;
+}
+html[data-rx-page="home"] main .rx-world-desk-scenes .home-contact-label time{font-size:10px}
+html[lang="ar"][data-rx-page="home"] main .rx-world-desk-scenes h3{
+ font:500 clamp(26px,3vw,43px)/1.45 "Amiri","Noto Naskh Arabic",serif!important;
+}
+html[data-rx-page="home"] main .rx-world-desk-scenes a:focus-visible{
+ outline:3px solid #6389ba!important;outline-offset:3px!important;
+}
+@media(max-width:900px){
+ html[data-rx-page="home"] main .rx-world-desk-scenes ol{
+  display:grid;grid-auto-flow:column;grid-template-columns:none;
+  grid-auto-columns:clamp(142px,27vw,205px);
+  overflow-x:auto;scroll-snap-type:inline proximity;
+ }
+ html[data-rx-page="home"] main .rx-world-desk-scenes li{scroll-snap-align:start}
+}
+@media(max-width:650px){
+ html[data-rx-page="home"] main .rx-world-desk .home-contact-sheet.rx-world-desk-scenes{
+  margin-top:0!important;padding-top:16px!important;
+ }
+ html[data-rx-page="home"] main .rx-world-desk-scenes h3{font-size:28px!important}
+ html[data-rx-page="home"] main .rx-world-desk-scenes ol{grid-auto-columns:152px}
+ html[data-rx-page="home"] main .rx-world-desk-scenes .home-contact-label{font-size:11px;min-height:58px}
+}
+@media(prefers-reduced-motion:reduce){
+ html[data-rx-page="home"] main .rx-world-desk-scenes a{transition:none!important;transform:none!important}
+}
+@media print{
+ html[data-rx-page="home"] .rx-world-desk-scenes{display:none!important}
+}
