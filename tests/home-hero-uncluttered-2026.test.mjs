@@ -27,6 +27,7 @@ test("the original hero, scientific references, and personal photographs remain 
  const js=read("assets/ruwaidix-home-world-2026.js");
  assert.match(js,/figure-zebrafish-microscopy\.jpg/);
  assert.match(js,/figure-pulmonary-flow-chamber\.jpg/);
- assert.match(js,/personal-archive\/toy\.webp/);
+ assert.match(html,/personal-archive\/suspenders\.webp/);
+ assert.doesNotMatch(html,/personal-archive\/toy\.webp/);
  assert.match(html,/href="\/stories\.html"/);
 });
