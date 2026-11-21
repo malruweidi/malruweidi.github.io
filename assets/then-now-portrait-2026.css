@@ -321,3 +321,57 @@ html[data-rx-page="home"] main .rx-portrait-mat.rx-then-now-photo-anchor > #rx-t
 @media(prefers-reduced-motion:reduce){
   .rx-then-now-child-stage img{animation:none!important}
 }
+
+
+/* Mobile dialog refinements: readable heading and matched photo stages. */
+.rx-then-now-dialog .rx-then-now-shell h2{
+ max-width:calc(100% - 58px);
+}
+.rx-then-now-dialog .rx-then-now-plate--now > img,
+.rx-then-now-dialog .rx-then-now-child-stage{
+ height:clamp(210px,33vw,350px);
+}
+.rx-then-now-dialog .rx-then-now-plate figcaption{
+ flex-wrap:wrap;
+ gap:3px 9px;
+ align-items:baseline;
+}
+.rx-then-now-dialog .rx-then-now-plate figcaption > span:last-child{
+ font-size:9px;
+ font-weight:500;
+}
+@media(max-width:500px){
+ .rx-then-now-dialog .rx-then-now-shell{
+   padding:20px 16px 24px;
+ }
+ .rx-then-now-dialog .rx-then-now-shell h2{
+   max-width:calc(100% - 51px);
+   font-size:clamp(31px,8vw,42px)!important;
+   line-height:1.12!important;
+ }
+ .rx-then-now-dialog .rx-then-now-intro{
+   font-size:14px;line-height:1.6;margin-bottom:17px;
+ }
+ .rx-then-now-dialog .rx-then-now-plates{
+   gap:9px;
+ }
+ .rx-then-now-dialog .rx-then-now-plate{
+   padding:7px;
+ }
+ .rx-then-now-dialog .rx-then-now-plate--now > img,
+ .rx-then-now-dialog .rx-then-now-child-stage{
+   height:208px;
+ }
+ .rx-then-now-dialog .rx-then-now-plate figcaption{
+   font-size:10px;
+   min-height:59px;
+   flex-direction:column;
+ }
+ .rx-then-now-dialog .rx-then-now-end{
+   margin-top:19px;
+   padding-top:14px;
+ }
+ .rx-then-now-dialog .rx-then-now-close{
+   width:38px;height:38px;font-size:23px;
+ }
+}
