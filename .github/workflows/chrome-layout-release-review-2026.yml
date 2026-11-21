@@ -7,6 +7,9 @@ on:
     paths:
       - "assets/ruwaidix-home-world-2026.js"
       - "assets/ruwaidix-home-world-2026.css"
+      - "index.html"
+      - "scripts/living-home-chrome-2026.cjs"
+      - "tests/home-hero-uncluttered-2026.test.mjs"
       - ".github/workflows/chrome-layout-release-review-2026.yml"
 permissions:
   contents: read
