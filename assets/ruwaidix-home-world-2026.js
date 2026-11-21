@@ -114,7 +114,7 @@
   const story = $("#story .story-prologue");
   if(story&&!$("#rx-world-desk")){
     const archive=[
-      {src:"/assets/personal-archive/suspenders.webp",alt:"Early family portrait in a checked shirt and suspenders",en:"A family photograph",ar:"صورة من الألبوم العائلي",url:"/stories.html"},
+      {src:"/assets/oct12-owner-photos/museum-visit-2019.webp",alt:"Personal archival photograph from a museum visit in 2019",en:"A museum visit",ar:"زيارة إلى المتحف",url:"/stories.html"},
       {src:"/assets/personal-archive/bookshelf.webp",alt:"Photograph of books in the personal archive",en:"The bookshelf",ar:"رف الكتب",url:"/recommended-books.html"},
       {src:"/assets/personal-archive/sunglasses.webp",alt:"Playful early portrait wearing sunglasses",en:"The playful portrait",ar:"الصورة المرحة",url:"/stories.html"},
       {src:"/assets/owner-archive-2026-10-17/high-school-graduation-jameel-al-shamarri.webp",alt:"School graduation photograph from the personal archive",en:"Graduation day",ar:"يوم التخرّج",url:"/stories.html#school-chemistry-and-graduation"},
