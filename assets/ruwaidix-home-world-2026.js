@@ -114,22 +114,27 @@
   const story = $("#story .story-prologue");
   if(story&&!$("#rx-world-desk")){
     const archive=[
-      {src:"/assets/personal-archive/toy.webp",alt:"Childhood photograph with the yellow jacket and toy",en:"The yellow jacket",ar:"السترة الصفراء",url:"/stories.html"},
-      {src:"/assets/owner-archive-2026-10-17/grade10-chemistry-festival-aref-elahmad.webp",alt:"Grade 10 chemistry-festival photograph with chemistry teacher",en:"The chemistry festival",ar:"مهرجان الكيمياء",url:"/stories.html#school-chemistry-and-graduation"},
-      {src:"/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",alt:"Microscope from Cairo photographed in the personal archive",en:"An instrument at home",ar:"مجهر في المنزل",url:"/stories/cairo-microscope.html"}
+      {src:"/assets/personal-archive/suspenders.webp",alt:"Early family portrait in a checked shirt and suspenders",en:"A family photograph",ar:"صورة من الألبوم العائلي",url:"/stories.html"},
+      {src:"/assets/personal-archive/bookshelf.webp",alt:"Photograph of books in the personal archive",en:"The bookshelf",ar:"رف الكتب",url:"/recommended-books.html"},
+      {src:"/assets/personal-archive/sunglasses.webp",alt:"Playful early portrait wearing sunglasses",en:"The playful portrait",ar:"الصورة المرحة",url:"/stories.html"},
+      {src:"/assets/owner-archive-2026-10-17/high-school-graduation-jameel-al-shamarri.webp",alt:"School graduation photograph from the personal archive",en:"Graduation day",ar:"يوم التخرّج",url:"/stories.html#school-chemistry-and-graduation"},
+      {src:"/assets/oct12-owner-photos/diblock-copolymer-unsuccessful-trials-2017.webp",alt:"Photograph documenting unsuccessful diblock-copolymer laboratory trials in 2017",en:"An experiment that failed",ar:"تجربة لم تنجح",url:"/research.html"},
+      {src:"/assets/oct12-owner-photos/microscopy-vacation-morning-2017.webp",alt:"Microscope photographed in the 2017 personal archive",en:"The Cairo microscope",ar:"مجهر القاهرة",url:"/stories/cairo-microscope.html"},
+      {src:"/assets/oct12-owner-photos/eric-scerri-chemistry-philosophy-2019.webp",alt:"2019 archival photograph associated with chemistry and philosophy",en:"Chemistry and philosophy",ar:"الكيمياء وفلسفتها",url:"/stories.html"},
+      {src:"/assets/owner-archive-2026-10-17/acs-2017-natural-dyes-poster.webp",alt:"Natural-dyes scientific poster in the 2017 American Chemical Society chapter archive",en:"The natural-dyes poster",ar:"ملصق الأصباغ الطبيعية",url:"/engagement.html"}
     ];
     const desk=make("section","rx-world-desk");desk.id="rx-world-desk";
     desk.setAttribute("aria-labelledby","rx-world-desk-title");
     desk.innerHTML='<div class="rx-world-desk-copy"><p>'+both("PERSONAL ARCHIVE / HANDLE WITH CURIOSITY","الأرشيف الشخصي / تصفّح بفضول")+'</p>'+
-      '<h3 id="rx-world-desk-title">'+both("Three things I kept.","ثلاثة أشياء احتفظت بها.")+'</h3>'+
-      '<p>'+both("A playful childhood picture, a chemistry festival, and a microscope from Cairo. Move the photographs to bring a different moment forward.","صورة من الطفولة، ومهرجان للكيمياء، ومجهر من القاهرة. حرّك الصور لتقديم ذكرى مختلفة.")+'</p>'+
-      '<div class="rx-world-desk-controls"><button type="button" data-desk-prev aria-label="Previous photograph">←</button><span class="rx-world-desk-count" aria-live="polite">01 / 03</span><button type="button" data-desk-next aria-label="Next photograph">→</button></div>'+
+      '<h3 id="rx-world-desk-title">'+both("Things I kept.","أشياء احتفظت بها.")+'</h3>'+
+      '<p>'+both("Eight photographs from childhood, books, graduation, experiments, and the people and objects that shaped the work. Swipe the stack to explore them.","ثماني صور من الطفولة والكتب والتخرّج والتجارب والأشخاص والأشياء التي شكّلت مسيرتي. اسحب الصور لتصفّحها.")+'</p>'+
+      '<div class="rx-world-desk-controls"><button type="button" data-desk-prev aria-label="'+label("Previous photograph","الصورة السابقة")+'">←</button><span class="rx-world-desk-count" aria-live="polite">01 / 03</span><button type="button" data-desk-next aria-label="'+label("Next photograph","الصورة التالية")+'">→</button></div>'+
       '<a class="rx-world-desk-route" href="/stories.html">'+both("Read the stories behind these objects","اقرأ الحكايات وراء هذه المقتنيات")+' ↗</a></div>'+
-      '<div class="rx-world-desk-stack" role="group" aria-label="Interactive archival photograph stack">'+
+      '<div class="rx-world-desk-stack" role="group" aria-label="'+label("Interactive archival photograph stack","مجموعة صور أرشيفية تفاعلية")+'">'+
         archive.map((p,i)=>'<div class="rx-world-desk-print" data-desk-print="'+i+'" data-front="'+(i===0)+'" style="--desk-order:'+i+'">'+
         '<img src="'+p.src+'" alt="'+p.alt+'" width="420" height="500" loading="lazy"/>'+
         '<span class="rx-world-desk-print-caption">'+both(p.en,p.ar)+'</span>'+
-        '<a href="'+p.url+'" tabindex="'+(i===0?'0':'-1')+'">'+both("Read the story","اقرأ الحكاية")+' ↗</a></div>').join("")+
+        '<a href="'+p.url+'" tabindex="'+(i===0?'0':'-1')+'">'+both("Open the record","افتح السجل")+' ↗</a></div>').join("")+
       '</div>';
     // Story content is intentionally folded away in the complete record.
     // The photographic desk belongs in the visible narrative after Moving Moments.
@@ -142,16 +147,18 @@
       active=(index+cards.length)%cards.length;
       cards.forEach((c,i)=>{
         const order=(i-active+cards.length)%cards.length;
-        c.style.setProperty("--desk-order",String(order));
+        const depth=Math.min(order,2);
+        c.dataset.deskDepth=order>2?"far":String(depth);
+        c.style.setProperty("--desk-order",String(depth));
         const spacing=window.innerWidth<=900?18:33;
-        c.style.setProperty("--desk-offset",(order*spacing)+"px");
-        c.style.setProperty("--desk-drop",(order*16)+"px");
-        c.style.setProperty("--desk-tilt",((order-1)*6)+"deg");
+        c.style.setProperty("--desk-offset",(depth*spacing)+"px");
+        c.style.setProperty("--desk-drop",(depth*16)+"px");
+        c.style.setProperty("--desk-tilt",((depth-1)*6)+"deg");
         c.dataset.front=String(i===active);
         c.querySelector("a").tabIndex=i===active?0:-1;
         c.setAttribute("aria-hidden",String(i!==active));
       });
-      count.textContent=String(active+1).padStart(2,"0")+" / 03";
+      count.textContent=String(active+1).padStart(2,"0")+" / "+String(cards.length).padStart(2,"0");
     }
     desk.querySelector("[data-desk-prev]").addEventListener("click",()=>front(active-1));
     desk.querySelector("[data-desk-next]").addEventListener("click",()=>front(active+1));
@@ -170,6 +177,18 @@
     stack.addEventListener("pointercancel",()=>{startX=null;});
     front(0);
     window.addEventListener("resize",()=>front(active),{passive:true});
+
+    // Relocate the original interactive film chapter navigator, with its
+    // timestamp links and attached seeking listeners intact, under the desk.
+    // The documentary remains in the film section; the scene finder appears
+    // here as a distinct, clearly labelled filmstrip beside the photo archive.
+    const sheet=document.querySelector(".home-contact-sheet");
+    if(sheet){
+      sheet.classList.add("rx-world-desk-scenes");
+      const heading=sheet.querySelector("#home-film-chapters");
+      if(heading)heading.innerHTML=both("Find a scene in the documentary","اختر مشهدًا من الفيلم الوثائقي");
+      desk.appendChild(sheet);
+    }
     observe(desk);
   }
 
