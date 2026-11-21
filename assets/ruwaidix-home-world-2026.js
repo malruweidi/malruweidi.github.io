@@ -14,43 +14,8 @@
   const places = [];
   const observe = node=>{if(node)places.push(node);};
 
-  // An optical research orbit lives alongside the original portrait, not below the introduction.
-  const portrait = $(".rx-hero-portrait");
-  if (portrait && !$("#rx-world-orbit")) {
-    const orbit = make("div","rx-world-orbit");
-    orbit.id="rx-world-orbit";
-    orbit.innerHTML =
-      '<span class="rx-world-orbit-rings" aria-hidden="true"><i></i><i></i><i></i></span>'+
-      '<a class="rx-world-orbit-specimen" href="/grants/urep23.html">'+
-        '<img src="/assets/2026-10-15-lab-photos/pyridine-4-carboxaldehyde-reagent-front-2018.webp" width="180" height="65" alt="2018 archival chemistry reagent photograph" loading="lazy"/>'+
-        '<span>'+both("CHEMISTRY / 2018","الكيمياء / ٢٠١٨")+'</span></a>'+
-      '<button type="button" class="rx-world-orbit-lens" aria-pressed="false" aria-controls="rx-world-hero-sample">'+
-         '<span class="rx-world-orbit-glass" aria-hidden="true">⌕</span>'+both("VIEW A SPECIMEN","انظر إلى العينة")+'</button>'+
-      '<div class="rx-world-hero-sample" id="rx-world-hero-sample" hidden>'+
-         '<button class="rx-world-sample-close" type="button" aria-label="Close specimen">×</button>'+
-         '<img src="/assets/home-archive/figure-zebrafish-microscopy.jpg" width="360" height="260" loading="lazy" alt="Archived scientific image associated with zebrafish microscopy; original source is linked"/>'+
-         '<span>'+both("Archived research image · not a live microscope","صورة بحثية مؤرشفة · ليست مجهرًا مباشرًا")+'</span>'+
-         '<a href="/figures.html#zebrafish">'+both("Source & methods","المصدر والمنهجية")+' ↗</a>'+
-      '</div>';
-    portrait.appendChild(orbit);
-    const toggle=$(".rx-world-orbit-lens",orbit),sample=$(".rx-world-hero-sample",orbit),close=$(".rx-world-sample-close",orbit);
-    const show=v=>{sample.hidden=!v;toggle.setAttribute("aria-pressed",String(v));if(v)close.focus();else toggle.focus();};
-    toggle.addEventListener("click",()=>show(sample.hidden));
-    close.addEventListener("click",()=>show(false));
-    orbit.addEventListener("keydown",e=>{if(e.key==="Escape"&&!sample.hidden){show(false);e.preventDefault();}});
-    let requested=0;
-    portrait.addEventListener("pointermove",e=>{
-      if(reduce.matches||e.pointerType==="touch")return;
-      const r=portrait.getBoundingClientRect();if(!r.width||!r.height)return;
-      const x=((e.clientX-r.left)/r.width-.5)*20,y=((e.clientY-r.top)/r.height-.5)*16;
-      if(requested)cancelAnimationFrame(requested);
-      requested=requestAnimationFrame(()=>{portrait.style.setProperty("--rx-world-x",Math.max(-10,Math.min(10,x))+"px");portrait.style.setProperty("--rx-world-y",Math.max(-8,Math.min(8,y))+"px");});
-    },{passive:true});
-    portrait.addEventListener("pointerleave",()=>{
-      portrait.style.removeProperty("--rx-world-x");portrait.style.removeProperty("--rx-world-y");
-    });
-    observe(orbit);
-  }
+  // The opening portrait is intentionally unencumbered by research overlays.
+  // Original research images remain available in the dedicated investigation panorama.
 
   // A documentary journey through four actual research subject areas.
   const journeys=[
