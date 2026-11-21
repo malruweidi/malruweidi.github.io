@@ -18,7 +18,8 @@ test("scientific dramaturgy uses linked original evidence without altering resea
   "/assets/home-archive/figure-zebrafish-microscopy.jpg",
   "/assets/home-archive/figure-pulmonary-flow-chamber.jpg",
   "/assets/niosomes-concept.svg",
-  "/assets/personal-archive/toy.webp",
+  "/assets/personal-archive/suspenders.webp",
+  "/assets/personal-archive/sunglasses.webp",
   "/assets/owner-archive-2026-10-17/grade10-chemistry-festival-aref-elahmad.webp"
  ])assert.ok(js.includes(src),src);
  assert.match(js,/Concept illustration/);
