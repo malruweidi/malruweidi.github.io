@@ -15,6 +15,8 @@ jobs:
         run: node --test tests/ruwaidix-home-world-2026.test.mjs
       - name: Keep family album, childhood backstory, chemistry card, and specimen viewer off homepage
         run: node --test tests/home-hero-uncluttered-2026.test.mjs
+      - name: Keep the film chapter navigator within eight-photo Things I Kept archive
+        run: node --test tests/homepage-desk-filmstrip-2026.test.mjs
       - name: Verify original homepage, documentary and all nine preserved chapters
         run: node --test tests/living-desk-home-2026.test.cjs
       - name: Verify four-scene cinematic archive and accessible playback
