@@ -37,3 +37,14 @@ test("mobile header keeps a single readable line and a compact menu",()=>{
  const idx=html.indexOf("/assets/mobile-layout-integrity-2026.css");
  assert.ok(idx>html.indexOf("/assets/kinetic-atlas-2026.css"),"fix must load after both competing stylesheets");
 });
+
+
+test("Arabic and Latin names use automatic direction and mobile decoration cannot obscure cards",()=>{
+ const css=file("assets/mobile-layout-integrity-2026.css");
+ assert.match(html,/<span class="brandname" dir="auto">/);
+ assert.match(html,/<span class="brandline" dir="auto">/);
+ assert.doesNotMatch(css,/\.header \.brandline[^}]*direction:rtl/s,
+   "A Latin subtitle must not be forced into RTL rendering");
+ assert.match(css,/\.rx-atlas-detail::before\s*\{\s*display:none;/s);
+ assert.match(css,/\.rx-atlas-home \.rx-atlas-detail\s*\{[^}]*overflow:hidden/s);
+});
