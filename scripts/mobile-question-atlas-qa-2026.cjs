@@ -54,6 +54,7 @@ async function check(browser,width,language="en"){
        header:bounds(nav),brand:bounds(brand),
        name:bounds(name),subtitle:bounds(subtitle),menu:bounds(menu),
        subtitleLines:subtitle.getBoundingClientRect().height/parseFloat(getComputedStyle(subtitle).lineHeight),
+       subtitleScroll:subtitle.scrollWidth,subtitleClient:subtitle.clientWidth,
        rtl:question.getAttribute("dir")==="rtl",
      };
    });
@@ -72,6 +73,7 @@ async function check(browser,width,language="en"){
    if(width<=600){
      if(metric.header.height>100)issues.push("Mobile header still oversized: "+metric.header.height+"px");
      if(metric.subtitleLines>1.2)issues.push("Brand tagline wraps to "+metric.subtitleLines+" lines");
+     if(width>=375&&metric.subtitleScroll>metric.subtitleClient+2)issues.push("Brand tagline still ellipsizes: "+metric.subtitleScroll+"px vs "+metric.subtitleClient+"px");
      if(metric.menu.width>95)issues.push("Menu button wider than 95px");
      if(metric.menu.height<43)issues.push("Menu too small for touch: "+metric.menu.height);
    }
