@@ -158,6 +158,8 @@
     status.textContent = arabic
       ? (active==="all" ? number.format(cards.length)+" مجموعات" : number.format(count)+" مجموعات من "+number.format(cards.length))
       : (active==="all" ? number.format(cards.length)+" collections" : number.format(count)+" collections shown · "+number.format(cards.length)+" total");
+    // The full collection needs no floating page counter: announce totals only while filtering.
+    status.hidden = active === "all";
     grid.classList.toggle("rx-cover-filtered",active !== "all");
   }
   const buttons = filters.map(([id]) => {
