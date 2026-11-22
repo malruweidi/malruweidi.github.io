@@ -13,7 +13,7 @@ function initialize(){
  node.className="rx-atlas";node.id="rx-kinetic-atlas";node.dataset.i18nIgnore="";
  node.setAttribute("aria-labelledby","rx-atlas-heading");
  node.innerHTML='<div class="rx-atlas-shell">'+
-  '<header class="rx-atlas-head"><div><p class="rx-atlas-kicker" id="rx-atlas-kicker">THE MOVING FIELD GUIDE / 30 SCENES</p><h2 id="rx-atlas-heading">Touch the <em>question.</em></h2></div>'+
+  '<header class="rx-atlas-head"><div><p class="rx-kinetic-kicker" id="rx-kinetic-kicker">THE MOVING FIELD GUIDE / 30 SCENES</p><h2 id="rx-atlas-heading">Touch the <em>question.</em></h2></div>'+
   '<p id="rx-atlas-lead">A cabinet of working illustrations. Choose a subject and move the control. All drawings are conceptual, never experimental observations.</p></header>'+
   '<div class="rx-atlas-categories" id="rx-atlas-categories" role="group" aria-label="Filter scenes by subject"></div>'+
   '<div class="rx-atlas-columns"><div class="rx-atlas-primary"><div class="rx-atlas-device"><div class="rx-atlas-topline"><span id="rx-atlas-serial">FIELD GUIDE / 01</span>'+
@@ -76,7 +76,7 @@ function initialize(){
    if(!shown.length){const p=document.createElement("p");p.className="rx-atlas-empty";p.textContent=T("No matching subjects. Try another word.","لم يُعثر على موضوع مطابق. جرّب كلمة أخرى.");list.append(p);return;}
    shown.forEach(e=>{
      const index=entries.indexOf(e)+1,b=document.createElement("button");
-     b.type="button";b.className="rx-atlas-choice";b.dataset.id=e[0];
+     b.type="button";b.className="rx-kinetic-pick";b.dataset.id=e[0];
      b.setAttribute("aria-pressed",String(active===e[0]));
      const no=document.createElement("span");no.className="rx-atlas-choice-no";no.textContent=String(index).padStart(2,"0");
      const title=document.createElement("span");title.className="rx-atlas-choice-name";title.textContent=T(e[2],e[3]);
@@ -96,7 +96,7 @@ function initialize(){
    node.dir=isAr()?"rtl":"ltr";
    const current=entries.indexOf(e)+1;
    q("rx-atlas-heading").innerHTML=T("Touch the <em>question.</em>","<em>المس</em> السؤال.");
-   q("rx-atlas-kicker").textContent=T("THE MOVING FIELD GUIDE / 30 SCENES","الدليل المتحرك / ٣٠ مشهدًا");
+   q("rx-kinetic-kicker").textContent=T("THE MOVING FIELD GUIDE / 30 SCENES","الدليل المتحرك / ٣٠ مشهدًا");
    q("rx-atlas-lead").textContent=T("A cabinet of working illustrations. Choose a subject and move the control. All drawings are conceptual, never experimental observations.","مجموعة رسوم تفاعلية؛ اختر موضوعًا وحرّك أداة التحكم. جميع الرسوم توضيحية ولا تعرض نتائج تجريبية.");
    q("rx-atlas-serial").textContent=T("FIELD GUIDE / ","الدليل / ")+String(current).padStart(2,"0");
    q("rx-atlas-mode").textContent=T("ILLUSTRATION / NOT DATA","توضيح / ليست بيانات");
