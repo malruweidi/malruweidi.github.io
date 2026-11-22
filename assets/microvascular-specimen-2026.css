@@ -94,4 +94,15 @@ html[data-rx-page="home"] main .rx-microvessel[data-placement="inline"] svg{
 html[data-rx-page="home"] .rx-microvessel[data-paused="true"] :is(.rx-erythrocyte,.rx-vessel-flow-line,.rx-vessel-tissue){
  animation-play-state:paused!important
 }
+/* A readable static vessel on browsers without CSS motion paths. */
+@supports not (offset-path:path("M 0 0 L 1 1")){
+ html[data-rx-page="home"] .rx-erythrocyte{animation:none!important;transform:translate(45px,61px)}
+ html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(2){transform:translate(72px,59px)}
+ html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(3){transform:translate(100px,62px)}
+ html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(4){transform:translate(128px,63px)}
+ html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(5){transform:translate(153px,61px)}
+ html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(6){transform:translate(176px,56px)}
+ html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(7){transform:translate(204px,48px)}
+ html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(8){transform:translate(230px,38px)}
+}
 @media print{html[data-rx-page="home"] main .rx-microvessel{display:none!important}}
