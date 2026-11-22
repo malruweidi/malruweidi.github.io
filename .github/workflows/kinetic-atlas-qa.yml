@@ -54,4 +54,4 @@ jobs:
           node --check assets/kinetic-atlas-ui-2026.js
           node --check assets/kinetic-chapter-cards-2026.js
       - name: Run scientific provenance, accessibility and interaction tests
-        run: node --test tests/kinetic-atlas.test.mjs tests/kinetic-atlas-runtime.test.mjs tests/kinetic-atlas-visual-quality.test.mjs tests/mobile-layout-integrity.test.mjs tests/portal-chapter-illustration-placement-2026.test.mjs
+        run: node --test tests/kinetic-atlas.test.mjs tests/kinetic-atlas-runtime.test.mjs tests/kinetic-atlas-visual-quality.test.mjs tests/mobile-layout-integrity.test.mjs tests/portal-chapter-illustration-placement-2026.test.mjs tests/kinetic-atlas-editorial-layout.test.mjs
