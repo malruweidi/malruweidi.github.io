@@ -100,10 +100,10 @@ test("nine archival chapter cards use actual photographic sources, not animated 
   const urls=["research","publications","films","stories","illness-and-evidence","writing","chem-squad","leadership","major-revisions"];
   for(const slug of urls)
     assert.ok(html.includes('class="rx26-portal-card" href="/'+slug+'.html"'),slug+" missing");
-  assert.doesNotMatch(html,/src="[^"]*kinetic-chapter-cards-2026\\.js/);
-  assert.doesNotMatch(html,/href="[^"]*kinetic-chapter-cards-2026\\.css/);
+  assert.doesNotMatch(html,/src="[^"]*kinetic-chapter-cards-2026\.js/);
+  assert.doesNotMatch(html,/href="[^"]*kinetic-chapter-cards-2026\.css/);
   assert.match(archive,/className = "rx-cover-art"/);
-  assert.match(archive,/frame\\.append\\(img\\)/);
+  assert.match(archive,/frame\.append\(img\)/);
 });
 
 test("all scenes support shareable deep links and six guided scientific discoveries",()=>{
