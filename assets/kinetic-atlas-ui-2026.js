@@ -24,14 +24,14 @@ function initialize(){
   '<div class="rx-atlas-scale"><span id="rx-atlas-min">Initial</span><output id="rx-atlas-output" for="rx-atlas-range">37%</output><span id="rx-atlas-max">Changed</span></div>'+
   '<div class="rx-atlas-actions"><button type="button" id="rx-atlas-prev">← Previous</button><button type="button" id="rx-atlas-play" aria-pressed="false">▶ Animate</button>'+
   '<button type="button" id="rx-atlas-next">Next →</button></div></div>'+
-  '<div class="rx-atlas-description"><span id="rx-atlas-category"></span><h3 id="rx-atlas-title"></h3><p id="rx-atlas-explanation"></p>'+
-  '<div class="rx-atlas-related"><a id="rx-atlas-source" href="/research.html">See the related work ↗</a><button id="rx-atlas-copy-link" type="button" aria-label="Copy a link to this scene">Copy scene link</button><output id="rx-atlas-copy-status" role="status" aria-live="polite"></output></div></div></div>'+
-  '<aside class="rx-atlas-sidebar"><div class="rx-atlas-sidebar-title"><strong id="rx-atlas-choose">Choose a movement</strong><span id="rx-atlas-total">30 / 30</span></div>'+
+  '</div><aside class="rx-atlas-sidebar"><div class="rx-atlas-description"><span id="rx-atlas-category"></span><h3 id="rx-atlas-title"></h3><p id="rx-atlas-explanation"></p>'+
+  '<div class="rx-atlas-related"><a id="rx-atlas-source" href="/research.html">See the related work ↗</a><button id="rx-atlas-copy-link" type="button" aria-label="Copy a link to this scene">Copy scene link</button><output id="rx-atlas-copy-status" role="status" aria-live="polite"></output></div></div>'+
+  '<div class="rx-atlas-sidebar-title"><strong id="rx-atlas-choose">Choose a movement</strong><span id="rx-atlas-total">30 / 30</span></div>'+
   '<label class="rx-atlas-search-label" for="rx-atlas-search" id="rx-atlas-search-caption">Search the collection</label>'+
   '<input type="search" class="rx-atlas-search" id="rx-atlas-search" autocomplete="off" placeholder="Search the 30 studies...">'+
   '<div id="rx-atlas-list" class="rx-atlas-list" role="group" aria-label="Choose a moving illustration"></div>'+
   '<button type="button" id="rx-atlas-surprise" class="rx-atlas-surprise">A different question ↗</button><button type="button" id="rx-atlas-guided" class="rx-atlas-guided">Follow six discoveries →</button></aside></div>'+
-  '<p class="rx-atlas-boundary" id="rx-atlas-boundary">The setting is normalized for illustration, not calibrated. Movements do not claim measured values, clinical effectiveness, or established experimental mechanisms. Animation is optional.</p>'+
+  '<p class="rx-atlas-boundary" id="rx-atlas-boundary">Interactive diagrams use normalized settings, not measured research data. Motion illustrates concepts; it does not establish experimental mechanisms or clinical outcomes.</p>'+
   '</div>';
  if(!existing)target.insertAdjacentElement(target.id==="research-workbench"?"afterend":"beforebegin",node);
  const q=id=>node.querySelector("#"+id), entries=data.items, groups=data.groups;
@@ -118,7 +118,7 @@ function initialize(){
    q("rx-atlas-prev").textContent=T("← Previous","→ السابق");
    q("rx-atlas-next").textContent=T("Next →","التالي ←");
    play.textContent=timer===null?T("▶ Animate","▶ حرّك"):T("■ Stop","■ إيقاف");
-   q("rx-atlas-boundary").textContent=T("The setting is normalized for illustration, not calibrated. Movements do not claim measured values, clinical effectiveness, or established experimental mechanisms. Animation is optional.","المقياس توضيحي وغير معاير. لا تنطوي الحركة على ادعاء بقيم مقاسة أو فعالية سريرية أو آلية مثبتة تجريبيًا. يمكن إيقاف الحركة.");
+   q("rx-atlas-boundary").textContent=T("Interactive diagrams use normalized settings, not measured research data. Motion illustrates concepts; it does not establish experimental mechanisms or clinical outcomes.","الرسوم التفاعلية تستخدم إعدادات توضيحية وليست بيانات بحثية مقاسة. تُظهر الحركة المفهوم ولا تثبت آلية تجريبية أو نتيجة سريرية.");
    draw();
    list.querySelectorAll("button[data-id]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.id===active)));
  }
