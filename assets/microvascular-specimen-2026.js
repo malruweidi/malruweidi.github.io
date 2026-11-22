@@ -84,7 +84,8 @@
   }
   document.addEventListener("visibilitychange",sync);
   reduced.addEventListener?.("change",sync);
-  window.addEventListener("pagehide",stop,{once:true});
+  window.addEventListener("pagehide",stop);
+  window.addEventListener("pageshow",sync);
   locate();
   sync();
 })();
