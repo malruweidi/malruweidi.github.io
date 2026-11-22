@@ -27,7 +27,7 @@ test("all thirty interactive scientific illustrations remain inside the dedicate
  assert.match(html,/src="[^"]*kinetic-atlas-v2-core\.js/);
  assert.match(html,/src="[^"]*kinetic-atlas-ui-2026\.js/);
  assert.match(atlas,/rx-atlas-canvas/);
- assert.match(atlas,/normalized for illustration/);
+ assert.match(atlas,/Interactive diagrams use normalized settings, not measured research data/);
 });
 test("catalogue counter distinguishes collection totals from carousel position",()=>{
  assert.match(archive,/collections/i);
