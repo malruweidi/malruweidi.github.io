@@ -1,3 +1,4 @@
+.rx-atlas-fallback{background:#17364f;color:#e9e6dc;padding:25px max(5%,22px);font:14px/1.8 "DM Sans",Arial,sans-serif;border-block:1px solid #50718a}.rx-atlas-fallback p{margin:0}.rx-atlas-fallback a{color:#f3d296;text-decoration:underline;text-underline-offset:3px}
 /* The Kinetic Atlas — a discrete, reversible editorial instrument cabinet. */
 .rx-atlas{--rx-a-paper:#f6f0e6;--rx-a-ink:#193852;--rx-a-gold:#e4ba79;--rx-a-mint:#a6e1cb;--rx-a-rule:#43637a;position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 92% -8%,#335873 0,transparent 52%),linear-gradient(147deg,#183750,#0c263e 90%);color:var(--rx-a-paper);padding:clamp(74px,8vw,122px) 0;border-top:1px solid #436078;border-bottom:1px solid #547187}
 .rx-atlas:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.2;background:repeating-linear-gradient(90deg,transparent 0,transparent 91px,#8db0c7 92px,transparent 93px);pointer-events:none}
