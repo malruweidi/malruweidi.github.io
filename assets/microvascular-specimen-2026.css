@@ -1,108 +1,100 @@
-/* RUWAIDIX / MICROVASCULAR SPECIMEN — one small hero object.
-   Illustrative microvascular erythrocyte transit; no invented flow rate.
-   Placement set by measurements of existing zebrafish and headline. */
-html[data-rx-page="home"] .rx-editorial-hero .wrap{position:relative}
-html[data-rx-page="home"] .rx-hero-grid{position:relative}
-html[data-rx-page="home"] main .rx-microvessel:not([data-placement]){visibility:hidden!important}
-html[data-rx-page="home"] main .rx-microvessel{
- width:166px!important;max-width:166px;min-height:0!important;height:auto;
- position:absolute;z-index:7;display:flex;flex-direction:column;align-items:center;
- gap:0;text-align:center;isolation:isolate;text-decoration:none!important;
- background:transparent!important;border:0!important;padding:0!important;margin:0!important;
- color:#f4e8d6!important;transition:filter .23s ease;outline-offset:5px;
- -webkit-tap-highlight-color:transparent;
+/* Compact hemodynamics specimen / portrait-anchored, 2026-11-23.
+   The vessel is a child of the original portrait figure, not the copy column.
+   Fluid motion is handled in SVG user coordinates by microvascular-specimen-2026.js. */
+html[data-rx-page="home"] main .rx-hero-portrait{position:relative;overflow:visible}
+html[data-rx-page="home"] main .rx-hero-portrait > .rx-microvessel{
+ position:absolute!important;
+ top:18px;left:-76px;right:auto;bottom:auto;
+ z-index:24;
+ width:208px!important;max-width:208px;min-width:0;
+ margin:0!important;padding:0!important;
+ display:flex!important;flex-direction:column;align-items:center;
+ text-decoration:none!important;
+ background:transparent!important;border:0!important;
+ border-radius:6px;box-sizing:border-box;
+ color:#1d3954!important;text-align:center;
+ cursor:pointer;-webkit-tap-highlight-color:transparent;
+ isolation:isolate;
 }
-html[data-rx-page="home"] main .rx-microvessel:hover{filter:brightness(1.12)}
-html[data-rx-page="home"] main .rx-microvessel:focus-visible{
- outline:2px solid #f0dbb2!important;border-radius:5px
+html[data-rx-page="home"] main .rx-hero-portrait > .rx-microvessel:focus-visible{
+ outline:3px solid #5182ac!important;outline-offset:6px
 }
 html[data-rx-page="home"] main .rx-microvessel svg{
- display:block;width:166px;height:auto;max-width:100%;
- overflow:visible;pointer-events:none;filter:drop-shadow(0 6px 5px #030f1e77)
+ width:100%;height:auto;display:block;overflow:visible;
+ filter:drop-shadow(0 7px 6px rgba(18,29,48,.31));
+ transition:filter .28s ease,transform .32s cubic-bezier(.2,.75,.3,1);
+ transform-origin:center;
+}
+html[data-rx-page="home"] main .rx-microvessel:is(:hover,:focus-visible) svg{
+ filter:drop-shadow(0 10px 11px rgba(43,22,43,.39)) saturate(1.15);
+ transform:translateY(-4px) rotate(-2deg) scale(1.035)
 }
 html[data-rx-page="home"] main .rx-microvessel-label{
- display:block;margin-top:-7px;font:600 11px/1.35 var(--room-sans,"DM Sans",Arial,sans-serif);
- letter-spacing:.01em;color:#f5ecd9;white-space:nowrap;
- text-shadow:0 2px 5px #061a2fa0;transition:color .2s
+ display:inline-flex;align-items:center;justify-content:center;
+ font:700 11px/1.35 "DM Sans",Arial,sans-serif!important;
+ letter-spacing:.015em;color:#1c3f58!important;
+ white-space:nowrap;
+ background:#fbf6edee;border:1px solid #e0d5c5;
+ padding:4px 11px;margin:-6px 0 0;
+ border-radius:24px;box-shadow:0 2px 7px #172c4730;
+ transition:color .2s ease,background .2s ease;
 }
-html[data-rx-page="home"] main .rx-microvessel:hover .rx-microvessel-label{
- color:#b6e0e9;text-decoration:underline;text-underline-offset:3px
+html[data-rx-page="home"] main .rx-microvessel:is(:hover,:focus-visible) .rx-microvessel-label{
+ color:#145576!important;background:#fffdf7;
 }
-html[data-rx-page="home"] .rx-microvessel-label [lang="ar"]{display:none}
-html[lang="ar"][data-rx-page="home"] .rx-microvessel-label [lang="en"]{display:none}
-html[lang="ar"][data-rx-page="home"] .rx-microvessel-label [lang="ar"]{display:inline}
-html[data-rx-page="home"] .rx-vessel-tissue{
- animation:rx-microvascular-wall 6.4s ease-in-out infinite;transform-origin:50% 50%;
+html[data-rx-page="home"] main .rx-microvessel-hint{
+ position:absolute;top:100%;left:50%;transform:translate(-50%,-5px);
+ opacity:0;pointer-events:none;
+ white-space:nowrap;color:#f8eee0;background:#163850;
+ font:600 9px/1.4 "DM Sans",Arial,sans-serif;
+ letter-spacing:.02em;border-radius:4px;padding:5px 8px;
+ box-shadow:0 5px 14px #15283f55;
+ transition:opacity .22s ease,transform .22s ease;
 }
-html[data-rx-page="home"] .rx-vessel-flow-line{
- stroke-dasharray:3 10;animation:rx-vessel-tracers 3.2s linear infinite
+html[data-rx-page="home"] main .rx-microvessel:is(:hover,:focus-visible) .rx-microvessel-hint{
+ opacity:1;transform:translate(-50%,5px)
 }
-html[data-rx-page="home"] .rx-erythrocyte{
- /* Erythrocytes translate along a centreline through a capillary-sized lumen.
-    Different delays distribute cells, not measured velocities. */
- offset-path:path("M -18 72 C 56 39 134 81 280 30");
- offset-distance:var(--start,20%);
- offset-rotate:auto;
- animation:rx-flow-transit var(--travel-time,6.9s) linear infinite;
- animation-delay:var(--delay,0s);
- transform-origin:center;
- will-change:offset-distance;
+html[data-rx-page="home"] .rx-microvessel :is(.rx-vessel-flow-line){
+ animation:rx-microflow-lines 3.6s linear infinite;
 }
-html[data-rx-page="home"] .rx-erythrocyte.rx-nearwall{
- offset-path:path("M -18 77 C 56 44 134 86 280 35");
- opacity:.75;
+html[data-rx-page="home"] .rx-microvessel[data-accelerated="true"] .rx-vessel-flow-line{
+ animation-duration:1.65s;
 }
-html[data-rx-page="home"] .rx-erythrocyte.rx-core{opacity:.97}
-html[data-rx-page="home"] .rx-erythrocyte .rx-cell-core{
- filter:drop-shadow(0 0 1.3px #e78e8f78)
+html[data-rx-page="home"] .rx-microvessel .rx-vessel-tissue{
+ animation:rx-microflow-pulse 5.6s ease-in-out infinite;
 }
-@keyframes rx-flow-transit{0%{offset-distance:0%}100%{offset-distance:100%}}
-@keyframes rx-vessel-tracers{to{stroke-dashoffset:-26}}
-@keyframes rx-microvascular-wall{0%,100%{opacity:.90}50%{opacity:1}}
-html[data-rx-page="home"] main .rx-microvessel[data-placement="inline"]{
- position:relative!important;inset:auto!important;
- display:inline-flex!important;max-width:166px;margin:14px 0 6px!important;
- background:transparent!important;
+@keyframes rx-microflow-lines{to{stroke-dashoffset:-48}}
+@keyframes rx-microflow-pulse{0%,100%{opacity:.9}50%{opacity:1}}
+html[data-rx-page="home"] .rx-microvessel [lang="ar"],
+html[lang="ar"][data-rx-page="home"] .rx-microvessel [lang="en"]{display:none!important}
+html[lang="ar"][data-rx-page="home"] .rx-microvessel [lang="ar"]{display:inline!important}
+html[lang="ar"][data-rx-page="home"] .rx-microvessel-label{
+ font-family:"Amiri","Noto Naskh Arabic",sans-serif!important;
+ font-size:14px!important
 }
-html[data-rx-page="home"] main .rx-microvessel[data-placement="inline"] .rx-microvessel-label{
- color:#203e5b!important;text-shadow:none;
-}
-html[data-rx-page="home"] main .rx-microvessel[data-placement="inline"]:hover .rx-microvessel-label{
- color:#456b8e!important
-}
-html[data-rx-page="home"] main .rx-microvessel[data-placement="inline"] svg{
- filter:drop-shadow(0 5px 6px #142c4050);
-}
-/* Keep overlay artwork off dense tablet layouts. It becomes an inline
-   content item rather than covering any heading, CTA or portrait. */
-@media(min-width:1200px){
- html[data-rx-page="home"] main .rx-microvessel[data-placement="floating"]{pointer-events:auto}
-}
+/* At compact widths the specimen stays physically attached to the portrait,
+   inside its top-left visual margin, never inserted among the text and CTAs. */
 @media(max-width:1199px){
- html[data-rx-page="home"] main .rx-microvessel{position:relative!important;inset:auto!important}
-}
-@media(max-width:900px){
- html[data-rx-page="home"] main .rx-microvessel[data-placement="inline"]{
-  width:150px!important;max-width:150px;margin:8px 0 12px!important
+ html[data-rx-page="home"] main .rx-hero-portrait > .rx-microvessel{
+  left:8px;top:6px;width:179px!important;max-width:179px;
  }
- html[data-rx-page="home"] main .rx-microvessel svg{width:150px}
+}
+@media(max-width:760px){
+ html[data-rx-page="home"] main .rx-hero-portrait > .rx-microvessel{
+  left:12px;top:10px;width:164px!important;max-width:164px
+ }
+ html[data-rx-page="home"] main .rx-microvessel-label{font-size:10px!important;padding:3px 8px}
+}
+@media(max-width:480px){
+ html[data-rx-page="home"] main .rx-hero-portrait > .rx-microvessel{
+  left:3px;top:8px;width:132px!important;max-width:132px
+ }
+ html[data-rx-page="home"] main .rx-microvessel-label{font-size:9px!important;letter-spacing:0}
+ html[data-rx-page="home"] main .rx-microvessel-hint{display:none}
 }
 @media(prefers-reduced-motion:reduce){
  html[data-rx-page="home"] .rx-microvessel *{animation:none!important;transition:none!important}
- html[data-rx-page="home"] .rx-erythrocyte{will-change:auto}
+ html[data-rx-page="home"] main .rx-microvessel:is(:hover,:focus-visible) svg{transform:none!important}
+ html[data-rx-page="home"] main .rx-microvessel-hint{display:none!important}
 }
-html[data-rx-page="home"] .rx-microvessel[data-paused="true"] :is(.rx-erythrocyte,.rx-vessel-flow-line,.rx-vessel-tissue){
- animation-play-state:paused!important
-}
-/* A readable static vessel on browsers without CSS motion paths. */
-@supports not (offset-path:path("M 0 0 L 1 1")){
- html[data-rx-page="home"] .rx-erythrocyte{animation:none!important;transform:translate(45px,61px)}
- html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(2){transform:translate(72px,59px)}
- html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(3){transform:translate(100px,62px)}
- html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(4){transform:translate(128px,63px)}
- html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(5){transform:translate(153px,61px)}
- html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(6){transform:translate(176px,56px)}
- html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(7){transform:translate(204px,48px)}
- html[data-rx-page="home"] .rx-erythrocyte:nth-of-type(8){transform:translate(230px,38px)}
-}
-@media print{html[data-rx-page="home"] main .rx-microvessel{display:none!important}}
+@media print{html[data-rx-page="home"] main .rx-hero-portrait > .rx-microvessel{display:none!important}}
