@@ -48,3 +48,10 @@ test("Arabic and Latin names use automatic direction and mobile decoration canno
  assert.match(css,/\.rx-atlas-detail::before\s*\{\s*display:none;/s);
  assert.match(css,/\.rx-atlas-home \.rx-atlas-detail\s*\{[^}]*overflow:hidden/s);
 });
+
+
+test("proportional mobile brand caption fits without mono-font clipping",()=>{
+ const css=file("assets/mobile-layout-integrity-2026.css");
+ assert.match(css,/\.header \.brandline\s*\{[^}]*font-family:"DM Sans",Arial,sans-serif!important;/s);
+ assert.match(css,/@media\(max-width:340px\)/);
+});
