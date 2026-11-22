@@ -26,12 +26,7 @@
     let current = null;
     const render = entry => {
       const p = Math.max(0, Math.min(1, entry.value));
-      const pattern = "rx-card-grid-" + entry.index;
-      const figure = engine.draw(entry.id, p)
-        .replaceAll('id="rx-grid"', 'id="' + pattern + '"')
-        .replaceAll("url(#rx-grid)", "url(#" + pattern + ")")
-        .replaceAll('id="rx-atlas-focus"', 'id="rx-card-focus-' + entry.index + '"')
-        .replaceAll("url(#rx-atlas-focus)", "url(#rx-card-focus-" + entry.index + ")");
+      const figure = engine.draw(entry.id, p, {namespace:"mini-"+entry.index, locale:document.documentElement.lang});
       entry.canvas.innerHTML = figure;
       entry.canvas.firstElementChild?.setAttribute("aria-hidden", "true");
     };
