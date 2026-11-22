@@ -16,16 +16,18 @@ test("single small vascular specimen within original homepage hero, not a new ga
  assert.match(html,/microvascular-specimen-2026\.js/);
  assert.match(html,/href="\/research\/high-speed-zebrafish-imaging\.html"/);
 });
-test("biologically defensible microvessel",()=>{
- assert.match(html,/Microvascular flow/);
- assert.match(html,/Conceptual illustration/);
- assert.match(html,/clipPath id="rx-microvessel-lumen"/);
- assert.match(html,/class="rx-erythrocyte/);
- assert.match(html,/rx-vessel-inner/);
+test("biologically defensible zebrafish microvessel",()=>{
+ const specimen=html.slice(html.indexOf('<a class="rx-microvessel"'),html.indexOf('<a class="specimen-swim"'));
+ assert.match(specimen,/Zebrafish vessel flow/);
+ assert.match(specimen,/Conceptual illustration/);
+ assert.match(specimen,/clipPath id="rx-microvessel-lumen"/);
+ assert.match(specimen,/class="rx-erythrocyte/);
+ assert.equal((specimen.match(/class="rx-erythrocyte-nucleus"/g)||[]).length,8);
+ assert.match(specimen,/rx-vessel-inner/);
  assert.match(css,/rx-flow-transit/);
  assert.match(css,/--travel-time/);
  assert.match(css,/prefers-reduced-motion:\s*reduce/);
- assert.doesNotMatch(html,/V.max|τ_w|mmHg|1-3 Pa/);
+ assert.doesNotMatch(specimen,/V.max|τ_w|mmHg|1-3 Pa/);
 });
 test("smart hero placement avoids headline and portrait collisions",()=>{
  assert.match(js,/getBoundingClientRect\(\)/);
