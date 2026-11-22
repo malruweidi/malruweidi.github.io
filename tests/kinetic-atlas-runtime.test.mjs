@@ -107,8 +107,8 @@ test("guided tour, next scene, range, copy link, empty search and language remai
 test("chapter navigation preserves the nine archival photographs rather than injecting kinetic overlays",()=>{
  const home=read("index.html");
  const archive=read("assets/archive-scenes.js");
- assert.doesNotMatch(home,/kinetic-chapter-cards-2026\\.(?:js|css)/);
+ assert.doesNotMatch(home,/kinetic-chapter-cards-2026\.(?:js|css)/);
  assert.match(archive,/className = "rx-cover-art"/);
- assert.match(archive,/a\\.querySelector\\("\\.rx26-card-top"\\)\\.after\\(frame\\)/);
+ assert.match(archive,/a\.querySelector\("\.rx26-card-top"\)\.after\(frame\)/);
  assert.equal(home.match(/class="rx26-portal-card"/g)?.length,9);
 });
