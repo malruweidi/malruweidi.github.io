@@ -19,7 +19,7 @@ test("chapter cards contain actual archival photographs, not injected decorative
      slug+" chapter link missing");
  assert.doesNotMatch(html,/src="[^"]*kinetic-chapter-cards-2026\.js/);
  assert.doesNotMatch(html,/href="[^"]*kinetic-chapter-cards-2026\.css/);
- assert.doesNotMatch(archive,/rx-card-kinetic|\\.appendChild\\(.*\\.rx26-card-top/);
+ assert.doesNotMatch(archive,/rx-card-kinetic/);
  assert.match(archive,/className = "rx-cover-art"/);
  assert.match(archive,/a\.querySelector\("\.rx26-card-top"\)\.after\(frame\)/);
 });
