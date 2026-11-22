@@ -30,12 +30,14 @@ function initialize(){
   '<label class="rx-atlas-search-label" for="rx-atlas-search" id="rx-atlas-search-caption">Search the collection</label>'+
   '<input type="search" class="rx-atlas-search" id="rx-atlas-search" autocomplete="off" placeholder="Search the 30 studies...">'+
   '<div id="rx-atlas-list" class="rx-atlas-list" role="group" aria-label="Choose a moving illustration"></div>'+
-  '<button type="button" id="rx-atlas-surprise" class="rx-atlas-surprise">A different question ↗</button></aside></div>'+
+  '<button type="button" id="rx-atlas-surprise" class="rx-atlas-surprise">A different question ↗</button><button type="button" id="rx-atlas-guided" class="rx-atlas-guided">Follow six discoveries →</button></aside></div>'+
   '<p class="rx-atlas-boundary" id="rx-atlas-boundary">The setting is normalized for illustration, not calibrated. Movements do not claim measured values, clinical effectiveness, or established experimental mechanisms. Animation is optional.</p>'+
   '</div>';
  if(!existing)target.insertAdjacentElement(target.id==="research-workbench"?"afterend":"beforebegin",node);
  const q=id=>node.querySelector("#"+id), entries=data.items, groups=data.groups;
  let active=entries[0][0], group="all", search="", timer=null, direction=1;
+ const guided=["indicator","bilayer","meniscus","zebrafish","focus","manuscript"];
+ let guidedIndex=-1;
  const shareUrl=(id)=>{const u=new URL(window.location.href);u.searchParams.set("atlas",id);u.hash="rx-kinetic-atlas";return u.toString();};
  const requestedScene=()=>{try{const v=new URL(window.location.href).searchParams.get("atlas");return entries.some(e=>e[0]===v)?v:null;}catch{return null;}};
  active=requestedScene()||active;
@@ -112,6 +114,7 @@ function initialize(){
    q("rx-atlas-search-caption").textContent=T("Search the collection","ابحث في المجموعة");
    q("rx-atlas-search").placeholder=T("Search the 30 studies...","ابحث في المشاهد الثلاثين...");
    q("rx-atlas-surprise").textContent=T("A different question ↗","سؤال آخر ↗");
+   q("rx-atlas-guided").textContent=guidedIndex<0?T("Follow six discoveries →","اتبع ست محطات علمية ←"):guidedIndex>=guided.length-1?T("Restart the six-stop tour ↻","أعد الجولة ذات المحطات الست ↻"):T("Guided route · Stop "+(guidedIndex+1)+"/6 · Next →","الجولة · المحطة "+(guidedIndex+1)+"/٦ · التالي ←");
    q("rx-atlas-prev").textContent=T("← Previous","→ السابق");
    q("rx-atlas-next").textContent=T("Next →","التالي ←");
    play.textContent=timer===null?T("▶ Animate","▶ حرّك"):T("■ Stop","■ إيقاف");
@@ -160,6 +163,11 @@ function initialize(){
       status.textContent=T("Copy from the address bar instead.","انسخ الرابط من شريط العنوان.");
       try{window.history.replaceState(window.history.state,"",url);}catch{}
    });
+ });
+ q("rx-atlas-guided").addEventListener("click",()=>{
+   guidedIndex=(guidedIndex+1)%guided.length;
+   group="all";search="";q("rx-atlas-search").value="";
+   renderCategories();renderList();choose(guided[guidedIndex]);
  });
  q("rx-atlas-surprise").addEventListener("click",()=>{
    const vis=matches();if(!vis.length)return;
