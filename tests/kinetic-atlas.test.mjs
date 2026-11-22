@@ -85,3 +85,43 @@ test("accessibility, consent for motion and scientific boundaries are explicit",
   for(const source of [data,svg,controller,css])
     assert.doesNotMatch(source,/agarose|paraffin|أجاروز|بارافين/i);
 });
+
+
+test("nine chapter cards acquire distinct, topic-specific visual specimens", () => {
+  const mini = read("assets/kinetic-chapter-cards-2026.js");
+  const miniCss = read("assets/kinetic-chapter-cards-2026.css");
+  const pairPattern = /"(\/[^"]+\.html)": "([a-z0-9-]+)"/g;
+  const pairs = Array.from(mini.matchAll(pairPattern));
+  assert.equal(pairs.length,9);
+  assert.equal(new Set(pairs.map(pair => pair[1])).size,9);
+  assert.equal(new Set(pairs.map(pair => pair[2])).size,9);
+  for(const [,page,scene] of pairs){
+    assert.ok(items.some(item=>item[0]===scene),scene);
+    assert.ok(html.includes('class="rx26-portal-card" href="'+page+'"'),page);
+  }
+  assert.match(mini,/prefers-reduced-motion/);
+  assert.match(mini,/pointerenter/);
+  assert.match(mini,/pointerleave/);
+  assert.match(mini,/focusin/);
+  assert.match(mini,/visibilitychange/);
+  assert.match(mini,/rx-card-focus-/);
+  assert.match(miniCss,/@media\(prefers-reduced-motion:reduce\)/);
+  assert.ok(html.includes("kinetic-chapter-cards-2026.js"));
+  assert.ok(html.includes("kinetic-chapter-cards-2026.css"));
+});
+
+test("all scenes support shareable deep links and six guided scientific discoveries",()=>{
+  for(const scene of ["indicator","bilayer","meniscus","zebrafish","focus","manuscript"])
+    assert.ok(items.some(e=>e[0]===scene),"Missing guided scene "+scene);
+  assert.match(controller,/requestedScene\(\)/);
+  assert.match(controller,/new URL\(window\.location\.href\)/);
+  assert.match(controller,/searchParams\.set\("atlas",id\)/);
+  assert.match(controller,/window\.history\.replaceState/);
+  assert.match(controller,/navigator\.clipboard\.writeText/);
+  assert.match(controller,/rx-atlas-guided/);
+  assert.match(controller,/rx-atlas-copy-status/);
+  assert.match(html,/id="rx-kinetic-atlas"/);
+  assert.match(html,/href="#rx-kinetic-atlas"/);
+  assert.match(css,/\.rx-atlas-guided\{/);
+  assert.match(css,/\.rx-atlas-related\{/);
+});
