@@ -3,6 +3,7 @@
    Placement set by measurements of existing zebrafish and headline. */
 html[data-rx-page="home"] .rx-editorial-hero .wrap{position:relative}
 html[data-rx-page="home"] .rx-hero-grid{position:relative}
+html[data-rx-page="home"] main .rx-microvessel:not([data-placement]){visibility:hidden!important}
 html[data-rx-page="home"] main .rx-microvessel{
  width:166px!important;max-width:166px;min-height:0!important;height:auto;
  position:absolute;z-index:7;display:flex;flex-direction:column;align-items:center;
@@ -74,6 +75,9 @@ html[data-rx-page="home"] main .rx-microvessel[data-placement="inline"] svg{
 }
 /* Keep overlay artwork off dense tablet layouts. It becomes an inline
    content item rather than covering any heading, CTA or portrait. */
+@media(min-width:1200px){
+ html[data-rx-page="home"] main .rx-microvessel[data-placement="floating"]{pointer-events:auto}
+}
 @media(max-width:1199px){
  html[data-rx-page="home"] main .rx-microvessel{position:relative!important;inset:auto!important}
 }
