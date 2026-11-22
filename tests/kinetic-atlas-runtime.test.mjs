@@ -82,17 +82,17 @@ function atlasFixture(href,reduce=false){
 test("the atlas mounts and an incoming share URL opens its exact scene",()=>{
   const a=atlasFixture("https://malruweidi.github.io/?atlas=focus#rx-kinetic-atlas");
   assert.equal(a.document.nodes["rx-kinetic-atlas"].dataset.rxAtlasReady,"true");
-  assert.equal(a.el("rx-atlas-title").textContent,"A focal plane");
+  assert.equal(a.el("rx-kinetic-scene-title").textContent,"A focal plane");
   assert.equal(a.el("rx-atlas-list").children.length,30);
   assert.match(a.el("rx-atlas-canvas").innerHTML,/^<svg /);
 });
 test("guided tour, next scene, range, copy link, empty search and language remain operable",async()=>{
   const a=atlasFixture("https://malruweidi.github.io/#rx-kinetic-atlas");
   a.el("rx-atlas-guided").fire("click");
-  assert.equal(a.el("rx-atlas-title").textContent,"The changing probe");
+  assert.equal(a.el("rx-kinetic-scene-title").textContent,"The changing probe");
   assert.match(a.window.location.href,/atlas=indicator/);
   a.el("rx-atlas-next").fire("click");
-  assert.equal(a.el("rx-atlas-title").textContent,"Excitation and emission");
+  assert.equal(a.el("rx-kinetic-scene-title").textContent,"Excitation and emission");
   a.el("rx-atlas-range").value="80";
   a.el("rx-atlas-range").fire("input");
   assert.match(a.el("rx-atlas-output").textContent,/80/);
