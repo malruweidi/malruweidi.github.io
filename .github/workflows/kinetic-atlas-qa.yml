@@ -39,8 +39,14 @@ jobs:
       - name: Check the syntax of each interactive module
         run: |
           node --check assets/kinetic-atlas-data-2026.js
-          node --check assets/kinetic-atlas-draw-2026.js
+          node --check assets/kinetic-atlas-v2-core.js
+          node --check assets/kinetic-atlas-v2-chemistry.js
+          node --check assets/kinetic-atlas-v2-carriers.js
+          node --check assets/kinetic-atlas-v2-lung.js
+          node --check assets/kinetic-atlas-v2-living.js
+          node --check assets/kinetic-atlas-v2-measurement.js
+          node --check assets/kinetic-atlas-v2-history.js
           node --check assets/kinetic-atlas-ui-2026.js
           node --check assets/kinetic-chapter-cards-2026.js
       - name: Run scientific provenance, accessibility and interaction tests
-        run: node --test tests/kinetic-atlas.test.mjs tests/kinetic-atlas-runtime.test.mjs
+        run: node --test tests/kinetic-atlas.test.mjs tests/kinetic-atlas-runtime.test.mjs tests/kinetic-atlas-visual-quality.test.mjs
