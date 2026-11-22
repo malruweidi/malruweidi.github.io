@@ -31,5 +31,6 @@ test("all thirty interactive scientific illustrations remain inside the dedicate
 });
 test("catalogue counter distinguishes collection totals from carousel position",()=>{
  assert.match(archive,/collections/i);
+ assert.match(archive,/status\.hidden\s*=\s*active\s*===\s*"all"/);
  assert.doesNotMatch(archive,/number\.format\(count\)\+" of "\+number\.format\(cards\.length\)/);
 });
