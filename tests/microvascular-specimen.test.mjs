@@ -14,7 +14,7 @@ test("single small vascular specimen within original homepage hero, not a new ga
  assert.ok(!html.includes("rx-object-cabinet"),"old gallery must not return");
  assert.match(html,/microvascular-specimen-2026\.css/);
  assert.match(html,/microvascular-specimen-2026\.js/);
- assert.match(html,/href="\/research\/high-speed-zebrafish-imaging\.html"/);
+ assert.match(html,/href="\/publication-cinema\.html#film-zebrafish-hemodynamics"/);
 });
 test("biologically defensible zebrafish microvessel",()=>{
  const specimen=html.slice(html.indexOf('<a class="rx-microvessel"'),html.indexOf('<a class="specimen-swim"'));
