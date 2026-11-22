@@ -36,3 +36,10 @@ test("short visible scientific caveat remains readable and localizable",()=>{
   assert.match(css,/\.rx-atlas \.rx-atlas-boundary\s*\{[^}]*background:\s*#ebe9e3/s);
   assert.doesNotMatch(html,/kinetic-chapter-cards-2026\.js/);
 });
+
+
+test("interactive atlas title has its own ID, independent of other homepage features",()=>{
+ assert.match(source,/id="rx-kinetic-scene-title"/);
+ assert.match(source,/q\("rx-kinetic-scene-title"\)/);
+ assert.doesNotMatch(source,/id="rx-atlas-title"/);
+});
