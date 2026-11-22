@@ -55,7 +55,13 @@ test("homepage preserves existing content and loads atlas dependencies in order"
   const imports=[
     "kinetic-atlas-2026.css",
     "kinetic-atlas-data-2026.js",
-    "kinetic-atlas-draw-2026.js",
+    "kinetic-atlas-v2-core.js",
+    "kinetic-atlas-v2-chemistry.js",
+    "kinetic-atlas-v2-carriers.js",
+    "kinetic-atlas-v2-lung.js",
+    "kinetic-atlas-v2-living.js",
+    "kinetic-atlas-v2-measurement.js",
+    "kinetic-atlas-v2-history.js",
     "kinetic-atlas-ui-2026.js"
   ];
   let last=-1;
