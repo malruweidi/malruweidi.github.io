@@ -91,6 +91,17 @@ function initialize(){
      list.append(b);
    });
  }
+ function revealActiveChoice(){
+   const selected=Array.from(list.querySelectorAll("button[data-id]")).find(b=>b.dataset.id===active);
+   if(!selected||typeof list.getBoundingClientRect!=="function"||typeof selected.getBoundingClientRect!=="function")return;
+   const viewport=list.getBoundingClientRect(),item=selected.getBoundingClientRect(),inset=6;
+   // Scroll the choice list ONLY. scrollIntoView() would shift the entire page.
+   if(item.top<viewport.top+inset){
+     list.scrollTop+=item.top-viewport.top-inset-4;
+   }else if(item.bottom>viewport.bottom-inset){
+     list.scrollTop+=item.bottom-viewport.bottom+inset+4;
+   }
+ }
  function renderCurrent(){
    const e=find(active);if(!e)return;
    node.dir=isAr()?"rtl":"ltr";
@@ -121,6 +132,7 @@ function initialize(){
    q("rx-atlas-boundary").textContent=T("Interactive diagrams use normalized settings, not measured research data. Motion illustrates concepts; it does not establish experimental mechanisms or clinical outcomes.","الرسوم التفاعلية تستخدم إعدادات توضيحية وليست بيانات بحثية مقاسة. تُظهر الحركة المفهوم ولا تثبت آلية تجريبية أو نتيجة سريرية.");
    draw();
    list.querySelectorAll("button[data-id]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.id===active)));
+   revealActiveChoice();
  }
  function choose(id){if(!find(id))return;stop();active=id;range.value="37";renderCurrent();
    try{window.history.replaceState(window.history.state,"",shareUrl(id));}catch{ /* URLs stay optional if history is restricted. */ }
