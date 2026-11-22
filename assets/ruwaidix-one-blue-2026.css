@@ -610,3 +610,21 @@ main > .rx-reading-spread .rx-reading-pair {gap:clamp(14px,2vw,28px);}
 html[data-rx-page="stories"] main .stories-source.rx-source-fold > summary {color:#2d507d!important}
 html[data-rx-page="stories"] main #rx26-festival-portrait > .rx26-eyebrow,
 html[data-rx-page="stories"] main #rx26-acs-2019-history > .rx26-eyebrow {color:#2d507d!important}
+
+/* Chapter catalogue: never float an orphan “9 of 9” counter above the first card.
+   The count becomes visible only while a category filter is active. */
+#rx26-portal .rx-cover-count[hidden]{display:none!important}
+@media(max-width:650px){
+ #rx26-portal .rx-cover-controls{align-items:center}
+ #rx26-portal .rx-cover-count:not([hidden]){
+   display:block;
+   flex:1 0 100%;
+   width:100%;
+   margin:6px 0 0;
+   padding:4px 0;
+   text-align:start;
+   font:500 11px/1.6 "DM Sans",Arial,sans-serif;
+   letter-spacing:.015em;
+   color:#485d77;
+ }
+}
