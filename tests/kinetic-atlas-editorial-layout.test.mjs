@@ -44,3 +44,11 @@ test("interactive atlas title has its own ID, independent of other homepage feat
  assert.match(source,/q\("rx-kinetic-scene-title"\)/);
  assert.doesNotMatch(source,/id="rx-atlas-title"/);
 });
+
+
+test("selected atlas scene is revealed inside its own scrollable list",()=>{
+ assert.match(source,/function revealActiveChoice\(\)/);
+ assert.match(source,/list\.scrollTop/);
+ assert.match(source,/revealActiveChoice\(\)/);
+ assert.doesNotMatch(source,/selected\.scrollIntoView\(/);
+});
