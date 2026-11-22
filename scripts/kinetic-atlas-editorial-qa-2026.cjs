@@ -34,14 +34,14 @@ const overlap=(a,b)=>Math.min(a.right,b.right)-Math.max(a.left,b.left)>2&&Math.m
           controller:rect(".rx-atlas-controllers"),canvas:rect(".rx-atlas-canvas"),
           chooser:rect(".rx-atlas-sidebar-title"),boundary:rect(".rx-atlas-boundary"),
           source:rect("#rx-atlas-source"),copy:rect("#rx-atlas-copy-link"),
-          heading:rect("#rx-atlas-title"),
+          heading:rect("#rx-kinetic-scene-title"),
           list:rect("#rx-atlas-list"),
           footerText:q("#rx-atlas-boundary").innerText,
           descriptionText:description.innerText,
           bg:computed.backgroundColor,decoration:getComputedStyle(document.getElementById("rx-kinetic-atlas"),"::before").display,
           horizontalOverflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2,
           sceneId:q(".rx-atlas-canvas svg")?.getAttribute("aria-label"),
-          title:q("#rx-atlas-title").textContent,
+          title:q("#rx-kinetic-scene-title").textContent,
           actionHeight:[...q(".rx-atlas-actions").querySelectorAll("button")].map(x=>x.getBoundingClientRect().height),
           inputHeight:canvas.getBoundingClientRect().height,
           selectedText:window.getSelection()?.toString()||""
@@ -70,12 +70,12 @@ const overlap=(a,b)=>Math.min(a.right,b.right)-Math.max(a.left,b.left)>2&&Math.m
        const value=await page.locator("#rx-atlas-output").innerText();
        if(!value.includes("79"))fail("Scene slider is not interactive");
        await page.locator("#rx-atlas-next").click();
-       const next=await page.locator("#rx-atlas-title").innerText();
+       const next=await page.locator("#rx-kinetic-scene-title").innerText();
        if(next==="Opening a folio")fail("Next did not switch scene");
        if(width===390){
          await page.evaluate(()=>document.documentElement.setAttribute("lang","ar"));
          await page.waitForFunction(()=>document.querySelector("#rx-kinetic-atlas")?.dir==="rtl",null,{timeout:8000});
-         const arabic=await page.locator("#rx-atlas-title").innerText();
+         const arabic=await page.locator("#rx-kinetic-scene-title").innerText();
          if(!/[\u0600-\u06ff]/.test(arabic))fail("Arabic title not rendered");
          await page.locator("#rx-kinetic-atlas").screenshot({path:path.join(output,"kinetic-atlas-v3-390-ar.png"),animations:"disabled"});
        }
