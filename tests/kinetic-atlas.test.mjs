@@ -87,7 +87,7 @@ test("accessibility, consent for motion and scientific boundaries are explicit",
   assert.match(controller,/prefers-reduced-motion/);
   assert.match(controller,/MutationObserver/);
   assert.match(controller,/aria-label/);
-  assert.match(controller,/normalized for illustration/);
+  assert.match(controller,/Interactive diagrams use normalized settings, not measured research data/);
   assert.match(css,/prefers-reduced-motion/);
   assert.match(css,/@media\(max-width:560px\)/);
   for(const source of [data,svg,controller,css])
