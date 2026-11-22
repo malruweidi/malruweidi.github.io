@@ -23,6 +23,9 @@ function assertHomepagePreserved(original, current) {
     .replace(/<details class="family-drawer" id="family-album">[\s\S]*?<\/details>/, "")
     .replace('<a href="/leadership.html#acs-recognition">Watch the ACS recognition clip ↗</a>', "")
     .replace(/<a class="specimen-swim"[^>]*>[\s\S]*?<\/a>/, "")
+    // The new portrait-anchored haemodynamics illustration is additive,
+    // and independently tested for exact placement, erythrocytes and URL.
+    .replace(/<a class="rx-microvessel"(?=\s)[\s\S]*?<\/a>/, "")
     .replace(/<summary class="album-summary"><span class="album-title">([^<]+)<\/span>[\s\S]*?<\/summary>/, "<summary>$1</summary>");
   // The optional gallery retains the original four source cards and their
   // links, but no longer floods the landing page with a second full carousel.
