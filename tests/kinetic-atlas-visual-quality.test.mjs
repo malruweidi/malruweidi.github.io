@@ -8,7 +8,7 @@ const dir=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const read=p=>readFileSync(join(dir,p),"utf8");
 const context={};
 runInNewContext(read("assets/kinetic-atlas-data-2026.js"),context);
-runInNewContext(read("assets/kinetic-atlas-draw-2026.js"),context);
+for(const file of ["assets/kinetic-atlas-v2-core.js","assets/kinetic-atlas-v2-chemistry.js","assets/kinetic-atlas-v2-carriers.js","assets/kinetic-atlas-v2-lung.js","assets/kinetic-atlas-v2-living.js","assets/kinetic-atlas-v2-measurement.js","assets/kinetic-atlas-v2-history.js"])runInNewContext(read(file),context);
 const data=context.RuwaidixAtlasData, render=context.RuwaidixAtlasDraw.draw;
 test("all thirty illustrations receive a complete premium SVG scene",()=>{
   assert.equal(data.items.length,30);
@@ -53,5 +53,5 @@ test("miniature previews and full-screen panel share the polished engine",()=>{
   const ui=read("assets/kinetic-atlas-ui-2026.js");
   assert.match(mini,/namespace:\s*"mini-"/);
   assert.match(ui,/namespace:\s*"atlas-main"/);
-  assert.match(read("index.html"),/kinetic-atlas-draw-2026.js/);
+  for(const file of ["assets/kinetic-atlas-v2-core.js","assets/kinetic-atlas-v2-chemistry.js","assets/kinetic-atlas-v2-carriers.js","assets/kinetic-atlas-v2-lung.js","assets/kinetic-atlas-v2-living.js","assets/kinetic-atlas-v2-measurement.js","assets/kinetic-atlas-v2-history.js"])assert.ok(read("index.html").includes(file),"Missing V2 module "+file);
 });
