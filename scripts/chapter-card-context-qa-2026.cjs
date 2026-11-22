@@ -44,8 +44,26 @@ const chapters=["research","publications","films","stories","illness-and-evidenc
     if(!result.paths.every((x,i)=>x===chapters[i]+".html"))fail("Chapter destinations changed: "+result.paths.join(", "));
     if(result.statuses[0]?.text!=="9 collections"||result.statuses[0]?.hidden!==true)fail("All-chapters status should be quietly hidden: "+JSON.stringify(result.statuses));
     if(result.overflow)fail("Horizontal overflow");
-    for(const pair of result.labelVsPhoto)
-      if(pair.label.bottom>pair.photo.top+2)fail("Header overlaps original image");
+    // Desktop's featured card deliberately places photo and copy side by side.
+    // Reject actual two-dimensional intersections, not a particular document order.
+    for(const pair of result.labelVsPhoto){
+      const horizontal=Math.min(pair.label.right,pair.photo.right)-Math.max(pair.label.left,pair.photo.left);
+      const vertical=Math.min(pair.label.bottom,pair.photo.bottom)-Math.max(pair.label.top,pair.photo.top);
+      if(horizontal>2&&vertical>2)fail("Chapter heading physically overlaps its source photograph");
+    }
+    // Lazy media must be decoded before collecting a visual proof. A blank
+    // premature screenshot is not evidence that a publication photo is missing.
+    const images=page.locator("#rx26-portal .rx26-portal-card .rx-cover-art img");
+    const imageChecks=width===390?9:2;
+    for(let i=0;i<imageChecks;i++){
+      const photo=images.nth(i);
+      await photo.scrollIntoViewIfNeeded();
+      const info=await photo.evaluate(async img=>{
+        try{await img.decode();}catch(error){}
+        return {width:img.naturalWidth,height:img.naturalHeight,src:img.currentSrc};
+      });
+      if(info.width<=0||info.height<=0)fail("Original cover photo "+(i+1)+" failed to decode: "+info.src);
+    }
     const first=page.locator("#rx26-portal .rx26-portal-card").first();
     await first.scrollIntoViewIfNeeded();
     await page.screenshot({path:path.join(output,"chapter-covers-"+width+".png"),animations:"disabled"});
