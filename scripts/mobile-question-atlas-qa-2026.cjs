@@ -80,6 +80,16 @@ async function check(browser,width,language="en"){
    if(errors.length)issues.push("Page errors: "+errors.slice(0,3).join("; "));
    const tag="question-atlas-"+width+"-"+language;
    await page.locator("#question-atlas").screenshot({path:path.join(output,tag+".png"),animations:"disabled"});
+   // A viewport capture shows the sticky header in its real position.
+   // Full-section screenshots can misleadingly stitch fixed controls into the artwork.
+   await page.evaluate(()=>{
+     const section=document.querySelector("#question-atlas");
+     const top=section.getBoundingClientRect().top+window.scrollY-90;
+     window.scrollTo(0,Math.max(0,top));
+   });
+   await page.screenshot({path:path.join(output,tag+"-viewport.png"),animations:"disabled"});
+   const decorative=await page.evaluate(()=>getComputedStyle(document.querySelector("#question-atlas .rx-atlas-detail"),"::before").display);
+   if(width<=600&&decorative!=="none")issues.push("Decorative detail circle still bleeds into mobile navigation");
    // Confirm the second thread changes the question without moving any other cards.
    await page.locator("#question-atlas .rx-atlas-choice button").nth(1).click();
    const chosen=await page.locator("#question-atlas .rx-atlas-choice button").nth(1).getAttribute("aria-pressed");
