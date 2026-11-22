@@ -12,6 +12,8 @@ on:
       - "assets/mobile-layout-integrity-2026.css"
       - "scripts/mobile-question-atlas-qa-2026.cjs"
       - "scripts/chapter-card-context-qa-2026.cjs"
+      - "scripts/kinetic-atlas-editorial-qa-2026.cjs"
+      - "assets/kinetic-atlas-ui-2026.js"
       - "assets/archive-scenes.js"
       - "index.html"
       - "scripts/living-home-chrome-2026.cjs"
@@ -68,6 +70,11 @@ jobs:
           SITE_BASE_URL: http://127.0.0.1:8765
           BROWSER_QA_OUTPUT: browser-qa-artifacts
         run: node scripts/chapter-card-context-qa-2026.cjs
+      - name: Inspect editorial kinetic atlas in Chrome (390, 768, 1440 px and Arabic)
+        env:
+          SITE_BASE_URL: http://127.0.0.1:8765
+          BROWSER_QA_OUTPUT: browser-qa-artifacts
+        run: node scripts/kinetic-atlas-editorial-qa-2026.cjs
       - name: Exercise and screenshot the five new homepage experiences
         if: success() || failure()
         env:
