@@ -71,8 +71,8 @@
  function updateAccessibleLabel(){
    const arabic=document.documentElement.lang.toLowerCase().startsWith("ar");
    vessel.setAttribute("aria-label",arabic
-     ?"تدفق كريات الدم الحمراء في وعاء دموي دقيق، رسم توضيحي. افتح دراسة التصوير الوعائي لسمك الزرد."
-     :"Microvascular erythrocyte flow, conceptual animation. Open the zebrafish vascular imaging investigation.");
+     ?"تدفق كريات الدم الحمراء في وعاء دموي دقيق، رسم توضيحي. افتح فيلم البحث في ديناميكا الدم لدى سمك الزرد."
+     :"Microvascular erythrocyte flow, conceptual animation. Open the zebrafish hemodynamics research film.");
  }
  updateAccessibleLabel();
  const io="IntersectionObserver" in window?new IntersectionObserver(entries=>{
