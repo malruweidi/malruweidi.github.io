@@ -487,3 +487,11 @@ html[lang="ar"] .rx-atlas .rx-kinetic-pick[aria-pressed="true"]{
   .rx-atlas .rx-atlas-surprise,
   .rx-atlas .rx-atlas-guided{transition:none!important}
 }
+
+/* Prevent global header treatments from tinting the gallery headline. */
+.rx-atlas .rx-atlas-head{
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+}
