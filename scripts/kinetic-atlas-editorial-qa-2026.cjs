@@ -39,6 +39,7 @@ const overlap=(a,b)=>Math.min(a.right,b.right)-Math.max(a.left,b.left)>2&&Math.m
           footerText:q("#rx-atlas-boundary").innerText,
           descriptionText:description.innerText,
           bg:computed.backgroundColor,decoration:getComputedStyle(document.getElementById("rx-kinetic-atlas"),"::before").display,
+          headerBg:getComputedStyle(q(".rx-atlas-head")).backgroundColor,
           horizontalOverflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2,
           sceneId:q(".rx-atlas-canvas svg")?.getAttribute("aria-label"),
           title:q("#rx-kinetic-scene-title").textContent,
@@ -50,6 +51,7 @@ const overlap=(a,b)=>Math.min(a.right,b.right)-Math.max(a.left,b.left)>2&&Math.m
        const fail=message=>failures.push(width+"px: "+message);
        if(values.bg!=="rgb(247, 244, 238)")fail("Section background not light paper: "+values.bg);
        if(values.decoration!=="none")fail("Distracting vertical technical grid remains");
+       if(values.headerBg!=="rgba(0, 0, 0, 0)")fail("Unwanted tinted atlas header panel: "+values.headerBg);
        if(values.title!=="Opening a folio")fail("Manuscript scene did not initialize");
        if(values.sceneId?.includes("Opening a folio")!==true)fail("Scientific illustration and title disagree");
        if(values.horizontalOverflow)fail("Horizontal page overflow");
