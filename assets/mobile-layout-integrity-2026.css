@@ -1,0 +1,169 @@
+/* Ruwaidix mobile layout integrity — 2026-11-22.
+ * Repairs the mobile navigation without suppressing original content.
+ * The two interactive atlases own separate class namespaces.
+ */
+html[data-rx-page="home"] .rx-atlas-home,
+html[data-rx-page="home"] .rx-atlas-interact,
+html[data-rx-page="home"] .rx-atlas-detail{
+  max-width:100%;
+  min-width:0;
+}
+html[data-rx-page="home"] .rx-atlas-home .rx-atlas-interact > *{
+  min-width:0;
+}
+html[data-rx-page="home"] .rx-atlas-home .rx-atlas-choice button{
+  overflow-wrap:normal;
+}
+html[data-rx-page="home"] .rx-atlas-home .rx-atlas-choice button > span:nth-child(2){
+  min-width:0;
+}
+html[data-rx-page="home"] .rx-atlas-home .rx-atlas-links a{
+  overflow-wrap:break-word;
+}
+@media(max-width:900px){
+  html[data-rx-page="home"] .header .nav{
+    min-width:0;
+    gap:12px;
+  }
+  html[data-rx-page="home"] .header .brand{
+    display:flex;
+    flex:1 1 auto;
+    min-width:0;
+    max-width:100%;
+  }
+  html[data-rx-page="home"] .header .brand > span:last-child{
+    min-width:0;
+    max-width:100%;
+    flex:1 1 auto;
+  }
+  html[data-rx-page="home"] .header .brandname,
+  html[data-rx-page="home"] .header .brandline{
+    display:block;
+    width:100%;
+    max-width:100%!important;
+    white-space:nowrap!important;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    overflow-wrap:normal!important;
+    word-break:normal;
+  }
+  html[data-rx-page="home"] .header .menu{
+    flex:0 0 auto;
+    align-self:center;
+    white-space:nowrap;
+    min-height:44px;
+    touch-action:manipulation;
+  }
+}
+@media(max-width:600px){
+  html[data-rx-page="home"] .header .nav{
+    width:calc(100% - 30px);
+    min-height:69px!important;
+    height:auto!important;
+    padding-block:9px;
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+  }
+  html[data-rx-page="home"] .header .brand{
+    flex:1 1 auto;
+    min-width:0;
+    max-width:none!important;
+    gap:9px;
+    overflow:hidden;
+  }
+  html[data-rx-page="home"] .header .monogram{
+    flex:0 0 43px;
+    width:43px;
+    height:43px;
+  }
+  html[data-rx-page="home"] .header .monogram img{
+    display:block;
+    max-width:100%;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+  }
+  html[data-rx-page="home"] .header .brand > span:last-child{
+    flex:1 1 auto;
+    min-width:0;
+  }
+  html[data-rx-page="home"] .header .brandname{
+    font-size:clamp(15px,4.1vw,18px)!important;
+    line-height:1.16!important;
+    letter-spacing:-.02em!important;
+    margin:0;
+  }
+  html[data-rx-page="home"] .header .brandline{
+    font-size:9px!important;
+    line-height:1.4!important;
+    letter-spacing:.01em!important;
+    margin-top:4px;
+  }
+  html[data-rx-page="home"] .header .menu{
+    min-height:44px;
+    min-width:76px;
+    max-width:84px;
+    padding:10px 11px;
+    font-size:12px;
+    line-height:1.2;
+    border-radius:8px;
+    margin:0;
+  }
+  html[data-rx-page="home"] .header .navlinks{
+    max-height:calc(100dvh - 79px);
+    overflow-y:auto;
+    overscroll-behavior:contain;
+  }
+  html[data-rx-page="home"] .rx-atlas-home h2{
+    max-width:100%;
+    overflow-wrap:normal;
+  }
+  html[data-rx-page="home"] .rx-atlas-home .rx-atlas-detail h3{
+    font-size:clamp(29px,8vw,39px);
+    max-width:100%;
+  }
+  html[data-rx-page="home"] .rx-atlas-home .rx-atlas-home-head > *{
+    min-width:0;
+  }
+  html[data-rx-page="home"] #question-atlas{
+    scroll-margin-top:85px;
+  }
+  html[data-rx-page="home"] #rx-kinetic-atlas{
+    scroll-margin-top:85px;
+  }
+}
+@media(max-width:375px){
+  html[data-rx-page="home"] .header .nav{gap:7px;}
+  html[data-rx-page="home"] .header .brand{gap:7px;}
+  html[data-rx-page="home"] .header .monogram{
+    flex-basis:39px;
+    width:39px;
+    height:39px;
+  }
+  html[data-rx-page="home"] .header .brandname{
+    font-size:15px!important;
+  }
+  html[data-rx-page="home"] .header .brandline{
+    font-size:8.5px!important;
+  }
+  html[data-rx-page="home"] .header .menu{
+    min-width:69px;
+    max-width:74px;
+    padding-inline:7px;
+  }
+}
+html[lang="ar"][data-rx-page="home"] .header .brandname,
+html[lang="ar"][data-rx-page="home"] .header .brandline{
+  letter-spacing:0!important;
+  direction:rtl;
+  text-align:start;
+}
+@media(prefers-reduced-motion:reduce){
+  html[data-rx-page="home"] .rx-atlas-home button,
+  html[data-rx-page="home"] .header .menu{
+    transition:none!important;
+  }
+}
