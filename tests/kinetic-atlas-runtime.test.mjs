@@ -7,6 +7,7 @@ import {runInNewContext} from "node:vm";
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const read=path=>readFileSync(join(root,path),"utf8");
+const v2Modules=["assets/kinetic-atlas-v2-core.js","assets/kinetic-atlas-v2-chemistry.js","assets/kinetic-atlas-v2-carriers.js","assets/kinetic-atlas-v2-lung.js","assets/kinetic-atlas-v2-living.js","assets/kinetic-atlas-v2-measurement.js","assets/kinetic-atlas-v2-history.js"];
 
 class Element {
   constructor(tag="div",doc=null){
@@ -73,7 +74,7 @@ function atlasFixture(href,reduce=false){
   };
   const navigator={clipboard:{writeText:async value=>{copied=value;}}};
   const context={document,window,navigator,URL};context.globalThis=context;
-  for(const file of ["assets/kinetic-atlas-data-2026.js","assets/kinetic-atlas-draw-2026.js","assets/kinetic-atlas-ui-2026.js"]){
+  for(const file of ["assets/kinetic-atlas-data-2026.js",...v2Modules,"assets/kinetic-atlas-ui-2026.js"]){
     runInNewContext(read(file),context,{filename:file});
   }
   return {document,window,getCopied:()=>copied,el:id=>document.nodes[id]};
@@ -123,7 +124,7 @@ test("nine contextual illustrations start only with visitor interaction and stop
     cancelAnimationFrame:()=>++cancellations
   };
   context.globalThis=context;
-  runInNewContext(read("assets/kinetic-atlas-draw-2026.js"),context);
+  for(const file of v2Modules)runInNewContext(read(file),context);
   runInNewContext(read("assets/kinetic-chapter-cards-2026.js"),context);
   assert.equal(grid.dataset.rxKineticCount,"9");
   for(const card of cards){
@@ -131,7 +132,7 @@ test("nine contextual illustrations start only with visitor interaction and stop
     assert.match(card.top.children[0].children[0].innerHTML,/^<svg /);
   }
   assert.equal(animationRequests,0,"must not animate before interaction");
-  assert.match(cards[3].top.children[0].children[0].innerHTML,/id="rx-card-focus-3"/);
+  assert.match(cards[3].top.children[0].children[0].innerHTML,/id="rxv2-mini-3-focus-focusBlur"/);
   cards[0].fire("pointerenter",{pointerType:"mouse"});
   assert.equal(animationRequests,1);
   cards[0].fire("pointerleave");
