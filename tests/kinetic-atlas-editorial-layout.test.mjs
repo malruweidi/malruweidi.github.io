@@ -24,6 +24,7 @@ test("editorial layout places scene context inside the right-hand rail, after th
 test("light paper editorial background replaces distracting vertical grid",()=>{
   assert.match(css,/\/\* KINETIC ATLAS V3/);
   assert.match(css,/\.rx-atlas::before\s*\{[^}]*display:\s*none/s);
+  assert.match(css,/\.rx-atlas \.rx-atlas-head\s*\{[^}]*background:transparent!important/s);
   assert.match(css,/\.rx-atlas\s*\{[^}]*background:\s*#f7f4ee/s);
   assert.match(css,/\.rx-atlas \.rx-atlas-sidebar\s*\{[^}]*background:\s*#fffdf8/s);
   assert.match(css,/\.rx-atlas \.rx-atlas-description h3\s*\{[^}]*font-size:\s*clamp\(/s);
