@@ -25,7 +25,7 @@ function initialize(){
   '<div class="rx-atlas-actions"><button type="button" id="rx-atlas-prev">← Previous</button><button type="button" id="rx-atlas-play" aria-pressed="false">▶ Animate</button>'+
   '<button type="button" id="rx-atlas-next">Next →</button></div></div>'+
   '<div class="rx-atlas-description"><span id="rx-atlas-category"></span><h3 id="rx-atlas-title"></h3><p id="rx-atlas-explanation"></p>'+
-  '<a id="rx-atlas-source" href="/research.html">See the related work ↗</a></div></div>'+
+  '<div class="rx-atlas-related"><a id="rx-atlas-source" href="/research.html">See the related work ↗</a><button id="rx-atlas-copy-link" type="button" aria-label="Copy a link to this scene">Copy scene link</button><output id="rx-atlas-copy-status" role="status" aria-live="polite"></output></div></div></div>'+
   '<aside class="rx-atlas-sidebar"><div class="rx-atlas-sidebar-title"><strong id="rx-atlas-choose">Choose a movement</strong><span id="rx-atlas-total">30 / 30</span></div>'+
   '<label class="rx-atlas-search-label" for="rx-atlas-search" id="rx-atlas-search-caption">Search the collection</label>'+
   '<input type="search" class="rx-atlas-search" id="rx-atlas-search" autocomplete="off" placeholder="Search the 30 studies...">'+
@@ -36,6 +36,9 @@ function initialize(){
  if(!existing)target.insertAdjacentElement(target.id==="research-workbench"?"afterend":"beforebegin",node);
  const q=id=>node.querySelector("#"+id), entries=data.items, groups=data.groups;
  let active=entries[0][0], group="all", search="", timer=null, direction=1;
+ const shareUrl=(id)=>{const u=new URL(window.location.href);u.searchParams.set("atlas",id);u.hash="rx-kinetic-atlas";return u.toString();};
+ const requestedScene=()=>{try{const v=new URL(window.location.href).searchParams.get("atlas");return entries.some(e=>e[0]===v)?v:null;}catch{return null;}};
+ active=requestedScene()||active;
  const isAr=()=>document.documentElement.lang==="ar";
  const T=(en,ar)=>isAr()?ar:en;
  const find=id=>entries.find(e=>e[0]===id);
@@ -102,6 +105,9 @@ function initialize(){
    range.setAttribute("aria-label",T(e[6],e[7])+" — "+T("illustrative scale","مقياس توضيحي"));
    q("rx-atlas-min").textContent=T("Initial","بداية");q("rx-atlas-max").textContent=T("Changed","تغيير");
    q("rx-atlas-source").href=e[8];q("rx-atlas-source").textContent=T("Explore the related work ↗","استكشف العمل المرتبط ↗");
+   q("rx-atlas-copy-link").textContent=T("Copy scene link","انسخ رابط المشهد");
+   q("rx-atlas-copy-link").setAttribute("aria-label",T("Copy a direct link to this illustration","انسخ رابطًا مباشرًا لهذا الرسم"));
+   q("rx-atlas-copy-status").textContent="";
    q("rx-atlas-choose").textContent=T("Choose a movement","اختر حركة");
    q("rx-atlas-search-caption").textContent=T("Search the collection","ابحث في المجموعة");
    q("rx-atlas-search").placeholder=T("Search the 30 studies...","ابحث في المشاهد الثلاثين...");
@@ -113,7 +119,9 @@ function initialize(){
    draw();
    list.querySelectorAll("button[data-id]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.id===active)));
  }
- function choose(id){if(!find(id))return;stop();active=id;range.value="37";renderCurrent();}
+ function choose(id){if(!find(id))return;stop();active=id;range.value="37";renderCurrent();
+   try{window.history.replaceState(window.history.state,"",shareUrl(id));}catch{ /* URLs stay optional if history is restricted. */ }
+ }
  function navigate(by){
    const all=matches();if(!all.length)return;
    let i=all.findIndex(e=>e[0]===active);
@@ -137,6 +145,21 @@ function initialize(){
    search=ev.target.value.trim().toLocaleLowerCase();stop();
    if(matches().length&&!matches().some(e=>e[0]===active))active=matches()[0][0];
    renderList();renderCurrent();
+ });
+ q("rx-atlas-copy-link").addEventListener("click",()=>{
+   const button=q("rx-atlas-copy-link"), status=q("rx-atlas-copy-status");
+   const url=shareUrl(active);
+   if(!navigator.clipboard?.writeText){
+     status.textContent=T("Use the browser's address bar to copy the scene URL.","استخدم شريط العنوان لنسخ رابط المشهد.");
+     try{window.history.replaceState(window.history.state,"",url);}catch{}
+     return;
+   }
+   navigator.clipboard.writeText(url).then(()=>{
+      status.textContent=T("Scene link copied.","تم نسخ رابط المشهد.");
+   }).catch(()=>{
+      status.textContent=T("Copy from the address bar instead.","انسخ الرابط من شريط العنوان.");
+      try{window.history.replaceState(window.history.state,"",url);}catch{}
+   });
  });
  q("rx-atlas-surprise").addEventListener("click",()=>{
    const vis=matches();if(!vis.length)return;
