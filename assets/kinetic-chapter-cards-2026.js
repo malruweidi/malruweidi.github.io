@@ -29,7 +29,9 @@
       const pattern = "rx-card-grid-" + entry.index;
       const figure = engine.draw(entry.id, p)
         .replaceAll('id="rx-grid"', 'id="' + pattern + '"')
-        .replaceAll("url(#rx-grid)", "url(#" + pattern + ")");
+        .replaceAll("url(#rx-grid)", "url(#" + pattern + ")")
+        .replaceAll('id="rx-atlas-focus"', 'id="rx-card-focus-' + entry.index + '"')
+        .replaceAll("url(#rx-atlas-focus)", "url(#rx-card-focus-" + entry.index + ")");
       entry.canvas.innerHTML = figure;
       entry.canvas.firstElementChild?.setAttribute("aria-hidden", "true");
     };
