@@ -50,7 +50,7 @@ test("every scene retains a meaningful interactive visual change and documented 
 });
 test("all thirty visuals stay confined to their interactive scientific atlas",()=>{
   const ui=read("assets/kinetic-atlas-ui-2026.js");
-  assert.doesNotMatch(read("index.html"),/kinetic-chapter-cards-2026\\.(?:css|js)/);
+  assert.doesNotMatch(read("index.html"),/kinetic-chapter-cards-2026\.(?:css|js)/);
   assert.match(ui,/namespace:\s*"atlas-main"/);
   for(const file of ["assets/kinetic-atlas-v2-core.js","assets/kinetic-atlas-v2-chemistry.js","assets/kinetic-atlas-v2-carriers.js","assets/kinetic-atlas-v2-lung.js","assets/kinetic-atlas-v2-living.js","assets/kinetic-atlas-v2-measurement.js","assets/kinetic-atlas-v2-history.js"])assert.ok(read("index.html").includes(file),"Missing V2 module "+file);
 });
