@@ -95,27 +95,15 @@ test("accessibility, consent for motion and scientific boundaries are explicit",
 });
 
 
-test("nine chapter cards acquire distinct, topic-specific visual specimens", () => {
-  const mini = read("assets/kinetic-chapter-cards-2026.js");
-  const miniCss = read("assets/kinetic-chapter-cards-2026.css");
-  const pairPattern = /"(\/[^"]+\.html)": "([a-z0-9-]+)"/g;
-  const pairs = Array.from(mini.matchAll(pairPattern));
-  assert.equal(pairs.length,9);
-  assert.equal(new Set(pairs.map(pair => pair[1])).size,9);
-  assert.equal(new Set(pairs.map(pair => pair[2])).size,9);
-  for(const [,page,scene] of pairs){
-    assert.ok(items.some(item=>item[0]===scene),scene);
-    assert.ok(html.includes('class="rx26-portal-card" href="'+page+'"'),page);
-  }
-  assert.match(mini,/prefers-reduced-motion/);
-  assert.match(mini,/pointerenter/);
-  assert.match(mini,/pointerleave/);
-  assert.match(mini,/focusin/);
-  assert.match(mini,/visibilitychange/);
-  assert.match(mini,/namespace:"mini-"/);
-  assert.match(miniCss,/@media\(prefers-reduced-motion:reduce\)/);
-  assert.ok(html.includes("kinetic-chapter-cards-2026.js"));
-  assert.ok(html.includes("kinetic-chapter-cards-2026.css"));
+test("nine archival chapter cards use actual photographic sources, not animated overlays",()=>{
+  const archive=read("assets/archive-scenes.js");
+  const urls=["research","publications","films","stories","illness-and-evidence","writing","chem-squad","leadership","major-revisions"];
+  for(const slug of urls)
+    assert.ok(html.includes('class="rx26-portal-card" href="/'+slug+'.html"'),slug+" missing");
+  assert.doesNotMatch(html,/src="[^"]*kinetic-chapter-cards-2026\\.js/);
+  assert.doesNotMatch(html,/href="[^"]*kinetic-chapter-cards-2026\\.css/);
+  assert.match(archive,/className = "rx-cover-art"/);
+  assert.match(archive,/frame\\.append\\(img\\)/);
 });
 
 test("all scenes support shareable deep links and six guided scientific discoveries",()=>{
