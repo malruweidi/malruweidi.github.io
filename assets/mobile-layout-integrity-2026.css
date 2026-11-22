@@ -155,11 +155,21 @@ html[data-rx-page="home"] .rx-atlas-home .rx-atlas-links a{
     padding-inline:7px;
   }
 }
+/* The personal brand is sometimes Latin and sometimes translated.
+   The DOM uses dir=auto; never force Latin brand copy into RTL shaping. */
 html[lang="ar"][data-rx-page="home"] .header .brandname,
 html[lang="ar"][data-rx-page="home"] .header .brandline{
   letter-spacing:0!important;
-  direction:rtl;
-  text-align:start;
+  unicode-bidi:plaintext;
+}
+@media(max-width:600px){
+  /* Keep the decorative ring inside the detail composition, not over the buttons. */
+  html[data-rx-page="home"] .rx-atlas-home .rx-atlas-detail{
+    overflow:hidden;
+  }
+  html[data-rx-page="home"] .rx-atlas-home .rx-atlas-detail::before{
+    display:none;
+  }
 }
 @media(prefers-reduced-motion:reduce){
   html[data-rx-page="home"] .rx-atlas-home button,
