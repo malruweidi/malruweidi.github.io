@@ -1,0 +1,96 @@
+/* An archival margin note for the homepage; additive and reversible.
+   The note uses the site's existing palette and real laboratory memories. */
+.rx-pocket-note{
+  position:relative;
+  isolation:isolate;
+  width:min(100%,600px);
+  margin:24px 0 9px;
+  padding:19px 25px 18px;
+  color:#294568;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 28px, rgba(105,132,160,.085) 29px, transparent 30px),
+    linear-gradient(140deg,#fbf8f0 0%,#f1e9da 100%);
+  border:1px solid #d9c9aa;
+  box-shadow:3px 5px 0 rgba(77,94,107,.10),0 13px 24px rgba(40,61,79,.08);
+  transform:rotate(-.45deg);
+}
+.rx-pocket-note::before{
+  content:"";
+  position:absolute;
+  width:73px;
+  height:19px;
+  top:-11px;
+  left:46%;
+  transform:rotate(3deg);
+  background:rgba(220,196,147,.51);
+  border-left:1px solid rgba(172,145,96,.2);
+  border-right:1px solid rgba(172,145,96,.2);
+  pointer-events:none;
+}
+.rx-pocket-note-head{
+  display:flex;
+  gap:12px;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:8px;
+}
+.rx-pocket-note-kicker{
+  font:500 10px/1.5 var(--mono,"DM Mono",monospace);
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:#6b6659;
+}
+.rx-pocket-note-hand{
+  font:italic 21px/1 "Segoe Print","Bradley Hand",Georgia,serif;
+  color:#9e7950;
+  transform:rotate(-7deg);
+  flex:none;
+  user-select:none;
+}
+.rx-pocket-note-text{
+  margin:0 0 9px;
+  max-width:52ch;
+  font:400 clamp(17px,1.5vw,20px)/1.48 var(--serif,Georgia,serif);
+  letter-spacing:-.012em;
+  color:#263e59;
+}
+.rx-pocket-note-link{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  margin-top:4px;
+  padding-bottom:2px;
+  border-bottom:1px solid #b3a286;
+  color:#345c91;
+  font:600 11px/1.5 var(--sans,Arial,sans-serif);
+  text-underline-offset:3px;
+}
+.rx-pocket-note-link:hover{color:#1c3656;border-color:currentColor}
+.rx-pocket-note-link:focus-visible{outline:3px solid #345c91;outline-offset:4px}
+html:not([lang="ar"]) .rx-note-ar{display:none}
+html[lang="ar"] .rx-note-en{display:none}
+html[lang="ar"] .rx-pocket-note{direction:rtl;text-align:right;transform:rotate(.45deg)}
+html[lang="ar"] .rx-pocket-note::before{left:18%;transform:rotate(-3deg)}
+html[lang="ar"] .rx-pocket-note-text{font:400 clamp(16px,1.55vw,19px)/1.9 Tahoma,"Noto Naskh Arabic",serif;letter-spacing:0}
+html[lang="ar"] .rx-pocket-note-kicker{font:600 12px/1.7 Tahoma,Arial,sans-serif;letter-spacing:0}
+html[lang="ar"] .rx-pocket-note-link{font:600 12px/1.8 Tahoma,Arial,sans-serif}
+@media(min-width:750px){
+  .rx-moments-panel[data-current="true"] .rx-moments-copy h3::after{
+    content:"";display:block;width:86px;margin-top:11px;
+    border-bottom:2px solid #b99765;transform:rotate(-2deg);
+  }
+}
+.rx-moments-visual .rx-moments-stamp{
+  letter-spacing:.035em;
+  transform:rotate(-1.1deg);
+  transform-origin:left center;
+}
+@media(max-width:700px){
+  .rx-pocket-note{margin-top:22px;padding:17px 19px 16px;transform:none}
+  html[lang="ar"] .rx-pocket-note{transform:none}
+  .rx-pocket-note::before{left:38%}
+}
+@media(prefers-reduced-motion:reduce){
+  .rx-pocket-note,.rx-moments-visual .rx-moments-stamp{transform:none}
+  html[lang="ar"] .rx-pocket-note{transform:none}
+}
