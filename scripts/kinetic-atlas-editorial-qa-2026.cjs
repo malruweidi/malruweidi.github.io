@@ -25,7 +25,7 @@ const overlap=(a,b)=>Math.min(a.right,b.right)-Math.max(a.left,b.left)>2&&Math.m
        const values=await page.evaluate(()=>{
          const q=s=>document.querySelector("#rx-kinetic-atlas "+s);
          const rect=s=>{const r=q(s).getBoundingClientRect();return {top:r.top,bottom:r.bottom,left:r.left,right:r.right,width:r.width,height:r.height};};
-         const computed=getComputedStyle(q(".rx-atlas"));
+         const computed=getComputedStyle(document.getElementById("rx-kinetic-atlas"));
          const description=q(".rx-atlas-description");
          const canvas=q(".rx-atlas-canvas");
          return {
@@ -38,7 +38,7 @@ const overlap=(a,b)=>Math.min(a.right,b.right)-Math.max(a.left,b.left)>2&&Math.m
           list:rect("#rx-atlas-list"),
           footerText:q("#rx-atlas-boundary").innerText,
           descriptionText:description.innerText,
-          bg:computed.backgroundColor,decoration:getComputedStyle(q(".rx-atlas"),"::before").display,
+          bg:computed.backgroundColor,decoration:getComputedStyle(document.getElementById("rx-kinetic-atlas"),"::before").display,
           horizontalOverflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2,
           sceneId:q(".rx-atlas-canvas svg")?.getAttribute("aria-label"),
           title:q("#rx-atlas-title").textContent,
@@ -66,7 +66,7 @@ const overlap=(a,b)=>Math.min(a.right,b.right)-Math.max(a.left,b.left)>2&&Math.m
        if(errors.length)fail("JavaScript errors: "+errors.slice(0,2).join("; "));
        await page.locator("#rx-kinetic-atlas").screenshot({path:path.join(output,"kinetic-atlas-v3-"+width+"-en.png"),animations:"disabled"});
        const range=page.locator("#rx-atlas-range");
-       await range.fill("79");
+       await range.evaluate(el=>{el.value="79";el.dispatchEvent(new Event("input",{bubbles:true}));});
        const value=await page.locator("#rx-atlas-output").innerText();
        if(!value.includes("79"))fail("Scene slider is not interactive");
        await page.locator("#rx-atlas-next").click();
@@ -74,7 +74,7 @@ const overlap=(a,b)=>Math.min(a.right,b.right)-Math.max(a.left,b.left)>2&&Math.m
        if(next==="Opening a folio")fail("Next did not switch scene");
        if(width===390){
          await page.evaluate(()=>document.documentElement.setAttribute("lang","ar"));
-         await page.waitForFunction(()=>document.querySelector("#rx-kinetic-atlas")?.dir==="rtl",{timeout:8000});
+         await page.waitForFunction(()=>document.querySelector("#rx-kinetic-atlas")?.dir==="rtl",null,{timeout:8000});
          const arabic=await page.locator("#rx-atlas-title").innerText();
          if(!/[\u0600-\u06ff]/.test(arabic))fail("Arabic title not rendered");
          await page.locator("#rx-kinetic-atlas").screenshot({path:path.join(output,"kinetic-atlas-v3-390-ar.png"),animations:"disabled"});
