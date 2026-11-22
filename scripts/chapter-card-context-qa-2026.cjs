@@ -29,7 +29,7 @@ const chapters=["research","publications","films","stories","illness-and-evidenc
        photos:cards.filter(x=>x.querySelector(".rx-cover-art img")).length,
        attachedOverlays:cards.filter(x=>x.querySelector(".rx-card-kinetic,.rx-card-kinetic-art,.rx-card-kinetic-label")).length,
        headerSvg:cards.filter(x=>x.querySelector(".rx26-card-top svg")).length,
-       statuses:[...document.querySelectorAll("#rx26-portal .rx-cover-count")].map(x=>x.innerText.trim()),
+       statuses:[...document.querySelectorAll("#rx26-portal .rx-cover-count")].map(x=>({text:x.textContent.trim(),hidden:x.hidden})),
        labelVsPhoto:cards.slice(0,2).map(x=>({
          label:asRect(x.querySelector(".rx26-card-top")),
          photo:asRect(x.querySelector(".rx-cover-art"))
@@ -42,7 +42,7 @@ const chapters=["research","publications","films","stories","illness-and-evidenc
     if(result.photos!==9)fail("Expected 9 original cover photographs, got "+result.photos);
     if(result.attachedOverlays!==0||result.headerSvg!==0)fail("Unexpected decorative animated chapter overlay");
     if(!result.paths.every((x,i)=>x===chapters[i]+".html"))fail("Chapter destinations changed: "+result.paths.join(", "));
-    if(result.statuses[0]!=="9 collections")fail("Confusing collection label: "+result.statuses.join(", "));
+    if(result.statuses[0]?.text!=="9 collections"||result.statuses[0]?.hidden!==true)fail("All-chapters status should be quietly hidden: "+JSON.stringify(result.statuses));
     if(result.overflow)fail("Horizontal overflow");
     for(const pair of result.labelVsPhoto)
       if(pair.label.bottom>pair.photo.top+2)fail("Header overlaps original image");
@@ -53,6 +53,7 @@ const chapters=["research","publications","films","stories","illness-and-evidenc
     await page.locator("#rx26-portal .rx-cover-controls button").nth(1).click();
     const filtered=(await page.locator("#rx26-portal .rx-cover-count").innerText()).trim();
     if(!/collections shown · 9 total/.test(filtered))fail("Filtered count unclear: "+filtered);
+    if(await page.locator("#rx26-portal .rx-cover-count").isHidden())fail("Filtered count should be visible");
     runs.push({width,result,filtered});
    }catch(e){failures.push(width+"px: "+e.message)}
    finally{await page.close()}
