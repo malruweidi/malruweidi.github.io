@@ -36,6 +36,7 @@ const overlap=(a,b)=>Math.min(a.right,b.right)-Math.max(a.left,b.left)>2&&Math.m
           source:rect("#rx-atlas-source"),copy:rect("#rx-atlas-copy-link"),
           heading:rect("#rx-kinetic-scene-title"),
           list:rect("#rx-atlas-list"),
+          selected:rect('.rx-kinetic-pick[aria-pressed="true"]'),
           footerText:q("#rx-atlas-boundary").innerText,
           descriptionText:description.innerText,
           bg:computed.backgroundColor,decoration:getComputedStyle(document.getElementById("rx-kinetic-atlas"),"::before").display,
@@ -58,6 +59,7 @@ const overlap=(a,b)=>Math.min(a.right,b.right)-Math.max(a.left,b.left)>2&&Math.m
        if(values.heading.right>values.rail.right+2||values.heading.left<values.rail.left-2)fail("Scene title spills outside information rail");
        if(values.description.top<values.rail.top-2||values.description.bottom>values.rail.bottom+2)fail("Scene context not contained in the rail");
        if(values.description.bottom>values.chooser.top+3)fail("Scene list overlaps explanatory context");
+       if(values.selected.top<values.list.top-3||values.selected.bottom>values.list.bottom+3)fail("Active scene is outside the visible scene list");
        if(values.boundary.top<Math.max(values.rail.bottom,values.primary.bottom)-2)fail("Conceptual caveat overlaps gallery");
        if(values.footerText.length>200)fail("Overlong conceptual caveat");
        if(values.actionHeight.some(x=>x<42))fail("Controller has undersized touch targets");
