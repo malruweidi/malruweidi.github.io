@@ -104,41 +104,11 @@ test("guided tour, next scene, range, copy link, empty search and language remai
   assert.equal(a.el("rx-atlas-list").children.length,1);
   assert.match(a.el("rx-atlas-list").children[0].textContent,/No matching/);
 });
-test("nine contextual illustrations start only with visitor interaction and stop afterward",()=>{
-  const paths=["/research.html","/publications.html","/films.html","/stories.html","/illness-and-evidence.html","/writing.html","/chem-squad.html","/leadership.html","/major-revisions.html"];
-  const cards=paths.map(path=>{
-    const card=new Element("a");card.href="https://malruweidi.github.io"+path;
-    card.top=new Element("div");return card;
-  });
-  const grid=new Element("div");grid.querySelectorAll=()=>cards;
-  const document={
-    documentElement:{dataset:{rxPage:"home"}},readyState:"complete",hidden:false,
-    querySelector:s=>s===".rx26-portal-grid"?grid:null,
-    createElement:tag=>new Element(tag),addEventListener(){}
-  };
-  let animationRequests=0,cancellations=0;
-  const context={
-    document,window:{matchMedia:()=>({matches:false,addEventListener(){}})},
-    URL,location:{href:"https://malruweidi.github.io/"},performance:{now:()=>1200},
-    requestAnimationFrame:()=>++animationRequests,
-    cancelAnimationFrame:()=>++cancellations
-  };
-  context.globalThis=context;
-  for(const file of v2Modules)runInNewContext(read(file),context);
-  runInNewContext(read("assets/kinetic-chapter-cards-2026.js"),context);
-  assert.equal(grid.dataset.rxKineticCount,"9");
-  for(const card of cards){
-    assert.equal(card.top.children.length,1);
-    assert.match(card.top.children[0].children[0].innerHTML,/^<svg /);
-  }
-  assert.equal(animationRequests,0,"must not animate before interaction");
-  assert.match(cards[3].top.children[0].children[0].innerHTML,/id="rxv2-mini-3-focus-focusBlur"/);
-  cards[0].fire("pointerenter",{pointerType:"mouse"});
-  assert.equal(animationRequests,1);
-  cards[0].fire("pointerleave");
-  assert.equal(cancellations,1);
-  cards[1].fire("focusin");
-  assert.equal(animationRequests,2);
-  cards[1].fire("focusout",{relatedTarget:null});
-  assert.equal(cancellations,2);
+test("chapter navigation preserves the nine archival photographs rather than injecting kinetic overlays",()=>{
+ const home=read("index.html");
+ const archive=read("assets/archive-scenes.js");
+ assert.doesNotMatch(home,/kinetic-chapter-cards-2026\\.(?:js|css)/);
+ assert.match(archive,/className = "rx-cover-art"/);
+ assert.match(archive,/a\\.querySelector\\("\\.rx26-card-top"\\)\\.after\\(frame\\)/);
+ assert.equal(home.match(/class="rx26-portal-card"/g)?.length,9);
 });
