@@ -152,3 +152,338 @@ html[lang="ar"] .rx-atlas-guided{font-family:Tahoma,Arial,sans-serif}
   transition:none!important;
  }
 }
+
+
+/* KINETIC ATLAS V3 — editorial light-paper gallery with contextual rail.
+   The dark SVG instrument remains a focused object, not a full-page backdrop.
+   These scoped rules apply to all 30 scenes and to English and Arabic. */
+.rx-atlas{
+  --rx-a-paper:#fffdf8;
+  --rx-a-ink:#18364c;
+  --rx-a-gold:#ac7536;
+  --rx-a-rule:#d2d9d8;
+  overflow:clip;
+  background:#f7f4ee;
+  color:#19384c;
+  padding:clamp(52px,6.5vw,84px) 0;
+  border-block:1px solid #e5e4dd;
+}
+.rx-atlas::before{display:none}
+.rx-atlas .rx-atlas-shell{width:min(1210px,calc(100% - 56px))}
+.rx-atlas .rx-atlas-head{
+  align-items:center;
+  gap:clamp(16px,3vw,48px);
+  margin-bottom:26px;
+}
+.rx-atlas .rx-kinetic-kicker{color:#986a37;letter-spacing:.12em}
+.rx-atlas .rx-atlas-head h2{color:#15344a;font-size:clamp(40px,4.9vw,72px)}
+.rx-atlas .rx-atlas-head h2 em{color:#ad7434}
+.rx-atlas .rx-atlas-head>p{
+  color:#475f70;
+  font-size:14px;
+  line-height:1.72;
+  max-width:450px;
+}
+.rx-atlas .rx-atlas-categories{gap:7px;margin-bottom:20px}
+.rx-atlas .rx-atlas-cat{
+  background:#fffdf8;
+  border:1px solid #c8d0d0;
+  color:#24485b;
+  border-radius:99px;
+  font-size:12px;
+  font-weight:600;
+  min-height:40px;
+  padding:8px 15px;
+  box-shadow:none;
+}
+.rx-atlas .rx-atlas-cat:hover{
+  background:#e8edf0;
+  border-color:#7895a0;
+  color:#163448;
+}
+.rx-atlas .rx-atlas-cat[aria-pressed="true"]{
+  color:#fffdf8;
+  background:#1b425d;
+  border-color:#1b425d;
+  box-shadow:none;
+}
+.rx-atlas .rx-atlas-columns{
+  grid-template-columns:minmax(0,1.35fr) minmax(330px,.87fr);
+  gap:clamp(17px,2.5vw,30px);
+  align-items:start;
+}
+.rx-atlas .rx-atlas-primary{min-width:0}
+.rx-atlas .rx-atlas-device{
+  border-radius:14px;
+  overflow:hidden;
+  background:#122b40;
+  border:1px solid #294d60;
+  box-shadow:0 14px 32px rgba(17,36,52,.12),0 2px 6px rgba(17,36,52,.12);
+}
+.rx-atlas .rx-atlas-canvas{
+  border-radius:13px;
+  background:#122b40;
+  aspect-ratio:640/380;
+  border:0;
+}
+.rx-atlas .rx-atlas-controllers{
+  padding:18px 22px 18px;
+  margin-top:13px;
+  border:1px solid #d5d5cf;
+  border-radius:12px;
+  background:#fffdf8;
+  color:#18364c;
+  box-shadow:none;
+}
+.rx-atlas .rx-atlas-controllers label{
+  color:#1a3c52;
+  font:600 13px/1.5 "DM Sans",Arial,sans-serif;
+}
+.rx-atlas .rx-atlas-scale{color:#627482}
+.rx-atlas .rx-atlas-scale output{color:#1b425d}
+.rx-atlas .rx-atlas-actions{gap:8px;margin-top:15px}
+.rx-atlas .rx-atlas-actions button{
+  min-height:44px;
+  border-radius:8px;
+  border:1px solid #c8d2d6;
+  background:#f0f3f3;
+  color:#173d56;
+  font:600 12px/1.4 "DM Sans",Arial,sans-serif;
+  padding:10px 12px;
+  transition:background .15s ease,border-color .15s ease;
+}
+.rx-atlas .rx-atlas-actions button:hover{background:#e1e9ec}
+.rx-atlas .rx-atlas-actions #rx-atlas-play{
+  background:#173e5b;
+  border-color:#173e5b;
+  color:#fffdf8;
+}
+.rx-atlas .rx-atlas-actions #rx-atlas-play:hover{background:#2b5877}
+.rx-atlas .rx-atlas-sidebar{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  padding:23px clamp(18px,2vw,26px) 22px;
+  background:#fffdf8;
+  border:1px solid #d5d9d8;
+  border-radius:14px;
+  box-shadow:0 9px 25px rgba(20,43,58,.055);
+  color:#18364c;
+  min-width:0;
+}
+.rx-atlas .rx-atlas-description{
+  padding:0 0 20px;
+  margin:0 0 20px;
+  border-bottom:1px solid #dce0df;
+  min-width:0;
+}
+.rx-atlas .rx-atlas-description>span{
+  display:block;
+  color:#926739;
+  font:600 10px/1.5 "DM Mono",monospace;
+  letter-spacing:.11em;
+  margin-bottom:8px;
+}
+.rx-atlas .rx-atlas-description h3{
+  font-family:"Newsreader",Georgia,serif;
+  font-size:clamp(31px,3vw,43px);
+  line-height:1.12;
+  font-weight:400;
+  letter-spacing:-.027em;
+  color:#183b52;
+  margin:0 0 12px;
+  max-width:100%;
+  overflow-wrap:break-word;
+}
+.rx-atlas .rx-atlas-description p{
+  margin:0 0 17px;
+  font:400 14px/1.72 "DM Sans",Arial,sans-serif;
+  color:#465f6e;
+  max-width:64ch;
+  min-height:0;
+  overflow-wrap:break-word;
+}
+.rx-atlas .rx-atlas-related{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 16px;
+  align-items:center;
+}
+.rx-atlas .rx-atlas-related>a{
+  display:inline-flex;
+  color:#185072;
+  font:700 12px/1.5 "DM Sans",Arial,sans-serif;
+  text-decoration:none;
+  padding-bottom:4px;
+  border-bottom:1px solid #b6cad6;
+}
+.rx-atlas .rx-atlas-related>a:hover{color:#926331;border-color:#926331}
+.rx-atlas .rx-atlas-related button{
+  min-height:38px;
+  border:1px solid #cad4d7;
+  border-radius:7px;
+  color:#22465b;
+  background:#f4f6f5;
+  font:600 12px/1.4 "DM Sans",Arial,sans-serif;
+  padding:8px 12px;
+}
+.rx-atlas .rx-atlas-related button:hover{
+  color:#193b51;background:#eaf0f1;border-color:#a2b7c0;
+}
+.rx-atlas .rx-atlas-related output{
+  color:#396b53;
+  font:600 12px/1.5 "DM Sans",Arial,sans-serif;
+  min-height:0;
+  flex-basis:100%;
+}
+.rx-atlas .rx-atlas-related output:empty{display:none}
+.rx-atlas .rx-atlas-sidebar-title{margin:0 0 12px;gap:14px}
+.rx-atlas .rx-atlas-sidebar-title strong{
+  color:#193c50;
+  font:400 24px/1.25 "Newsreader",Georgia,serif;
+}
+.rx-atlas .rx-atlas-sidebar-title span{
+  font:600 10px/1.5 "DM Mono",monospace;
+  color:#567283;
+  white-space:nowrap;
+}
+.rx-atlas .rx-atlas-search-label{
+  color:#506b7a;
+  font:600 10px/1.5 "DM Mono",monospace;
+  margin-bottom:6px;
+  letter-spacing:.075em;
+}
+.rx-atlas .rx-atlas-search{
+  background:#fff;
+  border:1px solid #c8d4d8;
+  border-radius:8px;
+  color:#173a50;
+  font:400 13px/1.4 "DM Sans",Arial,sans-serif;
+  margin-bottom:12px;
+  min-height:42px;
+}
+.rx-atlas .rx-atlas-list{
+  max-height:255px;
+  min-height:0;
+  gap:3px;
+  padding:0 4px 0 0;
+  overflow-y:auto;
+  scrollbar-color:#b7c8cb transparent;
+}
+.rx-atlas .rx-kinetic-pick{
+  grid-template-columns:30px minmax(0,1fr) 15px;
+  min-height:43px;
+  padding:9px 10px;
+  border:1px solid transparent;
+  border-radius:7px;
+  background:transparent;
+  color:#29485c;
+  font:600 12px/1.35 "DM Sans",Arial,sans-serif;
+}
+.rx-atlas .rx-kinetic-pick .rx-atlas-choice-no{color:#7c7b6f}
+.rx-atlas .rx-kinetic-pick:hover{
+  background:#edf2f2;
+  color:#17374e;
+}
+.rx-atlas .rx-kinetic-pick[aria-pressed="true"]{
+  background:#e5eff0;
+  color:#143d54;
+  border:1px solid #cedfe0;
+  box-shadow:inset 3px 0 0 #54899a;
+}
+.rx-atlas .rx-kinetic-pick[aria-pressed="true"] .rx-atlas-choice-no{color:#3c7381}
+.rx-atlas .rx-atlas-empty{color:#607382}
+.rx-atlas .rx-atlas-surprise,
+.rx-atlas .rx-atlas-guided{
+  margin-top:10px;
+  min-height:42px;
+  padding:9px 12px;
+  font:600 12px/1.5 "DM Sans",Arial,sans-serif;
+  border-radius:8px;
+  text-align:center;
+  box-shadow:none;
+}
+.rx-atlas .rx-atlas-surprise{
+  background:#edf2f0;
+  border:1px solid #c8d8d6;
+  color:#215267;
+}
+.rx-atlas .rx-atlas-surprise:hover{background:#dfebe8}
+.rx-atlas .rx-atlas-guided{
+  background:#1b425d;
+  color:#fff;
+  border:1px solid #1b425d;
+}
+.rx-atlas .rx-atlas-guided:hover{background:#305f7c;color:#fff}
+.rx-atlas .rx-atlas-boundary{
+  width:100%;
+  margin:18px 0 0;
+  padding:12px 16px;
+  border:1px solid #dadbd5;
+  border-radius:9px;
+  background:#ebe9e3;
+  color:#586c76;
+  font:400 12px/1.6 "DM Sans",Arial,sans-serif;
+  max-width:none;
+}
+html[lang="ar"] .rx-atlas .rx-atlas-description h3{
+  font-family:"Noto Naskh Arabic",Tahoma,serif;
+  font-size:clamp(30px,3.3vw,42px);
+  line-height:1.5;
+  letter-spacing:0;
+}
+html[lang="ar"] .rx-atlas .rx-atlas-description p{
+  line-height:1.9;
+}
+html[lang="ar"] .rx-atlas .rx-kinetic-pick{
+  text-align:right;
+}
+html[lang="ar"] .rx-atlas .rx-kinetic-pick[aria-pressed="true"]{
+  box-shadow:inset -3px 0 0 #54899a;
+}
+@media (max-width: 950px){
+  .rx-atlas .rx-atlas-columns{grid-template-columns:minmax(0,1fr)}
+  .rx-atlas .rx-atlas-shell{width:calc(100% - 42px)}
+  .rx-atlas .rx-atlas-sidebar{margin-top:0}
+  .rx-atlas .rx-atlas-list{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    max-height:300px;
+    gap:5px;
+  }
+  .rx-atlas .rx-atlas-description{
+    padding-bottom:18px;
+    margin-bottom:18px;
+  }
+}
+@media (max-width: 560px){
+  .rx-atlas{padding:46px 0 52px}
+  .rx-atlas .rx-atlas-shell{width:calc(100% - 30px)}
+  .rx-atlas .rx-atlas-head{margin-bottom:22px;gap:12px}
+  .rx-atlas .rx-atlas-head h2{font-size:clamp(37px,10.6vw,51px)}
+  .rx-atlas .rx-atlas-head>p{font-size:13px;line-height:1.7}
+  .rx-atlas .rx-atlas-categories{margin-bottom:13px;padding-bottom:7px}
+  .rx-atlas .rx-atlas-cat{min-height:40px;font-size:11px}
+  .rx-atlas .rx-atlas-columns{gap:13px}
+  .rx-atlas .rx-atlas-device{border-radius:11px}
+  .rx-atlas .rx-atlas-canvas{border-radius:10px}
+  .rx-atlas .rx-atlas-controllers{padding:14px 13px 15px;margin-top:11px}
+  .rx-atlas .rx-atlas-actions{gap:6px}
+  .rx-atlas .rx-atlas-actions button{
+    min-width:0;
+    min-height:44px;
+    padding:9px 4px;
+    font-size:11px;
+  }
+  .rx-atlas .rx-atlas-sidebar{padding:18px 16px;border-radius:11px}
+  .rx-atlas .rx-atlas-description{padding:0 0 17px;margin:0 0 17px}
+  .rx-atlas .rx-atlas-description h3{font-size:clamp(29px,8.3vw,36px)}
+  .rx-atlas .rx-atlas-description p{font-size:13px;line-height:1.72}
+  .rx-atlas .rx-atlas-list{grid-template-columns:minmax(0,1fr);max-height:280px}
+  .rx-atlas .rx-atlas-boundary{font-size:11px;padding:11px 13px;margin-top:13px}
+}
+@media(prefers-reduced-motion:reduce){
+  .rx-atlas .rx-atlas-actions button,
+  .rx-atlas .rx-atlas-surprise,
+  .rx-atlas .rx-atlas-guided{transition:none!important}
+}
