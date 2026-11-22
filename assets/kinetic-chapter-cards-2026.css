@@ -10,3 +10,40 @@ html[lang="ar"] .rx26-portal-card:hover .rx-card-kinetic{transform:rotate(2deg) 
 @media(max-width:1200px){.rx-card-kinetic{width:76px;height:58px;flex-basis:76px}.rx26-portal-card .rx26-card-top{min-height:63px}}
 @media(max-width:640px){.rx26-portal-card .rx26-card-top{min-height:62px}.rx-card-kinetic{width:81px;height:56px;flex-basis:81px}}
 @media(prefers-reduced-motion:reduce){.rx-card-kinetic{transition:none!important;transform:none!important}.rx26-portal-card:hover .rx-card-kinetic,.rx26-portal-card:focus-visible .rx-card-kinetic{transform:none!important}}
+
+
+/* V2 kinetic chapter previews: tightly framed optical specimens. */
+.rx26-portal-card .rx-card-kinetic{
+ border-radius:10px;
+ background:#112d41;
+ border:1px solid rgba(217,198,160,.64);
+ box-shadow:0 6px 14px rgba(4,18,29,.18);
+ transform:rotate(1deg);
+}
+.rx26-portal-card .rx-card-kinetic-art{
+ display:block;
+ overflow:hidden;
+ width:100%;
+ height:100%;
+}
+.rx26-portal-card .rx-card-kinetic-art>svg{
+ width:100%;
+ height:100%;
+ display:block;
+}
+.rx26-portal-card .rx-card-kinetic-label{
+ opacity:.9;color:#f2d4a2;
+ text-shadow:0 0 3px #122d3f;
+}
+.rx26-portal-card:hover .rx-card-kinetic,
+.rx26-portal-card:focus-visible .rx-card-kinetic{
+ transform:rotate(-1.5deg) scale(1.055);
+ border-color:#efd6aa;
+}
+@media(prefers-reduced-motion:reduce){
+ .rx26-portal-card .rx-card-kinetic,
+ .rx26-portal-card:hover .rx-card-kinetic,
+ .rx26-portal-card:focus-visible .rx-card-kinetic{
+ transform:none!important;transition:none!important;
+ }
+}
