@@ -9,12 +9,14 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const read = path => readFileSync(join(root,path),"utf8");
 const html = read("index.html");
 const data = read("assets/kinetic-atlas-data-2026.js");
-const svg = read("assets/kinetic-atlas-draw-2026.js");
+const v2Modules=["assets/kinetic-atlas-v2-core.js","assets/kinetic-atlas-v2-chemistry.js","assets/kinetic-atlas-v2-carriers.js","assets/kinetic-atlas-v2-lung.js","assets/kinetic-atlas-v2-living.js","assets/kinetic-atlas-v2-measurement.js","assets/kinetic-atlas-v2-history.js"];
+const svg = read(v2Modules[0]);
 const controller = read("assets/kinetic-atlas-ui-2026.js");
 const css = read("assets/kinetic-atlas-2026.css");
 const context = {};
 runInNewContext(data,context);
 runInNewContext(svg,context);
+for(const file of v2Modules.slice(1))runInNewContext(read(file),context);
 const {items,groups} = context.RuwaidixAtlasData;
 const {draw} = context.RuwaidixAtlasDraw;
 
@@ -104,7 +106,7 @@ test("nine chapter cards acquire distinct, topic-specific visual specimens", () 
   assert.match(mini,/pointerleave/);
   assert.match(mini,/focusin/);
   assert.match(mini,/visibilitychange/);
-  assert.match(mini,/rx-card-focus-/);
+  assert.match(mini,/namespace:"mini-"/);
   assert.match(miniCss,/@media\(prefers-reduced-motion:reduce\)/);
   assert.ok(html.includes("kinetic-chapter-cards-2026.js"));
   assert.ok(html.includes("kinetic-chapter-cards-2026.css"));
@@ -121,6 +123,7 @@ test("all scenes support shareable deep links and six guided scientific discover
   assert.match(controller,/rx-atlas-guided/);
   assert.match(controller,/rx-atlas-copy-status/);
   assert.match(html,/id="rx-kinetic-atlas"/);
+  for(const file of v2Modules)assert.ok(html.includes(file),"Missing V2 visual module "+file);
   assert.match(html,/href="#rx-kinetic-atlas"/);
   assert.match(css,/\.rx-atlas-guided\{/);
   assert.match(css,/\.rx-atlas-related\{/);
