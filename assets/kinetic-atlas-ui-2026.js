@@ -24,7 +24,7 @@ function initialize(){
   '<div class="rx-atlas-scale"><span id="rx-atlas-min">Initial</span><output id="rx-atlas-output" for="rx-atlas-range">37%</output><span id="rx-atlas-max">Changed</span></div>'+
   '<div class="rx-atlas-actions"><button type="button" id="rx-atlas-prev">← Previous</button><button type="button" id="rx-atlas-play" aria-pressed="false">▶ Animate</button>'+
   '<button type="button" id="rx-atlas-next">Next →</button></div></div>'+
-  '</div><aside class="rx-atlas-sidebar"><div class="rx-atlas-description"><span id="rx-atlas-category"></span><h3 id="rx-atlas-title"></h3><p id="rx-atlas-explanation"></p>'+
+  '</div><aside class="rx-atlas-sidebar"><div class="rx-atlas-description"><span id="rx-atlas-category"></span><h3 id="rx-kinetic-scene-title"></h3><p id="rx-atlas-explanation"></p>'+
   '<div class="rx-atlas-related"><a id="rx-atlas-source" href="/research.html">See the related work ↗</a><button id="rx-atlas-copy-link" type="button" aria-label="Copy a link to this scene">Copy scene link</button><output id="rx-atlas-copy-status" role="status" aria-live="polite"></output></div></div>'+
   '<div class="rx-atlas-sidebar-title"><strong id="rx-atlas-choose">Choose a movement</strong><span id="rx-atlas-total">30 / 30</span></div>'+
   '<label class="rx-atlas-search-label" for="rx-atlas-search" id="rx-atlas-search-caption">Search the collection</label>'+
@@ -102,7 +102,7 @@ function initialize(){
    q("rx-atlas-mode").textContent=T("ILLUSTRATION / NOT DATA","توضيح / ليست بيانات");
    q("rx-atlas-folio").textContent=String(current).padStart(2,"0")+" / 30";
    const cat=groups.find(g=>g[0]===e[1]);q("rx-atlas-category").textContent=T(cat[1],cat[2])+" / "+String(current).padStart(2,"0");
-   q("rx-atlas-title").textContent=T(e[2],e[3]);q("rx-atlas-explanation").textContent=T(e[4],e[5]);
+   q("rx-kinetic-scene-title").textContent=T(e[2],e[3]);q("rx-atlas-explanation").textContent=T(e[4],e[5]);
    q("rx-atlas-range-label").textContent=T(e[6],e[7]);
    range.setAttribute("aria-label",T(e[6],e[7])+" — "+T("illustrative scale","مقياس توضيحي"));
    q("rx-atlas-min").textContent=T("Initial","بداية");q("rx-atlas-max").textContent=T("Changed","تغيير");
