@@ -7,6 +7,10 @@ on:
     paths:
       - "assets/ruwaidix-home-world-2026.js"
       - "assets/ruwaidix-home-world-2026.css"
+      - "assets/atlas-of-questions-2026.css"
+      - "assets/kinetic-atlas-2026.css"
+      - "assets/mobile-layout-integrity-2026.css"
+      - "scripts/mobile-question-atlas-qa-2026.cjs"
       - "index.html"
       - "scripts/living-home-chrome-2026.cjs"
       - "tests/home-hero-uncluttered-2026.test.mjs"
@@ -52,6 +56,11 @@ jobs:
           SITE_BASE_URL: http://127.0.0.1:8765
           BROWSER_QA_OUTPUT: browser-qa-artifacts
         run: node scripts/browser-release-qa-2026.cjs
+      - name: Real Chrome mobile thread layout, six viewport and Arabic screenshots
+        env:
+          SITE_BASE_URL: http://127.0.0.1:8765
+          BROWSER_QA_OUTPUT: browser-qa-artifacts
+        run: node scripts/mobile-question-atlas-qa-2026.cjs
       - name: Exercise and screenshot the five new homepage experiences
         if: success() || failure()
         env:
