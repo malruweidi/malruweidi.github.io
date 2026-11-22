@@ -5,9 +5,69 @@
 (() => {
   "use strict";
   if(document.documentElement.dataset.rxPage!=="home")return;
-  const vessel=document.querySelector(".rx-hero-portrait > .rx-microvessel");
-  if(!vessel)return;
+  const vessel=document.querySelector(".rx-microvessel");
+  const portrait=document.querySelector(".rx-hero-portrait");
+  if(!vessel||!portrait)return;
+
+  // Recover browsers still rendering the previous GitHub Pages HTML.
+  // The old page placed this specimen beside the *text*, not the portrait,
+  // and used an empty stroked SVG clip that hid all of its red cells.
+  const wasLegacy=vessel.parentElement!==portrait;
+  if(wasLegacy){
+    portrait.insertBefore(vessel,portrait.firstChild);
+    // Use an appended rule so even cached legacy CSS cannot restore the old layout.
+    const override=document.createElement("style");
+    override.id="rx-microvessel-legacy-recovery";
+    override.textContent=
+      'html[data-rx-page="home"] main .rx-hero-portrait>.rx-microvessel{'+
+      'position:absolute!important;inset:auto!important;top:18px!important;left:-76px!important;'+
+      'display:flex!important;width:208px!important;max-width:208px!important;'+
+      'margin:0!important;z-index:24!important;visibility:visible!important}'+
+      'html[data-rx-page="home"] main .rx-hero-portrait>.rx-microvessel .rx-microvessel-label{'+
+      'color:#1c3f58!important;background:#fbf6ed!important;padding:4px 9px!important;'+
+      'border-radius:24px!important;text-shadow:none!important}'+
+      '@media(max-width:1199px){html[data-rx-page="home"] main .rx-hero-portrait>.rx-microvessel{'+
+      'left:8px!important;top:6px!important;width:179px!important}}'+
+      '@media(max-width:760px){html[data-rx-page="home"] main .rx-hero-portrait>.rx-microvessel{'+
+      'left:12px!important;top:10px!important;width:164px!important}}'+
+      '@media(max-width:480px){html[data-rx-page="home"] main .rx-hero-portrait>.rx-microvessel{'+
+      'left:3px!important;top:8px!important;width:132px!important}}';
+    document.head?.appendChild(override);
+  }
+  vessel.removeAttribute?.("data-placement");
+  const english=vessel.querySelector(".rx-microvessel-label [lang=en]");
+  const arabic=vessel.querySelector(".rx-microvessel-label [lang=ar]");
+  if(english)english.textContent="Hemodynamics ↗";
+  if(arabic)arabic.textContent="ديناميكا الدم ↗";
+  vessel.dataset.version="portrait-20261123-c";
+  vessel.title="Illustrative microvascular blood flow. Hover to accelerate red blood cells; click for the research film.";
+
   const svg=vessel.querySelector("svg");
+  if(svg){
+    const clipPath=svg.querySelector("#rx-microvessel-lumen path");
+    if(clipPath&&clipPath.getAttribute("fill")==="none"){
+      clipPath.setAttribute("d","M 11 54 C 72 21 149 65 247 16 A 18 18 0 0 1 247 52 C 149 101 72 57 11 90 A 18 18 0 0 1 11 54 Z");
+      clipPath.setAttribute("fill","#fff");
+      clipPath.removeAttribute("stroke");
+      clipPath.removeAttribute("stroke-width");
+      clipPath.removeAttribute("stroke-linecap");
+    }
+    if(!svg.querySelector("#rx-microvessel-track")){
+      const track= document.createElementNS("http://www.w3.org/2000/svg","path");
+      track.setAttribute("id","rx-microvessel-track");
+      track.setAttribute("d","M -22 74 C 62 41 145 84 284 28");
+      const defs=svg.querySelector("defs");
+      defs?.appendChild(track);
+    }
+    const fractions=[.13,.255,.38,.505,.63,.755,.88,.96];
+    svg.querySelectorAll(".rx-erythrocyte").forEach((cell,i)=>{
+      if(!cell.dataset.phase)cell.dataset.phase=String(fractions[i%fractions.length]);
+      // Old CSS motion paths use incompatible CSS coordinates and can
+      // visually remove the SVG-path transforms; shut them off per cell.
+      cell.style?.setProperty("offset-path","none","important");
+      cell.style?.setProperty("animation","none","important");
+    });
+  }
   const track=svg?.querySelector("#rx-microvessel-track");
   const cells=Array.from(svg?.querySelectorAll(".rx-erythrocyte")||[]);
   const reduced=window.matchMedia("(prefers-reduced-motion: reduce)");
