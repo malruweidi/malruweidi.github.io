@@ -74,3 +74,11 @@ html[lang="ar"] .rx-atlas-choice{text-align:right}
 @media(max-width:950px){.rx-atlas-head{grid-template-columns:1fr}.rx-atlas-head>p{margin:0;max-width:680px}.rx-atlas-columns{grid-template-columns:minmax(0,1fr)}.rx-atlas-list{max-height:340px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.rx-atlas-description p{min-height:0}}
 @media(max-width:560px){.rx-atlas-shell{width:calc(100% - 34px)}.rx-atlas{padding:65px 0 70px}.rx-atlas-head h2{font-size:clamp(44px,12vw,62px)}.rx-atlas-categories{flex-wrap:nowrap;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory}.rx-atlas-cat{flex:0 0 auto;scroll-snap-align:start}.rx-atlas-device{padding:8px}.rx-atlas-topline,.rx-atlas-footprint{font-size:8px;letter-spacing:.01em}.rx-atlas-topline{gap:5px}.rx-atlas-controllers{padding:15px 14px}.rx-atlas-actions{gap:5px}.rx-atlas-actions button{padding:10px 3px;font-size:10px}.rx-atlas-list{grid-template-columns:1fr;max-height:330px}.rx-atlas-sidebar{padding:15px}.rx-atlas-boundary{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.rx-atlas *, .rx-atlas *:before,.rx-atlas *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Direct scene links sit beside the original scholarly source, not above it. */
+.rx-atlas-related{display:flex;align-items:center;gap:12px 20px;flex-wrap:wrap}
+.rx-atlas-related>a{flex:none}
+.rx-atlas-related button{border:1px solid #7c9eaf;background:transparent;color:#d9eaf4;padding:7px 11px;font:600 11px/1.6 "DM Sans",Arial,sans-serif;min-height:36px}
+.rx-atlas-related button:hover{border-color:#f1cd8d;color:#f1cd8d;background:#21445f}
+.rx-atlas-related output{display:block;min-height:1em;flex-basis:100%;font:11px/1.6 "DM Sans",Arial,sans-serif;color:#c7e4d8}
+html[lang="ar"] .rx-atlas-related button{font-family:Tahoma,Arial,sans-serif}
