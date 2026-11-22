@@ -99,9 +99,14 @@ function draw(id,position,opts){
   text(45,348,"RUWAIDIX",10,"#ebdfce",{"letter-spacing":"2"})+
   text(148,348,"/  KINETIC ATLAS",9,"#c9c1b4",{"letter-spacing":"1.3"})+
   text(589,348,ar?"تصوّر علمي":"CONCEPT / INTERACTIVE",9,accent,ar?{"text-anchor":"end"}:{"letter-spacing":"1","text-anchor":"end"});
- return tag("svg",{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 640 380",role:"img",focusable:"false",
+ const miniature=ns.startsWith("mini-")||options.compact===true;
+ const content=miniature?
+    rect(0,0,640,380,0,ref("bg"))+rect(0,0,640,380,0,ref("ambient"))+illustration:
+    backdrop+illustration;
+ return tag("svg",{xmlns:"http://www.w3.org/2000/svg",viewBox:miniature?"101 103 438 209":"0 0 640 380",
+   preserveAspectRatio:miniature?"xMidYMid slice":"xMidYMid meet",role:"img",focusable:"false",
   "aria-label":(ar?"رسم توضيحي: ":"Conceptual illustration: ")+title},
-  tag("defs",{},gradients.join("")+definition.join(""))+backdrop+illustration);
+  tag("defs",{},gradients.join("")+definition.join(""))+content);
 }
 root.RuwaidixAtlasV2={register,draw,sceneIds};
 root.RuwaidixAtlasDraw={draw,sceneIds,version:"2.0"};
