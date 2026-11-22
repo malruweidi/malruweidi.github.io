@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'assets/atlas-of-questions-2026.css'
+      - 'assets/mobile-layout-integrity-2026.css'
+      - 'tests/mobile-layout-integrity.test.mjs'
       - 'assets/kinetic-atlas-*.js'
       - 'assets/kinetic-atlas-*.css'
       - 'assets/kinetic-chapter-cards-2026.js'
@@ -49,4 +52,4 @@ jobs:
           node --check assets/kinetic-atlas-ui-2026.js
           node --check assets/kinetic-chapter-cards-2026.js
       - name: Run scientific provenance, accessibility and interaction tests
-        run: node --test tests/kinetic-atlas.test.mjs tests/kinetic-atlas-runtime.test.mjs tests/kinetic-atlas-visual-quality.test.mjs
+        run: node --test tests/kinetic-atlas.test.mjs tests/kinetic-atlas-runtime.test.mjs tests/kinetic-atlas-visual-quality.test.mjs tests/mobile-layout-integrity.test.mjs
