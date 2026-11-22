@@ -1,0 +1,12 @@
+/* Contextual science sketches: nine small living motifs, never generic card ornaments. */
+.rx26-portal-card .rx26-card-top{align-items:center;min-height:76px}
+.rx-card-kinetic{position:relative;display:block;flex:0 0 98px;width:98px;height:65px;overflow:hidden;border:1px solid #8cabae;background:#17364f;transform:rotate(2deg);box-shadow:3px 4px 0 rgba(35,65,81,.1);isolation:isolate;transition:transform .25s ease,border-color .25s ease}
+.rx-card-kinetic-art,.rx-card-kinetic-art>svg{display:block;width:100%;height:100%;pointer-events:none}
+.rx-card-kinetic-art svg{object-fit:cover;max-width:none}
+.rx-card-kinetic-label{position:absolute;right:4px;top:1px;font-size:9px;color:#ead098;pointer-events:none}
+.rx26-portal-card:hover .rx-card-kinetic,.rx26-portal-card:focus-visible .rx-card-kinetic,.rx26-portal-card.rx-card-is-moving .rx-card-kinetic{transform:rotate(-2deg) scale(1.045);border-color:#c69a5a}
+html[lang="ar"] .rx-card-kinetic{transform:rotate(-2deg)}
+html[lang="ar"] .rx26-portal-card:hover .rx-card-kinetic{transform:rotate(2deg) scale(1.045)}
+@media(max-width:1200px){.rx-card-kinetic{width:76px;height:58px;flex-basis:76px}.rx26-portal-card .rx26-card-top{min-height:63px}}
+@media(max-width:640px){.rx26-portal-card .rx26-card-top{min-height:62px}.rx-card-kinetic{width:81px;height:56px;flex-basis:81px}}
+@media(prefers-reduced-motion:reduce){.rx-card-kinetic{transition:none!important;transform:none!important}.rx26-portal-card:hover .rx-card-kinetic,.rx26-portal-card:focus-visible .rx-card-kinetic{transform:none!important}}
