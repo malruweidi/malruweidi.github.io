@@ -51,8 +51,13 @@
       entry.startedAt = performance.now() - entry.value * 1100;
       const tick = now => {
         if (current !== entry || motionPreference?.matches || document.hidden) { stop(entry); return; }
-        entry.value = (Math.sin((now - entry.startedAt) / 1000 * Math.PI) + 1) / 2;
-        render(entry);
+        // Cap SVG DOM updates to roughly 24 frames/second even on 120 Hz screens.
+        // The thumbnail is decorative; high-frequency DOM reconstruction is wasteful.
+        if (entry.lastFrameAt === undefined || now - entry.lastFrameAt >= 42) {
+          entry.value = (Math.sin((now - entry.startedAt) / 1000 * Math.PI) + 1) / 2;
+          render(entry);
+          entry.lastFrameAt = now;
+        }
         entry.frame = requestAnimationFrame(tick);
       };
       entry.frame = requestAnimationFrame(tick);
