@@ -1,0 +1,46 @@
+name: Kinetic Atlas QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'assets/kinetic-atlas-*.js'
+      - 'assets/kinetic-atlas-*.css'
+      - 'assets/kinetic-chapter-cards-2026.js'
+      - 'assets/kinetic-chapter-cards-2026.css'
+      - 'tests/kinetic-atlas*.test.mjs'
+      - '.github/workflows/kinetic-atlas-qa.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'assets/kinetic-atlas-*.js'
+      - 'assets/kinetic-atlas-*.css'
+      - 'assets/kinetic-chapter-cards-2026.js'
+      - 'assets/kinetic-chapter-cards-2026.css'
+      - 'tests/kinetic-atlas*.test.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-atlas:
+    name: Static, bilingual and interactive regression checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Configure Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check the syntax of each interactive module
+        run: |
+          node --check assets/kinetic-atlas-data-2026.js
+          node --check assets/kinetic-atlas-draw-2026.js
+          node --check assets/kinetic-atlas-ui-2026.js
+          node --check assets/kinetic-chapter-cards-2026.js
+      - name: Run scientific provenance, accessibility and interaction tests
+        run: node --test tests/kinetic-atlas.test.mjs tests/kinetic-atlas-runtime.test.mjs
