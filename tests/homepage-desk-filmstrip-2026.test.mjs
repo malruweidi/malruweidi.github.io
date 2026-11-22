@@ -20,7 +20,7 @@ test("Things I Kept contains eight unique photos, excluding the repeated yellow 
  assert.equal(new Set(paths).size,8);
  assert.ok(!paths.some(p=>p.includes("toy.webp")));
  assert.doesNotMatch(read("index.html"), /src="\/assets\/personal-archive\/toy\.webp"/);
- assert.match(read("index.html"), /src="\/assets\/personal-archive\/suspenders\.webp"/);
+ assert.match(read("index.html"), /src="\/assets\/personal-archive\/suspenders-transparent\.png"/);
  assert.ok(!block.includes("The yellow jacket"));
  assert.match(js,/Things I kept/);
  assert.doesNotMatch(js,/Three things I kept/);
