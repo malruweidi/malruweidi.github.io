@@ -82,3 +82,7 @@ html[lang="ar"] .rx-atlas-choice{text-align:right}
 .rx-atlas-related button:hover{border-color:#f1cd8d;color:#f1cd8d;background:#21445f}
 .rx-atlas-related output{display:block;min-height:1em;flex-basis:100%;font:11px/1.6 "DM Sans",Arial,sans-serif;color:#c7e4d8}
 html[lang="ar"] .rx-atlas-related button{font-family:Tahoma,Arial,sans-serif}
+
+.rx-atlas-guided{width:100%;margin-top:9px;padding:12px 14px;background:transparent;color:#f2d49d;border:1px solid #a48e6b;text-align:center;font:600 12px/1.6 "DM Sans",Arial,sans-serif}
+.rx-atlas-guided:hover{background:#315271;border-color:#f2d49d;color:#fff}
+html[lang="ar"] .rx-atlas-guided{font-family:Tahoma,Arial,sans-serif}
