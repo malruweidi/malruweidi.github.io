@@ -155,7 +155,9 @@
       b.textContent = filters[i][arabic ? 2 : 1];
       b.setAttribute("aria-pressed",String(active === filters[i][0]));
     });
-    status.textContent = arabic ? number.format(count)+" من "+number.format(cards.length) : number.format(count)+" of "+number.format(cards.length);
+    status.textContent = arabic
+      ? (active==="all" ? number.format(cards.length)+" مجموعات" : number.format(count)+" مجموعات من "+number.format(cards.length))
+      : (active==="all" ? number.format(cards.length)+" collections" : number.format(count)+" collections shown · "+number.format(cards.length)+" total");
     grid.classList.toggle("rx-cover-filtered",active !== "all");
   }
   const buttons = filters.map(([id]) => {
