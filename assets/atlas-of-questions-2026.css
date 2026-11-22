@@ -105,3 +105,39 @@
  .rx-atlas-panel{padding:22px}
 }
 @media(prefers-reduced-motion:reduce){.rx-atlas-home *,.rx-atlas-overlay *{transition:none!important;animation:none!important}}
+
+/* Mobile navigation that cannot collapse into min-content columns. The
+   question atlas is independent of the separately namespaced kinetic atlas. */
+@media(max-width:600px){
+ .rx-atlas-home{padding:48px 0 54px}
+ .rx-atlas-home .rx-atlas-container{width:calc(100% - 28px);max-width:100%}
+ .rx-atlas-home .rx-atlas-home-head{grid-template-columns:minmax(0,1fr);gap:15px;margin-bottom:22px}
+ .rx-atlas-home .rx-atlas-home-head>*{min-width:0}
+ .rx-atlas-home .rx-atlas-home-head h2{font-size:clamp(37px,10vw,49px);line-height:1.06;letter-spacing:-.034em;overflow-wrap:normal}
+ .rx-atlas-home .rx-atlas-head-aside{max-width:100%;font-size:14px;line-height:1.7}
+ .rx-atlas-home .rx-atlas-interact{display:grid;grid-template-columns:minmax(0,1fr);min-width:0;width:100%}
+ .rx-atlas-home .rx-atlas-choice{display:grid;grid-template-columns:minmax(0,1fr);gap:7px;width:100%;min-width:0;padding:12px;background:#203658}
+ .rx-atlas-home .rx-atlas-choice-label{grid-column:1;padding:7px 7px 8px;font-size:10px;line-height:1.4}
+ .rx-atlas-home .rx-atlas-choice button{display:grid;grid-template-columns:30px minmax(0,1fr) 20px;align-items:center;gap:10px;min-width:0;max-width:100%;width:100%;min-height:82px;padding:13px 14px;border:1px solid #e5e8e72d;border-radius:7px;background:#294563;color:#fffaf1;text-align:start}
+ .rx-atlas-home .rx-atlas-choice button>span:nth-child(2){display:block;min-width:0;width:auto}
+ .rx-atlas-home .rx-atlas-choice button[aria-pressed=true]{background:#f4ead9;color:#1d3854;border-color:#e6cba2;box-shadow:inset 4px 0 #5381bf}
+ .rx-atlas-home .rx-atlas-choice button:hover:not([aria-pressed=true]){background:#345576}
+ .rx-atlas-home .rx-atlas-choice .rx-atlas-no{font-size:11px;white-space:nowrap;align-self:center}
+ .rx-atlas-home .rx-atlas-choice .rx-atlas-tabtitle{font-size:clamp(20px,5.7vw,24px);line-height:1.14;letter-spacing:-.02em;overflow-wrap:normal;word-break:normal;hyphens:none}
+ .rx-atlas-home .rx-atlas-choice .rx-atlas-tabsub{font-size:11px;line-height:1.45;margin-top:5px;overflow-wrap:break-word;word-break:normal;hyphens:auto}
+ .rx-atlas-home .rx-atlas-choice .rx-atlas-indicator{text-align:center;font-size:17px}
+ .rx-atlas-home .rx-atlas-detail{min-width:0;overflow:visible;padding:24px 19px 25px;background:#f9f6ee}
+ .rx-atlas-home .rx-atlas-detail:before{max-width:60%;opacity:.35}
+ .rx-atlas-home .rx-atlas-detail h3{font-size:clamp(29px,8vw,39px);line-height:1.15;letter-spacing:-.025em;margin:18px 0 15px;max-width:100%;overflow-wrap:break-word}
+ .rx-atlas-home .rx-atlas-detail p{font-size:13px;line-height:1.75;margin-bottom:23px;overflow-wrap:break-word}
+ .rx-atlas-home .rx-atlas-links{grid-template-columns:minmax(0,1fr);gap:8px}
+ .rx-atlas-home .rx-atlas-links a{min-width:0;padding:14px 15px;font-size:12px;min-height:48px}
+ .rx-atlas-home .rx-atlas-foot{font-size:10px;gap:9px;line-height:1.65}
+}
+@media(max-width:360px){
+ .rx-atlas-home .rx-atlas-choice button{padding:12px 10px;grid-template-columns:25px minmax(0,1fr) 18px;gap:7px}
+ .rx-atlas-home .rx-atlas-choice .rx-atlas-tabtitle{font-size:20px}
+ .rx-atlas-home .rx-atlas-detail{padding-inline:15px}
+}
+html[lang="ar"] .rx-atlas-home .rx-atlas-choice button[aria-pressed=true]{box-shadow:inset -4px 0 #5381bf}
+html[lang="ar"] .rx-atlas-home .rx-atlas-choice .rx-atlas-tabtitle{letter-spacing:0;line-height:1.45}
