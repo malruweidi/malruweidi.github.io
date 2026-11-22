@@ -97,9 +97,11 @@ html[data-rx-page="home"] .rx-atlas-home .rx-atlas-links a{
     margin:0;
   }
   html[data-rx-page="home"] .header .brandline{
-    font-size:9px!important;
+    font-family:"DM Sans",Arial,sans-serif!important;
+    font-size:10px!important;
+    font-weight:500;
     line-height:1.4!important;
-    letter-spacing:.01em!important;
+    letter-spacing:0!important;
     margin-top:4px;
   }
   html[data-rx-page="home"] .header .menu{
@@ -147,7 +149,7 @@ html[data-rx-page="home"] .rx-atlas-home .rx-atlas-links a{
     font-size:15px!important;
   }
   html[data-rx-page="home"] .header .brandline{
-    font-size:8.5px!important;
+    font-size:9px!important;
   }
   html[data-rx-page="home"] .header .menu{
     min-width:69px;
@@ -176,4 +178,8 @@ html[lang="ar"][data-rx-page="home"] .header .brandline{
   html[data-rx-page="home"] .header .menu{
     transition:none!important;
   }
+}
+
+@media(max-width:340px){
+ html[data-rx-page="home"] .header .brandline{font-size:8.5px!important;}
 }
