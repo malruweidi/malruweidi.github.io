@@ -4,10 +4,12 @@
 if(typeof document==="undefined"||document.documentElement.dataset.rxPage!=="home")return;
 function initialize(){
  const data=globalThis.RuwaidixAtlasData,drawer=globalThis.RuwaidixAtlasDraw;
- if(!data||!drawer||document.getElementById("rx-kinetic-atlas"))return;
+ const existing=document.getElementById("rx-kinetic-atlas");
+ if(!data||!drawer||(existing&&existing.dataset.rxAtlasReady==="true"))return;
  const target=document.getElementById("research-workbench")||document.getElementById("rx26-portal");
- if(!target)return;
- const node=document.createElement("section");
+ if(!target&&!existing)return;
+ const node=existing||document.createElement("section");
+ node.dataset.rxAtlasReady="true";
  node.className="rx-atlas";node.id="rx-kinetic-atlas";node.dataset.i18nIgnore="";
  node.setAttribute("aria-labelledby","rx-atlas-heading");
  node.innerHTML='<div class="rx-atlas-shell">'+
@@ -31,7 +33,7 @@ function initialize(){
   '<button type="button" id="rx-atlas-surprise" class="rx-atlas-surprise">A different question ↗</button></aside></div>'+
   '<p class="rx-atlas-boundary" id="rx-atlas-boundary">The setting is normalized for illustration, not calibrated. Movements do not claim measured values, clinical effectiveness, or established experimental mechanisms. Animation is optional.</p>'+
   '</div>';
- target.insertAdjacentElement(target.id==="research-workbench"?"afterend":"beforebegin",node);
+ if(!existing)target.insertAdjacentElement(target.id==="research-workbench"?"afterend":"beforebegin",node);
  const q=id=>node.querySelector("#"+id), entries=data.items, groups=data.groups;
  let active=entries[0][0], group="all", search="", timer=null, direction=1;
  const isAr=()=>document.documentElement.lang==="ar";
