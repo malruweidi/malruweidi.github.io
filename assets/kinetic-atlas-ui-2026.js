@@ -55,7 +55,7 @@ function initialize(){
  }
  function draw(){
    const value=Number(range.value),e=find(active);
-   canvas.innerHTML=drawer.draw(active,value/100);
+   canvas.innerHTML=drawer.draw(active,value/100,{namespace:"atlas-main",locale:isAr()?"ar":"en"});
    canvas.querySelector("svg")?.setAttribute("aria-label",T("Conceptual illustration: ","رسم توضيحي: ")+T(e[2],e[3]));
    q("rx-atlas-output").textContent=T("Illustrative: ","توضيحي: ")+value+"%";
  }
