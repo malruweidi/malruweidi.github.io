@@ -1,45 +1,19 @@
-/* RUWAIDIX / portrait-anchored microvascular hemodynamics, 2026-11-23.
+/* RUWAIDIX / evidence-card microvascular hemodynamics, 2026-11-23.
    SVG path coordinates are measured in the SVG's viewBox, never CSS pixels.
    Visible, oval nucleated erythrocytes travel inside a clipped vessel lumen.
    Hover/focus accelerates flow. Animation is conceptual, not measured data. */
 (() => {
   "use strict";
   if(document.documentElement.dataset.rxPage!=="home")return;
-  const vessel=document.querySelector(".rx-microvessel");
-  const portrait=document.querySelector(".rx-hero-portrait");
-  if(!vessel||!portrait)return;
-
-  // Recover browsers still rendering the previous GitHub Pages HTML.
-  // The old page placed this specimen beside the *text*, not the portrait,
-  // and used an empty stroked SVG clip that hid all of its red cells.
-  const wasLegacy=vessel.parentElement!==portrait;
-  if(wasLegacy){
-    portrait.insertBefore(vessel,portrait.firstChild);
-    // Use an appended rule so even cached legacy CSS cannot restore the old layout.
-    const override=document.createElement("style");
-    override.id="rx-microvessel-legacy-recovery";
-    override.textContent=
-      'html[data-rx-page="home"] main .rx-hero-portrait>.rx-microvessel{'+
-      'position:absolute!important;inset:auto!important;top:18px!important;left:-76px!important;'+
-      'display:flex!important;width:208px!important;max-width:208px!important;'+
-      'margin:0!important;z-index:24!important;visibility:visible!important}'+
-      'html[data-rx-page="home"] main .rx-hero-portrait>.rx-microvessel .rx-microvessel-label{'+
-      'color:#1c3f58!important;background:#fbf6ed!important;padding:4px 9px!important;'+
-      'border-radius:24px!important;text-shadow:none!important}'+
-      '@media(max-width:1199px){html[data-rx-page="home"] main .rx-hero-portrait>.rx-microvessel{'+
-      'left:8px!important;top:6px!important;width:179px!important}}'+
-      '@media(max-width:760px){html[data-rx-page="home"] main .rx-hero-portrait>.rx-microvessel{'+
-      'left:12px!important;top:10px!important;width:164px!important}}'+
-      '@media(max-width:480px){html[data-rx-page="home"] main .rx-hero-portrait>.rx-microvessel{'+
-      'left:3px!important;top:8px!important;width:132px!important}}';
-    document.head?.appendChild(override);
-  }
-  vessel.removeAttribute?.("data-placement");
+  // The specimen now belongs to the image-exploration evidence card.
+  // Preserve the existing SVG, red-cell animation, keyboard access, and research link.
+  const vessel=document.querySelector(".rx-observation-copy > .rx-microvessel");
+  if(!vessel)return;
   const english=vessel.querySelector(".rx-microvessel-label [lang=en]");
   const arabic=vessel.querySelector(".rx-microvessel-label [lang=ar]");
   if(english)english.textContent="Hemodynamics ↗";
   if(arabic)arabic.textContent="ديناميكا الدم ↗";
-  vessel.dataset.version="portrait-20261123-c";
+  vessel.dataset.version="observation-20261123-a";
   vessel.title="Illustrative microvascular blood flow. Hover to accelerate red blood cells; click for the research film.";
 
   const svg=vessel.querySelector("svg");
