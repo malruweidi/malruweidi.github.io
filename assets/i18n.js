@@ -169,3 +169,15 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initialize);
   else initialize();
 })();
+
+/* Sitewide, optional Golden Snitch Easter egg. Independent from translation. */
+(function () {
+  if (typeof document.querySelector !== "function" || !document.head ||
+      document.querySelector('script[data-rx-snitch]')) return;
+  if (typeof window.matchMedia !== "function") return;
+  var script = document.createElement("script");
+  script.src = "/assets/golden-snitch.js";
+  script.async = true;
+  script.setAttribute("data-rx-snitch", "");
+  document.head.appendChild(script);
+})();
