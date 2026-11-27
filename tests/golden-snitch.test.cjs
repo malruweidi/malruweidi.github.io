@@ -12,7 +12,7 @@ function harness({reduced=false,caught=false}={}){
  const host={style:{},attachShadow(){return shadow},remove(){nodes.delete(this.id)}};
  const document={readyState:'complete',documentElement:{lang:'en'},getElementById:id=>nodes.get(id),createElement:()=>host,body:{appendChild(n){nodes.set(n.id,n)}},addEventListener(){}};
  const media={matches:reduced,addEventListener(k,v){mediaEvents[k]=v}};
- const window={matchMedia:()=>media,sessionStorage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v)},MutationObserver:class{observe(){}}};
+ const window={matchMedia:()=>media,sessionStorage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v)},MutationObserver:class{observe(){} disconnect(){}}};
  vm.runInNewContext(source(),{window,document});
  return {nodes,events,mediaEvents,media,store,button,shadow,document,window};
 }
