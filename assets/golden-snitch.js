@@ -13,8 +13,8 @@
     host.id=id;
     const shadow=host.attachShadow({mode:"open"});
     shadow.innerHTML=`<style>
-:host{position:fixed;inset:0;z-index:40;pointer-events:none;overflow:hidden;contain:layout style paint}
-.rx-snitch-flight{position:absolute;top:0;left:0;width:100px;height:68px;border:0;padding:0;background:transparent;cursor:pointer;pointer-events:auto;animation:rx-flight 24s 4s infinite ease-in-out backwards;will-change:transform;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+:host{position:fixed;inset:0;z-index:2147483000;pointer-events:none;overflow:hidden;contain:layout style paint}
+.rx-snitch-flight{position:absolute;top:0;left:0;width:112px;height:74px;border:0;padding:0;background:transparent;cursor:pointer;pointer-events:auto;animation:rx-flight 16s infinite ease-in-out;will-change:transform;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 .rx-snitch-flight:hover,.rx-snitch-flight:focus-visible{animation-play-state:paused}.rx-snitch-flight:focus-visible{outline:2px solid #b88a35;outline-offset:2px;border-radius:50%}
 .rx-snitch-flight[data-caught="true"]{animation-play-state:paused;pointer-events:none}.rx-snitch-flight[data-caught="true"] svg{animation:rx-capture .55s ease-in forwards}.rx-snitch-flight[data-caught="true"] .wing{animation:none}.rx-snitch-status{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);max-width:90vw;width:max-content;color:#fff;background:#263b55;font:600 13px/1.5 system-ui,sans-serif;border-radius:999px;box-shadow:0 3px 16px #0002;pointer-events:none}.rx-snitch-status:not(:empty){padding:10px 18px;border:1px solid #d7b96e}@keyframes rx-capture{0%{transform:scale(1);opacity:1}40%{filter:drop-shadow(0 0 12px #ffe4a0);transform:scale(1.2)}100%{transform:scale(.1) rotate(180deg);opacity:0}}
 svg{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 2px 3px #55330055)}
@@ -22,19 +22,18 @@ svg{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 2
 .left{transform-origin:49px 34px}.right{transform-origin:71px 34px;animation-delay:-.035s}
 @keyframes rx-wing{from{transform:rotate(-15deg) scaleY(.6)}to{transform:rotate(15deg) scaleY(1)}}
 @keyframes rx-flight{
-0%{transform:translate3d(10px,18vh,0) rotate(-8deg);opacity:0;visibility:hidden}
-3%{opacity:.96;visibility:visible}
-12%{transform:translate3d(calc(100vw - 112px),24vh,0) rotate(14deg)}
-20%{transform:translate3d(62vw,47vh,0) rotate(-20deg)}
-27%{transform:translate3d(calc(100vw - 112px),65vh,0) rotate(15deg)}
-40%{transform:translate3d(12vw,74vh,0) rotate(-13deg)}
-50%{transform:translate3d(10px,33vh,0) rotate(-10deg)}
-60%{transform:translate3d(38vw,21vh,0) rotate(12deg)}
-72%{transform:translate3d(calc(100vw - 112px),40vh,0) rotate(9deg)}
-81%{transform:translate3d(calc(100vw - 112px),72vh,0) rotate(-9deg);opacity:.96}
-87%,100%{transform:translate3d(calc(100vw - 112px),72vh,0);opacity:0;visibility:hidden}
+0%,100%{transform:translate3d(12px,28vh,0) rotate(-8deg)}
+10%{transform:translate3d(calc(100vw - 124px),16vh,0) rotate(12deg)}
+19%{transform:translate3d(calc(72vw - 80px),42vh,0) rotate(-22deg)}
+27%{transform:translate3d(calc(100vw - 124px),calc(100vh - 104px),0) rotate(18deg)}
+40%{transform:translate3d(12vw,calc(100vh - 104px),0) rotate(-14deg)}
+49%{transform:translate3d(12px,45vh,0) rotate(-12deg)}
+60%{transform:translate3d(38vw,18vh,0) rotate(12deg)}
+72%{transform:translate3d(calc(100vw - 124px),40vh,0) rotate(9deg)}
+82%{transform:translate3d(calc(58vw - 50px),calc(100vh - 104px),0) rotate(-14deg)}
+92%{transform:translate3d(12vw,55vh,0) rotate(-16deg)}
 }
-@media(max-width:600px){.rx-snitch-flight{width:80px;height:56px;animation-duration:30s}}
+@media(max-width:600px){.rx-snitch-flight{width:80px;height:56px;animation-duration:20s}}
 @media(prefers-reduced-motion:reduce),print{:host{display:none!important}}
 </style><button type="button" class="rx-snitch-flight"><svg viewBox="0 0 120 80" aria-hidden="true" focusable="false"><defs>
 <radialGradient id="body" cx=".32" cy=".25" r=".77"><stop stop-color="#fff5c6"/><stop offset=".24" stop-color="#eec56b"/><stop offset=".58" stop-color="#bd8127"/><stop offset=".84" stop-color="#8d5717"/><stop offset="1" stop-color="#f3cb75"/></radialGradient>
