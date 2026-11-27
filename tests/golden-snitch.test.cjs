@@ -23,3 +23,5 @@ test('homepage directly loads the isolated asset',()=>{assert.match(fs.readFileS
 
 test('non-home routes never mount the Snitch',()=>{assert.equal(harness({pathname:'/research.html'}).nodes.size,0)});
 test('Arabic capture feedback is localized',()=>{const h=harness({lang:'ar'});h.events.click();assert.match(h.status.textContent,/أمسكت/)});
+
+test('flight stays visible and loops without a startup delay',()=>{const h=harness();const css=h.shadow.innerHTML;assert.match(css,/animation:rx-flight 16s infinite/);assert.doesNotMatch(css.match(/@keyframes rx-flight\{[\s\S]*?\n\}/)[0],/visibility:hidden|opacity:0/);assert.match(css,/:host\{position:fixed;inset:0;z-index:2147483000/);});
