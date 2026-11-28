@@ -208,3 +208,10 @@ Object.assign(window.RuwaidixArabicDictionary, {
   "I organized my first school chemistry exhibition at Doha Independent School in 2009. Before I had access to university laboratories, chemistry had already become something I wanted to investigate rather than simply study. The fox specimen in a later anatomy lesson opened a different set of questions about how living structures worked together. My first research project began in 2015 with curcumin-based sensing of cyanide, work that later contributed to a study published in ": "نظّمت أول معرض للكيمياء في مدرسة الدوحة المستقلة عام ٢٠٠٩. قبل وصولي إلى المختبرات الجامعية، كانت الكيمياء قد أصبحت عندي مجالاً للبحث لا مجرد مادة للدراسة. ثم فتح درس تشريح لعينة من الثعلب باباً لأسئلة جديدة عن طريقة عمل البنى الحية معاً. بدأ أول مشروع بحثي لي عام ٢٠١٥ باستخدام الكركمين لاستشعار السيانيد، وأسهم هذا العمل لاحقاً في دراسة نشرت في ",
   " in 2019. At university I pursued plant extracts, imines and molecular sensing, learning to distinguish a plausible explanation from what an experiment could establish.": " عام ٢٠١٩. وفي الجامعة بحثت في المستخلصات النباتية والإيمينات والاستشعار الجزيئي، وتعلّمت أن أميّز بين التفسير المحتمل وما تستطيع التجربة إثباته."
 });
+
+/* 28 November 2026 — Pangram essay. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "In Pangram We Trust: Fraudulent Authors, Fraudulent Readers, and the New Religion of Academia": "ببانغرام نؤمن: المؤلفون المحتالون، والقراء المحتالون، والدين الجديد في الأوساط الأكاديمية",
+  "28 NOV 2026": "٢٨ نوفمبر ٢٠٢٦",
+  "28 NOV 2026 ↗": "٢٨ نوفمبر ٢٠٢٦ ↗"
+});
