@@ -80,3 +80,17 @@
 Object.assign(window.RuwaidixArabicDictionary, {
   "I have been taught to write passively, watched people cite papers that do not support their claims, and seen how easily scientific recognition can become detached from the work itself. Outside the journal, I can write about those experiences in my own voice. I also write about illness, academic life and what institutions can overlook while everyone is busy measuring success.": "تعلمت أن أكتب بصيغة المبني للمجهول، ورأيت كيف يستشهد البعض بأبحاث لا تدعم ما يقولونه، وكيف يمكن أن ينفصل الاعتراف العلمي عن العمل نفسه. وخارج المجلات المحكمة، أستطيع الكتابة عن هذه التجارب بصوتي أنا. وأكتب أيضًا عن المرض والحياة الأكاديمية وما قد تتجاهله المؤسسات بينما ينشغل الجميع بقياس النجاح."
 });
+
+/* 28 November 2026 — Pangram essay. */
+Object.assign(window.RuwaidixArabicDictionary, {
+  "In Pangram We Trust: Fraudulent Authors, Fraudulent Readers, and the New Religion of Academia": "ببانغرام نؤمن: المؤلفون المحتالون، والقراء المحتالون، والدين الجديد في الأوساط الأكاديمية",
+  "How artificial intelligence became a substitute for intellectual labour on both sides of the academic debate, and how two commercial industries are making money from our collective stupidity.": "كيف أصبح الذكاء الاصطناعي بديلًا عن العمل الفكري على جانبي الجدل الأكاديمي، وكيف تجني صناعتان تجاريتان المال من حماقتنا الجماعية.",
+  "A critique of outsourcing intellectual judgment to AI detectors, and of the double standards surrounding academic authorship and reading.": "نقد لتفويض الحكم الفكري إلى أدوات كشف الذكاء الاصطناعي، وازدواجية المعايير المحيطة بالتأليف والقراءة الأكاديمية.",
+  "28 NOV 2026": "٢٨ نوفمبر ٢٠٢٦",
+  "LATEST / ACADEMIC INTEGRITY & AI": "الأحدث / النزاهة الأكاديمية والذكاء الاصطناعي",
+  "PERSONAL ESSAY": "مقال شخصي",
+  "Selected Substack essays, including the latest publication on 28 November 2026.": "مختارات من مقالات سابستاك، بما فيها أحدث مقال منشور في ٢٨ نوفمبر ٢٠٢٦.",
+  "Three essays about writing and AI": "ثلاثة مقالات عن الكتابة والذكاء الاصطناعي",
+  "These essays examine AI detection, accusations of machine authorship, and the institutional conventions that shaped academic prose.": "تتناول هذه المقالات كشف الذكاء الاصطناعي واتهامات التأليف الآلي والأعراف المؤسسية التي شكّلت النثر الأكاديمي.",
+  "In Pangram We Trust": "ببانغرام نؤمن"
+});
